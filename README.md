@@ -26,6 +26,16 @@
 
   
 
+## 项目3：poi-practice
+
+###  参考文档
+
+- [进行Junit测试时 从 Resources读取文件](https://blog.csdn.net/weixin_40040107/article/details/90679413)
+- [JAVA实现POI对excel操作，超方便实用【实践代码】](https://www.jianshu.com/p/d63571a8195c)
+- [JAVA POI报错：org.openxmlformats.schemas.wordprocessingml.x2006.main.impl.CTRImpl.getXmlObjectArray](https://blog.csdn.net/u011781521/article/details/116260483)
+
+
+
 
 
 
