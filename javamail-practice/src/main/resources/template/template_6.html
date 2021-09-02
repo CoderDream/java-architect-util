@@ -1,0 +1,264 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+.AlignLeft {
+	text-align: left;
+}
+
+.AlignCenter {
+	text-align: center;
+}
+
+.AlignRight {
+	text-align: right;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 11pt;
+}
+
+td {
+	vertical-align: top;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+tr.SectionGap td {
+	font-size: 4px;
+	border-left: none;
+	border-top: none;
+	border-bottom: 1px solid Black;
+	border-right: 1px solid Black;
+}
+
+tr.SectionAll td {
+	border-left: none;
+	border-top: none;
+	border-bottom: 1px solid Black;
+	border-right: 1px solid Black;
+}
+
+tr.SectionBegin td {
+	border-left: none;
+	border-top: none;
+	border-right: 1px solid Black;
+}
+
+tr.SectionEnd td {
+	border-left: none;
+	border-top: none;
+	border-bottom: 1px solid Black;
+	border-right: 1px solid Black;
+}
+
+tr.SectionMiddle td {
+	border-left: none;
+	border-top: none;
+	border-right: 1px solid Black;
+}
+
+tr.SubsectionAll td {
+	border-left: none;
+	border-top: none;
+	border-bottom: 1px solid Gray;
+	border-right: 1px solid Black;
+}
+
+tr.SubsectionEnd td {
+	border-left: none;
+	border-top: none;
+	border-bottom: 1px solid Gray;
+	border-right: 1px solid Black;
+}
+
+table.fc {
+	border-top: 1px solid Black;
+	border-left: 1px solid Black;
+	width: 100%;
+	font-family: monospace;
+	font-size: 10pt;
+}
+
+td.TextItemInsigAdd {
+	color: #000000;
+	background-color: #EFEFFF;
+}
+
+td.TextItemInsigDel {
+	color: #000000;
+	background-color: #EFEFFF;
+	text-decoration: line-through;
+}
+
+td.TextItemInsigDiffMod {
+	color: #000000;
+	background-color: #EFEFFF;
+}
+
+td.TextItemInsigLeftMod {
+	color: #000000;
+	background-color: #EFEFFF;
+}
+
+td.TextItemInsigRightMod {
+	color: #000000;
+	background-color: #EFEFFF;
+}
+
+td.TextItemNum {
+	color: #827357;
+	background-color: #F2F2F2;
+}
+
+td.TextItemSame {
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+td.TextItemSigAdd {
+	color: #000000;
+	background-color: #FFE3E3;
+}
+
+td.TextItemSigDel {
+	color: #000000;
+	background-color: #FFE3E3;
+	text-decoration: line-through;
+}
+
+td.TextItemSigDiffMod {
+	color: #000000;
+	background-color: #FFE3E3;
+}
+
+td.TextItemSigLeftMod {
+	color: #000000;
+	background-color: #FFE3E3;
+}
+
+td.TextItemSigRightMod {
+	color: #000000;
+	background-color: #FFE3E3;
+}
+
+.TextSegInsigDiff {
+	color: #0000FF;
+}
+
+.TextSegReplacedDiff {
+	color: #0000FF;
+	font-style: italic;
+}
+
+.TextSegSigDiff {
+	color: #FF0000;
+}
+
+.TextSegElementKeyword {
+	font-weight: bold;
+}
+
+.TextSegElementIdentifier {
+	
+}
+
+.TextSegElementString {
+	color: #3A7726;
+}
+
+.TextSegElementComment {
+	color: #786A41;
+}
+
+.TextSegElementOperator {
+	
+}
+</style>
+<title>Text Compare</title>
+</head>
+<body>
+	Text Compare
+	<br /> Produced: 2017/6/23 16:17:48
+	<br /> &nbsp; &nbsp;
+	<br /> Mode:&nbsp; All &nbsp;
+	<br /> Left file: C:\Users\CoderDream\Downloads\MailUtilTest.java
+	&nbsp;
+	<br /> Right file:
+	C:\Users\CoderDream\Downloads\mailUtil-master\src\test\java\com\mail\test\MailUtilTest.java
+	&nbsp;
+	<br />
+	<table class="fc" cellspacing="0" cellpadding="0">
+		<tr class="SectionBegin">
+			<td class="TextItemNum AlignRight">1</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">package</span>
+				<span class="TextSegElementIdentifier">com</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">mail</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">test</span><span
+				class="TextSegElementOperator">;</span></td>
+			<td class="AlignCenter">=</td>
+			<td class="TextItemNum AlignRight">1</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">package</span>
+				<span class="TextSegElementIdentifier">com</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">mail</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">test</span><span
+				class="TextSegElementOperator">;</span></td>
+		</tr>
+		<!-- 使用FTL指令 -->
+		<#list list as tableCompareBean>
+		<br>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">${tableCompareBean.leftColumnName??}</td>
+			<td class="TextItemSame">${tableCompareBean.leftOthers??}</td>
+			<td class="AlignCenter">${tableCompareBean.compareResult?string('yes', 'no')}</td>
+			<td class="TextItemNum AlignRight">${tableCompareBean.rightColumnName??}</td>
+			<td class="TextItemSame">${tableCompareBean.rigthOthers??}</td>
+		</tr>
+		</#list>
+		<!-- 
+				<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">${tableCompareBean.leftColumnName}</td>
+			<td class="TextItemSame">${tableCompareBean.leftOthers}</td>
+			<td class="AlignCenter">${tableCompareBean.compareResult}</td>
+			<td class="TextItemNum AlignRight">${tableCompareBean.rightColumnName}</td>
+			<td class="TextItemSame">${tableCompareBean.rigthOthers}</td>
+		</tr>
+		 -->
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">32</td>
+			<td class="TextItemSame"></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">32</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementIdentifier">map</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">put</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementString">&quot;content&quot;</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementString">&quot;test&quot;</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span></td>
+		</tr>
+		<tr class="SectionEnd">
+			<td class="TextItemNum AlignRight">33</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementKeyword">try</span> <span
+				class="TextSegElementOperator">{</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">33</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementKeyword">try</span> <span
+				class="TextSegElementOperator">{</span></td>
+		</tr>
+
+	</table>
+	<br />
+</body>
+</html>

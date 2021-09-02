@@ -1,0 +1,381 @@
+<html>
+    <head>
+        <title>用css美化表格边框</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+        <style>
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+body { font-family: sans-serif; font-size: 11pt; }
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+tr.SectionGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SubsectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.SubsectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+td.TextItemInsigAdd { color: #000000; background-color: #EFEFFF; }
+td.TextItemInsigDel { color: #000000; background-color: #EFEFFF; text-decoration: line-through; }
+td.TextItemInsigDiffMod { color: #000000; background-color: #EFEFFF; }
+td.TextItemInsigLeftMod { color: #000000; background-color: #EFEFFF; }
+td.TextItemInsigRightMod { color: #000000; background-color: #EFEFFF; }
+td.TextItemNum { color: #827357; background-color: #F2F2F2; }
+td.TextItemSame { color: #000000; background-color: #FFFFFF; }
+td.TextItemSigAdd { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigDel { color: #000000; background-color: #FFE3E3; text-decoration: line-through; }
+td.TextItemSigDiffMod { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigLeftMod { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigRightMod { color: #000000; background-color: #FFE3E3; }
+.TextSegInsigDiff { color: #0000FF; }
+.TextSegReplacedDiff { color: #0000FF; font-style: italic; }
+.TextSegSigDiff { color: #FF0000; }
+.TextSegElementKeyword { font-weight: bold; }
+.TextSegElementIdentifier { }
+.TextSegElementString { color: #3A7726; }
+.TextSegElementComment { color: #786A41; }
+.TextSegElementOperator { }
+</style>
+    </head>
+    <body bgcolor="#FFFFFF" text="#000000">
+        <div align="center"> 
+            <table width="500" cellspacing="0" cellpadding="0" border="0" class="table1">
+                <tr > 
+                    <td class="td1">1&nbsp;</td>
+                    <td class="td1">&nbsp;</td>
+                    <td class="td1">&nbsp;</td>
+                </tr>
+                <tr> 
+                    <td class="td1">&nbsp;</td>
+                    <td class="td1">&nbsp;</td> 
+                    <td class="td1">&nbsp;</td>
+                </tr>
+                <tr> 
+                    <td class="td1">&nbsp;</td>
+                    <td class="td1">&nbsp;</td>
+                    <td class="td1">&nbsp;</td>
+                </tr>
+            </table>
+            <p>&nbsp;</p>
+            <table width="500" cellspacing="0" cellpadding="0" border="0" class="table2">
+                <tr > 
+                <td class="td2">2&nbsp;</td>
+                <td class="td2">&nbsp;</td>
+                <td class="td2">&nbsp;</td>
+                </tr>
+                <tr> 
+                <td class="td2">&nbsp;</td>
+                <td class="td2">&nbsp;</td>
+                <td class="td2">&nbsp;</td>
+                </tr>
+                <tr> 
+                <td class="td2">&nbsp;</td>
+                <td class="td2">&nbsp;</td> 
+                <td class="td2">&nbsp;</td>
+                </tr>
+            </table>
+            <p>&nbsp;</p>
+            <table width="500" cellspacing="0" cellpadding="0" border="0" class="table3">
+                <tr > 
+                <td class="td3">3&nbsp;</td>
+                <td class="td3">&nbsp;</td>
+                <td class="td3">&nbsp;</td>
+                </tr>
+                <tr> 
+                <td class="td3">&nbsp;</td>
+                <td class="td3">&nbsp;</td>
+                <td class="td3">&nbsp;</td>
+                </tr>
+                <tr> 
+                <td class="td3">&nbsp;</td>
+                <td class="td3">&nbsp;</td>
+                <td class="td3">&nbsp;</td>
+                </tr>
+            </table>
+            <p>&nbsp;</p>
+            <table width="500" cellspacing="0" cellpadding="0" border="0" class="table4"> 
+                <tr > 
+                <td class="td4">4&nbsp;</td>
+                <td class="td4">&nbsp;</td>
+                <td class="td4">&nbsp;</td>
+                </tr>
+                <tr> 
+                <td class="td4">&nbsp;</td>
+                <td class="td4">&nbsp;</td>
+                <td class="td4">&nbsp;</td>
+                </tr>
+                <tr> 
+                <td class="td4">&nbsp;</td>
+                <td class="td4">&nbsp;</td>
+                <td class="td4">&nbsp;</td>
+                </tr>
+            </table>
+            <p>&nbsp;</p>
+            <table width="500" cellspacing="0" cellpadding="0" border="0" class="table5">
+                <tr > 
+                <td class="td5">5&nbsp;</td>
+                <td class="td5">&nbsp;</td>
+                <td class="td5">&nbsp;</td>
+                </tr> 
+                <tr> 
+                <td class="td5">&nbsp;</td>
+                <td class="td5">&nbsp;</td>
+                <td class="td5">&nbsp;</td>
+                </tr>
+                <tr> 
+                <td class="td5">&nbsp;</td>
+                <td class="td5">&nbsp;</td>
+                <td class="td5">&nbsp;</td>
+                </tr>
+            </table>
+            <p>&nbsp;</p>
+            <table width="500" cellspacing="0" cellpadding="0" border="0" class="table6">
+                <tr > 
+                <td class="td6">6&nbsp;</td>
+                <td class="td6">&nbsp;</td>
+                <td class="td6">&nbsp;</td>
+                </tr>
+                <tr> 
+                <td class="td6">&nbsp;</td>
+                <td class="td6">&nbsp;</td>
+                <td class="td6">&nbsp;</td>
+                </tr> 
+                <tr> 
+                <td class="td6">&nbsp;</td>
+                <td class="td6">&nbsp;</td>
+                <td class="td6">&nbsp;</td>
+                </tr>
+            </table>
+            <p>&nbsp;</p>
+            <table width="500" cellspacing="0" cellpadding="0" border="0" class="table7">
+                <tr > 
+                <td class="td7">7&nbsp;</td>
+                <td class="td7">&nbsp;</td>
+                <td class="td7">&nbsp;</td>
+                </tr>
+                <tr> 
+                <td class="td7">&nbsp;</td>
+                <td class="td7">&nbsp;</td>
+                <td class="td7">&nbsp;</td>
+                </tr>
+                <tr> 
+                <td class="td7">&nbsp;</td>
+                <td class="td7">&nbsp;</td>
+                <td class="td7">&nbsp;</td>
+                </tr> 
+            </table>
+            <p>&nbsp;</p>
+            <table width="500" cellspacing="0" cellpadding="0" border="0" class="table8">
+                <tr > 
+                <td class="td8">8&nbsp;</td>
+                <td class="td8">&nbsp;</td>
+                <td class="td8">&nbsp;</td>
+                </tr>
+                <tr> 
+                <td class="td8">&nbsp;</td>
+                <td class="td8">&nbsp;</td>
+                <td class="td8">&nbsp;</td>
+                </tr>
+                <tr> 
+                <td class="td8">&nbsp;</td>
+                <td class="td8">&nbsp;</td>
+                <td class="td8">&nbsp;</td>
+                </tr>
+            </table>
+            <p>&nbsp;</p>
+            <table width="500" cellspacing="1" cellpadding="0" border="0" class="table9">
+                <tr > 
+                <td class="td9">9&nbsp;</td>
+                <td class="td9">&nbsp;</td>
+                <td class="td9">&nbsp;</td>
+                </tr>
+                <tr> 
+                <td class="td9">&nbsp;</td>
+                <td class="td9">&nbsp;</td>
+                <td class="td9">&nbsp;</td>
+                </tr>
+                <tr> 
+                    <td class="td9">&nbsp;</td>
+                    <td class="td9">&nbsp;</td>
+                    <td class="td9">&nbsp;</td>
+                </tr>
+            </table>
+            <p>&nbsp;</p>
+            <table width="500" cellspacing="2" cellpadding="0" border="0">
+                <tr > 
+                    <td class="td10">10&nbsp;</td>
+                    <td class="td10">&nbsp;</td>
+                    <td class="td10">&nbsp;</td>
+                </tr>
+                <tr> 
+                    <td class="td10">&nbsp;</td> 
+                    <td class="td10">&nbsp;</td>
+                    <td class="td10">&nbsp;</td>
+                </tr>
+                <tr> 
+                <td class="td10">&nbsp;</td>
+                <td class="td10">&nbsp;</td>
+                <td class="td10">&nbsp;</td>
+                </tr>
+            </table>
+            <p>&nbsp;</p>
+            <table width="500" cellspacing="0" cellpadding="0" border="0" class="table11">
+                <tr > 
+                <td class="td11">11&nbsp;</td>
+                <td class="td11">&nbsp;</td>
+                <td class="td11">&nbsp;</td>
+                </tr>
+                <tr> 
+                    <td class="td11">&nbsp;</td>
+                    <td class="td11">&nbsp;</td>
+                    <td class="td11">&nbsp;</td>
+                </tr>
+                <tr> 
+                    <td class="td11">&nbsp;</td> 
+                    <td class="td11">&nbsp;</td>
+                    <td class="td11">&nbsp;</td>
+                </tr>
+            </table>
+            <p>&nbsp;</p>
+            <table width="500" border="0" cellspacing="1" cellpadding="0" style="border:#cc0000 1 solid" >
+                <tr>
+                <td>
+                    <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0" class="table2">
+                        <tr > 
+                            <td class="td2">12&nbsp;</td>
+                            <td class="td2">&nbsp;</td>
+                            <td class="td2">&nbsp;</td>
+                        </tr>
+                        <tr> 
+                            <td class="td2">&nbsp;</td>
+                            <td class="td2">&nbsp;</td>
+                            <td class="td2">&nbsp;</td>
+                        </tr>
+                        <tr> 
+                            <td class="td2">&nbsp;</td> 
+                            <td class="td2">&nbsp;</td>
+                            <td class="td2">&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+                </tr>
+            </table>
+            <p>&nbsp;</p>
+            <table width="500" border="0" cellspacing="3" cellpadding="0" style="border:#cc0000 1 solid" background="back.jpg">
+                <tr> 
+                    <td> 
+                        <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0" class="table2">
+                        <tr > 
+                            <td class="td2">13&nbsp;</td>
+                            <td class="td2">&nbsp;</td>
+                            <td class="td2">&nbsp;</td>
+                        </tr>
+                        <tr> 
+                            <td class="td2">&nbsp;</td>
+                            <td class="td2">&nbsp;</td>
+                            <td class="td2">&nbsp;</td> 
+                        </tr>
+                        <tr> 
+                            <td class="td2">&nbsp;</td>
+                            <td class="td2">&nbsp;</td>
+                            <td class="td2">&nbsp;</td>
+                        </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <p>&nbsp;</p>
+            <table width="500" cellspacing="2" cellpadding="0" border="0" style="border:1 navy solid" background="back.jpg">
+                <tr > 
+                    <td class="td9">14&nbsp;</td>
+                    <td class="td9">&nbsp;</td>
+                    <td class="td9">&nbsp;</td>
+                </tr>
+                <tr> 
+                    <td class="td9">&nbsp;</td>
+                    <td class="td9">&nbsp;</td>
+                    <td class="td9">&nbsp;</td>
+                </tr>
+                <tr> 
+                    <td class="td9">&nbsp;</td>
+                    <td class="td9">&nbsp;</td> 
+                    <td class="td9">&nbsp;</td>
+                </tr>
+            </table>
+            <p>&nbsp;</p>
+            <table width="500" border="0" cellspacing="3" cellpadding="0">
+                <tr> 
+                <td> 
+                    <table width="100%" border="0" cellspacing="1" cellpadding="0" height="100%" class="out">
+                        <tr> 
+                            <td class="in">15&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+                <td> 
+                    <table width="100%" border="0" cellspacing="1" cellpadding="0" height="100%" class="out">
+                        <tr> 
+                            <td class="in">&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+                <td> 
+                    <table width="100%" border="0" cellspacing="1" cellpadding="0" height="100%" class="out"> 
+                        <tr> 
+                            <td class="in">&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+                </tr>
+                <tr> 
+                    <td> 
+                        <table width="100%" border="0" cellspacing="1" cellpadding="0" height="100%" class="out">
+                            <tr> 
+                                <td class="in">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td> 
+                        <table width="100%" border="0" cellspacing="1" cellpadding="0" height="100%" class="out">
+                            <tr> 
+                                <td class="in">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td> 
+                        <table width="100%" border="0" cellspacing="1" cellpadding="0" height="100%" class="out">
+                            <tr> 
+                                <td class="in">&nbsp;</td> 
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr> 
+                    <td> 
+                        <table width="100%" border="0" cellspacing="1" cellpadding="0" height="100%" class="out">
+                            <tr> 
+                                <td class="in">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td> 
+                        <table width="100%" border="0" cellspacing="1" cellpadding="0" height="100%" class="out">
+                            <tr> 
+                                <td class="in">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td> 
+                        <table width="100%" border="0" cellspacing="1" cellpadding="0" height="100%" class="out">
+                            <tr> 
+                                <td class="in">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr> 
+            </table>
+        </div>
+    </body>
+</html> 

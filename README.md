@@ -18,6 +18,18 @@
 
 
 
+## 项目2：javamail-practice
+
+###  参考文档
+
+- [JavaMail 实现邮件推送功能(网易邮箱)](https://blog.csdn.net/weixin_43967679/article/details/107879747)
+
+  
+
+
+
+
+
 ## TODO
 
 - SendMail
@@ -34,6 +46,7 @@
 # 其他参考文档
 
 - [IDEA如何设置author头注解](https://blog.csdn.net/weixin_42555514/article/details/106826894)
+- [Intellij Idea自动添加注释的方法](https://www.jianshu.com/p/09139b425cc3)
 
 
 

@@ -1,0 +1,2082 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+.AlignLeft {
+	text-align: left;
+}
+
+.AlignCenter {
+	text-align: center;
+}
+
+.AlignRight {
+	text-align: right;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 11pt;
+}
+
+td {
+	vertical-align: top;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+tr.SectionGap td {
+	font-size: 4px;
+	border-left: none;
+	border-top: none;
+	border-bottom: 1px solid Black;
+	border-right: 1px solid Black;
+}
+
+tr.SectionAll td {
+	border-left: none;
+	border-top: none;
+	border-bottom: 1px solid Black;
+	border-right: 1px solid Black;
+}
+
+tr.SectionBegin td {
+	border-left: none;
+	border-top: none;
+	border-right: 1px solid Black;
+}
+
+tr.SectionEnd td {
+	border-left: none;
+	border-top: none;
+	border-bottom: 1px solid Black;
+	border-right: 1px solid Black;
+}
+
+tr.SectionMiddle td {
+	border-left: none;
+	border-top: none;
+	border-right: 1px solid Black;
+}
+
+tr.SubsectionAll td {
+	border-left: none;
+	border-top: none;
+	border-bottom: 1px solid Gray;
+	border-right: 1px solid Black;
+}
+
+tr.SubsectionEnd td {
+	border-left: none;
+	border-top: none;
+	border-bottom: 1px solid Gray;
+	border-right: 1px solid Black;
+}
+
+table.fc {
+	border-top: 1px solid Black;
+	border-left: 1px solid Black;
+	width: 100%;
+	font-family: monospace;
+	font-size: 10pt;
+}
+
+td.TextItemInsigAdd {
+	color: #000000;
+	background-color: #EFEFFF;
+}
+
+td.TextItemInsigDel {
+	color: #000000;
+	background-color: #EFEFFF;
+	text-decoration: line-through;
+}
+
+td.TextItemInsigDiffMod {
+	color: #000000;
+	background-color: #EFEFFF;
+}
+
+td.TextItemInsigLeftMod {
+	color: #000000;
+	background-color: #EFEFFF;
+}
+
+td.TextItemInsigRightMod {
+	color: #000000;
+	background-color: #EFEFFF;
+}
+
+td.TextItemNum {
+	color: #827357;
+	background-color: #F2F2F2;
+}
+
+td.TextItemSame {
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+td.TextItemSigAdd {
+	color: #000000;
+	background-color: #FFE3E3;
+}
+
+td.TextItemSigDel {
+	color: #000000;
+	background-color: #FFE3E3;
+	text-decoration: line-through;
+}
+
+td.TextItemSigDiffMod {
+	color: #000000;
+	background-color: #FFE3E3;
+}
+
+td.TextItemSigLeftMod {
+	color: #000000;
+	background-color: #FFE3E3;
+}
+
+td.TextItemSigRightMod {
+	color: #000000;
+	background-color: #FFE3E3;
+}
+
+.TextSegInsigDiff {
+	color: #0000FF;
+}
+
+.TextSegReplacedDiff {
+	color: #0000FF;
+	font-style: italic;
+}
+
+.TextSegSigDiff {
+	color: #FF0000;
+}
+
+.TextSegElementKeyword {
+	font-weight: bold;
+}
+
+.TextSegElementIdentifier {
+	
+}
+
+.TextSegElementString {
+	color: #3A7726;
+}
+
+.TextSegElementComment {
+	color: #786A41;
+}
+
+.TextSegElementOperator {
+	
+}
+</style>
+<title>Text Compare</title>
+</head>
+<body>
+	Text Compare
+	<br /> Produced: 2017/6/23 16:17:48
+	<br /> &nbsp; &nbsp;
+	<br /> Mode:&nbsp; All &nbsp;
+	<br /> Left file: C:\Users\CoderDream\Downloads\MailUtilTest.java
+	&nbsp;
+	<br /> Right file:
+	C:\Users\CoderDream\Downloads\mailUtil-master\src\test\java\com\mail\test\MailUtilTest.java
+	&nbsp;
+	<br />
+	<table class="fc" cellspacing="0" cellpadding="0">
+		<tr class="SectionBegin">
+			<td class="TextItemNum AlignRight">1</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">package</span>
+				<span class="TextSegElementIdentifier">com</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">mail</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">test</span><span
+				class="TextSegElementOperator">;</span></td>
+			<td class="AlignCenter">=</td>
+			<td class="TextItemNum AlignRight">1</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">package</span>
+				<span class="TextSegElementIdentifier">com</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">mail</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">test</span><span
+				class="TextSegElementOperator">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">2</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">2</td>
+			<td class="TextItemSame">&nbsp;</td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">3</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">import</span>
+				<span class="TextSegElementIdentifier">java</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">io</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">IOException</span><span
+				class="TextSegElementOperator">;</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">3</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">import</span>
+				<span class="TextSegElementIdentifier">java</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">io</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">IOException</span><span
+				class="TextSegElementOperator">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">4</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">import</span>
+				<span class="TextSegElementIdentifier">java</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">util</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">HashMap</span><span
+				class="TextSegElementOperator">;</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">4</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">import</span>
+				<span class="TextSegElementIdentifier">java</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">util</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">HashMap</span><span
+				class="TextSegElementOperator">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">5</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">import</span>
+				<span class="TextSegElementIdentifier">java</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">util</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">Map</span><span
+				class="TextSegElementOperator">;</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">5</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">import</span>
+				<span class="TextSegElementIdentifier">java</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">util</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">Map</span><span
+				class="TextSegElementOperator">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">6</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">6</td>
+			<td class="TextItemSame">&nbsp;</td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">7</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">import</span>
+				<span class="TextSegElementIdentifier">javax</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">mail</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">MessagingException</span><span
+				class="TextSegElementOperator">;</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">7</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">import</span>
+				<span class="TextSegElementIdentifier">javax</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">mail</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">MessagingException</span><span
+				class="TextSegElementOperator">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">8</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">8</td>
+			<td class="TextItemSame">&nbsp;</td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">9</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">import</span>
+				<span class="TextSegElementIdentifier">org</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">junit</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">Test</span><span
+				class="TextSegElementOperator">;</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">9</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">import</span>
+				<span class="TextSegElementIdentifier">org</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">junit</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">Test</span><span
+				class="TextSegElementOperator">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">10</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">import</span>
+				<span class="TextSegElementIdentifier">org</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">slf4j</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">Logger</span><span
+				class="TextSegElementOperator">;</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">10</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">import</span>
+				<span class="TextSegElementIdentifier">org</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">slf4j</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">Logger</span><span
+				class="TextSegElementOperator">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">11</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">import</span>
+				<span class="TextSegElementIdentifier">org</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">slf4j</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">LoggerFactory</span><span
+				class="TextSegElementOperator">;</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">11</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">import</span>
+				<span class="TextSegElementIdentifier">org</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">slf4j</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">LoggerFactory</span><span
+				class="TextSegElementOperator">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">12</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">12</td>
+			<td class="TextItemSame">&nbsp;</td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">13</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">import</span>
+				<span class="TextSegElementIdentifier">com</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">common</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">util</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">mail</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">MailUtil</span><span
+				class="TextSegElementOperator">;</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">13</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">import</span>
+				<span class="TextSegElementIdentifier">com</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">common</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">util</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">mail</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">MailUtil</span><span
+				class="TextSegElementOperator">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">14</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">14</td>
+			<td class="TextItemSame">&nbsp;</td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">15</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">import</span>
+				<span class="TextSegElementIdentifier">freemarker</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">template</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">TemplateException</span><span
+				class="TextSegElementOperator">;</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">15</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">import</span>
+				<span class="TextSegElementIdentifier">freemarker</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">template</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">TemplateException</span><span
+				class="TextSegElementOperator">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">16</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">16</td>
+			<td class="TextItemSame">&nbsp;</td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">17</td>
+			<td class="TextItemSame"><span class="TextSegElementComment">/**</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">17</td>
+			<td class="TextItemSame"><span class="TextSegElementComment">/**</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">18</td>
+			<td class="TextItemSame"><span class="TextSegElementComment">
+					* 邮件工具测试类</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">18</td>
+			<td class="TextItemSame"><span class="TextSegElementComment">
+					* 邮件工具测试类</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">19</td>
+			<td class="TextItemSame"><span class="TextSegElementComment">
+					* </span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">19</td>
+			<td class="TextItemSame"><span class="TextSegElementComment">
+					* </span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">20</td>
+			<td class="TextItemSame"><span class="TextSegElementComment">
+					* @date 2014年4月26日 下午3:37:11</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">20</td>
+			<td class="TextItemSame"><span class="TextSegElementComment">
+					* @date 2014年4月26日 下午3:37:11</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">21</td>
+			<td class="TextItemSame"><span class="TextSegElementComment">
+					* @author 曹志飞</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">21</td>
+			<td class="TextItemSame"><span class="TextSegElementComment">
+					* @author 曹志飞</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">22</td>
+			<td class="TextItemSame"><span class="TextSegElementComment">
+					* @Description:</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">22</td>
+			<td class="TextItemSame"><span class="TextSegElementComment">
+					* @Description:</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">23</td>
+			<td class="TextItemSame"><span class="TextSegElementComment">
+					* @project mailUtil</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">23</td>
+			<td class="TextItemSame"><span class="TextSegElementComment">
+					* @project mailUtil</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">24</td>
+			<td class="TextItemSame"><span class="TextSegElementComment">
+					*/</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">24</td>
+			<td class="TextItemSame"><span class="TextSegElementComment">
+					*/</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">25</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">public</span>
+				<span class="TextSegElementKeyword">class</span> <span
+				class="TextSegElementIdentifier">MailUtilTest</span> <span
+				class="TextSegElementOperator">{</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">25</td>
+			<td class="TextItemSame"><span class="TextSegElementKeyword">public</span>
+				<span class="TextSegElementKeyword">class</span> <span
+				class="TextSegElementIdentifier">MailUtilTest</span> <span
+				class="TextSegElementOperator">{</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">26</td>
+			<td class="TextItemSame">&nbsp; &nbsp; <span
+				class="TextSegElementKeyword">private</span> <span
+				class="TextSegElementKeyword">static</span> <span
+				class="TextSegElementIdentifier">Logger</span> <span
+				class="TextSegElementIdentifier">log</span> <span
+				class="TextSegElementOperator">=</span> <span
+				class="TextSegElementIdentifier">LoggerFactory</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">getLogger</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">MailUtilTest</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementKeyword">class</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">26</td>
+			<td class="TextItemSame">&nbsp; &nbsp; <span
+				class="TextSegElementKeyword">private</span> <span
+				class="TextSegElementKeyword">static</span> <span
+				class="TextSegElementIdentifier">Logger</span> <span
+				class="TextSegElementIdentifier">log</span> <span
+				class="TextSegElementOperator">=</span> <span
+				class="TextSegElementIdentifier">LoggerFactory</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">getLogger</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">MailUtilTest</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementKeyword">class</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">27</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">27</td>
+			<td class="TextItemSame">&nbsp;</td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">28</td>
+			<td class="TextItemSame">&nbsp; &nbsp; @<span
+				class="TextSegElementIdentifier">Test</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">28</td>
+			<td class="TextItemSame">&nbsp; &nbsp; @<span
+				class="TextSegElementIdentifier">Test</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">29</td>
+			<td class="TextItemSame">&nbsp; &nbsp; <span
+				class="TextSegElementKeyword">public</span> <span
+				class="TextSegElementKeyword">void</span> <span
+				class="TextSegElementIdentifier">testMailTemplate</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span> <span
+				class="TextSegElementOperator">{</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">29</td>
+			<td class="TextItemSame">&nbsp; &nbsp; <span
+				class="TextSegElementKeyword">public</span> <span
+				class="TextSegElementKeyword">void</span> <span
+				class="TextSegElementIdentifier">testMailTemplate</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span> <span
+				class="TextSegElementOperator">{</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">30</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementIdentifier">String</span> <span
+				class="TextSegElementIdentifier">templateName</span> <span
+				class="TextSegElementOperator">=</span> <span
+				class="TextSegElementString">&quot;template_1.ftl&quot;</span><span
+				class="TextSegElementOperator">;</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">30</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementIdentifier">String</span> <span
+				class="TextSegElementIdentifier">templateName</span> <span
+				class="TextSegElementOperator">=</span> <span
+				class="TextSegElementString">&quot;template_1.ftl&quot;</span><span
+				class="TextSegElementOperator">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">31</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementIdentifier">Map</span><span
+				class="TextSegElementOperator">&lt;</span><span
+				class="TextSegElementIdentifier">String</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementIdentifier">String</span><span
+				class="TextSegElementOperator">&gt;</span> <span
+				class="TextSegElementIdentifier">map</span> <span
+				class="TextSegElementOperator">=</span> <span
+				class="TextSegElementKeyword">new</span> <span
+				class="TextSegElementIdentifier">HashMap</span><span
+				class="TextSegElementOperator">&lt;</span><span
+				class="TextSegElementIdentifier">String</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementIdentifier">String</span><span
+				class="TextSegElementOperator">&gt;</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">31</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementIdentifier">Map</span><span
+				class="TextSegElementOperator">&lt;</span><span
+				class="TextSegElementIdentifier">String</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementIdentifier">String</span><span
+				class="TextSegElementOperator">&gt;</span> <span
+				class="TextSegElementIdentifier">map</span> <span
+				class="TextSegElementOperator">=</span> <span
+				class="TextSegElementKeyword">new</span> <span
+				class="TextSegElementIdentifier">HashMap</span><span
+				class="TextSegElementOperator">&lt;</span><span
+				class="TextSegElementIdentifier">String</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementIdentifier">String</span><span
+				class="TextSegElementOperator">&gt;</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">32</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementIdentifier">map</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">put</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementString">&quot;content&quot;</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementString">&quot;test&quot;</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">32</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementIdentifier">map</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">put</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementString">&quot;content&quot;</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementString">&quot;test&quot;</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span></td>
+		</tr>
+		<tr class="SectionEnd">
+			<td class="TextItemNum AlignRight">33</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementKeyword">try</span> <span
+				class="TextSegElementOperator">{</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">33</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementKeyword">try</span> <span
+				class="TextSegElementOperator">{</span></td>
+		</tr>
+		<tr class="SectionBegin">
+			<td class="TextItemNum AlignRight">34</td>
+			<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; MailUtil.sendMailByTemplate(&quot;<span
+				class="TextSegSigDiff">52935247955</span>@qq.com&quot;,
+				&quot;test&quot;, map,
+			</td>
+			<td class="AlignCenter">&lt;&gt;</td>
+			<td class="TextItemNum AlignRight">34</td>
+			<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; MailUtil.sendMailByTemplate(&quot;<span
+				class="TextSegSigDiff">xulin.wh</span>@qq.com&quot;,
+				&quot;test&quot;, map,
+			</td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">35</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span
+				class="TextSegSigDiff">templateName</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">36</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">}</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">catch</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(</span><span
+				class="TextSegSigDiff">IOException</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">e</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">{</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">37</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">log</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">error</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">e</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">toString</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">)</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">e</span><span class="TextSegSigDiff">)</span><span
+				class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">38</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">}</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">catch</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(</span><span
+				class="TextSegSigDiff">TemplateException</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">e</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">{</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">39</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">log</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">error</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">e</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">toString</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">)</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">e</span><span class="TextSegSigDiff">)</span><span
+				class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">40</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">}</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">catch</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(</span><span
+				class="TextSegSigDiff">MessagingException</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">e</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">{</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">41</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">log</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">error</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">e</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">toString</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">)</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">e</span><span class="TextSegSigDiff">)</span><span
+				class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">42</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">}</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">43</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; </span><span class="TextSegSigDiff">}</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">44</td>
+			<td class="TextItemInsigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; </span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">45</td>
+			<td class="TextItemInsigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; </span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">46</td>
+			<td class="TextItemInsigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; </span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">47</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; </span><span class="TextSegSigDiff">@</span><span
+				class="TextSegSigDiff">Test</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">48</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; </span><span class="TextSegSigDiff">public</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">void</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">testMailTemplate_02</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">)</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">49</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">String</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">templateName</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;template_2.ftl&quot;</span><span
+				class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">50</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">Map</span><span
+				class="TextSegSigDiff">&lt;</span><span class="TextSegSigDiff">String</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">String</span><span
+				class="TextSegSigDiff">&gt;</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">map</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">new</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">HashMap</span><span
+				class="TextSegSigDiff">&lt;</span><span class="TextSegSigDiff">String</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">String</span><span
+				class="TextSegSigDiff">&gt;</span><span class="TextSegSigDiff">(</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">51</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test00&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test00-value&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">52</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test01&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test01-value&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">53</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test02&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test02-value&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">54</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test03&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test03&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">55</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test04&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test04&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">56</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test05&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test05&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">57</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test06&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test06&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">58</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test07&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test07&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">59</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test08&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test08&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">60</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test09&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test09-value&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">61</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test10&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test10&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">62</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test11&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test11&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">63</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test12&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test12&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">64</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test13&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test13&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">65</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test14&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test14&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">66</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test15&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test15&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">67</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test16&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test16&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">68</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test17&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test17&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">69</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test18&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test18&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">70</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test19&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test19&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">71</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;test20&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test20&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">72</td>
+			<td class="TextItemInsigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">73</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">try</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">74</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">MailUtil</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">sendMailByTemplate</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;xulin.wh@qq.com&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">map</span><span class="TextSegSigDiff">,</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">75</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span
+				class="TextSegSigDiff">templateName</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">76</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">}</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">catch</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(</span><span
+				class="TextSegSigDiff">IOException</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">e</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">{</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">77</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">log</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">error</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">e</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">toString</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">)</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">e</span><span class="TextSegSigDiff">)</span><span
+				class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">78</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">}</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">catch</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(</span><span
+				class="TextSegSigDiff">TemplateException</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">e</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">{</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">79</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">log</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">error</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">e</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">toString</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">)</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">e</span><span class="TextSegSigDiff">)</span><span
+				class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">80</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">}</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">catch</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">(</span><span
+				class="TextSegSigDiff">MessagingException</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">e</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">{</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">81</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">log</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">error</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">e</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">toString</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">)</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">e</span><span class="TextSegSigDiff">)</span><span
+				class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">82</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">}</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">83</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; </span><span class="TextSegSigDiff">}</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">84</td>
+			<td class="TextItemInsigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; </span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">85</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; </span><span class="TextSegSigDiff">@</span><span
+				class="TextSegSigDiff">Test</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">86</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; </span><span class="TextSegSigDiff">public</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">void</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">testMailTemplate_03</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">)</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">87</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">String</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">templateName</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">=</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">&quot;template_3.html&quot;</span><span
+				class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">88</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">Map</span><span
+				class="TextSegSigDiff">&lt;</span><span class="TextSegSigDiff">String</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">String</span><span
+				class="TextSegSigDiff">&gt;</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">map</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">=</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">new</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">HashMap</span><span
+				class="TextSegSigDiff">&lt;</span><span class="TextSegSigDiff">String</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">String</span><span
+				class="TextSegSigDiff">&gt;</span><span class="TextSegSigDiff">(</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">89</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;username&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;何三妹&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">90</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;password&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;123456&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">91</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;age&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;27&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">92</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">map</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">put</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;sex&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;女&quot;</span><span
+				class="TextSegSigDiff">)</span><span class="TextSegSigDiff">;</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">93</td>
+			<td class="TextItemInsigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">94</td>
+			<td class="TextItemInsigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">95</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">try</span><span
+				class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">{</span></td>
+		</tr>
+		<tr class="SectionEnd">
+			<td class="TextItemNum AlignRight">&nbsp;</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">96</td>
+			<td class="TextItemSigRightMod"><span class="TextSegInsigDiff">&nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">MailUtil</span><span
+				class="TextSegSigDiff">.</span><span class="TextSegSigDiff">sendMailByTemplate</span><span
+				class="TextSegSigDiff">(</span><span class="TextSegSigDiff">&quot;xulin.wh@qq.com&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">&quot;test&quot;</span><span
+				class="TextSegSigDiff">,</span><span class="TextSegInsigDiff">
+			</span><span class="TextSegSigDiff">map</span><span class="TextSegSigDiff">,</span></td>
+		</tr>
+		<tr class="SectionBegin">
+			<td class="TextItemNum AlignRight">35</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementIdentifier">templateName</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span>
+			</td>
+			<td class="AlignCenter">=</td>
+			<td class="TextItemNum AlignRight">97</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementIdentifier">templateName</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span>
+			</td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">36</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span> <span
+				class="TextSegElementKeyword">catch</span> <span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">IOException</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span> <span
+				class="TextSegElementOperator">{</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">98</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span> <span
+				class="TextSegElementKeyword">catch</span> <span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">IOException</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span> <span
+				class="TextSegElementOperator">{</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">37</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; <span class="TextSegElementIdentifier">log</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">error</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">toString</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span>
+			</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">99</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; <span class="TextSegElementIdentifier">log</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">error</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">toString</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span>
+			</td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">38</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span> <span
+				class="TextSegElementKeyword">catch</span> <span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">TemplateException</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span> <span
+				class="TextSegElementOperator">{</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">100</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span> <span
+				class="TextSegElementKeyword">catch</span> <span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">TemplateException</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span> <span
+				class="TextSegElementOperator">{</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">39</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; <span class="TextSegElementIdentifier">log</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">error</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">toString</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span>
+			</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">101</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; <span class="TextSegElementIdentifier">log</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">error</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">toString</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span>
+			</td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">40</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span> <span
+				class="TextSegElementKeyword">catch</span> <span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">MessagingException</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span> <span
+				class="TextSegElementOperator">{</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">102</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span> <span
+				class="TextSegElementKeyword">catch</span> <span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">MessagingException</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span> <span
+				class="TextSegElementOperator">{</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">41</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; <span class="TextSegElementIdentifier">log</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">error</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">toString</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span>
+			</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">103</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; <span class="TextSegElementIdentifier">log</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">error</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">toString</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span>
+			</td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">42</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">104</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">43</td>
+			<td class="TextItemSame">&nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">105</td>
+			<td class="TextItemSame">&nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">44</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">106</td>
+			<td class="TextItemSame">&nbsp;</td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">45</td>
+			<td class="TextItemSame">&nbsp; &nbsp; @<span
+				class="TextSegElementIdentifier">Test</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">107</td>
+			<td class="TextItemSame">&nbsp; &nbsp; @<span
+				class="TextSegElementIdentifier">Test</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">46</td>
+			<td class="TextItemSame">&nbsp; &nbsp; <span
+				class="TextSegElementKeyword">public</span> <span
+				class="TextSegElementKeyword">void</span> <span
+				class="TextSegElementIdentifier">testMail</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span> <span
+				class="TextSegElementOperator">{</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">108</td>
+			<td class="TextItemSame">&nbsp; &nbsp; <span
+				class="TextSegElementKeyword">public</span> <span
+				class="TextSegElementKeyword">void</span> <span
+				class="TextSegElementIdentifier">testMail</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span> <span
+				class="TextSegElementOperator">{</span></td>
+		</tr>
+		<tr class="SectionEnd">
+			<td class="TextItemNum AlignRight">47</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementKeyword">try</span> <span
+				class="TextSegElementOperator">{</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">109</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementKeyword">try</span> <span
+				class="TextSegElementOperator">{</span></td>
+		</tr>
+		<tr class="SectionAll">
+			<td class="TextItemNum AlignRight">48</td>
+			<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; MailUtil.sendMail(&quot;<span class="TextSegSigDiff">52935247955</span>@qq.com&quot;,
+				&quot;test&quot;, &quot;普通邮件&quot;);
+			</td>
+			<td class="AlignCenter">&lt;&gt;</td>
+			<td class="TextItemNum AlignRight">110</td>
+			<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; MailUtil.sendMail(&quot;<span class="TextSegSigDiff">xulin.wh</span>@qq.com&quot;,
+				&quot;test&quot;, &quot;普通邮件&quot;);
+			</td>
+		</tr>
+		<tr class="SectionBegin">
+			<td class="TextItemNum AlignRight">49</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span> <span
+				class="TextSegElementKeyword">catch</span> <span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">IOException</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span> <span
+				class="TextSegElementOperator">{</span></td>
+			<td class="AlignCenter">=</td>
+			<td class="TextItemNum AlignRight">111</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span> <span
+				class="TextSegElementKeyword">catch</span> <span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">IOException</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span> <span
+				class="TextSegElementOperator">{</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">50</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; <span class="TextSegElementIdentifier">log</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">error</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">toString</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span>
+			</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">112</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; <span class="TextSegElementIdentifier">log</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">error</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">toString</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span>
+			</td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">51</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span> <span
+				class="TextSegElementKeyword">catch</span> <span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">MessagingException</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span> <span
+				class="TextSegElementOperator">{</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">113</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span> <span
+				class="TextSegElementKeyword">catch</span> <span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">MessagingException</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span> <span
+				class="TextSegElementOperator">{</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">52</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; <span class="TextSegElementIdentifier">log</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">error</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">toString</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span>
+			</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">114</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; <span class="TextSegElementIdentifier">log</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">error</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">toString</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span>
+			</td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">53</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">115</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">54</td>
+			<td class="TextItemSame">&nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">116</td>
+			<td class="TextItemSame">&nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">55</td>
+			<td class="TextItemSame">&nbsp;</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">117</td>
+			<td class="TextItemSame">&nbsp;</td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">56</td>
+			<td class="TextItemSame">&nbsp; &nbsp; @<span
+				class="TextSegElementIdentifier">Test</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">118</td>
+			<td class="TextItemSame">&nbsp; &nbsp; @<span
+				class="TextSegElementIdentifier">Test</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">57</td>
+			<td class="TextItemSame">&nbsp; &nbsp; <span
+				class="TextSegElementKeyword">public</span> <span
+				class="TextSegElementKeyword">void</span> <span
+				class="TextSegElementIdentifier">testMailAndFile</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span> <span
+				class="TextSegElementOperator">{</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">119</td>
+			<td class="TextItemSame">&nbsp; &nbsp; <span
+				class="TextSegElementKeyword">public</span> <span
+				class="TextSegElementKeyword">void</span> <span
+				class="TextSegElementIdentifier">testMailAndFile</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span> <span
+				class="TextSegElementOperator">{</span></td>
+		</tr>
+		<tr class="SectionEnd">
+			<td class="TextItemNum AlignRight">58</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementKeyword">try</span> <span
+				class="TextSegElementOperator">{</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">120</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementKeyword">try</span> <span
+				class="TextSegElementOperator">{</span></td>
+		</tr>
+		<tr class="SectionBegin">
+			<td class="TextItemNum AlignRight">59</td>
+			<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; String filePath = &quot;<span class="TextSegSigDiff">D</span>:/d<span
+				class="TextSegSigDiff">at</span><span class="TextSegSigDiff">.txt</span>&quot;;
+			</td>
+			<td class="AlignCenter">&lt;&gt;</td>
+			<td class="TextItemNum AlignRight">121</td>
+			<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; String filePath = &quot;<span class="TextSegSigDiff">C</span>:/d<span
+				class="TextSegSigDiff">2f42068.ini</span>&quot;;
+			</td>
+		</tr>
+		<tr class="SectionEnd">
+			<td class="TextItemNum AlignRight">60</td>
+			<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; MailUtil.sendMailAndFile(&quot;<span
+				class="TextSegSigDiff">52935247955</span>@qq.com&quot;,
+				&quot;test&quot;, filePath,
+			</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">122</td>
+			<td class="TextItemSigDiffMod">&nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; MailUtil.sendMailAndFile(&quot;<span
+				class="TextSegSigDiff">xulin.wh</span>@qq.com&quot;,
+				&quot;test&quot;, filePath,
+			</td>
+		</tr>
+		<tr class="SectionBegin">
+			<td class="TextItemNum AlignRight">61</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementString">&quot;ted&quot;</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span>
+			</td>
+			<td class="AlignCenter">=</td>
+			<td class="TextItemNum AlignRight">123</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementString">&quot;ted&quot;</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span>
+			</td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">62</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span> <span
+				class="TextSegElementKeyword">catch</span> <span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">IOException</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span> <span
+				class="TextSegElementOperator">{</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">124</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span> <span
+				class="TextSegElementKeyword">catch</span> <span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">IOException</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span> <span
+				class="TextSegElementOperator">{</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">63</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; <span class="TextSegElementIdentifier">log</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">error</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">toString</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span>
+			</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">125</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; <span class="TextSegElementIdentifier">log</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">error</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">toString</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span>
+			</td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">64</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span> <span
+				class="TextSegElementKeyword">catch</span> <span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">MessagingException</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span> <span
+				class="TextSegElementOperator">{</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">126</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span> <span
+				class="TextSegElementKeyword">catch</span> <span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">MessagingException</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span> <span
+				class="TextSegElementOperator">{</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">65</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; <span class="TextSegElementIdentifier">log</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">error</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">toString</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span>
+			</td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">127</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				&nbsp; <span class="TextSegElementIdentifier">log</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">error</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">.</span><span
+				class="TextSegElementIdentifier">toString</span><span
+				class="TextSegElementOperator">(</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">,</span> <span
+				class="TextSegElementIdentifier">e</span><span
+				class="TextSegElementOperator">)</span><span
+				class="TextSegElementOperator">;</span>
+			</td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">66</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">128</td>
+			<td class="TextItemSame">&nbsp; &nbsp; &nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span></td>
+		</tr>
+		<tr class="SectionMiddle">
+			<td class="TextItemNum AlignRight">67</td>
+			<td class="TextItemSame">&nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">129</td>
+			<td class="TextItemSame">&nbsp; &nbsp; <span
+				class="TextSegElementOperator">}</span></td>
+		</tr>
+		<tr class="SectionEnd">
+			<td class="TextItemNum AlignRight">68</td>
+			<td class="TextItemSame"><span class="TextSegElementOperator">}</span></td>
+			<td class="AlignCenter">&nbsp;</td>
+			<td class="TextItemNum AlignRight">130</td>
+			<td class="TextItemSame"><span class="TextSegElementOperator">}</span></td>
+		</tr>
+	</table>
+	<br />
+</body>
+</html>
