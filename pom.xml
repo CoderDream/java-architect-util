@@ -10,6 +10,7 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>junit5-practice</module>
+    <module>javamail-practice</module>
   </modules>
 
   <name>Maven</name>
