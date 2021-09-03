@@ -45,6 +45,12 @@
 
 ## 项目4：spring-javamail-practice
 
+
+
+ ![](https://raw.githubusercontent.com/CoderDream/java-architect-util/main/images/mailwithpicture.jpg)
+
+
+
 ###  参考文档
 
 - [使用Spring JavaMailSender发送邮件](https://www.jianshu.com/p/ef7c24dde787)
