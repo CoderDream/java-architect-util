@@ -12,6 +12,7 @@
     <module>junit5-practice</module>
     <module>javamail-practice</module>
     <module>poi-practice</module>
+      <module>spring-javamail-practice</module>
   </modules>
 
   <name>Maven</name>

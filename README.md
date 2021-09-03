@@ -29,6 +29,8 @@
 
 - [FreeMarker 快速入门](https://www.cnblogs.com/itdragon/p/7750903.html)
 
+- [邮件实现详解（四）------JavaMail 发送（带图片和附件）和接收邮件](https://www.cnblogs.com/ysocean/p/7666061.html)
+
   
 
 ## 项目3：poi-practice
@@ -38,6 +40,18 @@
 - [进行Junit测试时 从 Resources读取文件](https://blog.csdn.net/weixin_40040107/article/details/90679413)
 - [JAVA实现POI对excel操作，超方便实用【实践代码】](https://www.jianshu.com/p/d63571a8195c)
 - [JAVA POI报错：org.openxmlformats.schemas.wordprocessingml.x2006.main.impl.CTRImpl.getXmlObjectArray](https://blog.csdn.net/u011781521/article/details/116260483)
+
+
+
+## 项目4：spring-javamail-practice
+
+###  参考文档
+
+- [使用Spring JavaMailSender发送邮件](https://www.jianshu.com/p/ef7c24dde787)
+
+  
+
+
 
 
 
