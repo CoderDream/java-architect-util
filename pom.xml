@@ -13,6 +13,7 @@
     <module>javamail-practice</module>
     <module>poi-practice</module>
       <module>spring-javamail-practice</module>
+      <module>java8-demo</module>
   </modules>
 
   <name>Maven</name>
