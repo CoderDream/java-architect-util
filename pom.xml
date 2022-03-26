@@ -15,7 +15,7 @@
         <module>spring-javamail-practice</module>
         <module>java8-demo</module>
         <module>spring-boot-jpa</module>
-        <module>SpringBootBase</module>
+        <module>spring-boot-docker</module>
     </modules>
 
     <name>Maven</name>
