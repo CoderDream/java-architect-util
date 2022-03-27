@@ -5,6 +5,7 @@ spring:
     url: jdbc:mysql://localhost:3306/passbook?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
     username: root
     password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
   kafka:
     bootstrap-servers: 127.0.0.1:9092
     consumer:
@@ -16,7 +17,7 @@ server:
   port: 9527
 
 logging:
-  level: debug
+  level:
+    root: debug  # 指定日志基本
   file:
-    name: coderdream-merchants.log
-
+    name: coderdream-merchants.log  # 指定日志输出的文件路径
