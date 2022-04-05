@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--书籍抢购记录实体Mapper操作接口BookRobMapper命名空间-->
+<mapper namespace="com.debug.middleware.model.mapper.BookRobMapper" >
+  <!--查询结果集映射-->
+  <resultMap id="BaseResultMap" type="com.debug.middleware.model.entity.BookRob" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="book_no" property="bookNo" jdbcType="VARCHAR" />
+    <result column="rob_time" property="robTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <!--查询的SQL片段-->
+  <sql id="Base_Column_List" >
+    id, user_id, book_no, rob_time
+  </sql>
+  <!--插入抢购记录信息-->
+  <insert id="insertSelective" parameterType="com.debug.middleware.model.entity.BookRob" >
+    insert into book_rob
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="bookNo != null" >
+        book_no,
+      </if>
+      <if test="robTime != null" >
+        rob_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="bookNo != null" >
+        #{bookNo,jdbcType=VARCHAR},
+      </if>
+      <if test="robTime != null" >
+        #{robTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <!--统计每个用户每本书的抢购数量-->
+  <select id="countByBookNoUserId" resultType="java.lang.Integer">
+      SELECT COUNT(id)
+      FROM book_rob WHERE user_id=#{userId} AND book_no=#{bookNo}
+  </select>
+
+</mapper>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--xml版本与命名空间定义-->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--定义所在的命名空间-->
+<mapper namespace="com.debug.middleware.model.mapper.UserAccountMapper" >
+  <!--查询结果集映射-->
+  <resultMap id="BaseResultMap" type="com.debug.middleware.model.entity.UserAccount" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="amount" property="amount" jdbcType="DECIMAL" />
+    <result column="version" property="version" jdbcType="INTEGER" />
+    <result column="is_active" property="isActive" jdbcType="TINYINT" />
+  </resultMap>
+  <!--查询的sql片段-->
+  <sql id="Base_Column_List" >
+    id, user_id, amount, version, is_active
+  </sql>
+  <!--根据主键id查询-->
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from user_account
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <!--根据用户账户id查询记录-->
+  <select id="selectByUserId" resultType="com.debug.middleware.model.entity.UserAccount">
+    SELECT <include refid="Base_Column_List"/>
+    FROM user_account
+    WHERE is_active=1 AND user_id=#{userId}
+  </select>
+
+  <!--根据主键id更新账户余额-->
+  <update id="updateAmount">
+    UPDATE user_account SET amount = amount - #{money}
+    WHERE is_active=1 AND id=#{id}
+  </update>
+  <!--根据主键id跟version更新记录-->
+  <update id="updateByPKVersion">
+    update user_account set amount = amount - #{money},version=version+1
+    where id = #{id} and version=#{version} and amount >0 and (amount - #{money})>=0
+  </update>
+
+  <!--根据用户id查询-用于悲观锁-->
+  <select id="selectByUserIdLock" resultType="com.debug.middleware.model.entity.UserAccount">
+    SELECT <include refid="Base_Column_List"/>
+    FROM user_account
+    WHERE user_id=#{userId} FOR UPDATE
+  </select>
+  <!--根据主键id更新账户余额-悲观锁的方式-->
+  <update id="updateAmountLock">
+    UPDATE user_account SET amount = amount - #{money}
+    WHERE is_active=1 AND id=#{id} and amount >0 and (amount - #{money})>=0
+  </update>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
