@@ -17,3 +17,6 @@
 
 **加分项**
 - 系统性能测试方案以及测试结果
+
+[参考](https://github.com/scdt-china/interview-assignments/pull/645)
+[SpringBoot-集成Swagger3](https://www.csdn.net/tags/OtTaMg2sMzMxMTEtYmxvZwO0O0OO0O0O.html)
