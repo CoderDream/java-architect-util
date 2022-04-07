@@ -24,10 +24,10 @@ public class ResultBuilder {
     }
 
     public static <T> Result<T> buildFailed(String message) {
-        return new Result(false, "fail", message, (Object)null);
+        return new Result(false, "fail", message, (Object) null);
     }
 
     public static <T> Result<T> buildFailed(String code, String message) {
-        return new Result(false, code, message, (Object)null);
+        return new Result(false, code, message, (Object) null);
     }
 }

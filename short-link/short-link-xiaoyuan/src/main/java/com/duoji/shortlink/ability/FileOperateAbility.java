@@ -22,7 +22,6 @@ import java.io.Reader;
 public class FileOperateAbility {
 
     public String readFile(String fileName) {
-
         ClassPathResource classPathResource = new ClassPathResource(fileName);
         InputStream inputStream = null;
         StringBuilder stringBuilder = new StringBuilder();
@@ -52,7 +51,6 @@ public class FileOperateAbility {
     }
 
     public void writeFile(String fileName, String content) {
-
         try {
             String basePath = ResourceUtils.getURL("classpath:").getPath() + "/info/";
             File fileExist = new File(basePath);
@@ -65,14 +63,12 @@ public class FileOperateAbility {
             if (!file.exists()) {
                 file.createNewFile();
             }
-            FileWriter fileWritter = new FileWriter(file);
-            fileWritter.write(content);
-            fileWritter.flush();
-            fileWritter.close();
+            FileWriter fileWriter = new FileWriter(file);
+            fileWriter.write(content);
+            fileWriter.flush();
+            fileWriter.close();
         } catch (Exception e) {
             log.error("writeFile error", e);
         }
     }
-
-
 }

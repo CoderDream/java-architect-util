@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.Resource;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -19,14 +20,13 @@ import java.util.concurrent.TimeUnit;
 @Service
 @Slf4j
 public class GuavaCacheStoreAbility {
-
-    @Autowired
+    @Resource
     private Config config;
 
     private Cache<Object, Object> cache;
 
     @PostConstruct
-    public void init(){
+    public void init() {
         cache = CacheBuilder.newBuilder()
                 //设置并发级别为8，并发级别是指可以同时写缓存的线程数
                 .concurrencyLevel(8)
@@ -53,15 +53,16 @@ public class GuavaCacheStoreAbility {
     /**
      * 获取缓存
      */
-    public  Object get(String key){
-        return StringUtils.isEmpty(key)?null:cache.getIfPresent(key);
+    public Object get(String key) {
+        return StringUtils.isEmpty(key) ? null : cache.getIfPresent(key);
     }
+
     /**
      * 放入缓存
      */
-    public void put(String key,Object value){
-        if(StringUtils.isNotEmpty(key) && value !=null){
-            cache.put(key,value);
+    public void put(String key, Object value) {
+        if (StringUtils.isNotEmpty(key) && value != null) {
+            cache.put(key, value);
         }
     }
 

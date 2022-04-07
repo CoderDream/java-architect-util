@@ -15,6 +15,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -27,7 +28,7 @@ import java.util.List;
 @Slf4j
 public class EmitShortLinkHandler implements ShortLinkHandler {
 
-    @Autowired
+    @Resource
     private Config config;
 
     /**
@@ -35,13 +36,13 @@ public class EmitShortLinkHandler implements ShortLinkHandler {
      */
     private List<NumberGenerator> numberGeneratorList;
 
-    @Autowired
+    @Resource
     private NumberGeneratorAbility numberGeneratorAbility;
 
-    @Autowired
+    @Resource
     private GuavaCacheStoreAbility guavaCacheStoreAbility;
 
-    @Autowired
+    @Resource
     private FileOperateAbility fileOperateAbility;
 
     /**
@@ -54,7 +55,6 @@ public class EmitShortLinkHandler implements ShortLinkHandler {
         numberGeneratorList = numberGeneratorAbility.createCacheQueueNumberGenerator(config.COUNTER_CNT, config.CODE_NUM_MIX, 10L);
         machineId = Long.parseLong(fileOperateAbility.readFile("machineId"));
     }
-
 
     @Override
     public String generateShortLink(String longLink) {

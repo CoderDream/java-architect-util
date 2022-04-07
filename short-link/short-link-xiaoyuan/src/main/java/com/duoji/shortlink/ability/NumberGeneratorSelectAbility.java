@@ -37,7 +37,6 @@ public class NumberGeneratorSelectAbility {
         } finally {
             rwl.readLock().unlock();
         }
-
     }
 
     /**
@@ -59,7 +58,6 @@ public class NumberGeneratorSelectAbility {
         } finally {
             rwl.readLock().unlock();
         }
-
     }
 
     public void removeOneNumberGenerator(List<NumberGenerator> numberGeneratorList, NumberGenerator numberGenerator) {
@@ -70,6 +68,5 @@ public class NumberGeneratorSelectAbility {
         } finally {
             rwl.writeLock().unlock();
         }
-
     }
 }

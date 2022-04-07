@@ -25,7 +25,6 @@ public class ConvertorUtil {
      */
     private static String REGEX = "^[0-9a-zA-Z]+$";
 
-
     /**
      * 十进制数字转为62进制字符串
      *
@@ -33,9 +32,8 @@ public class ConvertorUtil {
      * @param length 输出字符串长度
      * @return 62进制字符串
      */
-    public static String encode10ToScale(long val, int length,int scale)
-    {
-        return StringUtils.leftPad(encode10ToScale(val,62), length, '0');
+    public static String encode10ToScale(long val, int length, int scale) {
+        return StringUtils.leftPad(encode10ToScale(val, 62), length, '0');
     }
 
     /**
@@ -44,16 +42,13 @@ public class ConvertorUtil {
      * @param val 十进制数字
      * @return 62进制字符串
      */
-    public static String encode10ToScale(long val,int SCALE)
-    {
-        if (val < 0)
-        {
+    public static String encode10ToScale(long val, int SCALE) {
+        if (val < 0) {
             throw new IllegalArgumentException("this is an Invalid parameter:" + val);
         }
         StringBuilder sb = new StringBuilder();
         int remainder;
-        while (Math.abs(val) > SCALE - 1)
-        {
+        while (Math.abs(val) > SCALE - 1) {
             //从最后一位开始进制转换，取转换后的值，最后反转字符串
             remainder = Long.valueOf(val % SCALE).intValue();
             sb.append(CHARS.charAt(remainder));
@@ -70,14 +65,11 @@ public class ConvertorUtil {
      * @param val 62进制字符串
      * @return 十进制数字
      */
-    public static long decodeScaleTo10(String val,int SCALE)
-    {
-        if (val == null)
-        {
+    public static long decodeScaleTo10(String val, int SCALE) {
+        if (val == null) {
             throw new NumberFormatException("null");
         }
-        if (!val.matches(REGEX))
-        {
+        if (!val.matches(REGEX)) {
             throw new IllegalArgumentException("this is an Invalid parameter:" + val);
         }
         String tmp = val.replace("^0*", "");
@@ -85,10 +77,9 @@ public class ConvertorUtil {
         long result = 0;
         int index = 0;
         int length = tmp.length();
-        for (int i = 0; i < length; i++)
-        {
+        for (int i = 0; i < length; i++) {
             index = CHARS.indexOf(tmp.charAt(i));
-            result += (long)(index * Math.pow(SCALE, length - i - 1));
+            result += (long) (index * Math.pow(SCALE, length - i - 1));
         }
         return result;
     }

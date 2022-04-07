@@ -12,8 +12,6 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class AutoincrementNumberGenerator extends Counter implements NumberGenerator {
 
-
-
     @Override
     public Long ownId() {
         return id;

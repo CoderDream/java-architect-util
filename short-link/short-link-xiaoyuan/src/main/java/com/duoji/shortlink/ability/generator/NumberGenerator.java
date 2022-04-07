@@ -8,12 +8,14 @@ package com.duoji.shortlink.ability.generator;
 public interface NumberGenerator {
     /**
      * 计数器ID
+     *
      * @return
      */
     Long ownId();
 
     /**
      * 产生的code
+     *
      * @return
      */
     Long generateCode();

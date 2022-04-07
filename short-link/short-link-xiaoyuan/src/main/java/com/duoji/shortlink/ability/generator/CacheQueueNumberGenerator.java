@@ -41,7 +41,7 @@ public class CacheQueueNumberGenerator extends Counter implements NumberGenerato
         Thread thread = new Thread(() -> {
             while (true) {
                 if (this.low >= this.highMax) {
-                    log.error("已用尽号码,停止后台线程,id={},low={},high={},step={},highMax={}", id,low, high, step, highMax);
+                    log.error("已用尽号码,停止后台线程,id={},low={},high={},step={},highMax={}", id, low, high, step, highMax);
                     return;
                 }
                 //如果低水位达到高水位,高水位上移

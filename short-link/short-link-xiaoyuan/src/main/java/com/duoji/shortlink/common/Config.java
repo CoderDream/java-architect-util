@@ -48,7 +48,6 @@ public class Config {
      */
     public Long CODE_NUM_MIX = 1L;
 
-
     /**
      * 计数器个数
      */
@@ -59,7 +58,6 @@ public class Config {
      */
     @Value("${app.config.expireSec}")
     public Long EXPIRE_SEC;
-
 
     @PostConstruct
     public void init() {
@@ -77,7 +75,6 @@ public class Config {
         for (int i = 0; i < COUNTER_BIT; i++) {
             COUNTER_CNT *= REDIX;
         }
-
     }
 
     private void check() {

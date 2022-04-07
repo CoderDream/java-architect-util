@@ -11,11 +11,11 @@ import com.duoji.shortlink.common.ConvertorUtil;
 import com.duoji.shortlink.domain.ShortLinkHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -28,7 +28,7 @@ import java.util.List;
 @Slf4j
 public class CounterShortLinkHandler implements ShortLinkHandler {
 
-    @Autowired
+    @Resource
     private Config config;
 
     /**
@@ -36,16 +36,16 @@ public class CounterShortLinkHandler implements ShortLinkHandler {
      */
     private List<NumberGenerator> numberGeneratorList;
 
-    @Autowired
+    @Resource
     private NumberGeneratorAbility numberGeneratorAbility;
 
-    @Autowired
+    @Resource
     private NumberGeneratorSelectAbility numberGeneratorSelectAbility;
 
-    @Autowired
+    @Resource
     private GuavaCacheStoreAbility guavaCacheStoreAbility;
 
-    @Autowired
+    @Resource
     private FileOperateAbility fileOperateAbility;
 
     /**
