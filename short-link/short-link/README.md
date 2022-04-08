@@ -20,3 +20,7 @@
 
 [参考](https://github.com/scdt-china/interview-assignments/pull/645)
 [SpringBoot-集成Swagger3](https://www.csdn.net/tags/OtTaMg2sMzMxMTEtYmxvZwO0O0OO0O0O.html)
+
+[Guava系列之Cache](https://blog.csdn.net/pzjtian/article/details/106797867)
+[CachesExplained](https://github.com/google/guava/wiki/CachesExplained)
+
