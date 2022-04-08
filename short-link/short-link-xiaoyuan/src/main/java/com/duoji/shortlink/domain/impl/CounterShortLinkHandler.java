@@ -53,13 +53,11 @@ public class CounterShortLinkHandler implements ShortLinkHandler {
      */
     private Long machineId;
 
-
     @PostConstruct
     public void init() {
         numberGeneratorList = numberGeneratorAbility.createAutoincrementNumberGenerator(config.COUNTER_CNT, config.CODE_NUM_MIX, 1000L);
         machineId = Long.parseLong(fileOperateAbility.readFile("machineId"));
     }
-
 
     @Override
     public String generateShortLink(String longLink) {
