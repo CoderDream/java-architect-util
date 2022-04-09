@@ -2,6 +2,7 @@
 ### 参考文档
 1. [SpringBoot-集成Swagger3](https://www.csdn.net/tags/OtTaMg2sMzMxMTEtYmxvZwO0O0OO0O0O.html)
 2. [Java Google Guava](https://geek-docs.com/java/java-tutorial/guava.html#Guava)
+3. [【强力推荐】jacoco代码测试覆盖率实战教学全集，7天从入门到精通【理论+实战 赶紧拿走】](https://www.bilibili.com/video/BV1tr4y1i7f1)
 
 
 
