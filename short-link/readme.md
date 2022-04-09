@@ -1,6 +1,7 @@
 
 ### 参考文档
 1. [SpringBoot-集成Swagger3](https://www.csdn.net/tags/OtTaMg2sMzMxMTEtYmxvZwO0O0OO0O0O.html)
+2. [Java Google Guava](https://geek-docs.com/java/java-tutorial/guava.html#Guava)
 
 
 
