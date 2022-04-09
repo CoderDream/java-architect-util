@@ -24,3 +24,4 @@
 [Guava系列之Cache](https://blog.csdn.net/pzjtian/article/details/106797867)
 [CachesExplained](https://github.com/google/guava/wiki/CachesExplained)
 
+[maven单测生成覆盖率报告---Jacoco的使用](https://www.cnblogs.com/fnlingnzb-learner/p/10637802.html)
