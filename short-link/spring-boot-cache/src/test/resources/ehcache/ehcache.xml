@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../main/resources/config/ehcache.xsd">
+
+    <diskStore path="java.io.tmpdir"/>
+
+    <!--    <defaultCache-->
+    <!--            maxElementsInMemory="10000"-->
+    <!--            eternal="false"-->
+    <!--            timeToIdleSeconds="120"-->
+    <!--            timeToLiveSeconds="120"-->
+    <!--            overflowToDisk="true"-->
+    <!--            maxElementsOnDisk="10000000"-->
+    <!--            diskPersistent="false"-->
+    <!--            diskExpiryThreadIntervalSeconds="120"-->
+    <!--            memoryStoreEvictionPolicy="LRU"-->
+    <!--    />-->
+
+    <!-- 对应类：net.sf.ehcache.config.CacheConfiguration
+		maxEntriesLocalHeap：内存中最多放多少个元素
+		memoryStoreEvictionPolicy：驱除策略，net.sf.ehcache.store.MemoryStoreEvictionPolicy
+		eternal：true：不过期
+		timeToIdleSeconds：eternal="false"时有效，可以闲置多长时间，单位s
+		timeToLiveSeconds：eternal="false"时有效，从创建开始计算可以存活多长时间，单位s
+		maxElementsOnDisk：localTempSwap 时有效，表示最多可以往磁盘写多少个元素
+		diskExpiryThreadIntervalSeconds：localTempSwap 时有效，检查磁盘元素是否失效的时间间隔
+		persistence：当Cache中的元素个数=maxEntriesLocalHeap时，
+			localTempSwap：写到磁盘，其他值：net.sf.ehcache.config.PersistenceConfiguration.Strategy(2.10.6版才有这个类）
+		statistics：true，开启统计
+     -->
+    <cache name="user_cache"
+           maxEntriesLocalHeap="1000"
+           eternal="false"
+           timeToIdleSeconds="600"
+           timeToLiveSeconds="600"
+           maxElementsOnDisk="10000000"
+           diskExpiryThreadIntervalSeconds="120"
+           memoryStoreEvictionPolicy="LRU"
+           statistics="true"
+    >
+        <persistence strategy="localTempSwap"/>
+    </cache>
+
+</ehcache>

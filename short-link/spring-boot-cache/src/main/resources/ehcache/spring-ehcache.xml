@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:cache="http://www.springframework.org/schema/cache"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/cache
+           http://www.springframework.org/schema/cache/spring-cache-4.0.xsd">
+
+    <!-- 相当于 CacheManager cacheManager = CacheManager.create(absPath); -->
+    <bean 
+    	id="ehCacheManager" 
+	class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
+        <property name="configLocation" value="classpath:ehcache/ehcache.xml"/>
+    </bean>
+    <!-- 对原生的 CacheManager 进行包装
+    net.sf.ehcache.CacheManager
+    -->
+    <bean 
+    	id="ehCacheCacheManager" 
+	class="org.springframework.cache.ehcache.EhCacheCacheManager">
+        <property name="cacheManager" ref="ehCacheManager"/>
+        <!-- 事务回滚缓存也回滚 -->
+        <property name="transactionAware" value="true"/>
+    </bean>
+
+<!--    <bean id="concurrentMapCacheManager" class="org.springframework.cache.concurrent.ConcurrentMapCacheManager">-->
+<!--        <property name="cacheNames">-->
+<!--            <list>-->
+<!--                <value>item_cache</value>-->
+<!--                <value>store_cache</value>-->
+<!--            </list>            -->
+<!--        </property>        -->
+<!--    </bean>-->
+
+    <cache:annotation-driven proxy-target-class="true" 
+                           cache-manager="ehCacheCacheManager" />
+
+    <bean class="com.example.demo.jacksondemo.service.impl.UserServiceImpl" />
+<!--    <bean class="com.example.demo.jacksondemo.util.SpringEhCacheUtil" />-->
+</beans>
