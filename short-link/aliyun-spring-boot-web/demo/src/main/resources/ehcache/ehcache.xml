@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ehcache
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://www.ehcache.org/ehcache.xsd">
+
+  <!--
+    path:默认写到磁盘的路径:C:\Users\lenovo\AppData\Local\Temp\
+  -->
+  <diskStore path="java.io.tmpdir"/>
+
+  <!--
+    对应类：net.sf.ehcache.config.CacheConfiguration
+    maxEntriesLocalHeap:内存中最多放多少个元素
+    memoryStoreEvictionPolicy:驱逐策略，net.sf.ehcache.store.MemoryStoreEvictionPolicy.fromString
+    eternal:true:不过期
+    timeToIdleSeconds:eternal=false时有效,可以闲置多长时间,单位s
+    timeToLiveSeconds:eternal=false时有效,从创建开始计算可以存活多长时间,单位s
+    maxElementsOnDisk:localTempSwap时有效,表示最多可以往磁盘写多少个
+    diskExpiryThreadIntervalSeconds:localTempSwap时有效,检查磁盘元素是否失效的时间间隔
+    persistence:当cache中的元素个数=maxEntriesLocalHeap时，
+          localTempSwap:写到磁盘,其他值: net.sf.ehcache.config.PersistenceConfiguration.Strategy
+    statistics:开启统计
+  -->
+  <cache
+      name="user_cache"
+      maxEntriesLocalHeap="1000"
+      eternal="false"
+      timeToIdleSeconds="600"
+      timeToLiveSeconds="600"
+      maxElementsOnDisk="10000000"
+      diskExpiryThreadIntervalSeconds="120"
+      memoryStoreEvictionPolicy="LRU"
+      statistics="true"
+  >
+    <persistence strategy="localTempSwap"/>
+  </cache>
+</ehcache>
