@@ -7,7 +7,11 @@
 5. [下载 jmeter 以及历史版本](https://www.cnblogs.com/yongzhuang/p/12125119.html)
 6. [全网最全最细的jmeter接口测试教程以及接口测试流程详解](https://www.cnblogs.com/csmashang/p/12762177.html)
 7. [jmeter5.2.1教程](https://blog.csdn.net/Alice_whj/article/details/105386987)
-8. 
+8. [Spring Cache一之CacheManager的创建](https://blog.csdn.net/jiachunchun/article/details/90235418)
+9. [SpringBoot2.x—SpringCache（1）集成](https://www.jianshu.com/p/d44b1c0f9df0)
+10. [SpringBoot2.x—SpringCache（2）使用](https://www.jianshu.com/p/2dc8566dd0a3)
+11. [SpringBoot2.x—SpringCache（3） CacheManager源码](https://www.jianshu.com/p/ef8fb285ed72)
+12. [JAVA && Spring && SpringBoot2.x — 学习目录](https://www.jianshu.com/p/67fce672e03e)
 
 
 
