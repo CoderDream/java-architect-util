@@ -13,6 +13,7 @@
 11. [SpringBoot2.x—SpringCache（3） CacheManager源码](https://www.jianshu.com/p/ef8fb285ed72)
 12. [JAVA && Spring && SpringBoot2.x — 学习目录](https://www.jianshu.com/p/67fce672e03e)
 13. [SpringBoot缓存管理（一） 默认缓存管理](https://www.cnblogs.com/blayn/p/14890973.html)
+14. [10进制转62进制 62转10进制](https://blog.csdn.net/qq_33238562/article/details/103184080)
 
 
 
