@@ -1,5 +1,7 @@
 package com.coderdream.interfaces.controller.impl;
 
+import com.coderdream.common.Result;
+import com.coderdream.common.ResultBuilder;
 import com.coderdream.interfaces.controller.LinkController;
 import org.springframework.stereotype.Controller;
 
@@ -20,7 +22,16 @@ import java.util.concurrent.TimeoutException;
 public class LinkControllerImpl implements LinkController {
 
     @Override
-    public String getShortLink() {
-        return "Short Link";
+    public Result<String> getShortLink(String longLink) {
+        String shortLink = "Short Link: " + longLink;
+
+        return ResultBuilder.buildSuccess(shortLink);
+    }
+
+    @Override
+    public Result<String> getLongLink(String shortLink) {
+        String longLink = "Long Link: " + shortLink;
+
+        return ResultBuilder.buildSuccess(longLink);
     }
 }
