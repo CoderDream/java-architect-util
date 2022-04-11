@@ -12,6 +12,7 @@
 10. [SpringBoot2.x—SpringCache（2）使用](https://www.jianshu.com/p/2dc8566dd0a3)
 11. [SpringBoot2.x—SpringCache（3） CacheManager源码](https://www.jianshu.com/p/ef8fb285ed72)
 12. [JAVA && Spring && SpringBoot2.x — 学习目录](https://www.jianshu.com/p/67fce672e03e)
+13. [SpringBoot缓存管理（一） 默认缓存管理](https://www.cnblogs.com/blayn/p/14890973.html)
 
 
 
