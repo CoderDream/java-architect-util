@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:cache="http://www.springframework.org/schema/cache"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/cache
+           http://www.springframework.org/schema/cache/spring-cache-4.0.xsd">
+
+    <bean id="guavaCacheCacheManager"
+          class="com.coderdream.guava.GuavaCacheCacheManager"/>
+
+    <bean id="myKeyGenerator"
+          class="com.coderdream.key.MyKeyGenerator"/>
+
+    <!--跟org.springframework.cache.annotation.EnableCaching一样-->
+    <cache:annotation-driven proxy-target-class="true"
+                             cache-manager="guavaCacheCacheManager"
+                             key-generator="myKeyGenerator"/>
+
+    <bean class="com.coderdream.service.impl.UserServiceImpl"/>
+</beans>

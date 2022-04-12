@@ -1,15 +1,13 @@
-package com.coderdream.interfaces.controller.impl;
+package com.coderdream.controller.impl;
 
 import com.coderdream.common.Result;
 import com.coderdream.common.ResultBuilder;
-import com.coderdream.interfaces.controller.LinkController;
+import com.coderdream.controller.LinkController;
+import com.coderdream.service.UserService;
+import org.springframework.cache.CacheManager;
 import org.springframework.stereotype.Controller;
 
-import javax.xml.ws.Response;
-import java.util.Map;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
+import javax.annotation.Resource;
 
 /**
  * @author ：CoderDream
@@ -20,6 +18,11 @@ import java.util.concurrent.TimeoutException;
  */
 @Controller
 public class LinkControllerImpl implements LinkController {
+    @Resource
+    private CacheManager cacheManager;
+
+    @Resource
+    private UserService userService;
 
     @Override
     public Result<String> getShortLink(String longLink) {

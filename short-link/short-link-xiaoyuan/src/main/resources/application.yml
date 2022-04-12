@@ -5,7 +5,7 @@ spring:
 
   # 应用服务 WEB 访问端口
 server:
-  port: 8080
+  port: 8089
 
 # ===== 自定义swagger配置 ===== #
 swagger:
