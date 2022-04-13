@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--书籍库存实体Mapper操作接口BookStockMapper命名空间-->
+<mapper namespace="com.debug.middleware.model.mapper.BookStockMapper" >
+  <!--查询结果集映射-->
+  <resultMap id="BaseResultMap" type="com.debug.middleware.model.entity.BookStock" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="book_no" property="bookNo" jdbcType="VARCHAR" />
+    <result column="stock" property="stock" jdbcType="INTEGER" />
+    <result column="is_active" property="isActive" jdbcType="TINYINT" />
+  </resultMap>
+  <!--查询的SQL片段-->
+  <sql id="Base_Column_List" >
+    id, book_no, stock, is_active
+  </sql>
+
+  <!--根据书籍编号查询记录-->
+  <select id="selectByBookNo" resultType="com.debug.middleware.model.entity.BookStock">
+    SELECT <include refid="Base_Column_List"/>
+    FROM book_stock
+    WHERE is_active=1 AND book_no=#{bookNo}
+  </select>
+
+  <!--更新库存-->
+  <update id="updateStock">
+    UPDATE book_stock SET stock = stock - 1
+    WHERE is_active=1 AND book_no=#{bookNo}
+  </update>
+
+  <!--更新库存-加了锁-->
+  <update id="updateStockWithLock">
+    update book_stock SET stock = stock - 1
+    where is_active=1 AND book_no=#{bookNo} and stock > 0 and (stock - 1)>=0
+  </update>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

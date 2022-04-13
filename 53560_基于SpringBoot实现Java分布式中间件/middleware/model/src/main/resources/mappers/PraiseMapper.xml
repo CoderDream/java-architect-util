@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--点赞实体操作Mapper所在的命名空间-->
+<mapper namespace="com.debug.middleware.model.mapper.PraiseMapper" >
+  <!--查询结果集映射-->
+  <resultMap id="BaseResultMap" type="com.debug.middleware.model.entity.Praise" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="blog_id" property="blogId" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="praise_time" property="praiseTime" jdbcType="TIMESTAMP" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="is_active" property="isActive" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <!--查询片段-->
+  <sql id="Base_Column_List" >
+    id, blog_id, user_id, praise_time, status, is_active, create_time,
+    update_time
+  </sql>
+  <!--插入用户点赞记录-->
+  <insert id="insertSelective" useGeneratedKeys="true" keyProperty="id" parameterType="com.debug.middleware.model.entity.Praise" >
+    insert into praise
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="blogId != null" >
+        blog_id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="praiseTime != null" >
+        praise_time,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="isActive != null" >
+        is_active,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="blogId != null" >
+        #{blogId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="praiseTime != null" >
+        #{praiseTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="isActive != null" >
+        #{isActive,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <!--根据博客id-用户id查询点赞记录-->
+  <select id="selectByBlogUserId" resultType="com.debug.middleware.model.entity.Praise">
+    SELECT <include refid="Base_Column_List"/>
+    FROM praise
+    WHERE is_active = 1 AND status = 1 AND blog_id=#{blogId} AND user_id = #{uId}
+  </select>
+  <!--根据博客id查询点赞数-->
+  <select id="countByBlogId" resultType="java.lang.Integer">
+    SELECT COUNT(id) AS total
+    FROM praise
+    WHERE is_active = 1 AND status = 1 AND blog_id=#{blogId}
+  </select>
+  <!--取消点赞博客-->
+  <update id="cancelPraiseBlog">
+    UPDATE praise SET status=0 WHERE is_active = 1 AND status = 1
+    AND blog_id=#{blogId} AND user_id = #{uId}
+  </update>
+
+  <!--获取博客点赞总数排行榜-->
+  <select id="getPraiseRank" resultType="com.debug.middleware.model.dto.PraiseRankDto">
+    SELECT
+      blog_id   AS blogId,
+      count(id) AS total
+    FROM praise
+    WHERE is_active = 1 AND status = 1
+    GROUP BY blog_id
+    ORDER BY total DESC
+  </select>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

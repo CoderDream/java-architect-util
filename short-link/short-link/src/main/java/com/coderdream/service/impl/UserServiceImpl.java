@@ -1,25 +1,65 @@
 package com.coderdream.service.impl;
 
-import com.coderdream.bean.Link;
 import com.coderdream.bean.User;
 import com.coderdream.service.UserService;
+import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 /**
  */
 @Service
 @CacheConfig(cacheNames = {"user_cache"})
+//@ContextConfiguration(value = {"classpath:guava/spring-guava-cache.xml"})
 public class UserServiceImpl implements UserService {
+    @Resource
+    private CacheManager cacheManager;
+
+    @Resource
+    UserService userService;
+
     @Override
     @Cacheable
     public String putLink(String longLink) {
+
+                /*
+        拿到
+         com.roadjava.cache.guava.GuavaCacheCacheManager
+        就可以就行编程式的缓存api使用了
+         */
+        System.out.println(cacheManager.getClass());
+        /*
+         * 注解式使用
+         */
+        User user = userService.getById(333L);
+        System.out.println(user);
+        System.out.println(userService.getById(333L));
+        System.out.println(userService.getById(333L));
+
         return null;
     }
 
     @Override
     public String getLink(String shortLink) {
+                /*
+        拿到
+         com.roadjava.cache.guava.GuavaCacheCacheManager
+        就可以就行编程式的缓存api使用了
+         */
+        System.out.println(cacheManager.getClass());
+        /*
+         * 注解式使用
+         */
+        User user = userService.getById(333L);
+        System.out.println(user);
+        System.out.println(userService.getById(333L));
+        System.out.println(userService.getById(333L));
+
+
+
         return null;
     }
 

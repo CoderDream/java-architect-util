@@ -24,7 +24,7 @@ import java.util.List;
  * @createTime 2021年12月17日 20:52:00
  */
 @Service
-@ConditionalOnProperty(name = "app.model",havingValue = "counter")
+@ConditionalOnProperty(name = "app.model", havingValue = "counter")
 @Slf4j
 public class CounterShortLinkHandler implements ShortLinkHandler {
 

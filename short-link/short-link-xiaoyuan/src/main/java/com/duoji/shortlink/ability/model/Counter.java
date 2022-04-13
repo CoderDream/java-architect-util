@@ -20,6 +20,7 @@ public class Counter {
      * 当前计数的低位
      */
     protected Long low;
+
     /**
      * 当前计数的高位
      */
