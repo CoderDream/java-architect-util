@@ -16,6 +16,13 @@
 14. [10进制转62进制 62转10进制](https://blog.csdn.net/qq_33238562/article/details/103184080)
 15. [Java实现布隆过滤器(已爬URL过滤)](https://blog.csdn.net/woaigaolaoshi/article/details/51283212)
 16. [JAVA布隆过滤器的使用BloomFilter](https://blog.csdn.net/codeissodifficulty/article/details/93980291)
+17. [SpringBoot使用Guava做内存缓存](https://www.jianshu.com/p/b859780c1112)
+18. [Guava Cache本地缓存在 Spring Boot应用中的实践](https://www.jianshu.com/p/921c588289c7)
+19. [SpringBoot 缓存 Caffeine使用](https://blog.csdn.net/qq_33697094/article/details/114968105)
+20. [SpringBoot使用内存高性能缓存Caffeine详解](https://blog.51cto.com/u_15067230/2573526)
+21. [springboot学习(十一)：缓存Guava的使用](https://blog.csdn.net/sinat_36553913/article/details/85837164)
+22. [SpringBoot系列之缓存使用教程 ](https://www.cnblogs.com/mzq123/p/12629142.html)
+23. [springboot Caffeine 详解（一篇就明白）](https://blog.csdn.net/dgh112233/article/details/119009366)
 
 
 
