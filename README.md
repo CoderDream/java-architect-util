@@ -72,6 +72,8 @@
 
 - [IDEA如何设置author头注解](https://blog.csdn.net/weixin_42555514/article/details/106826894)
 - [Intellij Idea自动添加注释的方法](https://www.jianshu.com/p/09139b425cc3)
+- [使用notepad++批量在每行首尾添加内容](https://blog.csdn.net/lk142500/article/details/83119029)
+
 
 
 
