@@ -67,3 +67,16 @@ public BigDecimal rob(Integer userId, String redId) throws Exception {
     return null;
 }
 ```
+
+
+
+### 二倍均值法生成红包
+
+```
+剩余总金额M	剩余总人数N	（N-1）是否大于0	随机区间（0，M/N*2）	随机金额R	剩余总金额（M=M-R）	此时总人数（N=N-1)
+100	5	4	40	38	62	4
+62	4	3	31	25	37	3
+37	3	2	24.66666667	20	17	2
+17	2	1	17	15	2	1
+
+```
