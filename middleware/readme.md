@@ -1,3 +1,11 @@
+### RabbitMQ
+1. [erlang下载](https://github.com/erlang/otp/releases/tag/OTP-24.3.3)
+2. [RabbitMQ下载页面](https://www.rabbitmq.com/install-windows.html)
+3. [rabbitmq-server-3.9.15 下载地址](https://github.com/rabbitmq/rabbitmq-server/releases/download/v3.9.15/rabbitmq-server-3.9.15.exe)
+4. [Win10 安装rabbitMQ详细步骤](https://blog.csdn.net/qq_39915083/article/details/107034747)
+
+
+
 
 1. [已解决：com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException](https://blog.csdn.net/ray2580/article/details/106863659)
 
