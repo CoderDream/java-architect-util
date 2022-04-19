@@ -1,6 +1,4 @@
-package com.coderdream.middleware.server.event;/**
- * Created by Administrator on 2019/3/29.
- */
+package com.coderdream.middleware.server.event;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
