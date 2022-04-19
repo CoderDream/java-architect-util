@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "77245e00-da1b-4ffd-9556-74181b7bdeaa",
+		"name": "2022-middleware",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ch02",
+			"item": [
+				{
+					"name": "book-info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8087/middleware/book/info?bookNo=10010&bookName=分布式中间件技术入门与实战",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"middleware",
+								"book",
+								"info"
+							],
+							"query": [
+								{
+									"key": "bookNo",
+									"value": "10010"
+								},
+								{
+									"key": "bookName",
+									"value": "分布式中间件技术入门与实战"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ch03",
+			"item": [
+				{
+					"name": "item-info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8087/middleware/cache/pass/item/info?itemCode=book_10012",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"middleware",
+								"cache",
+								"pass",
+								"item",
+								"info"
+							],
+							"query": [
+								{
+									"key": "bookName",
+									"value": "分布式中间件技术入门与实战",
+									"disabled": true
+								},
+								{
+									"key": "itemCode",
+									"value": "book_10012"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ch04",
+			"item": [
+				{
+					"name": "send",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 10010,\r\n    \"total\": 10,\r\n    \"amount\": 1000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/middleware/red/packet/hand/out",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"middleware",
+								"red",
+								"packet",
+								"hand",
+								"out"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rob",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 10010,\r\n    \"total\": 10,\r\n    \"amount\": 1000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/middleware/red/packet/hand/out",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"middleware",
+								"red",
+								"packet",
+								"hand",
+								"out"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "New Folder Copy",
+			"item": []
+		}
+	]
+}
