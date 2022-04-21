@@ -12,6 +12,11 @@
 1. [已解决：com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException](https://blog.csdn.net/ray2580/article/details/106863659)
 
 
+### JMeter
+1.[Jmeter发送Json请求](https://www.cnblogs.com/testway/p/9448851.html)
+1.[jmeter之发送json数据的post请求](https://www.jianshu.com/p/20fac18f478f)
+
+
 ### 抢红包-加分布式锁
 
 ```java
