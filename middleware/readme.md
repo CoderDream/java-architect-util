@@ -13,8 +13,11 @@
 
 
 ### JMeter
-1.[Jmeter发送Json请求](https://www.cnblogs.com/testway/p/9448851.html)
-1.[jmeter之发送json数据的post请求](https://www.jianshu.com/p/20fac18f478f)
+1. [Jmeter发送Json请求](https://www.cnblogs.com/testway/p/9448851.html)
+2. [jmeter之发送json数据的post请求](https://www.jianshu.com/p/20fac18f478f)
+3. [jmeter将上一个接口返回值作为下一个接口的请求参数](https://blog.csdn.net/steven_ing/article/details/119890198)
+4. [jmeter json提取器的用法(上一个接口返回值作为下一个接口的请求参数)](https://blog.csdn.net/qq_20737561/article/details/122146747)
+
 
 
 ### 抢红包-加分布式锁
