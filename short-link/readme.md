@@ -34,6 +34,7 @@
 4. [高性能短链设计](https://mp.weixin.qq.com/s/YTrBaERcyjvw7A0Fg2Iegw)
 5. [【原创】这可能是东半球最接地气的短链接系统设计 ](https://www.cnblogs.com/rjzheng/p/11827426.html)
 6. [JAVA布隆过滤器的使用BloomFilter](https://blog.csdn.net/codeissodifficulty/article/details/93980291)
+7. [MurmurHash算法简单介绍](https://www.cnblogs.com/strongmore/p/14493705.html)
 
 
 
