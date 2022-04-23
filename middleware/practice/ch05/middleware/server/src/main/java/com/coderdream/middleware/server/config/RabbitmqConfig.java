@@ -134,8 +134,6 @@ public class RabbitmqConfig {
         return BindingBuilder.bind(objectQueue()).to(objectExchange()).with(env.getProperty("mq.object.info.routing.key.name"));
     }
 
-
-
     /**创建消息模型-fanoutExchange **/
 
     //创建队列1
@@ -167,7 +165,6 @@ public class RabbitmqConfig {
     public Binding fanoutBindingTwo(){
         return BindingBuilder.bind(fanoutQueueTwo()).to(fanoutExchange());
     }
-
 
     /**创建消息模型-directExchange **/
 
@@ -201,7 +198,6 @@ public class RabbitmqConfig {
         return BindingBuilder.bind(directQueueTwo()).to(directExchange()).with(env.getProperty("mq.direct.routing.key.two.name"));
     }
 
-
     /**创建消息模型-topicExchange **/
 
     //创建交换机-topicExchange
@@ -233,10 +229,6 @@ public class RabbitmqConfig {
     public Binding topicBindingTwo(){
         return BindingBuilder.bind(topicQueueTwo()).to(topicExchange()).with(env.getProperty("mq.topic.routing.key.two.name"));
     }
-
-
-
-
 
     /**创建自动确认消费消息模型 **/
 
