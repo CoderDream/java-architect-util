@@ -1,8 +1,4 @@
-[2022-04-19 22:55:48.846] - 11344 信息 [main] --- org.apache.catalina.core.StandardService: Starting service [Tomcat]
-[2022-04-19 22:55:48.846] - 11344 信息 [main] --- org.apache.catalina.core.StandardEngine: Starting Servlet Engine: Apache Tomcat/8.5.16
-[2022-04-19 22:55:48.934] - 11344 信息 [localhost-startStop-1] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/middleware]: Initializing Spring embedded WebApplicationContext
-[2022-04-19 22:55:49.522] - 11344 信息 [main] --- org.apache.catalina.core.StandardService: Stopping service [Tomcat]
-[2022-04-19 22:55:49.536] - 11344 警告 [localhost-startStop-1] --- org.apache.catalina.loader.WebappClassLoaderBase: The web application [middleware] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.lang.Object.wait(Native Method)
- java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
- com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+[2022-04-21 22:20:26.624] - 19228 信息 [main] --- org.apache.catalina.core.StandardService: Starting service [Tomcat]
+[2022-04-21 22:20:26.631] - 19228 信息 [main] --- org.apache.catalina.core.StandardEngine: Starting Servlet Engine: Apache Tomcat/8.5.16
+[2022-04-21 22:20:26.881] - 19228 信息 [localhost-startStop-1] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/middleware]: Initializing Spring embedded WebApplicationContext
+[2022-04-21 22:23:46.778] - 19228 信息 [http-nio-8087-exec-1] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/middleware]: Initializing Spring FrameworkServlet 'dispatcherServlet'
