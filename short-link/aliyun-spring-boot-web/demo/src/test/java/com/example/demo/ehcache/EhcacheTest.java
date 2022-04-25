@@ -21,6 +21,7 @@ public class EhcacheTest {
         System.out.println(Class.class.getClass().getResource("/").getPath());
         System.out.println(System.getProperty("user.dir") );
     }
+
     /**
      * 单独使用ehcache的api进行编程
      */
