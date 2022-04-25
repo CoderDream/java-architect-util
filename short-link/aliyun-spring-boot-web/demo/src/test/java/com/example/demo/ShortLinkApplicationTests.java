@@ -42,8 +42,6 @@ class ShortLinkApplicationTests {
             String originalUrl = LONG_LINK + num1 + "wnn" + num2 + ".net" + num3;
             String shortLinkCode = shortLinkComponent.createShortLinkCode(originalUrl);
             log.info("originalUrl:" + originalUrl + ", shortLinkCode: " + shortLinkCode);
-
         }
-
     }
 }
