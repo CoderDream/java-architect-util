@@ -25,6 +25,7 @@
 23. [springboot Caffeine 详解（一篇就明白）](https://blog.csdn.net/dgh112233/article/details/119009366)
 24. [Guava Cache用法介绍](https://www.cnblogs.com/fnlingnzb-learner/p/11022152.html)
 25. [Guava缓存详解及使用](https://blog.csdn.net/why_still_confused/article/details/107138230)
+26. [SpringBoot&Guava缓存（多个示例）](https://github.com/zheng-zy/spring-boot-redis-guava-caffeine-cache)
 
 
 
