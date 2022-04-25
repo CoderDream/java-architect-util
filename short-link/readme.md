@@ -23,6 +23,9 @@
 21. [springboot学习(十一)：缓存Guava的使用](https://blog.csdn.net/sinat_36553913/article/details/85837164)
 22. [SpringBoot系列之缓存使用教程 ](https://www.cnblogs.com/mzq123/p/12629142.html)
 23. [springboot Caffeine 详解（一篇就明白）](https://blog.csdn.net/dgh112233/article/details/119009366)
+24. [Guava Cache用法介绍](https://www.cnblogs.com/fnlingnzb-learner/p/11022152.html)
+25. [Guava缓存详解及使用](https://blog.csdn.net/why_still_confused/article/details/107138230)
+26. [SpringBoot&Guava缓存（多个示例）](https://github.com/zheng-zy/spring-boot-redis-guava-caffeine-cache)
 
 
 
