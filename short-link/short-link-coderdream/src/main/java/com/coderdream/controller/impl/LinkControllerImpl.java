@@ -33,7 +33,7 @@ public class LinkControllerImpl implements LinkController {
 
     @Override
     public Result<String> getLongLink(String shortLink) {
-        String longLink = "Long Link: " + shortLink;
+        String longLink = linkService.getLongLink(shortLink);
 
         return ResultBuilder.buildSuccess(longLink);
     }
