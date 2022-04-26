@@ -34,7 +34,7 @@ public class GuavaCacheHelper {
                 //设置缓存容器的初始容量为10
                 .initialCapacity(10)
                 //设置缓存最大容量为100，超过100之后就会按照LRU最近最少使用算法来移除缓存项，生产环境可设置为 100000000
-                .maximumSize(10000)
+                .maximumSize(100000000)
                 //是否需要统计缓存情况，该操作消耗一定的性能，生产环境应该去除
                 .recordStats()
                 //设置写缓存后n秒钟过期
