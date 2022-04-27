@@ -5,7 +5,6 @@ import com.coderdream.common.ResultBuilder;
 import com.coderdream.controller.LinkController;
 import com.coderdream.service.LinkService;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.cache.CacheManager;
 import org.springframework.stereotype.Controller;
 
 import javax.annotation.Resource;
@@ -19,9 +18,6 @@ import javax.annotation.Resource;
  */
 @Controller
 public class LinkControllerImpl implements LinkController {
-//    @Resource
-//    private CacheManager cacheManager;
-
     @Resource
     private LinkService linkService;
 
