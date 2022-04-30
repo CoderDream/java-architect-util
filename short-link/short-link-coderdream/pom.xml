@@ -73,10 +73,11 @@
                 <version>${jacoco.version}</version>
                 <configuration>
                     <excludes>
-                        <exclude>**/model/**</exclude>
+                        <exclude>**/bean/**</exclude>
                         <exclude>**/controller/**</exclude>
                         <exclude>**/domain/impl/CounterShortLinkHandler.*</exclude>
-                        <exclude>**/common/Config.*</exclude>
+                        <exclude>**/utils/Config.*</exclude>
+                        <exclude>**/utils/Constants.*</exclude>
                         <exclude>**/common/Result.*</exclude>
                     </excludes>
                 </configuration>

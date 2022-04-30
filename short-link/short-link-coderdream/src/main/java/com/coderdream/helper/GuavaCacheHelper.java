@@ -64,6 +64,8 @@ public class GuavaCacheHelper {
     public void put(String key, Object value) {
         if (StringUtils.isNotEmpty(key) && value != null) {
             cache.put(key, value);
+        } else {
+            return;
         }
     }
 

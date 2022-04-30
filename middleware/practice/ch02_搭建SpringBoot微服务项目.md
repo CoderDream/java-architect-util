@@ -13,3 +13,6 @@ http://localhost:8087/middleware/book/info?bookNo=10010&bookName=分布式中间
 ### Postman 调用结果
 
  ![image-20220417103856463](images\image-20220417103856463.png)
+
+
+
