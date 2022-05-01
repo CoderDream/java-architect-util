@@ -9,14 +9,15 @@ package com.coderdream.utils;
  */
 public enum  DuplicatedEnum {
     /**
-     * DUPLICATED
+     * 为了演示： 把key定义为D，实际过程中定义为： DUPLICATED
      */
-    DUPLICATED("DUPLICATED"),
+    DUPLICATED("D"),
 
     /**
+     * 把key定义为O，实际过程中定义为： OH_MY_GOD
      * oh_my_god
      */
-    OHMYGOD("OHMYGOD");
+    OH_MY_GOD("O");
 
     private String key;
 

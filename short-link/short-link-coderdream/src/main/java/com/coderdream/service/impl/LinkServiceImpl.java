@@ -65,7 +65,7 @@ public class LinkServiceImpl implements LinkService {
                     String newLongLink = "";
                     // 第一轮新code、新link
                     if (!oldLongLink.startsWith(DuplicatedEnum.DUPLICATED.getKey()) && !oldLongLink.startsWith(
-                            DuplicatedEnum.OHMYGOD.getKey())) {
+                            DuplicatedEnum.OH_MY_GOD.getKey())) {
                         if (!oldLongLink.startsWith(DuplicatedEnum.DUPLICATED.getKey())) {
                             // code加上枚举前缀后Hash
                             code = shortLinkComponent.createShortLinkCode(DuplicatedEnum.DUPLICATED.getKey() + "_" + code);
@@ -74,8 +74,8 @@ public class LinkServiceImpl implements LinkService {
                                     + " ; new link: " + newLongLink);
                         } else {
                             code = shortLinkComponent.createShortLinkCode(
-                                    DuplicatedEnum.OHMYGOD.getKey() + "_" + code);
-                            newLongLink = DuplicatedEnum.OHMYGOD.getKey() + "_" + longLink;
+                                    DuplicatedEnum.OH_MY_GOD.getKey() + "_" + code);
+                            newLongLink = DuplicatedEnum.OH_MY_GOD.getKey() + "_" + longLink;
                             log.error("Hash第二次冲突解决： new code: " + code + "; old link: " + oldShortLinkBean.getLongLink()
                                     + " ; new link: " + newLongLink);
                         }
@@ -107,14 +107,14 @@ public class LinkServiceImpl implements LinkService {
         String longLink = shortLinkBean.getLongLink();
         // 如果不存在Hash冲突标记，则直接返回长链接
         if (!longLink.startsWith(DuplicatedEnum.DUPLICATED.getKey()) && !longLink.startsWith(
-                DuplicatedEnum.OHMYGOD.getKey())) {
+                DuplicatedEnum.OH_MY_GOD.getKey())) {
             return longLink;
         }
         // 否则去掉冲突标记后再返回
         else {
             log.warn("去掉冲突标记后再返回：" + longLink);
             longLink = longLink.replace(DuplicatedEnum.DUPLICATED + "_", "");
-            longLink = longLink.replace(DuplicatedEnum.OHMYGOD + "_", "");
+            longLink = longLink.replace(DuplicatedEnum.OH_MY_GOD + "_", "");
         }
         return longLink;
     }
