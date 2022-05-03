@@ -30,28 +30,24 @@ public class LinkServiceImpl implements LinkService {
     @Override
     public String getShortLink(String longLink) {
         String code = shortLinkComponent.createShortLinkCode(longLink);
-
+        if("2gEw1A".equals(code)) {
+            System.out.println("break");
+        }
         ShortLinkBean shortLinkBean = new ShortLinkBean();
         shortLinkBean.setShortLink(code);
         shortLinkBean.setLongLink(longLink);
         shortLinkBean.setExpireTime(System.currentTimeMillis() + config.EXPIRE_SEC * 1000);
-        // 通过布隆过滤器判断：如果不存在（100%正确），则直接放入缓存中
-        if (!bloomFilterHelper.mightContain(code)) {
-            guavaCacheHelper.put(code, shortLinkBean);
-            // 把短链接放入布隆过滤器
-            bloomFilterHelper.put(code);
-        }
         // 如果存在（可能误判）
-        else {
+        if (bloomFilterHelper.mightContain(code)) {
             // 从缓存中取对象
             ShortLinkBean oldShortLinkBean = (ShortLinkBean) guavaCacheHelper.get(code);
+
             // 如果不存在误判为存在，则直接将新的数据写入缓存中
             if (oldShortLinkBean == null) {
                 guavaCacheHelper.put(code, shortLinkBean);
                 // 把短链接放入布隆过滤器
                 bloomFilterHelper.put(code);
-                log.error("布隆过滤器误判： new code: " + code + "; old link: " + oldShortLinkBean.getLongLink()
-                        + " ; new link: " + longLink);
+                log.error("布隆过滤器误判： new code: " + code + " ; new link: " + longLink);
             }
             // 如果确实存在
             else {
@@ -96,6 +92,12 @@ public class LinkServiceImpl implements LinkService {
                 }
             }
         }
+        // 通过布隆过滤器判断：如果不存在（100%正确），则直接放入缓存中
+        else {
+            guavaCacheHelper.put(code, shortLinkBean);
+            // 把短链接放入布隆过滤器
+            bloomFilterHelper.put(code);
+        }
 
         return code;
     }
@@ -113,8 +115,8 @@ public class LinkServiceImpl implements LinkService {
         // 否则去掉冲突标记后再返回
         else {
             log.warn("去掉冲突标记后再返回：" + longLink);
-            longLink = longLink.replace(DuplicatedEnum.DUPLICATED + "_", "");
-            longLink = longLink.replace(DuplicatedEnum.OH_MY_GOD + "_", "");
+            longLink = longLink.replace(DuplicatedEnum.DUPLICATED.getKey() + "_", "");
+            longLink = longLink.replace(DuplicatedEnum.OH_MY_GOD.getKey() + "_", "");
         }
         return longLink;
     }

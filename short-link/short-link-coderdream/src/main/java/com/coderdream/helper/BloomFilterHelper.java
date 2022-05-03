@@ -4,16 +4,6 @@ package com.coderdream.helper;
 import com.coderdream.utils.Constants;
 import com.google.common.hash.BloomFilter;
 import com.google.common.hash.Funnels;
-
-import lombok.extern.slf4j.Slf4j;
-
-import org.springframework.stereotype.Service;
-
-import java.nio.charset.Charset;
-
-import javax.annotation.PostConstruct;
-import com.google.common.hash.BloomFilter;
-import com.google.common.hash.Funnels;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -38,8 +28,7 @@ public class BloomFilterHelper {
 
     @PostConstruct
     public void init() {
-        bloomFilter = BloomFilter.create(Funnels.stringFunnel(Charset.defaultCharset()), Constants.BLOOM_FILTER_INSERTION,
-                0.001);
+        bloomFilter = BloomFilter.create(Funnels.stringFunnel(Charset.defaultCharset()), Constants.BLOOM_FILTER_INSERTION, Constants.BLOOM_FILTER_FPP);
     }
 
     /**

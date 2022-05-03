@@ -9,7 +9,12 @@ package com.coderdream.utils;
  */
 public class Constants {
     /**
-     * 布隆过滤器的容量
+     * 布隆过滤器的容量 100000000
      */
-    public static final Integer BLOOM_FILTER_INSERTION = 100000000;
+    public static final Integer BLOOM_FILTER_INSERTION = 1000000;
+
+    /**
+     * 期望的误判率
+     */
+    public static final double BLOOM_FILTER_FPP = 0.01;
 }

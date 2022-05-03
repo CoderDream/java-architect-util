@@ -1,15 +1,16 @@
 package com.coderdream.service;
 
 import com.coderdream.helper.FileOperateHelper;
+import com.coderdream.utils.Constants;
 import com.google.common.hash.BloomFilter;
 import com.google.common.hash.Funnels;
-
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.annotation.Resource;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
@@ -19,14 +20,12 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import javax.annotation.Resource;
-
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class LinkServiceTest {
+
     @Resource
     private LinkService linkService;
-
     @Resource
     private FileOperateHelper fileOperateHelper;
 
@@ -65,25 +64,232 @@ public class LinkServiceTest {
         Assert.assertEquals(longLink1, longLink2);
     }
 
+//    @Test
+//    public void testBloomFilterError() throws Exception {
+//        /**
+//         * 布隆过滤器
+//         */
+//        BloomFilter<String> filter = BloomFilter.create(Funnels.stringFunnel(Charset.defaultCharset()), size, fpp);
+//
+//        String filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\data.txt";
+//
+//        // BufferedReader是可以按行读取文件
+//        FileInputStream inputStream = new FileInputStream(filePath);
+//        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+//        List<String> list = new ArrayList<>();
+//        Set<String> set = new HashSet<>();
+//        String longLink = null;
+//        while ((longLink = bufferedReader.readLine()) != null) {
+//            //System.out.println("longLink: " + longLink);
+//            String code = linkService.getShortLink(longLink);
+//            //  list.add(code);
+//            set.add(code);
+//        }
+//
+//        System.out.println("list size: " + list.size() + " ; set size: " + set.size());
+//        //close
+//        inputStream.close();
+//        bufferedReader.close();
+//        list.addAll(set);
+//        // 99948
+//        // int size1 = 190000;
+//        // int size2 = 10000;
+//        int size1 = 1182192;
+//        int size2 = 10000;
+//
+//        // 插入19万样本数据
+//        for (int i = 0; i < size1; i++) {
+//            filter.put(list.get(i));
+//        }
+//        // 用另外1万测试数据，测试误判率
+//        int count = 0;
+//        for (int i = size1; i < size1 + size2; i++) {
+//            if (filter.mightContain(list.get(i))) {
+//                count++;
+//                System.out.println(list.get(i) + "误判了");
+//            }
+//        }
+//        System.out.println("总共的误判数:" + count);
+//    }
 
-    /**
-     * 预计要插入多少数据
-     */
-    private static int size = 1000000;
+//    @Test
+//    public void testBloomFilterError_02() throws Exception {
+//        /**
+//         * 布隆过滤器
+//         */
+//        BloomFilter<String> filter = BloomFilter.create(Funnels.stringFunnel(Charset.defaultCharset()), size, fpp);
+//
+//        String filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\data.txt";
+//
+//        // BufferedReader是可以按行读取文件
+//        FileInputStream inputStream = new FileInputStream(filePath);
+//        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+//        List<String> list = new ArrayList<>();
+//        Set<String> set = new HashSet<>();
+//        String longLink = null;
+//        while ((longLink = bufferedReader.readLine()) != null) {
+//            //System.out.println("longLink: " + longLink);
+//            String code = linkService.getShortLink(longLink);
+//            //  list.add(code);
+//            set.add(code);
+//        }
+//
+//        System.out.println("list size: " + list.size() + " ; set size: " + set.size());
+//        //close
+//        inputStream.close();
+//        bufferedReader.close();
+//        list.addAll(set);
+//        // 99948
+//        // int size1 = 190000;
+//        // int size2 = 10000;
+//        int size1 = 1182192;
+//        int size2 = 10000;
+//
+//        int countSet = 0;
+//        for (String str : set) {
+//            if (countSet < 500000) {
+//                System.out.println("set: " + str);
+//                countSet++;
+//            }
+//        }
+//
+//        // 插入19万样本数据
+//        for (int i = 0; i < size1; i++) {
+//            filter.put(list.get(i));
+//        }
+//        // 用另外1万测试数据，测试误判率
+//        int count = 0;
+//        for (int i = size1; i < size1 + size2; i++) {
+//            if (filter.mightContain(list.get(i))) {
+//                count++;
+//                System.out.println(list.get(i) + "误判了");
+//            }
+//        }
+//        System.out.println("总共的误判数:" + count);
+//    }
 
-    /**
-     * 期望的误判率
-     */
-    private static double fpp = 0.01;
+//    @Test
+//    public void testBloomFilterError_03() throws Exception {
+//        /**
+//         * 布隆过滤器
+//         */
+//        BloomFilter<String> filter = BloomFilter.create(Funnels.stringFunnel(Charset.defaultCharset()), Constants.BLOOM_FILTER_INSERTION, Constants.BLOOM_FILTER_FPP);
+//
+//        String filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\data_02.txt";
+//
+//        // BufferedReader是可以按行读取文件
+//        FileInputStream inputStream = new FileInputStream(filePath);
+//        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+//        List<String> list = new ArrayList<>();
+//        Set<String> set = new HashSet<>();
+//        String longLink = null;
+//        while ((longLink = bufferedReader.readLine()) != null) {
+//            //System.out.println("longLink: " + longLink);
+//            String code = linkService.getShortLink(longLink);
+//            String ll = linkService.getLongLink(longLink);
+//            System.out.println(ll);
+//            //  list.add(code);
+//            set.add(code);
+//        }
+//
+//        System.out.println("list size: " + list.size() + " ; set size: " + set.size());
+//        //close
+//        inputStream.close();
+//        bufferedReader.close();
+//        list.addAll(set);
+//        // 99948
+//        // int size1 = 190000;
+//        // int size2 = 10000;
+//        int size1 = 490000;
+//        int size2 = 10192;
+//
+//        // 插入19万样本数据
+//        for (int i = 0; i < size1; i++) {
+//            filter.put(list.get(i));
+//        }
+//        // 用另外1万测试数据，测试误判率
+//        int count = 0;
+//        for (int i = size1; i < size1 + size2; i++) {
+//            if (filter.mightContain(list.get(i))) {
+//                count++;
+//                System.out.println(list.get(i) + "误判了");
+//            }
+//        }
+//        System.out.println("总共的误判数:" + count);
+//    }
+
+//    @Test
+//    public void testBloomFilterError_04() throws Exception {
+//        /**
+//         * 布隆过滤器
+//         */
+//        BloomFilter<String> filter = BloomFilter.create(Funnels.stringFunnel(Charset.defaultCharset()), Constants.BLOOM_FILTER_INSERTION, Constants.BLOOM_FILTER_FPP);
+//
+//        String filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\data_04.txt";
+//
+//        // BufferedReader是可以按行读取文件
+//        FileInputStream inputStream = new FileInputStream(filePath);
+//        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+//        List<String> list = new ArrayList<>();
+//        Set<String> set = new HashSet<>();
+//        String longLink = null;
+//        while ((longLink = bufferedReader.readLine()) != null) {
+//            //System.out.println("longLink: " + longLink);
+//            String code = linkService.getShortLink(longLink);
+//            //System.out.println(ll);
+//            //  list.add(code);
+//            set.add(code);
+//        }
+//
+//        System.out.println("list size: " + list.size() + " ; set size: " + set.size());
+//        //close
+//        inputStream.close();
+//        bufferedReader.close();
+//        list.addAll(set);
+//        // 99948
+//        // int size1 = 190000;
+//        // int size2 = 10000;
+//        int size1 = 430327;
+//        int size2 = 40000;
+//
+//        // 插入19万样本数据
+//        for (int i = 0; i < size1; i++) {
+//            filter.put(list.get(i));
+//        }
+//        // 用另外1万测试数据，测试误判率
+//        int count = 0;
+//        for (int i = size1; i < size1 + size2; i++) {
+//            if (filter.mightContain(list.get(i))) {
+//                count++;
+//                System.out.println(list.get(i) + "误判了");
+//            }
+//        }
+//        System.out.println("总共的误判数:" + count);
+//
+//
+//        filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\bloom.txt";
+//
+//        System.out.println("long.....");
+//        // BufferedReader是可以按行读取文件
+//        inputStream = new FileInputStream(filePath);
+//        bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+//        list = new ArrayList<>();
+//        String shortLink = null;
+//        while ((shortLink = bufferedReader.readLine()) != null) {
+//            //System.out.println("longLink: " + longLink);
+//            String ll = linkService.getLongLink(shortLink);
+//            System.out.println(ll);
+//        }
+//    }
 
     @Test
-    public void testBloomFilterError() throws Exception {
+    public void testBloomFilterError_05() throws Exception {
         /**
          * 布隆过滤器
          */
-        BloomFilter<String> filter = BloomFilter.create(Funnels.stringFunnel(Charset.defaultCharset()), size, fpp);
+        BloomFilter<String> filter = BloomFilter.create(Funnels.stringFunnel(Charset.defaultCharset()), Constants.BLOOM_FILTER_INSERTION, Constants.BLOOM_FILTER_FPP);
 
-        String filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\data.txt";
+        String filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\data_05.txt";
 
         // BufferedReader是可以按行读取文件
         FileInputStream inputStream = new FileInputStream(filePath);
@@ -94,6 +300,7 @@ public class LinkServiceTest {
         while ((longLink = bufferedReader.readLine()) != null) {
             //System.out.println("longLink: " + longLink);
             String code = linkService.getShortLink(longLink);
+            //System.out.println(ll);
             //  list.add(code);
             set.add(code);
         }
@@ -106,12 +313,14 @@ public class LinkServiceTest {
         // 99948
         // int size1 = 190000;
         // int size2 = 10000;
-        int size1 = 88948;
-        int size2 = 10000;
+        int size1 = 430327;
+        int size2 = 40000;
 
+        System.out.println("filter: ");
         // 插入19万样本数据
         for (int i = 0; i < size1; i++) {
             filter.put(list.get(i));
+            //System.out.println(list.get(i));
         }
         // 用另外1万测试数据，测试误判率
         int count = 0;
