@@ -34,10 +34,10 @@ public class BloomFilterHelperTest {
     }
 
     @Test
-    public void testC() throws Exception {
+    public void testMightContain() throws Exception {
         BloomFilter<String> filter = BloomFilter.create(Funnels.stringFunnel(Charset.defaultCharset()), Constants.BLOOM_FILTER_INSERTION, Constants.BLOOM_FILTER_FPP);
 
-        String filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\data_06.txt";
+        String filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\bloom.txt";
 
         // BufferedReader是可以按行读取文件
         FileInputStream inputStream = new FileInputStream(filePath);

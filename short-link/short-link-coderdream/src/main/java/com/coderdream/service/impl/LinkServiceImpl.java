@@ -29,10 +29,9 @@ public class LinkServiceImpl implements LinkService {
 
     @Override
     public String getShortLink(String longLink) {
+        // 生成短链接
         String code = shortLinkComponent.createShortLinkCode(longLink);
-        if("2gEw1A".equals(code)) {
-            System.out.println("break");
-        }
+        // 创建短链接Bean
         ShortLinkBean shortLinkBean = new ShortLinkBean();
         shortLinkBean.setShortLink(code);
         shortLinkBean.setLongLink(longLink);
@@ -41,13 +40,14 @@ public class LinkServiceImpl implements LinkService {
         if (bloomFilterHelper.mightContain(code)) {
             // 从缓存中取对象
             ShortLinkBean oldShortLinkBean = (ShortLinkBean) guavaCacheHelper.get(code);
-
             // 如果不存在误判为存在，则直接将新的数据写入缓存中
             if (oldShortLinkBean == null) {
+                // 把短链接放入Guava缓存中
                 guavaCacheHelper.put(code, shortLinkBean);
                 // 把短链接放入布隆过滤器
                 bloomFilterHelper.put(code);
-                log.error("布隆过滤器误判： new code: " + code + " ; new link: " + longLink);
+                // 记录日志
+                log.warn("布隆过滤器误判： new code: " + code + " ; new link: " + longLink);
             }
             // 如果确实存在
             else {
@@ -59,31 +59,21 @@ public class LinkServiceImpl implements LinkService {
                             + longLink);
 
                     String newLongLink = "";
-                    // 第一轮新code、新link
-                    if (!oldLongLink.startsWith(DuplicatedEnum.DUPLICATED.getKey()) && !oldLongLink.startsWith(
-                            DuplicatedEnum.OH_MY_GOD.getKey())) {
-                        if (!oldLongLink.startsWith(DuplicatedEnum.DUPLICATED.getKey())) {
-                            // code加上枚举前缀后Hash
-                            code = shortLinkComponent.createShortLinkCode(DuplicatedEnum.DUPLICATED.getKey() + "_" + code);
-                            newLongLink = DuplicatedEnum.DUPLICATED.getKey() + "_" + longLink;
-                            log.error("Hash第一次冲突解决： new code: " + code + "; old link: " + oldShortLinkBean.getLongLink()
-                                    + " ; new link: " + newLongLink);
-                        } else {
-                            code = shortLinkComponent.createShortLinkCode(
-                                    DuplicatedEnum.OH_MY_GOD.getKey() + "_" + code);
-                            newLongLink = DuplicatedEnum.OH_MY_GOD.getKey() + "_" + longLink;
-                            log.error("Hash第二次冲突解决： new code: " + code + "; old link: " + oldShortLinkBean.getLongLink()
-                                    + " ; new link: " + newLongLink);
-                        }
-                    }
-
+                    // 构造新code、新link
+                    // code加上枚举前缀后再取Hash，生成新的短链接
+                    code = shortLinkComponent.createShortLinkCode(DuplicatedEnum.DUPLICATED.getKey() + "_" + code);
+                    // 长链接加上前缀
+                    newLongLink = DuplicatedEnum.DUPLICATED.getKey() + "_" + longLink;
+                    log.error("Hash冲突解决： new code: " + code + "; old link: " + oldShortLinkBean.getLongLink()
+                            + " ; new link: " + newLongLink);
+                    // 设置新的短链接
                     shortLinkBean.setShortLink(code);
+                    // 设置新的长链接
                     shortLinkBean.setLongLink(newLongLink);
-                    shortLinkBean.setExpireTime(System.currentTimeMillis() + config.EXPIRE_SEC * 1000);
+                    // 把短链接放入Guava缓存中
                     guavaCacheHelper.put(code, shortLinkBean);
                     // 把短链接放入布隆过滤器
                     bloomFilterHelper.put(code);
-
                 }
                 // 未冲突，已存在数据，不做处理，既不放到缓存中，也不放到过滤器中
                 else {
@@ -94,11 +84,12 @@ public class LinkServiceImpl implements LinkService {
         }
         // 通过布隆过滤器判断：如果不存在（100%正确），则直接放入缓存中
         else {
+            // 把短链接放入Guava缓存中
             guavaCacheHelper.put(code, shortLinkBean);
             // 把短链接放入布隆过滤器
             bloomFilterHelper.put(code);
         }
-
+        // 将短链接返回给调用方
         return code;
     }
 
@@ -106,18 +97,26 @@ public class LinkServiceImpl implements LinkService {
     public String getLongLink(String shortLink) {
         // 从缓存中获取对象
         ShortLinkBean shortLinkBean = (ShortLinkBean) guavaCacheHelper.get(shortLink);
-        String longLink = shortLinkBean.getLongLink();
-        // 如果不存在Hash冲突标记，则直接返回长链接
-        if (!longLink.startsWith(DuplicatedEnum.DUPLICATED.getKey()) && !longLink.startsWith(
-                DuplicatedEnum.OH_MY_GOD.getKey())) {
+        // 如果不存在，则记日志，然后返回空
+        if (shortLinkBean == null) {
+            log.warn("缓存中不存在 " + shortLink + " 对应的长链接");
+            return "";
+        }
+        // 如果存在，处理长链接
+        else {
+            // 取出长链接
+            String longLink = shortLinkBean.getLongLink();
+            // 如果不存在Hash冲突标记，则直接返回长链接
+            if (!longLink.startsWith(DuplicatedEnum.DUPLICATED.getKey())) {
+                return longLink;
+            }
+            // 否则去掉冲突标记后再返回
+            else {
+                log.warn("去掉冲突标记后再返回：" + longLink);
+                longLink = longLink.replace(DuplicatedEnum.DUPLICATED.getKey() + "_", "");
+            }
+            // 将长链接返回给调用方
             return longLink;
         }
-        // 否则去掉冲突标记后再返回
-        else {
-            log.warn("去掉冲突标记后再返回：" + longLink);
-            longLink = longLink.replace(DuplicatedEnum.DUPLICATED.getKey() + "_", "");
-            longLink = longLink.replace(DuplicatedEnum.OH_MY_GOD.getKey() + "_", "");
-        }
-        return longLink;
     }
 }
