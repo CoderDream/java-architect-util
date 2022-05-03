@@ -35,8 +35,16 @@ public class LinkServiceTest {
     }
 
     @Test
+    public void testGetShortLinkWithNull() {
+        Assert.assertEquals("", linkService.getShortLink(""));
+        Assert.assertEquals("", linkService.getShortLink(null));
+    }
+
+    @Test
     public void getLongLink() {
         Assert.assertEquals("", linkService.getLongLink("xxxxxx"));
+        Assert.assertEquals("", linkService.getLongLink(""));
+        Assert.assertEquals("", linkService.getLongLink(null));
     }
 
     @Test
@@ -96,14 +104,15 @@ public class LinkServiceTest {
         inputStream.close();
         bufferedReader.close();
         list.addAll(set);
-        int size1 = 430327;
+        // 470326
+        int size1 = 430326;
         int size2 = 40000;
 
-        // 插入19万样本数据
+        // 插入47万样本数据
         for (int i = 0; i < size1; i++) {
             filter.put(list.get(i));
         }
-        // 用另外1万测试数据，测试误判率
+        // 用另外4万测试数据，测试误判率，误判了3个
         int count = 0;
         for (int i = size1; i < size1 + size2; i++) {
             if (filter.mightContain(list.get(i))) {

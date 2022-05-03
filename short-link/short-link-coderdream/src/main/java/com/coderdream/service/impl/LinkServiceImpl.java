@@ -2,6 +2,7 @@ package com.coderdream.service.impl;
 
 import com.coderdream.bean.ShortLinkBean;
 import com.coderdream.helper.BloomFilterHelper;
+import com.coderdream.helper.FileOperateHelper;
 import com.coderdream.helper.GuavaCacheHelper;
 import com.coderdream.service.LinkService;
 import com.coderdream.utils.Config;
@@ -19,6 +20,9 @@ public class LinkServiceImpl implements LinkService {
     private Config config;
 
     @Resource
+    private FileOperateHelper fleOperateHelper;
+
+    @Resource
     private ShortLinkComponent shortLinkComponent;
 
     @Resource
@@ -29,8 +33,18 @@ public class LinkServiceImpl implements LinkService {
 
     @Override
     public String getShortLink(String longLink) {
+        // 如果longLink
+        if(longLink == null || "".equals(longLink)) {
+            // 记录日志
+            log.error("入参错误，不能为空：" + longLink);
+            return "";
+        }
+        // 获取机器ID，这里写在文件中，后期通过ZooKeeper管理
+        String machineId = fleOperateHelper.readFile("machineId");
         // 生成短链接
         String code = shortLinkComponent.createShortLinkCode(longLink);
+        // 机器ID作为前缀
+        code = machineId + code;
         // 创建短链接Bean
         ShortLinkBean shortLinkBean = new ShortLinkBean();
         shortLinkBean.setShortLink(code);
@@ -57,13 +71,11 @@ public class LinkServiceImpl implements LinkService {
                     // 记录日志
                     log.warn("Hash冲突, old and new code: " + code + "; old link: " + oldLongLink + " ; new link: "
                             + longLink);
-
-                    String newLongLink = "";
                     // 构造新code、新link
                     // code加上枚举前缀后再取Hash，生成新的短链接
                     code = shortLinkComponent.createShortLinkCode(DuplicatedEnum.DUPLICATED.getKey() + "_" + code);
                     // 长链接加上前缀
-                    newLongLink = DuplicatedEnum.DUPLICATED.getKey() + "_" + longLink;
+                    String newLongLink = DuplicatedEnum.DUPLICATED.getKey() + "_" + longLink;
                     log.error("Hash冲突解决： new code: " + code + "; old link: " + oldShortLinkBean.getLongLink()
                             + " ; new link: " + newLongLink);
                     // 设置新的短链接
@@ -95,6 +107,12 @@ public class LinkServiceImpl implements LinkService {
 
     @Override
     public String getLongLink(String shortLink) {
+        // shortLink
+        if(shortLink == null || "".equals(shortLink)) {
+            // 记录日志
+            log.error("入参错误，不能为空：" + shortLink);
+            return "";
+        }
         // 从缓存中获取对象
         ShortLinkBean shortLinkBean = (ShortLinkBean) guavaCacheHelper.get(shortLink);
         // 如果不存在，则记日志，然后返回空
