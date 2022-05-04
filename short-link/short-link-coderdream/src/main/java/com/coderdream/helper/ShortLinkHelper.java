@@ -1,5 +1,6 @@
-package com.coderdream.utils;
+package com.coderdream.helper;
 
+import com.coderdream.utils.CommonUtil;
 import org.springframework.stereotype.Component;
 
 /**
@@ -10,7 +11,7 @@ import org.springframework.stereotype.Component;
  * @version: $
  */
 @Component
-public class ShortLinkComponent {
+public class ShortLinkHelper {
     /**
      * 62个字符
      */

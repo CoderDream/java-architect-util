@@ -68,7 +68,7 @@
 
 ```java
 public String getShortLink(String longLink) {
-    // 如果longLink
+    // 校验longLink
     if(longLink == null || "".equals(longLink)) {
         // 记录日志
         log.error("入参错误，不能为空：" + longLink);
