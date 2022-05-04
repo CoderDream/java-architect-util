@@ -25,8 +25,7 @@ public class ShortLinkComponent {
     public String createShortLinkCode(String param) {
         long murmurhash = CommonUtil.murmurHash32(param);
         //进制转换
-        String code = encodeToBase62(murmurhash);
-        return code;
+        return encodeToBase62(murmurhash);
     }
 
     /**
@@ -43,7 +42,6 @@ public class ShortLinkComponent {
             sb.append(CHARS.charAt(i));
             num = num / 62;
         } while (num > 0);
-        String value = sb.reverse().toString();
-        return value;
+        return sb.reverse().toString();
     }
 }

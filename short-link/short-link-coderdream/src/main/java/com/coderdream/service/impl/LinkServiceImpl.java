@@ -32,78 +32,78 @@ public class LinkServiceImpl implements LinkService {
     private BloomFilterHelper bloomFilterHelper;
 
     @Override
-    public String getShortLink(String longLink) {
-        // 如果longLink
-        if(longLink == null || "".equals(longLink)) {
-            // 记录日志
-            log.error("入参错误，不能为空：" + longLink);
-            return "";
-        }
-        // 获取机器ID，这里写在文件中，后期通过ZooKeeper管理
-        String machineId = fleOperateHelper.readFile("machineId");
-        // 生成短链接
-        String code = shortLinkComponent.createShortLinkCode(longLink);
-        // 机器ID作为前缀
-        code = machineId + code;
-        // 创建短链接Bean
-        ShortLinkBean shortLinkBean = new ShortLinkBean();
-        shortLinkBean.setShortLink(code);
-        shortLinkBean.setLongLink(longLink);
-        shortLinkBean.setExpireTime(System.currentTimeMillis() + config.EXPIRE_SEC * 1000);
-        // 如果存在（可能误判）
-        if (bloomFilterHelper.mightContain(code)) {
-            // 从缓存中取对象
-            ShortLinkBean oldShortLinkBean = (ShortLinkBean) guavaCacheHelper.get(code);
-            // 如果不存在误判为存在，则直接将新的数据写入缓存中
-            if (oldShortLinkBean == null) {
-                // 把短链接放入Guava缓存中
-                guavaCacheHelper.put(code, shortLinkBean);
-                // 把短链接放入布隆过滤器
-                bloomFilterHelper.put(code);
-                // 记录日志
-                log.warn("布隆过滤器误判： new code: " + code + " ; new link: " + longLink);
-            }
-            // 如果确实存在
-            else {
-                String oldLongLink = oldShortLinkBean.getLongLink();
-                // 判断是否Hash冲突了(code相同，长链接url不同)
-                if (code.equals(oldShortLinkBean.getShortLink()) && !longLink.equals(oldLongLink)) {
-                    // 记录日志
-                    log.warn("Hash冲突, old and new code: " + code + "; old link: " + oldLongLink + " ; new link: "
-                            + longLink);
-                    // 构造新code、新link
-                    // code加上枚举前缀后再取Hash，生成新的短链接
-                    code = shortLinkComponent.createShortLinkCode(DuplicatedEnum.DUPLICATED.getKey() + "_" + code);
-                    // 长链接加上前缀
-                    String newLongLink = DuplicatedEnum.DUPLICATED.getKey() + "_" + longLink;
-                    log.error("Hash冲突解决： new code: " + code + "; old link: " + oldShortLinkBean.getLongLink()
-                            + " ; new link: " + newLongLink);
-                    // 设置新的短链接
-                    shortLinkBean.setShortLink(code);
-                    // 设置新的长链接
-                    shortLinkBean.setLongLink(newLongLink);
-                    // 把短链接放入Guava缓存中
-                    guavaCacheHelper.put(code, shortLinkBean);
-                    // 把短链接放入布隆过滤器
-                    bloomFilterHelper.put(code);
-                }
-                // 未冲突，已存在数据，不做处理，既不放到缓存中，也不放到过滤器中
-                else {
-                    // 记录日志
-                    log.info("已存在： code " + code + " ; longLink: " + longLink);
-                }
-            }
-        }
-        // 通过布隆过滤器判断：如果不存在（100%正确），则直接放入缓存中
-        else {
+public String getShortLink(String longLink) {
+    // 如果longLink
+    if(longLink == null || "".equals(longLink)) {
+        // 记录日志
+        log.error("入参错误，不能为空：" + longLink);
+        return "";
+    }
+    // 获取机器ID，这里写在文件中，后期通过ZooKeeper管理
+    String machineId = fleOperateHelper.readFile("machineId");
+    // 生成短链接
+    String code = shortLinkComponent.createShortLinkCode(longLink);
+    // 机器ID作为前缀
+    code = machineId + code;
+    // 创建短链接Bean
+    ShortLinkBean shortLinkBean = new ShortLinkBean();
+    shortLinkBean.setShortLink(code);
+    shortLinkBean.setLongLink(longLink);
+    shortLinkBean.setExpireTime(System.currentTimeMillis() + config.EXPIRE_SEC * 1000);
+    // 如果存在（可能误判）
+    if (bloomFilterHelper.mightContain(code)) {
+        // 从缓存中取对象
+        ShortLinkBean oldShortLinkBean = (ShortLinkBean) guavaCacheHelper.get(code);
+        // 如果不存在误判为存在，则直接将新的数据写入缓存中
+        if (oldShortLinkBean == null) {
             // 把短链接放入Guava缓存中
             guavaCacheHelper.put(code, shortLinkBean);
             // 把短链接放入布隆过滤器
             bloomFilterHelper.put(code);
+            // 记录日志
+            log.warn("布隆过滤器误判： new code: " + code + " ; new link: " + longLink);
         }
-        // 将短链接返回给调用方
-        return code;
+        // 如果确实存在
+        else {
+            String oldLongLink = oldShortLinkBean.getLongLink();
+            // 判断是否Hash冲突了(code相同，长链接url不同)
+            if (code.equals(oldShortLinkBean.getShortLink()) && !longLink.equals(oldLongLink)) {
+                // 记录日志
+                log.warn("Hash冲突, old and new code: " + code + "; old link: " + oldLongLink + " ; new link: "
+                        + longLink);
+                // 构造新code、新link
+                // code加上枚举前缀后再取Hash，生成新的短链接
+                code = machineId + shortLinkComponent.createShortLinkCode(DuplicatedEnum.DUPLICATED.getKey() + "_" + code);
+                // 长链接加上前缀
+                String newLongLink = DuplicatedEnum.DUPLICATED.getKey() + "_" + longLink;
+                log.error("Hash冲突解决： new code: " + code + "; old link: " + oldShortLinkBean.getLongLink()
+                        + " ; new link: " + newLongLink);
+                // 设置新的短链接
+                shortLinkBean.setShortLink(code);
+                // 设置新的长链接
+                shortLinkBean.setLongLink(newLongLink);
+                // 把短链接放入Guava缓存中
+                guavaCacheHelper.put(code, shortLinkBean);
+                // 把短链接放入布隆过滤器
+                bloomFilterHelper.put(code);
+            }
+            // 未冲突，已存在数据，不做处理，既不放到缓存中，也不放到过滤器中
+            else {
+                // 记录日志
+                log.info("已存在： code " + code + " ; longLink: " + longLink);
+            }
+        }
     }
+    // 通过布隆过滤器判断：如果不存在（100%正确），则直接放入缓存中
+    else {
+        // 把短链接放入Guava缓存中
+        guavaCacheHelper.put(code, shortLinkBean);
+        // 把短链接放入布隆过滤器
+        bloomFilterHelper.put(code);
+    }
+    // 将短链接返回给调用方
+    return code;
+}
 
     @Override
     public String getLongLink(String shortLink) {
