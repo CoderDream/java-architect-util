@@ -39,19 +39,16 @@
 5. 生成的短链接分别存储在布隆过滤器和**Guava Cache**中，供后续插入及查询；
 6. **对于最后生成的短链接，机器编号占X位，MurmurHash+62进制生成的字符串占Y位（Y≤6），总共7位（X+Y≤7），满足不超过8位的需求；（后期可增加发号器，62进制，占用1位）**
 
-
-
 ## 3、设计思想及具体实现
 
 ### 3.1 详细设计
-
-
 
 <div align="center">
 	<img src="images\02.DesignDiagram.png" />
 	</br>
 	<span>图-2 详细设计图</span>
 </div>
+
 **详细设计说明**
 
 1. 调用方传入长链接字符串后，短域名服务先MurmurHash生成10进制字符串，然后转换成62进制短链接，最后加上机器码作为前缀，生成最终的短链接；
@@ -144,3 +141,27 @@ public String getShortLink(String longLink) {
 ## 4、功能测试
 
 ### 4.1 项目目录结构
+
+<div align="center">
+	<img src="images\03.Content.png" />
+	</br>
+	<span>图-3 目录结构图</span>
+</div>
+
+
+### 4.2 单元测试结果
+
+<div align="center">
+	<img src="images\04.JaCoCoReport.png" />
+	</br>
+	<span>图-4 单元测试结果</span>
+</div>
+
+
+### 4.3 Swagger
+
+<div align="center">
+	<img src="images\05.Swagger.png" />
+	</br>
+	<span> 图-5 Swagger </span>
+</div>

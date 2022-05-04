@@ -77,6 +77,7 @@
                         <exclude>**/controller/**</exclude>
                         <exclude>**/domain/impl/CounterShortLinkHandler.*</exclude>
                         <exclude>**/utils/Config.*</exclude>
+                        <exclude>**/utils/SwaggerConfig.*</exclude>
                         <exclude>**/utils/Constants.*</exclude>
                         <exclude>**/common/Result.*</exclude>
                     </excludes>

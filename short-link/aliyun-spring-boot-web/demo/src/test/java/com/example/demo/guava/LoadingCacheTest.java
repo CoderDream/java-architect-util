@@ -11,6 +11,17 @@ import java.util.concurrent.TimeUnit;
  * @see <a href="http://www.roadjava.com">乐之者java</a>
  */
 public class LoadingCacheTest {
+    @Test
+    public void testBloomFilterError2() throws Exception {
+        int x = 1;
+        int y = 1;
+        int z = 0;
+        while (x < 25)
+        z = x;
+        x = x+ y;
+        y = z;
+        System.out.println(x);
+    }
     /**
      * 单独使用guava的cache，guava的cache分为两种:
      * 第一种: Cache<---LoadingCache<---com.google.common.cache.LocalCache.LocalLoadingCache

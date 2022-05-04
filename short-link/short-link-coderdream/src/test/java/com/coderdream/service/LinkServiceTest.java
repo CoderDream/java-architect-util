@@ -81,6 +81,23 @@ public class LinkServiceTest {
      * @throws Exception
      */
     @Test
+    public void testBloomFilterError2() throws Exception {
+        int x = 1;
+        int y = 1;
+        int z = 0;
+        while (x < 25)
+            z = x;
+        x = x+ y;
+        y = z;
+        System.out.println(x);
+    }
+
+    /**
+     * 测试布隆过滤器误判场景
+     *
+     * @throws Exception
+     */
+    @Test
     public void testBloomFilterError() throws Exception {
         /**
          * 布隆过滤器
