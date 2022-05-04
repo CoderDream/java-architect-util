@@ -16,10 +16,10 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">2000</stringProp>
+          <stringProp name="LoopController.loops">200</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">500</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">100</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">20</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -164,10 +164,10 @@ fstream.close();</stringProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">2000</stringProp>
+          <stringProp name="LoopController.loops">200</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">500</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">100</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">20</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
