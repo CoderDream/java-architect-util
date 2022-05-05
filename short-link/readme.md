@@ -29,6 +29,8 @@
 27. [基于Redis生成递增序号](https://blog.csdn.net/G0_hw/article/details/119269670)
 
 
+* 56,800,235,584 6位62进制数可以生成560亿个字符串，62的6次方
+
 
 ### 方案
 1. [请实现一个「短域名」的系统设计](https://leetcode-cn.com/circle/discuss/EkCOT9/)
