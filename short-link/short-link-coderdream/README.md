@@ -138,7 +138,7 @@ public String getShortLink(String longLink) {
 }
 ```
 
-## 4、功能测试
+## 4、系统及测试
 
 ### 4.1 项目目录结构
 
@@ -156,12 +156,38 @@ public String getShortLink(String longLink) {
 	</br>
 	<span>图-4 单元测试结果</span>
 </div>
-
-
 ### 4.3 Swagger
 
 <div align="center">
 	<img src="images\05.Swagger.png" />
 	</br>
 	<span> 图-5 Swagger </span>
+</div>
+
+
+### 4.4 功能测试
+
+* 1、生成短链接
+
+<div align="center">
+	<img src="images\06.Postman_01.png" />
+	</br>
+	<span> 图-6 长链接生成短链接 </span>
+</div>
+
+* 2、获取长链接
+
+<div align="center">
+	<img src="images\07.Postman_02.png" />
+	</br>
+	<span> 图-7 短链接获取长链接 </span>
+</div>
+
+### 4.5 性能测试
+
+
+<div align="center">
+	<img src="images\08.JMeter.png" />
+	</br>
+	<span> 图-8 性能测试 </span>
 </div>
