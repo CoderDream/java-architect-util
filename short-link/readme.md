@@ -27,6 +27,9 @@
 25. [Guava缓存详解及使用](https://blog.csdn.net/why_still_confused/article/details/107138230)
 26. [SpringBoot&Guava缓存（多个示例）](https://github.com/zheng-zy/spring-boot-redis-guava-caffeine-cache)
 27. [基于Redis生成递增序号](https://blog.csdn.net/G0_hw/article/details/119269670)
+28. [本地缓存选型(Guava/Caffeine/Ohc)及性能对比](https://cloud.tencent.com/developer/article/1903413)
+
+
 
 
 * 56,800,235,584 6位62进制数可以生成560亿个字符串，62的6次方
