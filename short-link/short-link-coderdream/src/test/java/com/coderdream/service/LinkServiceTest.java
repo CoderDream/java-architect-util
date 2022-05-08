@@ -67,11 +67,11 @@ public class LinkServiceTest {
 
         String shortLink1 = linkService.getShortLink(longLink1);
         String shortLink2 = linkService.getShortLink(longLink2);
+        Assert.assertEquals(shortLink1, shortLink2);
         Assert.assertNotNull(shortLink1);
         Assert.assertEquals(longLink1, linkService.getLongLink(shortLink1));
         Assert.assertNotNull(shortLink2);
         Assert.assertEquals(longLink2, linkService.getLongLink(shortLink2));
-        Assert.assertEquals(shortLink1, shortLink2);
         Assert.assertEquals(longLink1, longLink2);
     }
 

@@ -9,9 +9,13 @@ package com.coderdream.utils;
  */
 public class Constants {
     /**
+     * 62个字符
+     */
+    public static final String CHARS = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    /**
      * 布隆过滤器的容量 100000000
      */
-    public static final Integer BLOOM_FILTER_INSERTION = 1000000;
+    public static final Long BLOOM_FILTER_INSERTION = 100000000L;
 
     /**
      * 期望的误判率
@@ -29,8 +33,13 @@ public class Constants {
     public static final Integer INITIAL_CAPACITY = 10;
 
     /**
-     * Guava Cache 设置缓存最大容量为 100000000
+     * Guava Cache 设置缓存最大容量为 100000000 Long 的最大值 9,223,372,036,854,775,807 6 位 62 进制数的可能的组合 56,800,235,584
      */
-    public static final Integer MAXIMUM_SIZE = 100000000;
+    public static final Long MAXIMUM_SIZE = 100000000L;
+
+    /**
+     * Guava Cache 设置缓存的水位
+     */
+    public static final Float WATER_LEVEL = 0.95F;
 
 }

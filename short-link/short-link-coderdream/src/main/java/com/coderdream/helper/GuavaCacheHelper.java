@@ -59,6 +59,14 @@ public class GuavaCacheHelper {
         return StringUtils.isEmpty(key) ? null : cache.getIfPresent(key);
     }
 
+
+    /**
+     * 获取缓存大小
+     */
+    public long size() {
+        return cache.size();
+    }
+
     /**
      * 放入缓存
      */

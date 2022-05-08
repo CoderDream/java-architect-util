@@ -1,16 +1,24 @@
 package com.coderdream.service.impl;
 
 import com.coderdream.bean.ShortLinkBean;
+import com.coderdream.generator.ZeroStringGenerator;
 import com.coderdream.helper.BloomFilterHelper;
 import com.coderdream.helper.FileOperateHelper;
 import com.coderdream.helper.GuavaCacheHelper;
+import com.coderdream.helper.ShortLinkHelper;
 import com.coderdream.service.LinkService;
 import com.coderdream.utils.Config;
+import com.coderdream.utils.Constants;
 import com.coderdream.utils.DuplicatedEnum;
-import com.coderdream.helper.ShortLinkHelper;
+
 import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.stereotype.Service;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 
 @Service
@@ -31,10 +39,18 @@ public class LinkServiceImpl implements LinkService {
     @Resource
     private BloomFilterHelper bloomFilterHelper;
 
+    /**
+     * 号码生成器列表
+     */
+    @Resource
+    private ZeroStringGenerator zeroStringGenerator;
+
+    private String generateCode;
+
     @Override
     public String getShortLink(String longLink) {
         // 校验longLink
-        if(longLink == null || "".equals(longLink)) {
+        if (longLink == null || "".equals(longLink)) {
             // 记录日志
             log.error("入参错误，不能为空：" + longLink);
             return "";
@@ -43,8 +59,15 @@ public class LinkServiceImpl implements LinkService {
         String machineId = fleOperateHelper.readFile("machineId");
         // 生成短链接
         String code = shortLinkHelper.createShortLinkCode(longLink);
+
+        // 记录日志
+        //log.error("缓存大小：" + guavaCacheHelper.size());
+        int zeroBit = config.TOTAL_BIT - config.MACHINE_BIT - code.length();
+        // 记录日志
+        generateCode = zeroStringGenerator.generateCode(zeroBit);
         // 机器ID作为前缀
-        code = machineId + code;
+        code = machineId + generateCode + code;
+
         // 创建短链接Bean
         ShortLinkBean shortLinkBean = new ShortLinkBean();
         shortLinkBean.setShortLink(code);
@@ -71,21 +94,29 @@ public class LinkServiceImpl implements LinkService {
                     // 记录日志
                     log.warn("Hash冲突, old and new code: " + code + "; old link: " + oldLongLink + " ; new link: "
                             + longLink);
-                    // 构造新code、新link
+                    // 构造新code
+                    String newHashCode = shortLinkHelper.createShortLinkCode(
+                            DuplicatedEnum.DUPLICATED.getKey() + "_" + oldLongLink);
+                    // 新的补0位数
+                    zeroBit = config.TOTAL_BIT - config.MACHINE_BIT - newHashCode.length();
+                    // 补0字符串
+                    generateCode = zeroStringGenerator.generateCode(zeroBit);
                     // code加上枚举前缀后再取Hash，生成新的短链接
-                    code = machineId + shortLinkHelper.createShortLinkCode(DuplicatedEnum.DUPLICATED.getKey() + "_" + code);
+                    String newCode = machineId + generateCode + newHashCode;
                     // 长链接加上前缀
                     String newLongLink = DuplicatedEnum.DUPLICATED.getKey() + "_" + longLink;
-                    log.error("Hash冲突解决： new code: " + code + "; old link: " + oldShortLinkBean.getLongLink()
+                    log.error("Hash冲突解决： new code: " + newCode + "; old link: " + oldShortLinkBean.getLongLink()
                             + " ; new link: " + newLongLink);
                     // 设置新的短链接
-                    shortLinkBean.setShortLink(code);
+                    shortLinkBean.setShortLink(newCode);
                     // 设置新的长链接
                     shortLinkBean.setLongLink(newLongLink);
                     // 把短链接放入Guava缓存中
-                    guavaCacheHelper.put(code, shortLinkBean);
+                    guavaCacheHelper.put(newCode, shortLinkBean);
                     // 把短链接放入布隆过滤器
-                    bloomFilterHelper.put(code);
+                    bloomFilterHelper.put(newCode);
+                    // 将新的短链接返回给调用方
+                    return newCode;
                 }
                 // 未冲突，已存在数据，不做处理，既不放到缓存中，也不放到过滤器中
                 else {
@@ -101,6 +132,8 @@ public class LinkServiceImpl implements LinkService {
             // 把短链接放入布隆过滤器
             bloomFilterHelper.put(code);
         }
+        // 记录日志
+        // log.info("Hash冲突集合大小： " + hashCodeSet.size());
         // 将短链接返回给调用方
         return code;
     }
@@ -108,7 +141,7 @@ public class LinkServiceImpl implements LinkService {
     @Override
     public String getLongLink(String shortLink) {
         // 校验
-        if(shortLink == null || "".equals(shortLink)) {
+        if (shortLink == null || "".equals(shortLink)) {
             // 记录日志
             log.error("入参错误，不能为空：" + shortLink);
             return "";
