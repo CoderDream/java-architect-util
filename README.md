@@ -31,7 +31,8 @@
 
 - [邮件实现详解（四）------JavaMail 发送（带图片和附件）和接收邮件](https://www.cnblogs.com/ysocean/p/7666061.html)
 
-  
+  ### 电子书
+  1. [熊猫搜索](https://xmsoushu.com/#/)
 
 ## 项目3：poi-practice
 
