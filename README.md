@@ -74,8 +74,9 @@
 - [使用notepad++批量在每行首尾添加内容](https://blog.csdn.net/lk142500/article/details/83119029)
 
 
-  ## 电子书
+# 电子书
   1. [熊猫搜索](https://xmsoushu.com/#/)
+  2. [Java 高效编程（Effective Java）中文第三版](https://www.bookstack.cn/read/effective-java-3rd-chinese/docs-README.md)
 
 
 # END
