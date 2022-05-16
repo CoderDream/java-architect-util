@@ -79,4 +79,7 @@
   2. [Java 高效编程（Effective Java）中文第三版](https://www.bookstack.cn/read/effective-java-3rd-chinese/docs-README.md)
 
 
+# JetBrains
+[使用开源项目免费申请 JetBrains 全家桶 IDEA 开源许可证](https://www.cnblogs.com/evenyao/p/10290482.html)
+
 # END
