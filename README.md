@@ -77,6 +77,7 @@
 # 电子书
   1. [熊猫搜索](https://xmsoushu.com/#/)
   2. [Java 高效编程（Effective Java）中文第三版](https://www.bookstack.cn/read/effective-java-3rd-chinese/docs-README.md)
+  3. [IT电子书](https://cmsblogs.cn/ebook-overview)
 
 
 # JetBrains
