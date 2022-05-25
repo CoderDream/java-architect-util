@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-25T01:27:45.742Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36" etag="rGOthYudPsAskqq5U4aG" version="18.1.2" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-05-25T01:28:07.380Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36" etag="iZEPvNMj3YdxTWhAvZ_h" version="18.1.2" type="github" pages="3">
   <diagram id="hPQqigWGEy2a-Y2w4Ybq" name="业务架构图">
     <mxGraphModel dx="1038" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -87,10 +87,10 @@
         <mxCell id="swpl27hVYAeV6DKNPg2S-72" value="WMTS服务" style="rounded=0;html=1;imageHeight=24;imageWidth=28;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-75">
           <mxGeometry x="105" y="41.219999999999985" width="82.6" height="18.57" as="geometry" />
         </mxCell>
-        <mxCell id="swpl27hVYAeV6DKNPg2S-76" value="新建" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="swpl27hVYAeV6DKNPg2S-76" value="pg数据库" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="62.39608695652174" y="269.9993277310924" width="54.78260869565218" height="18.57142857142857" as="geometry" />
         </mxCell>
-        <mxCell id="swpl27hVYAeV6DKNPg2S-77" value="删除" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="swpl27hVYAeV6DKNPg2S-77" value="文件系统" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="132.8308695652174" y="269.9993277310924" width="54.78260869565218" height="18.57142857142857" as="geometry" />
         </mxCell>
       </root>
