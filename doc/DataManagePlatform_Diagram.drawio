@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-25T01:20:26.947Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36" etag="W42pIh5CoGhlVDxgSsPU" version="18.1.2" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-05-25T01:24:53.331Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36" etag="0cSQy8Mlbei6LDYOJYhR" version="18.1.2" type="github" pages="3">
   <diagram id="hPQqigWGEy2a-Y2w4Ybq" name="业务架构图">
     <mxGraphModel dx="1038" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -59,6 +59,27 @@
         </mxCell>
         <mxCell id="swpl27hVYAeV6DKNPg2S-56" value="导入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-59">
           <mxGeometry x="12.396086956521742" y="35.7093277310924" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-60" value="发布" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B9E0A5;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="420" y="50" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-66" value="WMS服务" style="rounded=0;html=1;imageHeight=24;imageWidth=28;" vertex="1" parent="1">
+          <mxGeometry x="432.4" y="91.22" width="82.6" height="18.57" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-67" value="WMS服务" style="rounded=0;html=1;imageHeight=24;imageWidth=28;" vertex="1" parent="1">
+          <mxGeometry x="432.4" y="120.92999999999999" width="82.6" height="18.57" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-69" value="WMS服务" style="rounded=0;html=1;imageHeight=24;imageWidth=28;" vertex="1" parent="1">
+          <mxGeometry x="525" y="120.92" width="82.6" height="18.57" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-70" value="WMS服务" style="rounded=0;html=1;imageHeight=24;imageWidth=28;" vertex="1" parent="1">
+          <mxGeometry x="432.4" y="150.21" width="82.6" height="18.57" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-71" value="WMS服务" style="rounded=0;html=1;imageHeight=24;imageWidth=28;" vertex="1" parent="1">
+          <mxGeometry x="525" y="150.21" width="82.6" height="18.57" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-72" value="WMTS服务" style="rounded=0;html=1;imageHeight=24;imageWidth=28;" vertex="1" parent="1">
+          <mxGeometry x="525" y="91.21999999999998" width="82.6" height="18.57" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
