@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-25T02:05:51.394Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36" etag="PF4yBa8t_HlrnhowUHtx" version="18.1.2" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-05-25T02:06:46.186Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36" etag="7E80AhQ-6YCg46YHRFzX" version="18.1.2" type="github" pages="4">
   <diagram id="hPQqigWGEy2a-Y2w4Ybq" name="业务架构图">
     <mxGraphModel dx="1038" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -271,6 +271,9 @@
         <mxCell id="bsd1iRqfPT8E960-DSwy-4" value="校验" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="300" y="60" width="60" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="bsd1iRqfPT8E960-DSwy-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" edge="1" parent="1" source="bsd1iRqfPT8E960-DSwy-5" target="bsd1iRqfPT8E960-DSwy-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="bsd1iRqfPT8E960-DSwy-5" value="解析文件" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="384" y="60" width="60" height="30" as="geometry" />
         </mxCell>
@@ -292,8 +295,8 @@
         <mxCell id="bsd1iRqfPT8E960-DSwy-15" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="580" y="130" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="bsd1iRqfPT8E960-DSwy-16" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
-          <mxGeometry x="590" y="140" width="60" height="30" as="geometry" />
+        <mxCell id="bsd1iRqfPT8E960-DSwy-16" value="存入数据库" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="480" y="60" width="70" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
