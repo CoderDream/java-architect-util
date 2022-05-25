@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-25T01:10:26.428Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36" etag="VhBNBPpdaM8B_97dRdhu" version="18.1.2" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-05-25T01:15:08.424Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36" etag="dgPv4u5XnycLhTOBT-aM" version="18.1.2" type="github" pages="3">
   <diagram id="hPQqigWGEy2a-Y2w4Ybq" name="业务架构图">
     <mxGraphModel dx="1038" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -78,6 +78,12 @@
         <mxCell id="swpl27hVYAeV6DKNPg2S-25" value="移动" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-14">
           <mxGeometry x="97.83086956521743" y="90.0017086834734" width="54.78260869565218" height="18.57142857142857" as="geometry" />
         </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-43" value="重命名" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-14">
+          <mxGeometry x="27.396086956521742" y="61.54170868347339" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-44" value="新建" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-14">
+          <mxGeometry x="27.396086956521742" y="30.589327731092425" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
         <mxCell id="swpl27hVYAeV6DKNPg2S-30" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="30" y="230" width="150" height="90" as="geometry" />
         </mxCell>
@@ -95,6 +101,45 @@
         </mxCell>
         <mxCell id="swpl27hVYAeV6DKNPg2S-29" value="删除" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-30">
           <mxGeometry x="82.8308695652174" y="29.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-32" value="文件夹管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;verticalAlign=top;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;" vertex="1" parent="1">
+          <mxGeometry x="234" y="210" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-33" value="重命名" style="rounded=0;whiteSpace=wrap;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;" vertex="1" parent="1">
+          <mxGeometry x="246.39608695652174" y="270.9517086834734" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-34" value="移动" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="316.8308695652174" y="265.7117086834734" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-35" value="新建" style="rounded=0;whiteSpace=wrap;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;" vertex="1" parent="1">
+          <mxGeometry x="246.39608695652174" y="239.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-36" value="删除" style="rounded=0;whiteSpace=wrap;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;" vertex="1" parent="1">
+          <mxGeometry x="316.8308695652174" y="239.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-53" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="450" y="250.24" width="150" height="129.76" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-42" value="文件管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B9E0A5;verticalAlign=top;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-53">
+          <mxGeometry width="150" height="129.76" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-47" value="导出" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-53">
+          <mxGeometry x="82.83086956521743" y="70.23170868347336" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-48" value="删除" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-53">
+          <mxGeometry x="82.83086956521743" y="39.279327731092394" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-49" value="重命名" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-53">
+          <mxGeometry x="12.396086956521742" y="98.6917086834734" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-50" value="移动" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-53">
+          <mxGeometry x="82.83086956521743" y="98.6917086834734" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-51" value="重命名" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-53">
+          <mxGeometry x="12.396086956521742" y="70.23170868347336" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="swpl27hVYAeV6DKNPg2S-52" value="导入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-53">
+          <mxGeometry x="12.396086956521742" y="39.279327731092394" width="54.78260869565218" height="18.57142857142857" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
