@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-25T01:15:08.424Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36" etag="dgPv4u5XnycLhTOBT-aM" version="18.1.2" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-05-25T01:15:38.798Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36" etag="zYTNkec-ZM5CIbDA6Yyc" version="18.1.2" type="github" pages="3">
   <diagram id="hPQqigWGEy2a-Y2w4Ybq" name="业务架构图">
     <mxGraphModel dx="1038" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -126,7 +126,7 @@
         <mxCell id="swpl27hVYAeV6DKNPg2S-47" value="导出" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-53">
           <mxGeometry x="82.83086956521743" y="70.23170868347336" width="54.78260869565218" height="18.57142857142857" as="geometry" />
         </mxCell>
-        <mxCell id="swpl27hVYAeV6DKNPg2S-48" value="删除" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-53">
+        <mxCell id="swpl27hVYAeV6DKNPg2S-48" value="浏览" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-53">
           <mxGeometry x="82.83086956521743" y="39.279327731092394" width="54.78260869565218" height="18.57142857142857" as="geometry" />
         </mxCell>
         <mxCell id="swpl27hVYAeV6DKNPg2S-49" value="重命名" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-53">
@@ -135,7 +135,7 @@
         <mxCell id="swpl27hVYAeV6DKNPg2S-50" value="移动" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-53">
           <mxGeometry x="82.83086956521743" y="98.6917086834734" width="54.78260869565218" height="18.57142857142857" as="geometry" />
         </mxCell>
-        <mxCell id="swpl27hVYAeV6DKNPg2S-51" value="重命名" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-53">
+        <mxCell id="swpl27hVYAeV6DKNPg2S-51" value="编辑" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-53">
           <mxGeometry x="12.396086956521742" y="70.23170868347336" width="54.78260869565218" height="18.57142857142857" as="geometry" />
         </mxCell>
         <mxCell id="swpl27hVYAeV6DKNPg2S-52" value="导入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="swpl27hVYAeV6DKNPg2S-53">
