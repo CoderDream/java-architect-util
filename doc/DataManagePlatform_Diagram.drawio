@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-09T08:06:36.123Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="vdi90m0HG9UETTeMYmAT" version="19.0.3" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2022-06-09T08:12:14.707Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="BnLMs5RNKDLBDyDKl2kd" version="19.0.3" type="github" pages="5">
   <diagram id="b0tYvKutyRTe1-X-ptyu" name="框架图">
     <mxGraphModel dx="868" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -555,7 +555,7 @@
           <mxGeometry x="80" y="320" width="700" height="270" as="geometry" />
         </mxCell>
         <mxCell id="1eUqxoO0x3JvSd1ofsAw-2" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=5;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="80" y="620" width="700" height="370" as="geometry" />
+          <mxGeometry x="80" y="620" width="700" height="400" as="geometry" />
         </mxCell>
         <mxCell id="1eUqxoO0x3JvSd1ofsAw-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="290" y="360" width="120" height="60" as="geometry" />
@@ -591,16 +591,43 @@
           <mxGeometry x="250" y="790" width="80" height="50" as="geometry" />
         </mxCell>
         <mxCell id="1eUqxoO0x3JvSd1ofsAw-15" value="缓存服务&lt;br&gt;Redis" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
-          <mxGeometry x="340" y="790" width="80" height="50" as="geometry" />
+          <mxGeometry x="340" y="790" width="60" height="50" as="geometry" />
         </mxCell>
         <mxCell id="1eUqxoO0x3JvSd1ofsAw-16" value="数据同步&lt;br&gt;DataSync" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
-          <mxGeometry x="520" y="790" width="80" height="50" as="geometry" />
+          <mxGeometry x="590" y="790" width="80" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="1eUqxoO0x3JvSd1ofsAw-17" value="数据编码&lt;br&gt;DataEncode" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
-          <mxGeometry x="430" y="790" width="80" height="50" as="geometry" />
+        <mxCell id="1eUqxoO0x3JvSd1ofsAw-17" value="路由调度&lt;br&gt;DataRouter" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+          <mxGeometry x="410" y="790" width="80" height="50" as="geometry" />
         </mxCell>
         <mxCell id="1eUqxoO0x3JvSd1ofsAw-18" value="数据备份&lt;br&gt;Backup/Restore" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
-          <mxGeometry x="610" y="790" width="90" height="50" as="geometry" />
+          <mxGeometry x="680" y="790" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1eUqxoO0x3JvSd1ofsAw-19" value="数据编码&lt;br&gt;DataEncode" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+          <mxGeometry x="500" y="790" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1eUqxoO0x3JvSd1ofsAw-21" value="对象管理&lt;br&gt;ObjectManager" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;imageWidth=25;" vertex="1" parent="1">
+          <mxGeometry x="250" y="630" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1eUqxoO0x3JvSd1ofsAw-22" value="权限管理&lt;br&gt;RightManager" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;imageWidth=25;" vertex="1" parent="1">
+          <mxGeometry x="495" y="700" width="105" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1eUqxoO0x3JvSd1ofsAw-23" value="用户管理&lt;br&gt;UserManager" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;imageWidth=25;" vertex="1" parent="1">
+          <mxGeometry x="370" y="700" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1eUqxoO0x3JvSd1ofsAw-24" value="资源管理&lt;br&gt;DataResource" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;imageWidth=25;" vertex="1" parent="1">
+          <mxGeometry x="250" y="700" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1eUqxoO0x3JvSd1ofsAw-25" value="对象存储&lt;br&gt;ObjectStorage" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;imageWidth=25;" vertex="1" parent="1">
+          <mxGeometry x="370" y="630" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1eUqxoO0x3JvSd1ofsAw-26" value="版本管理&lt;br&gt;VersionControl" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;imageWidth=25;" vertex="1" parent="1">
+          <mxGeometry x="495" y="630" width="105" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1eUqxoO0x3JvSd1ofsAw-27" value="节点管理&lt;br&gt;NodeManager" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;imageWidth=25;" vertex="1" parent="1">
+          <mxGeometry x="630" y="630" width="98" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1eUqxoO0x3JvSd1ofsAw-28" value="系统监控&lt;br&gt;SystemMonitor" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;imageWidth=25;" vertex="1" parent="1">
+          <mxGeometry x="630" y="700" width="98" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
