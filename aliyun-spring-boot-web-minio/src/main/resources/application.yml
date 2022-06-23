@@ -1,0 +1,19 @@
+#minio:
+#  url: http://172.16.104.110:9000
+#  accessKey: admin
+#  secretKey: 12345678
+#  bucketName: dly
+
+
+spring:
+  # 配置文件上传大小限制
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+minio:
+  endpoint: http://192.168.127.130:9999
+  accessKey: admin
+  secretKey: admin123
+  bucketName: test
+
