@@ -1,17 +1,16 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-  </div>
+    <div class="hello">
+        <h1>{{ msg }}</h1>
+    </div>
 </template>
 
 <script>
 export default {
-  // eslint-disable-next-line vue/multi-word-component-names
-  name: "hello",
-  data() {
-    return {
-      msg: '欢迎来到菜鸟教程！'
+    name: 'hello',
+    data() {
+        return {
+            msg: '欢迎来到菜鸟教程！'
+        };
     }
-  }
-}
+};
 </script>

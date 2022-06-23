@@ -1,0 +1,4 @@
+{
+  "singleQuote": true, //单引号
+  "semi": true //是否需要分号
+}
