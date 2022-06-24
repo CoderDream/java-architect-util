@@ -1,6 +1,6 @@
 package com.example.demo.p01.dp06.singleton.bean;
 
-import com.example.demo.p01.dp06.singleton.Priority;
+import com.example.demo.p01.dp06.singleton.factory.Priority;
 
 import java.io.*;
 import java.text.SimpleDateFormat;
