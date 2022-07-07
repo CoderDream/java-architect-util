@@ -145,14 +145,14 @@ public class SubtitleUtil {
                     event.setLayer(LAYER_EN);
                     event.setMarginV(MARGIN_V_EN);
                 }
-                event.setText(content);
+                event.setText(SubtitleUtil.trimChineseBlank(content));
                 eventList.add(event);
             }
             // 既有中文，也有英文
             else {
                 // 中文
                 event.setName("中文对白");
-                event.setText(content);
+                event.setText(SubtitleUtil.trimChineseBlank(content));
                 event.setLayer(LAYER_CN);
                 event.setMarginV(MARGIN_V_CN);
                 eventList.add(event);
@@ -168,7 +168,7 @@ public class SubtitleUtil {
                 eventEn.setEffect("");
                 eventEn.setLayer(LAYER_EN);
                 eventEn.setMarginV(MARGIN_V_EN);
-                eventEn.setText(secondContent);
+                eventEn.setText(SubtitleUtil.trimChineseBlank(secondContent));
                 eventList.add(eventEn);
             }
 

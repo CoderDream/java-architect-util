@@ -50,7 +50,7 @@ class SubtitleUtilTest {
 
     @Test
     void testTrimChineseBlank() {
-        String s1 = "";
+        String s1 = "每天 数以亿计的人依靠着信息 app";
         String s2 = "都 ";
         String s3 = " 是";
         String s4 = "都 是，。？！A5a12B1b都 是";
