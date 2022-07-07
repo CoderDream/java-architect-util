@@ -1,0 +1,2133 @@
+1
+00:00:06,84 --> 00:00:08,00
+‎-嗨 ‎-嗨
+-[doctor] Hi. -Hi.
+
+2
+00:00:09,21 --> 00:00:11,51
+‎你在见证一个历史性的时刻
+[narrator] You're witnessing an historic moment.
+
+3
+00:00:12,34 --> 00:00:16,72
+‎现在 全世界都在寻找 ‎攻克这种冠状病毒的方法
+Right now, there's a worldwide hunt for ways to fight this coronavirus.
+
+4
+00:00:20,64 --> 00:00:22,43
+‎科学家在尝试各种方案
+Scientists are trying everything,
+
+5
+00:00:22,52 --> 00:00:25,10
+‎从现有药物到新疗法
+from existing medicines to new therapies.
+
+6
+00:00:25,19 --> 00:00:27,77
+‎但最有可能终结这场全球大流行病的
+But the most likely way we'll end this pandemic
+
+7
+00:00:28,31 --> 00:00:29,40
+‎还是疫苗
+is a vaccine.
+
+9
+00:00:31,19 --> 00:00:33,11
+‎2020年3月16日
+On March 16th, 2020,
+
+10
+00:00:33,19 --> 00:00:34,99
+‎第一种疫苗投入测试
+the first one was tested.
+
+11
+00:00:35,07 --> 00:00:36,20
+‎我是珍妮佛哈勒
+I'm Jennifer Haller,
+
+12
+00:00:36,28 --> 00:00:40,87
+‎我是第一个 ‎接种试验用新冠肺炎疫苗的人
+and I was the first person to receive an experimental COVID-19 vaccine.
+
+13
+00:00:41,62 --> 00:00:44,54
+‎我们之前开发试验用疫苗的速度 ‎相当快
+[narrator] We've made other test vaccines pretty quickly.
+
+14
+00:00:44,62 --> 00:00:46,75
+‎非典疫苗用了20个月
+One for SARS took 20 months,
+
+15
+00:00:46,83 --> 00:00:49,04
+‎埃博拉疫苗用了七个月
+one for Ebola, seven months,
+
+16
+00:00:49,13 --> 00:00:51,96
+‎寨卡疫苗 大约六个月
+and one for Zika, around six months.
+
+17
+00:00:52,05 --> 00:00:54,97
+‎但这一次破了记录
+But this vaccine candidate crushed those records.
+
+18
+00:00:55,05 --> 00:00:57,55
+‎只用65天就做出来了
+It was made in just 65 days.
+
+19
+00:00:58,18 --> 00:01:00,60
+‎但是 要想终结这场全球大流行病
+If it's going to end this pandemic, though,
+
+20
+00:01:00,68 --> 00:01:02,89
+‎还有很长的路要走
+it's got a long way still to go.
+
+21
+00:01:04,14 --> 00:01:07,56
+‎每一种潜在有效疫苗 ‎都要走过一条艰难的道路
+See, any potential vaccine has a difficult path ahead,
+
+22
+00:01:07,65 --> 00:01:11,19
+‎这条路漫长曲折 充满挑战和考验
+a long and twisting course full of challenges and trials.
+
+23
+00:01:11,52 --> 00:01:12,57
+‎在美国
+In the US,
+
+24
+00:01:12,65 --> 00:01:15,86
+‎一种疫苗从开始到最终完成
+typically it takes a vaccine candidate a decade or so
+
+25
+00:01:15,95 --> 00:01:17,74
+‎通常需要十年
+to make it from start to finish,
+
+26
+00:01:18,24 --> 00:01:21,37
+‎90%的疫苗跑不到终点
+and around 90% fail to complete it.
+
+27
+00:01:22,41 --> 00:01:24,33
+‎我们没有那么多时间
+We don't have that kind of time.
+
+28
+00:01:24,87 --> 00:01:26,75
+‎每天都有人死亡
+Every day, people are dying,
+
+29
+00:01:27,67 --> 00:01:29,88
+‎经济损失越来越大
+and the economic losses are mounting.
+
+30
+00:01:30,92 --> 00:01:35,26
+‎专家希望 ‎2021年就能有疫苗普遍推广
+Experts are hoping a vaccine can be widely available in 2021.
+
+31
+00:01:35,76 --> 00:01:37,01
+‎要实现这个目标
+To pull that off,
+
+32
+00:01:37,09 --> 00:01:40,89
+‎就必须用破纪录的速度 ‎走完研发过程的每一个阶段
+it will have to get through every stretch of this course in record time.
+
+33
+00:01:41,51 --> 00:01:44,68
+‎这是对人与机器的终极考验
+[car engines roaring]
+
+33
+00:01:42,14 --> 00:01:44,85
+[announcer] This is the supreme test of man and machine.
+
+34
+00:01:44,93 --> 00:01:47,31
+‎很多人从发车线出发
+But while many are called to the starting line,
+
+35
+00:01:47,39 --> 00:01:50,23
+‎但只有不到一半能跑完艰苦的全程
+usually less than half finish the grueling drive.
+
+36
+00:01:51,90 --> 00:01:55,99
+‎幸运的是 已有超过100种备选疫苗 ‎在研发过程中
+[narrator] Fortunately, more than 100 vaccine candidates are giving it a shot,
+
+37
+00:01:56,32 --> 00:02:00,70
+‎全世界的科学家参与了疫苗的开发 ‎有资深大学教授…
+made by scientists all over the world, from veterans at universities...
+
+38
+00:02:00,78 --> 00:02:03,70
+‎我们有很多杰出的科学家
+We have a dedicated group of extraordinary scientists
+
+39
+00:02:03,79 --> 00:02:06,16
+‎夜以继日地不懈工作
+that are in the lab day and night.
+
+40
+00:02:06,25 --> 00:02:07,96
+‎也有大型制药企业
+[narrator] ...to pharmaceutical giants...
+
+41
+00:02:08,04 --> 00:02:11,00
+‎我们有研发团队 人人精神百倍
+We have the teams to do this, and everyone is excited.
+
+42
+00:02:11,08 --> 00:02:12,67
+‎采用已经证明的技术…
+[narrator] ...using proven techniques...
+
+43
+00:02:12,75 --> 00:02:17,17
+‎当然 针对冠状病毒疫苗 ‎我们有一定先发优势
+And, of course, with the coronavirus vaccine,
+
+44
+00:02:15,30 --> 00:02:17,22
+we have a particular head start.
+
+44
+00:02:17,47 --> 00:02:20,22
+‎…和从来没有试验过的新方法
+[narrator] ...and approaches that have never been tested before.
+
+45
+00:02:20,30 --> 00:02:21,85
+‎大家都在相互竞争
+Everybody competes with each other,
+
+46
+00:02:21,93 --> 00:02:24,76
+‎但最终 只有最优秀的留下来
+but eventually, only the very best survive.
+
+47
+00:02:24,85 --> 00:02:29,27
+‎但是 开发一款疫苗 ‎也要耗费大量金钱…
+[narrator] But getting a vaccine is also going to take a lot of money...
+
+48
+00:02:29,35 --> 00:02:32,56
+‎好的 这里有我们 ‎我们可以让资金快速到位
+Okay, here we are. You know, we can get money out really fast.
+
+49
+00:02:32,65 --> 00:02:34,48
+‎我们可以进行评估
+We can do evaluations of these things.
+
+50
+00:02:34,57 --> 00:02:38,78
+‎现在 我们都在加快速度 ‎在全世界寻找最佳方案
+Now we're all trying to step up
+
+52
+00:02:36,53 --> 00:02:38,90
+and look all over the world for the best ideas.
+
+51
+00:02:39,24 --> 00:02:40,61
+‎…需要协作
+[narrator] ...and collaboration.
+
+52
+00:02:40,70 --> 00:02:43,24
+‎全球科学界同仁
+The entire global scientific community
+
+53
+00:02:43,32 --> 00:02:46,66
+‎以史无前例的方式走到一起
+has come together in a truly unprecedented way.
+
+54
+00:02:46,74 --> 00:02:48,79
+‎也离不开勇敢的志愿者
+[narrator] ...and brave volunteers.
+
+55
+00:02:49,04 --> 00:02:52,54
+‎我们都感到无助 ‎我觉得 这件事我可以做
+We're all feeling so helpless, and this was something that I saw
+
+56
+00:02:52,63 --> 00:02:56,55
+‎而且很可能会对大家有帮助
+that I could do that could potentially make a difference.
+
+57
+00:02:56,96 --> 00:03:01,59
+‎就这样 他们共同投入了一场 ‎史上最成败攸关的科学竞赛
+[narrator] Together, they're in one of the most
+
+60
+00:02:59,26 --> 00:03:01,63
+high-stakes scientific races in history.
+
+58
+00:03:02,14 --> 00:03:04,68
+‎我把它比作太空竞赛
+I compare this to a space race.
+
+59
+00:03:04,97 --> 00:03:09,98
+‎众多竞争者 争夺一个未知的目标 ‎“我怎么去火星？”
+We have so many contenders reaching for something that was previously unknown.
+
+63
+00:03:08,73 --> 00:03:09,98
+"How do I get to Mars?"
+
+60
+00:03:10,06 --> 00:03:11,10
+‎“我怎么去金星？”
+"How do I get to Venus?"
+
+61
+00:03:11,19 --> 00:03:13,94
+‎“我们怎么制造 ‎下一代新冠肺炎疫苗？”
+"How do we create the next COVID-19 vaccine?"
+
+62
+00:03:14,40 --> 00:03:16,07
+‎还有一个重要的问题：
+[narrator] And the other big question:
+
+63
+00:03:16,15 --> 00:03:18,15
+‎我们能在多短的时间里实现？
+how fast can we do it?
+
+68
+00:03:18,61 --> 00:03:19,69
+[theme music playing]
+
+64
+00:03:19,78 --> 00:03:23,28
+‎现在 我们已经有了病毒
+Given the fact that we now have the virus in our hands,
+
+65
+00:03:23,36 --> 00:03:25,20
+‎我们会开发出疫苗
+we will develop a vaccine.
+
+66
+00:03:25,66 --> 00:03:30,87
+‎我们可以以前所未有的速度行动
+[man 1] We can move very fast in ways that have not been previously achieved.
+
+67
+00:03:30,96 --> 00:03:34,71
+‎一旦疫苗被证明是安全的
+[man 2] It's only once that vaccine has been proven to be safe
+
+68
+00:03:34,79 --> 00:03:37,46
+‎就立刻投入使用
+that it'll be allowed out of confinement.
+
+69
+00:03:37,84 --> 00:03:39,55
+‎他们需要疫苗
+[man 3] What they needed was a vaccine,
+
+70
+00:03:39,92 --> 00:03:42,47
+‎一天没有找到 ‎他们的奋斗就一天不停止
+and the fight never stopped till it was found.
+
+71
+00:03:44,84 --> 00:03:48,60
+‎还有其他病毒需要分离 ‎其他疫苗有待开发
+[man 4] There remain other viruses to be isolated, other vaccines to come,
+
+72
+00:03:48,68 --> 00:03:49,52
+‎他们会成功的
+but they will.
+
+74
+00:03:58,02 --> 00:04:01,90
+‎这种冠状病毒 以及所有病毒 ‎都很难对付
+[narrator] This coronavirus, and all viruses, are so hard to fight,
+
+75
+00:04:01,99 --> 00:04:04,99
+‎原因之一是它们太简单了
+in part because they're so simple.
+
+76
+00:04:05,62 --> 00:04:08,08
+‎它们基本就是一个微小的信息载体
+They're basically just little vehicles
+
+77
+00:04:08,16 --> 00:04:11,41
+‎承载着指导它们进行自我复制的说明
+that carry instructions on how to make more of themselves.
+
+78
+00:04:11,96 --> 00:04:16,38
+‎为了繁衍 它们把这套复制说明 ‎偷偷运进我们的细胞
+To reproduce, they smuggle these instructions into our cells
+
+79
+00:04:16,75 --> 00:04:20,46
+‎强迫我们的细胞工厂制造更多病毒
+and force our cellular machinery to make more and more viruses.
+
+80
+00:04:20,55 --> 00:04:23,80
+‎它们在体内扩散 劫持更多细胞
+They spread through the body and hijack more cells,
+
+81
+00:04:24,05 --> 00:04:25,84
+‎在这个过程中 细胞被破坏
+damaging them in the process,
+
+82
+00:04:26,34 --> 00:04:28,10
+‎我们就生病了
+which makes us feel sick.
+
+83
+00:04:29,18 --> 00:04:31,10
+‎但我们不是没有防御措施
+But we're not defenseless.
+
+88
+00:04:31,72 --> 00:04:32,56
+[alarm blares]
+
+84
+00:04:32,64 --> 00:04:37,73
+‎我们免疫系统的细胞会找到入侵者 ‎识别出一种标记
+-[narrator] Cells in our immune system -[siren wails]
+
+90
+00:04:34,73 --> 00:04:37,73
+can find the intruder and identify a marker,
+
+85
+00:04:37,81 --> 00:04:41,07
+‎一种特征鲜明的标记 我们叫它抗原
+a distinguishing feature which we call an antigen.
+
+86
+00:04:41,36 --> 00:04:46,49
+‎然后 它们就行动起来 找到并消灭 ‎任何携带这种抗原的物质
+Then they mobilize to seek out and destroy anything with that antigen.
+
+87
+00:04:47,03 --> 00:04:51,20
+‎我们的免疫系统还会产生一种 ‎叫做抗体的小分子
+Our immune system also produces little molecules called antibodies
+
+88
+00:04:51,29 --> 00:04:55,04
+‎抗体附着于抗原 标记并制服病毒
+that stick to that antigen, tagging and subduing the virus.
+
+89
+00:04:55,42 --> 00:04:56,92
+‎但是 从我们被感染那一天开始
+But from the day we're infected,
+
+90
+00:04:57,00 --> 00:05:00,75
+‎可能需要两周时间 ‎免疫反应才会全面启动
+it can take almost two weeks for this response to ramp up,
+
+91
+00:05:01,88 --> 00:05:05,17
+‎足以让冠状病毒扩散到全身
+enough time for this coronavirus to swarm through the body,
+
+92
+00:05:05,80 --> 00:05:07,01
+‎造成伤害
+wreaking havoc.
+
+93
+00:05:08,47 --> 00:05:11,47
+‎有时候 ‎我们的免疫系统还会反应过度
+And sometimes our immune system ramps up too much
+
+94
+00:05:11,56 --> 00:05:13,52
+‎导致更多伤害
+and causes even more harm.
+
+95
+00:05:13,89 --> 00:05:17,77
+‎有些人伤害太严重
+In some people, all this damage becomes overwhelming,
+
+96
+00:05:18,31 --> 00:05:19,40
+‎导致死亡
+and they die.
+
+97
+00:05:19,73 --> 00:05:22,28
+‎我值一天班 就宣布了六名患者死亡
+In one shift, I pronounced six people dead.
+
+98
+00:05:23,11 --> 00:05:25,28
+‎如果有办法医治 就好了
+[narrator] This is where having a treatment would help.
+
+99
+00:05:26,36 --> 00:05:30,58
+‎有的疗法是注射抗体 ‎也就是那些降服病毒的小分子
+Some inject antibodies, those molecules that subdue the virus,
+
+100
+00:05:30,66 --> 00:05:33,45
+‎或者是在实验室合成的抗体
+either synthetic antibodies made in a lab,
+
+101
+00:05:33,54 --> 00:05:35,66
+‎或是从康复患者血液中分离出的抗体
+or from the blood of people who've recovered.
+
+102
+00:05:36,50 --> 00:05:40,04
+‎有的疗法是对失控的免疫系统 ‎加以控制
+Others rein in our immune systems if they're getting out of control.
+
+103
+00:05:40,63 --> 00:05:42,88
+‎还有的疗法 比如瑞德西韦
+And some, like Remdesivir,
+
+104
+00:05:42,96 --> 00:05:47,01
+‎是进入细胞 阻止病毒自我复制
+actually enter our cells to block the virus from copying itself.
+
+105
+00:05:47,09 --> 00:05:50,97
+‎早期结果显示 ‎它可能可以降低病毒的致命性
+Early results showed it could potentially make the virus less deadly.
+
+106
+00:05:51,55 --> 00:05:54,43
+‎这是一个很重要的概念验证
+It is a very important proof of concept,
+
+107
+00:05:54,52 --> 00:05:59,69
+‎这证明了 一种药物可以阻断病毒
+because what it has proven is that a drug can block this virus.
+
+108
+00:06:00,52 --> 00:06:05,19
+‎但截至五月 还没有一种疗法 ‎能防止人患病
+[narrator] But as of May,
+
+115
+00:06:01,98 --> 00:06:05,19
+none of these treatments can stop a person from getting sick,
+
+109
+00:06:05,28 --> 00:06:07,65
+‎或阻止病毒人际传播
+or spreading this coronavirus to others.
+
+110
+00:06:08,20 --> 00:06:09,91
+‎疫苗可以做到
+A vaccine would,
+
+111
+00:06:10,53 --> 00:06:12,66
+‎因为疫苗利用了人体
+and it does it by taking advantage of something
+
+112
+00:06:12,74 --> 00:06:15,83
+‎经过数百万年进化而来的一种能力
+our bodies have evolved over millions of years:
+
+113
+00:06:15,91 --> 00:06:16,75
+‎记忆
+memory.
+
+114
+00:06:17,62 --> 00:06:21,79
+‎我们的免疫系统对抗过一种病毒之后 ‎就记住了它的抗原
+After it deals with a virus, our immune system remembers the antigens,
+
+115
+00:06:22,09 --> 00:06:23,46
+‎有时是终生记忆
+sometimes forever,
+
+116
+00:06:23,92 --> 00:06:26,05
+‎有时只能记住一段时间
+other times just for a while.
+
+117
+00:06:26,84 --> 00:06:30,76
+‎我们知道 我们的身体 ‎对其他冠状病毒的记忆长达好几年
+We know our bodies can remember these other coronaviruses for a couple years.
+
+118
+00:06:31,14 --> 00:06:33,22
+‎如果这种冠状病毒的情况类似
+So if this coronavirus is similar
+
+119
+00:06:33,81 --> 00:06:36,56
+‎并且它在几年内再次入侵我们的身体
+and it shows up in our bodies again in that time,
+
+120
+00:06:36,64 --> 00:06:40,60
+‎我们的免疫系统就能更快地作出反应 ‎重拳出击
+our immune system can ramp up much faster with overwhelming force,
+
+121
+00:06:40,69 --> 00:06:43,31
+‎消灭病毒 使我们不至于生病
+wiping out the virus before it can make us sick
+
+122
+00:06:43,40 --> 00:06:44,77
+‎也不至于传染给他人
+or spread to someone else.
+
+123
+00:06:45,23 --> 00:06:48,74
+‎所谓对某病毒免疫 就是这个意思
+This is what it means to be immune to a virus.
+
+124
+00:06:49,15 --> 00:06:50,95
+‎疫苗能让我们免疫
+A vaccine makes us immune
+
+125
+00:06:51,03 --> 00:06:54,49
+‎方法就是安全地告诉我们的身体 ‎某种病毒长什么样
+by safely showing the body what a virus looks like,
+
+126
+00:06:54,58 --> 00:06:59,00
+‎制造一次假的感染 ‎教会身体如何反应
+faking this first infection to teach your body how to respond,
+
+127
+00:06:59,08 --> 00:07:02,50
+‎这样 如果身体遇到真的病毒 ‎就知道该怎么办了
+so when it does encounter the real virus, it's ready.
+
+128
+00:07:03,13 --> 00:07:05,46
+‎没有100%有效的病毒
+No vaccine is 100% effective,
+
+129
+00:07:05,55 --> 00:07:09,22
+‎不是每个人接种疫苗之后 ‎都能彻底免疫
+meaning not everyone who receives one will be perfectly immune,
+
+130
+00:07:09,30 --> 00:07:12,84
+‎但疫苗不需要百试百效 ‎也能终止疫病流行
+but vaccines don't need to be perfect to end epidemics.
+
+131
+00:07:13,30 --> 00:07:16,06
+‎天花曾经是一种高致命性疾病
+Smallpox used to be a leading cause of death,
+
+132
+00:07:16,14 --> 00:07:19,89
+‎麻疹曾经每年杀死数百万人 ‎多数是儿童
+and measles killed millions a year, most of them children.
+
+133
+00:07:19,98 --> 00:07:23,77
+‎但是 多亏有了有效率达到95%的疫苗
+But thanks to vaccines that are around 95% effective,
+
+134
+00:07:24,02 --> 00:07:25,73
+‎我们现在已经消灭了天花
+we've wiped out smallpox
+
+135
+00:07:25,82 --> 00:07:28,94
+‎对抗麻疹也取得了长足进步
+and made enormous progress against measles.
+
+136
+00:07:29,40 --> 00:07:32,61
+‎疫苗制造者希望能造出 ‎这么有效的疫苗
+Vaccine makers are hoping to make a vaccine that effective.
+
+137
+00:07:32,70 --> 00:07:38,29
+‎如果我们只能造出 比如说 ‎有效率为50%的疫苗
+If all we could make was a vaccine that, let's say, had 50% efficacy,
+
+138
+00:07:38,37 --> 00:07:40,83
+‎那么它能防止半数的感染
+so it prevented about half of the infections,
+
+139
+00:07:40,91 --> 00:07:45,38
+‎如果这意味着死亡人数减半 ‎那也是真正的好消息
+if that translates into stopping half of the deaths,
+
+147
+00:07:44,04 --> 00:07:45,38
+that's really good news.
+
+140
+00:07:45,84 --> 00:07:50,51
+‎事实上 疫苗是人类历史上 ‎最重要的发明之一
+[narrator] The fact is,
+
+149
+00:07:46,67 --> 00:07:50,51
+vaccines are one of the most significant inventions in human history.
+
+141
+00:07:50,97 --> 00:07:52,72
+‎这个世界上没有太多共识
+The world doesn't agree on much,
+
+142
+00:07:52,80 --> 00:07:57,39
+‎但是 超过90%的人 ‎相信儿童接种疫苗很重要
+but more than 90% of all people believe childhood vaccinations are important,
+
+143
+00:07:57,47 --> 00:08:01,10
+‎这至关重要 因为 要消灭一种传染病
+and that's crucial, because to wipe out an infectious disease,
+
+144
+00:08:01,18 --> 00:08:04,06
+‎你需要全世界多数人口都免疫
+you need most people in the world to be immune.
+
+145
+00:08:04,65 --> 00:08:06,44
+‎这叫群体免疫
+It's called herd immunity.
+
+146
+00:08:06,52 --> 00:08:11,82
+‎一个人感染后存活 或者接种疫苗
+The idea is that individuals become immune either by getting infected and surviving,
+
+147
+00:08:11,90 --> 00:08:13,40
+‎都可实现免疫
+or by getting vaccinated.
+
+148
+00:08:13,91 --> 00:08:15,82
+‎当足够的人实现了免疫
+When enough people are immune,
+
+149
+00:08:15,91 --> 00:08:18,87
+‎病毒就难以传播 速度放慢
+the virus has trouble spreading, and slows down.
+
+150
+00:08:19,37 --> 00:08:21,54
+‎你知道 通过接种疫苗 ‎你不只是保护你自己
+You know, you are also protecting by vaccinating yourself
+
+151
+00:08:21,62 --> 00:08:25,50
+‎也是在保护周围的易感人群
+not just yourself, but you are protecting weak members in the community
+
+152
+00:08:25,58 --> 00:08:27,54
+‎那些可能无法获得疫苗的人
+who may not be able to get the vaccine.
+
+153
+00:08:28,09 --> 00:08:32,13
+‎比如新生儿 老年人 ‎和免疫系统较弱的群体
+[narrator] Like newborns, the elderly, and people with weak immune systems.
+
+154
+00:08:32,22 --> 00:08:36,80
+‎所以这既是自我保护 ‎也是一种利他行为
+So it's both an act of protecting yourself and it's also an act of altruism.
+
+155
+00:08:37,22 --> 00:08:41,93
+‎所以 打败一种传染病 ‎需要全世界通力合作
+[narrator] So defeating an infectious disease
+
+165
+00:08:39,56 --> 00:08:41,93
+requires the whole world coming together,
+
+156
+00:08:42,02 --> 00:08:46,06
+‎在对抗新冠肺炎的竞赛中 ‎全世界的团结合作史无前例
+and in the COVID-19 race, the world has come together like never before.
+
+157
+00:08:47,44 --> 00:08:50,11
+‎截至五月 有100多种疫苗正在研制中
+Out of the over 100 candidates in the race in May,
+
+158
+00:08:50,19 --> 00:08:54,65
+‎一半以上在北美 17种在中国
+almost half are in North America, and 17 are in China.
+
+159
+00:08:54,74 --> 00:08:56,78
+‎大家的经费来源也各不相同
+And they're funded in different ways,
+
+160
+00:08:56,86 --> 00:08:58,57
+‎多数是由私人企业支持
+most by private industry.
+
+161
+00:08:59,70 --> 00:09:03,33
+‎但最主要的区别还是他们的疫苗平台
+But the main difference between them is their vaccine platform,
+
+162
+00:09:03,41 --> 00:09:06,17
+‎如何告诉人体病毒长什么样
+how they're showing the body what the virus looks like.
+
+163
+00:09:07,33 --> 00:09:11,25
+‎有的疫苗把弱化了的病毒注射入人体
+Some vaccines inject a weakened version of the virus into the body.
+
+164
+00:09:11,34 --> 00:09:15,55
+‎它已不能复制或造成伤害 ‎但仍然携带有抗原
+It can't reproduce or do damage but it still has that antigen,
+
+165
+00:09:15,63 --> 00:09:18,93
+‎这样 我们的免疫系统就可以 ‎学会如何识别目标
+so our immune system can learn what to watch out for.
+
+166
+00:09:19,30 --> 00:09:21,64
+‎我们针对脊髓灰质炎、麻疹
+That's how we vaccinate against polio,
+
+167
+00:09:21,72 --> 00:09:23,68
+‎流行性腮腺炎和风疹
+the measles, mumps, and rubella,
+
+168
+00:09:23,77 --> 00:09:25,56
+‎水痘、轮状病毒还有流感的疫苗
+chicken pox, rotavirus,
+
+169
+00:09:25,64 --> 00:09:27,14
+‎就是这样
+and for the flu.
+
+170
+00:09:27,60 --> 00:09:30,73
+‎这是至今为止最成熟有效的方法
+This is by far our most tried-and-true method,
+
+171
+00:09:30,82 --> 00:09:32,90
+‎但是这种方法很慢
+but it's a slow way to do it.
+
+172
+00:09:32,98 --> 00:09:37,11
+‎我们要在其他活体细胞 比如鸡蛋中 ‎培养病毒几个月
+We have to grow the virus for months in other living cells, like chicken eggs,
+
+173
+00:09:37,20 --> 00:09:39,37
+‎这种方法我们已经用了几十年
+a method we've been using for decades.
+
+174
+00:09:39,78 --> 00:09:42,70
+‎我们就叫它第一代疫苗吧
+We'll call these the first-generation vaccines,
+
+175
+00:09:42,79 --> 00:09:45,66
+‎截至五月初 ‎有九种第一代疫苗参与试验
+and there are nine in the race as of early May.
+
+176
+00:09:46,71 --> 00:09:49,04
+‎其他科学家在尝试一种新方法
+Other scientists are trying a newer approach.
+
+177
+00:09:49,13 --> 00:09:51,04
+‎他们不注射完整的冠状病毒
+Instead of the whole coronavirus,
+
+178
+00:09:51,13 --> 00:09:53,50
+‎而是只注射抗原
+they're giving the body just an antigen,
+
+179
+00:09:53,59 --> 00:09:56,38
+‎他们认为 这就足以激活免疫反应
+a piece they think will activate the immune response.
+
+180
+00:09:56,63 --> 00:10:00,72
+‎这些抗原也需要培养 ‎有时是在酵母细胞中培养
+Those antigens also need to be grown, sometimes in yeast cells,
+
+181
+00:10:00,80 --> 00:10:02,85
+‎或者是附着于另一个无害的病毒
+or attached to another harmless virus.
+
+182
+00:10:03,39 --> 00:10:06,39
+‎乙肝疫苗就是这个原理
+This is how the vaccine for hepatitis B works,
+
+183
+00:10:06,48 --> 00:10:09,19
+‎百日咳和脑膜炎也是这样
+and for whooping cough, and meningitis B.
+
+184
+00:10:09,90 --> 00:10:12,94
+‎我们叫这种疫苗第二代疫苗
+We'll call these second-generation vaccines,
+
+185
+00:10:13,02 --> 00:10:17,99
+‎在攻克新冠肺炎的竞赛中 ‎第二代疫苗应用最广 现有72个备选
+and they're the most popular kind in the COVID-19 race, with 72 candidates.
+
+186
+00:10:19,11 --> 00:10:21,41
+‎最后 还有一种全新的疫苗
+Finally, there's a brand new type of vaccine
+
+187
+00:10:21,49 --> 00:10:24,41
+‎它完全不使用病毒的任何成分
+that doesn't use any part of the actual virus at all.
+
+188
+00:10:24,91 --> 00:10:28,46
+‎而只是把病毒的复制信息 ‎传递给我们的身体
+Instead, it just gives our bodies the virus's instructions,
+
+189
+00:10:28,54 --> 00:10:32,92
+‎这些遗传信息片段 ‎能指导我们的细胞生产出抗原
+tiny pieces of genetic code that tell our cells to produce the antigens,
+
+190
+00:10:33,00 --> 00:10:35,09
+‎从而激活免疫反应
+which then activate the immune response.
+
+191
+00:10:35,63 --> 00:10:40,18
+‎这种原理的疫苗 ‎还没有被批准应用于人体
+No vaccine using this approach has ever been approved for use in humans.
+
+192
+00:10:40,26 --> 00:10:43,22
+‎我们可以把这种疫苗称为第三代疫苗
+We'll call these the third-generation vaccines,
+
+193
+00:10:43,30 --> 00:10:46,06
+‎现有27种参与试验
+and there are 27 in the race.
+
+194
+00:10:46,14 --> 00:10:49,19
+‎第三代疫苗不需要培养病毒
+Because they don't involve growing any part of any virus,
+
+195
+00:10:49,27 --> 00:10:51,48
+‎所以制造速度可以非常快
+they can be made extremely fast.
+
+196
+00:10:52,15 --> 00:10:55,98
+‎这支破纪录的疫苗 ‎就是第三代备选疫苗
+This record-breaking vaccine was a third-generation candidate
+
+197
+00:10:56,07 --> 00:10:58,07
+‎来自美国莫德纳公司
+from a US company called Moderna.
+
+198
+00:10:58,78 --> 00:11:01,45
+‎但制造一种备选疫苗并不难
+But making a vaccine candidate isn't the hard part.
+
+199
+00:11:01,86 --> 00:11:03,45
+‎难的是下一步
+This next phase is.
+
+200
+00:11:03,87 --> 00:11:04,99
+‎临床试验
+Clinical trials.
+
+211
+00:11:05,08 --> 00:11:06,20
+[engines rev]
+
+201
+00:11:06,29 --> 00:11:07,95
+‎他们全速前进
+[announcer] And they're up to speed.
+
+202
+00:11:09,41 --> 00:11:11,75
+‎传统上 临床试验分三个阶段
+[narrator] Traditionally, there are three phases.
+
+203
+00:11:12,96 --> 00:11:16,30
+‎首先 科研团队给少数人注射疫苗
+First, teams give their vaccines to a small group of people,
+
+204
+00:11:16,38 --> 00:11:20,01
+‎等几个月 ‎看看他们有没有危险的不良反应
+wait a few months, and see if any of them report dangerous side effects.
+
+205
+00:11:20,84 --> 00:11:22,09
+‎如果一切都好
+If everything looks good,
+
+206
+00:11:22,18 --> 00:11:24,89
+‎疫苗就进入下一阶段 ‎给大约200人接种
+the vaccine moves on and is given to a couple hundred people,
+
+207
+00:11:24,97 --> 00:11:27,52
+‎还是观察有无危险的不良反应
+again, to see if there are any dangerous side effects,
+
+208
+00:11:27,60 --> 00:11:30,81
+‎但也要观察人的免疫系统 ‎是否被调动起来
+but also to see if people's immune systems ramp up.
+
+209
+00:11:30,89 --> 00:11:33,69
+‎这需要等更久 通常几个月
+That involves more waiting, usually months.
+
+210
+00:11:34,61 --> 00:11:37,27
+‎然后 疫苗进入三期试验
+Then the candidate moves on to the third test,
+
+211
+00:11:37,36 --> 00:11:40,53
+‎数千人接种 ‎第三次确保没有不良反应
+where thousands are vaccinated to triple-check for side effects
+
+212
+00:11:40,61 --> 00:11:42,24
+‎同时观察效果
+and see how well it works.
+
+213
+00:11:42,32 --> 00:11:45,28
+‎这又要等几个月 甚至几年
+That's another few months or years of waiting.
+
+214
+00:11:46,41 --> 00:11:47,99
+‎这不同于药物试验
+This isn't like testing a drug
+
+215
+00:11:48,08 --> 00:11:49,87
+‎你让患者服药
+where you give it to people with a disease
+
+216
+00:11:50,62 --> 00:11:52,16
+‎看他们是否好转
+and see if it makes them better.
+
+217
+00:11:52,83 --> 00:11:55,54
+‎你是要把疫苗给没病的人
+You're giving it to people who don't have a disease,
+
+218
+00:11:56,13 --> 00:12:00,01
+‎然后观察他们是否仍然不得病
+and then checking later to see if they still don't have the disease.
+
+219
+00:12:00,97 --> 00:12:04,68
+‎正常情况下 整个过程会历时四年
+In normal times, this whole process can take around four years,
+
+220
+00:12:04,76 --> 00:12:06,60
+‎针对五千人进行试验
+testing around 5,000 people.
+
+221
+00:12:07,14 --> 00:12:11,02
+‎但是 疫苗开发者希望 ‎有些试验可以同步进行
+But vaccine developers are hoping to do some of this testing simultaneously,
+
+222
+00:12:11,52 --> 00:12:15,69
+‎还是测这么多人 ‎但都在18个月里完成
+still testing the same number of people, but all in around 18 months.
+
+223
+00:12:16,23 --> 00:12:18,98
+‎这就是为什么 ‎有的备选疫苗进展如此迅速
+It's how some candidates are moving so quickly.
+
+224
+00:12:19,07 --> 00:12:22,78
+‎药监局已经批准莫德纳疫苗 ‎进入二期临床试验
+The FDA has cleared the Moderna vaccine for phase two of its trial.
+
+225
+00:12:22,86 --> 00:12:24,53
+‎莫德纳以破纪录的速度前进
+[reporter 1] Moderna moving at record speed.
+
+226
+00:12:24,61 --> 00:12:26,95
+‎中国已经批准了另一项临床试验
+China's already given approval for another clinical trial.
+
+227
+00:12:27,03 --> 00:12:28,20
+‎现在已进入二期阶段
+It's now at the second phase.
+
+228
+00:12:28,28 --> 00:12:31,37
+‎目前 最有希望的疫苗
+The vaccine, uh, that is most promising right now
+
+229
+00:12:31,45 --> 00:12:33,71
+‎来自牛津大学
+is the one from Oxford University.
+
+230
+00:12:33,79 --> 00:12:37,29
+‎-一二期合并 ‎-神速
+-That has merged phase one and phase two. -...which is speedy.
+
+231
+00:12:38,54 --> 00:12:42,09
+‎这个阶段的竞赛不能更快了 ‎这是有原因的
+[narrator] This stage of the race can't go any faster, for good reason.
+
+232
+00:12:42,51 --> 00:12:44,76
+‎不进行所有这些试验
+[Kirchhelle] Without running through all of these trials,
+
+233
+00:12:44,84 --> 00:12:46,55
+‎就推出疫苗
+it would be absolutely unethical
+
+234
+00:12:46,93 --> 00:12:50,39
+‎让普罗大众接种 ‎那是严重违反科学伦理的
+to roll out a vaccine potentially to the entire global population,
+
+235
+00:12:51,60 --> 00:12:53,81
+‎因为你可能会造成真正的伤害
+because you could do some real harm there.
+
+236
+00:12:55,02 --> 00:12:57,48
+‎今天 我们的士兵不必担心黄热病了
+[news reel announcer] Our men today are safe against yellow fever.
+
+237
+00:12:57,56 --> 00:13:01,86
+‎几滴疫苗 ‎就能带给他们可靠长效的免疫
+A few drops of vaccine will give them dependable and lasting immunity.
+
+238
+00:13:02,69 --> 00:13:06,49
+‎二战期间 ‎同盟国士兵接种了黄热病疫苗
+[narrator] During World War II,
+
+250
+00:13:04,11 --> 00:13:06,91
+Allied soldiers were vaccinated for yellow fever.
+
+239
+00:13:07,36 --> 00:13:11,20
+‎数千人罹患黄疸和肝炎 有人死亡
+Thousands developed jaundice and hepatitis, and some died.
+
+240
+00:13:11,74 --> 00:13:13,16
+‎这本是可以避免的
+That should never have happened.
+
+241
+00:13:13,25 --> 00:13:15,83
+‎疫苗开发者如果做了研究
+If the vaccine makers had done their research,
+
+242
+00:13:15,92 --> 00:13:19,96
+‎他们就会发现 ‎早在1885年就有此类不良反应的报告
+they would have discovered reports of these side effects dating back to 1885.
+
+243
+00:13:21,05 --> 00:13:22,71
+‎到了20世纪50年代
+Then in the 1950s,
+
+244
+00:13:22,80 --> 00:13:27,01
+‎劣质疫苗导致四万人感染脊髓灰质炎
+some poorly made vaccines infected 40,000 people with polio,
+
+245
+00:13:27,09 --> 00:13:28,76
+‎约200人死亡
+and killed around 200.
+
+246
+00:13:29,26 --> 00:13:30,89
+‎史称卡特事件
+Known as "the Cutter incident,"
+
+247
+00:13:30,97 --> 00:13:35,14
+‎美国政府随后 ‎加强了对疫苗生产的监管
+it led the US government to tighten requirements for vaccine manufacturers.
+
+248
+00:13:35,68 --> 00:13:41,82
+‎未经严格的安全考察 绝不会审批
+Nothing is licensed without undergoing extremely stringent safety considerations.
+
+249
+00:13:41,90 --> 00:13:45,28
+‎即便是审批之后 也继续受到监督
+And even after it's licensed, the vaccine continues to be monitored.
+
+250
+00:13:45,36 --> 00:13:47,70
+‎今天 根据美国政府数据
+[narrator] Today, according to the US government,
+
+251
+00:13:47,78 --> 00:13:50,74
+‎每投放百万份疫苗
+for every million doses of vaccine that are distributed,
+
+252
+00:13:50,83 --> 00:13:54,37
+‎只有一个人因严重不良反应得到赔偿
+only one person is compensated for serious side effects.
+
+253
+00:13:55,20 --> 00:14:00,08
+‎疫苗的审批门槛极高 ‎因为接种它的是健康的人
+Vaccines need to pass an extra-high bar because they're given to healthy people.
+
+254
+00:14:00,54 --> 00:14:04,71
+‎关系到安全和效果 我们不能走捷径
+[Hatchett] What we can't do is take shortcuts
+
+267
+00:14:02,75 --> 00:14:04,80
+where safety and effectiveness are concerned.
+
+255
+00:14:04,80 --> 00:14:07,09
+‎我想有办法精简一些环节
+I think there are ways to streamline some things
+
+256
+00:14:07,17 --> 00:14:08,51
+‎更多工作可以同步进行
+and do more things in parallel,
+
+257
+00:14:08,59 --> 00:14:10,05
+‎但这会很难
+but it's going to be tough,
+
+258
+00:14:10,14 --> 00:14:13,06
+‎好比精心编排的舞蹈
+and it's going to be a carefully orchestrated dance.
+
+259
+00:14:13,14 --> 00:14:15,72
+‎不是一件事完成再做下一件事
+Rather than running everything in series
+
+260
+00:14:15,81 --> 00:14:19,14
+‎也不是一个人去做所有的步骤
+and having just one person doing each of these steps along the way,
+
+261
+00:14:19,23 --> 00:14:21,11
+‎而是投入整个团队
+whole teams of people have been put there
+
+262
+00:14:21,19 --> 00:14:25,73
+‎确保维持同样的质量和安全标准
+to ensure that we still maintain the same quality and safety.
+
+263
+00:14:26,32 --> 00:14:28,74
+‎但是 有的团队有先发优势
+[narrator] But some teams did have a head start here,
+
+264
+00:14:28,82 --> 00:14:31,24
+‎因为这不是第一个冠状病毒
+because this isn't the first coronavirus,
+
+265
+00:14:31,32 --> 00:14:35,04
+‎也不是 ‎第一个引发疫苗竞赛的冠状病毒
+or the first coronavirus to inspire a race for a vaccine.
+
+266
+00:14:36,25 --> 00:14:37,66
+‎非典的影响
+[reporter 2] The impact of SARS.
+
+267
+00:14:38,16 --> 00:14:41,92
+‎非典已经传遍世界
+[reporter 3] The SARS disease has spread across the world.
+
+268
+00:14:42,00 --> 00:14:45,38
+‎针对中东呼吸综合征
+[reporter 4] The battle against an outbreak
+
+269
+00:14:45,46 --> 00:14:48,01
+‎简称MERS的战斗 在韩国继续
+of Middle East Respiratory Syndrome, or MERS, continues in South Korea.
+
+270
+00:14:48,09 --> 00:14:51,14
+‎非典和MERS病毒大爆发时
+[narrator] When SARS and MERS viruses caused outbreaks,
+
+271
+00:14:51,22 --> 00:14:54,01
+‎很多科学家就开始研制疫苗
+many scientists got to work on vaccines,
+
+272
+00:14:54,10 --> 00:14:56,60
+‎包括牛津大学的一个团队
+including a team at Oxford University.
+
+273
+00:14:56,68 --> 00:15:00,44
+‎我们对冠状病毒和它们的生物学机制 ‎有了很多了解
+We've learnt a lot about coronaviruses and their biology,
+
+274
+00:15:00,52 --> 00:15:02,81
+‎事实上 就是因为上两次大爆发
+actually, because of the last two big outbreaks.
+
+275
+00:15:03,27 --> 00:15:08,61
+‎2018年 牛津大学的一种很有希望的 ‎MERS疫苗进入人体试验阶段
+[narrator] In 2018, Oxford University got a promising MERS candidate
+
+289
+00:15:07,40 --> 00:15:08,61
+into human trials,
+
+276
+00:15:08,69 --> 00:15:12,07
+‎希望能避免 ‎这种罕见冠状病毒再次爆发
+hoping to stop the next outbreak of this rare coronavirus.
+
+277
+00:15:12,16 --> 00:15:16,20
+‎可是一年之后 ‎这种新型冠状病毒出现了
+But then a year later, this latest coronavirus broke out.
+
+278
+00:15:16,29 --> 00:15:17,58
+‎因为二者比较相似
+Because it was similar,
+
+279
+00:15:17,66 --> 00:15:22,58
+‎科研团队可以比较容易地把 ‎他们的MERS疫苗改造成新冠肺炎疫苗
+the team easily adapted their MERS vaccine into a COVID-19 one.
+
+280
+00:15:22,67 --> 00:15:26,46
+‎我们走了一条重要的捷径
+And so that has really been a major shortcut that we've had,
+
+281
+00:15:26,55 --> 00:15:29,05
+‎而不需要再回去 从一张白纸开始
+by not having to go back to the drawing board and start again.
+
+282
+00:15:29,13 --> 00:15:31,47
+‎他们快速通过一期试验
+[narrator] They sped through the first phase of trials,
+
+283
+00:15:31,55 --> 00:15:34,68
+‎准备今年夏天进入后续试验阶段
+putting them on track to begin the next phases in the summer.
+
+284
+00:15:34,76 --> 00:15:37,60
+‎我们不确定 ‎是不是一切都能按计划进行
+We don't know for certain that that will all go to plan,
+
+285
+00:15:37,68 --> 00:15:40,02
+‎但是如果一切顺利 那么今年秋天
+but if it does, then it's certainly possible
+
+286
+00:15:40,10 --> 00:15:42,52
+‎完全可能会有几百万份疫苗生产出来
+that there could be millions of doses available in the autumn.
+
+287
+00:15:43,02 --> 00:15:46,02
+‎很不幸 牛津大学的故事并不普遍
+[narrator] Unfortunately, Oxford's story is uncommon.
+
+288
+00:15:46,52 --> 00:15:51,65
+‎彼得候特茲几年前也研制出一种 ‎很有希望的非典疫苗
+Peter Hotez also made a promising coronavirus vaccine for SARS years ago.
+
+289
+00:15:51,74 --> 00:15:55,20
+‎一切都很顺利 可是后来 经费中断了
+It was all going well, and then the grant ended.
+
+290
+00:15:55,28 --> 00:15:57,03
+‎我们想 “都走了这么远了
+And we thought, "Well, we've gone this far.
+
+291
+00:15:57,12 --> 00:16:00,41
+‎我们只好再筹钱 ‎把它推进到临床阶段”
+We'll just get funding to move it into clinical trials."
+
+292
+00:16:00,50 --> 00:16:01,96
+‎很遗憾 我们筹不到钱
+And unfortunately, we couldn't.
+
+293
+00:16:02,41 --> 00:16:04,88
+‎很多很有希望的疫苗就这样夭折了
+[narrator] This happened to so many promising vaccines
+
+294
+00:16:04,96 --> 00:16:08,30
+‎这个阶段因此也被称为 ‎“疫苗的死亡之谷”
+that this stage is often called "the Vaccine Valley of Death."
+
+295
+00:16:08,92 --> 00:16:10,46
+‎这些科学家以破纪录的速度
+Of these vaccine candidates
+
+296
+00:16:10,55 --> 00:16:12,80
+‎研制的备选疫苗
+that scientists race to make in record time,
+
+297
+00:16:12,88 --> 00:16:15,05
+‎只有埃博拉疫苗跑到了终点
+only Ebola reached the finish line.
+
+298
+00:16:15,14 --> 00:16:18,68
+‎因为一旦疫情结束 资金也就中断了
+Because when these outbreaks ended, so did the funding.
+
+299
+00:16:18,76 --> 00:16:22,23
+‎每次灾难性的疫情之后
+After every catastrophic pandemic or epidemic,
+
+300
+00:16:22,31 --> 00:16:24,81
+‎我都会说： ‎“也许这一次终于能看到改变了
+I say, "Maybe this is the one that moves the needle
+
+301
+00:16:24,90 --> 00:16:27,40
+‎终于能看到公共财政拨款了”
+and gets public funding in place."
+
+302
+00:16:27,48 --> 00:16:29,82
+‎2003年非典之后我就这么说
+And I said that after SARS in 2003,
+
+303
+00:16:29,90 --> 00:16:33,24
+‎2009年H1N1之后我又这么说
+I said it after H1N1 in 2009,
+
+304
+00:16:33,32 --> 00:16:35,53
+‎2012年MERS之后 我又这么说
+I said it after MERS in 2012,
+
+305
+00:16:35,61 --> 00:16:37,66
+‎2014年埃博拉之后 我又这么说
+I said it after Ebola in 2014,
+
+306
+00:16:37,74 --> 00:16:39,95
+‎2016年兹卡病毒之后 我又这么说
+after Zika in 2016, and I'll say it again.
+
+307
+00:16:40,49 --> 00:16:44,08
+‎彼得的新冠肺炎疫苗是 ‎基于他的非典疫苗改造而成的
+[narrator] Peter's COVID-19 candidate is based on his SARS candidate.
+
+308
+00:16:44,16 --> 00:16:46,50
+‎但如果当年就能进行测试
+But if he had been able to test it back then...
+
+309
+00:16:47,04 --> 00:16:49,42
+‎我们现在可能已经做完安全测试了
+We would have had the safety testing potentially finished,
+
+310
+00:16:49,50 --> 00:16:51,38
+‎那就非同小可 是不是？
+and that's not insignificant, right?
+
+311
+00:16:51,46 --> 00:16:55,68
+‎所以 我们失去了那个机会 太可惜了
+So that's too bad that we lost that opportunity.
+
+312
+00:16:56,26 --> 00:16:57,80
+‎2017年
+[narrator] In 2017,
+
+313
+00:16:57,89 --> 00:17:00,18
+‎在盖茨基金会的部分资助下 一群人
+a group of people funded in part by the Gates Foundation
+
+314
+00:17:00,26 --> 00:17:02,35
+‎聚集一堂 尝试解决这个问题
+came together to fix this.
+
+315
+00:17:02,43 --> 00:17:06,02
+‎很不幸 虽然各种疫病流行的
+Well, unfortunately, even though there's a substantial risk
+
+316
+00:17:06,10 --> 00:17:07,90
+‎风险很高
+of various types of epidemics,
+
+317
+00:17:07,98 --> 00:17:12,19
+‎但是人们却没有足够动力 ‎去生产出防患未然的产品
+there's not a natural incentive for people to build products that anticipate that.
+
+318
+00:17:12,28 --> 00:17:16,24
+‎我们必须把政府和基金会整合起来
+You've got to bring governments and foundations together
+
+319
+00:17:16,32 --> 00:17:18,41
+‎创造一个合理的激励机制
+to create the right incentive structure.
+
+320
+00:17:18,87 --> 00:17:20,58
+‎他们把这个组织命名为CEPI
+[narrator] They call themselves CEPI,
+
+321
+00:17:20,66 --> 00:17:23,50
+‎流行病预防创新联盟
+The Coalition for Epidemic Preparedness Innovations.
+
+322
+00:17:23,91 --> 00:17:28,83
+‎CEPI的作用就是把资金整合起来 ‎成为一个资金池
+[Hatchett] What CEPI is,
+
+337
+00:17:25,66 --> 00:17:28,83
+is it aggregates funding and creates a pool of funds
+
+323
+00:17:28,92 --> 00:17:31,05
+‎去支持疫苗的研发
+to support vaccine development.
+
+324
+00:17:31,13 --> 00:17:32,71
+‎这样 我们可以作为诚实中间人
+So we can play fair broker
+
+325
+00:17:32,80 --> 00:17:36,18
+‎拿着这笔几十亿美元的资金 ‎确保在世界范围内
+and take those billions that are available for tools for the world
+
+326
+00:17:36,26 --> 00:17:38,09
+‎把它用在正确的地方
+and make sure they go to the right place.
+
+327
+00:17:38,55 --> 00:17:42,26
+‎截至五月初 已有九个 ‎新冠肺炎备选疫苗获得CEPI支持
+[narrator] As of early May, CEPI is behind nine COVID-19 candidates,
+
+328
+00:17:42,35 --> 00:17:44,31
+‎包括两个领先的疫苗：
+including two of the early front-runners:
+
+329
+00:17:44,39 --> 00:17:47,02
+‎牛津大学的新疫苗和莫德纳疫苗
+Oxford's new candidate, and Moderna's.
+
+330
+00:17:47,10 --> 00:17:50,61
+‎这两种疫苗 ‎以及一种中国疫苗的成功
+And it's the success of those two candidates,
+
+346
+00:17:49,44 --> 00:17:50,61
+and one from China,
+
+331
+00:17:50,69 --> 00:17:55,11
+‎让专家看到希望 认为18个月后 ‎就可能有一种疫苗获得批准
+that give experts hope that we can have a vaccine approved in 18 months,
+
+332
+00:17:55,19 --> 00:17:57,45
+‎但这还不是竞赛的终点
+but that isn't the end of the race.
+
+333
+00:17:57,53 --> 00:17:58,82
+‎还差得远呢
+Not even close.
+
+350
+00:17:59,53 --> 00:18:00,70
+[car engines roaring]
+
+334
+00:18:00,78 --> 00:18:02,53
+‎他们又进入下一圈的角逐
+[announcer] And around they go once more,
+
+335
+00:18:02,62 --> 00:18:05,70
+‎加速前进 轮胎几乎起火
+burning tires down to the fabric as they pour on the coal.
+
+336
+00:18:06,91 --> 00:18:10,92
+‎别忘了 要终结这场全球大流行病 ‎我们需要达到群体免疫
+[narrator] Remember, to end this pandemic, we need to reach herd immunity.
+
+337
+00:18:11,46 --> 00:18:14,05
+‎针对这种冠状病毒 专家估计
+And for this coronavirus, experts estimate
+
+338
+00:18:14,13 --> 00:18:18,13
+‎需要全世界至少60%的人口实现免疫
+that means at least 60% of the world needs to become immune.
+
+339
+00:18:18,22 --> 00:18:22,14
+‎那就是将近80亿人的60%
+That's 60% of almost eight billion people.
+
+340
+00:18:22,22 --> 00:18:23,85
+‎需要生产几十亿支疫苗？
+[interviewer] Billions of vaccines need to be made?
+
+341
+00:18:23,93 --> 00:18:24,97
+‎是的
+That's correct.
+
+342
+00:18:25,06 --> 00:18:29,77
+‎在世界历史上 ‎我们从来没有生产过十亿支疫苗
+We've never produced a billion doses of a vaccine in the history of the world.
+
+343
+00:18:29,85 --> 00:18:33,36
+‎数十亿支疫苗 这是破天荒的
+[Gates] You're in a new regime when you talk about billions of a vaccine.
+
+344
+00:18:33,44 --> 00:18:35,40
+‎我们任何疫苗也没有量产过几十亿支
+We don't make billions of any vaccine.
+
+345
+00:18:35,48 --> 00:18:36,65
+‎我们可以生产几亿支
+We make hundreds of millions,
+
+346
+00:18:36,74 --> 00:18:40,11
+‎但那也需要几十年 就连药瓶
+but those we've had decades to work on. And even the bottles,
+
+347
+00:18:40,74 --> 00:18:43,16
+‎也是特殊的药品级玻璃
+that's a special, pharmaceutical-grade glass,
+
+348
+00:18:43,24 --> 00:18:44,58
+‎世界上没有那么多
+the world doesn't have enough of that.
+
+349
+00:18:45,08 --> 00:18:46,04
+‎首先
+[narrator] Just to start with,
+
+350
+00:18:46,12 --> 00:18:49,54
+‎要生产十亿支疫苗 ‎你需要有很多工厂
+to make a billion doses, you need a lot of factories.
+
+351
+00:18:49,62 --> 00:18:53,42
+‎但是每种疫苗都需要不同类型的工厂
+But each type of vaccine requires a different kind of factory,
+
+352
+00:18:53,50 --> 00:18:57,17
+‎要让足够多的工厂提高产量 ‎可能需要几年时间
+and ramping up production in enough factories can take years.
+
+353
+00:18:57,26 --> 00:18:59,26
+‎不过 很多大型制药企业有条捷径
+But a lot of the giants have a shortcut.
+
+354
+00:18:59,34 --> 00:19:02,09
+‎他们让工厂现在就开工生产
+They have the factories to start production now.
+
+355
+00:19:02,18 --> 00:19:04,76
+‎我们有一个大工厂 完全可以开工
+We have one big plant which is fully operational.
+
+356
+00:19:04,85 --> 00:19:08,85
+‎可以产出三亿支疫苗
+So that can spit out 300 million vaccines.
+
+357
+00:19:08,93 --> 00:19:13,73
+‎现在 我们正在世界各地 ‎快速建设新工厂
+Now we are very quickly setting up additional plants in the world.
+
+358
+00:19:14,27 --> 00:19:18,28
+‎但是 较新型的疫苗 ‎没有几家工厂能生产 甚至根本没有
+[narrator] But the newer types of vaccines don't have many, or any, factories yet,
+
+359
+00:19:18,57 --> 00:19:21,53
+‎所以 有人已经开始在 ‎不同的备选疫苗上下注
+so some are placing bets on candidates now,
+
+360
+00:19:21,61 --> 00:19:25,20
+‎为他们认为有可能通过测试的疫苗 ‎筹建工厂
+building factories for the ones they think might survive trials.
+
+361
+00:19:25,28 --> 00:19:30,29
+‎毕竟 那些投资至多几十亿 ‎却可以省下几万亿
+After all, those investments are, at most, billions to save trillions.
+
+362
+00:19:30,79 --> 00:19:33,13
+‎就算我们可以生产出那么多疫苗
+[narrator] And even if we can make that many doses,
+
+363
+00:19:33,21 --> 00:19:36,63
+‎我们还需要把疫苗送到 ‎世界各地的人们那里
+we'll still need to get the vaccine to people all over the world,
+
+364
+00:19:36,71 --> 00:19:39,13
+‎这时候 政治因素就会成为障碍
+and that's when politics can get in the way.
+
+365
+00:19:40,47 --> 00:19:44,76
+‎我们有一种疫苗 我们相信能保护
+[Andrew Cuthbertson] We have a specific vaccine that we believe
+
+366
+00:19:44,85 --> 00:19:48,68
+‎数百万人不被新型H1N1病毒感染
+will be able to protect millions of people against this new H1N1 flu.
+
+367
+00:19:48,77 --> 00:19:51,85
+‎2009年猪流感疫情期间
+[narrator] During the swine flu epidemic in 2009,
+
+368
+00:19:51,94 --> 00:19:55,27
+‎一家澳大利亚公司率先研制出疫苗
+an Australian company was among the first to make a vaccine,
+
+369
+00:19:55,36 --> 00:19:58,40
+‎政府要求他们首先卖给澳大利亚人
+and the government made them sell to Australians first.
+
+370
+00:19:59,11 --> 00:20:01,07
+‎加拿大也采取类似做法
+Canada made a similar move.
+
+371
+00:20:01,74 --> 00:20:04,91
+‎尽管美国承诺捐赠一部分
+And while the US promised to donate some of its supply,
+
+372
+00:20:04,99 --> 00:20:07,33
+‎但他们直到疫情结束才捐出
+they waited until the epidemic was over.
+
+373
+00:20:08,04 --> 00:20:10,95
+‎所以 疫苗在哪里生产 很重要
+So it matters where a vaccine is made.
+
+374
+00:20:11,46 --> 00:20:13,21
+‎疫苗民族主义
+Vaccine nationalism. That is real.
+
+376
+00:20:14,25 --> 00:20:17,17
+‎已经有迹象表明 ‎有人想买下正在研发最有希望的
+There are early signs that people are trying to buy by the biotech companies
+
+377
+00:20:17,25 --> 00:20:18,71
+‎疫苗的生物科技公司
+that have lead contenders.
+
+378
+00:20:18,80 --> 00:20:20,92
+‎狭隘地把国家利益摆在最优先位置
+There's a long tradition of narrowly putting
+
+379
+00:20:21,01 --> 00:20:22,67
+‎这种做法由来已久
+national interest above others,
+
+380
+00:20:22,76 --> 00:20:25,89
+‎显然 这样做的人通常是有钱人
+and that's obviously often correlated with people who have the money.
+
+381
+00:20:26,05 --> 00:20:29,56
+‎世界各国领导人联合呼吁展开合作
+[narrator] World leaders have come together
+
+398
+00:20:28,01 --> 00:20:29,56
+and called for cooperation.
+
+382
+00:20:29,64 --> 00:20:31,10
+‎科学无国界
+[in German] Science is never national. Science serves mankind.
+
+385
+00:20:33,89 --> 00:20:37,69
+‎大家承诺确保机会均等 这是关键
+[in English] The commitment to ensuring equal access is the key.
+
+386
+00:20:37,77 --> 00:20:40,69
+‎在全世界有需要的人
+Victory against this virus cannot be declared
+
+387
+00:20:40,78 --> 00:20:44,40
+‎都能获得有效的疫苗和药品之前
+before effective vaccines and therapeutics are made available
+
+388
+00:20:44,49 --> 00:20:46,49
+‎不能说针对病毒的战斗已经胜利
+to all in need around the world.
+
+389
+00:20:47,12 --> 00:20:48,45
+‎可是截至5月
+[narrator] But as of May, the US hasn't been one of them.
+
+391
+00:20:52,62 --> 00:20:56,42
+‎谁能得到疫苗 也取决于价格
+Who can get a vaccine will also depend on its price.
+
+392
+00:20:56,50 --> 00:20:58,88
+‎要多少钱？富裕国家应该多花钱吗？
+How much should it cost? Should rich countries pay more?
+
+393
+00:20:58,96 --> 00:21:00,96
+‎贫穷国家应该少付一点吗？
+Should, you know, poorer countries pay less?
+
+394
+00:21:01,05 --> 00:21:05,09
+‎另外 如果疫苗是 ‎一家大型制药公司研发的
+And also, if this vaccine is developed by a major pharmaceutical company,
+
+395
+00:21:05,18 --> 00:21:08,18
+‎这家公司应该被允许 ‎通过疫苗获得多少收益？
+how much money is this company allowed to make off this vaccine?
+
+396
+00:21:09,01 --> 00:21:12,43
+‎别忘了 这些疫苗多数是私人资助的
+[narrator] Remember, most of these vaccines are funded privately,
+
+397
+00:21:12,52 --> 00:21:15,64
+‎根据一些疫苗制造者的股价上涨情况
+and based on how some vaccine makers' stocks have risen,
+
+398
+00:21:15,73 --> 00:21:18,86
+‎很显然 有些人要发大财了
+some people clearly see a potential windfall ahead.
+
+399
+00:21:19,36 --> 00:21:22,44
+‎但目前 一些公司 比如强生
+But so far, some companies like Johnson & Johnson
+
+400
+00:21:22,53 --> 00:21:25,20
+‎已经承诺廉价销售他们的疫苗
+have promised to make their vaccine affordable,
+
+401
+00:21:25,28 --> 00:21:27,03
+‎低至每支10美元
+as little as $10 a dose.
+
+402
+00:21:27,61 --> 00:21:33,66
+‎这很关键 因为只有接种到几十亿人 ‎疫苗才算成功了
+And that's critical, because a vaccine can only win if it gets to billions of people,
+
+403
+00:21:33,75 --> 00:21:36,00
+‎其中包括向那些无力购买的人提供
+including those who can't afford it.
+
+404
+00:21:36,08 --> 00:21:38,04
+‎要让全世界足够多的人接种
+So to vaccinate enough of the world,
+
+405
+00:21:38,50 --> 00:21:40,96
+‎我们需要不止一个优胜者
+we'll actually need more than one winner.
+
+420
+00:21:42,75 --> 00:21:44,88
+-[engines roaring] -[crowd cheering]
+
+406
+00:21:45,84 --> 00:21:48,30
+‎这场竞赛不是不同疫苗间的竞赛
+[narrator] This race isn't really between the candidates.
+
+407
+00:21:48,39 --> 00:21:51,51
+‎而是人类和病毒之间的竞赛
+It's between humanity and this virus,
+
+408
+00:21:51,60 --> 00:21:55,31
+‎这个让经济停滞 ‎让全世界数十万人丧生的
+that simple little vehicle that's paralyzed economies
+
+409
+00:21:55,39 --> 00:21:58,98
+‎简单的生物信息载体
+and ended hundreds of thousands of lives around the world.
+
+410
+00:21:59,44 --> 00:22:02,82
+‎要战胜它 ‎我们必须做从没有做过的事：
+We can only beat it by doing what we've never done before:
+
+411
+00:22:03,23 --> 00:22:06,49
+‎以破纪录的速度 ‎为所有人制造出一种疫苗
+making a vaccine for everyone in record time.
+
+427
+00:22:06,57 --> 00:22:07,74
+["Race For the Prize" playing]
+
+428
+00:22:07,82 --> 00:22:14,12
+♪ Two scientists are racing For the good of all mankind ♪
+
+429
+00:22:14,41 --> 00:22:21,38
+♪ Both of them side-by-side So determined ♪
+
+430
+00:22:22,63 --> 00:22:28,76
+♪ Locked in heated battle For the cure that is their prize ♪
+
+431
+00:22:29,09 --> 00:22:31,55
+♪ But it's so dangerous ♪
+
+432
+00:22:33,47 --> 00:22:35,31
+♪ But they're determined ♪ 
+

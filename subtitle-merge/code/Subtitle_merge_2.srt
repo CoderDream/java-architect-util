@@ -1,0 +1,2381 @@
+1
+00:00:07,04 --> 00:00:09,05
+[siren wailing] 
+
+2
+00:00:13,72 --> 00:00:16,51
+[birds chirping]
+
+1
+00:00:17,76 --> 00:00:19,47
+‎在封锁边境…
+[narrator] Before closing their borders...
+
+2
+00:00:20,85 --> 00:00:22,81
+‎限制公民出行之前…
+and locking down their citizens...
+
+3
+00:00:24,27 --> 00:00:28,73
+‎许多世界领导人 ‎都对席卷全球的新型病毒轻描淡写
+many world leaders downplayed the new virus that was sweeping the globe.
+
+4
+00:00:29,07 --> 00:00:31,65
+‎局势完全可控
+[in Italian] The situation is absolutely under control.
+
+5
+00:00:31,74 --> 00:00:33,36
+‎（伊朗总统 2020年2月25日）
+[in Persian] This is one of our enemies’ plots,
+
+6
+00:00:33,45 --> 00:00:39,16
+‎这是敌人的阴谋之一 ‎想把我们的国家拖入瘫痪
+dragging the country to a shutdown.
+
+8
+00:00:37,12 --> 00:00:39,16
+dragging the country to a shutdown.
+
+7
+00:00:39,24 --> 00:00:42,29
+‎我们应当一切照常
+[in English] We should be going about our business as usual.
+
+8
+00:00:42,37 --> 00:00:44,00
+‎（巴西总统 2020年3月10日）
+[in Portuguese] A lot of that is fantasy when it comes to the coronavirus.
+
+9
+00:00:44,08 --> 00:00:46,33
+‎谈到冠状病毒时 很多都是想象
+[in Portuguese] A lot of that is fantasy when it comes to the coronavirus.
+
+10
+00:00:46,42 --> 00:00:49,96
+‎没人想到会有如此大规模的流行病
+[in English] Nobody knew there'd be a pandemic
+
+12
+00:00:48,38 --> 00:00:49,96
+or an epidemic of this proportion.
+
+11
+00:00:51,92 --> 00:00:56,55
+‎但许多从事传染病研究的人都知道 ‎流行病爆发即将来临
+[narrator] But many who work in infectious disease
+
+14
+00:00:54,42 --> 00:00:56,72
+knew a pandemic like this was coming.
+
+12
+00:00:57,55 --> 00:01:00,01
+‎事实上 在2019年的春天
+In fact, in the spring of 2019,
+
+13
+00:01:00,10 --> 00:01:02,56
+‎出现第一例COVID-19病例的几个月前
+months before the first case of COVID-19,
+
+14
+00:01:03,10 --> 00:01:05,52
+‎我们为了节目  采访过这些人
+we interviewed several of them for this show.
+
+15
+00:01:05,85 --> 00:01:08,23
+‎如果要想象一种情况
+Well, if you think of anything that could come along
+
+16
+00:01:08,31 --> 00:01:11,15
+‎能够导致数百万人死亡
+that would kill millions of people,
+
+17
+00:01:11,23 --> 00:01:13,90
+‎流行病是风险最高的
+the pandemic is our greatest risk.
+
+18
+00:01:14,99 --> 00:01:16,61
+‎就死亡人数而言
+In terms of the death toll,
+
+19
+00:01:16,70 --> 00:01:21,99
+‎流行病甚至可以 ‎与昔日的大规模战争相提并论
+a pandemic would rival even the gigantic wars of the past.
+
+20
+00:01:22,62 --> 00:01:27,17
+‎经济将会停滞 ‎人类将会付出难以想象的代价
+The economy will shut down, the cost to humanity will be unbelievable,
+
+21
+00:01:27,25 --> 00:01:31,71
+‎由此带来的问题 ‎没有一个国家能幸免
+and no country will be immune from the problem this will create.
+
+22
+00:01:32,34 --> 00:01:35,47
+‎确实需要非凡的政治意愿 才能去说
+[Maryn McKenna] It really takes an extraordinary act of political will
+
+23
+00:01:35,55 --> 00:01:40,14
+‎“是的 现在事情看起来没有那么糟糕
+to say, "Yes, right now, things don't look that bad,
+
+24
+00:01:40,22 --> 00:01:42,64
+‎但无论如何 ‎我们都要向公共卫生提供资金
+but we're going to send funding to public health anyway,
+
+25
+00:01:42,72 --> 00:01:44,35
+‎因为我们知道总有一天
+because we know that someday it will be bad."
+
+26
+00:01:44,43 --> 00:01:45,39
+‎它会变糟的”
+because we know that someday it will be bad."
+
+27
+00:01:46,06 --> 00:01:49,65
+‎我们估计野生动物中 ‎大约有150万种病毒
+We estimate there are around 1.5 million viruses in wildlife
+
+28
+00:01:49,73 --> 00:01:51,27
+‎都是我们还不了解的
+that we don't yet know about.
+
+29
+00:01:51,36 --> 00:01:54,94
+‎其中任何一种 ‎都有可能扩散到人类之中
+Any one of those could be spilling over into human population right now.
+
+30
+00:01:55,82 --> 00:02:00,66
+‎当一种病毒从动物传染给人类时 ‎它被称为人畜共患病毒
+[narrator] When a virus jumps from an animal to a human,
+
+33
+00:01:58,74 --> 00:02:00,66
+it's called a zoonotic virus,
+
+31
+00:02:01,32 --> 00:02:02,74
+‎几十年来
+and for decades,
+
+32
+00:02:02,83 --> 00:02:07,00
+‎这些新型病毒引起了越来越多的疫情
+these kinds of new viruses have been causing more and more outbreaks.
+
+33
+00:02:07,54 --> 00:02:09,00
+‎我们知晓一些非常致命的病毒
+We know some pretty lethal ones,
+
+34
+00:02:09,08 --> 00:02:11,84
+‎但我们预计还有其他更致命的病毒
+but we expect that there are others out there that are more lethal,
+
+35
+00:02:11,92 --> 00:02:13,71
+‎更容易传播
+that are better at being transmitted,
+
+36
+00:02:13,80 --> 00:02:17,13
+‎我们没有药物和疫苗 ‎这是最大的风险
+where we've got no drugs and no vaccines. They're the big risk.
+
+37
+00:02:17,72 --> 00:02:20,30
+‎2002年的SARS就是这种情况
+[narrator] That's what happened with SARS in 2002,
+
+38
+00:02:20,39 --> 00:02:25,01
+‎这是一种新型冠状病毒 ‎在全世界传播 导致数百人死亡
+which was a new coronavirus that spread around the world, killing hundreds.
+
+39
+00:02:25,60 --> 00:02:28,69
+‎2012年 中东呼吸综合症再次爆发
+And it happened again with MERS in 2012,
+
+43
+00:02:28,77 --> 00:02:32,44
+which was also a new coronavirus that killed hundreds.
+
+40
+00:02:29,06 --> 00:02:32,36
+‎这也是一种新型冠状病毒 ‎导致数百人死亡
+which was also a new coronavirus that killed hundreds.
+
+41
+00:02:33,31 --> 00:02:35,90
+‎这些疫情在全世界范围内
+These outbreaks caused panic around the world,
+
+42
+00:02:36,53 --> 00:02:37,65
+‎引起短暂恐慌
+for a brief moment.
+
+43
+00:02:37,94 --> 00:02:40,57
+‎但是专家们依旧非常担忧
+But experts, they stayed worried.
+
+46
+00:02:38,11 --> 00:02:40,86
+But experts, they stayed worried.
+
+44
+00:02:41,82 --> 00:02:45,37
+‎像SARS或MERS这样的风险
+There's a risk with something like SARS or MERS,
+
+45
+00:02:45,45 --> 00:02:48,08
+‎是我们还没有准备好应对的
+that it'll be something we're not ready for.
+
+46
+00:02:48,16 --> 00:02:50,37
+‎会再次爆发冠状病毒吗？肯定的
+Could it be a coronavirus again? Certainly.
+
+47
+00:02:50,46 --> 00:02:52,33
+‎当然 事实也确实如此
+[narrator] And of course, it was.
+
+51
+00:02:53,50 --> 00:02:54,46
+[indistinct talking]
+
+52
+00:02:54,54 --> 00:02:55,67
+[patient coughing] 
+
+48
+00:02:56,38 --> 00:02:58,01
+‎那么 在所有病毒中
+[narrator] So, of all the viruses out there, why did this one
+
+49
+00:02:58,09 --> 00:03:01,51
+‎为什么这次会变成一次大流行呢？
+
+54
+00:02:59,47 --> 00:03:03,68
+end up becoming the kind of pandemic we haven't seen in more than a century?
+
+50
+00:03:01,59 --> 00:03:03,47
+‎已经一个多世纪没有发生过了
+end up becoming the kind of pandemic we haven't seen in more than a century?
+
+51
+00:03:04,43 --> 00:03:07,68
+‎像这样的流行病是如何结束的呢？
+And how does a pandemic like this end?
+
+52
+00:03:08,85 --> 00:03:11,60
+‎病毒跟炸弹或导弹一样具有毁灭性
+[man] A virus can be just as destructive as a bomb or a missile.
+
+57
+00:03:11,69 --> 00:03:12,52
+[sneezes]
+
+53
+00:03:12,56 --> 00:03:14,36
+‎我们深感忧虑
+[Tedros Ghebreyesus] We're deeply concerned
+
+54
+00:03:14,44 --> 00:03:18,53
+‎病毒传播速度 ‎以及不作为的情况十分惊人
+by the alarming levels of spread and inaction.
+
+59
+00:03:15,06 --> 00:03:18,53
+by the alarming levels of spread and inaction.
+
+55
+00:03:18,99 --> 00:03:21,86
+‎COVID-19是一种流行病
+COVID-19 is a pandemic.
+
+60
+00:03:19,03 --> 00:03:21,86
+COVID-19 is a pandemic.
+
+56
+00:03:21,95 --> 00:03:24,66
+‎全球病例继续增加
+[Anthony Fauci] The cases continue to increase globally.
+
+57
+00:03:25,24 --> 00:03:27,49
+‎我们要做的 就是让疫情放缓
+What we need to do is flatten that down.
+
+58
+00:03:28,62 --> 00:03:31,16
+‎发展中国家将会爆发疫情
+[Daszak] We're going to have outbreaks in developing countries
+
+59
+00:03:31,25 --> 00:03:32,50
+‎而且会越来越严重
+that are just going to be raging.
+
+60
+00:03:34,13 --> 00:03:39,09
+‎只有公众合作 ‎抗击传染病的运动才能取得成功
+[man] The campaign against infectious disease can succeed
+
+66
+00:03:37,34 --> 00:03:39,13
+only if the public cooperates.
+
+61
+00:03:39,76 --> 00:03:43,64
+‎剧名：这场全球大流行病
+
+62
+00:03:46,43 --> 00:03:48,93
+‎病毒是地球上最早的生物之一…
+[narrator] Viruses were one of the first living things on Earth...
+
+63
+00:03:49,72 --> 00:03:52,14
+‎但它们的生存机制跟我们不同
+but they're not alive like we are.
+
+64
+00:03:53,02 --> 00:03:56,15
+‎它们需要劫持其他活细胞来繁殖
+They need to hijack other living cells to reproduce,
+
+65
+00:03:56,23 --> 00:03:58,23
+‎这是它们唯一的目标
+and that's their only goal,
+
+66
+00:03:58,32 --> 00:04:00,99
+‎生存和自我复制
+to survive and replicate themselves.
+
+67
+00:04:01,95 --> 00:04:06,03
+‎这种病毒的官方名称是SARS-CoV-2
+The official name of this virus is SARS-CoV-2.
+
+68
+00:04:07,20 --> 00:04:10,70
+‎"COVID-19"是其引起的疾病的名字
+"COVID-19" is the name of the disease it causes,
+
+69
+00:04:11,12 --> 00:04:14,79
+‎意指“2019年冠状病毒疾病”
+which stands for "Coronavirus disease 2019."
+
+70
+00:04:16,00 --> 00:04:18,25
+‎冠状是“王冠”的意思
+Corona, as in "crown."
+
+71
+00:04:18,34 --> 00:04:21,59
+‎这种病毒以其冠状突起而得名
+The virus is named for its crown-like spikes.
+
+72
+00:04:22,72 --> 00:04:26,22
+‎当我们打喷嚏、咳嗽或说话时 ‎它通过飞沫传播
+It spreads through droplets when we sneeze, cough, or speak,
+
+73
+00:04:26,84 --> 00:04:30,52
+‎可以通过我们的眼睛、鼻子或嘴巴 ‎直接进入我们体内
+and can enter us directly through our eyes, nose, or mouth.
+
+74
+00:04:31,10 --> 00:04:34,69
+‎病毒也可以在很多表面存活数小时
+The virus can also live on a lot of surfaces for hours,
+
+75
+00:04:35,14 --> 00:04:37,31
+‎所以人们会用手沾上病毒
+so people can pick it up on their hands
+
+76
+00:04:37,40 --> 00:04:39,90
+‎如果触摸自己的脸 就会感染自己
+and infect themselves if they touch their face,
+
+77
+00:04:40,90 --> 00:04:45,28
+‎一般人每小时会摸脸20次
+something the average person does 20 times an hour.
+
+78
+00:04:46,91 --> 00:04:50,45
+‎一旦进入体内 ‎这些突起就像一把钥匙
+Once inside the body, those spikes act as a key,
+
+83
+00:04:47,20 --> 00:04:50,45
+Once inside the body, those spikes act as a key,
+
+79
+00:04:50,54 --> 00:04:54,62
+‎锁定在许多人类细胞外部的蛋白质上
+locking onto the proteins found on the outside of many human cells.
+
+80
+00:04:55,54 --> 00:04:56,83
+‎一旦病毒侵入
+Once it's broken in,
+
+81
+00:04:56,92 --> 00:05:01,09
+‎它就会给细胞指令 ‎让细胞复制更多的自己
+the virus gives the cell instructions to produce more copies of itself,
+
+82
+00:05:01,25 --> 00:05:03,97
+‎进而侵入越来越多的细胞
+potentially invading more and more cells,
+
+83
+00:05:04,92 --> 00:05:08,47
+‎导致发烧、咳嗽和乏力
+which can lead to a fever, a cough, and fatigue,
+
+84
+00:05:08,93 --> 00:05:10,26
+‎但也不总是如此
+but not always.
+
+85
+00:05:10,35 --> 00:05:13,77
+‎也可能导致这些症状
+And it potentially leads to any of these symptoms, too.
+
+86
+00:05:14,06 --> 00:05:15,69
+‎研究还在进行之中
+Research is ongoing.
+
+87
+00:05:16,98 --> 00:05:21,15
+‎你可能感染并传播 而没有任何症状
+And you can be infected and spread it without any symptoms,
+
+88
+00:05:21,23 --> 00:05:23,28
+‎或者可能被误认为是流感
+or they can be mistaken for the flu.
+
+89
+00:05:24,65 --> 00:05:27,82
+‎这就是这种冠状病毒如此狡猾的原因
+That's what makes this coronavirus so devious.
+
+90
+00:05:30,33 --> 00:05:34,00
+‎引发重大疾病的病毒 ‎通常具有如下特点
+So the most significant diseases are often caused by viruses that
+
+91
+00:05:34,08 --> 00:05:37,25
+‎症状不明显 病程缓慢 ‎例如艾滋病毒
+are silent and slow, like HIV,
+
+92
+00:05:37,33 --> 00:05:41,67
+‎或者发病很快 引起咳嗽、发烧等
+or move very rapidly and cause symptoms like coughing and fever
+
+93
+00:05:41,75 --> 00:05:43,63
+‎可能与其他疾病混淆的症状
+that could be confused with other diseases.
+
+94
+00:05:44,34 --> 00:05:47,34
+‎在日常生活中 一个冠状病毒携带者
+[narrator] Going about their life, a person with this coronavirus
+
+95
+00:05:47,43 --> 00:05:49,59
+‎可能会感染几个人
+likely infects a couple other people,
+
+96
+00:05:49,93 --> 00:05:52,76
+‎每个被感染者又会感染几个人
+and each of those people infects a couple more,
+
+97
+00:05:52,85 --> 00:05:54,85
+‎如此反复
+and so on, and so on,
+
+98
+00:05:55,52 --> 00:05:59,52
+‎所以病例数才会呈指数曲线增长
+which is why the number of cases increases on an exponential curve,
+
+99
+00:05:59,90 --> 00:06:01,90
+‎每过几天 数量就会翻倍
+doubling every several days.
+
+100
+00:06:03,02 --> 00:06:06,36
+‎其中一些人会患上严重的肺部感染
+Then some of those people will end up with a severe lung infection,
+
+106
+00:06:06,90 --> 00:06:09,70
+and certain groups are especially at risk.
+
+101
+00:06:07,40 --> 00:06:09,70
+‎某些群体的风险尤其高
+and certain groups are especially at risk.
+
+102
+00:06:11,20 --> 00:06:15,16
+‎在美国一项样本中 ‎约四分之三的住院患者
+In one US sample, around three-quarters of people who were hospitalized
+
+103
+00:06:15,24 --> 00:06:17,62
+‎至少有一种基础疾病
+had at least one underlying health condition,
+
+104
+00:06:18,12 --> 00:06:21,25
+‎比如肺病、心脏病或糖尿病
+like lung disease, heart disease, or diabetes.
+
+105
+00:06:22,34 --> 00:06:24,96
+‎虽然具体数字因国家而异
+And while the exact numbers vary by country,
+
+106
+00:06:25,38 --> 00:06:28,97
+‎但随着年龄增长 死亡风险明显增加
+the risk of dying is clearly greater the older you get,
+
+107
+00:06:29,05 --> 00:06:32,60
+‎如同这组数据所示 ‎这是疫情爆发两个月后
+as you can see in this data that Hubei, China reported
+
+108
+00:06:32,68 --> 00:06:34,64
+‎中国湖北报告的数据
+two months after their outbreak began.
+
+109
+00:06:35,14 --> 00:06:38,64
+‎由于科学家们还不完全了解的原因
+And for reasons scientists don't fully understand,
+
+110
+00:06:38,73 --> 00:06:41,23
+‎男性感染的风险更高
+the risk is also higher for men,
+
+111
+00:06:41,60 --> 00:06:44,44
+‎可能是由于一些生理因素
+possibly because of some biological factors,
+
+112
+00:06:44,52 --> 00:06:46,53
+‎或者因为男性吸烟人数更多
+or because they're more likely to smoke,
+
+113
+00:06:47,15 --> 00:06:50,15
+‎还有一种原因 一些研究表明
+or because men, according to some studies,
+
+114
+00:06:50,24 --> 00:06:52,87
+‎男性更不喜欢洗手
+aren't as good about washing their hands.
+
+115
+00:06:53,32 --> 00:06:54,33
+‎说到这里…
+On that note...
+
+116
+00:06:54,83 --> 00:06:57,29
+‎尽可能勤洗手
+Wash your hands as often as you possibly can,
+
+117
+00:06:57,37 --> 00:07:01,08
+‎我知道大家不是总能方便做到洗手
+and I know you're not always in a position to be able to wash your hands,
+
+118
+00:07:01,71 --> 00:07:03,50
+‎但还是要尽量勤洗手
+uh, but wash them as much as you can.
+
+119
+00:07:04,17 --> 00:07:05,09
+‎这是很好的建议
+[narrator] It's good advice.
+
+120
+00:07:05,84 --> 00:07:11,43
+‎这种冠状病毒 ‎是已知感染人类的七种冠状病毒中
+Now, this coronavirus is just the youngest in a whole family of seven coronaviruses
+
+121
+00:07:11,51 --> 00:07:13,09
+‎最年轻的一种
+known to infect humans.
+
+122
+00:07:13,72 --> 00:07:16,93
+‎它现在像SARS和MERS一样出名了
+It's now famous, as are SARS and MERS,
+
+123
+00:07:17,01 --> 00:07:18,89
+‎因为已经导致很多人死亡
+because they've killed a lot of people.
+
+124
+00:07:19,14 --> 00:07:22,65
+‎但这四种病毒 ‎其实是更成功的病毒
+But these four are actually more successful viruses.
+
+125
+00:07:23,02 --> 00:07:25,77
+‎三分之一的普通感冒都是它们引起的
+They cause up to a third of common colds.
+
+126
+00:07:26,15 --> 00:07:27,19
+‎它们无处不在
+They're everywhere.
+
+127
+00:07:28,40 --> 00:07:31,24
+‎因为如果病毒不会导致宿主生病
+Because viruses can actually be better at spreading
+
+128
+00:07:31,32 --> 00:07:33,99
+‎那么传播会更加容易
+if they don't make their host that sick.
+
+129
+00:07:35,28 --> 00:07:36,45
+‎可以看看蝙蝠
+Just look at bats.
+
+130
+00:07:36,53 --> 00:07:40,87
+‎蝙蝠身上满是病毒 ‎因为病毒并不会影响它们
+They're teeming with viruses because viruses don't really bother them.
+
+131
+00:07:41,83 --> 00:07:42,83
+‎但是…
+But...
+
+132
+00:07:42,92 --> 00:07:46,71
+‎一旦进入人群 ‎就会变异成一种新的病毒
+They can transform into a new virus once they get into the human population.
+
+133
+00:07:47,59 --> 00:07:51,05
+‎科学家认为 2002年的SARS就是这样
+[narrator] That's what scientists believe happened with SARS in 2002.
+
+134
+00:07:51,59 --> 00:07:53,18
+‎就像这种冠状病毒一样
+Just like this coronavirus,
+
+135
+00:07:53,26 --> 00:07:56,47
+‎SARS也出现在中国的活畜市场
+SARS emerged in a live animal market in China.
+
+136
+00:07:57,14 --> 00:07:59,43
+‎由于它是一种新的人畜共患病毒
+And since it was a new zoonotic virus,
+
+137
+00:07:59,52 --> 00:08:02,14
+‎没有治疗方法 也没有疫苗
+there were no treatments and no vaccine.
+
+138
+00:08:02,69 --> 00:08:06,40
+‎但相比新型冠状病毒 ‎SARS的危险性要小得多
+But SARS was a lot less dangerous than this coronavirus.
+
+139
+00:08:06,94 --> 00:08:09,23
+‎只有在出现症状时 才会传播
+People could only spread it when they had symptoms,
+
+140
+00:08:09,32 --> 00:08:11,28
+‎所以更容易控制病毒传播
+so it was easier to contain the virus by just quarantining people who were sick.
+
+141
+00:08:11,36 --> 00:08:14,03
+‎只需隔离发病的患者即可
+so it was easier to contain the virus by just quarantining people who were sick.
+
+142
+00:08:15,36 --> 00:08:17,45
+‎SARS的致死率也高得多
+SARS was also a lot more deadly,
+
+143
+00:08:17,53 --> 00:08:20,08
+‎这也使得病毒更难传播
+which made it harder for the virus to spread.
+
+144
+00:08:20,16 --> 00:08:23,79
+‎像SARS这样的疾病 致死率在10%
+[Daszak] A disease like SARS, it kills 10% of people it infects,
+
+145
+00:08:23,87 --> 00:08:27,96
+‎幸存者可能会获得一些免疫力 ‎可以不再被感染
+and then the survivors probably have some immunity and can't be reinfected.
+
+146
+00:08:28,63 --> 00:08:31,63
+‎最终 只有拥有免疫的人
+And eventually, the only people the virus can find
+
+147
+00:08:31,71 --> 00:08:33,59
+‎才被发现携带病毒
+are people who have immunity to it.
+
+148
+00:08:34,18 --> 00:08:39,47
+‎SARS最终感染了 ‎至少29个国家的大约8000人
+[narrator] In the end, SARS infected around 8,000 people
+
+153
+00:08:37,60 --> 00:08:39,47
+in at least 29 countries.
+
+149
+00:08:39,72 --> 00:08:42,27
+‎其中774人死亡
+Seven hundred seventy-four of them died.
+
+150
+00:08:44,60 --> 00:08:47,06
+‎从那时起 ‎一个名为生态健康联盟的组织
+Since then, a group called EcoHealth Alliance
+
+151
+00:08:47,15 --> 00:08:49,57
+‎来到中国南方的这些洞穴
+has been coming to these caves in southern China,
+
+152
+00:08:50,11 --> 00:08:50,98
+‎捕捉蝙蝠
+catching bats,
+
+153
+00:08:51,28 --> 00:08:53,11
+‎检测它们的病毒
+scanning them for viruses,
+
+154
+00:08:53,19 --> 00:08:56,95
+‎标记那些最容易感染人类的病毒
+and flagging the ones that could most easily make the leap to us.
+
+155
+00:08:57,03 --> 00:08:59,70
+‎发现病毒以后 我们会启动警报
+[Daszak] And when we find them, we raise the alert,
+
+156
+00:08:59,78 --> 00:09:01,58
+‎中国政府会参与进来
+and the government of China comes in
+
+157
+00:09:01,66 --> 00:09:05,46
+‎努力减少人群对病毒的接触
+and tries to reduce the exposure of those populations to viruses.
+
+158
+00:09:06,12 --> 00:09:10,46
+‎到目前为止 他们发现了很多病毒 ‎包括数百种冠状病毒
+[narrator] They've found a lot so far, including hundreds of coronaviruses.
+
+159
+00:09:11,55 --> 00:09:13,67
+‎他们将其标记为高风险或低风险
+And they label them as high risk or low risk,
+
+160
+00:09:13,76 --> 00:09:17,93
+‎标准是与已经感染人类的病毒 ‎相似程度有多高
+depending on how similar they are to viruses that already infect humans.
+
+161
+00:09:18,59 --> 00:09:21,01
+‎几年前 他们发现了一种病毒
+And a few years ago, they discovered one that they called
+
+162
+00:09:21,10 --> 00:09:25,14
+‎他们称之为“蝙蝠冠状病毒RaTG13”
+"bat coronavirus RaTG13,"
+
+163
+00:09:25,23 --> 00:09:27,73
+‎符合低风险标准
+which met the criteria for low-risk.
+
+164
+00:09:28,27 --> 00:09:33,07
+‎当科学家们对COVID-19的病毒基因组 ‎进行测序时
+When scientists sequenced the genome of the virus behind COVID-19,
+
+165
+00:09:33,15 --> 00:09:38,49
+‎他们发现有96%与蝙蝠病毒相同
+they found that 96% of it was identical to that bat virus.
+
+166
+00:09:39,49 --> 00:09:43,62
+‎科学家们认为 ‎可能是蝙蝠病毒进化成了这种新病毒
+Scientists believe the bat virus likely evolved into this new virus
+
+167
+00:09:43,70 --> 00:09:45,37
+‎进而感染人类
+that could infect humans.
+
+168
+00:09:47,25 --> 00:09:49,79
+‎所以我们回去找了达什亚克医生
+So we had to go back to Dr. Daszak.
+
+169
+00:09:49,88 --> 00:09:54,05
+‎当时 我们的目标 ‎是发现与SARS相关的病毒
+At the time, our goal was to find SARS-related viruses.
+
+170
+00:09:54,13 --> 00:09:55,46
+‎这种病毒看起来相差甚远
+This one looked too distant.
+
+171
+00:09:55,55 --> 00:09:57,80
+‎我们认为它不会进入人群
+We didn't think it would be able to get into people.
+
+172
+00:09:57,88 --> 00:10:00,26
+‎看起来不像是迫在眉睫的明确危险
+It didn't look like it was a clear and present danger.
+
+173
+00:10:00,34 --> 00:10:01,18
+‎非常遗憾
+Unfortunate.
+
+174
+00:10:02,51 --> 00:10:06,39
+‎想要预测病毒进化的所有方式 ‎是不可能的
+[narrator] It's impossible to predict all the ways a virus might evolve.
+
+175
+00:10:06,89 --> 00:10:10,31
+‎科学家们认为 这种病毒 ‎可能在另一种蝙蝠身上发生了突变
+Scientists believe this one may have mutated in another bat...
+
+180
+00:10:07,14 --> 00:10:10,31
+Scientists believe this one may have mutated in another bat...
+
+176
+00:10:11,44 --> 00:10:15,03
+‎或者在感染人类前 ‎先感染了另一个物种
+or it may have jumped to another species before jumping to us,
+
+177
+00:10:15,11 --> 00:10:17,49
+‎比如穿山甲或蛇…
+like a pangolin or a snake...
+
+178
+00:10:18,53 --> 00:10:19,57
+‎或鱼
+or a fish.
+
+179
+00:10:21,82 --> 00:10:26,66
+‎一个多世纪以前 ‎堪萨斯州的一个农场发生过类似意外
+That same kind of fluke happened on a farm in Kansas over a century ago.
+
+180
+00:10:27,25 --> 00:10:28,71
+‎专家们并不确定
+Experts aren't certain,
+
+181
+00:10:28,79 --> 00:10:32,25
+‎但他们认为 1918年的流感大流行
+but they believe the 1918 flu pandemic could have started
+
+182
+00:10:32,34 --> 00:10:36,84
+‎可能是感染流感的鸟类 ‎跟感染流感的人类 接触过同一只猪
+when a bird with the flu and a human with the flu met the same pig.
+
+183
+00:10:37,42 --> 00:10:39,76
+‎禽流感不会感染人类
+The bird flu couldn't infect humans,
+
+184
+00:10:39,84 --> 00:10:42,43
+‎人类流感也不会感染禽类
+and the human flu couldn't infect birds,
+
+185
+00:10:42,51 --> 00:10:46,22
+‎但在猪的细胞中 这两种病毒结合
+but in one of the pig's cells, those two viruses combined,
+
+186
+00:10:46,31 --> 00:10:48,43
+‎产生了一种新型人畜共患病毒
+creating a new zoonotic virus,
+
+187
+00:10:48,52 --> 00:10:50,56
+‎H1N1
+H1N1,
+
+188
+00:10:50,65 --> 00:10:53,98
+‎这种新病毒肯定会感染人类
+and that new virus definitely could infect humans.
+
+189
+00:10:54,65 --> 00:10:57,36
+‎这次历史事件是史无前例的
+It was unlike anything else in history.
+
+190
+00:10:59,90 --> 00:11:02,11
+‎一种疾病想要成为流行病
+[narrator] For a disease to become a pandemic,
+
+191
+00:11:02,20 --> 00:11:07,29
+‎在几个月内在全世界蔓延 ‎导致数百万人死亡
+spreading around the world in months, leading to potentially millions of deaths,
+
+192
+00:11:07,37 --> 00:11:10,37
+‎它必须在传染性和致命性之间
+it has to find an extraordinary balance...
+
+193
+00:11:10,92 --> 00:11:13,83
+‎找到一种完美平衡
+of contagiousness and deadliness.
+
+198
+00:11:11,21 --> 00:11:13,83
+of contagiousness and deadliness.
+
+194
+00:11:14,25 --> 00:11:17,17
+‎可以从这两个维度来考虑一种疾病
+You can think of a disease on those two scales.
+
+195
+00:11:17,84 --> 00:11:20,01
+‎这些是一些传染病
+And these are some of the infectious diseases
+
+196
+00:11:20,09 --> 00:11:22,39
+‎它们是人类最大的敌人
+that have been humanity's greatest foes.
+
+197
+00:11:23,22 --> 00:11:25,22
+‎这是人类季节性流感
+Here's the seasonal human flu,
+
+198
+00:11:25,85 --> 00:11:27,60
+‎这是禽流感
+while this is the bird flu.
+
+199
+00:11:28,43 --> 00:11:32,77
+‎1918年的流感在这个范围的某个地方
+And somewhere in this range was the 1918 combination.
+
+200
+00:11:34,31 --> 00:11:35,56
+‎病毒通过空气传播
+It was airborne,
+
+201
+00:11:36,15 --> 00:11:40,07
+‎意味着这种病毒可以悬浮在空气中 ‎感染任何吸入的人
+meaning the virus could hang in the air, infecting anyone who inhaled it.
+
+202
+00:11:41,53 --> 00:11:46,53
+‎据估计 全球有三分之一的人口 ‎感染了这种病毒
+And it's estimated that it infected one in every three people on Earth,
+
+203
+00:11:46,95 --> 00:11:51,96
+‎导致3-20%的感染者死亡
+and then it killed anywhere from three to 20% of those infected.
+
+204
+00:11:52,37 --> 00:11:55,08
+‎当时的医疗记录并不完备
+Medical record-keeping was not great at that time.
+
+205
+00:11:56,04 --> 00:11:58,63
+‎但跟天花比起来 ‎这种病毒根本不算什么
+But that was nothing compared to smallpox,
+
+206
+00:11:59,05 --> 00:12:02,17
+‎天花的致死率为30%
+which killed 30% of the people who got it,
+
+207
+00:12:02,55 --> 00:12:04,47
+‎也更具传染性
+and was also more contagious.
+
+208
+00:12:05,64 --> 00:12:09,18
+‎几千年间 天花病毒都令人类恐惧
+That virus terrorized humanity for thousands of years.
+
+209
+00:12:09,72 --> 00:12:11,31
+‎仅在20世纪
+In the 20th century alone,
+
+210
+00:12:11,39 --> 00:12:14,44
+‎就夺去了数亿人的生命
+it killed hundreds of millions of people.
+
+211
+00:12:15,23 --> 00:12:17,90
+‎还有更致命的埃博拉病毒
+And then there's Ebola, which is even deadlier.
+
+212
+00:12:18,44 --> 00:12:20,74
+‎但埃博拉的致死人数少很多
+But far fewer people have died from it,
+
+213
+00:12:20,82 --> 00:12:23,03
+‎部分原因是因为致死率太高
+in part because it's so deadly,
+
+214
+00:12:23,11 --> 00:12:26,78
+‎感染埃博拉病毒的人不会感染很多人 ‎因为他们病得很重
+people who have it don't infect too many others because they get so sick,
+
+215
+00:12:27,16 --> 00:12:28,08
+‎只能留在家中
+they stay home,
+
+216
+00:12:28,62 --> 00:12:30,58
+‎最终都走向死亡
+and then most don't survive.
+
+217
+00:12:31,41 --> 00:12:34,54
+‎关于病毒 有一件令人意想不到的事
+One of the unexpected things about viruses is that sometimes,
+
+218
+00:12:35,00 --> 00:12:39,09
+‎症状明显、致死率高的病毒
+a virus that has really obvious symptoms, that kills people at a very high rate,
+
+219
+00:12:39,17 --> 00:12:41,92
+‎通常不会爆发 它做不到
+doesn't become a pandemic. It can't do that.
+
+220
+00:12:42,34 --> 00:12:46,30
+‎而像麻疹这样的疾病 ‎其致死率远低于埃博拉病毒
+[narrator] While a disease like measles, which is far less deadly than Ebola,
+
+221
+00:12:46,64 --> 00:12:48,68
+‎曾经每年导致数百万人死亡
+used to kill millions of people a year.
+
+222
+00:12:49,51 --> 00:12:51,89
+‎那么 当前的流行病在什么位置呢？
+So where does this current pandemic fall?
+
+223
+00:12:52,22 --> 00:12:53,31
+‎目前还不清楚
+It's not clear yet,
+
+224
+00:12:53,85 --> 00:12:56,77
+‎但专家们把它放在了这块区域
+but experts place it somewhere around here.
+
+225
+00:12:56,85 --> 00:13:00,40
+‎比麻疹更致命 但传染性更小
+Deadlier than the measles, but less contagious.
+
+226
+00:13:00,94 --> 00:13:03,11
+‎远没有埃博拉致命
+Far less deadly than Ebola,
+
+227
+00:13:03,44 --> 00:13:05,99
+‎也远没有天花那么糟糕
+and nowhere near as bad as smallpox.
+
+228
+00:13:06,53 --> 00:13:10,03
+‎接近于对1918年流感的较低估计
+It's close to the lower estimates for the 1918 flu.
+
+229
+00:13:10,58 --> 00:13:12,37
+‎所以情况可能会更糟
+So, it could be worse.
+
+230
+00:13:13,04 --> 00:13:16,87
+‎但病毒的平衡性 ‎足以造成毁灭性的后果
+But its balance is just bad enough to be devastating.
+
+231
+00:13:20,54 --> 00:13:23,05
+‎但这并不意味着我们注定要重蹈覆辙
+But that doesn't mean we're doomed to repeat history.
+
+232
+00:13:23,71 --> 00:13:25,67
+‎我们可以终结流行病
+We can end pandemics. We've done it before.
+
+233
+00:13:26,22 --> 00:13:27,05
+‎我们也曾做到过
+We can end pandemics. We've done it before.
+
+234
+00:13:28,01 --> 00:13:31,14
+‎在20世纪 我们发现了抗生素
+In the 20th century, we discovered antibiotics.
+
+235
+00:13:32,01 --> 00:13:37,52
+‎所以黑死病等细菌性疾病的致死率 ‎大大降低了
+So the Bubonic Plague and all these other bacterial diseases became far less deadly.
+
+236
+00:13:38,73 --> 00:13:43,11
+‎但抗生素对这种冠状病毒 ‎或任何病毒都无效
+But antibiotics don't work against this coronavirus, or any viruses.
+
+237
+00:13:43,98 --> 00:13:47,28
+‎我们有针对其中一些疾病的有效药物 ‎比如艾滋病…
+We have effective drugs for some of them, like HIV...
+
+238
+00:13:48,11 --> 00:13:51,28
+‎如今 传染性和致命性都大大降低了
+which can now be far less contagious and deadly.
+
+239
+00:13:52,20 --> 00:13:55,87
+‎但安全的抗病毒药物的研发难度很高
+But safe antiviral drugs are really hard to develop.
+
+240
+00:13:55,96 --> 00:13:59,79
+‎所以战胜病毒的最好方法 ‎就是通过免疫
+So the best way to defeat a virus is through immunity.
+
+241
+00:14:00,54 --> 00:14:03,25
+‎当某些病毒在人群中传播时
+When certain viruses spread through a population,
+
+242
+00:14:03,34 --> 00:14:05,05
+‎一些感染者死亡…
+some infected people die...
+
+243
+00:14:05,84 --> 00:14:07,22
+‎另一些人得以幸存
+but others survive.
+
+244
+00:14:07,84 --> 00:14:12,10
+‎他们的免疫系统 ‎学会了识别病毒并将其击退
+Their immune systems have learned to recognize the virus and fight it off.
+
+245
+00:14:13,35 --> 00:14:18,06
+‎当足够多的人获得免疫时 ‎病毒就更难传播了
+When that happens in enough people, it's much harder for the virus to spread.
+
+246
+00:14:18,85 --> 00:14:20,98
+‎这就是所谓的群体免疫
+This is called herd immunity.
+
+247
+00:14:22,40 --> 00:14:24,23
+‎感染率会放缓
+The rate of infection slows.
+
+248
+00:14:24,98 --> 00:14:26,61
+‎然后病毒就会消失了
+[Daszak] And the virus dies out.
+
+249
+00:14:27,36 --> 00:14:32,78
+‎但对于COVID-19 ‎如果世界只是等待群体免疫的到来
+[narrator] But with COVID-19,
+
+254
+00:14:29,15 --> 00:14:32,87
+if the world just waited to achieve herd immunity naturally,
+
+250
+00:14:33,53 --> 00:14:34,95
+‎那会导致数百万人死亡
+millions would die,
+
+251
+00:14:35,66 --> 00:14:39,12
+‎而且其他冠状病毒 ‎甚至不会产生终身免疫
+and other coronaviruses don't even give lifelong immunity.
+
+252
+00:14:39,21 --> 00:14:41,88
+‎对于新型冠状病毒 我们还不了解
+For this one, we just don't know yet.
+
+253
+00:14:44,38 --> 00:14:48,55
+‎这使得研制疫苗变得更加重要
+Which makes it even more crucial that we create a vaccine.
+
+254
+00:14:49,72 --> 00:14:51,39
+‎如果有足够多的人接种疫苗
+If enough people get vaccinated,
+
+255
+00:14:51,47 --> 00:14:55,51
+‎就能够安全快捷地获得群体免疫
+it's a safe and life-saving shortcut to herd immunity.
+
+256
+00:14:56,18 --> 00:14:59,06
+‎第一例疫苗是用来对付天花的
+The first vaccine was created to fight smallpox.
+
+257
+00:14:59,85 --> 00:15:04,57
+‎1980年 ‎在大规模的全球疫苗接种运动之后
+And in 1980, after a massive global vaccination campaign,
+
+258
+00:15:04,65 --> 00:15:10,74
+‎天花成为世界上 ‎第一个被宣布根除的病毒
+smallpox was the first virus ever declared eradicated from the world.
+
+259
+00:15:10,82 --> 00:15:14,58
+‎这些疾病造成的死亡人数 ‎也明显低于过去了
+And these diseases don't cause nearly the amount of deaths they used to.
+
+260
+00:15:15,16 --> 00:15:18,58
+‎但是疫苗也是很难研发的
+But vaccines are also really hard to develop.
+
+261
+00:15:18,83 --> 00:15:23,25
+‎要用一年到一年半的时间 ‎才能知道它是否有效
+It's gonna take a year to a year and a half to really know if it works.
+
+262
+00:15:23,33 --> 00:15:27,92
+‎在此期间 ‎病毒还在继续传播和致死
+[narrator] And while we wait, the virus keeps spreading and killing.
+
+263
+00:15:28,46 --> 00:15:30,84
+‎所以我们能做的 就是减缓病毒传播
+So the best we can do is slow it down,
+
+269
+00:15:30,93 --> 00:15:33,76
+using a method that's a lot more old school.
+
+264
+00:15:31,55 --> 00:15:33,76
+‎使用一种更加老式的方法
+using a method that's a lot more old school.
+
+265
+00:15:34,35 --> 00:15:36,68
+‎其实这种方法是在七个世纪前发明的
+In fact, it was invented seven centuries ago
+
+266
+00:15:36,76 --> 00:15:38,39
+‎以应对黑死病
+during the Black Death:
+
+267
+00:15:38,47 --> 00:15:39,35
+‎那就是隔离
+quarantine.
+
+268
+00:15:40,52 --> 00:15:43,69
+‎或者稍微温和一些的方法 ‎“保持社交距离”
+Or its gentler cousin, "social distancing":
+
+269
+00:15:43,90 --> 00:15:47,02
+‎避免聚集以及跟他人亲密接触
+avoiding crowds and close contact with other people
+
+274
+00:15:44,10 --> 00:15:47,02
+avoiding crowds and close contact with other people
+
+270
+00:15:47,11 --> 00:15:49,57
+‎让病毒传播的机会更少
+so the virus has fewer chances to spread.
+
+271
+00:15:50,44 --> 00:15:53,49
+‎1918年流感期间 美国的一个城市
+During the 1918 flu, one American city,
+
+272
+00:15:53,57 --> 00:15:55,78
+‎圣路易斯 很快采取了这种做法
+St. Louis, took that approach quickly,
+
+273
+00:15:55,87 --> 00:15:58,12
+‎关闭了学校和公共场所
+shutting its schools and public places,
+
+274
+00:15:58,74 --> 00:16:00,87
+‎而费城没有马上这样做
+while Philadelphia didn't right away,
+
+280
+00:16:00,96 --> 00:16:03,37
+and allowed a big parade to go ahead.
+
+275
+00:16:01,08 --> 00:16:03,25
+‎依旧允许举行大型游行
+and allowed a big parade to go ahead.
+
+276
+00:16:04,88 --> 00:16:07,17
+‎这是圣路易斯的死亡率
+This was the death rate in St. Louis.
+
+277
+00:16:08,34 --> 00:16:10,17
+‎这是费城的死亡率
+And this was Philadelphia's.
+
+278
+00:16:11,55 --> 00:16:13,51
+‎圣路易斯做到了使疫情曲线平缓
+St. Louis flattened their curve,
+
+279
+00:16:13,59 --> 00:16:17,10
+‎这意味着 ‎疾病会在较长一段时间内造成死亡
+which means the disease killed people for a longer period,
+
+280
+00:16:17,18 --> 00:16:18,39
+‎但死亡人数更少
+but fewer died.
+
+281
+00:16:20,85 --> 00:16:23,52
+‎因为正如意大利在三月份意识到的
+Because, as Italy learned in March,
+
+282
+00:16:23,60 --> 00:16:26,44
+‎如果太多人同时感染
+it's much harder for hospitals to save lives
+
+283
+00:16:26,52 --> 00:16:28,94
+‎医院的救治难度就很大
+if too many people get infected at once.
+
+289
+00:16:30,94 --> 00:16:34,03
+[in Italian] I’m living in the hospital, literally.
+
+284
+00:16:31,07 --> 00:16:33,07
+‎我已经住在医院里了
+
+285
+00:16:33,15 --> 00:16:34,41
+‎（法比奥阿里戈尼医生）
+[in Italian] I’m living in the hospital, literally.
+
+286
+00:16:34,49 --> 00:16:38,45
+‎我睡在办公室 住在这里
+I sleep in the office and I live here.
+
+287
+00:16:38,53 --> 00:16:42,29
+‎如此大量的严重病患
+[woman speaking Italian] Such concentrated and intense suffering.
+
+288
+00:16:43,12 --> 00:16:44,79
+‎是我这辈子都没见过的
+I've never seen this much of it in my life.
+
+289
+00:16:44,87 --> 00:16:46,63
+‎人们情况很危重
+[in English] People are critical.
+
+293
+00:16:45,00 --> 00:16:46,63
+[in English] People are critical.
+
+290
+00:16:46,71 --> 00:16:50,71
+‎到这种程度时 ‎你会发现自己的无力感
+When you arrive at this point, you realize that you are not enough.
+
+291
+00:16:52,01 --> 00:16:54,01
+‎我们显然想避免这种情况
+[narrator] We obviously want to avoid that,
+
+292
+00:16:54,34 --> 00:16:57,76
+‎所以许多世界领导人 ‎都发出了同样的呼吁
+which is why many world leaders have made the same plea.
+
+293
+00:16:58,22 --> 00:16:59,26
+‎回家
+Go home and stay home.
+
+294
+00:16:59,85 --> 00:17:01,52
+‎呆在家里
+Go home and stay home.
+
+295
+00:17:01,60 --> 00:17:03,35
+‎大家必须呆在家里
+You must stay at home.
+
+296
+00:17:03,43 --> 00:17:04,89
+‎（印度总理 2020年3月22日）
+[in Hindi] During this time,
+
+297
+00:17:04,98 --> 00:17:09,77
+‎在这段时间里 ‎任何印度公民都不应走出家门
+no Indian citizen should step out of their home.
+
+300
+00:17:05,77 --> 00:17:09,77
+no Indian citizen should step out of their home.
+
+298
+00:17:11,03 --> 00:17:14,95
+‎全世界数以亿计的人一直在等待…
+[narrator in English] Hundreds of millions of people around the world
+
+302
+00:17:13,69 --> 00:17:15,24
+have been waiting this out...
+
+299
+00:17:15,78 --> 00:17:17,36
+‎寻找应对之策
+finding ways to cope.
+
+304
+00:17:18,82 --> 00:17:20,28
+[banging on pots]
+
+305
+00:17:20,37 --> 00:17:21,83
+[music playing on speakers]
+
+300
+00:17:21,91 --> 00:17:27,75
+‎所以这些国家必须进行严格的封锁
+So countries really have to go on a hardcore national lockdown
+
+301
+00:17:27,83 --> 00:17:30,00
+‎才能真正放缓疫情曲线
+to really suppress that curve,
+
+308
+00:17:29,96 --> 00:17:31,71
+and then we have to, at some point,
+
+302
+00:17:30,09 --> 00:17:31,63
+‎然后 在某个时刻
+and then we have to, at some point,
+
+303
+00:17:31,71 --> 00:17:34,42
+‎我们必须慢慢地、小心地解除封锁
+gradually and carefully come out of that lockdown.
+
+304
+00:17:37,63 --> 00:17:39,30
+‎韩国就是一个典型
+[narrator] South Korea is one model. As of early April,
+
+305
+00:17:39,39 --> 00:17:40,68
+‎四月初
+[narrator] South Korea is one model. As of early April,
+
+306
+00:17:40,76 --> 00:17:43,72
+‎他们在没有封锁的情况下 ‎成功控制住了疫情
+they've managed to rein in their outbreak without a lockdown
+
+307
+00:17:44,18 --> 00:17:48,98
+‎他们通过广泛检测和追踪 ‎检测阳性的人群
+by testing widely and retracing the steps of people who came back positive.
+
+308
+00:17:49,73 --> 00:17:51,69
+‎其他地方如果想要做到这样
+For other places to pull off something similar,
+
+309
+00:17:51,77 --> 00:17:53,82
+‎他们就需要加大检测力度
+they'd need to ramp up their testing.
+
+310
+00:17:54,03 --> 00:17:57,78
+‎在疫情曲线的什么位置 ‎你会回去复工？
+At what point on the other side of the curve do you go back to work?
+
+311
+00:17:57,86 --> 00:18:01,53
+‎没有答案 我觉得答案就是加强检测
+There is no answer. I think the answer's gonna be in testing.
+
+312
+00:18:01,62 --> 00:18:05,00
+‎如果今天可以检测数百万人
+If you could test, today, millions of people,
+
+313
+00:18:05,08 --> 00:18:07,41
+‎那明天就可以让他们复工 对吧？
+you could send them to work tomorrow, right?
+
+314
+00:18:07,50 --> 00:18:09,58
+‎问题是如果我们不够小心
+The problem is if we're not careful,
+
+315
+00:18:09,92 --> 00:18:12,63
+‎这种被抑制的爆发 ‎可能会持续很长一段时间
+that smoldering outbreak can last a long time.
+
+316
+00:18:13,71 --> 00:18:14,96
+‎还记得圣路易斯吗？
+[narrator] Remember St. Louis?
+
+317
+00:18:15,05 --> 00:18:17,13
+‎在这里 在11月份
+Right there, in November,
+
+318
+00:18:17,22 --> 00:18:21,35
+‎城市决定终止保持社交距离的政策
+is when the city decided to end their social distancing policies.
+
+319
+00:18:21,43 --> 00:18:25,10
+‎死亡率随后上升 城市很快又被封锁
+The death rate jumped, and the city quickly locked down again.
+
+320
+00:18:26,56 --> 00:18:28,44
+‎对于这样的流行病
+In a pandemic like this,
+
+321
+00:18:28,52 --> 00:18:30,65
+‎除非疫苗研制成功
+until you have a vaccine,
+
+322
+00:18:30,73 --> 00:18:32,36
+‎否则选择十分有限
+you have limited options,
+
+323
+00:18:32,73 --> 00:18:34,90
+‎因为病毒已经先发制人
+because the virus had a head start.
+
+324
+00:18:35,65 --> 00:18:39,20
+‎这是专家们一直担心的情况
+And this is a situation that experts have always feared.
+
+325
+00:18:39,28 --> 00:18:41,74
+‎大自然是终极的生物恐怖分子
+Mother Nature is the ultimate bioterrorist.
+
+326
+00:18:41,82 --> 00:18:44,99
+‎总有一些事情会让我们惊讶
+There are always going to be things that surprise us
+
+327
+00:18:45,08 --> 00:18:47,25
+‎让我们措手不及
+and that take our detection by surprise.
+
+328
+00:18:47,33 --> 00:18:52,79
+‎我们可以对流感或SARS这样的流行病 ‎做好更充分的准备
+[Gates] We could be far more ready for a pandemic like a flu or a SARS.
+
+329
+00:18:52,88 --> 00:18:58,30
+‎但如果出现快速传播的呼吸道病原体
+However, if a really fast-moving respiratory pathogen came out,
+
+330
+00:18:58,59 --> 00:19:02,80
+‎我们将无法控制数字增长
+no, we wouldn't be able to hold those numbers down.
+
+331
+00:19:03,51 --> 00:19:07,06
+‎世界卫生组织的使命是领导全球
+[narrator] The World Health Organization is meant to lead the global response
+
+332
+00:19:07,14 --> 00:19:09,14
+‎应对这样的流行病
+to a pandemic like this.
+
+333
+00:19:09,60 --> 00:19:12,10
+‎但其实世卫组织是一个很小的组织
+But it's actually quite a small organization,
+
+334
+00:19:12,19 --> 00:19:15,73
+‎极度依赖自愿捐款
+very dependent on voluntary contributions.
+
+335
+00:19:15,82 --> 00:19:19,24
+‎所以他们没有飞机或团队随时待命
+So they don't have planes or teams standing by.
+
+336
+00:19:19,32 --> 00:19:22,20
+‎他们没有研发预算
+They don't have a research and development budget
+
+337
+00:19:22,28 --> 00:19:23,32
+‎来制造这些工具
+to make these tools.
+
+338
+00:19:24,20 --> 00:19:28,29
+‎2005年 世界卫生组织 ‎描绘了一幅巨大的蓝图
+[narrator] In 2005, the WHO did draw up a huge blueprint
+
+339
+00:19:28,37 --> 00:19:32,54
+‎告诉世界如何准备和应对这样的危机
+for how the world should prepare and respond to a crisis like this.
+
+340
+00:19:33,04 --> 00:19:33,96
+‎其中强调
+Among other things,
+
+341
+00:19:34,04 --> 00:19:38,01
+‎各国必须完善发现疫情的能力
+countries had to develop the capacity to detect outbreaks
+
+342
+00:19:38,09 --> 00:19:40,63
+‎并迅速报告世界卫生组织
+and quickly notify WHO.
+
+343
+00:19:41,05 --> 00:19:44,30
+‎196个国家签署了这份协议
+One hundred and ninety-six countries signed onto this,
+
+344
+00:19:44,47 --> 00:19:46,43
+‎但大多数国家从未遵守
+but most never complied.
+
+345
+00:19:46,89 --> 00:19:50,27
+‎无论何种规模的流行病爆发
+When a pandemic comes along of any size,
+
+346
+00:19:50,35 --> 00:19:53,48
+‎我们总是追悔莫及 ‎希望曾经投入了更多资金
+we always look back and wish we'd invested more.
+
+347
+00:19:53,56 --> 00:19:57,07
+‎然而 我们的记忆很快就会淡忘
+However, very quickly our memory fades,
+
+348
+00:19:57,15 --> 00:20:00,78
+‎其他事项就会优先获得资源
+and other priorities are getting the resources.
+
+349
+00:20:01,36 --> 00:20:04,20
+‎世卫组织最近的一份报告甚至承认
+[narrator] A recent WHO report even acknowledged,
+
+350
+00:20:04,28 --> 00:20:06,41
+‎“呼吸道病原体的迅速蔓延
+"There is a very real threat
+
+351
+00:20:06,49 --> 00:20:11,58
+‎以及严重致命性 ‎是一种非常现实的威胁
+of a rapidly moving, highly lethal pandemic of a respiratory pathogen.
+
+352
+00:20:11,66 --> 00:20:13,92
+‎全球尚未做好准备”
+The world is not prepared."
+
+353
+00:20:14,54 --> 00:20:18,30
+‎那是第一例COVID-19病例 ‎发生的三个月前
+That was three months before the first case of COVID-19.
+
+354
+00:20:19,67 --> 00:20:22,67
+‎我们的医疗体系显然没有做好准备
+And our healthcare systems obviously weren't prepared.
+
+355
+00:20:23,47 --> 00:20:27,76
+‎世界各地的医生和护士 ‎被迫使用未达标准的口罩
+Doctors and nurses around the world have been forced to use makeshift masks.
+
+356
+00:20:28,10 --> 00:20:30,97
+‎过去两天里 有八名护士病倒了
+[in Spanish] In the last two days, eight nurses have fallen ill.
+
+357
+00:20:31,06 --> 00:20:32,85
+‎医护人员都生病了
+[in English] Healthcare professionals are sick.
+
+358
+00:20:32,94 --> 00:20:36,10
+‎我们需要先得到保护 ‎才能提供治疗
+We need to be protected first so that we'll be able to help.
+
+359
+00:20:36,69 --> 00:20:39,78
+‎在中国 第一批感染COVID-19的人
+[narrator] And in China, many of the first people with COVID-19
+
+360
+00:20:39,86 --> 00:20:42,53
+‎很多都是在医院里感染的
+appear to have caught the disease at a hospital.
+
+361
+00:20:42,95 --> 00:20:46,66
+‎全世界花了很多钱来准备战争
+Well, the world spends a lot of money preparing for war.
+
+362
+00:20:46,74 --> 00:20:48,66
+‎军事预算很高
+Military budgets are large, and the new weapons get created.
+
+363
+00:20:48,74 --> 00:20:50,62
+‎新型武器不断研制
+Military budgets are large, and the new weapons get created.
+
+364
+00:20:50,70 --> 00:20:53,66
+‎这也是属于战争的
+This belongs right there with war,
+
+365
+00:20:54,12 --> 00:20:56,33
+‎我们理应做好应对
+as something that we plan for.
+
+366
+00:20:57,46 --> 00:20:59,29
+‎我们还需要在第一时间
+[narrator] We also need to do more  to prevent outbreaks
+
+367
+00:20:59,38 --> 00:21:02,38
+‎采取更多措施 防止疫情的发生
+from happening in the first place.
+
+371
+00:21:00,34 --> 00:21:02,38
+from happening in the first place.
+
+368
+00:21:02,97 --> 00:21:04,76
+‎像这样的活畜市场
+Live animal markets like this
+
+369
+00:21:04,84 --> 00:21:08,22
+‎在中国和其他国家的部分地区 ‎仍然很受欢迎
+have remained popular in parts of China and other countries,
+
+370
+00:21:08,80 --> 00:21:13,89
+‎使动物病毒有各种机会混合变异
+giving animal viruses all kinds of opportunities to mix and mutate
+
+371
+00:21:13,98 --> 00:21:15,31
+‎并传染给人类
+and jump to humans.
+
+372
+00:21:16,77 --> 00:21:20,57
+‎当疫情爆发时 ‎我们需要更快地做出反应
+And when there is an outbreak, we need to respond faster.
+
+373
+00:21:21,82 --> 00:21:26,41
+‎在中国开始 ‎对COVID-19采取管控措施的三周前
+Three weeks before China began any containment measures against COVID-19...
+
+374
+00:21:27,45 --> 00:21:30,91
+‎33岁的武汉中心医院医生
+a 33-year-old doctor at Wuhan Central Hospital,
+
+375
+00:21:30,99 --> 00:21:32,45
+‎李文亮医生
+Doctor Li Wenliang,
+
+376
+00:21:33,00 --> 00:21:35,12
+‎给其他医生发了一条群聊
+sent a group chat to other doctors,
+
+377
+00:21:35,21 --> 00:21:37,29
+‎提醒他们注意疫情爆发
+alerting them to the outbreak.
+
+378
+00:21:37,83 --> 00:21:41,46
+‎几天后 ‎武汉警方令其在训诫书上签字
+A few days later, the Wuhan police made him sign a letter,
+
+379
+00:21:41,55 --> 00:21:45,30
+‎警告说他将受到法律的制裁
+warning that he would receive the full sanction of the law
+
+380
+00:21:45,63 --> 00:21:49,26
+‎如果他继续“固执己见”
+if he "stubbornly persists" in his opinions.
+
+381
+00:21:50,85 --> 00:21:55,18
+‎1月30日 世界卫生组织 ‎宣布进入公共卫生紧急状态时
+By the time the WHO declared a public health emergency on January 30th,
+
+382
+00:21:55,77 --> 00:22:00,19
+‎李文亮医生可能已经感染COVID-19…
+Dr. Li Wenliang had likely already contracted COVID-19...
+
+383
+00:22:01,27 --> 00:22:03,36
+‎因为他在一周后病逝
+because he died of it a week later.
+
+384
+00:22:04,82 --> 00:22:06,28
+‎三周后
+And three weeks after that,
+
+385
+00:22:06,36 --> 00:22:10,78
+‎据估计 中国有11.4万人被感染
+it's estimated that 114,000 people in China were infected.
+
+386
+00:22:11,53 --> 00:22:15,95
+‎如果中国在一周前就实施了管控措施
+If China had implemented its containment measures just one week earlier,
+
+387
+00:22:16,41 --> 00:22:18,79
+‎研究发现 感染人数会是这样的
+researchers found it would have looked like this.
+
+388
+00:22:19,04 --> 00:22:19,88
+‎（受感染城市）
+researchers found it would have looked like this.
+
+389
+00:22:20,33 --> 00:22:22,75
+‎提前两周 会是这样
+Two weeks earlier, like this.
+
+390
+00:22:24,21 --> 00:22:25,88
+‎提前三周
+And three weeks earlier,
+
+391
+00:22:26,63 --> 00:22:27,72
+‎会是这样
+like this.
+
+392
+00:22:28,55 --> 00:22:33,47
+‎病例数本可以减少95%的
+The number of cases could have been cut by as much as 95%.
+
+393
+00:22:35,85 --> 00:22:38,44
+‎虽然中国在二月份已经进入封锁
+And while China was locked down in February,
+
+394
+00:22:38,52 --> 00:22:39,81
+‎意大利并非如此
+Italy wasn't,
+
+395
+00:22:39,90 --> 00:22:42,56
+‎结果成为病毒爆发的第二个中心
+and it became the next epicenter of the virus.
+
+396
+00:22:43,69 --> 00:22:45,98
+‎当意大利在三月进入封锁时
+And when Italy locked down in March,
+
+397
+00:22:46,07 --> 00:22:47,49
+‎美国并没有采取措施
+the United States didn't,
+
+398
+00:22:48,20 --> 00:22:50,11
+‎于是沦为第三个中心
+and became the next epicenter.
+
+399
+00:22:51,24 --> 00:22:55,74
+‎然后在更加贫穷的国家 ‎病例数开始上升 那里的封锁更困难
+And then cases started to rise  in poorer countries
+
+403
+00:22:54,03 --> 00:22:55,58
+where lockdowns are harder,
+
+400
+00:22:55,99 --> 00:22:58,71
+‎医疗系统本就非常脆弱
+and healthcare systems, already fragile.
+
+401
+00:22:59,75 --> 00:23:02,50
+‎我们需要加快封锁的速度
+We need to get faster at containment.
+
+402
+00:23:04,13 --> 00:23:07,38
+‎理想情况下 ‎我们希望从源头上捕获更多病毒
+Ideally, we want to catch more viruses at the source.
+
+403
+00:23:07,84 --> 00:23:09,55
+‎不仅是在中国
+It isn't just China,
+
+404
+00:23:09,72 --> 00:23:11,18
+‎不仅针对蝙蝠
+and it isn't just bats.
+
+405
+00:23:11,76 --> 00:23:16,77
+‎这些地方是 ‎新型病毒最有可能传播给人类的地方
+These are the places where a new virus is most likely to make the leap to humans.
+
+409
+00:23:12,18 --> 00:23:16,77
+These are the places where a new virus is most likely to make the leap to humans.
+
+406
+00:23:17,64 --> 00:23:21,81
+‎疾病首先出现在这样的地方
+The frontline for disease emergence are places like
+
+407
+00:23:21,90 --> 00:23:24,52
+‎比如热带森林的道路尽头
+the end of the road in a tropical forest
+
+408
+00:23:24,61 --> 00:23:27,65
+‎有人刚刚拿到采矿特许权
+where someone's just built a new mining concession.
+
+409
+00:23:27,73 --> 00:23:28,78
+‎人们搬进来
+People have moved in,
+
+410
+00:23:28,86 --> 00:23:31,45
+‎没有食物供应 ‎所以他们出去捕猎野生动物
+there's no food supply, so they go out and hunt wildlife.
+
+411
+00:23:31,78 --> 00:23:36,12
+‎或者是东南亚一个一直在扩张的农场
+Or it's a farm in Southeast Asia that's been expanding and intensifying,
+
+412
+00:23:36,70 --> 00:23:40,58
+‎附近有蝙蝠 把病毒传给农场里的猪
+that has bats nearby that spread viruses into the pigs in the farm.
+
+413
+00:23:41,42 --> 00:23:43,67
+‎事实是 世界各地的人类行为
+[narrator] The truth is, human behavior all over the world
+
+414
+00:23:43,75 --> 00:23:46,63
+‎使得像这样的流行病不可避免
+has made pandemics like this one inevitable.
+
+418
+00:23:44,25 --> 00:23:46,63
+has made pandemics like this one inevitable.
+
+415
+00:23:47,42 --> 00:23:51,55
+‎砍伐森林使更多的野生动物 ‎与更多人类接触
+Deforestation is bringing more wild animals into contact with more people,
+
+420
+00:23:51,63 --> 00:23:55,39
+and factory farming is pushing animals closer together,
+
+416
+00:23:52,01 --> 00:23:55,39
+‎工厂化养殖使动物们的距离更近
+and factory farming is pushing animals closer together,
+
+417
+00:23:55,47 --> 00:24:00,52
+‎使病毒有更多的机会融合 ‎进而感染人类
+giving their viruses more opportunities to combine into one that could infect us.
+
+418
+00:24:01,52 --> 00:24:04,52
+‎我们给了它们更多的传播途径
+Then we give them more ways than ever to spread.
+
+419
+00:24:05,02 --> 00:24:08,02
+‎我觉得 流行病的一个重要教训是
+[Daszak] I think one of the big lessons about pandemics is,
+
+420
+00:24:08,11 --> 00:24:11,28
+‎我们总认为流行病是在别处爆发的
+we think that it's something happening over there.
+
+421
+00:24:11,36 --> 00:24:12,65
+‎从COVID-19可以看出
+Well, we know from COVID-19
+
+422
+00:24:12,74 --> 00:24:15,28
+‎别处爆发的流行病 很容易传到身边
+that what happens over there can very easily get here.
+
+423
+00:24:18,33 --> 00:24:20,87
+‎但是如果病毒能够思考
+[narrator] But if viruses were capable of thinking,
+
+424
+00:24:21,41 --> 00:24:23,58
+‎它们应该也会吸取教训
+they should have also learned their lesson.
+
+425
+00:24:24,21 --> 00:24:26,13
+‎如果它们的目标是复制
+If their goal is to replicate,
+
+426
+00:24:26,75 --> 00:24:28,25
+‎那它们就不应该害死我们
+they shouldn't start killing us.
+
+427
+00:24:29,21 --> 00:24:31,59
+‎因为一旦病毒成为流行病
+Because once a virus becomes a pandemic,
+
+428
+00:24:32,26 --> 00:24:35,80
+‎人类将会发挥所有聪明才智 ‎去摧毁它们
+all of human ingenuity will be brought to bear to bring them down.
+
+429
+00:24:36,39 --> 00:24:38,47
+‎我们应当准备更加充分的
+We should have been more prepared,
+
+430
+00:24:39,14 --> 00:24:43,31
+‎但说到技术、科学和协作
+but when it comes to technology, science, and coordination,
+
+431
+00:24:43,39 --> 00:24:46,10
+‎我们的准备程度 已经高于以往
+we've also never been more prepared.
+
+432
+00:24:46,69 --> 00:24:48,94
+‎这种新型病毒 ‎在几天内就被识别出来了
+This new virus was identified within days. The sequence was shared a few days later,
+
+433
+00:24:49,02 --> 00:24:50,78
+‎几天后 基因序列就被分享了
+This new virus was identified within days. The sequence was shared a few days later,
+
+434
+00:24:50,86 --> 00:24:53,61
+‎正因为如此 才能开始检测
+and because of that, testing began,
+
+435
+00:24:53,70 --> 00:24:55,20
+‎在全球范围内进行检测
+really, across the globe.
+
+436
+00:24:55,28 --> 00:25:00,12
+‎世界各地的科学家正致力于研制疫苗
+Scientists around the world are committing entire labs to creating a vaccine.
+
+437
+00:25:00,20 --> 00:25:02,33
+‎这是世界历史上
+The... the fastest vaccine ever created, um, in history.
+
+438
+00:25:02,41 --> 00:25:04,79
+‎研制速度最快的疫苗
+The... the fastest vaccine ever created, um, in history.
+
+439
+00:25:04,87 --> 00:25:08,75
+‎全球最快的超级计算机 ‎已经进行了上千次的模拟
+[reporter] The world's fastest supercomputer
+
+442
+00:25:06,88 --> 00:25:08,75
+has run thousands of simulations
+
+440
+00:25:08,84 --> 00:25:13,34
+‎确定了77种 ‎可能有效阻止病毒的药物成分
+and identified 77 drug compounds that might effectively stop the virus.
+
+441
+00:25:13,42 --> 00:25:17,18
+‎科学界这样聚集在一起 真是惊人
+It's amazing the way the scientific community has gathered together.
+
+442
+00:25:17,55 --> 00:25:18,64
+‎我们知道代价如何
+[narrator] We know what it takes,
+
+443
+00:25:19,14 --> 00:25:22,47
+‎因为自从地球有生命以来 ‎我们一直在和病毒赛跑
+because we've been in this race since life on Earth began,
+
+444
+00:25:22,85 --> 00:25:25,56
+‎还没有一种病毒能够打败我们
+and a virus hasn't beaten us yet.
+
+448
+00:25:26,14 --> 00:25:28,73
+[inaudible]
+
+449
+00:25:30,61 --> 00:25:33,65
+[banging on pots]
+
+450
+00:25:33,74 --> 00:25:35,86
+[music playing on speakers] 
+
+451
+00:25:38,74 --> 00:25:40,91
+[theme music playing]
+

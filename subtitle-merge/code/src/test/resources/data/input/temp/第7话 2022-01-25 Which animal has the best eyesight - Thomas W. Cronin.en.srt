@@ -1,0 +1,350 @@
+1
+00:00:06,790 --> 00:00:11,050
+The animal kingdom boasts 
+an incredible diversity of eyes.
+
+2
+00:00:11,050 --> 00:00:15,510
+Some rotate independently, while others
+have squiggly-shaped pupils.
+
+3
+00:00:15,510 --> 00:00:19,180
+Some have protective lids,
+others squirt blood.
+
+4
+00:00:19,270 --> 00:00:21,600
+But which creature has the best sight?
+
+5
+00:00:21,640 --> 00:00:23,600
+Which sees best in the darkness?
+
+6
+00:00:23,640 --> 00:00:25,270
+Which sees the most detail?
+
+7
+00:00:25,350 --> 00:00:27,730
+Which animal sees the most color?
+
+8
+00:00:27,820 --> 00:00:31,320
+And finally, 
+which detects motion the fastest?
+
+9
+00:00:32,070 --> 00:00:36,740
+All eyes take in sensory stimuli
+in the form of waves of light.
+
+10
+00:00:36,990 --> 00:00:39,280
+To convert these into everything we see,
+
+11
+00:00:39,280 --> 00:00:42,830
+eyes focus incoming light
+onto photoreceptors.
+
+12
+00:00:42,910 --> 00:00:46,460
+These cells translate light 
+into neural signals
+
+13
+00:00:46,460 --> 00:00:49,380
+and send them to the brain, 
+where they’re finally processed.
+
+14
+00:00:49,630 --> 00:00:53,380
+The eyes that see best in darkness
+are those that capture
+
+15
+00:00:53,380 --> 00:00:55,880
+as much available light as possible.
+
+16
+00:00:56,220 --> 00:00:59,760
+Colossal squids have 
+soccer-ball-sized eyes—
+
+17
+00:00:59,760 --> 00:01:02,270
+the largest known in existence.
+
+18
+00:01:02,270 --> 00:01:05,810
+These may help them spot 
+the faint glow of sperm whales
+
+19
+00:01:05,810 --> 00:01:08,440
+as they disturb light-producing organisms.
+
+20
+00:01:08,980 --> 00:01:14,320
+Some fish have eyes that are unique among
+vertebrates because they use mirrors.
+
+21
+00:01:14,780 --> 00:01:16,780
+For the brownsnout spookfish,
+
+22
+00:01:16,780 --> 00:01:21,830
+each eye has an upward-facing lens 
+and a downward-pointing mirror
+
+23
+00:01:21,830 --> 00:01:26,210
+composed of tiny crystal plates 
+that efficiently gather light.
+
+24
+00:01:26,330 --> 00:01:29,500
+They can see up and down simultaneously,
+
+25
+00:01:29,500 --> 00:01:33,710
+and may perceive distinct shapes, 
+even in the ocean’s depths.
+
+26
+00:01:34,010 --> 00:01:38,090
+Back on solid ground, 
+arctic reindeer have adaptations
+
+27
+00:01:38,090 --> 00:01:40,560
+to deal with months of darkness.
+
+28
+00:01:40,720 --> 00:01:46,940
+The backs of reindeer eyes change color,
+from gold in summer to blue in winter.
+
+29
+00:01:47,440 --> 00:01:52,610
+Their blue-backed eyes are about 
+1,000 times more sensitive to light.
+
+30
+00:01:52,610 --> 00:01:56,990
+This may allow reindeer to recognize
+important things in the snow
+
+31
+00:01:56,990 --> 00:01:58,990
+like urine and lichen.
+
+32
+00:01:59,610 --> 00:02:04,950
+When it comes to the sharpest vision,
+birds of prey soar above the competition.
+
+33
+00:02:05,080 --> 00:02:10,670
+To capture the most detail, an animal must
+have lots of photoreceptors in its eye,
+
+34
+00:02:10,670 --> 00:02:14,250
+as well as increased 
+visual processing power.
+
+35
+00:02:14,710 --> 00:02:17,630
+Raptors have an especially deep fovea—
+
+36
+00:02:17,760 --> 00:02:22,350
+a depression in the back of their eye
+that fits more photoreceptors.
+
+37
+00:02:22,640 --> 00:02:28,390
+So, Peregrine falcons have vision that’s
+more than twice as sharp as a human’s.
+
+38
+00:02:28,560 --> 00:02:33,820
+They’re able to zero in on a rabbit 
+from more than three kilometers away.
+
+39
+00:02:34,650 --> 00:02:37,780
+When crowning the creature 
+with the best color vision,
+
+40
+00:02:37,780 --> 00:02:39,700
+the picture gets complicated.
+
+41
+00:02:39,990 --> 00:02:44,330
+Different photoreceptors are sensitive
+to specific waves of light,
+
+42
+00:02:44,330 --> 00:02:47,290
+meaning the colors we see 
+are largely determined
+
+43
+00:02:47,290 --> 00:02:49,790
+by what kinds of photoreceptors we have.
+
+44
+00:02:50,210 --> 00:02:54,960
+Presumably, the more types of color 
+photoreceptors an animal has,
+
+45
+00:02:54,960 --> 00:02:56,710
+the better its color vision.
+
+46
+00:02:57,010 --> 00:02:58,970
+Dogs have just two types.
+
+47
+00:02:59,010 --> 00:03:00,510
+Humans have three.
+
+48
+00:03:00,510 --> 00:03:05,260
+And we are far outdone
+by some birds, fishes, and insects.
+
+49
+00:03:05,810 --> 00:03:10,600
+Bluebottle butterflies have at least
+15 types of photoreceptors.
+
+50
+00:03:10,770 --> 00:03:14,690
+Seven of them are attuned 
+to distinct blues and greens,
+
+51
+00:03:14,690 --> 00:03:19,780
+which researchers think might help them
+track each other during high-speed chases.
+
+52
+00:03:20,030 --> 00:03:24,530
+Mantis shrimp have a whopping
+16 kinds of photoreceptors,
+
+53
+00:03:24,530 --> 00:03:28,870
+with five reserved just for the 
+ultraviolet, or UV, spectrum,
+
+54
+00:03:28,870 --> 00:03:30,580
+which humans can’t see.
+
+55
+00:03:31,080 --> 00:03:34,540
+But experiments suggest 
+that the mantis shrimp’s ability
+
+56
+00:03:34,540 --> 00:03:38,670
+to discriminate between colors 
+is more limited than you might expect.
+
+57
+00:03:38,840 --> 00:03:42,840
+Exactly how they use their complex eyes
+is a mystery.
+
+58
+00:03:43,430 --> 00:03:47,310
+Meanwhile, with just four kinds
+of color photoreceptors,
+
+59
+00:03:47,310 --> 00:03:52,350
+goldfish actually excel at discerning
+subtle differences in shades.
+
+60
+00:03:52,770 --> 00:03:58,440
+Finally, insects have mastered the ability
+to see the world... on the fly.
+
+61
+00:03:58,780 --> 00:04:02,200
+The fastest motion vision 
+requires photoreceptors
+
+62
+00:04:02,200 --> 00:04:04,870
+that quickly sense changes in light,
+
+63
+00:04:04,870 --> 00:04:08,410
+and a brain that rapidly
+processes the information.
+
+64
+00:04:08,660 --> 00:04:13,500
+A movie shot at 24 frames per second
+gives us the perception
+
+65
+00:04:13,500 --> 00:04:15,170
+of near seamless motion.
+
+66
+00:04:15,290 --> 00:04:18,050
+But insects would see a slideshow.
+
+67
+00:04:18,050 --> 00:04:23,220
+Fly photoreceptors register changes 
+10 times faster than we do,
+
+68
+00:04:23,220 --> 00:04:25,800
+making them especially hard to catch.
+
+69
+00:04:26,220 --> 00:04:29,970
+These animals have some 
+of the best vision we know of,
+
+70
+00:04:29,970 --> 00:04:32,270
+but there's no winner across the board.
+
+71
+00:04:32,520 --> 00:04:38,150
+Each category has different top contenders
+because vision requires tradeoffs.
+
+72
+00:04:38,320 --> 00:04:41,190
+So, some eyes are highly specialized,
+
+73
+00:04:41,360 --> 00:04:45,820
+while others, like ours, 
+perform decently in many categories.
+
+74
+00:04:46,070 --> 00:04:50,750
+From eyes the size of soccer balls 
+to those that see in UV—
+
+75
+00:04:50,750 --> 00:04:55,500
+the ways of looking at the world 
+are as varied as the life forms in it.
+

@@ -1,0 +1,15 @@
+[Script Info]
+Title: Subtitle_merge.srt
+Original Script: Unknown
+; Converted by the Online Subtitle Converter developed by J. David Requejo
+Script Type: V4.00+
+Collisions: Normal
+Timer: 100,0000
+WrapStyle: 1
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+

@@ -1,0 +1,1993 @@
+1
+00:00:06,84 --> 00:00:08,00
+-[doctor] Hi.
+-Hi.
+
+2
+00:00:09,21 --> 00:00:11,59
+[narrator] You're witnessing
+an historic moment.
+
+3
+00:00:12,01 --> 00:00:16,72
+Right now, there's a worldwide hunt
+for ways to fight this coronavirus.
+
+4
+00:00:20,64 --> 00:00:22,43
+Scientists are trying everything,
+
+5
+00:00:22,52 --> 00:00:25,10
+from existing medicines to new therapies.
+
+6
+00:00:25,19 --> 00:00:27,81
+But the most likely way
+we'll end this pandemic
+
+7
+00:00:28,31 --> 00:00:29,52
+is a vaccine.
+
+8
+00:00:31,19 --> 00:00:33,11
+On March 16th, 2020,
+
+9
+00:00:33,19 --> 00:00:34,99
+the first one was tested.
+
+10
+00:00:35,07 --> 00:00:36,24
+I'm Jennifer Haller,
+
+11
+00:00:36,32 --> 00:00:40,87
+and I was the first person to receive
+an experimental COVID-19 vaccine.
+
+12
+00:00:41,62 --> 00:00:44,54
+[narrator] We've made other test vaccines
+pretty quickly.
+
+13
+00:00:44,62 --> 00:00:46,75
+One for SARS took 20 months,
+
+14
+00:00:46,83 --> 00:00:49,04
+one for Ebola, seven months,
+
+15
+00:00:49,13 --> 00:00:51,96
+and one for Zika, around six months.
+
+16
+00:00:52,05 --> 00:00:54,97
+But this vaccine candidate
+crushed those records.
+
+17
+00:00:55,05 --> 00:00:57,64
+It was made in just 65 days.
+
+18
+00:00:58,18 --> 00:01:00,60
+If it's going to end
+this pandemic, though,
+
+19
+00:01:00,68 --> 00:01:03,10
+it's got a long way still to go.
+
+20
+00:01:04,14 --> 00:01:07,56
+See, any potential vaccine
+has a difficult path ahead,
+
+21
+00:01:07,65 --> 00:01:11,23
+a long and twisting course
+full of challenges and trials.
+
+22
+00:01:11,52 --> 00:01:12,57
+In the US,
+
+23
+00:01:12,65 --> 00:01:15,86
+typically it takes a vaccine candidate
+a decade or so
+
+24
+00:01:15,95 --> 00:01:17,82
+to make it from start to finish,
+
+25
+00:01:18,16 --> 00:01:21,37
+and around 90% fail to complete it.
+
+26
+00:01:22,33 --> 00:01:24,54
+We don't have that kind of time.
+
+27
+00:01:24,62 --> 00:01:26,75
+Every day, people are dying,
+
+28
+00:01:27,25 --> 00:01:29,92
+and the economic losses are mounting.
+
+29
+00:01:30,88 --> 00:01:35,67
+Experts are hoping a vaccine
+can be widely available in 2021.
+
+30
+00:01:35,76 --> 00:01:37,01
+To pull that off,
+
+31
+00:01:37,09 --> 00:01:40,93
+it will have to get through every stretch
+of this course in record time.
+
+32
+00:01:41,01 --> 00:01:42,06
+[car engines roaring]
+
+33
+00:01:42,14 --> 00:01:44,85
+[announcer] This is the supreme test
+of man and machine.
+
+34
+00:01:44,93 --> 00:01:47,31
+But while many are called
+to the starting line,
+
+35
+00:01:47,39 --> 00:01:50,27
+usually less than half
+finish the grueling drive.
+
+36
+00:01:51,65 --> 00:01:56,07
+[narrator] Fortunately, more than 100
+vaccine candidates are giving it a shot,
+
+37
+00:01:56,32 --> 00:02:00,70
+made by scientists all over the world,
+from veterans at universities...
+
+38
+00:02:00,78 --> 00:02:03,70
+We have a dedicated group
+of extraordinary scientists
+
+39
+00:02:03,79 --> 00:02:06,16
+that are in the lab day and night.
+
+40
+00:02:06,25 --> 00:02:07,91
+[narrator] ...to pharmaceutical giants...
+
+41
+00:02:08,00 --> 00:02:11,00
+We have the teams to do this,
+and everyone is excited.
+
+42
+00:02:11,08 --> 00:02:12,71
+[narrator] ...using proven techniques...
+
+43
+00:02:12,79 --> 00:02:15,21
+And, of course,
+with the coronavirus vaccine,
+
+44
+00:02:15,30 --> 00:02:17,22
+we have a particular head start.
+
+45
+00:02:17,47 --> 00:02:20,22
+[narrator] ...and approaches
+that have never been tested before.
+
+46
+00:02:20,30 --> 00:02:22,10
+Everybody competes with each other,
+
+47
+00:02:22,18 --> 00:02:24,76
+but eventually,
+only the very best survive.
+
+48
+00:02:24,85 --> 00:02:29,27
+[narrator] But getting a vaccine
+is also going to take a lot of money...
+
+49
+00:02:29,35 --> 00:02:32,56
+Okay, here we are. You know,
+we can get money out really fast.
+
+50
+00:02:32,65 --> 00:02:34,48
+We can do evaluations of these things.
+
+51
+00:02:34,57 --> 00:02:36,44
+Now we're all trying to step up
+
+52
+00:02:36,53 --> 00:02:38,90
+and look all over the world
+for the best ideas.
+
+53
+00:02:39,24 --> 00:02:40,61
+[narrator] ...and collaboration.
+
+54
+00:02:40,70 --> 00:02:43,24
+The entire global scientific community
+
+55
+00:02:43,32 --> 00:02:46,66
+has come together
+in a truly unprecedented way.
+
+56
+00:02:46,74 --> 00:02:48,91
+[narrator] ...and brave volunteers.
+
+57
+00:02:49,08 --> 00:02:52,54
+We're all feeling so helpless,
+and this was something that I saw
+
+58
+00:02:52,63 --> 00:02:56,55
+that I could do that could
+potentially make a difference.
+
+59
+00:02:56,96 --> 00:02:59,17
+[narrator] Together,
+they're in one of the most
+
+60
+00:02:59,26 --> 00:03:01,63
+high-stakes scientific races in history.
+
+61
+00:03:02,14 --> 00:03:04,68
+I compare this to a space race.
+
+62
+00:03:04,76 --> 00:03:08,64
+We have so many contenders reaching for
+something that was previously unknown.
+
+63
+00:03:08,73 --> 00:03:09,98
+"How do I get to Mars?"
+
+64
+00:03:10,06 --> 00:03:11,10
+"How do I get to Venus?"
+
+65
+00:03:11,19 --> 00:03:13,94
+"How do we create
+the next COVID-19 vaccine?"
+
+66
+00:03:14,02 --> 00:03:16,07
+[narrator] And the other big question:
+
+67
+00:03:16,15 --> 00:03:18,28
+how fast can we do it?
+
+68
+00:03:18,61 --> 00:03:19,69
+[theme music playing]
+
+69
+00:03:19,78 --> 00:03:23,28
+Given the fact that we now have the virus
+in our hands,
+
+70
+00:03:23,36 --> 00:03:25,20
+we will develop a vaccine.
+
+71
+00:03:25,28 --> 00:03:30,87
+[man 1] We can move very fast in ways
+that have not been previously achieved.
+
+72
+00:03:30,96 --> 00:03:34,71
+[man 2] It's only once that vaccine
+has been proven to be safe
+
+73
+00:03:34,79 --> 00:03:37,46
+that it'll be allowed out of confinement.
+
+74
+00:03:37,55 --> 00:03:39,84
+[man 3] What they needed was a vaccine,
+
+75
+00:03:39,92 --> 00:03:42,55
+and the fight never stopped
+till it was found.
+
+76
+00:03:44,84 --> 00:03:48,60
+[man 4] There remain other viruses
+to be isolated, other vaccines to come,
+
+77
+00:03:48,68 --> 00:03:49,68
+but they will.
+
+78
+00:03:58,02 --> 00:04:01,90
+[narrator] This coronavirus,
+and all viruses, are so hard to fight,
+
+79
+00:04:01,99 --> 00:04:05,07
+in part because they're so simple.
+
+80
+00:04:05,62 --> 00:04:08,08
+They're basically just little vehicles
+
+81
+00:04:08,16 --> 00:04:11,41
+that carry instructions
+on how to make more of themselves.
+
+82
+00:04:11,96 --> 00:04:16,13
+To reproduce, they smuggle
+these instructions into our cells
+
+83
+00:04:16,21 --> 00:04:20,46
+and force our cellular machinery
+to make more and more viruses.
+
+84
+00:04:20,55 --> 00:04:23,80
+They spread through the body
+and hijack more cells,
+
+85
+00:04:24,13 --> 00:04:25,93
+damaging them in the process,
+
+86
+00:04:26,34 --> 00:04:28,10
+which makes us feel sick.
+
+87
+00:04:29,18 --> 00:04:31,10
+But we're not defenseless.
+
+88
+00:04:31,72 --> 00:04:32,56
+[alarm blares]
+
+89
+00:04:32,64 --> 00:04:34,64
+-[narrator] Cells in our immune system
+-[siren wails]
+
+90
+00:04:34,73 --> 00:04:37,73
+can find the intruder
+and identify a marker,
+
+91
+00:04:37,81 --> 00:04:41,11
+a distinguishing feature
+which we call an antigen.
+
+92
+00:04:41,36 --> 00:04:46,49
+Then they mobilize to seek out
+and destroy anything with that antigen.
+
+93
+00:04:47,03 --> 00:04:51,20
+Our immune system also produces
+little molecules called antibodies
+
+94
+00:04:51,29 --> 00:04:55,04
+that stick to that antigen,
+tagging and subduing the virus.
+
+95
+00:04:55,54 --> 00:04:56,96
+But from the day we're infected,
+
+96
+00:04:57,04 --> 00:05:00,80
+it can take almost two weeks
+for this response to ramp up,
+
+97
+00:05:01,88 --> 00:05:05,26
+enough time for this coronavirus
+to swarm through the body,
+
+98
+00:05:05,80 --> 00:05:07,05
+wreaking havoc.
+
+99
+00:05:07,97 --> 00:05:11,47
+And sometimes our immune system
+ramps up too much
+
+100
+00:05:11,56 --> 00:05:13,52
+and causes even more harm.
+
+101
+00:05:13,60 --> 00:05:17,77
+In some people,
+all this damage becomes overwhelming,
+
+102
+00:05:18,31 --> 00:05:19,40
+and they die.
+
+103
+00:05:19,48 --> 00:05:22,28
+In one shift,
+I pronounced six people dead.
+
+104
+00:05:23,11 --> 00:05:25,36
+[narrator] This is where
+having a treatment would help.
+
+105
+00:05:26,36 --> 00:05:30,58
+Some inject antibodies,
+those molecules that subdue the virus,
+
+106
+00:05:30,66 --> 00:05:33,45
+either synthetic antibodies made in a lab,
+
+107
+00:05:33,54 --> 00:05:35,83
+or from the blood of people
+who've recovered.
+
+108
+00:05:36,50 --> 00:05:40,08
+Others rein in our immune systems
+if they're getting out of control.
+
+109
+00:05:40,63 --> 00:05:42,88
+And some, like Remdesivir,
+
+110
+00:05:42,96 --> 00:05:47,01
+actually enter our cells
+to block the virus from copying itself.
+
+111
+00:05:47,09 --> 00:05:51,01
+Early results showed it could
+potentially make the virus less deadly.
+
+112
+00:05:51,55 --> 00:05:54,43
+It is a very important proof of concept,
+
+113
+00:05:54,52 --> 00:05:59,69
+because what it has proven
+is that a drug can block this virus.
+
+114
+00:06:00,52 --> 00:06:01,90
+[narrator] But as of May,
+
+115
+00:06:01,98 --> 00:06:05,19
+none of these treatments
+can stop a person from getting sick,
+
+116
+00:06:05,28 --> 00:06:07,65
+or spreading this coronavirus to others.
+
+117
+00:06:08,20 --> 00:06:09,95
+A vaccine would,
+
+118
+00:06:10,53 --> 00:06:12,66
+and it does it by taking advantage
+of something
+
+119
+00:06:12,74 --> 00:06:15,83
+our bodies have evolved
+over millions of years:
+
+120
+00:06:15,91 --> 00:06:16,91
+memory.
+
+121
+00:06:17,62 --> 00:06:21,88
+After it deals with a virus,
+our immune system remembers the antigens,
+
+122
+00:06:22,09 --> 00:06:23,59
+sometimes forever,
+
+123
+00:06:23,92 --> 00:06:26,05
+other times just for a while.
+
+124
+00:06:26,71 --> 00:06:30,84
+We know our bodies can remember these
+other coronaviruses for a couple years.
+
+125
+00:06:31,14 --> 00:06:33,22
+So if this coronavirus is similar
+
+126
+00:06:33,30 --> 00:06:36,56
+and it shows up in our bodies again
+in that time,
+
+127
+00:06:36,64 --> 00:06:40,60
+our immune system can ramp up much faster
+with overwhelming force,
+
+128
+00:06:40,69 --> 00:06:43,31
+wiping out the virus
+before it can make us sick
+
+129
+00:06:43,40 --> 00:06:44,86
+or spread to someone else.
+
+130
+00:06:45,23 --> 00:06:48,74
+This is what it means
+to be immune to a virus.
+
+131
+00:06:49,15 --> 00:06:50,95
+A vaccine makes us immune
+
+132
+00:06:51,03 --> 00:06:54,49
+by safely showing the body
+what a virus looks like,
+
+133
+00:06:54,58 --> 00:06:59,00
+faking this first infection
+to teach your body how to respond,
+
+134
+00:06:59,08 --> 00:07:02,58
+so when it does encounter the real virus,
+it's ready.
+
+135
+00:07:03,13 --> 00:07:05,46
+No vaccine is 100% effective,
+
+136
+00:07:05,55 --> 00:07:09,22
+meaning not everyone who receives one
+will be perfectly immune,
+
+137
+00:07:09,30 --> 00:07:12,89
+but vaccines don't need to be perfect
+to end epidemics.
+
+138
+00:07:13,22 --> 00:07:16,06
+Smallpox used to be
+a leading cause of death,
+
+139
+00:07:16,14 --> 00:07:19,89
+and measles killed millions a year,
+most of them children.
+
+140
+00:07:19,98 --> 00:07:23,81
+But thanks to vaccines
+that are around 95% effective,
+
+141
+00:07:24,02 --> 00:07:25,73
+we've wiped out smallpox
+
+142
+00:07:25,82 --> 00:07:28,94
+and made enormous progress
+against measles.
+
+143
+00:07:29,40 --> 00:07:32,61
+Vaccine makers are hoping to make
+a vaccine that effective.
+
+144
+00:07:32,70 --> 00:07:38,29
+If all we could make was a vaccine that,
+let's say, had 50% efficacy,
+
+145
+00:07:38,37 --> 00:07:40,83
+so it prevented about
+half of the infections,
+
+146
+00:07:40,91 --> 00:07:43,96
+if that translates into stopping
+half of the deaths,
+
+147
+00:07:44,04 --> 00:07:45,38
+that's really good news.
+
+148
+00:07:45,46 --> 00:07:46,59
+[narrator] The fact is,
+
+149
+00:07:46,67 --> 00:07:50,51
+vaccines are one of the most
+significant inventions in human history.
+
+150
+00:07:50,97 --> 00:07:52,72
+The world doesn't agree on much,
+
+151
+00:07:52,80 --> 00:07:57,39
+but more than 90% of all people believe
+childhood vaccinations are important,
+
+152
+00:07:57,47 --> 00:08:01,10
+and that's crucial,
+because to wipe out an infectious disease,
+
+153
+00:08:01,18 --> 00:08:04,23
+you need most people in the world
+to be immune.
+
+154
+00:08:04,65 --> 00:08:06,44
+It's called herd immunity.
+
+155
+00:08:06,52 --> 00:08:11,82
+The idea is that individuals become immune
+either by getting infected and surviving,
+
+156
+00:08:11,90 --> 00:08:13,57
+or by getting vaccinated.
+
+157
+00:08:13,91 --> 00:08:15,82
+When enough people are immune,
+
+158
+00:08:15,91 --> 00:08:19,29
+the virus has trouble spreading,
+and slows down.
+
+159
+00:08:19,37 --> 00:08:21,83
+You know, you are also protecting
+by vaccinating yourself
+
+160
+00:08:21,91 --> 00:08:25,50
+not just yourself, but you are protecting
+weak members in the community
+
+161
+00:08:25,58 --> 00:08:28,09
+who may not be able to get the vaccine.
+
+162
+00:08:28,17 --> 00:08:32,13
+[narrator] Like newborns, the elderly,
+and people with weak immune systems.
+
+163
+00:08:32,22 --> 00:08:36,80
+So it's both an act of protecting yourself
+and it's also an act of altruism.
+
+164
+00:08:37,22 --> 00:08:39,47
+[narrator] So defeating
+an infectious disease
+
+165
+00:08:39,56 --> 00:08:41,93
+requires the whole world coming together,
+
+166
+00:08:42,02 --> 00:08:46,15
+and in the COVID-19 race, the world has
+come together like never before.
+
+167
+00:08:47,44 --> 00:08:50,11
+Out of the over 100 candidates
+in the race in May,
+
+168
+00:08:50,19 --> 00:08:54,65
+almost half are in North America,
+and 17 are in China.
+
+169
+00:08:54,74 --> 00:08:56,78
+And they're funded in different ways,
+
+170
+00:08:56,86 --> 00:08:58,70
+most by private industry.
+
+171
+00:08:59,33 --> 00:09:03,33
+But the main difference between them
+is their vaccine platform,
+
+172
+00:09:03,41 --> 00:09:06,25
+how they're showing the body
+what the virus looks like.
+
+173
+00:09:07,33 --> 00:09:11,25
+Some vaccines inject a weakened version
+of the virus into the body.
+
+174
+00:09:11,34 --> 00:09:15,55
+It can't reproduce or do damage
+but it still has that antigen,
+
+175
+00:09:15,63 --> 00:09:18,93
+so our immune system can learn
+what to watch out for.
+
+176
+00:09:19,30 --> 00:09:21,64
+That's how we vaccinate against polio,
+
+177
+00:09:21,72 --> 00:09:23,68
+the measles, mumps, and rubella,
+
+178
+00:09:23,77 --> 00:09:25,56
+chicken pox, rotavirus,
+
+179
+00:09:25,64 --> 00:09:27,14
+and for the flu.
+
+180
+00:09:27,23 --> 00:09:30,73
+This is by far
+our most tried-and-true method,
+
+181
+00:09:30,82 --> 00:09:32,90
+but it's a slow way to do it.
+
+182
+00:09:32,98 --> 00:09:37,11
+We have to grow the virus for months
+in other living cells, like chicken eggs,
+
+183
+00:09:37,20 --> 00:09:39,37
+a method we've been using for decades.
+
+184
+00:09:39,78 --> 00:09:42,70
+We'll call these
+the first-generation vaccines,
+
+185
+00:09:42,79 --> 00:09:45,83
+and there are nine in the race
+as of early May.
+
+186
+00:09:46,71 --> 00:09:49,04
+Other scientists are trying
+a newer approach.
+
+187
+00:09:49,13 --> 00:09:51,04
+Instead of the whole coronavirus,
+
+188
+00:09:51,13 --> 00:09:53,50
+they're giving the body just an antigen,
+
+189
+00:09:53,59 --> 00:09:56,38
+a piece they think will activate
+the immune response.
+
+190
+00:09:56,63 --> 00:10:00,72
+Those antigens also need to be grown,
+sometimes in yeast cells,
+
+191
+00:10:00,80 --> 00:10:02,89
+or attached to another harmless virus.
+
+192
+00:10:03,39 --> 00:10:06,39
+This is how the vaccine
+for hepatitis B works,
+
+193
+00:10:06,48 --> 00:10:09,27
+and for whooping cough, and meningitis B.
+
+194
+00:10:09,90 --> 00:10:12,94
+We'll call these
+second-generation vaccines,
+
+195
+00:10:13,02 --> 00:10:17,99
+and they're the most popular kind
+in the COVID-19 race, with 72 candidates.
+
+196
+00:10:19,11 --> 00:10:21,41
+Finally, there's a brand new
+type of vaccine
+
+197
+00:10:21,49 --> 00:10:24,49
+that doesn't use any part
+of the actual virus at all.
+
+198
+00:10:24,91 --> 00:10:28,46
+Instead, it just gives our bodies
+the virus's instructions,
+
+199
+00:10:28,54 --> 00:10:32,92
+tiny pieces of genetic code that tell
+our cells to produce the antigens,
+
+200
+00:10:33,00 --> 00:10:35,13
+which then activate the immune response.
+
+201
+00:10:35,63 --> 00:10:40,18
+No vaccine using this approach has
+ever been approved for use in humans.
+
+202
+00:10:40,26 --> 00:10:43,22
+We'll call these
+the third-generation vaccines,
+
+203
+00:10:43,30 --> 00:10:46,06
+and there are 27 in the race.
+
+204
+00:10:46,14 --> 00:10:49,19
+Because they don't involve
+growing any part of any virus,
+
+205
+00:10:49,27 --> 00:10:51,60
+they can be made extremely fast.
+
+206
+00:10:52,15 --> 00:10:55,98
+This record-breaking vaccine
+was a third-generation candidate
+
+207
+00:10:56,07 --> 00:10:58,15
+from a US company called Moderna.
+
+208
+00:10:58,78 --> 00:11:01,45
+But making a vaccine candidate
+isn't the hard part.
+
+209
+00:11:01,86 --> 00:11:03,53
+This next phase is.
+
+210
+00:11:03,87 --> 00:11:04,99
+Clinical trials.
+
+211
+00:11:05,08 --> 00:11:06,20
+[engines rev]
+
+212
+00:11:06,29 --> 00:11:07,95
+[announcer] And they're up to speed.
+
+213
+00:11:09,41 --> 00:11:11,87
+[narrator] Traditionally,
+there are three phases.
+
+214
+00:11:12,96 --> 00:11:16,30
+First, teams give their vaccines
+to a small group of people,
+
+215
+00:11:16,38 --> 00:11:20,13
+wait a few months, and see if any of them
+report dangerous side effects.
+
+216
+00:11:20,84 --> 00:11:22,09
+If everything looks good,
+
+217
+00:11:22,18 --> 00:11:24,89
+the vaccine moves on and is given
+to a couple hundred people,
+
+218
+00:11:24,97 --> 00:11:27,52
+again, to see if there are
+any dangerous side effects,
+
+219
+00:11:27,60 --> 00:11:30,81
+but also to see if
+people's immune systems ramp up.
+
+220
+00:11:30,89 --> 00:11:33,69
+That involves more waiting,
+usually months.
+
+221
+00:11:34,61 --> 00:11:37,27
+Then the candidate moves on
+to the third test,
+
+222
+00:11:37,36 --> 00:11:40,53
+where thousands are vaccinated
+to triple-check for side effects
+
+223
+00:11:40,61 --> 00:11:42,24
+and see how well it works.
+
+224
+00:11:42,32 --> 00:11:45,28
+That's another few months
+or years of waiting.
+
+225
+00:11:46,41 --> 00:11:47,99
+This isn't like testing a drug
+
+226
+00:11:48,08 --> 00:11:50,25
+where you give it to people
+with a disease
+
+227
+00:11:50,62 --> 00:11:52,21
+and see if it makes them better.
+
+228
+00:11:52,83 --> 00:11:55,54
+You're giving it to people
+who don't have a disease,
+
+229
+00:11:56,13 --> 00:12:00,01
+and then checking later to see
+if they still don't have the disease.
+
+230
+00:12:00,97 --> 00:12:04,68
+In normal times, this whole process
+can take around four years,
+
+231
+00:12:04,76 --> 00:12:06,64
+testing around 5,000 people.
+
+232
+00:12:07,14 --> 00:12:11,10
+But vaccine developers are hoping
+to do some of this testing simultaneously,
+
+233
+00:12:11,52 --> 00:12:15,69
+still testing the same number of people,
+but all in around 18 months.
+
+234
+00:12:16,23 --> 00:12:18,98
+It's how some candidates
+are moving so quickly.
+
+235
+00:12:19,07 --> 00:12:22,78
+The FDA has cleared the Moderna vaccine
+for phase two of its trial.
+
+236
+00:12:22,86 --> 00:12:24,53
+[reporter 1]
+Moderna moving at record speed.
+
+237
+00:12:24,61 --> 00:12:26,95
+China's already given approval
+for another clinical trial.
+
+238
+00:12:27,03 --> 00:12:28,20
+It's now at the second phase.
+
+239
+00:12:28,28 --> 00:12:31,37
+The vaccine, uh, that is
+most promising right now
+
+240
+00:12:31,45 --> 00:12:33,71
+is the one from Oxford University.
+
+241
+00:12:33,79 --> 00:12:37,29
+-That has merged phase one and phase two.
+-...which is speedy.
+
+242
+00:12:38,54 --> 00:12:42,21
+[narrator] This stage of the race can't go
+any faster, for good reason.
+
+243
+00:12:42,51 --> 00:12:44,76
+[Kirchhelle] Without running through
+all of these trials,
+
+244
+00:12:44,84 --> 00:12:46,55
+it would be absolutely unethical
+
+245
+00:12:46,64 --> 00:12:50,81
+to roll out a vaccine potentially
+to the entire global population,
+
+246
+00:12:51,60 --> 00:12:53,81
+because you could do some real harm there.
+
+247
+00:12:54,94 --> 00:12:57,48
+[news reel announcer] Our men today
+are safe against yellow fever.
+
+248
+00:12:57,56 --> 00:13:01,94
+A few drops of vaccine will give them
+dependable and lasting immunity.
+
+249
+00:13:02,69 --> 00:13:04,03
+[narrator] During World War II,
+
+250
+00:13:04,11 --> 00:13:06,91
+Allied soldiers were vaccinated
+for yellow fever.
+
+251
+00:13:07,49 --> 00:13:11,41
+Thousands developed jaundice
+and hepatitis, and some died.
+
+252
+00:13:11,74 --> 00:13:13,16
+That should never have happened.
+
+253
+00:13:13,25 --> 00:13:15,83
+If the vaccine makers
+had done their research,
+
+254
+00:13:15,92 --> 00:13:20,00
+they would have discovered reports
+of these side effects dating back to 1885.
+
+255
+00:13:21,00 --> 00:13:22,71
+Then in the 1950s,
+
+256
+00:13:22,80 --> 00:13:27,01
+some poorly made vaccines infected
+40,000 people with polio,
+
+257
+00:13:27,09 --> 00:13:28,89
+and killed around 200.
+
+258
+00:13:29,26 --> 00:13:30,89
+Known as "the Cutter incident,"
+
+259
+00:13:30,97 --> 00:13:35,14
+it led the US government to tighten
+requirements for vaccine manufacturers.
+
+260
+00:13:35,68 --> 00:13:41,82
+Nothing is licensed without undergoing
+extremely stringent safety considerations.
+
+261
+00:13:41,90 --> 00:13:45,28
+And even after it's licensed,
+the vaccine continues to be monitored.
+
+262
+00:13:45,36 --> 00:13:47,70
+[narrator] Today,
+according to the US government,
+
+263
+00:13:47,78 --> 00:13:50,74
+for every million doses of vaccine
+that are distributed,
+
+264
+00:13:50,83 --> 00:13:54,37
+only one person is compensated
+for serious side effects.
+
+265
+00:13:54,91 --> 00:14:00,08
+Vaccines need to pass an extra-high bar
+because they're given to healthy people.
+
+266
+00:14:00,54 --> 00:14:02,67
+[Hatchett] What we can't do
+is take shortcuts
+
+267
+00:14:02,75 --> 00:14:04,80
+where safety and effectiveness
+are concerned.
+
+268
+00:14:04,88 --> 00:14:07,09
+I think there are ways
+to streamline some things
+
+269
+00:14:07,17 --> 00:14:08,51
+and do more things in parallel,
+
+270
+00:14:08,59 --> 00:14:10,05
+but it's going to be tough,
+
+271
+00:14:10,14 --> 00:14:13,06
+and it's going to be
+a carefully orchestrated dance.
+
+272
+00:14:13,14 --> 00:14:15,72
+Rather than running everything in series
+
+273
+00:14:15,81 --> 00:14:19,14
+and having just one person doing
+each of these steps along the way,
+
+274
+00:14:19,23 --> 00:14:21,11
+whole teams of people have been put there
+
+275
+00:14:21,19 --> 00:14:25,73
+to ensure that we still maintain
+the same quality and safety.
+
+276
+00:14:26,32 --> 00:14:28,74
+[narrator] But some teams
+did have a head start here,
+
+277
+00:14:28,82 --> 00:14:31,24
+because this isn't the first coronavirus,
+
+278
+00:14:31,32 --> 00:14:35,12
+or the first coronavirus
+to inspire a race for a vaccine.
+
+279
+00:14:36,00 --> 00:14:37,75
+[reporter 2] The impact of SARS.
+
+280
+00:14:38,16 --> 00:14:41,92
+[reporter 3] The SARS disease
+has spread across the world.
+
+281
+00:14:42,00 --> 00:14:43,92
+[reporter 4] The battle against
+an outbreak
+
+282
+00:14:44,00 --> 00:14:48,01
+of Middle East Respiratory Syndrome,
+or MERS, continues in South Korea.
+
+283
+00:14:48,09 --> 00:14:51,14
+[narrator] When SARS and MERS viruses
+caused outbreaks,
+
+284
+00:14:51,22 --> 00:14:54,01
+many scientists got to work on vaccines,
+
+285
+00:14:54,10 --> 00:14:56,60
+including a team at Oxford University.
+
+286
+00:14:56,68 --> 00:15:00,44
+We've learnt a lot about coronaviruses
+and their biology,
+
+287
+00:15:00,52 --> 00:15:02,81
+actually, because of
+the last two big outbreaks.
+
+288
+00:15:03,27 --> 00:15:07,32
+[narrator] In 2018, Oxford University
+got a promising MERS candidate
+
+289
+00:15:07,40 --> 00:15:08,61
+into human trials,
+
+290
+00:15:08,69 --> 00:15:12,07
+hoping to stop the next outbreak
+of this rare coronavirus.
+
+291
+00:15:12,16 --> 00:15:16,20
+But then a year later,
+this latest coronavirus broke out.
+
+292
+00:15:16,29 --> 00:15:17,58
+Because it was similar,
+
+293
+00:15:17,66 --> 00:15:22,58
+the team easily adapted their MERS vaccine
+into a COVID-19 one.
+
+294
+00:15:22,67 --> 00:15:26,42
+And so that has really been
+a major shortcut that we've had,
+
+295
+00:15:26,50 --> 00:15:29,05
+by not having to go back
+to the drawing board and start again.
+
+296
+00:15:29,13 --> 00:15:31,51
+[narrator] They sped through
+the first phase of trials,
+
+297
+00:15:31,59 --> 00:15:34,68
+putting them on track to begin
+the next phases in the summer.
+
+298
+00:15:34,76 --> 00:15:37,60
+We don't know for certain that
+that will all go to plan,
+
+299
+00:15:37,68 --> 00:15:40,02
+but if it does,
+then it's certainly possible
+
+300
+00:15:40,10 --> 00:15:42,52
+that there could be millions of doses
+available in the autumn.
+
+301
+00:15:43,02 --> 00:15:46,02
+[narrator] Unfortunately,
+Oxford's story is uncommon.
+
+302
+00:15:46,40 --> 00:15:51,65
+Peter Hotez also made a promising
+coronavirus vaccine for SARS years ago.
+
+303
+00:15:51,74 --> 00:15:55,20
+It was all going well,
+and then the grant ended.
+
+304
+00:15:55,28 --> 00:15:57,03
+And we thought,
+"Well, we've gone this far.
+
+305
+00:15:57,12 --> 00:16:00,41
+We'll just get funding to move it
+into clinical trials."
+
+306
+00:16:00,50 --> 00:16:01,96
+And unfortunately, we couldn't.
+
+307
+00:16:02,04 --> 00:16:04,88
+[narrator] This happened to so many
+promising vaccines
+
+308
+00:16:04,96 --> 00:16:08,46
+that this stage is often called
+"the Vaccine Valley of Death."
+
+309
+00:16:08,92 --> 00:16:10,46
+Of these vaccine candidates
+
+310
+00:16:10,55 --> 00:16:12,80
+that scientists race to make
+in record time,
+
+311
+00:16:12,88 --> 00:16:15,05
+only Ebola reached the finish line.
+
+312
+00:16:15,14 --> 00:16:18,68
+Because when these outbreaks ended,
+so did the funding.
+
+313
+00:16:18,76 --> 00:16:22,23
+After every catastrophic pandemic
+or epidemic,
+
+314
+00:16:22,31 --> 00:16:24,81
+I say, "Maybe this is the one
+that moves the needle
+
+315
+00:16:24,90 --> 00:16:27,40
+and gets public funding in place."
+
+316
+00:16:27,48 --> 00:16:29,82
+And I said that after SARS in 2003,
+
+317
+00:16:29,90 --> 00:16:33,24
+I said it after H1N1 in 2009,
+
+318
+00:16:33,32 --> 00:16:35,53
+I said it after MERS in 2012,
+
+319
+00:16:35,61 --> 00:16:37,66
+I said it after Ebola in 2014,
+
+320
+00:16:37,74 --> 00:16:39,95
+after Zika in 2016, and I'll say it again.
+
+321
+00:16:40,49 --> 00:16:44,08
+[narrator] Peter's COVID-19 candidate
+is based on his SARS candidate.
+
+322
+00:16:44,16 --> 00:16:46,58
+But if he had been able
+to test it back then...
+
+323
+00:16:47,04 --> 00:16:49,42
+We would have had the safety testing
+potentially finished,
+
+324
+00:16:49,50 --> 00:16:51,38
+and that's not insignificant, right?
+
+325
+00:16:51,46 --> 00:16:55,68
+So that's too bad
+that we lost that opportunity.
+
+326
+00:16:56,26 --> 00:16:57,80
+[narrator] In 2017,
+
+327
+00:16:57,89 --> 00:17:00,18
+a group of people funded in part
+by the Gates Foundation
+
+328
+00:17:00,26 --> 00:17:02,35
+came together to fix this.
+
+329
+00:17:02,43 --> 00:17:06,02
+Well, unfortunately, even though
+there's a substantial risk
+
+330
+00:17:06,10 --> 00:17:07,90
+of various types of epidemics,
+
+331
+00:17:07,98 --> 00:17:12,19
+there's not a natural incentive for people
+to build products that anticipate that.
+
+332
+00:17:12,28 --> 00:17:16,24
+You've got to bring governments
+and foundations together
+
+333
+00:17:16,32 --> 00:17:18,41
+to create the right incentive structure.
+
+334
+00:17:18,49 --> 00:17:20,58
+[narrator] They call themselves CEPI,
+
+335
+00:17:20,66 --> 00:17:23,50
+The Coalition for Epidemic
+Preparedness Innovations.
+
+336
+00:17:23,91 --> 00:17:25,58
+[Hatchett] What CEPI is,
+
+337
+00:17:25,66 --> 00:17:28,83
+is it aggregates funding
+and creates a pool of funds
+
+338
+00:17:28,92 --> 00:17:31,05
+to support vaccine development.
+
+339
+00:17:31,13 --> 00:17:32,71
+So we can play fair broker
+
+340
+00:17:32,80 --> 00:17:36,18
+and take those billions that are available
+for tools for the world
+
+341
+00:17:36,26 --> 00:17:38,09
+and make sure they go to the right place.
+
+342
+00:17:38,18 --> 00:17:42,26
+[narrator] As of early May, CEPI is behind
+nine COVID-19 candidates,
+
+343
+00:17:42,35 --> 00:17:44,31
+including two of the early front-runners:
+
+344
+00:17:44,39 --> 00:17:47,02
+Oxford's new candidate, and Moderna's.
+
+345
+00:17:47,10 --> 00:17:49,35
+And it's the success
+of those two candidates,
+
+346
+00:17:49,44 --> 00:17:50,61
+and one from China,
+
+347
+00:17:50,69 --> 00:17:55,11
+that give experts hope that we can have
+a vaccine approved in 18 months,
+
+348
+00:17:55,19 --> 00:17:57,45
+but that isn't the end of the race.
+
+349
+00:17:57,53 --> 00:17:58,86
+Not even close.
+
+350
+00:17:59,53 --> 00:18:00,70
+[car engines roaring]
+
+351
+00:18:00,78 --> 00:18:02,53
+[announcer] And around they go once more,
+
+352
+00:18:02,62 --> 00:18:05,70
+burning tires down to the fabric
+as they pour on the coal.
+
+353
+00:18:06,91 --> 00:18:10,92
+[narrator] Remember, to end this pandemic,
+we need to reach herd immunity.
+
+354
+00:18:11,46 --> 00:18:14,05
+And for this coronavirus, experts estimate
+
+355
+00:18:14,13 --> 00:18:18,13
+that means at least 60% of the world
+needs to become immune.
+
+356
+00:18:18,22 --> 00:18:22,14
+That's 60% of almost eight billion people.
+
+357
+00:18:22,22 --> 00:18:23,89
+[interviewer] Billions of vaccines
+need to be made?
+
+358
+00:18:23,97 --> 00:18:24,97
+That's correct.
+
+359
+00:18:25,06 --> 00:18:29,77
+We've never produced a billion doses
+of a vaccine in the history of the world.
+
+360
+00:18:29,85 --> 00:18:33,36
+[Gates] You're in a new regime
+when you talk about billions of a vaccine.
+
+361
+00:18:33,44 --> 00:18:35,40
+We don't make billions of any vaccine.
+
+362
+00:18:35,48 --> 00:18:36,65
+We make hundreds of millions,
+
+363
+00:18:36,74 --> 00:18:40,11
+but those we've had decades to work on.
+And even the bottles,
+
+364
+00:18:40,74 --> 00:18:43,16
+that's a special,
+pharmaceutical-grade glass,
+
+365
+00:18:43,24 --> 00:18:45,04
+the world doesn't have enough of that.
+
+366
+00:18:45,12 --> 00:18:46,37
+[narrator] Just to start with,
+
+367
+00:18:46,45 --> 00:18:49,54
+to make a billion doses,
+you need a lot of factories.
+
+368
+00:18:49,62 --> 00:18:53,42
+But each type of vaccine requires
+a different kind of factory,
+
+369
+00:18:53,50 --> 00:18:57,17
+and ramping up production
+in enough factories can take years.
+
+370
+00:18:57,26 --> 00:18:59,26
+But a lot of the giants have a shortcut.
+
+371
+00:18:59,34 --> 00:19:02,09
+They have the factories
+to start production now.
+
+372
+00:19:02,18 --> 00:19:04,76
+We have one big plant
+which is fully operational.
+
+373
+00:19:04,85 --> 00:19:08,85
+So that can spit out 300 million vaccines.
+
+374
+00:19:08,93 --> 00:19:13,73
+Now we are very quickly
+setting up additional plants in the world.
+
+375
+00:19:14,27 --> 00:19:18,28
+[narrator] But the newer types of vaccines
+don't have many, or any, factories yet,
+
+376
+00:19:18,57 --> 00:19:21,53
+so some are placing bets
+on candidates now,
+
+377
+00:19:21,61 --> 00:19:25,20
+building factories for the ones
+they think might survive trials.
+
+378
+00:19:25,28 --> 00:19:30,29
+After all, those investments are,
+at most, billions to save trillions.
+
+379
+00:19:30,37 --> 00:19:33,13
+[narrator] And even if we can
+make that many doses,
+
+380
+00:19:33,21 --> 00:19:36,63
+we'll still need to get the vaccine
+to people all over the world,
+
+381
+00:19:36,71 --> 00:19:39,26
+and that's when politics
+can get in the way.
+
+382
+00:19:40,67 --> 00:19:43,01
+[Andrew Cuthbertson] We have
+a specific vaccine that we believe
+
+383
+00:19:43,09 --> 00:19:48,68
+will be able to protect millions of people
+against this new H1N1 flu.
+
+384
+00:19:48,77 --> 00:19:51,85
+[narrator]
+During the swine flu epidemic in 2009,
+
+385
+00:19:51,94 --> 00:19:55,27
+an Australian company was
+among the first to make a vaccine,
+
+386
+00:19:55,36 --> 00:19:58,44
+and the government made
+them sell to Australians first.
+
+387
+00:19:59,11 --> 00:20:01,07
+Canada made a similar move.
+
+388
+00:20:01,74 --> 00:20:04,91
+And while the US promised
+to donate some of its supply,
+
+389
+00:20:04,99 --> 00:20:07,37
+they waited until the epidemic was over.
+
+390
+00:20:08,04 --> 00:20:11,00
+So it matters where a vaccine is made.
+
+391
+00:20:11,46 --> 00:20:14,17
+Vaccine nationalism. That is real.
+
+392
+00:20:14,25 --> 00:20:17,17
+There are early signs that people
+are trying to buy by the biotech companies
+
+393
+00:20:17,25 --> 00:20:18,71
+that have lead contenders.
+
+394
+00:20:18,80 --> 00:20:20,92
+There's a long tradition
+of narrowly putting
+
+395
+00:20:21,01 --> 00:20:22,67
+national interest above others,
+
+396
+00:20:22,76 --> 00:20:25,97
+and that's obviously often correlated
+with people who have the money.
+
+397
+00:20:26,05 --> 00:20:27,93
+[narrator] World leaders
+have come together
+
+398
+00:20:28,01 --> 00:20:29,56
+and called for cooperation.
+
+399
+00:20:29,64 --> 00:20:33,69
+[in German] Science is never national.
+Science serves mankind.
+
+400
+00:20:33,85 --> 00:20:37,69
+[in English] The commitment to ensuring
+equal access is the key.
+
+401
+00:20:37,77 --> 00:20:40,69
+Victory against this virus
+cannot be declared
+
+402
+00:20:40,78 --> 00:20:44,40
+before effective vaccines and therapeutics
+are made available
+
+403
+00:20:44,49 --> 00:20:46,49
+to all in need around the world.
+
+404
+00:20:47,12 --> 00:20:50,49
+[narrator] But as of May,
+the US hasn't been one of them.
+
+405
+00:20:52,62 --> 00:20:56,42
+Who can get a vaccine
+will also depend on its price.
+
+406
+00:20:56,50 --> 00:20:58,88
+How much should it cost?
+Should rich countries pay more?
+
+407
+00:20:58,96 --> 00:21:00,96
+Should, you know,
+poorer countries pay less?
+
+408
+00:21:01,05 --> 00:21:05,09
+And also, if this vaccine is developed
+by a major pharmaceutical company,
+
+409
+00:21:05,18 --> 00:21:08,18
+how much money is this company
+allowed to make off this vaccine?
+
+410
+00:21:09,01 --> 00:21:12,43
+[narrator] Remember, most of these
+vaccines are funded privately,
+
+411
+00:21:12,52 --> 00:21:15,64
+and based on how some
+vaccine makers' stocks have risen,
+
+412
+00:21:15,73 --> 00:21:18,86
+some people clearly see
+a potential windfall ahead.
+
+413
+00:21:19,36 --> 00:21:22,44
+But so far, some companies
+like Johnson & Johnson
+
+414
+00:21:22,53 --> 00:21:25,20
+have promised to make
+their vaccine affordable,
+
+415
+00:21:25,28 --> 00:21:27,16
+as little as $10 a dose.
+
+416
+00:21:27,61 --> 00:21:33,66
+And that's critical, because a vaccine can
+only win if it gets to billions of people,
+
+417
+00:21:33,75 --> 00:21:36,00
+including those who can't afford it.
+
+418
+00:21:36,08 --> 00:21:38,04
+So to vaccinate enough of the world,
+
+419
+00:21:38,13 --> 00:21:40,96
+we'll actually need more than one winner.
+
+420
+00:21:42,75 --> 00:21:44,88
+-[engines roaring]
+-[crowd cheering]
+
+421
+00:21:45,47 --> 00:21:48,30
+[narrator] This race isn't really
+between the candidates.
+
+422
+00:21:48,39 --> 00:21:51,51
+It's between humanity and this virus,
+
+423
+00:21:51,60 --> 00:21:55,31
+that simple little vehicle
+that's paralyzed economies
+
+424
+00:21:55,39 --> 00:21:59,02
+and ended hundreds of thousands
+of lives around the world.
+
+425
+00:21:59,44 --> 00:22:02,86
+We can only beat it by doing
+what we've never done before:
+
+426
+00:22:03,23 --> 00:22:06,49
+making a vaccine for everyone
+in record time.
+
+427
+00:22:06,57 --> 00:22:07,74
+["Race For the Prize" playing]
+
+428
+00:22:07,82 --> 00:22:14,12
+♪ Two scientists are racing
+For the good of all mankind ♪
+
+429
+00:22:14,41 --> 00:22:21,38
+♪ Both of them side-by-side
+So determined ♪
+
+430
+00:22:22,63 --> 00:22:28,76
+♪ Locked in heated battle
+For the cure that is their prize ♪
+
+431
+00:22:29,09 --> 00:22:31,55
+♪ But it's so dangerous ♪
+
+432
+00:22:33,47 --> 00:22:35,31
+♪ But they're determined ♪ 
+

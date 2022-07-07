@@ -1,0 +1,1800 @@
+﻿[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: Big.Cats.An.Amazing.Animal.Family.S01E01
+Original Script: 纪录片之家
+Original Translation: 样子
+Original Timing: 样子
+Original Editing: 
+Script Updated By: 熊粑鼻
+Update Details: 熊粑鼻
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1920
+PlayResY: 1080
+Timer: 100.0000
+Synch Point: 样子
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: 中文对白,Microsoft YaHei,75,&H00C8FAFA,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,2,15,15,10,1
+Style: 英文对白,Microsoft YaHei,52,&H00C8FAFA,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,2,15,15,5,1
+Style: 特效,SimSun,75,&H00FFFFFF,&H0000FFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,0,0,60,1
+Style: 字幕组,Microsoft YaHei,40,&H00C8FAFA,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,3,3,2,15,15,15,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.50,0:00:06.50,字幕组,,0,0,0,,{\bord0\shad1.125\blur16.875\t(0,500,\blur0)\fad(0,500)\t(4820,5700,\blur28.125)\move(225,900,555,900,4820,5700)}@纪录片之家字幕组
+Dialogue: 0,0:00:06.50,0:00:12.50,字幕组,,0,0,0,,{\bord0\shad1.125\blur16.875\t(0,500,\blur0)\fad(0,500)\t(4820,5700,\blur28.125)\move(225,900,555,900,4820,5700)}www.jlpzj.net
+Dialogue: 0,0:00:12.50,0:00:18.50,字幕组,,0,0,0,,{\fs35\bord0\shad1.125\blur16.875\t(0,500,\blur0)\fad(0,500)\t(4820,5700,\blur28.125)\move(225,900,555,900,4820,5700)}翻译 {\fs45}lsmlive
+Dialogue: 0,0:02:54.32,0:03:00.49,中文对白,,0,0,44,,{\fs95\c&H78CDE7&\pos(735,880)\fade(800,500)}鲜血与黄金 铸就西班牙
+Dialogue: 0,0:02:55.80,0:03:00.49,中文对白,,0,0,44,,{\fs65\c&H9CEAFC&\fade(800,500)\pos(735,940)}西蒙·蒙蒂菲奥里
+Dialogue: 0,0:03:01.70,0:03:07.58,中文对白,,0,0,44,,{\fs65\fade(800,500)\pos(1100,940)\c&H8FD5DB&}第一集
+Dialogue: 0,0:03:01.70,0:03:07.58,中文对白,,0,0,44,,{\fs70\c&H9CEAFC&\fade(800,500)\pos(1600,945)}征服
+Dialogue: 0,0:03:50.80,0:03:56.20,中文对白,,0,0,0,,{\fs65\fade(800,500)\c&HFBF8F3&\pos(467,900)}西蒙·蒙蒂菲奥里
+Dialogue: 1,0:00:05.15,0:00:10.54,英文对白,,0,0,0,,Spain. Al-Andalus. Iberia, Hispania.
+Dialogue: 1,0:00:10.55,0:00:13.23,英文对白,,0,0,0,,Many names for the same country.
+Dialogue: 1,0:00:15.28,0:00:17.45,英文对白,,0,0,0,,Spain has had more diversity
+Dialogue: 1,0:00:17.47,0:00:22.33,英文对白,,0,0,0,,and more manifestations than any other country in western Europe.
+Dialogue: 1,0:00:22.80,0:00:26.33,英文对白,,0,0,0,,It's a peninsula almost surrounded by water.
+Dialogue: 1,0:00:26.36,0:00:29.39,英文对白,,0,0,0,,That's its blessing and its curse.
+Dialogue: 1,0:00:29.99,0:00:35.35,英文对白,,0,0,0,,The road to Spain has always been the sea, from the South.
+Dialogue: 1,0:00:35.39,0:00:39.95,英文对白,,0,0,0,,From 3000 BC onwards, the great traders of the Mediterranean -
+Dialogue: 1,0:00:39.96,0:00:42.15,英文对白,,0,0,0,,the Greeks and Phoenicians came here
+Dialogue: 1,0:00:42.18,0:00:44.59,英文对白,,0,0,0,,attracted by its fertile plains,
+Dialogue: 1,0:00:44.63,0:00:50.19,英文对白,,0,0,0,,and its mines that brought forth gold and silver, tin and copper.
+Dialogue: 1,0:00:51.69,0:00:55.10,英文对白,,0,0,0,,Spain is European, yet it looks to Africa.
+Dialogue: 1,0:00:57.09,0:01:00.47,英文对白,,0,0,0,,Forged by rulers, armies, peoples and faiths
+Dialogue: 1,0:01:00.50,0:01:03.73,英文对白,,0,0,0,,more exotic than elsewhere in the West.
+Dialogue: 1,0:01:05.32,0:01:08.37,英文对白,,0,0,0,,Spain's position at the extremity of Europe
+Dialogue: 1,0:01:08.41,0:01:11.58,英文对白,,0,0,0,,has made it the borderland and the battlefield
+Dialogue: 1,0:01:11.59,0:01:14.91,英文对白,,0,0,0,,of the continent's many different influences.
+Dialogue: 1,0:01:15.50,0:01:20.62,英文对白,,0,0,0,,It's joined to Europe and yet only 14km from Africa.
+Dialogue: 1,0:01:21.18,0:01:24.88,英文对白,,0,0,0,,Everything here reflects its unique meshing
+Dialogue: 1,0:01:24.91,0:01:28.25,英文对白,,0,0,0,,of the Jewish, Muslim and Christian cultures.
+Dialogue: 1,0:01:28.54,0:01:31.12,英文对白,,0,0,0,,That's what makes Spain so unique.
+Dialogue: 1,0:01:35.85,0:01:38.73,英文对白,,0,0,0,,I come both as historian and traveller.
+Dialogue: 1,0:01:38.77,0:01:42.84,英文对白,,0,0,0,,To explore who and what shaped the soul of Spain.
+Dialogue: 1,0:01:44.00,0:01:46.46,英文对白,,0,0,0,,From Paganism, Islam and Catholicism,
+Dialogue: 1,0:01:46.47,0:01:49.76,英文对白,,0,0,0,,via dictatorship, to today's democracy.
+Dialogue: 1,0:01:50.40,0:01:53.93,英文对白,,0,0,0,,I'll tell the story from the Atlantic to the Mediterranean.
+Dialogue: 1,0:01:54.79,0:01:57.28,英文对白,,0,0,0,,I start in the South.
+Dialogue: 1,0:01:58.40,0:02:01.87,英文对白,,0,0,0,,Cadiz, Spain's oldest living city.
+Dialogue: 1,0:02:02.14,0:02:05.36,英文对白,,0,0,0,,Seville, Andalusia's Catholic capital.
+Dialogue: 1,0:02:06.50,0:02:09.16,英文对白,,0,0,0,,Gibraltar, Spain's gateway.
+Dialogue: 1,0:02:10.10,0:02:13.56,英文对白,,0,0,0,,Cordoba, capital of the Islamic Caliphate.
+Dialogue: 1,0:02:13.70,0:02:17.17,英文对白,,0,0,0,,And Granada, home of the Alhambra.
+Dialogue: 1,0:02:17.27,0:02:20.68,英文对白,,0,0,0,,I'll find the hidden corners, the stories we don't know,
+Dialogue: 1,0:02:20.72,0:02:24.98,英文对白,,0,0,0,,the secrets, the titans who created the nation.
+Dialogue: 1,0:02:25.67,0:02:28.88,英文对白,,0,0,0,,For centuries, this was Europe's Wild West.
+Dialogue: 1,0:02:28.91,0:02:32.45,英文对白,,0,0,0,,Where caliphs and kings created palaces and cities,
+Dialogue: 1,0:02:32.49,0:02:35.05,英文对白,,0,0,0,,where they fought wars of annihilation.
+Dialogue: 1,0:02:35.08,0:02:37.68,英文对白,,0,0,0,,Here, a concubine could become a queen.
+Dialogue: 1,0:02:37.72,0:02:42.29,英文对白,,0,0,0,,Here, a naked princess sparked a decisive invasion.
+Dialogue: 1,0:02:43.68,0:02:49.75,英文对白,,0,0,0,,Blood and gold, beauty and death, persecution and tolerance.
+Dialogue: 1,0:02:49.78,0:02:53.34,英文对白,,0,0,0,,This is the story of the making of Spain.
+Dialogue: 1,0:03:11.13,0:03:14.98,英文对白,,0,0,0,,The Atlantic city of Cadiz is my first stop.
+Dialogue: 1,0:03:17.66,0:03:19.27,英文对白,,0,0,0,,More than 2,000 years ago,
+Dialogue: 1,0:03:19.31,0:03:22.83,英文对白,,0,0,0,,this was a colony of the Phoenician city of Carthage
+Dialogue: 1,0:03:22.87,0:03:24.44,英文对白,,0,0,0,,in today's Tunisia.
+Dialogue: 1,0:03:26.65,0:03:32.99,英文对白,,0,0,0,,In 237 BC, one of history's most famous figures was brought here.
+Dialogue: 1,0:03:33.49,0:03:38.20,英文对白,,0,0,0,,As a ten-year-old boy, the young Hannibal came to Cadiz.
+Dialogue: 1,0:03:38.23,0:03:43.21,英文对白,,0,0,0,,And from here, his father, Hamilcar, would conquer most of Spain
+Dialogue: 1,0:03:43.25,0:03:46.05,英文对白,,0,0,0,,as a new Carthaginian empire.
+Dialogue: 1,0:03:47.56,0:03:50.22,英文对白,,0,0,0,,Now Spain became the battlefield
+Dialogue: 1,0:03:50.26,0:03:52.31,英文对白,,0,0,0,,for one of the great set-piece
+Dialogue: 1,0:03:52.34,0:03:55.38,英文对白,,0,0,0,,imperial rivalries of the ancient world.
+Dialogue: 1,0:03:56.04,0:03:58.82,英文对白,,0,0,0,,The Phoenicians came from the city of Tyre.
+Dialogue: 1,0:03:58.84,0:04:01.05,英文对白,,0,0,0,,They spread out throughout the Mediterranean.
+Dialogue: 1,0:04:01.08,0:04:04.20,英文对白,,0,0,0,,And the greatest city they founded was Carthage.
+Dialogue: 1,0:04:04.24,0:04:06.96,英文对白,,0,0,0,,The Carthaginians started to found an empire
+Dialogue: 1,0:04:06.98,0:04:09.00,英文对白,,0,0,0,,and that brought them into conflict with
+Dialogue: 1,0:04:09.03,0:04:11.68,英文对白,,0,0,0,,the other rising power of the Mediterranean.
+Dialogue: 1,0:04:11.69,0:04:12.74,英文对白,,0,0,0,,Rome.
+Dialogue: 1,0:04:20.60,0:04:23.92,英文对白,,0,0,0,,Hannibal was born into a family already at war.
+Dialogue: 1,0:04:23.94,0:04:26.85,英文对白,,0,0,0,,Their name, Barca, meant thunderbolt.
+Dialogue: 1,0:04:26.88,0:04:30.85,英文对白,,0,0,0,,When his father conquered Spain as his next move against Rome,
+Dialogue: 1,0:04:30.88,0:04:32.88,英文对白,,0,0,0,,Hannibal begged to go with him.
+Dialogue: 1,0:04:33.29,0:04:35.97,英文对白,,0,0,0,,He was 19 when his father died.
+Dialogue: 1,0:04:36.00,0:04:39.82,英文对白,,0,0,0,,Gradually, he would assume command of his father's empire.
+Dialogue: 1,0:04:41.27,0:04:44.50,英文对白,,0,0,0,,The coming war needed the blessing of the Gods
+Dialogue: 1,0:04:44.52,0:04:45.91,英文对白,,0,0,0,,and I've come to meet one.
+Dialogue: 1,0:04:50.30,0:04:52.42,英文对白,,0,0,0,,Isn't it a breathtaking thought?
+Dialogue: 1,0:04:52.45,0:04:54.11,英文对白,,0,0,0,,That as we look at this,
+Dialogue: 1,0:04:54.62,0:04:59.18,英文对白,,0,0,0,,Hannibal himself once gazed upon this very statue.
+Dialogue: 1,0:05:03.67,0:05:07.07,英文对白,,0,0,0,,This Cadiz museum contains some of
+Dialogue: 1,0:05:07.08,0:05:10.79,英文对白,,0,0,0,,the priceless treasures from Hannibal's time.
+Dialogue: 1,0:05:10.83,0:05:14.44,英文对白,,0,0,0,,And this figurine of the god Melqart
+Dialogue: 1,0:05:14.47,0:05:18.08,英文对白,,0,0,0,,once stood on the Island of Sancti Petri.
+Dialogue: 1,0:05:24.45,0:05:26.13,英文对白,,0,0,0,,And that's where I'm going,
+Dialogue: 1,0:05:26.16,0:05:28.57,英文对白,,0,0,0,,a few miles south of Cadiz,
+Dialogue: 1,0:05:28.60,0:05:30.14,英文对白,,0,0,0,,just like Hannibal did.
+Dialogue: 1,0:05:34.70,0:05:38.49,英文对白,,0,0,0,,In 218 BC, Hannibal, now 29,
+Dialogue: 1,0:05:38.51,0:05:40.87,英文对白,,0,0,0,,travelled here to Melqart's temple.
+Dialogue: 1,0:05:41.41,0:05:44.14,英文对白,,0,0,0,,He had a plan of astonishing ambition
+Dialogue: 1,0:05:44.17,0:05:46.70,英文对白,,0,0,0,,that required Melqart's blessing.
+Dialogue: 1,0:05:52.82,0:05:55.60,英文对白,,0,0,0,,Melqart was the God of Tyre,
+Dialogue: 1,0:05:55.62,0:05:58.20,英文对白,,0,0,0,,mother city of the Carthaginians.
+Dialogue: 1,0:05:58.21,0:06:02.21,英文对白,,0,0,0,,And he appears in the Jewish Bible as the god Baal.
+Dialogue: 1,0:06:02.25,0:06:06.02,英文对白,,0,0,0,,It was said that Melqart was unfaithful to his wife,
+Dialogue: 1,0:06:06.06,0:06:08.36,英文对白,,0,0,0,,who castrated him and killed him,
+Dialogue: 1,0:06:08.39,0:06:12.00,英文对白,,0,0,0,,at which he was miraculously brought back to life.
+Dialogue: 1,0:06:12.04,0:06:18.64,英文对白,,0,0,0,,His resurrection made him a symbol of vim, vigour, power and virility.
+Dialogue: 1,0:06:21.08,0:06:24.90,英文对白,,0,0,0,,Temple complexes like this were central to ancient life.
+Dialogue: 1,0:06:26.49,0:06:28.10,英文对白,,0,0,0,,There were human sacrifices.
+Dialogue: 1,0:06:28.13,0:06:30.23,英文对白,,0,0,0,,Priests cut the throats of bulls
+Dialogue: 1,0:06:30.27,0:06:33.94,英文对白,,0,0,0,,and splashed blood on the naked bodies of supplicants.
+Dialogue: 1,0:06:35.40,0:06:38.87,英文对白,,0,0,0,,As you can see, there's nothing here except seagulls
+Dialogue: 1,0:06:38.89,0:06:41.89,英文对白,,0,0,0,,and this deserted 18th-century fort.
+Dialogue: 1,0:06:42.43,0:06:45.87,英文对白,,0,0,0,,But this was once one of the richest,
+Dialogue: 1,0:06:45.90,0:06:49.46,英文对白,,0,0,0,,grandest and most famous temple shrines
+Dialogue: 1,0:06:49.48,0:06:52.17,英文对白,,0,0,0,,in the entire ancient world.
+Dialogue: 1,0:06:56.93,0:06:58.66,英文对白,,0,0,0,,It was a critical moment.
+Dialogue: 1,0:06:58.69,0:07:00.89,英文对白,,0,0,0,,Carthaginian Spain challenged
+Dialogue: 1,0:07:00.91,0:07:03.32,英文对白,,0,0,0,,Roman mastery of the Mediterranean.
+Dialogue: 1,0:07:03.33,0:07:06.82,英文对白,,0,0,0,,That meant a new Roman war against Carthage.
+Dialogue: 1,0:07:07.35,0:07:12.33,英文对白,,0,0,0,,Here at Sancti Petri, Hannibal consulted the Oracle of Melqart.
+Dialogue: 1,0:07:13.99,0:07:17.36,英文对白,,0,0,0,,Hannibal took an oath to destroy Rome.
+Dialogue: 1,0:07:17.39,0:07:24.21,英文对白,,0,0,0,,He said, "I swear to arrest the destiny of Rome with fire and steel."
+Dialogue: 1,0:07:27.81,0:07:30.39,英文对白,,0,0,0,,Rather than waiting for Rome to attack him,
+Dialogue: 1,0:07:30.42,0:07:33.13,英文对白,,0,0,0,,Hannibal would take the fight to the enemy.
+Dialogue: 1,0:07:35.66,0:07:40.26,英文对白,,0,0,0,,It would be one of the most audacious military campaigns of antiquity.
+Dialogue: 1,0:07:40.28,0:07:42.35,英文对白,,0,0,0,,Harnessing Spain and Africa,
+Dialogue: 1,0:07:42.38,0:07:44.62,英文对白,,0,0,0,,Hannibal would attack Italy.
+Dialogue: 1,0:07:48.74,0:07:53.49,英文对白,,0,0,0,,Here in Cadiz, Hannibal mustered a huge army of 60,000.
+Dialogue: 1,0:07:53.53,0:07:57.27,英文对白,,0,0,0,,Including Spanish spearmen and African cavalry.
+Dialogue: 1,0:07:57.31,0:08:02.78,英文对白,,0,0,0,,And 40 war elephants, the ultimate prestige weapon.
+Dialogue: 1,0:08:05.51,0:08:09.15,英文对白,,0,0,0,,In 217, Hannibal marched this huge army,
+Dialogue: 1,0:08:09.18,0:08:12.04,英文对白,,0,0,0,,from Spain, across the south of France,
+Dialogue: 1,0:08:12.06,0:08:15.21,英文对白,,0,0,0,,over the Alps - including all his elephants -
+Dialogue: 1,0:08:15.25,0:08:17.76,英文对白,,0,0,0,,and then down into Italy.
+Dialogue: 1,0:08:19.01,0:08:20.61,英文对白,,0,0,0,,He headed for Rome.
+Dialogue: 1,0:08:26.02,0:08:30.19,英文对白,,0,0,0,,Hannibal's campaign would bring Rome to the edge of defeat.
+Dialogue: 1,0:08:30.22,0:08:34.68,英文对白,,0,0,0,,Victory over Rome would change the entire history of Europe.
+Dialogue: 1,0:08:36.34,0:08:39.01,英文对白,,0,0,0,,Knowing what we know now about the invincibility
+Dialogue: 1,0:08:39.05,0:08:40.68,英文对白,,0,0,0,,of the future Roman Empire,
+Dialogue: 1,0:08:40.71,0:08:44.98,英文对白,,0,0,0,,Hannibal's adventure looks reckless, if not absurd.
+Dialogue: 1,0:08:45.01,0:08:46.94,英文对白,,0,0,0,,But Hannibal was a child of the Hellenistic
+Dialogue: 1,0:08:46.97,0:08:49.06,英文对白,,0,0,0,,or Greek culture in the Mediterranean,
+Dialogue: 1,0:08:49.08,0:08:52.31,英文对白,,0,0,0,,unleashed by his hero, Alexander the Great.
+Dialogue: 1,0:08:52.35,0:08:55.52,英文对白,,0,0,0,,And compared to Alexander's exploits in the East,
+Dialogue: 1,0:08:55.57,0:08:59.28,英文对白,,0,0,0,,this invasion of Italy might be child's play.
+Dialogue: 1,0:09:03.22,0:09:05.73,英文对白,,0,0,0,,It was Rome's supreme crisis.
+Dialogue: 1,0:09:05.76,0:09:08.32,英文对白,,0,0,0,,Hannibal repeatedly defeated the Roman armies
+Dialogue: 1,0:09:08.34,0:09:10.48,英文对白,,0,0,0,,and at Cannae, he routed them.
+Dialogue: 1,0:09:10.51,0:09:15.38,英文对白,,0,0,0,,And yet, even as Hannibal was closing in, Rome did not fall.
+Dialogue: 1,0:09:15.42,0:09:18.86,英文对白,,0,0,0,,The Romans prayed and then they rallied.
+Dialogue: 1,0:09:19.10,0:09:23.37,英文对白,,0,0,0,,Cato the Elder, one of their statesmen, repeatedly declared,
+Dialogue: 1,0:09:23.40,0:09:26.02,英文对白,,0,0,0,,"Carthago delenda est"
+Dialogue: 1,0:09:26.19,0:09:29.33,英文对白,,0,0,0,,- Carthage must be annihilated.
+Dialogue: 1,0:09:29.60,0:09:32.60,英文对白,,0,0,0,,And now, they found a general almost
+Dialogue: 1,0:09:32.63,0:09:35.72,英文对白,,0,0,0,,as sublime a strategist as Hannibal himself.
+Dialogue: 1,0:09:35.83,0:09:38.85,英文对白,,0,0,0,,And he would take the war to Hannibal's Spain,
+Dialogue: 1,0:09:38.89,0:09:42.60,英文对白,,0,0,0,,just as Hannibal had brought the war to Rome.
+Dialogue: 1,0:09:42.63,0:09:46.52,英文对白,,0,0,0,,This was the moment that the Romans became Romans.
+Dialogue: 1,0:09:54.26,0:09:58.50,英文对白,,0,0,0,,A few miles north of Seville in the heart of Andalusia,
+Dialogue: 1,0:09:58.63,0:10:02.94,英文对白,,0,0,0,,the vicious blood feud of Carthage and Rome would be decided.
+Dialogue: 1,0:10:06.43,0:10:11.02,英文对白,,0,0,0,,In 206 BC, the two sides met right here in a battle.
+Dialogue: 1,0:10:11.54,0:10:15.39,英文对白,,0,0,0,,The winners would rule Europe for the next 700 years.
+Dialogue: 1,0:10:16.59,0:10:20.42,英文对白,,0,0,0,,The Roman commander was Publius Cornelius Scipio.
+Dialogue: 1,0:10:22.36,0:10:26.64,英文对白,,0,0,0,,It was said in Rome that only Scipio would dare
+Dialogue: 1,0:10:26.67,0:10:29.89,英文对白,,0,0,0,,to take on the Carthaginian Empire.
+Dialogue: 1,0:10:29.93,0:10:33.77,英文对白,,0,0,0,,Both his father and his uncle had been killed in battle
+Dialogue: 1,0:10:33.81,0:10:35.37,英文对白,,0,0,0,,by Hannibal's family.
+Dialogue: 1,0:10:35.40,0:10:37.85,英文对白,,0,0,0,,So, for Scipio, it was personal.
+Dialogue: 1,0:10:40.55,0:10:43.56,英文对白,,0,0,0,,Just as Hannibal had vowed to destroy Rome,
+Dialogue: 1,0:10:43.60,0:10:46.07,英文对白,,0,0,0,,Scipio vowed to destroy Carthage.
+Dialogue: 1,0:10:46.11,0:10:48.87,英文对白,,0,0,0,,And his plan was as bold as it was simple.
+Dialogue: 1,0:10:48.90,0:10:52.71,英文对白,,0,0,0,,While the brilliant Hannibal fought on in Italy for over a decade,
+Dialogue: 1,0:10:52.74,0:10:57.23,英文对白,,0,0,0,,Spain was defended by his feuding, disunited brothers.
+Dialogue: 1,0:10:58.45,0:11:01.94,英文对白,,0,0,0,,Scipio slipped into Spain with his small army.
+Dialogue: 1,0:11:05.48,0:11:09.02,英文对白,,0,0,0,,Military historian Saul David is here to tell me
+Dialogue: 1,0:11:09.06,0:11:11.45,英文对白,,0,0,0,,how Scipio faced the Carthaginians
+Dialogue: 1,0:11:11.46,0:11:13.19,英文对白,,0,0,0,,right here at Ilipa.
+Dialogue: 1,0:11:13.52,0:11:16.24,英文对白,,0,0,0,,We're right on the spot of that battle.
+Dialogue: 1,0:11:16.28,0:11:17.96,英文对白,,0,0,0,,Tell me what happened that day?
+Dialogue: 1,0:11:18.33,0:11:19.64,英文对白,,0,0,0,,To give you an idea of numbers,
+Dialogue: 1,0:11:19.68,0:11:23.22,英文对白,,0,0,0,,the Romans have about 50,000 and the Carthaginians 75,000,
+Dialogue: 1,0:11:23.24,0:11:24.90,英文对白,,0,0,0,,so they're heavily outnumbered.
+Dialogue: 1,0:11:25.10,0:11:27.34,英文对白,,0,0,0,,And for the two or three days prior to the actual battle itself,
+Dialogue: 1,0:11:27.37,0:11:29.83,英文对白,,0,0,0,,Scipio sets his army up in a very traditional way.
+Dialogue: 1,0:11:29.86,0:11:31.76,英文对白,,0,0,0,,So his strongest forces are in the centre,
+Dialogue: 1,0:11:31.80,0:11:34.18,英文对白,,0,0,0,,his Roman and Italian legions, and his allies,
+Dialogue: 1,0:11:34.18,0:11:36.28,英文对白,,0,0,0,,who he can't really rely on, are on the flank.
+Dialogue: 1,0:11:36.38,0:11:39.20,英文对白,,0,0,0,,But on the day of the battle itself, he changes all of that.
+Dialogue: 1,0:11:39.23,0:11:41.64,英文对白,,0,0,0,,He orders the army out very early in the morning,
+Dialogue: 1,0:11:41.67,0:11:43.70,英文对白,,0,0,0,,he gets them into position before
+Dialogue: 1,0:11:43.73,0:11:45.68,英文对白,,0,0,0,,the Carthaginians are ready to respond
+Dialogue: 1,0:11:45.71,0:11:47.34,英文对白,,0,0,0,,and he changes his formation
+Dialogue: 1,0:11:47.34,0:11:49.83,英文对白,,0,0,0,,so that his elite forces are actually now on the flanks.
+Dialogue: 1,0:11:50.14,0:11:52.41,英文对白,,0,0,0,,And this allows him to advance in a very unusual way
+Dialogue: 1,0:11:52.44,0:11:55.51,英文对白,,0,0,0,,with a concave formation, so that his best troops are on the side.
+Dialogue: 1,0:11:55.55,0:11:58.05,英文对白,,0,0,0,,And in a nutshell, cos you could go on about this battle
+Dialogue: 1,0:11:58.06,0:12:00.12,英文对白,,0,0,0,,in great detail,
+Dialogue: 1,0:12:00.13,0:12:02.91,英文对白,,0,0,0,,it means that the strongest Carthaginian troops
+Dialogue: 1,0:12:02.95,0:12:06.35,英文对白,,0,0,0,,never actually get to fight until late on during the battle.
+Dialogue: 1,0:12:06.47,0:12:08.05,英文对白,,0,0,0,,So how did the elephants,
+Dialogue: 1,0:12:08.08,0:12:10.77,英文对白,,0,0,0,,the Carthaginian elephants perform on the day?
+Dialogue: 1,0:12:10.80,0:12:14.09,英文对白,,0,0,0,,You've got to imagine a scenario where once the battle starts,
+Dialogue: 1,0:12:14.13,0:12:16.24,英文对白,,0,0,0,,the elephants don't see friend or foe.
+Dialogue: 1,0:12:16.26,0:12:18.34,英文对白,,0,0,0,,They've got their guides, as it were,
+Dialogue: 1,0:12:18.34,0:12:19.58,英文对白,,0,0,0,,but everyone else is fair game.
+Dialogue: 1,0:12:19.62,0:12:21.28,英文对白,,0,0,0,,And if you get in the way of a war elephant,
+Dialogue: 1,0:12:21.31,0:12:24.43,英文对白,,0,0,0,,particularly one who's been stung by a few javelins being thrown at him,
+Dialogue: 1,0:12:24.46,0:12:25.84,英文对白,,0,0,0,,he's going to trample anyone.
+Dialogue: 1,0:12:25.87,0:12:28.53,英文对白,,0,0,0,,And a four-tonne beast treading on you
+Dialogue: 1,0:12:28.56,0:12:31.08,英文对白,,0,0,0,,is going to leave a bit of a sticky mess underneath.
+Dialogue: 1,0:12:31.12,0:12:33.86,英文对白,,0,0,0,,So, you can see that the use of the Carthaginian war elephant
+Dialogue: 1,0:12:33.90,0:12:36.58,英文对白,,0,0,0,,was as much of an own goal as it was a success.
+Dialogue: 1,0:12:43.64,0:12:45.94,英文对白,,0,0,0,,Scipio was victorious.
+Dialogue: 1,0:12:45.98,0:12:48.38,英文对白,,0,0,0,,Spain became a province of Europe,
+Dialogue: 1,0:12:48.42,0:12:49.59,英文对白,,0,0,0,,not Africa
+Dialogue: 1,0:12:49.60,0:12:51.65,英文对白,,0,0,0,,- of Rome, not Carthage.
+Dialogue: 1,0:12:54.55,0:12:57.17,英文对白,,0,0,0,,He built this, the city of Italica,
+Dialogue: 1,0:12:57.21,0:12:58.88,英文对白,,0,0,0,,next to the battlefield,
+Dialogue: 1,0:12:58.95,0:13:01.34,英文对白,,0,0,0,,for the veterans of his victory.
+Dialogue: 1,0:13:03.16,0:13:05.89,英文对白,,0,0,0,,Control of the peninsula gave Scipio
+Dialogue: 1,0:13:05.91,0:13:08.61,英文对白,,0,0,0,,a springboard to attack North Africa.
+Dialogue: 1,0:13:11.94,0:13:14.78,英文对白,,0,0,0,,This amazing mosaic here in Italica
+Dialogue: 1,0:13:14.81,0:13:16.50,英文对白,,0,0,0,,tells the story of Scipio's
+Dialogue: 1,0:13:16.52,0:13:19.32,英文对白,,0,0,0,,wars against Carthage.
+Dialogue: 1,0:13:20.32,0:13:25.31,英文对白,,0,0,0,,In 204, Scipio crossed to Africa, taking the war to Carthage.
+Dialogue: 1,0:13:25.33,0:13:26.38,英文对白,,0,0,0,,As he approached,
+Dialogue: 1,0:13:26.41,0:13:29.62,英文对白,,0,0,0,,the Carthaginians recalled Hannibal from Italy.
+Dialogue: 1,0:13:29.74,0:13:32.63,英文对白,,0,0,0,,He rushed back, but Scipio defeated him.
+Dialogue: 1,0:13:32.67,0:13:33.97,英文对白,,0,0,0,,The city fell.
+Dialogue: 1,0:13:34.01,0:13:36.76,英文对白,,0,0,0,,Scipio was rewarded with a title,
+Dialogue: 1,0:13:36.80,0:13:38.29,英文对白,,0,0,0,,Africanus,
+Dialogue: 1,0:13:38.32,0:13:40.73,英文对白,,0,0,0,,but his haughtiness won him many enemies.
+Dialogue: 1,0:13:40.76,0:13:43.90,英文对白,,0,0,0,,He was prosecuted and exiled to his estates.
+Dialogue: 1,0:13:45.24,0:13:48.08,英文对白,,0,0,0,,As for Hannibal, he roamed the East,
+Dialogue: 1,0:13:48.09,0:13:52.33,英文对白,,0,0,0,,enemy number one, pursued by Roman agents.
+Dialogue: 1,0:13:52.55,0:13:55.33,英文对白,,0,0,0,,Finally, he committed suicide.
+Dialogue: 1,0:13:55.38,0:13:59.58,英文对白,,0,0,0,,As for Carthage, ultimately it was wiped off the map.
+Dialogue: 1,0:14:01.23,0:14:04.77,英文对白,,0,0,0,,Now it was Rome's turn to colonise Spain.
+Dialogue: 1,0:14:07.90,0:14:11.55,英文对白,,0,0,0,,The Romans loved Hispania, Roman Spain.
+Dialogue: 1,0:14:11.58,0:14:15.19,英文对白,,0,0,0,,They found it almost more Italian than Italy.
+Dialogue: 1,0:14:15.22,0:14:20.28,英文对白,,0,0,0,,Here, life was good and they could make great fortunes in fish paste,
+Dialogue: 1,0:14:20.32,0:14:22.78,英文对白,,0,0,0,,olive oil and wine.
+Dialogue: 1,0:14:22.93,0:14:24.78,英文对白,,0,0,0,,In 98 AD,
+Dialogue: 1,0:14:24.81,0:14:29.67,英文对白,,0,0,0,,they chose as Emperor a general from around here, Italica.
+Dialogue: 1,0:14:29.71,0:14:31.19,英文对白,,0,0,0,,His name was Trajan.
+Dialogue: 1,0:14:31.29,0:14:35.36,英文对白,,0,0,0,,Competent and honest, he was a formidable soldier
+Dialogue: 1,0:14:35.40,0:14:37.72,英文对白,,0,0,0,,and an outstanding ruler.
+Dialogue: 1,0:14:37.75,0:14:40.35,英文对白,,0,0,0,,He was actually voted the title Optimus,
+Dialogue: 1,0:14:40.36,0:14:42.16,英文对白,,0,0,0,,the best, and he was.
+Dialogue: 1,0:14:42.19,0:14:45.00,英文对白,,0,0,0,,His successor Hadrian,
+Dialogue: 1,0:14:45.03,0:14:46.76,英文对白,,0,0,0,,also from here, Italica,
+Dialogue: 1,0:14:46.78,0:14:48.91,英文对白,,0,0,0,,was probably the most accomplished man
+Dialogue: 1,0:14:48.95,0:14:51.32,英文对白,,0,0,0,,ever to rule the Roman Empire.
+Dialogue: 1,0:14:51.34,0:14:53.20,英文对白,,0,0,0,,Everything he did, he did properly.
+Dialogue: 1,0:14:53.24,0:14:55.85,英文对白,,0,0,0,,He created the Pantheon in Rome.
+Dialogue: 1,0:14:55.88,0:14:59.35,英文对白,,0,0,0,,And here, he improved Italica enormously.
+Dialogue: 1,0:15:03.87,0:15:07.30,英文对白,,0,0,0,,Marcus Aurelius the Philosopher Emperor,
+Dialogue: 1,0:15:07.33,0:15:10.89,英文对白,,0,0,0,,was also from a Spanish Roman family.
+Dialogue: 1,0:15:10.93,0:15:12.43,英文对白,,0,0,0,,It's ironic, isn't it?
+Dialogue: 1,0:15:12.46,0:15:14.90,英文对白,,0,0,0,,That the three greatest Roman emperors
+Dialogue: 1,0:15:15.02,0:15:17.27,英文对白,,0,0,0,,at the Empire's zenith
+Dialogue: 1,0:15:17.38,0:15:19.42,英文对白,,0,0,0,,were from Roman Spain.
+Dialogue: 1,0:15:22.51,0:15:27.03,英文对白,,0,0,0,,Hispania became the food bowl and the winery of the empire.
+Dialogue: 1,0:15:27.06,0:15:31.22,英文对白,,0,0,0,,Producing the essentials and the delicacies of Roman life.
+Dialogue: 1,0:15:35.47,0:15:39.01,英文对白,,0,0,0,,Spanish olive oil and wine were sent around the Mediterranean
+Dialogue: 1,0:15:39.03,0:15:42.27,英文对白,,0,0,0,,in amphorae just like these.
+Dialogue: 1,0:15:42.55,0:15:43.92,英文对白,,0,0,0,,But there was a problem,
+Dialogue: 1,0:15:43.99,0:15:46.48,英文对白,,0,0,0,,which neither the Carthaginians nor after them,
+Dialogue: 1,0:15:46.50,0:15:48.35,英文对白,,0,0,0,,the Romans, could solve.
+Dialogue: 1,0:15:48.43,0:15:50.43,英文对白,,0,0,0,,The amphorae could only be used once
+Dialogue: 1,0:15:50.43,0:15:52.92,英文对白,,0,0,0,,and after that, the pottery was tainted.
+Dialogue: 1,0:15:53.23,0:15:55.88,英文对白,,0,0,0,,At the height of Roman Hispania,
+Dialogue: 1,0:15:55.91,0:15:58.56,英文对白,,0,0,0,,so many were being exported to Rome -
+Dialogue: 1,0:15:58.58,0:16:00.81,英文对白,,0,0,0,,as many as 54 million
+Dialogue: 1,0:16:01.02,0:16:03.24,英文对白,,0,0,0,,- that their debris formed a heap.
+Dialogue: 1,0:16:03.25,0:16:05.39,英文对白,,0,0,0,,And the heap became a mountain.
+Dialogue: 1,0:16:05.46,0:16:09.40,英文对白,,0,0,0,,And Mount Testaccio is still there to this day.
+Dialogue: 1,0:16:10.35,0:16:14.06,英文对白,,0,0,0,,The used amphorae, transported from Spain to Rome,
+Dialogue: 1,0:16:14.08,0:16:15.55,英文对白,,0,0,0,,were broken into pieces
+Dialogue: 1,0:16:15.59,0:16:17.37,英文对白,,0,0,0,,and then sprinkled with lime
+Dialogue: 1,0:16:17.40,0:16:20.38,英文对白,,0,0,0,,to neutralise the smell of rancid olive oil.
+Dialogue: 1,0:16:27.95,0:16:32.29,英文对白,,0,0,0,,The centre of Roman life here in Italica was its amphitheatre.
+Dialogue: 1,0:16:32.32,0:16:34.62,英文对白,,0,0,0,,One of the largest and best preserved
+Dialogue: 1,0:16:34.64,0:16:36.39,英文对白,,0,0,0,,after Rome's Colosseum.
+Dialogue: 1,0:16:37.71,0:16:40.37,英文对白,,0,0,0,,It could seat 25,000 people.
+Dialogue: 1,0:16:43.01,0:16:44.67,英文对白,,0,0,0,,In around 50 AD,
+Dialogue: 1,0:16:44.71,0:16:47.66,英文对白,,0,0,0,,this arena became the focus for a sport
+Dialogue: 1,0:16:47.67,0:16:50.60,英文对白,,0,0,0,,that later became the emblem of a nation.
+Dialogue: 1,0:16:52.38,0:16:54.63,英文对白,,0,0,0,,In a moment of imperial whimsy,
+Dialogue: 1,0:16:54.67,0:16:56.94,英文对白,,0,0,0,,the stuttering Emperor Claudius
+Dialogue: 1,0:16:56.96,0:17:00.62,英文对白,,0,0,0,,banned all gladiatorial fights in Spain.
+Dialogue: 1,0:17:00.63,0:17:04.75,英文对白,,0,0,0,,And these were replaced with contests of exotic beasts.
+Dialogue: 1,0:17:04.75,0:17:10.17,英文对白,,0,0,0,,The lions and the tigers were all kept down here in these pits.
+Dialogue: 1,0:17:10.19,0:17:13.31,英文对白,,0,0,0,,And amongst them were the local Spanish bulls,
+Dialogue: 1,0:17:13.31,0:17:16.13,英文对白,,0,0,0,,which were then sent up into the amphitheatre
+Dialogue: 1,0:17:16.16,0:17:20.30,英文对白,,0,0,0,,to be viciously slaughtered to the crowds' delight.
+Dialogue: 1,0:17:20.33,0:17:23.38,英文对白,,0,0,0,,This was the beginning of Spanish bullfighting.
+Dialogue: 1,0:17:34.79,0:17:38.53,英文对白,,0,0,0,,Rome's traditional Gods were often fused with
+Dialogue: 1,0:17:38.54,0:17:41.35,英文对白,,0,0,0,,foreign deities who became fashionable.
+Dialogue: 1,0:17:41.35,0:17:44.71,英文对白,,0,0,0,,One blood-saturated fertility cult
+Dialogue: 1,0:17:44.72,0:17:49.20,英文对白,,0,0,0,,may link the Carthaginian past with the Spanish future.
+Dialogue: 1,0:17:56.83,0:18:00.29,英文对白,,0,0,0,,Attis, a comely shepherd boy,
+Dialogue: 1,0:18:00.31,0:18:03.43,英文对白,,0,0,0,,channelled the story of Melqart before him.
+Dialogue: 1,0:18:03.51,0:18:07.51,英文对白,,0,0,0,,He too was castrated by his jealous lover,
+Dialogue: 1,0:18:07.51,0:18:11.95,英文对白,,0,0,0,,or some said castrated himself and bled to death.
+Dialogue: 1,0:18:11.97,0:18:15.39,英文对白,,0,0,0,,But he bounced back in an unforgettable way
+Dialogue: 1,0:18:15.39,0:18:20.69,英文对白,,0,0,0,,as the ultimate symbol of virility for his frenzied cult followers.
+Dialogue: 1,0:18:20.71,0:18:24.79,英文对白,,0,0,0,,They would cavort, splattering themselves with blood,
+Dialogue: 1,0:18:24.81,0:18:27.71,英文对白,,0,0,0,,flagellating themselves, biting each other,
+Dialogue: 1,0:18:27.76,0:18:30.81,英文对白,,0,0,0,,and as the ultimate gesture of devotion,
+Dialogue: 1,0:18:30.84,0:18:33.08,英文对白,,0,0,0,,castrating themselves.
+Dialogue: 1,0:18:33.23,0:18:37.04,英文对白,,0,0,0,,It's said that these traditions may be echoed today
+Dialogue: 1,0:18:37.05,0:18:40.44,英文对白,,0,0,0,,in the self-flagellating Catholic brotherhoods
+Dialogue: 1,0:18:40.46,0:18:42.85,英文对白,,0,0,0,,that are still going on in Spain.
+Dialogue: 1,0:18:50.51,0:18:53.40,英文对白,,0,0,0,,Hadrian, the Spanish-born emperor
+Dialogue: 1,0:18:53.44,0:18:55.52,英文对白,,0,0,0,,who beautified Italica,
+Dialogue: 1,0:18:55.55,0:18:57.79,英文对白,,0,0,0,,unwittingly changed Spain.
+Dialogue: 1,0:18:59.31,0:19:01.78,英文对白,,0,0,0,,When, in 132 AD,
+Dialogue: 1,0:19:01.82,0:19:04.89,英文对白,,0,0,0,,his persecution of the Jews in Jerusalem
+Dialogue: 1,0:19:04.91,0:19:06.11,英文对白,,0,0,0,,provoked a revolt.
+Dialogue: 1,0:19:09.79,0:19:13.94,英文对白,,0,0,0,,Hadrian rushed troops to Judea to crush the rebellion.
+Dialogue: 1,0:19:14.09,0:19:17.14,英文对白,,0,0,0,,But the Jews under their commander, the Prince of Israel,
+Dialogue: 1,0:19:17.16,0:19:18.58,英文对白,,0,0,0,,Simon Bar Kokhba,
+Dialogue: 1,0:19:18.61,0:19:21.54,英文对白,,0,0,0,,managed to wipe out several Roman legions
+Dialogue: 1,0:19:21.58,0:19:23.64,英文对白,,0,0,0,,before they were finally crushed.
+Dialogue: 1,0:19:23.76,0:19:27.39,英文对白,,0,0,0,,Hadrian had 500,000 Jews slaughtered
+Dialogue: 1,0:19:27.41,0:19:31.47,英文对白,,0,0,0,,and they were banned in perpetuity from their beloved Jerusalem.
+Dialogue: 1,0:19:31.47,0:19:35.42,英文对白,,0,0,0,,But many of them came to settle here in Spain,
+Dialogue: 1,0:19:35.43,0:19:36.82,英文对白,,0,0,0,,to found a community
+Dialogue: 1,0:19:36.86,0:19:40.67,英文对白,,0,0,0,,named after the Hebrew word for Spain, Saffarad,
+Dialogue: 1,0:19:40.81,0:19:43.26,英文对白,,0,0,0,,hence the Sephadic Jews.
+Dialogue: 1,0:19:43.39,0:19:44.66,英文对白,,0,0,0,,Even today,
+Dialogue: 1,0:19:44.76,0:19:47.48,英文对白,,0,0,0,,the Jews in Spain call themselves
+Dialogue: 1,0:19:47.66,0:19:51.04,英文对白,,0,0,0,,"the exile from Jerusalem in Spain".
+Dialogue: 1,0:20:00.55,0:20:02.66,英文对白,,0,0,0,,Out of the Jewish disaster,
+Dialogue: 1,0:20:02.67,0:20:05.86,英文对白,,0,0,0,,a new religion emerged and spread fast.
+Dialogue: 1,0:20:05.93,0:20:09.47,英文对白,,0,0,0,,It would challenge the Roman empire from within.
+Dialogue: 1,0:20:18.23,0:20:19.67,英文对白,,0,0,0,,I'm leaving Italica
+Dialogue: 1,0:20:19.68,0:20:22.38,英文对白,,0,0,0,,and heading a few miles south to Seville.
+Dialogue: 1,0:20:22.40,0:20:26.16,英文对白,,0,0,0,,To find out what happened when a new faith of Christianity
+Dialogue: 1,0:20:26.18,0:20:29.37,英文对白,,0,0,0,,confronted the old paganism of Rome.
+Dialogue: 1,0:20:34.83,0:20:38.25,英文对白,,0,0,0,,Seville, now dominated by Catholic monuments,
+Dialogue: 1,0:20:38.27,0:20:40.30,英文对白,,0,0,0,,was then called Hispalis.
+Dialogue: 1,0:20:40.31,0:20:43.84,英文对白,,0,0,0,,Archaeology reveals it was a typical Roman city.
+Dialogue: 1,0:20:47.03,0:20:50.11,英文对白,,0,0,0,,This is the story of Justa and Rufina,
+Dialogue: 1,0:20:50.13,0:20:53.16,英文对白,,0,0,0,,later the patron saints of Seville.
+Dialogue: 1,0:20:53.82,0:20:56.54,英文对白,,0,0,0,,They were sisters, devout Christians,
+Dialogue: 1,0:20:56.56,0:20:59.75,英文对白,,0,0,0,,and much admired for their work as potters.
+Dialogue: 1,0:21:03.00,0:21:04.76,英文对白,,0,0,0,,In 287 AD,
+Dialogue: 1,0:21:04.79,0:21:07.32,英文对白,,0,0,0,,the city prefect Diogenianus
+Dialogue: 1,0:21:07.33,0:21:10.59,英文对白,,0,0,0,,ordered all pots must be offered to Venus.
+Dialogue: 1,0:21:11.00,0:21:12.89,英文对白,,0,0,0,,This edict was almost certainly part
+Dialogue: 1,0:21:12.91,0:21:15.03,英文对白,,0,0,0,,of Emperor Diocletian's policy
+Dialogue: 1,0:21:15.05,0:21:17.47,英文对白,,0,0,0,,to reinvigorate Roman religion.
+Dialogue: 1,0:21:18.55,0:21:21.28,英文对白,,0,0,0,,It was also a direct affront to Christianity.
+Dialogue: 1,0:21:21.99,0:21:24.29,英文对白,,0,0,0,,Justa and Rufina made a stand.
+Dialogue: 1,0:21:25.56,0:21:30.82,英文对白,,0,0,0,,Justa and Rufina ran the best pottery in Seville.
+Dialogue: 1,0:21:31.17,0:21:36.11,英文对白,,0,0,0,,But these wholesome Christians refused to let their pottery
+Dialogue: 1,0:21:36.11,0:21:40.91,英文对白,,0,0,0,,be used in a pagan festival for the goddess Venus.
+Dialogue: 1,0:21:41.10,0:21:42.85,英文对白,,0,0,0,,So good was their pottery,
+Dialogue: 1,0:21:42.88,0:21:44.32,英文对白,,0,0,0,,and so essential,
+Dialogue: 1,0:21:44.35,0:21:46.74,英文对白,,0,0,0,,that the pagan crowd was outraged.
+Dialogue: 1,0:21:46.80,0:21:48.47,英文对白,,0,0,0,,They broke into the pottery
+Dialogue: 1,0:21:48.47,0:21:52.57,英文对白,,0,0,0,,and took the pots they needed for their pagan festival.
+Dialogue: 1,0:21:53.43,0:21:56.74,英文对白,,0,0,0,,The two sisters were outraged in their turn.
+Dialogue: 1,0:21:56.75,0:21:59.71,英文对白,,0,0,0,,They smashed a statue of Venus.
+Dialogue: 1,0:21:59.75,0:22:04.03,英文对白,,0,0,0,,Now, sympathetic as I am to these pious young ladies,
+Dialogue: 1,0:22:04.22,0:22:09.12,英文对白,,0,0,0,,this was nothing less than a brazen bid for martyrdom.
+Dialogue: 1,0:22:09.32,0:22:11.90,英文对白,,0,0,0,,And their prayers were indeed answered.
+Dialogue: 1,0:22:11.97,0:22:14.70,英文对白,,0,0,0,,Diogenianus arrested them immediately
+Dialogue: 1,0:22:14.75,0:22:18.83,英文对白,,0,0,0,,and they were horribly tortured with hooks and fire.
+Dialogue: 1,0:22:18.93,0:22:20.62,英文对白,,0,0,0,,When she was almost dead,
+Dialogue: 1,0:22:20.74,0:22:23.33,英文对白,,0,0,0,,Justa was thrown down a 100ft well,
+Dialogue: 1,0:22:23.35,0:22:24.59,英文对白,,0,0,0,,where she perished.
+Dialogue: 1,0:22:24.66,0:22:26.18,英文对白,,0,0,0,,As for Rufina,
+Dialogue: 1,0:22:26.27,0:22:28.55,英文对白,,0,0,0,,she was saved for the lions.
+Dialogue: 1,0:22:30.90,0:22:34.84,英文对白,,0,0,0,,As the wild beasts were unleashed upon Rufina,
+Dialogue: 1,0:22:34.94,0:22:38.07,英文对白,,0,0,0,,the crowd bayed in anticipation.
+Dialogue: 1,0:22:38.87,0:22:40.46,英文对白,,0,0,0,,But instead of eating her,
+Dialogue: 1,0:22:40.48,0:22:42.36,英文对白,,0,0,0,,they licked her wounds.
+Dialogue: 1,0:22:43.07,0:22:45.56,英文对白,,0,0,0,,The Christians saw this as a miracle
+Dialogue: 1,0:22:45.59,0:22:48.17,英文对白,,0,0,0,,but Diogenianus was unimpressed.
+Dialogue: 1,0:22:48.18,0:22:50.78,英文对白,,0,0,0,,He had her strangled, beheaded
+Dialogue: 1,0:22:50.81,0:22:52.32,英文对白,,0,0,0,,and then burned.
+Dialogue: 1,0:22:52.35,0:22:55.96,英文对白,,0,0,0,,But the Christians had their first martyr.
+Dialogue: 1,0:23:02.63,0:23:04.18,英文对白,,0,0,0,,Within 30 years,
+Dialogue: 1,0:23:04.21,0:23:07.91,英文对白,,0,0,0,,the Roman Empire itself had converted to Christianity.
+Dialogue: 1,0:23:07.92,0:23:09.58,英文对白,,0,0,0,,Yet it was disintegrating.
+Dialogue: 1,0:23:09.60,0:23:12.83,英文对白,,0,0,0,,When Rome fell in 476 AD,
+Dialogue: 1,0:23:13.14,0:23:17.98,英文对白,,0,0,0,,Spain was at the mercy of invading tribes of so-called Barbarians.
+Dialogue: 1,0:23:18.02,0:23:19.65,英文对白,,0,0,0,,First came the Vandals,
+Dialogue: 1,0:23:19.68,0:23:22.19,英文对白,,0,0,0,,who failed to hold the Peninsula for long.
+Dialogue: 1,0:23:22.21,0:23:25.39,英文对白,,0,0,0,,They left only one real legacy, their name.
+Dialogue: 1,0:23:26.61,0:23:29.54,英文对白,,0,0,0,,Andalusia, still the name for Southern Spain,
+Dialogue: 1,0:23:29.57,0:23:31.79,英文对白,,0,0,0,,comes from the Arabic Al-Andalus,
+Dialogue: 1,0:23:31.83,0:23:34.64,英文对白,,0,0,0,,probably meaning "The land of the Vandals."
+Dialogue: 1,0:23:38.73,0:23:41.84,英文对白,,0,0,0,,Next, the Byzantine emperor Justinian
+Dialogue: 1,0:23:41.87,0:23:43.89,英文对白,,0,0,0,,captured parts of Spain
+Dialogue: 1,0:23:43.92,0:23:48.02,英文对白,,0,0,0,,until his garrisons were overrun by the Visigoths.
+Dialogue: 1,0:23:51.01,0:23:54.54,英文对白,,0,0,0,,Ferocious in war, they were creative in peace.
+Dialogue: 1,0:23:57.49,0:24:00.61,英文对白,,0,0,0,,Visigoths usually feature
+Dialogue: 1,0:24:00.63,0:24:03.37,英文对白,,0,0,0,,as raping and pillaging axe men
+Dialogue: 1,0:24:03.41,0:24:05.30,英文对白,,0,0,0,,of the Dark Ages.
+Dialogue: 1,0:24:05.33,0:24:07.97,英文对白,,0,0,0,,But when the Visigoths settled in Spain,
+Dialogue: 1,0:24:08.06,0:24:10.79,英文对白,,0,0,0,,they produced sages, scholars
+Dialogue: 1,0:24:10.81,0:24:12.67,英文对白,,0,0,0,,as well as soldiers.
+Dialogue: 1,0:24:12.82,0:24:15.19,英文对白,,0,0,0,,This school, like many others in Spain,
+Dialogue: 1,0:24:15.23,0:24:17.19,英文对白,,0,0,0,,is named after St Isidore,
+Dialogue: 1,0:24:17.25,0:24:19.64,英文对白,,0,0,0,,Visigothic Bishop of Seville,
+Dialogue: 1,0:24:19.84,0:24:23.09,英文对白,,0,0,0,,who refined and adapted Roman law
+Dialogue: 1,0:24:23.12,0:24:27.29,英文对白,,0,0,0,,to create a united, Christian Spain.
+Dialogue: 1,0:24:27.54,0:24:28.71,英文对白,,0,0,0,,Much later,
+Dialogue: 1,0:24:28.72,0:24:30.91,英文对白,,0,0,0,,Visigothic Spain became
+Dialogue: 1,0:24:30.92,0:24:34.24,英文对白,,0,0,0,,the prototype for Catholic monarchy.
+Dialogue: 1,0:24:36.28,0:24:38.03,英文对白,,0,0,0,,Ruling for two centuries,
+Dialogue: 1,0:24:38.05,0:24:40.66,英文对白,,0,0,0,,their kingdom would inspire Spanish rulers
+Dialogue: 1,0:24:40.67,0:24:42.94,英文对白,,0,0,0,,right up until the 20th century.
+Dialogue: 1,0:24:45.40,0:24:49.07,英文对白,,0,0,0,,Downstream from Seville is the river port of Santa Maria.
+Dialogue: 1,0:24:49.11,0:24:53.12,英文对白,,0,0,0,,This stretch of water is known as the River of the Dead.
+Dialogue: 1,0:24:53.28,0:24:54.63,英文对白,,0,0,0,,With good reason.
+Dialogue: 1,0:24:55.56,0:24:59.91,英文对白,,0,0,0,,This river is the place where Visigothic Spain died.
+Dialogue: 1,0:25:00.88,0:25:03.87,英文对白,,0,0,0,,This is where its last king, Roderick, was killed.
+Dialogue: 1,0:25:03.88,0:25:08.58,英文对白,,0,0,0,,And it was a moment that changed the entire destiny of Spain.
+Dialogue: 1,0:25:10.96,0:25:14.70,英文对白,,0,0,0,,The Visigoths matter as much for how they lost Spain
+Dialogue: 1,0:25:14.72,0:25:16.18,英文对白,,0,0,0,,as for how they won it.
+Dialogue: 1,0:25:18.31,0:25:22.02,英文对白,,0,0,0,,It all started with a beautiful naked girl.
+Dialogue: 1,0:25:22.55,0:25:27.42,英文对白,,0,0,0,,Roderick, the King, was in the habit of spying upon Florinda,
+Dialogue: 1,0:25:27.44,0:25:31.39,英文对白,,0,0,0,,the daughter of his nobleman Julian, while she was in her bath.
+Dialogue: 1,0:25:31.42,0:25:33.72,英文对白,,0,0,0,,One day, he ravished her.
+Dialogue: 1,0:25:33.74,0:25:37.14,英文对白,,0,0,0,,She ran to her father, Julian, he rebelled.
+Dialogue: 1,0:25:37.16,0:25:40.89,英文对白,,0,0,0,,And here, on this river, at the River of the Dead,
+Dialogue: 1,0:25:40.92,0:25:44.09,英文对白,,0,0,0,,he met Roderick's forces and killed him.
+Dialogue: 1,0:25:44.11,0:25:47.27,英文对白,,0,0,0,,Now, most Visigothic kings were assassinated.
+Dialogue: 1,0:25:47.29,0:25:49.31,英文对白,,0,0,0,,So there was no big deal in that.
+Dialogue: 1,0:25:49.34,0:25:52.61,英文对白,,0,0,0,,But what mattered here was how he was killed.
+Dialogue: 1,0:25:52.64,0:25:55.53,英文对白,,0,0,0,,For Julian didn't just rebel,
+Dialogue: 1,0:25:55.59,0:25:58.26,英文对白,,0,0,0,,he looked in this direction,
+Dialogue: 1,0:25:58.28,0:26:01.56,英文对白,,0,0,0,,across the sea to North Africa for help.
+Dialogue: 1,0:26:01.79,0:26:04.26,英文对白,,0,0,0,,Julian summoned Islam.
+Dialogue: 1,0:26:10.19,0:26:12.69,英文对白,,0,0,0,,Far away in the deserts of Arabia,
+Dialogue: 1,0:26:12.71,0:26:16.05,英文对白,,0,0,0,,a new faith, a new revelation had arisen.
+Dialogue: 1,0:26:16.57,0:26:18.94,英文对白,,0,0,0,,By the time he died in 632,
+Dialogue: 1,0:26:18.97,0:26:24.56,英文对白,,0,0,0,,the Prophet Mohammed had united Arabia under the banners of Islam.
+Dialogue: 1,0:26:24.58,0:26:29.29,英文对白,,0,0,0,,In the next 50 years, the Arab armies conquered a vast empire,
+Dialogue: 1,0:26:29.32,0:26:33.18,英文对白,,0,0,0,,stretching from Iran all the way to Morocco,
+Dialogue: 1,0:26:33.20,0:26:36.84,英文对白,,0,0,0,,all ruled from Damascus by his successors,
+Dialogue: 1,0:26:36.85,0:26:40.46,英文对白,,0,0,0,,the commanders of the faithful, the Caliphs.
+Dialogue: 1,0:26:46.80,0:26:49.44,英文对白,,0,0,0,,The spectacular Arab conquests
+Dialogue: 1,0:26:49.46,0:26:52.66,英文对白,,0,0,0,,brought Islam to the shores of the Moroccan coast,
+Dialogue: 1,0:26:52.68,0:26:55.23,英文对白,,0,0,0,,just 14km from Spain.
+Dialogue: 1,0:26:55.39,0:26:59.06,英文对白,,0,0,0,,Julian called for help from the Governor of Tangiers.
+Dialogue: 1,0:26:59.08,0:27:04.41,英文对白,,0,0,0,,This was irresistible to an empire built on the fever of faith
+Dialogue: 1,0:27:04.43,0:27:06.29,英文对白,,0,0,0,,and the spoils of war.
+Dialogue: 1,0:27:06.30,0:27:08.11,英文对白,,0,0,0,,This is where Islam arrived.
+Dialogue: 1,0:27:16.89,0:27:18.51,英文对白,,0,0,0,,When we think of Gibraltar,
+Dialogue: 1,0:27:18.52,0:27:22.05,英文对白,,0,0,0,,we think of a part of Spain that isn't really Spanish.
+Dialogue: 1,0:27:22.05,0:27:24.55,英文对白,,0,0,0,,A little piece of Britain in the Mediterranean,
+Dialogue: 1,0:27:24.56,0:27:27.61,英文对白,,0,0,0,,with red telephone kiosks, postboxes
+Dialogue: 1,0:27:27.62,0:27:30.08,英文对白,,0,0,0,,and the Queen on the postage stamps.
+Dialogue: 1,0:27:30.09,0:27:34.18,英文对白,,0,0,0,,But Gibraltar is also the southern gateway to Spain.
+Dialogue: 1,0:27:34.19,0:27:38.04,英文对白,,0,0,0,,A short boat trip from Africa leads straight here.
+Dialogue: 1,0:27:44.77,0:27:48.61,英文对白,,0,0,0,,I'm standing at the very top of the rock of Gibraltar.
+Dialogue: 1,0:27:48.61,0:27:51.88,英文对白,,0,0,0,,And I'm looking right over the straits.
+Dialogue: 1,0:27:51.89,0:27:54.53,英文对白,,0,0,0,,Those mountains are the Atlas Mountains.
+Dialogue: 1,0:27:54.90,0:27:59.17,英文对白,,0,0,0,,And Gibraltar itself, the name derives from the Arabic,
+Dialogue: 1,0:27:59.17,0:28:02.38,英文对白,,0,0,0,,Jabal Al-Tariq, the Mountain of Tariq.
+Dialogue: 1,0:28:02.39,0:28:05.77,英文对白,,0,0,0,,And it's named after Tariq Bin-Ziyad,
+Dialogue: 1,0:28:05.77,0:28:08.97,英文对白,,0,0,0,,who governed nearby Tangiers in Morocco
+Dialogue: 1,0:28:08.97,0:28:13.05,英文对白,,0,0,0,,on behalf of the distant Umayyad Caliph of Damascus.
+Dialogue: 1,0:28:13.33,0:28:16.16,英文对白,,0,0,0,,In April 711, he raised an army
+Dialogue: 1,0:28:16.18,0:28:19.01,英文对白,,0,0,0,,of 7,000 Arabs and Berbers.
+Dialogue: 1,0:28:19.02,0:28:22.21,英文对白,,0,0,0,,And with his favourite beautiful slave girl by his side,
+Dialogue: 1,0:28:22.21,0:28:27.09,英文对白,,0,0,0,,they embarked on rafts and crossed the straits to land in Europe.
+Dialogue: 1,0:28:27.09,0:28:30.12,英文对白,,0,0,0,,Islam had arrived in the West.
+Dialogue: 1,0:28:30.13,0:28:32.40,英文对白,,0,0,0,,They carried all before them.
+Dialogue: 1,0:28:34.98,0:28:37.72,英文对白,,0,0,0,,The divided Visigoths were overwhelmed.
+Dialogue: 1,0:28:37.73,0:28:41.47,英文对白,,0,0,0,,Some converted to Islam, others fled North.
+Dialogue: 1,0:28:41.93,0:28:45.69,英文对白,,0,0,0,,The fate of Julian, said to have invited in the Muslims,
+Dialogue: 1,0:28:45.70,0:28:47.23,英文对白,,0,0,0,,is unknown.
+Dialogue: 1,0:28:47.84,0:28:50.41,英文对白,,0,0,0,,The Muslim invaders would build a culture
+Dialogue: 1,0:28:50.41,0:28:55.05,英文对白,,0,0,0,,that outshone its European neighbours in wealth and magnificence.
+Dialogue: 1,0:28:55.06,0:28:59.09,英文对白,,0,0,0,,Their legacy infuses everything in Southern Spain.
+Dialogue: 1,0:28:59.09,0:29:03.23,英文对白,,0,0,0,,And modern Spanish is still full of Arab words.
+Dialogue: 1,0:29:04.69,0:29:05.94,英文对白,,0,0,0,,For example,
+Dialogue: 1,0:29:05.96,0:29:08.93,英文对白,,0,0,0,,the Spanish word for oil, aceite,
+Dialogue: 1,0:29:08.93,0:29:12.85,英文对白,,0,0,0,,is based on the Arabic al-zayt for olive juice.
+Dialogue: 1,0:29:12.88,0:29:16.94,英文对白,,0,0,0,,Many words the Spanish think of as their own today
+Dialogue: 1,0:29:16.96,0:29:19.20,英文对白,,0,0,0,,are in fact Arabic.
+Dialogue: 1,0:29:23.65,0:29:28.29,英文对白,,0,0,0,,The Arabic name for the river that runs north through Andalusia,
+Dialogue: 1,0:29:28.29,0:29:31.28,英文对白,,0,0,0,,the al-wadi al-kabir, or great river,
+Dialogue: 1,0:29:31.29,0:29:33.24,英文对白,,0,0,0,,has not changed much.
+Dialogue: 1,0:29:33.47,0:29:35.03,英文对白,,0,0,0,,The Guadalquivir.
+Dialogue: 1,0:29:43.73,0:29:45.31,英文对白,,0,0,0,,Remember those amphorae
+Dialogue: 1,0:29:45.32,0:29:49.02,英文对白,,0,0,0,,that had to be thrown away after being used just once or twice?
+Dialogue: 1,0:29:49.12,0:29:53.17,英文对白,,0,0,0,,Well now, the Arabs with their typical cultural sophistication,
+Dialogue: 1,0:29:53.17,0:29:56.89,英文对白,,0,0,0,,would crack the problem of the domestic receptacle.
+Dialogue: 1,0:29:56.89,0:30:00.01,英文对白,,0,0,0,,They glazed the inside of their vases.
+Dialogue: 1,0:30:00.01,0:30:02.61,英文对白,,0,0,0,,Now they could be used again and again.
+Dialogue: 1,0:30:02.61,0:30:05.26,英文对白,,0,0,0,,An early case of domestic re-cycling.
+Dialogue: 1,0:30:09.14,0:30:13.69,英文对白,,0,0,0,,The Muslim conquerors wanted to keep Spain for themselves.
+Dialogue: 1,0:30:13.69,0:30:17.57,英文对白,,0,0,0,,Yet they owed allegiance to a far-off master.
+Dialogue: 1,0:30:17.57,0:30:22.49,英文对白,,0,0,0,,The Umayyad Caliphs ruled more like magnificent Roman Emperors
+Dialogue: 1,0:30:22.49,0:30:24.75,英文对白,,0,0,0,,than ascetic Islamists.
+Dialogue: 1,0:30:25.25,0:30:27.07,英文对白,,0,0,0,,In 750 AD,
+Dialogue: 1,0:30:27.08,0:30:30.62,英文对白,,0,0,0,,they were challenged by descendents of Mohammed's uncle.
+Dialogue: 1,0:30:31.17,0:30:34.09,英文对白,,0,0,0,,The Umayyads, Caliphs ruling from Damascus,
+Dialogue: 1,0:30:34.09,0:30:39.02,英文对白,,0,0,0,,were overthrown by the more rigorous and severe fundamentalists
+Dialogue: 1,0:30:39.03,0:30:41.60,英文对白,,0,0,0,,led by the Abbasid family.
+Dialogue: 1,0:30:42.28,0:30:46.44,英文对白,,0,0,0,,All the Umayyads were invited to a dinner in Damascus.
+Dialogue: 1,0:30:46.45,0:30:49.85,英文对白,,0,0,0,,In the middle of the banquet, all of them were massacred
+Dialogue: 1,0:30:49.85,0:30:54.56,英文对白,,0,0,0,,and their bodies preserved and stored in an underground chamber.
+Dialogue: 1,0:30:54.57,0:30:58.71,英文对白,,0,0,0,,With each one labelled on their toes with their names.
+Dialogue: 1,0:30:59.62,0:31:00.94,英文对白,,0,0,0,,Only one escaped.
+Dialogue: 1,0:31:01.35,0:31:03.65,英文对白,,0,0,0,,His name was Prince Abd Al-Rahman.
+Dialogue: 1,0:31:03.65,0:31:07.85,英文对白,,0,0,0,,He was 19, tall, handsome, red-haired.
+Dialogue: 1,0:31:08.23,0:31:13.38,英文对白,,0,0,0,,In a story really worthy of a Hollywood action movie, he escaped.
+Dialogue: 1,0:31:13.40,0:31:16.52,英文对白,,0,0,0,,The most wanted man in the Islamic world
+Dialogue: 1,0:31:16.55,0:31:18.76,英文对白,,0,0,0,,hunted by Abassid assassins
+Dialogue: 1,0:31:18.77,0:31:20.88,英文对白,,0,0,0,,all the way across North Africa.
+Dialogue: 1,0:31:20.90,0:31:23.73,英文对白,,0,0,0,,At one point, the assassins got so close,
+Dialogue: 1,0:31:23.76,0:31:25.61,英文对白,,0,0,0,,that he had to hide under
+Dialogue: 1,0:31:25.62,0:31:28.71,英文对白,,0,0,0,,the skirts of an attractive female cousin.
+Dialogue: 1,0:31:33.33,0:31:36.29,英文对白,,0,0,0,,The Abbasids moved the capital from Damascus
+Dialogue: 1,0:31:36.29,0:31:38.61,英文对白,,0,0,0,,to their new city of Baghdad,
+Dialogue: 1,0:31:38.62,0:31:43.15,英文对白,,0,0,0,,which was even further from their most distant province, Spain.
+Dialogue: 1,0:31:44.77,0:31:49.43,英文对白,,0,0,0,,For six years, Abd Al-Rahman - or Rach man - travelled westwards,
+Dialogue: 1,0:31:49.44,0:31:50.97,英文对白,,0,0,0,,amassing supporters,
+Dialogue: 1,0:31:50.97,0:31:55.41,英文对白,,0,0,0,,convinced he could use his charisma to found his own kingdom.
+Dialogue: 1,0:31:58.65,0:32:03.04,英文对白,,0,0,0,,In September 755, he landed near Malaga.
+Dialogue: 1,0:32:03.06,0:32:07.28,英文对白,,0,0,0,,His followers awaited him there, a retinue of just 300.
+Dialogue: 1,0:32:08.65,0:32:11.06,英文对白,,0,0,0,,He headed north, towards Cordoba -
+Dialogue: 1,0:32:11.08,0:32:15.73,英文对白,,0,0,0,,once the Roman capital - to face the Abbasids and their supporters.
+Dialogue: 1,0:32:15.73,0:32:19.54,英文对白,,0,0,0,,This Damascene Prince swept all before him
+Dialogue: 1,0:32:19.55,0:32:21.66,英文对白,,0,0,0,,with just a handful of horsemen.
+Dialogue: 1,0:32:25.17,0:32:29.13,英文对白,,0,0,0,,The final showdown was on the Guadalquivir River.
+Dialogue: 1,0:32:29.13,0:32:34.65,英文对白,,0,0,0,,Abd Al-Rahman, with just 700 men, smashed the forces of his enemies.
+Dialogue: 1,0:32:34.65,0:32:40.97,英文对白,,0,0,0,,And he then devised a special gift for the Abassid Caliph in Baghdad
+Dialogue: 1,0:32:40.97,0:32:43.85,英文对白,,0,0,0,,who'd murdered his entire family.
+Dialogue: 1,0:32:43.85,0:32:47.57,英文对白,,0,0,0,,He sealed a basket and sent it to the Caliph.
+Dialogue: 1,0:32:47.85,0:32:51.62,英文对白,,0,0,0,,When the monarch there in Baghdad opened it in front of his court,
+Dialogue: 1,0:32:51.64,0:32:53.43,英文对白,,0,0,0,,he shrieked in horror.
+Dialogue: 1,0:32:53.44,0:32:56.60,英文对白,,0,0,0,,It was a basket of severed heads.
+Dialogue: 1,0:33:00.02,0:33:02.29,英文对白,,0,0,0,,Abd Al-Rahman was a true Umayyad.
+Dialogue: 1,0:33:02.29,0:33:05.43,英文对白,,0,0,0,,A tolerant Muslim and a magnificent builder,
+Dialogue: 1,0:33:05.44,0:33:08.37,英文对白,,0,0,0,,who would now create a paradise in Spain.
+Dialogue: 1,0:33:08.37,0:33:11.92,英文对白,,0,0,0,,A kingdom of prosperity, culture, harmony.
+Dialogue: 1,0:33:18.21,0:33:22.61,英文对白,,0,0,0,,Abd Al-Rahman made his capital here in Cordoba,
+Dialogue: 1,0:33:22.95,0:33:26.81,英文对白,,0,0,0,,where he created a great city of noble buildings
+Dialogue: 1,0:33:26.81,0:33:28.78,英文对白,,0,0,0,,and lush gardens
+Dialogue: 1,0:33:28.79,0:33:30.44,英文对白,,0,0,0,,to remind him of Damascus.
+Dialogue: 1,0:33:31.65,0:33:34.40,英文对白,,0,0,0,,But he never forgot, never ceased missing
+Dialogue: 1,0:33:34.41,0:33:37.31,英文对白,,0,0,0,,his home city, his Syria.
+Dialogue: 1,0:33:37.33,0:33:39.66,英文对白,,0,0,0,,And he wrote a poignant poem
+Dialogue: 1,0:33:39.69,0:33:42.45,英文对白,,0,0,0,,to a palm tree of Cordoba.
+Dialogue: 1,0:33:45.79,0:33:46.72,英文对白,,0,0,0,,He said,
+Dialogue: 1,0:33:46.73,0:33:51.77,英文对白,,0,0,0,,"You too are a stranger here, sprung from foreign soil."
+Dialogue: 1,0:33:53.69,0:33:58.37,英文对白,,0,0,0,,And he added, "I too am far from home."
+Dialogue: 1,0:34:02.47,0:34:04.60,英文对白,,0,0,0,,But he was now a monarch,
+Dialogue: 1,0:34:04.62,0:34:06.21,英文对白,,0,0,0,,yet he never forgot
+Dialogue: 1,0:34:06.22,0:34:09.75,英文对白,,0,0,0,,that he'd been a fugitive on the run for so many years.
+Dialogue: 1,0:34:09.76,0:34:12.65,英文对白,,0,0,0,,And he had a wonderfully earthy sense of humour.
+Dialogue: 1,0:34:12.83,0:34:16.09,英文对白,,0,0,0,,He was visited by his attractive female cousin,
+Dialogue: 1,0:34:16.09,0:34:20.93,英文对白,,0,0,0,,up whose skirt he'd hidden from Abassid assassins.
+Dialogue: 1,0:34:21.07,0:34:25.10,英文对白,,0,0,0,,She used to tease him. "You hid under my skirt," she'd say.
+Dialogue: 1,0:34:25.26,0:34:26.54,英文对白,,0,0,0,,And he'd reply,
+Dialogue: 1,0:34:26.71,0:34:28.38,英文对白,,0,0,0,,"Fragrant as you are,
+Dialogue: 1,0:34:28.39,0:34:31.41,英文对白,,0,0,0,,"it was very stifling and stuffy up there."
+Dialogue: 1,0:34:38.93,0:34:41.49,英文对白,,0,0,0,,One of the wonders of the Western world
+Dialogue: 1,0:34:41.49,0:34:45.01,英文对白,,0,0,0,,lies behind this golden doorway.
+Dialogue: 1,0:34:47.81,0:34:49.65,英文对白,,0,0,0,,This was the royal entrance,
+Dialogue: 1,0:34:49.65,0:34:53.29,英文对白,,0,0,0,,reached by a covered passageway from the palace.
+Dialogue: 1,0:34:53.29,0:34:55.36,英文对白,,0,0,0,,Sealed up for centuries,
+Dialogue: 1,0:34:55.37,0:34:58.25,英文对白,,0,0,0,,today, the way in is round the corner.
+Dialogue: 1,0:34:59.79,0:35:05.60,英文对白,,0,0,0,,In 786, Abd Al-Rahman started to build Cordoba's Great Mosque
+Dialogue: 1,0:35:05.61,0:35:06.83,英文对白,,0,0,0,,or Mezquita.
+Dialogue: 1,0:35:06.85,0:35:09.61,英文对白,,0,0,0,,This would be his masterpiece.
+Dialogue: 1,0:35:12.37,0:35:14.72,英文对白,,0,0,0,,As more and more converted to Islam,
+Dialogue: 1,0:35:14.73,0:35:19.25,英文对白,,0,0,0,,the Mezquita was expanded again and again over the centuries.
+Dialogue: 1,0:35:25.46,0:35:27.75,英文对白,,0,0,0,,Its mihrab, or prayer niche,
+Dialogue: 1,0:35:27.76,0:35:29.94,英文对白,,0,0,0,,traditionally faces Mecca.
+Dialogue: 1,0:35:34.82,0:35:37.41,英文对白,,0,0,0,,The Mezquita has 850 columns
+Dialogue: 1,0:35:37.42,0:35:40.13,英文对白,,0,0,0,,made of granite and marble.
+Dialogue: 1,0:35:40.57,0:35:43.73,英文对白,,0,0,0,,A system of two-tiered pillars has been created,
+Dialogue: 1,0:35:43.73,0:35:48.49,英文对白,,0,0,0,,a forest of supports using Visigothic columns as a base.
+Dialogue: 1,0:35:49.29,0:35:53.49,英文对白,,0,0,0,,The conquering faith commandeering the ruins of the old
+Dialogue: 1,0:35:53.50,0:35:55.00,英文对白,,0,0,0,,to build the new.
+Dialogue: 1,0:35:56.49,0:35:59.76,英文对白,,0,0,0,,Even the horseshoe arch adopted by Islam
+Dialogue: 1,0:35:59.77,0:36:02.34,英文对白,,0,0,0,,may have been of Visigothic design.
+Dialogue: 1,0:36:07.29,0:36:11.05,英文对白,,0,0,0,,Now Cordoba became a cosmopolitan metropolis.
+Dialogue: 1,0:36:11.93,0:36:15.29,英文对白,,0,0,0,,Arab scientists, true heirs to the Ancient Greeks,
+Dialogue: 1,0:36:15.29,0:36:19.02,英文对白,,0,0,0,,made astounding advances unknown to the brutish West.
+Dialogue: 1,0:36:19.57,0:36:22.98,英文对白,,0,0,0,,Scholars, architects, poets, astrologers
+Dialogue: 1,0:36:22.99,0:36:25.78,英文对白,,0,0,0,,gathered at the glittering Umayyad court.
+Dialogue: 1,0:36:27.05,0:36:28.72,英文对白,,0,0,0,,One man stood out.
+Dialogue: 1,0:36:28.73,0:36:31.47,英文对白,,0,0,0,,His name was Ali Ibn Nafi.
+Dialogue: 1,0:36:32.93,0:36:36.77,英文对白,,0,0,0,,Ibn Nafi was a star, a famous singer-songwriter
+Dialogue: 1,0:36:36.78,0:36:40.25,英文对白,,0,0,0,,who became an international trendsetter and dandy,
+Dialogue: 1,0:36:40.25,0:36:43.41,英文对白,,0,0,0,,an aficionado of style and pleasure.
+Dialogue: 1,0:36:43.42,0:36:46.01,英文对白,,0,0,0,,There's something very modern about him, not unlike a rock star.
+Dialogue: 1,0:36:46.01,0:36:49.49,英文对白,,0,0,0,,A sort of cross between Beau Brummell and Mick Jagger.
+Dialogue: 1,0:36:49.70,0:36:53.81,英文对白,,0,0,0,,Born in Baghdad, he was half Kurdish, half African.
+Dialogue: 1,0:36:53.81,0:36:56.69,英文对白,,0,0,0,,Hence his nickname, the Blackbird.
+Dialogue: 1,0:36:56.69,0:36:59.93,英文对白,,0,0,0,,He had sung for the Caliphs in Baghdad.
+Dialogue: 1,0:36:59.93,0:37:03.69,英文对白,,0,0,0,,But when he came here to Cordoba, he really became famous.
+Dialogue: 1,0:37:03.71,0:37:06.61,英文对白,,0,0,0,,He was best friends with the Crown Prince.
+Dialogue: 1,0:37:06.61,0:37:10.87,英文对白,,0,0,0,,He promoted asparagus from a weed to a delicacy.
+Dialogue: 1,0:37:10.88,0:37:14.06,英文对白,,0,0,0,,He invented the modern three-course meal.
+Dialogue: 1,0:37:14.07,0:37:19.17,英文对白,,0,0,0,,Everyone wanted to look like him, dress like him, sound like him.
+Dialogue: 1,0:37:19.17,0:37:22.27,英文对白,,0,0,0,,Everyone wanted to be like Ibn Nafi.
+Dialogue: 1,0:37:32.11,0:37:34.64,英文对白,,0,0,0,,I've come to watch a flamenco show.
+Dialogue: 1,0:37:34.66,0:37:37.98,英文对白,,0,0,0,,This most Spanish of art forms can trace its roots
+Dialogue: 1,0:37:37.99,0:37:40.57,英文对白,,0,0,0,,back to Ibn Nafi's musical vision.
+Dialogue: 1,0:37:40.57,0:37:44.55,英文对白,,0,0,0,,At its heart is a special technique for playing the guitar.
+Dialogue: 1,0:38:02.64,0:38:06.29,英文对白,,0,0,0,,Juan Antonio Martinez is professor of guitar
+Dialogue: 1,0:38:06.29,0:38:09.69,英文对白,,0,0,0,,at the Ibn Nafi Conservatory in Cordoba.
+Dialogue: 1,0:38:19.87,0:38:22.68,英文对白,,0,0,0,,So what was Ibn Nafi's influence?
+Dialogue: 1,0:38:39.91,0:38:44.41,英文对白,,0,0,0,,So, is there a direct line from Ibn Nafi's oud
+Dialogue: 1,0:38:44.41,0:38:48.74,英文对白,,0,0,0,,all the way to the modern Spanish Flamenco guitar?
+Dialogue: 1,0:39:11.78,0:39:16.01,英文对白,,0,0,0,,So, now will you show us on the actual guitar?
+Dialogue: 1,0:39:16.16,0:39:18.87,英文对白,,0,0,0,,Si. Thank you.
+Dialogue: 1,0:39:46.09,0:39:48.97,英文对白,,0,0,0,,The culture of Al-Andalus is deeply buried
+Dialogue: 1,0:39:48.97,0:39:51.61,英文对白,,0,0,0,,in what became Spanish culture.
+Dialogue: 1,0:39:51.61,0:39:55.10,英文对白,,0,0,0,,Yet Islamic tolerance can be a little exaggerated.
+Dialogue: 1,0:39:55.11,0:39:56.87,英文对白,,0,0,0,,Islam was supreme.
+Dialogue: 1,0:39:56.89,0:40:01.32,英文对白,,0,0,0,,Jews and Christians were only free to worship if they paid a special tax
+Dialogue: 1,0:40:01.34,0:40:05.04,英文对白,,0,0,0,,and always recognised Muslim mastery.
+Dialogue: 1,0:40:07.01,0:40:11.88,英文对白,,0,0,0,,And yet there were those, of course, who resented the supremacy of Islam.
+Dialogue: 1,0:40:11.89,0:40:16.69,英文对白,,0,0,0,,Eulogius of Cordoba led a movement of radical Christians
+Dialogue: 1,0:40:16.72,0:40:19.17,英文对白,,0,0,0,,who actually sought martyrdom
+Dialogue: 1,0:40:19.17,0:40:22.53,英文对白,,0,0,0,,by publicly insulting the Prophet Mohammed.
+Dialogue: 1,0:40:22.53,0:40:27.81,英文对白,,0,0,0,,Eulogious was duly arrested and tried and then beheaded.
+Dialogue: 1,0:40:27.81,0:40:32.41,英文对白,,0,0,0,,The headless trunk of his body was tossed onto the river bank
+Dialogue: 1,0:40:32.41,0:40:35.13,英文对白,,0,0,0,,to be feasted upon by dogs.
+Dialogue: 1,0:40:40.61,0:40:44.59,英文对白,,0,0,0,,In the writings he left behind, Eulogius quoted the Bible
+Dialogue: 1,0:40:44.60,0:40:46.79,英文对白,,0,0,0,,and he left an ominous message.
+Dialogue: 1,0:40:47.25,0:40:49.10,英文对白,,0,0,0,,"Follow my example," he said,
+Dialogue: 1,0:40:49.12,0:40:51.85,英文对白,,0,0,0,,"because I follow the example of Christ."
+Dialogue: 1,0:40:54.01,0:40:59.51,英文对白,,0,0,0,,Religious co-existence would prove to be a challenging idea for Spain.
+Dialogue: 1,0:41:07.13,0:41:10.19,英文对白,,0,0,0,,In 912, Abd Al-Rahman III,
+Dialogue: 1,0:41:10.21,0:41:11.63,英文对白,,0,0,0,,aged just 21,
+Dialogue: 1,0:41:11.64,0:41:14.04,英文对白,,0,0,0,,succeeded to the throne of Cordoba.
+Dialogue: 1,0:41:15.45,0:41:17.50,英文对白,,0,0,0,,The greatest of the Umayyads,
+Dialogue: 1,0:41:17.51,0:41:20.47,英文对白,,0,0,0,,he created paved streets, public lighting,
+Dialogue: 1,0:41:20.48,0:41:23.79,英文对白,,0,0,0,,and collected a library of half a million books.
+Dialogue: 1,0:41:25.75,0:41:28.61,英文对白,,0,0,0,,Cordoba under Abd Al-Rahman was one of the biggest,
+Dialogue: 1,0:41:28.62,0:41:32.70,英文对白,,0,0,0,,richest and most diverse cities in all of Europe.
+Dialogue: 1,0:41:32.90,0:41:35.09,英文对白,,0,0,0,,Only Constantinople was its equal
+Dialogue: 1,0:41:35.09,0:41:39.05,英文对白,,0,0,0,,and it may have had several hundred thousand people living in it.
+Dialogue: 1,0:41:39.06,0:41:44.92,英文对白,,0,0,0,,At the same time, London and Paris had just 10-15,000 inhabitants.
+Dialogue: 1,0:41:44.93,0:41:47.09,英文对白,,0,0,0,,They were just glorified villages.
+Dialogue: 1,0:41:57.64,0:41:59.20,英文对白,,0,0,0,,Just outside Cordoba,
+Dialogue: 1,0:41:59.21,0:42:02.61,英文对白,,0,0,0,,these ruins display Abd Al-Rahman's ambition.
+Dialogue: 1,0:42:04.01,0:42:07.89,英文对白,,0,0,0,,In 929, he declared himself The Caliph.
+Dialogue: 1,0:42:07.89,0:42:11.85,英文对白,,0,0,0,,Islam was divided between the Abassid Caliph in Baghdad
+Dialogue: 1,0:42:11.85,0:42:14.96,英文对白,,0,0,0,,and a new Fatimid Caliph in North Africa.
+Dialogue: 1,0:42:14.97,0:42:18.76,英文对白,,0,0,0,,It was time for the Umayyads to show their power.
+Dialogue: 1,0:42:21.05,0:42:24.66,英文对白,,0,0,0,,To project his authority as commander of the faithful,
+Dialogue: 1,0:42:24.67,0:42:27.77,英文对白,,0,0,0,,as political and religious ruler,
+Dialogue: 1,0:42:27.77,0:42:32.74,英文对白,,0,0,0,,the Caliph of the West created this long-forgotten paradise
+Dialogue: 1,0:42:32.76,0:42:34.69,英文对白,,0,0,0,,of power and faith.
+Dialogue: 1,0:42:34.77,0:42:37.80,英文对白,,0,0,0,,It lay hidden for 900 years.
+Dialogue: 1,0:42:42.41,0:42:47.17,英文对白,,0,0,0,,Abd Al-Rahman moved his court to this vast hillside complex.
+Dialogue: 1,0:42:47.17,0:42:52.01,英文对白,,0,0,0,,Its grandeur was the architectural version of his own status
+Dialogue: 1,0:42:52.01,0:42:54.31,英文对白,,0,0,0,,as Caliph and conqueror.
+Dialogue: 1,0:42:55.09,0:42:57.72,英文对白,,0,0,0,,Only one thing really mattered to him,
+Dialogue: 1,0:42:57.73,0:43:02.25,英文对白,,0,0,0,,the plenitude and panoply of his own power.
+Dialogue: 1,0:43:02.26,0:43:05.89,英文对白,,0,0,0,,And that's why he built this amazing complex.
+Dialogue: 1,0:43:05.92,0:43:10.41,英文对白,,0,0,0,,The Medinat Al-Zahara, the dazzling palace.
+Dialogue: 1,0:43:10.41,0:43:12.77,英文对白,,0,0,0,,And it really does dazzle.
+Dialogue: 1,0:43:12.77,0:43:17.10,英文对白,,0,0,0,,This was political headquarters, military command centre,
+Dialogue: 1,0:43:17.13,0:43:21.87,英文对白,,0,0,0,,spectacular showpiece and pleasure palace.
+Dialogue: 1,0:43:26.81,0:43:30.30,英文对白,,0,0,0,,The palace wasn't only intimidating to those inside.
+Dialogue: 1,0:43:30.31,0:43:34.69,英文对白,,0,0,0,,It commanded views for miles around along the river valley.
+Dialogue: 1,0:43:35.49,0:43:40.41,英文对白,,0,0,0,,The ideal majestic fortress for a vigilant, paranoid monarch
+Dialogue: 1,0:43:40.42,0:43:41.85,英文对白,,0,0,0,,like Abd Al-Rahman.
+Dialogue: 1,0:43:44.00,0:43:45.18,英文对白,,0,0,0,,At heart,
+Dialogue: 1,0:43:45.19,0:43:50.57,英文对白,,0,0,0,,this man was a ferocious and thin-skinned tyrant.
+Dialogue: 1,0:43:50.57,0:43:54.61,英文对白,,0,0,0,,He was stout, blonde, stunted,
+Dialogue: 1,0:43:54.61,0:43:59.21,英文对白,,0,0,0,,and his legs were so short, that he had to have special stirrups made.
+Dialogue: 1,0:43:59.21,0:44:02.14,英文对白,,0,0,0,,And he didn't take kindly to rejection.
+Dialogue: 1,0:44:02.16,0:44:07.17,英文对白,,0,0,0,,He kept two harems here, one of boys and one of girls.
+Dialogue: 1,0:44:07.34,0:44:11.61,英文对白,,0,0,0,,When a girl resisted his advances, he had her face burnt off.
+Dialogue: 1,0:44:11.61,0:44:14.89,英文对白,,0,0,0,,When a boy did the same, he was dismembered.
+Dialogue: 1,0:44:14.89,0:44:19.09,英文对白,,0,0,0,,He was Pelagius of Cordoba, who was later canonised.
+Dialogue: 1,0:44:19.09,0:44:22.57,英文对白,,0,0,0,,And somewhere here in this palace he kept a menagerie,
+Dialogue: 1,0:44:22.59,0:44:24.69,英文对白,,0,0,0,,a zoo of lions.
+Dialogue: 1,0:44:24.89,0:44:26.61,英文对白,,0,0,0,,And if he didn't like you,
+Dialogue: 1,0:44:26.66,0:44:28.02,英文对白,,0,0,0,,he fed you to them.
+Dialogue: 1,0:44:39.09,0:44:41.65,英文对白,,0,0,0,,The hanging gardens were legendary.
+Dialogue: 1,0:44:41.65,0:44:45.11,英文对白,,0,0,0,,Water for the sunken pools was pumped all the way
+Dialogue: 1,0:44:45.13,0:44:46.95,英文对白,,0,0,0,,from the Guadalquivir river.
+Dialogue: 1,0:44:46.96,0:44:52.19,英文对白,,0,0,0,,These waterways even supplied one of the world's first water closets.
+Dialogue: 1,0:44:52.57,0:44:56.43,英文对白,,0,0,0,,Here in an obscure corner of the Medinat Al-Zahara
+Dialogue: 1,0:44:56.56,0:45:00.81,英文对白,,0,0,0,,is an impressive piece of modern Arab technology.
+Dialogue: 1,0:45:00.81,0:45:02.57,英文对白,,0,0,0,,It's down here.
+Dialogue: 1,0:45:02.78,0:45:04.41,英文对白,,0,0,0,,Now let me show you this.
+Dialogue: 1,0:45:04.41,0:45:07.93,英文对白,,0,0,0,,This is an early, rather primitive bidet.
+Dialogue: 1,0:45:07.93,0:45:10.61,英文对白,,0,0,0,,You can see there's running water.
+Dialogue: 1,0:45:10.93,0:45:14.41,英文对白,,0,0,0,,What we're looking at here is in fact one of the first examples
+Dialogue: 1,0:45:14.41,0:45:17.47,英文对白,,0,0,0,,of a European flushing lavatory.
+Dialogue: 1,0:45:18.21,0:45:23.42,英文对白,,0,0,0,,The courtiers of the Caliph lived here in comfort and hygiene
+Dialogue: 1,0:45:23.45,0:45:26.64,英文对白,,0,0,0,,at a time when Londoners and Parisians
+Dialogue: 1,0:45:26.67,0:45:30.62,英文对白,,0,0,0,,were mired in a miasma of stinking filth.
+Dialogue: 1,0:45:35.69,0:45:39.45,英文对白,,0,0,0,,The complex was sacked in the early part of the 11th century,
+Dialogue: 1,0:45:39.45,0:45:43.39,英文对白,,0,0,0,,so completely, that for many centuries, people doubted
+Dialogue: 1,0:45:43.40,0:45:46.17,英文对白,,0,0,0,,that the Medinat Al-Zahara had ever existed.
+Dialogue: 1,0:45:46.17,0:45:48.93,英文对白,,0,0,0,,It was only rediscovered in 1911.
+Dialogue: 1,0:45:48.93,0:45:52.93,英文对白,,0,0,0,,And Abd Al-Rahman's buried secrets are still being revealed
+Dialogue: 1,0:45:52.93,0:45:54.57,英文对白,,0,0,0,,to the modern world.
+Dialogue: 1,0:45:54.57,0:45:58.41,英文对白,,0,0,0,,It's said that he named it after his favourite concubine
+Dialogue: 1,0:45:58.53,0:46:01.69,英文对白,,0,0,0,,but he doesn't really strike me as much of a romantic.
+Dialogue: 1,0:46:01.69,0:46:04.33,英文对白,,0,0,0,,Besides, he wasn't spoilt for choice.
+Dialogue: 1,0:46:04.33,0:46:08.03,英文对白,,0,0,0,,He had 6,000 girls here in his harem.
+Dialogue: 1,0:46:18.43,0:46:22.25,英文对白,,0,0,0,,Historian Simon Barton has written a book about the practice
+Dialogue: 1,0:46:22.25,0:46:24.53,英文对白,,0,0,0,,of taking concubines.
+Dialogue: 1,0:46:24.74,0:46:27.75,英文对白,,0,0,0,,It was all about good looks
+Dialogue: 1,0:46:27.78,0:46:30.55,英文对白,,0,0,0,,and apparently it was said that the Umayyad Caliphs
+Dialogue: 1,0:46:30.56,0:46:33.71,英文对白,,0,0,0,,were predisposed by nature to prefer blondes.
+Dialogue: 1,0:46:33.72,0:46:36.06,英文对白,,0,0,0,,Now that's interesting. Where did these blondes come from?
+Dialogue: 1,0:46:36.08,0:46:40.85,英文对白,,0,0,0,,There were markets in Northern France, in the Mediterranean.
+Dialogue: 1,0:46:40.87,0:46:43.27,英文对白,,0,0,0,,We have Muslim slave merchants
+Dialogue: 1,0:46:43.29,0:46:46.14,英文对白,,0,0,0,,but also Jews heavily involved in trafficking,
+Dialogue: 1,0:46:46.15,0:46:49.41,英文对白,,0,0,0,,particularly women and children across Europe.
+Dialogue: 1,0:46:49.41,0:46:51.57,英文对白,,0,0,0,,And if one of these concubines,
+Dialogue: 1,0:46:51.57,0:46:54.29,英文对白,,0,0,0,,who had been bought as powerless slaves,
+Dialogue: 1,0:46:54.29,0:46:58.17,英文对白,,0,0,0,,became the mother of a future monarch, a future caliph,
+Dialogue: 1,0:46:58.35,0:47:01.03,英文对白,,0,0,0,,they could become vastly powerful.
+Dialogue: 1,0:47:01.04,0:47:01.97,英文对白,,0,0,0,,That's absolutely true.
+Dialogue: 1,0:47:01.99,0:47:06.29,英文对白,,0,0,0,,In fact, all the emirs and caliphs of the Umayyad dynasty
+Dialogue: 1,0:47:06.29,0:47:08.74,英文对白,,0,0,0,,were born to slave concubines.
+Dialogue: 1,0:47:08.76,0:47:12.56,英文对白,,0,0,0,,And they were said to have likewise blonde hair, blue eyes.
+Dialogue: 1,0:47:12.57,0:47:16.57,英文对白,,0,0,0,,The advantage of a concubine is that it functions
+Dialogue: 1,0:47:16.57,0:47:19.34,英文对白,,0,0,0,,as a dynastic defence mechanism.
+Dialogue: 1,0:47:19.35,0:47:22.92,英文对白,,0,0,0,,It means that unlike a wife's family,
+Dialogue: 1,0:47:22.94,0:47:25.81,英文对白,,0,0,0,,which can get involved in the politics of a dynasty,
+Dialogue: 1,0:47:25.82,0:47:28.04,英文对白,,0,0,0,,the concubine as a slave
+Dialogue: 1,0:47:28.05,0:47:30.76,英文对白,,0,0,0,,who's been uprooted from her home land,
+Dialogue: 1,0:47:30.79,0:47:35.61,英文对白,,0,0,0,,will have no vested interest in the dynasty itself.
+Dialogue: 1,0:47:35.61,0:47:38.64,英文对白,,0,0,0,,It was a way of keeping the dynasty secure.
+Dialogue: 1,0:47:38.65,0:47:42.23,英文对白,,0,0,0,,So, actually, it's much more about power than sex?
+Dialogue: 1,0:47:42.25,0:47:43.30,英文对白,,0,0,0,,Absolutely.
+Dialogue: 1,0:47:49.45,0:47:52.67,英文对白,,0,0,0,,The system required a strong Caliph at the top.
+Dialogue: 1,0:47:54.25,0:47:56.14,英文对白,,0,0,0,,And when the rules were broken,
+Dialogue: 1,0:47:56.16,0:47:58.14,英文对白,,0,0,0,,the Caliphate fell apart.
+Dialogue: 1,0:48:11.89,0:48:16.69,英文对白,,0,0,0,,In 976, the succession of a child, Caliph Hisham II,
+Dialogue: 1,0:48:16.69,0:48:18.61,英文对白,,0,0,0,,revealed its fragility.
+Dialogue: 1,0:48:18.62,0:48:22.40,英文对白,,0,0,0,,He was still a boy growing up under the tutelage of his mother,
+Dialogue: 1,0:48:22.41,0:48:24.63,英文对白,,0,0,0,,Subh, a former concubine.
+Dialogue: 1,0:48:25.73,0:48:28.17,英文对白,,0,0,0,,She sidelined Hisham, her own son,
+Dialogue: 1,0:48:28.17,0:48:33.65,英文对白,,0,0,0,,and opened the doors of power to forces outside the Umayyad dynasty.
+Dialogue: 1,0:48:33.91,0:48:39.39,英文对白,,0,0,0,,She appointed her new lover as Grand Vizier, prime minister.
+Dialogue: 1,0:48:39.42,0:48:42.61,英文对白,,0,0,0,,His name was Al-Mansur, the Victorious,
+Dialogue: 1,0:48:42.61,0:48:45.25,英文对白,,0,0,0,,and he was one of the most brilliant, ruthless
+Dialogue: 1,0:48:45.25,0:48:48.21,英文对白,,0,0,0,,and extraordinary characters of the entire Caliphate.
+Dialogue: 1,0:48:48.39,0:48:52.97,英文对白,,0,0,0,,He launched 57 raids of holy war against the Christian North,
+Dialogue: 1,0:48:52.98,0:48:55.44,英文对白,,0,0,0,,burning and pillaging and looting.
+Dialogue: 1,0:48:55.46,0:49:00.49,英文对白,,0,0,0,,Here in Cordoba, he burned the civilised cultured libraries
+Dialogue: 1,0:49:00.50,0:49:02.74,英文对白,,0,0,0,,of the Umayyad Caliphs before him.
+Dialogue: 1,0:49:03.08,0:49:06.50,英文对白,,0,0,0,,In his raids in the North, he destroyed all he found
+Dialogue: 1,0:49:06.51,0:49:10.56,英文对白,,0,0,0,,in order to fund the building of mosques and palaces here.
+Dialogue: 1,0:49:10.57,0:49:13.50,英文对白,,0,0,0,,In 997, his raids reached their climax
+Dialogue: 1,0:49:13.51,0:49:17.21,英文对白,,0,0,0,,when he sacked Santiago de Compostela.
+Dialogue: 1,0:49:17.32,0:49:21.01,英文对白,,0,0,0,,The doors and the bells of its churches were brought back
+Dialogue: 1,0:49:21.06,0:49:25.41,英文对白,,0,0,0,,in triumph to Cordoba, on the backs of Christian slaves.
+Dialogue: 1,0:49:31.73,0:49:35.07,英文对白,,0,0,0,,Ironically, Al-Mansur was too successful.
+Dialogue: 1,0:49:35.09,0:49:40.10,英文对白,,0,0,0,,His triumphs hollowed out and undermined the Caliphate.
+Dialogue: 1,0:49:43.73,0:49:46.49,英文对白,,0,0,0,,He promoted himself as a quasi-Caliph
+Dialogue: 1,0:49:46.49,0:49:49.48,英文对白,,0,0,0,,and founded his own semi-royal dynasty
+Dialogue: 1,0:49:49.49,0:49:52.65,英文对白,,0,0,0,,by marrying a Christian princess.
+Dialogue: 1,0:49:54.77,0:49:57.22,英文对白,,0,0,0,,Al-Mansur's sons lacked
+Dialogue: 1,0:49:57.23,0:49:58.70,英文对白,,0,0,0,,his irrepressible drive,
+Dialogue: 1,0:49:58.72,0:50:00.97,英文对白,,0,0,0,,his talent and his restraint.
+Dialogue: 1,0:50:00.97,0:50:04.53,英文对白,,0,0,0,,When they undermined the legitimacy of the Caliph,
+Dialogue: 1,0:50:04.53,0:50:06.97,英文对白,,0,0,0,,the regime disintegrated.
+Dialogue: 1,0:50:06.97,0:50:11.03,英文对白,,0,0,0,,First, he was succeeded by one son, then he was assassinated.
+Dialogue: 1,0:50:11.12,0:50:15.76,英文对白,,0,0,0,,But then came the preposterous popinjay Sanchuelo,
+Dialogue: 1,0:50:15.78,0:50:18.45,英文对白,,0,0,0,,who tried to make himself a Caliph.
+Dialogue: 1,0:50:18.73,0:50:21.53,英文对白,,0,0,0,,The entire kingdom fell apart.
+Dialogue: 1,0:50:21.80,0:50:25.40,英文对白,,0,0,0,,There died the glory of Al-Andalus.
+Dialogue: 1,0:50:29.49,0:50:35.46,英文对白,,0,0,0,,In 1031, 30 years after Al-Mansur's death, the Caliphate collapsed.
+Dialogue: 1,0:50:36.01,0:50:39.37,英文对白,,0,0,0,,Al-Andalus broke down into little city states,
+Dialogue: 1,0:50:39.37,0:50:43.30,英文对白,,0,0,0,,ruled by their princes, like medieval barons in the West.
+Dialogue: 1,0:50:46.41,0:50:50.58,英文对白,,0,0,0,,The Great Mosque of Cordoba, built by the first Abd Al-Rahman
+Dialogue: 1,0:50:50.59,0:50:52.73,英文对白,,0,0,0,,and expanded by Al-Mansur,
+Dialogue: 1,0:50:52.76,0:50:54.43,英文对白,,0,0,0,,still exists.
+Dialogue: 1,0:50:54.55,0:50:58.34,英文对白,,0,0,0,,We can still admire its scale and beauty.
+Dialogue: 1,0:51:02.66,0:51:05.94,英文对白,,0,0,0,,When it later fell to the Christians, they didn't destroy it.
+Dialogue: 1,0:51:05.95,0:51:09.05,英文对白,,0,0,0,,They built a cathedral amidst the Mezquita.
+Dialogue: 1,0:51:17.73,0:51:20.69,英文对白,,0,0,0,,Even today, people in Cordoba talk
+Dialogue: 1,0:51:20.70,0:51:23.29,英文对白,,0,0,0,,of going to mass in the Mosque.
+Dialogue: 1,0:51:37.51,0:51:40.82,英文对白,,0,0,0,,I'm travelling to Granada now for my last stop.
+Dialogue: 1,0:51:44.99,0:51:48.95,英文对白,,0,0,0,,I'm following the story of one man, who despite not being a Muslim,
+Dialogue: 1,0:51:48.96,0:51:52.89,英文对白,,0,0,0,,rose to the top in 11th-century Islamic Spain.
+Dialogue: 1,0:51:52.89,0:51:55.11,英文对白,,0,0,0,,And who did so at a moment
+Dialogue: 1,0:51:55.12,0:51:59.46,英文对白,,0,0,0,,when Islamic Spain itself was in the grip of change.
+Dialogue: 1,0:52:02.85,0:52:07.51,英文对白,,0,0,0,,The city of Granada owes its name to both its Jewish and Muslim roots.
+Dialogue: 1,0:52:08.29,0:52:11.81,英文对白,,0,0,0,,The Jews called it the City of Pomegranates.
+Dialogue: 1,0:52:12.06,0:52:15.32,英文对白,,0,0,0,,And the Arab word for pomegranate is gr'nata.
+Dialogue: 1,0:52:23.01,0:52:26.94,英文对白,,0,0,0,,The Emirate of Granada was one of the smaller principalities
+Dialogue: 1,0:52:26.95,0:52:29.21,英文对白,,0,0,0,,that came after the Caliphate.
+Dialogue: 1,0:52:29.45,0:52:31.97,英文对白,,0,0,0,,This, its most celebrated attraction,
+Dialogue: 1,0:52:32.00,0:52:33.75,英文对白,,0,0,0,,is part of its later history.
+Dialogue: 1,0:52:36.83,0:52:40.14,英文对白,,0,0,0,,I'll be coming back here in the next episode.
+Dialogue: 1,0:52:41.52,0:52:43.81,英文对白,,0,0,0,,To explore its splendour
+Dialogue: 1,0:52:43.81,0:52:46.53,英文对白,,0,0,0,,and see some of its lesser-known gems.
+Dialogue: 1,0:52:49.94,0:52:52.44,英文对白,,0,0,0,,This amazing building is now famous as
+Dialogue: 1,0:52:52.46,0:52:55.08,英文对白,,0,0,0,,the Alhambra Palace of Granada.
+Dialogue: 1,0:52:55.09,0:52:57.78,英文对白,,0,0,0,,But 300 years before it was built,
+Dialogue: 1,0:52:57.80,0:52:59.81,英文对白,,0,0,0,,this was the site of the palace
+Dialogue: 1,0:52:59.82,0:53:04.49,英文对白,,0,0,0,,of one of the most extraordinary Jewish leaders in Spanish history
+Dialogue: 1,0:53:04.49,0:53:07.08,英文对白,,0,0,0,,and in fact, one of the most extraordinary statesmen
+Dialogue: 1,0:53:07.09,0:53:09.60,英文对白,,0,0,0,,in all of the peninsula's story.
+Dialogue: 1,0:53:09.66,0:53:12.53,英文对白,,0,0,0,,His name was Samuel Ibn Naghrillah.
+Dialogue: 1,0:53:12.53,0:53:16.10,英文对白,,0,0,0,,He started off as a spice merchant in Cordoba.
+Dialogue: 1,0:53:16.12,0:53:20.92,英文对白,,0,0,0,,He moved here and became the advisor to the Berber rulers
+Dialogue: 1,0:53:20.93,0:53:23.88,英文对白,,0,0,0,,of the principality of Granada.
+Dialogue: 1,0:53:23.90,0:53:26.97,英文对白,,0,0,0,,When he backed the right candidate for the throne,
+Dialogue: 1,0:53:26.97,0:53:30.56,英文对白,,0,0,0,,Samuel became not only the leader of the Jewish Community
+Dialogue: 1,0:53:30.57,0:53:32.85,英文对白,,0,0,0,,but the Grand Vizier, the prime minister,
+Dialogue: 1,0:53:32.85,0:53:36.69,英文对白,,0,0,0,,and the Commander in Chief of the Granadan army.
+Dialogue: 1,0:53:36.69,0:53:40.14,英文对白,,0,0,0,,In war, he commanded and won victories.
+Dialogue: 1,0:53:40.15,0:53:43.01,英文对白,,0,0,0,,In peace, he was leader of the Jewish community,
+Dialogue: 1,0:53:43.02,0:53:45.45,英文对白,,0,0,0,,he wrote works of Jewish philosophy,
+Dialogue: 1,0:53:45.45,0:53:46.95,英文对白,,0,0,0,,he was a rabbi,
+Dialogue: 1,0:53:46.98,0:53:49.68,英文对白,,0,0,0,,and above all, he was a poet.
+Dialogue: 1,0:53:49.69,0:53:53.09,英文对白,,0,0,0,,His poetry is astonishing even in English translation.
+Dialogue: 1,0:53:53.28,0:53:55.54,英文对白,,0,0,0,,But he wrote in Hebrew and in Arabic.
+Dialogue: 1,0:53:55.56,0:53:56.92,英文对白,,0,0,0,,He wrote love poems.
+Dialogue: 1,0:53:56.93,0:53:59.10,英文对白,,0,0,0,,Love poems to beautiful girls,
+Dialogue: 1,0:53:59.12,0:54:00.32,英文对白,,0,0,0,,to wine,
+Dialogue: 1,0:54:00.33,0:54:01.53,英文对白,,0,0,0,,to boys
+Dialogue: 1,0:54:01.54,0:54:04.99,英文对白,,0,0,0,,and to the excitement of victory in war.
+Dialogue: 1,0:54:10.11,0:54:13.90,英文对白,,0,0,0,,Here in Granada, a group of Naghrillah enthusiasts
+Dialogue: 1,0:54:13.91,0:54:16.47,英文对白,,0,0,0,,are gathering to hear some of his poetry.
+Dialogue: 1,0:55:08.09,0:55:11.25,英文对白,,0,0,0,,In this poem, Naghrillah describes how wisdom
+Dialogue: 1,0:55:11.25,0:55:14.50,英文对白,,0,0,0,,comes from the knowledge we're not here forever.
+Dialogue: 1,0:55:40.85,0:55:43.93,英文对白,,0,0,0,,In 1056, Samuel Naghrillah died
+Dialogue: 1,0:55:43.98,0:55:48.72,英文对白,,0,0,0,,but he was succeeded by his son Joseph as Grand Vizier of Granada.
+Dialogue: 1,0:55:48.73,0:55:51.88,英文对白,,0,0,0,,Joseph was only 20 but he can't have been a fool
+Dialogue: 1,0:55:51.89,0:55:54.05,英文对白,,0,0,0,,because he ruled for ten years.
+Dialogue: 1,0:55:54.05,0:55:58.09,英文对白,,0,0,0,,It was quite traditional for Grand Viziers to be succeeded by their sons
+Dialogue: 1,0:55:58.10,0:56:00.77,英文对白,,0,0,0,,and even to found little mini-dynasties.
+Dialogue: 1,0:56:00.77,0:56:02.22,英文对白,,0,0,0,,But there was a problem.
+Dialogue: 1,0:56:02.23,0:56:04.76,英文对白,,0,0,0,,The Naghrillahs were Jews.
+Dialogue: 1,0:56:12.01,0:56:16.22,英文对白,,0,0,0,,Now this Jewish potentate seemed an enemy within
+Dialogue: 1,0:56:16.23,0:56:18.72,英文对白,,0,0,0,,from a dynasty of interlopers.
+Dialogue: 1,0:56:27.86,0:56:32.25,英文对白,,0,0,0,,In 1066, a date as resonant for the Jews of Granada
+Dialogue: 1,0:56:32.26,0:56:33.92,英文对白,,0,0,0,,as it was for King Harold,
+Dialogue: 1,0:56:33.95,0:56:36.39,英文对白,,0,0,0,,the Saxon King of England,
+Dialogue: 1,0:56:36.40,0:56:37.65,英文对白,,0,0,0,,something snapped.
+Dialogue: 1,0:56:37.90,0:56:40.02,英文对白,,0,0,0,,A mob came to Joseph's palace,
+Dialogue: 1,0:56:40.03,0:56:41.29,英文对白,,0,0,0,,close to the Alhambra,
+Dialogue: 1,0:56:41.32,0:56:42.61,英文对白,,0,0,0,,and dragged him out.
+Dialogue: 1,0:56:42.61,0:56:44.61,英文对白,,0,0,0,,They chased him through the streets.
+Dialogue: 1,0:56:44.62,0:56:46.24,英文对白,,0,0,0,,He was unable to escape.
+Dialogue: 1,0:56:49.93,0:56:52.63,英文对白,,0,0,0,,When the mob finally caught up with Joseph Naghrillah,
+Dialogue: 1,0:56:52.64,0:56:54.00,英文对白,,0,0,0,,it was right here.
+Dialogue: 1,0:56:54.02,0:56:57.03,英文对白,,0,0,0,,They lynched him and then went on a killing spree,
+Dialogue: 1,0:56:57.04,0:56:59.65,英文对白,,0,0,0,,massacring 4,000 Jews.
+Dialogue: 1,0:56:59.65,0:57:02.25,英文对白,,0,0,0,,As for Joseph, they crucified him
+Dialogue: 1,0:57:02.25,0:57:05.67,英文对白,,0,0,0,,right here beside this magnificent city gate.
+Dialogue: 1,0:57:12.41,0:57:16.13,英文对白,,0,0,0,,The crucifixion of Joseph Naghrillah in Granada marked
+Dialogue: 1,0:57:16.13,0:57:20.52,英文对白,,0,0,0,,the beginning of the end of religious pluralism in Muslim Spain.
+Dialogue: 1,0:57:22.17,0:57:25.21,英文对白,,0,0,0,,The Naghrillahs were not the first Jewish Grand Viziers
+Dialogue: 1,0:57:25.21,0:57:27.01,英文对白,,0,0,0,,in the Islamic world.
+Dialogue: 1,0:57:27.01,0:57:29.13,英文对白,,0,0,0,,Yet the confidence of the Caliphate,
+Dialogue: 1,0:57:29.13,0:57:31.86,英文对白,,0,0,0,,necessary for such broad-mindedness,
+Dialogue: 1,0:57:31.88,0:57:33.01,英文对白,,0,0,0,,was past.
+Dialogue: 1,0:57:33.52,0:57:37.94,英文对白,,0,0,0,,Over 400 years, Spain would tear itself apart.
+Dialogue: 1,0:57:42.69,0:57:46.93,英文对白,,0,0,0,,Next time, how the Christian Kings of the North struck back,
+Dialogue: 1,0:57:46.93,0:57:50.13,英文对白,,0,0,0,,conquering all of Spain for the cross.
+Dialogue: 1,0:57:50.13,0:57:54.18,英文对白,,0,0,0,,How Spain purified its blood in a vicious Inquisition,
+Dialogue: 1,0:57:54.21,0:57:58.35,英文对白,,0,0,0,,catching even some of my own family in its net.
+Dialogue: 1,0:57:59.58,0:58:03.01,英文对白,,0,0,0,,Oh, my God! So this is his death sentence?
+Dialogue: 1,0:58:03.03,0:58:04.61,英文对白,,0,0,0,,It's just heartbreaking.
+Dialogue: 1,0:58:04.83,0:58:07.65,英文对白,,0,0,0,,And how Christopher Columbus set sail
+Dialogue: 1,0:58:07.65,0:58:10.90,英文对白,,0,0,0,,to discover a rich American empire.
+Dialogue: 1,0:58:17.34,0:58:19.81,英文对白,,0,0,0,,If this story has inspired you
+Dialogue: 1,0:58:19.82,0:58:22.04,英文对白,,0,0,0,,and you'd like to find out more,
+Dialogue: 1,0:58:22.05,0:58:24.57,英文对白,,0,0,0,,go to the address given on screen
+Dialogue: 1,0:58:24.57,0:58:27.40,英文对白,,0,0,0,,and follow the links to The Open University.
+Dialogue: 0,0:00:05.15,0:00:10.54,中文对白,,0,0,52,,西班牙  安达卢斯  伊比利亚  伊伯利亚
+Dialogue: 0,0:00:10.55,0:00:13.23,中文对白,,0,0,52,,都是这个国家的名字
+Dialogue: 0,0:00:15.28,0:00:17.45,中文对白,,0,0,52,,西班牙比西欧其它国家
+Dialogue: 0,0:00:17.47,0:00:22.33,中文对白,,0,0,52,,更具有多元性和代表性
+Dialogue: 0,0:00:22.80,0:00:26.33,中文对白,,0,0,52,,这座半岛几乎四面环水
+Dialogue: 0,0:00:26.36,0:00:29.39,中文对白,,0,0,52,,这既是福祉  也是诅咒
+Dialogue: 0,0:00:29.99,0:00:35.35,中文对白,,0,0,52,,进出西班牙长期都靠南方的海路
+Dialogue: 0,0:00:35.39,0:00:39.95,中文对白,,0,0,52,,自公元前3000年起  地中海的大商人们
+Dialogue: 0,0:00:39.96,0:00:42.15,中文对白,,0,0,52,,希腊人和腓尼基人来到这里
+Dialogue: 0,0:00:42.18,0:00:44.59,中文对白,,0,0,52,,此地有诱人的肥沃平原
+Dialogue: 0,0:00:44.63,0:00:50.19,中文对白,,0,0,52,,还有丰富的金银锡铜矿藏
+Dialogue: 0,0:00:51.69,0:00:55.10,中文对白,,0,0,52,,西班牙坐落欧洲  又与非洲相望
+Dialogue: 0,0:00:57.09,0:01:00.47,中文对白,,0,0,52,,她由统治者  军队  人民和信仰所锻造
+Dialogue: 0,0:01:00.50,0:01:03.73,中文对白,,0,0,52,,且比西方其它地方更具外来风情
+Dialogue: 0,0:01:05.32,0:01:08.37,中文对白,,0,0,52,,西班牙地处欧洲边缘
+Dialogue: 0,0:01:08.41,0:01:11.58,中文对白,,0,0,52,,欧陆上的许多势力
+Dialogue: 0,0:01:11.59,0:01:14.91,中文对白,,0,0,52,,在其边疆征伐不断
+Dialogue: 0,0:01:15.50,0:01:20.62,中文对白,,0,0,52,,她接壤欧洲  又距非洲仅14千米
+Dialogue: 0,0:01:21.18,0:01:24.88,中文对白,,0,0,52,,这里的一切都体现了犹太人
+Dialogue: 0,0:01:24.91,0:01:28.25,中文对白,,0,0,52,,穆斯林  基督教文化的独特融合
+Dialogue: 0,0:01:28.54,0:01:31.12,中文对白,,0,0,52,,这也是西班牙如此独特的原因
+Dialogue: 0,0:01:35.85,0:01:38.73,中文对白,,0,0,52,,我将以历史学家和旅游者的角度
+Dialogue: 0,0:01:38.77,0:01:42.84,中文对白,,0,0,52,,来探索西班牙之魂如何铸就
+Dialogue: 0,0:01:44.00,0:01:46.46,中文对白,,0,0,52,,从异教  伊斯兰教到天主教
+Dialogue: 0,0:01:46.47,0:01:49.76,中文对白,,0,0,52,,从独裁专制到今日的民主制度
+Dialogue: 0,0:01:50.40,0:01:53.93,中文对白,,0,0,52,,我将讲述从大西洋到地中海的故事
+Dialogue: 0,0:01:54.79,0:01:57.28,中文对白,,0,0,52,,我将从南方开始
+Dialogue: 0,0:01:58.40,0:02:01.87,中文对白,,0,0,52,,加的斯  西班牙现存最古老的城市
+Dialogue: 0,0:02:02.14,0:02:05.36,中文对白,,0,0,52,,塞维利亚  安达卢西亚的天主教首府
+Dialogue: 0,0:02:06.50,0:02:09.16,中文对白,,0,0,52,,直布罗陀  西班牙的门户
+Dialogue: 0,0:02:10.10,0:02:13.56,中文对白,,0,0,52,,科尔多瓦  伊斯兰哈里发的首都
+Dialogue: 0,0:02:13.70,0:02:17.17,中文对白,,0,0,52,,还有格拉纳达  阿尔罕布拉宫所在
+Dialogue: 0,0:02:17.27,0:02:20.68,中文对白,,0,0,52,,我将遍访 偏僻之暗角  未知之伕事
+Dialogue: 0,0:02:20.72,0:02:24.98,中文对白,,0,0,52,,隐没之秘闻  立国之伟人
+Dialogue: 0,0:02:25.67,0:02:28.88,中文对白,,0,0,52,,几个世纪来  这里都是欧洲的狂野西部
+Dialogue: 0,0:02:28.91,0:02:32.45,中文对白,,0,0,52,,哈里发和国王们于此建起宫殿与城市
+Dialogue: 0,0:02:32.49,0:02:35.05,中文对白,,0,0,52,,他们也于此征战湮灭
+Dialogue: 0,0:02:35.08,0:02:37.68,中文对白,,0,0,52,,在这里  一位妃妾变成一代女王
+Dialogue: 0,0:02:37.72,0:02:42.29,中文对白,,0,0,52,,在这里  一位赤裸的公主引发了一场决定性入侵
+Dialogue: 0,0:02:43.68,0:02:49.75,中文对白,,0,0,52,,鲜血与黄金  美丽和死亡  迫害与宽容
+Dialogue: 0,0:02:49.78,0:02:53.34,中文对白,,0,0,52,,这便是铸就西班牙的故事
+Dialogue: 0,0:03:11.13,0:03:14.98,中文对白,,0,0,52,,加的斯的大西洋城是我的第一站
+Dialogue: 0,0:03:17.66,0:03:19.27,中文对白,,0,0,52,,2000多年前
+Dialogue: 0,0:03:19.31,0:03:22.83,中文对白,,0,0,52,,这里是迦太基的腓尼基人殖民地
+Dialogue: 0,0:03:22.87,0:03:24.44,中文对白,,0,0,52,,隶属于现在的突尼斯
+Dialogue: 0,0:03:26.65,0:03:32.99,中文对白,,0,0,52,,公元前237年  史上赫赫有名的一位人物被带来了这里
+Dialogue: 0,0:03:33.49,0:03:38.20,中文对白,,0,0,52,,仅有10岁的汉尼拔来到了加的斯
+Dialogue: 0,0:03:38.23,0:03:43.21,中文对白,,0,0,52,,其父 哈米尔卡 将从这里开始征服西班牙大部
+Dialogue: 0,0:03:43.25,0:03:46.05,中文对白,,0,0,52,,建起一个新的迦太基帝国
+Dialogue: 0,0:03:47.56,0:03:50.22,中文对白,,0,0,52,,现在西班牙成了战场
+Dialogue: 0,0:03:50.26,0:03:52.31,中文对白,,0,0,52,,献演了一场精彩的
+Dialogue: 0,0:03:52.34,0:03:55.38,中文对白,,0,0,52,,古代帝国攻防战
+Dialogue: 0,0:03:56.04,0:03:58.82,中文对白,,0,0,52,,腓尼基人从提尔城而来
+Dialogue: 0,0:03:56.04,0:03:58.82,中文对白,,0,0,52,,{\an8}（又译苏尔、泰尔、提洛、推罗）
+Dialogue: 0,0:03:58.84,0:04:01.05,中文对白,,0,0,52,,他们遍布地中海沿岸
+Dialogue: 0,0:04:01.08,0:04:04.20,中文对白,,0,0,52,,他们所建的最大城市便是迦太基
+Dialogue: 0,0:04:04.24,0:04:06.96,中文对白,,0,0,52,,迦太基人开始建起了一个帝国
+Dialogue: 0,0:04:06.98,0:04:09.00,中文对白,,0,0,52,,这就给他们带来了跟地中海
+Dialogue: 0,0:04:09.03,0:04:11.68,中文对白,,0,0,52,,另一股新兴势力的冲突
+Dialogue: 0,0:04:11.69,0:04:12.74,中文对白,,0,0,52,,罗马
+Dialogue: 0,0:04:20.60,0:04:23.92,中文对白,,0,0,52,,汉尼拔降生时  其家族已陷入战争
+Dialogue: 0,0:04:23.94,0:04:26.85,中文对白,,0,0,52,,家族姓氏  巴卡  即有迅雷之意
+Dialogue: 0,0:04:26.88,0:04:30.85,中文对白,,0,0,52,,当父亲要征服西班牙以对抗罗马时
+Dialogue: 0,0:04:30.88,0:04:32.88,中文对白,,0,0,52,,汉尼拔便求着要跟去
+Dialogue: 0,0:04:33.29,0:04:35.97,中文对白,,0,0,52,,他19岁时  父亲离世了
+Dialogue: 0,0:04:36.00,0:04:39.82,中文对白,,0,0,52,,渐渐地  他将子承父业  执掌帝国
+Dialogue: 0,0:04:41.27,0:04:44.50,中文对白,,0,0,52,,接下来的战争需要众神的祝福
+Dialogue: 0,0:04:44.52,0:04:45.91,中文对白,,0,0,52,,而我正要去会见其中一神
+Dialogue: 0,0:04:50.30,0:04:52.42,中文对白,,0,0,52,,想想便很奇妙
+Dialogue: 0,0:04:52.45,0:04:54.11,中文对白,,0,0,52,,此时我们所看着的这个
+Dialogue: 0,0:04:54.62,0:04:59.18,中文对白,,0,0,52,,便是汉尼拔曾凝视过的同一尊雕像
+Dialogue: 0,0:05:03.67,0:05:07.07,中文对白,,0,0,52,,加的斯的这间博物馆藏有一些
+Dialogue: 0,0:05:07.08,0:05:10.79,中文对白,,0,0,52,,来自汉尼拔时期的无价珍宝
+Dialogue: 0,0:05:10.83,0:05:14.44,中文对白,,0,0,52,,这座神祗美刻尔的雕像
+Dialogue: 0,0:05:14.47,0:05:18.08,中文对白,,0,0,52,,曾矗立于圣彼得里岛
+Dialogue: 0,0:05:24.45,0:05:26.13,中文对白,,0,0,52,,而我正要去那儿
+Dialogue: 0,0:05:26.16,0:05:28.57,中文对白,,0,0,52,,从加的斯往南走几英里
+Dialogue: 0,0:05:28.60,0:05:30.14,中文对白,,0,0,52,,就像汉尼拔做过的一样
+Dialogue: 0,0:05:34.70,0:05:38.49,中文对白,,0,0,52,,公元前218年  29岁的汉尼拔
+Dialogue: 0,0:05:38.51,0:05:40.87,中文对白,,0,0,52,,来到此地拜访美刻尔神庙
+Dialogue: 0,0:05:41.41,0:05:44.14,中文对白,,0,0,52,,他的壮志伟业
+Dialogue: 0,0:05:44.17,0:05:46.70,中文对白,,0,0,52,,需要美刻尔的祝福
+Dialogue: 0,0:05:52.82,0:05:55.60,中文对白,,0,0,52,,美刻尔是提尔城的守护神
+Dialogue: 0,0:05:55.62,0:05:58.20,中文对白,,0,0,52,,提尔则是迦太基人的母城
+Dialogue: 0,0:05:58.21,0:06:02.21,中文对白,,0,0,52,,美刻尔在犹太圣经中被称作巴力神
+Dialogue: 0,0:06:02.25,0:06:06.02,中文对白,,0,0,52,,传说美刻尔对妻子不忠
+Dialogue: 0,0:06:06.06,0:06:08.36,中文对白,,0,0,52,,于是被妻子先阉后杀
+Dialogue: 0,0:06:08.39,0:06:12.00,中文对白,,0,0,52,,然而他却奇迹般地起死回生
+Dialogue: 0,0:06:12.04,0:06:18.64,中文对白,,0,0,52,,于是他也成为了精气活力  阳刚力量的象征
+Dialogue: 0,0:06:21.08,0:06:24.90,中文对白,,0,0,52,,这样的神庙群是古代的生活中心
+Dialogue: 0,0:06:26.49,0:06:28.10,中文对白,,0,0,52,,活人祭祀就在这里举行
+Dialogue: 0,0:06:28.13,0:06:30.23,中文对白,,0,0,52,,祭司将公牛割喉
+Dialogue: 0,0:06:30.27,0:06:33.94,中文对白,,0,0,52,,并把血泼向裸体的祈愿者
+Dialogue: 0,0:06:35.40,0:06:38.87,中文对白,,0,0,52,,你可以看到  这里只有一堆海鸥
+Dialogue: 0,0:06:38.89,0:06:41.89,中文对白,,0,0,52,,以及18世纪的荒废堡垒
+Dialogue: 0,0:06:42.43,0:06:45.87,中文对白,,0,0,52,,但这里曾是整个古代世界
+Dialogue: 0,0:06:45.90,0:06:49.46,中文对白,,0,0,52,,最为富饶  宏伟和著名的
+Dialogue: 0,0:06:49.48,0:06:52.17,中文对白,,0,0,52,,神庙圣地
+Dialogue: 0,0:06:56.93,0:06:58.66,中文对白,,0,0,52,,这是个关键时刻
+Dialogue: 0,0:06:58.69,0:07:00.89,中文对白,,0,0,52,,迦太基夺下西班牙威胁到了
+Dialogue: 0,0:07:00.91,0:07:03.32,中文对白,,0,0,52,,罗马对地中海的掌控
+Dialogue: 0,0:07:03.33,0:07:06.82,中文对白,,0,0,52,,罗马与迦太基终有一战
+Dialogue: 0,0:07:07.35,0:07:12.33,中文对白,,0,0,52,,在圣彼得里岛  汉尼拔请示美刻尔神谕
+Dialogue: 0,0:07:13.99,0:07:17.36,中文对白,,0,0,52,,汉尼拔发誓要灭掉罗马
+Dialogue: 0,0:07:17.39,0:07:24.21,中文对白,,0,0,52,,他说  我发誓要用烈火和钢铁终结罗马国运
+Dialogue: 0,0:07:27.81,0:07:30.39,中文对白,,0,0,52,,未等罗马来袭
+Dialogue: 0,0:07:30.42,0:07:33.13,中文对白,,0,0,52,,汉尼拔先发制人
+Dialogue: 0,0:07:35.66,0:07:40.26,中文对白,,0,0,52,,这将是古代最大胆的军事行动之一
+Dialogue: 0,0:07:40.28,0:07:42.35,中文对白,,0,0,52,,倚靠着西班牙和非洲
+Dialogue: 0,0:07:42.38,0:07:44.62,中文对白,,0,0,52,,汉尼拔将进攻意大利
+Dialogue: 0,0:07:48.74,0:07:53.49,中文对白,,0,0,52,,在加的斯这里  汉尼拔集结了6万大军
+Dialogue: 0,0:07:53.53,0:07:57.27,中文对白,,0,0,52,,其中就有西班牙长枪兵和非洲骑兵
+Dialogue: 0,0:07:57.31,0:08:02.78,中文对白,,0,0,52,,以及终极杀器  40头战象
+Dialogue: 0,0:08:05.51,0:08:09.15,中文对白,,0,0,52,,公元前217年  汉尼拔指挥这只大军
+Dialogue: 0,0:08:09.18,0:08:12.04,中文对白,,0,0,52,,从西班牙出发  途经法国南部
+Dialogue: 0,0:08:12.06,0:08:15.21,中文对白,,0,0,52,,带着大象翻过阿尔卑斯山
+Dialogue: 0,0:08:15.25,0:08:17.76,中文对白,,0,0,52,,驱入意大利
+Dialogue: 0,0:08:19.01,0:08:20.61,中文对白,,0,0,52,,他要直取罗马
+Dialogue: 0,0:08:26.02,0:08:30.19,中文对白,,0,0,52,,汉尼拔的行动本可使罗马濒于溃败
+Dialogue: 0,0:08:30.22,0:08:34.68,中文对白,,0,0,52,,战胜罗马将改变整个欧洲历史
+Dialogue: 0,0:08:36.34,0:08:39.01,中文对白,,0,0,52,,我们都知道将来的罗马帝国
+Dialogue: 0,0:08:39.05,0:08:40.68,中文对白,,0,0,52,,多么地所向披靡
+Dialogue: 0,0:08:40.71,0:08:44.98,中文对白,,0,0,52,,汉尼拔的冒险不算荒谬的话  也可谓鲁莽了
+Dialogue: 0,0:08:45.01,0:08:46.94,中文对白,,0,0,52,,但汉尼拔成长于
+Dialogue: 0,0:08:46.97,0:08:49.06,中文对白,,0,0,52,,地中海的希腊化时代
+Dialogue: 0,0:08:49.08,0:08:52.31,中文对白,,0,0,52,,受到亚历山大大帝事迹的鼓舞
+Dialogue: 0,0:08:52.35,0:08:55.52,中文对白,,0,0,52,,与亚历山大的东征相比
+Dialogue: 0,0:08:55.57,0:08:59.28,中文对白,,0,0,52,,这场入侵意大利可能有点小巫见大巫了
+Dialogue: 0,0:09:03.22,0:09:05.73,中文对白,,0,0,52,,但它却是罗马的最大危机
+Dialogue: 0,0:09:05.76,0:09:08.32,中文对白,,0,0,52,,汉尼拔连连击败罗马军队
+Dialogue: 0,0:09:08.34,0:09:10.48,中文对白,,0,0,52,,并在坎尼伏击了他们
+Dialogue: 0,0:09:10.51,0:09:15.38,中文对白,,0,0,52,,然而即便汉尼拔不断逼近  罗马仍未陷落
+Dialogue: 0,0:09:15.42,0:09:18.86,中文对白,,0,0,52,,罗马人祈祷完毕  继续集结
+Dialogue: 0,0:09:19.10,0:09:23.37,中文对白,,0,0,52,,罗马政治家 老加图 一再宣称
+Dialogue: 0,0:09:23.40,0:09:26.02,中文对白,,0,0,52,,迦太基必须被消灭
+Dialogue: 0,0:09:26.19,0:09:29.33,中文对白,,0,0,52,,即 迦太基必须被消灭
+Dialogue: 0,0:09:29.60,0:09:32.60,中文对白,,0,0,52,,而现在  他们发现了一位
+Dialogue: 0,0:09:32.63,0:09:35.72,中文对白,,0,0,52,,谋略不逊于汉尼拔的将军
+Dialogue: 0,0:09:35.83,0:09:38.85,中文对白,,0,0,52,,他将把战争带到汉尼拔的西班牙
+Dialogue: 0,0:09:38.89,0:09:42.60,中文对白,,0,0,52,,以回敬汉尼拔把战火烧向罗马
+Dialogue: 0,0:09:42.63,0:09:46.52,中文对白,,0,0,52,,罗马人的厉害就在这时体现出来了
+Dialogue: 0,0:09:54.26,0:09:58.50,中文对白,,0,0,52,,在安达卢西亚中心的塞维利亚往北几英里处
+Dialogue: 0,0:09:58.63,0:10:02.94,中文对白,,0,0,52,,血海深仇的迦太基和罗马将一决胜负
+Dialogue: 0,0:10:06.43,0:10:11.02,中文对白,,0,0,52,,公元前206年  双方对峙于此
+Dialogue: 0,0:10:11.54,0:10:15.39,中文对白,,0,0,52,,胜者将会继续统治欧洲700年
+Dialogue: 0,0:10:16.59,0:10:20.42,中文对白,,0,0,52,,罗马的指挥官是普布里乌斯·科涅利乌斯·西庇阿
+Dialogue: 0,0:10:22.36,0:10:26.64,中文对白,,0,0,52,,据说在罗马只有西庇阿敢于
+Dialogue: 0,0:10:26.67,0:10:29.89,中文对白,,0,0,52,,挑战迦太基帝国
+Dialogue: 0,0:10:29.93,0:10:33.77,中文对白,,0,0,52,,他的父亲和叔叔都死于汉尼拔家族
+Dialogue: 0,0:10:33.81,0:10:35.37,中文对白,,0,0,52,,挑起的战端中
+Dialogue: 0,0:10:35.40,0:10:37.85,中文对白,,0,0,52,,所以这是西庇阿的私仇
+Dialogue: 0,0:10:40.55,0:10:43.56,中文对白,,0,0,52,,正如汉尼拔发誓要灭掉罗马一样
+Dialogue: 0,0:10:43.60,0:10:46.07,中文对白,,0,0,52,,西庇阿也发誓要摧毁迦太基
+Dialogue: 0,0:10:46.11,0:10:48.87,中文对白,,0,0,52,,而他的计划既大胆又简单
+Dialogue: 0,0:10:48.90,0:10:52.71,中文对白,,0,0,52,,当卓越的汉尼拔在意大利征战十多年时
+Dialogue: 0,0:10:52.74,0:10:57.23,中文对白,,0,0,52,,守卫西班牙的是与其不和的弟弟
+Dialogue: 0,0:10:58.45,0:11:01.94,中文对白,,0,0,52,,西庇阿带着小股队伍溜进西班牙
+Dialogue: 0,0:11:05.48,0:11:09.02,中文对白,,0,0,52,,军事史学家索尔·大卫将会告诉我
+Dialogue: 0,0:11:09.06,0:11:11.45,中文对白,,0,0,52,,西庇阿是如何在伊里帕这里
+Dialogue: 0,0:11:11.46,0:11:13.19,中文对白,,0,0,52,,迎战迦太基人的
+Dialogue: 0,0:11:13.52,0:11:16.24,中文对白,,0,0,52,,我们所处的正是曾经的战场
+Dialogue: 0,0:11:16.28,0:11:17.96,中文对白,,0,0,52,,跟我说说那天发生了什么
+Dialogue: 0,0:11:18.33,0:11:19.64,中文对白,,0,0,52,,先让你有个数字的概念
+Dialogue: 0,0:11:19.68,0:11:23.22,中文对白,,0,0,52,,罗马人约有5万人  迦太基人约有7.5万人
+Dialogue: 0,0:11:23.24,0:11:24.90,中文对白,,0,0,52,,所以他们在数量上严重不敌
+Dialogue: 0,0:11:25.10,0:11:27.34,中文对白,,0,0,52,,离真正开战还有两三天时
+Dialogue: 0,0:11:27.37,0:11:29.83,中文对白,,0,0,52,,西庇阿用很传统的阵法来布兵
+Dialogue: 0,0:11:29.86,0:11:31.76,中文对白,,0,0,52,,最强的部队位于中间
+Dialogue: 0,0:11:31.80,0:11:34.18,中文对白,,0,0,52,,而罗马和意大利兵团  以及盟军
+Dialogue: 0,0:11:34.18,0:11:36.28,中文对白,,0,0,52,,他都不能深信  故放之侧翼
+Dialogue: 0,0:11:36.38,0:11:39.20,中文对白,,0,0,52,,但到了开战那天  他将其完全变了个样
+Dialogue: 0,0:11:39.23,0:11:41.64,中文对白,,0,0,52,,他一大早就命令部队行动
+Dialogue: 0,0:11:41.67,0:11:43.70,中文对白,,0,0,52,,在迦太基人还没反应过来前
+Dialogue: 0,0:11:43.73,0:11:45.68,中文对白,,0,0,52,,他就让部队就位了
+Dialogue: 0,0:11:45.71,0:11:47.34,中文对白,,0,0,52,,他改变了先前的阵型
+Dialogue: 0,0:11:47.34,0:11:49.83,中文对白,,0,0,52,,好让精英部队变到侧翼去
+Dialogue: 0,0:11:50.14,0:11:52.41,中文对白,,0,0,52,,这就使得他的推进方式非常独特
+Dialogue: 0,0:11:52.44,0:11:55.51,中文对白,,0,0,52,,中间下凹  两边则是他最精锐的部队
+Dialogue: 0,0:11:55.55,0:11:58.05,中文对白,,0,0,52,,关于这场战斗有很详细的记叙
+Dialogue: 0,0:11:58.06,0:12:00.12,中文对白,,0,0,52,,简单来说
+Dialogue: 0,0:12:00.13,0:12:02.91,中文对白,,0,0,52,,就是迦太基最强的部队
+Dialogue: 0,0:12:02.95,0:12:06.35,中文对白,,0,0,52,,直到战斗末期才加入战斗
+Dialogue: 0,0:12:06.47,0:12:08.05,中文对白,,0,0,52,,那么那些大象呢
+Dialogue: 0,0:12:08.08,0:12:10.77,中文对白,,0,0,52,,迦太基人的大象有什么表现吗
+Dialogue: 0,0:12:10.80,0:12:14.09,中文对白,,0,0,52,,你可以想象一下  战斗开始之后
+Dialogue: 0,0:12:14.13,0:12:16.24,中文对白,,0,0,52,,大象就分不清敌友了
+Dialogue: 0,0:12:16.26,0:12:18.34,中文对白,,0,0,52,,虽然还是有人在驾驶它们
+Dialogue: 0,0:12:18.34,0:12:19.58,中文对白,,0,0,52,,但其他人就都是无差别的
+Dialogue: 0,0:12:19.62,0:12:21.28,中文对白,,0,0,52,,只要你挡在了战象的面前
+Dialogue: 0,0:12:21.31,0:12:24.43,中文对白,,0,0,52,,要是那头象刚好还被飞来的枪矛给刺了几下
+Dialogue: 0,0:12:24.46,0:12:25.84,中文对白,,0,0,52,,那它就会到处碾压
+Dialogue: 0,0:12:25.87,0:12:28.53,中文对白,,0,0,52,,一只4吨重的动物踩到你
+Dialogue: 0,0:12:28.56,0:12:31.08,中文对白,,0,0,52,,你就成了一堆黏糊糊的肉酱了
+Dialogue: 0,0:12:31.12,0:12:33.86,中文对白,,0,0,52,,所以迦太基人使用战象
+Dialogue: 0,0:12:33.90,0:12:36.58,中文对白,,0,0,52,,更多的只是弄巧成拙
+Dialogue: 0,0:12:43.64,0:12:45.94,中文对白,,0,0,52,,西庇阿取得了胜利
+Dialogue: 0,0:12:45.98,0:12:48.38,中文对白,,0,0,52,,西班牙成了欧洲的一个省
+Dialogue: 0,0:12:48.42,0:12:49.59,中文对白,,0,0,52,,而非隶属非洲
+Dialogue: 0,0:12:49.60,0:12:51.65,中文对白,,0,0,52,,它属于罗马  而非迦太基
+Dialogue: 0,0:12:54.55,0:12:57.17,中文对白,,0,0,52,,西庇阿在战场旁边建起了
+Dialogue: 0,0:12:57.21,0:12:58.88,中文对白,,0,0,52,,这座意大利卡城
+Dialogue: 0,0:12:58.95,0:13:01.34,中文对白,,0,0,52,,以安置战胜的退伍老兵
+Dialogue: 0,0:13:03.16,0:13:05.89,中文对白,,0,0,52,,控制了半岛让西庇阿
+Dialogue: 0,0:13:05.91,0:13:08.61,中文对白,,0,0,52,,有了跳板去攻击北非
+Dialogue: 0,0:13:11.94,0:13:14.78,中文对白,,0,0,52,,意大利卡的这幅精美马赛克
+Dialogue: 0,0:13:14.81,0:13:16.50,中文对白,,0,0,52,,讲述的就是西庇阿
+Dialogue: 0,0:13:16.52,0:13:19.32,中文对白,,0,0,52,,对迦太基的战争
+Dialogue: 0,0:13:20.32,0:13:25.31,中文对白,,0,0,52,,前204年  西庇阿渡海前往北非攻打迦太基
+Dialogue: 0,0:13:25.33,0:13:26.38,中文对白,,0,0,52,,随着西庇阿来袭
+Dialogue: 0,0:13:26.41,0:13:29.62,中文对白,,0,0,52,,迦太基人把汉尼拔从意大利召回
+Dialogue: 0,0:13:29.74,0:13:32.63,中文对白,,0,0,52,,他赶回来后  还是被西庇阿打败了
+Dialogue: 0,0:13:32.67,0:13:33.97,中文对白,,0,0,52,,迦太基陷落
+Dialogue: 0,0:13:34.01,0:13:36.76,中文对白,,0,0,52,,西庇阿赢得了一个称号
+Dialogue: 0,0:13:36.80,0:13:38.29,中文对白,,0,0,52,,非洲征服者
+Dialogue: 0,0:13:38.32,0:13:40.73,中文对白,,0,0,52,,但他的自傲使他树敌众多
+Dialogue: 0,0:13:40.76,0:13:43.90,中文对白,,0,0,52,,他被起诉并流放回自己的庄园
+Dialogue: 0,0:13:45.24,0:13:48.08,中文对白,,0,0,52,,而汉尼拔则流亡到东方
+Dialogue: 0,0:13:48.09,0:13:52.33,中文对白,,0,0,52,,罗马人一直追捕着这一头号大敌
+Dialogue: 0,0:13:52.55,0:13:55.33,中文对白,,0,0,52,,最后  他自杀身亡了
+Dialogue: 0,0:13:55.38,0:13:59.58,中文对白,,0,0,52,,而迦太基最终也不复存在
+Dialogue: 0,0:14:01.23,0:14:04.77,中文对白,,0,0,52,,现在轮到罗马来殖民西班牙了
+Dialogue: 0,0:14:07.90,0:14:11.55,中文对白,,0,0,52,,罗马人喜爱伊伯利亚  罗马治下的西班牙
+Dialogue: 0,0:14:11.58,0:14:15.19,中文对白,,0,0,52,,他们发现这里比意大利还要意大利
+Dialogue: 0,0:14:15.22,0:14:20.28,中文对白,,0,0,52,,这里生活美好  鱼酱 橄榄油和葡萄酒
+Dialogue: 0,0:14:20.32,0:14:22.78,中文对白,,0,0,52,,利润丰厚
+Dialogue: 0,0:14:22.93,0:14:24.78,中文对白,,0,0,52,,公元98年
+Dialogue: 0,0:14:24.81,0:14:29.67,中文对白,,0,0,52,,他们选了个意大利卡的将军来做罗马皇帝
+Dialogue: 0,0:14:29.71,0:14:31.19,中文对白,,0,0,52,,他就是 图拉真
+Dialogue: 0,0:14:31.29,0:14:35.36,中文对白,,0,0,52,,他德才兼备  是个受敬仰的战士
+Dialogue: 0,0:14:35.40,0:14:37.72,中文对白,,0,0,52,,也是个杰出的统治者
+Dialogue: 0,0:14:37.75,0:14:40.35,中文对白,,0,0,52,,他被授予 最优秀者 的称号
+Dialogue: 0,0:14:40.36,0:14:42.16,中文对白,,0,0,52,,可谓实至名归
+Dialogue: 0,0:14:42.19,0:14:45.00,中文对白,,0,0,52,,他的继任者 哈德良
+Dialogue: 0,0:14:45.03,0:14:46.76,中文对白,,0,0,52,,也出自意大利卡这儿
+Dialogue: 0,0:14:46.78,0:14:48.91,中文对白,,0,0,52,,他可能是罗马所有皇帝中
+Dialogue: 0,0:14:48.95,0:14:51.32,中文对白,,0,0,52,,成就最为非凡的
+Dialogue: 0,0:14:51.34,0:14:53.20,中文对白,,0,0,52,,他所做的一切都妥善得当
+Dialogue: 0,0:14:53.24,0:14:55.85,中文对白,,0,0,52,,他在罗马建造了万神殿
+Dialogue: 0,0:14:55.88,0:14:59.35,中文对白,,0,0,52,,他也对意大利卡贡献巨大
+Dialogue: 0,0:15:03.87,0:15:07.30,中文对白,,0,0,52,,马可·奥勒留  哲学家皇帝
+Dialogue: 0,0:15:07.33,0:15:10.89,中文对白,,0,0,52,,他也出自西班牙裔的罗马家庭
+Dialogue: 0,0:15:10.93,0:15:12.43,中文对白,,0,0,52,,这挺讽刺的是吧
+Dialogue: 0,0:15:12.46,0:15:14.90,中文对白,,0,0,52,,帝国顶峰时期的三位
+Dialogue: 0,0:15:15.02,0:15:17.27,中文对白,,0,0,52,,最伟大的罗马皇帝
+Dialogue: 0,0:15:17.38,0:15:19.42,中文对白,,0,0,52,,都来自罗马治下的西班牙
+Dialogue: 0,0:15:22.51,0:15:27.03,中文对白,,0,0,52,,伊伯利亚成了帝国的粮仓和酒庄
+Dialogue: 0,0:15:27.06,0:15:31.22,中文对白,,0,0,52,,产出着罗马人的生活原料和美味佳肴
+Dialogue: 0,0:15:35.47,0:15:39.01,中文对白,,0,0,52,,畅销地中海沿岸的西班牙橄榄油和葡萄酒
+Dialogue: 0,0:15:39.03,0:15:42.27,中文对白,,0,0,52,,就装在这种双耳土罐里
+Dialogue: 0,0:15:42.55,0:15:43.92,中文对白,,0,0,52,,但有个问题是
+Dialogue: 0,0:15:43.99,0:15:46.48,中文对白,,0,0,52,,迦太基人和后来的
+Dialogue: 0,0:15:46.50,0:15:48.35,中文对白,,0,0,52,,罗马人都解决不了的
+Dialogue: 0,0:15:48.43,0:15:50.43,中文对白,,0,0,52,,这种双耳土罐只能一次性使用
+Dialogue: 0,0:15:50.43,0:15:52.92,中文对白,,0,0,52,,然后它就会受污染变质
+Dialogue: 0,0:15:53.23,0:15:55.88,中文对白,,0,0,52,,在罗马伊伯利亚的巅峰期
+Dialogue: 0,0:15:55.91,0:15:58.56,中文对白,,0,0,52,,许多这种罐子出口到了罗马
+Dialogue: 0,0:15:58.58,0:16:00.81,中文对白,,0,0,52,,共有5400万之多
+Dialogue: 0,0:16:01.02,0:16:03.24,中文对白,,0,0,52,,罐子的残骸就堆积起来
+Dialogue: 0,0:16:03.25,0:16:05.39,中文对白,,0,0,52,,最终堆成了一座山
+Dialogue: 0,0:16:05.46,0:16:09.40,中文对白,,0,0,52,,它便是今天的泰斯塔西奥山
+Dialogue: 0,0:16:10.35,0:16:14.06,中文对白,,0,0,52,,从西班牙运到罗马的双耳土罐
+Dialogue: 0,0:16:14.08,0:16:15.55,中文对白,,0,0,52,,被砸成了碎片
+Dialogue: 0,0:16:15.59,0:16:17.37,中文对白,,0,0,52,,再撒上石灰
+Dialogue: 0,0:16:17.40,0:16:20.38,中文对白,,0,0,52,,来中和掉橄榄油的酸臭味
+Dialogue: 0,0:16:27.95,0:16:32.29,中文对白,,0,0,52,,意大利卡的罗马生活中心便是露天剧场
+Dialogue: 0,0:16:32.32,0:16:34.62,中文对白,,0,0,52,,其中一座最大且保存最完好的
+Dialogue: 0,0:16:34.64,0:16:36.39,中文对白,,0,0,52,,仅次于罗马斗兽场
+Dialogue: 0,0:16:37.71,0:16:40.37,中文对白,,0,0,52,,它可以容纳2.5万人
+Dialogue: 0,0:16:43.01,0:16:44.67,中文对白,,0,0,52,,公元50年前后
+Dialogue: 0,0:16:44.71,0:16:47.66,中文对白,,0,0,52,,这座竞技场因一种运动而成为焦点
+Dialogue: 0,0:16:47.67,0:16:50.60,中文对白,,0,0,52,,这一运动随后成为了一个国家的象征
+Dialogue: 0,0:16:52.38,0:16:54.63,中文对白,,0,0,52,,帝国有段反复无常的时期
+Dialogue: 0,0:16:54.67,0:16:56.94,中文对白,,0,0,52,,口吃皇帝 克劳狄乌斯
+Dialogue: 0,0:16:56.96,0:17:00.62,中文对白,,0,0,52,,禁止了西班牙的所有角斗
+Dialogue: 0,0:17:00.63,0:17:04.75,中文对白,,0,0,52,,代之以奇异的野兽搏斗
+Dialogue: 0,0:17:04.75,0:17:10.17,中文对白,,0,0,52,,狮子老虎都被关在底下这里
+Dialogue: 0,0:17:10.19,0:17:13.31,中文对白,,0,0,52,,其中还有当地的西班牙公牛
+Dialogue: 0,0:17:13.31,0:17:16.13,中文对白,,0,0,52,,它们被送来露天竞技场
+Dialogue: 0,0:17:16.16,0:17:20.30,中文对白,,0,0,52,,被残忍宰杀以取悦观众
+Dialogue: 0,0:17:20.33,0:17:23.38,中文对白,,0,0,52,,这便是西班牙斗牛的开端
+Dialogue: 0,0:17:34.79,0:17:38.53,中文对白,,0,0,52,,罗马传统的神往往糅杂了
+Dialogue: 0,0:17:38.54,0:17:41.35,中文对白,,0,0,52,,外来的流行神
+Dialogue: 0,0:17:41.35,0:17:44.71,中文对白,,0,0,52,,一种血腥的生殖崇拜
+Dialogue: 0,0:17:44.72,0:17:49.20,中文对白,,0,0,52,,将迦太基的过往与西班牙的未来联系起来
+Dialogue: 0,0:17:56.83,0:18:00.29,中文对白,,0,0,52,,阿提斯  这位俊秀的牧羊少年
+Dialogue: 0,0:18:00.31,0:18:03.43,中文对白,,0,0,52,,联起了早先的美刻尔的故事
+Dialogue: 0,0:18:03.51,0:18:07.51,中文对白,,0,0,52,,他也被心生妒意的爱人所阉
+Dialogue: 0,0:18:07.51,0:18:11.95,中文对白,,0,0,52,,也有说是他自行阉割  流血致死
+Dialogue: 0,0:18:11.97,0:18:15.39,中文对白,,0,0,52,,但他却惊人地死而复生
+Dialogue: 0,0:18:15.39,0:18:20.69,中文对白,,0,0,52,,于是狂热分子视其为生殖力的终极象征
+Dialogue: 0,0:18:20.71,0:18:24.79,中文对白,,0,0,52,,他们会腾空跳起  血洒一身
+Dialogue: 0,0:18:24.81,0:18:27.71,中文对白,,0,0,52,,鞭打自己  撕咬对方
+Dialogue: 0,0:18:27.76,0:18:30.81,中文对白,,0,0,52,,最终的献身方式
+Dialogue: 0,0:18:30.84,0:18:33.08,中文对白,,0,0,52,,便是自行阉割
+Dialogue: 0,0:18:33.23,0:18:37.04,中文对白,,0,0,52,,据说这些传统至今仍未消亡
+Dialogue: 0,0:18:37.05,0:18:40.44,中文对白,,0,0,52,,西班牙的自虐天主教兄弟会
+Dialogue: 0,0:18:40.46,0:18:42.85,中文对白,,0,0,52,,还有这些传统
+Dialogue: 0,0:18:50.51,0:18:53.40,中文对白,,0,0,52,,哈德良  这位西班牙裔皇帝
+Dialogue: 0,0:18:53.44,0:18:55.52,中文对白,,0,0,52,,他曾美化意大利卡
+Dialogue: 0,0:18:55.55,0:18:57.79,中文对白,,0,0,52,,也曾无意间改变了西班牙
+Dialogue: 0,0:18:59.31,0:19:01.78,中文对白,,0,0,52,,公元132年
+Dialogue: 0,0:19:01.82,0:19:04.89,中文对白,,0,0,52,,他在耶路撒冷对犹太人的迫害
+Dialogue: 0,0:19:04.91,0:19:06.11,中文对白,,0,0,52,,激起了反抗
+Dialogue: 0,0:19:09.79,0:19:13.94,中文对白,,0,0,52,,哈德良急令军队去镇压叛乱
+Dialogue: 0,0:19:14.09,0:19:17.14,中文对白,,0,0,52,,但犹太人在以色列王子
+Dialogue: 0,0:19:17.16,0:19:18.58,中文对白,,0,0,52,,巴尔·科赫巴的领导下
+Dialogue: 0,0:19:18.61,0:19:21.54,中文对白,,0,0,52,,还是消灭了一些罗马军团
+Dialogue: 0,0:19:21.58,0:19:23.64,中文对白,,0,0,52,,然后才被镇压下去
+Dialogue: 0,0:19:23.76,0:19:27.39,中文对白,,0,0,52,,哈德良屠杀了50万犹太人
+Dialogue: 0,0:19:27.41,0:19:31.47,中文对白,,0,0,52,,犹太人被永久禁止进入其敬爱的耶路撒冷
+Dialogue: 0,0:19:31.47,0:19:35.42,中文对白,,0,0,52,,于是他们中的许多人来到西班牙定居
+Dialogue: 0,0:19:35.43,0:19:36.82,中文对白,,0,0,52,,形成了一个社区
+Dialogue: 0,0:19:36.86,0:19:40.67,中文对白,,0,0,52,,名为 Saffarad  希伯来语  意为西班牙
+Dialogue: 0,0:19:40.81,0:19:43.26,中文对白,,0,0,52,,这才有了塞法迪犹太人
+Dialogue: 0,0:19:43.39,0:19:44.66,中文对白,,0,0,52,,即便到了今天
+Dialogue: 0,0:19:44.76,0:19:47.48,中文对白,,0,0,52,,西班牙的犹太人也说自己是
+Dialogue: 0,0:19:47.66,0:19:51.04,中文对白,,0,0,52,,"从耶路撒冷流亡到西班牙的"
+Dialogue: 0,0:20:00.55,0:20:02.66,中文对白,,0,0,52,,解决了犹太灾难后
+Dialogue: 0,0:20:02.67,0:20:05.86,中文对白,,0,0,52,,一种新的宗教出现并迅速传播
+Dialogue: 0,0:20:05.93,0:20:09.47,中文对白,,0,0,52,,它将由内部对罗马帝国发起挑战
+Dialogue: 0,0:20:18.23,0:20:19.67,中文对白,,0,0,52,,我正离开意大利卡
+Dialogue: 0,0:20:19.68,0:20:22.38,中文对白,,0,0,52,,要往南几英里到塞维利亚
+Dialogue: 0,0:20:22.40,0:20:26.16,中文对白,,0,0,52,,我要探寻当新的基督信仰面对
+Dialogue: 0,0:20:26.18,0:20:29.37,中文对白,,0,0,52,,古老的罗马异教时都发生了什么
+Dialogue: 0,0:20:34.83,0:20:38.25,中文对白,,0,0,52,,塞维利亚现在满是天主教遗迹
+Dialogue: 0,0:20:38.27,0:20:40.30,中文对白,,0,0,52,,它曾叫做西帕里斯
+Dialogue: 0,0:20:40.31,0:20:43.84,中文对白,,0,0,52,,考古表明这曾是座典型的罗马城市
+Dialogue: 0,0:20:47.03,0:20:50.11,中文对白,,0,0,52,,这是有关 胡斯塔 和 鲁菲娜 的故事
+Dialogue: 0,0:20:50.13,0:20:53.16,中文对白,,0,0,52,,她们后来成了塞维利亚的守护神
+Dialogue: 0,0:20:53.82,0:20:56.54,中文对白,,0,0,52,,她们是虔诚的基督徒姐妹
+Dialogue: 0,0:20:56.56,0:20:59.75,中文对白,,0,0,52,,因其陶匠工作而颇受尊敬
+Dialogue: 0,0:21:03.00,0:21:04.76,中文对白,,0,0,52,,公元287年
+Dialogue: 0,0:21:04.79,0:21:07.32,中文对白,,0,0,52,,市长 迪欧基纳尔斯
+Dialogue: 0,0:21:07.33,0:21:10.59,中文对白,,0,0,52,,下令所有的陶器都要献给维纳斯
+Dialogue: 0,0:21:11.00,0:21:12.89,中文对白,,0,0,52,,这项法令几乎可以肯定是皇帝
+Dialogue: 0,0:21:12.91,0:21:15.03,中文对白,,0,0,52,,戴克里先 政策的一部分
+Dialogue: 0,0:21:15.05,0:21:17.47,中文对白,,0,0,52,,其旨在重振罗马宗教
+Dialogue: 0,0:21:18.55,0:21:21.28,中文对白,,0,0,52,,这也是对基督教的直接冒犯
+Dialogue: 0,0:21:21.99,0:21:24.29,中文对白,,0,0,52,,胡斯塔 和 鲁菲娜  坚决不从
+Dialogue: 0,0:21:25.56,0:21:30.82,中文对白,,0,0,52,,胡斯塔 和 鲁菲娜  有着塞维利亚最好的制陶厂
+Dialogue: 0,0:21:31.17,0:21:36.11,中文对白,,0,0,52,,但是这些虔诚的基督徒拒绝拿自己的陶器
+Dialogue: 0,0:21:36.11,0:21:40.91,中文对白,,0,0,52,,去在一个异教节日上献给女神维纳斯
+Dialogue: 0,0:21:41.10,0:21:42.85,中文对白,,0,0,52,,她们的陶器那么精美
+Dialogue: 0,0:21:42.88,0:21:44.32,中文对白,,0,0,52,,那么至关重要
+Dialogue: 0,0:21:44.35,0:21:46.74,中文对白,,0,0,52,,所以异教徒们愤怒了
+Dialogue: 0,0:21:46.80,0:21:48.47,中文对白,,0,0,52,,他们闯进制陶厂
+Dialogue: 0,0:21:48.47,0:21:52.57,中文对白,,0,0,52,,抢走异教节日所需要的陶器
+Dialogue: 0,0:21:53.43,0:21:56.74,中文对白,,0,0,52,,现在轮到这对姐妹愤怒了
+Dialogue: 0,0:21:56.75,0:21:59.71,中文对白,,0,0,52,,她们砸毁了一尊维纳斯的雕像
+Dialogue: 0,0:21:59.75,0:22:04.03,中文对白,,0,0,52,,现在我是非常地同情这些虔诚的年轻女士
+Dialogue: 0,0:22:04.22,0:22:09.12,中文对白,,0,0,52,,因为此举无异于是自寻死路
+Dialogue: 0,0:22:09.32,0:22:11.90,中文对白,,0,0,52,,果不其然
+Dialogue: 0,0:22:11.97,0:22:14.70,中文对白,,0,0,52,,迪欧基纳尔斯 马上逮捕了她们
+Dialogue: 0,0:22:14.75,0:22:18.83,中文对白,,0,0,52,,她们被用钩子和烈火残酷折磨
+Dialogue: 0,0:22:18.93,0:22:20.62,中文对白,,0,0,52,,在奄奄一息的时候
+Dialogue: 0,0:22:20.74,0:22:23.33,中文对白,,0,0,52,,胡斯塔被投入一口100英尺深的井
+Dialogue: 0,0:22:23.35,0:22:24.59,中文对白,,0,0,52,,然后丧生
+Dialogue: 0,0:22:24.66,0:22:26.18,中文对白,,0,0,52,,至于 鲁菲娜
+Dialogue: 0,0:22:26.27,0:22:28.55,中文对白,,0,0,52,,她则要面对狮子
+Dialogue: 0,0:22:30.90,0:22:34.84,中文对白,,0,0,52,,当狮子们被放出来时
+Dialogue: 0,0:22:34.94,0:22:38.07,中文对白,,0,0,52,,众人期待得大叫
+Dialogue: 0,0:22:38.87,0:22:40.46,中文对白,,0,0,52,,但狮子们没有吃她
+Dialogue: 0,0:22:40.48,0:22:42.36,中文对白,,0,0,52,,而是舔了舔她的伤口
+Dialogue: 0,0:22:43.07,0:22:45.56,中文对白,,0,0,52,,基督徒们认为这是个奇迹
+Dialogue: 0,0:22:45.59,0:22:48.17,中文对白,,0,0,52,,但迪欧基纳尔斯不为所动
+Dialogue: 0,0:22:48.18,0:22:50.78,中文对白,,0,0,52,,他把她勒死  然后斩首
+Dialogue: 0,0:22:50.81,0:22:52.32,中文对白,,0,0,52,,最后烧毁
+Dialogue: 0,0:22:52.35,0:22:55.96,中文对白,,0,0,52,,但基督徒们有了他们的首位殉道者
+Dialogue: 0,0:23:02.63,0:23:04.18,中文对白,,0,0,52,,在30年内
+Dialogue: 0,0:23:04.21,0:23:07.91,中文对白,,0,0,52,,罗马帝国便改信基督教了
+Dialogue: 0,0:23:07.92,0:23:09.58,中文对白,,0,0,52,,然而帝国正在崩溃中
+Dialogue: 0,0:23:09.60,0:23:12.83,中文对白,,0,0,52,,公元476年  罗马灭亡
+Dialogue: 0,0:23:13.14,0:23:17.98,中文对白,,0,0,52,,西班牙遭到了所谓蛮族部落的入侵和摆布
+Dialogue: 0,0:23:18.02,0:23:19.65,中文对白,,0,0,52,,首先来的是汪达尔人
+Dialogue: 0,0:23:19.68,0:23:22.19,中文对白,,0,0,52,,他们很快就丢失了这块半岛
+Dialogue: 0,0:23:22.21,0:23:25.39,中文对白,,0,0,52,,他们留下的就只有他们的称呼
+Dialogue: 0,0:23:26.61,0:23:29.54,中文对白,,0,0,52,,安达卢西亚  仍然是南西班牙的名称
+Dialogue: 0,0:23:29.57,0:23:31.79,中文对白,,0,0,52,,它源于阿拉伯语 安达卢斯
+Dialogue: 0,0:23:31.83,0:23:34.64,中文对白,,0,0,52,,可能意思就是  "汪达尔人的土地"
+Dialogue: 0,0:23:38.73,0:23:41.84,中文对白,,0,0,52,,接下来  拜占庭皇帝查士丁尼
+Dialogue: 0,0:23:41.87,0:23:43.89,中文对白,,0,0,52,,夺取了西班牙部分
+Dialogue: 0,0:23:43.92,0:23:48.02,中文对白,,0,0,52,,后来他的驻军被西哥特人所击败
+Dialogue: 0,0:23:51.01,0:23:54.54,中文对白,,0,0,52,,西哥特人战时凶猛  和平时富有创意
+Dialogue: 0,0:23:57.49,0:24:00.61,中文对白,,0,0,52,,西哥特人在中世纪黑暗时代
+Dialogue: 0,0:24:00.63,0:24:03.37,中文对白,,0,0,52,,通常被视作奸淫掳掠
+Dialogue: 0,0:24:03.41,0:24:05.30,中文对白,,0,0,52,,挥着斧头的人
+Dialogue: 0,0:24:05.33,0:24:07.97,中文对白,,0,0,52,,但当西哥特人在西班牙定居下来后
+Dialogue: 0,0:24:08.06,0:24:10.79,中文对白,,0,0,52,,他们中也出现了圣贤  学者
+Dialogue: 0,0:24:10.81,0:24:12.67,中文对白,,0,0,52,,以及士兵
+Dialogue: 0,0:24:12.82,0:24:15.19,中文对白,,0,0,52,,这所学校和西班牙其它许多学校一样
+Dialogue: 0,0:24:15.23,0:24:17.19,中文对白,,0,0,52,,都叫做 圣伊西多
+Dialogue: 0,0:24:17.25,0:24:19.64,中文对白,,0,0,52,,他是塞维利亚的西哥特人主教
+Dialogue: 0,0:24:19.84,0:24:23.09,中文对白,,0,0,52,,曾完善和调整了罗马法
+Dialogue: 0,0:24:23.12,0:24:27.29,中文对白,,0,0,52,,从而创建了一个团结的基督教西班牙
+Dialogue: 0,0:24:27.54,0:24:28.71,中文对白,,0,0,52,,再多往后一点儿
+Dialogue: 0,0:24:28.72,0:24:30.91,中文对白,,0,0,52,,西哥特下的西班牙成为了
+Dialogue: 0,0:24:30.92,0:24:34.24,中文对白,,0,0,52,,天主教君主制的雏形
+Dialogue: 0,0:24:36.28,0:24:38.03,中文对白,,0,0,52,,统治了两个世纪的
+Dialogue: 0,0:24:38.05,0:24:40.66,中文对白,,0,0,52,,西哥特人的王国一直到20世纪都激励着
+Dialogue: 0,0:24:40.67,0:24:42.94,中文对白,,0,0,52,,西班牙统治者们
+Dialogue: 0,0:24:45.40,0:24:49.07,中文对白,,0,0,52,,塞维利亚下游是圣玛丽亚的河港
+Dialogue: 0,0:24:49.11,0:24:53.12,中文对白,,0,0,52,,这片水域是著名的死亡之河
+Dialogue: 0,0:24:53.28,0:24:54.63,中文对白,,0,0,52,,它名副其实
+Dialogue: 0,0:24:55.56,0:24:59.91,中文对白,,0,0,52,,这条河流正是西哥特西班牙的终结之地
+Dialogue: 0,0:25:00.88,0:25:03.87,中文对白,,0,0,52,,西哥特末代国王 罗德里克 被杀于此
+Dialogue: 0,0:25:03.88,0:25:08.58,中文对白,,0,0,52,,这也改变了整个西班牙的命运
+Dialogue: 0,0:25:10.96,0:25:14.70,中文对白,,0,0,52,,西哥特人夺取了西班牙
+Dialogue: 0,0:25:14.72,0:25:16.18,中文对白,,0,0,52,,却也亲自失掉了西班牙
+Dialogue: 0,0:25:18.31,0:25:22.02,中文对白,,0,0,52,,一切都始于一名美丽的赤裸女子
+Dialogue: 0,0:25:22.55,0:25:27.42,中文对白,,0,0,52,,国王罗德里克有到弗洛林达刺探侦察的习惯
+Dialogue: 0,0:25:27.44,0:25:31.39,中文对白,,0,0,52,,国王手下的贵族朱利安的女儿正在洗澡
+Dialogue: 0,0:25:31.42,0:25:33.72,中文对白,,0,0,52,,国王奸污了她
+Dialogue: 0,0:25:33.74,0:25:37.14,中文对白,,0,0,52,,于是她的父亲朱利安起而抗之
+Dialogue: 0,0:25:37.16,0:25:40.89,中文对白,,0,0,52,,就在这里  在这条死亡之河上
+Dialogue: 0,0:25:40.92,0:25:44.09,中文对白,,0,0,52,,他遇上了罗德里克一行  并将其杀死
+Dialogue: 0,0:25:44.11,0:25:47.27,中文对白,,0,0,52,,至今多数的西哥特国王都被刺杀身亡
+Dialogue: 0,0:25:47.29,0:25:49.31,中文对白,,0,0,52,,所以这也算不得什么
+Dialogue: 0,0:25:49.34,0:25:52.61,中文对白,,0,0,52,,但重要的是他如何被杀死
+Dialogue: 0,0:25:52.64,0:25:55.53,中文对白,,0,0,52,,朱利安不仅反叛了
+Dialogue: 0,0:25:55.59,0:25:58.26,中文对白,,0,0,52,,他还朝向这个方向
+Dialogue: 0,0:25:58.28,0:26:01.56,中文对白,,0,0,52,,向海外的北非求援
+Dialogue: 0,0:26:01.79,0:26:04.26,中文对白,,0,0,52,,朱利安叫来了伊斯兰
+Dialogue: 0,0:26:10.19,0:26:12.69,中文对白,,0,0,52,,在遥远的阿拉伯沙漠中
+Dialogue: 0,0:26:12.71,0:26:16.05,中文对白,,0,0,52,,一种新的信仰  新的启示已经崛起
+Dialogue: 0,0:26:16.57,0:26:18.94,中文对白,,0,0,52,,在632年离世之时
+Dialogue: 0,0:26:18.97,0:26:24.56,中文对白,,0,0,52,,先知穆罕默德已经把阿拉伯凝聚在伊斯兰教下了
+Dialogue: 0,0:26:24.58,0:26:29.29,中文对白,,0,0,52,,接下来50年  阿拉伯军队将征服建起一片广袤帝国
+Dialogue: 0,0:26:29.32,0:26:33.18,中文对白,,0,0,52,,一路从伊朗到摩洛哥
+Dialogue: 0,0:26:33.20,0:26:36.84,中文对白,,0,0,52,,都在大马士革的统治下
+Dialogue: 0,0:26:36.85,0:26:40.46,中文对白,,0,0,52,,先知继承者是忠诚的指挥官  哈里发
+Dialogue: 0,0:26:46.80,0:26:49.44,中文对白,,0,0,52,,恢弘的阿拉伯征服
+Dialogue: 0,0:26:49.46,0:26:52.66,中文对白,,0,0,52,,把伊斯兰带到了摩洛哥海岸
+Dialogue: 0,0:26:52.68,0:26:55.23,中文对白,,0,0,52,,此地距西班牙仅14千米
+Dialogue: 0,0:26:55.39,0:26:59.06,中文对白,,0,0,52,,朱利安求助于丹吉尔的总督
+Dialogue: 0,0:26:59.08,0:27:04.41,中文对白,,0,0,52,,对于一个狂热于信仰和战争的帝国来说
+Dialogue: 0,0:27:04.43,0:27:06.29,中文对白,,0,0,52,,这求援难以拒绝
+Dialogue: 0,0:27:06.30,0:27:08.11,中文对白,,0,0,52,,伊斯兰就是从这里来的
+Dialogue: 0,0:27:16.89,0:27:18.51,中文对白,,0,0,52,,当提到直布罗陀时
+Dialogue: 0,0:27:18.52,0:27:22.05,中文对白,,0,0,52,,我们便会觉得西班牙这地方可不怎么像是西班牙
+Dialogue: 0,0:27:22.05,0:27:24.55,中文对白,,0,0,52,,这是地中海上的一小股英伦风
+Dialogue: 0,0:27:24.56,0:27:27.61,中文对白,,0,0,52,,有红色的电话亭和邮筒
+Dialogue: 0,0:27:27.62,0:27:30.08,中文对白,,0,0,52,,邮票上还印有英国女王
+Dialogue: 0,0:27:30.09,0:27:34.18,中文对白,,0,0,52,,但直布罗陀也是西班牙的南方门户
+Dialogue: 0,0:27:34.19,0:27:38.04,中文对白,,0,0,52,,从非洲乘一小会儿船便能抵达此地
+Dialogue: 0,0:27:44.77,0:27:48.61,中文对白,,0,0,52,,我站在直布罗陀巨岩上的极高处
+Dialogue: 0,0:27:48.61,0:27:51.88,中文对白,,0,0,52,,我往海峡那边望去
+Dialogue: 0,0:27:51.89,0:27:54.53,中文对白,,0,0,52,,那些山脉便是阿特拉斯山脉
+Dialogue: 0,0:27:54.90,0:27:59.17,中文对白,,0,0,52,,而直布罗陀这个名字  便衍生自阿拉伯语
+Dialogue: 0,0:27:59.17,0:28:02.38,中文对白,,0,0,52,,"加巴尔塔里克"  塔里克之山
+Dialogue: 0,0:28:02.39,0:28:05.77,中文对白,,0,0,52,,命名者为塔里克·伊本·齐亚德
+Dialogue: 0,0:28:05.77,0:28:08.97,中文对白,,0,0,52,,他是摩洛哥丹吉尔附近的一名总督
+Dialogue: 0,0:28:08.97,0:28:13.05,中文对白,,0,0,52,,代表着远方大马士革的倭马亚哈里发
+Dialogue: 0,0:28:13.33,0:28:16.16,中文对白,,0,0,52,,711年4月  他拉起了一支军队
+Dialogue: 0,0:28:16.18,0:28:19.01,中文对白,,0,0,52,,共有7000名阿拉伯人和柏柏尔人
+Dialogue: 0,0:28:19.02,0:28:22.21,中文对白,,0,0,52,,他身边带着最爱的美女奴隶
+Dialogue: 0,0:28:22.21,0:28:27.09,中文对白,,0,0,52,,他们乘上木筏  越过海峡  登陆欧洲
+Dialogue: 0,0:28:27.09,0:28:30.12,中文对白,,0,0,52,,伊斯兰来到了西方
+Dialogue: 0,0:28:30.13,0:28:32.40,中文对白,,0,0,52,,他们将横扫前方
+Dialogue: 0,0:28:34.98,0:28:37.72,中文对白,,0,0,52,,分崩离析的西哥特人招架不住
+Dialogue: 0,0:28:37.73,0:28:41.47,中文对白,,0,0,52,,他们有些人改信伊斯兰  有些逃往北方
+Dialogue: 0,0:28:41.93,0:28:45.69,中文对白,,0,0,52,,朱利安据说被穆斯林请了过去
+Dialogue: 0,0:28:45.70,0:28:47.23,中文对白,,0,0,52,,但下落不明
+Dialogue: 0,0:28:47.84,0:28:50.41,中文对白,,0,0,52,,穆斯林入侵者将建起的文化
+Dialogue: 0,0:28:50.41,0:28:55.05,中文对白,,0,0,52,,在财富和华丽上都会胜过欧洲邻国
+Dialogue: 0,0:28:55.06,0:28:59.09,中文对白,,0,0,52,,他们的遗产将渗入到西班牙南部的一切中
+Dialogue: 0,0:28:59.09,0:29:03.23,中文对白,,0,0,52,,现代的西班牙语里还有众多的阿拉伯词汇
+Dialogue: 0,0:29:04.69,0:29:05.94,中文对白,,0,0,52,,举个例子
+Dialogue: 0,0:29:05.96,0:29:08.93,中文对白,,0,0,52,,西班牙语的 "油"  aceite
+Dialogue: 0,0:29:08.93,0:29:12.85,中文对白,,0,0,52,,便来源于阿拉伯语 "al-zayt"  意为 橄榄汁
+Dialogue: 0,0:29:12.88,0:29:16.94,中文对白,,0,0,52,,现在许多西班牙人认为是自己语言的词汇
+Dialogue: 0,0:29:16.96,0:29:19.20,中文对白,,0,0,52,,其实都是源自阿拉伯语
+Dialogue: 0,0:29:23.65,0:29:28.29,中文对白,,0,0,52,,这条阿拉伯名的河流正向北流经安达卢西亚
+Dialogue: 0,0:29:28.29,0:29:31.28,中文对白,,0,0,52,,阿尔-瓦德-阿尔-卡比尔  意为 大河
+Dialogue: 0,0:29:31.29,0:29:33.24,中文对白,,0,0,52,,至今变化不大
+Dialogue: 0,0:29:33.47,0:29:35.03,中文对白,,0,0,52,,瓜达尔基维尔河
+Dialogue: 0,0:29:43.73,0:29:45.31,中文对白,,0,0,52,,还记得之前的双耳土罐吗
+Dialogue: 0,0:29:45.32,0:29:49.02,中文对白,,0,0,52,,用了一两次后就得丢弃的双耳土罐
+Dialogue: 0,0:29:49.12,0:29:53.17,中文对白,,0,0,52,,现在  文化向来复杂的阿拉伯人
+Dialogue: 0,0:29:53.17,0:29:56.89,中文对白,,0,0,52,,将会解决双耳土罐的使用次数问题
+Dialogue: 0,0:29:56.89,0:30:00.01,中文对白,,0,0,52,,他们往土罐内壁上釉
+Dialogue: 0,0:30:00.01,0:30:02.61,中文对白,,0,0,52,,于是它们就能多次使用了
+Dialogue: 0,0:30:02.61,0:30:05.26,中文对白,,0,0,52,,这可算是早期的家庭循环再用
+Dialogue: 0,0:30:09.14,0:30:13.69,中文对白,,0,0,52,,穆斯林征服者想要把西班牙牢握手中
+Dialogue: 0,0:30:13.69,0:30:17.57,中文对白,,0,0,52,,然而他们效忠于一位远方的主人
+Dialogue: 0,0:30:17.57,0:30:22.49,中文对白,,0,0,52,,倭马亚的哈里发们更像是华丽的罗马皇帝
+Dialogue: 0,0:30:22.49,0:30:24.75,中文对白,,0,0,52,,而非清寡的穆斯林
+Dialogue: 0,0:30:25.25,0:30:27.07,中文对白,,0,0,52,,公元750年
+Dialogue: 0,0:30:27.08,0:30:30.62,中文对白,,0,0,52,,他们受到了默罕默德叔叔后裔的挑战
+Dialogue: 0,0:30:31.17,0:30:34.09,中文对白,,0,0,52,,坐镇大马士革的倭马亚哈里发们
+Dialogue: 0,0:30:34.09,0:30:39.02,中文对白,,0,0,52,,被更为虔诚严厉的原教旨主义者推翻了
+Dialogue: 0,0:30:39.03,0:30:41.60,中文对白,,0,0,52,,取而代之的是阿拔斯王朝
+Dialogue: 0,0:30:42.28,0:30:46.44,中文对白,,0,0,52,,他们在大马士革设宴邀请所有倭马亚家族成员
+Dialogue: 0,0:30:46.45,0:30:49.85,中文对白,,0,0,52,,然后在宴会上把他们全杀了
+Dialogue: 0,0:30:49.85,0:30:54.56,中文对白,,0,0,52,,并把他们的尸体全都保存在一间地下室里
+Dialogue: 0,0:30:54.57,0:30:58.71,中文对白,,0,0,52,,每具尸体的脚趾上都挂有各自的姓名牌
+Dialogue: 0,0:30:59.62,0:31:00.94,中文对白,,0,0,52,,只有一人幸免于难
+Dialogue: 0,0:31:01.35,0:31:03.65,中文对白,,0,0,52,,他就是王子 阿卜杜勒·拉赫曼
+Dialogue: 0,0:31:03.65,0:31:07.85,中文对白,,0,0,52,,他时年19岁  高挑英俊  有头红发
+Dialogue: 0,0:31:08.23,0:31:13.38,中文对白,,0,0,52,,他脱逃而出的故事都可以拍一部好莱坞动作片了
+Dialogue: 0,0:31:13.40,0:31:16.52,中文对白,,0,0,52,,他是伊斯兰世界的头号通缉犯
+Dialogue: 0,0:31:16.55,0:31:18.76,中文对白,,0,0,52,,阿拔斯的杀手们紧追不舍
+Dialogue: 0,0:31:18.77,0:31:20.88,中文对白,,0,0,52,,跟他一路横跨北非
+Dialogue: 0,0:31:20.90,0:31:23.73,中文对白,,0,0,52,,曾经一度  杀手们十分逼近他了
+Dialogue: 0,0:31:23.76,0:31:25.61,中文对白,,0,0,52,,于是他不得不躲在
+Dialogue: 0,0:31:25.62,0:31:28.71,中文对白,,0,0,52,,一位迷人的女性表亲的裙底
+Dialogue: 0,0:31:33.33,0:31:36.29,中文对白,,0,0,52,,阿拔斯王朝把首都从大马士革
+Dialogue: 0,0:31:36.29,0:31:38.61,中文对白,,0,0,52,,迁到了新城巴格达
+Dialogue: 0,0:31:38.62,0:31:43.15,中文对白,,0,0,52,,这就离已是最远省份的西班牙还要更远了
+Dialogue: 0,0:31:44.77,0:31:49.43,中文对白,,0,0,52,,六年来  阿卜杜勒·拉赫曼一路向西
+Dialogue: 0,0:31:49.44,0:31:50.97,中文对白,,0,0,52,,并聚拢支持者
+Dialogue: 0,0:31:50.97,0:31:55.41,中文对白,,0,0,52,,他坚信能靠个人魅力来建立自己的王国
+Dialogue: 0,0:31:58.65,0:32:03.04,中文对白,,0,0,52,,755年9月  他登陆了马拉加附近
+Dialogue: 0,0:32:03.06,0:32:07.28,中文对白,,0,0,52,,他的跟随者已经在此等候  虽然只是300人的扈从
+Dialogue: 0,0:32:08.65,0:32:11.06,中文对白,,0,0,52,,他向北朝着科尔多瓦行进
+Dialogue: 0,0:32:11.08,0:32:15.73,中文对白,,0,0,52,,那里曾是罗马首都  他要面对阿拔斯及其支持者们
+Dialogue: 0,0:32:15.73,0:32:19.54,中文对白,,0,0,52,,这位大马士革王子仅靠少数骑兵
+Dialogue: 0,0:32:19.55,0:32:21.66,中文对白,,0,0,52,,便一往无前
+Dialogue: 0,0:32:25.17,0:32:29.13,中文对白,,0,0,52,,最后的决战在瓜达尔基维尔河上
+Dialogue: 0,0:32:29.13,0:32:34.65,中文对白,,0,0,52,,阿卜杜勒·拉赫曼仅靠700人  便横扫敌军
+Dialogue: 0,0:32:34.65,0:32:40.97,中文对白,,0,0,52,,然后他给巴格达的阿拔斯哈里发送了一份特殊礼物
+Dialogue: 0,0:32:40.97,0:32:43.85,中文对白,,0,0,52,,以报家族灭顶之仇
+Dialogue: 0,0:32:43.85,0:32:47.57,中文对白,,0,0,52,,他用篮子装好封上  然后寄给了哈里发
+Dialogue: 0,0:32:47.85,0:32:51.62,中文对白,,0,0,52,,当巴格达的君主在朝堂上打开礼物时
+Dialogue: 0,0:32:51.64,0:32:53.43,中文对白,,0,0,52,,他惊恐大叫
+Dialogue: 0,0:32:53.44,0:32:56.60,中文对白,,0,0,52,,篮子里装了好几颗人头
+Dialogue: 0,0:33:00.02,0:33:02.29,中文对白,,0,0,52,,阿卜杜勒·拉赫曼是位真正的倭马亚人
+Dialogue: 0,0:33:02.29,0:33:05.43,中文对白,,0,0,52,,他是宽容的穆斯林和伟大的建筑者
+Dialogue: 0,0:33:05.44,0:33:08.37,中文对白,,0,0,52,,现在他将在西班牙建立一片天堂
+Dialogue: 0,0:33:08.37,0:33:11.92,中文对白,,0,0,52,,那将是个繁荣和谐  文化兴盛的王国
+Dialogue: 0,0:33:18.21,0:33:22.61,中文对白,,0,0,52,,阿卜杜勒·拉赫曼定都于科尔多瓦这儿
+Dialogue: 0,0:33:22.95,0:33:26.81,中文对白,,0,0,52,,他在这建起的大城有着高贵的建筑
+Dialogue: 0,0:33:26.81,0:33:28.78,中文对白,,0,0,52,,有着葱郁的花园
+Dialogue: 0,0:33:28.79,0:33:30.44,中文对白,,0,0,52,,就像他的大马士革一样
+Dialogue: 0,0:33:31.65,0:33:34.40,中文对白,,0,0,52,,但他难以忘怀  不停思念的
+Dialogue: 0,0:33:34.41,0:33:37.31,中文对白,,0,0,52,,则是他的家乡 叙利亚
+Dialogue: 0,0:33:37.33,0:33:39.66,中文对白,,0,0,52,,他还写了一首凄美的诗
+Dialogue: 0,0:33:39.69,0:33:42.45,中文对白,,0,0,52,,以献给科尔多瓦的一棵棕榈树
+Dialogue: 0,0:33:45.79,0:33:46.72,中文对白,,0,0,52,,他写道
+Dialogue: 0,0:33:46.73,0:33:51.77,中文对白,,0,0,52,,君亦他乡客  万里起繁叶
+Dialogue: 0,0:33:53.69,0:33:58.37,中文对白,,0,0,52,,我自飘零人  何处是归家
+Dialogue: 0,0:34:02.47,0:34:04.60,中文对白,,0,0,52,,但现在他是君主了
+Dialogue: 0,0:34:04.62,0:34:06.21,中文对白,,0,0,52,,他也一直没忘记
+Dialogue: 0,0:34:06.22,0:34:09.75,中文对白,,0,0,52,,自己流亡多年  逃避追捕
+Dialogue: 0,0:34:09.76,0:34:12.65,中文对白,,0,0,52,,他有着奇妙朴实的幽默感
+Dialogue: 0,0:34:12.83,0:34:16.09,中文对白,,0,0,52,,他的美貌表妹来访
+Dialogue: 0,0:34:16.09,0:34:20.93,中文对白,,0,0,52,,他曾经躲在人家裙底逃避阿拔斯杀手
+Dialogue: 0,0:34:21.07,0:34:25.10,中文对白,,0,0,52,,她逗他说  你曾经还躲在我的裙底下呢
+Dialogue: 0,0:34:25.26,0:34:26.54,中文对白,,0,0,52,,他答道
+Dialogue: 0,0:34:26.71,0:34:28.38,中文对白,,0,0,52,,你那么香气芬芳
+Dialogue: 0,0:34:28.39,0:34:31.41,中文对白,,0,0,52,,在你下面都快喘不过气来了
+Dialogue: 0,0:34:38.93,0:34:41.49,中文对白,,0,0,52,,西方世界的一大奇景
+Dialogue: 0,0:34:41.49,0:34:45.01,中文对白,,0,0,52,,就在这道金门后面
+Dialogue: 0,0:34:47.81,0:34:49.65,中文对白,,0,0,52,,这是皇室入口
+Dialogue: 0,0:34:49.65,0:34:53.29,中文对白,,0,0,52,,经由一条封闭通道通向王宫
+Dialogue: 0,0:34:53.29,0:34:55.36,中文对白,,0,0,52,,不过封门了几个世纪后
+Dialogue: 0,0:34:55.37,0:34:58.25,中文对白,,0,0,52,,今天的入口则在角落里
+Dialogue: 0,0:34:59.79,0:35:05.60,中文对白,,0,0,52,,786年  阿卜杜勒·拉赫曼开始建造科尔多瓦的
+Dialogue: 0,0:35:05.61,0:35:06.83,中文对白,,0,0,52,,大清真寺
+Dialogue: 0,0:35:06.85,0:35:09.61,中文对白,,0,0,52,,这将是他的代表杰作
+Dialogue: 0,0:35:12.37,0:35:14.72,中文对白,,0,0,52,,随着越来越多人改信伊斯兰
+Dialogue: 0,0:35:14.73,0:35:19.25,中文对白,,0,0,52,,几世纪来  大清真寺一直在不断扩建
+Dialogue: 0,0:35:25.46,0:35:27.75,中文对白,,0,0,52,,寺内的米哈拉布  也叫祈祷壁龛
+Dialogue: 0,0:35:27.76,0:35:29.94,中文对白,,0,0,52,,依照传统  朝向麦加
+Dialogue: 0,0:35:34.82,0:35:37.41,中文对白,,0,0,52,,大清真寺有850根列柱
+Dialogue: 0,0:35:37.42,0:35:40.13,中文对白,,0,0,52,,由花岗岩和大理石制成
+Dialogue: 0,0:35:40.57,0:35:43.73,中文对白,,0,0,52,,双层柱支撑体系建立了起来
+Dialogue: 0,0:35:43.73,0:35:48.49,中文对白,,0,0,52,,这是以西哥特柱子为基础的支撑柱林
+Dialogue: 0,0:35:49.29,0:35:53.49,中文对白,,0,0,52,,征服者以其意志征用老旧遗址
+Dialogue: 0,0:35:53.50,0:35:55.00,中文对白,,0,0,52,,加以新建
+Dialogue: 0,0:35:56.49,0:35:59.76,中文对白,,0,0,52,,甚至伊斯兰所用的马蹄形卷拱
+Dialogue: 0,0:35:59.77,0:36:02.34,中文对白,,0,0,52,,可能也源于西哥特时代的设计
+Dialogue: 0,0:36:07.29,0:36:11.05,中文对白,,0,0,52,,现在的科尔多瓦成了座国际性大都会
+Dialogue: 0,0:36:11.93,0:36:15.29,中文对白,,0,0,52,,阿拉伯科学家们是古希腊人的真正继任者
+Dialogue: 0,0:36:15.29,0:36:19.02,中文对白,,0,0,52,,野蛮的西方对他们的非凡成就却一无所知
+Dialogue: 0,0:36:19.57,0:36:22.98,中文对白,,0,0,52,,学者  建筑师  诗人  占星家
+Dialogue: 0,0:36:22.99,0:36:25.78,中文对白,,0,0,52,,集聚在耀眼的倭马亚宫廷
+Dialogue: 0,0:36:27.05,0:36:28.72,中文对白,,0,0,52,,其中一人脱颖而出
+Dialogue: 0,0:36:28.73,0:36:31.47,中文对白,,0,0,52,,他就是阿里·伊本·纳菲
+Dialogue: 0,0:36:32.93,0:36:36.77,中文对白,,0,0,52,,伊本·纳菲是颗明星  他是著名的歌手和词人
+Dialogue: 0,0:36:36.78,0:36:40.25,中文对白,,0,0,52,,他成了国际性的潮流引领者和花花公子
+Dialogue: 0,0:36:40.25,0:36:43.41,中文对白,,0,0,52,,是时尚和欢乐的狂热爱好者
+Dialogue: 0,0:36:43.42,0:36:46.01,中文对白,,0,0,52,,他很有现代的元素  不是像摇滚明星那样
+Dialogue: 0,0:36:46.01,0:36:49.49,中文对白,,0,0,52,,而是有点儿像花花公子和摇滚巨星的结合体
+Dialogue: 0,0:36:49.70,0:36:53.81,中文对白,,0,0,52,,他生于巴格达  有一半库尔德血统  一半非洲血统
+Dialogue: 0,0:36:53.81,0:36:56.69,中文对白,,0,0,52,,因此他的绰号叫做 黑鸟
+Dialogue: 0,0:36:56.69,0:36:59.93,中文对白,,0,0,52,,他曾在巴格达为哈里发献唱
+Dialogue: 0,0:36:59.93,0:37:03.69,中文对白,,0,0,52,,但他来到科尔多瓦后  他真正成了巨星
+Dialogue: 0,0:37:03.71,0:37:06.61,中文对白,,0,0,52,,他是王子的最好朋友
+Dialogue: 0,0:37:06.61,0:37:10.87,中文对白,,0,0,52,,他把芦笋从杂草变为了佳肴
+Dialogue: 0,0:37:10.88,0:37:14.06,中文对白,,0,0,52,,他发明了现代三道菜的正餐形式
+Dialogue: 0,0:37:14.07,0:37:19.17,中文对白,,0,0,52,,每个人都想看起来像他  穿起来像他  听起来像他
+Dialogue: 0,0:37:19.17,0:37:22.27,中文对白,,0,0,52,,每个人都想像伊本·纳菲一样
+Dialogue: 0,0:37:32.11,0:37:34.64,中文对白,,0,0,52,,我来观看弗拉门戈舞
+Dialogue: 0,0:37:34.66,0:37:37.98,中文对白,,0,0,52,,这一最具西班牙风情的舞蹈的起源
+Dialogue: 0,0:37:37.99,0:37:40.57,中文对白,,0,0,52,,可追溯到伊本·纳菲对音乐的想法
+Dialogue: 0,0:37:40.57,0:37:44.55,中文对白,,0,0,52,,舞蹈核心是一种弹奏吉他的特殊技巧
+Dialogue: 0,0:38:02.64,0:38:06.29,中文对白,,0,0,52,,安东尼奥·马蒂内兹是一位吉他专家
+Dialogue: 0,0:38:06.29,0:38:09.69,中文对白,,0,0,52,,他就在科尔多瓦的伊本·纳菲音乐学院里
+Dialogue: 0,0:38:11.21,0:38:13.96,中文对白,,0,0,0,,这所学校就是以他命名的
+Dialogue: 0,0:38:13.98,0:38:16.42,中文对白,,0,0,0,,他是一位从巴格达来的吟游歌者
+Dialogue: 0,0:38:16.43,0:38:19.63,中文对白,,0,0,0,,还创建了欧洲的第一所音乐学校
+Dialogue: 0,0:38:19.87,0:38:22.68,中文对白,,0,0,52,,那么伊本·纳菲还有哪些影响呢
+Dialogue: 0,0:38:22.70,0:38:24.85,中文对白,,0,0,0,,他给我们带来了乌得琴
+Dialogue: 0,0:38:25.03,0:38:28.16,中文对白,,0,0,0,,之前他的老师纳斯里已在琴上加入了第五根弦
+Dialogue: 0,0:38:28.18,0:38:30.81,中文对白,,0,0,0,,从而改变了它的弹奏方法
+Dialogue: 0,0:38:30.83,0:38:34.67,中文对白,,0,0,0,,后来全欧洲都跟着再加一条弦
+Dialogue: 0,0:38:34.69,0:38:36.99,中文对白,,0,0,0,,他改变了音乐的演唱和弹奏方式
+Dialogue: 0,0:38:37.00,0:38:39.90,中文对白,,0,0,0,,所以现在弗拉门戈舞的吉他才会这样弹
+Dialogue: 0,0:38:39.91,0:38:44.41,中文对白,,0,0,52,,所以伊本·纳菲的乌得琴一脉相传至
+Dialogue: 0,0:38:44.41,0:38:48.74,中文对白,,0,0,52,,现代西班牙的弗拉门戈舞的吉他吗
+Dialogue: 0,0:38:48.76,0:38:51.91,中文对白,,0,0,0,,是的  尤其是改变了音阶的调
+Dialogue: 0,0:38:51.92,0:38:55.48,中文对白,,0,0,0,,最重要的可能是右手的用法变了
+Dialogue: 0,0:38:55.51,0:38:59.82,中文对白,,0,0,0,,他们用野鸡羽毛来做类似拨弦片的功用
+Dialogue: 0,0:38:59.83,0:39:02.92,中文对白,,0,0,0,,这是弗拉门戈独有的  叫做alzapua连音
+Dialogue: 0,0:39:02.94,0:39:07.44,中文对白,,0,0,0,,其中要用大拇指上下弹奏
+Dialogue: 0,0:39:08.92,0:39:11.52,中文对白,,0,0,0,,这是非常现代化的
+Dialogue: 0,0:39:11.78,0:39:16.01,中文对白,,0,0,52,,现在你能用真的吉他演示一下吗
+Dialogue: 0,0:39:16.16,0:39:18.87,中文对白,,0,0,52,,可以  谢谢
+Dialogue: 0,0:39:23.36,0:39:26.65,中文对白,,0,0,0,,现在所有的弗拉门戈乐手都这样弹
+Dialogue: 0,0:39:32.13,0:39:35.50,中文对白,,0,0,0,,现在的吉他手这样扫弦使旋律变奏
+Dialogue: 0,0:39:46.09,0:39:48.97,中文对白,,0,0,52,,安达卢斯的文化深埋于
+Dialogue: 0,0:39:48.97,0:39:51.61,中文对白,,0,0,52,,后来的西班牙文化之中
+Dialogue: 0,0:39:51.61,0:39:55.10,中文对白,,0,0,52,,不过伊斯兰也没那么宽宏大量
+Dialogue: 0,0:39:55.11,0:39:56.87,中文对白,,0,0,52,,伊斯兰是至高无上的
+Dialogue: 0,0:39:56.89,0:40:01.32,中文对白,,0,0,52,,犹太人和基督徒只有在缴纳特定赋税后才有信仰自由
+Dialogue: 0,0:40:01.34,0:40:05.04,中文对白,,0,0,52,,并且总得接受穆斯林的掌控
+Dialogue: 0,0:40:07.01,0:40:11.88,中文对白,,0,0,52,,当然也有一些人不满于穆斯林的称霸
+Dialogue: 0,0:40:11.89,0:40:16.69,中文对白,,0,0,52,,科尔多瓦的欧洛吉亚领导激进基督徒发起运动
+Dialogue: 0,0:40:16.72,0:40:19.17,中文对白,,0,0,52,,他不畏殉教
+Dialogue: 0,0:40:19.17,0:40:22.53,中文对白,,0,0,52,,且公开侮辱了先知穆罕默德
+Dialogue: 0,0:40:22.53,0:40:27.81,中文对白,,0,0,52,,欧洛吉亚自然遭到逮捕和审判  最后被斩首
+Dialogue: 0,0:40:27.81,0:40:32.41,中文对白,,0,0,52,,他的无头残躯被抛弃河边
+Dialogue: 0,0:40:32.41,0:40:35.13,中文对白,,0,0,52,,让野狗们饱餐了一顿
+Dialogue: 0,0:40:40.61,0:40:44.59,中文对白,,0,0,52,,欧洛吉亚留下了著作  并引用了圣经
+Dialogue: 0,0:40:44.60,0:40:46.79,中文对白,,0,0,52,,留下了不详的信息
+Dialogue: 0,0:40:47.25,0:40:49.10,中文对白,,0,0,52,,他写道 "追随我的足迹吧"
+Dialogue: 0,0:40:49.12,0:40:51.85,中文对白,,0,0,52,,"因为我追随的是基督的足迹"
+Dialogue: 0,0:40:54.01,0:40:59.51,中文对白,,0,0,52,,宗教共存将是西班牙的一大挑战
+Dialogue: 0,0:41:07.13,0:41:10.19,中文对白,,0,0,52,,912年  阿卜杜勒·拉赫曼三世
+Dialogue: 0,0:41:10.21,0:41:11.63,中文对白,,0,0,52,,时年仅21岁
+Dialogue: 0,0:41:11.64,0:41:14.04,中文对白,,0,0,52,,他登上了科尔多瓦的王位
+Dialogue: 0,0:41:15.45,0:41:17.50,中文对白,,0,0,52,,他是倭马亚最伟大君主
+Dialogue: 0,0:41:17.51,0:41:20.47,中文对白,,0,0,52,,他铺设道路  建立公共照明
+Dialogue: 0,0:41:20.48,0:41:23.79,中文对白,,0,0,52,,还搜集50万书籍创设图书馆
+Dialogue: 0,0:41:25.75,0:41:28.61,中文对白,,0,0,52,,阿卜杜勒·拉赫曼治下的科尔多瓦是
+Dialogue: 0,0:41:28.62,0:41:32.70,中文对白,,0,0,52,,欧洲最大 最富有 最多元化的城市之一
+Dialogue: 0,0:41:32.90,0:41:35.09,中文对白,,0,0,52,,只有君士坦丁堡可相提并论
+Dialogue: 0,0:41:35.09,0:41:39.05,中文对白,,0,0,52,,城内估计有好几十万人口
+Dialogue: 0,0:41:39.06,0:41:44.92,中文对白,,0,0,52,,同时期的伦敦和巴黎只有1万到1.5万居民
+Dialogue: 0,0:41:44.93,0:41:47.09,中文对白,,0,0,52,,就只是大一点的村庄而已
+Dialogue: 0,0:41:57.64,0:41:59.20,中文对白,,0,0,52,,在科尔多瓦城外
+Dialogue: 0,0:41:59.21,0:42:02.61,中文对白,,0,0,52,,这些遗址展示了阿卜杜勒·拉赫曼的雄心
+Dialogue: 0,0:42:04.01,0:42:07.89,中文对白,,0,0,52,,在929年  他自立为哈里发
+Dialogue: 0,0:42:07.89,0:42:11.85,中文对白,,0,0,52,,伊斯兰现在除了有巴格达的阿拔斯哈里发
+Dialogue: 0,0:42:11.85,0:42:14.96,中文对白,,0,0,52,,还有北非的新的法蒂玛哈里发
+Dialogue: 0,0:42:14.97,0:42:18.76,中文对白,,0,0,52,,倭马亚是时候展示实力了
+Dialogue: 0,0:42:21.05,0:42:24.66,中文对白,,0,0,52,,为了显示自己是宗教领袖
+Dialogue: 0,0:42:24.67,0:42:27.77,中文对白,,0,0,52,,是政治和宗教上的统治者
+Dialogue: 0,0:42:27.77,0:42:32.74,中文对白,,0,0,52,,西方的哈里发建了这座久被遗忘的
+Dialogue: 0,0:42:32.76,0:42:34.69,中文对白,,0,0,52,,权力和信仰的天堂
+Dialogue: 0,0:42:34.77,0:42:37.80,中文对白,,0,0,52,,它曾埋于地下900年
+Dialogue: 0,0:42:42.41,0:42:47.17,中文对白,,0,0,52,,阿卜杜勒·拉赫曼将宫廷迁至这座依山而建的大宫殿
+Dialogue: 0,0:42:47.17,0:42:52.01,中文对白,,0,0,52,,如此壮观的建筑正是他作为哈里发和征服者的
+Dialogue: 0,0:42:52.01,0:42:54.31,中文对白,,0,0,52,,地位的体现
+Dialogue: 0,0:42:55.09,0:42:57.72,中文对白,,0,0,52,,只有一件事对他来说是重要的
+Dialogue: 0,0:42:57.73,0:43:02.25,中文对白,,0,0,52,,那就是对其权力的丰盛展示
+Dialogue: 0,0:43:02.26,0:43:05.89,中文对白,,0,0,52,,所以他才会建造这座惊人的宫殿
+Dialogue: 0,0:43:05.92,0:43:10.41,中文对白,,0,0,52,,麦地那-阿沙哈拉宫  一座耀眼的宫殿
+Dialogue: 0,0:43:10.41,0:43:12.77,中文对白,,0,0,52,,它也确实足够耀眼
+Dialogue: 0,0:43:12.77,0:43:17.10,中文对白,,0,0,52,,这里是政治总部和军事指挥中心
+Dialogue: 0,0:43:17.13,0:43:21.87,中文对白,,0,0,52,,也是壮丽的展品和享乐的宫殿
+Dialogue: 0,0:43:26.81,0:43:30.30,中文对白,,0,0,52,,这座宫殿不仅使里面的人望而生畏
+Dialogue: 0,0:43:30.31,0:43:34.69,中文对白,,0,0,52,,沿着河谷的方圆数英里内也都能看到它
+Dialogue: 0,0:43:35.49,0:43:40.41,中文对白,,0,0,52,,这是警惕而又偏执的君主的理想的壮丽城堡
+Dialogue: 0,0:43:40.42,0:43:41.85,中文对白,,0,0,52,,阿卜杜勒·拉赫曼便是如此
+Dialogue: 0,0:43:44.00,0:43:45.18,中文对白,,0,0,52,,在内心中
+Dialogue: 0,0:43:45.19,0:43:50.57,中文对白,,0,0,52,,他是位凶残和小气的暴君
+Dialogue: 0,0:43:50.57,0:43:54.61,中文对白,,0,0,52,,他肥胖粗壮  金发碧眼  身材矮小
+Dialogue: 0,0:43:54.61,0:43:59.21,中文对白,,0,0,52,,因为他的腿太短  所以马镫都要专门打造
+Dialogue: 0,0:43:59.21,0:44:02.14,中文对白,,0,0,52,,拒绝他的人可不会有好果子吃
+Dialogue: 0,0:44:02.16,0:44:07.17,中文对白,,0,0,52,,他在这里建了两座后宫  男女宠各住一座
+Dialogue: 0,0:44:07.34,0:44:11.61,中文对白,,0,0,52,,有个女子拒绝了他的追求  他便将她的脸烧毁
+Dialogue: 0,0:44:11.61,0:44:14.89,中文对白,,0,0,52,,有个男子也拒绝了他  于是就被肢解了
+Dialogue: 0,0:44:14.89,0:44:19.09,中文对白,,0,0,52,,后来那男子被封圣为科尔多瓦的佩拉吉乌斯
+Dialogue: 0,0:44:19.09,0:44:22.57,中文对白,,0,0,52,,他还在宫殿里的某处建了个动物园
+Dialogue: 0,0:44:22.59,0:44:24.69,中文对白,,0,0,52,,里面都是狮子
+Dialogue: 0,0:44:24.89,0:44:26.61,中文对白,,0,0,52,,要是你惹到了他
+Dialogue: 0,0:44:26.66,0:44:28.02,中文对白,,0,0,52,,他就把你扔去喂狮子
+Dialogue: 0,0:44:39.09,0:44:41.65,中文对白,,0,0,52,,它的空中花园是有名的传奇
+Dialogue: 0,0:44:41.65,0:44:45.11,中文对白,,0,0,52,,泳池里的水源源不断地
+Dialogue: 0,0:44:45.13,0:44:46.95,中文对白,,0,0,52,,从瓜达尔基维尔河抽来
+Dialogue: 0,0:44:46.96,0:44:52.19,中文对白,,0,0,52,,这些水道甚至还供水给世界上第一个水厕
+Dialogue: 0,0:44:52.57,0:44:56.43,中文对白,,0,0,52,,在阿沙哈拉宫的一个小角落里
+Dialogue: 0,0:44:56.56,0:45:00.81,中文对白,,0,0,52,,有着阿拉伯现代技术的惊人之作
+Dialogue: 0,0:45:00.81,0:45:02.57,中文对白,,0,0,52,,就在下面这里
+Dialogue: 0,0:45:02.78,0:45:04.41,中文对白,,0,0,52,,我来给你展示一下
+Dialogue: 0,0:45:04.41,0:45:07.93,中文对白,,0,0,52,,这是一个早期的还很原始的坐浴盆
+Dialogue: 0,0:45:07.93,0:45:10.61,中文对白,,0,0,52,,这里会有流动的水流
+Dialogue: 0,0:45:10.93,0:45:14.41,中文对白,,0,0,52,,我们现在所看到的其实是欧洲的
+Dialogue: 0,0:45:14.41,0:45:17.47,中文对白,,0,0,52,,第一个冲水厕所
+Dialogue: 0,0:45:18.21,0:45:23.42,中文对白,,0,0,52,,哈里发的臣子于此舒适和卫生地生活着
+Dialogue: 0,0:45:23.45,0:45:26.64,中文对白,,0,0,52,,而同时代的伦敦人和巴黎人
+Dialogue: 0,0:45:26.67,0:45:30.62,中文对白,,0,0,52,,还都过得乌烟瘴气的
+Dialogue: 0,0:45:35.69,0:45:39.45,中文对白,,0,0,52,,这座宫殿在11世纪早期被洗劫一空
+Dialogue: 0,0:45:39.45,0:45:43.39,中文对白,,0,0,52,,以至于许多世纪来的人们都怀疑
+Dialogue: 0,0:45:43.40,0:45:46.17,中文对白,,0,0,52,,麦地那-阿沙哈拉宫是否真的存在过
+Dialogue: 0,0:45:46.17,0:45:48.93,中文对白,,0,0,52,,直到1911年它才被发掘出来
+Dialogue: 0,0:45:48.93,0:45:52.93,中文对白,,0,0,52,,而现代的人们还正在发掘阿卜杜勒·拉赫曼的
+Dialogue: 0,0:45:52.93,0:45:54.57,中文对白,,0,0,52,,被掩埋的秘密
+Dialogue: 0,0:45:54.57,0:45:58.41,中文对白,,0,0,52,,据说他用自己最爱的嫔妃的名字来命名这宫殿
+Dialogue: 0,0:45:58.53,0:46:01.69,中文对白,,0,0,52,,不过我觉得他可不怎么像是浪漫的人
+Dialogue: 0,0:46:01.69,0:46:04.33,中文对白,,0,0,52,,此外  他也没什么选择余地
+Dialogue: 0,0:46:04.33,0:46:08.03,中文对白,,0,0,52,,他的宫里有6000名女子
+Dialogue: 0,0:46:18.43,0:46:22.25,中文对白,,0,0,52,,历史学家 西蒙·巴顿 写的一本书讲到了
+Dialogue: 0,0:46:22.25,0:46:24.53,中文对白,,0,0,52,,如何选择嫔妃
+Dialogue: 0,0:46:24.74,0:46:27.75,中文对白,,0,0,52,,说到底就是外貌选美
+Dialogue: 0,0:46:27.78,0:46:30.55,中文对白,,0,0,52,,明显有说法是这位倭马亚哈里发
+Dialogue: 0,0:46:30.56,0:46:33.71,中文对白,,0,0,52,,天性更喜欢金发女郎
+Dialogue: 0,0:46:33.72,0:46:36.06,中文对白,,0,0,52,,这就有趣了  哪里来的金发女郎呢
+Dialogue: 0,0:46:36.08,0:46:40.85,中文对白,,0,0,52,,在法国北部和地中海都有市场的
+Dialogue: 0,0:46:40.87,0:46:43.27,中文对白,,0,0,52,,里面有买卖穆斯林奴隶的
+Dialogue: 0,0:46:43.29,0:46:46.14,中文对白,,0,0,52,,犹太人也是买卖的重头
+Dialogue: 0,0:46:46.15,0:46:49.41,中文对白,,0,0,52,,还有尤其是欧洲的女人和小孩
+Dialogue: 0,0:46:49.41,0:46:51.57,中文对白,,0,0,52,,如果他的嫔妃中有人是
+Dialogue: 0,0:46:51.57,0:46:54.29,中文对白,,0,0,52,,被买来作为无权的奴隶
+Dialogue: 0,0:46:54.29,0:46:58.17,中文对白,,0,0,52,,然后成了未来君主  未来哈里发的母亲
+Dialogue: 0,0:46:58.35,0:47:01.03,中文对白,,0,0,52,,那么他们的权力就十分的大了
+Dialogue: 0,0:47:01.04,0:47:01.97,中文对白,,0,0,52,,确实如此
+Dialogue: 0,0:47:01.99,0:47:06.29,中文对白,,0,0,52,,事实上  倭马亚王朝的所有埃米尔和哈里发
+Dialogue: 0,0:47:06.29,0:47:08.74,中文对白,,0,0,52,,都是奴隶嫔妃所生的
+Dialogue: 0,0:47:08.76,0:47:12.56,中文对白,,0,0,52,,据说他们都是金发碧眼的
+Dialogue: 0,0:47:12.57,0:47:16.57,中文对白,,0,0,52,,这种嫔妃的作用就像是
+Dialogue: 0,0:47:16.57,0:47:19.34,中文对白,,0,0,52,,王朝的一种防御机制
+Dialogue: 0,0:47:19.35,0:47:22.92,中文对白,,0,0,52,,这就意味着不会有妃嫔家族
+Dialogue: 0,0:47:22.94,0:47:25.81,中文对白,,0,0,52,,来参与王朝的政治
+Dialogue: 0,0:47:25.82,0:47:28.04,中文对白,,0,0,52,,奴隶出身的嫔妃
+Dialogue: 0,0:47:28.05,0:47:30.76,中文对白,,0,0,52,,她们的家乡在万里之外
+Dialogue: 0,0:47:30.79,0:47:35.61,中文对白,,0,0,52,,在王朝内部也没有既得利益
+Dialogue: 0,0:47:35.61,0:47:38.64,中文对白,,0,0,52,,这是一种保障王朝安全的方法
+Dialogue: 0,0:47:38.65,0:47:42.23,中文对白,,0,0,52,,所以背后更多的是政治  而性不那么重要吗
+Dialogue: 0,0:47:42.25,0:47:43.30,中文对白,,0,0,52,,完全正确
+Dialogue: 0,0:47:49.45,0:47:52.67,中文对白,,0,0,52,,这个体制要求强大的哈里发立于顶端
+Dialogue: 0,0:47:54.25,0:47:56.14,中文对白,,0,0,52,,而当规则被破坏了
+Dialogue: 0,0:47:56.16,0:47:58.14,中文对白,,0,0,52,,哈里发也就倒台了
+Dialogue: 0,0:48:11.89,0:48:16.69,中文对白,,0,0,52,,976年  一名孩童继任哈里发  希沙姆二世
+Dialogue: 0,0:48:16.69,0:48:18.61,中文对白,,0,0,52,,暴露了体制的脆弱
+Dialogue: 0,0:48:18.62,0:48:22.40,中文对白,,0,0,52,,他还是个在母亲监护下成长的孩子
+Dialogue: 0,0:48:22.41,0:48:24.63,中文对白,,0,0,52,,苏卜  曾经的嫔妃
+Dialogue: 0,0:48:25.73,0:48:28.17,中文对白,,0,0,52,,她撇开自己的儿子 希沙姆
+Dialogue: 0,0:48:28.17,0:48:33.65,中文对白,,0,0,52,,并向倭马亚王朝之外的势力打开权力的大门
+Dialogue: 0,0:48:33.91,0:48:39.39,中文对白,,0,0,52,,她任命自己的新欢为总理大臣
+Dialogue: 0,0:48:39.42,0:48:42.61,中文对白,,0,0,52,,他名叫曼苏尔  意为胜利
+Dialogue: 0,0:48:42.61,0:48:45.25,中文对白,,0,0,52,,他是整个哈里发政权里最为
+Dialogue: 0,0:48:45.25,0:48:48.21,中文对白,,0,0,52,,聪明  无情和非凡的人物
+Dialogue: 0,0:48:48.39,0:48:52.97,中文对白,,0,0,52,,他发动了57场圣战来反对北方的基督徒
+Dialogue: 0,0:48:52.98,0:48:55.44,中文对白,,0,0,52,,对其烧杀抢掠
+Dialogue: 0,0:48:55.46,0:49:00.49,中文对白,,0,0,52,,在科尔多瓦这儿  他烧毁了之前倭马亚哈里发们所建的
+Dialogue: 0,0:49:00.50,0:49:02.74,中文对白,,0,0,52,,象征文明文化的图书馆
+Dialogue: 0,0:49:03.08,0:49:06.50,中文对白,,0,0,52,,在北伐途中  他目之所及  无不将其摧毁
+Dialogue: 0,0:49:06.51,0:49:10.56,中文对白,,0,0,52,,搜刮的钱财就用来资助这里的清真寺和宫殿
+Dialogue: 0,0:49:10.57,0:49:13.50,中文对白,,0,0,52,,在997年  他的征伐达到了顶峰
+Dialogue: 0,0:49:13.51,0:49:17.21,中文对白,,0,0,52,,那时他在洗劫圣地亚哥-德孔波斯特拉
+Dialogue: 0,0:49:17.32,0:49:21.01,中文对白,,0,0,52,,那里的教堂的门和钟都被带回了
+Dialogue: 0,0:49:21.06,0:49:25.41,中文对白,,0,0,52,,而搬运门钟  凯旋归往科尔多瓦的正是基督徒奴隶
+Dialogue: 0,0:49:31.73,0:49:35.07,中文对白,,0,0,52,,讽刺的是  曼苏尔实在是太成功了
+Dialogue: 0,0:49:35.09,0:49:40.10,中文对白,,0,0,52,,他的一系列胜利反而掏空和侵蚀了哈里发政权
+Dialogue: 0,0:49:43.73,0:49:46.49,中文对白,,0,0,52,,他使自己成为准哈里发
+Dialogue: 0,0:49:46.49,0:49:49.48,中文对白,,0,0,52,,并通过娶回一位基督徒公主
+Dialogue: 0,0:49:49.49,0:49:52.65,中文对白,,0,0,52,,从而建立了自己的准王朝
+Dialogue: 0,0:49:54.77,0:49:57.22,中文对白,,0,0,52,,曼苏尔的儿子们没有父亲的
+Dialogue: 0,0:49:57.23,0:49:58.70,中文对白,,0,0,52,,那种一往无前的动力
+Dialogue: 0,0:49:58.72,0:50:00.97,中文对白,,0,0,52,,那种才智和克制
+Dialogue: 0,0:50:00.97,0:50:04.53,中文对白,,0,0,52,,他们破坏了哈里发的合法性
+Dialogue: 0,0:50:04.53,0:50:06.97,中文对白,,0,0,52,,于是政权崩解了
+Dialogue: 0,0:50:06.97,0:50:11.03,中文对白,,0,0,52,,起先他的长子接任官职  而后被暗杀了
+Dialogue: 0,0:50:11.12,0:50:15.76,中文对白,,0,0,52,,但后继的弟弟是个装腔作势者 山朱勒
+Dialogue: 0,0:50:15.78,0:50:18.45,中文对白,,0,0,52,,他想自己当哈里发
+Dialogue: 0,0:50:18.73,0:50:21.53,中文对白,,0,0,52,,整个王国分崩离析了
+Dialogue: 0,0:50:21.80,0:50:25.40,中文对白,,0,0,52,,安达卢斯的光辉也随之黯淡
+Dialogue: 0,0:50:29.49,0:50:35.46,中文对白,,0,0,52,,1031年  曼苏尔死后30年  哈里发政权倒台了
+Dialogue: 0,0:50:36.01,0:50:39.37,中文对白,,0,0,52,,安达卢斯分裂成了几个小城邦
+Dialogue: 0,0:50:39.37,0:50:43.30,中文对白,,0,0,52,,由西方的中世纪贵族那样的首领统治着
+Dialogue: 0,0:50:46.41,0:50:50.58,中文对白,,0,0,52,,科尔多瓦大清真寺  由初任阿卜杜勒·拉赫曼草创
+Dialogue: 0,0:50:50.59,0:50:52.73,中文对白,,0,0,52,,也经过曼苏尔的扩建
+Dialogue: 0,0:50:52.76,0:50:54.43,中文对白,,0,0,52,,它至今犹存
+Dialogue: 0,0:50:54.55,0:50:58.34,中文对白,,0,0,52,,我们依然可以欣赏其规模和壮丽
+Dialogue: 0,0:51:02.66,0:51:05.94,中文对白,,0,0,52,,它后来落入基督徒之手  但未被摧毁
+Dialogue: 0,0:51:05.95,0:51:09.05,中文对白,,0,0,52,,他们在这清真寺里建了座教堂
+Dialogue: 0,0:51:17.73,0:51:20.69,中文对白,,0,0,52,,即使在今天  科尔多瓦人也会说
+Dialogue: 0,0:51:20.70,0:51:23.29,中文对白,,0,0,52,,要去大清真寺里做弥撒
+Dialogue: 0,0:51:37.51,0:51:40.82,中文对白,,0,0,52,,我正在前往我的终点站 格拉纳达
+Dialogue: 0,0:51:44.99,0:51:48.95,中文对白,,0,0,52,,我要追寻的是一个故事的主角  他虽然不是穆斯林
+Dialogue: 0,0:51:48.96,0:51:52.89,中文对白,,0,0,52,,却在11世纪伊斯兰的西班牙中如日中天
+Dialogue: 0,0:51:52.89,0:51:55.11,中文对白,,0,0,52,,故事主角所处的时代
+Dialogue: 0,0:51:55.12,0:51:59.46,中文对白,,0,0,52,,正是伊斯兰西班牙处于变革洪流的时代
+Dialogue: 0,0:52:02.85,0:52:07.51,中文对白,,0,0,52,,格拉纳达的名字来源于它的犹太人和穆斯林渊源
+Dialogue: 0,0:52:08.29,0:52:11.81,中文对白,,0,0,52,,犹太人把它叫做石榴之城
+Dialogue: 0,0:52:12.06,0:52:15.32,中文对白,,0,0,52,,而阿拉伯语中的石榴就是格拉纳达
+Dialogue: 0,0:52:23.01,0:52:26.94,中文对白,,0,0,52,,格拉纳达酋长国正是哈里发解体后
+Dialogue: 0,0:52:26.95,0:52:29.21,中文对白,,0,0,52,,分出来的一个小公国
+Dialogue: 0,0:52:29.45,0:52:31.97,中文对白,,0,0,52,,这里是它最著名的景点
+Dialogue: 0,0:52:32.00,0:52:33.75,中文对白,,0,0,52,,也是其后历史的一部分
+Dialogue: 0,0:52:36.83,0:52:40.14,中文对白,,0,0,52,,我在下一集里还会来到这儿
+Dialogue: 0,0:52:41.52,0:52:43.81,中文对白,,0,0,52,,来探索它的壮丽
+Dialogue: 0,0:52:43.81,0:52:46.53,中文对白,,0,0,52,,来观赏它的一些鲜为人知的珍宝
+Dialogue: 0,0:52:49.94,0:52:52.44,中文对白,,0,0,52,,这座惊人的建筑如今是著名的
+Dialogue: 0,0:52:52.46,0:52:55.08,中文对白,,0,0,52,,格拉纳达的阿尔罕布拉宫
+Dialogue: 0,0:52:55.09,0:52:57.78,中文对白,,0,0,52,,但在它建成300年前
+Dialogue: 0,0:52:57.80,0:52:59.81,中文对白,,0,0,52,,这里也是一座皇宫
+Dialogue: 0,0:52:59.82,0:53:04.49,中文对白,,0,0,52,,其主人是西班牙史上最非凡的犹太领袖之一
+Dialogue: 0,0:53:04.49,0:53:07.08,中文对白,,0,0,52,,他实际上也是这半岛上所有故事中
+Dialogue: 0,0:53:07.09,0:53:09.60,中文对白,,0,0,52,,最为非凡的政治家之一
+Dialogue: 0,0:53:09.66,0:53:12.53,中文对白,,0,0,52,,他名叫塞缪尔·伊本·奈格瑞拉
+Dialogue: 0,0:53:12.53,0:53:16.10,中文对白,,0,0,52,,他原本是科尔多瓦的香料商人
+Dialogue: 0,0:53:16.12,0:53:20.92,中文对白,,0,0,52,,他来到这里成了柏柏尔人的顾问
+Dialogue: 0,0:53:20.93,0:53:23.88,中文对白,,0,0,52,,后者统治着格拉纳达公国
+Dialogue: 0,0:53:23.90,0:53:26.97,中文对白,,0,0,52,,他拥护正确的候选人登上了王位
+Dialogue: 0,0:53:26.97,0:53:30.56,中文对白,,0,0,52,,塞缪尔不仅成了犹太社区的领袖
+Dialogue: 0,0:53:30.57,0:53:32.85,中文对白,,0,0,52,,还当上了总理大臣
+Dialogue: 0,0:53:32.85,0:53:36.69,中文对白,,0,0,52,,以及格拉纳达主力军队的指挥官
+Dialogue: 0,0:53:36.69,0:53:40.14,中文对白,,0,0,52,,在战争中  他指挥赢得了胜利
+Dialogue: 0,0:53:40.15,0:53:43.01,中文对白,,0,0,52,,和平之时  他则领导着犹太人社区
+Dialogue: 0,0:53:43.02,0:53:45.45,中文对白,,0,0,52,,他著有犹太哲学作品
+Dialogue: 0,0:53:45.45,0:53:46.95,中文对白,,0,0,52,,他是一名拉比
+Dialogue: 0,0:53:46.98,0:53:49.68,中文对白,,0,0,52,,并且还是一位诗人
+Dialogue: 0,0:53:49.69,0:53:53.09,中文对白,,0,0,52,,他的诗歌即使翻成了英文也仍震撼人心
+Dialogue: 0,0:53:53.28,0:53:55.54,中文对白,,0,0,52,,不过他用希伯来语和阿拉伯语写作
+Dialogue: 0,0:53:55.56,0:53:56.92,中文对白,,0,0,52,,他写过爱情诗
+Dialogue: 0,0:53:56.93,0:53:59.10,中文对白,,0,0,52,,他写情诗送给美丽的女子
+Dialogue: 0,0:53:59.12,0:54:00.32,中文对白,,0,0,52,,送给酒
+Dialogue: 0,0:54:00.33,0:54:01.53,中文对白,,0,0,52,,送给男子
+Dialogue: 0,0:54:01.54,0:54:04.99,中文对白,,0,0,52,,送给战争中激动人心的胜利
+Dialogue: 0,0:54:10.11,0:54:13.90,中文对白,,0,0,52,,在格拉纳达这儿  一群奈格瑞拉的爱好者
+Dialogue: 0,0:54:13.91,0:54:16.47,中文对白,,0,0,52,,聚集起来准备听他的一些诗歌
+Dialogue: 0,0:54:18.62,0:54:20.18,中文对白,,0,0,0,,塞缪尔·奈格瑞拉
+Dialogue: 0,0:54:20.19,0:54:22.18,中文对白,,0,0,0,,《我如何帮助智者》
+Dialogue: 0,0:54:23.27,0:54:24.61,中文对白,,0,0,0,,你听过我是如何帮助
+Dialogue: 0,0:54:24.63,0:54:27.40,中文对白,,0,0,0,,你听过我是如何帮助智者的吗
+Dialogue: 0,0:54:27.76,0:54:30.73,中文对白,,0,0,0,,老者们是正在走向完满吗
+Dialogue: 0,0:54:30.75,0:54:32.67,中文对白,,0,0,0,,那么敬畏上帝的小男孩们呢
+Dialogue: 0,0:54:32.69,0:54:34.75,中文对白,,0,0,0,,看着多美美好  多么年轻啊
+Dialogue: 0,0:54:34.80,0:54:37.24,中文对白,,0,0,0,,那么他们的兄弟呢
+Dialogue: 0,0:54:38.06,0:54:40.20,中文对白,,0,0,0,,我订好了一片庭院准备开聚会  我说
+Dialogue: 0,0:54:40.30,0:54:42.73,中文对白,,0,0,0,,"我们来过上美美的一天吧"
+Dialogue: 0,0:54:42.99,0:54:46.34,中文对白,,0,0,0,,"离别将至  我们饮酒纪念"
+Dialogue: 0,0:54:50.44,0:54:54.74,中文对白,,0,0,0,,"停杯者将为悲伤所扰"
+Dialogue: 0,0:54:55.23,0:54:59.45,中文对白,,0,0,0,,"友谊和精力相伴"
+Dialogue: 0,0:54:59.86,0:55:03.75,中文对白,,0,0,0,,"死亡与离别相随"
+Dialogue: 0,0:55:04.22,0:55:07.90,中文对白,,0,0,0,,所以他们坐上这红色垫子
+Dialogue: 0,0:55:08.09,0:55:11.25,中文对白,,0,0,52,,在这首诗中  奈格瑞拉描述了智慧是如何
+Dialogue: 0,0:55:11.25,0:55:14.50,中文对白,,0,0,52,,来自于我们所永远不能习得的知识中的
+Dialogue: 0,0:55:15.15,0:55:18.06,中文对白,,0,0,0,,然后他们饮酒  倾述秘密
+Dialogue: 0,0:55:18.11,0:55:21.31,中文对白,,0,0,0,,而我们安适自在
+Dialogue: 0,0:55:21.64,0:55:24.64,中文对白,,0,0,0,,心旷神怡
+Dialogue: 0,0:55:40.85,0:55:43.93,中文对白,,0,0,52,,1056年  塞缪尔·奈格瑞拉逝世
+Dialogue: 0,0:55:43.98,0:55:48.72,中文对白,,0,0,52,,他的儿子 约瑟夫 继任为格拉纳达的总理大臣
+Dialogue: 0,0:55:48.73,0:55:51.88,中文对白,,0,0,52,,约瑟夫年仅20岁  但可不是个愣头青
+Dialogue: 0,0:55:51.89,0:55:54.05,中文对白,,0,0,52,,因为他已有10年的统治经验
+Dialogue: 0,0:55:54.05,0:55:58.09,中文对白,,0,0,52,,传统上常有总理大臣传位给儿子的
+Dialogue: 0,0:55:58.10,0:56:00.77,中文对白,,0,0,52,,甚至建起小型王朝也不足为奇
+Dialogue: 0,0:56:00.77,0:56:02.22,中文对白,,0,0,52,,但还有个问题
+Dialogue: 0,0:56:02.23,0:56:04.76,中文对白,,0,0,52,,奈格瑞拉家族是犹太人
+Dialogue: 0,0:56:12.01,0:56:16.22,中文对白,,0,0,52,,现在这个犹太当权者似乎是
+Dialogue: 0,0:56:16.23,0:56:18.72,中文对白,,0,0,52,,这一外来王朝的内部敌人
+Dialogue: 0,0:56:27.86,0:56:32.25,中文对白,,0,0,52,,1066年  对于格拉纳达的犹太人是难忘的
+Dialogue: 0,0:56:32.26,0:56:33.92,中文对白,,0,0,52,,正如同一年的哈罗德国王
+Dialogue: 0,0:56:33.95,0:56:36.39,中文对白,,0,0,52,,这位英格兰的撒克逊国王一样
+Dialogue: 0,0:56:36.40,0:56:37.65,中文对白,,0,0,52,,有些事要变化了
+Dialogue: 0,0:56:37.90,0:56:40.02,中文对白,,0,0,52,,一群暴民来到约瑟夫的宫殿
+Dialogue: 0,0:56:40.03,0:56:41.29,中文对白,,0,0,52,,就在阿尔罕布拉宫附近
+Dialogue: 0,0:56:41.32,0:56:42.61,中文对白,,0,0,52,,他被逼了出来
+Dialogue: 0,0:56:42.61,0:56:44.61,中文对白,,0,0,52,,他们追他到街上
+Dialogue: 0,0:56:44.62,0:56:46.24,中文对白,,0,0,52,,他没能逃脱
+Dialogue: 0,0:56:49.93,0:56:52.63,中文对白,,0,0,52,,暴民们追上约瑟夫·奈格瑞拉的地方
+Dialogue: 0,0:56:52.64,0:56:54.00,中文对白,,0,0,52,,就是在这里
+Dialogue: 0,0:56:54.02,0:56:57.03,中文对白,,0,0,52,,他们私刑处死了他  并发起了一场大屠杀
+Dialogue: 0,0:56:57.04,0:56:59.65,中文对白,,0,0,52,,屠杀了4000名犹太人
+Dialogue: 0,0:56:59.65,0:57:02.25,中文对白,,0,0,52,,约瑟夫被他们钉在十字架上
+Dialogue: 0,0:57:02.25,0:57:05.67,中文对白,,0,0,52,,就立在这座宏伟的城门边上
+Dialogue: 0,0:57:12.41,0:57:16.13,中文对白,,0,0,52,,约瑟夫·奈格瑞拉于格拉纳达被钉死在十字架上
+Dialogue: 0,0:57:16.13,0:57:20.52,中文对白,,0,0,52,,开启了穆斯林西班牙宗教多元化的终结
+Dialogue: 0,0:57:22.17,0:57:25.21,中文对白,,0,0,52,,奈格瑞拉不是伊斯兰世界里的首位
+Dialogue: 0,0:57:25.21,0:57:27.01,中文对白,,0,0,52,,犹太裔总理大臣
+Dialogue: 0,0:57:27.01,0:57:29.13,中文对白,,0,0,52,,然而哈里发政权的自信
+Dialogue: 0,0:57:29.13,0:57:31.86,中文对白,,0,0,52,,以及宗教宽容的必要性
+Dialogue: 0,0:57:31.88,0:57:33.01,中文对白,,0,0,52,,不复存在了
+Dialogue: 0,0:57:33.52,0:57:37.94,中文对白,,0,0,52,,400多年中  西班牙将四分五裂
+Dialogue: 0,0:57:42.69,0:57:46.93,中文对白,,0,0,52,,下一集  北方的基督教国王如何卷土重来
+Dialogue: 0,0:57:46.93,0:57:50.13,中文对白,,0,0,52,,为十字架而征服全西班牙
+Dialogue: 0,0:57:50.13,0:57:54.18,中文对白,,0,0,52,,西班牙如何用恶毒的宗教裁判所来净化血脉
+Dialogue: 0,0:57:54.21,0:57:58.35,中文对白,,0,0,52,,甚至抓捕了我的一些家族先祖
+Dialogue: 0,0:57:59.58,0:58:03.01,中文对白,,0,0,52,,我的天啊  这是他的死刑判决书吗
+Dialogue: 0,0:58:03.03,0:58:04.61,中文对白,,0,0,52,,我的心要碎了
+Dialogue: 0,0:58:04.83,0:58:07.65,中文对白,,0,0,52,,还有克里斯托弗·哥伦布如何扬帆起航
+Dialogue: 0,0:58:07.65,0:58:10.90,中文对白,,0,0,52,,发现富饶的美洲帝国
+Dialogue: 0,0:58:17.34,0:58:19.81,中文对白,,0,0,52,,如果这段历史对你有所启发
+Dialogue: 0,0:58:19.82,0:58:22.04,中文对白,,0,0,52,,如果你想获取更多知识的话
+Dialogue: 0,0:58:22.05,0:58:24.57,中文对白,,0,0,52,,你可以打开屏幕下方的网址
+Dialogue: 0,0:58:24.57,0:58:27.40,中文对白,,0,0,52,,从网站里面访问英国开放大学
+

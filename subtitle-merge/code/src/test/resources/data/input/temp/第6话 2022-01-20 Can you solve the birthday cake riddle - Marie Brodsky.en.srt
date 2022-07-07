@@ -1,0 +1,354 @@
+1
+00:00:06,880 --> 00:00:09,840
+Your friend’s birthday is tomorrow,
+and he’s turning...
+
+2
+00:00:09,840 --> 00:00:12,090
+well... the issue 
+is that you’ve forgotten.
+
+3
+00:00:12,380 --> 00:00:15,430
+He’s older than 1, but beyond that,
+he looks timeless.
+
+4
+00:00:15,430 --> 00:00:18,310
+You’d believe it if he was 2 or 200.
+
+5
+00:00:18,470 --> 00:00:20,680
+The birthday boy is a giant,
+
+6
+00:00:20,680 --> 00:00:23,810
+and you're afraid that if your
+forgetfulness becomes known,
+
+7
+00:00:23,810 --> 00:00:25,520
+you'll become part of the feast.
+
+8
+00:00:25,770 --> 00:00:29,650
+The baker has meticulously prepared
+a small mountain range of a cake,
+
+9
+00:00:29,900 --> 00:00:35,030
+and your job is to sculpt the giant’s age
+as the chocolate centerpiece.
+
+10
+00:00:35,160 --> 00:00:37,660
+You would love to just count
+the candles on the cake,
+
+11
+00:00:37,660 --> 00:00:40,160
+but you're much too small
+to see the top of it.
+
+12
+00:00:40,290 --> 00:00:43,660
+Then you remember: the baker made
+an interior tunnel
+
+13
+00:00:43,660 --> 00:00:46,120
+to activate the candles from below.
+
+14
+00:00:46,250 --> 00:00:49,210
+While the giant is asleep, 
+you can sneak in,
+
+15
+00:00:49,210 --> 00:00:52,090
+count the candles and escape undetected.
+
+16
+00:00:52,260 --> 00:00:57,390
+As night sets, you pull on a full bodysuit
+and brace yourself for vanilla cream.
+
+17
+00:00:57,720 --> 00:01:01,850
+Anywhere in the tunnel, you can see 
+whether the candle above you is lit,
+
+18
+00:01:01,850 --> 00:01:04,270
+and can switch it on or off.
+
+19
+00:01:04,390 --> 00:01:08,520
+Some are currently on, and others off,
+in no discernible pattern.
+
+20
+00:01:08,770 --> 00:01:13,990
+The tunnel is a single loop, and in the 
+dark you can’t tell its shape or size.
+
+21
+00:01:14,440 --> 00:01:18,990
+You aren’t carrying anything with you,
+and any marks you make will disappear.
+
+22
+00:01:18,990 --> 00:01:20,450
+You need a strategy.
+
+23
+00:01:20,450 --> 00:01:23,120
+How can you count the candles?
+
+24
+00:01:23,120 --> 00:01:25,870
+Pause here to figure it out for yourself.
+Answer in 3
+
+25
+00:01:25,870 --> 00:01:28,170
+Answer in 2
+
+26
+00:01:28,170 --> 00:01:30,040
+Answer in 1
+
+27
+00:01:30,460 --> 00:01:32,880
+There are a few ways 
+to solve this problem.
+
+28
+00:01:32,920 --> 00:01:35,010
+Let's start with the most straightforward.
+
+29
+00:01:35,010 --> 00:01:38,300
+There’s exactly one way to mark
+a location in the tunnel:
+
+30
+00:01:38,390 --> 00:01:40,010
+the state of the candle.
+
+31
+00:01:40,010 --> 00:01:43,930
+You can mark the first candle you reach 
+by lighting it or keeping it on.
+
+32
+00:01:44,180 --> 00:01:47,770
+If you walk forward, you’ll eventually
+find another lit candle—
+
+33
+00:01:47,940 --> 00:01:50,560
+either a new one or you’re starting one.
+
+34
+00:01:50,560 --> 00:01:53,530
+The question is: how could you know which?
+
+35
+00:01:53,570 --> 00:01:57,610
+Here’s one approach: turn it off 
+and backtrack to the start
+
+36
+00:01:57,610 --> 00:02:01,780
+by passing the same number of candles 
+you passed on the way there.
+
+37
+00:02:02,120 --> 00:02:04,750
+If the starting candle is now off,
+
+38
+00:02:04,750 --> 00:02:08,040
+you’ve completed the loop
+and know the giant’s age!
+
+39
+00:02:08,330 --> 00:02:12,840
+Otherwise, depart again, 
+continuing until the next lit candle,
+
+40
+00:02:12,840 --> 00:02:15,630
+testing if it’s your starting one 
+and so on.
+
+41
+00:02:15,970 --> 00:02:17,880
+This will work... eventually.
+
+42
+00:02:17,880 --> 00:02:21,510
+But if the giant isn’t young,
+and many candles are on,
+
+43
+00:02:21,720 --> 00:02:25,140
+you might have a marathon to run
+between now and sunrise.
+
+44
+00:02:25,600 --> 00:02:29,810
+And you definitely don’t want to be 
+in the cake when he starts digging in.
+
+45
+00:02:29,940 --> 00:02:32,440
+So let’s look for a more 
+efficient solution.
+
+46
+00:02:33,150 --> 00:02:37,990
+How about testing a series of hypotheses
+about the giant's age?
+
+47
+00:02:37,990 --> 00:02:40,240
+Suppose you guess he’s turning 10.
+
+48
+00:02:40,410 --> 00:02:43,490
+You could light the starting candle, 
+walk forward 10,
+
+49
+00:02:43,490 --> 00:02:47,540
+switch or leave the destination 
+candle off, and return.
+
+50
+00:02:47,620 --> 00:02:51,670
+If the starting candle’s still on,
+10 isn’t the answer.
+
+51
+00:02:51,920 --> 00:02:56,760
+If it’s off, 10 could be right, 
+but you may have made multiple loops—
+
+52
+00:02:56,760 --> 00:03:01,260
+so 10′s factors 5 and 2
+are also possibilities.
+
+53
+00:03:01,680 --> 00:03:04,140
+Then you would have passed
+a repeating pattern—
+
+54
+00:03:04,430 --> 00:03:07,020
+but that could have just been
+the starting arrangement.
+
+55
+00:03:07,020 --> 00:03:10,270
+So what if you changed the candles
+on the way?
+
+56
+00:03:10,270 --> 00:03:14,310
+If you turned them all on while walking 
+from candle 1 to 11,
+
+57
+00:03:14,310 --> 00:03:16,940
+switch that off, then turn back,
+
+58
+00:03:17,150 --> 00:03:21,910
+the first unlit candle you find 
+would tell you the exact candle count.
+
+59
+00:03:22,030 --> 00:03:24,780
+And if you don't hit any
+extinguished candles,
+
+60
+00:03:24,950 --> 00:03:28,000
+you'll know that the total
+must be higher than 10.
+
+61
+00:03:28,290 --> 00:03:31,750
+You could then pick a larger guess
+and try again.
+
+62
+00:03:31,750 --> 00:03:34,750
+To be systematic, you could increase 
+your guess
+
+63
+00:03:34,750 --> 00:03:37,670
+by the same number each time, say 4.
+
+64
+00:03:37,750 --> 00:03:39,510
+If there were 99 candles,
+
+65
+00:03:39,720 --> 00:03:46,310
+this method would take 24 roundtrips 
+and involve visiting nearly 2,700 candles.
+
+66
+00:03:46,470 --> 00:03:49,600
+But you don’t have to increase
+your guess linearly.
+
+67
+00:03:49,850 --> 00:03:54,060
+For instance, you could double it, 
+from 10 to 20 to 40,
+
+68
+00:03:54,060 --> 00:03:59,610
+and discover the true number 
+on your 5th trip after around 560 candles.
+
+69
+00:03:59,990 --> 00:04:03,200
+Doubling allows you to reach
+high numbers quickly,
+
+70
+00:04:03,200 --> 00:04:07,780
+while starting with small intervals 
+in case there are only a few candles.
+
+71
+00:04:08,330 --> 00:04:10,500
+After expecting a lengthy trek,
+
+72
+00:04:10,540 --> 00:04:14,710
+you’re pleased to discover 
+the giant is only turning 12.
+
+73
+00:04:15,460 --> 00:04:18,920
+You hurry to change into slightly
+more inconspicuous clothing;
+
+74
+00:04:19,170 --> 00:04:23,970
+chisel up some enormous chocolate numbers;
+and at the party, make your own wish:
+
+75
+00:04:23,970 --> 00:04:27,350
+that you’re not downwind when your friend 
+blows out his candles.
+

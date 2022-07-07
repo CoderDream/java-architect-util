@@ -1,0 +1,350 @@
+1
+00:00:06,960 --> 00:00:09,050
+Peering into the eyes 
+of different animals,
+
+2
+00:00:09,050 --> 00:00:12,380
+you’ll see some extraordinarily
+shaped pupils.
+
+3
+00:00:12,720 --> 00:00:13,760
+But why?
+
+4
+00:00:13,970 --> 00:00:17,050
+It turns out that pupil shape 
+is a powerful indicator
+
+5
+00:00:17,050 --> 00:00:20,140
+of what role an animal plays 
+in its ecosystem.
+
+6
+00:00:20,520 --> 00:00:23,640
+Pupils mark the hollow opening
+in the iris,
+
+7
+00:00:23,640 --> 00:00:26,150
+the eye’s band of pigmented muscle.
+
+8
+00:00:26,860 --> 00:00:29,610
+They’re the portholes through which
+light enters the eye,
+
+9
+00:00:29,610 --> 00:00:33,610
+where it then strikes the retina 
+and activates light-sensitive cells,
+
+10
+00:00:33,700 --> 00:00:36,280
+setting the process of vision in motion.
+
+11
+00:00:36,950 --> 00:00:40,870
+Pupils are black because most of the
+light that enters them is absorbed.
+
+12
+00:00:41,200 --> 00:00:43,580
+Their size changes in response
+to brightness,
+
+13
+00:00:43,580 --> 00:00:47,170
+as well as certain drugs 
+and emotional and mental states—
+
+14
+00:00:47,170 --> 00:00:51,130
+but their basic form varies greatly
+among species.
+
+15
+00:00:51,380 --> 00:00:56,800
+House cats, for one, are twilight hunters 
+with vertically elongated pupils.
+
+16
+00:00:57,180 --> 00:01:00,520
+In the dark, these structures
+expand dramatically,
+
+17
+00:01:00,520 --> 00:01:02,390
+taking in the available light.
+
+18
+00:01:02,640 --> 00:01:05,560
+When it’s bright, they shrink into slits.
+
+19
+00:01:06,350 --> 00:01:12,860
+In fact, cat pupils are so flexible that
+their maximum area is 135 times greater
+
+20
+00:01:12,860 --> 00:01:14,440
+than their minimum area—
+
+21
+00:01:14,440 --> 00:01:18,160
+whereas our pupils only shrink
+and expand 15-fold.
+
+22
+00:01:18,410 --> 00:01:21,330
+And because of how the slit pupil 
+takes in light,
+
+23
+00:01:21,330 --> 00:01:24,500
+it creates sharp, vertical contours.
+
+24
+00:01:24,620 --> 00:01:28,330
+When the cat’s brain processes 
+the visuals from each eye,
+
+25
+00:01:28,330 --> 00:01:30,880
+the small but sharp differences 
+between them
+
+26
+00:01:30,880 --> 00:01:34,260
+help the cat judge 
+the precise distance of its target.
+
+27
+00:01:34,720 --> 00:01:39,800
+In fact, many other ambush hunters also
+have vertically elongated pupils—
+
+28
+00:01:39,970 --> 00:01:43,600
+but mainly those whose eyes are
+located closer to the ground.
+
+29
+00:01:43,970 --> 00:01:48,600
+This may be because these pupils are
+especially useful in perceiving objects
+
+30
+00:01:48,600 --> 00:01:52,320
+at the relative short distances
+these animals tend to hunt.
+
+31
+00:01:52,980 --> 00:01:57,910
+The world looks very different from behind
+the horizontally elongated pupils
+
+32
+00:01:57,910 --> 00:02:01,700
+of many grazing and browsing animals, 
+like goats.
+
+33
+00:02:02,370 --> 00:02:05,580
+These pupils, situated 
+on either side of the head,
+
+34
+00:02:05,580 --> 00:02:12,210
+let horizontal bands of light in that
+give the goat a near-360-degree view
+
+35
+00:02:12,340 --> 00:02:15,720
+and provide it with sharp,
+horizontal images.
+
+36
+00:02:16,340 --> 00:02:20,010
+This helps goats detect any
+disruption to the horizon—
+
+37
+00:02:20,010 --> 00:02:24,810
+alerting them to potential predators— 
+while still enabling them to see ahead
+
+38
+00:02:24,810 --> 00:02:27,520
+and detect obstacles 
+as they make their escape.
+
+39
+00:02:28,440 --> 00:02:32,480
+In fact, goats always keep their pupils
+aligned with the horizon,
+
+40
+00:02:32,480 --> 00:02:37,490
+rotating their eyeballs in their sockets
+as they move their heads up and down.
+
+41
+00:02:38,400 --> 00:02:42,240
+Meanwhile, nocturnal geckos have pupils
+that shrink into slits
+
+42
+00:02:42,240 --> 00:02:45,450
+studded with pinholes 
+in higher light conditions.
+
+43
+00:02:45,660 --> 00:02:49,920
+Each pinhole projects a separate, sharp
+image onto the geckos retina.
+
+44
+00:02:50,120 --> 00:02:52,790
+Scientists think that comparing 
+these different inputs
+
+45
+00:02:52,790 --> 00:02:56,800
+might help the gecko judge distance
+without having to move.
+
+46
+00:02:57,010 --> 00:02:58,800
+And while they might have fooled you,
+
+47
+00:02:58,800 --> 00:03:03,470
+mantises and other insects and crustaceans
+have “pseudopupils.”
+
+48
+00:03:03,760 --> 00:03:05,810
+These aren’t optical structures;
+
+49
+00:03:06,010 --> 00:03:09,770
+they’re optical illusions 
+experienced by the observer.
+
+50
+00:03:10,310 --> 00:03:15,320
+Mantises have compound eyes composed
+of thousands of light-sensing units.
+
+51
+00:03:15,610 --> 00:03:18,740
+When some are aimed at you,
+they appear black
+
+52
+00:03:18,740 --> 00:03:22,070
+because they’re absorbing most wavelengths
+of incoming light—
+
+53
+00:03:22,070 --> 00:03:24,530
+but there’s no actual opening.
+
+54
+00:03:25,200 --> 00:03:28,040
+So, why do we have round pupils?
+
+55
+00:03:28,660 --> 00:03:33,630
+Elongated pupils help sharpen certain
+dimensions of an animal's vision.
+
+56
+00:03:33,960 --> 00:03:37,920
+But scientists think that, for animals
+like us with circular pupils,
+
+57
+00:03:37,920 --> 00:03:39,840
+this is a lower priority.
+
+58
+00:03:40,420 --> 00:03:44,090
+Instead of seeing some elements 
+of a scene in extreme focus,
+
+59
+00:03:44,090 --> 00:03:47,140
+we see a larger picture 
+in relative detail,
+
+60
+00:03:47,310 --> 00:03:50,270
+which enables more general skills 
+of observation.
+
+61
+00:03:50,520 --> 00:03:54,230
+This may be especially helpful
+for foragers looking for food,
+
+62
+00:03:54,230 --> 00:03:57,190
+hunters eyeballing and chasing
+their prey,
+
+63
+00:03:57,190 --> 00:04:00,900
+and social animals recognizing 
+other faces.
+
+64
+00:04:01,070 --> 00:04:04,160
+As we peer at different pupils, 
+patterns emerge.
+
+65
+00:04:04,320 --> 00:04:06,700
+And yet there are exceptions.
+
+66
+00:04:07,030 --> 00:04:12,120
+For example, Pallas’s cats and mongooses
+are both small ambush predators,
+
+67
+00:04:12,210 --> 00:04:17,960
+but the Pallas’s cat has round pupils
+and mongooses have goat-like pupils.
+
+68
+00:04:18,710 --> 00:04:21,300
+And we’ve only explored
+a few pupil shapes.
+
+69
+00:04:21,510 --> 00:04:24,760
+Other animals have crescent-
+or heart-shaped pupils.
+
+70
+00:04:24,760 --> 00:04:28,140
+And the cuttlefish has perhaps
+some of the most bizarre:
+
+71
+00:04:28,310 --> 00:04:33,440
+their pupils are circular in the dark,
+but W-shaped in the light.
+
+72
+00:04:33,890 --> 00:04:36,110
+So, what’s going on here?
+
+73
+00:04:36,110 --> 00:04:38,610
+Well, wouldn’t we all like to know?
+
