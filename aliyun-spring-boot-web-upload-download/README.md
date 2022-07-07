@@ -17,8 +17,12 @@
 2. [Java遍历文件夹下的所有文件](https://blog.csdn.net/DCFANS/article/details/92840542)
 3. [MultipartFile转File](https://blog.csdn.net/u012279452/article/details/92840583)
 4. [SpringBoot上传文件大小限制的配置](https://www.jianshu.com/p/0a00b697dfb4)
+5. [前端模拟实现postman的send-and-download进行文件下载](https://blog.csdn.net/qq_45094682/article/details/119937772)
 
-
+### 设置默认中文名称
+```java
+response.setHeader("Content-disposition", "attachment;filename=" + URLEncoder.encode(downloadName, "utf-8"));
+```
 
 ### Java实现多文件压缩下载
 

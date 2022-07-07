@@ -2,20 +2,16 @@ package com.example.demo.util;
 
 
 //import com.sun.deploy.net.HttpResponse;
+
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
-import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
+import java.net.URLEncoder;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
@@ -30,16 +26,19 @@ import java.util.zip.ZipOutputStream;
 @Slf4j
 public class CompressDownloadUtil {
 
-    private CompressDownloadUtil() {}
+    private CompressDownloadUtil() {
+    }
 
     /**
      * 设置下载响应头
      */
-    public static HttpServletResponse setDownloadResponse(HttpServletResponse response, String downloadName) {
+    public static HttpServletResponse setDownloadResponse(HttpServletResponse response, String downloadName) throws UnsupportedEncodingException {
         response.reset();
         response.setCharacterEncoding("utf-8");
         response.setContentType("application/octet-stream");
-        response.setHeader("Content-Disposition", "attachment;fileName*=UTF-8''"+ downloadName);
+        //  response.setHeader("Content-Disposition", "attachment;fileName*=UTF-8''"+ downloadName);
+        response.setHeader("Content-disposition", "attachment;filename=" + URLEncoder.encode(downloadName, "utf-8"));
+
         return response;
     }
 
@@ -52,8 +51,8 @@ public class CompressDownloadUtil {
     /**
      * 将多个文件压缩到指定输出流中
      *
-     * @param files 需要压缩的文件列表
-     * @param outputStream  压缩到指定的输出流
+     * @param files        需要压缩的文件列表
+     * @param outputStream 压缩到指定的输出流
      */
     public static void compressZip(List<File> files, OutputStream outputStream) {
         // 包装成ZIP格式输出流
@@ -67,14 +66,14 @@ public class CompressDownloadUtil {
                 byte[] data = new byte[(int) file.length()];
                 filenputStream.read(data);
                 // 添加ZipEntry，并ZipEntry中写入文件流，这里，加上i是防止要下载的文件有重名的导致下载失败
-                zipOutStream.putNextEntry(new ZipEntry(i+ "-" + file.getName()));
+                zipOutStream.putNextEntry(new ZipEntry(i + "-" + file.getName()));
                 zipOutStream.write(data);
                 filenputStream.close();
                 zipOutStream.closeEntry();
             }
         } catch (IOException e) {
             log.error(CompressDownloadUtil.class.getName(), "downloadallfiles", e);
-        }  finally {
+        } finally {
             try {
                 if (Objects.nonNull(outputStream)) {
                     outputStream.close();
@@ -116,7 +115,7 @@ public class CompressDownloadUtil {
                 byte[] data = new byte[(int) response.getEntity().getContentLength()];
                 inputStream.read(data);
                 //  添加ZipEntry，并ZipEntry中写入文件流，这里，加上i是防止要下载的文件有重名的导致下载失败
-                zipOutStream.putNextEntry(new ZipEntry(i+ "-" + fileName));
+                zipOutStream.putNextEntry(new ZipEntry(i + "-" + fileName));
                 zipOutStream.write(data);
                 inputStream.close();
                 zipOutStream.closeEntry();
@@ -124,7 +123,7 @@ public class CompressDownloadUtil {
             }
         } catch (IOException e) {
             log.error(CompressDownloadUtil.class.getName(), "downloadallfiles", e);
-        }  finally {
+        } finally {
             try {
                 if (Objects.nonNull(outputStream)) {
                     outputStream.close();
@@ -137,6 +136,7 @@ public class CompressDownloadUtil {
 
     /**
      * 获取文件名
+     *
      * @param fileUrl 文件地址
      * @return 文件名
      */
@@ -148,14 +148,15 @@ public class CompressDownloadUtil {
 
     /**
      * 下载文件
+     *
      * @param outputStream 下载输出流
-     * @param zipFilePath 需要下载文件的路径
+     * @param zipFilePath  需要下载文件的路径
      */
     public static void downloadFile(OutputStream outputStream, String zipFilePath) {
         File zipFile = new File(zipFilePath);
         if (!zipFile.exists()) {
             // 需要下载压塑包文件不存在
-            return ;
+            return;
         }
         try (FileInputStream inputStream = new FileInputStream(zipFile)) {
             byte[] data = new byte[(int) zipFile.length()];
@@ -177,6 +178,7 @@ public class CompressDownloadUtil {
 
     /**
      * 删除指定路径的文件
+     *
      * @param filepath 文件路径
      */
     public static void deleteFile(String filepath) {
@@ -186,6 +188,7 @@ public class CompressDownloadUtil {
 
     /**
      * 删除指定文件
+     *
      * @param file 文件
      */
     public static void deleteFile(File file) {
