@@ -2,7 +2,6 @@ package com.coderdream;
 
 
 import com.coderdream.ass.Event;
-import com.coderdream.util.User;
 import org.apache.commons.beanutils.BeanComparator;
 import org.apache.commons.collections.ComparatorUtils;
 import org.apache.commons.collections.comparators.ComparableComparator;
@@ -45,7 +44,7 @@ public class SubtitleUtil {
     /**
      *
      */
-    private static final Integer SECOND_BEGIN = 17;
+    private static final Integer SECOND_START = 17;
     /**
      *
      */
@@ -118,11 +117,11 @@ public class SubtitleUtil {
         for (Item item : subtitleMergeItems) {
             // 中文
             event = new Event();
-            String beginTime = item.getBeginTime();
+            String startTime = item.getStartTime();
             String endTime = item.getEndTime();
             String content = item.getContent();
             event.setFormat("Dialogue");
-            event.setStart(formatTime(beginTime));
+            event.setStart(formatTime(startTime));
             event.setEnd(formatTime(endTime));
             event.setStyle("");
             event.setMarginL("0");
@@ -159,7 +158,7 @@ public class SubtitleUtil {
 
                 eventEn = new Event();
                 eventEn.setFormat("Dialogue");
-                eventEn.setStart(formatTime(beginTime));
+                eventEn.setStart(formatTime(startTime));
                 eventEn.setEnd(formatTime(endTime));
                 eventEn.setName("英文对白");
                 eventEn.setStyle("");
@@ -171,35 +170,15 @@ public class SubtitleUtil {
                 eventEn.setText(SubtitleUtil.trimChineseBlank(secondContent));
                 eventList.add(eventEn);
             }
-
         }
-
-        String[] properties =   {"layer","start"};
+        //先按Layer逆序排序，再按开始时间升序排序
+        String[] properties = {"layer", "start"};
         multiSort(eventList, properties);
-
-//        Collections.sort(eventList, new Comparator<Event>() {
-//                    /**
-//                     *先按Layer逆序排序，再按开始时间升序排序
-//                     * @param item1
-//                     * @param item2
-//                     * @return
-//                     */
-//                    @Override
-//                    public int compare(Event item1, Event item2) {
-//                        if (item2.getLayer().compareTo(item1.getLayer()) == 0) {
-//                            return item1.getStart().compareTo(item2.getStart());
-//                        } else {
-//                            return item1.getStart().compareTo(item2.getStart());
-//                        }
-//                    }
-//                }
-//        );
 
         writeBufferToAss(fileName, eventList);
     }
 
     /**
-     *
      * @param eventListvent
      * @param properties
      */
@@ -208,7 +187,7 @@ public class SubtitleUtil {
         mycmp1 = ComparatorUtils.reversedComparator(mycmp1); //逆序
 
         Comparator mycmp2 = ComparableComparator.getInstance();
-//		mycmp2 = ComparatorUtils. reversedComparator(mycmp2); //允许null
+//		mycmp2 = ComparatorUtils.reversedComparator(mycmp2); //逆序
         mycmp2 = ComparatorUtils.nullHighComparator(mycmp2); //允许null
 
         // 声明要排序的对象的属性，并指明所使用的排序规则，如果不指明，则用默认排序
@@ -398,9 +377,9 @@ public class SubtitleUtil {
 
                     item.setId(id);
                     item.setTimeRange(timeRange);
-                    String beginTime = timeRange.substring(0, FIRST_END);
+                    String startTime = timeRange.substring(0, FIRST_END);
                     String endTime = timeRange.substring(17, SECOND_END);
-                    item.setBeginTime(beginTime);
+                    item.setStartTime(startTime);
                     item.setEndTime(endTime);
                     item.setContent(content);
                     if (!timeRangeSet.contains(timeRange)) {
@@ -599,77 +578,133 @@ public class SubtitleUtil {
      * @return
      */
     private static List<Item> subtitleMerge(List<Item> firstItems, List<Item> secondItems) {
+        // TODO
         List<Item> subtitleMergeItems = new ArrayList<>();
 
+        List<Item> sameStartTimeItems = new ArrayList<>();
+        List<Item> sameEndTimeItems = new ArrayList<>();
+        List<Item> soloFirstItems = new ArrayList<>();
+
+
+        // 不匹配的数据项
+        Map<String, Item> diffMap = new LinkedHashMap<>();
         Map<String, Item> firstMap = new LinkedHashMap<>();
+        Map<String, Item> firstItemMap = new LinkedHashMap<>();
         for (Item item : firstItems) {
-            firstMap.put(item.getTimeRange(), item);
+            firstMap.put(item.getStartTime(), item);
+            firstMap.put(item.getEndTime(), item);
+            firstItemMap.put(item.getTimeRange(), item);
         }
         Map<String, Item> secondMap = new LinkedHashMap<>();
+        Map<String, Item> soloSecondItemMap = new LinkedHashMap<>();
         for (Item item : secondItems) {
-            String beginTime = item.getTimeRange().trim().substring(0, FIRST_END);
-            String endTime = item.getTimeRange().trim().substring(17, SECOND_END);
-            secondMap.put(beginTime, item);
-            secondMap.put(endTime, item);
+            secondMap.put(item.getStartTime(), item);
+            secondMap.put(item.getEndTime(), item);
+            soloSecondItemMap.put(item.getTimeRange(), item);
         }
 
         // 开始时间为key
-        Item secondItem = null;
+        Item startTimeItem = null;
         // 结束时间为key
-        Item thirdItem = null;
+        Item endTimeItem = null;
         Item leftItem = null;
         String firstContent = "";
         String secondContent = "";
+        int count1 = 0;
+        int count2 = 0;
         // 遍历第一语言
         for (Item item : firstItems) {
             if ("00:01:07,434 --> 00:01:09,203".equals(item.getTimeRange())) {
                 //  System.out.println("hold on");
             }
-            secondItem = secondMap.get(item.getTimeRange().substring(0, FIRST_END));
-            thirdItem = secondMap.get(item.getTimeRange().substring(SECOND_BEGIN, SECOND_END));
+            startTimeItem = secondMap.get(item.getStartTime());
+            endTimeItem = secondMap.get(item.getEndTime());
             // 开始时间和完成时间完全匹配
-            if (null != secondItem && null != thirdItem && secondItem.getTimeRange().equals(thirdItem.getTimeRange())) {
+            if (null != startTimeItem && null != endTimeItem && startTimeItem.getTimeRange().equals(endTimeItem.getTimeRange())) {
                 // 存在第二语言，合并
                 firstContent = item.getContent();
-                secondContent = secondItem.getContent();
+                secondContent = startTimeItem.getContent();
                 item.setContent(firstContent);
                 item.setSecondContent(secondContent);
                 // 把 Map 中处理过的对象删除
-                secondMap.remove(secondItem.getTimeRange().substring(0, FIRST_END));
-                secondMap.remove(secondItem.getTimeRange().substring(SECOND_BEGIN, SECOND_END));
+                secondMap.remove(startTimeItem.getStartTime());
+                secondMap.remove(startTimeItem.getEndTime());
+                // 合并后的结果
                 subtitleMergeItems.add(item);
-            } else {
-                // 存在第二语言，合并
-                if (null != secondItem) {
-                    firstContent = item.getContent();
-                    secondContent = secondItem.getContent();
-                    item.setContent(firstContent);
-                    item.setSecondContent(secondContent);
-                    // 把 Map 中处理过的对象删除
-                    secondMap.remove(secondItem.getTimeRange().substring(0, FIRST_END));
-                    secondMap.remove(secondItem.getTimeRange().substring(SECOND_BEGIN, SECOND_END));
-                    subtitleMergeItems.add(item);
-                } else if (null != thirdItem) {
-                    firstContent = item.getContent();
-                    secondContent = thirdItem.getContent();
-                    item.setContent(firstContent);
-                    item.setSecondContent(secondContent);
-                    // 把 Map 中处理过的对象删除
-                    secondMap.remove(thirdItem.getTimeRange().substring(0, FIRST_END));
-                    secondMap.remove(thirdItem.getTimeRange().substring(SECOND_BEGIN, SECOND_END));
-                    subtitleMergeItems.add(item);
-                }
-                // 不存在第二语言
-                else {
-                    firstContent = item.getContent();
-                    item.setContent(firstContent);
-                    // item.setSecondContent(secondContent);
-                    //System.out.println("第一语言的项：" + item);
-                    System.out.println(item.getTimeRange());
-                    subtitleMergeItems.add(item);
-                }
+
+                soloSecondItemMap.remove(startTimeItem.getTimeRange());
             }
-            firstMap.remove(item.getTimeRange());
+            // 不匹配的数据
+            else {
+
+                // 如果存在开始时间相同，则合并
+                if (startTimeItem != null && item.getStartTime().equals(startTimeItem.getStartTime())) {
+                    firstContent = item.getContent();
+                    secondContent = startTimeItem.getContent();
+                    item.setContent(firstContent);
+                    item.setSecondContent(secondContent);
+                    // 把 Map 中处理过的对象删除
+                    secondMap.remove(startTimeItem.getStartTime());
+                    secondMap.remove(startTimeItem.getEndTime());
+                 //   subtitleMergeItems.add(item);
+                    sameStartTimeItems.add(item);
+                    count1++;
+                }
+                // 如果存在结束时间相同，则合并
+                else if (endTimeItem != null && item.getEndTime().equals(endTimeItem.getEndTime())) {
+                    firstContent = item.getContent();
+                    secondContent = endTimeItem.getContent();
+                    item.setContent(firstContent);
+                    item.setSecondContent(secondContent);
+                    // 把 Map 中处理过的对象删除
+                    secondMap.remove(endTimeItem.getStartTime());
+                    secondMap.remove(endTimeItem.getEndTime());
+                  //  subtitleMergeItems.add(item);
+
+                    sameEndTimeItems.add(item);
+                    count2++;
+                }
+                // 暂不处理
+                else {
+                 //   subtitleMergeItems.add(item);
+
+                    soloFirstItems.add(item);
+                }
+
+
+                //      if(item.)
+//                diffMap.put(item.getTimeRange(), item);
+//                // 存在第二语言，合并
+//                if (null != startTimeItem) {
+//                    firstContent = item.getContent();
+//                    secondContent = startTimeItem.getContent();
+//                    item.setContent(firstContent);
+//                    item.setSecondContent(secondContent);
+//                    // 把 Map 中处理过的对象删除
+//                    secondMap.remove(startTimeItem.getTimeRange().substring(0, FIRST_END));
+//                    secondMap.remove(startTimeItem.getTimeRange().substring(SECOND_START, SECOND_END));
+//                    subtitleMergeItems.add(item);
+//                } else if (null != endTimeItem) {
+//                    firstContent = item.getContent();
+//                    secondContent = endTimeItem.getContent();
+//                    item.setContent(firstContent);
+//                    item.setSecondContent(secondContent);
+//                    // 把 Map 中处理过的对象删除
+//                    secondMap.remove(endTimeItem.getTimeRange().substring(0, FIRST_END));
+//                    secondMap.remove(endTimeItem.getTimeRange().substring(SECOND_START, SECOND_END));
+//                    subtitleMergeItems.add(item);
+//                }
+//                // 不存在第二语言
+//                else {
+//                    firstContent = item.getContent();
+//                    item.setContent(firstContent);
+//                    // item.setSecondContent(secondContent);
+//                    //System.out.println("第一语言的项：" + item);
+//                    System.out.println(item.getTimeRange());
+//                    subtitleMergeItems.add(item);
+//                }
+            }
+            firstItemMap.remove(item.getTimeRange());
         }
         System.out.println("第二语言的项：");
         //
@@ -683,10 +718,20 @@ public class SubtitleUtil {
             }
         }
 
-        for (Map.Entry<String, Item> entry : firstMap.entrySet()) {
+        // 遗漏的项（应该为空）
+        for (Map.Entry<String, Item> entry : firstItemMap.entrySet()) {
             String mapKey = entry.getKey();
             Item mapValue = entry.getValue();
             System.out.println("遗漏的项：" + mapKey + "：" + mapValue);
+        }
+
+        diffMap.putAll(soloSecondItemMap);
+        System.out.println("中英文不匹配的项：");
+        System.out.println("id\tBeginTime\tEndTime\tcontent\tsecondContent\t");
+        for (Map.Entry<String, Item> entry : diffMap.entrySet()) {
+            String mapKey = entry.getKey();
+            Item mapValue = entry.getValue();
+            System.out.println(mapValue.getId() + "\t" + mapValue.getStartTime() + "\t" + mapValue.getEndTime() + "\t" + mapValue.getContent() + "\t" + mapValue.getSecondContent() + "\t");
         }
 
         Collections.sort(subtitleMergeItems, new Comparator<Item>() {
@@ -697,6 +742,22 @@ public class SubtitleUtil {
                 }
         );
 
+
+        System.out.println("#####剩余的中文：");
+        System.out.println("id\tBeginTime\tEndTime\tcontent\tsecondContent\t");
+        for (Item mapValue: soloFirstItems) {
+            System.out.println(mapValue.getId() + "\t" + mapValue.getStartTime() + "\t" + mapValue.getEndTime() + "\t" + mapValue.getContent() + "\t" + mapValue.getSecondContent() + "\t");
+        }
+
+        System.out.println("#####剩余的英文：");
+        System.out.println("id\tBeginTime\tEndTime\tcontent\tsecondContent\t");
+        for (Map.Entry<String, Item> entry : soloSecondItemMap.entrySet()) {
+            String mapKey = entry.getKey();
+            Item mapValue = entry.getValue();
+            System.out.println(mapValue.getId() + "\t" + mapValue.getStartTime() + "\t" + mapValue.getEndTime() + "\t" + mapValue.getContent() + "\t" + mapValue.getSecondContent() + "\t");
+        }
+
+        System.out.println("#####剩余的打印完成：");
 
         return subtitleMergeItems;
     }

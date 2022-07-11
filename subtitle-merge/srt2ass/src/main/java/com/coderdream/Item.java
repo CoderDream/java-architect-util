@@ -6,7 +6,7 @@ import lombok.Data;
 public class Item {
     public Integer id;
     public String timeRange;
-    public String beginTime;
+    public String startTime;
     public String endTime;
     public String content;
     public String secondContent;

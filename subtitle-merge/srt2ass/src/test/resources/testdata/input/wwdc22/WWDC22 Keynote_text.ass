@@ -30,52 +30,34 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Dialogue: 1,0:00:00.33,0:00:07.34,英文对白,,0,0,0,,♪♪
 Dialogue: 1,0:00:17.35,0:00:24.35,英文对白,,0,0,0,,♪♪
 Dialogue: 1,0:00:34.36,0:00:41.37,英文对白,,0,0,0,,♪♪
-Dialogue: 1,0:00:51.38,0:00:58.35,英文对白,,0,0,0,,♪♪
 Dialogue: 1,0:01:03.89,0:01:07.40,英文对白,,0,0,0,,Tim Cook: Good morning, and welcome to WWDC.
 Dialogue: 1,0:01:07.43,0:01:09.20,英文对白,,0,0,0,,We have a big day of announcements
 Dialogue: 1,0:01:09.23,0:01:12.33,英文对白,,0,0,0,,about our latest technologies and platforms.
 Dialogue: 1,0:01:12.37,0:01:14.94,英文对白,,0,0,0,,These platforms, and the products they drive,
 Dialogue: 1,0:01:14.97,0:01:18.17,英文对白,,0,0,0,,deliver amazing experiences for our users
 Dialogue: 1,0:01:18.21,0:01:21.68,英文对白,,0,0,0,,and provide developers with incredible opportunities
-Dialogue: 1,0:01:21.71,0:01:23.68,英文对白,,0,0,0,,so they can use their superpowers to innovate, create,
-Dialogue: 1,0:01:26.78,0:01:30.62,英文对白,,0,0,0,,and collaborate, making apps that continue to change the world.
 Dialogue: 1,0:01:30.65,0:01:34.27,英文对白,,0,0,0,,And WWDC is designed to give this community
 Dialogue: 1,0:01:34.61,0:01:37.53,英文对白,,0,0,0,,what they need to do their very best work.
 Dialogue: 1,0:01:37.56,0:01:41.26,英文对白,,0,0,0,,We love to support our developers beyond WWDC
 Dialogue: 1,0:01:41.30,0:01:46.87,英文对白,,0,0,0,,with comprehensive world-class support and other important initiatives.
-Dialogue: 1,0:01:46.90,0:01:49.77,英文对白,,0,0,0,,We just opened our brand-new Developers Center across from Apple Park
 Dialogue: 1,0:01:51.47,0:01:54.44,英文对白,,0,0,0,,where developers can engage with our engineers.
 Dialogue: 1,0:01:54.48,0:01:56.88,英文对白,,0,0,0,,And to reach our global community,
-Dialogue: 1,0:01:56.91,0:02:00.95,英文对白,,0,0,0,,this past fall we introduced our first online Tech Talks for developers
-Dialogue: 1,0:02:00.98,0:02:04.82,英文对白,,0,0,0,,to learn more about our new technologies
-Dialogue: 1,0:02:04.85,0:02:12.33,英文对白,,0,0,0,,and directly connect with Apple engineers
 Dialogue: 1,0:02:07.39,0:02:11.23,英文对白,,0,0,0,,in live sessions and one-on-one office hours.
 Dialogue: 1,0:02:12.36,0:02:16.63,英文对白,,0,0,0,,We are also committed to cultivating the next generation of developers,
 Dialogue: 1,0:02:16.67,0:02:20.84,英文对白,,0,0,0,,including efforts to reach underrepresented communities.
-Dialogue: 1,0:02:20.87,0:02:22.97,英文对白,,0,0,0,,So our developer academies teach students the fundamentals of coding
 Dialogue: 1,0:02:25.17,0:02:27.24,英文对白,,0,0,0,,as well as the other necessary skills
 Dialogue: 1,0:02:27.28,0:02:31.31,英文对白,,0,0,0,,to find and create jobs in the app economy.
 Dialogue: 1,0:02:31.35,0:02:33.38,英文对白,,0,0,0,,There are 17 around the world
 Dialogue: 1,0:02:33.42,0:02:37.57,英文对白,,0,0,0,,including the academy in Detroit we founded in October
 Dialogue: 1,0:02:37.90,0:02:41.69,英文对白,,0,0,0,,as a part of Apple's Racial Equity and Justice Initiative.
-Dialogue: 1,0:02:41.72,0:02:42.99,英文对白,,0,0,0,,And in Saudi Arabia, we launched our first developer academy for women in February.
 Dialogue: 1,0:02:47.66,0:02:52.33,英文对白,,0,0,0,,Our Entrepreneur Camps provide developers from underrepresented communities
 Dialogue: 1,0:02:52.37,0:02:56.61,英文对白,,0,0,0,,with mentorship, inspiration, and insights from Apple.
-Dialogue: 1,0:02:56.64,0:02:59.54,英文对白,,0,0,0,,The first camps were for female founders, and this past year,
-Dialogue: 1,0:02:59.58,0:03:04.71,英文对白,,0,0,0,,we expanded the camps to reach Black and Latin founders.
 Dialogue: 1,0:03:04.75,0:03:07.92,英文对白,,0,0,0,,Alumni have gone on to secure major funding
 Dialogue: 1,0:03:07.95,0:03:10.72,英文对白,,0,0,0,,and see great success on the App Store.
-Dialogue: 1,0:03:12.59,0:03:15.29,英文对白,,0,0,0,,These ongoing efforts empower all developers with the tools,
-Dialogue: 1,0:03:15.32,0:03:20.43,英文对白,,0,0,0,,technologies, and inspiration to change the world for the better.
 Dialogue: 1,0:03:21.30,0:03:26.47,英文对白,,0,0,0,,Last year, many millions of developers engaged in WWDC,
 Dialogue: 1,0:03:26.50,0:03:30.64,英文对白,,0,0,0,,and we expect millions more to join us again this year.
-Dialogue: 1,0:03:30.67,0:03:33.21,英文对白,,0,0,0,,In fact, we're excited to say we've grown our developer community
-Dialogue: 1,0:03:33.24,0:03:38.88,英文对白,,0,0,0,,to over 34 million Apple developers.
-Dialogue: 1,0:03:38.91,0:03:41.42,英文对白,,0,0,0,,We have a huge week ahead of us, with an amazing online experience,
 Dialogue: 1,0:03:43.62,0:03:47.62,英文对白,,0,0,0,,including sessions, labs, and digital lounges,
-Dialogue: 1,0:03:47.66,0:03:52.65,英文对白,,0,0,0,,which will all be available for free to our developers.
 Dialogue: 1,0:03:51.99,0:03:55.26,英文对白,,0,0,0,,Today, we're going to push our platforms further than ever
-Dialogue: 1,0:03:55.43,0:03:58.05,英文对白,,0,0,0,,for our developers and our users.
 Dialogue: 1,0:03:58.38,0:04:02.17,英文对白,,0,0,0,,So let's get started by sending it over to Craig.
 Dialogue: 1,0:04:02.20,0:04:10.21,英文对白,,0,0,0,,♪♪
 Dialogue: 1,0:04:14.48,0:04:17.42,英文对白,,0,0,0,,Craig Federighi: I'm really excited about what we have to show you today.
@@ -85,9 +67,7 @@ Dialogue: 1,0:04:34.54,0:04:40.24,英文对白,,0,0,0,,♪♪
 Dialogue: 1,0:04:40.94,0:04:44.75,英文对白,,0,0,0,,Now, let's talk about iOS.
 Dialogue: 1,0:04:44.78,0:04:48.75,英文对白,,0,0,0,,Together with iPhone, iOS helps you get so much done,
 Dialogue: 1,0:04:48.78,0:04:51.91,英文对白,,0,0,0,,whether you're at home or on the move.
-Dialogue: 1,0:04:51.12,0:04:53.39,英文对白,,0,0,0,,And the next release, iOS 16, offers new intelligence,
 Dialogue: 1,0:04:54.99,0:04:58.33,英文对白,,0,0,0,,sharing, and communication features that are going to enhance
-Dialogue: 1,0:04:57.46,0:05:01.46,英文对白,,0,0,0,,so much of what you do with your iPhone.
 Dialogue: 1,0:05:01.50,0:05:05.93,英文对白,,0,0,0,,And those come together with an incredible set of new personalization features
 Dialogue: 1,0:05:05.97,0:05:10.77,英文对白,,0,0,0,,that will make your experience feel fresh and completely you.
 Dialogue: 1,0:05:10.81,0:05:14.38,英文对白,,0,0,0,,Let's get started with the all-new Lock Screen.
@@ -96,43 +76,31 @@ Dialogue: 1,0:05:18.71,0:05:21.15,英文对白,,0,0,0,,It's a place where you ca
 Dialogue: 1,0:05:21.18,0:05:22.82,英文对白,,0,0,0,,look out for key messages,
 Dialogue: 1,0:05:22.85,0:05:25.49,英文对白,,0,0,0,,and launch the camera to quickly capture the moment.
 Dialogue: 1,0:05:25.52,0:05:28.99,英文对白,,0,0,0,,And it's just as much a place for personalization,
-Dialogue: 1,0:05:29.29,0:05:30.56,英文对白,,0,0,0,,where so many of you put a photo that makes iPhone uniquely yours.
 Dialogue: 1,0:05:33.40,0:05:38.63,英文对白,,0,0,0,,In iOS 16, we're bringing the biggest update ever to the Lock Screen,
 Dialogue: 1,0:05:38.67,0:05:42.64,英文对白,,0,0,0,,completely reimagining how it looks and works for you.
 Dialogue: 1,0:05:42.67,0:05:43.97,英文对白,,0,0,0,,Let's take a look.
-Dialogue: 1,0:05:44.77,0:05:51.78,英文对白,,0,0,0,,♪♪
 Dialogue: 1,0:06:25.61,0:06:28.48,英文对白,,0,0,0,,Craig: The new Lock Screen remains undeniably iPhone,
-Dialogue: 1,0:06:28.52,0:06:30.15,英文对白,,0,0,0,,while also giving you new ways to make it more personal,
-Dialogue: 1,0:06:30.19,0:06:33.76,英文对白,,0,0,0,,beautiful, and helpful than ever.
 Dialogue: 1,0:06:33.79,0:06:35.49,英文对白,,0,0,0,,Let me show you.
 Dialogue: 1,0:06:35.52,0:06:37.30,英文对白,,0,0,0,,Here's my Lock Screen.
-Dialogue: 1,0:06:37.64,0:06:39.39,英文对白,,0,0,0,,You'll notice the subtle depth effect
-Dialogue: 1,0:06:39.43,0:06:41.66,英文对白,,0,0,0,,with my daughters appearing in front of the time.
 Dialogue: 1,0:06:41.70,0:06:43.36,英文对白,,0,0,0,,I really love it.
 Dialogue: 1,0:06:43.70,0:06:47.54,英文对白,,0,0,0,,Now, if I just press and hold, I can personalize it further.
 Dialogue: 1,0:06:47.57,0:06:50.37,英文对白,,0,0,0,,I'll just tap Customize, and now I'm in the editor.
 Dialogue: 1,0:06:50.41,0:06:51.67,英文对白,,0,0,0,,Now, check this out.
 Dialogue: 1,0:06:51.71,0:06:55.54,英文对白,,0,0,0,,I can simply swipe to try out different styles
-Dialogue: 1,0:06:55.58,0:07:00.85,英文对白,,0,0,0,,that automatically change the color filter, the background,
-Dialogue: 1,0:07:00.88,0:07:02.75,英文对白,,0,0,0,,and the font for the time, all to complement each other.
 Dialogue: 1,0:07:02.78,0:07:04.32,英文对白,,0,0,0,,These look really beautiful.
 Dialogue: 1,0:07:04.35,0:07:06.12,英文对白,,0,0,0,,So let's go with this one.
 Dialogue: 1,0:07:06.15,0:07:09.62,英文对白,,0,0,0,,Now, of course, if I want to change anything,
 Dialogue: 1,0:07:09.96,0:07:12.93,英文对白,,0,0,0,,it's easy to dial it in further to get it just the way I want it.
-Dialogue: 1,0:07:12.96,0:07:16.77,英文对白,,0,0,0,,All I need to do is tap on any element of the Lock Screen to start editing.
 Dialogue: 1,0:07:17.33,0:07:19.40,英文对白,,0,0,0,,So let's customize the font.
 Dialogue: 1,0:07:19.43,0:07:22.09,英文对白,,0,0,0,,I can audition different typefaces
 Dialogue: 1,0:07:22.42,0:07:25.45,英文对白,,0,0,0,,and choose from different colors.
-Dialogue: 1,0:07:25.78,0:07:26.28,英文对白,,0,0,0,,And I like this color. I'll just adjust the shade a little bit.
 Dialogue: 1,0:07:28.21,0:07:30.38,英文对白,,0,0,0,,I think this looks awesome now.
-Dialogue: 1,0:07:30.41,0:07:35.82,英文对白,,0,0,0,,Now, I can also make my Lock Screen more helpful
 Dialogue: 1,0:07:33.28,0:07:35.82,英文对白,,0,0,0,,by putting widgets right on the Lock Screen.
 Dialogue: 1,0:07:35.85,0:07:38.12,英文对白,,0,0,0,,So let me move the girls down here
 Dialogue: 1,0:07:38.15,0:07:41.36,英文对白,,0,0,0,,and tap in to bring up the widget gallery.
 Dialogue: 1,0:07:41.39,0:07:44.83,英文对白,,0,0,0,,And these are really useful for getting information at a glance,
 Dialogue: 1,0:07:44.86,0:07:46.33,英文对白,,0,0,0,,like upcoming calendar events.
 Dialogue: 1,0:07:46.36,0:07:49.83,英文对白,,0,0,0,,So I'll add the temperature,
-Dialogue: 1,0:07:49.87,0:07:51.10,英文对白,,0,0,0,,my Activity rings, and let's drag in the calendar widget.
 Dialogue: 1,0:07:54.47,0:07:56.43,英文对白,,0,0,0,,Now, this is great.
 Dialogue: 1,0:07:56.76,0:08:00.41,英文对白,,0,0,0,,And what's even better is, I'm not limited to just one.
 Dialogue: 1,0:08:00.44,0:08:02.68,英文对白,,0,0,0,,Let's create another.
@@ -140,10 +108,7 @@ Dialogue: 1,0:08:02.71,0:08:04.98,英文对白,,0,0,0,,I can bring up our brand-
 Dialogue: 1,0:08:05.18,0:08:08.58,英文对白,,0,0,0,,which showcases a bunch of options for inspiration.
 Dialogue: 1,0:08:08.62,0:08:10.52,英文对白,,0,0,0,,And there are plenty to choose from here.
 Dialogue: 1,0:08:10.55,0:08:15.39,英文对白,,0,0,0,,So much room for personalization, with millions of combinations.
-Dialogue: 1,0:08:15.42,0:08:16.63,英文对白,,0,0,0,,With Photo Shuffle, I can choose a set of photos to shuffle throughout the day,
-Dialogue: 1,0:08:20.13,0:08:25.50,英文对白,,0,0,0,,And we also have Suggested Photos,
 Dialogue: 1,0:08:22.76,0:08:25.50,英文对白,,0,0,0,,intelligently curated from my personal library,
-Dialogue: 1,0:08:25.53,0:08:27.47,英文对白,,0,0,0,,like the best shots of family that look great on the Lock Screen.
 Dialogue: 1,0:08:29.76,0:08:32.84,英文对白,,0,0,0,,Now, this is an awesome one to add to my collection.
 Dialogue: 1,0:08:32.88,0:08:35.51,英文对白,,0,0,0,,Now, I've created a bunch of other Lock Screens,
 Dialogue: 1,0:08:35.54,0:08:39.15,英文对白,,0,0,0,,and by simply swiping, I can switch between them.
@@ -157,10 +122,6 @@ Dialogue: 1,0:08:53.33,0:08:56.10,英文对白,,0,0,0,,And here's one from our A
 Dialogue: 1,0:08:56.13,0:09:00.90,英文对白,,0,0,0,,Watch how it animates fluidly as I swipe into the Home Screen.
 Dialogue: 1,0:09:00.94,0:09:02.24,英文对白,,0,0,0,,So cool.
 Dialogue: 1,0:09:02.27,0:09:06.78,英文对白,,0,0,0,,So that's a quick look at the all-new Lock Screen.
-Dialogue: 1,0:09:06.81,0:09:09.82,英文对白,,0,0,0,,And for developers, WidgetKit makes it quick and easy
-Dialogue: 1,0:09:09.11,0:09:13.52,英文对白,,0,0,0,,to put glanceable information from their app here as well.
-Dialogue: 1,0:09:14.12,0:09:16.25,英文对白,,0,0,0,,The new Lock Screen is so beautiful, we wanted to make sure
-Dialogue: 1,0:09:19.62,0:09:21.96,英文对白,,0,0,0,,that you can always enjoy it, even if you get a lot of notifications.
 Dialogue: 1,0:09:22.56,0:09:25.76,英文对白,,0,0,0,,Sometimes, notifications can cover up your personal photo.
 Dialogue: 1,0:09:25.79,0:09:28.76,英文对白,,0,0,0,,So we've rethought how they appear.
 Dialogue: 1,0:09:28.80,0:09:33.73,英文对白,,0,0,0,,Notifications now roll in from the bottom of the Lock Screen as you receive them,
@@ -169,7 +130,6 @@ Dialogue: 1,0:09:35.37,0:09:38.94,英文对白,,0,0,0,,Now, sometimes you get a 
 Dialogue: 1,0:09:38.97,0:09:41.78,英文对白,,0,0,0,,like when you're following the score of a basketball game.
 Dialogue: 1,0:09:41.81,0:09:44.45,英文对白,,0,0,0,,Well, now there's a better way to keep tabs
 Dialogue: 1,0:09:44.48,0:09:47.85,英文对白,,0,0,0,,with something called Live Activities.
-Dialogue: 1,0:09:47.88,0:09:54.82,英文对白,,0,0,0,,Live Activities make it easier to stay on top of things
 Dialogue: 1,0:09:50.72,0:09:54.82,英文对白,,0,0,0,,that are happening in real time right from your Lock Screen.
 Dialogue: 1,0:09:54.86,0:09:58.83,英文对白,,0,0,0,,And for developers, starting in an update to iOS 16 later this year,
 Dialogue: 1,0:09:58.86,0:10:01.36,英文对白,,0,0,0,,they can use the Live Activities API
@@ -179,8 +139,6 @@ Dialogue: 1,0:10:08.50,0:10:10.87,英文对白,,0,0,0,,track the progress of an 
 Dialogue: 1,0:10:10.91,0:10:14.48,英文对白,,0,0,0,,see how you're doing on your workout, and more,
 Dialogue: 1,0:10:14.51,0:10:18.18,英文对白,,0,0,0,,all while letting the other elements on the Lock Screen shine.
 Dialogue: 1,0:10:18.21,0:10:22.58,英文对白,,0,0,0,,One of the most popular activities for many of us is listening to music.
-Dialogue: 1,0:10:22.62,0:10:24.19,英文对白,,0,0,0,,And now with Live Activities, the Now Playing controls can expand
-Dialogue: 1,0:10:27.59,0:10:30.66,英文对白,,0,0,0,,to a full screen view that celebrates album art while you listen along.
 Dialogue: 1,0:10:30.69,0:10:34.20,英文对白,,0,0,0,,So that's the all-new Lock Screen.
 Dialogue: 1,0:10:34.23,0:10:37.30,英文对白,,0,0,0,,There are some really powerful ways these updates tie together
 Dialogue: 1,0:10:37.33,0:10:41.14,英文对白,,0,0,0,,and build upon what we introduced last year with Focus.
@@ -199,12 +157,9 @@ Dialogue: 1,0:11:16.27,0:11:19.24,英文对白,,0,0,0,,and it extends to your Ho
 Dialogue: 1,0:11:19.27,0:11:21.98,英文对白,,0,0,0,,So now you can elevate your favorite apps or widgets
 Dialogue: 1,0:11:22.15,0:11:24.88,英文对白,,0,0,0,,for keeping up with friends and family.
 Dialogue: 1,0:11:24.91,0:11:28.82,英文对白,,0,0,0,,And now, your Focus can also carry into the apps themselves,
-Dialogue: 1,0:11:28.85,0:11:30.42,英文对白,,0,0,0,,with Focus filters, which let you filter out distracting content.
 Dialogue: 1,0:11:33.19,0:11:35.16,英文对白,,0,0,0,,Let's take Safari, for example.
 Dialogue: 1,0:11:35.19,0:11:37.49,英文对白,,0,0,0,,Instead of seeing all of your websites,
-Dialogue: 1,0:11:37.53,0:11:39.60,英文对白,,0,0,0,,you can turn on the Work Focus filter and see only the tabs that relate to work.
 Dialogue: 1,0:11:42.10,0:11:45.60,英文对白,,0,0,0,,And you can filter not just tab groups in Safari,
-Dialogue: 1,0:11:45.63,0:11:47.77,英文对白,,0,0,0,,but also conversations in Messages, accounts in Mail, and events in Calendar.
 Dialogue: 1,0:11:50.91,0:11:53.46,英文对白,,0,0,0,,And for developers, we have a new API
 Dialogue: 1,0:11:53.80,0:11:56.31,英文对白,,0,0,0,,so they can help you focus in their apps as well.
 Dialogue: 1,0:11:56.35,0:11:59.35,英文对白,,0,0,0,,These updates to Focus can help you draw boundaries
@@ -213,8 +168,6 @@ Dialogue: 1,0:12:02.85,0:12:07.12,英文对白,,0,0,0,,Now, let's talk about wha
 Dialogue: 1,0:12:07.16,0:12:11.16,英文对白,,0,0,0,,Hundreds of millions of people rely on Messages every single day.
 Dialogue: 1,0:12:11.19,0:12:15.50,英文对白,,0,0,0,,It's integral to how we communicate with the people who matter most.
 Dialogue: 1,0:12:15.53,0:12:20.40,英文对白,,0,0,0,,And now, we're adding three of the most highly-requested features to Messages.
-Dialogue: 1,0:12:20.80,0:12:23.31,英文对白,,0,0,0,,First, have you ever sent a Message only to immediately realize
-Dialogue: 1,0:12:23.34,0:12:27.21,英文对白,,0,0,0,,you didn't quite say what you intended?
 Dialogue: 1,0:12:27.24,0:12:28.31,英文对白,,0,0,0,,Well, no worries.
 Dialogue: 1,0:12:28.34,0:12:31.91,英文对白,,0,0,0,,Because now you can edit any message you just sent
 Dialogue: 1,0:12:31.95,0:12:35.58,英文对白,,0,0,0,,so embarrassing typos can be a thing of the past.
@@ -226,37 +179,18 @@ Dialogue: 1,0:12:50.27,0:12:52.97,英文对白,,0,0,0,,a perfect tool if you don
 Dialogue: 1,0:12:53.06,0:12:56.27,英文对白,,0,0,0,,and want to be sure to come back to a message later.
 Dialogue: 1,0:12:56.31,0:12:59.79,英文对白,,0,0,0,,These three features are going to make a big difference
 Dialogue: 1,0:12:59.11,0:13:01.51,英文对白,,0,0,0,,in how you use Messages every single day.
-Dialogue: 1,0:13:01.54,0:13:04.75,英文对白,,0,0,0,,Messages makes texting easy and efficient, and it's also a great way to share.
-Dialogue: 1,0:13:07.92,0:13:10.89,英文对白,,0,0,0,,Last year, we introduced Shared with You, which takes things like photos, links,
 Dialogue: 1,0:13:13.56,0:13:17.64,英文对白,,0,0,0,,and music that your friends share with you in Messages and highlights them
-Dialogue: 1,0:13:15.99,0:13:20.30,英文对白,,0,0,0,,right in the app where you'd like to enjoy them later.
-Dialogue: 1,0:13:20.33,0:13:25.53,英文对白,,0,0,0,,And for developers, we're really excited
 Dialogue: 1,0:13:22.60,0:13:25.53,英文对白,,0,0,0,,to make Shared with You available with a new API.
-Dialogue: 1,0:13:25.57,0:13:28.41,英文对白,,0,0,0,,So when someone sends you a funny video, a worthwhile article,
 Dialogue: 1,0:13:29.30,0:13:32.24,英文对白,,0,0,0,,or a recipe that you don't have time to check out in the moment,
 Dialogue: 1,0:13:32.27,0:13:35.58,英文对白,,0,0,0,,it'll be there waiting for you the next time you open that app.
-Dialogue: 1,0:13:36.21,0:13:38.81,英文对白,,0,0,0,,And when it comes to sharing in real time with others, people are loving SharePlay.
-Dialogue: 1,0:13:41.42,0:13:43.23,英文对白,,0,0,0,,It's stellar for enjoying shared experiences
-Dialogue: 1,0:13:43.56,0:13:45.69,英文对白,,0,0,0,,while connecting over FaceTime.
-Dialogue: 1,0:13:45.72,0:13:47.32,英文对白,,0,0,0,,Like watching TV shows, listening to music,
 Dialogue: 1,0:13:48.52,0:13:51.83,英文对白,,0,0,0,,or breaking a sweat to a synced up workout.
 Dialogue: 1,0:13:51.86,0:13:54.43,英文对白,,0,0,0,,So many of your favorite apps are using SharePlay
 Dialogue: 1,0:13:54.46,0:13:56.13,英文对白,,0,0,0,,to create shared experiences,
 Dialogue: 1,0:13:56.17,0:13:59.47,英文对白,,0,0,0,,like listening to bedtime stories together with Better Sleep
-Dialogue: 1,0:13:59.50,0:14:01.37,英文对白,,0,0,0,,or playing a rowdy game of Heads Up, no matter how far apart you are.
-Dialogue: 1,0:14:03.47,0:14:04.57,英文对白,,0,0,0,,And this year, we're making it easier to discover
-Dialogue: 1,0:14:04.61,0:14:10.41,英文对白,,0,0,0,,all of these awesome SharePlay experiences from within your FaceTime call.
-Dialogue: 1,0:14:10.45,0:14:11.85,英文对白,,0,0,0,,With just a tap, you can jump into SharePlay-supported apps
 Dialogue: 1,0:14:13.78,0:14:17.49,英文对白,,0,0,0,,that you already have on your phone, or discover new experiences
-Dialogue: 1,0:14:15.68,0:14:19.19,英文对白,,0,0,0,,that you can share with your friends.
 Dialogue: 1,0:14:19.22,0:14:22.96,英文对白,,0,0,0,,And to give you more opportunities to enjoy shared experiences,
-Dialogue: 1,0:14:22.99,0:14:25.69,英文对白,,0,0,0,,we're extending SharePlay beyond FaceTime and bringing it to Messages.
 Dialogue: 1,0:14:27.80,0:14:30.80,英文对白,,0,0,0,,This was the number one request from developers.
-Dialogue: 1,0:14:30.83,0:14:32.87,英文对白,,0,0,0,,Now when you find something you want to share,
-Dialogue: 1,0:14:34.74,0:14:37.77,英文对白,,0,0,0,,like a movie on Disney+, you can kick off SharePlay right there
 Dialogue: 1,0:14:37.11,0:14:40.47,英文对白,,0,0,0,,and enjoy it together while chatting in Messages.
-Dialogue: 1,0:14:40.80,0:14:41.24,英文对白,,0,0,0,,You can watch in sync, and you've got the same instantaneous
-Dialogue: 1,0:14:44.81,0:14:46.65,英文对白,,0,0,0,,shared playback controls that make SharePlay magical.
 Dialogue: 1,0:14:46.68,0:14:50.90,英文对白,,0,0,0,,So whether you're using SharePlay for your weekly movie night
 Dialogue: 1,0:14:50.12,0:14:52.92,英文对白,,0,0,0,,or marking a message unread so you can respond later,
 Dialogue: 1,0:14:52.96,0:14:56.89,英文对白,,0,0,0,,Messages has everything you need to connect with ease.
@@ -275,12 +209,10 @@ Dialogue: 1,0:15:41.90,0:15:43.71,英文对白,,0,0,0,,Let's take a look.
 Dialogue: 1,0:15:43.74,0:15:47.64,英文对白,,0,0,0,,We'll use our new dictation experience to send an email.
 Dialogue: 1,0:15:47.68,0:15:51.38,英文对白,,0,0,0,,Now, when I start dictating, the keyboard stays open,
 Dialogue: 1,0:15:51.41,0:15:54.75,英文对白,,0,0,0,,so I can switch between using voice and touch.
-Dialogue: 1,0:15:59.82,0:16:02.52,英文对白,,0,0,0,,I can even select text using touch and replace it with my voice.
 Dialogue: 1,0:16:07.66,0:16:09.90,英文对白,,0,0,0,,Just by speaking.
 Dialogue: 1,0:16:09.93,0:16:12.43,英文对白,,0,0,0,,Are you sending a longer message?
 Dialogue: 1,0:16:12.47,0:16:16.24,英文对白,,0,0,0,,Dictation automatically adds punctuation to the text.
 Dialogue: 1,0:16:17.64,0:16:20.98,英文对白,,0,0,0,,"That's so cool! Mind blown emoji!"
-Dialogue: 1,0:16:21.14,0:16:27.75,英文对白,,0,0,0,,Automatic punctuation and emoji dictation also work
 Dialogue: 1,0:16:24.85,0:16:27.75,英文对白,,0,0,0,,when you send messages with Siri.
 Dialogue: 1,0:16:27.78,0:16:31.95,英文对白,,0,0,0,,And this year, we're making it easier to use Siri with apps.
 Dialogue: 1,0:16:31.99,0:16:35.66,英文对白,,0,0,0,,There are over 15,000 apps that work with Siri
@@ -290,25 +222,18 @@ Dialogue: 1,0:16:41.50,0:16:44.63,英文对白,,0,0,0,,So we're introducing a ne
 Dialogue: 1,0:16:44.67,0:16:48.75,英文对白,,0,0,0,,built using the Swift programming language called App Intents.
 Dialogue: 1,0:16:48.10,0:16:51.44,英文对白,,0,0,0,,Now shortcuts work with zero setup
 Dialogue: 1,0:16:51.78,0:16:54.61,英文对白,,0,0,0,,so you can use Siri to get things done with supported apps.
-Dialogue: 1,0:16:54.64,0:16:57.78,英文对白,,0,0,0,,Now let's talk about another feature powered by intelligence: Live Text.
 Dialogue: 1,0:16:59.41,0:17:01.15,英文对白,,0,0,0,,Live Text is so useful
 Dialogue: 1,0:17:01.18,0:17:04.42,英文对白,,0,0,0,,because it's deeply integrated across the entire OS,
 Dialogue: 1,0:17:04.45,0:17:08.95,英文对白,,0,0,0,,letting you interact with text in images across the system,
-Dialogue: 1,0:17:08.12,0:17:10.39,英文对白,,0,0,0,,from Camera and Safari to Notes and Screenshots.
 Dialogue: 1,0:17:12.53,0:17:16.27,英文对白,,0,0,0,,And this year, we're excited to take this integration further
 Dialogue: 1,0:17:16.30,0:17:18.83,英文对白,,0,0,0,,by bringing Live Text to video.
-Dialogue: 1,0:17:18.87,0:17:21.57,英文对白,,0,0,0,,Now you can pause a video on any frame and interact with text
 Dialogue: 1,0:17:23.34,0:17:25.81,英文对白,,0,0,0,,just like you can today with photos.
 Dialogue: 1,0:17:25.84,0:17:28.44,英文对白,,0,0,0,,It's great for copying code samples.
 Dialogue: 1,0:17:28.48,0:17:33.45,英文对白,,0,0,0,,We're also accelerating the things you do with Live Text with quick actions.
-Dialogue: 1,0:17:33.48,0:17:35.18,英文对白,,0,0,0,,So now you're just a tap away from converting currency
-Dialogue: 1,0:17:35.22,0:17:38.65,英文对白,,0,0,0,,and translating a foreign language.
 Dialogue: 1,0:17:38.69,0:17:42.16,英文对白,,0,0,0,,And for an even richer translation experience,
-Dialogue: 1,0:17:42.19,0:17:47.70,英文对白,,0,0,0,,you'll be able to use Live Text while in the Translate app,
 Dialogue: 1,0:17:45.56,0:17:47.70,英文对白,,0,0,0,,with our new camera view.
 Dialogue: 1,0:17:47.73,0:17:50.83,英文对白,,0,0,0,,This will be great for when you have lots of text to translate.
 Dialogue: 1,0:17:50.87,0:17:55.67,英文对白,,0,0,0,,And for developers, we're also excited to announce a Live Text API.
-Dialogue: 1,0:17:55.70,0:18:02.21,英文对白,,0,0,0,,Soon you will be able to grab text straight from photos
 Dialogue: 1,0:17:59.64,0:18:02.21,英文对白,,0,0,0,,and videos in apps like Vimeo.
 Dialogue: 1,0:18:02.24,0:18:05.15,英文对白,,0,0,0,,And photos are about more than just text.
 Dialogue: 1,0:18:05.18,0:18:08.12,英文对白,,0,0,0,,That's why last year we introduced Visual Look Up,
@@ -316,18 +241,12 @@ Dialogue: 1,0:18:08.15,0:18:13.19,英文对白,,0,0,0,,a feature that recognizes
 Dialogue: 1,0:18:13.22,0:18:16.89,英文对白,,0,0,0,,and gives you rich information about what's in your images.
 Dialogue: 1,0:18:16.93,0:18:21.13,英文对白,,0,0,0,,And this year we have a new feature that takes image understanding further.
 Dialogue: 1,0:18:21.96,0:18:25.47,英文对白,,0,0,0,,Now when you touch and hold on the subject of an image,
-Dialogue: 1,0:18:25.50,0:18:27.10,英文对白,,0,0,0,,you can lift it away from the background and place it in apps like Messages.
 Dialogue: 1,0:18:29.94,0:18:31.97,英文对白,,0,0,0,,It feels like magic.
 Dialogue: 1,0:18:32.12,0:18:34.98,英文对白,,0,0,0,,It's actually the product of an advanced machine learning model
-Dialogue: 1,0:18:35.15,0:18:38.41,英文对白,,0,0,0,,which is accelerated by CoreML
 Dialogue: 1,0:18:37.28,0:18:40.48,英文对白,,0,0,0,,and the Neural Engine to perform 40 billion operations
-Dialogue: 1,0:18:38.45,0:18:42.55,英文对白,,0,0,0,,in just milliseconds.
-Dialogue: 1,0:18:42.89,0:18:45.32,英文对白,,0,0,0,,Together, Live Text and Visual Look Up continue to unlock
-Dialogue: 1,0:18:45.35,0:18:50.56,英文对白,,0,0,0,,rich and useful information from your photos and videos
 Dialogue: 1,0:18:50.59,0:18:54.16,英文对白,,0,0,0,,across iOS, iPadOS, and macOS.
 Dialogue: 1,0:18:54.20,0:18:55.60,英文对白,,0,0,0,,Back to you, Craig.
 Dialogue: 1,0:18:57.50,0:19:01.60,英文对白,,0,0,0,,Craig: These intelligence features help you get things done with ease.
-Dialogue: 1,0:19:01.64,0:19:04.14,英文对白,,0,0,0,,And another app that makes life easier is Wallet.
 Dialogue: 1,0:19:05.34,0:19:09.18,英文对白,,0,0,0,,To tell you about what's new in Wallet, I'll hand it over to Corey.
 Dialogue: 1,0:19:11.95,0:19:13.92,英文对白,,0,0,0,,Corey Fugman: With Apple Wallet, we're working hard
 Dialogue: 1,0:19:13.95,0:19:16.82,英文对白,,0,0,0,,on our goal to replace your physical wallet.
@@ -336,33 +255,20 @@ Dialogue: 1,0:19:20.16,0:19:22.86,英文对白,,0,0,0,,We're excited to have lau
 Dialogue: 1,0:19:22.89,0:19:26.40,英文对白,,0,0,0,,with 11 additional states actively working on deployments.
 Dialogue: 1,0:19:26.43,0:19:29.53,英文对白,,0,0,0,,And the first locations now accepting Wallet IDs
 Dialogue: 1,0:19:29.57,0:19:32.05,英文对白,,0,0,0,,are select TSA security checkpoints.
-Dialogue: 1,0:19:32.39,0:19:38.37,英文对白,,0,0,0,,You'll also be able to securely present your ID
 Dialogue: 1,0:19:34.97,0:19:38.37,英文对白,,0,0,0,,to apps requiring identity and age verification.
 Dialogue: 1,0:19:38.41,0:19:42.81,英文对白,,0,0,0,,To protect your privacy, only the necessary information will be shared.
 Dialogue: 1,0:19:42.85,0:19:45.48,英文对白,,0,0,0,,So rather than providing your exact birthday,
 Dialogue: 1,0:19:45.51,0:19:48.55,英文对白,,0,0,0,,you can simply share that you are over 21.
 Dialogue: 1,0:19:48.88,0:19:50.42,英文对白,,0,0,0,,Now, let's talk about Keys.
-Dialogue: 1,0:19:50.45,0:19:52.45,英文对白,,0,0,0,,Our growing suite of keys in Wallet makes it easy to access everyday places
-Dialogue: 1,0:19:52.49,0:20:00.63,英文对白,,0,0,0,,like your home, car, hotel, and office, all with just your iPhone.
 Dialogue: 1,0:20:00.66,0:20:03.50,英文对白,,0,0,0,,And now we're making sharing keys even easier
-Dialogue: 1,0:20:03.53,0:20:05.27,英文对白,,0,0,0,,with your favorite messaging apps like Mail, Messages, or WhatsApp.
-Dialogue: 1,0:20:08.10,0:20:09.91,英文对白,,0,0,0,,When your friend receives the key, they can add it to their Wallet
-Dialogue: 1,0:20:09.94,0:20:12.34,英文对白,,0,0,0,,with a single tap.
 Dialogue: 1,0:20:12.37,0:20:15.54,英文对白,,0,0,0,,And to let you share keys with people who don't have an iPhone,
-Dialogue: 1,0:20:15.58,0:20:17.48,英文对白,,0,0,0,,we're working with the IETF to make sharing keys an industry standard
-Dialogue: 1,0:20:17.51,0:20:21.52,英文对白,,0,0,0,,that is free for others to adopt.
 Dialogue: 1,0:20:21.55,0:20:24.95,英文对白,,0,0,0,,We are seeing tremendous enthusiasm from our partners,
 Dialogue: 1,0:20:24.99,0:20:29.62,英文对白,,0,0,0,,with more of them signing on to support keys for all of the places you visit.
 Dialogue: 1,0:20:29.96,0:20:33.70,英文对白,,0,0,0,,Now let's talk about Apple Pay, one of the most important areas of Wallet.
-Dialogue: 1,0:20:33.73,0:20:35.20,英文对白,,0,0,0,,We've made a lot of progress with Apple Pay acceptance
-Dialogue: 1,0:20:37.67,0:20:40.47,英文对白,,0,0,0,,in stores and online, and now we're expanding even further.
 Dialogue: 1,0:20:40.50,0:20:43.34,英文对白,,0,0,0,,Starting this month with Tap to Pay on iPhone,
-Dialogue: 1,0:20:43.37,0:20:49.51,英文对白,,0,0,0,,millions of merchants across the U.S. can accept contactless payments
-Dialogue: 1,0:20:49.55,0:20:52.51,英文对白,,0,0,0,,directly on iPhone with no additional hardware or payment terminal needed.
 Dialogue: 1,0:20:52.55,0:20:55.55,英文对白,,0,0,0,,Beginning with apps from these payment providers,
 Dialogue: 1,0:20:55.88,0:20:58.99,英文对白,,0,0,0,,Tap to Pay on iPhone enables small merchants and large retailers
 Dialogue: 1,0:20:59.26,0:21:02.62,英文对白,,0,0,0,,to use iPhone to securely accept payments.
-Dialogue: 1,0:21:02.95,0:21:04.19,英文对白,,0,0,0,,In addition to expanded acceptance, we're also enhancing Apple Pay
 Dialogue: 1,0:21:06.23,0:21:08.40,英文对白,,0,0,0,,to support new types of payments.
 Dialogue: 1,0:21:08.43,0:21:12.39,英文对白,,0,0,0,,So we are thrilled to announce Apple Pay Later.
 Dialogue: 1,0:21:12.72,0:21:15.74,英文对白,,0,0,0,,Apple Pay Later lets you split the cost of an Apple Pay purchase
@@ -371,47 +277,30 @@ Dialogue: 1,0:21:19.21,0:21:22.38,英文对白,,0,0,0,,with zero interest and no
 Dialogue: 1,0:21:22.41,0:21:26.35,英文对白,,0,0,0,,And Apple Pay Later is available everywhere Apple Pay is accepted
 Dialogue: 1,0:21:26.38,0:21:27.92,英文对白,,0,0,0,,in apps and online.
 Dialogue: 1,0:21:27.95,0:21:30.45,英文对白,,0,0,0,,You can now get that espresso machine you've wanted
-Dialogue: 1,0:21:30.49,0:21:32.12,英文对白,,0,0,0,,and pay for it over time with no additional cost.
-Dialogue: 1,0:21:33.82,0:21:35.82,英文对白,,0,0,0,,For developers and merchants, Apple Pay Later requires no integration.
 Dialogue: 1,0:21:38.39,0:21:41.96,英文对白,,0,0,0,,It just works using their standard Apple Pay implementation.
 Dialogue: 1,0:21:42.02,0:21:44.77,英文对白,,0,0,0,,Upcoming payments are managed through Wallet,
 Dialogue: 1,0:21:44.80,0:21:47.50,英文对白,,0,0,0,,making it easy to keep track of what's due when
 Dialogue: 1,0:21:47.54,0:21:49.51,英文对白,,0,0,0,,and to stay within a budget.
 Dialogue: 1,0:21:49.54,0:21:51.44,英文对白,,0,0,0,,And after you've placed your order,
 Dialogue: 1,0:21:51.47,0:21:54.24,英文对白,,0,0,0,,we have another brand-new feature that helps you track it.
-Dialogue: 1,0:21:54.28,0:21:55.94,英文对白,,0,0,0,,Apple Pay Order Tracking enables merchants
-Dialogue: 1,0:22:00.15,0:22:01.35,英文对白,,0,0,0,,to deliver detailed receipt and tracking information directly to Wallet,
-Dialogue: 1,0:22:01.38,0:22:05.75,英文对白,,0,0,0,,making it easy to get the latest information
-Dialogue: 1,0:22:05.79,0:22:08.82,英文对白,,0,0,0,,on all of your Apple Pay orders delivered securely and privately to your device.
 Dialogue: 1,0:22:08.86,0:22:12.26,英文对白,,0,0,0,,Apple Pay Order Tracking will be offered at millions of merchants
 Dialogue: 1,0:22:12.29,0:22:15.68,英文对白,,0,0,0,,through eCommerce platforms starting with Shopify.
-Dialogue: 1,0:22:15.10,0:22:16.77,英文对白,,0,0,0,,So that's our Wallet update. Back to you, Craig.
 Dialogue: 1,0:22:19.77,0:22:22.24,英文对白,,0,0,0,,Craig: With ID cards available in more locations,
 Dialogue: 1,0:22:22.27,0:22:24.91,英文对白,,0,0,0,,new ways to use and share keys,
 Dialogue: 1,0:22:24.94,0:22:27.81,英文对白,,0,0,0,,Apple Pay Later, and Apple Pay Order Tracking,
-Dialogue: 1,0:22:27.84,0:22:30.11,英文对白,,0,0,0,,Wallet makes life so much easier, no matter where you go.
-Dialogue: 1,0:22:31.61,0:22:34.54,英文对白,,0,0,0,,And the best way to get wherever you're going is with Maps.
 Dialogue: 1,0:22:35.68,0:22:38.82,英文对白,,0,0,0,,So let's get out of here to talk about what's new.
 Dialogue: 1,0:22:38.85,0:22:45.86,英文对白,,0,0,0,,♪♪
-Dialogue: 1,0:22:50.33,0:22:52.72,英文对白,,0,0,0,,We're building the best map to help you navigate and explore the world.
 Dialogue: 1,0:22:54.54,0:22:58.54,英文对白,,0,0,0,,We've launched our redesigned map in ten countries and regions,
 Dialogue: 1,0:22:58.57,0:23:01.48,英文对白,,0,0,0,,and we're excited to announce that later this year,
-Dialogue: 1,0:23:01.81,0:23:03.71,英文对白,,0,0,0,,we'll bring the new map to 11 more, including France,
-Dialogue: 1,0:23:03.75,0:23:06.72,英文对白,,0,0,0,,Switzerland, and New Zealand.
-Dialogue: 1,0:23:06.75,0:23:09.38,英文对白,,0,0,0,,Our new map includes great features like cycling, Look Around, and so many more.
-Dialogue: 1,0:23:12.19,0:23:13.86,英文对白,,0,0,0,,And with the new city experience, we pushed it even further
-Dialogue: 1,0:23:17.63,0:23:20.40,英文对白,,0,0,0,,with unprecedented detail for landcover, roads, and elevation,
 Dialogue: 1,0:23:20.43,0:23:24.27,英文对白,,0,0,0,,as well as improved driving and transit navigation.
 Dialogue: 1,0:23:24.30,0:23:28.70,英文对白,,0,0,0,,And we're adding Las Vegas, which looks stunning.
 Dialogue: 1,0:23:28.74,0:23:31.87,英文对白,,0,0,0,,And before the end of the year, we'll add six more cities
 Dialogue: 1,0:23:31.91,0:23:35.34,英文对白,,0,0,0,,including Miami, Chicago, and Sydney.
 Dialogue: 1,0:23:35.38,0:23:38.98,英文对白,,0,0,0,,To tell you more about what's new in Maps, here's Meg.
-Dialogue: 1,0:23:42.18,0:23:48.52,英文对白,,0,0,0,,Meg Frost: With iOS 16, we're introducing great updates
 Dialogue: 1,0:23:45.55,0:23:48.52,英文对白,,0,0,0,,for Maps users and developers.
 Dialogue: 1,0:23:48.56,0:23:51.79,英文对白,,0,0,0,,Let's start with one of our most requested features:
 Dialogue: 1,0:23:51.83,0:23:53.73,英文对白,,0,0,0,,multistop routing.
 Dialogue: 1,0:23:53.76,0:23:57.50,英文对白,,0,0,0,,You can now plan up to 15 stops in advance.
-Dialogue: 1,0:23:57.53,0:24:00.74,英文对白,,0,0,0,,Maps will now store previous routes in Recents so they're easy to get back to
 Dialogue: 1,0:24:02.44,0:24:05.27,英文对白,,0,0,0,,and you can plan multi-stop routes on the Mac
 Dialogue: 1,0:24:05.31,0:24:08.81,英文对白,,0,0,0,,and send them to iPhone when you're ready to go.
 Dialogue: 1,0:24:08.11,0:24:10.17,英文对白,,0,0,0,,And, of course, when you're driving,
@@ -428,16 +317,11 @@ Dialogue: 1,0:24:35.94,0:24:40.41,英文对白,,0,0,0,,And for developers, we're
 Dialogue: 1,0:24:40.44,0:24:43.98,英文对白,,0,0,0,,starting with our revolutionary new city experience
 Dialogue: 1,0:24:44.17,0:24:50.23,英文对白,,0,0,0,,which includes rich details for landcover, roads, landmarks, and more.
 Dialogue: 1,0:24:50.57,0:24:53.86,英文对白,,0,0,0,,Developers like Bird can now integrate this detailed map
-Dialogue: 1,0:24:53.89,0:24:57.16,英文对白,,0,0,0,,so users can more easily locate bikes and scooters to get around town.
 Dialogue: 1,0:24:58.86,0:25:03.13,英文对白,,0,0,0,,And it looks stunning in both Light and Dark Mode.
 Dialogue: 1,0:25:03.17,0:25:04.93,英文对白,,0,0,0,,And there's more.
 Dialogue: 1,0:25:04.97,0:25:07.77,英文对白,,0,0,0,,We're also bringing Look Around to MapKit,
-Dialogue: 1,0:25:07.80,0:25:12.45,英文对白,,0,0,0,,making it easy to integrate high resolution imagery from Maps
-Dialogue: 1,0:25:12.79,0:25:13.64,英文对白,,0,0,0,,into apps like Zillow,
 Dialogue: 1,0:25:13.68,0:25:19.19,英文对白,,0,0,0,,helping users get an immersive ground-level view while browsing homes.
 Dialogue: 1,0:25:19.52,0:25:23.12,英文对白,,0,0,0,,And finally, we're excited to announce that later this year,
-Dialogue: 1,0:25:23.15,0:25:26.22,英文对白,,0,0,0,,developers will have faster and more flexible ways
-Dialogue: 1,0:25:29.32,0:25:32.56,英文对白,,0,0,0,,to build incredible Maps experiences with brand-new server-side APIs.
 Dialogue: 1,0:25:32.59,0:25:34.80,英文对白,,0,0,0,,And that's a quick look at Maps.
 Dialogue: 1,0:25:34.83,0:25:36.83,英文对白,,0,0,0,,Back to you, Craig!
 Dialogue: 1,0:25:38.87,0:25:42.17,英文对白,,0,0,0,,Craig: Now, let's talk about sports.
@@ -449,18 +333,11 @@ Dialogue: 1,0:25:55.25,0:25:58.29,英文对白,,0,0,0,,To tell you more, here's 
 Dialogue: 1,0:25:58.32,0:26:04.69,英文对白,,0,0,0,,♪♪
 Dialogue: 1,0:26:04.73,0:26:08.90,英文对白,,0,0,0,,Rubie Edmondson: Today, there are many ways to keep up with your favorite sports,
 Dialogue: 1,0:26:08.93,0:26:12.53,英文对白,,0,0,0,,like being able to ask Siri about players or teams
-Dialogue: 1,0:26:12.57,0:26:13.87,英文对白,,0,0,0,,or see live games, no matter where they're streaming.
-Dialogue: 1,0:26:15.87,0:26:18.27,英文对白,,0,0,0,,And now with Live Activities, the Apple TV app brings you scores
-Dialogue: 1,0:26:18.31,0:26:23.78,英文对白,,0,0,0,,and play-by-play action right on your Lock Screen.
 Dialogue: 1,0:26:23.81,0:26:27.82,英文对白,,0,0,0,,We also recently premiered Friday Night Baseball on Apple TV+
 Dialogue: 1,0:26:27.85,0:26:31.15,英文对白,,0,0,0,,where you can stream two great games every Friday.
 Dialogue: 1,0:26:31.19,0:26:36.53,英文对白,,0,0,0,,And today, we have another major update for sports in Apple News.
 Dialogue: 1,0:26:36.56,0:26:40.13,英文对白,,0,0,0,,Apple News is the number one news app everywhere it's available,
 Dialogue: 1,0:26:40.16,0:26:43.33,英文对白,,0,0,0,,and it's about to become amazing for sports fans.
-Dialogue: 1,0:26:43.37,0:26:46.13,英文对白,,0,0,0,,You can now follow your favorite teams and leagues to get stories
-Dialogue: 1,0:26:49.09,0:26:52.61,英文对白,,0,0,0,,from hundreds of the best publishers in an all-new section called My Sports.
-Dialogue: 1,0:26:52.64,0:26:58.38,英文对白,,0,0,0,,You'll also find scores, schedules, and standings for the top professional
-Dialogue: 1,0:26:58.41,0:27:00.65,英文对白,,0,0,0,,and college sports leagues, and highlights too.
 Dialogue: 1,0:27:00.68,0:27:05.65,英文对白,,0,0,0,,Now you can catch the best plays from your favorite teams right in your news feed.
 Dialogue: 1,0:27:05.69,0:27:09.16,英文对白,,0,0,0,,And your favorites are seamlessly synced with the Apple TV app
 Dialogue: 1,0:27:09.19,0:27:11.83,英文对白,,0,0,0,,and across all your Apple devices.
@@ -472,20 +349,14 @@ Dialogue: 1,0:27:25.24,0:27:29.24,英文对白,,0,0,0,,That's Sports. Back to yo
 Dialogue: 1,0:27:29.28,0:27:33.78,英文对白,,0,0,0,,Craig: iOS and the entire Apple ecosystem are amazing for families,
 Dialogue: 1,0:27:33.82,0:27:36.49,英文对白,,0,0,0,,and we have some great new features to talk about,
 Dialogue: 1,0:27:36.52,0:27:39.86,英文对白,,0,0,0,,starting with some updates to Family Sharing.
-Dialogue: 1,0:27:39.89,0:27:43.56,英文对白,,0,0,0,,With Family Sharing, you can share your favorite purchases
-Dialogue: 1,0:27:43.59,0:27:45.53,英文对白,,0,0,0,,and subscriptions with up to five of your family members,
 Dialogue: 1,0:27:45.56,0:27:50.77,英文对白,,0,0,0,,including Apple Music, iCloud+, Apple One, and much more.
 Dialogue: 1,0:27:50.80,0:27:54.67,英文对白,,0,0,0,,Everyone gets personalized access to their favorite content
-Dialogue: 1,0:27:54.70,0:27:56.84,英文对白,,0,0,0,,without having to buy their own subscriptions or share an account.
-Dialogue: 1,0:27:57.94,0:28:02.31,英文对白,,0,0,0,,And for households with kids, you can create accounts just for them
-Dialogue: 1,0:28:02.34,0:28:06.22,英文对白,,0,0,0,,with built-in parental controls to help you monitor their screen time
 Dialogue: 1,0:28:06.25,0:28:07.78,英文对白,,0,0,0,,or approve their purchases.
 Dialogue: 1,0:28:07.82,0:28:12.22,英文对白,,0,0,0,,And this year, we're making it even easier to create accounts for kids
 Dialogue: 1,0:28:12.25,0:28:16.89,英文对白,,0,0,0,,and make sure the right parental controls are in place right from the start.
 Dialogue: 1,0:28:16.93,0:28:20.13,英文对白,,0,0,0,,We're adding a new, easy way to set age-appropriate restrictions
 Dialogue: 1,0:28:20.16,0:28:23.50,英文对白,,0,0,0,,for apps, movies, books, and music.
 Dialogue: 1,0:28:23.53,0:28:26.77,英文对白,,0,0,0,,Along with quick setup of other important parental controls.
-Dialogue: 1,0:28:26.80,0:28:32.11,英文对白,,0,0,0,,We're also making setting up a new device for your child–
 Dialogue: 1,0:28:32.14,0:28:35.68,英文对白,,0,0,0,,Just turn on the device they'll be using, bring your iPhone nearby,
 Dialogue: 1,0:28:35.71,0:28:38.58,英文对白,,0,0,0,,and choose to set up with Quick Start.
 Dialogue: 1,0:28:38.61,0:28:41.82,英文对白,,0,0,0,,With just a few taps, the new device will be set up for their use
@@ -493,12 +364,10 @@ Dialogue: 1,0:28:41.85,0:28:46.46,英文对白,,0,0,0,,with all the parental con
 Dialogue: 1,0:28:46.49,0:28:48.62,英文对白,,0,0,0,,And when your child asks for more screen time,
 Dialogue: 1,0:28:48.66,0:28:52.29,英文对白,,0,0,0,,you won't have to navigate to Settings to approve or deny their request.
 Dialogue: 1,0:28:52.33,0:28:55.68,英文对白,,0,0,0,,You can now respond right in Messages.
-Dialogue: 1,0:28:55.10,0:28:58.40,英文对白,,0,0,0,,Finally, we've added a new Family Checklist with helpful tips
 Dialogue: 1,0:28:59.80,0:29:02.60,英文对白,,0,0,0,,like updating a child's settings as they get older,
 Dialogue: 1,0:29:02.64,0:29:04.44,英文对白,,0,0,0,,turning on location sharing,
 Dialogue: 1,0:29:04.47,0:29:09.14,英文对白,,0,0,0,,or just reminding you that you can share your iCloud+ subscription with everyone.
 Dialogue: 1,0:29:09.18,0:29:14.65,英文对白,,0,0,0,,So those are some of the helpful updates to Family Sharing this year.
-Dialogue: 1,0:29:14.68,0:29:21.28,英文对白,,0,0,0,,Now, as we all know, one of the things
 Dialogue: 1,0:29:17.59,0:29:21.28,英文对白,,0,0,0,,everyone enjoys sharing with their family is photos.
 Dialogue: 1,0:29:21.61,0:29:25.89,英文对白,,0,0,0,,So this year, we're introducing a better way to share photos with your family.
 Dialogue: 1,0:29:25.93,0:29:29.50,英文对白,,0,0,0,,Our precious memories are often captured by several people
@@ -510,42 +379,30 @@ Dialogue: 1,0:29:42.81,0:29:44.84,英文对白,,0,0,0,,Until now.
 Dialogue: 1,0:29:44.11,0:29:47.42,英文对白,,0,0,0,,We're introducing iCloud Shared Photo Library
 Dialogue: 1,0:29:47.45,0:29:51.15,英文对白,,0,0,0,,to help you share photos seamlessly and even automatically.
 Dialogue: 1,0:29:51.19,0:29:52.55,英文对白,,0,0,0,,It's easy to set up.
-Dialogue: 1,0:29:52.59,0:29:54.29,英文对白,,0,0,0,,It's a separate iCloud library that everyone can contribute to,
-Dialogue: 1,0:29:54.32,0:29:58.23,英文对白,,0,0,0,,collaborate on, and enjoy.
 Dialogue: 1,0:29:58.26,0:30:00.20,英文对白,,0,0,0,,You can participate in one shared library
 Dialogue: 1,0:30:00.23,0:30:02.63,英文对白,,0,0,0,,that's shared with up to five other people.
 Dialogue: 1,0:30:02.66,0:30:05.93,英文对白,,0,0,0,,We've made it simple to share just the photos you want from your library.
 Dialogue: 1,0:30:05.97,0:30:08.80,英文对白,,0,0,0,,You can share everything already in your library,
 Dialogue: 1,0:30:08.84,0:30:12.98,英文对白,,0,0,0,,or choose what to include based on a start date or the people in the photos.
-Dialogue: 1,0:30:13.13,0:30:18.41,英文对白,,0,0,0,,For example, you can choose to include just the photos
 Dialogue: 1,0:30:15.71,0:30:18.41,英文对白,,0,0,0,,where you were together with your partner and the kids.
 Dialogue: 1,0:30:18.45,0:30:20.32,英文对白,,0,0,0,,Once the Shared Library is set up,
 Dialogue: 1,0:30:20.35,0:30:23.85,英文对白,,0,0,0,,you can manually move over new photos after you take them.
-Dialogue: 1,0:30:23.89,0:30:25.89,英文对白,,0,0,0,,But we wanted to make it even easier with a new switch right in Camera
 Dialogue: 1,0:30:27.89,0:30:31.63,英文对白,,0,0,0,,that sends shots straight to the Shared Library as you take them.
-Dialogue: 1,0:30:31.66,0:30:37.50,英文对白,,0,0,0,,This is great when you're on a vacation and you want to make sure
 Dialogue: 1,0:30:34.90,0:30:37.50,英文对白,,0,0,0,,the photos are shared right away.
 Dialogue: 1,0:30:37.53,0:30:40.24,英文对白,,0,0,0,,And if you take a photo of something personal, like a gift,
 Dialogue: 1,0:30:40.27,0:30:42.14,英文对白,,0,0,0,,you can easily turn it off.
 Dialogue: 1,0:30:42.17,0:30:45.84,英文对白,,0,0,0,,You can also choose to have the sharing switch enabled automatically
 Dialogue: 1,0:30:45.87,0:30:49.78,英文对白,,0,0,0,,whenever you take shots with other members of the Shared Library nearby.
-Dialogue: 1,0:30:49.81,0:30:51.98,英文对白,,0,0,0,,So if you take photos on a camping trip, you don't have to remember
-Dialogue: 1,0:30:52.19,0:30:54.68,英文对白,,0,0,0,,to share them later.
 Dialogue: 1,0:30:54.72,0:30:59.59,英文对白,,0,0,0,,You'll also receive intelligent sharing suggestions in the For You tab.
-Dialogue: 1,0:30:59.92,0:31:00.72,英文对白,,0,0,0,,Everyone has equal permissions for adding, editing,
-Dialogue: 1,0:31:00.76,0:31:04.33,英文对白,,0,0,0,,and deleting photos in the Shared Library.
 Dialogue: 1,0:31:04.36,0:31:07.16,英文对白,,0,0,0,,So if one member of the group is a talented photo editor,
 Dialogue: 1,0:31:07.20,0:31:10.33,英文对白,,0,0,0,,everyone gets to enjoy their edits to the shared photos.
 Dialogue: 1,0:31:10.37,0:31:13.73,英文对白,,0,0,0,,Deletions, captions, and keywords sync too.
-Dialogue: 1,0:31:13.10,0:31:16.21,英文对白,,0,0,0,,Content in the Shared Library will appear in everyone's Memories,
-Dialogue: 1,0:31:16.24,0:31:19.64,英文对白,,0,0,0,,Featured Photos, and in the Photos widget.
 Dialogue: 1,0:31:19.68,0:31:23.85,英文对白,,0,0,0,,So you can relive your family's adventures that include all the photos.
 Dialogue: 1,0:31:23.88,0:31:26.95,英文对白,,0,0,0,,That's iCloud Shared Photo Library:
 Dialogue: 1,0:31:26.98,0:31:29.69,英文对白,,0,0,0,,the best way to share photos with your family.
 Dialogue: 1,0:31:29.72,0:31:33.36,英文对白,,0,0,0,,And last, let's talk about privacy.
 Dialogue: 1,0:31:33.39,0:31:37.79,英文对白,,0,0,0,,We're always working hard to protect our users and their privacy,
 Dialogue: 1,0:31:37.83,0:31:41.96,英文对白,,0,0,0,,with features like App Privacy Report, Mail Privacy Protection,
-Dialogue: 1,0:31:42.02,0:31:47.10,英文对白,,0,0,0,,App Tracking Transparency, Privacy Nutrition Labels,
 Dialogue: 1,0:31:45.37,0:31:47.10,英文对白,,0,0,0,,and so many more.
 Dialogue: 1,0:31:47.14,0:31:52.79,英文对白,,0,0,0,,Another critically important area is protecting our users' personal safety.
 Dialogue: 1,0:31:52.11,0:31:54.68,英文对白,,0,0,0,,One way we're doing that is by adding a new tool
@@ -553,35 +410,23 @@ Dialogue: 1,0:31:54.71,0:31:57.45,英文对白,,0,0,0,,to help people quickly tu
 Dialogue: 1,0:31:57.48,0:32:02.22,英文对白,,0,0,0,,for example, disabling location sharing if they're escaping an abusive relationship.
 Dialogue: 1,0:32:02.25,0:32:04.35,英文对白,,0,0,0,,It's called Safety Check.
 Dialogue: 1,0:32:04.39,0:32:06.66,英文对白,,0,0,0,,To tell you about it, here's Katie.
-Dialogue: 1,0:32:10.39,0:32:14.90,英文对白,,0,0,0,,Katie Skinner: Many people share passwords
 Dialogue: 1,0:32:12.29,0:32:14.90,英文对白,,0,0,0,,and access to their devices with their partner.
-Dialogue: 1,0:32:14.93,0:32:17.53,英文对白,,0,0,0,,However, in abusive relationships, this can threaten personal safety
 Dialogue: 1,0:32:19.30,0:32:22.37,英文对白,,0,0,0,,and make it harder for victims to get help.
-Dialogue: 1,0:32:22.40,0:32:28.94,英文对白,,0,0,0,,We've been working closely with organizations
 Dialogue: 1,0:32:25.12,0:32:28.94,英文对白,,0,0,0,,that support victims of domestic and intimate partner violence.
 Dialogue: 1,0:32:28.98,0:32:32.95,英文对白,,0,0,0,,And the result of those conversations is Safety Check,
-Dialogue: 1,0:32:32.98,0:32:34.75,英文对白,,0,0,0,,a new section in Settings where you can quickly review and reset the access
-Dialogue: 1,0:32:34.78,0:32:39.15,英文对白,,0,0,0,,you've granted others.
-Dialogue: 1,0:32:39.19,0:32:45.96,英文对白,,0,0,0,,This lets people in abusive situations quickly revoke an abuser's access
 Dialogue: 1,0:32:44.39,0:32:45.96,英文对白,,0,0,0,,to their data and location,
 Dialogue: 1,0:32:45.99,0:32:49.80,英文对白,,0,0,0,,enabling them to cut ties and get to safety.
 Dialogue: 1,0:32:49.83,0:32:54.30,英文对白,,0,0,0,,Safety Check stops sharing your location with others via FindMy
 Dialogue: 1,0:32:54.34,0:32:59.79,英文对白,,0,0,0,,and resets the system privacy permissions for all apps.
-Dialogue: 1,0:32:59.11,0:33:01.78,英文对白,,0,0,0,,It also protects access to your messages by helping you sign out of iCloud
-Dialogue: 1,0:33:01.81,0:33:05.95,英文对白,,0,0,0,,on all your other devices
 Dialogue: 1,0:33:05.98,0:33:09.35,英文对白,,0,0,0,,and restricts Messages and FaceTime to the device in your hand.
 Dialogue: 1,0:33:10.79,0:33:14.76,英文对白,,0,0,0,,Safety Check also helps you manage who you've given access to.
 Dialogue: 1,0:33:14.79,0:33:18.49,英文对白,,0,0,0,,And you can audit which permissions you've granted to certain apps.
 Dialogue: 1,0:33:18.53,0:33:22.20,英文对白,,0,0,0,,We've received some really positive feedback on our approach,
 Dialogue: 1,0:33:22.23,0:33:25.05,英文对白,,0,0,0,,including from the National Center for Victims of Crime
-Dialogue: 1,0:33:25.38,0:33:25.90,英文对白,,0,0,0,,who said: "In times of crisis, for many survivors,
-Dialogue: 1,0:33:25.93,0:33:32.64,英文对白,,0,0,0,,"it's important to know who has their information and location.
 Dialogue: 1,0:33:32.67,0:33:36.21,英文对白,,0,0,0,,Safety Check helps give control back to survivors."
 Dialogue: 1,0:33:36.25,0:33:38.25,英文对白,,0,0,0,,This is important work,
 Dialogue: 1,0:33:38.28,0:33:42.25,英文对白,,0,0,0,,expanding the ways iOS helps you stay safe.
 Dialogue: 1,0:33:42.28,0:33:44.99,英文对白,,0,0,0,,Now, back to you, Craig.
-Dialogue: 1,0:33:45.25,0:33:47.94,英文对白,,0,0,0,,Craig: Protecting you and your privacy is and will always be
-Dialogue: 1,0:33:47.12,0:33:51.46,英文对白,,0,0,0,,at the center of what we do.
 Dialogue: 1,0:33:51.49,0:33:57.73,英文对白,,0,0,0,,iOS 16 offers so many updates that will change the way you experience iPhone.
 Dialogue: 1,0:33:57.77,0:34:00.74,英文对白,,0,0,0,,iOS also extends that experience beyond the phone,
 Dialogue: 1,0:34:00.77,0:34:03.87,英文对白,,0,0,0,,to enhance how you interact with the world around you.
@@ -593,23 +438,17 @@ Dialogue: 1,0:34:16.32,0:34:19.56,英文对白,,0,0,0,,To tell you what's new in
 Dialogue: 1,0:34:19.59,0:34:26.60,英文对白,,0,0,0,,♪♪
 Dialogue: 1,0:34:31.67,0:34:34.70,英文对白,,0,0,0,,Corey Wang: Our home is perhaps the most important place in our lives,
 Dialogue: 1,0:34:34.74,0:34:36.71,英文对白,,0,0,0,,and there's a lot to manage.
-Dialogue: 1,0:34:36.74,0:34:38.21,英文对白,,0,0,0,,Smart home accessories can make it easier
-Dialogue: 1,0:34:38.24,0:34:42.38,英文对白,,0,0,0,,and more convenient to control your home right from your iPhone.
 Dialogue: 1,0:34:42.41,0:34:45.85,英文对白,,0,0,0,,You can do things like see who's at the door while working at your desk,
 Dialogue: 1,0:34:45.88,0:34:49.48,英文对白,,0,0,0,,or turn off the lights downstairs without getting out of bed.
 Dialogue: 1,0:34:49.52,0:34:50.92,英文对白,,0,0,0,,And when you're away from home,
 Dialogue: 1,0:34:50.95,0:34:53.16,英文对白,,0,0,0,,you can double-check if the front door is locked
-Dialogue: 1,0:34:53.19,0:34:54.36,英文对白,,0,0,0,,or adjust the temperature so it's just right when you get back.
 Dialogue: 1,0:34:57.19,0:34:59.23,英文对白,,0,0,0,,And your smart home is all the more powerful
-Dialogue: 1,0:34:59.26,0:35:01.01,英文对白,,0,0,0,,when your accessories work together, reacting to changes automatically.
 Dialogue: 1,0:35:03.73,0:35:06.06,英文对白,,0,0,0,,Now, the smart home is still in its early days,
 Dialogue: 1,0:35:06.39,0:35:08.57,英文对白,,0,0,0,,and we want to help bring these powerful experiences
 Dialogue: 1,0:35:08.60,0:35:10.51,英文对白,,0,0,0,,to as many homes as possible.
 Dialogue: 1,0:35:11.27,0:35:14.14,英文对白,,0,0,0,,In order to build a connected ecosystem at home,
 Dialogue: 1,0:35:14.18,0:35:16.61,英文对白,,0,0,0,,it's important that you have the most choice
 Dialogue: 1,0:35:16.65,0:35:19.25,英文对白,,0,0,0,,so you don't have to worry about what works with what.
-Dialogue: 1,0:35:19.28,0:35:20.68,英文对白,,0,0,0,,With that in mind, we joined forces with other industry leaders
-Dialogue: 1,0:35:23.90,0:35:25.79,英文对白,,0,0,0,,to create a new smart home connectivity standard.
 Dialogue: 1,0:35:25.82,0:35:27.79,英文对白,,0,0,0,,It's called Matter.
 Dialogue: 1,0:35:27.82,0:35:32.53,英文对白,,0,0,0,,Matter enables smart home accessories to work together across platforms.
 Dialogue: 1,0:35:32.56,0:35:34.96,英文对白,,0,0,0,,And to ensure we stayed true to our values,
@@ -618,40 +457,23 @@ Dialogue: 1,0:35:37.93,0:35:40.37,英文对白,,0,0,0,,as a foundation of this n
 Dialogue: 1,0:35:40.40,0:35:42.57,英文对白,,0,0,0,,so it's built on the same core principles
 Dialogue: 1,0:35:42.60,0:35:45.71,英文对白,,0,0,0,,and maintains the highest level of security.
 Dialogue: 1,0:35:45.74,0:35:48.88,英文对白,,0,0,0,,Industry-leading brands have already committed to supporting Matter,
-Dialogue: 1,0:35:48.91,0:35:51.51,英文对白,,0,0,0,,with over 130 products in the pipeline, and that's just the beginning.
-Dialogue: 1,0:35:53.78,0:35:58.52,英文对白,,0,0,0,,The Matter standard provides the underlying foundation
-Dialogue: 1,0:35:58.55,0:36:01.49,英文对白,,0,0,0,,to connect smart home accessories, and it allows us to innovate on top of it.
 Dialogue: 1,0:36:01.52,0:36:02.79,英文对白,,0,0,0,,We take privacy further,
-Dialogue: 1,0:36:02.82,0:36:07.96,英文对白,,0,0,0,,ensuring that data about how you use your accessories is processed
-Dialogue: 1,0:36:08.01,0:36:10.80,英文对白,,0,0,0,,and stored by default in a way that even Apple can't see.
 Dialogue: 1,0:36:10.83,0:36:14.50,英文对白,,0,0,0,,With Matter, we can continue to create amazing experiences in the Home app
 Dialogue: 1,0:36:14.54,0:36:17.27,英文对白,,0,0,0,,while also making sure all your different accessories
 Dialogue: 1,0:36:17.31,0:36:20.38,英文对白,,0,0,0,,are consistently simple to set up and easy to use.
 Dialogue: 1,0:36:20.41,0:36:23.21,英文对白,,0,0,0,,And now that you’ll have more accessory options to choose from,
-Dialogue: 1,0:36:23.25,0:36:27.75,英文对白,,0,0,0,,let's check out how we made the experience even better
 Dialogue: 1,0:36:25.88,0:36:27.75,英文对白,,0,0,0,,with an all-new Home app.
 Dialogue: 1,0:36:27.78,0:36:32.59,英文对白,,0,0,0,,We reimagined it from the ground up starting with the underlying architecture
 Dialogue: 1,0:36:32.92,0:36:34.22,英文对白,,0,0,0,,so it's more efficient and reliable,
 Dialogue: 1,0:36:34.26,0:36:37.26,英文对白,,0,0,0,,especially for homes with many accessories.
-Dialogue: 1,0:36:37.29,0:36:43.03,英文对白,,0,0,0,,We also completely redesigned how you navigate, organize,
-Dialogue: 1,0:36:43.36,0:36:45.63,英文对白,,0,0,0,,and view accessories to make it easier to control your smart home.
 Dialogue: 1,0:36:45.67,0:36:49.10,英文对白,,0,0,0,,We've integrated your rooms and favorites into the main tab of the app.
 Dialogue: 1,0:36:49.14,0:36:52.47,英文对白,,0,0,0,,So you can see your entire home in a single view.
-Dialogue: 1,0:36:52.51,0:36:53.98,英文对白,,0,0,0,,And we made sure it looks great, whether you're just getting started
 Dialogue: 1,0:36:55.51,0:36:58.31,英文对白,,0,0,0,,or have built out an advanced connected home.
 Dialogue: 1,0:36:58.35,0:37:03.39,英文对白,,0,0,0,,We added new categories for climate, lights, security, and more
-Dialogue: 1,0:37:03.42,0:37:07.79,英文对白,,0,0,0,,and an overview of what's happening in each category
 Dialogue: 1,0:37:06.15,0:37:07.79,英文对白,,0,0,0,,right at the top of the screen.
 Dialogue: 1,0:37:07.82,0:37:11.39,英文对白,,0,0,0,,And categories are a great way to navigate within the app.
-Dialogue: 1,0:37:11.43,0:37:13.73,英文对白,,0,0,0,,When you tap on a specific category, you see all the relevant accessories
-Dialogue: 1,0:37:17.37,0:37:20.07,英文对白,,0,0,0,,organized by room and more detailed status information.
 Dialogue: 1,0:37:20.40,0:37:24.51,英文对白,,0,0,0,,A multi-camera view displays up to four cameras at once front and center,
 Dialogue: 1,0:37:24.54,0:37:27.51,英文对白,,0,0,0,,and you can scroll to the right to see any additional cameras.
-Dialogue: 1,0:37:27.54,0:37:29.55,英文对白,,0,0,0,,We also redesigned tiles so that different accessories
-Dialogue: 1,0:37:29.58,0:37:33.98,英文对白,,0,0,0,,are more visually recognizable through shape and color.
-Dialogue: 1,0:37:34.21,0:37:36.23,英文对白,,0,0,0,,And with the new widgets on the Lock Screen, it's easier than ever
-Dialogue: 1,0:37:36.56,0:37:38.82,英文对白,,0,0,0,,to see how your home is doing.
-Dialogue: 1,0:37:38.85,0:37:41.12,英文对白,,0,0,0,,So that's the all-new Home app, and it's coming to iPhone, iPad, and Mac.
 Dialogue: 1,0:37:44.31,0:37:47.67,英文对白,,0,0,0,,Now that you have what you need to keep tabs on your home,
 Dialogue: 1,0:37:47.10,0:37:48.63,英文对白,,0,0,0,,you're ready to hit the road.
 Dialogue: 1,0:37:48.66,0:37:51.50,英文对白,,0,0,0,,Let's hand it off to Emily to talk about CarPlay.
@@ -662,13 +484,9 @@ Dialogue: 1,0:38:07.54,0:38:10.95,英文对白,,0,0,0,,What's more, 79% of U.S. 
 Dialogue: 1,0:38:10.99,0:38:14.39,英文对白,,0,0,0,,would only consider a car that works with CarPlay.
 Dialogue: 1,0:38:14.42,0:38:18.36,英文对白,,0,0,0,,It's a must-have feature when shopping for a new vehicle.
 Dialogue: 1,0:38:18.39,0:38:20.70,英文对白,,0,0,0,,Our users love CarPlay.
-Dialogue: 1,0:38:20.73,0:38:27.40,英文对白,,0,0,0,,It gives them an easy way to use apps in the car,
 Dialogue: 1,0:38:23.77,0:38:27.40,英文对白,,0,0,0,,using the familiar UI from their iPhone.
 Dialogue: 1,0:38:27.74,0:38:28.97,英文对白,,0,0,0,,But cars have changed a lot,
-Dialogue: 1,0:38:29.09,0:38:30.94,英文对白,,0,0,0,,with larger-sized screens and more of them throughout the car.
 Dialogue: 1,0:38:33.11,0:38:39.19,英文对白,,0,0,0,,There's an opportunity for iPhone to play an even more important role.
-Dialogue: 1,0:38:39.52,0:38:41.22,英文对白,,0,0,0,,We've been working with automakers to reinvent the in-car experience
-Dialogue: 1,0:38:41.25,0:38:46.96,英文对白,,0,0,0,,across all of the driver's screens.
 Dialogue: 1,0:38:46.99,0:38:51.79,英文对白,,0,0,0,,Let's take a sneak peek at this next generation of CarPlay.
 Dialogue: 1,0:38:53.16,0:39:00.17,英文对白,,0,0,0,,♪♪
 Dialogue: 1,0:39:09.41,0:39:15.18,英文对白,,0,0,0,,♪♪
@@ -678,22 +496,13 @@ Dialogue: 1,0:39:19.25,0:39:25.29,英文对白,,0,0,0,,This next generation of C
 Dialogue: 1,0:39:25.33,0:39:29.40,英文对白,,0,0,0,,giving an experience that is unified and consistent.
 Dialogue: 1,0:39:29.43,0:39:33.57,英文对白,,0,0,0,,It's the very best of both your car and your iPhone.
 Dialogue: 1,0:39:33.60,0:39:37.11,英文对白,,0,0,0,,And it goes beyond what you can do with CarPlay today.
-Dialogue: 1,0:39:37.14,0:39:39.68,英文对白,,0,0,0,,Deep integration with the car's hardware lets you tune your car's radio
-Dialogue: 1,0:39:39.71,0:39:48.58,英文对白,,0,0,0,,or change your temperature without ever leaving the CarPlay experience.
 Dialogue: 1,0:39:48.62,0:39:52.39,英文对白,,0,0,0,,It also includes widgets, powered by your iPhone,
 Dialogue: 1,0:39:52.42,0:39:55.29,英文对白,,0,0,0,,that fit your screens perfectly.
 Dialogue: 1,0:39:55.32,0:39:59.99,英文对白,,0,0,0,,They can live front and center in the gauge cluster as well,
 Dialogue: 1,0:39:59.13,0:40:02.43,英文对白,,0,0,0,,giving you information at a glance.
 Dialogue: 1,0:40:02.46,0:40:08.27,英文对白,,0,0,0,,In fact, this next generation of CarPlay powers your entire instrument cluster.
-Dialogue: 1,0:40:08.30,0:40:10.10,英文对白,,0,0,0,,To do this, your iPhone communicates
-Dialogue: 1,0:40:10.43,0:40:18.31,英文对白,,0,0,0,,in an on-device, privacy-friendly way,
 Dialogue: 1,0:40:11.51,0:40:14.11,英文对白,,0,0,0,,with your vehicle's real-time systems
-Dialogue: 1,0:40:18.35,0:40:21.88,英文对白,,0,0,0,,showing all of your driving information like speed, RPMs,
-Dialogue: 1,0:40:21.12,0:40:25.95,英文对白,,0,0,0,,fuel level, temperature, and more.
 Dialogue: 1,0:40:25.99,0:40:31.33,英文对白,,0,0,0,,And no matter what type of unique screen shapes or layouts you may have,
-Dialogue: 1,0:40:31.36,0:40:34.34,英文对白,,0,0,0,,this next generation of CarPlay feels like
-Dialogue: 1,0:40:34.67,0:40:38.67,英文对白,,0,0,0,,it was made specifically for your car.
-Dialogue: 1,0:40:38.70,0:40:46.79,英文对白,,0,0,0,,We're also excited to give you the ability
 Dialogue: 1,0:40:41.74,0:40:46.79,英文对白,,0,0,0,,to make the core of the driving experience unique to you.
 Dialogue: 1,0:40:46.11,0:40:49.85,英文对白,,0,0,0,,We carefully crafted instrument cluster options
 Dialogue: 1,0:40:49.88,0:40:53.15,英文对白,,0,0,0,,ranging from the modern to the traditional,
@@ -709,17 +518,12 @@ Dialogue: 1,0:41:23.41,0:41:28.15,英文对白,,0,0,0,,and we can't wait to show
 Dialogue: 1,0:41:28.18,0:41:30.85,英文对白,,0,0,0,,And now, I'll hand it back to Craig.
 Dialogue: 1,0:41:30.89,0:41:33.46,英文对白,,0,0,0,,Craig: And that's iOS 16,
 Dialogue: 1,0:41:33.49,0:41:38.39,英文对白,,0,0,0,,a mighty release that gives you entirely new ways to make iOS your own.
-Dialogue: 1,0:41:38.43,0:41:40.86,英文对白,,0,0,0,,It also helps you stay in touch with ease, engage with the world around you,
 Dialogue: 1,0:41:42.80,0:41:47.40,英文对白,,0,0,0,,and seamlessly share experiences and memories with your family and friends.
 Dialogue: 1,0:41:47.74,0:41:48.60,英文对白,,0,0,0,,And that's just the beginning.
 Dialogue: 1,0:41:48.64,0:41:52.71,英文对白,,0,0,0,,We've also made a big advancement in Spatial Audio with AirPods.
-Dialogue: 1,0:41:52.74,0:41:58.71,英文对白,,0,0,0,,Now, Spatial Audio works by understanding how sound interacts
 Dialogue: 1,0:41:55.84,0:41:58.71,英文对白,,0,0,0,,with the geometry of your head and ears.
 Dialogue: 1,0:41:58.75,0:42:03.56,英文对白,,0,0,0,,And now, in iOS 16, you can use the True Depth camera on iPhone
 Dialogue: 1,0:42:03.90,0:42:06.56,英文对白,,0,0,0,,to create a personalized Spatial Audio profile,
-Dialogue: 1,0:42:06.59,0:42:10.66,英文对白,,0,0,0,,enabling an even more precise
-Dialogue: 1,0:42:10.69,0:42:12.59,英文对白,,0,0,0,,and immersive listening experience, tuned just for you.
-Dialogue: 1,0:42:12.63,0:42:14.96,英文对白,,0,0,0,,Plus, Quick Note is coming to iOS so you can capture ideas instantly.
 Dialogue: 1,0:42:17.10,0:42:19.67,英文对白,,0,0,0,,A new rapid security response mechanism
 Dialogue: 1,0:42:19.70,0:42:22.87,英文对白,,0,0,0,,gets important improvements to iPhone faster,
 Dialogue: 1,0:42:22.91,0:42:27.47,英文对白,,0,0,0,,and you've got more Memoji customizations to choose from.
@@ -736,18 +540,13 @@ Dialogue: 1,0:43:05.18,0:43:07.87,英文对白,,0,0,0,,just by glancing at your 
 Dialogue: 1,0:43:07.12,0:43:09.65,英文对白,,0,0,0,,whether you use the popular Photos watch face,
 Dialogue: 1,0:43:09.69,0:43:11.52,英文对白,,0,0,0,,or a face with rich complications.
 Dialogue: 1,0:43:11.55,0:43:14.76,英文对白,,0,0,0,,And we're adding four new watch faces for you to choose from.
-Dialogue: 1,0:43:14.79,0:43:17.19,英文对白,,0,0,0,,The Astronomy face has been remastered to take advantage of the expansive display,
 Dialogue: 1,0:43:19.86,0:43:23.30,英文对白,,0,0,0,,and shows current cloud coverage around the world.
-Dialogue: 1,0:43:23.33,0:43:25.43,英文对白,,0,0,0,,The Lunar calendar is used to observe traditional holidays
-Dialogue: 1,0:43:25.47,0:43:28.80,英文对白,,0,0,0,,and special events in many cultures.
 Dialogue: 1,0:43:28.84,0:43:32.24,英文对白,,0,0,0,,The Lunar watch face celebrates this thousand-year-old practice
 Dialogue: 1,0:43:32.27,0:43:35.91,英文对白,,0,0,0,,with support for Chinese, Islamic, and Hebrew calendars.
 Dialogue: 1,0:43:36.85,0:43:39.62,英文对白,,0,0,0,,Play Time, designed by artist Joi Fulton,
 Dialogue: 1,0:43:39.65,0:43:41.68,英文对白,,0,0,0,,features whimsical animated numbers.
 Dialogue: 1,0:43:41.72,0:43:44.35,英文对白,,0,0,0,,You can tap the display to send them bouncing around,
 Dialogue: 1,0:43:44.39,0:43:47.36,英文对白,,0,0,0,,and when you lower your wrist, they take a nap.
-Dialogue: 1,0:43:47.39,0:43:51.86,英文对白,,0,0,0,,Finally, Metropolitan highlights watch typography with a new font
-Dialogue: 1,0:43:51.89,0:43:55.13,英文对白,,0,0,0,,that dynamically stretches when you rotate the digital crown,
 Dialogue: 1,0:43:55.16,0:43:57.93,英文对白,,0,0,0,,and features many lovely color combinations.
 Dialogue: 1,0:43:57.97,0:44:02.54,英文对白,,0,0,0,,Rich complications enable you to see more information in a small space,
 Dialogue: 1,0:44:02.57,0:44:05.44,英文对白,,0,0,0,,and we're bringing these to more of our watch faces.
@@ -755,18 +554,10 @@ Dialogue: 1,0:44:06.21,0:44:12.35,英文对白,,0,0,0,,watchOS 9 also introduces
 Dialogue: 1,0:44:12.38,0:44:16.22,英文对白,,0,0,0,,And active apps will be pinned to the top of the Dock for quick access.
 Dialogue: 1,0:44:16.25,0:44:19.82,英文对白,,0,0,0,,Another way to stay connected is by listening to the latest stories,
 Dialogue: 1,0:44:19.86,0:44:21.96,英文对白,,0,0,0,,or sharing your favorite content.
-Dialogue: 1,0:44:21.99,0:44:24.83,英文对白,,0,0,0,,With watchOS 9, the Podcast app allows you to discover
-Dialogue: 1,0:44:24.86,0:44:30.23,英文对白,,0,0,0,,and follow new podcasts using Search and Listen Now.
 Dialogue: 1,0:44:30.27,0:44:34.17,英文对白,,0,0,0,,And the app is now available to kids using Family Setup.
-Dialogue: 1,0:44:34.20,0:44:35.14,英文对白,,0,0,0,,For developers, sharing content and selected images from apps like Outcast
-Dialogue: 1,0:44:40.94,0:44:43.71,英文对白,,0,0,0,,and WeChat is easier with the new Share Sheet and Photos Picker APIs.
-Dialogue: 1,0:44:43.75,0:44:45.18,英文对白,,0,0,0,,And with CallKit, you can start, end, or mute VoIP calls from apps
-Dialogue: 1,0:44:47.25,0:44:50.65,英文对白,,0,0,0,,like Webex directly on Apple Watch.
 Dialogue: 1,0:44:50.69,0:44:54.46,英文对白,,0,0,0,,That's some of what's coming in watchOS 9 to keep you connected.
 Dialogue: 1,0:44:54.49,0:44:57.86,英文对白,,0,0,0,,And now to Craig to tell you what's coming to keep you active.
 Dialogue: 1,0:45:02.93,0:45:05.67,英文对白,,0,0,0,,Craig Bolton: The Workout app is one of the most popular apps,
-Dialogue: 1,0:45:05.70,0:45:07.54,英文对白,,0,0,0,,so in watchOS 9, we're bringing new easy-to-use metrics,
-Dialogue: 1,0:45:11.84,0:45:14.98,英文对白,,0,0,0,,views, and training experiences inspired by high-performing athletes,
 Dialogue: 1,0:45:15.15,0:45:17.50,英文对白,,0,0,0,,starting with running.
 Dialogue: 1,0:45:17.84,0:45:19.75,英文对白,,0,0,0,,It's a sport that, no matter what your level,
 Dialogue: 1,0:45:19.78,0:45:23.19,英文对白,,0,0,0,,you can use metrics to better understand your performance.
@@ -776,10 +567,7 @@ Dialogue: 1,0:45:32.66,0:45:35.68,英文对白,,0,0,0,,to track how efficiently 
 Dialogue: 1,0:45:35.10,0:45:38.05,英文对白,,0,0,0,,Measuring these from the wrist isn't easy.
 Dialogue: 1,0:45:38.38,0:45:40.44,英文对白,,0,0,0,,Take vertical oscillation for example,
 Dialogue: 1,0:45:40.47,0:45:44.44,英文对白,,0,0,0,,which is a measure of how much you move up and down.
-Dialogue: 1,0:45:44.77,0:45:45.51,英文对白,,0,0,0,,If it's too high, your energy might be wasted going up
-Dialogue: 1,0:45:45.54,0:45:50.11,英文对白,,0,0,0,,versus propelling you forward.
 Dialogue: 1,0:45:50.15,0:45:52.85,英文对白,,0,0,0,,In order to capture this from the wrist,
-Dialogue: 1,0:45:52.11,0:45:57.49,英文对白,,0,0,0,,we need to extrapolate your torso movement
 Dialogue: 1,0:45:54.58,0:45:57.49,英文对白,,0,0,0,,from the distinctive style of your arm swing.
 Dialogue: 1,0:45:57.52,0:46:00.62,英文对白,,0,0,0,,We use machine learning and sensor fusion–
 Dialogue: 1,0:46:00.66,0:46:03.73,英文对白,,0,0,0,,a combination of accelerometer and gyroscope–
@@ -789,48 +577,30 @@ Dialogue: 1,0:46:09.50,0:46:14.20,英文对白,,0,0,0,,We use a similar approach
 Dialogue: 1,0:46:14.24,0:46:17.81,英文对白,,0,0,0,,stride length and ground contact time.
 Dialogue: 1,0:46:17.84,0:46:22.38,英文对白,,0,0,0,,These metrics can be added to new easy-to-read Workout views.
 Dialogue: 1,0:46:22.41,0:46:25.85,英文对白,,0,0,0,,Each Workout view lets you see more at a glance.
-Dialogue: 1,0:46:25.88,0:46:30.32,英文对白,,0,0,0,,Scroll the digital crown to see new views
 Dialogue: 1,0:46:28.95,0:46:31.42,英文对白,,0,0,0,,for familiar metrics like segments,
-Dialogue: 1,0:46:30.35,0:46:34.27,英文对白,,0,0,0,,splits, and elevation.
 Dialogue: 1,0:46:34.61,0:46:36.83,英文对白,,0,0,0,,And we're introducing heart rate zones
 Dialogue: 1,0:46:36.86,0:46:39.23,英文对白,,0,0,0,,so you can quickly see what zone you're in
 Dialogue: 1,0:46:39.26,0:46:44.04,英文对白,,0,0,0,,and get a sense of your intensity level at any point during your workout.
 Dialogue: 1,0:46:44.37,0:46:46.37,英文对白,,0,0,0,,There's also a new custom workout
 Dialogue: 1,0:46:46.40,0:46:49.76,英文对白,,0,0,0,,that you can use to add structure into your run.
 Dialogue: 1,0:46:49.10,0:46:53.28,英文对白,,0,0,0,,For example, if you are trying to improve your speed or endurance,
-Dialogue: 1,0:46:53.31,0:46:59.15,英文对白,,0,0,0,,you can create a workout using distance and time intervals
-Dialogue: 1,0:46:59.18,0:47:01.22,英文对白,,0,0,0,,that include sets of work and recovery which you can repeat as needed.
 Dialogue: 1,0:47:01.25,0:47:06.26,英文对白,,0,0,0,,You can also add one of the new alerts to a specific part of your workout–
 Dialogue: 1,0:47:06.59,0:47:09.62,英文对白,,0,0,0,,like one to monitor which heart rate zone you want to train in
 Dialogue: 1,0:47:09.96,0:47:11.23,英文对白,,0,0,0,,to help keep you on track.
-Dialogue: 1,0:47:11.26,0:47:16.83,英文对白,,0,0,0,,During your run, these alerts will guide you
 Dialogue: 1,0:47:14.23,0:47:16.83,英文对白,,0,0,0,,with both haptics and voice feedback,
 Dialogue: 1,0:47:16.87,0:47:20.60,英文对白,,0,0,0,,letting you know when to switch between work and recovery
-Dialogue: 1,0:47:20.64,0:47:26.54,英文对白,,0,0,0,,and when to pick up the pace if your heart rate falls below
 Dialogue: 1,0:47:24.57,0:47:26.54,英文对白,,0,0,0,,the target zone that you set.
 Dialogue: 1,0:47:26.58,0:47:29.55,英文对白,,0,0,0,,During your run, you can use the Digital Crown
-Dialogue: 1,0:47:29.58,0:47:31.31,英文对白,,0,0,0,,for additional workout views like this new power metric.
-Dialogue: 1,0:47:33.62,0:47:35.55,英文对白,,0,0,0,,Running with a power target can help you go the distance
-Dialogue: 1,0:47:35.58,0:47:41.29,英文对白,,0,0,0,,by keeping your effort in a range that you can reasonably sustain.
 Dialogue: 1,0:47:41.32,0:47:45.66,英文对白,,0,0,0,,You can even see how this workout is contributing to your Activity rings.
-Dialogue: 1,0:47:45.69,0:47:47.20,英文对白,,0,0,0,,And if it's a route you do often, it will be automatically saved
-Dialogue: 1,0:47:50.47,0:47:53.60,英文对白,,0,0,0,,in the Workout app for you to race against your last or best time.
 Dialogue: 1,0:47:53.64,0:47:57.77,英文对白,,0,0,0,,That way, you can see if all the training you're doing is paying off.
 Dialogue: 1,0:47:57.81,0:48:01.34,英文对白,,0,0,0,,You can use many of these new features not just when you're running,
-Dialogue: 1,0:48:01.38,0:48:03.18,英文对白,,0,0,0,,but for many workout types like Hiking,
-Dialogue: 1,0:48:03.21,0:48:06.82,英文对白,,0,0,0,,HIIT, and Functional Strength Training.
 Dialogue: 1,0:48:06.85,0:48:11.19,英文对白,,0,0,0,,And for our triathletes, there's a new multi-sport workout type
 Dialogue: 1,0:48:11.22,0:48:15.95,英文对白,,0,0,0,,that uses sensor fusion to detect when you finish one leg of your race
 Dialogue: 1,0:48:15.12,0:48:17.46,英文对白,,0,0,0,,and are transitioning to the next.
 Dialogue: 1,0:48:17.49,0:48:22.70,英文对白,,0,0,0,,So it can automatically switch between swimming, cycling, and running.
 Dialogue: 1,0:48:22.73,0:48:28.27,英文对白,,0,0,0,,That's just some of what's coming to the Workout app in watchOS 9.
-Dialogue: 1,0:48:28.30,0:48:32.98,英文对白,,0,0,0,,Since the first Apple Watch, we've been inspired by the stories
-Dialogue: 1,0:48:33.13,0:48:37.11,英文对白,,0,0,0,,we hear from users who stay motivated by closing their Activity rings each day.
-Dialogue: 1,0:48:37.15,0:48:41.82,英文对白,,0,0,0,,We also know there are many iPhone users who want to meet
-Dialogue: 1,0:48:41.85,0:48:43.59,英文对白,,0,0,0,,their fitness goals but don't yet have an Apple Watch.
 Dialogue: 1,0:48:43.62,0:48:50.26,英文对白,,0,0,0,,So in iOS 16, the Fitness app will be available to all iPhone users.
 Dialogue: 1,0:48:50.29,0:48:52.73,英文对白,,0,0,0,,Using the iPhone motion sensors,
-Dialogue: 1,0:48:52.76,0:48:58.71,英文对白,,0,0,0,,you can track steps, distance,
 Dialogue: 1,0:48:55.16,0:48:58.71,英文对白,,0,0,0,,flights climbed, and workouts from your favorite apps,
 Dialogue: 1,0:48:58.10,0:49:01.77,英文对白,,0,0,0,,which can be converted to an estimation of your active calories
 Dialogue: 1,0:49:01.80,0:49:04.47,英文对白,,0,0,0,,to contribute to your daily Move goal.
@@ -839,62 +609,38 @@ Dialogue: 1,0:49:07.21,0:49:09.51,英文对白,,0,0,0,,and receive coaching tips
 Dialogue: 1,0:49:09.55,0:49:13.12,英文对白,,0,0,0,,While Apple Watch gives you a picture of your all-day activity,
 Dialogue: 1,0:49:13.15,0:49:17.57,英文对白,,0,0,0,,we're excited to bring some of the Fitness app benefits to iPhone users
 Dialogue: 1,0:49:17.90,0:49:19.69,英文对白,,0,0,0,,to get them started on their fitness journey.
-Dialogue: 1,0:49:19.72,0:49:26.53,英文对白,,0,0,0,,Now, I'll hand it off to Sumbul to tell you what's coming in watchOS 9
 Dialogue: 1,0:49:24.46,0:49:26.63,英文对白,,0,0,0,,to help keep you healthy.
 Dialogue: 1,0:49:31.73,0:49:33.77,英文对白,,0,0,0,,Sumbul Ahmad Desai: The Sleep app has helped millions of you
 Dialogue: 1,0:49:33.80,0:49:36.77,英文对白,,0,0,0,,by providing insights into how much sleep you're getting
-Dialogue: 1,0:49:36.81,0:49:41.34,英文对白,,0,0,0,,along with metrics like heart rate,
 Dialogue: 1,0:49:38.97,0:49:41.34,英文对白,,0,0,0,,respiratory rate, and blood oxygen.
 Dialogue: 1,0:49:41.38,0:49:47.87,英文对白,,0,0,0,,In watchOS 9, you'll be able to learn more about your sleep with Sleep Stages.
 Dialogue: 1,0:49:47.12,0:49:50.89,英文对白,,0,0,0,,Apple Watch uses signals from the accelerometer and heart rate sensor
 Dialogue: 1,0:49:50.92,0:49:53.89,英文对白,,0,0,0,,to detect which stage of sleep you're in.
-Dialogue: 1,0:49:53.92,0:50:00.33,英文对白,,0,0,0,,Machine learning models were trained and validated
 Dialogue: 1,0:49:56.79,0:50:01.01,英文对白,,0,0,0,,against the clinical gold standard of polysomnography with the largest
-Dialogue: 1,0:50:00.67,0:50:04.57,英文对白,,0,0,0,,and most diverse population ever studied for a wearable.
 Dialogue: 1,0:50:04.60,0:50:07.30,英文对白,,0,0,0,,You can see how much time you spent in each stage,
 Dialogue: 1,0:50:07.34,0:50:09.64,英文对白,,0,0,0,,as well as when you might have woken up.
-Dialogue: 1,0:50:09.67,0:50:12.34,英文对白,,0,0,0,,You'll see more details in the Health app where you'll learn
-Dialogue: 1,0:50:12.37,0:50:16.83,英文对白,,0,0,0,,that each sleep stage– REM, Core, and Deep–
 Dialogue: 1,0:50:16.11,0:50:18.48,英文对白,,0,0,0,,perform an essential function.
 Dialogue: 1,0:50:18.51,0:50:22.75,英文对白,,0,0,0,,And as you sleep, you're likely to cycle through these stages multiple times.
 Dialogue: 1,0:50:22.78,0:50:26.62,英文对白,,0,0,0,,Researchers are still looking into what happens during sleep
 Dialogue: 1,0:50:26.66,0:50:28.56,英文对白,,0,0,0,,and how it impacts your health.
 Dialogue: 1,0:50:28.59,0:50:31.63,英文对白,,0,0,0,,We want to help push forward the science of sleep,
-Dialogue: 1,0:50:31.66,0:50:34.83,英文对白,,0,0,0,,so Apple Heart and Movement Study participants will now be able
-Dialogue: 1,0:50:34.86,0:50:39.57,英文对白,,0,0,0,,to contribute sleep stage data through the Research app.
-Dialogue: 1,0:50:39.60,0:50:41.64,英文对白,,0,0,0,,With the large scale of this study, we are excited about the potential discoveries.
 Dialogue: 1,0:50:44.77,0:50:47.34,英文对白,,0,0,0,,That's what's new with sleep.
 Dialogue: 1,0:50:47.38,0:50:51.65,英文对白,,0,0,0,,Another area where Apple Watch has an impact is heart health.
 Dialogue: 1,0:50:51.68,0:50:55.95,英文对白,,0,0,0,,We hear from so many of you who have received an Atrial Fibrillation alert
 Dialogue: 1,0:50:55.98,0:50:58.62,英文对白,,0,0,0,,and sought potentially-life saving care.
 Dialogue: 1,0:50:58.65,0:51:03.43,英文对白,,0,0,0,,So we also wanted to offer support once you've been diagnosed.
-Dialogue: 1,0:51:03.46,0:51:04.89,英文对白,,0,0,0,,When living with this condition, it's important to understand
 Dialogue: 1,0:51:06.16,0:51:08.96,英文对白,,0,0,0,,the time you spend in AFib because it may relate
-Dialogue: 1,0:51:07.96,0:51:11.77,英文对白,,0,0,0,,to your risk of serious complications, such as stroke.
-Dialogue: 1,0:51:11.80,0:51:19.47,英文对白,,0,0,0,,watchOS 9 can now track the amount of time
 Dialogue: 1,0:51:14.97,0:51:19.47,英文对白,,0,0,0,,your heart shows signs of this rhythm with AFib History.
-Dialogue: 1,0:51:19.51,0:51:20.51,英文对白,,0,0,0,,And in the Health app, you can manage lifestyle factors
-Dialogue: 1,0:51:20.54,0:51:25.52,英文对白,,0,0,0,,that may influence the amount of time you spend in AFib
 Dialogue: 1,0:51:25.85,0:51:28.22,英文对白,,0,0,0,,like exercise, sleep, and weight.
 Dialogue: 1,0:51:28.25,0:51:32.32,英文对白,,0,0,0,,AFib History even helps you identify the time of the day or week
 Dialogue: 1,0:51:32.35,0:51:35.12,英文对白,,0,0,0,,when your AFib is most frequent.
-Dialogue: 1,0:51:35.16,0:51:37.43,英文对白,,0,0,0,,You can also share a PDF with your doctor to facilitate richer conversations.
-Dialogue: 1,0:51:40.13,0:51:47.57,英文对白,,0,0,0,,AFib History is a first-of-its-kind feature
 Dialogue: 1,0:51:43.70,0:51:47.57,英文对白,,0,0,0,,that uniquely provides insights into your AFib over the long term.
 Dialogue: 1,0:51:47.60,0:51:52.54,英文对白,,0,0,0,,We expect to receive FDA clearance for AFib History soon.
-Dialogue: 1,0:51:52.57,0:51:55.91,英文对白,,0,0,0,,Apple Watch makes some of the more complicated aspects
-Dialogue: 1,0:51:55.94,0:51:57.50,英文对白,,0,0,0,,of your health more intuitive.
-Dialogue: 1,0:51:57.84,0:52:02.42,英文对白,,0,0,0,,And this year, we're tackling another integral aspect of health
-Dialogue: 1,0:52:02.45,0:52:04.45,英文对白,,0,0,0,,for so many of us–Medications.
 Dialogue: 1,0:52:04.49,0:52:07.89,英文对白,,0,0,0,,Over 50% of people take prescription medications,
-Dialogue: 1,0:52:07.92,0:52:09.96,英文对白,,0,0,0,,and we wanted to help make it easier to track, manage,
-Dialogue: 1,0:52:09.99,0:52:13.96,英文对白,,0,0,0,,and understand the medications that you take.
-Dialogue: 1,0:52:14.01,0:52:18.10,英文对白,,0,0,0,,So in watchOS 9, the Medications app makes it easy for you to discreetly
 Dialogue: 1,0:52:18.70,0:52:21.50,英文对白,,0,0,0,,and conveniently track your medications,
 Dialogue: 1,0:52:21.54,0:52:23.97,英文对白,,0,0,0,,vitamins, and supplements anytime.
 Dialogue: 1,0:52:25.78,0:52:27.81,英文对白,,0,0,0,,You can log medications that you might take occasionally
 Dialogue: 1,0:52:27.84,0:52:30.50,英文对白,,0,0,0,,like Cetirizine for allergies.
-Dialogue: 1,0:52:30.83,0:52:35.88,英文对白,,0,0,0,,And you can receive notifications for medications
 Dialogue: 1,0:52:33.20,0:52:35.88,英文对白,,0,0,0,,that you need to take regularly.
 Dialogue: 1,0:52:35.12,0:52:39.49,英文对白,,0,0,0,,Rich complications on your watch face can help you stay on top of your schedule.
 Dialogue: 1,0:52:39.52,0:52:44.19,英文对白,,0,0,0,,And of course you can track and manage your medications in the Health app,
@@ -908,12 +654,8 @@ Dialogue: 1,0:53:03.58,0:53:05.98,英文对白,,0,0,0,,You can create a schedule
 Dialogue: 1,0:53:06.19,0:53:10.39,英文对白,,0,0,0,,and add custom visuals to make it easier to remember.
 Dialogue: 1,0:53:10.42,0:53:14.27,英文对白,,0,0,0,,Another important aspect of medications is drug-drug interactions,
 Dialogue: 1,0:53:14.61,0:53:16.99,英文对白,,0,0,0,,which can make them less effective or cause side effects.
-Dialogue: 1,0:53:17.30,0:53:24.63,英文对白,,0,0,0,,In the U.S. alone, drug interactions cause nearly
 Dialogue: 1,0:53:20.83,0:53:24.63,英文对白,,0,0,0,,a quarter of a million hospitalizations each year.
-Dialogue: 1,0:53:24.67,0:53:25.90,英文对白,,0,0,0,,To help you with this, you'll receive an alert when you add a new medication
-Dialogue: 1,0:53:25.93,0:53:30.61,英文对白,,0,0,0,,if there is a critical interaction.
 Dialogue: 1,0:53:30.64,0:53:33.91,英文对白,,0,0,0,,We've partnered with Elsevier, a leading medical publisher,
-Dialogue: 1,0:53:33.94,0:53:40.25,英文对白,,0,0,0,,to provide clinically accurate and evidence-based information
 Dialogue: 1,0:53:37.35,0:53:40.25,英文对白,,0,0,0,,across the Medications experience.
 Dialogue: 1,0:53:40.28,0:53:44.12,英文对白,,0,0,0,,You'll be able to review critical, serious, and moderate interactions
 Dialogue: 1,0:53:44.15,0:53:47.60,英文对白,,0,0,0,,as well as interaction factors like alcohol.
@@ -965,13 +707,9 @@ Dialogue: 1,0:56:10.97,0:56:14.07,英文对白,,0,0,0,,It began with M1's breakt
 Dialogue: 1,0:56:14.41,0:56:16.97,英文对白,,0,0,0,,that transformed our most popular systems.
 Dialogue: 1,0:56:17.10,0:56:19.94,英文对白,,0,0,0,,M2 starts the second generation of M-Series chips,
 Dialogue: 1,0:56:19.98,0:56:22.78,英文对白,,0,0,0,,and goes beyond the remarkable features of M1.
-Dialogue: 1,0:56:22.81,0:56:28.58,英文对白,,0,0,0,,Unlike others in the industry who significantly increase power
-Dialogue: 1,0:56:28.62,0:56:30.75,英文对白,,0,0,0,,to gain performance, our approach is different.
 Dialogue: 1,0:56:30.79,0:56:35.26,英文对白,,0,0,0,,We continue to have a relentless focus on power efficient performance.
 Dialogue: 1,0:56:35.29,0:56:40.36,英文对白,,0,0,0,,In other words, maximizing performance while minimizing power consumption.
 Dialogue: 1,0:56:41.83,0:56:45.93,英文对白,,0,0,0,,Combined with our unified memory architecture and custom technologies,
-Dialogue: 1,0:56:45.97,0:56:51.57,英文对白,,0,0,0,,this focus on power efficiency allows M2 to bring even more performance
-Dialogue: 1,0:56:51.61,0:56:54.61,英文对白,,0,0,0,,and new capabilities to our most popular Macs.
 Dialogue: 1,0:56:54.64,0:56:56.31,英文对白,,0,0,0,,M2 is built using an enhanced,
 Dialogue: 1,0:56:56.35,0:56:58.78,英文对白,,0,0,0,,second-generation five nanometer technology,
 Dialogue: 1,0:56:58.81,0:57:01.45,英文对白,,0,0,0,,and features over 20 billion transistors:
@@ -1025,8 +763,6 @@ Dialogue: 1,0:59:32.97,0:59:38.21,英文对白,,0,0,0,,So M2 also features our n
 Dialogue: 1,0:59:38.24,0:59:43.38,英文对白,,0,0,0,,The Neural Engine in M2 can process up to 15.8 trillion operations per second.
 Dialogue: 1,0:59:43.41,0:59:45.98,英文对白,,0,0,0,,That's over 40% more than M1.
 Dialogue: 1,0:59:46.19,0:59:48.72,英文对白,,0,0,0,,It also has our next generation media engine,
-Dialogue: 1,0:59:48.75,0:59:52.72,英文对白,,0,0,0,,including a higher-bandwidth video decoder
-Dialogue: 1,0:59:52.75,0:59:55.86,英文对白,,0,0,0,,that supports 8K H.264 and HEVC video.
 Dialogue: 1,0:59:55.89,0:59:59.36,英文对白,,0,0,0,,And M2 features our powerful ProRes video engine
 Dialogue: 1,0:59:59.39,1:00:01.83,英文对白,,0,0,0,,for hardware accelerated encode and decode.
 Dialogue: 1,1:00:01.86,1:00:07.67,英文对白,,0,0,0,,So systems with M2 will be able to play back multiple streams of 4K and 8K video.
@@ -1092,8 +828,6 @@ Dialogue: 1,1:04:05.24,1:04:08.61,英文对白,,0,0,0,,and twice the low-light p
 Dialogue: 1,1:04:08.64,1:04:13.32,英文对白,,0,0,0,,Combined with the processing power of M2's advanced image signal processor,
 Dialogue: 1,1:04:13.35,1:04:16.42,英文对白,,0,0,0,,you'll look great on video calls.
 Dialogue: 1,1:04:16.45,1:04:18.19,英文对白,,0,0,0,,Next up, audio.
-Dialogue: 1,1:04:18.22,1:04:20.96,英文对白,,0,0,0,,To fit inside such a thin design, the speakers and mics
-Dialogue: 1,1:04:20.99,1:04:25.93,英文对白,,0,0,0,,are completely integrated between the keyboard and display,
 Dialogue: 1,1:04:25.96,1:04:29.53,英文对白,,0,0,0,,all while delivering an even better audio experience.
 Dialogue: 1,1:04:29.57,1:04:34.70,英文对白,,0,0,0,,A three-mic array captures clean audio using advanced beam-forming algorithms.
 Dialogue: 1,1:04:34.74,1:04:37.44,英文对白,,0,0,0,,And there's a four-speaker sound system
@@ -1127,10 +861,6 @@ Dialogue: 1,1:06:11.43,1:06:14.57,英文对白,,0,0,0,,with a durable unibody de
 Dialogue: 1,1:06:14.60,1:06:19.12,英文对白,,0,0,0,,better camera, all-day battery life, and four beautiful finishes.
 Dialogue: 1,1:06:19.46,1:06:22.71,英文对白,,0,0,0,,It's everything you could want in a new MacBook Air.
 Dialogue: 1,1:06:22.74,1:06:26.45,英文对白,,0,0,0,,Now, before I hand it back to John, let's see it in action.
-Dialogue: 1,1:06:30.59,1:06:33.26,英文对白,,0,0,0,,♪♪
-Dialogue: 1,1:06:42.50,1:06:43.87,英文对白,,0,0,0,,MagSafe
-Dialogue: 1,1:07:01.21,1:07:05.25,英文对白,,0,0,0,,♪♪
-Dialogue: 1,1:07:20.57,1:07:22.70,英文对白,,0,0,0,,♪♪
 Dialogue: 1,1:07:38.32,1:07:41.96,英文对白,,0,0,0,,John: We're so excited to bring M2 to MacBook Air,
 Dialogue: 1,1:07:41.99,1:07:43.76,英文对白,,0,0,0,,the world's best-selling laptop.
 Dialogue: 1,1:07:43.79,1:07:47.36,英文对白,,0,0,0,,Only with Apple Silicon can you build such a thin and light notebook
@@ -1208,8 +938,6 @@ Dialogue: 1,1:11:29.75,1:11:32.29,英文对白,,0,0,0,,with their chakras now in
 Dialogue: 1,1:11:32.32,1:11:35.86,英文对白,,0,0,0,,the team once again piled into their macOS naming microbus
 Dialogue: 1,1:11:35.89,1:11:39.32,英文对白,,0,0,0,,and wove their way down Highway 1.
 Dialogue: 1,1:11:39.66,1:11:42.93,英文对白,,0,0,0,,Chasing the vibrant display of colorful California wildflowers,
-Dialogue: 1,1:11:42.97,1:11:45.40,英文对白,,0,0,0,,they finally came to rest
-Dialogue: 1,1:11:45.43,1:11:48.44,英文对白,,0,0,0,,where stunning surf meets lush alluvial plains,
 Dialogue: 1,1:11:48.47,1:11:50.94,英文对白,,0,0,0,,in beautiful Ventura.
 Dialogue: 1,1:11:50.97,1:11:55.48,英文对白,,0,0,0,,macOS Ventura enriches so many of the ways we use our Macs.
 Dialogue: 1,1:11:55.82,1:11:56.71,英文对白,,0,0,0,,So let's jump in.
@@ -1242,12 +970,8 @@ Dialogue: 1,1:13:15.66,1:13:18.36,英文对白,,0,0,0,,and Safari gracefully mov
 Dialogue: 1,1:13:18.39,1:13:20.26,英文对白,,0,0,0,,with my other recent apps.
 Dialogue: 1,1:13:20.30,1:13:23.23,英文对白,,0,0,0,,When I click on Safari, it retakes the stage,
 Dialogue: 1,1:13:23.27,1:13:25.20,英文对白,,0,0,0,,and Mail moves back to the left.
-Dialogue: 1,1:13:25.23,1:13:26.84,英文对白,,0,0,0,,You'll notice that for an app with multiple open windows,
 Dialogue: 1,1:13:28.87,1:13:32.71,英文对白,,0,0,0,,like Pages here, Stage Manager gathers all the windows together
-Dialogue: 1,1:13:30.41,1:13:34.38,英文对白,,0,0,0,,in a single pile.
 Dialogue: 1,1:13:34.41,1:13:36.75,英文对白,,0,0,0,,When I click, I get the top one,
-Dialogue: 1,1:13:36.78,1:13:37.98,英文对白,,0,0,0,,and if I want a different window, I can cycle through them
-Dialogue: 1,1:13:38.18,1:13:41.55,英文对白,,0,0,0,,just by clicking.
 Dialogue: 1,1:13:41.58,1:13:43.45,英文对白,,0,0,0,,It's really convenient.
 Dialogue: 1,1:13:43.49,1:13:46.36,英文对白,,0,0,0,,Of course, just as you would expect on a Mac,
 Dialogue: 1,1:13:46.39,1:13:50.96,英文对白,,0,0,0,,I can have overlapping windows and multiple apps open at the same time too.
@@ -1279,8 +1003,6 @@ Dialogue: 1,1:15:03.37,1:15:06.40,英文对白,,0,0,0,,Spotlight is great for do
 Dialogue: 1,1:15:06.44,1:15:09.47,英文对白,,0,0,0,,like quickly launching an app or starting a search.
 Dialogue: 1,1:15:09.51,1:15:12.47,英文对白,,0,0,0,,And now you can peek at a result in Quick Look
 Dialogue: 1,1:15:12.51,1:15:14.58,英文对白,,0,0,0,,with a tap on the space bar.
-Dialogue: 1,1:15:14.61,1:15:16.61,英文对白,,0,0,0,,Spotlight can now also find images from your photo library,
-Dialogue: 1,1:15:16.65,1:15:20.52,英文对白,,0,0,0,,across the system, and on the web.
 Dialogue: 1,1:15:20.55,1:15:24.79,英文对白,,0,0,0,,And using Live Text, you can search the text inside the image.
 Dialogue: 1,1:15:24.82,1:15:28.28,英文对白,,0,0,0,,You can also take actions like starting a timer
 Dialogue: 1,1:15:28.61,1:15:30.93,英文对白,,0,0,0,,or running a shortcut right from Spotlight.
@@ -1291,13 +1013,9 @@ Dialogue: 1,1:15:42.27,1:15:45.74,英文对白,,0,0,0,,It's also great for movie
 Dialogue: 1,1:15:45.77,1:15:48.58,英文对白,,0,0,0,,businesses, and sports.
 Dialogue: 1,1:15:48.61,1:15:51.98,英文对白,,0,0,0,,Rich results and the ability to take actions right from Spotlight
 Dialogue: 1,1:15:52.19,1:15:55.48,英文对白,,0,0,0,,are also coming to iOS and iPadOS.
-Dialogue: 1,1:15:55.52,1:15:57.62,英文对白,,0,0,0,,Now, speaking of iOS, we wanted to make Spotlight even easier
-Dialogue: 1,1:15:57.65,1:16:01.62,英文对白,,0,0,0,,to discover and access,
 Dialogue: 1,1:16:01.66,1:16:05.16,英文对白,,0,0,0,,so we added it right to the bottom of the Home Screen.
 Dialogue: 1,1:16:05.19,1:16:08.50,英文对白,,0,0,0,,With just a tap, you can use Spotlight to launch an app,
 Dialogue: 1,1:16:08.53,1:16:11.33,英文对白,,0,0,0,,find a contact, or start a search.
-Dialogue: 1,1:16:11.37,1:16:15.44,英文对白,,0,0,0,,These updates make Spotlight more productive,
-Dialogue: 1,1:16:15.47,1:16:17.44,英文对白,,0,0,0,,helping you find what you're looking for faster.
 Dialogue: 1,1:16:17.47,1:16:22.81,英文对白,,0,0,0,,Next, let's turn to an app that many of us use to communicate every day.
 Dialogue: 1,1:16:22.85,1:16:25.51,英文对白,,0,0,0,,To take you through it, here's Darin.
 Dialogue: 1,1:16:27.82,1:16:30.89,英文对白,,0,0,0,,Darin Adler: Of course, we're talking about Mail.
@@ -1314,8 +1032,6 @@ Dialogue: 1,1:16:59.52,1:17:01.58,英文对白,,0,0,0,,Next, let's talk Search.
 Dialogue: 1,1:17:01.62,1:17:05.49,英文对白,,0,0,0,,This is the biggest overhaul of Search in Mail we've done in years,
 Dialogue: 1,1:17:05.52,1:17:07.99,英文对白,,0,0,0,,leveraging the latest state-of-the-art techniques
 Dialogue: 1,1:17:08.28,1:17:10.43,英文对白,,0,0,0,,to deliver more accurate and complete results.
-Dialogue: 1,1:17:10.46,1:17:11.93,英文对白,,0,0,0,,When you click Search, you'll see recently shared documents,
-Dialogue: 1,1:17:11.96,1:17:16.10,英文对白,,0,0,0,,links, and more.
 Dialogue: 1,1:17:16.13,1:17:17.47,英文对白,,0,0,0,,The moment you start typing,
 Dialogue: 1,1:17:17.50,1:17:20.97,英文对白,,0,0,0,,with each letter, you instantly see suggestions.
 Dialogue: 1,1:17:21.08,1:17:23.74,英文对白,,0,0,0,,If you make a typo, Search is one step ahead,
@@ -1332,8 +1048,6 @@ Dialogue: 1,1:17:53.60,1:17:56.51,英文对白,,0,0,0,,letting you do more on a 
 Dialogue: 1,1:17:56.54,1:18:01.14,英文对白,,0,0,0,,And of course, Safari is a trailblazer in protecting your privacy on the web,
 Dialogue: 1,1:18:01.18,1:18:03.45,英文对白,,0,0,0,,with features like Intelligent Tracking Protection
 Dialogue: 1,1:18:03.48,1:18:04.91,英文对白,,0,0,0,,and Privacy Report.
-Dialogue: 1,1:18:04.95,1:18:09.22,英文对白,,0,0,0,,Safari has a legacy of introducing key web technologies
-Dialogue: 1,1:18:09.56,1:18:10.82,英文对白,,0,0,0,,that elevate the web experience for everyone.
 Dialogue: 1,1:18:10.85,1:18:15.26,英文对白,,0,0,0,,Safari's pioneering support for HTML5 transformed the video experience
 Dialogue: 1,1:18:15.29,1:18:19.73,英文对白,,0,0,0,,on the web, resulting in higher-quality playback and increased battery life.
 Dialogue: 1,1:18:19.76,1:18:23.03,英文对白,,0,0,0,,And Safari continues to deliver support for the latest web technologies
@@ -1344,8 +1058,6 @@ Dialogue: 1,1:18:31.11,1:18:34.51,英文对白,,0,0,0,,and support for the push 
 Dialogue: 1,1:18:34.54,1:18:38.91,英文对白,,0,0,0,,These enable more immersive and engaging web content for our users.
 Dialogue: 1,1:18:38.95,1:18:42.95,英文对白,,0,0,0,,And now Safari has a new way to share your favorite content with others
 Dialogue: 1,1:18:42.99,1:18:45.59,英文对白,,0,0,0,,with Shared Tab Groups.
-Dialogue: 1,1:18:45.62,1:18:49.29,英文对白,,0,0,0,,Whether you're planning a trip with friends or shopping for a couch
-Dialogue: 1,1:18:49.62,1:18:52.99,英文对白,,0,0,0,,with your partner, you can share all the tabs in one place.
 Dialogue: 1,1:18:52.13,1:18:55.86,英文对白,,0,0,0,,And when they find something great, they can add tabs too.
 Dialogue: 1,1:18:55.90,1:18:59.72,英文对白,,0,0,0,,You can see which tabs your friends are looking at live,
 Dialogue: 1,1:18:59.10,1:19:02.47,英文对白,,0,0,0,,and using built-in collaboration, you can easily connect in real time
@@ -1375,7 +1087,6 @@ Dialogue: 1,1:20:10.84,1:20:14.14,英文对白,,0,0,0,,hackers can't trick you i
 Dialogue: 1,1:20:14.18,1:20:18.38,英文对白,,0,0,0,,And passkeys can't be leaked because nothing secret is kept on a web server.
 Dialogue: 1,1:20:18.41,1:20:22.78,英文对白,,0,0,0,,We've designed passkeys to work in apps as easily as they do on the web.
 Dialogue: 1,1:20:22.82,1:20:27.46,英文对白,,0,0,0,,Passkeys are securely synced across Apple devices using iCloud Keychain
-Dialogue: 1,1:20:27.49,1:20:33.93,英文对白,,0,0,0,,and are instantly available on Mac,
 Dialogue: 1,1:20:29.46,1:20:33.93,英文对白,,0,0,0,,iPhone, iPad, and Apple TV.
 Dialogue: 1,1:20:33.96,1:20:35.66,英文对白,,0,0,0,,We've been working with industry leaders
 Dialogue: 1,1:20:35.70,1:20:38.10,英文对白,,0,0,0,,in the FIDO alliance including Google and Microsoft,
@@ -1387,8 +1098,6 @@ Dialogue: 1,1:20:51.98,1:20:55.72,英文对白,,0,0,0,,and we look forward to wo
 Dialogue: 1,1:20:55.75,1:20:57.49,英文对白,,0,0,0,,And that's Safari.
 Dialogue: 1,1:20:57.52,1:21:00.39,英文对白,,0,0,0,,Now back over to you, Craig.
 Dialogue: 1,1:21:00.42,1:21:02.79,英文对白,,0,0,0,,Craig: We think these updates to Mail and Safari
-Dialogue: 1,1:21:02.82,1:21:04.13,英文对白,,0,0,0,,will help you be productive and browse the web
-Dialogue: 1,1:21:04.16,1:21:07.43,英文对白,,0,0,0,,in new and safer ways.
 Dialogue: 1,1:21:07.46,1:21:11.77,英文对白,,0,0,0,,Next, let's have some fun and talk about gaming.
 Dialogue: 1,1:21:11.80,1:21:15.37,英文对白,,0,0,0,,We're at a point where two things are really coming together.
 Dialogue: 1,1:21:15.40,1:21:19.21,英文对白,,0,0,0,,First, Apple Silicon has changed everything.
@@ -1396,8 +1105,6 @@ Dialogue: 1,1:21:19.24,1:21:23.65,英文对白,,0,0,0,,It's taking the graphics 
 Dialogue: 1,1:21:23.68,1:21:28.32,英文对白,,0,0,0,,giving Macs the power to run the most demanding games, with ease.
 Dialogue: 1,1:21:28.35,1:21:31.62,英文对白,,0,0,0,,Second, the Mac is more popular than ever,
 Dialogue: 1,1:21:31.65,1:21:36.46,英文对白,,0,0,0,,and it's a huge and fast-growing opportunity for game developers.
-Dialogue: 1,1:21:36.49,1:21:40.33,英文对白,,0,0,0,,And since we have a unified silicon architecture spanning from iPhone and iPad
-Dialogue: 1,1:21:40.36,1:21:43.63,英文对白,,0,0,0,,all the way up to M1 Ultra,
 Dialogue: 1,1:21:43.67,1:21:47.84,英文对白,,0,0,0,,game developers can scale the quality and performance of their titles
 Dialogue: 1,1:21:47.87,1:21:49.81,英文对白,,0,0,0,,across the entire line.
 Dialogue: 1,1:21:49.84,1:21:55.14,英文对白,,0,0,0,,Another key part of a great gaming experience is the software that powers it.
@@ -1435,7 +1142,6 @@ Dialogue: 1,1:23:29.14,1:23:31.47,英文对白,,0,0,0,,the acclaimed Resident Ev
 Dialogue: 1,1:23:31.51,1:23:33.74,英文对白,,0,0,0,,We are so excited it's coming to the Mac.
 Dialogue: 1,1:23:33.78,1:23:37.11,英文对白,,0,0,0,,To tell you more, we are delighted to introduce Ijuin-san,
 Dialogue: 1,1:23:37.15,1:23:41.21,英文对白,,0,0,0,,manager of Capcom's Advanced Technical Research Division.
-Dialogue: 1,1:23:41.54,1:23:46.29,英文对白,,0,0,0,,♪♪
 Dialogue: 1,1:25:45.11,1:25:47.48,英文对白,,0,0,0,,Craig: Thank you, Ijuin-san.
 Dialogue: 1,1:25:47.51,1:25:50.78,英文对白,,0,0,0,,Next, let's talk about Continuity.
 Dialogue: 1,1:25:50.81,1:25:55.72,英文对白,,0,0,0,,Continuity is all about giving you a seamless experience across devices.
@@ -1517,7 +1223,6 @@ Dialogue: 1,1:29:38.24,1:29:41.41,英文对白,,0,0,0,,and magical new Continuit
 Dialogue: 1,1:29:41.44,1:29:45.98,英文对白,,0,0,0,,Now let's turn to iPadOS.
 Dialogue: 1,1:29:46.19,1:29:54.27,英文对白,,0,0,0,,♪♪
 Dialogue: 1,1:30:00.40,1:30:02.30,英文对白,,0,0,0,,Our vision for iPadOS
-Dialogue: 1,1:30:02.33,1:30:07.20,英文对白,,0,0,0,,is to create a distinct experience
 Dialogue: 1,1:30:04.87,1:30:07.20,英文对白,,0,0,0,,that's built on the best of iOS,
 Dialogue: 1,1:30:07.24,1:30:11.64,英文对白,,0,0,0,,like security, mobility, and an intuitive touch-first interface,
 Dialogue: 1,1:30:11.67,1:30:14.51,英文对白,,0,0,0,,with powerful capabilities from macOS,
@@ -1539,8 +1244,6 @@ Dialogue: 1,1:31:00.62,1:31:05.26,英文对白,,0,0,0,,And all of these modules 
 Dialogue: 1,1:31:05.29,1:31:08.30,英文对白,,0,0,0,,And for developers, we're announcing WeatherKit
 Dialogue: 1,1:31:08.33,1:31:11.43,英文对白,,0,0,0,,so they can build weather into their apps.
 Dialogue: 1,1:31:11.47,1:31:15.77,英文对白,,0,0,0,,iPadOS 16 also includes new ways to collaborate with others,
-Dialogue: 1,1:31:15.80,1:31:17.47,英文对白,,0,0,0,,more capable apps, and new features for Pro users
-Dialogue: 1,1:31:17.51,1:31:22.88,英文对白,,0,0,0,,that take advantage of the power of the M1 chip.
 Dialogue: 1,1:31:22.91,1:31:25.31,英文对白,,0,0,0,,So let's start with collaboration,
 Dialogue: 1,1:31:25.35,1:31:27.35,英文对白,,0,0,0,,which often begins in Messages
 Dialogue: 1,1:31:27.38,1:31:29.62,英文对白,,0,0,0,,when you're asked to pass along a document.
@@ -1565,14 +1268,11 @@ Dialogue: 1,1:32:19.80,1:32:22.77,英文对白,,0,0,0,,And what's great is, I do
 Dialogue: 1,1:32:22.80,1:32:24.34,英文对白,,0,0,0,,or email addresses.
 Dialogue: 1,1:32:24.37,1:32:29.11,英文对白,,0,0,0,,When I select a Messages group, everyone gets added automatically.
 Dialogue: 1,1:32:29.14,1:32:31.28,英文对白,,0,0,0,,Let's go ahead and send it.
-Dialogue: 1,1:32:33.58,1:32:37.52,英文对白,,0,0,0,,This makes it way easier to collaborate with people
 Dialogue: 1,1:32:35.98,1:32:37.52,英文对白,,0,0,0,,you're already communicating with.
 Dialogue: 1,1:32:37.55,1:32:40.82,英文对白,,0,0,0,,Everyone can immediately join and start making edits,
 Dialogue: 1,1:32:40.86,1:32:42.66,英文对白,,0,0,0,,like the ones you see here.
 Dialogue: 1,1:32:42.69,1:32:44.83,英文对白,,0,0,0,,And back in the Messages conversation,
 Dialogue: 1,1:32:44.86,1:32:48.26,英文对白,,0,0,0,,I even get a notice of any changes I might have missed.
-Dialogue: 1,1:32:48.30,1:32:49.53,英文对白,,0,0,0,,When you collaborate this way, your document is connected
-Dialogue: 1,1:32:49.57,1:32:52.37,英文对白,,0,0,0,,to the conversation.
 Dialogue: 1,1:32:52.40,1:32:54.37,英文对白,,0,0,0,,The group appears in the toolbar,
 Dialogue: 1,1:32:54.40,1:32:57.91,英文对白,,0,0,0,,and I can kick off communication right from here.
 Dialogue: 1,1:32:57.94,1:33:00.31,英文对白,,0,0,0,,I can get back to the messages conversation
@@ -1604,8 +1304,6 @@ Dialogue: 1,1:34:10.71,1:34:13.92,英文对白,,0,0,0,,and update our document w
 Dialogue: 1,1:34:16.25,1:34:18.29,英文对白,,0,0,0,,Looks like Anne is updating the text,
 Dialogue: 1,1:34:18.32,1:34:20.32,英文对白,,0,0,0,,and Mindy just dropped in an image,
 Dialogue: 1,1:34:20.36,1:34:22.76,英文对白,,0,0,0,,so we're all set.
-Dialogue: 1,1:34:22.79,1:34:26.93,英文对白,,0,0,0,,So that's a quick look at some of the new ways
-Dialogue: 1,1:34:26.96,1:34:30.60,英文对白,,0,0,0,,you can work together with collaboration with iPadOS 16.
 Dialogue: 1,1:34:30.63,1:34:32.87,英文对白,,0,0,0,,In addition to Pages and Safari,
 Dialogue: 1,1:34:32.90,1:34:35.97,英文对白,,0,0,0,,these new collaboration features will work with a variety of apps,
 Dialogue: 1,1:34:36.09,1:34:38.14,英文对白,,0,0,0,,like Notes and Keynote.
@@ -1614,18 +1312,13 @@ Dialogue: 1,1:34:42.64,1:34:47.35,英文对白,,0,0,0,,and these features will a
 Dialogue: 1,1:34:47.38,1:34:49.69,英文对白,,0,0,0,,Of course, when you're collaborating live,
 Dialogue: 1,1:34:49.72,1:34:52.22,英文对白,,0,0,0,,sometimes you want a space where you can brainstorm
 Dialogue: 1,1:34:52.25,1:34:54.89,英文对白,,0,0,0,,and capture ideas as they strike.
-Dialogue: 1,1:34:54.92,1:34:58.66,英文对白,,0,0,0,,So today, we're giving you a sneak peek at a brand-new app called Freeform
-Dialogue: 1,1:34:58.69,1:35:01.60,英文对白,,0,0,0,,coming later this year.
 Dialogue: 1,1:35:01.63,1:35:04.40,英文对白,,0,0,0,,To tell you all about it, here's Elizabeth.
 Dialogue: 1,1:35:07.57,1:35:10.57,英文对白,,0,0,0,,Elizabeth Reid: We have so many great ways to collaborate,
 Dialogue: 1,1:35:10.61,1:35:13.31,英文对白,,0,0,0,,but up until now, you didn't have a space to work in,
 Dialogue: 1,1:35:13.34,1:35:16.45,英文对白,,0,0,0,,a place for group sessions, project planning,
 Dialogue: 1,1:35:16.48,1:35:18.48,英文对白,,0,0,0,,home renovations, or school projects.
 Dialogue: 1,1:35:18.51,1:35:20.82,英文对白,,0,0,0,,Now, you can be on a FaceTime call,
-Dialogue: 1,1:35:20.85,1:35:21.85,英文对白,,0,0,0,,and with a tap, you're all collaborating live on a Freeform board.
 Dialogue: 1,1:35:25.58,1:35:27.60,英文对白,,0,0,0,,You can add almost anything to a board.
-Dialogue: 1,1:35:27.94,1:35:31.29,英文对白,,0,0,0,,It's perfect for brainstorming sessions, jotting down notes,
-Dialogue: 1,1:35:31.33,1:35:33.56,英文对白,,0,0,0,,sharing files, or even creating diagrams with others.
 Dialogue: 1,1:35:33.60,1:35:37.70,英文对白,,0,0,0,,It's flexible, limited only by your imagination.
 Dialogue: 1,1:35:37.10,1:35:38.90,英文对白,,0,0,0,,As others begin adding their thoughts,
 Dialogue: 1,1:35:38.93,1:35:42.50,英文对白,,0,0,0,,you can see their live cursors showing you right where they're working.
@@ -1648,10 +1341,6 @@ Dialogue: 1,1:36:28.78,1:36:30.69,英文对白,,0,0,0,,And that's a sneak peek a
 Dialogue: 1,1:36:30.72,1:36:33.29,英文对白,,0,0,0,,Back to you, Craig.
 Dialogue: 1,1:36:33.32,1:36:35.52,英文对白,,0,0,0,,Craig: Freeform is going to be a great way
 Dialogue: 1,1:36:35.56,1:36:37.39,英文对白,,0,0,0,,to brainstorm your ideas with others,
-Dialogue: 1,1:36:37.43,1:36:39.80,英文对白,,0,0,0,,and we're building it right into iPadOS,
-Dialogue: 1,1:36:39.83,1:36:43.37,英文对白,,0,0,0,,macOS, and iOS later this year.
-Dialogue: 1,1:36:43.40,1:36:46.77,英文对白,,0,0,0,,Of course, the versatility of iPad means you can seamlessly move
-Dialogue: 1,1:36:46.80,1:36:50.81,英文对白,,0,0,0,,from being productive to gaming.
 Dialogue: 1,1:36:50.84,1:36:53.78,英文对白,,0,0,0,,With its stunning display, built-in sensors,
 Dialogue: 1,1:36:53.81,1:36:56.18,英文对白,,0,0,0,,and support for your favorite game controller,
 Dialogue: 1,1:36:56.21,1:36:59.62,英文对白,,0,0,0,,iPad provides a great gaming experience.
@@ -1659,8 +1348,6 @@ Dialogue: 1,1:36:59.65,1:37:03.56,英文对白,,0,0,0,,And the M1 chip delivers 
 Dialogue: 1,1:37:03.90,1:37:07.42,英文对白,,0,0,0,,enabling immersive games like Divinity: Original Sin 2.
 Dialogue: 1,1:37:07.46,1:37:11.33,英文对白,,0,0,0,,In iPadOS 16, we have some great updates to gaming,
 Dialogue: 1,1:37:11.36,1:37:13.46,英文对白,,0,0,0,,starting with Metal 3,
-Dialogue: 1,1:37:13.50,1:37:18.97,英文对白,,0,0,0,,which brings the same MetalFX upscaling
-Dialogue: 1,1:37:19.06,1:37:21.64,英文对白,,0,0,0,,and fast resource loading API to iPad that we talked about earlier with macOS.
 Dialogue: 1,1:37:21.67,1:37:23.91,英文对白,,0,0,0,,There's also a new API
 Dialogue: 1,1:37:23.94,1:37:27.54,英文对白,,0,0,0,,that lets games download large assets in the background,
 Dialogue: 1,1:37:27.58,1:37:32.15,英文对白,,0,0,0,,enabling you to multitask while the download completes.
@@ -1681,8 +1368,6 @@ Dialogue: 1,1:38:15.96,1:38:19.80,英文对白,,0,0,0,,Game Center has always su
 Dialogue: 1,1:38:19.83,1:38:24.10,英文对白,,0,0,0,,Now, SharePlay makes it simple to join and play.
 Dialogue: 1,1:38:24.13,1:38:26.47,英文对白,,0,0,0,,In a multiplayer game using Game Center,
 Dialogue: 1,1:38:26.50,1:38:31.11,英文对白,,0,0,0,,just start a SharePlay session and bring your friends right in.
-Dialogue: 1,1:38:31.14,1:38:33.11,英文对白,,0,0,0,,These new Game Center features will be coming to an update
-Dialogue: 1,1:38:33.14,1:38:37.11,英文对白,,0,0,0,,to iPadOS 16 later this year,
 Dialogue: 1,1:38:37.15,1:38:41.88,英文对白,,0,0,0,,and we're also bringing them to iOS and macOS.
 Dialogue: 1,1:38:41.12,1:38:45.35,英文对白,,0,0,0,,The versatility of iPad makes it great for so many things,
 Dialogue: 1,1:38:45.39,1:38:48.26,英文对白,,0,0,0,,and a big part of that is apps.
@@ -1729,7 +1414,6 @@ Dialogue: 1,1:40:54.12,1:40:57.62,英文对白,,0,0,0,,Reference Mode provides a
 Dialogue: 1,1:40:57.65,1:40:59.29,英文对白,,0,0,0,,across your pro devices,
 Dialogue: 1,1:40:59.32,1:41:04.39,英文对白,,0,0,0,,making iPad Pro an indispensable tool for creative professionals.
 Dialogue: 1,1:41:04.43,1:41:07.73,英文对白,,0,0,0,,Now, I want to turn our attention to a set of features
-Dialogue: 1,1:41:07.76,1:41:14.37,英文对白,,0,0,0,,enabled by the performance of the M1 chip
 Dialogue: 1,1:41:10.87,1:41:14.37,英文对白,,0,0,0,,in our latest iPad Pro and iPad Air.
 Dialogue: 1,1:41:14.40,1:41:19.88,英文对白,,0,0,0,,Features for people who push the versatility of iPad to the limit.
 Dialogue: 1,1:41:19.91,1:41:22.91,英文对白,,0,0,0,,Pros are always wanting more space to work with,
@@ -1748,7 +1432,6 @@ Dialogue: 1,1:41:58.78,1:42:02.72,英文对白,,0,0,0,,With technologies like di
 Dialogue: 1,1:42:02.75,1:42:07.29,英文对白,,0,0,0,,we have the foundation for a big leap forward in user experience,
 Dialogue: 1,1:42:07.32,1:42:12.33,英文对白,,0,0,0,,one that can change how our Pro users get work done on iPad.
 Dialogue: 1,1:42:12.36,1:42:14.80,英文对白,,0,0,0,,So we're bringing Stage Manager,
-Dialogue: 1,1:42:14.83,1:42:18.53,英文对白,,0,0,0,,our latest windowing system that you just saw in macOS, to iPadOS.
 Dialogue: 1,1:42:20.73,1:42:24.14,英文对白,,0,0,0,,Stage Manager takes multitasking on iPad to a whole new level
 Dialogue: 1,1:42:24.17,1:42:29.41,英文对白,,0,0,0,,by making it more nimble and unlocking full external display support.
 Dialogue: 1,1:42:29.44,1:42:31.21,英文对白,,0,0,0,,I'd like to show it to you now.
@@ -1771,8 +1454,6 @@ Dialogue: 1,1:43:21.93,1:43:25.37,英文对白,,0,0,0,,And if I move Messages to
 Dialogue: 1,1:43:25.40,1:43:29.91,英文对白,,0,0,0,,Stage Manager repositions Calendar for me automatically.
 Dialogue: 1,1:43:29.94,1:43:32.77,英文对白,,0,0,0,,And like you saw earlier, I can resize windows
 Dialogue: 1,1:43:32.81,1:43:36.38,英文对白,,0,0,0,,and arrange everything just the way I want.
-Dialogue: 1,1:43:36.41,1:43:40.12,英文对白,,0,0,0,,And it gets even better
-Dialogue: 1,1:43:40.15,1:43:42.12,英文对白,,0,0,0,,when I plug my iPad into an external display.
 Dialogue: 1,1:43:43.85,1:43:47.26,英文对白,,0,0,0,,My wallpaper beautifully fills the entire display,
 Dialogue: 1,1:43:47.29,1:43:51.98,英文对白,,0,0,0,,and I can move my cursor to it from my iPad.
 Dialogue: 1,1:43:51.13,1:43:55.16,英文对白,,0,0,0,,I have the Dock here too, so let's go ahead and launch Keynote.
@@ -1810,7 +1491,6 @@ Dialogue: 1,1:45:35.46,1:45:38.17,英文对白,,0,0,0,,What an exciting day of a
 Dialogue: 1,1:45:38.20,1:45:41.80,英文对白,,0,0,0,,We introduced the all-new, redesigned MacBook Air,
 Dialogue: 1,1:45:41.84,1:45:45.57,英文对白,,0,0,0,,with its super-thin enclosure, Liquid Retina display,
 Dialogue: 1,1:45:45.61,1:45:48.38,英文对白,,0,0,0,,MagSafe, beautiful new finishes,
-Dialogue: 1,1:45:48.41,1:45:53.92,英文对白,,0,0,0,,and supercharged by M2,
 Dialogue: 1,1:45:50.61,1:45:53.92,英文对白,,0,0,0,,our next generation of Apple Silicon.
 Dialogue: 1,1:45:53.95,1:45:57.45,英文对白,,0,0,0,,Along with a powerful new 13-inch MacBook Pro,
 Dialogue: 1,1:45:57.49,1:46:00.42,英文对白,,0,0,0,,also supercharged by M2.
@@ -1835,64 +1515,37 @@ Dialogue: 1,1:47:07.29,1:47:10.83,英文对白,,0,0,0,,All of this is available 
 Dialogue: 1,1:47:10.86,1:47:14.10,英文对白,,0,0,0,,to help them get the most out of the conference.
 Dialogue: 1,1:47:14.13,1:47:18.90,英文对白,,0,0,0,,Thank you for joining us, and let's have a great WWDC!
 Dialogue: 1,1:47:18.93,1:47:26.94,英文对白,,0,0,0,,♪♪
-Dialogue: 1,1:47:31.95,1:47:37.35,英文对白,,0,0,0,,♪♪
 Dialogue: 1,1:48:21.60,1:48:29.61,英文对白,,0,0,0,,.
-Dialogue: 1,1:48:32.71,1:48:22.70,英文对白,,0,0,0,,.
 Dialogue: 1,1:48:39.62,1:48:29.61,英文对白,,0,0,0,,.
 Dialogue: 0,0:00:00.33,0:00:07.34,中文对白,,0,0,52,,♪♪
 Dialogue: 0,0:00:17.35,0:00:24.35,中文对白,,0,0,52,,♪♪
 Dialogue: 0,0:00:34.36,0:00:41.37,中文对白,,0,0,52,,♪♪
-Dialogue: 0,0:00:51.38,0:00:58.35,中文对白,,0,0,52,,♪♪
-Dialogue: 0,0:00:58.39,0:01:03.86,中文对白,,0,0,52,,♪♪
 Dialogue: 0,0:01:03.89,0:01:07.40,中文对白,,0,0,52,,Tim Cook: 早上好欢迎参加 WWDC
 Dialogue: 0,0:01:07.43,0:01:09.20,中文对白,,0,0,52,,今天是个重要的日子
 Dialogue: 0,0:01:09.23,0:01:12.33,中文对白,,0,0,52,,我们将和大家分享一系列最新的技术和平台
 Dialogue: 0,0:01:12.37,0:01:14.94,中文对白,,0,0,52,,这一系列平台及其驱动的各类产品
 Dialogue: 0,0:01:14.97,0:01:18.17,中文对白,,0,0,52,,给我们用户提供奇妙的体验
 Dialogue: 0,0:01:18.21,0:01:21.68,中文对白,,0,0,52,,也为广大开发者们带来各种意想不到的机会
-Dialogue: 0,0:01:21.71,0:01:23.68,中文对白,,0,0,52,,让大家得以充分发挥自己的超能力
-Dialogue: 0,0:01:23.71,0:01:26.75,中文对白,,0,0,52,,来不断创新、创造并共同协作
-Dialogue: 0,0:01:26.78,0:01:30.62,中文对白,,0,0,52,,打造出各类 app 持续改变我们的世界
 Dialogue: 0,0:01:30.65,0:01:34.27,中文对白,,0,0,52,,WWDC 旨在为这个社群提供所需
 Dialogue: 0,0:01:34.61,0:01:37.53,中文对白,,0,0,52,,帮助大家完成自己的杰作
 Dialogue: 0,0:01:37.56,0:01:41.26,中文对白,,0,0,52,,我们也积极地在 WWDC 之外支持着开发者们
 Dialogue: 0,0:01:41.30,0:01:46.87,中文对白,,0,0,52,,包括全方位的顶级支持和一系列重要的项目
-Dialogue: 0,0:01:46.90,0:01:49.77,中文对白,,0,0,52,,我们刚刚落成了全新的 Developer Center
-Dialogue: 0,0:01:49.81,0:01:51.44,中文对白,,0,0,52,,就在 Apple Park 对面
 Dialogue: 0,0:01:51.47,0:01:54.44,中文对白,,0,0,52,,便于开发者们和我们的工程师交流沟通
 Dialogue: 0,0:01:54.48,0:01:56.88,中文对白,,0,0,52,,为了接触全球的开发者社群
-Dialogue: 0,0:01:56.91,0:02:00.95,中文对白,,0,0,52,,去年秋季我们首次推出了各种线上 Tech Talks
-Dialogue: 0,0:02:00.98,0:02:04.82,中文对白,,0,0,52,,让开发者们学习我们最新的技术
-Dialogue: 0,0:02:04.85,0:02:12.33,中文对白,,0,0,52,,并通过现场讲座和一对一交流直接和 Apple 工程师进行探讨
 Dialogue: 0,0:02:12.36,0:02:16.63,中文对白,,0,0,52,,我们也致力于培养新一代开发者
 Dialogue: 0,0:02:16.67,0:02:20.84,中文对白,,0,0,52,,包括各项旨在帮助少数族裔的举措
-Dialogue: 0,0:02:20.87,0:02:22.97,中文对白,,0,0,52,,因此我们的 Developer Academy
-Dialogue: 0,0:02:23.10,0:02:25.14,中文对白,,0,0,52,,不仅会教导学生们编程的基础
 Dialogue: 0,0:02:25.17,0:02:27.24,中文对白,,0,0,52,,还会教授各项必要技能
 Dialogue: 0,0:02:27.28,0:02:31.31,中文对白,,0,0,52,,以帮助他们在 app 相关行业中寻找和创造就业机会
 Dialogue: 0,0:02:31.35,0:02:33.38,中文对白,,0,0,52,,全球共有 17 所
 Dialogue: 0,0:02:33.42,0:02:37.57,中文对白,,0,0,52,,包括我们去年十月在底特律成立的 Academy
 Dialogue: 0,0:02:37.90,0:02:41.69,中文对白,,0,0,52,,是 Apple Racial Equity and Justice Initiative 的一部分
-Dialogue: 0,0:02:41.72,0:02:42.99,中文对白,,0,0,52,,然后在沙特
-Dialogue: 0,0:02:43.30,0:02:47.63,中文对白,,0,0,52,,我们在二月创立了首个为女性开发者服务的 Academy
 Dialogue: 0,0:02:47.66,0:02:52.33,中文对白,,0,0,52,,我们的 Entrepreneur Camps 为少数族裔的开发者们
 Dialogue: 0,0:02:52.37,0:02:56.61,中文对白,,0,0,52,,提供了来自 Apple 的指导、灵感启发以及洞察分析
-Dialogue: 0,0:02:56.64,0:02:59.54,中文对白,,0,0,52,,最开始一系列的 Entrepreneur Camps 主要针对女性开发者
-Dialogue: 0,0:02:59.58,0:03:04.71,中文对白,,0,0,52,,而在去年我们进一步开放给黑人和拉丁裔创业者
 Dialogue: 0,0:03:04.75,0:03:07.92,中文对白,,0,0,52,,学员们借此机会获得了至关重要的启动资金
 Dialogue: 0,0:03:07.95,0:03:10.72,中文对白,,0,0,52,,并通过 App Store 获得成功
-Dialogue: 0,0:03:12.59,0:03:15.29,中文对白,,0,0,52,,这些持续的努力赋予所有开发者们
-Dialogue: 0,0:03:15.32,0:03:20.43,中文对白,,0,0,52,,用来改变世界的工具、技术以及灵感启发
 Dialogue: 0,0:03:21.30,0:03:26.47,中文对白,,0,0,52,,数百万开发者参与了去年的 WWDC
 Dialogue: 0,0:03:26.50,0:03:30.64,中文对白,,0,0,52,,而今年我们期待将迎来更多参与者
-Dialogue: 0,0:03:30.67,0:03:33.21,中文对白,,0,0,52,,事实上我们非常荣幸地向大家宣布
-Dialogue: 0,0:03:33.24,0:03:38.88,中文对白,,0,0,52,,整个 Apple 开发者社群已有超过 3400 万人
-Dialogue: 0,0:03:38.91,0:03:41.42,中文对白,,0,0,52,,接下来的一个星期令人充满期待
-Dialogue: 0,0:03:41.45,0:03:43.59,中文对白,,0,0,52,,有各种精彩的在线活动
 Dialogue: 0,0:03:43.62,0:03:47.62,中文对白,,0,0,52,,包括各类讲座、实验室和在线聊天室
-Dialogue: 0,0:03:47.66,0:03:52.65,中文对白,,0,0,52,,都将免费向开发者们开放
-Dialogue: 0,0:03:52.99,0:03:55.40,中文对白,,0,0,52,,今天我们的各个平台将迎来全新篇章
-Dialogue: 0,0:03:55.43,0:03:58.05,中文对白,,0,0,52,,进一步赋能广大开发者和我们的用户
 Dialogue: 0,0:03:58.38,0:04:02.17,中文对白,,0,0,52,,让我们直入主题有请 Craig
 Dialogue: 0,0:04:02.20,0:04:10.21,中文对白,,0,0,52,,♪♪
 Dialogue: 0,0:04:14.48,0:04:17.42,中文对白,,0,0,52,,Craig Federighi: 我非常兴奋和大家分享今天的内容
@@ -1902,9 +1555,6 @@ Dialogue: 0,0:04:34.54,0:04:40.24,中文对白,,0,0,52,,♪♪
 Dialogue: 0,0:04:40.94,0:04:44.75,中文对白,,0,0,52,,现在让我们来聊聊 iOS
 Dialogue: 0,0:04:44.78,0:04:48.75,中文对白,,0,0,52,,iPhone 和 iOS 二者相互结合让你事半功倍
 Dialogue: 0,0:04:48.78,0:04:51.91,中文对白,,0,0,52,,无论在家或是在外
-Dialogue: 0,0:04:51.12,0:04:53.39,中文对白,,0,0,52,,下一个版本也就是 iOS 16
-Dialogue: 0,0:04:53.42,0:04:57.43,中文对白,,0,0,52,,将带来各类全新的智能技术、共享和交流功能
-Dialogue: 0,0:04:57.46,0:05:01.46,中文对白,,0,0,52,,将大大优化提升你通过 iPhone 来完成的事
 Dialogue: 0,0:05:01.50,0:05:05.93,中文对白,,0,0,52,,与此同时还将有一系列全新卓越的个性化功能
 Dialogue: 0,0:05:05.97,0:05:10.77,中文对白,,0,0,52,,给你带来耳目一新且专属于你的使用体验
 Dialogue: 0,0:05:10.81,0:05:14.38,中文对白,,0,0,52,,让我们先从全新的锁定屏幕说起
@@ -1913,50 +1563,32 @@ Dialogue: 0,0:05:18.71,0:05:21.15,中文对白,,0,0,52,,你能在这里查看日
 Dialogue: 0,0:05:21.18,0:05:22.82,中文对白,,0,0,52,,一览重要信息
 Dialogue: 0,0:05:22.85,0:05:25.49,中文对白,,0,0,52,,启动相机来快速捕捉精彩瞬间
 Dialogue: 0,0:05:25.52,0:05:28.99,中文对白,,0,0,52,,这也属于个性化空间
-Dialogue: 0,0:05:29.29,0:05:30.56,中文对白,,0,0,52,,大家都会在锁定屏幕上放一张照片
-Dialogue: 0,0:05:30.59,0:05:33.36,中文对白,,0,0,52,,让 iPhone 一看就是你的
 Dialogue: 0,0:05:33.40,0:05:38.63,中文对白,,0,0,52,,在 iOS 16 我们为锁定屏幕带来了有史以来最大的更新
 Dialogue: 0,0:05:38.67,0:05:42.64,中文对白,,0,0,52,,彻底重新构建了其外观和功能
 Dialogue: 0,0:05:42.67,0:05:43.97,中文对白,,0,0,52,,让我们看看
-Dialogue: 0,0:05:44.77,0:05:51.78,中文对白,,0,0,52,,♪♪
-Dialogue: 0,0:06:01.72,0:06:08.73,中文对白,,0,0,52,,♪♪
 Dialogue: 0,0:06:01.79,0:06:09.80,中文对白,,0,0,52,,♪♪
 Dialogue: 0,0:06:15.80,0:06:23.81,中文对白,,0,0,52,,♪♪
-Dialogue: 0,0:06:18.64,0:06:25.58,中文对白,,0,0,52,,♪♪
 Dialogue: 0,0:06:25.61,0:06:28.48,中文对白,,0,0,52,,新的锁定屏幕保留了 iPhone 的风格
-Dialogue: 0,0:06:28.52,0:06:30.15,中文对白,,0,0,52,,但同时提供给你全新方式
-Dialogue: 0,0:06:30.19,0:06:33.76,中文对白,,0,0,52,,使其更个人化、更美观、更有帮助
 Dialogue: 0,0:06:33.79,0:06:35.49,中文对白,,0,0,52,,让我来展示一下
 Dialogue: 0,0:06:35.52,0:06:37.30,中文对白,,0,0,52,,这是我的锁定屏幕
-Dialogue: 0,0:06:37.64,0:06:39.39,中文对白,,0,0,52,,你会注意到微妙的景深效果
-Dialogue: 0,0:06:39.43,0:06:41.66,中文对白,,0,0,52,,我女儿的照片呈现在时间显示的前面
 Dialogue: 0,0:06:41.70,0:06:43.36,中文对白,,0,0,52,,我很喜欢这样的效果
 Dialogue: 0,0:06:43.70,0:06:47.54,中文对白,,0,0,52,,然后我只需长按就可以继续进行个性化设置
 Dialogue: 0,0:06:47.57,0:06:50.37,中文对白,,0,0,52,,这样轻点自定就可以开始编辑了
 Dialogue: 0,0:06:50.41,0:06:51.67,中文对白,,0,0,52,,你看
 Dialogue: 0,0:06:51.71,0:06:55.54,中文对白,,0,0,52,,我只需轻扫就可以尝试不同的风格
-Dialogue: 0,0:06:55.58,0:07:00.85,中文对白,,0,0,52,,色彩、背景和时间字型会自动更改
-Dialogue: 0,0:07:00.88,0:07:02.75,中文对白,,0,0,52,,相互呼应
 Dialogue: 0,0:07:02.78,0:07:04.32,中文对白,,0,0,52,,这样真好看
 Dialogue: 0,0:07:04.35,0:07:06.12,中文对白,,0,0,52,,就这么定吧！
 Dialogue: 0,0:07:06.15,0:07:09.62,中文对白,,0,0,52,,当然如果我改变任何一个细节
 Dialogue: 0,0:07:09.96,0:07:12.93,中文对白,,0,0,52,,很容易就可以进一步调整成我想要的样子
-Dialogue: 0,0:07:12.96,0:07:16.77,中文对白,,0,0,52,,我可以轻点锁定屏幕上的任何元素
-Dialogue: 0,0:07:16.80,0:07:17.30,中文对白,,0,0,52,,直接进行编辑
 Dialogue: 0,0:07:17.33,0:07:19.40,中文对白,,0,0,52,,让我来自定义字型
 Dialogue: 0,0:07:19.43,0:07:22.09,中文对白,,0,0,52,,我可以尝试不同的字体
 Dialogue: 0,0:07:22.42,0:07:25.45,中文对白,,0,0,52,,还有不同的颜色
-Dialogue: 0,0:07:25.78,0:07:26.28,中文对白,,0,0,52,,我喜欢这个颜色
-Dialogue: 0,0:07:26.31,0:07:28.18,中文对白,,0,0,52,,让我来调整一下色度
 Dialogue: 0,0:07:28.21,0:07:30.38,中文对白,,0,0,52,,现在看起来真棒
-Dialogue: 0,0:07:30.41,0:07:35.82,中文对白,,0,0,52,,我还可以在锁定屏幕上添加小组件来增加实用性
 Dialogue: 0,0:07:35.85,0:07:38.12,中文对白,,0,0,52,,让我把女儿的照片往下移一点
 Dialogue: 0,0:07:38.15,0:07:41.36,中文对白,,0,0,52,,再轻点进入小组件库
 Dialogue: 0,0:07:41.39,0:07:44.83,中文对白,,0,0,52,,这些可以让你一览无余各类信息
 Dialogue: 0,0:07:44.86,0:07:46.33,中文对白,,0,0,52,,比如日历上的下一个日程
 Dialogue: 0,0:07:46.36,0:07:49.83,中文对白,,0,0,52,,让我来加上气温
-Dialogue: 0,0:07:49.87,0:07:51.10,中文对白,,0,0,52,,我的健身记录圆环
-Dialogue: 0,0:07:51.13,0:07:54.44,中文对白,,0,0,52,,再拖入日历小组件
 Dialogue: 0,0:07:54.47,0:07:56.43,中文对白,,0,0,52,,这看起来棒极了
 Dialogue: 0,0:07:56.76,0:08:00.41,中文对白,,0,0,52,,更棒的是锁定屏幕可以不止一个
 Dialogue: 0,0:08:00.44,0:08:02.68,中文对白,,0,0,52,,让我来再创建一个
@@ -1964,11 +1596,6 @@ Dialogue: 0,0:08:02.71,0:08:04.98,中文对白,,0,0,52,,我可以调出全新的
 Dialogue: 0,0:08:05.18,0:08:08.58,中文对白,,0,0,52,,这里展示了一些选择为你提供灵感
 Dialogue: 0,0:08:08.62,0:08:10.52,中文对白,,0,0,52,,可选的真的超多
 Dialogue: 0,0:08:10.55,0:08:15.39,中文对白,,0,0,52,,有数以百万的组合让你充分进行个性化设置
-Dialogue: 0,0:08:15.42,0:08:16.63,中文对白,,0,0,52,,照片随机显示功能
-Dialogue: 0,0:08:16.66,0:08:20.10,中文对白,,0,0,52,,让我可以选一组照片在一天里随机滚动显示
-Dialogue: 0,0:08:20.13,0:08:25.50,中文对白,,0,0,52,,另外还有建议照片都是从我的个人图库中精选出的
-Dialogue: 0,0:08:25.53,0:08:27.47,中文对白,,0,0,52,,例如为家人拍的最棒的照片
-Dialogue: 0,0:08:27.50,0:08:29.42,中文对白,,0,0,52,,放在锁定屏幕上就很合适
 Dialogue: 0,0:08:29.76,0:08:32.84,中文对白,,0,0,52,,这张很好看可以添加到我的精选里
 Dialogue: 0,0:08:32.88,0:08:35.51,中文对白,,0,0,52,,我已经有好多不同的锁定屏幕了
 Dialogue: 0,0:08:35.54,0:08:39.15,中文对白,,0,0,52,,只需轻扫就可以任意更换
@@ -1982,11 +1609,6 @@ Dialogue: 0,0:08:53.33,0:08:56.10,中文对白,,0,0,52,,这是我们的天文精
 Dialogue: 0,0:08:56.13,0:09:00.90,中文对白,,0,0,52,,注意看这个流畅的动画跟着我轻扫进入主屏幕
 Dialogue: 0,0:09:00.94,0:09:02.24,中文对白,,0,0,52,,太酷了
 Dialogue: 0,0:09:02.27,0:09:06.78,中文对白,,0,0,52,,这就是全新的锁定屏幕简介
-Dialogue: 0,0:09:06.81,0:09:09.82,中文对白,,0,0,52,,开发者们也可以利用 WidgetKit
-Dialogue: 0,0:09:09.11,0:09:13.52,中文对白,,0,0,52,,快速轻松地将 app 的信息概览放在锁定屏幕上
-Dialogue: 0,0:09:14.12,0:09:16.25,中文对白,,0,0,52,,全新的锁定屏幕非常美观
-Dialogue: 0,0:09:16.29,0:09:19.59,中文对白,,0,0,52,,我们当然想你可以一直欣赏
-Dialogue: 0,0:09:19.62,0:09:21.96,中文对白,,0,0,52,,即使在收到很多通知的时候
 Dialogue: 0,0:09:22.56,0:09:25.76,中文对白,,0,0,52,,有时候通知会遮盖住锁定屏幕上你的个人照片
 Dialogue: 0,0:09:25.79,0:09:28.76,中文对白,,0,0,52,,所以我们重新构思了通知的出现方式
 Dialogue: 0,0:09:28.80,0:09:33.73,中文对白,,0,0,52,,现在当你收到通知时它们将在锁屏底部滚动显示
@@ -1995,7 +1617,6 @@ Dialogue: 0,0:09:35.37,0:09:38.94,中文对白,,0,0,52,,有时候你会从某个
 Dialogue: 0,0:09:38.97,0:09:41.78,中文对白,,0,0,52,,比如说你正在关注一场篮球赛的比分
 Dialogue: 0,0:09:41.81,0:09:44.45,中文对白,,0,0,52,,现在呢有个更好的方法来追踪动态
 Dialogue: 0,0:09:44.48,0:09:47.85,中文对白,,0,0,52,,那就是实时活动
-Dialogue: 0,0:09:47.88,0:09:54.82,中文对白,,0,0,52,,更便于你通过锁定屏幕实时跟进正在发生的动态
 Dialogue: 0,0:09:54.86,0:09:58.83,中文对白,,0,0,52,,开发者们在今年晚些时候 iOS 16 的一次更新后
 Dialogue: 0,0:09:58.86,0:10:01.36,中文对白,,0,0,52,,可以通过实时活动 API
 Dialogue: 0,0:10:01.40,0:10:05.13,中文对白,,0,0,52,,来打造这些设计紧凑又一目了然的体验
@@ -2004,9 +1625,6 @@ Dialogue: 0,0:10:08.50,0:10:10.87,中文对白,,0,0,52,,追踪 Uber 行程的进
 Dialogue: 0,0:10:10.91,0:10:14.48,中文对白,,0,0,52,,跟进个人锻炼情况等
 Dialogue: 0,0:10:14.51,0:10:18.18,中文对白,,0,0,52,,同时不影响锁定屏幕上的其他元素显示
 Dialogue: 0,0:10:18.21,0:10:22.58,中文对白,,0,0,52,,我们当中很多人最爱做的就是听音乐
-Dialogue: 0,0:10:22.62,0:10:24.19,中文对白,,0,0,52,,那现在有了实时活动
-Dialogue: 0,0:10:24.22,0:10:27.56,中文对白,,0,0,52,,“播放中”控件就可以延展到全屏视图
-Dialogue: 0,0:10:27.59,0:10:30.66,中文对白,,0,0,52,,让你可以边听音乐边欣赏专辑封面
 Dialogue: 0,0:10:30.69,0:10:34.20,中文对白,,0,0,52,,这就是全新的锁定屏幕
 Dialogue: 0,0:10:34.23,0:10:37.30,中文对白,,0,0,52,,这些更新同时带来了强大的新方式
 Dialogue: 0,0:10:37.33,0:10:41.14,中文对白,,0,0,52,,和我们去年推出的专注模式相整合
@@ -2025,16 +1643,9 @@ Dialogue: 0,0:11:16.27,0:11:19.24,中文对白,,0,0,52,,并启动相应的主屏
 Dialogue: 0,0:11:19.27,0:11:21.98,中文对白,,0,0,52,,你可以保留自己喜爱的常用 app 或小组件
 Dialogue: 0,0:11:22.15,0:11:24.88,中文对白,,0,0,52,,与亲友保持联系
 Dialogue: 0,0:11:24.91,0:11:28.82,中文对白,,0,0,52,,现在你的专注模式也可应用于 app 层级
-Dialogue: 0,0:11:28.85,0:11:30.42,中文对白,,0,0,52,,利用专注模式过滤条件
-Dialogue: 0,0:11:30.45,0:11:33.16,中文对白,,0,0,52,,减少令人分心的内容
 Dialogue: 0,0:11:33.19,0:11:35.16,中文对白,,0,0,52,,比如说 Safari 浏览器
 Dialogue: 0,0:11:35.19,0:11:37.49,中文对白,,0,0,52,,与其看到你所有的网页
-Dialogue: 0,0:11:37.53,0:11:39.60,中文对白,,0,0,52,,你可以打开工作专注模式过滤条件
-Dialogue: 0,0:11:39.63,0:11:42.69,中文对白,,0,0,52,,只保留和工作相关的标签页
 Dialogue: 0,0:11:42.10,0:11:45.60,中文对白,,0,0,52,,除了 Safari 浏览器中的标签页组
-Dialogue: 0,0:11:45.63,0:11:47.77,中文对白,,0,0,52,,你还可以过滤信息 app 中的某些对话
-Dialogue: 0,0:11:47.80,0:11:49.14,中文对白,,0,0,52,,邮件 app 中的某些账户
-Dialogue: 0,0:11:49.17,0:11:50.87,中文对白,,0,0,52,,以及日历 app 中的某些日程
 Dialogue: 0,0:11:50.91,0:11:53.46,中文对白,,0,0,52,,我们为开发者提供了新的 API
 Dialogue: 0,0:11:53.80,0:11:56.31,中文对白,,0,0,52,,帮助你在使用他们开发的 app 时也能保持专注
 Dialogue: 0,0:11:56.35,0:11:59.35,中文对白,,0,0,52,,这些专注模式的更新可以帮你来设定界限
@@ -2043,8 +1654,6 @@ Dialogue: 0,0:12:02.85,0:12:07.12,中文对白,,0,0,52,,现在让我们来聊聊
 Dialogue: 0,0:12:07.16,0:12:11.16,中文对白,,0,0,52,,每天数以亿计的人依靠着信息 app
 Dialogue: 0,0:12:11.19,0:12:15.50,中文对白,,0,0,52,,它成为了不可或缺的工具让我们和至亲挚爱保持联络
 Dialogue: 0,0:12:15.53,0:12:20.40,中文对白,,0,0,52,,今天我们为信息 app 添加了三个呼声最高的新功能
-Dialogue: 0,0:12:20.80,0:12:23.31,中文对白,,0,0,52,,首先你是不是有过发送消息后
-Dialogue: 0,0:12:23.34,0:12:27.21,中文对白,,0,0,52,,立即意识到没有准确表达你的意思？
 Dialogue: 0,0:12:27.24,0:12:28.31,中文对白,,0,0,52,,不用担心
 Dialogue: 0,0:12:28.34,0:12:31.91,中文对白,,0,0,52,,现在你可以编辑刚发送出去的信息
 Dialogue: 0,0:12:31.95,0:12:35.58,中文对白,,0,0,52,,不必再担心令人尴尬的错别字
@@ -2056,44 +1665,15 @@ Dialogue: 0,0:12:50.27,0:12:52.97,中文对白,,0,0,52,,尤其适合你当下没
 Dialogue: 0,0:12:53.06,0:12:56.27,中文对白,,0,0,52,,但又想待会查看的情况下
 Dialogue: 0,0:12:56.31,0:12:59.79,中文对白,,0,0,52,,这三个功能将大大改变
 Dialogue: 0,0:12:59.11,0:13:01.51,中文对白,,0,0,52,,你日常如何使用信息 app
-Dialogue: 0,0:13:01.54,0:13:04.75,中文对白,,0,0,52,,信息 app 不仅可以简单高效发送信息
-Dialogue: 0,0:13:04.78,0:13:07.88,中文对白,,0,0,52,,还便于大家共享内容
-Dialogue: 0,0:13:07.92,0:13:10.89,中文对白,,0,0,52,,去年我们推出了与你共享功能
-Dialogue: 0,0:13:10.92,0:13:15.96,中文对白,,0,0,52,,朋友们在信息 app 与你分享的照片、链接、音乐
-Dialogue: 0,0:13:15.99,0:13:20.30,中文对白,,0,0,52,,会在相应的 app 中突出显示以便你回头去欣赏
-Dialogue: 0,0:13:20.33,0:13:25.53,中文对白,,0,0,52,,而我们很高兴推出新的 API 让开发者们可以调用与你共享
-Dialogue: 0,0:13:25.57,0:13:28.41,中文对白,,0,0,52,,这样当有人给你发送有趣视频
-Dialogue: 0,0:13:28.75,0:13:29.27,中文对白,,0,0,52,,值得一看的文章
 Dialogue: 0,0:13:29.30,0:13:32.24,中文对白,,0,0,52,,或你当下没空查看的食谱
 Dialogue: 0,0:13:32.27,0:13:35.58,中文对白,,0,0,52,,下次你在开启相应的 app 时会出现在你眼前
-Dialogue: 0,0:13:36.21,0:13:38.81,中文对白,,0,0,52,,而如果是实时与他人分享的话
-Dialogue: 0,0:13:38.85,0:13:41.38,中文对白,,0,0,52,,同播共享就是人们非常喜爱的功能
-Dialogue: 0,0:13:41.42,0:13:43.23,中文对白,,0,0,52,,带来了独一无二的神奇体验
-Dialogue: 0,0:13:43.56,0:13:45.69,中文对白,,0,0,52,,在 FaceTime 通话同时共享精彩内容
-Dialogue: 0,0:13:45.72,0:13:47.32,中文对白,,0,0,52,,比如一起追剧
-Dialogue: 0,0:13:47.36,0:13:48.49,中文对白,,0,0,52,,一起听音乐
 Dialogue: 0,0:13:48.52,0:13:51.83,中文对白,,0,0,52,,还有一起大汗淋漓地锻炼
 Dialogue: 0,0:13:51.86,0:13:54.43,中文对白,,0,0,52,,许多大家常用的 app 都基于同播共享
 Dialogue: 0,0:13:54.46,0:13:56.13,中文对白,,0,0,52,,来创建共享体验
 Dialogue: 0,0:13:56.17,0:13:59.47,中文对白,,0,0,52,,比如一起听 Better Sleep 的睡前故事
-Dialogue: 0,0:13:59.50,0:14:01.37,中文对白,,0,0,52,,或者在 Heads Up 一起畅玩游戏
-Dialogue: 0,0:14:01.40,0:14:03.44,中文对白,,0,0,52,,不管你们相距多远
-Dialogue: 0,0:14:03.47,0:14:04.57,中文对白,,0,0,52,,而今年
-Dialogue: 0,0:14:04.61,0:14:10.41,中文对白,,0,0,52,,在 FaceTime 通话中也将更容易发现这些精彩的同播共享体验
-Dialogue: 0,0:14:10.45,0:14:11.85,中文对白,,0,0,52,,只需轻点一下
-Dialogue: 0,0:14:11.88,0:14:15.65,中文对白,,0,0,52,,就能找到手机上已经支持同播共享的 app
-Dialogue: 0,0:14:15.68,0:14:19.19,中文对白,,0,0,52,,或者发现可以和朋友们分享的新体验
 Dialogue: 0,0:14:19.22,0:14:22.96,中文对白,,0,0,52,,而为了让你有更多机会来共享体验
-Dialogue: 0,0:14:22.99,0:14:25.69,中文对白,,0,0,52,,我们正把同播共享扩展到 FaceTime 通话之外
-Dialogue: 0,0:14:25.73,0:14:27.76,中文对白,,0,0,52,,将其带入信息 app 中！
 Dialogue: 0,0:14:27.80,0:14:30.80,中文对白,,0,0,52,,这是来自开发者们的第一大要求
-Dialogue: 0,0:14:30.83,0:14:32.87,中文对白,,0,0,52,,现在如果你有想分享的东西
-Dialogue: 0,0:14:32.90,0:14:34.70,中文对白,,0,0,52,,例如 Disney+ 的一部电影
-Dialogue: 0,0:14:34.74,0:14:37.77,中文对白,,0,0,52,,你只需要在那里开启同播共享
 Dialogue: 0,0:14:37.11,0:14:40.47,中文对白,,0,0,52,,就能够一边看电影一边在信息 app 里聊天
-Dialogue: 0,0:14:40.80,0:14:41.24,中文对白,,0,0,52,,不仅可以同步观看
-Dialogue: 0,0:14:41.28,0:14:44.78,中文对白,,0,0,52,,播放控制也可实时同步
-Dialogue: 0,0:14:44.81,0:14:46.65,中文对白,,0,0,52,,带来奇妙的同播共享体验
 Dialogue: 0,0:14:46.68,0:14:50.90,中文对白,,0,0,52,,所以不管是要同播共享你每周的电影之夜
 Dialogue: 0,0:14:50.12,0:14:52.92,中文对白,,0,0,52,,或是将信息标为未读以便稍后回复
 Dialogue: 0,0:14:52.96,0:14:56.89,中文对白,,0,0,52,,信息 app 能满足你各种需求让你轻松保持联系
@@ -2112,13 +1692,10 @@ Dialogue: 0,0:15:41.90,0:15:43.71,中文对白,,0,0,52,,让我们来看看
 Dialogue: 0,0:15:43.74,0:15:47.64,中文对白,,0,0,52,,我将用新的听写功能来发送这封邮件
 Dialogue: 0,0:15:47.68,0:15:51.38,中文对白,,0,0,52,,现在当我使用听写功能的同时键盘也保持启用
 Dialogue: 0,0:15:51.41,0:15:54.75,中文对白,,0,0,52,,这样我可以在语音和触控输入间自由切换
-Dialogue: 0,0:15:59.82,0:16:02.52,中文对白,,0,0,52,,我甚至可以用触控选择文本
-Dialogue: 0,0:16:02.56,0:16:07.63,中文对白,,0,0,52,,然后用语音进行替换
 Dialogue: 0,0:16:07.66,0:16:09.90,中文对白,,0,0,52,,只需动口即可
 Dialogue: 0,0:16:09.93,0:16:12.43,中文对白,,0,0,52,,你在编辑一段较长的信息吗
 Dialogue: 0,0:16:12.47,0:16:16.24,中文对白,,0,0,52,,听写能自动在文字里加入标点符号
 Dialogue: 0,0:16:17.64,0:16:20.98,中文对白,,0,0,52,,好酷爆炸头表情符号
-Dialogue: 0,0:16:21.14,0:16:27.75,中文对白,,0,0,52,,当你用 Siri 发送消息时也可自动添加标点符号和听写表情符号
 Dialogue: 0,0:16:27.78,0:16:31.95,中文对白,,0,0,52,,而今年要在其他 app 里使用 Siri 也变得更方便了
 Dialogue: 0,0:16:31.99,0:16:35.66,中文对白,,0,0,52,,目前有超过 15000 个 app 可与 Siri 配合使用
 Dialogue: 0,0:16:35.69,0:16:38.13,中文对白,,0,0,52,,都是基于 SiriKit 和 Siri 快捷指令
@@ -2127,46 +1704,28 @@ Dialogue: 0,0:16:41.50,0:16:44.63,中文对白,,0,0,52,,所以我们推出了一
 Dialogue: 0,0:16:44.67,0:16:48.75,中文对白,,0,0,52,,由 Swift 编码语言编写称之为 App Intents
 Dialogue: 0,0:16:48.10,0:16:51.44,中文对白,,0,0,52,,现在无需设置就可运行快捷指令
 Dialogue: 0,0:16:51.78,0:16:54.61,中文对白,,0,0,52,,直接在所支持的各类 app 里靠 Siri 来完成任务
-Dialogue: 0,0:16:54.64,0:16:57.78,中文对白,,0,0,52,,现在让我们来谈谈另一个由智能技术驱动的功能
-Dialogue: 0,0:16:57.81,0:16:59.38,中文对白,,0,0,52,,实况文本
 Dialogue: 0,0:16:59.41,0:17:01.15,中文对白,,0,0,52,,实况文本真的很有用
 Dialogue: 0,0:17:01.18,0:17:04.42,中文对白,,0,0,52,,因为它深入集成于整个操作系统中
 Dialogue: 0,0:17:04.45,0:17:08.95,中文对白,,0,0,52,,让你能交互使用整个系统里图片中的文字
-Dialogue: 0,0:17:08.12,0:17:10.39,中文对白,,0,0,52,,不管是相机 app、Safari 浏览器
-Dialogue: 0,0:17:10.43,0:17:12.49,中文对白,,0,0,52,,备忘录 app 甚至是截屏中
 Dialogue: 0,0:17:12.53,0:17:16.27,中文对白,,0,0,52,,今年我们很高兴将这样的深度集成更进一步
 Dialogue: 0,0:17:16.30,0:17:18.83,中文对白,,0,0,52,,将实况文本带到视频里！
-Dialogue: 0,0:17:18.87,0:17:21.57,中文对白,,0,0,52,,现在你可以在任何帧暂停视频
-Dialogue: 0,0:17:21.60,0:17:23.31,中文对白,,0,0,52,,交互使用里面的文字
 Dialogue: 0,0:17:23.34,0:17:25.81,中文对白,,0,0,52,,就像之前在照片里那样
 Dialogue: 0,0:17:25.84,0:17:28.44,中文对白,,0,0,52,,比如直接在编程视频里复制代码示例
 Dialogue: 0,0:17:28.48,0:17:33.45,中文对白,,0,0,52,,我们还增加了一些基于实况文本的快速操作
-Dialogue: 0,0:17:33.48,0:17:35.18,中文对白,,0,0,52,,例如只需要轻点一下
-Dialogue: 0,0:17:35.22,0:17:38.65,中文对白,,0,0,52,,来换算汇率或者翻译外文
 Dialogue: 0,0:17:38.69,0:17:42.16,中文对白,,0,0,52,,若要更丰富的翻译体验
-Dialogue: 0,0:17:42.19,0:17:47.70,中文对白,,0,0,52,,可以调用翻译 app 中的新相机视图使用实况文本
 Dialogue: 0,0:17:47.73,0:17:50.83,中文对白,,0,0,52,,这尤其适用于有大量文本需要翻译的时候
 Dialogue: 0,0:17:50.87,0:17:55.67,中文对白,,0,0,52,,而我们也很高兴为开发者带来实况文本 API
-Dialogue: 0,0:17:55.70,0:18:02.21,中文对白,,0,0,52,,很快你就可以直接在 Vimeo 等 app 中从照片或视频截取文本
 Dialogue: 0,0:18:02.24,0:18:05.15,中文对白,,0,0,52,,当然照片里远不止有文本
 Dialogue: 0,0:18:05.18,0:18:08.12,中文对白,,0,0,52,,所以我们去年推出了 Visual Look Up 这个功能
 Dialogue: 0,0:18:08.15,0:18:13.19,中文对白,,0,0,52,,用来识别如宠物、地标、植物等主体
 Dialogue: 0,0:18:13.22,0:18:16.89,中文对白,,0,0,52,,为你提供图片里丰富的资讯
 Dialogue: 0,0:18:16.93,0:18:21.13,中文对白,,0,0,52,,而且今年我们还有一个新功能进一步推动图像理解
 Dialogue: 0,0:18:21.96,0:18:25.47,中文对白,,0,0,52,,现在只要长按图片里的主体
-Dialogue: 0,0:18:25.50,0:18:27.10,中文对白,,0,0,52,,就能将其从背景提取出来
-Dialogue: 0,0:18:27.14,0:18:29.91,中文对白,,0,0,52,,然后再拖放到信息 app 等各类 app 中
 Dialogue: 0,0:18:29.94,0:18:31.97,中文对白,,0,0,52,,就像变魔术一样
 Dialogue: 0,0:18:32.12,0:18:34.98,中文对白,,0,0,52,,这实际上得益于一种先进的机器学习模型
-Dialogue: 0,0:18:35.15,0:18:38.41,中文对白,,0,0,52,,由 CoreML 和神经网络引擎加速
-Dialogue: 0,0:18:38.45,0:18:42.55,中文对白,,0,0,52,,在几毫秒之内执行 400 亿次运算
-Dialogue: 0,0:18:42.89,0:18:45.32,中文对白,,0,0,52,,实况文本和 Visual Look Up 两大功能
-Dialogue: 0,0:18:45.35,0:18:50.56,中文对白,,0,0,52,,源源不断地解锁照片和视频中丰富且有益的信息
 Dialogue: 0,0:18:50.59,0:18:54.16,中文对白,,0,0,52,,覆盖了 iOS、iPadOS 和 macOS 各个系统
 Dialogue: 0,0:18:54.20,0:18:55.60,中文对白,,0,0,52,,回到你了 Craig
 Dialogue: 0,0:18:57.50,0:19:01.60,中文对白,,0,0,52,,Craig: 这些智能功能可以帮助你轻松搞定各种事物
-Dialogue: 0,0:19:01.64,0:19:04.14,中文对白,,0,0,52,,另一个让生活更方便的 app
-Dialogue: 0,0:19:04.17,0:19:05.31,中文对白,,0,0,52,,是钱包 app
 Dialogue: 0,0:19:05.34,0:19:09.18,中文对白,,0,0,52,,接下来有请 Corey 来给你介绍钱包 app 有些什么新东西
 Dialogue: 0,0:19:11.95,0:19:13.92,中文对白,,0,0,52,,Corey Fugman: 凭借 Apple 钱包 app 我们正努力实现的终极目标
 Dialogue: 0,0:19:13.95,0:19:16.82,中文对白,,0,0,52,,就是取代你的实体钱包
@@ -2175,35 +1734,19 @@ Dialogue: 0,0:19:20.16,0:19:22.86,中文对白,,0,0,52,,很高兴我们已在马
 Dialogue: 0,0:19:22.89,0:19:26.40,中文对白,,0,0,52,,在美国另外 11 个州也正积极展开部署
 Dialogue: 0,0:19:26.43,0:19:29.53,中文对白,,0,0,52,,最早接受钱包 app 中 ID 卡的是
 Dialogue: 0,0:19:29.57,0:19:32.05,中文对白,,0,0,52,,指定的 TSA 安全检查点
-Dialogue: 0,0:19:32.39,0:19:38.37,中文对白,,0,0,52,,你也将能安全地向各类要求认证身份和年龄的 app 出示你的 ID
 Dialogue: 0,0:19:38.41,0:19:42.81,中文对白,,0,0,52,,基于隐私保护只有必须共享的信息才会被分享
 Dialogue: 0,0:19:42.85,0:19:45.48,中文对白,,0,0,52,,例如不需要提供你的详细生日日期
 Dialogue: 0,0:19:45.51,0:19:48.55,中文对白,,0,0,52,,只需分享你是 21 岁以上即可
 Dialogue: 0,0:19:48.88,0:19:50.42,中文对白,,0,0,52,,现在让我们来聊聊各类钥匙
-Dialogue: 0,0:19:50.45,0:19:52.45,中文对白,,0,0,52,,我们的钱包 app 里不断增加的各类钥匙
-Dialogue: 0,0:19:52.49,0:20:00.63,中文对白,,0,0,52,,让你只需带着 iPhone 就可以轻松通行你的家、车、酒店和办公室
 Dialogue: 0,0:20:00.66,0:20:03.50,中文对白,,0,0,52,,现在我们也让共享钥匙变得更简单
-Dialogue: 0,0:20:03.53,0:20:05.27,中文对白,,0,0,52,,可通过你常用的几个通信 app
-Dialogue: 0,0:20:05.30,0:20:08.75,中文对白,,0,0,52,,如邮件 app、信息 app 或 WhatsApp 等
-Dialogue: 0,0:20:08.10,0:20:09.91,中文对白,,0,0,52,,当你的朋友收到钥匙后
-Dialogue: 0,0:20:09.94,0:20:12.34,中文对白,,0,0,52,,轻点一下就能将其加入自己的钱包 app
 Dialogue: 0,0:20:12.37,0:20:15.54,中文对白,,0,0,52,,为了让你也能和没有 iPhone 的人分享
-Dialogue: 0,0:20:15.58,0:20:17.48,中文对白,,0,0,52,,我们也与 IETF 协作
-Dialogue: 0,0:20:17.51,0:20:21.52,中文对白,,0,0,52,,让共享钥匙成为一个行业标准让大家免费采用
 Dialogue: 0,0:20:21.55,0:20:24.95,中文对白,,0,0,52,,我们的合作伙伴表现出极大的热情
 Dialogue: 0,0:20:24.99,0:20:29.62,中文对白,,0,0,52,,纷纷表示希望加入以提供用于各类场所的钥匙
 Dialogue: 0,0:20:29.96,0:20:33.70,中文对白,,0,0,52,,现在让我们来说说 Apple Pay 钱包 app 中最重要的一部分
-Dialogue: 0,0:20:33.73,0:20:35.20,中文对白,,0,0,52,,我们已经取得了很大进展
-Dialogue: 0,0:20:35.23,0:20:37.63,中文对白,,0,0,52,,各类商店和线上销售纷纷接受 Apple Pay
-Dialogue: 0,0:20:37.67,0:20:40.47,中文对白,,0,0,52,,现在还正进一步扩展
 Dialogue: 0,0:20:40.50,0:20:43.34,中文对白,,0,0,52,,这个月开始有了 iPhone 上的 Tap to Pay
-Dialogue: 0,0:20:43.37,0:20:49.51,中文对白,,0,0,52,,美国各地数百万商家可以直接通过 iPhone 接受非接触支付
-Dialogue: 0,0:20:49.55,0:20:52.51,中文对白,,0,0,52,,也不需要额外的硬件或支付终端
 Dialogue: 0,0:20:52.55,0:20:55.55,中文对白,,0,0,52,,借助支付提供商的 app
 Dialogue: 0,0:20:55.88,0:20:58.99,中文对白,,0,0,52,,无论是小商户还是大零售商都能通过这个功能
 Dialogue: 0,0:20:59.26,0:21:02.62,中文对白,,0,0,52,,用 iPhone 安全地接受付款
-Dialogue: 0,0:21:02.95,0:21:04.19,中文对白,,0,0,52,,除了扩大接受范围
-Dialogue: 0,0:21:04.23,0:21:06.20,中文对白,,0,0,52,,我们还提升了 Apple Pay
 Dialogue: 0,0:21:06.23,0:21:08.40,中文对白,,0,0,52,,以支持新的支付类型
 Dialogue: 0,0:21:08.43,0:21:12.39,中文对白,,0,0,52,,我们很高兴推出 Apple Pay Later
 Dialogue: 0,0:21:12.72,0:21:15.74,中文对白,,0,0,52,,该功能可让你将一笔 Apple Pay 支付款项
@@ -2212,56 +1755,29 @@ Dialogue: 0,0:21:19.21,0:21:22.38,中文对白,,0,0,52,,而且没有利息或任
 Dialogue: 0,0:21:22.41,0:21:26.35,中文对白,,0,0,52,,Apple Pay Later 在所有接受 Apple Pay 的地方均可使用
 Dialogue: 0,0:21:26.38,0:21:27.92,中文对白,,0,0,52,,包括 app 内或者线上
 Dialogue: 0,0:21:27.95,0:21:30.45,中文对白,,0,0,52,,例如你可以先买下心仪已久的这台咖啡机
-Dialogue: 0,0:21:30.49,0:21:32.12,中文对白,,0,0,52,,之后再分期付款
-Dialogue: 0,0:21:32.15,0:21:33.79,中文对白,,0,0,52,,而且无额外费用
-Dialogue: 0,0:21:33.82,0:21:35.82,中文对白,,0,0,52,,开发者和商家们也不需担心
-Dialogue: 0,0:21:35.86,0:21:38.36,中文对白,,0,0,52,,Apple Pay Later 不需要额外的整合开发
 Dialogue: 0,0:21:38.39,0:21:41.96,中文对白,,0,0,52,,只需标准的 Apple Pay 即可
 Dialogue: 0,0:21:42.02,0:21:44.77,中文对白,,0,0,52,,分期还款通过钱包 app 管理
 Dialogue: 0,0:21:44.80,0:21:47.50,中文对白,,0,0,52,,便于追踪什么时候该还什么款
 Dialogue: 0,0:21:47.54,0:21:49.51,中文对白,,0,0,52,,帮你维持在预算范围内
 Dialogue: 0,0:21:49.54,0:21:51.44,中文对白,,0,0,52,,而且在你下单后
 Dialogue: 0,0:21:51.47,0:21:54.24,中文对白,,0,0,52,,我们还有一个全新功能帮助你追踪订单
-Dialogue: 0,0:21:54.28,0:21:55.94,中文对白,,0,0,52,,Apple Pay Order Tracking 功能
-Dialogue: 0,0:21:55.98,0:22:00.12,中文对白,,0,0,52,,使商家能将详细的收据和追踪信息
-Dialogue: 0,0:22:00.15,0:22:01.35,中文对白,,0,0,52,,直接发送到钱包 app
-Dialogue: 0,0:22:01.38,0:22:05.75,中文对白,,0,0,52,,便于你获取 Apple Pay 订单的最新信息
-Dialogue: 0,0:22:05.79,0:22:08.82,中文对白,,0,0,52,,且这些信息都是安全私密地发送到你的设备
 Dialogue: 0,0:22:08.86,0:22:12.26,中文对白,,0,0,52,,Apple Pay Order Tracking 功能将支持数以百万计的商家
 Dialogue: 0,0:22:12.29,0:22:15.68,中文对白,,0,0,52,,基于 Shopify 等各大电商平台
-Dialogue: 0,0:22:15.10,0:22:16.77,中文对白,,0,0,52,,这就是我们给钱包 app 带来的更新
-Dialogue: 0,0:22:16.80,0:22:19.74,中文对白,,0,0,52,,交回给你 Craig
 Dialogue: 0,0:22:19.77,0:22:22.24,中文对白,,0,0,52,,Craig: 有了更多地方接受钱包 app 里的 ID 卡
 Dialogue: 0,0:22:22.27,0:22:24.91,中文对白,,0,0,52,,以及使用和共享钥匙的新方式
 Dialogue: 0,0:22:24.94,0:22:27.81,中文对白,,0,0,52,,还有Apple Pay Later 和 Apple Pay Order Tracking 等
-Dialogue: 0,0:22:27.84,0:22:30.11,中文对白,,0,0,52,,钱包 app 让我们生活更方便
-Dialogue: 0,0:22:30.15,0:22:31.58,中文对白,,0,0,52,,不管是去到何处
-Dialogue: 0,0:22:31.61,0:22:34.54,中文对白,,0,0,52,,而带你到达目的地的好帮手
-Dialogue: 0,0:22:34.87,0:22:35.65,中文对白,,0,0,52,,当然是地图 app
 Dialogue: 0,0:22:35.68,0:22:38.82,中文对白,,0,0,52,,让我们出去看看地图 app 有些什么更新
 Dialogue: 0,0:22:38.85,0:22:45.86,中文对白,,0,0,52,,♪♪
-Dialogue: 0,0:22:50.33,0:22:52.72,中文对白,,0,0,52,,我们不断完善地图 app
-Dialogue: 0,0:22:52.10,0:22:54.50,中文对白,,0,0,52,,以助你导航和探索这世界
 Dialogue: 0,0:22:54.54,0:22:58.54,中文对白,,0,0,52,,我们已经在 10 个国家和地区推出了新设计的地图
 Dialogue: 0,0:22:58.57,0:23:01.48,中文对白,,0,0,52,,很高兴宣布今年晚些时候
-Dialogue: 0,0:23:01.81,0:23:03.71,中文对白,,0,0,52,,将把新地图引入 11 个国家和地区
-Dialogue: 0,0:23:03.75,0:23:06.72,中文对白,,0,0,52,,包括法国、瑞士和新西兰
-Dialogue: 0,0:23:06.75,0:23:09.38,中文对白,,0,0,52,,我们的新地图有很多出色的功能
-Dialogue: 0,0:23:09.42,0:23:12.15,中文对白,,0,0,52,,包括骑行路线、四处看看等
-Dialogue: 0,0:23:12.19,0:23:13.86,中文对白,,0,0,52,,通过新的城市体验
-Dialogue: 0,0:23:13.89,0:23:17.59,中文对白,,0,0,52,,我们进一步增加了许多详尽新细节
-Dialogue: 0,0:23:17.63,0:23:20.40,中文对白,,0,0,52,,例如土地覆盖、道路、高度信息等
 Dialogue: 0,0:23:20.43,0:23:24.27,中文对白,,0,0,52,,同时也优化了驾驶导航和公交信息
 Dialogue: 0,0:23:24.30,0:23:28.70,中文对白,,0,0,52,,新增的城市如拉斯维加斯看起来美极了
 Dialogue: 0,0:23:28.74,0:23:31.87,中文对白,,0,0,52,,今年年底前我们将再添加 6 个城市
 Dialogue: 0,0:23:31.91,0:23:35.34,中文对白,,0,0,52,,包括迈阿密、芝加哥和悉尼
 Dialogue: 0,0:23:35.38,0:23:38.98,中文对白,,0,0,52,,下面请 Meg 来介绍地图 app 的其他更新
-Dialogue: 0,0:23:42.18,0:23:48.52,中文对白,,0,0,52,,Meg Frost: iOS 16 为地图 app 的用户和开发者带来了一系列出色的更新
 Dialogue: 0,0:23:48.56,0:23:51.79,中文对白,,0,0,52,,首先让我们来看看呼声最高的功能之一
 Dialogue: 0,0:23:51.83,0:23:53.73,中文对白,,0,0,52,,多途径点路线规划
 Dialogue: 0,0:23:53.76,0:23:57.50,中文对白,,0,0,52,,你现在可以提前规划最多 15 个途径点
-Dialogue: 0,0:23:57.53,0:24:00.74,中文对白,,0,0,52,,地图 app 现在会在“最近”保存途径的路线
-Dialogue: 0,0:24:00.77,0:24:02.40,中文对白,,0,0,52,,便于你回看
 Dialogue: 0,0:24:02.44,0:24:05.27,中文对白,,0,0,52,,你也可以事先在 Mac 上规划多途径点路线
 Dialogue: 0,0:24:05.31,0:24:08.81,中文对白,,0,0,52,,出发前再发送到 iPhone
 Dialogue: 0,0:24:08.11,0:24:10.17,中文对白,,0,0,52,,当然驾驶途中
@@ -2278,18 +1794,11 @@ Dialogue: 0,0:24:35.94,0:24:40.41,中文对白,,0,0,52,,我们也为开发者带
 Dialogue: 0,0:24:40.44,0:24:43.98,中文对白,,0,0,52,,首先是我们突破性的新城市体验
 Dialogue: 0,0:24:44.17,0:24:50.23,中文对白,,0,0,52,,其中包括土地覆盖、道路、地标等丰富细节
 Dialogue: 0,0:24:50.57,0:24:53.86,中文对白,,0,0,52,,比如 Bird app 这样的开发者现在就可以将这一详细的地图整合进自己的 app 中
-Dialogue: 0,0:24:53.89,0:24:57.16,中文对白,,0,0,52,,便于用户寻找自行车和滑板车
-Dialogue: 0,0:24:57.19,0:24:58.83,中文对白,,0,0,52,,在城里到处转转
 Dialogue: 0,0:24:58.86,0:25:03.13,中文对白,,0,0,52,,而无论是在浅色模式还是深色模式下都看起来很美观
 Dialogue: 0,0:25:03.17,0:25:04.93,中文对白,,0,0,52,,还有更多
 Dialogue: 0,0:25:04.97,0:25:07.77,中文对白,,0,0,52,,我们也会将四处看看添加到 MapKit 里
-Dialogue: 0,0:25:07.80,0:25:12.45,中文对白,,0,0,52,,这样就可以轻易将地图 app 的高清图像
-Dialogue: 0,0:25:12.79,0:25:13.64,中文对白,,0,0,52,,引入到其他 app 如 Zillow
 Dialogue: 0,0:25:13.68,0:25:19.19,中文对白,,0,0,52,,帮助其用户在浏览房屋的时候获取沉浸式的视平线视图
 Dialogue: 0,0:25:19.52,0:25:23.12,中文对白,,0,0,52,,最后我们也欣喜宣布今年晚些时候
-Dialogue: 0,0:25:23.15,0:25:26.22,中文对白,,0,0,52,,开发者们将可以更快更灵活地
-Dialogue: 0,0:25:26.26,0:25:29.29,中文对白,,0,0,52,,打造奇妙的地图体验
-Dialogue: 0,0:25:29.32,0:25:32.56,中文对白,,0,0,52,,这都归功于全新的服务器端 API
 Dialogue: 0,0:25:32.59,0:25:34.80,中文对白,,0,0,52,,以上就是地图 app 更新的速览
 Dialogue: 0,0:25:34.83,0:25:36.83,中文对白,,0,0,52,,交还给你 Craig！
 Dialogue: 0,0:25:38.87,0:25:42.17,中文对白,,0,0,52,,Craig: 下面让我们来聊聊运动
@@ -2301,20 +1810,11 @@ Dialogue: 0,0:25:55.25,0:25:58.29,中文对白,,0,0,52,,接下来有请 Rubie �
 Dialogue: 0,0:25:58.32,0:26:04.69,中文对白,,0,0,52,,♪♪
 Dialogue: 0,0:26:04.73,0:26:08.90,中文对白,,0,0,52,,Rubie Edmondson: 迄今为止有各种各样的方式让你随时关注自己喜爱的运动
 Dialogue: 0,0:26:08.93,0:26:12.53,中文对白,,0,0,52,,例如向 Siri 询问运动员或者运动队的信息
-Dialogue: 0,0:26:12.57,0:26:13.87,中文对白,,0,0,52,,或是观看比赛实况
-Dialogue: 0,0:26:13.90,0:26:15.84,中文对白,,0,0,52,,无论是从哪里直播的
-Dialogue: 0,0:26:15.87,0:26:18.27,中文对白,,0,0,52,,现在有了实时活动
-Dialogue: 0,0:26:18.31,0:26:23.78,中文对白,,0,0,52,,Apple TV app 可以在你的锁屏上显示实时比分和解说
 Dialogue: 0,0:26:23.81,0:26:27.82,中文对白,,0,0,52,,我们最近还在 Apple TV+ 上首播 Friday Night Baseball
 Dialogue: 0,0:26:27.85,0:26:31.15,中文对白,,0,0,52,,这样你可以每周五观看两场精彩赛事
 Dialogue: 0,0:26:31.19,0:26:36.53,中文对白,,0,0,52,,今天我们也为 Apple News 中的运动板块带来重大更新
 Dialogue: 0,0:26:36.56,0:26:40.13,中文对白,,0,0,52,,Apple News 在其提供服务的各个市场问鼎新闻类 app
 Dialogue: 0,0:26:40.16,0:26:43.33,中文对白,,0,0,52,,现在将更让体育迷们有所期待
-Dialogue: 0,0:26:43.37,0:26:46.13,中文对白,,0,0,52,,你可以关注自己喜爱的运动队和比赛联盟
-Dialogue: 0,0:26:46.17,0:26:48.97,中文对白,,0,0,52,,获取来自上百家优质媒体发布的新闻报道
-Dialogue: 0,0:26:49.09,0:26:52.61,中文对白,,0,0,52,,这都将通过全新的 My Sports 板块
-Dialogue: 0,0:26:52.64,0:26:58.38,中文对白,,0,0,52,,你也可以查看顶级职业和大学体育联赛的比分、赛程、排名
-Dialogue: 0,0:26:58.41,0:27:00.65,中文对白,,0,0,52,,以及比赛亮点
 Dialogue: 0,0:27:00.68,0:27:05.65,中文对白,,0,0,52,,还可以从新闻推送中直接获取你支持的队伍的精彩表现
 Dialogue: 0,0:27:05.69,0:27:09.16,中文对白,,0,0,52,,你收藏的运动员或队伍有关内容也会直接同步到 Apple TV app
 Dialogue: 0,0:27:09.19,0:27:11.83,中文对白,,0,0,52,,以及你所有的 Apple 设备
@@ -2326,21 +1826,14 @@ Dialogue: 0,0:27:25.24,0:27:29.24,中文对白,,0,0,52,,以上就是有关运动
 Dialogue: 0,0:27:29.28,0:27:33.78,中文对白,,0,0,52,,Craig: iOS 和整个 Apple 生态系统为全家带来了诸多精彩体验
 Dialogue: 0,0:27:33.82,0:27:36.49,中文对白,,0,0,52,,我们今天将聊聊一些重要的新功能
 Dialogue: 0,0:27:36.52,0:27:39.86,中文对白,,0,0,52,,先从家人共享的一些更新开始
-Dialogue: 0,0:27:39.89,0:27:43.56,中文对白,,0,0,52,,通过家人共享你可以将喜爱的购买和订阅的服务
-Dialogue: 0,0:27:43.59,0:27:45.53,中文对白,,0,0,52,,共享给最多五位家庭成员
 Dialogue: 0,0:27:45.56,0:27:50.77,中文对白,,0,0,52,,包括 Apple Music iCloud+、Apple One 等等
 Dialogue: 0,0:27:50.80,0:27:54.67,中文对白,,0,0,52,,这样家里每个人可以个性化定制自己喜爱的内容
-Dialogue: 0,0:27:54.70,0:27:56.84,中文对白,,0,0,52,,不需要再自己购买订阅
-Dialogue: 0,0:27:56.87,0:27:57.91,中文对白,,0,0,52,,或是和其他人共用一个账户
-Dialogue: 0,0:27:57.94,0:28:02.31,中文对白,,0,0,52,,有孩子的家庭可以为小朋友创建专属的儿童账户
-Dialogue: 0,0:28:02.34,0:28:06.22,中文对白,,0,0,52,,内置了家长控制来帮你监督他们的屏幕使用时间
 Dialogue: 0,0:28:06.25,0:28:07.78,中文对白,,0,0,52,,或批准他们的购买
 Dialogue: 0,0:28:07.82,0:28:12.22,中文对白,,0,0,52,,今年我们将进一步简化创建儿童账户的过程
 Dialogue: 0,0:28:12.25,0:28:16.89,中文对白,,0,0,52,,以确保恰当的家长控制从一开始就实施起来
 Dialogue: 0,0:28:16.93,0:28:20.13,中文对白,,0,0,52,,我们也将增加新方式便于设置年龄限制
 Dialogue: 0,0:28:20.16,0:28:23.50,中文对白,,0,0,52,,应用于各类 app、视频、书籍和音乐等
 Dialogue: 0,0:28:23.53,0:28:26.77,中文对白,,0,0,52,,还有其他一些重要家长控制的快速设置
-Dialogue: 0,0:28:26.80,0:28:32.11,中文对白,,0,0,52,,给孩子设置新设备比如 iPad 将变得更加容易
 Dialogue: 0,0:28:29.87,0:28:32.11,中文对白,,0,0,52,,like an iPad–really simple.
 Dialogue: 0,0:28:32.14,0:28:35.68,中文对白,,0,0,52,,新设备开机后只需移近你的 iPhone
 Dialogue: 0,0:28:35.71,0:28:38.58,中文对白,,0,0,52,,选择快速开始进行设置
@@ -2349,13 +1842,10 @@ Dialogue: 0,0:28:41.85,0:28:46.46,中文对白,,0,0,52,,并且已经设好了你
 Dialogue: 0,0:28:46.49,0:28:48.62,中文对白,,0,0,52,,当你的孩子要求更多屏幕使用时间的时候
 Dialogue: 0,0:28:48.66,0:28:52.29,中文对白,,0,0,52,,你也不需要转到设置中去同意或不同意他们的要求
 Dialogue: 0,0:28:52.33,0:28:55.68,中文对白,,0,0,52,,直接在信息 app 回复就可以了
-Dialogue: 0,0:28:55.10,0:28:58.40,中文对白,,0,0,52,,最后我们还新增了家人共享核对清单
-Dialogue: 0,0:28:58.43,0:28:59.77,中文对白,,0,0,52,,提供非常有帮助的提示
 Dialogue: 0,0:28:59.80,0:29:02.60,中文对白,,0,0,52,,比如孩子长大了更新设置
 Dialogue: 0,0:29:02.64,0:29:04.44,中文对白,,0,0,52,,开启共享位置
 Dialogue: 0,0:29:04.47,0:29:09.14,中文对白,,0,0,52,,或者就是提醒你可以与大家共享你的 iCloud+ 订阅
 Dialogue: 0,0:29:09.18,0:29:14.65,中文对白,,0,0,52,,这就是今年有关家人共享的一些功能更新
-Dialogue: 0,0:29:14.68,0:29:21.28,中文对白,,0,0,52,,我们知道大家都很喜欢与家人分享照片
 Dialogue: 0,0:29:21.61,0:29:25.89,中文对白,,0,0,52,,所以今年我们优化了与家人共享照片的方式
 Dialogue: 0,0:29:25.93,0:29:29.50,中文对白,,0,0,52,,我们珍贵的回忆一般可能是由不同的人拍下的
 Dialogue: 0,0:29:29.53,0:29:34.20,中文对白,,0,0,52,,包括个人照片中的兴趣爱好、家庭项目和课业等
@@ -2366,74 +1856,48 @@ Dialogue: 0,0:29:42.81,0:29:44.84,中文对白,,0,0,52,,现在呢
 Dialogue: 0,0:29:44.11,0:29:47.42,中文对白,,0,0,52,,我们带来了 iCloud 共享图库
 Dialogue: 0,0:29:47.45,0:29:51.15,中文对白,,0,0,52,,帮助你顺利甚至自动与家人分享照片
 Dialogue: 0,0:29:51.19,0:29:52.55,中文对白,,0,0,52,,这很容易设置
-Dialogue: 0,0:29:52.59,0:29:54.29,中文对白,,0,0,52,,它是一个单独的 iCloud 图库
-Dialogue: 0,0:29:54.32,0:29:58.23,中文对白,,0,0,52,,家里每个人都可以上传、协作和浏览
 Dialogue: 0,0:29:58.26,0:30:00.20,中文对白,,0,0,52,,你可以加入的共享图库
 Dialogue: 0,0:30:00.23,0:30:02.63,中文对白,,0,0,52,,最多可以和 5 个人共享
 Dialogue: 0,0:30:02.66,0:30:05.93,中文对白,,0,0,52,,操作非常简单且只会共享你希望从自己图库中分享出去的照片
 Dialogue: 0,0:30:05.97,0:30:08.80,中文对白,,0,0,52,,你可以分享图库里所有照片
 Dialogue: 0,0:30:08.84,0:30:12.98,中文对白,,0,0,52,,或根据一个开始日期或照片里的人物进行筛选
-Dialogue: 0,0:30:13.13,0:30:18.41,中文对白,,0,0,52,,举例说你可以选择共享只有你与伴侣和孩子的照片
 Dialogue: 0,0:30:18.45,0:30:20.32,中文对白,,0,0,52,,共享图库设置好后
 Dialogue: 0,0:30:20.35,0:30:23.85,中文对白,,0,0,52,,你也可以手动将刚拍下的照片转移过去
-Dialogue: 0,0:30:23.89,0:30:25.89,中文对白,,0,0,52,,但我们还想更方便些
-Dialogue: 0,0:30:25.92,0:30:27.86,中文对白,,0,0,52,,通过相机 app 里的一个新切换键
 Dialogue: 0,0:30:27.89,0:30:31.63,中文对白,,0,0,52,,就可以在拍照的同时直接把照片发送到共享图库里
-Dialogue: 0,0:30:31.66,0:30:37.50,中文对白,,0,0,52,,这非常适用于度假旅行时可以即时共享照片
 Dialogue: 0,0:30:37.53,0:30:40.24,中文对白,,0,0,52,,而当你在拍摄个人物品如一份礼物时
 Dialogue: 0,0:30:40.27,0:30:42.14,中文对白,,0,0,52,,也可随手关掉共享
 Dialogue: 0,0:30:42.17,0:30:45.84,中文对白,,0,0,52,,你甚至可以设置自动激活共享功能
 Dialogue: 0,0:30:45.87,0:30:49.78,中文对白,,0,0,52,,这样你在共享图库的成员在附近拍照时就会启动
-Dialogue: 0,0:30:49.81,0:30:51.98,中文对白,,0,0,52,,这样如果你和家人去露营的话
-Dialogue: 0,0:30:52.19,0:30:54.68,中文对白,,0,0,52,,就不用担心忘记分享照片了
 Dialogue: 0,0:30:54.72,0:30:59.59,中文对白,,0,0,52,,在为你推荐标签页里会智能地提供共享建议
-Dialogue: 0,0:30:59.92,0:31:00.72,中文对白,,0,0,52,,每人都有同样的权限
-Dialogue: 0,0:31:00.76,0:31:04.33,中文对白,,0,0,52,,在共享图库添加、编辑和删除照片
 Dialogue: 0,0:31:04.36,0:31:07.16,中文对白,,0,0,52,,所以如果有家庭成员很会编辑照片
 Dialogue: 0,0:31:07.20,0:31:10.33,中文对白,,0,0,52,,大家就可以欣赏编辑好的共享照片了
 Dialogue: 0,0:31:10.37,0:31:13.73,中文对白,,0,0,52,,删除、标题和关键词也都是同步的
-Dialogue: 0,0:31:13.10,0:31:16.21,中文对白,,0,0,52,,共享图库的内容会出现在所有人照片 app 的
-Dialogue: 0,0:31:16.24,0:31:19.64,中文对白,,0,0,52,,回忆、精选照片和小组件里
 Dialogue: 0,0:31:19.68,0:31:23.85,中文对白,,0,0,52,,这样当你重温家庭之旅时所有的照片都会包含其中
 Dialogue: 0,0:31:23.88,0:31:26.95,中文对白,,0,0,52,,这就是 iCloud 共享图库
 Dialogue: 0,0:31:26.98,0:31:29.69,中文对白,,0,0,52,,与家人共享照片的最佳方法
 Dialogue: 0,0:31:29.72,0:31:33.36,中文对白,,0,0,52,,最后我们来聊聊隐私
 Dialogue: 0,0:31:33.39,0:31:37.79,中文对白,,0,0,52,,我们一直致力于保护用户及其隐私
 Dialogue: 0,0:31:37.83,0:31:41.96,中文对白,,0,0,52,,提供了 App 隐私报告、邮件隐私保护
-Dialogue: 0,0:31:42.02,0:31:47.10,中文对白,,0,0,52,,App 跟踪透明度、隐私标签等功能
 Dialogue: 0,0:31:47.14,0:31:52.79,中文对白,,0,0,52,,另一个至关重要的点是保护用户的个人安全
 Dialogue: 0,0:31:52.11,0:31:54.68,中文对白,,0,0,52,,我们正在开发一个新工具
 Dialogue: 0,0:31:54.71,0:31:57.45,中文对白,,0,0,52,,帮助大家快速关闭其他人的访问权限
 Dialogue: 0,0:31:57.48,0:32:02.22,中文对白,,0,0,52,,比如有人想逃离一段虐待关系时可以停止位置共享
 Dialogue: 0,0:32:02.25,0:32:04.35,中文对白,,0,0,52,,这就是安全检查功能
 Dialogue: 0,0:32:04.39,0:32:06.66,中文对白,,0,0,52,,下面请 Katie 来详细介绍
-Dialogue: 0,0:32:10.39,0:32:14.90,中文对白,,0,0,52,,Katie Skinner: 有很多人都和自己的伴侣共享他们设备的密码和访问权限
-Dialogue: 0,0:32:14.93,0:32:17.53,中文对白,,0,0,52,,然而若是处于虐待关系
-Dialogue: 0,0:32:17.57,0:32:19.27,中文对白,,0,0,52,,这可能威胁到受害者个人安全
 Dialogue: 0,0:32:19.30,0:32:22.37,中文对白,,0,0,52,,也阻碍他们求助
-Dialogue: 0,0:32:22.40,0:32:28.94,中文对白,,0,0,52,,我们正和各类向家庭和亲密伴侣暴力的受害者提供帮助的组织密切合作
 Dialogue: 0,0:32:28.98,0:32:32.95,中文对白,,0,0,52,,其中一项合作成果就是安全检查
-Dialogue: 0,0:32:32.98,0:32:34.75,中文对白,,0,0,52,,这是设置的新部分
-Dialogue: 0,0:32:34.78,0:32:39.15,中文对白,,0,0,52,,让你可以快速查看和重置之前授予他人的访问权限
-Dialogue: 0,0:32:39.19,0:32:45.96,中文对白,,0,0,52,,这样虐待关系受害者就可以快速撤销施暴人访问其数据和位置的权限
 Dialogue: 0,0:32:45.99,0:32:49.80,中文对白,,0,0,52,,以切断联系逃至安全之所
 Dialogue: 0,0:32:49.83,0:32:54.30,中文对白,,0,0,52,,安全检查可以阻止你的设备通过查找网络将位置共享给他人
 Dialogue: 0,0:32:54.34,0:32:59.79,中文对白,,0,0,52,,并重置所有 app 的系统隐私权限
-Dialogue: 0,0:32:59.11,0:33:01.78,中文对白,,0,0,52,,为了确保他人无法读取你的信息
-Dialogue: 0,0:33:01.81,0:33:05.95,中文对白,,0,0,52,,它也能帮你退出所有其他设备上的 iCloud
 Dialogue: 0,0:33:05.98,0:33:09.35,中文对白,,0,0,52,,并将信息 app 和 FaceTime 通话的权限限制在手中的设备
 Dialogue: 0,0:33:10.79,0:33:14.76,中文对白,,0,0,52,,安全检查也能帮你来管理什么权限授予给什么人过
 Dialogue: 0,0:33:14.79,0:33:18.49,中文对白,,0,0,52,,也能检查你给过哪些 app 什么样的权限
 Dialogue: 0,0:33:18.53,0:33:22.20,中文对白,,0,0,52,,我们的新举措得到了一些积极反馈
 Dialogue: 0,0:33:22.23,0:33:25.05,中文对白,,0,0,52,,包括美国 National Center for Victims of Crime
-Dialogue: 0,0:33:25.38,0:33:25.90,中文对白,,0,0,52,,也对此评论：
-Dialogue: 0,0:33:25.93,0:33:32.64,中文对白,,0,0,52,,“在危急时刻受害者如果知道谁掌握他们的信息和位置这无疑是至关重要的”
 Dialogue: 0,0:33:32.67,0:33:36.21,中文对白,,0,0,52,,“安全检查将控制权交还给受害者了“
 Dialogue: 0,0:33:36.25,0:33:38.25,中文对白,,0,0,52,,这是很重要的工作
 Dialogue: 0,0:33:38.28,0:33:42.25,中文对白,,0,0,52,,让 iOS 进一步保护你的安全
 Dialogue: 0,0:33:42.28,0:33:44.99,中文对白,,0,0,52,,交回给你 Craig
-Dialogue: 0,0:33:45.25,0:33:47.94,中文对白,,0,0,52,,Craig: 保护你以及你的隐私
-Dialogue: 0,0:33:47.12,0:33:51.46,中文对白,,0,0,52,,一直以来都是我们所做的核心
 Dialogue: 0,0:33:51.49,0:33:57.73,中文对白,,0,0,52,,iOS 16 带来了那么多的更新将会改变你的 iPhone 体验
 Dialogue: 0,0:33:57.77,0:34:00.74,中文对白,,0,0,52,,iOS 还把这体验延伸到 iPhone 之外
 Dialogue: 0,0:34:00.77,0:34:03.87,中文对白,,0,0,52,,提升你与周遭世界的互动体验
@@ -2445,26 +1909,17 @@ Dialogue: 0,0:34:16.32,0:34:19.56,中文对白,,0,0,52,,有请 Corey 来给你�
 Dialogue: 0,0:34:19.59,0:34:26.60,中文对白,,0,0,52,,♪♪
 Dialogue: 0,0:34:31.67,0:34:34.70,中文对白,,0,0,52,,Corey Wang: 我们的家也许就是生活中最重要的地方
 Dialogue: 0,0:34:34.74,0:34:36.71,中文对白,,0,0,52,,并且要管理的东西有很多
-Dialogue: 0,0:34:36.74,0:34:38.21,中文对白,,0,0,52,,有了智能家居配件
-Dialogue: 0,0:34:38.24,0:34:42.38,中文对白,,0,0,52,,这就方便多了你可以直接通过 iPhone 管理你的家
 Dialogue: 0,0:34:42.41,0:34:45.85,中文对白,,0,0,52,,在办公桌边工作时查看谁在你家门口
 Dialogue: 0,0:34:45.88,0:34:49.48,中文对白,,0,0,52,,或者不用下床就关掉楼下的灯
 Dialogue: 0,0:34:49.52,0:34:50.92,中文对白,,0,0,52,,不在家时
 Dialogue: 0,0:34:50.95,0:34:53.16,中文对白,,0,0,52,,你也可以确认是否把前门上锁了
-Dialogue: 0,0:34:53.19,0:34:54.36,中文对白,,0,0,52,,或者提前调好温控
-Dialogue: 0,0:34:54.39,0:34:57.16,中文对白,,0,0,52,,这样回到家时室内温度是刚好的
 Dialogue: 0,0:34:57.19,0:34:59.23,中文对白,,0,0,52,,你的家还可以变得更智能
-Dialogue: 0,0:34:59.26,0:35:01.01,中文对白,,0,0,52,,尤其如果所有的配件能协同工作
-Dialogue: 0,0:35:01.34,0:35:03.70,中文对白,,0,0,52,,自动应对各种变化
 Dialogue: 0,0:35:03.73,0:35:06.06,中文对白,,0,0,52,,当然智能家居仍处于早期阶段
 Dialogue: 0,0:35:06.39,0:35:08.57,中文对白,,0,0,52,,我们希望推动这些强大的功能
 Dialogue: 0,0:35:08.60,0:35:10.51,中文对白,,0,0,52,,带到尽可能多的家里
 Dialogue: 0,0:35:11.27,0:35:14.14,中文对白,,0,0,52,,要在家里建立一个连续互通的生态系统
 Dialogue: 0,0:35:14.18,0:35:16.61,中文对白,,0,0,52,,很重要的一点是你有各种选择
 Dialogue: 0,0:35:16.65,0:35:19.25,中文对白,,0,0,52,,而不必担心配件之间能否相互协作
-Dialogue: 0,0:35:19.28,0:35:20.68,中文对白,,0,0,52,,考虑到这点
-Dialogue: 0,0:35:20.72,0:35:23.56,中文对白,,0,0,52,,我们和其他主流的业内伙伴一起
-Dialogue: 0,0:35:23.90,0:35:25.79,中文对白,,0,0,52,,创立一个新的智能家居连接性标准
 Dialogue: 0,0:35:25.82,0:35:27.79,中文对白,,0,0,52,,那就是 Matter
 Dialogue: 0,0:35:27.82,0:35:32.53,中文对白,,0,0,52,,Matter 让智能家居配件可以跨平台协同操作
 Dialogue: 0,0:35:32.56,0:35:34.96,中文对白,,0,0,52,,同时确保我们始终坚守的价值观
@@ -2473,42 +1928,21 @@ Dialogue: 0,0:35:37.93,0:35:40.37,中文对白,,0,0,52,,作为新标准的基础
 Dialogue: 0,0:35:40.40,0:35:42.57,中文对白,,0,0,52,,这是为了确保 Matter 是建立在相同的核心原则上
 Dialogue: 0,0:35:42.60,0:35:45.71,中文对白,,0,0,52,,并保持最高级别的安全性
 Dialogue: 0,0:35:45.74,0:35:48.88,中文对白,,0,0,52,,业界的各大品牌都已陆续投入支持 Matter
-Dialogue: 0,0:35:48.91,0:35:51.51,中文对白,,0,0,52,,有 130 多种产品正在生产计划中
-Dialogue: 0,0:35:51.55,0:35:53.75,中文对白,,0,0,52,,而这只是开始
-Dialogue: 0,0:35:53.78,0:35:58.52,中文对白,,0,0,52,,Matter 标准提供了连接智能家居配件的基石
-Dialogue: 0,0:35:58.55,0:36:01.49,中文对白,,0,0,52,,也让我们得以在此基础上进行创新
 Dialogue: 0,0:36:01.52,0:36:02.79,中文对白,,0,0,52,,我们进一步加强了隐私保护
-Dialogue: 0,0:36:02.82,0:36:07.96,中文对白,,0,0,52,,确保默认状态下你使用配件的数据都得以安全处理与储存
-Dialogue: 0,0:36:08.01,0:36:10.80,中文对白,,0,0,52,,就连 Apple 本身也无法访问
 Dialogue: 0,0:36:10.83,0:36:14.50,中文对白,,0,0,52,,基于 Matter 我们将持续通过家庭 app 打造精彩的体验
 Dialogue: 0,0:36:14.54,0:36:17.27,中文对白,,0,0,52,,同时也确保所有各种配件
 Dialogue: 0,0:36:17.31,0:36:20.38,中文对白,,0,0,52,,都同样便于设置和操作
 Dialogue: 0,0:36:20.41,0:36:23.21,中文对白,,0,0,52,,而现在你有更多的配件选项
-Dialogue: 0,0:36:23.25,0:36:27.75,中文对白,,0,0,52,,让我们看看全新的家庭 app 如何让你的体验变得更棒
 Dialogue: 0,0:36:27.78,0:36:32.59,中文对白,,0,0,52,,我们从底层架构开始进行了彻底的重新设计
 Dialogue: 0,0:36:32.92,0:36:34.22,中文对白,,0,0,52,,让它更有效可靠
 Dialogue: 0,0:36:34.26,0:36:37.26,中文对白,,0,0,52,,这对拥有许多配件的家来说尤其重要
-Dialogue: 0,0:36:37.29,0:36:43.03,中文对白,,0,0,52,,我们也彻底重新设计了你浏览、组织、查看各个配件的方式
-Dialogue: 0,0:36:43.36,0:36:45.63,中文对白,,0,0,52,,以更轻松地掌控你的智能家居
 Dialogue: 0,0:36:45.67,0:36:49.10,中文对白,,0,0,52,,我们将所有的房间和收藏项都整合进家庭 app 的首页
 Dialogue: 0,0:36:49.14,0:36:52.47,中文对白,,0,0,52,,这样你可以一览无余整个家的情况
-Dialogue: 0,0:36:52.51,0:36:53.98,中文对白,,0,0,52,,使其看上去美观整洁
-Dialogue: 0,0:36:54.14,0:36:55.48,中文对白,,0,0,52,,不论你是智能家居的新手
 Dialogue: 0,0:36:55.51,0:36:58.31,中文对白,,0,0,52,,还是搭建了整个先进且相互联通的家
 Dialogue: 0,0:36:58.35,0:37:03.39,中文对白,,0,0,52,,我们还增加了温控、灯光、安全等新类别
-Dialogue: 0,0:37:03.42,0:37:07.79,中文对白,,0,0,52,,并在屏幕顶部添加了每个类别情况的概览
 Dialogue: 0,0:37:07.82,0:37:11.39,中文对白,,0,0,52,,通过类别还可以轻松浏览家庭 app
-Dialogue: 0,0:37:11.43,0:37:13.73,中文对白,,0,0,52,,当你轻点一个特定类别
-Dialogue: 0,0:37:13.76,0:37:17.04,中文对白,,0,0,52,,就可以按房间查看所有有关配件
-Dialogue: 0,0:37:17.37,0:37:20.07,中文对白,,0,0,52,,以及更详细的状态信息
 Dialogue: 0,0:37:20.40,0:37:24.51,中文对白,,0,0,52,,中心位置则是多摄像头视图可一次查看四个
 Dialogue: 0,0:37:24.54,0:37:27.51,中文对白,,0,0,52,,右扫既能查看其他额外的摄像头
-Dialogue: 0,0:37:27.54,0:37:29.55,中文对白,,0,0,52,,我们也重新设计了每个模块
-Dialogue: 0,0:37:29.58,0:37:33.98,中文对白,,0,0,52,,让你能通过形状和颜色轻易识别不同的配件
-Dialogue: 0,0:37:34.21,0:37:36.23,中文对白,,0,0,52,,现在有了新的锁定屏幕上的小组件
-Dialogue: 0,0:37:36.56,0:37:38.82,中文对白,,0,0,52,,要查看你的智能家居情况也就更方便了
-Dialogue: 0,0:37:38.85,0:37:41.12,中文对白,,0,0,52,,这就是全新的家庭 app
-Dialogue: 0,0:37:41.16,0:37:43.99,中文对白,,0,0,52,,很快也将在 iPhone、 iPad 和 Mac 推出
 Dialogue: 0,0:37:44.31,0:37:47.67,中文对白,,0,0,52,,现在你有了掌控家居的工具
 Dialogue: 0,0:37:47.10,0:37:48.63,中文对白,,0,0,52,,可以准备上车出发了
 Dialogue: 0,0:37:48.66,0:37:51.50,中文对白,,0,0,52,,让我们交给 Emily 来给你介绍 CarPlay 车载
@@ -2519,13 +1953,8 @@ Dialogue: 0,0:38:07.54,0:38:10.95,中文对白,,0,0,52,,更重要的是有 79% �
 Dialogue: 0,0:38:10.99,0:38:14.39,中文对白,,0,0,52,,只会考虑购买配有 CarPlay 车载的汽车
 Dialogue: 0,0:38:14.42,0:38:18.36,中文对白,,0,0,52,,这是买新车时必有的功能
 Dialogue: 0,0:38:18.39,0:38:20.70,中文对白,,0,0,52,,我们的用户非常喜爱 CarPlay 车载
-Dialogue: 0,0:38:20.73,0:38:27.40,中文对白,,0,0,52,,它让用户可以非常便捷地在车中使用各类 app 同时采用他们所熟悉的 iPhone 交互界面
 Dialogue: 0,0:38:27.74,0:38:28.97,中文对白,,0,0,52,,但汽车也经历了很大的变化
-Dialogue: 0,0:38:29.09,0:38:30.94,中文对白,,0,0,52,,比如屏幕尺寸变大了
-Dialogue: 0,0:38:30.97,0:38:33.80,中文对白,,0,0,52,,也有更多屏幕分布全车
 Dialogue: 0,0:38:33.11,0:38:39.19,中文对白,,0,0,52,,iPhone 也因此有机会扮演更重要的角色
-Dialogue: 0,0:38:39.52,0:38:41.22,中文对白,,0,0,52,,我们正与汽车制造商们合作
-Dialogue: 0,0:38:41.25,0:38:46.96,中文对白,,0,0,52,,携手重塑各类车内屏幕的体验
 Dialogue: 0,0:38:46.99,0:38:51.79,中文对白,,0,0,52,,让我们来看看新一代的 CarPlay 车载
 Dialogue: 0,0:38:53.16,0:39:00.17,中文对白,,0,0,52,,♪♪
 Dialogue: 0,0:39:09.41,0:39:15.18,中文对白,,0,0,52,,♪♪
@@ -2535,21 +1964,12 @@ Dialogue: 0,0:39:19.25,0:39:25.29,中文对白,,0,0,52,,新一代的 CarPlay 车
 Dialogue: 0,0:39:25.33,0:39:29.40,中文对白,,0,0,52,,让你拥有统一且一致的体验
 Dialogue: 0,0:39:29.43,0:39:33.57,中文对白,,0,0,52,,结合了你的车和 iPhone 的优势
 Dialogue: 0,0:39:33.60,0:39:37.11,中文对白,,0,0,52,,它也带来了比现有 CarPlay 车载更多的功能
-Dialogue: 0,0:39:37.14,0:39:39.68,中文对白,,0,0,52,,与车辆硬件系统的深度整合
-Dialogue: 0,0:39:39.71,0:39:48.58,中文对白,,0,0,52,,让你无需退出 CarPlay 车载就可以直接操控车子的收音机或空调
 Dialogue: 0,0:39:48.62,0:39:52.39,中文对白,,0,0,52,,它还包括由你 iPhone 支持的小组件
 Dialogue: 0,0:39:52.42,0:39:55.29,中文对白,,0,0,52,,都可匹配呈现于屏幕上
 Dialogue: 0,0:39:55.32,0:39:59.99,中文对白,,0,0,52,,这些小组件也将出现在你的仪表盘中心
 Dialogue: 0,0:39:59.13,0:40:02.43,中文对白,,0,0,52,,让你一目了然各种信息
 Dialogue: 0,0:40:02.46,0:40:08.27,中文对白,,0,0,52,,而且新一代的 CarPlay 车载将与你整个仪表盘相互沟通
-Dialogue: 0,0:40:08.30,0:40:10.10,中文对白,,0,0,52,,为此
-Dialogue: 0,0:40:10.43,0:40:18.31,中文对白,,0,0,52,,你的 iPhone 会以设备端且保护隐私的方式与车辆的实时系统连接
-Dialogue: 0,0:40:18.35,0:40:21.88,中文对白,,0,0,52,,呈现你各种的驾驶信息
-Dialogue: 0,0:40:21.12,0:40:25.95,中文对白,,0,0,52,,如车速、RPM、油位、温度等
 Dialogue: 0,0:40:25.99,0:40:31.33,中文对白,,0,0,52,,而且无论你的车有多么独特的屏幕形状或布局
-Dialogue: 0,0:40:31.36,0:40:34.34,中文对白,,0,0,52,,新一代的 CarPlay 车载
-Dialogue: 0,0:40:34.67,0:40:38.67,中文对白,,0,0,52,,都会像是专为你的车子设计的一样
-Dialogue: 0,0:40:38.70,0:40:46.79,中文对白,,0,0,52,,我们也很高兴你可以打造出专属于自己的驾驶核心体验
 Dialogue: 0,0:40:46.11,0:40:49.85,中文对白,,0,0,52,,我们精心设计了一系列仪表盘选项
 Dialogue: 0,0:40:49.88,0:40:53.15,中文对白,,0,0,52,,包含了现代和传统风格
 Dialogue: 0,0:40:53.18,0:40:55.38,中文对白,,0,0,52,,还可以选择不同的颜色
@@ -2564,18 +1984,11 @@ Dialogue: 0,0:41:23.41,0:41:28.15,中文对白,,0,0,52,,我们也迫不及待在
 Dialogue: 0,0:41:28.18,0:41:30.85,中文对白,,0,0,52,,好了现在再把镜头还给 Craig
 Dialogue: 0,0:41:30.89,0:41:33.46,中文对白,,0,0,52,,Craig: 这就是 iOS 16
 Dialogue: 0,0:41:33.49,0:41:38.39,中文对白,,0,0,52,,这一重大版本更新让你用新颖的方式来打造属于自己的 iOS
-Dialogue: 0,0:41:38.43,0:41:40.86,中文对白,,0,0,52,,帮你轻松保持联系
-Dialogue: 0,0:41:40.90,0:41:42.76,中文对白,,0,0,52,,与周遭世界互动
 Dialogue: 0,0:41:42.80,0:41:47.40,中文对白,,0,0,52,,和亲朋好友共享体验和回忆
 Dialogue: 0,0:41:47.74,0:41:48.60,中文对白,,0,0,52,,而这只是开头
 Dialogue: 0,0:41:48.64,0:41:52.71,中文对白,,0,0,52,,我们也为 AirPods 的空间音频进行了优化提升
-Dialogue: 0,0:41:52.74,0:41:58.71,中文对白,,0,0,52,,空间音频功能基于对声音与我们头型和耳型如何交互的理解
 Dialogue: 0,0:41:58.75,0:42:03.56,中文对白,,0,0,52,,现在 iOS 16 中你可以利用手机的原深感摄像头
 Dialogue: 0,0:42:03.90,0:42:06.56,中文对白,,0,0,52,,创建个性化的空间音频档案
-Dialogue: 0,0:42:06.59,0:42:10.66,中文对白,,0,0,52,,从而实现更准确而沉浸式的听觉体验
-Dialogue: 0,0:42:10.69,0:42:12.59,中文对白,,0,0,52,,且专门为你量身定制
-Dialogue: 0,0:42:12.63,0:42:14.96,中文对白,,0,0,52,,此外快速备忘录也将来到 iOS
-Dialogue: 0,0:42:15.02,0:42:17.70,中文对白,,0,0,52,,便于你即时记录灵感
 Dialogue: 0,0:42:17.10,0:42:19.67,中文对白,,0,0,52,,新的快速安全响应机制
 Dialogue: 0,0:42:19.70,0:42:22.87,中文对白,,0,0,52,,让 iPhone 能更快进行安全优化
 Dialogue: 0,0:42:22.91,0:42:27.47,中文对白,,0,0,52,,此外你还将有更多拟我表情的选项
@@ -2592,19 +2005,13 @@ Dialogue: 0,0:43:05.18,0:43:07.87,中文对白,,0,0,52,,只需看一眼你的手
 Dialogue: 0,0:43:07.12,0:43:09.65,中文对白,,0,0,52,,不管你用的是广受欢迎的照片表盘
 Dialogue: 0,0:43:09.69,0:43:11.52,中文对白,,0,0,52,,还是有丰富复杂功能的表盘
 Dialogue: 0,0:43:11.55,0:43:14.76,中文对白,,0,0,52,,我们也添加了四个新的表盘供你选择
-Dialogue: 0,0:43:14.79,0:43:17.19,中文对白,,0,0,52,,天文表盘经过重新设计
-Dialogue: 0,0:43:17.23,0:43:19.83,中文对白,,0,0,52,,可以充分利用更大的显示屏
 Dialogue: 0,0:43:19.86,0:43:23.30,中文对白,,0,0,52,,展示世界各地实时的云层覆盖
-Dialogue: 0,0:43:23.33,0:43:25.43,中文对白,,0,0,52,,月相表盘可用来了解
-Dialogue: 0,0:43:25.47,0:43:28.80,中文对白,,0,0,52,,许多文化中的传统节日和特别活动
 Dialogue: 0,0:43:28.84,0:43:32.24,中文对白,,0,0,52,,这个表盘也是对延续了千年传统习俗的一种赞颂
 Dialogue: 0,0:43:32.27,0:43:35.91,中文对白,,0,0,52,,支持农历、伊斯兰历和希伯来历
 Dialogue: 0,0:43:36.85,0:43:39.62,中文对白,,0,0,52,,还有艺术家 Joi Fulton 设计的欢乐时光表盘
 Dialogue: 0,0:43:39.65,0:43:41.68,中文对白,,0,0,52,,其特色是异想天开的数字动画显示时间
 Dialogue: 0,0:43:41.72,0:43:44.35,中文对白,,0,0,52,,你可以轻点显示屏让它们跳动
 Dialogue: 0,0:43:44.39,0:43:47.36,中文对白,,0,0,52,,在你放下手腕后它们也就会休息一下
-Dialogue: 0,0:43:47.39,0:43:51.86,中文对白,,0,0,52,,最后大都会表盘以新字型突显手表的风格
-Dialogue: 0,0:43:51.89,0:43:55.13,中文对白,,0,0,52,,当你旋转数码表冠时字型也会随着动态拉伸
 Dialogue: 0,0:43:55.16,0:43:57.93,中文对白,,0,0,52,,这表盘还提供了缤纷的颜色组合
 Dialogue: 0,0:43:57.97,0:44:02.54,中文对白,,0,0,52,,丰富的复杂功能让你能在小空间内查看更多信息
 Dialogue: 0,0:44:02.57,0:44:05.44,中文对白,,0,0,52,,而我们将这些功能带到更多表盘上
@@ -2612,21 +2019,10 @@ Dialogue: 0,0:44:06.21,0:44:12.35,中文对白,,0,0,52,,watchOS 9 也推出了�
 Dialogue: 0,0:44:12.38,0:44:16.22,中文对白,,0,0,52,,开启着的 app 也将置于程序坞便于你快速访问
 Dialogue: 0,0:44:16.25,0:44:19.82,中文对白,,0,0,52,,另一个保持联系的方式就是收听最新的故事
 Dialogue: 0,0:44:19.86,0:44:21.96,中文对白,,0,0,52,,或者分享你喜欢的内容
-Dialogue: 0,0:44:21.99,0:44:24.83,中文对白,,0,0,52,,watchOS 9 的播客 app
-Dialogue: 0,0:44:24.86,0:44:30.23,中文对白,,0,0,52,,让你通过搜索和现在就听功能来探索并关注新播客内容
 Dialogue: 0,0:44:30.27,0:44:34.17,中文对白,,0,0,52,,现在孩子们也可以通过家人共享设置使用播客 app
-Dialogue: 0,0:44:34.20,0:44:35.14,中文对白,,0,0,52,,对于开发者们来说
-Dialogue: 0,0:44:35.17,0:44:40.91,中文对白,,0,0,52,,从 Outcast 或者微信等 app 分享内容和共享已选择图片将更容易
-Dialogue: 0,0:44:40.94,0:44:43.71,中文对白,,0,0,52,,这得益于新的共享表单和照片选择器 API
-Dialogue: 0,0:44:43.75,0:44:45.18,中文对白,,0,0,52,,凭借 CallKit
-Dialogue: 0,0:44:45.52,0:44:47.22,中文对白,,0,0,52,,你可以直接在 Apple Watch 上
-Dialogue: 0,0:44:47.25,0:44:50.65,中文对白,,0,0,52,,拨打、挂断或静音来自 Webex 此类 app 的 VoIP 通话
 Dialogue: 0,0:44:50.69,0:44:54.46,中文对白,,0,0,52,,这就是 watchOS 9 将带来的新功能让你保持联系
 Dialogue: 0,0:44:54.49,0:44:57.86,中文对白,,0,0,52,,接下来让 Craig 来聊聊助你活力满满的各项更新
 Dialogue: 0,0:45:02.93,0:45:05.67,中文对白,,0,0,52,,Craig Bolton: 体能训练 app 是最受欢迎的 app 之一
-Dialogue: 0,0:45:05.70,0:45:07.54,中文对白,,0,0,52,,所以这次的 watchOS 9
-Dialogue: 0,0:45:07.57,0:45:11.81,中文对白,,0,0,52,,推出了一系列全新且易用的指标、视图和训练体验
-Dialogue: 0,0:45:11.84,0:45:14.98,中文对白,,0,0,52,,得益于顶级的运动员们提供的灵感启发
 Dialogue: 0,0:45:15.15,0:45:17.50,中文对白,,0,0,52,,先从跑步说起
 Dialogue: 0,0:45:17.84,0:45:19.75,中文对白,,0,0,52,,这项运动不管你的水平如何
 Dialogue: 0,0:45:19.78,0:45:23.19,中文对白,,0,0,52,,都可以使用指标更好了解你的表现
@@ -2636,10 +2032,7 @@ Dialogue: 0,0:45:32.66,0:45:35.68,中文对白,,0,0,52,,以追踪你跑步的效
 Dialogue: 0,0:45:35.10,0:45:38.05,中文对白,,0,0,52,,但要从手腕测量这些并不简单
 Dialogue: 0,0:45:38.38,0:45:40.44,中文对白,,0,0,52,,比如垂直振幅
 Dialogue: 0,0:45:40.47,0:45:44.44,中文对白,,0,0,52,,是衡量你上下移动幅度的指标
-Dialogue: 0,0:45:44.77,0:45:45.51,中文对白,,0,0,52,,如果幅度过高
-Dialogue: 0,0:45:45.54,0:45:50.11,中文对白,,0,0,52,,代表你消耗太多能量往上移而不是往前推进
 Dialogue: 0,0:45:50.15,0:45:52.85,中文对白,,0,0,52,,要从手腕测量这个
-Dialogue: 0,0:45:52.11,0:45:57.49,中文对白,,0,0,52,,我们必须从你手臂摆动的独特性推测你的躯干运动
 Dialogue: 0,0:45:57.52,0:46:00.62,中文对白,,0,0,52,,我们使用了机器学习和传感器融合
 Dialogue: 0,0:46:00.66,0:46:03.73,中文对白,,0,0,52,,也就是加速感应器和陀螺仪的组合
 Dialogue: 0,0:46:03.76,0:46:05.86,中文对白,,0,0,52,,将躯干运动分离出来
@@ -2648,47 +2041,27 @@ Dialogue: 0,0:46:09.50,0:46:14.20,中文对白,,0,0,52,,我们也用类似方法
 Dialogue: 0,0:46:14.24,0:46:17.81,中文对白,,0,0,52,,步长和触地时间
 Dialogue: 0,0:46:17.84,0:46:22.38,中文对白,,0,0,52,,这些指标可以被添加到全新且易于查看的体能训练视图
 Dialogue: 0,0:46:22.41,0:46:25.85,中文对白,,0,0,52,,每个视图都有更多指标让你一目了然
-Dialogue: 0,0:46:25.88,0:46:30.32,中文对白,,0,0,52,,滚动数码表冠就可查看常见指标的新视图
-Dialogue: 0,0:46:30.35,0:46:34.27,中文对白,,0,0,52,,如分段、单段和爬升高度
 Dialogue: 0,0:46:34.61,0:46:36.83,中文对白,,0,0,52,,新推出的还有心率区间
 Dialogue: 0,0:46:36.86,0:46:39.23,中文对白,,0,0,52,,便于你快速查看自己所处的区间
 Dialogue: 0,0:46:39.26,0:46:44.04,中文对白,,0,0,52,,随时了解自己的训练强度
 Dialogue: 0,0:46:44.37,0:46:46.37,中文对白,,0,0,52,,同时还有新的自定义训练计划
 Dialogue: 0,0:46:46.40,0:46:49.76,中文对白,,0,0,52,,让你规划自己的跑步训练
 Dialogue: 0,0:46:49.10,0:46:53.28,中文对白,,0,0,52,,举个例子如果你是想提高速度或耐力
-Dialogue: 0,0:46:53.31,0:46:59.15,中文对白,,0,0,52,,就可以基于距离和时间段来创建一套训练与恢复计划
-Dialogue: 0,0:46:59.18,0:47:01.22,中文对白,,0,0,52,,让你可以重复进行
 Dialogue: 0,0:47:01.25,0:47:06.26,中文对白,,0,0,52,,你还可以在训练的指定部分添加一些新提示
 Dialogue: 0,0:47:06.59,0:47:09.62,中文对白,,0,0,52,,比如专门用来提醒你的心率区间目标
 Dialogue: 0,0:47:09.96,0:47:11.23,中文对白,,0,0,52,,帮助你保持在训练目标上
-Dialogue: 0,0:47:11.26,0:47:16.83,中文对白,,0,0,52,,当你跑步时这些提示可以通过触觉和声音反馈指引你
 Dialogue: 0,0:47:16.87,0:47:20.60,中文对白,,0,0,52,,让你知道何时在训练和恢复间进行切换
-Dialogue: 0,0:47:20.64,0:47:26.54,中文对白,,0,0,52,,或者提醒你加速如果你的心率低于目标区间时
 Dialogue: 0,0:47:26.58,0:47:29.55,中文对白,,0,0,52,,跑步时你也可以使用数码表冠
-Dialogue: 0,0:47:29.58,0:47:31.31,中文对白,,0,0,52,,查看其他的训练视图
-Dialogue: 0,0:47:31.35,0:47:33.58,中文对白,,0,0,52,,比如这个新的功率指标
-Dialogue: 0,0:47:33.62,0:47:35.55,中文对白,,0,0,52,,设定功率目标的话
-Dialogue: 0,0:47:35.58,0:47:41.29,中文对白,,0,0,52,,可以帮助确保能量消耗在可持续的范围内让你跑得更远
 Dialogue: 0,0:47:41.32,0:47:45.66,中文对白,,0,0,52,,你甚至还可以查看你的体能训练对健身记录圆环的贡献
-Dialogue: 0,0:47:45.69,0:47:47.20,中文对白,,0,0,52,,而且如果你经常使用一个跑步路线
-Dialogue: 0,0:47:47.23,0:47:50.43,中文对白,,0,0,52,,你的体能训练 app 会将其自动保存起来
-Dialogue: 0,0:47:50.47,0:47:53.60,中文对白,,0,0,52,,让你可以和自己上次或最佳时间进行赛跑
 Dialogue: 0,0:47:53.64,0:47:57.77,中文对白,,0,0,52,,来了解自己坚持锻炼的成效如何
 Dialogue: 0,0:47:57.81,0:48:01.34,中文对白,,0,0,52,,这么多新的功能也不仅用于跑步
-Dialogue: 0,0:48:01.38,0:48:03.18,中文对白,,0,0,52,,也可用于其他类型
-Dialogue: 0,0:48:03.21,0:48:06.82,中文对白,,0,0,52,,如徒步、高强度间歇训练和功能性力量训练
 Dialogue: 0,0:48:06.85,0:48:11.19,中文对白,,0,0,52,,铁人三项运动员可以使用新的多项目运动
 Dialogue: 0,0:48:11.22,0:48:15.95,中文对白,,0,0,52,,利用传感器融合来检测你何时完成了某个单项
 Dialogue: 0,0:48:15.12,0:48:17.46,中文对白,,0,0,52,,并过渡到下一项
 Dialogue: 0,0:48:17.49,0:48:22.70,中文对白,,0,0,52,,所以就实现自动切换从游泳到单车再到跑步
 Dialogue: 0,0:48:22.73,0:48:28.27,中文对白,,0,0,52,,这就是 watchOS 9 的体能训练 app 将带来的部分新功能
-Dialogue: 0,0:48:28.30,0:48:32.98,中文对白,,0,0,52,,从初代 Apple Watch 推出以来我们一直收到用户们的故事而深受鼓舞
-Dialogue: 0,0:48:33.13,0:48:37.11,中文对白,,0,0,52,,他们每天充满动力努力合上健身记录圆环
-Dialogue: 0,0:48:37.15,0:48:41.82,中文对白,,0,0,52,,我们也知道有很多 iPhone 用户也想达成他们的锻炼目标
-Dialogue: 0,0:48:41.85,0:48:43.59,中文对白,,0,0,52,,但没有 Apple Watch
 Dialogue: 0,0:48:43.62,0:48:50.26,中文对白,,0,0,52,,所以在 iOS 16 所有 iPhone 用户将可以使用体能训练 app
 Dialogue: 0,0:48:50.29,0:48:52.73,中文对白,,0,0,52,,利用 iPhone 的各个运动感应器
-Dialogue: 0,0:48:52.76,0:48:58.71,中文对白,,0,0,52,,你可以通过常用的 app 追踪步数、行走距离、爬升高度和体能训练
 Dialogue: 0,0:48:58.10,0:49:01.77,中文对白,,0,0,52,,将其转换成动态卡路里的估值
 Dialogue: 0,0:49:01.80,0:49:04.47,中文对白,,0,0,52,,从而贡献到你每日的活动目标
 Dialogue: 0,0:49:04.51,0:49:07.18,中文对白,,0,0,52,,你也可以把活动圆环共享给朋友
@@ -2696,59 +2069,30 @@ Dialogue: 0,0:49:07.21,0:49:09.51,中文对白,,0,0,52,,询问技巧指导和建
 Dialogue: 0,0:49:09.55,0:49:13.12,中文对白,,0,0,52,,Apple Watch 给你提供全天候的健身记录
 Dialogue: 0,0:49:13.15,0:49:17.57,中文对白,,0,0,52,,我们很高兴能将体能训练 app 的一些好处带给 iPhone 用户
 Dialogue: 0,0:49:17.90,0:49:19.69,中文对白,,0,0,52,,让他们也开始健身
-Dialogue: 0,0:49:19.72,0:49:26.53,中文对白,,0,0,52,,现在让 Sumbul 来介绍 watchOS 9 帮你乐享健康生活的新功能
-Dialogue: 0,0:49:26.56,0:49:31.70,中文对白,,0,0,52,,♪♪
 Dialogue: 0,0:49:31.73,0:49:33.77,中文对白,,0,0,52,,Sumbul Ahmad Desai: 很多人都因为睡眠 app 获益良多
 Dialogue: 0,0:49:33.80,0:49:36.77,中文对白,,0,0,52,,它可以助你了解自己的睡眠质量
-Dialogue: 0,0:49:36.81,0:49:41.34,中文对白,,0,0,52,,以及睡眠时的心率、呼吸频率和血氧等指标
 Dialogue: 0,0:49:41.38,0:49:47.87,中文对白,,0,0,52,,watchOS 9 的睡眠阶段功能能让你更了解自己的睡眠
 Dialogue: 0,0:49:47.12,0:49:50.89,中文对白,,0,0,52,,Apple Watch 通过加速感应器和心率传感器的信号
 Dialogue: 0,0:49:50.92,0:49:53.89,中文对白,,0,0,52,,来检测你所处的睡眠阶段
-Dialogue: 0,0:49:53.92,0:50:00.33,中文对白,,0,0,52,,机器学习模型根据多导睡眠图的临床黄金标准经过训练和验证
-Dialogue: 0,0:50:00.67,0:50:04.57,中文对白,,0,0,52,,参考了可穿戴设备有史以来最大和最多样化人群的研究
 Dialogue: 0,0:50:04.60,0:50:07.30,中文对白,,0,0,52,,你可以查看在每个阶段睡了多久
 Dialogue: 0,0:50:07.34,0:50:09.64,中文对白,,0,0,52,,以及大概什么时候睡醒的
-Dialogue: 0,0:50:09.67,0:50:12.34,中文对白,,0,0,52,,在健康 app 还有更多详细信息
-Dialogue: 0,0:50:12.37,0:50:16.83,中文对白,,0,0,52,,让你了解每个睡眠阶段从快速眼动期、核心睡眠到深度睡眠阶段
 Dialogue: 0,0:50:16.11,0:50:18.48,中文对白,,0,0,52,,所扮演的重要角色
 Dialogue: 0,0:50:18.51,0:50:22.75,中文对白,,0,0,52,,且你睡觉时很可能会在这些睡眠阶段反复循环
 Dialogue: 0,0:50:22.78,0:50:26.62,中文对白,,0,0,52,,学者们还在研究睡眠时所发生的事情
 Dialogue: 0,0:50:26.66,0:50:28.56,中文对白,,0,0,52,,及其它对健康的影响
 Dialogue: 0,0:50:28.59,0:50:31.63,中文对白,,0,0,52,,我们希望能帮助推动睡眠科学
-Dialogue: 0,0:50:31.66,0:50:34.83,中文对白,,0,0,52,,因此 Apple Heart and Movement Study 的参与者
-Dialogue: 0,0:50:34.86,0:50:39.57,中文对白,,0,0,52,,将可透过 Research app 贡献睡眠阶段数据
-Dialogue: 0,0:50:39.60,0:50:41.64,中文对白,,0,0,52,,鉴于此研究规模之大
-Dialogue: 0,0:50:41.67,0:50:44.74,中文对白,,0,0,52,,我们很期待这可能带来的新发现
 Dialogue: 0,0:50:44.77,0:50:47.34,中文对白,,0,0,52,,这就是睡眠 app 的更新
 Dialogue: 0,0:50:47.38,0:50:51.65,中文对白,,0,0,52,,另一个 Apple Watch 起到重要影响的是心脏健康
 Dialogue: 0,0:50:51.68,0:50:55.95,中文对白,,0,0,52,,我们得知有许多用户因收到房颤提示
 Dialogue: 0,0:50:55.98,0:50:58.62,中文对白,,0,0,52,,而寻求到性命攸关的及时护理
 Dialogue: 0,0:50:58.65,0:51:03.43,中文对白,,0,0,52,,所以我们也希望能为接受诊断的你提供支持
-Dialogue: 0,0:51:03.46,0:51:04.89,中文对白,,0,0,52,,对于有房颤历史的人来说
-Dialogue: 0,0:51:04.93,0:51:07.93,中文对白,,0,0,52,,了解自己的房颤时长是非常重要的
-Dialogue: 0,0:51:07.96,0:51:11.77,中文对白,,0,0,52,,因为这可能涉及患有严重并发症如中风的风险
-Dialogue: 0,0:51:11.80,0:51:19.47,中文对白,,0,0,52,,watchOS 9 可通过房颤历史来追踪你的房颤时长
-Dialogue: 0,0:51:19.51,0:51:20.51,中文对白,,0,0,52,,而在健康 app
-Dialogue: 0,0:51:20.54,0:51:25.52,中文对白,,0,0,52,,你也可以管理数个可能影响你房颤时长的生活因素
 Dialogue: 0,0:51:25.85,0:51:28.22,中文对白,,0,0,52,,如运动、睡眠和体重
 Dialogue: 0,0:51:28.25,0:51:32.32,中文对白,,0,0,52,,房颤历史甚至帮你辨别一天或一周内
 Dialogue: 0,0:51:32.35,0:51:35.12,中文对白,,0,0,52,,你房颤最频繁的时刻
-Dialogue: 0,0:51:35.16,0:51:37.43,中文对白,,0,0,52,,你也可以生成 PDF 共享给自己的医生
-Dialogue: 0,0:51:37.46,0:51:40.10,中文对白,,0,0,52,,有助于更有意义的讨论
-Dialogue: 0,0:51:40.13,0:51:47.57,中文对白,,0,0,52,,房颤历史是首个长期特别提供房颤信息的功能
 Dialogue: 0,0:51:47.60,0:51:52.54,中文对白,,0,0,52,,我们预计将很快获得 FDA 的许可
-Dialogue: 0,0:51:52.57,0:51:55.91,中文对白,,0,0,52,,Apple Watch 使得你的健康管理中那些较为复杂的方面
-Dialogue: 0,0:51:55.94,0:51:57.50,中文对白,,0,0,52,,变得更为直观易懂
-Dialogue: 0,0:51:57.84,0:52:02.42,中文对白,,0,0,52,,今年我们还着手处理对大家健康同样不可或缺的另一方面
-Dialogue: 0,0:52:02.45,0:52:04.45,中文对白,,0,0,52,,用药
 Dialogue: 0,0:52:04.49,0:52:07.89,中文对白,,0,0,52,,超过 50% 的人群在服用各类处方药
-Dialogue: 0,0:52:07.92,0:52:09.96,中文对白,,0,0,52,,我们希望能帮助你
-Dialogue: 0,0:52:09.99,0:52:13.96,中文对白,,0,0,52,,更轻松地追踪、管理和了解你的用药
-Dialogue: 0,0:52:14.01,0:52:18.10,中文对白,,0,0,52,,所以 watchOS 9 里的用药 app 将帮你
-Dialogue: 0,0:52:18.13,0:52:25.45,中文对白,,0,0,52,,审慎且方便地随时追踪药物、维生素和营养品
 Dialogue: 0,0:52:25.78,0:52:27.81,中文对白,,0,0,52,,你可以记录偶尔的用药
 Dialogue: 0,0:52:27.84,0:52:30.50,中文对白,,0,0,52,,比如抗过敏的西替利嗪
-Dialogue: 0,0:52:30.83,0:52:35.88,中文对白,,0,0,52,,也可以收到通知提醒你定期用药
 Dialogue: 0,0:52:35.12,0:52:39.49,中文对白,,0,0,52,,表盘上丰富的复杂功能也能帮你时刻掌握用药时间
 Dialogue: 0,0:52:39.52,0:52:44.19,中文对白,,0,0,52,,当然你也能从健康 app 追踪与管理用药
 Dialogue: 0,0:52:44.23,0:52:47.67,中文对白,,0,0,52,,就算你没有 Apple Watch 也可以
@@ -2761,11 +2105,7 @@ Dialogue: 0,0:53:03.58,0:53:05.98,中文对白,,0,0,52,,你也可以制定时间
 Dialogue: 0,0:53:06.19,0:53:10.39,中文对白,,0,0,52,,还能添加自定义视觉效果帮你记得用药
 Dialogue: 0,0:53:10.42,0:53:14.27,中文对白,,0,0,52,,用药的另一个重要方面是药物间的相互作用
 Dialogue: 0,0:53:14.61,0:53:16.99,中文对白,,0,0,52,,有时可能降低效果或者引起副作用
-Dialogue: 0,0:53:17.30,0:53:24.63,中文对白,,0,0,52,,单在美国每年因药物相互作用而入院的人高达 25 万
-Dialogue: 0,0:53:24.67,0:53:25.90,中文对白,,0,0,52,,为了帮你解决此问题
-Dialogue: 0,0:53:25.93,0:53:30.61,中文对白,,0,0,52,,每当你添加用药时如果会有危急的相互作用就会出现提示
 Dialogue: 0,0:53:30.64,0:53:33.91,中文对白,,0,0,52,,我们与顶级的医学出版社 Elsevier 合作
-Dialogue: 0,0:53:33.94,0:53:40.25,中文对白,,0,0,52,,在用药 app 的各个环节提供临床准确且基于证据的信息
 Dialogue: 0,0:53:40.28,0:53:44.12,中文对白,,0,0,52,,这样你就能够查看危急、严重或一般的相互作用
 Dialogue: 0,0:53:44.15,0:53:47.60,中文对白,,0,0,52,,以及与酒精等的相互作用
 Dialogue: 0,0:53:47.94,0:53:49.49,中文对白,,0,0,52,,用药 app 也适用于健康共享
@@ -2816,13 +2156,9 @@ Dialogue: 0,0:56:10.97,0:56:14.07,中文对白,,0,0,52,,从 M1 芯片开始带�
 Dialogue: 0,0:56:14.41,0:56:16.97,中文对白,,0,0,52,,为我们广受欢迎的产品带来了重大转变
 Dialogue: 0,0:56:17.10,0:56:19.94,中文对白,,0,0,52,,M2 芯片是 M 系列芯片的第二代
 Dialogue: 0,0:56:19.98,0:56:22.78,中文对白,,0,0,52,,它进一步地提升了 M1 芯片的功能
-Dialogue: 0,0:56:22.81,0:56:28.58,中文对白,,0,0,52,,和业内那些通过提高芯片功率而提升性能的方法相比
-Dialogue: 0,0:56:28.62,0:56:30.75,中文对白,,0,0,52,,我们采取了不同的做法
 Dialogue: 0,0:56:30.79,0:56:35.26,中文对白,,0,0,52,,我们持续不懈地关注高能效表现
 Dialogue: 0,0:56:35.29,0:56:40.36,中文对白,,0,0,52,,换句话说我们在使性能最大化的同时最大限度地降低功耗
 Dialogue: 0,0:56:41.83,0:56:45.93,中文对白,,0,0,52,,结合我们的统一内存架构和定制技术
-Dialogue: 0,0:56:45.97,0:56:51.57,中文对白,,0,0,52,,这种对能效的关注让 M2 芯片可以将更高的性能和更多新功能
-Dialogue: 0,0:56:51.61,0:56:54.61,中文对白,,0,0,52,,带给我们最受欢迎的 Mac 产品
 Dialogue: 0,0:56:54.64,0:56:56.31,中文对白,,0,0,52,,M2 芯片采用增强的
 Dialogue: 0,0:56:56.35,0:56:58.78,中文对白,,0,0,52,,第二代 5 纳米制程技术
 Dialogue: 0,0:56:58.81,0:57:01.45,中文对白,,0,0,52,,并封装了超过 200 亿个晶体管
@@ -2876,8 +2212,6 @@ Dialogue: 0,0:59:32.97,0:59:38.21,中文对白,,0,0,52,,所以 M2 芯片还搭�
 Dialogue: 0,0:59:38.24,0:59:43.38,中文对白,,0,0,52,,M2 芯片中的神经网络引擎每秒可以处理 15.8 万亿次操作
 Dialogue: 0,0:59:43.41,0:59:45.98,中文对白,,0,0,52,,这比 M1 芯片快了 40%
 Dialogue: 0,0:59:46.19,0:59:48.72,中文对白,,0,0,52,,它也配备了我们的新一代的媒体处理引擎
-Dialogue: 0,0:59:48.75,0:59:52.72,中文对白,,0,0,52,,包括支持 8K H.264 和 HEVC 视频的
-Dialogue: 0,0:59:52.75,0:59:55.86,中文对白,,0,0,52,,更高带宽视频解码器
 Dialogue: 0,0:59:55.89,0:59:59.36,中文对白,,0,0,52,,而且 M2 芯片还配备了强大的 ProRes 视频处理引擎
 Dialogue: 0,0:59:59.39,1:00:01.83,中文对白,,0,0,52,,用于硬件加速编解码
 Dialogue: 0,1:00:01.86,1:00:07.67,中文对白,,0,0,52,,所以搭载 M2 芯片的系统能够播放多条 4K 和 8K 的视频
@@ -2907,9 +2241,7 @@ Dialogue: 0,1:01:15.74,1:01:16.97,中文对白,,0,0,52,,这就是它
 Dialogue: 0,1:01:17.67,1:01:21.98,中文对白,,0,0,52,,♪♪
 Dialogue: 0,1:01:22.15,1:01:29.89,中文对白,,0,0,52,,♪♪
 Dialogue: 0,1:01:38.23,1:01:46.24,中文对白,,0,0,52,,♪♪
-Dialogue: 0,1:01:40.33,1:01:48.41,中文对白,,0,0,52,,♪♪
 Dialogue: 0,1:01:50.61,1:01:58.61,中文对白,,0,0,52,,♪♪
-Dialogue: 0,1:01:57.88,1:02:03.23,中文对白,,0,0,52,,♪♪
 Dialogue: 0,1:02:03.56,1:02:06.76,中文对白,,0,0,52,,这就是由 M2 芯片驱动的新款 MacBook Air
 Dialogue: 0,1:02:06.79,1:02:09.53,中文对白,,0,0,52,,接下来请 Kristin 来介绍关于它的一切
 Dialogue: 0,1:02:11.56,1:02:15.36,中文对白,,0,0,52,,新款 MacBook Air 把用户们喜爱 Air 的所有部分
@@ -2947,8 +2279,6 @@ Dialogue: 0,1:04:05.24,1:04:08.61,中文对白,,0,0,52,,它的分辨率和低光
 Dialogue: 0,1:04:08.64,1:04:13.32,中文对白,,0,0,52,,再结合 M2 芯片先进的图像信号处理器的超强处理能力
 Dialogue: 0,1:04:13.35,1:04:16.42,中文对白,,0,0,52,,你在视频通话中看起来会很棒
 Dialogue: 0,1:04:16.45,1:04:18.19,中文对白,,0,0,52,,接下去是音频
-Dialogue: 0,1:04:18.22,1:04:20.96,中文对白,,0,0,52,,为了适应如此纤薄的设计
-Dialogue: 0,1:04:20.99,1:04:25.93,中文对白,,0,0,52,,扬声器和麦克风完全集成到了键盘和显示屏之间
 Dialogue: 0,1:04:25.96,1:04:29.53,中文对白,,0,0,52,,同时还能提供更好的音频体验
 Dialogue: 0,1:04:29.57,1:04:34.70,中文对白,,0,0,52,,三麦克风阵列使用先进的波束成形算法捕捉纯净的音频
 Dialogue: 0,1:04:34.74,1:04:37.44,中文对白,,0,0,52,,还有四扬声器系统
@@ -2982,25 +2312,8 @@ Dialogue: 0,1:06:11.43,1:06:14.57,中文对白,,0,0,52,,具有耐用的一体成
 Dialogue: 0,1:06:14.60,1:06:19.12,中文对白,,0,0,52,,更好的摄像头具有全天候电池续航时间和四种精美的外观选择
 Dialogue: 0,1:06:19.46,1:06:22.71,中文对白,,0,0,52,,你想要的关于新 MacBook Air 的各个功能都在这里了
 Dialogue: 0,1:06:22.74,1:06:26.45,中文对白,,0,0,52,,在我交回给 John 以前让我们看看它的实际效果
-Dialogue: 0,1:06:30.59,1:06:33.26,中文对白,,0,0,52,,全新 MacBook Air 就位
-Dialogue: 0,1:06:33.60,1:06:39.29,中文对白,,0,0,52,,♪♪
-Dialogue: 0,1:06:39.33,1:06:42.46,中文对白,,0,0,52,,轻薄进化到离谱
 Dialogue: 0,1:06:43.70,1:06:51.71,中文对白,,0,0,52,,♪♪
-Dialogue: 0,1:06:43.90,1:06:46.30,中文对白,,0,0,52,,♪♪
-Dialogue: 0,1:06:46.34,1:06:48.97,中文对白,,0,0,52,,由M2 芯片强势驱动
-Dialogue: 0,1:06:49.09,1:06:55.11,中文对白,,0,0,52,,♪♪
-Dialogue: 0,1:06:55.14,1:06:55.94,中文对白,,0,0,52,,妙控键盘
-Dialogue: 0,1:06:59.19,1:07:00.98,中文对白,,0,0,52,,与 iPhone 配合打得好
-Dialogue: 0,1:07:01.21,1:07:05.25,中文对白,,0,0,52,,♪♪
-Dialogue: 0,1:07:05.29,1:07:13.30,中文对白,,0,0,52,,♪♪
-Dialogue: 0,1:07:16.50,1:07:18.57,中文对白,,0,0,52,,1080p 高清摄像头
-Dialogue: 0,1:07:18.60,1:07:20.54,中文对白,,0,0,52,,最长 18 小时电池续航
-Dialogue: 0,1:07:20.57,1:07:22.70,中文对白,,0,0,52,,♪♪
-Dialogue: 0,1:07:22.74,1:07:23.64,中文对白,,0,0,52,,Liquid 视网膜屏
-Dialogue: 0,1:07:25.41,1:07:28.48,中文对白,,0,0,52,,四扬声器支持空间音频
-Dialogue: 0,1:07:31.48,1:07:36.65,中文对白,,0,0,52,,♪♪
 Dialogue: 0,1:07:32.51,1:07:37.42,中文对白,,0,0,52,,♪♪
-Dialogue: 0,1:07:36.69,1:07:38.29,中文对白,,0,0,52,,这就是 MacBook Air
 Dialogue: 0,1:07:38.32,1:07:41.96,中文对白,,0,0,52,,我们很高兴能将 M2 芯片用于
 Dialogue: 0,1:07:41.99,1:07:43.76,中文对白,,0,0,52,,世界上最畅销的笔记本电脑 MacBook Air
 Dialogue: 0,1:07:43.79,1:07:47.36,中文对白,,0,0,52,,只有使用 Apple 芯片才能打造出如此轻薄的笔记本电脑
@@ -3078,8 +2391,6 @@ Dialogue: 0,1:11:29.75,1:11:32.29,中文对白,,0,0,52,,他们的精力已经完
 Dialogue: 0,1:11:32.32,1:11:35.86,中文对白,,0,0,52,,团队再次挤进了他们的小巴车沿着 1 号公路向南行驶
 Dialogue: 0,1:11:35.89,1:11:39.32,中文对白,,0,0,52,,继续着他们为 macOS 命名的旅程
 Dialogue: 0,1:11:39.66,1:11:42.93,中文对白,,0,0,52,,追随着五彩缤纷的加州野花
-Dialogue: 0,1:11:42.97,1:11:45.40,中文对白,,0,0,52,,他们终于在迷人的海浪
-Dialogue: 0,1:11:45.43,1:11:48.44,中文对白,,0,0,52,,与茂盛的冲积平原交汇处找到了休息之地
 Dialogue: 0,1:11:48.47,1:11:50.94,中文对白,,0,0,52,,这就是美丽的 Ventura
 Dialogue: 0,1:11:50.97,1:11:55.48,中文对白,,0,0,52,,macOS Ventura 让我们使用 Mac 的方式变得更丰富了
 Dialogue: 0,1:11:55.82,1:11:56.71,中文对白,,0,0,52,,那么让我们仔细来了解一下
@@ -3112,12 +2423,7 @@ Dialogue: 0,1:13:15.66,1:13:18.36,中文对白,,0,0,52,,而 Safari 浏览器就�
 Dialogue: 0,1:13:18.39,1:13:20.26,中文对白,,0,0,52,,与其他我近期使用过的 app 放在一起
 Dialogue: 0,1:13:20.30,1:13:23.23,中文对白,,0,0,52,,当我再次点击 Safari 浏览器的时候你可以看到它重新占据了舞台
 Dialogue: 0,1:13:23.27,1:13:25.20,中文对白,,0,0,52,,而邮件 app 退到了左边
-Dialogue: 0,1:13:25.23,1:13:26.84,中文对白,,0,0,52,,你会注意到
-Dialogue: 0,1:13:26.87,1:13:30.37,中文对白,,0,0,52,,在处理打开了许多窗口的 app 时比如这里的 Pages 文稿
-Dialogue: 0,1:13:30.41,1:13:34.38,中文对白,,0,0,52,,台前调度把这些窗口都聚集在了一起
 Dialogue: 0,1:13:34.41,1:13:36.75,中文对白,,0,0,52,,只要点击一下最上面的窗口就会打开
-Dialogue: 0,1:13:36.78,1:13:37.98,中文对白,,0,0,52,,如果我想打开别的窗口
-Dialogue: 0,1:13:38.18,1:13:41.55,中文对白,,0,0,52,,也可以通过点击来让它们循环
 Dialogue: 0,1:13:41.58,1:13:43.45,中文对白,,0,0,52,,这真的是很方便
 Dialogue: 0,1:13:43.49,1:13:46.36,中文对白,,0,0,52,,当然就像你对 Mac 的设想一样
 Dialogue: 0,1:13:46.39,1:13:50.96,中文对白,,0,0,52,,我也可以让窗口重叠放置并且同时打开许多个 app
@@ -3149,8 +2455,6 @@ Dialogue: 0,1:15:03.37,1:15:06.40,中文对白,,0,0,52,,聚焦适用于各种各
 Dialogue: 0,1:15:06.44,1:15:09.47,中文对白,,0,0,52,,比如可以用来快速打开 app 或者开始搜索等
 Dialogue: 0,1:15:09.51,1:15:12.47,中文对白,,0,0,52,,现在你可以通过快速查看来了解搜索结果
 Dialogue: 0,1:15:12.51,1:15:14.58,中文对白,,0,0,52,,并且只需要轻按空格键就可以
-Dialogue: 0,1:15:14.61,1:15:16.61,中文对白,,0,0,52,,聚焦现在也可以用来查找照片
-Dialogue: 0,1:15:16.65,1:15:20.52,中文对白,,0,0,52,,从你的照片图库整个系统以及网络上来查找
 Dialogue: 0,1:15:20.55,1:15:24.79,中文对白,,0,0,52,,使用实况文本你也可以搜索图片中的文字
 Dialogue: 0,1:15:24.82,1:15:28.28,中文对白,,0,0,52,,还可以直接通过聚焦启动计时器
 Dialogue: 0,1:15:28.61,1:15:30.93,中文对白,,0,0,52,,或者运行快捷方式等
@@ -3161,13 +2465,9 @@ Dialogue: 0,1:15:42.27,1:15:45.74,中文对白,,0,0,52,,聚焦也非常适合用
 Dialogue: 0,1:15:45.77,1:15:48.58,中文对白,,0,0,52,,商家还有体育运动
 Dialogue: 0,1:15:48.61,1:15:51.98,中文对白,,0,0,52,,直接从聚焦开展操作的功能和丰富的搜索结果
 Dialogue: 0,1:15:52.19,1:15:55.48,中文对白,,0,0,52,,也将会出现在 iOS 和 iPadOS 上
-Dialogue: 0,1:15:55.52,1:15:57.62,中文对白,,0,0,52,,说到 iOS
-Dialogue: 0,1:15:57.65,1:16:01.62,中文对白,,0,0,52,,我们想让访问聚焦更加容易
 Dialogue: 0,1:16:01.66,1:16:05.16,中文对白,,0,0,52,,所以我们把它添加到了主屏幕的底部
 Dialogue: 0,1:16:05.19,1:16:08.50,中文对白,,0,0,52,,只需要轻点一下你就可以用聚焦启动 app
 Dialogue: 0,1:16:08.53,1:16:11.33,中文对白,,0,0,52,,查找联系人或者开始搜索
-Dialogue: 0,1:16:11.37,1:16:15.44,中文对白,,0,0,52,,这些更新让聚焦更高效更快速地
-Dialogue: 0,1:16:15.47,1:16:17.44,中文对白,,0,0,52,,帮你找到需要的内容
 Dialogue: 0,1:16:17.47,1:16:22.81,中文对白,,0,0,52,,接下来让我们来聊一个我们很多人每天都会用来沟通交流的 app
 Dialogue: 0,1:16:22.85,1:16:25.51,中文对白,,0,0,52,,让 Darin 来告诉你们更多
 Dialogue: 0,1:16:27.82,1:16:30.89,中文对白,,0,0,52,,这个 app 当然是邮件 app
@@ -3184,8 +2484,6 @@ Dialogue: 0,1:16:59.52,1:17:01.58,中文对白,,0,0,52,,接下来我们来聊聊
 Dialogue: 0,1:17:01.62,1:17:05.49,中文对白,,0,0,52,,这是多年来我们对邮件 app 中的搜索功能做的最大一次改造
 Dialogue: 0,1:17:05.52,1:17:07.99,中文对白,,0,0,52,,我们利用了最新最先进的技术
 Dialogue: 0,1:17:08.28,1:17:10.43,中文对白,,0,0,52,,来提供更准确更全面的结果
-Dialogue: 0,1:17:10.46,1:17:11.93,中文对白,,0,0,52,,点进搜索的时候
-Dialogue: 0,1:17:11.96,1:17:16.10,中文对白,,0,0,52,,你会看到最近分享的文件、链接等等
 Dialogue: 0,1:17:16.13,1:17:17.47,中文对白,,0,0,52,,开始打字之后
 Dialogue: 0,1:17:17.50,1:17:20.97,中文对白,,0,0,52,,每打出一个字就能立即看到建议的结果
 Dialogue: 0,1:17:21.08,1:17:23.74,中文对白,,0,0,52,,如果你打错了字搜索也能比你更快一步
@@ -3202,8 +2500,6 @@ Dialogue: 0,1:17:53.60,1:17:56.51,中文对白,,0,0,52,,与其它浏览器相比
 Dialogue: 0,1:17:56.54,1:18:01.14,中文对白,,0,0,52,,当然 Safari 浏览器也是保护你网络隐私的先行者
 Dialogue: 0,1:18:01.18,1:18:03.45,中文对白,,0,0,52,,其中的智能防跟踪功能
 Dialogue: 0,1:18:03.48,1:18:04.91,中文对白,,0,0,52,,和隐私报告在时刻发挥它们的作用
-Dialogue: 0,1:18:04.95,1:18:09.22,中文对白,,0,0,52,,Safari 浏览器在引入关键的网络技术以提升每个人的网络体验方面
-Dialogue: 0,1:18:09.56,1:18:10.82,中文对白,,0,0,52,,有着悠久的历史
 Dialogue: 0,1:18:10.85,1:18:15.26,中文对白,,0,0,52,,Safari 浏览器对 HTML5 的开创性支持优化了网络上的视频体验
 Dialogue: 0,1:18:15.29,1:18:19.73,中文对白,,0,0,52,,让视频播放的质量更高还增加了电池续航时间
 Dialogue: 0,1:18:19.76,1:18:23.03,中文对白,,0,0,52,,并且 Safari 浏览器持续为网络开发者
@@ -3214,8 +2510,6 @@ Dialogue: 0,1:18:31.11,1:18:34.51,中文对白,,0,0,52,,以及对新的推送通
 Dialogue: 0,1:18:34.54,1:18:38.91,中文对白,,0,0,52,,这些更新为我们的用户带来了更身临其境也更引人入胜的网络内容
 Dialogue: 0,1:18:38.95,1:18:42.95,中文对白,,0,0,52,,现在 Safari 浏览器还带来了能与其他人分享你最爱内容的新方法
 Dialogue: 0,1:18:42.99,1:18:45.59,中文对白,,0,0,52,,共享标签页组
-Dialogue: 0,1:18:45.62,1:18:49.29,中文对白,,0,0,52,,无论你是在和朋友计划旅行还是和你的伴侣选购沙发
-Dialogue: 0,1:18:49.62,1:18:52.99,中文对白,,0,0,52,,都可以把所有的标签页分享在一处
 Dialogue: 0,1:18:52.13,1:18:55.86,中文对白,,0,0,52,,而如果他们也找到了不错的内容他们也可以添加标签页
 Dialogue: 0,1:18:55.90,1:18:59.72,中文对白,,0,0,52,,你可以实时查看你的朋友们正在浏览的标签页
 Dialogue: 0,1:18:59.10,1:19:02.47,中文对白,,0,0,52,,并且通过内置的协作功能你们也能
@@ -3245,7 +2539,6 @@ Dialogue: 0,1:20:10.84,1:20:14.14,中文对白,,0,0,52,,所以黑客无法诱使
 Dialogue: 0,1:20:14.18,1:20:18.38,中文对白,,0,0,52,,并且因为网络服务器上没有储存任何私密信息通行密钥也不会被泄露
 Dialogue: 0,1:20:18.41,1:20:22.78,中文对白,,0,0,52,,我们设计的通行密钥可以在 app 里轻松使用就像在网页上一样
 Dialogue: 0,1:20:22.82,1:20:27.46,中文对白,,0,0,52,,用 iCloud 钥匙串就可以把通行密钥在你的 Apple 设备上安全同步
-Dialogue: 0,1:20:27.49,1:20:33.93,中文对白,,0,0,52,,并且可以在 Mac iPhone、iPad 和 Apple TV 上即时使用
 Dialogue: 0,1:20:33.96,1:20:35.66,中文对白,,0,0,52,,我们还和 FIDO alliance 中
 Dialogue: 0,1:20:35.70,1:20:38.10,中文对白,,0,0,52,,包括谷歌和微软等合作
 Dialogue: 0,1:20:38.13,1:20:42.14,中文对白,,0,0,52,,以保证通行密钥能在不同平台间无缝使用
@@ -3256,8 +2549,6 @@ Dialogue: 0,1:20:51.98,1:20:55.72,中文对白,,0,0,52,,我们期待和开发者
 Dialogue: 0,1:20:55.75,1:20:57.49,中文对白,,0,0,52,,这些就是关于 Safari 浏览器的更新
 Dialogue: 0,1:20:57.52,1:21:00.39,中文对白,,0,0,52,,现在交回到 Craig
 Dialogue: 0,1:21:00.42,1:21:02.79,中文对白,,0,0,52,,我们相信这些对邮件 app 和 Safari 浏览器的更新
-Dialogue: 0,1:21:02.82,1:21:04.13,中文对白,,0,0,52,,可以帮你提高工作效率
-Dialogue: 0,1:21:04.16,1:21:07.43,中文对白,,0,0,52,,并让你以更安全的新方式浏览网页
 Dialogue: 0,1:21:07.46,1:21:11.77,中文对白,,0,0,52,,下面让我们来聊聊有趣的游戏部分
 Dialogue: 0,1:21:11.80,1:21:15.37,中文对白,,0,0,52,,我们正处在一个交叉点上
 Dialogue: 0,1:21:15.40,1:21:19.21,中文对白,,0,0,52,,一方面 Apple 芯片改变了一切
@@ -3265,8 +2556,6 @@ Dialogue: 0,1:21:19.24,1:21:23.65,中文对白,,0,0,52,,它把所有 Mac 的图�
 Dialogue: 0,1:21:23.68,1:21:28.32,中文对白,,0,0,52,,即使是要求最高的游戏在 Mac 上也能轻松运行
 Dialogue: 0,1:21:28.35,1:21:31.62,中文对白,,0,0,52,,另一方面 Mac 的销量节节升高
 Dialogue: 0,1:21:31.65,1:21:36.46,中文对白,,0,0,52,,所以对于游戏开发者来说 Mac 带来了大量且不断增加的机会
-Dialogue: 0,1:21:36.49,1:21:40.33,中文对白,,0,0,52,,而且我们采用了统一的芯片架构
-Dialogue: 0,1:21:40.36,1:21:43.63,中文对白,,0,0,52,,从 iPhone 和 iPad 直到 M1 Ultra 芯片
 Dialogue: 0,1:21:43.67,1:21:47.84,中文对白,,0,0,52,,游戏开发人员可以在整条产品线上
 Dialogue: 0,1:21:47.87,1:21:49.81,中文对白,,0,0,52,,扩展他们游戏的质量和性能
 Dialogue: 0,1:21:49.84,1:21:55.14,中文对白,,0,0,52,,另一个关于游戏体验的关键部分是为其提供支持的软件
@@ -3304,34 +2593,6 @@ Dialogue: 0,1:23:29.14,1:23:31.47,中文对白,,0,0,52,,Resident Evil Village �
 Dialogue: 0,1:23:31.51,1:23:33.74,中文对白,,0,0,52,,我们非常高兴它即将登陆 Mac
 Dialogue: 0,1:23:33.78,1:23:37.11,中文对白,,0,0,52,,接下来请 Capcom 高级技术研究部的经理
 Dialogue: 0,1:23:37.15,1:23:41.21,中文对白,,0,0,52,,Ijuin 先生来为你介绍更多吧
-Dialogue: 0,1:23:41.54,1:23:46.29,中文对白,,0,0,52,,♪♪
-Dialogue: 0,1:23:46.32,1:23:49.89,中文对白,,0,0,52,,Resident Evil Village 一经公布就成为了一种定义游戏类型的游戏
-Dialogue: 0,1:23:49.93,1:23:53.53,中文对白,,0,0,52,,为玩家带来了激动人心的有趣体验
-Dialogue: 0,1:23:53.56,1:23:57.43,中文对白,,0,0,52,,时至今日这个系列依然在同类游戏中最受欢迎
-Dialogue: 0,1:23:58.20,1:24:02.27,中文对白,,0,0,52,,所以我们非常高兴能为
-Dialogue: 0,1:24:02.30,1:24:07.68,中文对白,,0,0,52,,搭载 Apple 芯片的 Mac 产品线带来我们最新的游戏
-Dialogue: 0,1:24:07.71,1:24:11.61,中文对白,,0,0,52,,得益于 Apple 芯片 Mac 如今具有超棒的性能
-Dialogue: 0,1:24:11.65,1:24:15.58,中文对白,,0,0,52,,是一个出众的游戏平台
-Dialogue: 0,1:24:15.62,1:24:17.95,中文对白,,0,0,52,,并且凭借我们对新 Metal 3 的支持
-Dialogue: 0,1:24:17.99,1:24:22.19,中文对白,,0,0,52,,从 MacBook Air 到速度极快的 Mac Studio
-Dialogue: 0,1:24:22.22,1:24:28.50,中文对白,,0,0,52,,我们的游戏在 Apple 芯片上大放异彩
-Dialogue: 0,1:24:29.26,1:24:35.17,中文对白,,0,0,52,,你可以看到我们可以非常流畅地在这些美到惊心动魄的场景中移动
-Dialogue: 0,1:24:35.20,1:24:41.38,中文对白,,0,0,52,,我们在这里使用了高质量纹理几何图形和复杂的着色器
-Dialogue: 0,1:24:42.24,1:24:44.21,中文对白,,0,0,52,,借助 MetalFX 上采样
-Dialogue: 0,1:24:44.25,1:24:48.52,中文对白,,0,0,52,,我们可以在整个产品线上呈现绝佳的高分辨率视觉效果
-Dialogue: 0,1:24:48.88,1:24:53.36,中文对白,,0,0,52,,MacBook Air 够以 1080p 轻松运行
-Dialogue: 0,1:24:53.39,1:24:59.13,中文对白,,0,0,52,,Mac Studio 也可以带来的惊人 4K 体验
-Dialogue: 0,1:24:59.86,1:25:04.10,中文对白,,0,0,52,,从前只有高性能游戏主机和游戏电脑
-Dialogue: 0,1:25:04.13,1:25:08.75,中文对白,,0,0,52,,可以做到这一点
-Dialogue: 0,1:25:08.10,1:25:14.78,中文对白,,0,0,52,,但现在我们把它引入了每一台由 Apple 芯片驱动的 Mac 上
-Dialogue: 0,1:25:14.81,1:25:19.95,中文对白,,0,0,52,,我们对这些全新 Mac 能够实现的真实感惊叹不已
-Dialogue: 0,1:25:20.72,1:25:26.46,中文对白,,0,0,52,,这些全新 Mac 产品可以毫不费力地处理好我们交给它们的任何任务
-Dialogue: 0,1:25:26.49,1:25:28.82,中文对白,,0,0,52,,这真是不可思议！
-Dialogue: 0,1:25:28.86,1:25:35.35,中文对白,,0,0,52,,我们迫不及待地想把这款游戏交到世界各地的 Mac 游戏玩家手中
-Dialogue: 0,1:25:35.68,1:25:39.33,中文对白,,0,0,52,,请期待今年晚些时候发布的 Mac 版本的 Resident Evil Village 吧
-Dialogue: 0,1:25:39.37,1:25:41.41,中文对白,,0,0,52,,这就是我今天全部的分享
-Dialogue: 0,1:25:41.74,1:25:42.94,中文对白,,0,0,52,,非常感谢
-Dialogue: 0,1:25:42.97,1:25:45.78,中文对白,,0,0,52,,现在让我们回到 Craig
 Dialogue: 0,1:25:45.11,1:25:47.48,中文对白,,0,0,52,,感谢 Ijuin 先生的发言
 Dialogue: 0,1:25:47.51,1:25:50.78,中文对白,,0,0,52,,接下来我们要聊的是连续互通
 Dialogue: 0,1:25:50.81,1:25:55.72,中文对白,,0,0,52,,连续互通能让你在使用不同设备时拥有无缝衔接的体验
@@ -3413,7 +2674,6 @@ Dialogue: 0,1:29:38.24,1:29:41.41,中文对白,,0,0,52,,还有神奇的连续互
 Dialogue: 0,1:29:41.44,1:29:45.98,中文对白,,0,0,52,,下面我们要谈到的是 iPadOS
 Dialogue: 0,1:29:46.19,1:29:54.27,中文对白,,0,0,52,,♪♪
 Dialogue: 0,1:30:00.40,1:30:02.30,中文对白,,0,0,52,,我们对 iPadOS 的愿景是
-Dialogue: 0,1:30:02.33,1:30:07.20,中文对白,,0,0,52,,创造一种基于 iOS 优点的独特体验
 Dialogue: 0,1:30:07.24,1:30:11.64,中文对白,,0,0,52,,例如保证安全性具有移动性和直观的触控优先界面
 Dialogue: 0,1:30:11.67,1:30:14.51,中文对白,,0,0,52,,它拥有 macOS 的强大功能
 Dialogue: 0,1:30:14.54,1:30:17.71,中文对白,,0,0,52,,比如多任务处理和触控板支持
@@ -3434,8 +2694,6 @@ Dialogue: 0,1:31:00.62,1:31:05.26,中文对白,,0,0,52,,并且所有模块都可
 Dialogue: 0,1:31:05.29,1:31:08.30,中文对白,,0,0,52,,而针对开发人员我们也会发布 WeatherKit
 Dialogue: 0,1:31:08.33,1:31:11.43,中文对白,,0,0,52,,这样他们就可以把天气信息内置在他们的 app 中了
 Dialogue: 0,1:31:11.47,1:31:15.77,中文对白,,0,0,52,,iPadOS 16 也包含了与他人协作的新方式
-Dialogue: 0,1:31:15.80,1:31:17.47,中文对白,,0,0,52,,功能更强大的 app
-Dialogue: 0,1:31:17.51,1:31:22.88,中文对白,,0,0,52,,还有为专业用户提供的能充分利用 M1 芯片的新功能
 Dialogue: 0,1:31:22.91,1:31:25.31,中文对白,,0,0,52,,那我们就先来了解协作
 Dialogue: 0,1:31:25.35,1:31:27.35,中文对白,,0,0,52,,它常常从信息 app 开始
 Dialogue: 0,1:31:27.38,1:31:29.62,中文对白,,0,0,52,,你被要求传输一份文件
@@ -3460,13 +2718,10 @@ Dialogue: 0,1:32:19.80,1:32:22.77,中文对白,,0,0,52,,而且最好的一点就
 Dialogue: 0,1:32:22.80,1:32:24.34,中文对白,,0,0,52,,都打出来
 Dialogue: 0,1:32:24.37,1:32:29.11,中文对白,,0,0,52,,只要我选择一个信息组每个人就自动被添加进来了
 Dialogue: 0,1:32:29.14,1:32:31.28,中文对白,,0,0,52,,让我们把文件发给大家吧
-Dialogue: 0,1:32:33.58,1:32:37.52,中文对白,,0,0,52,,这让你可以更加容易地与已经在沟通的人协作
 Dialogue: 0,1:32:37.55,1:32:40.82,中文对白,,0,0,52,,每个人都可以立即加入并且开始编辑
 Dialogue: 0,1:32:40.86,1:32:42.66,中文对白,,0,0,52,,就像你在这里看到的一样
 Dialogue: 0,1:32:42.69,1:32:44.83,中文对白,,0,0,52,,而在信息 app 的对话中
 Dialogue: 0,1:32:44.86,1:32:48.26,中文对白,,0,0,52,,我甚至能收到我可能错过的任何修改的通知
-Dialogue: 0,1:32:48.30,1:32:49.53,中文对白,,0,0,52,,当你用这种方式协作时
-Dialogue: 0,1:32:49.57,1:32:52.37,中文对白,,0,0,52,,你的文件就会和对话相关联
 Dialogue: 0,1:32:52.40,1:32:54.37,中文对白,,0,0,52,,小组会在工具栏中出现
 Dialogue: 0,1:32:54.40,1:32:57.91,中文对白,,0,0,52,,我可以直接从这里开始交流
 Dialogue: 0,1:32:57.94,1:33:00.31,中文对白,,0,0,52,,我可以随时回到信息 app 中的对话
@@ -3498,8 +2753,6 @@ Dialogue: 0,1:34:10.71,1:34:13.92,中文对白,,0,0,52,,把最新的想法添加
 Dialogue: 0,1:34:16.25,1:34:18.29,中文对白,,0,0,52,,看起来 Anne 正在更新文本
 Dialogue: 0,1:34:18.32,1:34:20.32,中文对白,,0,0,52,,而 Mindy 刚刚添加了一张图片
 Dialogue: 0,1:34:20.36,1:34:22.76,中文对白,,0,0,52,,这样我们就都准备好了
-Dialogue: 0,1:34:22.79,1:34:26.93,中文对白,,0,0,52,,那么以上就是对在 iPadOS 16 中
-Dialogue: 0,1:34:26.96,1:34:30.60,中文对白,,0,0,52,,用协作功能工作的简介
 Dialogue: 0,1:34:30.63,1:34:32.87,中文对白,,0,0,52,,除了 Pages 文稿和 Safari 浏览器
 Dialogue: 0,1:34:32.90,1:34:35.97,中文对白,,0,0,52,,这些新的协作功能还可以和其他各种 app 一起使用
 Dialogue: 0,1:34:36.09,1:34:38.14,中文对白,,0,0,52,,比如备忘录和 Keynote 讲演
@@ -3508,19 +2761,13 @@ Dialogue: 0,1:34:42.64,1:34:47.35,中文对白,,0,0,52,,这些功能也会添加
 Dialogue: 0,1:34:47.38,1:34:49.69,中文对白,,0,0,52,,当然在实时协作时
 Dialogue: 0,1:34:49.72,1:34:52.22,中文对白,,0,0,52,,有时你会需要一个不受限的空间
 Dialogue: 0,1:34:52.25,1:34:54.89,中文对白,,0,0,52,,用来头脑风暴捕捉灵感
-Dialogue: 0,1:34:54.92,1:34:58.66,中文对白,,0,0,52,,所以今天就让你先睹为快一个叫做 Freeform 的全新 app
-Dialogue: 0,1:34:58.69,1:35:01.60,中文对白,,0,0,52,,它会在今年晚些时候发布
 Dialogue: 0,1:35:01.63,1:35:04.40,中文对白,,0,0,52,,让 Elizabeth 为你详细介绍吧
 Dialogue: 0,1:35:07.57,1:35:10.57,中文对白,,0,0,52,,我们有各种各样的精彩方式来达成协作
 Dialogue: 0,1:35:10.61,1:35:13.31,中文对白,,0,0,52,,但是直到今日你还是没有一个空间可以用来工作
 Dialogue: 0,1:35:13.34,1:35:16.45,中文对白,,0,0,52,,用来开展小组会议规划项目
 Dialogue: 0,1:35:16.48,1:35:18.48,中文对白,,0,0,52,,家庭装修或者完成学校作业等等
 Dialogue: 0,1:35:18.51,1:35:20.82,中文对白,,0,0,52,,现在即使你正在 FaceTime 通话中
-Dialogue: 0,1:35:20.85,1:35:21.85,中文对白,,0,0,52,,只要轻点一下
-Dialogue: 0,1:35:21.88,1:35:25.25,中文对白,,0,0,52,,你就可以在一个 Freeform board 中开始实时合作了
 Dialogue: 0,1:35:25.58,1:35:27.60,中文对白,,0,0,52,,你可以在画板上添加几乎任何东西
-Dialogue: 0,1:35:27.94,1:35:31.29,中文对白,,0,0,52,,它非常适合用来头脑风暴会议记笔记、共享文件
-Dialogue: 0,1:35:31.33,1:35:33.56,中文对白,,0,0,52,,或是和其他人一起创建图表
 Dialogue: 0,1:35:33.60,1:35:37.70,中文对白,,0,0,52,,它非常灵活多变唯一限制它的只有你的想象力
 Dialogue: 0,1:35:37.10,1:35:38.90,中文对白,,0,0,52,,当别人写下他们想法的时候
 Dialogue: 0,1:35:38.93,1:35:42.50,中文对白,,0,0,52,,你可以看到他们的光标在实时向你展示他们工作的位置
@@ -3543,10 +2790,6 @@ Dialogue: 0,1:36:28.78,1:36:30.69,中文对白,,0,0,52,,这就是 Freeform 的�
 Dialogue: 0,1:36:30.72,1:36:33.29,中文对白,,0,0,52,,交回给你 Craig
 Dialogue: 0,1:36:33.32,1:36:35.52,中文对白,,0,0,52,,Freeform 非常适合用来
 Dialogue: 0,1:36:35.56,1:36:37.39,中文对白,,0,0,52,,与他人集思广益
-Dialogue: 0,1:36:37.43,1:36:39.80,中文对白,,0,0,52,,而且今年晚些时候我们要把它
-Dialogue: 0,1:36:39.83,1:36:43.37,中文对白,,0,0,52,,引入 iPadOS、macOS 还有 iOS
-Dialogue: 0,1:36:43.40,1:36:46.77,中文对白,,0,0,52,,当然 iPad 的多用性意味着
-Dialogue: 0,1:36:46.80,1:36:50.81,中文对白,,0,0,52,,你可以让工作和游戏无缝衔接
 Dialogue: 0,1:36:50.84,1:36:53.78,中文对白,,0,0,52,,凭借它绚丽的显示屏和各种内置传感器
 Dialogue: 0,1:36:53.81,1:36:56.18,中文对白,,0,0,52,,还有对常用游戏手柄的支持
 Dialogue: 0,1:36:56.21,1:36:59.62,中文对白,,0,0,52,,iPad 带来了绝佳的游戏体验
@@ -3554,8 +2797,6 @@ Dialogue: 0,1:36:59.65,1:37:03.56,中文对白,,0,0,52,,并且 M1 芯片带来�
 Dialogue: 0,1:37:03.90,1:37:07.42,中文对白,,0,0,52,,为 Divinity Original Sin 2 这样的沉浸式游戏提供支持
 Dialogue: 0,1:37:07.46,1:37:11.33,中文对白,,0,0,52,,在 iPadOS 16 中我们还带来了对游戏的更新
 Dialogue: 0,1:37:11.36,1:37:13.46,中文对白,,0,0,52,,首先 Metal 3 为 iPad 带来了
-Dialogue: 0,1:37:13.50,1:37:18.97,中文对白,,0,0,52,,我们之前在 macOS 中讲到的相同的 MetalFX 上采样技术
-Dialogue: 0,1:37:19.06,1:37:21.64,中文对白,,0,0,52,,和快速资源加载 API
 Dialogue: 0,1:37:21.67,1:37:23.91,中文对白,,0,0,52,,还有新的 API
 Dialogue: 0,1:37:23.94,1:37:27.54,中文对白,,0,0,52,,可以让游戏在后台下载大型资源
 Dialogue: 0,1:37:27.58,1:37:32.15,中文对白,,0,0,52,,让你在下载的过程中也能执行多项任务
@@ -3576,8 +2817,6 @@ Dialogue: 0,1:38:15.96,1:38:19.80,中文对白,,0,0,52,,Game Center 一直都支
 Dialogue: 0,1:38:19.83,1:38:24.10,中文对白,,0,0,52,,现在同播共享让加入游戏开始联机变得非常容易
 Dialogue: 0,1:38:24.13,1:38:26.47,中文对白,,0,0,52,,在 Game Center 的多人游戏中
 Dialogue: 0,1:38:26.50,1:38:31.11,中文对白,,0,0,52,,只要开启同播共享就可以邀请你的朋友来加入
-Dialogue: 0,1:38:31.14,1:38:33.11,中文对白,,0,0,52,,这些 Game Center 的新功能
-Dialogue: 0,1:38:33.14,1:38:37.11,中文对白,,0,0,52,,将于今年的晚些时候在 iPadOS 16 的更新中出现
 Dialogue: 0,1:38:37.15,1:38:41.88,中文对白,,0,0,52,,我们也会把它引入 iOS 和 macOS 里
 Dialogue: 0,1:38:41.12,1:38:45.35,中文对白,,0,0,52,,iPad 的多用性让它能用来做各种各样的事
 Dialogue: 0,1:38:45.39,1:38:48.26,中文对白,,0,0,52,,而其中有很大一部分都是 app 做到的
@@ -3624,7 +2863,6 @@ Dialogue: 0,1:40:54.12,1:40:57.62,中文对白,,0,0,52,,参考模式都能为你
 Dialogue: 0,1:40:57.65,1:40:59.29,中文对白,,0,0,52,,提供统一的参考工作流程
 Dialogue: 0,1:40:59.32,1:41:04.39,中文对白,,0,0,52,,让 iPad Pro 成为创意人士不可或缺的工具
 Dialogue: 0,1:41:04.43,1:41:07.73,中文对白,,0,0,52,,现在我想要来聊聊最新的 iPad Pro 和 iPad Air 中
-Dialogue: 0,1:41:07.76,1:41:14.37,中文对白,,0,0,52,,M1 芯片的性能所带来的一系列功能
 Dialogue: 0,1:41:14.40,1:41:19.88,中文对白,,0,0,52,,这些功能是为那些将 iPad 的多用性发挥到极致的人准备的
 Dialogue: 0,1:41:19.91,1:41:22.91,中文对白,,0,0,52,,专业人士总会希望有更多工作空间
 Dialogue: 0,1:41:22.95,1:41:26.25,中文对白,,0,0,52,,所以我们增加了一个新的显示缩放设置
@@ -3642,8 +2880,6 @@ Dialogue: 0,1:41:58.78,1:42:02.72,中文对白,,0,0,52,,有了显示缩放和虚
 Dialogue: 0,1:42:02.75,1:42:07.29,中文对白,,0,0,52,,我们就为在用户体验方面实现飞跃奠定了基础
 Dialogue: 0,1:42:07.32,1:42:12.33,中文对白,,0,0,52,,它可以改变我们的专业用户在 iPad 上工作的方式
 Dialogue: 0,1:42:12.36,1:42:14.80,中文对白,,0,0,52,,所以我们把台前调度
-Dialogue: 0,1:42:14.83,1:42:18.53,中文对白,,0,0,52,,就是你刚刚在 macOS 上看到的最新窗口系统
-Dialogue: 0,1:42:18.57,1:42:20.40,中文对白,,0,0,52,,引入到了 iPadOS
 Dialogue: 0,1:42:20.73,1:42:24.14,中文对白,,0,0,52,,台前调度把 iPad 上的多任务处理提升到了一个全新的水平
 Dialogue: 0,1:42:24.17,1:42:29.41,中文对白,,0,0,52,,让它变得更加快捷也解锁了对外接显示器的全面支持
 Dialogue: 0,1:42:29.44,1:42:31.21,中文对白,,0,0,52,,我现在就展示给你们看
@@ -3666,8 +2902,6 @@ Dialogue: 0,1:43:21.93,1:43:25.37,中文对白,,0,0,52,,如果我把信息 app �
 Dialogue: 0,1:43:25.40,1:43:29.91,中文对白,,0,0,52,,台前调度也会自动为日历 app 改变位置
 Dialogue: 0,1:43:29.94,1:43:32.77,中文对白,,0,0,52,,而且就像你之前看过的那样我可以调整窗口的大小
 Dialogue: 0,1:43:32.81,1:43:36.38,中文对白,,0,0,52,,按照我想要的方式安排所有内容
-Dialogue: 0,1:43:36.41,1:43:40.12,中文对白,,0,0,52,,而当我把 iPad 连接到外接显示器的时候
-Dialogue: 0,1:43:40.15,1:43:42.12,中文对白,,0,0,52,,这些功能会更强大
 Dialogue: 0,1:43:43.85,1:43:47.26,中文对白,,0,0,52,,我的墙纸可以完美地填充整个屏幕
 Dialogue: 0,1:43:47.29,1:43:51.98,中文对白,,0,0,52,,我也可以把光标从 iPad 移动到屏幕上
 Dialogue: 0,1:43:51.13,1:43:55.16,中文对白,,0,0,52,,我在这个显示屏上也可以访问程序坞现在让我们打开 Keynote 讲演
@@ -3705,7 +2939,6 @@ Dialogue: 0,1:45:35.46,1:45:38.17,中文对白,,0,0,52,,这真是激动人心的
 Dialogue: 0,1:45:38.20,1:45:41.80,中文对白,,0,0,52,,我们推出了重新设计过的全新 MacBook Air
 Dialogue: 0,1:45:41.84,1:45:45.57,中文对白,,0,0,52,,它拥有超薄机身 Liquid 视网膜显示屏
 Dialogue: 0,1:45:45.61,1:45:48.38,中文对白,,0,0,52,,MagSafe 和精美的新外观
-Dialogue: 0,1:45:48.41,1:45:53.92,中文对白,,0,0,52,,并由我们新一代 Apple 芯片 M2 驱动
 Dialogue: 0,1:45:53.95,1:45:57.45,中文对白,,0,0,52,,还有同样由 M2 芯片驱动的
 Dialogue: 0,1:45:57.49,1:46:00.42,中文对白,,0,0,52,,强大的全新 13 英寸 MacBook Pro
 Dialogue: 0,1:46:00.46,1:46:04.96,中文对白,,0,0,52,,当然还有我们各大软件平台的进步带来各种令人惊喜的新方式
@@ -3729,14 +2962,5 @@ Dialogue: 0,1:47:07.29,1:47:10.83,中文对白,,0,0,52,,所有这些活动都为
 Dialogue: 0,1:47:10.86,1:47:14.10,中文对白,,0,0,52,,让大家在 WWDC 收获更多
 Dialogue: 0,1:47:14.13,1:47:18.90,中文对白,,0,0,52,,感谢大家的参与希望我们的 WWDC 取得圆满成功！
 Dialogue: 0,1:47:18.93,1:47:26.94,中文对白,,0,0,52,,♪♪
-Dialogue: 0,1:47:31.95,1:47:37.35,中文对白,,0,0,52,,♪♪
-Dialogue: 0,1:47:37.39,1:47:41.52,中文对白,,0,0,52,,制作期间的健康与安全事项
-Dialogue: 0,1:47:41.56,1:47:44.56,中文对白,,0,0,52,,为讲者及演职人员提供每日健康筛查和检测
-Dialogue: 0,1:47:44.59,1:47:47.60,中文对白,,0,0,52,,严格保持社交距离并积极监督遵守情况
-Dialogue: 0,1:47:47.63,1:47:50.63,中文对白,,0,0,52,,除了正在被拍摄的讲者及参演人员外所有人均获发并佩戴了口罩
 Dialogue: 0,1:47:49.97,1:47:57.97,中文对白,,0,0,52,,♪♪
-Dialogue: 0,1:47:50.67,1:47:53.67,中文对白,,0,0,52,,拍摄过程中现场只有讲者及演职人员
-Dialogue: 0,1:47:53.70,1:47:56.71,中文对白,,0,0,52,,当有多名讲者或演职人员在同一现场时按需求采取了额外措施
-Dialogue: 0,1:47:56.74,1:48:02.74,中文对白,,0,0,52,,制作场地均定期进行彻底消毒
 Dialogue: 0,1:48:07.98,1:48:11.59,中文对白,,0,0,52,,♪♪
-Dialogue: 0,1:48:09.42,1:48:22.70,中文对白,,0,0,52,,Apple 活动 Apple Park  Cupertino
