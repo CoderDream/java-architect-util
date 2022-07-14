@@ -34,7 +34,7 @@ public class HelloController {
     @ApiOperation("Hello控制类")
     @RequestMapping(value = "/error", method = {RequestMethod.POST}) // 指定方法，只显示1种请求类型
     public String getError(@ApiParam("用户名") String username) {
-        int i = 5 / 0;
+    //    int i = 5 / 0;
         return "hello" + username;
     }
 

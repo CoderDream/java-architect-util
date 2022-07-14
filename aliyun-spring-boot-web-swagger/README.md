@@ -23,6 +23,39 @@ mvn dependency:resolve -Dclassifier=sources
 
 
 
+### springboot @value 默认值_SpringBoot整合Swagger2，再也不用维护接口文档了！
+
+```java
+@RestController
+@Api(tags = "用户管理相关接口")
+@RequestMapping("/user")
+public class UserController {
+    @PostMapping("/")
+    @ApiOperation("添加用户的接口")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "username", value = "用户名", defaultValue = "李四"),
+            @ApiImplicitParam(name = "address", value = "用户地址", defaultValue = "深圳", required = true)
+    }
+    )
+    public RespBean addUser(String username, @RequestParam(required = true) String address) {
+        return new RespBean();
+    }
+    @GetMapping("/")
+    @ApiOperation("根据id查询用户的接口")
+    @ApiImplicitParam(name = "id", value = "用户id", defaultValue = "99", required = true)
+    public User getUserById(@PathVariable Integer id) {
+        User user = new User();
+        user.setId(id);
+        return user;
+    }
+    @PutMapping("/{id}")
+    @ApiOperation("根据id更新用户的接口")
+    public User updateUserById(@RequestBody User user) {
+        return user;
+    }
+}
+```
+
 
 
 
@@ -32,6 +65,8 @@ mvn dependency:resolve -Dclassifier=sources
 3.[超详细！使用swagger自动生成Api文档（swagger-ui）](https://blog.csdn.net/zhanggonglalala/article/details/98070986)
 4.[Swagger UI 详细讲解(Swagger3)](https://blog.csdn.net/ljcgit/article/details/86608039)
 5.[SpringBoot教程(十六) | SpringBoot集成swagger（全网最全）](https://blog.csdn.net/lsqingfeng/article/details/123678701)
+
+6.[springboot @value 默认值_SpringBoot整合Swagger2，再也不用维护接口文档了！](https://blog.csdn.net/weixin_39757122/article/details/111395501)
 
 
 

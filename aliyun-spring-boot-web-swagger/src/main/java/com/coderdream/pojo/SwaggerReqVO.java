@@ -3,6 +3,7 @@ package com.coderdream.pojo;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import org.springframework.boot.context.properties.bind.DefaultValue;
 
 /**
  * @className: SwaggerReqVO
