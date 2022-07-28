@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-28T09:32:07.095Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="vLQ1-VD7nVAtG3vHtVwl" version="20.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-28T09:34:38.839Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="b0y5aqqKb9TgY-bovyzG" version="20.2.2" type="github">
   <diagram id="Inc5CD8TiMSoGm5gabNw" name="框架图">
     <mxGraphModel dx="1038" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7,7 +7,7 @@
         <mxCell id="yZOYyDwGsRFCXUh7RQCU-1" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="50" y="50" width="150" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="yZOYyDwGsRFCXUh7RQCU-2" value="文件夹管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;verticalAlign=top;" vertex="1" parent="yZOYyDwGsRFCXUh7RQCU-1">
+        <mxCell id="yZOYyDwGsRFCXUh7RQCU-2" value="规则管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;verticalAlign=top;" vertex="1" parent="yZOYyDwGsRFCXUh7RQCU-1">
           <mxGeometry width="150" height="90" as="geometry" />
         </mxCell>
         <mxCell id="yZOYyDwGsRFCXUh7RQCU-3" value="重命名" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="yZOYyDwGsRFCXUh7RQCU-1">
@@ -23,7 +23,7 @@
           <mxGeometry x="82.8308695652174" y="29.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
         </mxCell>
         <mxCell id="yZOYyDwGsRFCXUh7RQCU-7" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="264" y="40" width="150" height="160" as="geometry" />
+          <mxGeometry x="440" y="50" width="150" height="160" as="geometry" />
         </mxCell>
         <mxCell id="yZOYyDwGsRFCXUh7RQCU-8" value="文件管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B9E0A5;verticalAlign=top;" vertex="1" parent="yZOYyDwGsRFCXUh7RQCU-7">
           <mxGeometry width="150" height="160" as="geometry" />
@@ -87,6 +87,24 @@
         </mxCell>
         <mxCell id="yZOYyDwGsRFCXUh7RQCU-28" value="文件系统" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="yZOYyDwGsRFCXUh7RQCU-25">
           <mxGeometry x="77.8308695652174" y="29.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="yZOYyDwGsRFCXUh7RQCU-29" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="230" y="50" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yZOYyDwGsRFCXUh7RQCU-30" value="标准管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;verticalAlign=top;" vertex="1" parent="yZOYyDwGsRFCXUh7RQCU-29">
+          <mxGeometry width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yZOYyDwGsRFCXUh7RQCU-31" value="重命名" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="yZOYyDwGsRFCXUh7RQCU-29">
+          <mxGeometry x="12.396086956521735" y="60.951708683473385" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="yZOYyDwGsRFCXUh7RQCU-32" value="移动" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="yZOYyDwGsRFCXUh7RQCU-29">
+          <mxGeometry x="82.8308695652174" y="60.951708683473385" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="yZOYyDwGsRFCXUh7RQCU-33" value="新建" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="yZOYyDwGsRFCXUh7RQCU-29">
+          <mxGeometry x="12.396086956521735" y="29.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="yZOYyDwGsRFCXUh7RQCU-34" value="删除" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="yZOYyDwGsRFCXUh7RQCU-29">
+          <mxGeometry x="82.8308695652174" y="29.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
