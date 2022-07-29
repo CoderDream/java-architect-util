@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-29T03:20:32.382Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="ZMB2xHCRk8bj9Ke1XzSF" version="20.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-29T03:22:04.526Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="9lfTsnM3P_76VPuGjxfg" version="20.2.2" type="github">
   <diagram id="Inc5CD8TiMSoGm5gabNw" name="框架图">
     <mxGraphModel dx="1038" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -23,16 +23,19 @@
           <mxGeometry x="82.8308695652174" y="29.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
         </mxCell>
         <mxCell id="yZOYyDwGsRFCXUh7RQCU-7" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="414" y="60" width="150" height="70" as="geometry" />
+          <mxGeometry x="414" y="50" width="150" height="100" as="geometry" />
         </mxCell>
         <mxCell id="yZOYyDwGsRFCXUh7RQCU-8" value="数据融合更新" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B9E0A5;verticalAlign=top;" parent="yZOYyDwGsRFCXUh7RQCU-7" vertex="1">
-          <mxGeometry width="150" height="70" as="geometry" />
+          <mxGeometry width="150" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="yZOYyDwGsRFCXUh7RQCU-16" value="更新机制" style="rounded=0;whiteSpace=wrap;html=1;" parent="yZOYyDwGsRFCXUh7RQCU-7" vertex="1">
-          <mxGeometry x="15.996086956521708" y="38.57482668067223" width="54.78260869565218" height="22.053571428571423" as="geometry" />
+        <mxCell id="SwMmMOj1wZBfgNss2GQy-7" value="更新频率" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="yZOYyDwGsRFCXUh7RQCU-7">
+          <mxGeometry x="16.0008695652175" y="70.00482668067221" width="54.78260869565218" height="22.053571428571423" as="geometry" />
         </mxCell>
         <mxCell id="yZOYyDwGsRFCXUh7RQCU-10" value="更新流程" style="rounded=0;whiteSpace=wrap;html=1;" parent="yZOYyDwGsRFCXUh7RQCU-7" vertex="1">
-          <mxGeometry x="86.0008695652175" y="38.5748266806722" width="54.78260869565218" height="22.053571428571423" as="geometry" />
+          <mxGeometry x="86.0008695652175" y="38.97482668067221" width="54.78260869565218" height="22.053571428571423" as="geometry" />
+        </mxCell>
+        <mxCell id="yZOYyDwGsRFCXUh7RQCU-16" value="更新机制" style="rounded=0;whiteSpace=wrap;html=1;" parent="yZOYyDwGsRFCXUh7RQCU-7" vertex="1">
+          <mxGeometry x="15.996086956521708" y="38.97482668067224" width="54.78260869565218" height="22.053571428571423" as="geometry" />
         </mxCell>
         <mxCell id="yZOYyDwGsRFCXUh7RQCU-17" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="230" y="250" width="200" height="140" as="geometry" />
