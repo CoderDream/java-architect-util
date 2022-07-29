@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-29T03:24:24.106Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="vhf6rPbSFj_nk2FO2CeO" version="20.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-29T03:43:25.353Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="EnXJmz-DRC16xtQBwABN" version="20.2.2" type="github">
   <diagram id="Inc5CD8TiMSoGm5gabNw" name="框架图">
     <mxGraphModel dx="1038" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -38,7 +38,7 @@
           <mxGeometry x="15.996086956521708" y="38.97482668067224" width="54.78260869565218" height="22.053571428571423" as="geometry" />
         </mxCell>
         <mxCell id="yZOYyDwGsRFCXUh7RQCU-17" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="230" y="250" width="200" height="140" as="geometry" />
+          <mxGeometry x="60" y="220" width="200" height="140" as="geometry" />
         </mxCell>
         <mxCell id="yZOYyDwGsRFCXUh7RQCU-18" value="数据质量检查" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B9E0A5;verticalAlign=top;" parent="yZOYyDwGsRFCXUh7RQCU-17" vertex="1">
           <mxGeometry width="200" height="140" as="geometry" />
@@ -72,6 +72,15 @@
         </mxCell>
         <mxCell id="yZOYyDwGsRFCXUh7RQCU-34" value="删除" style="rounded=0;whiteSpace=wrap;html=1;" parent="yZOYyDwGsRFCXUh7RQCU-29" vertex="1">
           <mxGeometry x="82.8308695652174" y="29.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="SwMmMOj1wZBfgNss2GQy-12" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="330" y="220" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="SwMmMOj1wZBfgNss2GQy-13" value="质量监控" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B9E0A5;verticalAlign=top;" vertex="1" parent="SwMmMOj1wZBfgNss2GQy-12">
+          <mxGeometry width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="SwMmMOj1wZBfgNss2GQy-14" value="质检结果" style="rounded=0;html=1;imageHeight=24;imageWidth=28;" vertex="1" parent="SwMmMOj1wZBfgNss2GQy-12">
+          <mxGeometry x="12.399999999999977" y="41.22" width="82.6" height="18.57" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
