@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-29T03:23:40.686Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="KpYX4WCZp7408L_Z29xg" version="20.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-29T03:24:24.106Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="vhf6rPbSFj_nk2FO2CeO" version="20.2.2" type="github">
   <diagram id="Inc5CD8TiMSoGm5gabNw" name="框架图">
     <mxGraphModel dx="1038" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -47,16 +47,10 @@
           <mxGeometry x="12.399999999999977" y="41.22" width="82.6" height="18.57" as="geometry" />
         </mxCell>
         <mxCell id="yZOYyDwGsRFCXUh7RQCU-20" value="属性检查" style="rounded=0;html=1;imageHeight=24;imageWidth=28;" parent="yZOYyDwGsRFCXUh7RQCU-17" vertex="1">
-          <mxGeometry x="12.399999999999977" y="70.92999999999999" width="82.6" height="18.57" as="geometry" />
+          <mxGeometry x="12.399999999999977" y="89.49" width="82.6" height="18.57" as="geometry" />
         </mxCell>
-        <mxCell id="yZOYyDwGsRFCXUh7RQCU-21" value="倾斜摄影服务" style="rounded=0;html=1;imageHeight=24;imageWidth=28;" parent="yZOYyDwGsRFCXUh7RQCU-17" vertex="1">
-          <mxGeometry x="105" y="70.92" width="82.6" height="18.57" as="geometry" />
-        </mxCell>
-        <mxCell id="yZOYyDwGsRFCXUh7RQCU-22" value="模型服务" style="rounded=0;html=1;imageHeight=24;imageWidth=28;" parent="yZOYyDwGsRFCXUh7RQCU-17" vertex="1">
-          <mxGeometry x="12.399999999999977" y="100.21000000000001" width="82.6" height="18.57" as="geometry" />
-        </mxCell>
-        <mxCell id="yZOYyDwGsRFCXUh7RQCU-23" value="BIM服务" style="rounded=0;html=1;imageHeight=24;imageWidth=28;" parent="yZOYyDwGsRFCXUh7RQCU-17" vertex="1">
-          <mxGeometry x="105" y="100.21000000000001" width="82.6" height="18.57" as="geometry" />
+        <mxCell id="yZOYyDwGsRFCXUh7RQCU-21" value="..." style="rounded=0;html=1;imageHeight=24;imageWidth=28;" parent="yZOYyDwGsRFCXUh7RQCU-17" vertex="1">
+          <mxGeometry x="105" y="89.49000000000001" width="82.6" height="18.57" as="geometry" />
         </mxCell>
         <mxCell id="yZOYyDwGsRFCXUh7RQCU-24" value="几何检查" style="rounded=0;html=1;imageHeight=24;imageWidth=28;" parent="yZOYyDwGsRFCXUh7RQCU-17" vertex="1">
           <mxGeometry x="105" y="41.219999999999985" width="82.6" height="18.57" as="geometry" />
