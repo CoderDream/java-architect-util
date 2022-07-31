@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-31T04:48:15.620Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="9Qm60yeMWV2VNt4Z-fIm" version="20.2.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-07-31T04:48:41.841Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="c2AjA6rwmw8-Q7zvbZXT" version="20.2.2" type="github" pages="2">
   <diagram id="Inc5CD8TiMSoGm5gabNw" name="框架图">
     <mxGraphModel dx="868" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -117,10 +117,10 @@
         <mxCell id="ucizx-cwFNvGZm101bCT-9" value="从主题表拾取" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ucizx-cwFNvGZm101bCT-7">
           <mxGeometry x="-1.7763568394002505e-15" y="60.95249999999999" width="81.11999999999999" height="18.570000000000004" as="geometry" />
         </mxCell>
-        <mxCell id="ucizx-cwFNvGZm101bCT-10" value="查询" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ucizx-cwFNvGZm101bCT-7">
+        <mxCell id="ucizx-cwFNvGZm101bCT-10" value="..." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ucizx-cwFNvGZm101bCT-7">
           <mxGeometry x="99.39704347826087" y="60.951708683473385" width="65.73913043478261" height="18.571428571428573" as="geometry" />
         </mxCell>
-        <mxCell id="ucizx-cwFNvGZm101bCT-11" value="新增" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ucizx-cwFNvGZm101bCT-7">
+        <mxCell id="ucizx-cwFNvGZm101bCT-11" value="增删改查" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ucizx-cwFNvGZm101bCT-7">
           <mxGeometry y="30.000000000000004" width="80" height="18.570000000000004" as="geometry" />
         </mxCell>
         <mxCell id="ucizx-cwFNvGZm101bCT-12" value="导入标准" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ucizx-cwFNvGZm101bCT-7">
