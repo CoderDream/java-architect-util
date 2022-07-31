@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-31T04:44:05.455Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="KF39K4cScfk_mGXA_3o5" version="20.2.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-07-31T04:44:46.466Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="2Ad7vTjJhjgrSrpgurxd" version="20.2.2" type="github" pages="2">
   <diagram id="Inc5CD8TiMSoGm5gabNw" name="框架图">
     <mxGraphModel dx="868" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -139,6 +139,36 @@
           <mxGeometry x="12.396086956521735" y="29.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
         </mxCell>
         <mxCell id="ucizx-cwFNvGZm101bCT-18" value="质检日志" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ucizx-cwFNvGZm101bCT-13">
+          <mxGeometry x="82.8308695652174" y="29.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="ucizx-cwFNvGZm101bCT-19" value="" style="group;fillColor=default;fillStyle=hatch;" vertex="1" connectable="0" parent="ucizx-cwFNvGZm101bCT-13">
+          <mxGeometry width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ucizx-cwFNvGZm101bCT-20" value="质检任务管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4E1F5;strokeColor=#d79b00;verticalAlign=top;" vertex="1" parent="ucizx-cwFNvGZm101bCT-19">
+          <mxGeometry width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ucizx-cwFNvGZm101bCT-21" value="..." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ucizx-cwFNvGZm101bCT-19">
+          <mxGeometry x="12.396086956521735" y="60.951708683473385" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="ucizx-cwFNvGZm101bCT-22" value="质检任务" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ucizx-cwFNvGZm101bCT-19">
+          <mxGeometry x="12.396086956521735" y="29.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="ucizx-cwFNvGZm101bCT-23" value="质检日志" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ucizx-cwFNvGZm101bCT-19">
+          <mxGeometry x="82.8308695652174" y="29.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="ucizx-cwFNvGZm101bCT-24" value="" style="group;fillColor=default;fillStyle=hatch;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="600" y="50" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ucizx-cwFNvGZm101bCT-25" value="质量监控管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4E1F5;strokeColor=#d79b00;verticalAlign=top;" vertex="1" parent="ucizx-cwFNvGZm101bCT-24">
+          <mxGeometry width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ucizx-cwFNvGZm101bCT-26" value="..." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ucizx-cwFNvGZm101bCT-24">
+          <mxGeometry x="12.396086956521735" y="60.951708683473385" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="ucizx-cwFNvGZm101bCT-27" value="质检任务" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ucizx-cwFNvGZm101bCT-24">
+          <mxGeometry x="12.396086956521735" y="29.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="ucizx-cwFNvGZm101bCT-28" value="质检日志" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ucizx-cwFNvGZm101bCT-24">
           <mxGeometry x="82.8308695652174" y="29.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
         </mxCell>
       </root>
