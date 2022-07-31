@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-31T04:45:21.163Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="ip0Jgmu_UTErtQ7eyIFl" version="20.2.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-07-31T04:45:31.719Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="ij9EH7zXRof-UQEY0FRK" version="20.2.2" type="github" pages="2">
   <diagram id="Inc5CD8TiMSoGm5gabNw" name="框架图">
     <mxGraphModel dx="868" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -159,7 +159,7 @@
         <mxCell id="ucizx-cwFNvGZm101bCT-24" value="" style="group;fillColor=default;fillStyle=hatch;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="600" y="50" width="150" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="ucizx-cwFNvGZm101bCT-25" value="质量监控管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4E1F5;strokeColor=#d79b00;verticalAlign=top;" vertex="1" parent="ucizx-cwFNvGZm101bCT-24">
+        <mxCell id="ucizx-cwFNvGZm101bCT-25" value="质量监控管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#33FF33;strokeColor=#d79b00;verticalAlign=top;" vertex="1" parent="ucizx-cwFNvGZm101bCT-24">
           <mxGeometry width="150" height="90" as="geometry" />
         </mxCell>
         <mxCell id="ucizx-cwFNvGZm101bCT-26" value="..." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ucizx-cwFNvGZm101bCT-24">
