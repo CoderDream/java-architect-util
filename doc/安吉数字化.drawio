@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-03T08:54:49.573Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="YB1dVzdJqpCNEm5onWiN" version="20.2.2" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2022-08-03T08:56:37.930Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="RD3eNv_aMFfyI4NQLIqV" version="20.2.2" type="github" pages="7">
   <diagram id="5Y488ag0M3OIHIzRHHl_" name="1.规范制度">
-    <mxGraphModel dx="1038" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -578,7 +578,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="288ceJT6Z5fN6UTRO30d" name="第 4 页">
-    <mxGraphModel dx="1038" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -592,7 +592,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Inc5CD8TiMSoGm5gabNw" name="框架图">
-    <mxGraphModel dx="1038" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -673,6 +673,9 @@
         </mxCell>
         <mxCell id="SwMmMOj1wZBfgNss2GQy-14" value="质检结果" style="rounded=0;html=1;imageHeight=24;imageWidth=28;" parent="SwMmMOj1wZBfgNss2GQy-12" vertex="1">
           <mxGeometry x="12.399999999999977" y="41.22" width="82.6" height="18.57" as="geometry" />
+        </mxCell>
+        <mxCell id="trvwkmAuutWAg9msUIxm-1" value="清洗规则设计、对比规则设计" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=#CCCCFF;" vertex="1" parent="1">
+          <mxGeometry x="40" y="15" width="180" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
