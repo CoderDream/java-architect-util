@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-03T02:54:45.130Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="Ro4u1HgCNGGrg1OnDnsR" version="20.2.2" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2022-08-03T02:56:52.298Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="VjGs6MdD_pGkJC2PO64h" version="20.2.2" type="github" pages="6">
   <diagram id="Inc5CD8TiMSoGm5gabNw" name="框架图">
     <mxGraphModel dx="1038" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -259,6 +259,42 @@
         </mxCell>
         <mxCell id="i6EQyejCQMpGGJypgrrh-13" value="服务使用统计分析" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="i6EQyejCQMpGGJypgrrh-25">
           <mxGeometry x="32" y="130" width="58" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KzY4xV-rusL3-fT6L1V9-0" value="" style="group" vertex="1" connectable="0" parent="uTPfO2yNEsCuI9Icvth1-1">
+          <mxGeometry x="260" y="440" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KzY4xV-rusL3-fT6L1V9-1" value="数据安全" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCE5FF;strokeColor=#d79b00;verticalAlign=top;" vertex="1" parent="KzY4xV-rusL3-fT6L1V9-0">
+          <mxGeometry width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KzY4xV-rusL3-fT6L1V9-2" value="数据备份" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KzY4xV-rusL3-fT6L1V9-0">
+          <mxGeometry x="12.396086956521735" y="60.951708683473385" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="KzY4xV-rusL3-fT6L1V9-3" value="数据加密" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KzY4xV-rusL3-fT6L1V9-0">
+          <mxGeometry x="82.8308695652174" y="60.951708683473385" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="KzY4xV-rusL3-fT6L1V9-4" value="日志管理" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KzY4xV-rusL3-fT6L1V9-0">
+          <mxGeometry x="12.396086956521735" y="29.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="KzY4xV-rusL3-fT6L1V9-5" value="权限管理" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KzY4xV-rusL3-fT6L1V9-0">
+          <mxGeometry x="82.8308695652174" y="29.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="KzY4xV-rusL3-fT6L1V9-6" value="" style="group" vertex="1" connectable="0" parent="uTPfO2yNEsCuI9Icvth1-1">
+          <mxGeometry x="50" y="440" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KzY4xV-rusL3-fT6L1V9-7" value="数据评价" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;verticalAlign=top;" vertex="1" parent="KzY4xV-rusL3-fT6L1V9-6">
+          <mxGeometry width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KzY4xV-rusL3-fT6L1V9-8" value="评价分析" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KzY4xV-rusL3-fT6L1V9-6">
+          <mxGeometry x="12.396086956521735" y="60.951708683473385" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="KzY4xV-rusL3-fT6L1V9-9" value="..." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KzY4xV-rusL3-fT6L1V9-6">
+          <mxGeometry x="82.8308695652174" y="60.951708683473385" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="KzY4xV-rusL3-fT6L1V9-10" value="模型管理" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KzY4xV-rusL3-fT6L1V9-6">
+          <mxGeometry x="12.396086956521735" y="29.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="KzY4xV-rusL3-fT6L1V9-11" value="评价报告" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KzY4xV-rusL3-fT6L1V9-6">
+          <mxGeometry x="82.8308695652174" y="29.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
