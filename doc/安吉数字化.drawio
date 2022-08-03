@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-03T02:40:36.477Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="9QakQeXSvCifnumngjiK" version="20.2.2" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2022-08-03T02:42:45.269Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="_g9lGihaU3TxF3_DABbC" version="20.2.2" type="github" pages="6">
   <diagram id="Inc5CD8TiMSoGm5gabNw" name="框架图">
     <mxGraphModel dx="1038" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -188,32 +188,8 @@
         <mxCell id="uTPfO2yNEsCuI9Icvth1-8" value="审核" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="uTPfO2yNEsCuI9Icvth1-2">
           <mxGeometry x="99.4" y="90" width="60.6" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="uTPfO2yNEsCuI9Icvth1-9" value="" style="group;fillColor=default;fillStyle=hatch;" vertex="1" connectable="0" parent="uTPfO2yNEsCuI9Icvth1-1">
-          <mxGeometry x="50" y="210" width="150" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="uTPfO2yNEsCuI9Icvth1-10" value="质检任务管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4E1F5;strokeColor=#d79b00;verticalAlign=top;" vertex="1" parent="uTPfO2yNEsCuI9Icvth1-9">
-          <mxGeometry width="150" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="uTPfO2yNEsCuI9Icvth1-11" value="..." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="uTPfO2yNEsCuI9Icvth1-9">
-          <mxGeometry x="12.396086956521735" y="60.951708683473385" width="54.78260869565218" height="18.57142857142857" as="geometry" />
-        </mxCell>
-        <mxCell id="uTPfO2yNEsCuI9Icvth1-12" value="质检任务" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="uTPfO2yNEsCuI9Icvth1-9">
-          <mxGeometry x="12.396086956521735" y="29.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
-        </mxCell>
-        <mxCell id="uTPfO2yNEsCuI9Icvth1-13" value="质检日志" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="uTPfO2yNEsCuI9Icvth1-9">
-          <mxGeometry x="82.8308695652174" y="29.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
-        </mxCell>
-        <mxCell id="uTPfO2yNEsCuI9Icvth1-14" value="" style="group;fillColor=default;fillStyle=hatch;" vertex="1" connectable="0" parent="uTPfO2yNEsCuI9Icvth1-9">
-          <mxGeometry width="150" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="uTPfO2yNEsCuI9Icvth1-15" value="数据安全标准" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4E1F5;strokeColor=#d79b00;verticalAlign=top;" vertex="1" parent="uTPfO2yNEsCuI9Icvth1-14">
-          <mxGeometry width="150" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="uTPfO2yNEsCuI9Icvth1-16" value="数据分类分级" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="uTPfO2yNEsCuI9Icvth1-14">
-          <mxGeometry x="12.4" y="30" width="77.6" height="18.57" as="geometry" />
-        </mxCell>
-        <mxCell id="uTPfO2yNEsCuI9Icvth1-17" value="数据脱敏" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="uTPfO2yNEsCuI9Icvth1-14">
-          <mxGeometry x="12.400869565217391" y="59.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        <mxCell id="uTPfO2yNEsCuI9Icvth1-9" value="" style="group;fillColor=default;fillStyle=hatch;container=0;" vertex="1" connectable="0" parent="uTPfO2yNEsCuI9Icvth1-1">
+          <mxGeometry x="50" y="210" width="150" height="90.000756302521" as="geometry" />
         </mxCell>
         <mxCell id="uTPfO2yNEsCuI9Icvth1-18" value="" style="group;fillColor=default;fillStyle=hatch;" vertex="1" connectable="0" parent="uTPfO2yNEsCuI9Icvth1-1">
           <mxGeometry x="40" y="350" width="220" height="150" as="geometry" />
@@ -238,6 +214,33 @@
         </mxCell>
         <mxCell id="uTPfO2yNEsCuI9Icvth1-25" value="..." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="uTPfO2yNEsCuI9Icvth1-18">
           <mxGeometry x="116.82704347826092" y="80.00170868347334" width="65.73913043478261" height="18.571428571428573" as="geometry" />
+        </mxCell>
+        <mxCell id="uTPfO2yNEsCuI9Icvth1-10" value="质检任务管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4E1F5;strokeColor=#d79b00;verticalAlign=top;" vertex="1" parent="uTPfO2yNEsCuI9Icvth1-1">
+          <mxGeometry x="50" y="210" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="uTPfO2yNEsCuI9Icvth1-11" value="..." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="uTPfO2yNEsCuI9Icvth1-1">
+          <mxGeometry x="62.396086956521735" y="270.9517086834734" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="uTPfO2yNEsCuI9Icvth1-12" value="质检任务" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="uTPfO2yNEsCuI9Icvth1-1">
+          <mxGeometry x="62.396086956521735" y="239.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="uTPfO2yNEsCuI9Icvth1-13" value="质检日志" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="uTPfO2yNEsCuI9Icvth1-1">
+          <mxGeometry x="132.8308695652174" y="239.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="uTPfO2yNEsCuI9Icvth1-14" value="" style="group;fillColor=default;fillStyle=hatch;" vertex="1" connectable="0" parent="uTPfO2yNEsCuI9Icvth1-1">
+          <mxGeometry x="264" y="190" width="150" height="90.000756302521" as="geometry" />
+        </mxCell>
+        <mxCell id="uTPfO2yNEsCuI9Icvth1-15" value="数据归集" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4E1F5;strokeColor=#d79b00;verticalAlign=top;" vertex="1" parent="uTPfO2yNEsCuI9Icvth1-14">
+          <mxGeometry width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="uTPfO2yNEsCuI9Icvth1-16" value="归集配置" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="uTPfO2yNEsCuI9Icvth1-14">
+          <mxGeometry x="12.4" y="30" width="57.6" height="18.57" as="geometry" />
+        </mxCell>
+        <mxCell id="i6EQyejCQMpGGJypgrrh-1" value="任务调度" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="uTPfO2yNEsCuI9Icvth1-14">
+          <mxGeometry x="80.00086956521739" y="29.99932773109243" width="54.78260869565218" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="uTPfO2yNEsCuI9Icvth1-17" value="运行监控" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="uTPfO2yNEsCuI9Icvth1-14">
+          <mxGeometry x="15.220869565217384" y="59.99932773109242" width="54.78260869565218" height="18.57142857142857" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
