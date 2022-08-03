@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-03T08:50:14.041Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="jj99OyOIORVa41uL0reC" version="20.2.2" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2022-08-03T08:54:49.573Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="YB1dVzdJqpCNEm5onWiN" version="20.2.2" type="github" pages="7">
   <diagram id="5Y488ag0M3OIHIzRHHl_" name="1.规范制度">
     <mxGraphModel dx="1038" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -313,6 +313,14 @@
         <mxCell id="zvy0IPWNQ34d9fLzG-zh-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IVj9JVnUh1Tp0sDhJ2Lc-15" target="zvy0IPWNQ34d9fLzG-zh-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="P3oNjf3PRfijPRR6p_IO-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="IVj9JVnUh1Tp0sDhJ2Lc-15" target="IVj9JVnUh1Tp0sDhJ2Lc-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="P3oNjf3PRfijPRR6p_IO-2" value="同步到业务数据库" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="P3oNjf3PRfijPRR6p_IO-1">
+          <mxGeometry x="0.0649" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="IVj9JVnUh1Tp0sDhJ2Lc-15" value="存入异常数据库" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="338" y="240" width="60" height="30" as="geometry" />
         </mxCell>
@@ -421,7 +429,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="5.数据比对" id="qFSO8Rj6ZYwqAzqmY2a3">
-    <mxGraphModel dx="1038" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="dOP0slOOlu9tlcVqILB_-0" />
         <mxCell id="dOP0slOOlu9tlcVqILB_-1" parent="dOP0slOOlu9tlcVqILB_-0" />
@@ -437,19 +445,22 @@
         <mxCell id="dOP0slOOlu9tlcVqILB_-5" value="处理清洗结果" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
           <mxGeometry x="20" y="125" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="dOP0slOOlu9tlcVqILB_-7" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="dOP0slOOlu9tlcVqILB_-1" target="dOP0slOOlu9tlcVqILB_-21">
+        <mxCell id="dOP0slOOlu9tlcVqILB_-7" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="dOP0slOOlu9tlcVqILB_-1" source="dOP0slOOlu9tlcVqILB_-19" target="dOP0slOOlu9tlcVqILB_-21">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="504.5" y="140" as="sourcePoint" />
             <mxPoint x="500.5" y="140" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dOP0slOOlu9tlcVqILB_-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="dOP0slOOlu9tlcVqILB_-1" source="dOP0slOOlu9tlcVqILB_-9" target="dOP0slOOlu9tlcVqILB_-19">
+        <mxCell id="wM3XyHcvas8Zuozc65AX-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="dOP0slOOlu9tlcVqILB_-1" source="dOP0slOOlu9tlcVqILB_-9" target="32zMEE1sZMjblgaQW15R-0">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dOP0slOOlu9tlcVqILB_-9" value="数据清洗" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
-          <mxGeometry x="220" y="125" width="60" height="30" as="geometry" />
+        <mxCell id="dOP0slOOlu9tlcVqILB_-9" value="比对管理" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
+          <mxGeometry x="200" y="125" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="dOP0slOOlu9tlcVqILB_-10" value="选定清洗规则" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
+        <mxCell id="wM3XyHcvas8Zuozc65AX-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="dOP0slOOlu9tlcVqILB_-1" source="dOP0slOOlu9tlcVqILB_-10" target="dOP0slOOlu9tlcVqILB_-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dOP0slOOlu9tlcVqILB_-10" value="选定比对规则" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
           <mxGeometry x="120" y="125" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="dOP0slOOlu9tlcVqILB_-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="dOP0slOOlu9tlcVqILB_-1" source="dOP0slOOlu9tlcVqILB_-12" target="dOP0slOOlu9tlcVqILB_-31">
@@ -480,13 +491,10 @@
         <mxCell id="dOP0slOOlu9tlcVqILB_-16" value="正常返回" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
           <mxGeometry x="710.5" y="245" width="70" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="dOP0slOOlu9tlcVqILB_-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="dOP0slOOlu9tlcVqILB_-1" target="dOP0slOOlu9tlcVqILB_-12">
+        <mxCell id="dOP0slOOlu9tlcVqILB_-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="dOP0slOOlu9tlcVqILB_-1" source="dOP0slOOlu9tlcVqILB_-19" target="dOP0slOOlu9tlcVqILB_-12">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="350.5" y="205" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="442.5" y="230" />
-              <mxPoint x="442.5" y="230" />
-            </Array>
+            <Array as="points" />
             <mxPoint x="442.5" y="160" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
@@ -495,13 +503,13 @@
             <mxPoint x="-2" y="-2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dOP0slOOlu9tlcVqILB_-19" value="是否通过清洗规则" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
-          <mxGeometry x="306" y="120" width="124" height="40" as="geometry" />
+        <mxCell id="dOP0slOOlu9tlcVqILB_-19" value="是否通过比对规则" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
+          <mxGeometry x="380.5" y="120" width="124" height="40" as="geometry" />
         </mxCell>
         <mxCell id="dOP0slOOlu9tlcVqILB_-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="dOP0slOOlu9tlcVqILB_-1" source="dOP0slOOlu9tlcVqILB_-21" target="dOP0slOOlu9tlcVqILB_-26">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dOP0slOOlu9tlcVqILB_-21" value="存入正常数据库" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
+        <mxCell id="dOP0slOOlu9tlcVqILB_-21" value="存入中心数据库" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
           <mxGeometry x="710.5" y="125" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="dOP0slOOlu9tlcVqILB_-22" value="E" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
@@ -557,11 +565,14 @@
         <mxCell id="dOP0slOOlu9tlcVqILB_-33" value="正常返回" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
           <mxGeometry x="590.5" y="395" width="70" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="dOP0slOOlu9tlcVqILB_-34" value="数据清洗任务定时&lt;br&gt;启动/手动启动" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=#CCE5FF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
+        <mxCell id="dOP0slOOlu9tlcVqILB_-34" value="数据比对任务定时&lt;br&gt;启动/手动启动" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=#CCE5FF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
           <mxGeometry x="80" y="60" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="32zMEE1sZMjblgaQW15R-0" value="数据清洗" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
-          <mxGeometry x="190" y="185" width="60" height="30" as="geometry" />
+        <mxCell id="wM3XyHcvas8Zuozc65AX-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="dOP0slOOlu9tlcVqILB_-1" source="32zMEE1sZMjblgaQW15R-0" target="dOP0slOOlu9tlcVqILB_-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="32zMEE1sZMjblgaQW15R-0" value="比对执行" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
+          <mxGeometry x="280" y="125" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
