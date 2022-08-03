@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-03T02:46:47.910Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="OhD0gQD0Nca05LJK4TvS" version="20.2.2" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2022-08-03T02:54:45.130Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="Ro4u1HgCNGGrg1OnDnsR" version="20.2.2" type="github" pages="6">
   <diagram id="Inc5CD8TiMSoGm5gabNw" name="框架图">
     <mxGraphModel dx="1038" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -231,28 +231,34 @@
           <mxGeometry x="12.4" y="60" width="57.6" height="18.57" as="geometry" />
         </mxCell>
         <mxCell id="i6EQyejCQMpGGJypgrrh-6" value="" style="group;fillColor=default;fillStyle=hatch;" vertex="1" connectable="0" parent="uTPfO2yNEsCuI9Icvth1-1">
-          <mxGeometry x="250" y="230" width="220" height="140" as="geometry" />
+          <mxGeometry x="249" y="210" width="330" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="i6EQyejCQMpGGJypgrrh-7" value="数据共享" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#d79b00;verticalAlign=top;arcSize=5;" vertex="1" parent="i6EQyejCQMpGGJypgrrh-6">
-          <mxGeometry x="9.999999999999998" y="-9.333333333333332" width="180" height="112" as="geometry" />
+        <mxCell id="i6EQyejCQMpGGJypgrrh-25" value="" style="group" vertex="1" connectable="0" parent="i6EQyejCQMpGGJypgrrh-6">
+          <mxGeometry x="-1" width="330" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="i6EQyejCQMpGGJypgrrh-8" value="规则配置" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="i6EQyejCQMpGGJypgrrh-6">
-          <mxGeometry x="17.430000000000007" y="18.666666666666664" width="79.99999999999999" height="17.332000000000004" as="geometry" />
+        <mxCell id="i6EQyejCQMpGGJypgrrh-7" value="数据共享" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#d79b00;verticalAlign=top;arcSize=5;" vertex="1" parent="i6EQyejCQMpGGJypgrrh-25">
+          <mxGeometry width="330" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="i6EQyejCQMpGGJypgrrh-9" value="任务调度" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="i6EQyejCQMpGGJypgrrh-6">
-          <mxGeometry x="115.70704347826091" y="18.666039215686258" width="65.73913043478261" height="17.333333333333336" as="geometry" />
+        <mxCell id="i6EQyejCQMpGGJypgrrh-8" value="服务注册新增" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="i6EQyejCQMpGGJypgrrh-25">
+          <mxGeometry x="28" y="33.900000000000006" width="60" height="33.66" as="geometry" />
         </mxCell>
-        <mxCell id="i6EQyejCQMpGGJypgrrh-10" value="运行监控" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="i6EQyejCQMpGGJypgrrh-6">
-          <mxGeometry x="17.430000000000007" y="47.55566666666665" width="81.11999999999999" height="17.332000000000004" as="geometry" />
+        <mxCell id="i6EQyejCQMpGGJypgrrh-9" value="服务注册审核" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="i6EQyejCQMpGGJypgrrh-25">
+          <mxGeometry x="102" y="33.900000000000006" width="56" height="33.66" as="geometry" />
         </mxCell>
-        <mxCell id="i6EQyejCQMpGGJypgrrh-11" value="脚本管理" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="i6EQyejCQMpGGJypgrrh-6">
-          <mxGeometry x="116.82704347826092" y="47.554928104575154" width="65.73913043478261" height="17.333333333333336" as="geometry" />
+        <mxCell id="i6EQyejCQMpGGJypgrrh-10" value="服务注册修改" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="i6EQyejCQMpGGJypgrrh-25">
+          <mxGeometry x="168" y="33.900000000000006" width="61.12" height="33.66" as="geometry" />
         </mxCell>
-        <mxCell id="i6EQyejCQMpGGJypgrrh-12" value="数据维护" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="i6EQyejCQMpGGJypgrrh-6">
-          <mxGeometry x="17.430000000000007" y="74.66666666666666" width="79.99999999999999" height="17.332000000000004" as="geometry" />
+        <mxCell id="i6EQyejCQMpGGJypgrrh-11" value="服务注册查询" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="i6EQyejCQMpGGJypgrrh-25">
+          <mxGeometry x="238" y="33.900000000000006" width="60.6" height="33.66" as="geometry" />
         </mxCell>
-        <mxCell id="i6EQyejCQMpGGJypgrrh-13" value="..." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="i6EQyejCQMpGGJypgrrh-6">
-          <mxGeometry x="116.82704347826092" y="74.66826143790844" width="65.73913043478261" height="17.333333333333336" as="geometry" />
+        <mxCell id="i6EQyejCQMpGGJypgrrh-23" value="服务申请新增" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="i6EQyejCQMpGGJypgrrh-25">
+          <mxGeometry x="30" y="82.67" width="60" height="37.33" as="geometry" />
+        </mxCell>
+        <mxCell id="i6EQyejCQMpGGJypgrrh-12" value="服务申请审核" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="i6EQyejCQMpGGJypgrrh-25">
+          <mxGeometry x="102" y="82.67" width="58" height="37.33" as="geometry" />
+        </mxCell>
+        <mxCell id="i6EQyejCQMpGGJypgrrh-13" value="服务使用统计分析" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="i6EQyejCQMpGGJypgrrh-25">
+          <mxGeometry x="32" y="130" width="58" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
