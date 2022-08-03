@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-03T03:23:44.935Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="FrH-GTvSoTFMv92I_xbE" version="20.2.2" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2022-08-03T03:24:18.546Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="VZBLlIvLWdrT60p4nItF" version="20.2.2" type="github" pages="6">
   <diagram id="5Y488ag0M3OIHIzRHHl_" name="1.规范制度">
     <mxGraphModel dx="1038" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -235,7 +235,7 @@
             <mxPoint x="290" y="145" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IVj9JVnUh1Tp0sDhJ2Lc-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="IVj9JVnUh1Tp0sDhJ2Lc-22" target="IVj9JVnUh1Tp0sDhJ2Lc-24" edge="1">
+        <mxCell id="IVj9JVnUh1Tp0sDhJ2Lc-9" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="IVj9JVnUh1Tp0sDhJ2Lc-22" target="IVj9JVnUh1Tp0sDhJ2Lc-24" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="IVj9JVnUh1Tp0sDhJ2Lc-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="IVj9JVnUh1Tp0sDhJ2Lc-11" target="IVj9JVnUh1Tp0sDhJ2Lc-22" edge="1">
@@ -292,7 +292,7 @@
             <mxPoint x="-2" y="-2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IVj9JVnUh1Tp0sDhJ2Lc-22" value="保存文件" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" parent="1" vertex="1">
+        <mxCell id="IVj9JVnUh1Tp0sDhJ2Lc-22" value="是否通过清洗规则" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="306" y="120" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="IVj9JVnUh1Tp0sDhJ2Lc-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="IVj9JVnUh1Tp0sDhJ2Lc-24" target="IVj9JVnUh1Tp0sDhJ2Lc-29" edge="1">
