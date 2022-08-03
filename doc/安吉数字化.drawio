@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-03T08:56:37.930Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="RD3eNv_aMFfyI4NQLIqV" version="20.2.2" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2022-08-03T08:58:22.887Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="Zehzgrv-wBoYbTOh6iX8" version="20.2.2" type="github" pages="7">
   <diagram id="5Y488ag0M3OIHIzRHHl_" name="1.规范制度">
     <mxGraphModel dx="868" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -559,11 +559,14 @@
         <mxCell id="dOP0slOOlu9tlcVqILB_-31" value="存入数据库" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
           <mxGeometry x="400" y="320" width="85" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="dOP0slOOlu9tlcVqILB_-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="dOP0slOOlu9tlcVqILB_-1" source="dOP0slOOlu9tlcVqILB_-33" target="dOP0slOOlu9tlcVqILB_-22">
+        <mxCell id="dOP0slOOlu9tlcVqILB_-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="dOP0slOOlu9tlcVqILB_-1" source="bfMzBng2R8bT7B5btq9w-0" target="dOP0slOOlu9tlcVqILB_-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bfMzBng2R8bT7B5btq9w-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="dOP0slOOlu9tlcVqILB_-1" source="dOP0slOOlu9tlcVqILB_-33" target="bfMzBng2R8bT7B5btq9w-0">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dOP0slOOlu9tlcVqILB_-33" value="正常返回" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
-          <mxGeometry x="590.5" y="395" width="70" height="30" as="geometry" />
+          <mxGeometry x="500" y="395" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="dOP0slOOlu9tlcVqILB_-34" value="数据比对任务定时&lt;br&gt;启动/手动启动" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=#CCE5FF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
           <mxGeometry x="80" y="60" width="120" height="40" as="geometry" />
@@ -573,6 +576,12 @@
         </mxCell>
         <mxCell id="32zMEE1sZMjblgaQW15R-0" value="比对执行" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
           <mxGeometry x="280" y="125" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bfMzBng2R8bT7B5btq9w-0" value="结果反馈" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
+          <mxGeometry x="609.5" y="395" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bfMzBng2R8bT7B5btq9w-3" value="业务部门" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="dOP0slOOlu9tlcVqILB_-1">
+          <mxGeometry x="609.5" y="425" width="70" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
