@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-03T02:35:00.621Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="4mFF57IJAt1bEBerSpMK" version="20.2.2" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2022-08-03T02:37:48.908Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="MscFeR-VnPIEL99HFWO8" version="20.2.2" type="github" pages="5">
   <diagram id="Inc5CD8TiMSoGm5gabNw" name="框架图">
     <mxGraphModel dx="1038" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -91,25 +91,25 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="Xa9dj_pmY7KQ3Ydpeqz4-1" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="50" y="40" width="180" height="120" as="geometry" />
+          <mxGeometry x="50" y="50" width="180" height="140" as="geometry" />
         </mxCell>
         <mxCell id="Xa9dj_pmY7KQ3Ydpeqz4-2" value="规范" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;verticalAlign=top;" vertex="1" parent="Xa9dj_pmY7KQ3Ydpeqz4-1">
-          <mxGeometry width="180" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="Xa9dj_pmY7KQ3Ydpeqz4-5" value="划分标准" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Xa9dj_pmY7KQ3Ydpeqz4-1">
-          <mxGeometry x="14.875304347826022" y="29.99932773109242" width="65.73913043478261" height="18.57142857142857" as="geometry" />
+          <mxGeometry width="180" height="140" as="geometry" />
         </mxCell>
         <mxCell id="Xa9dj_pmY7KQ3Ydpeqz4-4" value="数据字典" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Xa9dj_pmY7KQ3Ydpeqz4-1">
-          <mxGeometry x="99.39704347826077" y="60.951708683473385" width="65.73913043478261" height="18.57142857142857" as="geometry" />
+          <mxGeometry x="99.4" y="70.95" width="60.6" height="18.57" as="geometry" />
         </mxCell>
         <mxCell id="Xa9dj_pmY7KQ3Ydpeqz4-3" value="元数据规范" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Xa9dj_pmY7KQ3Ydpeqz4-1">
-          <mxGeometry x="14.875304347826022" y="60.951708683473385" width="65.73913043478261" height="18.57142857142857" as="geometry" />
+          <mxGeometry x="14.865304347826045" y="100.00170868347338" width="65.73913043478261" height="18.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="Xa9dj_pmY7KQ3Ydpeqz4-5" value="水利对象划分标准" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Xa9dj_pmY7KQ3Ydpeqz4-1">
+          <mxGeometry x="14.87" y="30" width="65.13" height="28.57" as="geometry" />
         </mxCell>
         <mxCell id="Xa9dj_pmY7KQ3Ydpeqz4-6" value="编码规则" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Xa9dj_pmY7KQ3Ydpeqz4-1">
-          <mxGeometry x="99.39704347826077" y="29.99932773109242" width="65.73913043478261" height="18.57142857142857" as="geometry" />
+          <mxGeometry x="14.86704347826079" y="70.94932773109241" width="65.73913043478261" height="18.57142857142857" as="geometry" />
         </mxCell>
         <mxCell id="Xa9dj_pmY7KQ3Ydpeqz4-7" value="数据清洗规则" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Xa9dj_pmY7KQ3Ydpeqz4-1">
-          <mxGeometry x="14.88" y="90" width="75.12" height="18.57" as="geometry" />
+          <mxGeometry x="99.4" y="29.28" width="60.6" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Xa9dj_pmY7KQ3Ydpeqz4-8" value="" style="group;fillColor=default;fillStyle=hatch;" vertex="1" connectable="0" parent="1">
           <mxGeometry x="50" y="210" width="150" height="90" as="geometry" />
