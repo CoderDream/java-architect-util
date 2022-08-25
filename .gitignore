@@ -29,3 +29,4 @@ hs_err_pid*
 
 target
 target/
+kettle-practice/src/test/resources/data/output/test_a.txt
