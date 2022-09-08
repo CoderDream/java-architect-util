@@ -1,0 +1,8114 @@
+0
+00:00:00,000 --> 00:00:05,000
+Subindex build by Linnet http://linnet.126.com  http://blog.csdn.net/redbirdli
+火鸟字幕合并器SubindexV0.5 Created time 22.09.08 09:33:43
+
+1
+00:00:00,334 --> 00:00:07,341
+? ?
+? ?
+
+2
+00:00:17,351 --> 00:00:24,358
+? ?
+? ?
+
+3
+00:00:34,368 --> 00:00:41,375
+? ?
+? ?
+
+4
+00:00:51,385 --> 00:00:56,990
+? ?
+? ?
+
+5
+00:00:57,024 --> 00:00:58,158
+Tim Cook: Good morning.
+早上好！
+
+6
+00:00:58,192 --> 00:01:00,594
+We're so glad you could join us.
+很高兴你来加入我们
+
+7
+00:01:00,627 --> 00:01:04,198
+At Apple, we're fortunate to be surrounded by people
+在 Apple 我们非常幸运
+
+8
+00:01:04,231 --> 00:01:06,400
+who strive to innovate together
+聚集了一群奋发创新的人
+
+9
+00:01:06,433 --> 00:01:11,038
+to create products and experiences that enrich people's lives,
+携手打造各类产品和服务 来丰富人们的生活
+
+10
+00:01:11,071 --> 00:01:13,941
+products that are intuitive and easy to use,
+这些产品直观易用
+
+11
+00:01:13,974 --> 00:01:17,311
+that have a unique integration of hardware and software,
+以独特方式将软硬件深度整合
+
+12
+00:01:17,344 --> 00:01:19,479
+and that are incredibly personal.
+而且极具个性化
+
+13
+00:01:20,147 --> 00:01:22,816
+Today, we're here to talk about three products
+今天我们要聊日常生活中
+
+14
+00:01:22,850 --> 00:01:25,252
+that have become essential in our lives:
+必备的三款产品
+
+15
+00:01:25,285 --> 00:01:28,755
+iPhone, AirPods, and Apple Watch.
+iPhone AirPods 和 Apple Watch
+
+16
+00:01:28,789 --> 00:01:30,457
+They're always with you,
+它们始终陪伴在你身边
+
+17
+00:01:30,490 --> 00:01:33,727
+useful whenever and wherever you need them,
+随时随地帮到你
+
+18
+00:01:33,760 --> 00:01:36,964
+and are designed to work seamlessly together.
+且默契配合相互协同
+
+19
+00:01:36,997 --> 00:01:40,300
+On their own, each is industry leading.
+单独来看 都是各自品类中的行业翘楚
+
+20
+00:01:40,334 --> 00:01:43,904
+Together, they provide a magical experience.
+配合起来 则会带来神奇的体验
+
+21
+00:01:43,937 --> 00:01:47,140
+With one tap, AirPods are instantly set up
+只要轻轻一点 AirPods 就设置完成了
+
+22
+00:01:47,174 --> 00:01:50,143
+and ready to work with your iPhone and Apple Watch,
+即刻可与 iPhone 和 Apple Watch 配对使用
+
+23
+00:01:50,177 --> 00:01:53,447
+and automatic switching allows sound to move seamlessly
+自动切换功能可使音频
+
+24
+00:01:53,480 --> 00:01:56,416
+between any of your Apple devices.
+在你的各个 Apple 设备之间无缝切换
+
+25
+00:01:56,450 --> 00:02:00,888
+There's also incredible integration between iPhone and Apple Watch.
+还有 iPhone 和 Apple Watch 之间的美妙配合
+
+26
+00:02:00,921 --> 00:02:04,725
+Together they provide the convenience of having your notifications
+二者共同协作为你带来的便利包括
+
+27
+00:02:04,758 --> 00:02:09,463
+and messages on your wrist and available with just a glance.
+你的通知和信息只需抬起手腕 轻松一瞥就能看到
+
+28
+00:02:09,496 --> 00:02:14,101
+You can seamlessly hand off phone calls between your iPhone and Apple Watch,
+在 iPhone 与 Apple Watch 之间无缝切换通话
+
+29
+00:02:14,134 --> 00:02:16,937
+and you can set your destination on your iPhone
+你也可以在 iPhone 上设置目的地
+
+30
+00:02:16,970 --> 00:02:20,541
+and your Apple Watch will help guide you along the way.
+然后让 Apple Watch 一路给你指引方向
+
+31
+00:02:20,574 --> 00:02:24,378
+Users can even get their health and fitness data from Apple Watch
+用户甚至可以通过 Apple Watch 获取健康和健身数据
+
+32
+00:02:24,411 --> 00:02:27,114
+and see it on the Health app on their iPhone.
+并在 iPhone 的健康 app 中查看它们
+
+33
+00:02:27,147 --> 00:02:30,984
+These are just a few examples of the unique and powerful ways
+上面只是几个例子
+
+34
+00:02:31,018 --> 00:02:34,521
+our hardware and software are designed to work together,
+来展现我们独特而强大的软硬件协作方式
+
+35
+00:02:34,555 --> 00:02:39,393
+enhancing and enriching the experiences you have with these products.
+以此增强和丰富产品的使用体验
+
+36
+00:02:39,426 --> 00:02:43,864
+This type of integration is something only Apple can do.
+这样的整合协调 只有 Apple 能实现
+
+37
+00:02:43,897 --> 00:02:48,035
+And today we're going to make these products and these experiences
+而今天 我们会让这些产品和体验
+
+38
+00:02:48,068 --> 00:02:49,036
+even better.
+进一步升华优化
+
+39
+00:02:50,003 --> 00:02:53,674
+Let's get started by talking about Apple Watch.
+让我们先来谈谈 Apple Watch 吧
+
+40
+00:02:53,707 --> 00:02:57,144
+Apple Watch has become an essential companion.
+Apple Watch 一直是大家不可或缺的好帮手
+
+41
+00:02:57,177 --> 00:03:02,516
+It's always with you, allowing you to do so much right from your wrist.
+它总是陪伴在你身边 让你抬起手腕就能做很多事
+
+42
+00:03:02,549 --> 00:03:05,953
+It keeps you connected to the things you care about most,
+帮你时刻关注自己最关心的事
+
+43
+00:03:05,986 --> 00:03:09,256
+encourages you to stay active, and monitors your health
+鼓励你动起来 监测你的健康
+
+44
+00:03:09,289 --> 00:03:11,525
+and gets help when you need it.
+并在需要的时候为你寻求帮助
+
+45
+00:03:11,558 --> 00:03:14,127
+And I've received thousands of letters from customers
+我收到过成千上万封的用户来信
+
+46
+00:03:14,161 --> 00:03:17,598
+writing about their personal experiences using Apple Watch.
+分享他们使用 Apple Watch 的个人体验
+
+47
+00:03:18,465 --> 00:03:21,435
+I'd like to share just a few of those stories with you now.
+我想和你分享其中的一些故事
+
+48
+00:03:26,273 --> 00:03:27,808
+Hello Apple
+你好 Apple
+
+49
+00:03:28,709 --> 00:03:30,677
+Dear, Mr. Cook...
+亲爱的 Cook 先生
+
+50
+00:03:30,711 --> 00:03:32,813
+Dear, Tim...
+亲爱的 Tim
+
+51
+00:03:32,846 --> 00:03:34,114
+Dear, Mr. Cook...
+亲爱的 Cook 先生
+
+52
+00:03:34,147 --> 00:03:36,316
+Hello, Mr. Cook...
+你好 Cook 先生
+
+53
+00:03:36,350 --> 00:03:38,452
+I'm writing to you from Milwaukee, Wisconsin.
+我在威斯康星州的 Milwaukee 给你写信
+
+54
+00:03:38,485 --> 00:03:40,387
+I'm writing you from Atlanta, Georgia.
+我从佐治亚州的 Atlanta 写来
+
+55
+00:03:40,921 --> 00:03:43,123
+I'm 
+我是个铁人三项选手 也是视障人士
+
+56
+00:03:43,123 --> 00:03:45,225
+I am a 27-year-old high school teacher.
+我 27 岁 在高中当老师
+
+57
+00:03:45,259 --> 00:03:46,760
+I'm a senior in high school.
+我正读高中
+
+58
+00:03:46,793 --> 00:03:49,329
+I only had the watch for two or three weeks.
+我才戴上表两三个星期
+
+59
+00:03:49,363 --> 00:03:54,101
+the watch
+这块表 让我训练和比赛的方式大大改观
+
+60
+00:03:54,101 --> 00:03:56,303
+I was viewing a movie with my wife in our family room...
+当时我和太太正在屋里看片子
+
+61
+00:03:56,336 --> 00:03:59,273
+I was having lunch at one of the spiciest restaurants in San Diego...
+我正吃着午饭 这家餐厅的辣在 San Diego 名列前茅
+
+62
+00:03:59,306 --> 00:04:00,774
+It was a typical summer night.
+那是一个夏天的夜晚
+
+63
+00:04:00,807 --> 00:04:02,209
+I looked around the corner,
+我发现角落里有只熊
+
+64
+00:04:02,242 --> 00:04:03,977
+and a bear was staring right at me.
+它也在朝我看
+
+65
+00:04:04,011 --> 00:04:06,780
+I was doing what we call a dump and return
+我在干装卸的时候
+
+66
+00:04:06,813 --> 00:04:09,283
+when I slipped headfirst into the compactor.
+不小心向前滑倒 整个人栽进车斗里
+
+67
+00:04:09,316 --> 00:04:12,019
+I was skating on a frozen river when the ice gave out.
+我在冰冻的河面上溜冰 没想到冰化了
+
+68
+00:04:12,052 --> 00:04:14,755
+The door closed, and everything went dark.
+门关了 我眼前一黑
+
+69
+00:04:14,788 --> 00:04:17,191
+My longtime friend started grasping his chest.
+忽然 我的老友猛地抓住胸口
+
+70
+00:04:17,224 --> 00:04:18,625
+I was fighting to catch my breath.
+我拼命地喘气
+
+71
+00:04:18,659 --> 00:04:21,862
+I used the watch to study my pulse, and it was wildly erratic.
+我用手表测了下脉搏 发现跳得很乱
+
+72
+00:04:21,895 --> 00:04:23,530
+Things escalated quickly from there.
+情况还在迅速恶化
+
+73
+00:04:23,564 --> 00:04:26,767
+I was getting tired, and I could tell hypothermia was setting in.
+我越来越疲惫 已经感到有失温的危险
+
+74
+00:04:26,800 --> 00:04:28,969
+I go to grab my phone, but my pockets were empty.
+我把手伸进口袋 然而手机并不在
+
+75
+00:04:29,002 --> 00:04:30,437
+I didn't have my phone on me.
+我的手机没在身上
+
+76
+00:04:30,470 --> 00:04:32,739
+As I was trying to figure out what to do,
+我不知道该怎么办好
+
+77
+00:04:32,773 --> 00:04:34,441
+I looked down and saw my watch.
+我一低头 恰巧看到了手表
+
+78
+00:04:34,474 --> 00:04:36,109
+I placed my Apple Watch on his wrist,
+我把我的 Apple Watch 戴在他手腕上
+
+79
+00:04:36,143 --> 00:04:37,978
+and I couldn't believe my eyes.
+简直难以置信
+
+80
+00:04:38,011 --> 00:04:41,582
+An atrial fibrillation notification popped up.
+房颤提示立马弹了出来
+
+81
+00:04:41,615 --> 00:04:42,616
+Holy cow.
+我的天
+
+82
+00:04:42,649 --> 00:04:43,450
+Holy moly.
+老天爷啊
+
+83
+00:04:43,483 --> 00:04:44,985
+I looked down at my Apple Watch,
+我看了看 Apple Watch
+
+84
+00:04:45,018 --> 00:04:47,621
+and my heart rate was 187 beats per minute.
+发现心率达到每分钟 187 下
+
+85
+00:04:47,654 --> 00:04:50,190
+I drove him to the hospital 
+我马上开车把他送进医院治疗 
+
+86
+00:04:50,224 --> 00:04:51,792
+where he was treated for a heart condition he wasn't aware he had.
+他完全没意识到自己心脏出了问题
+
+87
+00:04:53,694 --> 00:04:55,329
+Dear, Apple,
+你好 Apple
+
+88
+00:04:55,362 --> 00:04:58,165
+my dad was flying our small plane to Vermont.
+在我爸驾驶小飞机去 Vermont 的半路
+
+89
+00:04:58,198 --> 00:05:00,400
+I was asleep in the backseat.
+我原本在后座呼呼大睡
+
+90
+00:05:00,434 --> 00:05:04,037
+I woke up when we were crashing into the tops of the trees.
+忽然飞机一头扎进一片树林 把我彻底惊醒了
+
+91
+00:05:04,071 --> 00:05:06,540
+The plane broke into six pieces,
+飞机碎成了六块
+
+92
+00:05:06,573 --> 00:05:10,244
+and we were miles away from civilization in the freezing cold.
+但这里离有人迹的地方有好几英里 而且我们快冻僵了
+
+93
+00:05:10,277 --> 00:05:11,712
+Then, all of a sudden,
+忽然电话铃响了
+
+94
+00:05:11,745 --> 00:05:14,348
+my Apple Watch started ringing.
+是我的 Apple Watch
+
+95
+00:05:14,381 --> 00:05:16,216
+I forgot I was wearing it.
+我都忘了还戴着表
+
+96
+00:05:16,250 --> 00:05:18,552
+I told my grandma that I'd have to call her back,
+我跟奶奶说晚点再打回给她
+
+97
+00:05:18,585 --> 00:05:20,320
+and I immediately called 911.
+然后立刻拨打 911
+
+98
+00:05:20,354 --> 00:05:21,788
+I whispered to my co-teacher,
+我小声对同事说
+
+99
+00:05:21,822 --> 00:05:23,924
+"I need to go to the emergency room right now."
+“我得马上进急救室”
+
+100
+00:05:23,957 --> 00:05:26,393
+We were advised to head directly to the emergency room.
+他们要我们马上去急救室
+
+101
+00:05:26,426 --> 00:05:29,997
+I held down the button and whispered, "Siri, call 911."
+我按下按钮 悄悄说 “嘿 Siri 打给 911”
+
+102
+00:05:30,030 --> 00:05:33,767
+I dialed 911, and that sucker started ringing,
+我打了 911 铃声在这小东西上响了起来
+
+103
+00:05:33,800 --> 00:05:36,003
+and I was smiling like a brand-new baby.
+我开心得像个小孩
+
+104
+00:05:36,036 --> 00:05:37,738
+Rescuers arrived in minutes.
+救援人员几分钟就到了
+
+105
+00:05:37,771 --> 00:05:41,542
+If I hadn't had the Apple Watch, things could have been much worse.
+如果没有 Apple Watch 事情恐怕就糟糕了
+
+106
+00:05:41,575 --> 00:05:43,443
+I'm so grateful.
+我太感激了
+
+107
+00:05:43,477 --> 00:05:46,847
+From now on, I'll never leave the house without it.
+现在 我出门一定戴表
+
+108
+00:05:46,880 --> 00:05:49,249
+It's amazing.
+真的太棒了 这么个小小的设备
+
+109
+00:05:49,249 --> 00:05:50,751
+Help me
+居然能在生活的方方面面都帮到我
+
+110
+00:05:50,751 --> 00:05:53,587
+My doctor said, "It was your watch that saved your life."
+医生告诉我 “是你的表救了你〞
+
+111
+00:05:53,620 --> 00:05:55,389
+Thanks for helping save my friend's life.
+它让我朋友获救了 谢谢
+
+112
+00:05:55,422 --> 00:05:57,958
+Since the heart event was without other symptoms,
+心脏问题会来得毫无征兆
+
+113
+00:05:57,991 --> 00:06:00,994
+clearly, the watch was my only call to action
+这块表提醒了我 让我采取行动
+
+114
+00:06:01,028 --> 00:06:04,565
+and my only link to the fine medical care that saved my life.
+也就是它引导我联系医疗救助 挽救了我的生命
+
+115
+00:06:04,598 --> 00:06:07,701
+With deep gratitude, Erik.
+万分感谢 Erik
+
+116
+00:06:07,734 --> 00:06:10,070
+Thank you, Hannah.
+太谢谢了 Hannah
+
+117
+00:06:10,103 --> 00:06:12,472
+Sinceramente, Marcos.
+由衷感谢 Marcos
+
+118
+00:06:12,506 --> 00:06:14,041
+Bill.
+Bill
+
+119
+00:06:14,074 --> 00:06:15,108
+Taryn.
+Taryn
+
+120
+00:06:15,142 --> 00:06:17,544
+Sincerely, Dr. Korn.
+真心感谢 Dr. Korn
+
+121
+00:06:17,578 --> 00:06:19,646
+All the best, Shaae.
+祝好 Shaae
+
+122
+00:06:24,218 --> 00:06:28,455
+There are so many ways Apple Watch improves peoples' lives.
+Apple Watch 从方方面面改善了人们的生活
+
+123
+00:06:28,488 --> 00:06:31,325
+These are the reasons we do what we do.
+这也是我们努力的初衷
+
+124
+00:06:31,358 --> 00:06:36,296
+And this year we're introducing our best Apple Watch lineup yet,
+今年 我们将推出迄今为止最强大的
+
+125
+00:06:36,330 --> 00:06:37,431
+by far!
+Apple Watch 产品线
+
+126
+00:06:37,464 --> 00:06:40,334
+To tell you more, here's Jeff.
+下面请 Jeff 为你介绍
+
+127
+00:06:40,367 --> 00:06:47,374
+? ?
+? ?
+
+128
+00:06:50,310 --> 00:06:52,913
+Jeff Williams: Each year, Apple Watch sets a new standard
+每一年 Apple Watch
+
+129
+00:06:52,946 --> 00:06:54,915
+for what a smartwatch should be.
+都为智能手表带来新的突破
+
+130
+00:06:54,948 --> 00:06:58,719
+And this continuous innovation has made it the number-one-selling smartwatch
+正是这样的持续创新 使它连续七年
+
+131
+00:06:58,752 --> 00:07:01,688
+in the world for seven years running.
+蝉联全球智能手表产品销量冠军
+
+132
+00:07:02,489 --> 00:07:05,292
+And we're so excited about what's next.
+我们对新一代产品充满期待
+
+133
+00:07:05,325 --> 00:07:11,932
+? ?
+? ?
+
+134
+00:07:11,965 --> 00:07:15,035
+This is the new Apple Watch Series 8.
+这就是全新的 Apple Watch Series 8
+
+135
+00:07:16,069 --> 00:07:21,175
+It has all of the things you love about Apple Watch plus even more.
+它保留了 Apple Watch 所有备受用户喜爱的优点 而且加入了更多功能
+
+136
+00:07:21,208 --> 00:07:22,910
+Series 8 is beautifully designed
+Series 8 设计精美
+
+137
+00:07:22,943 --> 00:07:25,979
+and packed with the most advanced sensors and technology.
+配备了最先进的各类传感器及技术
+
+138
+00:07:26,013 --> 00:07:30,217
+It features a big, brilliant, Always-On display with narrow borders
+出色的大尺寸全天候显示屏 采用窄边框设计
+
+139
+00:07:30,250 --> 00:07:33,320
+that push the screen right to the edge.
+将屏幕延伸到了边缘
+
+140
+00:07:33,353 --> 00:07:36,723
+Detailed watch faces like the new Lunar, Astronomy,
+各款细节满满的表盘 例如全新的月相、天文
+
+141
+00:07:36,757 --> 00:07:40,360
+Metropolitan, and Modular look stunning.
+大都会和模块等 精美生动
+
+142
+00:07:41,261 --> 00:07:44,831
+And it's so bright that text and complications are easy to read
+明亮的屏幕让文字及各类复杂功能清晰可见
+
+143
+00:07:44,865 --> 00:07:46,867
+even when your wrist is down.
+即使在手腕下垂时
+
+144
+00:07:46,900 --> 00:07:48,702
+And Series 8 is durable.
+而且 Series 8 十分坚固耐用
+
+145
+00:07:48,735 --> 00:07:53,140
+It's swim proof, dust proof, and crack resistant.
+游泳适用 防尘抗裂
+
+146
+00:07:53,173 --> 00:07:57,311
+To tell you more about Series 8, here's Deidre.
+下面请 Deidre 为你详细介绍 Series 8
+
+147
+00:07:57,344 --> 00:08:02,049
+? ?
+? ?
+
+148
+00:08:02,683 --> 00:08:05,018
+Deidre Caldbeck: Series 8 is designed to keep you connected
+Series 8 让你
+
+149
+00:08:05,052 --> 00:08:08,288
+to the people and things that you care about most.
+与最关心的人与事保持联系
+
+150
+00:08:08,322 --> 00:08:11,191
+It motivates you to stay active and fit.
+它会激励你动起来 保持健康
+
+151
+00:08:11,225 --> 00:08:16,697
+With Workouts and Fitness+ there are so many ways to exercise using Apple Watch.
+有了体能训练 app 及 Fitness+ 服务 你有无数种方式用 Apple Watch 来配合运动
+
+152
+00:08:16,730 --> 00:08:19,533
+Series 8 helps keep you safe with fall detection,
+Series 8 支持摔倒检测
+
+153
+00:08:19,566 --> 00:08:22,302
+emergency SOS, and Medical ID.
+紧急联络及医疗急救卡 为你的安全保驾护航
+
+154
+00:08:22,336 --> 00:08:26,440
+It has sleep tracking, Cycle Tracking, and Mindfulness
+还有睡眠跟踪 经期跟踪及正念等功能
+
+155
+00:08:26,473 --> 00:08:30,811
+to give you insights into your body and help you maintain healthy habits.
+让你更深入了解自己的身体 并帮助你保持健康的习惯
+
+156
+00:08:30,844 --> 00:08:35,015
+With best-in-class health sensors that enable ECG,
+配备了由各类技术尖端的健康传感器 带来的移动心电图房颤提示软件
+
+157
+00:08:35,048 --> 00:08:38,318
+irregular rhythm notifications, and blood oxygen,
+心律不齐提示及血氧测量功能
+
+158
+00:08:38,352 --> 00:08:41,588
+it is the ultimate device for a healthy life.
+它是健康生活的理想设备
+
+159
+00:08:41,622 --> 00:08:44,825
+And now, Series 8 brings even more features
+现在 Series 8 带来了更多
+
+160
+00:08:44,858 --> 00:08:47,861
+for health, safety, and connectivity,
+健康、安全和连接方面的新功能
+
+161
+00:08:47,895 --> 00:08:51,298
+starting with an innovative new temperature sensor
+首先是一款创新性的全新温度传感器
+
+162
+00:08:51,331 --> 00:08:54,801
+that takes our commitment to women's health even further.
+进一步实现我们对推进女性健康的承诺
+
+163
+00:08:54,835 --> 00:08:57,571
+And here's Sumbul to tell you about it.
+下面请 Sumbul 为你介绍
+
+164
+00:08:57,604 --> 00:09:02,943
+? ?
+? ?
+
+165
+00:09:02,976 --> 00:09:05,512
+Dr. Sumbul Ahmad Desai: Women's health impacts more than just women.
+女性健康不仅事关女性自己
+
+166
+00:09:05,546 --> 00:09:08,882
+It also impacts their families and communities.
+也关系到她们的家庭与社区
+
+167
+00:09:08,916 --> 00:09:12,119
+And menstrual cycles are key to a woman's health,
+月经周期对女性健康至关重要
+
+168
+00:09:12,152 --> 00:09:16,023
+so much so that many physicians regard them as a vital sign.
+很多医生将其视为一项生命体征
+
+169
+00:09:16,056 --> 00:09:18,859
+We added Cycle Tracking three years ago,
+我们三年前就增加了经期跟踪 app
+
+170
+00:09:18,892 --> 00:09:22,262
+and it has helped tens of millions gain deeper insights
+它帮助成百上千万人
+
+171
+00:09:22,296 --> 00:09:25,632
+into their cycles and overall health.
+增进了对自己的经期及健康情况的了解
+
+172
+00:09:25,666 --> 00:09:29,903
+This year, we're introducing a suite of advanced Cycle Tracking features,
+今年 我们将增加一系列先进的经期跟踪功能
+
+173
+00:09:29,937 --> 00:09:34,308
+including valuable information about a critical aspect of women's health:
+包括对女性健康至关重要的方面：
+
+174
+00:09:34,341 --> 00:09:35,909
+ovulation.
+排卵期
+
+175
+00:09:35,943 --> 00:09:40,948
+As always, we build our health features with two fundamental principles.
+与往常一样 我们在设计健康功能时 遵循着两个最根本的原则
+
+176
+00:09:40,981 --> 00:09:44,585
+First, they're developed using scientifically validated insights,
+首先 它们的开发以经科学验证的洞见为基础
+
+177
+00:09:44,618 --> 00:09:47,654
+and second, privacy is at the core,
+第二 隐私永远是重中之重
+
+178
+00:09:47,688 --> 00:09:50,891
+designed to keep your data secure and private.
+所有设计都保证数据安全和私密
+
+179
+00:09:50,924 --> 00:09:54,695
+Utilizing the new temperature sensor in Apple Watch Series 8,
+利用 Apple Watch Series 8 的全新温度传感器
+
+180
+00:09:54,728 --> 00:09:59,366
+you can now receive a retrospective estimate of when you ovulated.
+帮你回推估算排卵日
+
+181
+00:09:59,399 --> 00:10:02,503
+Series 8 has a unique two-sensor design.
+Series 8 拥有独特的双传感器设计
+
+182
+00:10:02,536 --> 00:10:05,806
+There's one temperature sensor on the back crystal, near your skin,
+一个温度传感器位于水晶玻璃表背内 接近皮肤
+
+183
+00:10:05,839 --> 00:10:09,209
+and another just under the display.
+另一个则在显示屏下方
+
+184
+00:10:09,243 --> 00:10:12,346
+This design improves accuracy by reducing bias
+这样的设计能提升测量准确度
+
+185
+00:10:12,379 --> 00:10:14,381
+from the outside environment.
+减少外部环境造成的偏差
+
+186
+00:10:14,414 --> 00:10:17,150
+Nighttime wrist temperature can be a good indicator
+夜间手腕温度可以作为
+
+187
+00:10:17,184 --> 00:10:19,353
+of overall body temperature
+全身体温一个很好的指标
+
+188
+00:10:19,386 --> 00:10:21,922
+because while you sleep, your blood vessels dilate,
+因为在睡觉时 你的血管会扩张
+
+189
+00:10:21,955 --> 00:10:24,191
+increasing blood flow to your limbs.
+增加流向四肢的血液
+
+190
+00:10:24,224 --> 00:10:29,029
+Overnight, Series 8 samples your wrist temperature every 5 seconds
+Series 8 会连续整晚以每 5 秒一次的频率
+
+191
+00:10:29,062 --> 00:10:33,967
+and it can detect changes as small as 0.1° Celsius.
+测量你的体温 精确度可以达到 0.1 摄氏度
+
+192
+00:10:34,001 --> 00:10:35,202
+In the Health app,
+在健康 app 中
+
+193
+00:10:35,235 --> 00:10:38,505
+you'll be able to see nightly shifts from your baseline temperature,
+你可以查看你的夜间体温与基线体温的变化对比
+
+194
+00:10:38,539 --> 00:10:41,742
+which can be caused by things like exercise, jet lag,
+引发变化的原因可能包括锻炼、倒时差
+
+195
+00:10:41,775 --> 00:10:44,311
+alcohol, or illness.
+饮酒或是疾病
+
+196
+00:10:44,344 --> 00:10:48,448
+But tracking temperature changes is even more useful for those who ovulate,
+然而跟踪体温变化对于排卵的人帮助更大
+
+197
+00:10:48,482 --> 00:10:51,785
+because cyclical patterns can reveal the biphasic shift.
+因为周期性模式可以揭示双相型体温
+
+198
+00:10:51,818 --> 00:10:56,356
+The biphasic shift is an increase in body temperature that occurs in response
+双相型体温是指因激素变化
+
+199
+00:10:56,390 --> 00:11:00,661
+to changing hormones, and it can indicate ovulation.
+而导致的体温升高 可能意味着排卵的发生
+
+200
+00:11:03,030 --> 00:11:06,900
+If you're trying to conceive, knowing if and when you ovulated
+如果你在尝试怀孕 了解是否排卵以及排卵时间
+
+201
+00:11:06,934 --> 00:11:08,468
+can inform your family planning
+能帮助你做生育计划
+
+202
+00:11:08,502 --> 00:11:11,238
+and conversations with your health care provider.
+并更好地与医护工作者沟通
+
+203
+00:11:11,271 --> 00:11:14,274
+Today, the most common way to track the biphasic shift
+如今 跟踪双相型体温最普遍的方式
+
+204
+00:11:14,308 --> 00:11:17,411
+is manually with a thermometer and a journal.
+是手动使用 体温计和日记本
+
+205
+00:11:17,444 --> 00:11:20,480
+Series 8 makes this much easier and more convenient
+Series 8 将这些努力变得更轻松 更方便
+
+206
+00:11:20,514 --> 00:11:24,985
+by providing new, automatic retrospective ovulation estimates.
+带来了全新的自动回推排卵日估算
+
+207
+00:11:25,018 --> 00:11:27,087
+Further advancing Cycle Tracking,
+经期跟踪功能也有提升
+
+208
+00:11:27,120 --> 00:11:32,292
+all users on iOS 16 and watchOS 9 can be now notified
+现在所有使用了 iOS 16 和 watchOS 9 的用户如果根据经期数据记录
+
+209
+00:11:32,326 --> 00:11:36,396
+of possible cycle deviations based on logged cycle data.
+系统计算出可能存在经期偏差 都会收到提示
+
+210
+00:11:36,430 --> 00:11:40,367
+You may not realize that common cycle deviations, like persistent spotting
+你可能都没有意识到常见的经期偏差 如持续的点滴出血
+
+211
+00:11:40,400 --> 00:11:44,805
+or prolonged periods, can be symptoms of serious health conditions
+或经期延长 可能是严重健康状况的症状
+
+212
+00:11:44,838 --> 00:11:48,408
+like fibroids, thyroid disorders, or PCOS.
+如肌瘤、甲状腺疾病或多囊卵巢综合征
+
+213
+00:11:48,442 --> 00:11:51,812
+That's why it's so important to know when they occur.
+所以 知道它们何时发生至关重要
+
+214
+00:11:51,845 --> 00:11:55,148
+The temperature sensing capability on Series 8, plus heart rate,
+Series 8 的温度传感器功能
+
+215
+00:11:55,182 --> 00:12:00,153
+and logged cycle data come together to give you a detailed view of your cycle,
+加上心率和经期数据记录 让你详细了解你的经期
+
+216
+00:12:00,187 --> 00:12:03,457
+all of which can be easily shared with your healthcare provider
+所有这些都便于你与医护人员分享
+
+217
+00:12:03,490 --> 00:12:06,593
+to facilitate more informed conversations.
+为你们的沟通提供有帮助的信息
+
+218
+00:12:06,627 --> 00:12:09,930
+We believe privacy is a fundamental human right
+我们认为隐私是基本人权
+
+219
+00:12:09,963 --> 00:12:13,800
+and that your health data is yours and yours alone.
+你的健康数据只属于你本人
+
+220
+00:12:13,834 --> 00:12:17,037
+Your Cycle Tracking data is encrypted on your device
+你的经期跟踪数据在你的设备上加密储存
+
+221
+00:12:17,070 --> 00:12:21,141
+and only accessible with your passcode, Touch ID, or Face ID.
+只有用密码、触控 ID 或面容 ID 才能解锁
+
+222
+00:12:21,842 --> 00:12:26,480
+When using iOS and watchOS with the default two-factor authentication
+当 iOS 和 watchOS 开启默认的双重认证
+
+223
+00:12:26,513 --> 00:12:27,681
+and a passcode,
+并使用密码时
+
+224
+00:12:27,714 --> 00:12:32,019
+Health app data synced to iCloud is encrypted end-to-end,
+健康 app 中同步到 iCloud 的数据采用端到端加密
+
+225
+00:12:32,052 --> 00:12:35,422
+meaning that Apple does not have the key to decrypt the data
+也就是说 Apple 没有解密数据需要的密钥
+
+226
+00:12:35,455 --> 00:12:37,824
+and therefore cannot read it.
+因此也无法读到这些数据
+
+227
+00:12:37,858 --> 00:12:41,728
+Only with your explicit permission can your health data be shared.
+只有经过你的明确许可 你的健康数据才会被共享
+
+228
+00:12:41,762 --> 00:12:45,766
+And you have granular control over the types of data you share
+而且你可以精确地控制分享哪种数据
+
+229
+00:12:45,799 --> 00:12:47,935
+and who you share it with.
+与谁共享
+
+230
+00:12:47,968 --> 00:12:50,170
+Women's health is critically important,
+女性健康至关重要
+
+231
+00:12:50,204 --> 00:12:53,907
+and we're proud to bring these new advanced cycle tracking capabilities
+我们很骄傲能为 Apple Watch Series 8
+
+232
+00:12:53,941 --> 00:12:56,076
+to Apple Watch Series 8.
+带来这些先进的经期跟踪新功能
+
+233
+00:12:56,109 --> 00:12:58,011
+Now back to Deidre.
+下面 交给 Deidre
+
+234
+00:12:58,745 --> 00:13:00,614
+Deidre: Safety features on Apple Watch,
+Apple Watch 上的安全功能
+
+235
+00:13:00,647 --> 00:13:04,952
+like fall detection and emergency SOS, have helped save lives.
+比如摔倒检测和 SOS 紧急联络 曾解救很多人于危难之中
+
+236
+00:13:04,985 --> 00:13:08,956
+There's another emergency situation you never want to find yourself in,
+但还有另一种没有人愿意经历的紧急情况
+
+237
+00:13:08,989 --> 00:13:11,024
+and that's a car crash.
+那就是车祸
+
+238
+00:13:11,058 --> 00:13:13,760
+According to the US Department of Transportation,
+根据美国交通部的数据
+
+239
+00:13:13,794 --> 00:13:17,764
+almost half of the worst crashes occur in rural areas,
+将近一半最严重的交通事故发生在偏远地区
+
+240
+00:13:17,798 --> 00:13:20,534
+and the majority involve only a single vehicle.
+而且绝大多数情况下 涉事车辆只有一辆
+
+241
+00:13:20,567 --> 00:13:26,073
+So we built an innovative new feature to help in situations like this.
+我们因此开发了突破性的新功能 用于应对此类状况
+
+242
+00:13:26,106 --> 00:13:28,742
+Introducing Crash Detection.
+这就是 车祸检测
+
+243
+00:13:28,775 --> 00:13:33,881
+Apple Watch Series 8 can detect if you were in a severe car crash.
+Apple Watch Series 8 可以检测到是否发生了严重的车祸
+
+244
+00:13:33,914 --> 00:13:37,017
+When a crash is detected, it will automatically connect you
+检测到车祸发生后 它会自动帮你
+
+245
+00:13:37,050 --> 00:13:38,619
+拨打急救电话
+with emergency services,
+
+246
+00:13:38,652 --> 00:13:43,257
+provide your location, and notify your emergency contacts.
+向接线员提供你的位置 并告知你的紧急联系人
+
+247
+00:13:43,290 --> 00:13:45,792
+And to tell you more, here's Ron.
+下面请 Ron 详细讲解
+
+248
+00:13:45,826 --> 00:13:50,931
+? ?
+? ?
+
+249
+00:13:50,964 --> 00:13:54,368
+Ron Huang: In order to detect the unique forces of a car crash,
+为了检测车祸所包含的独特力学
+
+250
+00:13:54,401 --> 00:13:57,204
+we developed two new motion sensors for Series 8:
+我们为 Series 8 设计了两款全新运动传感器
+
+251
+00:13:57,237 --> 00:13:59,740
+an improved 3-axis gyroscope
+包括一个改进版的三轴陀螺仪
+
+252
+00:13:59,773 --> 00:14:02,342
+and a high-g-force accelerometer.
+和一个高 g 值加速感应器
+
+253
+00:14:02,376 --> 00:14:07,114
+The new accelerometer is capable of measuring up to 256 g's,
+新的加速感应器能测量最高可达 256 g-force
+
+254
+00:14:07,147 --> 00:14:10,918
+allowing it to detect the extreme impacts of a crash.
+使其能够检测车祸发生时极端碰撞的情况
+
+255
+00:14:10,951 --> 00:14:15,556
+And it samples motion four times faster– at over 3,000 times a second–
+而且它的运动采样速度快达 4 倍 也就是每秒超过 3000 次
+
+256
+00:14:15,589 --> 00:14:19,126
+so it can sense the precise moment of impact.
+因而能够精准检测到碰撞发生的瞬间
+
+257
+00:14:19,159 --> 00:14:20,827
+With these new technologies,
+依靠这些新技术
+
+258
+00:14:20,861 --> 00:14:23,630
+we built an advanced sensor fusion algorithm
+我们开发了先进的传感器融合算法
+
+259
+00:14:23,664 --> 00:14:25,766
+to deliver accurate Crash Detection.
+实现精准的车祸检测
+
+260
+00:14:25,799 --> 00:14:29,303
+We started by spending years studying vehicle impacts
+我们花了数年时间
+
+261
+00:14:29,336 --> 00:14:31,905
+at state-of-the-art crash test labs.
+在最先进的碰撞测试实验室研究车辆的碰撞
+
+262
+00:14:31,939 --> 00:14:34,875
+We focused on four main types of severe crashes:
+我们关注了四种严重车祸的主要类型
+
+263
+00:14:34,908 --> 00:14:38,011
+front impact, side impact,
+包括正面碰撞、侧面碰撞
+
+264
+00:14:38,045 --> 00:14:40,914
+rear-end collision, and rollovers.
+追尾碰撞和翻车
+
+265
+00:14:40,948 --> 00:14:44,484
+In each crash test, we captured data from the new gyroscope
+在每次碰撞试验中 我们的捕获数据来自新的陀螺仪
+
+266
+00:14:44,518 --> 00:14:48,222
+and accelerometer as well as from other sensors in Series 8
+和加速感应器 以及 Series 8 配备的其他传感器
+
+267
+00:14:48,255 --> 00:14:52,993
+including the barometer, microphone, and GPS.
+如气压计 麦克风和 GPS 等
+
+268
+00:14:53,026 --> 00:14:57,197
+And then we used machine learning to incorporate all of these signals
+然后我们用机器学习 将所有这些信号
+
+269
+00:14:57,231 --> 00:14:58,599
+into the algorithm,
+整合进算法中
+
+270
+00:14:58,632 --> 00:15:01,735
+which was trained on over 1 million hours
+并已经用超过 100 万小时的 现实世界驾驶及碰撞数据
+
+271
+00:15:01,768 --> 00:15:04,271
+of real-world driving and crash data.
+对它做了训练
+
+272
+00:15:04,304 --> 00:15:07,975
+Series 8 can detect crashes in the most popular types of vehicles
+Series 8 可检测到
+
+273
+00:15:08,008 --> 00:15:12,246
+like passenger cars, SUVs, and pickup trucks.
+轿车、SUV 和皮卡车等常见车型 发生的车祸碰撞
+
+274
+00:15:12,279 --> 00:15:14,748
+Crash Detection runs only when you're driving
+车祸检测只有在行车时才会运行
+
+275
+00:15:14,781 --> 00:15:18,519
+and processes data only around the time of a possible crash,
+仅处理大约撞车时间点前后的数据
+
+276
+00:15:18,552 --> 00:15:21,388
+entirely on your device.
+而且完全在设备端进行
+
+277
+00:15:21,421 --> 00:15:24,791
+That's Crash Detection on Apple Watch Series 8.
+这就是 Apple Watch Series 8 的车祸检测功能
+
+278
+00:15:24,825 --> 00:15:26,493
+We truly hope you never need it,
+我们由衷地希望你永远用不上这个功能
+
+279
+00:15:26,527 --> 00:15:30,130
+but that you will feel a little bit safer every time you get in the car.
+不过在车上能多一份安全感
+
+280
+00:15:30,163 --> 00:15:31,598
+Now, back to Deidre.
+下面 交给 Deidre
+
+281
+00:15:34,768 --> 00:15:39,206
+Deidre: Even with the new temperature and motion sensors working in the background,
+尽管有新的温度和运动传感器在后台运行
+
+282
+00:15:39,239 --> 00:15:44,411
+Apple Watch Series 8 still has all-day, 18-hour battery life.
+Apple Watch Series 8 依然能维持 从早到晚 18 小时的续航
+
+283
+00:15:44,444 --> 00:15:46,847
+But sometimes, like if you're on a long flight
+但有时候 你需要坐长途飞机
+
+284
+00:15:46,880 --> 00:15:48,682
+or without a charger for the night,
+或者在外过夜时没有充电器
+
+285
+00:15:48,715 --> 00:15:51,051
+you need to preserve battery life.
+需要延长续航时间
+
+286
+00:15:51,084 --> 00:15:54,755
+To help with that, we're introducing Low Power Mode,
+所以 我们现在使其可以在低功耗下运行
+
+287
+00:15:54,788 --> 00:15:59,159
+which can give you up to 36 hours of battery life on a full charge.
+让充满电后续航最长可达 36 小时
+
+288
+00:15:59,993 --> 00:16:03,964
+Low Power Mode maintains many of the core features of Apple Watch–
+当在低功耗下运行时 Apple Watch 的大部分核心功能保持开启
+
+289
+00:16:03,997 --> 00:16:06,567
+like activity tracking and fall detection–
+比如活动追踪及摔倒检测
+
+290
+00:16:06,600 --> 00:16:09,570
+while temporarily disabling other features,
+并暂时关闭其他一些功能
+
+291
+00:16:09,603 --> 00:16:13,173
+like Always-On display and auto workout detection,
+比如全天候显示屏和自动体能训练检测
+
+292
+00:16:13,207 --> 00:16:18,212
+providing maximum battery savings with the least impact to the user experience.
+在尽量避免影响用户体验的同时 尽可能节约电量
+
+293
+00:16:19,680 --> 00:16:24,685
+Low Power Mode is available on Series 4 and later running watchOS 9.
+运行 watchOS 9 的 Series 4 及后续产品均可在低功耗下来运行设备
+
+294
+00:16:24,718 --> 00:16:29,456
+Cellular models of Series 8 will also support international roaming.
+Series 8 蜂窝网络机型也将支持国际漫游
+
+295
+00:16:29,990 --> 00:16:34,027
+Apple Watch will now be able to stay connected to your cellular network
+Apple Watch 现在可以在你出国时
+
+296
+00:16:34,061 --> 00:16:35,863
+while you're traveling abroad.
+保持相应的蜂窝网络连接
+
+297
+00:16:35,896 --> 00:16:41,268
+Simply add your Apple Watch to your iPhone roaming plan at little or no cost.
+只需要将你的 Apple Watch 加入你的 iPhone 漫游套餐 无需过多花费 甚至可以免费实现
+
+298
+00:16:41,301 --> 00:16:44,905
+By the end of the year, international roaming will be available
+到今年底 全球将有超过 30 家运营商
+
+299
+00:16:44,938 --> 00:16:47,875
+on more than 30 carriers worldwide.
+支持国际漫游
+
+300
+00:16:47,908 --> 00:16:51,445
+It will be supported on all cellular models of Apple Watch
+运行 watchOS 9 的所有 支持蜂窝网络的 Series 5
+
+301
+00:16:51,478 --> 00:16:55,415
+from Series 5 onward running watchOS 9.
+及后续产品都可使用此功能
+
+302
+00:16:55,449 --> 00:17:01,388
+Apple Watch Series 8 will be available in four colors of 100% recycled aluminum:
+Apple Watch Series 8 使用 100% 再生铝金属的 有四种颜色选择：
+
+303
+00:17:01,421 --> 00:17:03,357
+Midnight, Starlight,
+午夜色、星光色
+
+304
+00:17:03,390 --> 00:17:05,726
+Silver, and Product(RED),
+银色和红色
+
+305
+00:17:05,759 --> 00:17:11,198
+and in three stainless steel finishes: Silver, Gold, and Graphite.
+还配有三种不锈钢外观：银色、金色和石墨色
+
+306
+00:17:11,231 --> 00:17:16,470
+There are also great new colors across our most popular band styles.
+我们广受大家喜欢的各个表带类型 也都会加入新配色
+
+307
+00:17:16,503 --> 00:17:20,140
+We also have exciting updates to both Nike bands,
+两款 Nike 表带也有令人兴奋的新设计
+
+308
+00:17:20,174 --> 00:17:23,210
+including fresh colors for the Nike Sport Band
+Nike 运动表带会有新配色
+
+309
+00:17:23,243 --> 00:17:26,980
+and a new Nike Sport Loop "Just Do It" woven
+新款 Nike 回环式运动表带 则将 Just Do It 标识
+
+310
+00:17:27,014 --> 00:17:28,582
+right into the textile.
+融入编织纹理中
+
+311
+00:17:28,615 --> 00:17:30,184
+And with watchOS 9,
+运行 watchOS 9 后
+
+312
+00:17:30,217 --> 00:17:32,486
+you can use all Nike watch faces
+任何 Apple Watch 上
+
+313
+00:17:32,519 --> 00:17:34,855
+with any Apple Watch.
+都能使用所有 Nike 表盘
+
+314
+00:17:34,888 --> 00:17:38,992
+There are also two stylish new bands for Apple Watch Hermès.
+Apple Watch Hermès 也将迎来两款时尚新表带
+
+315
+00:17:39,026 --> 00:17:42,362
+"H Diagonal" uses hundreds of micro-perforations
+H Diagonal 用数百个微孔
+
+316
+00:17:42,396 --> 00:17:46,967
+to create a sporty pattern of the iconic Hermès H.
+打造出充满动感的标志性爱马仕 H
+
+317
+00:17:47,000 --> 00:17:50,337
+And "Gourmette Metal" features a polished silver chain
+Gourmette Metal 则是一条抛光银链
+
+318
+00:17:50,370 --> 00:17:54,041
+wrapping twice around the wrist for a bold look.
+在手腕上缠绕两圈 时尚又大胆
+
+319
+00:17:54,074 --> 00:17:57,077
+There's also a new "Hermès Lucky Horse" watch face
+还有全新的 Hermès 幸运马表盘
+
+320
+00:17:57,110 --> 00:18:00,314
+that celebrates their equestrian roots.
+纪念品牌的马术根源
+
+321
+00:18:00,347 --> 00:18:03,851
+That's the incredible new Apple Watch Series 8
+这就是卓越的全新 Apple Watch Series 8
+
+322
+00:18:03,884 --> 00:18:07,955
+with temperature sensing, retrospective ovulation estimates,
+配有体温感应、回推估算排卵日
+
+323
+00:18:07,988 --> 00:18:11,058
+Crash Detection, and international roaming,
+车祸检测及国际漫游
+
+324
+00:18:11,091 --> 00:18:13,660
+on top of best-in-class health features
+再加上原有的尖端健康功能
+
+325
+00:18:13,694 --> 00:18:17,598
+like Blood Oxygen, ECG, and sleep tracking.
+比如血氧检测 移动心电图房颤提示软件和睡眠跟踪
+
+326
+00:18:17,631 --> 00:18:22,402
+It has the latest design that users love with an edge-to-edge display,
+它拥有备受喜爱的最新全面屏设计
+
+327
+00:18:22,436 --> 00:18:25,405
+great durability, and fast charging,
+极佳的耐用性 支持快速充电
+
+328
+00:18:25,439 --> 00:18:29,176
+and all the new features of watchOS 9.
+还有 watchOS 9 所包含的各种新功能
+
+329
+00:18:29,209 --> 00:18:32,846
+Apple Watch Series 8 will start at $399 for GPS
+Apple Watch Series 8 的 GPS 款 $399 起
+
+330
+00:18:32,880 --> 00:18:35,148
+and $499 for cellular.
+蜂窝网络款 $499 起
+
+331
+00:18:35,182 --> 00:18:38,452
+And with the purchase of any new Apple Watch,
+新购任意一款 Apple Watch
+
+332
+00:18:38,485 --> 00:18:42,055
+you'll also get 3 months of Fitness+ free.
+还会赠送 3 个月的 Fitness+！
+
+333
+00:18:42,089 --> 00:18:46,760
+You can order today, and it will be available September 16th.
+今天开始接受订购  9 月 16 日发售
+
+334
+00:18:46,793 --> 00:18:48,962
+And that's Apple Watch Series 8.
+这就是 Apple Watch Series 8
+
+335
+00:18:48,996 --> 00:18:50,097
+Now back to Jeff.
+下面交给 Jeff
+
+336
+00:18:52,299 --> 00:18:55,936
+Jeff: I am so incredibly excited about Series 8.
+我真的很期待 Series 8
+
+337
+00:18:55,969 --> 00:18:59,206
+Let's take one more look at this amazing watch.
+让我们再看一看这款出色的手表吧
+
+338
+00:19:00,374 --> 00:19:02,309
+So you've taken up running.
+你准备开跑了
+
+339
+00:19:02,976 --> 00:19:05,045
+Apple Watch has taken up a few new things as well.
+Apple Watch 也配备了一些新功能
+
+340
+00:19:05,879 --> 00:19:09,850
+First, it tracked your distance. Now, it's tracking your stride length.
+它先是能跟踪你跑的距离 现在 也能跟踪你的步幅
+
+341
+00:19:09,883 --> 00:19:13,820
+It learns your favorite route, then lets you race against yourself.
+它会熟悉你最喜欢的路线 让你与自己比拼
+
+342
+00:19:13,854 --> 00:19:14,721
+You're behind.
+落后于目标
+
+343
+00:19:14,755 --> 00:19:16,823
+Yeah, you're behind.
+你落后于目标了
+
+344
+00:19:18,692 --> 00:19:19,826
+When you're swimming,
+游泳的时候
+
+345
+00:19:19,860 --> 00:19:21,261
+it can tell a breaststroke
+它能分辨你是在蛙泳
+
+346
+00:19:21,295 --> 00:19:22,763
+from a backstroke
+还是仰泳
+
+347
+00:19:22,796 --> 00:19:24,364
+from a kickboard.
+还是在用浮板
+
+348
+00:19:24,398 --> 00:19:25,766
+And when you're done,
+结束之后
+
+349
+00:19:25,799 --> 00:19:27,534
+it dries itself off.
+它会自动排水
+
+350
+00:19:29,803 --> 00:19:34,041
+This isn't a dream. Your watch can take an ECG.
+这不是在做梦 你的手表有移动心电图房颤提示软件
+
+351
+00:19:34,074 --> 00:19:35,943
+But if it was a dream,
+就算你真的在做梦
+
+352
+00:19:35,976 --> 00:19:40,547
+that watch would track your REM sleep down to the minute.
+这块手表也会追踪你的快速动眼睡眠时间 精确到分钟
+
+353
+00:19:40,581 --> 00:19:42,883
+It checks your heart rate.
+它会查看你的心率
+
+354
+00:19:42,916 --> 00:19:46,854
+It checks for temperature changes to estimate when you've ovulated.
+查看体温变化 回推估算排卵日
+
+355
+00:19:46,887 --> 00:19:50,090
+It checks out when you're buying spaghetti.
+买意面时 它会帮你付款
+
+356
+00:19:50,123 --> 00:19:53,493
+It could already detect if you fell.
+它已经能检测到你是否摔倒
+
+357
+00:19:53,527 --> 00:19:55,462
+Now the microphone detects impact noise,
+现在 麦克风能检测冲撞时的声音
+
+358
+00:19:55,495 --> 00:19:57,598
+the accelerometer senses rapid deceleration,
+加速感应器会检测到迅速的减速
+
+359
+00:19:57,631 --> 00:19:59,833
+and the barometer measures a shift in pressure
+气压计则能测量压力的变化
+
+360
+00:19:59,867 --> 00:20:02,669
+consistent with an air bag going off.
+与气囊弹出时一致
+
+361
+00:20:02,703 --> 00:20:07,341
+So it can check if you need help after a car crash.
+这样 它就能在车祸发生后 查看你是否需要帮助
+
+362
+00:20:07,374 --> 00:20:11,345
+And hey, it also shows your ground contact time.
+嘿 它甚至能显示你的触地时间
+
+363
+00:20:11,378 --> 00:20:13,146
+Amazing.
+真厉害
+
+364
+00:20:13,180 --> 00:20:14,982
+Have a nice run.
+跑步愉快！
+
+365
+00:20:18,919 --> 00:20:21,788
+Jeff: Next, let's talk about Apple Watch SE.
+下面 我们来聊聊 Apple Watch SE
+
+366
+00:20:21,822 --> 00:20:23,757
+SE has been a huge hit,
+SE 非常受欢迎
+
+367
+00:20:23,790 --> 00:20:26,393
+and for more than 80% of SE customers
+超过 80% 的 SE 用户
+
+368
+00:20:26,426 --> 00:20:28,762
+it's their very first Apple Watch.
+是第一次拥有 Apple Watch
+
+369
+00:20:28,795 --> 00:20:32,766
+They love how SE delivers the core Apple Watch experience
+他们热爱配备了 Apple Watch 核心功能
+
+370
+00:20:32,799 --> 00:20:34,902
+at a more affordable price.
+但价格更亲民的 SE
+
+371
+00:20:35,469 --> 00:20:39,506
+SE is a fantastic way to get started with Apple Watch.
+SE 是 Apple Watch 的极佳入门之选
+
+372
+00:20:39,540 --> 00:20:42,910
+And this year, it gets even better.
+今年 它更上一层楼
+
+373
+00:20:42,943 --> 00:20:47,414
+The new SE will be available in Silver, Midnight, and Starlight–
+全新 SE 有三种颜色选择 银色、午夜色和星光色
+
+374
+00:20:47,447 --> 00:20:50,517
+all in 100% recycled aluminum.
+全部使用 100% 再生铝金属
+
+375
+00:20:50,551 --> 00:20:53,420
+And we've completely redesigned the back case.
+我们也彻底重新设计了表背
+
+376
+00:20:53,453 --> 00:20:56,056
+It's now made of nylon composite materials
+现在使用了全新尼龙复合材料
+
+377
+00:20:56,089 --> 00:20:59,660
+that match perfectly with the three case finishes.
+完美适配三种表壳外观
+
+378
+00:20:59,693 --> 00:21:03,063
+And there's a new production process that reduces its carbon footprint
+还使用了新的生产工艺 将碳足迹
+
+379
+00:21:03,096 --> 00:21:05,432
+by over 80%.
+减少 80% 以上
+
+380
+00:21:05,465 --> 00:21:08,635
+Now, back to Deidre to tell you more.
+下面请 Deidre 为你详细介绍
+
+381
+00:21:10,270 --> 00:21:14,241
+Deidre: The second generation SE continues to deliver the core benefits
+第二代 SE 继续保留了
+
+382
+00:21:14,274 --> 00:21:16,610
+of Apple Watch that users love,
+用户喜爱的 Apple Watch 的核心优势
+
+383
+00:21:16,643 --> 00:21:19,813
+like workout and activity tracking.
+比如运动和活动跟踪
+
+384
+00:21:19,847 --> 00:21:21,915
+It's swim-proof.
+游泳适用
+
+385
+00:21:21,949 --> 00:21:24,885
+It has high and low heart rate notifications,
+具有高心率和低心率通知
+
+386
+00:21:24,918 --> 00:21:27,254
+emergency SOS,
+SOS 紧急联络
+
+387
+00:21:27,287 --> 00:21:29,756
+and fall detection.
+摔倒检测等功能
+
+388
+00:21:29,790 --> 00:21:33,794
+SE also includes the same motion sensors as Series 8
+SE 也配备了与 Series 8 相同的运动传感器
+
+389
+00:21:33,827 --> 00:21:36,129
+to support Crash Detection.
+也支持车祸检测
+
+390
+00:21:36,163 --> 00:21:38,765
+And with AirPods, you can listen to your music anywhere.
+搭配 AirPods 让你可以在随时随地畅享音乐
+
+391
+00:21:39,766 --> 00:21:44,304
+The SE display is 30% larger than that of Series 3.
+SE 的显示屏比 Series 3 大了 30%
+
+392
+00:21:44,338 --> 00:21:49,576
+And SE features the same S8 System in Package that's in Series 8,
+SE 还配备了与 Series 8 相同的 S8 SiP 芯片
+
+393
+00:21:49,610 --> 00:21:53,680
+making it up to 20% faster than before.
+速度提升最高可达 20%
+
+394
+00:21:53,714 --> 00:21:58,151
+SE continues to be the perfect Apple Watch for Family Setup.
+SE 依然是 最适合用于家人共享设置的 Apple Watch
+
+395
+00:21:58,185 --> 00:22:02,589
+With Family Setup, you can use your iPhone to pair watches for your children
+有了家人共享设置 你可以用自己的 iPhone
+
+396
+00:22:02,623 --> 00:22:05,259
+who don't yet have their own iPhones.
+为还没有属于自己的 iPhone 的孩子设置手表
+
+397
+00:22:05,292 --> 00:22:09,696
+Kids can make phone calls and send messages to contacts that you specify,
+孩子可以与你设定的联系人打电话以及发送信息
+
+398
+00:22:09,730 --> 00:22:14,268
+connect to emergency services, and share their location.
+也可以联系急救服务 并共享他们的位置信息
+
+399
+00:22:14,301 --> 00:22:18,505
+And with new features coming soon like the Home app and home keys in Wallet,
+配合其他即将推出的新功能 比如家庭 app 和钱包 app 中的家庭钥匙等
+
+400
+00:22:18,539 --> 00:22:22,309
+Family Setup allows even more independence for kids
+家人共享设置让孩子更独立
+
+401
+00:22:22,342 --> 00:22:24,378
+and more peace of mind for parents.
+让家长更安心
+
+402
+00:22:24,411 --> 00:22:27,848
+SE offers everyone the core features of Apple Watch,
+SE 提供 Apple Watch 的核心功能
+
+403
+00:22:27,881 --> 00:22:30,751
+and now includes the faster S8 SiP,
+包括更快的 S8 SiP 芯片
+
+404
+00:22:30,784 --> 00:22:34,855
+Crash Detection, new case colors with matching back cases,
+车祸检测、新表壳配色与匹配的表背
+
+405
+00:22:34,888 --> 00:22:38,692
+and all the new capabilities of watchOS 9,
+还有 watchOS 9 所包含的一切新功能
+
+406
+00:22:38,725 --> 00:22:43,163
+all at a more affordable price starting at $249 for GPS
+价格则变得更为亲民 GPS 款 $249 起
+
+407
+00:22:43,197 --> 00:22:45,566
+and $299 for cellular.
+蜂窝网络款为 $299 起
+
+408
+00:22:45,599 --> 00:22:49,369
+You can order it today and it will be available on September 16th.
+今天就开始接受订购  9 月 16 日发售
+
+409
+00:22:50,304 --> 00:22:54,007
+We are so excited about the great new features coming to Series 8
+我们非常期待 Series 8 和 Apple Watch SE 的各种新功能
+
+410
+00:22:54,041 --> 00:22:57,978
+and Apple Watch SE, and can't wait for people to start using them.
+迫不及待地让大家能用起来
+
+411
+00:22:58,011 --> 00:22:59,546
+But we're not done yet.
+但我们还没有说完
+
+412
+00:22:59,580 --> 00:23:02,683
+Here's Jeff to tell you even more.
+请 Jeff 为你做更多介绍
+
+413
+00:23:02,716 --> 00:23:09,723
+? ?
+? ?
+
+414
+00:23:11,258 --> 00:23:15,195
+Jeff: We've been working on something completely new.
+我们一直在打造一款全新的产品
+
+415
+00:23:15,229 --> 00:23:18,332
+Over the years, we've spoken to acclaimed explorers,
+这些年来 我们与著名的探险家
+
+416
+00:23:18,365 --> 00:23:21,468
+accomplished adventurers, and elite athletes
+卓有成就的冒险家和顶尖运动员相互交流
+
+417
+00:23:21,502 --> 00:23:24,338
+who are drawn to some of the most extreme environments–
+他们曾被一些最极端的环境所吸引
+
+418
+00:23:24,371 --> 00:23:26,807
+like Ray Zahab, an extreme explorer
+比如极限探险家 Ray Zahab
+
+419
+00:23:26,840 --> 00:23:29,376
+who's crossed some of the harshest environments on foot,
+曾徒步穿越了一些最恶劣的环境
+
+420
+00:23:29,409 --> 00:23:32,279
+including the length of the Sahara Desert,
+包括横穿撒哈拉沙漠
+
+421
+00:23:32,312 --> 00:23:35,916
+and expeditions across Antarctica and the Arctic,
+并在南极和北极各处进行探险
+
+422
+00:23:35,949 --> 00:23:38,986
+and Nadia Aly– an accomplished diver,
+以及 Nadia Aly 一位出色的潜水员
+
+423
+00:23:39,019 --> 00:23:42,422
+expedition leader and renowned underwater photographer,
+探险队队长 也是杰出的水下摄影师
+
+424
+00:23:42,456 --> 00:23:46,793
+and Scott Jurek–one of the most dominant ultra-marathon runners in history
+还有 Scott Jurek 史上最杰出的超级马拉松选手之一
+
+425
+00:23:46,827 --> 00:23:50,130
+and a seven-time winner of the Western States 100-miler.
+七届 Western States 100-miler 获奖者
+
+426
+00:23:51,098 --> 00:23:53,500
+Inspired by their stories,
+受到他们故事的启发
+
+427
+00:23:53,534 --> 00:23:55,402
+we set out to create an Apple Watch
+我们打造了一款
+
+428
+00:23:55,435 --> 00:24:00,741
+designed specifically for exploration, adventure, and endurance,
+专为探索、冒险和耐力运动 而设计的 Apple Watch
+
+429
+00:24:00,774 --> 00:24:03,110
+and it's extraordinary.
+它无与伦比
+
+430
+00:24:03,143 --> 00:24:05,512
+This has been years in the making,
+这个项目已经酝酿了多年
+
+431
+00:24:05,546 --> 00:24:08,015
+and we can't wait to show it to you.
+我们迫不及待想和你分享了
+
+432
+00:24:09,917 --> 00:24:16,123
+? ?
+? ?
+
+433
+00:24:16,156 --> 00:24:18,559
+Wanted for hazardous journey...
+招募启事 旅程危险
+
+434
+00:24:20,894 --> 00:24:23,263
+long months of complete darkness...
+漆黑数月
+
+435
+00:24:25,132 --> 00:24:28,535
+Bitter cold,
+气候严寒
+
+436
+00:24:28,569 --> 00:24:32,105
+constant danger,
+时刻危险
+
+437
+00:24:32,139 --> 00:24:36,310
+safe return... doubtful.
+能否平安归来？未必
+
+438
+00:24:38,278 --> 00:24:41,915
+Honor and recognition in case of success.
+如若成功 将收获荣誉与认可
+
+439
+00:24:41,949 --> 00:24:48,956
+? ?
+? ?
+
+440
+00:24:55,963 --> 00:25:01,835
+? ?
+? ?
+
+441
+00:25:03,837 --> 00:25:06,507
+Jeff: This is Apple Watch Ultra,
+这就是全新的 Apple Watch Ultra
+
+442
+00:25:06,540 --> 00:25:11,211
+a completely new design reimagined with extraordinary new capabilities
+彻底重构的全新设计 搭配卓越的全新功能
+
+443
+00:25:11,245 --> 00:25:14,848
+that expand the ways you can use Apple Watch.
+大大拓展了 Apple Watch 的使用方式
+
+444
+00:25:14,882 --> 00:25:17,584
+Every detail has been engineered to create the most rugged
+每一个细节都是为了打造有史以来最坚固耐用
+
+445
+00:25:17,618 --> 00:25:19,486
+and capable Apple Watch ever.
+最为强大的 Apple Watch 而制造
+
+446
+00:25:19,520 --> 00:25:21,021
+It starts with the case,
+首先是表壳
+
+447
+00:25:21,054 --> 00:25:23,257
+made from aerospace grade titanium
+由航空级钛金属制成
+
+448
+00:25:23,290 --> 00:25:25,459
+that strikes the perfect balance of weight,
+在重量、耐用性
+
+449
+00:25:25,492 --> 00:25:28,228
+durability, and corrosion resistance.
+和耐腐蚀性之间取得完美的平衡
+
+450
+00:25:28,262 --> 00:25:33,100
+The titanium case extends up to surround the flat sapphire front crystal,
+钛金属表壳向上延伸 包裹住蓝宝石玻璃镜面
+
+451
+00:25:33,133 --> 00:25:37,437
+protecting it from edge impacts that can occur during extreme activities.
+保护它免受极端活动期间 可能发生的边缘撞击的影响
+
+452
+00:25:37,471 --> 00:25:41,842
+And at the center of the 49mm case is our biggest, brightest display
+在 49 毫米表壳中央 配备了 Apple Watch 有史以来
+
+453
+00:25:41,875 --> 00:25:43,544
+ever in Apple Watch,
+最大、最明亮的显示屏
+
+454
+00:25:43,577 --> 00:25:47,147
+making it easier to read in the harshest sunlight.
+在最猛烈的强光下也能轻松看清
+
+455
+00:25:47,181 --> 00:25:50,350
+We also added a new button– the Action button–
+我们还加了一个新的操作按钮
+
+456
+00:25:50,384 --> 00:25:53,287
+in high-contrast "international orange".
+并且做成了高对比度的国际橙色
+
+457
+00:25:53,320 --> 00:25:57,658
+It's customizable and gives users quick physical control for a range of functions.
+这个按钮的功能是可定制的 让用户可以对一系列功能快速进行物理操控
+
+458
+00:25:58,692 --> 00:26:01,028
+The Digital Crown has a larger diameter
+数码表冠的直径更大
+
+459
+00:26:01,061 --> 00:26:02,829
+and coarser grooves,
+凹槽更凸出
+
+460
+00:26:02,863 --> 00:26:05,399
+and the side button stands proud of the case,
+侧边按钮也高于表壳侧面
+
+461
+00:26:05,432 --> 00:26:09,002
+both designed to be used while wearing gloves.
+这两项设计都是为了便于在佩戴手套时使用
+
+462
+00:26:09,036 --> 00:26:12,239
+And the audio system excels when you're out in the elements.
+身处大自然中的时候 音频系统表现杰出
+
+463
+00:26:12,272 --> 00:26:16,076
+We added a second speaker for increased volume.
+我们还增加了第二个扬声器 以提升音量
+
+464
+00:26:16,109 --> 00:26:19,746
+Three strategically placed microphones and advanced software
+三个精心布置的麦克风 加上先进的软件
+
+465
+00:26:19,780 --> 00:26:23,617
+help ensure voice clarity on calls, even in windy conditions.
+确保通话音质清晰可闻 风大也不怕
+
+466
+00:26:24,384 --> 00:26:27,087
+And for maximum connectivity and communication,
+为了确保最好的连接性 便于通信
+
+467
+00:26:27,120 --> 00:26:30,757
+cellular is built into every Apple Watch Ultra.
+所有 Apple Watch Ultra 都配备了蜂窝网络
+
+468
+00:26:30,791 --> 00:26:35,462
+Ultra has the biggest battery of any Apple Watch yet.
+Ultra 是所有 Apple Watch 中续航时间最长的
+
+469
+00:26:35,495 --> 00:26:41,201
+It gets up to 36 hours of battery life on a single charge.
+一次充电 最长可达 36 小时的续航！
+
+470
+00:26:41,235 --> 00:26:46,206
+And Apple Watch Ultra can even 
+Apple Watch Ultra 甚至
+
+471
+00:26:44,238 --> 00:26:45,939
+get up to 60 hours of battery life
+最长可达 60 小时续航
+
+472
+00:26:46,240 --> 00:26:47,908
+for a multi-day adventure
+来维持数天探险活动所需
+
+473
+00:26:47,941 --> 00:26:50,277
+using a new battery optimization setting
+电池优化设置更新后
+
+474
+00:26:50,310 --> 00:26:51,979
+coming later this fall.
+在今秋晚些时候
+
+475
+00:26:52,012 --> 00:26:55,082
+And to complement the rugged utility of the hardware,
+为了配合坚固实用的硬件
+
+476
+00:26:55,115 --> 00:26:58,619
+we created our most technical face yet:
+我们开发了科技性最强的表盘
+
+477
+00:26:58,652 --> 00:27:00,087
+Wayfinder.
+寻路者
+
+478
+00:27:00,120 --> 00:27:04,758
+With a host of critical information, it includes a compass in the dial
+这款表盘囊括了多种关键信息 包括融入表盘的实时指南针
+
+479
+00:27:04,791 --> 00:27:08,595
+and can be customized for the mountain, ocean, or trail.
+并且可以针对山脉 海洋或野径等环境进行定制
+
+480
+00:27:08,629 --> 00:27:12,766
+And to optimize for evening conditions, there's Night mode.
+为了在夜晚呈现理想的显示效果 还配备了夜间模式
+
+481
+00:27:12,799 --> 00:27:15,702
+Just rotate the Crown, and the UI turns red
+只需转动表冠 用户界面就会变成红色
+
+482
+00:27:15,736 --> 00:27:17,738
+for better visibility in the dark.
+以便在黑暗中更好地看到
+
+483
+00:27:17,771 --> 00:27:21,708
+Apple Watch Ultra is designed to push boundaries.
+Apple Watch Ultra 生来就是要挑战极限
+
+484
+00:27:21,742 --> 00:27:25,512
+It's a versatile tool for anyone who appreciates outdoor adventure,
+这是一款多功能工具 适合各类户外探险
+
+485
+00:27:25,546 --> 00:27:28,015
+water sports, and endurance training.
+涉水运动、耐力运动爱好者
+
+486
+00:27:29,049 --> 00:27:31,785
+And for each of these, we created a special band
+我们还为每类运动都设计了特制表带
+
+487
+00:27:31,818 --> 00:27:35,255
+as meticulously crafted as the watch itself.
+与 Watch 本身一样匠心打造
+
+488
+00:27:35,289 --> 00:27:39,326
+With explorers in mind, we developed the Alpine Loop.
+我们为户外探险者 设计了高山回环式表带
+
+489
+00:27:39,359 --> 00:27:44,831
+The titanium G-hook securely fastens through the reinforced top loops.
+钛金属 G 式表扣 穿过上层表带的套环稳稳固定住
+
+490
+00:27:44,865 --> 00:27:47,568
+The band is woven using an innovative process
+表带采用创新工艺编织而成
+
+491
+00:27:47,601 --> 00:27:50,838
+that integrates the two layers without any stitching.
+无需任何缝合就将上下两层整合在一起
+
+492
+00:27:50,871 --> 00:27:54,808
+The Ocean Band is molded in a high-performance elastomer
+海洋表带是由高性能氟橡胶模制而成
+
+493
+00:27:54,842 --> 00:27:58,445
+with a tubular geometry, allowing it to stretch for a perfect fit,
+利用管状几何形状实现极为稳固的贴合
+
+494
+00:27:58,478 --> 00:27:59,980
+even over a wetsuit.
+即使是佩戴在潜水服外面
+
+495
+00:28:00,647 --> 00:28:02,816
+The titanium buckle and adjustable loops
+钛金属表扣和可调节式回环
+
+496
+00:28:02,850 --> 00:28:06,553
+secure the band during high-speed water sports.
+即使在高速水上运动中也不会脱落
+
+497
+00:28:06,587 --> 00:28:10,557
+For endurance athletes, we created the Trail Loop.
+对于耐力运动员 我们设计了野径回环式表带
+
+498
+00:28:10,591 --> 00:28:13,894
+The lightweight textile has increased elasticity
+质地轻薄 还增加了弹性
+
+499
+00:28:13,927 --> 00:28:16,763
+for a comfortable, snug fit.
+带来舒适的贴合感
+
+500
+00:28:16,797 --> 00:28:18,498
+It's our thinnest band yet,
+这是我们最薄的表带
+
+501
+00:28:18,532 --> 00:28:22,035
+with a convenient tab for making quick adjustments.
+搭配了方便易用的扣件 可进行快速调整
+
+502
+00:28:22,069 --> 00:28:26,573
+Ultra is a totally new expression of Apple Watch.
+Ultra 是 Apple Watch 的全新形态
+
+503
+00:28:26,607 --> 00:28:28,942
+Whether you're an accomplished athlete or explorer
+无论你是一名出色的运动员或探险家
+
+504
+00:28:28,976 --> 00:28:32,613
+or aspire to try exciting new activities,
+或想要尝试激动人心的新活动
+
+505
+00:28:32,646 --> 00:28:34,214
+we think you're gonna love it.
+我们相信你都会爱上这款产品
+
+506
+00:28:35,315 --> 00:28:37,851
+Here's Julz to tell you more.
+下面请 Julz 为你介绍更多内容
+
+507
+00:28:37,885 --> 00:28:41,054
+? ?
+? ?
+
+508
+00:28:41,088 --> 00:28:43,323
+Julz Arney: We set out to make Apple Watch Ultra
+我们的目标是让 Apple Watch Ultra
+
+509
+00:28:43,357 --> 00:28:44,791
+the best sport watch out there,
+成为市面上最强大的运动手表
+
+510
+00:28:44,825 --> 00:28:46,894
+with features for every athlete.
+适合所有运动员使用
+
+511
+00:28:47,694 --> 00:28:51,164
+GPS performance is critical for serious runners and athletes
+GPS 性能至关重要 尤其资深跑者和运动员
+
+512
+00:28:51,198 --> 00:28:53,500
+who want the most accurate metrics.
+对指标的准确性要求极高
+
+513
+00:28:53,534 --> 00:28:56,436
+A typical GPS solution works well most of the time,
+一般的 GPS 解决方案 在大多数情况下能很好地完成任务
+
+514
+00:28:56,470 --> 00:28:59,173
+but some environments are really tricky–
+但有些环境确实很棘手
+
+515
+00:28:59,206 --> 00:29:03,110
+like when tall buildings or dense trees block satellites,
+比如当高层建筑或茂密的树木阻挡住卫星时
+
+516
+00:29:03,143 --> 00:29:08,182
+making accurate GPS readings nearly impossible when training and competing.
+在训练和比赛中 就几乎不可能获得精准的 GPS 读数
+
+517
+00:29:08,215 --> 00:29:10,884
+The famed Chicago Marathon is a great example.
+著名的芝加哥马拉松就是很好的例子
+
+518
+00:29:10,918 --> 00:29:13,887
+It's a notoriously challenging environment for GPS
+众所周知 这项赛事对 GPS 性能要求极高
+
+519
+00:29:13,921 --> 00:29:17,357
+because a big portion is run between skyscrapers.
+因为很大一部分是在摩天大楼之间进行的
+
+520
+00:29:17,391 --> 00:29:21,762
+So we designed a new, precision dual-frequency GPS solution
+因此我们设计了一套 全新的精密双频 GPS 解决方案
+
+521
+00:29:21,795 --> 00:29:23,897
+that, in addition to L1,
+除了 L1 频率之外
+
+522
+00:29:23,931 --> 00:29:27,134
+also includes the latest frequency: L5,
+还包括最新的 L5 频率
+
+523
+00:29:27,167 --> 00:29:30,070
+plus new, custom positioning algorithms.
+再加上全新定制的定位算法
+
+524
+00:29:30,103 --> 00:29:32,406
+In dense urban conditions like this,
+在这种高楼林立的城市环境里
+
+525
+00:29:32,439 --> 00:29:35,709
+Apple Watch Ultra provides the most accurate GPS
+Apple Watch Ultra 的 GPS 准确度
+
+526
+00:29:35,742 --> 00:29:37,644
+of any sport watch in the market.
+在市面上所有运动手表中首屈一指
+
+527
+00:29:37,678 --> 00:29:40,914
+We also brought some great workout updates to watchOS 9
+我们还从高水平运动员身上汲取灵感
+
+528
+00:29:40,948 --> 00:29:43,183
+inspired by high-performance athletes,
+为 watchOS 9 的众多体能训练功能 带来了一系列出色的优化更新
+
+529
+00:29:43,217 --> 00:29:46,286
+with new metrics, views, and experiences
+加入了新指标、详细视图
+
+530
+00:29:46,320 --> 00:29:50,357
+like vertical oscillation, heart rate zones, and custom workouts.
+和垂直振荡、心率区间和自定义锻炼等新体验
+
+531
+00:29:50,390 --> 00:29:53,927
+And now, with the addition of the Action button on Apple Watch Ultra,
+现在随着 Apple Watch Ultra 新增的操作按钮
+
+532
+00:29:53,961 --> 00:29:58,532
+you can make the workout experience more powerful and more precise.
+你的体能训练体验可以更强大、更精准
+
+533
+00:29:58,565 --> 00:29:59,800
+Press the Action button
+按下操作按钮
+
+534
+00:29:59,833 --> 00:30:01,902
+for the most accurate start to your workout.
+精确记录体能训练开始时间
+
+535
+00:30:02,336 --> 00:30:06,406
+For triathletes and duathletes, the Action button lets you instantly transition
+铁人三项和水陆两项运动员 可以利用操作按钮
+
+536
+00:30:06,440 --> 00:30:08,942
+from one leg of your race to the next.
+在比赛中瞬间切换到下一项
+
+537
+00:30:08,976 --> 00:30:11,812
+And later this year, we're enabling a new feature
+今年晚些时候 我们还会启用一项新功能
+
+538
+00:30:11,845 --> 00:30:15,249
+which automatically detects when you arrive at a running track,
+当自动检测到你在进行跑道训练时
+
+539
+00:30:15,282 --> 00:30:17,818
+ensuring the most accurate pace and distance.
+确保最准确的配速和距离
+
+540
+00:30:17,851 --> 00:30:20,754
+The Action button lets you conveniently mark a segment
+操作按钮便于你
+
+541
+00:30:20,787 --> 00:30:24,291
+with a single press for the ultimate track-running experience.
+单按一下进行单圈纪录 带来极致的跑道训练体验
+
+542
+00:30:24,324 --> 00:30:28,362
+For endurance athletes, the bigger battery makes a big difference.
+对耐力运动员来说 持久续航的重要性不言而喻
+
+543
+00:30:28,929 --> 00:30:32,533
+Of course, you can easily complete a marathon with battery life to spare.
+当然 就算你跑完一场马拉松 电量也不会耗尽
+
+544
+00:30:32,566 --> 00:30:35,035
+Using the new low-power workout setting,
+通过新的功能设置 可以在低功耗下来使用设备
+
+545
+00:30:35,068 --> 00:30:40,474
+most athletes can do a 2.4-mile swim, plus a 112-mile bike ride,
+可陪伴大部分运动员游泳 2.4 英里 加上自行车骑行 112 英里
+
+546
+00:30:40,507 --> 00:30:41,942
+and then run a marathon
+然后再跑一个马拉松
+
+547
+00:30:41,975 --> 00:30:46,513
+to complete a long-distance triathlon with full precision GPS and heart rate.
+来完成长距离铁人三项 全程保持全精度 GPS 和心率测量
+
+548
+00:30:46,547 --> 00:30:48,782
+But Ultra is so much more.
+但 Ultra 还远不止于此
+
+549
+00:30:48,815 --> 00:30:53,520
+It's designed to help you explore the most extreme and remote locations,
+它旨在帮你探索最极端、最偏远的地点
+
+550
+00:30:53,554 --> 00:30:56,523
+from freezing-cold mountains at minutes 20° Celsius
+从零下 20 度严寒的高山
+
+551
+00:30:56,557 --> 00:30:59,760
+to the blazing desert heat at 55° Celsius,
+到 55 摄氏度或约 
+
+552
+00:30:59,793 --> 00:31:02,262
+or 130° Fahrenheit.
+130 华氏度的酷热沙漠
+
+553
+00:31:02,296 --> 00:31:06,500
+When navigating in the backcountry, a compass is an essential tool.
+在偏远地区探索时 指南针是辨别方向的必备工具
+
+554
+00:31:06,533 --> 00:31:08,869
+So we completely redesigned the Compass app
+因此 我们彻底重新设计了指南针 app
+
+555
+00:31:08,902 --> 00:31:12,139
+with new precision views and added capabilities.
+包含一些全新的精准视图 并增加了各种新功能
+
+556
+00:31:12,172 --> 00:31:15,976
+The orienteering view includes Compass Waypoints to mark a position–
+定向越野视图的新功能包括 用指南针航点来标记位置
+
+557
+00:31:16,009 --> 00:31:19,012
+like the location of the trailhead or your tent–
+如登山口或你的帐篷的位置等
+
+558
+00:31:19,046 --> 00:31:21,782
+and they can be quickly added using the Action button.
+并可通过操作按钮来快速添加
+
+559
+00:31:22,850 --> 00:31:25,018
+And if you get lost or disoriented,
+如果你迷路或迷失方向
+
+560
+00:31:25,052 --> 00:31:28,488
+Backtrack uses GPS data to create a path of where you've been,
+回溯功能会用 GPS 数据创建出你走过的历史路径
+
+561
+00:31:28,522 --> 00:31:30,557
+so you can easily retrace your steps.
+便于你回溯自己的脚步
+
+562
+00:31:31,491 --> 00:31:34,995
+And it turns on automatically in the background when you go off the grid,
+而且它会在你在进入野外时 在后台自动开启
+
+563
+00:31:35,028 --> 00:31:36,296
+just in case.
+以防万一
+
+564
+00:31:37,264 --> 00:31:39,199
+Getting help when you need it is critical,
+在最需要的时候能获得救援是无比重要的
+
+565
+00:31:39,233 --> 00:31:41,435
+especially in the backcountry.
+特别是在人迹罕至的地区
+
+566
+00:31:41,468 --> 00:31:45,539
+That's why Apple Watch Ultra has a built-in 86 decibel siren
+因此 Apple Watch Ultra 内置了 86 分贝的警笛
+
+567
+00:31:45,572 --> 00:31:48,075
+that you can activate using the Action button.
+可以用操作按钮开启
+
+568
+00:31:49,543 --> 00:31:52,980
+It has a unique sound pattern that alerts others to your location
+它配备了独特的声音模式 便于最远可达 600 英尺
+
+569
+00:31:53,013 --> 00:31:56,183
+up to 600 feet, or 180 meters, away.
+或约 180 米之外的人 知道你所处的位置
+
+570
+00:31:57,618 --> 00:32:02,155
+Finally, Apple Watch Ultra has been designed for water sports.
+最后 Apple Watch Ultra 也为涉水运动而生
+
+571
+00:32:02,189 --> 00:32:05,092
+It can withstand the intense dynamic forces of activities
+它能承受风筝冲浪
+
+572
+00:32:05,125 --> 00:32:07,027
+like kitesurfing and wakeboarding,
+和宽板滑水等活动时激烈的动态力
+
+573
+00:32:07,060 --> 00:32:08,829
+and it can go deep below the waves
+也能深入海浪之下
+
+574
+00:32:08,862 --> 00:32:13,400
+because we engineered it to twice the water resistance, WR100.
+因为我们使它的防水性翻倍 达到 WR100
+
+575
+00:32:13,433 --> 00:32:17,037
+Using its new built-in depth gauge, Ultra automatically launches
+利用新的内置深度计 淹没在水下时
+
+576
+00:32:17,070 --> 00:32:19,106
+a new Depth app when submerged
+Ultra 会自动启动全新的深度 app
+
+577
+00:32:19,139 --> 00:32:23,243
+to show current depth, underwater time, and water temperature.
+显示深度、水下时间和水温
+
+578
+00:32:23,277 --> 00:32:27,147
+We also want Ultra to be a great tool for recreational scuba divers.
+我们也希望 Ultra 可以成为休闲水肺潜水的好帮手
+
+579
+00:32:27,181 --> 00:32:31,218
+So it's been certified to EN 13319,
+因此 它通过了 EN 13319 认证
+
+580
+00:32:31,251 --> 00:32:35,155
+the internationally recognized standard for dive computers and gauges.
+即潜水电脑及仪表的国际标准
+
+581
+00:32:35,189 --> 00:32:37,157
+And we're partnering with Huish Outdoors
+我们还与 Huish Outdoors 合作
+
+582
+00:32:37,191 --> 00:32:40,160
+to create an exclusive app that turns Apple Watch Ultra
+开发了一款专属 app 让 Apple Watch Ultra
+
+583
+00:32:40,194 --> 00:32:43,597
+into a capable dive computer for recreational scuba diving
+变身功能强大的潜水电脑
+
+584
+00:32:43,630 --> 00:32:46,700
+to the depth of 40 meters, or 130 feet.
+用于 40 米即约 130 英尺以内的休闲水肺潜水
+
+585
+00:32:46,733 --> 00:32:49,203
+To tell you more about this incredible app,
+为你介绍这款神奇的 app 
+
+586
+00:32:49,236 --> 00:32:52,639
+here's Mike Huish, 
+下面请 Mike Huish
+
+587
+00:32:51,038 --> 00:32:52,673
+CEO of Huish Outdoors.
+Huish Outdoors 的 CEO
+
+588
+00:32:52,673 --> 00:32:59,680
+? ?
+? ?
+
+589
+00:33:09,323 --> 00:33:11,124
+Mike Huish: Our company is world-renowned
+我们公司凭借
+
+590
+00:33:11,158 --> 00:33:14,328
+for powering every aspect of the underwater experience.
+为水下体验的各个方面提供助力而享誉世界
+
+591
+00:33:14,361 --> 00:33:18,599
+And Oceanic has been a leading innovator in scuba diving for over 50 years,
+五十多年来 Oceanic 一直是水肺潜水领域的创新先驱
+
+592
+00:33:18,632 --> 00:33:21,568
+introducing some of the very first dive computers.
+我们开发了最早期的潜水电脑
+
+593
+00:33:21,602 --> 00:33:27,174
+We're thrilled to announce our new Oceanic+ app for Apple Watch Ultra.
+我们高兴地宣布 我们为 Apple Watch Ultra 开发了全新的 Oceanic+ app
+
+594
+00:33:27,207 --> 00:33:30,744
+This is so exciting for anyone interested in scuba diving
+对于任何对水肺潜水感兴趣的人来说 这都是振奋人心的好消息
+
+595
+00:33:30,777 --> 00:33:35,148
+because now the same watch you wear every day is also your dive computer.
+因为你现在每天佩戴的手表 也将成为你的潜水电脑！
+
+596
+00:33:35,182 --> 00:33:38,585
+We've designed Oceanic+ with all the key features
+我们设计的 Oceanic+
+
+597
+00:33:38,619 --> 00:33:41,421
+for recreational scuba divers and free divers.
+包括了休闲潜水员和自由潜水员 所需的所有关键功能
+
+598
+00:33:41,455 --> 00:33:45,392
+And it works seamlessly with our iPhone app to plan your dives.
+而且它能与我们 iPhone 上的 app 协同配合 帮你规划每一次下潜
+
+599
+00:33:45,425 --> 00:33:48,061
+Our dive planner calculates depth and time,
+我们的潜水计划工具能计算潜水深度和时间
+
+600
+00:33:48,095 --> 00:33:50,864
+and integrates dive conditions like tides,
+与潮汐、水温等潜水条件整合
+
+601
+00:33:50,898 --> 00:33:54,768
+water temperature, and even up-to-date information from the community,
+甚至包括来自潜水者社群的最新信息
+
+602
+00:33:54,801 --> 00:33:56,970
+like visibility and currents.
+比如能见度和水流等
+
+603
+00:33:57,004 --> 00:34:00,140
+The best way to experience this is on a real dive,
+体验这一点的最佳方式就是进行一次真正的潜水
+
+604
+00:34:00,174 --> 00:34:01,542
+so let's get in the water.
+让我们一起下水吧
+
+605
+00:34:01,575 --> 00:34:05,145
+Your dive metrics are all simple and easy to read
+你的潜水指标在明亮的大显示屏上
+
+606
+00:34:05,179 --> 00:34:07,181
+on the large, bright display.
+全都一目了然
+
+607
+00:34:07,214 --> 00:34:09,917
+Our app runs the Bühlmann decompression algorithm,
+我们的 app 运行布尔曼减压算法
+
+608
+00:34:09,950 --> 00:34:13,787
+which constantly calculates and monitors dive parameters.
+不断计算和监控潜水参数
+
+609
+00:34:13,820 --> 00:34:15,656
+So from the moment you start a dive,
+从你开始下潜的那一刻起
+
+610
+00:34:15,689 --> 00:34:19,293
+all critical information is just a glance away.
+所有关键信息都一览无余
+
+611
+00:34:19,326 --> 00:34:23,030
+And unlike most dive computers, which require you to perform
+与大多数潜水电脑不同
+
+612
+00:34:23,063 --> 00:34:27,134
+a complex sequence of button presses to find the information you need,
+你无需进行一系列复杂的按钮操作 来寻找你需要的信息
+
+613
+00:34:27,167 --> 00:34:28,802
+our app uses simple gestures.
+我们的 app 使用简单直观的手势操作
+
+614
+00:34:29,469 --> 00:34:33,140
+Rotate the Digital Crown to access additional screens
+旋转数码表冠 就能访问其他界面
+
+615
+00:34:33,173 --> 00:34:36,076
+or press the Action button to set a compass heading.
+或是按下操作按钮 来设置指南针方向
+
+616
+00:34:36,777 --> 00:34:40,480
+Oceanic+ provides all of the safety warnings that you would expect
+Oceanic+ 提供市面上最先进的潜水电脑
+
+617
+00:34:40,514 --> 00:34:42,983
+from the most advanced dive computers today,
+支持的所有安全警告
+
+618
+00:34:43,016 --> 00:34:46,720
+like decompression limits, excessive ascent rate,
+例如减压限制、上升速率过快等
+
+619
+00:34:46,753 --> 00:34:49,957
+and at the end of your dive, safety stop guidance
+还包括在潜水结束时的安全停留指导
+
+620
+00:34:49,990 --> 00:34:53,260
+all smartly color-coded to help make complex information
+全都采用巧妙的颜色编码 帮你轻松理解复杂的信息
+
+621
+00:34:53,293 --> 00:34:54,995
+easy to understand.
+轻松理解
+
+622
+00:34:55,028 --> 00:34:59,900
+Right after the dive, your data–including your GPS entry and exit location–
+潜水一结束 你的数据 包括 GPS 进出位置
+
+623
+00:34:59,933 --> 00:35:03,270
+automatically syncs to your iPhone and the cloud,
+就会自动与你的 iPhone 和云端同步
+
+624
+00:35:03,303 --> 00:35:05,939
+where you can see a summary of your dive profile.
+让你查看你的潜水情况概述
+
+625
+00:35:05,973 --> 00:35:09,710
+And in your logbook, you can sort and search past dives,
+在你的潜水日志中 你还可以对过去的潜水进行分类和搜索
+
+626
+00:35:09,743 --> 00:35:12,679
+and instantly share your adventures with family and friends,
+随时与家人、朋友以及社群
+
+627
+00:35:12,713 --> 00:35:14,147
+as well as the community.
+分享你的冒险经历
+
+628
+00:35:14,181 --> 00:35:17,150
+We can't wait for you to try it out later this fall.
+我们期待你在今年秋天晚些时候亲身体验一番
+
+629
+00:35:17,184 --> 00:35:22,356
+The Oceanic+ app and Apple Watch Ultra together create a powerful
+Oceanic+ app 与 Apple Watch Ultra
+
+630
+00:35:22,389 --> 00:35:25,526
+and easy-to-use dive computer that will inspire more people
+携手打造了一台功能强大 且易于使用的潜水电脑
+
+631
+00:35:25,559 --> 00:35:28,462
+to discover and explore the underwater world.
+它将激励更多的人去发现和探索海底世界
+
+632
+00:35:28,495 --> 00:35:29,630
+Now back to Jeff.
+下面 交给 Jeff
+
+633
+00:35:31,365 --> 00:35:33,534
+So that's Apple Watch Ultra,
+这就是 Apple Watch Ultra
+
+634
+00:35:33,567 --> 00:35:37,104
+the most rugged and capable Apple Watch ever.
+有史以来最坚固最强大的 Apple Watch
+
+635
+00:35:37,137 --> 00:35:39,773
+With a 49mm titanium case,
+配备了 49 毫米钛金属表壳
+
+636
+00:35:39,806 --> 00:35:42,075
+precision dual-frequency GPS,
+精密双频 GPS
+
+637
+00:35:42,109 --> 00:35:45,546
+a customizable Action button, long battery life,
+可定制的操作按钮 持久的续航表现
+
+638
+00:35:45,579 --> 00:35:47,347
+a built-in depth gauge,
+内置的深度计
+
+639
+00:35:47,381 --> 00:35:51,018
+the biggest and brightest display– up to 2000 nits–
+最高可达 2000 尼特的最大、最亮显示屏
+
+640
+00:35:51,051 --> 00:35:54,188
+and all the other great features of Series 8,
+以及 Series 8 的所有其他出色功能
+
+641
+00:35:54,221 --> 00:35:57,191
+it's designed to help you run your longest race,
+它能帮你跑完最长的比赛
+
+642
+00:35:57,224 --> 00:36:00,694
+explore the back country, and dive the world's oceans.
+探索偏远的地区并潜入世界各大海洋
+
+643
+00:36:01,862 --> 00:36:05,232
+And Apple Watch Ultra, as well as our entire watch lineup,
+而且 Apple Watch Ultra 及其他新款 Watch 产品
+
+644
+00:36:05,265 --> 00:36:08,135
+was designed with the environment in mind–
+在设计时 就将环境保护考虑其中
+
+645
+00:36:08,168 --> 00:36:10,304
+from the use of recycled materials
+从使用再生材料
+
+646
+00:36:10,337 --> 00:36:13,874
+to suppliers' use of clean energy during manufacturing.
+到供应商在制造过程中使用清洁能源
+
+647
+00:36:13,907 --> 00:36:16,977
+We're already carbon neutral for our corporate operations,
+我们的企业运营已经实现了碳中和
+
+648
+00:36:17,010 --> 00:36:20,681
+and these efforts move us even closer toward our goal
+而这些努力使我们更进一步
+
+649
+00:36:20,714 --> 00:36:24,985
+to become carbon neutral for our entire product footprint by 2030.
+旨在 2030 年之前 实现所有产品碳中和的目标
+
+650
+00:36:25,018 --> 00:36:29,223
+All models of Apple Watch Ultra will be $799.
+所有 Apple Watch Ultra 表款均为 $799
+
+651
+00:36:29,256 --> 00:36:31,225
+You can order it today,
+今天开始接受订购
+
+652
+00:36:31,258 --> 00:36:35,462
+and it will be available starting on September 23rd.
+9 月 23 日发售
+
+653
+00:36:35,495 --> 00:36:39,733
+Here's another look at the all-new Apple Watch Ultra.
+下面 让我们 再一睹全新 Apple Watch Ultra 的风采
+
+654
+00:36:46,940 --> 00:36:48,442
+? ?
+? ?
+
+655
+00:36:48,475 --> 00:36:53,113
+Every explorer has a packing list–
+每个探索者都需要一套装备
+
+656
+00:36:53,146 --> 00:36:55,482
+the essential tools
+一套在奔赴未知时 
+
+657
+00:36:55,516 --> 00:36:58,051
+for heading out into the unknown.
+必不可少的工具
+
+658
+00:36:59,653 --> 00:37:03,156
+We put as many of those tools on your wrist as we could.
+为将尽可能多的装备加载到你手腕上
+
+659
+00:37:05,192 --> 00:37:06,927
+The result...
+我们打造了
+
+660
+00:37:06,960 --> 00:37:10,063
+was the new Apple Watch Ultra.
+全新的 Apple Watch Ultra
+
+661
+00:37:12,466 --> 00:37:14,835
+Ultra's design pushes the boundaries
+一身突破极限的设计
+
+662
+00:37:14,868 --> 00:37:17,004
+so you can do the same.
+只为助你全力突破
+
+663
+00:37:17,037 --> 00:37:20,407
+The rugged, yet lightweight, titanium case extends
+坚固而轻盈的钛金属表壳
+
+664
+00:37:20,440 --> 00:37:23,143
+to protect the flat sapphire crystal
+四边裏护平面蓝宝石玻璃表镜
+
+665
+00:37:23,177 --> 00:37:26,680
+and can endure temperatures that fall below zero
+经得起零下的严寒
+
+666
+00:37:26,713 --> 00:37:29,283
+or climb 130° above it.
+也无惧 130 华氏度的酷热
+
+667
+00:37:32,319 --> 00:37:35,989
+Into the unknown, you'll want the battery to last for days.
+踏足无人之地 尤其需要电池能继日不断
+
+668
+00:37:36,023 --> 00:37:38,258
+That's why Ultra was built with a larger battery
+因此 Ultra 配备了更大的电池
+
+669
+00:37:38,292 --> 00:37:41,361
+for multi-day use on a single charge.
+充满一次电 续航时间以天计
+
+670
+00:37:42,896 --> 00:37:44,932
+You'll also need a map.
+你还需要地图
+
+671
+00:37:44,965 --> 00:37:47,167
+Or better yet, a dual-frequency GPS
+最好直接上
+
+672
+00:37:47,201 --> 00:37:49,903
+with pinpoint accuracy.
+定位精准的双频 GPS
+
+673
+00:37:49,937 --> 00:37:51,939
+The Compass has been redesigned
+指南针经过重新设计
+
+674
+00:37:51,972 --> 00:37:54,641
+and now has waypoint marking and Backtrack,
+还有航点和回溯功能
+
+675
+00:37:54,675 --> 00:37:58,011
+dropping points along your route to keep you found
+沿途标记航点 处处有迹可循
+
+676
+00:37:58,045 --> 00:38:01,215
+when the conditions leave you lost.
+避免迷失方向
+
+677
+00:38:01,248 --> 00:38:04,051
+A turn of the Crown engages Night mode,
+旋转数码表冠 开启夜间模式
+
+678
+00:38:04,084 --> 00:38:06,353
+which removes retina-altering blue light
+同时去除影响视网膜的蓝光
+
+679
+00:38:06,386 --> 00:38:10,490
+to ease the strain on your eyes in the dark.
+减轻双眼在黑暗中的压力
+
+680
+00:38:10,524 --> 00:38:12,559
+Beside the bigger, brighter screen
+又大又亮的显示屏旁边
+
+681
+00:38:12,593 --> 00:38:14,828
+is its most versatile tool–
+是操作按钮
+
+682
+00:38:14,862 --> 00:38:18,432
+a customizable Action button.
+既灵活多用 也可自定义
+
+683
+00:38:18,465 --> 00:38:21,902
+One push lets you track race segments,
+一按即可标记训练分段
+
+684
+00:38:21,935 --> 00:38:24,238
+find a way out,
+查找路线
+
+685
+00:38:24,271 --> 00:38:27,307
+or start up a dive computer,
+或启动潜水电脑
+
+686
+00:38:27,341 --> 00:38:29,409
+which is now strapped to your arm,
+没错 就是你手腕上戴的这个电脑
+
+687
+00:38:29,443 --> 00:38:33,180
+tracking everything from depth to water temperature.
+从潜水时间到水温 各种数据都能跟测
+
+688
+00:38:33,213 --> 00:38:36,350
+The micro-polished sapphire surface and sealed case
+精细抛光的蓝宝石玻璃表面和高度密封的表壳
+
+689
+00:38:36,383 --> 00:38:39,019
+result in an Apple Watch twice as water resistant
+实现了高达两倍的防水性能 
+
+690
+00:38:39,052 --> 00:38:42,890
+as any Apple Watch to come before it.
+超越以往任何一款 Apple Watch
+
+691
+00:38:42,923 --> 00:38:46,193
+And the audio system's three microphones triangulate
+三麦克风阵列 对音频进行三角测量
+
+692
+00:38:46,226 --> 00:38:48,328
+so you can be heard
+天气再恶劣
+
+693
+00:38:48,362 --> 00:38:51,532
+even in extreme weather.
+也能为你传音
+
+694
+00:38:51,565 --> 00:38:55,335
+Of course, none of this matters if it falls off your wrist.
+当然 戴得稳这一切才有意义
+
+695
+00:38:55,369 --> 00:38:58,005
+Which is why we've designed three new bands–
+三款全新表帯就是为此而生
+
+696
+00:38:58,038 --> 00:39:01,808
+Alpine, Trail, and Ocean–
+高山 野径 海洋
+
+697
+00:39:01,842 --> 00:39:05,345
+for specific environments
+驾驭不同环境
+
+698
+00:39:05,379 --> 00:39:07,414
+and maximum comfort,
+带来超高舒适度
+
+699
+00:39:07,447 --> 00:39:09,383
+to endure long runs,
+能耐受长跑
+
+700
+00:39:09,416 --> 00:39:12,386
+hard falls, and ripping currents.
+能承受跌撞 也能破浪前行
+
+701
+00:39:17,457 --> 00:39:21,662
+Apple Watch Ultra is an essential tool
+无论挑战什么
+
+702
+00:39:21,695 --> 00:39:24,531
+for essentially anything.
+Apple Watch Ultra 都是头号装备
+
+703
+00:39:27,501 --> 00:39:29,870
+So what will your anything be?
+你想挑战点儿什么？
+
+704
+00:39:29,903 --> 00:39:36,443
+? ?
+? ?
+
+705
+00:39:39,880 --> 00:39:42,850
+Jeff: And that's the Apple Watch lineup for the fall,
+这就是今秋的 Apple Watch 产品线
+
+706
+00:39:42,883 --> 00:39:47,688
+with Apple Watch SE providing core features at an even more affordable price,
+Apple Watch SE 以更亲民的价格提供所有核心功能
+
+707
+00:39:47,721 --> 00:39:50,190
+Apple Watch Series 8 with Crash Detection,
+Apple Watch Series 8 则配备了车祸检测
+
+708
+00:39:50,224 --> 00:39:53,393
+and a temperature sensor that enables new women's health features
+温度传感器实现了新的女性健康功能
+
+709
+00:39:53,427 --> 00:39:55,729
+in a design users love.
+并以用户喜爱的设计呈现
+
+710
+00:39:55,762 --> 00:39:58,465
+And finally, Apple Watch Ultra,
+最后还有 Apple Watch Ultra
+
+711
+00:39:58,498 --> 00:40:01,602
+our most rugged, capable Apple Watch yet.
+迄今为止最坚固耐用 最强大的 Apple Watch
+
+712
+00:40:01,635 --> 00:40:03,470
+This is our best lineup ever,
+这是我们有史以来最优秀的 Watch 产品线
+
+713
+00:40:03,504 --> 00:40:06,807
+and we can't wait for users to experience them.
+我们迫不及待地期待用户来亲自体验
+
+714
+00:40:06,840 --> 00:40:08,909
+And now, back to Tim.
+下面 交给 Tim
+
+715
+00:40:10,344 --> 00:40:13,247
+Tim: I'm so excited about Apple Watch Ultra.
+我非常期待 Apple Watch Ultra
+
+716
+00:40:13,280 --> 00:40:17,117
+It's a great addition to our fantastic Apple Watch lineup,
+这个新成员加入到 Apple Watch 产品线
+
+717
+00:40:17,150 --> 00:40:19,753
+which just keeps getting better and better.
+使其更加强大
+
+718
+00:40:20,921 --> 00:40:23,690
+Now, let's turn to AirPods.
+下面 让我们来聊聊 AirPods
+
+719
+00:40:23,724 --> 00:40:27,127
+Just like Apple Watch, AirPods have become essential
+和 Apple Watch 一样 AirPods 已经成为
+
+720
+00:40:27,160 --> 00:40:29,329
+for so many people.
+很多人的日常必备产品
+
+721
+00:40:29,363 --> 00:40:31,365
+Whether listening to music on a run
+无论是在跑步时听音乐
+
+722
+00:40:31,398 --> 00:40:33,233
+or watching your favorite movie,
+还是观赏你最爱的电影
+
+723
+00:40:33,267 --> 00:40:37,237
+AirPods work seamlessly with Apple Watch and iPhone,
+AirPods 都能 与 Apple Watch 和 iPhone 无缝协作
+
+724
+00:40:37,271 --> 00:40:41,308
+and they provide an incredible audio and cinematic experience
+它将卓越的无线音频和观影体验
+
+725
+00:40:41,341 --> 00:40:45,179
+with the simplicity and convenience our users love.
+与用户喜爱的简单与便利结合在一起
+
+726
+00:40:45,212 --> 00:40:50,751
+In fact, AirPods are the best and most popular headphones in the world,
+事实上 AirPods 是全球领先且最受欢迎的耳机
+
+727
+00:40:50,784 --> 00:40:54,521
+and AirPods Pro have become our most popular model,
+AirPods Pro 是我们最受欢迎的机型
+
+728
+00:40:54,555 --> 00:40:57,224
+featuring exceptional Active Noise Cancellation
+兼具出色的主动降噪功能
+
+729
+00:40:57,257 --> 00:40:59,593
+and unrivaled sound quality.
+和无与伦比的音质
+
+730
+00:41:00,961 --> 00:41:04,665
+We're excited to introduce the next generation of AirPods Pro,
+很高兴为你介绍新一代 AirPods Pro
+
+731
+00:41:04,698 --> 00:41:07,267
+our most advanced AirPods yet.
+我们迄今为止最先进的 AirPods！
+
+732
+00:41:15,175 --> 00:41:22,182
+? ?
+? ?
+
+733
+00:41:32,192 --> 00:41:39,199
+? ?
+? ?
+
+734
+00:41:45,706 --> 00:41:50,143
+To tell you more about the new AirPods Pro, here's Mary-Ann.
+下面请 Mary-Ann 为你介绍新款 AirPods Pro
+
+735
+00:41:50,177 --> 00:41:57,184
+? ?
+? ?
+
+736
+00:41:59,152 --> 00:42:03,757
+Mary-Ann Rau: At the heart of AirPods Pro is our brand-new H2 chip,
+AirPods Pro 的核心是我们全新的 H2 芯片
+
+737
+00:42:03,790 --> 00:42:07,995
+providing an incredible upgrade to performance from H1
+与 H1 相比 实现了大幅性能升级
+
+738
+00:42:08,028 --> 00:42:13,200
+with high bandwidth connectivity to unlock breakthrough audio experiences
+配备高带宽连接 所实现的突破性音频体验
+
+739
+00:42:13,233 --> 00:42:16,370
+that only Apple silicon can deliver.
+只有 Apple 芯片能做到
+
+740
+00:42:16,403 --> 00:42:21,608
+The exceptional sound quality of AirPods Pro is also now transformed
+AirPods Pro 极为出色的音质也进一步优化提升
+
+741
+00:42:21,642 --> 00:42:24,678
+with a new low distortion audio driver
+由一个全新的低失真度驱动单元
+
+742
+00:42:24,711 --> 00:42:27,714
+and a custom amplifier to power it.
+和一个定制的放大器驱动
+
+743
+00:42:27,748 --> 00:42:31,919
+So whether you are dancing to J Balvin or relaxing to SZA,
+不论是伴着 J Balvin 的音乐舞动 还是听着 SZA 的音乐放松心情
+
+744
+00:42:31,952 --> 00:42:35,422
+you will hear even more detail and clarity
+你都能在更广的声音频率范围内
+
+745
+00:42:35,455 --> 00:42:38,559
+across a wider range of sound frequencies.
+听到更多更清晰的细节
+
+746
+00:42:38,592 --> 00:42:44,131
+These advances come together in a magical way with Spatial Audio,
+这些功能提升整合在一起 带来奇妙的空间音频
+
+747
+00:42:44,164 --> 00:42:49,036
+which takes the listening experience to the next level
+将聆听体验带入全新维度
+
+748
+00:42:49,069 --> 00:42:52,039
+by making sound feel like you are on stage
+让你仿佛置身舞台中央
+
+749
+00:42:52,072 --> 00:42:55,142
+with your favorite band performing around you.
+最喜欢的乐队就在你的周围表演
+
+750
+00:42:55,175 --> 00:42:57,678
+? ?
+? ?
+
+751
+00:42:57,711 --> 00:43:00,914
+We are taking this experience even further
+而我们将这样的体验进一步提升
+
+752
+00:43:00,948 --> 00:43:03,650
+with Personalized Spatial Audio.
+带来了 个性化空间音频
+
+753
+00:43:03,684 --> 00:43:08,121
+With iOS 16, you can use the TrueDepth camera on iPhone
+配合 iOS 16 你可以使用 iPhone 的原深感摄像头
+
+754
+00:43:08,155 --> 00:43:11,225
+to create a personal profile for Spatial Audio,
+创建空间音频个人轮廓资料
+
+755
+00:43:11,258 --> 00:43:14,127
+because the way we all perceive sound is unique
+因为每个人接收到的声音
+
+756
+00:43:14,161 --> 00:43:17,664
+based on the size and shape of our head and ears.
+因头部和耳朵的大小和形状不同而各有千秋
+
+757
+00:43:18,232 --> 00:43:23,270
+Personalized Spatial Audio will deliver the most immersive listening experience
+个性化空间音频带来了最沉浸式的聆听体验
+
+758
+00:43:23,303 --> 00:43:28,041
+by precisely placing sounds in space that are tuned just for you.
+通过将声音精准地映射到 专为你调校的虚拟空间中
+
+759
+00:43:29,776 --> 00:43:34,615
+Another feature our users love is Active Noise Cancellation,
+另一个深受用户喜爱的功能是主动降噪
+
+760
+00:43:34,648 --> 00:43:37,251
+which has been a game changer.
+这是一个巨大的突破
+
+761
+00:43:37,284 --> 00:43:39,319
+It reduces unwanted noise,
+它可以降低恼人的噪音
+
+762
+00:43:39,353 --> 00:43:43,290
+so you can better hear your favorite song while on the go.
+让你在路上也能更好地聆听喜爱的歌曲
+
+763
+00:43:43,323 --> 00:43:49,863
+To create a next-generation experience, H2 delivers advanced computational audio
+为了创造新一代的体验 H2 解锁了
+
+764
+00:43:49,897 --> 00:43:53,734
+previously unable to run on a device of this size.
+以前无法在这种尺寸的设备上运行的 先进计算音频
+
+765
+00:43:53,767 --> 00:43:57,804
+This, combined with optimizing the placement of the acoustic vent
+再结合优化的声学通气口和麦克风位置
+
+766
+00:43:57,838 --> 00:44:02,309
+and microphones, now enables up to double the amount of noise cancelled
+降噪能力翻倍提升
+
+767
+00:44:02,342 --> 00:44:05,012
+over the original AirPods Pro,
+相比初代 AirPods Pro
+
+768
+00:44:05,045 --> 00:44:10,751
+delivering even greater focus when you want to be immersed in the moment.
+当你想要沉浸在当下时 让你拥有更多专注力
+
+769
+00:44:10,784 --> 00:44:15,522
+A great in-ear fit also helps to provide passive noise reduction.
+出色的入耳式贴合度则实现了被动降噪
+
+770
+00:44:15,556 --> 00:44:19,927
+With a new, extra small ear tip, even more people can enjoy
+新增了 XS 号耳塞
+
+771
+00:44:19,960 --> 00:44:23,297
+and comfortably wear AirPods Pro throughout the day.
+让更多人可以长时间舒适地佩戴 AirPods Pro
+
+772
+00:44:23,330 --> 00:44:30,337
+? ?
+? ?
+
+773
+00:44:31,772 --> 00:44:34,675
+When you want to be connected to the world around you,
+而当你想和周围世界接触时
+
+774
+00:44:34,708 --> 00:44:36,643
+there's Transparency mode.
+可以启用通透模式
+
+775
+00:44:36,677 --> 00:44:41,782
+With the power of H2, we're taking this experience to the next level
+借助 H2 的能力 我们进一步优化了这一体验
+
+776
+00:44:41,815 --> 00:44:44,384
+with Adaptive Transparency,
+带来了自适应通透模式
+
+777
+00:44:44,418 --> 00:44:48,055
+which dynamically reduces the volume of harsh environmental noise
+它能动态调整恶劣环境噪音的音量
+
+778
+00:44:48,088 --> 00:44:50,023
+like heavy construction.
+比如巨大的施工噪音
+
+779
+00:44:50,057 --> 00:44:55,329
+This is made possible because it processes at 48,000 times per second
+能做到这一点 是因为它的处理速度达到每秒 48000 次
+
+780
+00:44:55,362 --> 00:45:00,701
+to react instantaneously to any high-decibel noise you are exposed to.
+能立刻对高分贝的噪音做出反应
+
+781
+00:45:02,135 --> 00:45:06,106
+? ?
+? ?
+
+782
+00:45:06,139 --> 00:45:11,345
+Next, let's talk about how you control all of these great experiences.
+接下来 让我们聊聊 如何操控所有这些出色的体验
+
+783
+00:45:11,378 --> 00:45:13,647
+The force sensor on AirPods Pro
+AirPods Pro 上的力度感应器
+
+784
+00:45:13,680 --> 00:45:16,517
+brought the capability to play or pause media
+可以随时播放、暂停媒体内容
+
+785
+00:45:16,550 --> 00:45:19,953
+and answer calls to keep you in the moment.
+及接听电话 在你需要的时刻
+
+786
+00:45:19,987 --> 00:45:25,626
+Today, we're taking that convenience even further by introducing touch control,
+现在我们将这样的便捷性进一步提升 为你带来 触控操作
+
+787
+00:45:25,659 --> 00:45:29,997
+which adds a capacitive sensing layer so you can adjust volume
+通过新增的电容感应层
+
+788
+00:45:30,030 --> 00:45:32,599
+with a light swipe up or down.
+让你可以在耳机柄上 轻轻上下滑动来调节音量
+
+789
+00:45:32,633 --> 00:45:36,737
+The new AirPods Pro with H2 are not only more powerful,
+配备了 H2 的全新 AirPods Pro 不仅更加强大
+
+790
+00:45:36,770 --> 00:45:38,906
+they are far more power efficient,
+能效也更高了
+
+791
+00:45:38,939 --> 00:45:41,475
+delivering even longer battery life.
+续航时间更胜以往
+
+792
+00:45:41,508 --> 00:45:47,314
+Now, you will have up to 6 hours of listening time from a single charge,
+一次充电 你就能获得 最长可达 6 小时的聆听时间
+
+793
+00:45:47,347 --> 00:45:52,486
+which is a 33% increase over the original AirPods Pro.
+比初代 AirPods Pro 增加了 33%
+
+794
+00:45:52,519 --> 00:45:56,156
+And with the charging case, you will have up to 30 hours
+搭配充电盒 新款 AirPods Pro 的聆听时间
+
+795
+00:45:56,190 --> 00:45:57,925
+of total listening time,
+最长可达 30 小时
+
+796
+00:45:57,958 --> 00:46:00,427
+which is an increase of 6 hours.
+比上一代增加了 6 个小时
+
+797
+00:46:01,328 --> 00:46:05,832
+The charging case is also core to the convenience of AirPods Pro.
+充电盒也是 AirPods Pro 方便易用的关键
+
+798
+00:46:05,866 --> 00:46:08,569
+Today, Find My can help you locate AirPods Pro
+现在 查找 app 可以帮你寻找丢失的 AirPods Pro
+
+799
+00:46:08,602 --> 00:46:12,172
+because each headphone can individually play a sound.
+因为每一只耳机都能单独播放声音
+
+800
+00:46:12,206 --> 00:46:14,107
+With the new AirPods Pro,
+如果你遗落了新款 AirPods Pro 
+
+801
+00:46:14,141 --> 00:46:16,743
+if you happen to misplace the charging case,
+的充电盒
+
+802
+00:46:16,777 --> 00:46:20,514
+precision finding will help you navigate directly to it
+精确查找功能将利用 U1 技术
+
+803
+00:46:20,547 --> 00:46:22,316
+with U1 technology.
+将你直接带到它所在的位置
+
+804
+00:46:23,717 --> 00:46:27,020
+We have also added a speaker to the bottom of the case
+我们还在充电盒底部添加了一个扬声器
+
+805
+00:46:27,054 --> 00:46:30,123
+to help you find it by playing louder tones.
+能播放更响亮的音调 帮助你寻找它
+
+806
+00:46:30,157 --> 00:46:32,926
+And the speaker will indicate pairing, low battery,
+这个扬声器也会在配对、电池电量不足
+
+807
+00:46:32,960 --> 00:46:35,195
+and when charging has started.
+以及充电开始时发出提示音
+
+808
+00:46:35,229 --> 00:46:38,532
+To make charging easier, in addition to the Lightning cable,
+为了让充电变得更容易 除了闪电连接线
+
+809
+00:46:38,565 --> 00:46:41,301
+you can now use your Apple Watch charger
+现在 你还能直接使用你的 Apple Watch 充电器
+
+810
+00:46:41,335 --> 00:46:44,838
+as well as MagSafe or other Qi-compatible chargers.
+MagSafe 或其他 Qi 认证的充电器
+
+811
+00:46:44,872 --> 00:46:48,308
+And with the addition of a lanyard loop to the side of the case,
+我们还在充电盒侧面增加了挂绳孔
+
+812
+00:46:48,342 --> 00:46:52,179
+your AirPods Pro will always be within reach.
+便于你触手可及自己的 AirPods Pro
+
+813
+00:46:52,212 --> 00:46:56,550
+These are the breakthrough 2nd generation AirPods Pro
+这就是创新突破的第二代 AirPods Pro
+
+814
+00:46:56,583 --> 00:46:58,552
+powered by H2,
+由 H2 芯片驱动
+
+815
+00:46:58,585 --> 00:47:03,757
+making our most popular AirPods even better.
+让最受欢迎的 AirPods 更加出众
+
+816
+00:47:03,790 --> 00:47:07,394
+We've built AirPods Pro with the environment in mind.
+在打造 AirPods Pro 时 我们始终牢记保护环境
+
+817
+00:47:07,427 --> 00:47:11,598
+All magnets are made with 100% recycled rare earth elements,
+所用的所有磁铁 都是由 100% 可再生稀土元素制成
+
+818
+00:47:11,632 --> 00:47:15,536
+and all outer plastic wrap from the packaging is removed.
+也移除了所有外包装上的塑料膜
+
+819
+00:47:15,569 --> 00:47:18,605
+And you can recycle all AirPods models.
+所有 AirPods 型号都支持回收
+
+820
+00:47:18,639 --> 00:47:21,942
+Just bring them to your nearest store or mail them in.
+可以将它交到你附近的 Apple Store 或直接寄给我们
+
+821
+00:47:21,975 --> 00:47:26,547
+The new AirPods Pro are available for $249,
+全新 AirPods Pro 为 $249
+
+822
+00:47:26,580 --> 00:47:29,116
+and you can order on September 9th.
+9 月 9 日开始接受订购
+
+823
+00:47:29,149 --> 00:47:35,255
+They're available on September 23rd with free engraving, including Memoji.
+9 月 23 日发售 提供免费镌刻服务 支持拟我表情
+
+824
+00:47:35,289 --> 00:47:40,861
+We can't wait for you to experience the future of AirPods.
+我们很期待你能体验新一代的 AirPods
+
+825
+00:47:40,894 --> 00:47:43,330
+Now, back to Tim.
+下面 交还给 Tim
+
+826
+00:47:43,363 --> 00:47:45,532
+? ?
+? ?
+
+827
+00:47:45,566 --> 00:47:50,604
+Tim: The new AirPods Pro and Apple Watch models are incredible products.
+新款 AirPods Pro 和 Apple Watch 都是卓越的产品
+
+828
+00:47:50,637 --> 00:47:53,874
+They bring more capability wherever you go.
+它们时刻伴你同行 为你带来更多功能
+
+829
+00:47:53,907 --> 00:47:58,612
+And they're designed to work seamlessly with the most essential product of all:
+它们在设计上也与最不可或缺的产品默契配合
+
+830
+00:47:58,645 --> 00:47:59,947
+iPhone.
+那就是 iPhone
+
+831
+00:47:59,980 --> 00:48:05,052
+People love iPhone and it's an important part of our daily lives.
+人们喜爱 iPhone 它是我们日常生活必不可少的重要部分
+
+832
+00:48:05,085 --> 00:48:08,288
+We're constantly challenging ourselves to raise the bar
+我们不断挑战自我 提升标准
+
+833
+00:48:08,322 --> 00:48:11,191
+to make it better and even more loved.
+让 iPhone 变得更好 更值得喜爱
+
+834
+00:48:11,225 --> 00:48:13,360
+So let's take a look at the new iPhone.
+让我们一起来看一看全新 iPhone 吧
+
+835
+00:48:14,695 --> 00:48:21,702
+? ?
+? ?
+
+836
+00:48:31,712 --> 00:48:38,719
+? ?
+? ?
+
+837
+00:48:47,528 --> 00:48:50,697
+As you can see, we're going big with iPhone 14,
+如你所见 我们为 iPhone 14 带来了重大更新
+
+838
+00:48:50,731 --> 00:48:53,433
+and even bigger with iPhone 14 Plus.
+还推出了更大的 iPhone 14 Plus
+
+839
+00:48:53,467 --> 00:48:55,736
+Here's Kaiann to tell you all about it.
+下面请 Kaiann 为你介绍
+
+840
+00:48:55,769 --> 00:49:02,776
+? ?
+? ?
+
+841
+00:49:04,978 --> 00:49:08,916
+Kaiann Drance: The popular 6.1" size of iPhone 14
+除了备受欢迎的 6.1 英寸 iPhone 14
+
+842
+00:49:08,949 --> 00:49:14,588
+is joined by the new, larger 6.7" size of iPhone 14 Plus.
+我们还推出了全新更大尺寸的 6.7 英寸 iPhone 14 Plus
+
+843
+00:49:14,621 --> 00:49:17,357
+With a larger display, you can enjoy more content
+更大的显示屏意味着 你可以在浏览网页时
+
+844
+00:49:17,391 --> 00:49:19,193
+when browsing the web.
+畅享更多内容
+
+845
+00:49:19,226 --> 00:49:22,229
+You can see more text or larger text.
+你可以看到更多或更大的文本
+
+846
+00:49:22,262 --> 00:49:26,333
+It looks great with the incredible features of iOS 16,
+出色呈现 iOS 16 的各类出色功能
+
+847
+00:49:26,366 --> 00:49:28,035
+like the new Lock Screen
+比如全新的锁屏界面
+
+848
+00:49:28,068 --> 00:49:30,470
+and iCloud shared Photo Library.
+以及 iCloud 共享图库
+
+849
+00:49:30,504 --> 00:49:33,707
+You can even get more workout details in the Fitness app
+你可以查看更多健身细节
+
+850
+00:49:33,740 --> 00:49:36,810
+with the new Enhanced Workout Summary.
+通过健身 app 中更新后的锻炼概要
+
+851
+00:49:36,844 --> 00:49:38,111
+With a larger display,
+更大的显示屏
+
+852
+00:49:38,145 --> 00:49:40,747
+you have more area to watch your favorite show
+也让你有更大的区域 无论是观看最喜欢的节目
+
+853
+00:49:40,781 --> 00:49:43,250
+or play your most intense game.
+或是玩最激烈的游戏
+
+854
+00:49:43,283 --> 00:49:46,854
+iPhone 14 also has an updated internal design
+iPhone 14 也更新了内部设计
+
+855
+00:49:46,887 --> 00:49:51,325
+that improves thermal performance, which is great for staying in the action longer.
+提供更好的散热表现 适合更长时间的运作
+
+856
+00:49:52,159 --> 00:49:55,863
+Both models have the gorgeous Super Retina XDR display
+两款机型均配备绚丽的超视网膜 XDR 显示屏
+
+857
+00:49:55,896 --> 00:50:01,134
+with OLED technology that supports 1200 nits peak HDR brightness,
+采用 OLED 技术 支持 1200 尼特峰值 HDR 亮度
+
+858
+00:50:01,168 --> 00:50:05,606
+two million-to-one contrast ratio, and Dolby Vision.
+2000000 : 1 的对比度以及杜比视界
+
+859
+00:50:05,639 --> 00:50:08,442
+iPhone 14 is designed to last,
+iPhone 14 经久耐用
+
+860
+00:50:08,475 --> 00:50:11,078
+so you can count on it to be there for you.
+随时随地都是你可靠的伙伴
+
+861
+00:50:11,745 --> 00:50:13,914
+Both models have Ceramic Shield–
+两款机型均配备超瓷晶面板
+
+862
+00:50:13,947 --> 00:50:16,416
+tougher than any smartphone glass–
+比任何其他智能手机玻璃都更坚固
+
+863
+00:50:16,450 --> 00:50:20,621
+aerospace grade aluminum, and water and dust resistance.
+航空级铝金属 抗水防尘
+
+864
+00:50:20,654 --> 00:50:25,492
+They come in five gorgeous colors: Midnight, Starlight,
+一共有五种精美外观：午夜色、星空色
+
+865
+00:50:25,526 --> 00:50:29,463
+a great new shade of blue, a strikingly elegant purple,
+靓丽的全新蓝色、优雅惊艳的紫色
+
+866
+00:50:29,496 --> 00:50:31,732
+and a truly eye-catching PRODUCT(RED).
+以及亮眼的红色
+
+867
+00:50:32,833 --> 00:50:35,936
+Users depend on their iPhone for so many things,
+用户们在很多事情上都需要依靠 iPhone
+
+868
+00:50:35,969 --> 00:50:39,907
+which is why iPhone 14 delivers all-day battery life.
+因此 iPhone 14 带来了 满足一天所需的电池续航
+
+869
+00:50:40,741 --> 00:50:44,278
+iPhone 14 Plus lasts even longer throughout your day
+iPhone 14 Plus 的续航 甚至在一天中能维持更久
+
+870
+00:50:44,311 --> 00:50:47,814
+with the best battery life ever in an iPhone.
+是迄今为止续航最长的 iPhone
+
+871
+00:50:47,848 --> 00:50:50,284
+The larger display and best battery life
+更大的显示屏和最出色的电池续航
+
+872
+00:50:50,317 --> 00:50:52,219
+were previously only available
+之前是我们的 
+
+873
+00:50:52,252 --> 00:50:53,921
+in our Pro Max models,
+Pro Max 机型独占的
+
+874
+00:50:53,954 --> 00:50:56,890
+and now we're bringing it to even more people.
+现在我们将其带给更多用户
+
+875
+00:50:57,491 --> 00:51:00,027
+Now, let's talk about performance.
+接下来 我们来聊一聊性能
+
+876
+00:51:00,060 --> 00:51:03,597
+iPhone 13 Pro introduced an amazing chip:
+iPhone 13 Pro 推出了惊人的芯片
+
+877
+00:51:03,630 --> 00:51:07,401
+the A15 Bionic with a 5-core GPU.
+配备 5 核图形处理器的 A15 仿生
+
+878
+00:51:07,434 --> 00:51:10,671
+It's a powerhouse that unlocks extraordinary features
+它的强大性能驱动了一众卓越的功能
+
+879
+00:51:10,704 --> 00:51:15,943
+and delivers great power efficiency, privacy, and security.
+并实现了出色的能效、隐私和安全保护
+
+880
+00:51:15,976 --> 00:51:21,381
+Now we are bringing this proven, Pro-level performance to iPhone 14.
+现在我们将这毋庸置疑的 Pro 级性能 带到了 iPhone 14 上
+
+881
+00:51:21,415 --> 00:51:25,118
+The 5-core GPU is 18% faster,
+5 核图形处理器速度提升达 18%
+
+882
+00:51:25,152 --> 00:51:29,590
+enabling even smoother graphics in computationally heavy workloads
+带来更流畅的图形表现 即便是处理复杂游戏
+
+883
+00:51:29,623 --> 00:51:31,592
+like complex gaming.
+等计算繁重的工作负载
+
+884
+00:51:31,625 --> 00:51:35,762
+It has a powerful 6-core CPU
+它拥有强大的 6 核中央处理器
+
+885
+00:51:33,794 --> 00:51:37,698
+ with two high-performance
+包括两个高性能核心
+
+886
+00:51:35,796 --> 00:51:37,664
+and four efficiency cores,
+和四个高能效核心
+
+887
+00:51:37,698 --> 00:51:40,167
+and a 16-core Neural Engine
+以及一个 16 核神经网络引擎
+
+888
+00:51:40,200 --> 00:51:43,270
+that pushes the limits of machine learning.
+进一步提升机器学习的极限
+
+889
+00:51:43,303 --> 00:51:47,140
+Since its introduction, A15 continues to be faster
+A15 自从问世以来 让任何价位段的任何竞争对手
+
+890
+00:51:47,174 --> 00:51:50,210
+than all the competition at any price.
+都只能望尘莫及
+
+891
+00:51:50,244 --> 00:51:53,914
+A15 is essential to iPhone 14.
+A15 对于 iPhone 14 来说至关重要
+
+892
+00:51:53,947 --> 00:51:56,950
+And with a custom image signal processor,
+凭借定制的图像信号处理器
+
+893
+00:51:56,984 --> 00:52:02,656
+A15 also powers innovative features in the amazing new camera system.
+A15 实现了全新摄像头系统的众多创新功能
+
+894
+00:52:02,689 --> 00:52:05,225
+Here's Caron to tell you more.
+下面请 Caron 为你介绍
+
+895
+00:52:05,259 --> 00:52:09,863
+? ?
+? ?
+
+896
+00:52:09,897 --> 00:52:11,798
+Caron Thor: iPhone is always with you
+iPhone 与你时刻相伴
+
+897
+00:52:11,832 --> 00:52:16,170
+and ready to quickly and effortlessly capture your life's moments.
+让你随时可以快速轻松地捕捉精彩的生活瞬间
+
+898
+00:52:16,203 --> 00:52:20,374
+Last year, over three trillion photos were taken with iPhone!
+仅去年 就有超过 3 万亿张照片 是用 iPhone 拍摄的
+
+899
+00:52:20,974 --> 00:52:24,211
+We develop unique, state-of-the-art camera technology
+我们在研发独特的先进相机技术的同时
+
+900
+00:52:24,244 --> 00:52:27,014
+while staying true to the craft of photography.
+始终忠于摄影艺术本身
+
+901
+00:52:27,814 --> 00:52:32,252
+Lighting is a fundamental part of getting the best shot possible.
+光线条件是能拍出好照片 最根本的一个要素
+
+902
+00:52:32,286 --> 00:52:35,822
+It plays such an important role in capturing everyday memories
+无论是捕捉日常回忆还是惊人时刻
+
+903
+00:52:35,856 --> 00:52:37,624
+and jaw-dropping moments.
+它的作用都非常重要
+
+904
+00:52:38,492 --> 00:52:43,297
+iPhone enables gorgeous photo capture across the entire range of light–
+iPhone 使得 在各种光线条件下拍出精美照片成为可能
+
+905
+00:52:43,330 --> 00:52:46,800
+from bright light, where colors come alive,
+从色彩生动的明亮光线
+
+906
+00:52:46,834 --> 00:52:48,902
+to low light, like indoors,
+到室内等低光环境
+
+907
+00:52:48,936 --> 00:52:50,871
+to nighttime scenes.
+再到夜间场景
+
+908
+00:52:50,904 --> 00:52:54,641
+And iPhone 14 again sets the standard for photo
+iPhone 14 再一次突破了 照片和视频拍摄的标准
+
+909
+00:52:54,675 --> 00:52:58,078
+and video capture regardless of where you are.
+无论你身处怎样的条件中
+
+910
+00:52:58,111 --> 00:53:02,482
+It has a new 12MP Main camera with a larger sensor,
+全新的 1200 万像素主摄 配备了更大的感光元件
+
+911
+00:53:02,516 --> 00:53:05,552
+and larger pixels at 1.9 microns.
+以及 1.9 微米的更大的像素尺寸
+
+912
+00:53:06,086 --> 00:53:09,122
+It has a larger f/1.5 aperture
+更大的 ?/1.5 光圈
+
+913
+00:53:09,156 --> 00:53:10,891
+and sensor-shift OIS
+和传感器位移式光学图像防抖功能
+
+914
+00:53:10,924 --> 00:53:16,230
+for a powerful Main camera upgrade and takes stunning shots everywhere.
+实现了强大的主摄像头升级 便于在各种环境中拍出令人惊叹的照片
+
+915
+00:53:16,263 --> 00:53:19,733
+The faster aperture allows better motion freezing,
+更大的光圈可以更好地定格物体移动的瞬间
+
+916
+00:53:19,766 --> 00:53:23,270
+showing off vibrant colors that bring the scene to life
+展现出鲜艳的色彩  彰显出色的质感和细节
+
+917
+00:53:23,303 --> 00:53:25,372
+with great texture and detail.
+使场景栩栩如生
+
+918
+00:53:26,440 --> 00:53:30,177
+It delivers a 49% improvement in low light capture,
+在低光拍摄方面有了 49% 的提升
+
+919
+00:53:30,210 --> 00:53:34,681
+for more vibrant color and better results in challenging lighting environments,
+在具有挑战性的照明环境中 提供更鲜艳的色彩和更好的效果
+
+920
+00:53:34,715 --> 00:53:37,985
+while making Night mode exposure twice as fast.
+且夜间模式的曝光速度提升快达两倍
+
+921
+00:53:38,018 --> 00:53:42,556
+And the Ultra Wide camera takes incredible-looking photos and video,
+超广角镜头能拍摄令人眼前一亮的照片和视频
+
+922
+00:53:42,589 --> 00:53:46,994
+which is great for wider shots and unique perspectives.
+非常适合拍摄视角更宽且独特的场景
+
+923
+00:53:47,027 --> 00:53:50,497
+The front camera enables great-looking selfies,
+前置摄像头让你能拍出更好看的自拍
+
+924
+00:53:50,531 --> 00:53:54,902
+high quality video during FaceTime, and so much more.
+以及更高画质的 FaceTime 视频通话等
+
+925
+00:53:54,935 --> 00:53:58,172
+iPhone 14 has a new TrueDepth camera.
+iPhone 14 还配备了新的原深感镜头！
+
+926
+00:53:58,205 --> 00:54:01,008
+It has a faster f/1.9 aperture
+它拥有更大的 ?/1.9 光圈
+
+927
+00:54:01,041 --> 00:54:05,779
+for a 38% improvement in low light capture for photos and video.
+照片和视频的低光拍摄提升了 38%
+
+928
+00:54:05,812 --> 00:54:09,183
+The new front camera has autofocus for the first time,
+新的前置摄像头首次加入了自动对焦功能
+
+929
+00:54:09,216 --> 00:54:12,986
+so it can focus clearly at multiple distances.
+可以在多个距离上进行清晰对焦
+
+930
+00:54:13,020 --> 00:54:15,222
+Together with TrueDepth capabilities,
+再加上原深感镜头的功能
+
+931
+00:54:15,255 --> 00:54:17,624
+the front camera now has a hybrid system
+新的前置摄像头现在通过一套混合系统
+
+932
+00:54:17,658 --> 00:54:20,527
+that can focus faster, even in low light.
+实现更快对焦 即使在低光条件下也可以
+
+933
+00:54:20,561 --> 00:54:25,332
+So you'll get better selfies, group shots can be in focus from farther away,
+这样 你就能拍出更好看的自拍 拍合影时可以从更远的地方对焦
+
+934
+00:54:25,365 --> 00:54:29,203
+and you'll be able to show off great detail up close.
+并近距离展示出色的细节
+
+935
+00:54:29,236 --> 00:54:32,840
+Low light environments can be a unique challenge with photography.
+低光环境对摄影来说是一个独特的挑战
+
+936
+00:54:32,873 --> 00:54:36,743
+We've made incredible progress in capturing in low light over the years
+这些年来 我们在低光摄影方面取得了长足进步
+
+937
+00:54:36,777 --> 00:54:40,814
+with increasingly larger sensors and faster apertures,
+更大的感光元件 更大的光圈
+
+938
+00:54:40,848 --> 00:54:42,883
+more advanced lenses–
+更先进的镜头
+
+939
+00:54:42,916 --> 00:54:44,885
+all paired with intelligent software
+再结合智能的软件
+
+940
+00:54:44,918 --> 00:54:50,557
+and our powerful Apple silicon that result in incredible capabilities for low light.
+以及我们强大的 Apple 芯片 来了卓越的低光摄影功能
+
+941
+00:54:50,591 --> 00:54:53,260
+Deep Fusion is a great example.
+深度融合就是一个很好的例子
+
+942
+00:54:53,293 --> 00:54:56,463
+It's a huge achievement in computational photography
+这是计算摄影的一项巨大成就
+
+943
+00:54:56,496 --> 00:54:58,832
+and uses the powerful Neural Engine
+用强大的神经网络引擎
+
+944
+00:54:58,866 --> 00:55:02,503
+to combine multiple frames into a single image.
+将多个帧组合成一个图像
+
+945
+00:55:02,536 --> 00:55:04,938
+This delivers extraordinary detail
+从而呈现出非凡的细节
+
+946
+00:55:04,972 --> 00:55:10,310
+and preserves even the subtlest textures in these mid- to lower-light environments.
+并保留最微妙的纹理 即便是在中到低光拍摄时
+
+947
+00:55:10,344 --> 00:55:13,480
+Now, we are taking our image pipeline further
+现在 我们对图像管线进行进一步优化
+
+948
+00:55:13,514 --> 00:55:18,552
+by applying Deep Fusion much earlier in the process on uncompressed images.
+将深度融合在图像合成过程中前置 应用于未经压缩的图像
+
+949
+00:55:18,585 --> 00:55:21,255
+This retains much more information and detail,
+这么做能保留更多信息和细节
+
+950
+00:55:21,288 --> 00:55:25,058
+and enables rendering of more colors and brighter colors.
+也能渲染更多和更明亮的颜色
+
+951
+00:55:25,826 --> 00:55:30,864
+This new process unlocks our biggest step forward yet for low light performance.
+这个新流程也推动了我们 在低光摄影性能上实现的最大突破
+
+952
+00:55:31,431 --> 00:55:34,535
+We call it Photonic Engine.
+我们称其为 光像引擎
+
+953
+00:55:34,568 --> 00:55:36,603
+This is our enhanced image pipeline
+这是我们优化后的图像管线
+
+954
+00:55:36,637 --> 00:55:39,706
+that dramatically improves low-light photos.
+可显着改善低光照片的质量
+
+955
+00:55:39,740 --> 00:55:43,110
+It goes beyond what hardware alone can provide.
+远超仅凭硬件能实现的效果
+
+956
+00:55:43,143 --> 00:55:46,513
+The best part is that it benefits every camera.
+最棒的是 每个摄像头都能从中获益
+
+957
+00:55:46,547 --> 00:55:48,749
+When compared to iPhone 13,
+与 iPhone 13 相比
+
+958
+00:55:48,782 --> 00:55:53,587
+it enables photo low light improvement up to two times on the front camera,
+低光拍摄的提升改善 在前摄像头上最高可达 2 倍
+
+959
+00:55:53,620 --> 00:55:56,657
+two times on the Ultra Wide camera,
+超广角摄像头最高可达 2 倍
+
+960
+00:55:56,690 --> 00:56:00,294
+and two-and-a-half times on the new Main camera.
+在新的主摄上最高可达 2.5 倍！
+
+961
+00:56:01,028 --> 00:56:03,764
+You'll get photos with much better detail and color,
+你将得到细节与色彩大幅改善的照片
+
+962
+00:56:03,797 --> 00:56:06,600
+helping you remember the moment the way you lived it.
+帮你更生动地回忆起每一个瞬间
+
+963
+00:56:07,367 --> 00:56:10,704
+There's also a big improvement to video this year.
+今年 视频方面也有了很大提升
+
+964
+00:56:10,737 --> 00:56:14,041
+iPhone leads the industry with the highest quality video
+iPhone 以最高质量的视频引领全行业
+
+965
+00:56:14,074 --> 00:56:16,210
+and has great stabilization.
+并具有出色的防抖
+
+966
+00:56:16,243 --> 00:56:20,113
+It now has a new, even more advanced stabilization mode
+现在 我们新增了一个更先进的防抖模式
+
+967
+00:56:20,147 --> 00:56:24,284
+that gives users a powerful tool when capturing moments on the move.
+给用户一个强大的工具用来捕捉各种移动的瞬间
+
+968
+00:56:24,318 --> 00:56:26,520
+This is Action mode.
+这就是 运动模式
+
+969
+00:56:26,920 --> 00:56:31,525
+It uses the full sensor with more overscan and advanced roll correction
+它使用整个感光元件 通过更多的过扫描和高级滚动校正
+
+970
+00:56:31,558 --> 00:56:36,129
+to make video look incredibly stable when you're in middle of the action.
+让你在动态中拍摄的视频看起来特别稳定
+
+971
+00:56:36,163 --> 00:56:39,967
+Simply toggle it on for great-looking, smooth video,
+只需打开运动模式就能拍出丝滑流畅的视频
+
+972
+00:56:40,000 --> 00:56:42,936
+without having to carry extra gear like a gimbal.
+且无需携带像云台这样的额外装备
+
+973
+00:56:42,970 --> 00:56:46,073
+It also supports and Dolby Vision HDR.
+这一模式同样支持杜比视界 HDR
+
+974
+00:56:46,106 --> 00:56:50,143
+The new iPhone 14 camera system is a huge upgrade,
+iPhone 14 全新的摄像头系统带来了重大升级
+
+975
+00:56:50,177 --> 00:56:55,549
+enabling incredible-looking shots across the entire range of shooting conditions.
+在各种拍摄条件下 助你拍出惊艳的照片
+
+976
+00:56:55,582 --> 00:56:57,417
+Back to you, Kaiann.
+交还给你 Kaiann
+
+977
+00:56:57,451 --> 00:57:00,687
+? ?
+? ?
+
+978
+00:57:00,721 --> 00:57:03,257
+Kaiann: Now let's talk about connectivity.
+现在 我来聊一聊连接性
+
+979
+00:57:03,290 --> 00:57:05,392
+iPhone has powerful capabilities
+iPhone 拥有一系列强大的功能
+
+980
+00:57:05,425 --> 00:57:08,328
+that help our users stay in touch on the go.
+帮助用户随时随地保持联系
+
+981
+00:57:08,362 --> 00:57:13,467
+This is especially true for 5G, enabling super fast downloads,
+5G 尤其是如此 支持超快速下载
+
+982
+00:57:13,500 --> 00:57:16,537
+better streaming, and real-time connectivity.
+更流畅地看流媒体以及实时连接
+
+983
+00:57:16,570 --> 00:57:19,706
+And momentum for 5G is stronger than ever,
+5G 的发展势头越发强劲
+
+984
+00:57:19,740 --> 00:57:24,077
+with over 250 carriers around the world on 5G.
+现在全球有超过 250 家运营商支持 5G
+
+985
+00:57:24,111 --> 00:57:28,282
+We've also made big improvements to cellular technologies like eSIM,
+我们还对 eSIM 等蜂窝技术进行了重大改进
+
+986
+00:57:28,315 --> 00:57:30,851
+making it even easier to connect.
+使连接变得更容易
+
+987
+00:57:30,884 --> 00:57:36,356
+An eSIM is a digital SIM that eliminates the need for a physical SIM card.
+eSIM 是一种数字 SIM 卡 不再需要使用实体 SIM 卡
+
+988
+00:57:36,390 --> 00:57:40,360
+With eSIM, you can quickly transfer an existing cellular plan
+凭借 eSIM 你可以快速转移现有的蜂窝数据计划
+
+989
+00:57:40,394 --> 00:57:44,031
+or get a new cellular plan, all digitally.
+或是获取新的蜂窝数据计划 全都以数字的方式实现
+
+990
+00:57:44,064 --> 00:57:47,935
+You can even store multiple eSIMs on the same device,
+你甚至可以在同一台设备上存储多个 eSIM
+
+991
+00:57:47,968 --> 00:57:51,972
+meaning multiple cellular plans and phone numbers.
+也就是多个蜂窝数据计划和电话号码
+
+992
+00:57:52,005 --> 00:57:53,373
+And it's more secure.
+安全性还更高
+
+993
+00:57:53,407 --> 00:57:55,976
+Someone can't remove the physical SIM card
+即使你的 iPhone 丢失或被盗
+
+994
+00:57:56,009 --> 00:57:58,645
+if your iPhone is lost or stolen.
+他人都无法将 SIM 卡移除
+
+995
+00:57:58,679 --> 00:58:00,681
+eSIM setup is easy.
+eSIM 设置起来非常简单
+
+996
+00:58:00,714 --> 00:58:04,151
+In just a few simple steps, users are ready to make calls,
+只需几个简单的步骤 用户就可开始拨打电话
+
+997
+00:58:04,184 --> 00:58:06,787
+send messages, and browse the web.
+发送信息和浏览网页
+
+998
+00:58:06,820 --> 00:58:09,923
+You can even do this without a Wi-Fi connection.
+甚至不需要连接 Wi-Fi 就能完成设置！
+
+999
+00:58:09,957 --> 00:58:12,626
+Extensive planning and testing with carriers
+为了实现 iPhone 的 eSIM 体验
+
+1000
+00:58:12,659 --> 00:58:15,929
+helped enable the iPhone eSIM experience.
+我们与运营商一起做了大量的规划和测试
+
+1001
+00:58:15,963 --> 00:58:20,200
+This includes the US, where eSIM support has skyrocketed,
+在美国 AT&T、T-Mobile、Verizon 等运营商
+
+1002
+00:58:20,234 --> 00:58:25,105
+thanks to AT&T, T-Mobile, Verizon, and many more.
+对 eSIM 的支持迅猛增长
+
+1003
+00:58:25,138 --> 00:58:30,410
+Now, for the first time, all US models no longer have the SIM tray,
+从现在开始 首次实现了 所有美国版 iPhone 都不再有 SIM 卡槽
+
+1004
+00:58:30,444 --> 00:58:34,081
+so you don't have to deal with a physical SIM card anymore.
+你不必再需要实体 SIM 卡
+
+1005
+00:58:34,915 --> 00:58:38,819
+eSIM provides a simpler way to activate and use iPhone.
+eSIM 带来了更简单的方式 来激活和使用 iPhone
+
+1006
+00:58:39,453 --> 00:58:41,455
+Next, let's talk about some features
+下面我们来聊一些
+
+1007
+00:58:41,488 --> 00:58:44,057
+that make iPhone even more essential.
+让 iPhone 变得更加不可或缺的功能
+
+1008
+00:58:44,091 --> 00:58:47,160
+iPhone is there when you need it most.
+在你最需要的时候 iPhone 就在你身边
+
+1009
+00:58:47,194 --> 00:58:51,932
+That confidence is especially important in moments where your safety is at risk.
+在你的安全受到威胁时 这份信心尤为重要
+
+1010
+00:58:52,833 --> 00:58:56,537
+With iPhone 14, we have two critical new safety features.
+iPhone 14 新增了两个关键的安全功能
+
+1011
+00:58:57,571 --> 00:58:59,540
+It has Crash Detection–
+iPhone 14 支持车祸检测
+
+1012
+00:58:59,573 --> 00:59:04,144
+the same feature you just heard about on new Apple Watch models.
+与刚介绍过的新款 Apple Watch 一样
+
+1013
+00:59:04,178 --> 00:59:08,015
+iPhone 14 has a new, high dynamic range gyroscope
+iPhone 14 配备了全新高动态范围陀螺仪
+
+1014
+00:59:08,048 --> 00:59:10,617
+and a new dual-core accelerometer
+以及一个全新的双核加速感应器
+
+1015
+00:59:10,651 --> 00:59:14,288
+that is able to detect up to 256 g's,
+检测最高可达 256 g-force
+
+1016
+00:59:14,321 --> 00:59:17,791
+and it can automatically notify emergency services
+在遭遇严重的车祸时
+
+1017
+00:59:17,824 --> 00:59:21,395
+and emergency contacts if you are in a severe car crash.
+它会自动呼救紧急救援和你的紧急联系人
+
+1018
+00:59:21,428 --> 00:59:24,364
+If you have both Apple Watch and iPhone,
+如果你同时拥有 Apple Watch 和 iPhone
+
+1019
+00:59:24,398 --> 00:59:27,868
+they seamlessly work together to get you help efficiently.
+它们还会无缝配合 帮你更快寻求救助
+
+1020
+00:59:28,535 --> 00:59:32,206
+Now here's Ashley to tell you about another new safety service
+下面请 Ashley 为你具体介绍
+
+1021
+00:59:32,239 --> 00:59:34,007
+coming to iPhone.
+iPhone 即将提供的另一项全新安全服务
+
+1022
+00:59:34,041 --> 00:59:38,979
+? ?
+? ?
+
+1023
+00:59:39,012 --> 00:59:41,715
+Ashley Williams: Emergencies don't always happen when it's convenient.
+紧急情况不会只在方便求助时发生
+
+1024
+00:59:41,748 --> 00:59:44,685
+When you need help, you need it wherever you are,
+当你需要帮助时 你可能处于各种环境中
+
+1025
+00:59:44,718 --> 00:59:47,421
+even if you don't have Wi-Fi or cell service.
+包括没有 Wi-Fi 或蜂窝信号的地方
+
+1026
+00:59:47,454 --> 00:59:50,858
+Now, your iPhone can connect you with the help you need
+现在你的 iPhone 可以帮你寻求救援
+
+1027
+00:59:50,891 --> 00:59:53,060
+when you're off the grid, like this.
+即便你身处野外……就像这样
+
+1028
+00:59:54,728 --> 00:59:56,463
+Rescue 07, Command.
+救援 7 号 这里是指挥部
+
+1029
+00:59:56,496 --> 00:59:58,031
+Please be advised, a storm is headed your way
+请留意 暴风雨正在向你所处方向移动
+
+1030
+00:59:58,065 --> 00:59:59,933
+two miles southeast.
+东南方向 2 英里
+
+1031
+00:59:59,967 --> 01:00:06,974
+? ?
+? ?
+
+1032
+01:00:16,884 --> 01:00:23,891
+? ?
+? ?
+
+1033
+01:00:31,765 --> 01:00:37,905
+? ?
+? ?
+
+1034
+01:00:37,938 --> 01:00:39,006
+SOS
+通过卫星 SOS 紧急联络 继续与紧急救援机构联系
+
+1035
+01:00:39,006 --> 01:00:41,008
+Stay alone
+已联系紧急救援人员 请在原地等待
+
+1036
+01:00:42,309 --> 01:00:49,316
+? ?
+? ?
+
+1037
+01:00:54,955 --> 01:00:58,725
+Today, we are announcing a groundbreaking new service for iPhone:
+今天 我们要宣布 iPhone 的一项开创性新服务
+
+1038
+01:00:58,759 --> 01:01:02,196
+Emergency SOS via satellite.
+通过卫星 SOS 紧急联络
+
+1039
+01:01:02,229 --> 01:01:06,266
+While iPhone is designed for a best-in-class cellular experience,
+虽然 iPhone 能提供行业领先的蜂窝网络体验
+
+1040
+01:01:06,300 --> 01:01:10,671
+connecting to a satellite presents an entirely new set of challenges.
+但连接到卫星意味着一系列全新的挑战
+
+1041
+01:01:10,704 --> 01:01:14,341
+Smartphones connect to cell towers that are a few miles away.
+智能手机通常都是连接到几英里外的信号塔
+
+1042
+01:01:14,374 --> 01:01:15,843
+Over the last several decades,
+在过去的几十年里
+
+1043
+01:01:15,876 --> 01:01:18,345
+carriers have built more and more cell towers
+运营商建造了越来越多的信号塔
+
+1044
+01:01:18,378 --> 01:01:21,849
+to improve the strength and speed of their network service.
+来提升网络服务的强度和速度
+
+1045
+01:01:22,416 --> 01:01:26,353
+However, there are some places– like winding back roads
+但是有些地方 比如在曲折的道路和山脊上
+
+1046
+01:01:26,386 --> 01:01:29,189
+and mountain ridges– that cell towers don't reach.
+手机信号塔覆盖不到
+
+1047
+01:01:30,324 --> 01:01:35,329
+Connectivity in these areas can be provided by communication satellites.
+这些区域的连接可以由通信卫星提供
+
+1048
+01:01:35,362 --> 01:01:37,431
+Unlike stationary cell towers,
+与固定的信号塔不同
+
+1049
+01:01:37,464 --> 01:01:40,834
+communication satellites are hundreds of miles above the Earth,
+通信卫星位于地球上方数百英里的高空
+
+1050
+01:01:40,868 --> 01:01:44,638
+and flying at over 15,000 miles per hour.
+并以超过 15000 英里/小时的速度飞行
+
+1051
+01:01:45,072 --> 01:01:48,008
+To connect to these satellites, you need to be outside,
+要与这些卫星连接 你需要身处户外
+
+1052
+01:01:48,041 --> 01:01:50,210
+with a clear view of the sky.
+能清楚看到天空
+
+1053
+01:01:50,244 --> 01:01:54,014
+And the bandwidth is so limited that even sending a text message
+而且带宽非常有限 发一条信息
+
+1054
+01:01:54,047 --> 01:01:55,949
+is a technical challenge.
+都是一项技术挑战
+
+1055
+01:01:55,983 --> 01:01:58,552
+Typically, the only way to tap into such a network
+通常来说 接入此类网络的唯一方法
+
+1056
+01:01:58,585 --> 01:02:02,689
+is with an expensive device that uses a bulky external antenna.
+是使用昂贵的设备 附带笨重的外部天线
+
+1057
+01:02:02,723 --> 01:02:06,093
+We knew that approach just wouldn't work for iPhone.
+我们知道 iPhone 并不适合使用这种方式
+
+1058
+01:02:06,126 --> 01:02:08,595
+So we invented another way.
+于是 我们发明了另一种方式
+
+1059
+01:02:08,629 --> 01:02:13,100
+We designed and built custom components and specific software
+我们设计制造了定制组件和特定软件
+
+1060
+01:02:13,133 --> 01:02:17,604
+so that iPhone 14 antennas can connect to satellites' unique frequencies.
+使 iPhone 14 的天线能连接到卫星的独特频率
+
+1061
+01:02:18,405 --> 01:02:21,542
+That connection is only possible when the phone is pointing
+只有当手机直接指向卫星时
+
+1062
+01:02:21,575 --> 01:02:23,544
+directly at a satellite.
+这种连接才能实现
+
+1063
+01:02:23,577 --> 01:02:27,681
+However, satellites fly too high to be seen by the human eye.
+然而卫星飞得太高 人的肉眼是看不到的
+
+1064
+01:02:27,714 --> 01:02:32,719
+So we created a unique user experience that shows you where to point your phone
+因此 我们创造了独特的用户体验 告诉你要将手机指向何处
+
+1065
+01:02:32,753 --> 01:02:37,191
+to establish a connection, and stay connected as the satellite moves.
+才能建立连接 并在卫星移动时保持连接
+
+1066
+01:02:37,224 --> 01:02:40,694
+This way, no bulky antenna is needed.
+这样 就不再需要笨重的天线了
+
+1067
+01:02:41,428 --> 01:02:44,198
+Once connected, you need to send and receive
+连接上之后
+
+1068
+01:02:44,231 --> 01:02:47,034
+enough information to get emergency help.
+你需要发送和接收足够的信息 才能获得紧急救助
+
+1069
+01:02:47,801 --> 01:02:50,204
+Standard messaging protocols are not designed
+标准的信息传送协议
+
+1070
+01:02:50,237 --> 01:02:52,206
+for a satellite's limited bandwidth.
+并不适用于带宽有限的卫星
+
+1071
+01:02:52,239 --> 01:02:55,976
+So we created a custom short text compression algorithm
+因此我们研发了定制短文本压缩算法
+
+1072
+01:02:56,009 --> 01:02:59,813
+to reduce the average size of messages by a factor of three.
+将信息的平均文件大小减小三倍
+
+1073
+01:02:59,847 --> 01:03:03,250
+Thanks to this algorithm, it can take less than 15 seconds
+有了这种算法 可能不到 15 秒就能发送一条信息
+
+1074
+01:03:03,283 --> 01:03:06,687
+to send a message if you have a clear view of the sky.
+如果你能清楚地看到天空
+
+1075
+01:03:06,720 --> 01:03:09,189
+In other conditions, such as light foliage,
+在其他条件下 比如在树荫里
+
+1076
+01:03:09,223 --> 01:03:11,158
+it may take a few minutes.
+可能需要几分钟
+
+1077
+01:03:11,191 --> 01:03:13,927
+And since each message can take some time,
+由于发送每条信息都可能需要一些时间
+
+1078
+01:03:13,961 --> 01:03:16,163
+we knew a standard back-and-forth conversation
+日常的来回对话模式
+
+1079
+01:03:16,196 --> 01:03:19,366
+would take far too long for an emergency situation.
+对于紧急情况来说过于耗时
+
+1080
+01:03:19,399 --> 01:03:22,503
+We worked with emergency experts to surface the questions
+我们与应急专家合作
+
+1081
+01:03:22,536 --> 01:03:24,571
+they're most likely to ask,
+讨论了紧急服务人员最常问的问题
+
+1082
+01:03:24,605 --> 01:03:26,507
+and we provided the most common responses
+并提供最常见的回答
+
+1083
+01:03:26,540 --> 01:03:29,576
+for you to choose from with just a few taps.
+以供用户轻点选择
+
+1084
+01:03:29,610 --> 01:03:31,945
+With fewer messages to write and send,
+越少需要编写发送的信息
+
+1085
+01:03:31,979 --> 01:03:34,414
+you can get help quicker.
+你也就更快能获得救援
+
+1086
+01:03:34,448 --> 01:03:36,817
+After your message is relayed to a ground station,
+当你的信息转发到地面站后
+
+1087
+01:03:36,850 --> 01:03:40,053
+it needs to reach the right emergency service provider.
+还需要传送给正确的紧急救援机构
+
+1088
+01:03:40,087 --> 01:03:43,290
+If that emergency service provider accepts text messages,
+如果该紧急救援机构能接收信息
+
+1089
+01:03:43,323 --> 01:03:45,692
+we will connect you to them directly.
+我们会帮助你直接与他们联系
+
+1090
+01:03:45,726 --> 01:03:49,763
+If they only accept voice calls, we have set up Relay Centers,
+如果他们只接受语音通话 我们设立了中继中心
+
+1091
+01:03:49,796 --> 01:03:52,466
+staffed with highly-trained emergency specialists
+配备训练有素的紧急救援专家
+
+1092
+01:03:52,499 --> 01:03:57,271
+ready to get your text and call an emergency service provider on your behalf.
+随时接收你的信息 并代表你致电紧急救援机构
+
+1093
+01:03:57,304 --> 01:04:00,107
+It took years to make this vision a reality
+我们花了数年才实现这一愿景
+
+1094
+01:04:00,140 --> 01:04:04,811
+through game-changing hardware, software, and infrastructure innovation.
+依靠的是颠覆性的硬件、软件和基础设施创新
+
+1095
+01:04:05,412 --> 01:04:07,848
+This breakthrough service can also be used
+这一突破性的服务
+
+1096
+01:04:07,881 --> 01:04:10,951
+in more casual, less dire circumstances.
+也可以在危急程度没有那么高的日常情况下使用
+
+1097
+01:04:10,984 --> 01:04:13,987
+So if you're out on a long hike, you can use the Find My app
+长途徒步时 你可以使用查找 app
+
+1098
+01:04:14,021 --> 01:04:17,524
+to share your location manually via satellite.
+通过卫星手动共享你的位置
+
+1099
+01:04:17,558 --> 01:04:19,960
+This lets your loved ones know where you are,
+无需发送信息
+
+1100
+01:04:19,993 --> 01:04:22,496
+without you even sending a message.
+就能让亲友知道你的位置
+
+1101
+01:04:22,529 --> 01:04:24,498
+Now, back to Kaiann.
+下面 交还给 Kaiann
+
+1102
+01:04:25,766 --> 01:04:27,267
+Kaiann: We believe that this service
+我们相信这项服务
+
+1103
+01:04:27,301 --> 01:04:30,270
+is such an essential part of the iPhone experience
+是 iPhone 体验至关重要的一部分
+
+1104
+01:04:30,304 --> 01:04:33,807
+that we'll include it free for two years with iPhone 14.
+所以我们将其包含在 iPhone 14 中 可免费享用该服务两年
+
+1105
+01:04:34,808 --> 01:04:39,179
+It launches in November, and we're starting with the US and Canada.
+这项服务将于 11 月推出 从美国和加拿大开始
+
+1106
+01:04:39,213 --> 01:04:41,949
+Now, let's talk about the environment.
+下面 我们来聊一聊环境
+
+1107
+01:04:41,982 --> 01:04:47,120
+Since 2020, Apple's corporate operations have been carbon neutral.
+Apple 的公司运营 从 2020 年开始就实现了碳中和
+
+1108
+01:04:47,154 --> 01:04:50,858
+To reach our goal of carbon neutral products by 2030,
+为了在 2030 年实现产品碳中和目标
+
+1109
+01:04:50,891 --> 01:04:54,628
+we're looking at our environmental impact across our supply chain
+我们正在研究所有供应链
+
+1110
+01:04:54,661 --> 01:04:56,797
+and the entire product lifecycle.
+和整个产品生命周期的环境影响
+
+1111
+01:04:57,397 --> 01:05:00,234
+Over 200 of our suppliers have committed
+超过 200 家供应商已承诺
+
+1112
+01:05:00,267 --> 01:05:04,037
+to 100% renewable energy for Apple production.
+使用 100% 可再生能源生产 Apple 的产品
+
+1113
+01:05:04,071 --> 01:05:09,276
+Our suppliers work to create less waste and then reuse, recycle, or compost.
+我们的供应商都会努力减少产生垃圾 并不断再利用、回收或制成堆肥
+
+1114
+01:05:10,210 --> 01:05:12,513
+In fiscal year 2021 alone,
+仅在 2021 财年
+
+1115
+01:05:12,546 --> 01:05:17,551
+iPhone suppliers kept over 250,000 metric tons of waste
+iPhone 供应商就阻止了超过 25 万公吨垃圾
+
+1116
+01:05:17,584 --> 01:05:19,686
+from ending up in a landfill–
+进入垃圾填埋场
+
+1117
+01:05:19,720 --> 01:05:22,322
+that's about one year's worth of waste
+这相当于 73 万个家庭
+
+1118
+01:05:22,356 --> 01:05:25,492
+from 730,000 households.
+一整年的垃圾量
+
+1119
+01:05:25,526 --> 01:05:28,128
+We build our products to last.
+我们的产品以耐用为目的
+
+1120
+01:05:28,161 --> 01:05:34,067
+This durability enabled millions of trade-ins to find new owners in 2021.
+数百万台设备通过 Apple Trade In 换购计划 在 2021 年找到了新主人
+
+1121
+01:05:34,101 --> 01:05:37,004
+And when it is time to recycle an iPhone,
+而回收 iPhone
+
+1122
+01:05:37,037 --> 01:05:39,773
+that has environmental benefits too.
+也会对环境大有益处
+
+1123
+01:05:39,806 --> 01:05:44,545
+In fact, one metric ton of recovered main logic boards and cameras
+事实上 每回收 1 公吨主逻辑板和摄像头
+
+1124
+01:05:44,578 --> 01:05:50,584
+has the same amount of gold and copper as over 2,000 metric tons of mined rock.
+其中金和铜的含量 就相当于 2000 多公吨开采的矿石
+
+1125
+01:05:50,617 --> 01:05:54,821
+So don't throw away your old iPhone or leave it sitting in a drawer–
+所以 不要扔掉旧 iPhone 或是留在抽屉里
+
+1126
+01:05:54,855 --> 01:05:57,491
+bring it to your nearest store or mail it in.
+把它带去离你最近的 Apple Store 或寄给我们吧
+
+1127
+01:05:57,524 --> 01:06:02,229
+Together, we can reduce our impact on the planet one step at a time.
+我们可以一起行动 逐步减少我们对地球的影响
+
+1128
+01:06:02,262 --> 01:06:04,398
+And that's iPhone 14,
+这就是 iPhone 14
+
+1129
+01:06:04,431 --> 01:06:07,434
+with powerful new cameras, Photonic Engine,
+带来强大的全新拍摄功能、光像引擎
+
+1130
+01:06:07,467 --> 01:06:11,638
+Action mode, A15 Bionic with a 5-core GPU,
+运动模式 配备 5 核图形处理器的 A15 仿生芯片
+
+1131
+01:06:11,672 --> 01:06:15,509
+Emergency SOS via satellite, Crash Detection,
+通过卫星 SOS 紧急联络、车祸检测
+
+1132
+01:06:15,542 --> 01:06:20,280
+and the larger 6.7" display size with the best battery life in an iPhone,
+以及更大的 6.7 英寸显示屏 和 iPhone 
+
+1133
+01:06:20,314 --> 01:06:22,382
+and so much more.
+迄今为止最长的电池续航等等
+
+1134
+01:06:22,416 --> 01:06:27,654
+And later this fall, Apple Fitness+ will be available to all iPhone users,
+今年秋季晚些时候 Apple Fitness+ 将向所有 iPhone 用 户开放
+
+1135
+01:06:27,688 --> 01:06:30,290
+even if they don't yet have an Apple Watch.
+包括还没有 Apple Watch 的用户
+
+1136
+01:06:30,324 --> 01:06:33,894
+iPhone 14 will start at just $799.
+iPhone 14 为 $799 起
+
+1137
+01:06:33,927 --> 01:06:37,531
+This is the same starting price as last year's iPhone 13,
+这和去年的 iPhone 13 起售价相同
+
+1138
+01:06:37,564 --> 01:06:41,635
+but with so much more capability that sets a new standard for iPhone.
+但拥有了更多功能 为 iPhone 树立了新标准
+
+1139
+01:06:42,736 --> 01:06:46,240
+And iPhone 14 Plus starts at just $899,
+iPhone 14 Plus 为 $899 起
+
+1140
+01:06:46,273 --> 01:06:48,976
+bringing the larger 6.7" display
+让更多的人拥有 6.7 英寸显示屏
+
+1141
+01:06:49,009 --> 01:06:52,346
+and the best battery life to more people than ever.
+与极佳的电池续航
+
+1142
+01:06:52,379 --> 01:06:56,183
+We also have incredible offers from Apple and our partners,
+Apple 以及我们的合作伙伴也有各类惊喜的优惠
+
+1143
+01:06:56,216 --> 01:06:58,952
+including up to $800 off in the US
+包括在美国 用符合条件的 iPhone 参与 Apple Trade In 换购计划
+
+1144
+01:06:58,986 --> 01:07:01,421
+when you trade in a qualifying iPhone.
+最高能获得 $800 折抵优惠
+
+1145
+01:07:01,889 --> 01:07:06,426
+iPhone 14 and iPhone 14 Plus are available for pre-order
+iPhone 14 与 iPhone 14 Plus
+
+1146
+01:07:06,460 --> 01:07:08,295
+starting on September 9th.
+将于 9 月 9 日开始接受预购
+
+1147
+01:07:08,328 --> 01:07:11,999
+iPhone 14 will be available on September 16th,
+iPhone 14 于 9 月 16 日发售
+
+1148
+01:07:12,032 --> 01:07:16,336
+and iPhone 14 Plus will be available on October 7th.
+iPhone 14 Plus 于 10 月 7 日发售
+
+1149
+01:07:16,370 --> 01:07:19,940
+We're thrilled about iPhone 14. Let's take a look.
+我们对 iPhone 14 充满期待 让我们一起来看一看吧
+
+1150
+01:07:20,874 --> 01:07:27,881
+? ?
+? ?
+
+1151
+01:07:37,491 --> 01:07:38,492
+? ?
+全新前置摄像头
+
+1152
+01:07:39,760 --> 01:07:46,633
+? ?
+自动对焦功能
+
+1153
+01:07:39,760 --> 01:07:42,696
+? ?
+更先进的
+
+1154
+01:07:42,696 --> 01:07:44,198
+? ?
+摄像头系统
+
+1155
+01:07:44,198 --> 01:07:46,667
+? ?
+? ?
+
+1156
+01:07:46,667 --> 01:07:47,701
+? ?
+拍出更好照片
+
+1157
+01:07:47,701 --> 01:07:48,836
+? ?
+低光
+
+1158
+01:07:48,836 --> 01:07:49,970
+? ?
+亮光
+
+1159
+01:07:51,071 --> 01:07:55,609
+? ?
+各种光线
+
+1160
+01:07:51,071 --> 01:07:55,642
+? ?
+? ?
+
+1161
+01:07:55,642 --> 01:07:56,710
+? ?
+我们
+
+1162
+01:07:56,710 --> 01:07:57,811
+? ?
+最出色
+
+1163
+01:07:57,811 --> 01:07:58,946
+? ?
+电池
+
+1164
+01:07:58,946 --> 01:08:00,080
+? ?
+续航
+
+1165
+01:08:00,948 --> 01:08:07,955
+? ?
+更胜以往
+
+1166
+01:08:00,948 --> 01:08:06,153
+? ?
+? ?
+
+1167
+01:08:06,153 --> 01:08:08,488
+? ?
+运动模式
+
+1168
+01:08:08,488 --> 01:08:10,257
+? ?
+拍出更丝滑流畅的视频
+
+1169
+01:08:11,158 --> 01:08:18,165
+? ?
+? ?
+
+1170
+01:08:12,793 --> 01:08:15,762
+? ?
+A15 仿生芯片
+
+1171
+01:08:15,762 --> 01:08:21,668
+? ?
+? ?
+
+1172
+01:08:21,668 --> 01:08:22,936
+? ?
+你似乎遭遇了车祸
+
+1173
+01:08:22,936 --> 01:08:24,638
+? ?
+如不回应 iPhone 将发起 SOS 紧急联络
+
+1174
+01:08:24,638 --> 01:08:31,512
+? ?
+? ?
+
+1175
+01:08:28,308 --> 01:08:29,510
+? ?
+通过卫星 SOS 紧急联络 走到户外 获取连接
+
+1176
+01:08:29,510 --> 01:08:30,244
+? ?
+发送信息耗时更久 回答问题以更快获得回应
+
+1177
+01:08:30,244 --> 01:08:30,944
+? ?
+可能会分享你的位置信息和医疗急救卡 报告紧急情况
+
+1178
+01:08:34,681 --> 01:08:35,716
+? ?
+通过卫星
+
+1179
+01:08:35,716 --> 01:08:36,884
+SOS
+? ?
+
+1180
+01:08:36,884 --> 01:08:38,685
+? ?
+紧急联络
+
+1181
+01:08:38,685 --> 01:08:45,692
+? ?
+? ?
+
+1182
+01:08:42,389 --> 01:08:43,657
+? ?
+五种颜色
+
+1183
+01:08:43,657 --> 01:08:49,830
+? ?
+? ?
+
+1184
+01:08:49,830 --> 01:08:51,632
+? ?
+玩大 玩超大
+
+1185
+01:08:54,301 --> 01:08:57,437
+There's simply nothing like iPhone 14.
+这就是无与伦比的 iPhone 14
+
+1186
+01:08:57,471 --> 01:08:59,239
+Now, back to Tim.
+下面 交给 Tim
+
+1187
+01:08:59,273 --> 01:09:01,041
+? ?
+? ?
+
+1188
+01:09:02,309 --> 01:09:07,147
+Tim: iPhone 14 and iPhone 14 Plus have incredible new features
+iPhone 14 和 iPhone 14 Plus 带来了一众出色的新功能
+
+1189
+01:09:07,181 --> 01:09:10,984
+that will help our users in meaningful ways.
+以充满意义的方式来帮助我们用户
+
+1190
+01:09:11,018 --> 01:09:14,454
+And that's just the first part of our iPhone story today.
+这还只是我们今天 要聊的 iPhone 故事的第一部分
+
+1191
+01:09:14,488 --> 01:09:19,159
+With our Pro models we've introduced some of our most important technologies
+我们曾在 Pro 系列上 率先推出了很多我们最重要的技术
+
+1192
+01:09:19,193 --> 01:09:22,429
+like Face ID, Super Retina display,
+例如面容 ID、超视网膜 XDR 显示屏
+
+1193
+01:09:22,462 --> 01:09:26,200
+and our most advanced camera features like sensor shift stabilization.
+以及我们最先进的各种摄像头功能 例如传感器位移式光学图像防抖功能等
+
+1194
+01:09:27,334 --> 01:09:31,438
+I'm excited to share our most innovative Pro lineup yet.
+下面 我将与你分享 迄今最具创新性的 Pro 产品线
+
+1195
+01:09:33,607 --> 01:09:40,614
+? ?
+? ?
+
+1196
+01:09:50,624 --> 01:09:57,631
+? ?
+? ?
+
+1197
+01:10:07,641 --> 01:10:11,245
+? ?
+? ?
+
+1198
+01:10:12,479 --> 01:10:16,683
+To tell you more about the new iPhone 14 Pro, here's Joz.
+下面请 Joz 为你介绍这款全新 的 iPhone 14 Pro
+
+1199
+01:10:16,717 --> 01:10:23,724
+? ?
+? ?
+
+1200
+01:10:31,632 --> 01:10:33,800
+Greg "Joz" Joswiak: Our Pro models feature beautiful
+我们的 Pro 机型采用美观
+
+1201
+01:10:33,834 --> 01:10:36,503
+and strong surgical-grade stainless steel,
+且坚固的手术级不锈钢
+
+1202
+01:10:36,537 --> 01:10:39,406
+together with our industry-leading durability features,
+搭配我们领先行业的耐用性能
+
+1203
+01:10:39,439 --> 01:10:42,843
+including Ceramic Shield and water resistance.
+包括超瓷晶面板和抗水性能
+
+1204
+01:10:42,876 --> 01:10:45,312
+They come in four gorgeous colors:
+我们推出了四种精美的新颜色
+
+1205
+01:10:45,345 --> 01:10:48,215
+a new Space Black, Silver,
+新的深空黑色、银色
+
+1206
+01:10:48,248 --> 01:10:51,351
+Gold, and this all new Deep Purple.
+金色以及这款全新的暗紫色
+
+1207
+01:10:52,452 --> 01:10:55,222
+iPhone 14 Pro introduces a new front design
+iPhone 14 Pro 采用了新的正面设计
+
+1208
+01:10:55,255 --> 01:10:57,391
+that is sure to become iconic.
+注定会成为标志性的经典
+
+1209
+01:10:57,424 --> 01:11:00,060
+It starts with the new TrueDepth camera.
+首先是全新原深感摄像头
+
+1210
+01:11:00,093 --> 01:11:03,263
+We redesigned all components to fit into a smaller size,
+我们重新设计了所有组件 使其跻身于更小的区域
+
+1211
+01:11:03,297 --> 01:11:05,432
+using 30% less area.
+面积减少了 30%
+
+1212
+01:11:05,465 --> 01:11:08,936
+We put the proximity sensor behind the display for the first time.
+我们第一次将距离感应器放在了显示屏后面
+
+1213
+01:11:08,969 --> 01:11:13,473
+With this change, we reconsidered how you interact with your iPhone.
+借此变化之机 我们重新思考了用户与 iPhone 互动的方式
+
+1214
+01:11:13,507 --> 01:11:15,742
+Throughout the day, you experience different types
+每天 你都会收到
+
+1215
+01:11:15,776 --> 01:11:17,845
+of alerts and notifications,
+不同类型的提醒和通知
+
+1216
+01:11:17,878 --> 01:11:20,047
+and these are often happening while you're doing other things
+经常发生在你正在用 iPhone
+
+1217
+01:11:20,080 --> 01:11:21,281
+on your iPhone.
+处理其他事务时
+
+1218
+01:11:21,315 --> 01:11:24,384
+So we developed a new experience that's even better.
+于是 我们设计了一种更好的新体验
+
+1219
+01:11:24,418 --> 01:11:26,320
+Here's Alan to tell you more.
+下面请 Alan 为你介绍
+
+1220
+01:11:29,323 --> 01:11:30,858
+Alan Dye: Our goal was to design a space
+我们旨在设计一个空间
+
+1221
+01:11:30,891 --> 01:11:35,362
+that clearly and consistently surfaces alerts and background activity
+能清晰连贯地显示提醒和后台活动
+
+1222
+01:11:35,395 --> 01:11:37,297
+in a rich and delightful way,
+并以丰富而赏心悦目的方式
+
+1223
+01:11:37,331 --> 01:11:41,635
+the result being an entirely new and intuitive way to interact with iPhone,
+带来了全新的直观方式与 iPhone 进行交互
+
+1224
+01:11:41,668 --> 01:11:45,105
+one that truly blurs the line between hardware and software.
+彻底模糊硬件和软件之间的界限
+
+1225
+01:11:45,138 --> 01:11:48,442
+We're calling it the Dynamic Island.
+我们将其称为 灵动岛
+
+1226
+01:11:48,475 --> 01:11:51,745
+We've designed this new space to be highly adaptive
+这个新的空间有极高的自适应性
+
+1227
+01:11:51,778 --> 01:11:54,581
+so it can fluidly expand into different shapes
+能流畅扩展成不同的形态
+
+1228
+01:11:54,615 --> 01:11:58,018
+using uniquely crafted animations and transitions.
+通过精心打造的动画和过渡
+
+1229
+01:11:58,051 --> 01:12:00,821
+So now, when you receive an alert,
+现在 当你收到提醒时
+
+1230
+01:12:00,854 --> 01:12:03,423
+the Dynamic Island expands to notify you.
+灵动岛会展开通知你
+
+1231
+01:12:03,457 --> 01:12:06,593
+Our ambition is to clearly convey the information
+我们的目标是清楚地传达信息
+
+1232
+01:12:06,627 --> 01:12:08,829
+and present content and controls
+呈现内容和控件
+
+1233
+01:12:08,862 --> 01:12:11,331
+without distracting from the app you're in.
+而不会让你从当前正在使用的 app 上分散注意力
+
+1234
+01:12:11,365 --> 01:12:13,133
+This works across the entire system
+这个功能适用于整个系统
+
+1235
+01:12:13,166 --> 01:12:15,569
+for things like confirming your AirPods are connected,
+例如确认你的 AirPods 已连接
+
+1236
+01:12:15,602 --> 01:12:18,839
+muting, or starting a charge.
+开启静音或开始充电
+
+1237
+01:12:18,872 --> 01:12:21,141
+Each alert has its own personality,
+每个提醒都各具个性
+
+1238
+01:12:21,175 --> 01:12:23,177
+and it's been designed with its own unique character,
+并设计了独特的符号
+
+1239
+01:12:23,210 --> 01:12:26,013
+making it easy to identify at a glance,
+让你一目了然
+
+1240
+01:12:26,046 --> 01:12:27,881
+like when you're using FaceID,
+例如使用面容 ID
+
+1241
+01:12:27,915 --> 01:12:30,784
+or tapping your iPhone in transit locations.
+或搭乘公交时使用 iPhone 来支付
+
+1242
+01:12:30,817 --> 01:12:34,655
+The Dynamic Island also displays ongoing background activity,
+灵动岛也会显示正在进行的后台活动
+
+1243
+01:12:34,688 --> 01:12:36,590
+like when you're playing music.
+例如正在播放音乐时
+
+1244
+01:12:36,623 --> 01:12:38,225
+When you swipe to go home,
+滑动回到主屏幕时
+
+1245
+01:12:38,258 --> 01:12:41,361
+the Music app gracefully morphs into the Dynamic Island,
+音乐 app 会优雅地融入灵动岛
+
+1246
+01:12:41,395 --> 01:12:43,931
+always staying active and visible.
+始终保持活跃和可见状态
+
+1247
+01:12:43,964 --> 01:12:47,201
+And we've even designed it to show the current album art.
+我们甚至设计了让它显示当前专辑封面
+
+1248
+01:12:47,234 --> 01:12:49,303
+It's also completely interactive.
+此外还有极强的互动性
+
+1249
+01:12:49,336 --> 01:12:52,039
+You can tap and hold to expose more options,
+你可以轻点并按住以显示更多选项
+
+1250
+01:12:52,072 --> 01:12:53,874
+or tap to go back to the app.
+或轻点以返回正在使用的 app
+
+1251
+01:12:53,907 --> 01:12:55,742
+So now, when you're on a call,
+所以如果你在通话中
+
+1252
+01:12:55,776 --> 01:12:59,046
+you have easy access to controls without leaving the app you're using.
+可以轻松访问各种控件 而无需离开正在使用的 app
+
+1253
+01:12:59,980 --> 01:13:03,517
+We've designed all these animations to feel fluid, lively,
+所有这些动画的设计都流畅、生动
+
+1254
+01:13:03,550 --> 01:13:05,986
+and highly responsive.
+且反应灵敏
+
+1255
+01:13:06,019 --> 01:13:09,122
+The Dynamic Island is always live and active,
+灵动岛始终在运行和启用中
+
+1256
+01:13:09,156 --> 01:13:11,391
+heightening the sense of vitality
+十分灵敏活跃
+
+1257
+01:13:11,425 --> 01:13:15,028
+by adapting in real time to show you important information,
+会实时调整向你显示重要信息
+
+1258
+01:13:15,062 --> 01:13:17,231
+like your next direction from Maps.
+例如地图中的下一个方向
+
+1259
+01:13:17,264 --> 01:13:19,967
+And it's always visible for ongoing activities,
+正在持续进行的活动将保持可见
+
+1260
+01:13:20,000 --> 01:13:22,102
+like when you're using the timer.
+比如在使用计时器时
+
+1261
+01:13:22,135 --> 01:13:25,906
+We've designed Live Activities– a new feature on the iOS 16 Lock Screen–
+我们设计了实时活动 这一 iOS 16 锁定屏幕上的新功能
+
+1262
+01:13:25,939 --> 01:13:28,742
+to work seamlessly with the Dynamic Island,
+与灵动岛无缝协作
+
+1263
+01:13:28,775 --> 01:13:31,345
+including support for third-party apps,
+也支持第三方 app
+
+1264
+01:13:31,378 --> 01:13:34,882
+so you can keep track of what's happening from anywhere on iPhone,
+让你能时刻知晓 iPhone 上的所有动态
+
+1265
+01:13:34,915 --> 01:13:38,585
+like following a baseball game without needing to leave the app you're in
+比如无需离开当前 app 就能持续关注棒球比赛的比分
+
+1266
+01:13:38,619 --> 01:13:41,722
+or not missing the Lyft ride while texting friends.
+在给朋友发信息时不会错过 Lyft 司机接驾
+
+1267
+01:13:41,755 --> 01:13:45,592
+We've also created a robust design system for developers,
+我们还为开发者提供了一系列强大的设计系统
+
+1268
+01:13:45,626 --> 01:13:50,230
+so every alert looks and feels consistent, no matter which app it comes from.
+这样每个提醒的外观和感觉能保持一致 即便来自不同的 app
+
+1269
+01:13:50,264 --> 01:13:52,833
+And when you have more than one background activity,
+当你有多个后台活动时
+
+1270
+01:13:52,866 --> 01:13:55,169
+the Dynamic Island playfully adapts,
+灵动岛也会以趣味方式调整
+
+1271
+01:13:55,202 --> 01:13:57,638
+bubbling out into two elements.
+像气泡一样分裂成两个元素
+
+1272
+01:13:57,671 --> 01:14:02,376
+At Apple, we're focused on creating extraordinary products,
+在 Apple 我们始终专注于打造非凡卓越的产品
+
+1273
+01:14:02,409 --> 01:14:05,746
+products born from designing hardware and software together,
+这些产品源自硬件与软件的协同设计
+
+1274
+01:14:05,779 --> 01:14:09,283
+so you don't know where one ends and the other begins.
+你甚至无法分辨二者的界限
+
+1275
+01:14:09,316 --> 01:14:12,319
+The Dynamic Island does this in a truly magical way
+灵动岛正是这样 以一种奇妙的方式
+
+1276
+01:14:12,352 --> 01:14:15,622
+and enables an entirely new iPhone experience.
+开启了全新的 iPhone 体验
+
+1277
+01:14:15,656 --> 01:14:17,424
+Back to Joz.
+交还给你 Joz
+
+1278
+01:14:18,559 --> 01:14:23,530
+Joz: iPhone 14 Pro has a stunning new display with Pro features.
+iPhone 14 Pro 拥有令人惊艳的新显示屏 以及一系列 Pro 级功能
+
+1279
+01:14:23,564 --> 01:14:27,301
+This is the most advanced display we have ever shipped.
+这是我们迄今为止最先进的显示屏
+
+1280
+01:14:27,334 --> 01:14:32,105
+iPhone 14 Pro and iPhone 14 Pro Max come in two great sizes,
+iPhone 14 Pro 和 iPhone 14 Pro Max 分别为两种尺寸
+
+1281
+01:14:32,139 --> 01:14:35,742
+now with even thinner borders, more active area,
+边框更窄、显示面积更大
+
+1282
+01:14:35,776 --> 01:14:37,778
+and the Dynamic Island.
+新增了灵动岛
+
+1283
+01:14:37,811 --> 01:14:39,046
+It is also brighter.
+亮度也更高了
+
+1284
+01:14:39,079 --> 01:14:44,117
+The new display provides peak HDR brightness of 1600 nits,
+新的显示屏拥有 1600 尼特的 HDR 峰值亮度
+
+1285
+01:14:44,151 --> 01:14:48,322
+bringing iPhone to the same level as the Pro Display XDR.
+使 iPhone 达到 与 Pro Display XDR 相同的水平
+
+1286
+01:14:48,355 --> 01:14:51,658
+So photos and HDR movies are gonna look amazing–
+因此 照片和 HDR 视频看起来十分惊艳
+
+1287
+01:14:51,692 --> 01:14:53,827
+including those you shoot on your iPhone.
+包括你用 iPhone 拍摄的影像
+
+1288
+01:14:53,861 --> 01:14:57,798
+And for those bright, sunny days, iPhone can now push brightness even higher
+对于一些阳光明媚的日子 iPhone 可以将亮度推到更高
+
+1289
+01:14:57,831 --> 01:14:59,933
+for a peak of 2000 nits.
+达到 2000 尼特的峰值！
+
+1290
+01:14:59,967 --> 01:15:02,069
+That's twice as bright as before,
+这相当于之前的两倍
+
+1291
+01:15:02,102 --> 01:15:05,973
+and the highest peak brightness of any smartphone.
+是所有智能手机中最高的峰值亮度
+
+1292
+01:15:06,006 --> 01:15:09,843
+The new Lock Screen in iOS 16 introduces more personalization
+iOS 16 的全新锁定屏幕通过小组件和实时活动
+
+1293
+01:15:09,877 --> 01:15:12,012
+with widgets and Live Activities,
+引入更多个性化功能
+
+1294
+01:15:12,045 --> 01:15:15,215
+so this is the perfect time to introduce
+正是时候推出
+
+1295
+01:15:15,249 --> 01:15:17,184
+Always-On display.
+全天候显示
+
+1296
+01:15:17,217 --> 01:15:20,454
+It's easy to see the time and other important information
+便于查看时间和其他重要信息
+
+1297
+01:15:20,487 --> 01:15:23,657
+without raising your iPhone or tapping the display.
+而无需抬起 iPhone 或点按显示屏
+
+1298
+01:15:23,690 --> 01:15:26,660
+This keeps essential information available for the moments
+这样重要的信息可以及时呈现
+
+1299
+01:15:26,693 --> 01:15:28,762
+where all you need is just a glance.
+你看一眼就行
+
+1300
+01:15:29,363 --> 01:15:32,299
+This is made possible by a number of new technologies
+实现这一功能 得益于一系列前沿技术
+
+1301
+01:15:32,332 --> 01:15:35,302
+that make the display incredibly power efficient.
+让显示屏变得无比高能效
+
+1302
+01:15:35,335 --> 01:15:38,705
+This display can operate at a refresh rate as low as 1Hz
+这个显示屏的刷新率能低至 1Hz
+
+1303
+01:15:38,739 --> 01:15:40,541
+with a new low power mode,
+凭借优化后的功能 在低功耗下来运行时
+
+1304
+01:15:40,574 --> 01:15:43,277
+and we further improved our LTPO technology,
+此外 我们进一步提升了 LTPO 技术
+
+1305
+01:15:43,310 --> 01:15:47,414
+allowing the display to intelligently dim the entire Lock Screen.
+使显示屏能智能地调暗整个锁定屏幕
+
+1306
+01:15:48,982 --> 01:15:51,852
+We also take advantage of multiple coprocessors in our chip
+我们还利用芯片中的多个协处理器
+
+1307
+01:15:51,885 --> 01:15:54,721
+to refresh the display using minimal power,
+以最小的功耗刷新显示
+
+1308
+01:15:54,755 --> 01:15:59,026
+so the time, widgets, and Live Activities are always available.
+这样 时间、小组件和实时活动等可以持续显示
+
+1309
+01:15:59,059 --> 01:16:03,297
+And we use our photographic expertise and powerful image segmentation
+同时运用了我们的摄影专业知识 和强大的图像分割技术
+
+1310
+01:16:03,330 --> 01:16:06,567
+to dim wallpaper photos while preserving skin tones,
+在墙纸照片变暗时保留肤色
+
+1311
+01:16:06,600 --> 01:16:08,802
+so they continue to look great.
+保留了照片惊艳的观感
+
+1312
+01:16:08,836 --> 01:16:10,971
+And you can keep an eye on your Live Activities
+这样 你可以时刻留意实时活动
+
+1313
+01:16:11,004 --> 01:16:13,740
+without even touching your iPhone.
+甚至都不需要触碰你的 iPhone
+
+1314
+01:16:13,774 --> 01:16:15,809
+With all these incredible features,
+所有这些出色的功能
+
+1315
+01:16:15,843 --> 01:16:19,580
+the new Super Retina XDR is the most advanced display
+让新的超视网膜 XDR 成为了 
+
+1316
+01:16:19,613 --> 01:16:21,615
+ever in a smartphone.
+所有智能手机中最先进的显示屏
+
+1317
+01:16:21,648 --> 01:16:26,820
+iPhone 14 Pro is powered by our new A16 Bionic chip.
+iPhone 14 Pro 配备了全新 A16 仿生芯片
+
+1318
+01:16:26,854 --> 01:16:31,124
+Our newest generation of Apple Silicon powers every experience on iPhone.
+我们最新一代的 Apple Silicon 驱动着 iPhone 的每一次体验
+
+1319
+01:16:31,158 --> 01:16:34,661
+With A16, we focused on three important areas:
+对于 A16 我们着重于三方面
+
+1320
+01:16:34,695 --> 01:16:38,398
+power efficiency, display, and camera.
+能效、显示技术和影像技术
+
+1321
+01:16:38,432 --> 01:16:41,568
+Delivering incredible performance with leading power efficiency
+Apple 芯片以兼具超强大性能
+
+1322
+01:16:41,602 --> 01:16:43,437
+is a hallmark of Apple silicon.
+和无与伦比的能效而著称
+
+1323
+01:16:43,470 --> 01:16:47,140
+A16 has nearly 16 billion transistors,
+A16 拥有近 160 亿个晶体管
+
+1324
+01:16:47,174 --> 01:16:49,943
+the most ever in an iPhone.
+是 iPhone 有史以来数量最多的
+
+1325
+01:16:49,977 --> 01:16:54,548
+This is our first chip built on a state-of-the-art 4-nanometer process,
+这是我们第一款 基于最顶尖的 4 纳米制程工艺的芯片
+
+1326
+01:16:54,581 --> 01:16:58,886
+enabling greater efficiency while delivering even more performance.
+可在提供更高性能的同时实现更高的能效
+
+1327
+01:16:58,919 --> 01:17:03,290
+In fact, A16 Bionic is the fastest chip ever in a smartphone.
+毋庸置疑 A16 仿生是智能手机有史以来最快的芯片
+
+1328
+01:17:04,424 --> 01:17:08,028
+The competition is still working to catch up with the performance of A13
+而竞争对手们还在苦苦追赶 A13 芯片的性能
+
+1329
+01:17:08,061 --> 01:17:11,265
+which we first introduced with iPhone 11 three years ago.
+这是三年前我们推出 iPhone 11 时发布的
+
+1330
+01:17:12,633 --> 01:17:16,003
+The new 6-core CPU of A16 is generations ahead.
+A16 全新的 6 核中央处理器则领先了不止一代
+
+1331
+01:17:16,036 --> 01:17:20,340
+It's up to a whopping 40% faster than the competition.
+比竞品快了 最高可达惊人的 40%
+
+1332
+01:17:20,374 --> 01:17:23,810
+The CPU uses our best-in-class fusion architecture
+中央处理器采用我们行业一流的融合架构
+
+1333
+01:17:23,844 --> 01:17:27,447
+which delivers both leading performance and leading efficiency.
+提供领先的性能和能效
+
+1334
+01:17:27,481 --> 01:17:32,052
+Our two high-performance cores are faster and use 20% lower power
+两个高性能核心速度更快
+
+1335
+01:17:30,083 --> 01:17:34,321
+? ?
+与 A15 仿生相比 功耗降低 20%
+
+1336
+01:17:32,085 --> 01:17:34,288
+compared to A15 Bionic.
+? ?
+
+1337
+01:17:34,321 --> 01:17:37,391
+And most daily tasks can be handled by our high-efficiency cores.
+我们的高能效核心 则足以应付大多数日常任务
+
+1338
+01:17:37,424 --> 01:17:40,527
+At the same performance level, these new efficiency cores
+实现同样的性能 全新高能效核心
+
+1339
+01:17:40,561 --> 01:17:44,398
+use one-third the power of even the best of the efficiency cores
+功耗仅需竞争对手最强产品的三分之一
+
+1340
+01:17:44,431 --> 01:17:46,533
+from the competition.
+竞争对手
+
+1341
+01:17:46,567 --> 01:17:49,603
+This allows iPhone to deliver amazing battery life
+这使 iPhone 能够提供出色的续航
+
+1342
+01:17:49,636 --> 01:17:52,372
+while still being extremely responsive.
+并反应极为灵敏
+
+1343
+01:17:52,406 --> 01:17:54,074
+The new 16-core Neural Engine
+全新的 16 核神经网络引擎
+
+1344
+01:17:54,107 --> 01:17:58,278
+is capable of nearly 17 trillion operations per second,
+每秒能进行近 17 万亿次运算
+
+1345
+01:17:58,312 --> 01:18:02,182
+which helps power iPhone's advanced computational photography.
+从而助力 iPhone 先进的计算摄影
+
+1346
+01:18:02,216 --> 01:18:06,620
+And the 5-core GPU has 50% more memory bandwidth–
+5 核图形处理器的内存带宽增加了 50%
+
+1347
+01:18:06,653 --> 01:18:08,722
+great for graphic-intensive games.
+非常适合图形密集型游戏
+
+1348
+01:18:09,489 --> 01:18:12,759
+There's also an entirely new display engine in A16.
+A16 还配备了全新的显示引擎
+
+1349
+01:18:12,793 --> 01:18:17,264
+This engine enables the 1Hz refresh rate, Always-On capability,
+该引擎实现了 1Hz 刷新率、全天候显示功能
+
+1350
+01:18:17,297 --> 01:18:20,868
+higher peak brightness, and the advanced anti-aliasing
+更高的峰值亮度和先进的抗锯齿功能
+
+1351
+01:18:20,901 --> 01:18:25,172
+that makes Dynamic Island animations so incredibly smooth.
+让灵动岛的动画 如此丝滑无比的流畅
+
+1352
+01:18:25,205 --> 01:18:30,210
+A16 also flexes every muscle for the iPhone 14 Pro camera system.
+A16 同时全面驱动着 iPhone 14 Pro 的摄像头系统
+
+1353
+01:18:30,244 --> 01:18:34,781
+It uses the CPU, GPU, Neural Engine, and ISP
+它用中央处理器、图形处理器 神经网络引擎和图像信号处理器
+
+1354
+01:18:34,815 --> 01:18:39,253
+to perform up to 4 trillion operations per photo.
+对每张照片执行多达 4 万亿次运算！
+
+1355
+01:18:39,286 --> 01:18:42,689
+And the image signal processor was designed to support a new generation
+图像信号处理器也支持新一代技术
+
+1356
+01:18:42,723 --> 01:18:47,194
+of technology that provides our most powerful Pro camera system ever.
+造就我们有史以来最强大的 Pro 级摄像头系统
+
+1357
+01:18:48,328 --> 01:18:51,465
+This empowers every user to take their best photos and videos–
+帮助每个用户拍出最好的照片和视频
+
+1358
+01:18:51,498 --> 01:18:54,034
+from the casual user to the professional.
+不论是普通人还是专业摄影师
+
+1359
+01:18:54,067 --> 01:18:59,173
+We're excited for iPhone 14 Pro to push the boundaries for what's possible
+很高兴 iPhone 14 Pro 一再突破极限
+
+1360
+01:18:59,206 --> 01:19:02,643
+and usher in a new era for iPhone photography.
+开创 iPhone 摄影的新时代
+
+1361
+01:19:02,676 --> 01:19:04,545
+To tell you more, here's Vitor.
+下面请 Vitor 为你介绍更多
+
+1362
+01:19:04,578 --> 01:19:08,949
+? ?
+? ?
+
+1363
+01:19:08,982 --> 01:19:14,388
+Vitor Silva: iPhone 14 Pro introduces a brand-new class of camera to iPhone:
+iPhone 14 Pro 迎来了 iPhone 上划时代的全新摄像头
+
+1364
+01:19:14,421 --> 01:19:19,626
+a 48MP camera with a quad-pixel sensor.
+4800 万像素摄像头配备了四合一像素传感器
+
+1365
+01:19:19,660 --> 01:19:21,528
+It is our largest sensor yet–
+它是我们迄今为止最大的感光元件
+
+1366
+01:19:21,562 --> 01:19:26,466
+65% larger than the one on iPhone 13 Pro–
+比 iPhone 13 Pro 大了 65%
+
+1367
+01:19:26,500 --> 01:19:30,103
+features our 2nd-generation sensor-shift OIS,
+配备第二代传感器位移式光学图像防抖技术
+
+1368
+01:19:30,137 --> 01:19:32,739
+and 100% focus pixels.
+和 100% Focus Pixels
+
+1369
+01:19:32,773 --> 01:19:37,144
+It also features a new 24mm focal length,
+它还拥有全新的 24 毫米焦距
+
+1370
+01:19:37,177 --> 01:19:38,478
+popular in photography
+这种焦距在摄影中因用途广泛而颇受欢迎
+
+1371
+01:19:38,512 --> 01:19:41,481
+for its versatility to shoot great landscapes,
+其卓越的多用性可用来拍摄精美的风景照
+
+1372
+01:19:41,515 --> 01:19:44,251
+group portraits, even single subjects.
+集体肖像照 也可用于拍摄单一对象
+
+1373
+01:19:44,918 --> 01:19:48,422
+The quad-pixel sensor enables a new flexible approach
+四合一像素传感器实现了一种全新的灵活方法
+
+1374
+01:19:48,455 --> 01:19:51,225
+which adapts to the photo you're shooting.
+根据你正在拍摄的照片来调整适应
+
+1375
+01:19:51,258 --> 01:19:55,429
+For most photos, we want to optimize for light capture.
+对于大多数照片 我们希望优化照片的亮度
+
+1376
+01:19:56,230 --> 01:20:02,402
+So the new sensor groups every four pixels into one large quad-pixel,
+因此 新传感器 将每四个像素组合成一个大的四合一像素单元
+
+1377
+01:20:02,436 --> 01:20:03,804
+with four times more light.
+带来四倍的光量
+
+1378
+01:20:04,671 --> 01:20:07,040
+This further improves light capture
+在进一步提升亮度的同时
+
+1379
+01:20:07,074 --> 01:20:11,745
+while maintaining the practical 12MP photo size.
+保持 1200 万像素的实用照片尺寸
+
+1380
+01:20:11,778 --> 01:20:13,981
+Combined with the new Photonic Engine,
+结合光像引擎
+
+1381
+01:20:14,014 --> 01:20:16,116
+the new Main camera has up to
+新的主摄对照片的低光改善
+
+1382
+01:20:16,149 --> 01:20:19,152
+two times low-light improvement for photos
+最高可达两倍
+
+1383
+01:20:19,186 --> 01:20:21,989
+compared to iPhone 13 Pro.
+与 iPhone 13 Pro 相比
+
+1384
+01:20:22,022 --> 01:20:25,092
+Let's take a look at what the Main camera can do.
+让我们看一看这个主摄的表现吧
+
+1385
+01:20:25,125 --> 01:20:29,363
+You can capture stunning photos across all lighting conditions.
+你能在各种光线条件下 拍出惊艳的照片
+
+1386
+01:20:29,396 --> 01:20:32,666
+In this brighter shot, the Main camera captured
+在这张较亮的照片中
+
+1387
+01:20:32,699 --> 01:20:35,435
+the beautiful, rich color of her skin,
+主摄捕捉到了美丽而丰富的肤色
+
+1388
+01:20:35,469 --> 01:20:38,038
+the detail of the fiber in the blanket,
+毯子中纤维的细节
+
+1389
+01:20:38,071 --> 01:20:40,340
+and even a little of her joy.
+甚至她的喜悦之情
+
+1390
+01:20:41,208 --> 01:20:45,179
+For this photo, we locked exposure on the woman's face.
+对于这张照片 我们将曝光锁定在她的脸上
+
+1391
+01:20:45,212 --> 01:20:49,616
+As the vibrant feathers fell, iPhone kept her in sharp focus
+随着色彩鲜艳的羽毛飘落 iPhone 始终在她身上清晰对焦
+
+1392
+01:20:49,650 --> 01:20:52,386
+while creating a colorful texture around her.
+同时在她周围营造出多彩的质感
+
+1393
+01:20:53,253 --> 01:20:56,657
+In this low-light example, the Photonic Engine captures
+在这个低光照片示例中 光像引擎捕捉到了
+
+1394
+01:20:56,690 --> 01:20:58,825
+incredible dynamic range,
+惊人的动态范围
+
+1395
+01:20:58,859 --> 01:21:01,295
+from the warm glow of her skin,
+包括她皮肤的温暖光芒
+
+1396
+01:21:01,328 --> 01:21:02,930
+the color of her eyes,
+她眼睛的颜色
+
+1397
+01:21:02,963 --> 01:21:07,167
+to every little crease, fold, and texture in the garment.
+到衣服上每一个细小的折痕、褶皱和纹理
+
+1398
+01:21:08,769 --> 01:21:14,141
+The new sensor can optimize for detail using each pixel individually,
+全新的传感器 可以单独使用每个像素进行细节优化
+
+1399
+01:21:14,174 --> 01:21:20,314
+providing more creative options for shooting and editing in pro workflows.
+为专业工作流程中的拍摄和编辑 提供更多创意选择
+
+1400
+01:21:20,347 --> 01:21:24,918
+With this approach we can go beyond the three fixed lenses
+通过这种方法 我们可以超越 这个 Pro 级摄像头系统的
+
+1401
+01:21:24,952 --> 01:21:26,653
+of the Pro camera system,
+三个固定焦距镜头
+
+1402
+01:21:26,687 --> 01:21:31,325
+adding a new 2x Telephoto option for our users.
+为用户带来了一个新的 2 倍长焦选项
+
+1403
+01:21:31,358 --> 01:21:35,963
+We use the middle 12 megapixels of the new sensor
+我们使用新传感器中部的 1200 万像素
+
+1404
+01:21:35,996 --> 01:21:38,765
+to deliver a full-resolution photo
+来拍摄的全分辨率照片和 4K 视频
+
+1405
+01:21:38,799 --> 01:21:42,269
+and 4K video with optical quality.
+并实现了光学品质
+
+1406
+01:21:42,302 --> 01:21:47,140
+This Telephoto has larger pixels and a faster aperture
+这个长焦选项 相比此前 iPhone 上的 2 倍摄像头
+
+1407
+01:21:47,174 --> 01:21:51,345
+than any previous 2x Telephoto camera on iPhone,
+具有更大的像素和更大的光圈
+
+1408
+01:21:51,378 --> 01:21:54,381
+delivering incredible photos and videos.
+带来令人惊艳的照片和视频
+
+1409
+01:21:55,082 --> 01:21:59,720
+And it has a familiar focal length that is great for Portrait mode,
+这个常用的焦段 非常适合人像模式
+
+1410
+01:21:59,753 --> 01:22:02,990
+capturing stunning detail with beautiful bokeh.
+以拍摄出细节惊人 同时背景虚化柔美的照片
+
+1411
+01:22:03,524 --> 01:22:09,429
+We're also using the new sensor to optimize for detail in ProRAW.
+我们还使用新传感器 优化 ProRAW 格式照片中的细节
+
+1412
+01:22:09,463 --> 01:22:13,867
+ProRAW merges the best of our intelligent computational photography
+ProRAW 将我们最好的智能计算摄影技术
+
+1413
+01:22:13,901 --> 01:22:16,236
+with the benefits of the RAW format,
+与 RAW 格式的优点相结合
+
+1414
+01:22:16,270 --> 01:22:19,973
+giving Pro photographers full creative control
+给专业摄影师提供更多创作自由
+
+1415
+01:22:20,007 --> 01:22:23,143
+over things like sharpening, white balance,
+灵活调整锐化、白平衡
+
+1416
+01:22:23,177 --> 01:22:28,182
+and our advanced tone mapping with more bit depth and dynamic range.
+以及先进的色调映射技术 包括更多图像色深和动态范围
+
+1417
+01:22:28,215 --> 01:22:33,287
+You can now shoot ProRAW at 48MP resolution,
+现在 你可以用 48MP 分辨率 拍摄 ProRAW 格式照片
+
+1418
+01:22:33,320 --> 01:22:37,124
+taking advantage of every pixel in the Main camera
+充分利用主摄的每一个像素
+
+1419
+01:22:37,157 --> 01:22:40,527
+and unlocking incredible editing flexibility.
+并解锁惊人的编辑灵活度
+
+1420
+01:22:40,561 --> 01:22:43,797
+The new sensor has a different pixel pattern,
+新传感器具有不同的像素模式
+
+1421
+01:22:43,830 --> 01:22:46,667
+so we designed a new machine learning model
+于是我们设计了一种新的机器学习模型
+
+1422
+01:22:46,700 --> 01:22:50,370
+that further enhances detail and reduces noise.
+进一步增强细节并降低噪点
+
+1423
+01:22:50,404 --> 01:22:54,541
+This leverages the full power of A16 Bionic
+充分利用了 A16 仿生的强大功能
+
+1424
+01:22:54,575 --> 01:22:59,346
+and results in an unprecedented level of detail.
+带来了前所未有的丰富细节
+
+1425
+01:22:59,379 --> 01:23:02,149
+It's unbelievable how much we can zoom in,
+你都无法想象我们可以放多大
+
+1426
+01:23:02,182 --> 01:23:05,485
+like in this ethereal photo in Hawaii,
+好比这张在夏威夷拍到的人间仙境
+
+1427
+01:23:05,519 --> 01:23:08,589
+revealing each individual rock on the beach,
+可以看清海滩上的石子
+
+1428
+01:23:08,622 --> 01:23:11,225
+and even dry branches from the trees.
+还有树上干枯的树枝
+
+1429
+01:23:11,258 --> 01:23:16,129
+With more pixels, Pro photographers can reframe their photos
+有了更多像素 专业摄影师可以重新构图
+
+1430
+01:23:16,163 --> 01:23:18,532
+while still retaining great resolution.
+同时保留出色的分辨率
+
+1431
+01:23:19,433 --> 01:23:23,670
+We are able to keep the sharpness and warmth of her eyes
+我们能捕捉到清晰而温和的眼神
+
+1432
+01:23:23,704 --> 01:23:27,074
+as the focal point of this high-resolution image.
+是将眼部作为这张高分辨率照片的焦点
+
+1433
+01:23:27,875 --> 01:23:32,679
+This makes the 48MP Main camera even more versatile,
+这使得 48MP 主摄的用途更为广泛
+
+1434
+01:23:32,713 --> 01:23:37,150
+further empowering the creativity of the most Pro users.
+进一步激发最专业用户们的创造力
+
+1435
+01:23:37,184 --> 01:23:41,288
+iPhone 14 Pro also has a new Ultra Wide camera,
+iPhone 14 Pro 还有一个全新的超广角摄像头
+
+1436
+01:23:41,321 --> 01:23:44,491
+with a larger sensor, more focus pixels
+拥有更大的感光元件、更多的 Focus Pixels
+
+1437
+01:23:44,525 --> 01:23:47,094
+and–together with the Photonic Engine–
+与光像引擎协同配合
+
+1438
+01:23:47,127 --> 01:23:50,564
+delivers a massive, up to three times, improvement
+拍摄时的光线提升
+
+1439
+01:23:50,597 --> 01:23:53,066
+in light capture for photos.
+最高可达三倍之多
+
+1440
+01:23:53,100 --> 01:23:56,136
+The new lens is sharper, with more detail,
+这个全新镜头带来了更清晰更丰富的细节
+
+1441
+01:23:56,170 --> 01:23:58,238
+so macro gets even better,
+让微距拍摄更出色
+
+1442
+01:23:58,272 --> 01:24:00,507
+like this katydid bug
+例如在瞬间捕捉到的这只蝈蝈
+
+1443
+01:24:00,541 --> 01:24:02,476
+captured in a split second
+瞬间捕捉到
+
+1444
+01:24:02,509 --> 01:24:06,647
+to reveal more than was visible to the naked eye.
+呈现出很多肉眼都看不见的内容
+
+1445
+01:24:06,680 --> 01:24:11,118
+The flash was completely redesigned for a new adaptive behavior
+闪光灯经过彻底重新设计 新的自适应功能
+
+1446
+01:24:11,151 --> 01:24:13,487
+based on the focal length of the photo.
+可根据照片的焦距自动调整
+
+1447
+01:24:13,520 --> 01:24:19,159
+With a new array of nine LEDs, we control the pattern and intensity.
+全新的九个 LED 阵列 让我们可以控制闪光模式和强度
+
+1448
+01:24:19,193 --> 01:24:21,929
+So it's up to twice as bright,
+从而实现亮度提升 最高可达两倍
+
+1449
+01:24:21,962 --> 01:24:24,331
+with up to three times better uniformity
+均匀性提升 最高可达三倍
+
+1450
+01:24:24,364 --> 01:24:26,900
+compared to our previous generation.
+相较于前一代
+
+1451
+01:24:26,934 --> 01:24:32,206
+And with the new Photonic Engine, all cameras of iPhone 14 Pro
+新的光像引擎让 iPhone 14 Pro 所有摄像头
+
+1452
+01:24:32,239 --> 01:24:35,776
+get a dramatic improvement in low-light performance,
+在低光下的性能都有了显著提升
+
+1453
+01:24:35,809 --> 01:24:39,413
+including up to two times better for the Telephoto camera.
+其中长焦摄像头提升 最高可达两倍
+
+1454
+01:24:39,446 --> 01:24:44,551
+Together with higher-resolution photos and more creative options,
+结合更高分辨率的照片以及更多创意选项
+
+1455
+01:24:44,585 --> 01:24:49,723
+this is our most powerful Pro camera system ever.
+这就是我们有史以来最强大的 Pro 级摄像头系统
+
+1456
+01:24:49,756 --> 01:24:51,792
+Now, back to Joz.
+下面 交还给 Joz
+
+1457
+01:24:51,825 --> 01:24:54,494
+? ?
+? ?
+
+1458
+01:24:54,528 --> 01:24:56,730
+iPhone is already the choice for filmmakers
+iPhone 早已是很多电影人的选择
+
+1459
+01:24:56,763 --> 01:25:00,567
+because of its versatility and cinema-grade video.
+因为其多用性和电影级的视频画质
+
+1460
+01:25:00,601 --> 01:25:03,370
+iPhone is the only smartphone to shoot in ProRes,
+iPhone 是唯一一款 可以 ProRes 格式拍摄的智能手机
+
+1461
+01:25:03,403 --> 01:25:05,105
+and the only device in the world
+也是全球唯一可以实现
+
+1462
+01:25:05,138 --> 01:25:08,408
+with an end-to-end workflow in Dolby Vision HDR.
+杜比视界 HDR 端到端工作流的设备
+
+1463
+01:25:08,442 --> 01:25:11,578
+iPhone 14 Pro also has our new Action mode
+iPhone 14 Pro 还有全新的运动模式
+
+1464
+01:25:11,612 --> 01:25:14,681
+for shooting videos with our best stabilization.
+为视频拍摄带来极佳的防抖
+
+1465
+01:25:14,715 --> 01:25:17,150
+And Cinematic mode gets a great update,
+电影效果模式也有了重大更新
+
+1466
+01:25:17,184 --> 01:25:20,320
+now supporting up to 4K resolution and 30 frames per second
+现在最高可拍摄 4K 30 fps
+
+1467
+01:25:20,354 --> 01:25:22,089
+for even more detail.
+来捕捉到更多细节
+
+1468
+01:25:22,122 --> 01:25:26,026
+Pro filmmakers can also choose to record in 4K at 24 frames per second–
+专业电影人还可选择以 4K 24 fps 拍摄
+
+1469
+01:25:26,059 --> 01:25:27,494
+the cinematic standard.
+这也是电影行业的标准
+
+1470
+01:25:28,295 --> 01:25:32,099
+This is the biggest leap ever for iPhone camera,
+这是 iPhone 摄像头系统迄今为止最大的飞跃
+
+1471
+01:25:32,132 --> 01:25:33,934
+and we are continuing to raise the bar
+我们再一次提高了
+
+1472
+01:25:33,967 --> 01:25:36,103
+for our industry-leading video quality.
+本已领先业界的视频拍摄质量
+
+1473
+01:25:36,136 --> 01:25:38,939
+People count on iPhone throughout the day.
+大家随时都离不开 iPhone
+
+1474
+01:25:38,972 --> 01:25:43,110
+So long battery life is incredibly important to our users.
+所以持久的电池续航 对用户们而言至关重要
+
+1475
+01:25:43,143 --> 01:25:45,546
+Even with industry-leading performance,
+即使搭载了业界领先的性能
+
+1476
+01:25:45,579 --> 01:25:48,849
+new Pro camera system, and Always-On display,
+全新的 Pro 级摄像头系统和全天候显示
+
+1477
+01:25:48,882 --> 01:25:52,386
+iPhone 14 Pro delivers all-day battery life.
+iPhone 14 Pro 依然能带来 满足一天所需的电池续航
+
+1478
+01:25:53,453 --> 01:25:57,958
+So that's iPhone 14 Pro and iPhone 14 Pro Max.
+这就是 iPhone 14 Pro 和 iPhone 14 Pro Max
+
+1479
+01:25:57,991 --> 01:26:03,530
+The Dynamic Island and Always-On display introduce new ways to experience iPhone.
+灵动岛和全天候显示 带来了体验 iPhone 的全新方式
+
+1480
+01:26:04,131 --> 01:26:05,899
+Powered by the A16 chip
+由 A16 芯片驱动
+
+1481
+01:26:05,933 --> 01:26:10,337
+with the new 48MP Main camera, beautiful new finishes,
+结合全新 48MP 主摄、精美的新外观选择
+
+1482
+01:26:10,370 --> 01:26:13,173
+Crash Detection and Emergency SOS via satellite,
+车祸检测和通过卫星进行 SOS 紧急联络等功能
+
+1483
+01:26:13,207 --> 01:26:16,443
+this is the best iPhone we've ever created.
+这是我们最出色的 iPhone
+
+1484
+01:26:17,411 --> 01:26:20,013
+Like iPhone 14, our Pro models are designed
+与 iPhone 14 一样 我们的 Pro 机型从设计上
+
+1485
+01:26:20,047 --> 01:26:22,850
+with features to reduce their environmental impact.
+旨在能减少对环境的影响
+
+1486
+01:26:22,883 --> 01:26:26,086
+They use recycled materials, like gold and rare earth elements,
+使用再生黄金和稀土元素等材料
+
+1487
+01:26:26,119 --> 01:26:28,922
+and meet our high standards for energy efficiency.
+满足我们对能效的高标准
+
+1488
+01:26:29,857 --> 01:26:32,226
+Let's see iPhone 14 Pro in action.
+让我们再次一睹 iPhone 14 Pro 的风采吧
+
+1489
+01:26:34,094 --> 01:26:37,731
+? ?
+? ?
+
+1490
+01:26:37,764 --> 01:26:39,366
+All right, lock it up. Roll sound, please.
+? ?
+
+1491
+01:26:39,399 --> 01:26:40,267
+-Lock it up.
+? ?
+
+1492
+01:26:43,337 --> 01:26:45,105
+It is time to go beyond
+智能手机的边界
+
+1493
+01:26:45,138 --> 01:26:46,340
+what a smartphone can do...
+再一次拓宽
+
+1494
+01:26:46,373 --> 01:26:48,408
+All right, roll camera.
+好的
+
+1495
+01:26:48,442 --> 01:26:50,544
+With a massive camera upgrade,
+大幅度提升的拍摄能力
+
+1496
+01:26:50,577 --> 01:26:52,179
+the A16 Bionic chip...
+A16 仿生芯片
+
+1497
+01:26:52,212 --> 01:26:53,380
+And action.
+行动
+
+1498
+01:26:53,413 --> 01:26:56,717
+An entirely new category of safety innovations,
+全新领域的安全功能
+
+1499
+01:26:56,750 --> 01:27:00,153
+and never-before-seen display technology,
+刷新视野的显示技术
+
+1500
+01:27:00,187 --> 01:27:02,556
+this is iPhone 14 Pro.
+这就是 iPhone 14 Pro
+
+1501
+01:27:03,490 --> 01:27:04,324
+Cut!
+停！
+
+1502
+01:27:07,227 --> 01:27:10,264
+The Always-On display artfully dims your wallpaper
+新的全天候显示会巧妙地调暗墙纸
+
+1503
+01:27:10,297 --> 01:27:12,799
+to create a unique, low-powered Lock Screen,
+形成独特的低能耗锁定屏幕
+
+1504
+01:27:12,833 --> 01:27:16,003
+making go-to information available at just a glance.
+让你随时能一览想看的消息
+
+1505
+01:27:16,870 --> 01:27:19,373
+And introducing a remarkable innovation,
+而另一项杰出功能
+
+1506
+01:27:19,406 --> 01:27:22,943
+that is both hardware and software and something in between:
+就是软硬件一体创新的
+
+1507
+01:27:22,976 --> 01:27:24,444
+the Dynamic Island.
+灵动岛
+
+1508
+01:27:26,847 --> 01:27:30,017
+An interactive place that bubbles up alerts,
+这个互动区域会弹出各种提醒、
+
+1509
+01:27:30,050 --> 01:27:32,920
+notifications, and activities,
+通知和实时活动
+
+1510
+01:27:32,953 --> 01:27:35,689
+fluidly transforming itself as needed.
+需要时还会灵活变身
+
+1511
+01:27:35,722 --> 01:27:37,891
+? ?
+? ?
+
+1512
+01:27:37,925 --> 01:27:41,261
+It's an entirely new way to experience iPhone.
+iPhone 从此有了新玩法
+
+1513
+01:27:41,295 --> 01:27:47,835
+? ?
+? ?
+
+1514
+01:27:47,868 --> 01:27:48,735
+Chin up a little bit.
+下巴抬起来一点
+
+1515
+01:27:48,769 --> 01:27:49,837
+You are now looking
+你看到的是
+
+1516
+01:27:49,870 --> 01:27:52,840
+at the most impressive iPhone camera system yet.
+iPhone 拍摄系统的巅峰之作
+
+1517
+01:27:52,873 --> 01:27:55,943
+In a major leap, the iPhone Pro's Main camera
+iPhone 14 Pro 主摄
+
+1518
+01:27:55,976 --> 01:27:59,313
+has a 48MP quad-pixel sensor.
+采用四合一像素传感器 像素数量飞跃至 4800 万
+
+1519
+01:27:59,346 --> 01:28:03,116
+It captures breathtaking detail, depth, and color,
+它可以拍出惊艳的细节、层次和色彩
+
+1520
+01:28:03,150 --> 01:28:06,720
+and now gives you the equivalent of four pro lenses at the ready.
+焦距随手切换 有如随身的四个高品质镜头
+
+1521
+01:28:08,021 --> 01:28:09,690
+With every photo,
+四合一像素传感器
+
+1522
+01:28:09,723 --> 01:28:13,160
+the quad-pixel sensor captures four times more information
+每拍一张照片
+
+1523
+01:28:13,193 --> 01:28:14,728
+than ever before.
+捕捉的信息量都是以往四倍
+
+1524
+01:28:14,761 --> 01:28:17,231
+Then the A16 Bionic,
+随后 A16 仿生会驱动
+
+1525
+01:28:17,264 --> 01:28:19,700
+powering the new Photonic Engine,
+全新光像引擎
+
+1526
+01:28:19,733 --> 01:28:22,436
+analyzes and perfects every pixel
+通过最高 4 万亿次运算
+
+1527
+01:28:22,469 --> 01:28:25,305
+with up to 4 trillion operations
+分析并优化每颗像素
+
+1528
+01:28:25,339 --> 01:28:29,343
+achieving an astonishing new level of sharpness and detail.
+让画面的锐度和细节再上新境界
+
+1529
+01:28:29,376 --> 01:28:33,447
+? ?
+? ?
+
+1530
+01:28:33,480 --> 01:28:35,949
+And now, Pro photographers will now be able to capture
+专业摄影师现可拍摄
+
+1531
+01:28:35,983 --> 01:28:39,686
+an uncompressed, 48MP ProRAW image,
+未压缩的 4800 万像素 ProRAW 图像
+
+1532
+01:28:39,720 --> 01:28:42,155
+giving you even more resolution
+更高的分辨率
+
+1533
+01:28:42,189 --> 01:28:45,859
+to rescale, retouch, and reimagine your photos.
+有助于裁剪、修图或再创作
+
+1534
+01:28:48,629 --> 01:28:50,063
+That was perfect. Let's go again.
+这是完美的
+
+1535
+01:28:50,097 --> 01:28:54,101
+Building off iPhone's leap ahead in ProRes and Dolby Vision video technology...
+iPhone 的视频拍摄技术 已在 ProRes 和杜比视界上实现了飞跃
+
+1536
+01:28:54,134 --> 01:28:55,469
+And action.
+提升
+
+1537
+01:28:55,502 --> 01:28:59,640
+iPhone 14 Pro now includes new Action mode,
+而 iPhone 14 Pro 更增添了运动模式
+
+1538
+01:28:59,673 --> 01:29:01,608
+allowing gimbal-like stabilization
+能在运动中平稳拍摄
+
+1539
+01:29:01,642 --> 01:29:04,211
+for all your action scenes.
+堪比手持云台
+
+1540
+01:29:04,244 --> 01:29:06,980
+And Cinematic mode will be even more powerful
+对专业电影制作者来说
+
+1541
+01:29:07,014 --> 01:29:08,415
+for Pro filmmakers,
+电影效果模式更好用了
+
+1542
+01:29:08,448 --> 01:29:12,386
+with 4K resolution and 24 frames per second recording.
+它能以每秒 24 帧 拍摄 4K 分辨率的视频
+
+1543
+01:29:13,654 --> 01:29:16,056
+iPhone 14 Pro is capable of shots
+iPhone 14 Pro 的拍摄能力
+
+1544
+01:29:16,089 --> 01:29:19,726
+that for most film cameras are simply impossible.
+甚至让许多专业摄影机都羡慕
+
+1545
+01:29:20,561 --> 01:29:22,763
+You can rely on your iPhone every day,
+你每天都能依靠 iPhone
+
+1546
+01:29:22,796 --> 01:29:26,333
+and now it can even help in emergency situations.
+现在 它甚至能在紧急情况时提供帮助
+
+1547
+01:29:27,968 --> 01:29:29,803
+For the first time,
+史上首次
+
+1548
+01:29:29,837 --> 01:29:32,940
+iPhone 14 Pro will be able to communicate with satellites
+iPhone 14 Pro 能通过卫星
+
+1549
+01:29:32,973 --> 01:29:34,675
+with Emergency SOS...
+提供 SOS 紧急联络
+
+1550
+01:29:36,910 --> 01:29:39,112
+Allowing you to deliver critical information
+帮你向紧急救援机构
+
+1551
+01:29:39,146 --> 01:29:40,781
+to emergency services
+提供关键信息
+
+1552
+01:29:40,814 --> 01:29:44,218
+in places where Wi-Fi and cell service are unavailable.
+即使在没有 Wi-Fi 或蜂窝信号的地方
+
+1553
+01:29:47,321 --> 01:29:49,890
+And a feature we hope you never have to use...
+而下面这个功能 衷心希望没人用得着
+
+1554
+01:29:51,925 --> 01:29:53,060
+Commencing test.
+? ?
+
+1555
+01:29:53,093 --> 01:30:00,100
+? ?
+? ?
+
+1556
+01:30:02,369 --> 01:30:04,705
+Crash Detection.
+车祸检测
+
+1557
+01:30:04,738 --> 01:30:06,707
+Using a high g-force accelerometer
+通过高 g 值加速感应器
+
+1558
+01:30:06,740 --> 01:30:10,277
+gyroscope, sensors, and machine learning algorithms,
+陀螺仪、其他传感器和机器学习算法
+
+1559
+01:30:10,310 --> 01:30:14,147
+iPhone 14 Pro can detect when there has been a severe car crash
+iPhone 14 Pro 能检测到严重车祸
+
+1560
+01:30:14,181 --> 01:30:17,518
+and automatically call emergency services.
+并主动替你拔打求救电话
+
+1561
+01:30:17,551 --> 01:30:22,489
+? ?
+? ?
+
+1562
+01:30:22,523 --> 01:30:26,226
+Supercharged by nearly 16 billion transistors,
+在约 160 亿个晶体管的强势驱动下
+
+1563
+01:30:26,260 --> 01:30:29,663
+the A16 Bionic is the fastest chip in a smartphone
+A16 仿生 这个智能手机芯片的速度之王
+
+1564
+01:30:29,696 --> 01:30:33,467
+and powers the most impressive range of Pro innovations yet.
+为众多领域带来 Pro 级创新
+
+1565
+01:30:33,500 --> 01:30:35,435
+911. What's your emergency?
+911。请问有什么事情？
+
+1566
+01:30:35,469 --> 01:30:38,338
+The iPhone 14 Pro goes above and beyond,
+iPhone 14 Pro 以强到出圈的实力
+
+1567
+01:30:38,372 --> 01:30:40,107
+redefining what a smartphone can be...
+将智能手机的边界
+
+1568
+01:30:41,208 --> 01:30:42,543
+Again.
+一拓再拓
+
+1569
+01:30:42,576 --> 01:30:44,378
+? ?
+? ?
+
+1570
+01:30:46,280 --> 01:30:48,382
+Even with these groundbreaking features,
+即使新增了这么多开创性的功能
+
+1571
+01:30:48,415 --> 01:30:52,619
+iPhone 14 Pro still starts at $999,
+iPhone 14 Pro 依然为 $999 起
+
+1572
+01:30:52,653 --> 01:30:55,789
+and iPhone 14 Pro Max at $1099,
+iPhone 14 Pro Max 为 $1099 起
+
+1573
+01:30:55,822 --> 01:30:58,892
+with storage options up to 1TB.
+存储容量最大可选 1TB
+
+1574
+01:30:58,926 --> 01:31:02,329
+We also have fantastic offers from Apple and our carrier partners,
+Apple 以及我们的运营商伙伴也有各类惊喜的优惠
+
+1575
+01:31:02,362 --> 01:31:07,301
+including up to $1000 off in the US when you trade in a qualifying iPhone.
+包括在美国 用符合条件的 iPhone 参与 Apple Trade In 换购计划
+
+1576
+01:31:06,233 --> 01:31:08,468
+$1000 off in the US 
+最高能获得 $1000 折抵优惠
+
+1577
+01:31:08,468 --> 01:31:10,737
+You can pre-order both models on September 9th
+两款机型于 9 月 9 日开始接受预购
+
+1578
+01:31:10,771 --> 01:31:13,507
+and they will be available on September 16th.
+于 9 月 16 日发售
+
+1579
+01:31:14,441 --> 01:31:18,011
+This is our most incredible iPhone lineup ever,
+这是我们最强大的 iPhone 产品线
+
+1580
+01:31:18,045 --> 01:31:20,547
+including iPhone 13, iPhone 12,
+还包括 iPhone 13、iPhone 12
+
+1581
+01:31:20,581 --> 01:31:23,383
+and iPhone SE, starting at just $429.
+和 iPhone SE $429 起
+
+1582
+01:31:24,451 --> 01:31:26,453
+Now, back to Tim.
+下面 交给 Tim
+
+1583
+01:31:26,486 --> 01:31:33,493
+? ?
+? ?
+
+1584
+01:31:43,670 --> 01:31:47,407
+Tim: Thank you, Joz, and thanks to all of our presenters.
+谢谢 Joz 也感谢所有的演讲者
+
+1585
+01:31:47,441 --> 01:31:50,410
+What an incredible day of announcements about products
+真是收获满满的一天 我们宣布了很多
+
+1586
+01:31:50,444 --> 01:31:53,580
+that are truly essential to our daily lives.
+对我们日常生活至关重要的产品信息
+
+1587
+01:31:53,614 --> 01:31:57,851
+Apple Watch Series 8, equipped with best-in-class health features
+Apple Watch Series 8 满载最尖端的健康功能
+
+1588
+01:31:57,885 --> 01:32:01,088
+and Crash Detection continue to make Apple Watch
+以及车祸检测 使 Apple Watch
+
+1589
+01:32:01,121 --> 01:32:03,624
+the gold standard for smart watches.
+继续成为智能手表的业界标杆
+
+1590
+01:32:03,657 --> 01:32:08,462
+The new Apple Watch SE brings all the core features of Apple Watch
+新 Apple Watch SE 让更多用户有机会体验
+
+1591
+01:32:08,495 --> 01:32:10,430
+to even more users.
+Apple Watch 的核心功能
+
+1592
+01:32:10,464 --> 01:32:13,534
+And the remarkable Apple Watch Ultra–
+再加上令人叹为观止的 Apple Watch Ultra
+
+1593
+01:32:13,567 --> 01:32:16,403
+an entirely new category of Apple Watch
+这是一个全新的 Apple Watch 系列
+
+1594
+01:32:16,436 --> 01:32:17,938
+with its rugged design,
+坚固耐用的设计
+
+1595
+01:32:17,971 --> 01:32:21,542
+long battery life, and breakthrough technologies–
+持久续航以及各种突破性的科技
+
+1596
+01:32:21,575 --> 01:32:23,844
+is the most capable watch ever.
+使其成为无出其右的强大手表
+
+1597
+01:32:23,877 --> 01:32:28,515
+The new AirPods Pro deliver an even better audio experience,
+全新 AirPods Pro 提供更好的音频体验
+
+1598
+01:32:28,549 --> 01:32:31,852
+including improved Active Noise Cancellation,
+包括进一步优化的主动降噪功能
+
+1599
+01:32:31,885 --> 01:32:35,656
+Personalized Spatial Audio, and longer battery life.
+个性化空间音频以及更持久的续航
+
+1600
+01:32:35,689 --> 01:32:41,562
+iPhone 14 and iPhone 14 Plus, with a larger 6.7" display,
+iPhone 14 和 iPhone 14 Plus 带来更大的 6.7 英寸显示屏
+
+1601
+01:32:41,595 --> 01:32:43,297
+are full of innovations,
+充满各种创新
+
+1602
+01:32:43,330 --> 01:32:46,466
+including a fantastic new camera system
+包括出色的全新摄像头系统
+
+1603
+01:32:46,500 --> 01:32:49,102
+and a new front camera with auto-focus.
+以及全新支持自动对焦的前置摄像头
+
+1604
+01:32:49,136 --> 01:32:53,207
+iPhone 14 Pro and iPhone 14 Pro Max:
+iPhone 14 Pro 和 iPhone 14 Pro Max
+
+1605
+01:32:53,240 --> 01:32:56,310
+the best iPhones we've ever created,
+则是我们迄今最出色的 iPhone
+
+1606
+01:32:56,343 --> 01:32:58,779
+with a new way to experience iPhone,
+带来了体验 iPhone 的全新方式
+
+1607
+01:32:58,812 --> 01:33:02,149
+as well as the industry-leading A16 Bionic,
+还有遥遥领先的 A16 仿生
+
+1608
+01:33:02,182 --> 01:33:06,687
+Always-On display, and powerful new camera technologies.
+全天候显示以及强大的全新摄像头技术
+
+1609
+01:33:07,588 --> 01:33:10,824
+And we're continuing to build more safety features into iPhone
+我们持续为 iPhone 开发更多安全功能
+
+1610
+01:33:10,858 --> 01:33:14,194
+with Crash Detection and, for the first time,
+包括车祸检测
+
+1611
+01:33:14,228 --> 01:33:16,697
+the ability to communicate via satellite,
+以及第一次能通过卫星
+
+1612
+01:33:16,730 --> 01:33:19,633
+delivering the Emergency SOS service.
+实现 SOS 紧急联络的功能
+
+1613
+01:33:19,666 --> 01:33:24,438
+These incredible products each offer so many great capabilities
+每一款了不起的产品都提供了众多强大功能
+
+1614
+01:33:24,471 --> 01:33:29,843
+and work seamlessly together in a way that only Apple can deliver.
+而且相互配合天衣无缝 这是只有 Apple 能实现的体验
+
+1615
+01:33:31,411 --> 01:33:35,182
+Making products that are so personal and indispensable
+为你带来不可或缺的个性化产品
+
+1616
+01:33:35,215 --> 01:33:37,985
+is what drives us to continue innovating,
+驱动着我们不断突破创新
+
+1617
+01:33:38,018 --> 01:33:42,122
+improving on what are already best-in-class experiences.
+不断提升本已领先业界的体验
+
+1618
+01:33:43,423 --> 01:33:46,593
+I'm proud of all the teams and hard work
+我为团队的辛勤工作感到自豪
+
+1619
+01:33:46,627 --> 01:33:50,030
+that went into making today's announcements possible.
+正是他们的努力 让我们今天可以宣布这么多精彩内容
+
+1620
+01:33:50,063 --> 01:33:54,501
+And I'm excited to see all of the amazing things you'll do with these new products.
+我无比期待看到大家用这些新产品 成就非凡
+
+1621
+01:33:54,535 --> 01:33:56,203
+Thank you for joining us.
+感谢你加入我们！
+
+1622
+01:33:56,236 --> 01:33:57,804
+Have a great day.
+祝你拥有美好的一天！

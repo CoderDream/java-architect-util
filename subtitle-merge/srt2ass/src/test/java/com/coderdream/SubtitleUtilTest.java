@@ -195,4 +195,56 @@ class SubtitleUtilTest {
             e.printStackTrace();
         }
     }
+
+    /**
+     * 苹果2022年秋季发布会
+     */
+    @Test
+    void mergeToAss_03() {
+        Path resourceDirectory = Paths.get("src", "test", "resources");
+        String absolutePath = resourceDirectory.toFile().getAbsolutePath();
+
+        System.out.println(absolutePath);
+        assertTrue(absolutePath.endsWith("src" + File.separatorChar + "test" + File.separatorChar + "resources"));
+        // Java8用流的方式读文件，更加高效
+        //   Files.lines(Paths.get(absolutePath + "\\testdata\\input\\Subtitle_5.srt"), StandardCharsets.UTF_8).forEach(System.out::println);
+
+        absolutePath += "\\testdata\\input\\202209\\";
+        String fileName1 = absolutePath + "Apple Event, September 2022_5_text.srt";
+        String fileName2 = absolutePath + "Apple Event, September 2022_9_text.srt";
+        String fileNameMerge = absolutePath + "Apple Event, September 2022.ass";
+
+        try {
+            SubtitleUtil.mergeToAss(fileName1, fileName2, fileNameMerge);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    //
+
+
+    /**
+     * 苹果2022年秋季发布会
+     */
+    @Test
+    void transferSrtToAss_01() {
+        Path resourceDirectory = Paths.get("src", "test", "resources");
+        String absolutePath = resourceDirectory.toFile().getAbsolutePath();
+
+        System.out.println(absolutePath);
+        assertTrue(absolutePath.endsWith("src" + File.separatorChar + "test" + File.separatorChar + "resources"));
+        // Java8用流的方式读文件，更加高效
+        //   Files.lines(Paths.get(absolutePath + "\\testdata\\input\\Subtitle_5.srt"), StandardCharsets.UTF_8).forEach(System.out::println);
+
+        absolutePath += "\\testdata\\input\\202209\\";
+        String srcName = absolutePath + "Apple Event, September 2022.srt";
+        String destName = absolutePath + "Apple Event, September 2022.ass";
+
+        try {
+            SubtitleUtil.transferSrtToAss(srcName, destName);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

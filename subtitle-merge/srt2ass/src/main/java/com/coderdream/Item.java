@@ -2,13 +2,36 @@ package com.coderdream;
 
 import lombok.Data;
 
+/**
+ * 字幕项
+ */
 @Data
 public class Item {
     public Integer id;
+
+    /**
+     * 时间段
+     */
     public String timeRange;
+
+    /**
+     * 开始时间
+     */
     public String startTime;
+
+    /**
+     * 结束时间
+     */
     public String endTime;
+
+    /**
+     * 第一语言
+     */
     public String content;
+
+    /**
+     * 第二语言
+     */
     public String secondContent;
 
     public Item prevItem;

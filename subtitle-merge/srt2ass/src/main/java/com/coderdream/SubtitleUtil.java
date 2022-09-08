@@ -99,6 +99,83 @@ public class SubtitleUtil {
     }
 
     /**
+     * srt 字幕转换为 ass 字幕
+     *
+     * @param srcName
+     * @param destName
+     * @throws IOException
+     */
+    public static void transferSrtToAss(String srcName, String destName) throws IOException {
+        List<Item> srcItems = SubtitleUtil.readBilingualFile(srcName);
+
+        List<Event> eventList = new ArrayList<>();
+        Event event = null;
+        Event eventEn = null;
+        for (Item item : srcItems) {
+            // 中文
+            event = new Event();
+            String startTime = item.getStartTime();
+            String endTime = item.getEndTime();
+            String content = item.getContent();
+            event.setFormat("Dialogue");
+            event.setStart(formatTime(startTime));
+            event.setEnd(formatTime(endTime));
+            event.setStyle("");
+            event.setMarginL("0");
+            event.setMarginR("0");
+            event.setEffect("");
+
+            String secondContent = item.getSecondContent();
+
+            // 无第二语言
+            if (secondContent == null || secondContent.trim().equals("")) {
+
+                if (isChineseContent(content)) {
+                    event.setName("中文对白");
+
+                    event.setLayer(LAYER_CN);
+                    event.setMarginV(MARGIN_V_CN);
+                } else {
+                    event.setName("英文对白");
+
+                    event.setLayer(LAYER_EN);
+                    event.setMarginV(MARGIN_V_EN);
+                }
+                event.setText(SubtitleUtil.trimChineseBlank(content));
+                eventList.add(event);
+            }
+            // 既有中文，也有英文
+            else {
+                // 中文
+                event.setName("中文对白");
+                event.setText(SubtitleUtil.trimChineseBlank(content));
+                event.setLayer(LAYER_CN);
+                event.setMarginV(MARGIN_V_CN);
+                eventList.add(event);
+
+                eventEn = new Event();
+                eventEn.setFormat("Dialogue");
+                eventEn.setStart(formatTime(startTime));
+                eventEn.setEnd(formatTime(endTime));
+                eventEn.setName("英文对白");
+                eventEn.setStyle("");
+                eventEn.setMarginL("0");
+                eventEn.setMarginR("0");
+                eventEn.setEffect("");
+                eventEn.setLayer(LAYER_EN);
+                eventEn.setMarginV(MARGIN_V_EN);
+                eventEn.setText(SubtitleUtil.trimChineseBlank(secondContent));
+                eventList.add(eventEn);
+            }
+        }
+        //先按Layer逆序排序，再按开始时间升序排序
+        String[] properties = {"layer", "start"};
+        multiSort(eventList, properties);
+
+        writeBufferToAss(destName, eventList);
+    }
+
+    /**
      * 整合字幕并写入新文件
      *
      * @param fileName1
@@ -305,6 +382,105 @@ public class SubtitleUtil {
         writer.close();
         fos.close();
         return file;
+    }
+
+    /**
+     * 读取双语字幕文件
+     *
+     * @param fileName
+     * @return
+     */
+    private static List<Item> readBilingualFile(String fileName) {
+        //read file into stream, try-with-resources
+        List<Item> results = new ArrayList<>();
+        Item item = null;
+        Integer id = 0;
+        String timeRange = "";
+        String content = "";
+        String secondContent = "";
+        Set<String> timeRangeSet = new HashSet<>();
+
+        Item prevItem = null;
+        try (Stream<String> stream = Files.lines(Paths.get(fileName), StandardCharsets.UTF_8)) {
+            // 读取每一行
+            List<String> list = new ArrayList<String>();
+            stream.forEach(str -> {
+                list.add(str);
+            });
+            // 末尾补空格
+            list.add("");
+
+            // 放入字符串数组
+            String[] lines = new String[list.size()];
+            for (int i = 0; i < list.size(); i++) {
+                lines[i] = list.get(i);
+            }
+
+            for (int i = 0; i < lines.length; i++) {
+                String str = lines[i];
+                // 读到空行，说明上面是一个双语整体，类似于下面5行，然后从空行开始，一行一行往上找
+                // 1
+                // 00:00:00,334 --> 00:00:07,341
+                // ? ?
+                // ? ?
+                //
+                if ("".equals(str.trim())) {
+                    item = new Item();
+                    // 设置当前Item的前一个Item
+                    item.prevItem = prevItem;
+                    // 设置前一个Item的nextItem
+                    if (item.prevItem != null) {
+                        item.prevItem.nextItem = item;
+                    }
+                    // 找到第一行
+                    String prevLine3 = lines[i - 3];
+                    // 不是数字，再往上找
+                    if (!isNumeric(prevLine3)) {
+                        String prevLine4 = lines[i - 4];
+                        // 00:21:41,55 --> 00:21:45,30
+                        // 00:00:06,960 --> 00:00:09,050
+                        if (!isNumeric(prevLine4)) {
+                            System.out.println("isNumeric ERROR: " + prevLine4);
+                        }
+                        // 内容有两行，需要合并
+                        else {
+                            id = Integer.parseInt(lines[i - 4]);
+                            timeRange = lines[i - 3];
+                            content = lines[i - 2];
+                            secondContent = lines[i - 1];
+                            // 合并内容
+                           // content = content + " " + contentNext;
+                        }
+                    }
+                    // 只有一行，不需合并
+                    else {
+                        id = Integer.parseInt(lines[i - 3]);
+                        timeRange = lines[i - 2];
+                        content = lines[i - 1];
+                    }
+
+                    item.setId(id);
+                    item.setTimeRange(timeRange);
+                    String startTime = timeRange.substring(0, FIRST_END);
+                    String endTime = timeRange.substring(17, SECOND_END);
+                    item.setStartTime(startTime);
+                    item.setEndTime(endTime);
+                    item.setContent(content);
+                    item.setSecondContent(secondContent);
+                    if (!timeRangeSet.contains(timeRange)) {
+                        // 加入返回列表
+                        results.add(item);
+                        prevItem = item;
+                    }
+                    // 去掉重复
+                    timeRangeSet.add(timeRange);
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return results;
     }
 
     /**
@@ -646,7 +822,7 @@ public class SubtitleUtil {
                     // 把 Map 中处理过的对象删除
                     secondMap.remove(startTimeItem.getStartTime());
                     secondMap.remove(startTimeItem.getEndTime());
-                 //   subtitleMergeItems.add(item);
+                    //   subtitleMergeItems.add(item);
                     sameStartTimeItems.add(item);
                     count1++;
                 }
@@ -659,14 +835,14 @@ public class SubtitleUtil {
                     // 把 Map 中处理过的对象删除
                     secondMap.remove(endTimeItem.getStartTime());
                     secondMap.remove(endTimeItem.getEndTime());
-                  //  subtitleMergeItems.add(item);
+                    //  subtitleMergeItems.add(item);
 
                     sameEndTimeItems.add(item);
                     count2++;
                 }
                 // 暂不处理
                 else {
-                 //   subtitleMergeItems.add(item);
+                    //   subtitleMergeItems.add(item);
 
                     soloFirstItems.add(item);
                 }
@@ -745,7 +921,7 @@ public class SubtitleUtil {
 
         System.out.println("#####剩余的中文：");
         System.out.println("id\tBeginTime\tEndTime\tcontent\tsecondContent\t");
-        for (Item mapValue: soloFirstItems) {
+        for (Item mapValue : soloFirstItems) {
             System.out.println(mapValue.getId() + "\t" + mapValue.getStartTime() + "\t" + mapValue.getEndTime() + "\t" + mapValue.getContent() + "\t" + mapValue.getSecondContent() + "\t");
         }
 
