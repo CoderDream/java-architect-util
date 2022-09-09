@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chen.mapper.db2.Db2UserMapper">
+    <resultMap id="BaseResultMap" type="com.chen.entity.UserEntity">
+        <id column="id" property="id"/>
+        <result column="a1" property="a1"/>
+        <result column="b1" property="b1"/>
+        <result column="c1" property="c1"/>
+        <result column="d1" property="d1"/>
+    </resultMap>
+    <sql id="all_columns">
+        id, a1,b1,c1,d1
+    </sql>
+
+    <select id="getUserbyId" resultMap="BaseResultMap">
+        SELECT
+        <include refid="all_columns"/>
+        FROM
+        data01
+        WHERE id = #{id}
+    </select>
+</mapper>

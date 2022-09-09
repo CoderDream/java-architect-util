@@ -1,0 +1,61 @@
+server:
+  port: 8080
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+  mapper-locations: classpath:mapper/*/*.xml
+  type-aliases-package: com.chen.entity
+spring:
+  datasource:
+    dynamic:
+      primary: gp
+      strict: false
+      datasource:
+        gp:
+          url: jdbc:postgresql://172.16.104.131:31302/code_system
+          username: postgres
+          password: 123456
+          driver-class-name: org.postgresql.Driver
+          type: com.alibaba.druid.pool.DruidDataSource
+        mysql:
+          url: jdbc:mysql://172.16.104.131:30895/code_system
+          username: root
+          password: 123456
+          driver-class-name: com.mysql.jdbc.Driver
+          type: com.alibaba.druid.pool.DruidDataSource
+
+      druid:
+        #初始连接数
+        initial-size: 1
+        #最小连接数
+        min-idle: 1
+        #最大连接数
+        max-active: 100
+        #获取连接池超时时间
+        max-wait: 60000
+        filters: config,stat
+        connect-properties: druid.stat.mergeSql=true;druid.stat.logSlowSql=true;druid.stat.slowSqlMillis=500
+        filter:
+          commons-log:
+            enabled: true
+            statement-log-enabled: false
+            statement-log-error-enabled: true
+            statement-executable-sql-log-enable: true
+#db1:
+#  driverClassName: com.mysql.jdbc.Driver
+#  url: jdbc:mysql://localhost:3306/hello
+#  username: root
+#  password: abc123
+#  initialSize: 5
+#  minIdle: 5
+#  maxActive: 50
+#db2:
+#  driverClassName: org.postgresql.Driver
+#  url: jdbc:postgresql://10.0.6.112:5432/gp_sydb
+#  username: gpadmin
+#  password: gpadmin
+#  platform: postgres
+#  initialSize: 5
+#  minIdle: 5
+#  maxActive: 50
