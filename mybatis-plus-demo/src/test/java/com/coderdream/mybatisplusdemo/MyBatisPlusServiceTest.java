@@ -1,6 +1,6 @@
 package com.coderdream.mybatisplusdemo;
 
-import com.coderdream.mybatisplusdemo.pojo.User;
+import com.coderdream.mybatisplusdemo.entity.User;
 import com.coderdream.mybatisplusdemo.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

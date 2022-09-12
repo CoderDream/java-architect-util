@@ -2,7 +2,7 @@ package com.coderdream.mybatisplusdemo.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.coderdream.mybatisplusdemo.mapper.UserMapper;
-import com.coderdream.mybatisplusdemo.pojo.User;
+import com.coderdream.mybatisplusdemo.entity.User;
 import com.coderdream.mybatisplusdemo.service.UserService;
 import org.springframework.stereotype.Service;
 

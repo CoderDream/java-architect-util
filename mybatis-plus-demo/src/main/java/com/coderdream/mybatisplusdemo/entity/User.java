@@ -1,4 +1,4 @@
-package com.coderdream.mybatisplusdemo.pojo;
+package com.coderdream.mybatisplusdemo.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
 import com.coderdream.mybatisplusdemo.enums.SexEnum;

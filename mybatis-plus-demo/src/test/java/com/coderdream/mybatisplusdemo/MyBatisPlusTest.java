@@ -1,7 +1,7 @@
 package com.coderdream.mybatisplusdemo;
 
 import com.coderdream.mybatisplusdemo.mapper.UserMapper;
-import com.coderdream.mybatisplusdemo.pojo.User;
+import com.coderdream.mybatisplusdemo.entity.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

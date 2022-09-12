@@ -2,7 +2,7 @@ package com.coderdream.mybatisplusdemo.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.coderdream.mybatisplusdemo.pojo.User;
+import com.coderdream.mybatisplusdemo.entity.User;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
