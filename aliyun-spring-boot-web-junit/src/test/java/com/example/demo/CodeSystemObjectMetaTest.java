@@ -4,7 +4,6 @@ import com.alibaba.fastjson.JSONObject;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Value;
@@ -23,10 +22,9 @@ import java.util.*;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @TestPropertySource("classpath:application.properties")  //你的配置文件
-@SpringBootTest(classes = {CodeSystemAttrMetaTest.class}) //测试的class
-@ContextConfiguration(classes = CodeSystemAttrMetaTest.class)
-public class CodeSystemAttrMetaTest {
-
+@SpringBootTest(classes = {CodeSystemObjectMetaTest.class}) //测试的class
+@ContextConfiguration(classes = CodeSystemObjectMetaTest.class)
+public class CodeSystemObjectMetaTest {
 
     @Value("${env}")
     private String env;
@@ -86,7 +84,7 @@ public class CodeSystemAttrMetaTest {
 
     @Test
     public void testListAll_01() throws Exception {
-        final String uri = URI_PREFIX + BS_PORT + "/api/standardized/object/attr-item-meta/list";
+        final String uri = URI_PREFIX + BS_PORT + "/api/standardized/object/object-meta/list";
         RestTemplate restTemplate = new RestTemplate();
 
         String body = "{\"page\":1,\"rows\":20,\"query\":{}}";//实例请求参数
@@ -123,15 +121,19 @@ public class CodeSystemAttrMetaTest {
     @Test
     public void testListQuery_01() throws Exception {
         RestTemplate restTemplate = new RestTemplate();
-        String uri = URI_PREFIX + BS_PORT + "/api/standardized/object/attr-meta/list";
+        String uri = URI_PREFIX + BS_PORT + "/api/standardized/object/object-meta/list";
 
-        String dateString= "RES_CODE";
+        String dateString = "15";
         Map<String, Object> bodyMap = new HashMap<String, Object>();
-        bodyMap.put("code", dateString);
+        bodyMap.put("page", 1);
+        bodyMap.put("rows", 20);
+        Map<String, Object> queryMap = new HashMap<String, Object>();
+        queryMap.put("code", dateString);
+        bodyMap.put("query", queryMap);
 
         String body = JSONObject.toJSONString(bodyMap);
 
-       // String body = "{\"name\":\"测试15\",\"label\":\"测试15\",\"code\":\"15\",\"remark\":\"测试类型描述\"}";//实例请求参数
+        // String body = "{\"name\":\"测试15\",\"label\":\"测试15\",\"code\":\"15\",\"remark\":\"测试类型描述\"}";//实例请求参数
         HttpHeaders headers = new HttpHeaders();//创建一个头部对象
         //设置contentType 防止中文乱码
         headers.setContentType(MediaType.valueOf("application/json; charset=UTF-8"));
@@ -144,6 +146,10 @@ public class CodeSystemAttrMetaTest {
         String result = restTemplate.postForObject(uri, strEntity, String.class);
         System.out.println(result);//运行方法，这里输出：
 
+        printResult(result);
+    }
+
+    private static void printResult(String result) throws JsonProcessingException {
         Map<String, Object> map = new HashMap<>(16);
         ObjectMapper mapper = new ObjectMapper();
         map = mapper.readValue(result, map.getClass());
@@ -157,15 +163,24 @@ public class CodeSystemAttrMetaTest {
         System.out.println(msg);
 
         //获取 data
-        Map<String, Object> dataMap = (LinkedHashMap) map.get("data");
-        System.out.println(dataMap);
+        Map<String, Object> resultMap = (LinkedHashMap) map.get("result");
+        System.out.println(resultMap);
 
+        if(resultMap != null) {
+            //获取 data
+            List<Map<String, Object>> records = (ArrayList) resultMap.get("records");
+            System.out.println(records);
+
+            for (Map<String, Object> recordMap : records) {
+                System.out.println((Integer) recordMap.get("id"));
+            }
+        }
     }
 
     @Test
     public void testAdd_01() throws Exception {
         RestTemplate restTemplate = new RestTemplate();
-        String uri = URI_PREFIX + BS_PORT + "/api/standardized/object/attr-item-meta/add";
+        String uri = URI_PREFIX + BS_PORT + "/api/standardized/object/object-meta/add";
 
         DateFormat dateFormat = new SimpleDateFormat("_MM-dd_HH:mm:ss");
         Date date = new Date();
@@ -191,40 +206,29 @@ public class CodeSystemAttrMetaTest {
         //完整的方法签名为：postForObject(String url, Object request, Class<String> responseType, Object... uriVariables) ，最后的uriVariables用来拓展我们的请求参数内容。
         String result = restTemplate.postForObject(uri, strEntity, String.class);
         System.out.println(result);//运行方法，这里输出：
-
-        Map<String, Object> map = new HashMap<>(16);
-        ObjectMapper mapper = new ObjectMapper();
-        map = mapper.readValue(result, map.getClass());
-
-        //获取 code
-        Integer code = (Integer) map.get("code");
-        System.out.println(code);
-
-        //获取 msg
-        String msg = (String) map.get("msg");
-        System.out.println(msg);
-
-        //获取 data
-        Map<String, Object> dataMap = (LinkedHashMap) map.get("data");
-        System.out.println(dataMap);
-
-        // 查
-        uri = URI_PREFIX + BS_PORT + "/api/standardized/object/attr-item-meta/list";
-        Map<String, Object> queryBodyMap = new HashMap<String, Object>();
-        queryBodyMap.put("code", dateString);
-
-        body = JSONObject.toJSONString(queryBodyMap);
-        strEntity = new HttpEntity<String>(body, headers);
-        result = restTemplate.postForObject(uri, strEntity, String.class);
-        System.out.println(result);//运行方法，这里输出：
+        printResult(result);
     }
 
     @Test
-    public void testCRUD_01() throws Exception {
-        final String uri = URI_PREFIX + BS_PORT + "/api/standardized/object/attr-item-meta/list";
+    public void testAdd_02() throws Exception {
         RestTemplate restTemplate = new RestTemplate();
+        String uri = URI_PREFIX + BS_PORT + "/api/standardized/object/object-meta/add";
 
-        String body = "{\"page\":1,\"rows\":20,\"query\":{}}";//实例请求参数
+        DateFormat dateFormat = new SimpleDateFormat("_MM-dd_HH:mm:ss");
+        Date date = new Date();
+        String dateString = dateFormat.format(date);
+
+        Map<String, Object> bodyMap = new HashMap<String, Object>();
+        bodyMap.put("name", "测试" + dateString);
+        bodyMap.put("label", "LB" + dateString);
+        bodyMap.put("code", dateString);
+        bodyMap.put("remark", "测试类型描述" + dateString);
+        bodyMap.put("typeCode", "02");
+        bodyMap.put("spaceLevel", "L1");
+
+        String body = JSONObject.toJSONString(bodyMap);
+
+        // String body = "{\"name\":\"测试15\",\"label\":\"测试15\",\"code\":\"15\",\"remark\":\"测试类型描述\"}";//实例请求参数
         HttpHeaders headers = new HttpHeaders();//创建一个头部对象
         //设置contentType 防止中文乱码
         headers.setContentType(MediaType.valueOf("application/json; charset=UTF-8"));
@@ -236,6 +240,74 @@ public class CodeSystemAttrMetaTest {
         //完整的方法签名为：postForObject(String url, Object request, Class<String> responseType, Object... uriVariables) ，最后的uriVariables用来拓展我们的请求参数内容。
         String result = restTemplate.postForObject(uri, strEntity, String.class);
         System.out.println(result);//运行方法，这里输出：
+        printResult(result);
+
+        // 查
+        uri = URI_PREFIX + BS_PORT + "/api/standardized/object/object-meta/list";
+        Map<String, Object> queryBodyMap = new HashMap<String, Object>();
+        queryBodyMap.put("code", dateString);
+        queryBodyMap.put("page", 1);
+        queryBodyMap.put("rows", 20);
+        Map<String, Object> queryMap = new HashMap<String, Object>();
+        queryMap.put("code", dateString);
+        queryBodyMap.put("query", queryMap);
+
+        body = JSONObject.toJSONString(queryBodyMap);
+        strEntity = new HttpEntity<String>(body, headers);
+        result = restTemplate.postForObject(uri, strEntity, String.class);
+        System.out.println(result);//运行方法，这里输出：
+        printResult(result);
+
+    }
+
+    @Test
+    public void testCRUD_01() throws Exception {
+        RestTemplate restTemplate = new RestTemplate();
+        String uri = URI_PREFIX + BS_PORT + "/api/standardized/object/object-meta/add";
+
+        DateFormat dateFormat = new SimpleDateFormat("_MM-dd_HH:mm:ss");
+        Date date = new Date();
+        String dateString = dateFormat.format(date);
+
+        Map<String, Object> bodyMap = new HashMap<String, Object>();
+        bodyMap.put("name", "测试" + dateString);
+        bodyMap.put("label", "LB" + dateString);
+        bodyMap.put("code", dateString);
+        bodyMap.put("remark", "测试类型描述" + dateString);
+        bodyMap.put("tcode", "02");
+        bodyMap.put("spl", "L1");
+
+        String body = JSONObject.toJSONString(bodyMap);
+
+        // String body = "{\"name\":\"测试15\",\"label\":\"测试15\",\"code\":\"15\",\"remark\":\"测试类型描述\"}";//实例请求参数
+        HttpHeaders headers = new HttpHeaders();//创建一个头部对象
+        //设置contentType 防止中文乱码
+        headers.setContentType(MediaType.valueOf("application/json; charset=UTF-8"));
+        headers.add("Accept", MediaType.APPLICATION_JSON_UTF8.toString());
+        //设置我们的请求信息，第一个参数为请求Body,第二个参数为请求头信息
+        //完整的方法签名为：HttpEntity<String>(String body, MultiValueMap<String, String> headers)
+        HttpEntity<String> strEntity = new HttpEntity<String>(body, headers);
+        //使用post方法提交请求，第一参数为url,第二个参数为我们的请求信息,第三个参数为我们的相应放回数据类型，与String result对厅
+        //完整的方法签名为：postForObject(String url, Object request, Class<String> responseType, Object... uriVariables) ，最后的uriVariables用来拓展我们的请求参数内容。
+        String result = restTemplate.postForObject(uri, strEntity, String.class);
+        System.out.println(result);//运行方法，这里输出：
+        printResult(result);
+
+        // 查
+        uri = URI_PREFIX + BS_PORT + "/api/standardized/object/object-meta/list";
+        Map<String, Object> queryBodyMap = new HashMap<String, Object>();
+        queryBodyMap.put("code", dateString);
+        queryBodyMap.put("page", 1);
+        queryBodyMap.put("rows", 20);
+        Map<String, Object> queryMap = new HashMap<String, Object>();
+        queryMap.put("code", dateString);
+        queryBodyMap.put("query", queryMap);
+
+        body = JSONObject.toJSONString(queryBodyMap);
+        strEntity = new HttpEntity<String>(body, headers);
+        result = restTemplate.postForObject(uri, strEntity, String.class);
+        System.out.println(result);//运行方法，这里输出：
+        printResult(result);
 
         Map<String, Object> map = new HashMap<>(16);
         ObjectMapper mapper = new ObjectMapper();
@@ -250,11 +322,29 @@ public class CodeSystemAttrMetaTest {
         System.out.println(msg);
 
         //获取 data
-        Map<String, Object> dataMap = (LinkedHashMap) map.get("data");
-        System.out.println(dataMap);
+        Map<String, Object> resultMap = (LinkedHashMap) map.get("result");
+        System.out.println(resultMap);
+
+        if(resultMap != null) {
+            //获取 data
+            List<Map<String, Object>> records = (ArrayList) resultMap.get("records");
+            System.out.println(records);
+
+            for (Map<String, Object> recordMap : records) {
+                Integer newId = (Integer) recordMap.get("id");
+                System.out.println(newId);
+
+                // 删
+                uri = URI_PREFIX + BS_PORT + "/api/standardized/object/object-meta/delete";
+                Map<String, Object> deleteBodyMap = new HashMap<String, Object>();
+                deleteBodyMap.put("id", newId);
+                body = JSONObject.toJSONString(deleteBodyMap);
+                strEntity = new HttpEntity<String>(body, headers);
+                result = restTemplate.postForObject(uri, strEntity, String.class);
+                System.out.println(result);//运行方法，这里输出：
+                printResult(result);
+                System.out.println("删除成功：" + newId);
+            }
+        }
     }
-
-    //
-
-
 }

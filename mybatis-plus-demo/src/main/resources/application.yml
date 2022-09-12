@@ -1,0 +1,18 @@
+spring:
+  # ???????
+  datasource:
+    # ???????
+    type: com.zaxxer.hikari.HikariDataSource
+    # ????????????
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.3.4:33016/mybatis_plus?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+# ??MyBatis??
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  # ???????????
+  type-aliases-package: com.coderdream.mybatisplusdemo.pojo
+  # ???????
+  type-enums-package: com.coderdream.mybatisplusdemo.enums
