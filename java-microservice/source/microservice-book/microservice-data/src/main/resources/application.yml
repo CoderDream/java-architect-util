@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: microservice-data
+  resources:
+    static-locations: classpath:/resources/
+
+mybatis:
+  config-location: classpath:/config/mybatis-config.xml
+  #mapper-locations: classpath:mybatis/mapper/*.xml
+
+logging:
+  config: classpath:config/logback.xml
+
+task:
+  pool:
+    corePoolSize: 3 # 核心线程数
+    maxPoolSize: 5 # 最大线程数
+    keepAliveSeconds: 300 # 线程活跃时间
+    queueCapacity: 30 # 队列容量
+

@@ -1,0 +1,19 @@
+server:
+  port: 8001
+  servlet: 
+    context-path: /eureka # 请求一级路径,端口后第一个路径
+spring:
+  application:
+    name: microservice-eureka # 服务名称:注册中心server
+
+eureka:
+  client: 
+    fetch-registry: false # 从注册中心获取服务(注册中心server为自身,不需要开启)
+    register-with-eureka: false # 注册到注册中心(注册中心server自身,无需注册到注册中心)
+    service-url: 
+      defaultZone: http://localhost:8001/eureka/eureka # 与Eureka server(注册中心)交互地址,查询Eureka服务的地址
+  instance: 
+    hostname: localhost # 指定主机地址
+  server: 
+    enable-self-preservation: false # 保护模式:关闭false
+    enviction-interval-timer-in-ms: 10000

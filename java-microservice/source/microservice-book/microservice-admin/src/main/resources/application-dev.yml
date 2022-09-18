@@ -1,0 +1,23 @@
+spring:
+  profiles: dev 
+  security: 
+    user: 
+      name: admin 
+      password: admin
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/eureka
+  instance:
+    metadata-map:
+      user.name: ${spring.security.user.name}
+      user.password: ${spring.security.user.password}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS

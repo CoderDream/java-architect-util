@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.microserviceuser.dao.UserDAO">
+    <resultMap id="userDetailsMap" type="com.company.microserviceuser.vo.UserDetailsVO">
+        <result property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="sex" column="sex"/>
+        <result property="address" column="address"/>
+    </resultMap>
+    <resultMap id="userAndRoleMap" type="com.company.microserviceuser.dto.UserAndRoleOutputDTO">
+        <result property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="sex" column="sex"/>
+        <result property="address" column="address"/>
+        <collection property="roleList" javaType="List" ofType="com.company.microserviceuser.dto.RoleOutputDTO" fetchType="lazy">
+            <result property="roleId" column="role_id"/>
+        </collection>
+    </resultMap>
+
+    <resultMap id="userLoginDeatilsMap" type="com.company.microserviceuser.dto.LoginOutputDTO">
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+    </resultMap>
+
+    <insert id="addUser" parameterType="com.company.microserviceuser.dos.UserDO">
+        INSERT INTO user_information ( username, sex, address, phone_number, PASSWORD, created_time )
+        VALUES
+            (#{username}, #{sex}, #{address}, #{phoneNumber}, #{password}, #{createdTime})
+    </insert>
+    <delete id="deleteUserPhysical" parameterType="Long">
+        DELETE 
+        FROM
+            user_information 
+        WHERE
+            id = #{id}
+    </delete>
+    <update id="deleteUserLogical" parameterType="com.company.microserviceuser.dos.UserDO">
+        UPDATE user_information 
+        SET is_delete = #{delete}, updated_time=#{updatedTime} where id=#{id}
+    </update>
+    <update id="editUser" parameterType="com.company.microserviceuser.dos.UserDO">
+        <if test="id !=null ">
+            UPDATE user_information 
+            <set>
+                <if test="username != null and username != ''">
+                    username = #{username},
+                </if>
+                <if test="sex != null and sex != ''">
+                    sex = #{sex},
+                </if>
+                <if test="address != null and address != ''">
+                    address = #{address},
+                </if>
+                <if test="password != null and password != ''">
+                    password = #{password},
+                </if>
+                <if test="phoneNumber != null and phoneNumber != ''">
+                    phone_number = #{phoneNumber},
+                </if>
+                <if test="updatedTime != null and updatedTime != ''">
+                    updated_time = #{updatedTime}
+                </if>
+            </set>
+            where id=#{id}
+        </if>
+    </update>
+
+    
+    <select id="queryUserDetails" parameterType="Long" resultMap="userDetailsMap">
+        SELECT
+            id,
+            username,
+            sex,
+            address 
+        FROM
+            user_information
+        <where>
+            <if test="id !=null and id !=''">
+                and id=#{id}
+            </if>
+        </where>
+    </select>
+
+    <select id="queryUserAndRole" parameterType="Long" resultMap="userAndRoleMap">
+        SELECT
+            ui.id,
+            ui.user_id,
+            ui.sex,
+            ui.username,
+            ui.address,
+            ur.role_id 
+        FROM
+            user_information ui,
+            user_role ur 
+        WHERE
+            ui.user_id = ur.user_id 
+            <if test="id !=null and id !=''">
+                AND ui.id = #{id}
+            </if>    
+    </select>
+
+    <select id="queryUserByPage" parameterType="com.company.microserviceuser.dos.UserDO" resultMap="userDetailsMap">
+        SELECT
+            id,
+            username,
+            sex,
+            address 
+        FROM
+            user_information
+        <where>
+            <if test="id != null and id != ''">
+                and id = #{id}
+            </if>
+            <if test="username != null and username != ''">
+                and username = #{username}
+            </if>
+            <if test="sex != null and sex != ''">
+                and sex = #{sex}
+            </if>
+            <if test="address != null and address != ''">
+                and address like "%"#{address}"%"
+            </if>
+            <if test="phoneNumber != null and phoneNumber != ''">
+                and phone_number like "%"#{phoneNumber}"%"
+            </if>
+        </where>
+    </select>
+
+    <select id="queryUserLoginDetails" parameterType="map" resultMap="userLoginDeatilsMap">
+        SELECT
+            username,
+            password 
+        FROM
+            user_information
+        <where>
+            <if test="username !=null and username != ''">
+                and username = #{username}
+            </if>
+        </where>
+    </select>
+
+    <select id="queryUserByIdList" parameterType="com.company.microserviceuser.dto.QueryUserByIdListInputDTO" resultMap="userDetailsMap">
+        SELECT
+            id,
+            username,
+            sex,
+            address 
+        FROM
+            user_information
+        <where>
+            <if test = "idList != null and idList.size() > 0" > 
+                id in 
+                <foreach item = "id" index = "index" collection = "idList" open = "(" separator = "," close = ")"> 
+                    #{id}
+                </foreach>
+            </if> 
+        </where>
+    </select>
+
+    <select id="queryDateInDatabase" resultType="com.company.microserviceuser.dto.DateOutputDTO">
+        SELECT
+            count( * ) count,
+            CURRENT_DATE date 
+        FROM
+            book.user_information
+    </select>
+</mapper>

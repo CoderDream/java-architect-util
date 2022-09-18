@@ -1,0 +1,90 @@
+spring:
+  devtools: 
+    restart: 
+      enabled: true
+  profiles: rc
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/data_repository?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+  quartz:
+    properties:
+      scheduler: 
+        instanceName: clusteredScheduler
+        instanceId: AUTO
+      jobStore:
+        class: org.quartz.impl.jdbcjobstore.JobStoreTX
+        driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+        tablePrefix: QRTZ_
+        isClustered: true
+        clusterCheckinInterval: 10000
+        useProperties: false
+      threadPool:
+        class: org.quartz.simpl.SimpleThreadPool
+        threadCount: 10
+        threadPriority: 5
+        threadInheritContextClassLoaderOfInitializingThread: true 
+      job-store-type: jdbc
+  
+  redis:
+    database: 0
+    host: localhost
+    port: 6379 
+    password: china@asia 
+    jedis:
+      pool: 
+        max-active: 8 
+        max-idle: 8 
+        max-wait: -1ms 
+        min-idle: 0
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+    publisher-confirms: true 
+    publisher-returns: true
+    listener:
+      direct:
+        acknowledge-mode: manual
+      simple: 
+        acknowledge-mode: manual
+
+mybatis:
+  config-location: classpath:/config/mybatis-config.xml
+server:
+  port: 8888
+  servlet:
+    session:
+      timeout: PT10S
+
+# eureka:
+#   client:
+#     fetch-registry: true
+#     register-with-eureka: true
+#     service-url:
+#       defaultZone: http://localhost:8090/eureka/eureka
+#       # defaultZone: http://localhost:8761/eureka/
+#   server:
+#     enable-self-preservation: false
+
+logging: 
+  level: 
+    root: DEBUG
+  
+pagehelper: 
+  helperDialect: mysql 
+  reasonable: true 
+  supportMethodsArguments: true
+  params: count=countSql
+
+# management: #开启SpringBoot Admin的监控
+#   endpoints:
+#     web:
+#       exposure:
+#         include: '*'
+#   endpoint:
+#     health:
+#       show-details: always

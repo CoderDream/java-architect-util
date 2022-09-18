@@ -1,0 +1,32 @@
+server:
+  port: 8000
+  
+spring:
+  profiles: 
+    active: dev
+  application:
+    name: microservice-gateway #服务名称:注册中心server
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
+      routes:
+      - id: microservice-user
+        uri: lb://microservice-user
+        predicates:
+          - Path=/microservice-user/**
+
+      - id: microservice-data
+        uri: lb://microservice-data
+        predicates:
+          - Path=/microservice-data/**
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS

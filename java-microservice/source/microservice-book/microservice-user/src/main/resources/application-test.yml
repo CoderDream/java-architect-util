@@ -1,0 +1,106 @@
+spring:
+  devtools:
+    restart:
+      enabled: true
+  profiles: test
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.1.5:3306/book?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 10
+      max-active: 100
+      min-idle: 10
+      max-wait: 6000
+      filters: stat, wall
+      stat-view-servlet:
+        enabled: true
+        login-username: admin
+        login-password: 123456
+  quartz:
+    properties:
+      scheduler:
+        instanceName: clusteredScheduler
+        instanceId: AUTO
+      jobStore:
+        class: org.quartz.impl.jdbcjobstore.JobStoreTX
+        driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+        tablePrefix: QRTZ_
+        isClustered: true
+        clusterCheckinInterval: 10000
+        useProperties: false
+      threadPool:
+        class: org.quartz.simpl.SimpleThreadPool
+        threadCount: 10
+        threadPriority: 5
+        threadInheritContextClassLoaderOfInitializingThread: true
+      job-store-type: jdbc
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: -1ms
+        min-idle: 0
+  sleuth:
+    sampler:
+      probability: 1
+  # rabbitmq:
+  #   host: localhost
+  #   port: 5672
+  #   username: admin
+  #   password: admin
+  #   publisher-confirms: true
+  #   publisher-returns: true
+  #   listener:
+  #     direct:
+  #       acknowledge-mode: manual
+  #     simple:
+  #       acknowledge-mode: manual
+
+
+server:
+  port: 8002
+  servlet:
+    session:
+      timeout: PT10S
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8001/eureka/eureka # 与Eureka server(注册中心)交互地址,查询Eureka服务的地址
+
+
+logging:
+  level:
+    root: DEBUG
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+# management: #开启SpringBoot Admin的监控
+#   endpoints:
+#     web:
+#       exposure:
+#         include: '*'
+#   endpoint:
+#     health:
+#       show-details: always
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS

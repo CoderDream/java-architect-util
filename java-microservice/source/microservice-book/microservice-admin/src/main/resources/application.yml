@@ -1,0 +1,8 @@
+server:
+  port: 8004
+  
+spring:
+  profiles: 
+    active: dev
+  application:
+    name: microservice-admin #服务名称:Admin server

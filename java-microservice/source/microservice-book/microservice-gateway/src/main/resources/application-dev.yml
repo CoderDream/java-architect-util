@@ -1,0 +1,6 @@
+spring:
+  profiles: dev
+eureka:
+  client: 
+    service-url: 
+      defaultZone: http://localhost:8001/eureka/eureka # 与Eureka server(注册中心)交互地址,查询Eureka服务的地址
