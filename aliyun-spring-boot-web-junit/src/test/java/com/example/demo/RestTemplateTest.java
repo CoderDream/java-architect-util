@@ -92,7 +92,7 @@ public class RestTemplateTest {
         String result = restTemplate.postForObject(uri, strEntity, String.class);
         // System.out.println(result);//运行方法，这里输出：
 
-        Map<String, Object> map = new HashMap<>(16);
+        Map<String, Object> map = new LinkedHashMap<>(16);
         ObjectMapper mapper = new ObjectMapper();
         map = mapper.readValue(result, map.getClass());
 
@@ -130,7 +130,7 @@ public class RestTemplateTest {
 //
 //        System.out.println(result);
 //
-//        Map<String, Object> map = new HashMap<>(16);
+//        Map<String, Object> map = new LinkedHashMap<>(16);
 //        ObjectMapper mapper = new ObjectMapper();
 //        map = mapper.readValue(result, map.getClass());
 //
@@ -169,7 +169,7 @@ public class RestTemplateTest {
         String result = restTemplate.postForObject(uri, strEntity, String.class);
         System.out.println(result);//运行方法，这里输出：
 
-        Map<String, Object> map = new HashMap<>(16);
+        Map<String, Object> map = new LinkedHashMap<>(16);
         ObjectMapper mapper = new ObjectMapper();
         map = mapper.readValue(result, map.getClass());
 
@@ -217,7 +217,7 @@ public class RestTemplateTest {
         String result = restTemplate.postForObject(uri, strEntity, String.class);
         System.out.println(result);//运行方法，这里输出：
 
-        Map<String, Object> map = new HashMap<>(16);
+        Map<String, Object> map = new LinkedHashMap<>(16);
         ObjectMapper mapper = new ObjectMapper();
         map = mapper.readValue(result, map.getClass());
 
@@ -266,7 +266,7 @@ public class RestTemplateTest {
         //     System.out.println(resultMap);
         String result = resultMap.getBody();
 
-        Map<String, Object> map = new HashMap<>(16);
+        Map<String, Object> map = new LinkedHashMap<>(16);
         ObjectMapper mapper = new ObjectMapper();
         map = mapper.readValue(result, map.getClass());
 
@@ -314,7 +314,7 @@ public class RestTemplateTest {
         //     System.out.println(resultMap);
         String result = resultMap.getBody();
 
-        Map<String, Object> map = new HashMap<>(16);
+        Map<String, Object> map = new LinkedHashMap<>(16);
         ObjectMapper mapper = new ObjectMapper();
         map = mapper.readValue(result, map.getClass());
 
@@ -360,7 +360,7 @@ public class RestTemplateTest {
         String result = restTemplate.postForObject(uri, strEntity, String.class);
         System.out.println(result);//运行方法，这里输出：
 
-        Map<String, Object> map = new HashMap<>(16);
+        Map<String, Object> map = new LinkedHashMap<>(16);
         ObjectMapper mapper = new ObjectMapper();
         map = mapper.readValue(result, map.getClass());
 
@@ -392,7 +392,7 @@ public class RestTemplateTest {
         System.out.println(resultMap);
         String result = resultMap.getBody();
 
-        Map<String, Object> map = new HashMap<>(16);
+        Map<String, Object> map = new LinkedHashMap<>(16);
         ObjectMapper mapper = new ObjectMapper();
         map = mapper.readValue(result, map.getClass());
 
@@ -442,7 +442,7 @@ public class RestTemplateTest {
         String result = restTemplate.postForObject(uri, strEntity, String.class);
         System.out.println(result);//运行方法，这里输出：
 
-        Map<String, Object> map = new HashMap<>(16);
+        Map<String, Object> map = new LinkedHashMap<>(16);
         ObjectMapper mapper = new ObjectMapper();
         map = mapper.readValue(result, map.getClass());
 
@@ -495,7 +495,7 @@ public class RestTemplateTest {
         //     System.out.println(resultMap);
         String result = resultMap.getBody();
 
-        Map<String, Object> map = new HashMap<>(16);
+        Map<String, Object> map = new LinkedHashMap<>(16);
         ObjectMapper mapper = new ObjectMapper();
         map = mapper.readValue(result, map.getClass());
 

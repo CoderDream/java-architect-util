@@ -82,7 +82,7 @@ public class BaseTest {
 
 
     public static void printResult(String result) throws JsonProcessingException {
-        Map<String, Object> map = new HashMap<>(16);
+        Map<String, Object> map = new LinkedHashMap<>(16);
         ObjectMapper mapper = new ObjectMapper();
         map = mapper.readValue(result, map.getClass());
 
@@ -110,7 +110,7 @@ public class BaseTest {
     }
 
     public static String getMessage(String result) throws JsonProcessingException {
-        Map<String, Object> map = new HashMap<>(16);
+        Map<String, Object> map = new LinkedHashMap<>(16);
         ObjectMapper mapper = new ObjectMapper();
         map = mapper.readValue(result, map.getClass());
 
@@ -124,7 +124,7 @@ public class BaseTest {
 
     public static Integer getId(String result) throws JsonProcessingException {
         Integer newId = null;
-        Map<String, Object> map = new HashMap<>(16);
+        Map<String, Object> map = new LinkedHashMap<>(16);
         ObjectMapper mapper = new ObjectMapper();
         map = mapper.readValue(result, map.getClass());
 
@@ -146,6 +146,20 @@ public class BaseTest {
         }
 
         return newId;
+    }
+
+    public static String getCode(String result)  {
+        Integer newId = null;
+        Map<String, Object> map = new LinkedHashMap<>(16);
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            map = mapper.readValue(result, map.getClass());
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
+        }
+
+        //获取 msg
+        return (String) map.get("msg");
     }
 
 
