@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-28T03:26:22.035Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="vF7UgBXc7h0OmyTnBarq" version="20.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-28T03:31:42.956Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="RffJxkVVFciMxOllqOPV" version="20.2.7" type="github">
   <diagram id="1CONTttXrJL3eCz_d6RR" name="第 1 页">
     <mxGraphModel dx="868" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -71,17 +71,17 @@
         <mxCell id="sJzGx4FhJefqnYnKV2_w-20" value="生成最新编码&lt;br&gt;新增&lt;br&gt;查询&lt;br&gt;更新&lt;br&gt;删除&lt;br&gt;批量删除" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="310" y="450" width="120" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="sJzGx4FhJefqnYnKV2_w-21" value="生成最新编码&lt;br&gt;新增&lt;br&gt;查询&lt;br&gt;更新&lt;br&gt;删除&lt;br&gt;批量删除" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="470" y="450" width="120" height="90" as="geometry" />
+        <mxCell id="sJzGx4FhJefqnYnKV2_w-21" value="生成最新编码&lt;br&gt;新增&lt;br&gt;查询&lt;br&gt;获取对象元数据树&lt;br&gt;更新&lt;br&gt;删除&lt;br&gt;批量删除" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="450" width="120" height="110" as="geometry" />
         </mxCell>
         <mxCell id="sJzGx4FhJefqnYnKV2_w-22" value="生成最新编码&lt;br&gt;新增&lt;br&gt;查询&lt;br&gt;更新&lt;br&gt;删除&lt;br&gt;批量删除" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="630" y="450" width="120" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="sJzGx4FhJefqnYnKV2_w-23" value="生成最新编码&lt;br&gt;新增&lt;br&gt;查询&lt;br&gt;更新&lt;br&gt;删除&lt;br&gt;批量删除" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="780" y="450" width="120" height="90" as="geometry" />
+        <mxCell id="sJzGx4FhJefqnYnKV2_w-23" value="生成最新编码&lt;br&gt;新增&lt;br&gt;查询&lt;br&gt;获取属性类列表&lt;br&gt;更新&lt;br&gt;删除&lt;br&gt;批量删除" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="450" width="130" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="sJzGx4FhJefqnYnKV2_w-24" value="生成最新编码&lt;br&gt;新增&lt;br&gt;查询&lt;br&gt;更新&lt;br&gt;删除&lt;br&gt;批量删除" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="930" y="450" width="120" height="90" as="geometry" />
+        <mxCell id="sJzGx4FhJefqnYnKV2_w-24" value="生成最新编码&lt;br&gt;新增&lt;br&gt;查询&lt;br&gt;获取属性元数据树&lt;br&gt;更新&lt;br&gt;删除&lt;br&gt;批量删除" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="450" width="120" height="110" as="geometry" />
         </mxCell>
         <mxCell id="sJzGx4FhJefqnYnKV2_w-25" value="生成最新编码&lt;br&gt;新增&lt;br&gt;查询&lt;br&gt;更新&lt;br&gt;删除&lt;br&gt;批量删除" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1080" y="450" width="120" height="90" as="geometry" />
