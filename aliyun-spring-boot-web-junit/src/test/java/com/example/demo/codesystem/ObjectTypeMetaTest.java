@@ -12,10 +12,7 @@ import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.Arrays;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @TestPropertySource("classpath:application.properties")  //你的配置文件
@@ -52,7 +49,7 @@ public class ObjectTypeMetaTest extends BaseTest {
         body = JSONObject.toJSONString(bodyMap);
         System.out.println("body: " + body);
         // 增
-        result = postForObject(restTemplate, URI +"add", body);
+        result = postForObject(restTemplate, URI + "add", body);
         printResult(result);
 
         // 查
@@ -62,7 +59,7 @@ public class ObjectTypeMetaTest extends BaseTest {
         queryBodyMap.put("objectTypeFullCode", objectTypeFullCode);
 
         body = JSONObject.toJSONString(queryBodyMap);
-        result = postForObject(restTemplate, URI +"list", body);
+        result = postForObject(restTemplate, URI + "list", body);
         printResult(result);
 
         Map<String, Object> map = new LinkedHashMap<>(16);
@@ -104,12 +101,11 @@ public class ObjectTypeMetaTest extends BaseTest {
             deleteBodyMap.put("id", id);
             deleteBodyMap.put("objectTypeFullCode", objectTypeFullCode);
             body = JSONObject.toJSONString(deleteBodyMap);
-            result = postForObject(restTemplate, URI +"delete", body);
+            result = postForObject(restTemplate, URI + "delete", body);
             System.out.println(result);//运行方法，这里输出：
             System.out.println("删除成功：" + id);
         }
     }
-
 
 
     @Test
@@ -135,7 +131,7 @@ public class ObjectTypeMetaTest extends BaseTest {
         body = JSONObject.toJSONString(bodyMap);
         System.out.println("body: " + body);
         // 增
-        result = postForObject(restTemplate, URI +"add", body);
+        result = postForObject(restTemplate, URI + "add", body);
         printResult(result);
 
         // 查
@@ -145,10 +141,23 @@ public class ObjectTypeMetaTest extends BaseTest {
         queryBodyMap.put("objectTypeFullCode", objectTypeFullCode);
 
         body = JSONObject.toJSONString(queryBodyMap);
-        result = postForObject(restTemplate, URI +"list", body);
+        result = postForObject(restTemplate, URI + "list", body);
         System.out.println(result);
     }
 
+    @Test
+    public void testList_01() throws Exception {
+        RestTemplate restTemplate = new RestTemplate();
+        String result = "";
+        Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
+        String body;
+
+        // 查
+        Map<String, Object> queryBodyMap = new LinkedHashMap<>();
+        body = JSONObject.toJSONString(queryBodyMap);
+        result = postForObject(restTemplate, URI + "list", body);
+        System.out.println("list: " + result);
+    }
 
     @Test
     public void testRUD_01() throws Exception {
@@ -224,7 +233,7 @@ public class ObjectTypeMetaTest extends BaseTest {
             Map<String, Object> deleteBodyMap = new LinkedHashMap<>();
             deleteBodyMap.put("id", id);
             body = JSONObject.toJSONString(deleteBodyMap);
-            result = postForObject(restTemplate, URI +"delete", body);
+            result = postForObject(restTemplate, URI + "delete", body);
             System.out.println(result);//运行方法，这里输出：
             printResult(result);
             System.out.println("删除成功：" + id);
@@ -265,7 +274,7 @@ public class ObjectTypeMetaTest extends BaseTest {
         String body = JSONObject.toJSONString(bodyMap);
         System.out.println("body: " + body);
         // 查
-        result = postForObject(restTemplate, URI +"listAttrs", body);
+        result = postForObject(restTemplate, URI + "listAttrs", body);
         System.out.println(result);
     }
 
@@ -279,7 +288,7 @@ public class ObjectTypeMetaTest extends BaseTest {
         String body = JSONObject.toJSONString(bodyMap);
         System.out.println("body: " + body);
         // 增
-        result = postForObject(restTemplate, URI +"genCode", body);
+        result = postForObject(restTemplate, URI + "genCode", body);
         System.out.println(result);
         printResult(result);
     }
@@ -305,5 +314,89 @@ public class ObjectTypeMetaTest extends BaseTest {
         result = postForObject(restTemplate, URI + "genCode", body);
         System.out.println(getCode(result));
     }
+
+    @Test
+    public void testDeleteInBatches_01() throws Exception {
+        RestTemplate restTemplate = new RestTemplate();
+        String result = "";
+        Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
+        String body = JSONObject.toJSONString(bodyMap);
+        System.out.println(body);
+        result = postForObject(restTemplate, URI + "genCode", body);
+        Integer[] ids = new Integer[2];
+        String[] objectTypeFullCodes = new String[2];
+        String code = getCode(result);
+        String objectTypeName = "新测试对象类型" + code;
+        String objectTypeLabel = "CCC_OBJECT_TYPE_A";
+        String objectTypeCode = code;
+        String objectTypeFullCode1 = code + " 0000 0 0 00 00";
+        objectTypeFullCodes[0] = objectTypeFullCode1;
+        bodyMap.put("objectTypeName", objectTypeName);
+        bodyMap.put("objectTypeLabel", objectTypeLabel);
+        bodyMap.put("objectTypeCode", objectTypeCode);
+        bodyMap.put("objectTypeFullCode", objectTypeFullCode1);
+        bodyMap.put("remark", "测试对象类型描述" + code);
+
+        body = JSONObject.toJSONString(bodyMap);
+        System.out.println("body: " + body);
+        // 增
+        result = postForObject(restTemplate, URI + "add", body);
+
+        // 再次获取新code
+        result = postForObject(restTemplate, URI + "genCode", body);
+        code = getCode(result);
+        objectTypeName = "新测试对象类型" + code;
+        String objectTypeLabel2 = "CCC_OBJECT_TYPE_B";
+        objectTypeCode = code;
+        String objectTypeFullCode2 = code + " 0000 0 0 00 00";
+        objectTypeFullCodes[1] = objectTypeFullCode2;
+        bodyMap.put("objectTypeName", objectTypeName);
+        bodyMap.put("objectTypeLabel", objectTypeLabel2);
+        bodyMap.put("objectTypeCode", objectTypeCode);
+        bodyMap.put("objectTypeFullCode", objectTypeFullCode2);
+        bodyMap.put("remark", "测试对象类型描述" + code);
+
+        body = JSONObject.toJSONString(bodyMap);
+        System.out.println("body: " + body);
+
+        // 增
+        result = postForObject(restTemplate, URI + "add", body);
+
+        // 查
+        Map<String, Object> queryBodyMap = new LinkedHashMap<>();
+        queryBodyMap.put("current", 1);
+        queryBodyMap.put("size", 20);
+        queryBodyMap.put("objectTypeFullCode", objectTypeFullCode1);
+
+        body = JSONObject.toJSONString(queryBodyMap);
+        result = postForObject(restTemplate, URI +"list", body);
+        ids[0] = getId(result);
+
+        queryBodyMap.put("current", 1);
+        queryBodyMap.put("size", 20);
+        queryBodyMap.put("objectTypeFullCode", objectTypeFullCode2);
+
+        body = JSONObject.toJSONString(queryBodyMap);
+        result = postForObject(restTemplate, URI +"list", body);
+        ids[1] = getId(result);
+
+        Map<String, Object> tempMap1 = new LinkedHashMap<>();
+        Map<String, Object> tempMap2 = new LinkedHashMap<>();
+        List<Map<String, Object>> deleteList = new ArrayList<>();
+        if (ids[0] != null && ids[1] != null && ids[0] != 0 && ids[1] != 0) {
+            tempMap1.put("id", ids[0]);
+            tempMap1.put("objectTypeFullCode", objectTypeFullCodes[0]);
+            deleteList.add(tempMap1);
+            tempMap2.put("id", ids[1]);
+            tempMap2.put("objectTypeFullCode", objectTypeFullCodes[1]);
+            deleteList.add(tempMap2);
+
+            body = JSONObject.toJSONString(deleteList);
+            System.out.println(body);
+            result = postForObject(restTemplate, URI + "deleteInBatches", body);
+            System.out.println(result);//运行方法，这里输出：
+        }
+    }
+
 
 }

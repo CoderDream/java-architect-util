@@ -1,19 +1,11 @@
-package com.example.demo;
+package com.example.demo.dataplatform;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Ignore;
+import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.*;
@@ -26,31 +18,45 @@ import java.util.*;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @TestPropertySource("classpath:application.properties")  //你的配置文件
-@SpringBootTest(classes = {RestTemplateTest.class}) //测试的class
-@ContextConfiguration(classes = RestTemplateTest.class)
-public class RestTemplateTest {
-
+@SpringBootTest(classes = {DataBaseTest.class}) //测试的class
+@ContextConfiguration(classes = DataBaseTest.class)
+public class DataBaseTest {
     @Value("${env}")
-    private String env;
+    public String env;
 
-    private String token;
-
-    private String secret;
-
-    private String URI_PREFIX;
+    public String URI_PREFIX;
 
     /**
      * admin Service
      */
-    private String ADMIN_PORT;
+    public String ADMIN_PORT;
 
-    private String BUS_PORT;
-    ;
+    public String BUS_PORT;
 
     /**
      * Data Service Port
      */
-    private String DS_PORT;
+    public String DS_PORT;
+
+    /**
+     * Business Service Port
+     */
+    public String BS_PORT;
+
+    /**
+     * URI
+     */
+    public String URI;
+
+    /**
+     * token
+     */
+    public String token;
+
+    /**
+     * secret
+     */
+    public String secret;
 
     @Before
     public void init() throws JsonProcessingException {
@@ -60,12 +66,27 @@ public class RestTemplateTest {
                 ADMIN_PORT = "9085";
                 BUS_PORT = "9086";
                 DS_PORT = "7080";
+                BS_PORT = "9085";
+                break;
+            case "local_home":
+                URI_PREFIX = "http://192.168.3.85:";
+                ADMIN_PORT = "9085";
+                BUS_PORT = "9086";
+                DS_PORT = "7080";
+                BS_PORT = "9085";
                 break;
             case "sit":
                 URI_PREFIX = "http://172.16.104.61:";
                 ADMIN_PORT = "30572";
                 BUS_PORT = "30965";
                 DS_PORT = "7080";
+                break;
+            case "so-sit":
+                URI_PREFIX = "http://172.16.104.131:";
+                ADMIN_PORT = "30572";
+                BUS_PORT = "32355";
+                DS_PORT = "7080";
+                BS_PORT = "32355";
                 break;
             case "nas":
                 URI_PREFIX = "http://27.19.125.63:";
@@ -78,8 +99,8 @@ public class RestTemplateTest {
         final String uri = URI_PREFIX + ADMIN_PORT + "/api/data/sys/login";
 
         RestTemplate restTemplate = new RestTemplate();
-
-        String user = "{\"uuid\":\"5ff4a5eb88314323aaedc37978239c38\",\"password\":\"c0e0857806d4fb4769bd4d9f501dbe6d\",\"username\":\"xulin\",\"code\":\"4\"}";//实例请求参数
+        // {"username":"xulin12345","password":"7191fb545e1f2de334fe8d38d5af905e","code":"0","uuid":"9dfb4a766f26425aa94118c92820ee0d"}
+        String user = "{\"uuid\":\"5ff4a5eb88314323aaedc37978239c38\",\"password\":\"7191fb545e1f2de334fe8d38d5af905e\",\"username\":\"xulin12345\",\"code\":\"4\"}";//实例请求参数
         HttpHeaders headers = new HttpHeaders();//创建一个头部对象
         //设置contentType 防止中文乱码
         headers.setContentType(MediaType.valueOf("application/json; charset=UTF-8"));
@@ -166,6 +187,7 @@ public class RestTemplateTest {
         HttpEntity<String> strEntity = new HttpEntity<String>(user, headers);
         //使用post方法提交请求，第一参数为url,第二个参数为我们的请求信息,第三个参数为我们的相应放回数据类型，与String result对厅
         //完整的方法签名为：postForObject(String url, Object request, Class<String> responseType, Object... uriVariables) ，最后的uriVariables用来拓展我们的请求参数内容。
+        System.out.println(uri);
         String result = restTemplate.postForObject(uri, strEntity, String.class);
         System.out.println(result);//运行方法，这里输出：
 
@@ -252,15 +274,7 @@ public class RestTemplateTest {
         // final String uri = URI_PREFIX + "9519/api/data/ds/app/findData?userId=admin";
         final String uri = URI_PREFIX + "9519/api/data/ds/app/findData?userId=xulin";
 
-        RestTemplate restTemplate = new RestTemplate();
-
-        HttpHeaders headers = new HttpHeaders();
-        headers.add("secret", secret);
-        headers.add("token", token);
-        headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
-        HttpEntity<String> entity = new HttpEntity<String>("parameters", headers);
-
-        ResponseEntity<String> resultMap = restTemplate.exchange(uri, HttpMethod.GET, entity, String.class);
+        ResponseEntity<String> resultMap = process(uri);
 
 
         //     System.out.println(resultMap);
@@ -294,12 +308,7 @@ public class RestTemplateTest {
         }
     }
 
-    @Test
-    public void testFindParam() throws Exception {
-        System.out.println("testFindParam");
-        // final String uri = URI_PREFIX + "9519/api/data/ds/app/findData?userId=admin";
-        final String uri = URI_PREFIX + "9086/api/data/bus/svbas/findParam?subId=366";
-
+    private ResponseEntity<String> process(String uri) {
         RestTemplate restTemplate = new RestTemplate();
 
         HttpHeaders headers = new HttpHeaders();
@@ -309,6 +318,16 @@ public class RestTemplateTest {
         HttpEntity<String> entity = new HttpEntity<String>("parameters", headers);
 
         ResponseEntity<String> resultMap = restTemplate.exchange(uri, HttpMethod.GET, entity, String.class);
+        return resultMap;
+    }
+
+    @Test
+    public void testFindParam() throws Exception {
+        System.out.println("testFindParam");
+        // final String uri = URI_PREFIX + "9519/api/data/ds/app/findData?userId=admin";
+        final String uri = URI_PREFIX + "9086/api/data/bus/svbas/findParam?subId=366";
+
+        ResponseEntity<String> resultMap = process(uri);
 
 
         //     System.out.println(resultMap);
@@ -379,15 +398,7 @@ public class RestTemplateTest {
         //final String uri = URI_PREFIX + "9086/api/data/bus/attdtdb/getTbFieldInfo?id=7&tbName=asset_catalog";
         final String uri = URI_PREFIX + BUS_PORT + "/api/data/bus/attdtdb/getTbFieldInfo?id=7&tbName=asset_catalog";
 
-        RestTemplate restTemplate = new RestTemplate();
-
-        HttpHeaders headers = new HttpHeaders();
-        headers.add("secret", secret);
-        headers.add("token", token);
-        headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
-        HttpEntity<String> entity = new HttpEntity<String>("parameters", headers);
-
-        ResponseEntity<String> resultMap = restTemplate.exchange(uri, HttpMethod.GET, entity, String.class);
+        ResponseEntity<String> resultMap = process(uri);
 
         System.out.println(resultMap);
         String result = resultMap.getBody();
@@ -489,7 +500,6 @@ public class RestTemplateTest {
         headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
         HttpEntity<String> entity = new HttpEntity<String>("parameters", headers);
 
-
         ResponseEntity<String> resultMap = restTemplate.exchange(uri, HttpMethod.GET, entity, String.class);
 
 
@@ -534,6 +544,42 @@ public class RestTemplateTest {
 //        //获取 token
 //        String token = (String) dataMap.get("token");
 //        System.out.println(token);
+    }
+
+    public String postForObject(RestTemplate restTemplate, String uri, String body) {
+        HttpHeaders headers = new HttpHeaders();//创建一个头部对象
+        //设置contentType 防止中文乱码
+        headers.setContentType(MediaType.valueOf("application/json; charset=UTF-8"));
+        headers.add("Accept", MediaType.APPLICATION_JSON.toString()); // TODO
+        headers.add("secret", secret);
+        headers.add("token", token);
+        headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
+
+
+        //设置我们的请求信息，第一个参数为请求Body,第二个参数为请求头信息
+        //完整的方法签名为：HttpEntity<String>(String body, MultiValueMap<String, String> headers)
+        HttpEntity<String> strEntity = new HttpEntity<>(body, headers);
+        //使用post方法提交请求，第一参数为url,第二个参数为我们的请求信息,第三个参数为我们的相应放回数据类型，与String result对厅
+        //完整的方法签名为：postForObject(String url, Object request, Class<String> responseType, Object... uriVariables) ，最后的uriVariables用来拓展我们的请求参数内容。
+        return restTemplate.postForObject(uri, strEntity, String.class);
+    }
+
+    public String getForObject(RestTemplate restTemplate, String uri, String body) {
+        HttpHeaders headers = new HttpHeaders();
+        headers.add("secret", secret);
+        headers.add("token", token);
+        headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
+
+        HttpEntity<String> entity = new HttpEntity<String>(body, headers);
+
+        ResponseEntity<String> resultMap = restTemplate.exchange(uri, HttpMethod.GET, entity, String.class);
+        return resultMap.getBody();
+    }
+
+    @Test
+    // @Ignore
+    public void testGetSecretAndToken_01() throws Exception {
+        System.out.println("login_tokens:" + secret + ":" + token);
     }
 
 }

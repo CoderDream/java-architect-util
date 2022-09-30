@@ -166,6 +166,41 @@ public class AttrTypeMetaTest extends BaseTest {
     }
 
     @Test
+    public void testList_01() throws Exception {
+        RestTemplate restTemplate = new RestTemplate();
+        String result = "";
+        Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
+        String body;
+
+        // 查
+        Map<String, Object> queryBodyMap = new LinkedHashMap<>();
+        body = JSONObject.toJSONString(queryBodyMap);
+        result = postForObject(restTemplate, URI +"list", body);
+        System.out.println(result);
+    }
+
+//    {"structureTypeName":"B","objectTypeFullCode":"14 0000 0 00 00 00"}
+
+    @Test
+    public void testList_03() throws Exception {
+        RestTemplate restTemplate = new RestTemplate();
+        String result = "";
+        Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
+        String body;
+
+        // 查 "{\"structureTypeName\":\"B\",\"objectTypeFullCode\":\"14 0000 0 00 00 00\"}"; //
+        Map<String, Object> queryBodyMap = new LinkedHashMap<>();
+        String objectTypeFullCode = "17 0000 0 00 00 00";
+        String structureTypeName = "B";
+        queryBodyMap.put("objectTypeFullCode", objectTypeFullCode);
+        queryBodyMap.put("structureTypeName", structureTypeName);
+
+        body = JSONObject.toJSONString(queryBodyMap);
+        result = postForObject(restTemplate, URI +"list", body);
+        System.out.println(result);
+    }
+
+    @Test
     public void testGenCode_01() {
         String result = "";
         String structureTypeCode = "B";

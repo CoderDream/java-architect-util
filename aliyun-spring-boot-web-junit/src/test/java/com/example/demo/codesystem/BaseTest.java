@@ -29,12 +29,16 @@ public class BaseTest {
      */
     public String DS_PORT;
 
-
     /**
      * Business Service Port
      */
     public String BS_PORT;
 
+
+    /**
+     * Object Data Service Port
+     */
+    public String OBJECT_DATA_PORT;
 
     /**
      * URI
@@ -50,6 +54,7 @@ public class BaseTest {
                 BUS_PORT = "9086";
                 DS_PORT = "7080";
                 BS_PORT = "9085";
+                OBJECT_DATA_PORT = "9099";
                 break;
             case "local_home":
                 URI_PREFIX = "http://192.168.3.85:";
@@ -57,12 +62,14 @@ public class BaseTest {
                 BUS_PORT = "9086";
                 DS_PORT = "7080";
                 BS_PORT = "9085";
+                OBJECT_DATA_PORT = "9099";
                 break;
             case "sit":
                 URI_PREFIX = "http://172.16.104.61:";
                 ADMIN_PORT = "30572";
                 BUS_PORT = "30965";
                 DS_PORT = "7080";
+                OBJECT_DATA_PORT = "9099";
                 break;
             case "so-sit":
                 URI_PREFIX = "http://172.16.104.131:";
@@ -70,12 +77,14 @@ public class BaseTest {
                 BUS_PORT = "32355";
                 DS_PORT = "7080";
                 BS_PORT = "32355";
+                OBJECT_DATA_PORT = "30417"; // http://172.16.104.131:30417/
                 break;
             case "nas":
                 URI_PREFIX = "http://27.19.125.63:";
                 ADMIN_PORT = "30572";
                 BUS_PORT = "30965";
                 DS_PORT = "7080";
+                OBJECT_DATA_PORT = "9099";
                 break;
         }
     }

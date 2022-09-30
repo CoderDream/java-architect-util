@@ -244,6 +244,20 @@ public class AttrMetaTest extends BaseTest {
         System.out.println("body: " + result);
     }
 
+    @Test
+    public void testList_02() throws Exception {
+        RestTemplate restTemplate = new RestTemplate();
+        String result = "";
+        Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
+        String body;
+
+        // 查
+        Map<String, Object> queryBodyMap = new LinkedHashMap<>();
+        body = JSONObject.toJSONString(queryBodyMap);
+        result = postForObject(restTemplate, URI +"list", body);
+        System.out.println(result);
+    }
+
     /**
      * 基础属性
      *
