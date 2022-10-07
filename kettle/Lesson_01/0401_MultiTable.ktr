@@ -436,8 +436,8 @@
   <notepads>
   </notepads>
   <connection>
-    <name>testA</name>
-    <server>171.113.161.31</server>
+    <name>testA-171.113.161.31</name>
+    <server>${TO_HOST}</server>
     <type>MYSQL</type>
     <access>Native</access>
     <database>testa</database>
@@ -573,7 +573,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>testA</connection>
+    <connection>testA-171.113.161.31</connection>
     <sql>SELECT *
 FROM testa.`order`
 </sql>
@@ -679,7 +679,7 @@ FROM testa.`order`
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>testA</connection>
+    <connection>testA-171.113.161.31</connection>
     <cache>N</cache>
     <cache_load_all>N</cache_load_all>
     <cache_size>0</cache_size>
@@ -739,7 +739,7 @@ FROM testa.`order`
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>testA</connection>
+    <connection>testA-171.113.161.31</connection>
     <cache>N</cache>
     <cache_load_all>N</cache_load_all>
     <cache_size>0</cache_size>
