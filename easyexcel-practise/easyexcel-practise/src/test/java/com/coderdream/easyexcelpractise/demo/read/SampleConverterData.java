@@ -1,0 +1,122 @@
+package com.coderdream.easyexcelpractise.demo.read;
+
+import com.alibaba.excel.annotation.ExcelProperty;
+import com.alibaba.excel.annotation.format.DateTimeFormat;
+import com.alibaba.excel.annotation.format.NumberFormat;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.math.BigDecimal;
+import java.util.Date;
+
+/**
+ * 基础数据类.这里的排序和excel里面的排序一致
+ *
+ * @author Jiaju Zhuang
+ **/
+@Getter
+@Setter
+@EqualsAndHashCode
+public class SampleConverterData {
+//    /**
+//     * 我自定义 转换器，不管数据库传过来什么 。我给他加上“自定义：”
+//     */
+//    @ExcelProperty(converter = CustomStringStringConverter.class)
+//    private String string;
+//    /**
+//     * 这里用 String 去接日期才能格式化。我想接收年月日格式
+//     */
+//    @DateTimeFormat("yyyy年MM月dd日HH时mm分ss秒")
+//    private String date;
+//    /**
+//     * 我想接收百分比的数字
+//     */
+//    @NumberFormat("#.##")
+//    private String doubleData;
+
+
+
+    /**
+     * 编号
+     */
+    private String senid;
+
+    /**
+     * 数据时间
+     */
+    @DateTimeFormat("yyyy年MM月dd日HH时mm分ss秒")
+    private String time;
+
+    /**
+     * 流量值
+     */
+    @NumberFormat("#.###")
+    private String v;
+
+    /**
+     * 流量平均值
+     */
+    @NumberFormat("#.###")
+    private String avgv;
+
+    /**
+     * 流量最大值
+     */
+    @NumberFormat("#.###")
+    private String maxv;
+
+    /**
+     * 流量最大值发生时间
+     */
+    @DateTimeFormat("yyyy年MM月dd日HH时mm分ss秒")
+    private String maxt;
+
+    /**
+     * 流量最小值
+     */
+    @NumberFormat("#.###")
+    private String minv;
+
+    /**
+     * 流量最小值发生时间
+     */
+    @DateTimeFormat("yyyy年MM月dd日HH时mm分ss秒")
+    private String mint;
+
+    /**
+     * s
+     */
+    @NumberFormat("#.###")
+    private String s;
+
+    /**
+     * avgs
+     */
+    @NumberFormat("#.###")
+    private String avgs;
+
+    /**
+     * maxs
+     */
+    @NumberFormat("#.###")
+    private String maxs;
+
+    /**
+     * mins
+     */
+    @NumberFormat("#.###")
+    private String mins;
+
+    /**
+     * span
+     */
+    @NumberFormat("#.###")
+    private String span;
+
+    /**
+     * dq
+     */
+    @NumberFormat("#.###")
+    private String dq;
+}

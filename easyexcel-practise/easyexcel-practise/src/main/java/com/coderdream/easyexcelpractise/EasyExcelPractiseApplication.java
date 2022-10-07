@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EasyexcelPractiseApplication {
+public class EasyExcelPractiseApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EasyexcelPractiseApplication.class, args);
+        SpringApplication.run(EasyExcelPractiseApplication.class, args);
     }
 
 }

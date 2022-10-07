@@ -109,6 +109,75 @@ public class ReadTest {
         }
     }
 
+    @Test
+    public void simpleRead_02() { //  TODO
+        String excelFileName = "葛洲坝大江8F机组有功.xlsx";
+        // 写法1：JDK8+ ,不用额外写一个DemoDataListener
+        // since: 3.0.0-beta1
+        String fileName = TestFileUtil.getPath() + "demo" + File.separator + excelFileName;
+        // 这里 需要指定读用哪个class去读，然后读取第一个sheet 文件流会自动关闭
+        // 这里每次会读取100条数据 然后返回过来 直接调用使用数据就行
+        EasyExcel.read(fileName, SampleData.class, new PageReadListener<SampleData>(dataList -> {
+            for (SampleData demoData : dataList) {
+                log.info("读取到一条数据{}", JSON.toJSONString(demoData));
+            }
+        })).sheet().doRead();
+
+        // 写法2：
+        // 匿名内部类 不用额外写一个DemoDataListener
+        fileName = TestFileUtil.getPath() + "demo" + File.separator + excelFileName;
+        // 这里 需要指定读用哪个class去读，然后读取第一个sheet 文件流会自动关闭
+        EasyExcel.read(fileName, SampleData.class, new ReadListener<SampleData>() {
+            /**
+             * 单次缓存的数据量
+             */
+            public static final int BATCH_COUNT = 100;
+            /**
+             *临时存储
+             */
+            private List<SampleData> cachedDataList = ListUtils.newArrayListWithExpectedSize(BATCH_COUNT);
+
+            @Override
+            public void invoke(SampleData data, AnalysisContext context) {
+                cachedDataList.add(data);
+                if (cachedDataList.size() >= BATCH_COUNT) {
+                    saveData();
+                    // 存储完成清理 list
+                    cachedDataList = ListUtils.newArrayListWithExpectedSize(BATCH_COUNT);
+                }
+            }
+
+            @Override
+            public void doAfterAllAnalysed(AnalysisContext context) {
+                saveData();
+            }
+
+            /**
+             * 加上存储数据库
+             */
+            private void saveData() {
+                log.info("{}条数据，开始存储数据库！", cachedDataList.size());
+                log.info("存储数据库成功！");
+            }
+        }).sheet().doRead();
+
+        // 有个很重要的点 DemoDataListener 不能被spring管理，要每次读取excel都要new,然后里面用到spring可以构造方法传进去
+        // 写法3：
+        fileName = TestFileUtil.getPath() + "demo" + File.separator + excelFileName;
+        // 这里 需要指定读用哪个class去读，然后读取第一个sheet 文件流会自动关闭
+        EasyExcel.read(fileName, SampleData.class, new SampleDataListener()).sheet().doRead();
+
+        // 写法4
+        fileName = TestFileUtil.getPath() + "demo" + File.separator + excelFileName;
+        // 一个文件一个reader
+        try (ExcelReader excelReader = EasyExcel.read(fileName, SampleData.class, new SampleDataListener()).build()) {
+            // 构建一个sheet 这里可以指定名字或者no
+            ReadSheet readSheet = EasyExcel.readSheet(0).build();
+            // 读取一个sheet
+            excelReader.read(readSheet);
+        }
+    }
+
     /**
      * 指定列的下标或者列名
      *
@@ -173,6 +242,30 @@ public class ReadTest {
         String fileName = TestFileUtil.getPath() + "demo" + File.separator + "demo.xlsx";
         // 这里 需要指定读用哪个class去读，然后读取第一个sheet
         EasyExcel.read(fileName, ConverterData.class, new ConverterDataListener())
+                // 这里注意 我们也可以registerConverter来指定自定义转换器， 但是这个转换变成全局了， 所有java为string,excel为string的都会用这个转换器。
+                // 如果就想单个字段使用请使用@ExcelProperty 指定converter
+                // .registerConverter(new CustomStringStringConverter())
+                // 读取sheet
+                .sheet().doRead();
+    }
+
+    @Test
+    public void converterRead_02() {
+        String fileName = TestFileUtil.getPath() + "demo" + File.separator + "葛洲坝大江8F机组有功.xlsx";
+        // 这里 需要指定读用哪个class去读，然后读取第一个sheet
+        EasyExcel.read(fileName, SampleConverterData.class, new SampleConverterDataListener())
+                // 这里注意 我们也可以registerConverter来指定自定义转换器， 但是这个转换变成全局了， 所有java为string,excel为string的都会用这个转换器。
+                // 如果就想单个字段使用请使用@ExcelProperty 指定converter
+                // .registerConverter(new CustomStringStringConverter())
+                // 读取sheet
+                .sheet().doRead();
+    }
+
+    @Test
+    public void converterRead_03() {
+        String fileName = TestFileUtil.getPath() + "demo" + File.separator + "白鹤滩发电流量.xlsx";
+        // 这里 需要指定读用哪个class去读，然后读取第一个sheet
+        EasyExcel.read(fileName, SampleConverterData.class, new SampleConverterDataListener())
                 // 这里注意 我们也可以registerConverter来指定自定义转换器， 但是这个转换变成全局了， 所有java为string,excel为string的都会用这个转换器。
                 // 如果就想单个字段使用请使用@ExcelProperty 指定converter
                 // .registerConverter(new CustomStringStringConverter())
@@ -262,6 +355,23 @@ public class ReadTest {
         // 这里 需要指定读用哪个class去读，然后读取第一个sheet
         EasyExcel.read(fileName, CellDataReadDemoData.class, new CellDataDemoHeadDataListener()).sheet().doRead();
     }
+    //
+
+    /**
+     * TODO
+     */
+    @Test
+    public void cellDataRead_02() {
+        String fileName = TestFileUtil.getPath() + "demo" + File.separator + "葛洲坝大江8F机组有功.xlsx";
+        // 这里 需要指定读用哪个class去读，然后读取第一个sheet
+//        EasyExcel.read(fileName, SampleCellDataReadDemoData.class, new SampleCellDataDemoHeadDataListener()).sheet().doRead();
+
+        List<SampleCellDataReadDemoData> result = EasyExcel.read(fileName, SampleCellDataReadDemoData.class, new SampleCellDataDemoHeadDataListener()).sheet().doReadSync();
+        for (SampleCellDataReadDemoData sampleCellDataReadDemoData: result) {
+            System.out.println(sampleCellDataReadDemoData);
+        }
+
+    }
 
     /**
      * 数据转换等异常处理
@@ -306,6 +416,16 @@ public class ReadTest {
     @Test
     public void noModelRead() {
         String fileName = TestFileUtil.getPath() + "demo" + File.separator + "demo.xlsx";
+        // 这里 只要，然后读取第一个sheet 同步读取会自动finish
+        EasyExcel.read(fileName, new NoModelDataListener()).sheet().doRead();
+    }
+
+    /**
+     * 不创建对象的读
+     */
+    @Test
+    public void noModelRead_02() {
+        String fileName = TestFileUtil.getPath() + "demo" + File.separator + "白鹤滩发电流量.xlsx";
         // 这里 只要，然后读取第一个sheet 同步读取会自动finish
         EasyExcel.read(fileName, new NoModelDataListener()).sheet().doRead();
     }
