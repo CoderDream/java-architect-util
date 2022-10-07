@@ -4,8 +4,10 @@ import com.alibaba.excel.context.AnalysisContext;
 import com.alibaba.excel.read.listener.ReadListener;
 import com.alibaba.excel.util.ListUtils;
 import com.alibaba.fastjson.JSON;
+import com.coderdream.easyexcelpractise.mapper.SampleMapper;
 import lombok.extern.slf4j.Slf4j;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -15,6 +17,10 @@ import java.util.List;
  */
 @Slf4j
 public class SampleCellDataDemoHeadDataListener implements ReadListener<SampleCellDataReadDemoData> {
+
+    @Resource
+    private SampleMapper sampleMapper;
+
     /**
      * 每隔5条存储数据库，实际使用中可以100条，然后清理list ，方便内存回收
      */
@@ -24,10 +30,12 @@ public class SampleCellDataDemoHeadDataListener implements ReadListener<SampleCe
 
     @Override
     public void invoke(SampleCellDataReadDemoData data, AnalysisContext context) {
-        log.info("解析到一条数据:{}", JSON.toJSONString(data));
+//        log.info("解析到一条数据:{}", JSON.toJSONString(data));
         if (cachedDataList.size() >= BATCH_COUNT) {
             saveData();
             cachedDataList = ListUtils.newArrayListWithExpectedSize(BATCH_COUNT);
+        } else {
+            cachedDataList.add(data);
         }
     }
 

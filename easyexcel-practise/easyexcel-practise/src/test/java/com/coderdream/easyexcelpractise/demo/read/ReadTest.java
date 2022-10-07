@@ -1,8 +1,13 @@
 package com.coderdream.easyexcelpractise.demo.read;
 
 import java.io.File;
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import com.alibaba.excel.EasyExcel;
 import com.alibaba.excel.ExcelReader;
@@ -18,10 +23,15 @@ import com.alibaba.excel.read.metadata.ReadSheet;
 import com.alibaba.excel.util.ListUtils;
 import com.alibaba.fastjson.JSON;
 
+import com.coderdream.easyexcelpractise.entity.SampleEntity;
+import com.coderdream.easyexcelpractise.mapper.SampleMapper;
 import com.coderdream.easyexcelpractise.TestFileUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.springframework.util.CollectionUtils;
+
+import javax.annotation.Resource;
 
 /**
  * 读的常见写法
@@ -31,6 +41,9 @@ import org.junit.Test;
 @Ignore
 @Slf4j
 public class ReadTest {
+
+    @Resource
+    private SampleMapper sampleMapper;
 
     /**
      * 最简单的读
@@ -367,10 +380,78 @@ public class ReadTest {
 //        EasyExcel.read(fileName, SampleCellDataReadDemoData.class, new SampleCellDataDemoHeadDataListener()).sheet().doRead();
 
         List<SampleCellDataReadDemoData> result = EasyExcel.read(fileName, SampleCellDataReadDemoData.class, new SampleCellDataDemoHeadDataListener()).sheet().doReadSync();
-        for (SampleCellDataReadDemoData sampleCellDataReadDemoData: result) {
+        for (SampleCellDataReadDemoData sampleCellDataReadDemoData : result) {
             System.out.println(sampleCellDataReadDemoData);
         }
+    }
 
+    @Test
+    public void cellDataRead_03() {
+        String fileName = TestFileUtil.getPath() + "demo" + File.separator + "葛洲坝大江8F机组有功.xlsx";
+        // 这里 需要指定读用哪个class去读，然后读取第一个sheet
+//        EasyExcel.read(fileName, SampleCellDataReadDemoData.class, new SampleCellDataDemoHeadDataListener()).sheet().doRead();
+
+        List<SampleCellDataReadDemoData> result = EasyExcel.read(fileName, SampleCellDataReadDemoData.class, new SampleCellDataDemoHeadDataListener()).sheet().doReadSync();
+//        for (SampleCellDataReadDemoData sampleCellDataReadDemoData : result) {
+//            System.out.println(sampleCellDataReadDemoData);
+//        }
+        List<SampleEntity> list = transferToEntityList(result);
+        Integer pageNo = 1;
+        Integer pageSize = 100;
+        int size = list.size();
+        while (size > pageNo * pageSize) {
+            sampleMapper.insertBatch(queryPageList(list, pageNo, pageSize));
+            pageNo++;
+        }
+    }
+
+    public List<SampleEntity> queryPageList(List<SampleEntity> list, Integer pageNo,
+                                            Integer pageSize) {
+        //1.计算出需要跳过多少条数据（流切片的起始位置）
+        int startPosition = (pageNo - 1) * pageSize;
+//        List<T> allCount = service.getAllCount();
+        Stream<SampleEntity> stream = list.stream().skip(startPosition).limit(pageSize);
+        List<SampleEntity> resultAccountList = stream.collect(Collectors.toList());
+        return resultAccountList;
+//        return Result.ok(resultAccountList);
+    }
+
+    List<SampleEntity> transferToEntityList(List<SampleCellDataReadDemoData> result) {
+        List<SampleEntity> list = new ArrayList<>();
+        SampleEntity sampleEntity;
+        if (!CollectionUtils.isEmpty(result)) {
+            for (SampleCellDataReadDemoData sampleCellDataReadDemoData : result) {
+                sampleEntity = new SampleEntity();
+                String sendId = sampleCellDataReadDemoData.getSenid().getStringValue();
+                sampleEntity.setSendId(sendId);
+                Date dataTime = sampleCellDataReadDemoData.getTime().getData();
+                sampleEntity.setDataTime(dataTime);
+                BigDecimal value = sampleCellDataReadDemoData.getV().getNumberValue();
+                sampleEntity.setValue(value);
+                BigDecimal avgValue = sampleCellDataReadDemoData.getAvgs().getNumberValue();
+                sampleEntity.setAvgValue(avgValue);
+                BigDecimal maxValue = sampleCellDataReadDemoData.getMaxs().getNumberValue();
+                sampleEntity.setMaxValue(maxValue);
+                Date maxValueTime = sampleCellDataReadDemoData.getMaxt().getData();
+                sampleEntity.setMaxValueTime(maxValueTime);
+                BigDecimal minValue = sampleCellDataReadDemoData.getMins().getNumberValue();
+                sampleEntity.setMinValue(minValue);
+                Date minValueTime = sampleCellDataReadDemoData.getMint().getData();
+                sampleEntity.setMinValueTime(minValueTime);
+                BigDecimal s = sampleCellDataReadDemoData.getS().getNumberValue();
+                sampleEntity.setS(s);
+                BigDecimal mins = sampleCellDataReadDemoData.getMins().getNumberValue();
+                sampleEntity.setMins(mins);
+                BigDecimal span = sampleCellDataReadDemoData.getSpan().getNumberValue();
+                sampleEntity.setSpan(span);
+                BigDecimal dq = sampleCellDataReadDemoData.getDq().getNumberValue();
+                sampleEntity.setDq(dq);
+
+                list.add(sampleEntity);
+            }
+        }
+
+        return list;
     }
 
     /**

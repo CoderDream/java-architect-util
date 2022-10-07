@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coderdream.easyexcelpractise.mapper.SampleMapper">
+
+    <resultMap type="com.coderdream.easyexcelpractise.entity.SampleEntity" id="FileInfoMap">
+        <result property="id" column="id" jdbcType="VARCHAR"/>
+        <result property="sendId" column="senid" jdbcType="VARCHAR"/>
+        <result property="dataTime" column="data_time" jdbcType="TIMESTAMP"/>
+        <result property="value" column="v" jdbcType="DECIMAL"/>
+        <result property="avgValue" column="avgv" jdbcType="DECIMAL"/>
+        <result property="maxValue" column="maxv" jdbcType="DECIMAL"/>
+        <result property="maxValueTime" column="maxt" jdbcType="TIMESTAMP"/>
+        <result property="minValue" column="minv" jdbcType="DECIMAL"/>
+        <result property="minValueTime" column="mint" jdbcType="TIMESTAMP"/>
+        <result property="s" column="s" jdbcType="DECIMAL"/>
+        <result property="avgs" column="avgs" jdbcType="DECIMAL"/>
+        <result property="maxs" column="maxs" jdbcType="DECIMAL"/>
+        <result property="mins" column="mins" jdbcType="DECIMAL"/>
+        <result property="span" column="span" jdbcType="DECIMAL"/>
+        <result property="dq" column="dq" jdbcType="DECIMAL"/>
+    </resultMap>
+
+
+    <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into t_fdll_hour2(`senid`, `data_time`, `v`, `avgv`, `maxv`, `maxt`, `minv`, `mint`, `s`, `avgs`, `maxs`,
+        `mins`, `span`, `dq`)
+        values
+        <foreach collection="sampleEntities" item="entity" separator=",">
+            (#{entity.sendId},
+            #{entity.dataTime},
+            #{entity.value},
+            #{entity.avgValue},
+            #{entity.maxValue},
+            #{entity.maxValueTime},
+            #{entity.minValue},
+            #{entity.minValueTime},
+            #{entity.s},
+            #{entity.avgs},
+            #{entity.maxs},
+            #{entity.mins},
+            #{entity.span},
+            #{entity.dq})
+        </foreach>
+    </insert>
+
+</mapper>
+
