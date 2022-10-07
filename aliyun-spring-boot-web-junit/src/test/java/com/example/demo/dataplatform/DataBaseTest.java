@@ -75,6 +75,13 @@ public class DataBaseTest {
                 DS_PORT = "7080";
                 BS_PORT = "9085";
                 break;
+            case "home_123":
+                URI_PREFIX = "http://192.168.3.123:";
+                ADMIN_PORT = "9085";
+                BUS_PORT = "9086";
+                DS_PORT = "7080";
+                BS_PORT = "9085";
+                break;
             case "sit":
                 URI_PREFIX = "http://172.16.104.61:";
                 ADMIN_PORT = "30572";
@@ -100,7 +107,8 @@ public class DataBaseTest {
 
         RestTemplate restTemplate = new RestTemplate();
         // {"username":"xulin12345","password":"7191fb545e1f2de334fe8d38d5af905e","code":"0","uuid":"9dfb4a766f26425aa94118c92820ee0d"}
-        String user = "{\"uuid\":\"5ff4a5eb88314323aaedc37978239c38\",\"password\":\"7191fb545e1f2de334fe8d38d5af905e\",\"username\":\"xulin12345\",\"code\":\"4\"}";//实例请求参数
+//        String user = "{\"uuid\":\"5ff4a5eb88314323aaedc37978239c38\",\"password\":\"7191fb545e1f2de334fe8d38d5af905e\",\"username\":\"xulin12345\",\"code\":\"4\"}";//实例请求参数
+        String user = "{\"username\":\"admin\",\"password\":\"21232f297a57a5a743894a0e4a801fc3\",\"code\":\"0\",\"uuid\":\"b17bb5fb38494928a63c4f4e62829064\"}";//实例请求参数
         HttpHeaders headers = new HttpHeaders();//创建一个头部对象
         //设置contentType 防止中文乱码
         headers.setContentType(MediaType.valueOf("application/json; charset=UTF-8"));
