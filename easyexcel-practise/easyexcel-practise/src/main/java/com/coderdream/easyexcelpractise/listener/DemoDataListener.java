@@ -1,9 +1,11 @@
-package com.coderdream.easyexcelpractise.demo.read;
+package com.coderdream.easyexcelpractise.listener;
 
 import com.alibaba.excel.context.AnalysisContext;
 import com.alibaba.excel.read.listener.ReadListener;
 import com.alibaba.excel.util.ListUtils;
 import com.alibaba.fastjson.JSON;
+import com.coderdream.easyexcelpractise.dao.DemoDAO;
+import com.coderdream.easyexcelpractise.data.DemoData;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
@@ -13,9 +15,9 @@ import java.util.List;
  *
  * @author Jiaju Zhuang
  */
-// 有个很重要的点 SampleDataListener 不能被Spring管理，要每次读取excel都要new，然后里面用到Spring可以构造方法传进去
+// 有个很重要的点 DemoDataListener 不能被Spring管理，要每次读取excel都要new，然后里面用到Spring可以构造方法传进去
 @Slf4j
-public class SampleDataListener implements ReadListener<SampleData> {
+public class DemoDataListener implements ReadListener<DemoData> {
 
     /**
      * 每隔5条存储数据库，实际使用中可以100条，然后清理list ，方便内存回收
@@ -25,25 +27,25 @@ public class SampleDataListener implements ReadListener<SampleData> {
     /**
      * 缓存的数据
      */
-    private List<SampleData> cachedDataList = ListUtils.newArrayListWithExpectedSize(BATCH_COUNT);
+    private List<DemoData> cachedDataList = ListUtils.newArrayListWithExpectedSize(BATCH_COUNT);
 
     /**
      * 假设这个是一个DAO，当然有业务逻辑这个也可以是一个service。当然如果不用存储这个对象没用。
      */
-    private SampleDAO sampleDAO;
+    private DemoDAO demoDAO;
 
-    public SampleDataListener() {
-        // 这里是sample，所以随便new一个。实际使用如果到了Spring，请使用下面的有参构造函数
-        sampleDAO = new SampleDAO();
+    public DemoDataListener() {
+        // 这里是demo，所以随便new一个。实际使用如果到了Spring，请使用下面的有参构造函数
+        demoDAO = new DemoDAO();
     }
 
     /**
      * 如果使用了Spring,请使用这个构造方法。每次创建Listener的时候需要把Spring管理的类传进来
      *
-     * @param sampleDAO
+     * @param demoDAO
      */
-    public SampleDataListener(SampleDAO sampleDAO) {
-        this.sampleDAO = sampleDAO;
+    public DemoDataListener(DemoDAO demoDAO) {
+        this.demoDAO = demoDAO;
     }
 
     /**
@@ -53,7 +55,7 @@ public class SampleDataListener implements ReadListener<SampleData> {
      * @param context
      */
     @Override
-    public void invoke(SampleData data, AnalysisContext context) {
+    public void invoke(DemoData data, AnalysisContext context) {
         log.info("解析到一条数据:{}", JSON.toJSONString(data));
         cachedDataList.add(data);
         // 达到BATCH_COUNT了，需要去存储一次数据库，防止数据几万条数据在内存，容易OOM
@@ -81,7 +83,7 @@ public class SampleDataListener implements ReadListener<SampleData> {
      */
     private void saveData() {
         log.info("{}条数据，开始存储数据库！", cachedDataList.size());
-        sampleDAO.save(cachedDataList);
+        demoDAO.save(cachedDataList);
         log.info("存储数据库成功！");
     }
 }

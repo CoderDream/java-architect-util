@@ -1,41 +1,35 @@
-package com.coderdream.easyexcelpractise.demo.read;
+package com.coderdream.easyexcelpractise.listener;
 
 import com.alibaba.excel.context.AnalysisContext;
 import com.alibaba.excel.read.listener.ReadListener;
 import com.alibaba.excel.util.ListUtils;
 import com.alibaba.fastjson.JSON;
-import com.coderdream.easyexcelpractise.mapper.SampleMapper;
+import com.coderdream.easyexcelpractise.data.ConverterData;
 import lombok.extern.slf4j.Slf4j;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * 读取头
+ * 模板的读取类
  *
  * @author Jiaju Zhuang
  */
 @Slf4j
-public class SampleCellDataDemoHeadDataListener implements ReadListener<SampleCellDataReadDemoData> {
-
-    @Resource
-    private SampleMapper sampleMapper;
+public class ConverterDataListener implements ReadListener<ConverterData> {
 
     /**
      * 每隔5条存储数据库，实际使用中可以100条，然后清理list ，方便内存回收
      */
-    private static final int BATCH_COUNT = 100;
-
-    private List<SampleCellDataReadDemoData> cachedDataList = ListUtils.newArrayListWithExpectedSize(BATCH_COUNT);
+    private static final int BATCH_COUNT = 5;
+    private List<ConverterData> cachedDataList = ListUtils.newArrayListWithExpectedSize(BATCH_COUNT);
 
     @Override
-    public void invoke(SampleCellDataReadDemoData data, AnalysisContext context) {
-//        log.info("解析到一条数据:{}", JSON.toJSONString(data));
+    public void invoke(ConverterData data, AnalysisContext context) {
+        log.info("解析到一条数据:{}", JSON.toJSONString(data));
+        cachedDataList.add(data);
         if (cachedDataList.size() >= BATCH_COUNT) {
             saveData();
             cachedDataList = ListUtils.newArrayListWithExpectedSize(BATCH_COUNT);
-        } else {
-            cachedDataList.add(data);
         }
     }
 

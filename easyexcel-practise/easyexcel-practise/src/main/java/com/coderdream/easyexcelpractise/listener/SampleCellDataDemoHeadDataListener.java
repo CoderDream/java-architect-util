@@ -1,35 +1,42 @@
-package com.coderdream.easyexcelpractise.demo.read;
+package com.coderdream.easyexcelpractise.listener;
 
 import com.alibaba.excel.context.AnalysisContext;
-import com.alibaba.excel.event.AnalysisEventListener;
+import com.alibaba.excel.read.listener.ReadListener;
 import com.alibaba.excel.util.ListUtils;
 import com.alibaba.fastjson.JSON;
+import com.coderdream.easyexcelpractise.data.SampleCellDataReadDemoData;
+import com.coderdream.easyexcelpractise.mapper.SampleMapper;
 import lombok.extern.slf4j.Slf4j;
 
+import javax.annotation.Resource;
 import java.util.List;
-import java.util.Map;
 
 /**
- * 直接用 Map 接收数据
+ * 读取头
  *
  * @author Jiaju Zhuang
  */
 @Slf4j
-public class NoModelDataListener extends AnalysisEventListener<Map<Integer, String>> {
+public class SampleCellDataDemoHeadDataListener implements ReadListener<SampleCellDataReadDemoData> {
+
+    @Resource
+    private SampleMapper sampleMapper;
+
     /**
      * 每隔5条存储数据库，实际使用中可以100条，然后清理list ，方便内存回收
      */
-    private static final int BATCH_COUNT = 5;
+    private static final int BATCH_COUNT = 100;
 
-    private List<Map<Integer, String>> cachedDataList = ListUtils.newArrayListWithExpectedSize(BATCH_COUNT);
+    private List<SampleCellDataReadDemoData> cachedDataList = ListUtils.newArrayListWithExpectedSize(BATCH_COUNT);
 
     @Override
-    public void invoke(Map<Integer, String> data, AnalysisContext context) {
-        log.info("解析到一条数据:{}", JSON.toJSONString(data));
-        cachedDataList.add(data);
+    public void invoke(SampleCellDataReadDemoData data, AnalysisContext context) {
+//        log.info("解析到一条数据:{}", JSON.toJSONString(data));
         if (cachedDataList.size() >= BATCH_COUNT) {
             saveData();
             cachedDataList = ListUtils.newArrayListWithExpectedSize(BATCH_COUNT);
+        } else {
+            cachedDataList.add(data);
         }
     }
 

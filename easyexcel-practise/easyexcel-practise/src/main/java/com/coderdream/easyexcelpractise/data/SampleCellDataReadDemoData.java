@@ -1,4 +1,4 @@
-package com.coderdream.easyexcelpractise.demo.read;
+package com.coderdream.easyexcelpractise.data;
 
 import com.alibaba.excel.metadata.data.CellData;
 import lombok.EqualsAndHashCode;

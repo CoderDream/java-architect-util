@@ -1,4 +1,6 @@
-package com.coderdream.easyexcelpractise.demo.read;
+package com.coderdream.easyexcelpractise.dao;
+
+import com.coderdream.easyexcelpractise.data.DemoData;
 
 import java.util.List;
 
@@ -7,9 +9,9 @@ import java.util.List;
  *
  * @author Jiaju Zhuang
  **/
-public class SampleDAO {
+public class DemoDAO {
 
-    public void save(List<SampleData> list) {
+    public void save(List<DemoData> list) {
         // 如果是mybatis,尽量别直接调用多次insert,自己写一个mapper里面新增一个方法batchInsert,所有数据一次性插入
     }
 }
