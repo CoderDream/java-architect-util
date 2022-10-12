@@ -255,6 +255,41 @@ public class AttrItemMetaTest extends BaseTest {
 
 
     @Test
+    public void testAdd_01() {
+        String result = "";
+        RestTemplate restTemplate = new RestTemplate();
+
+        Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
+
+        String objectFullCode = "01 0002 0 00 00 00";
+        String attrFullCode = "01 0000 B 02 03 00";
+        String attrItemName = "水库名称";
+        String hashRateLevel = "calculation";
+        String dataSource = "info_system";
+        String attrItemLabel = "shuiku";
+        String attrItemCode = "01";
+        String attrItemFullCode = "01 0002 B 02 03 01";
+
+        bodyMap.put("objectFullCode", objectFullCode);
+        bodyMap.put("attrFullCode", attrFullCode);
+        bodyMap.put("attrItemName", attrItemName);
+        bodyMap.put("hashRateLevel", hashRateLevel);
+        bodyMap.put("dataSource", dataSource);
+        bodyMap.put("attrItemLabel", attrItemLabel);
+        bodyMap.put("attrItemCode", attrItemCode);
+        bodyMap.put("attrItemFullCode", attrItemFullCode);
+
+        String  body = JSONObject.toJSONString(bodyMap);
+
+//        String body = "\"objectFullCode\":\"01 0002 0 00 00 00\",\"attrFullCode\":\"01 0000 B 02 03 00\",\"attrItemName\":\"水库名称\",\"hashRateLevel\":\"calculation\",\"dataSource\":\"info_system\",\"attrItemLabel\":\"shuiku\",\"attrItemCode\":\"01\",\"attrItemFullCode\":\"01 0002 B 02 03 01\"}";
+        System.out.println("body: " + body);
+        // 增
+        result = postForObject(restTemplate, URI + "add", body);
+        System.out.println(result);
+    }
+
+
+    @Test
     public void testList_01() throws Exception {
         String result = "";
         RestTemplate restTemplate = new RestTemplate();
