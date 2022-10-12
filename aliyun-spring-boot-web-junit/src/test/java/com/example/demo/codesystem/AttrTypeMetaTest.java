@@ -41,7 +41,7 @@ public class AttrTypeMetaTest extends BaseTest {
         String code;
         String objectTypeFullCode = "01 0000 0 00 00 00";
         String structureTypeCode = "B";
-        Integer commonFlag = 1;
+        Integer commonFlag = 0;
 
         bodyMap = new LinkedHashMap<>();
         bodyMap.put("objectTypeFullCode", objectTypeFullCode);
@@ -54,7 +54,7 @@ public class AttrTypeMetaTest extends BaseTest {
 
         code = getCode(result);
         String attrTypeName = "属性类型" + code;
-        String attrTypeLabel = "TTSSAA";
+        String attrTypeLabel = "TTSSEEAA";
         String attrTypeCode = code;
         String attrTypeFullCode = "01 0000 0 00 " + code + " 00";
         String remark = "属性类型 " + code + "描述";
@@ -96,6 +96,146 @@ public class AttrTypeMetaTest extends BaseTest {
             updateBodyMap.put("attrTypeFullCode", attrTypeFullCode);
             updateBodyMap.put("objectTypeFullCode", objectTypeFullCode);
             updateBodyMap.put("structureTypeCode", structureTypeCode);
+            updateBodyMap.put("commonFlag", commonFlag);
+            updateBodyMap.put("remark", "测试属性类型描述2" + code);
+            body = JSONObject.toJSONString(updateBodyMap);
+            result = postForObject(restTemplate, URI + "update", body);
+            System.out.println(result);//运行方法，这里输出：
+            System.out.println("修改成功：" + id);
+
+            // 删
+            Map<String, Object> deleteBodyMap = new LinkedHashMap<>();
+            deleteBodyMap.put("id", id);
+            body = JSONObject.toJSONString(deleteBodyMap);
+            result = postForObject(restTemplate, URI + "delete", body);
+            System.out.println(result);//运行方法，这里输出：
+            System.out.println("删除成功：" + id);
+        }
+    }
+
+
+    @Test
+    public void testList_04() throws Exception {
+        RestTemplate restTemplate = new RestTemplate();
+        String result;
+        String body;
+        Integer commonFlag = 0;
+
+        // 查
+        Map<String, Object> queryBodyMap = new LinkedHashMap<>();
+        queryBodyMap.put("current", 1);
+        queryBodyMap.put("size", 20);
+        queryBodyMap.put("commonFlag", commonFlag);
+        URI += "list";
+        System.out.println(URI);
+        body = JSONObject.toJSONString(queryBodyMap);
+        result = postForObject(restTemplate, URI, body);
+        System.out.println(result);
+
+    }
+
+    @Test
+    public void testList_05() throws Exception {
+        RestTemplate restTemplate = new RestTemplate();
+        String result;
+        String body;
+        Integer commonFlag = 1;
+
+        // 查
+        Map<String, Object> queryBodyMap = new LinkedHashMap<>();
+        queryBodyMap.put("current", 1);
+        queryBodyMap.put("size", 20);
+        queryBodyMap.put("commonFlag", commonFlag);
+        URI += "list";
+        System.out.println(URI);
+        body = JSONObject.toJSONString(queryBodyMap);
+        result = postForObject(restTemplate, URI, body);
+        System.out.println(result);
+    }
+
+    @Test
+    public void testList_06() throws Exception {
+        RestTemplate restTemplate = new RestTemplate();
+        String result;
+        String body;
+        Integer commonFlag = 1;
+
+        // 查
+        Map<String, Object> queryBodyMap = new LinkedHashMap<>();
+        queryBodyMap.put("current", 1);
+        queryBodyMap.put("size", 100);
+        URI += "list";
+        System.out.println(URI);
+        body = JSONObject.toJSONString(queryBodyMap);
+        result = postForObject(restTemplate, URI, body);
+        System.out.println(result);
+    }
+
+    @Test
+    public void testCRUD_02() throws Exception {
+        RestTemplate restTemplate = new RestTemplate();
+        String result;
+        Map<String, Object> bodyMap;
+        String body;
+        String code;
+        String objectTypeFullCode = "01 0000 0 00 00 00";
+        String structureTypeCode = "B";
+        Integer commonFlag = 1;
+
+        bodyMap = new LinkedHashMap<>();
+        bodyMap.put("objectTypeFullCode", objectTypeFullCode);
+        bodyMap.put("structureTypeCode", structureTypeCode);
+        bodyMap.put("commonFlag", commonFlag);
+        body = JSONObject.toJSONString(bodyMap);
+
+        System.out.println(body);
+        result = postForObject(restTemplate, URI + "genCode", body);
+
+        code = getCode(result);
+        String attrTypeName = "属性类型" + code;
+        String attrTypeLabel = "TTSSEEAAEE";
+        String attrTypeCode = code;
+        String attrTypeFullCode = "01 0000 B " + code + " 00 00";
+        String remark = "属性类型 " + code + "描述";
+
+        bodyMap.put("attrTypeName", attrTypeName);
+        bodyMap.put("attrTypeLabel", attrTypeLabel);
+        bodyMap.put("attrTypeCode", attrTypeCode);
+        bodyMap.put("attrTypeFullCode", attrTypeFullCode);
+        bodyMap.put("objectTypeFullCode", objectTypeFullCode);
+        bodyMap.put("structureTypeCode", structureTypeCode);
+        bodyMap.put("commonFlag", commonFlag);
+        bodyMap.put("remark", "测试属性类型描述" + remark);
+
+        body = JSONObject.toJSONString(bodyMap);
+        System.out.println("body: " + body);
+        // 增
+        result = postForObject(restTemplate, URI + "add", body);
+        System.out.println(result);
+
+        // 查
+        Map<String, Object> queryBodyMap = new LinkedHashMap<>();
+        queryBodyMap.put("current", 1);
+        queryBodyMap.put("size", 20);
+        queryBodyMap.put("attrTypeFullCode", attrTypeFullCode);
+
+        body = JSONObject.toJSONString(queryBodyMap);
+        result = postForObject(restTemplate, URI + "list", body);
+        System.out.println(result);
+
+        Integer id = getId(result);
+        if (id != null && id != 0) {
+            // 改
+            String newAttrTypeName = "";
+            Map<String, Object> updateBodyMap = new LinkedHashMap<>();
+            updateBodyMap.put("id", id);
+            updateBodyMap.put("attrTypeName", newAttrTypeName);
+            updateBodyMap.put("attrTypeLabel", attrTypeLabel);
+            updateBodyMap.put("attrTypeCode", attrTypeCode);
+            updateBodyMap.put("attrTypeFullCode", attrTypeFullCode);
+            updateBodyMap.put("objectTypeFullCode", objectTypeFullCode);
+            updateBodyMap.put("structureTypeCode", structureTypeCode);
+            updateBodyMap.put("commonFlag", commonFlag);
             updateBodyMap.put("remark", "测试属性类型描述2" + code);
             body = JSONObject.toJSONString(updateBodyMap);
             result = postForObject(restTemplate, URI + "update", body);
@@ -113,56 +253,83 @@ public class AttrTypeMetaTest extends BaseTest {
     }
 
     @Test
-    public void testCR_01() throws Exception {
+    public void testCRUD_03() throws Exception {
         RestTemplate restTemplate = new RestTemplate();
-
-        String code = "FF";
-        String objectCode = "01 0002 0 0 00 00";
-        String attrCode = "01 [MMMM] B 1 01 01";
-        String hashRateLevel = "collection";
-        String dataSource = "model";
+        String result;
+        Map<String, Object> bodyMap;
+        String body;
+        String code;
+        String objectTypeFullCode = "01 0000 0 00 00 00";
         String structureTypeCode = "B";
-        Map<String, Object> bodyMap = new LinkedHashMap<>();
-        bodyMap.put("name", code);
-        bodyMap.put("label", code);
-        bodyMap.put("code", code);
-        bodyMap.put("structureTypeCode", structureTypeCode);
-//        bodyMap.put("objectCode", objectCode);
-//        bodyMap.put("hashRateLevel", hashRateLevel);
-//        bodyMap.put("dataSource", dataSource);
-        bodyMap.put("remark", "测试类型描述" + code);
+        Integer commonFlag = 0;
 
-        String body = JSONObject.toJSONString(bodyMap);
+        bodyMap = new LinkedHashMap<>();
+        bodyMap.put("objectTypeFullCode", objectTypeFullCode);
+        bodyMap.put("structureTypeCode", structureTypeCode);
+        bodyMap.put("commonFlag", commonFlag);
+        body = JSONObject.toJSONString(bodyMap);
+
+        System.out.println(body);
+        result = postForObject(restTemplate, URI + "genCode", body);
+
+        code = getCode(result);
+        String attrTypeName = "属性类型" + code;
+        String attrTypeLabel = "TTSSAAADEE";
+        String attrTypeCode = code;
+        String attrTypeFullCode = "01 0000 0 00 " + code + " 00";
+        String remark = "属性类型 " + code + "描述";
+
+        bodyMap.put("attrTypeName", attrTypeName);
+        bodyMap.put("attrTypeLabel", attrTypeLabel);
+        bodyMap.put("attrTypeCode", attrTypeCode);
+        bodyMap.put("attrTypeFullCode", attrTypeFullCode);
+        bodyMap.put("objectTypeFullCode", objectTypeFullCode);
+        bodyMap.put("structureTypeCode", structureTypeCode);
+        bodyMap.put("commonFlag", commonFlag);
+        bodyMap.put("remark", "测试属性类型描述" + remark);
+
+        body = JSONObject.toJSONString(bodyMap);
         System.out.println("body: " + body);
         // 增
-        String result = postForObject(restTemplate, URI + "add", body);
-        printResult(result);
+        result = postForObject(restTemplate, URI + "add", body);
+        System.out.println(result);
 
         // 查
         Map<String, Object> queryBodyMap = new LinkedHashMap<>();
         queryBodyMap.put("current", 1);
         queryBodyMap.put("size", 20);
-        queryBodyMap.put("code", code);
+        queryBodyMap.put("attrTypeFullCode", attrTypeFullCode);
 
         body = JSONObject.toJSONString(queryBodyMap);
         result = postForObject(restTemplate, URI + "list", body);
-        printResult(result);
+        System.out.println(result);
 
-        Map<String, Object> map = new LinkedHashMap<>(16);
-        ObjectMapper mapper = new ObjectMapper();
-        map = mapper.readValue(result, map.getClass());
-
-        //获取 code
-        Integer codeResp = (Integer) map.get("code");
-        System.out.println(codeResp);
-
-        //获取 msg
-        String msg = (String) map.get("msg");
-        System.out.println(msg);
-
-        //获取 data
-        Map<String, Object> resultMap = (LinkedHashMap) map.get("result");
-        System.out.println(resultMap);
+//        Integer id = getId(result);
+//        if (id != null && id != 0) {
+//            // 改
+//            String newAttrTypeName = "";
+//            Map<String, Object> updateBodyMap = new LinkedHashMap<>();
+//            updateBodyMap.put("id", id);
+//            updateBodyMap.put("attrTypeName", newAttrTypeName);
+//            updateBodyMap.put("attrTypeLabel", attrTypeLabel);
+//            updateBodyMap.put("attrTypeCode", attrTypeCode);
+//            updateBodyMap.put("attrTypeFullCode", attrTypeFullCode);
+//            updateBodyMap.put("objectTypeFullCode", objectTypeFullCode);
+//            updateBodyMap.put("structureTypeCode", structureTypeCode);
+//            updateBodyMap.put("remark", "测试属性类型描述2" + code);
+//            body = JSONObject.toJSONString(updateBodyMap);
+//            result = postForObject(restTemplate, URI + "update", body);
+//            System.out.println(result);//运行方法，这里输出：
+//            System.out.println("修改成功：" + id);
+//
+//            // 删
+//            Map<String, Object> deleteBodyMap = new LinkedHashMap<>();
+//            deleteBodyMap.put("id", id);
+//            body = JSONObject.toJSONString(deleteBodyMap);
+//            result = postForObject(restTemplate, URI + "delete", body);
+//            System.out.println(result);//运行方法，这里输出：
+//            System.out.println("删除成功：" + id);
+//        }
     }
 
     @Test
@@ -175,7 +342,7 @@ public class AttrTypeMetaTest extends BaseTest {
         // 查
         Map<String, Object> queryBodyMap = new LinkedHashMap<>();
         body = JSONObject.toJSONString(queryBodyMap);
-        result = postForObject(restTemplate, URI +"list", body);
+        result = postForObject(restTemplate, URI + "list", body);
         System.out.println(result);
     }
 
@@ -196,7 +363,7 @@ public class AttrTypeMetaTest extends BaseTest {
         queryBodyMap.put("structureTypeName", structureTypeName);
 
         body = JSONObject.toJSONString(queryBodyMap);
-        result = postForObject(restTemplate, URI +"list", body);
+        result = postForObject(restTemplate, URI + "list", body);
         System.out.println(result);
     }
 
@@ -204,9 +371,11 @@ public class AttrTypeMetaTest extends BaseTest {
     public void testGenCode_01() {
         String result = "";
         String structureTypeCode = "B";
+        Integer commonFlag = 0;
         RestTemplate restTemplate = new RestTemplate();
         Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
         bodyMap.put("structureTypeCode", structureTypeCode);
+        bodyMap.put("commonFlag", commonFlag);
         String body = JSONObject.toJSONString(bodyMap);
         System.out.println(body);
         result = postForObject(restTemplate, URI + "genCode", body);
@@ -214,7 +383,22 @@ public class AttrTypeMetaTest extends BaseTest {
     }
 
     @Test
-    public void testGenCode_02() { // TODO 本用例测试通过
+    public void testGenCode_02() {
+        String result = "";
+        String structureTypeCode = "B";
+        Integer commonFlag = 1;
+        RestTemplate restTemplate = new RestTemplate();
+        Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
+        bodyMap.put("structureTypeCode", structureTypeCode);
+        bodyMap.put("commonFlag", commonFlag);
+        String body = JSONObject.toJSONString(bodyMap);
+        System.out.println(body);
+        result = postForObject(restTemplate, URI + "genCode", body);
+        System.out.println(result);
+    }
+
+    @Test
+    public void testGenCode_03() { // TODO 本用例测试通过
         String result = "";
         Integer commonFlag = 0;
         String structureTypeCode = "C";
@@ -231,12 +415,33 @@ public class AttrTypeMetaTest extends BaseTest {
     }
 
     @Test
-    public void testGenCode_03() { // 应该返回01
+    public void testGenCode_04() { // 应该返回01
         String result = "";
         String structureTypeCode = "C";
         RestTemplate restTemplate = new RestTemplate();
         Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
         bodyMap.put("structureTypeCode", structureTypeCode);
+        String body = JSONObject.toJSONString(bodyMap);
+        System.out.println(body);
+        result = postForObject(restTemplate, URI + "genCode", body);
+        System.out.println(getCode(result));
+    }
+
+    @Test
+    public void testGenCode_05() { // 应该返回01
+        String result = "";
+        String objectTypeFullCode = "01 0000 0 00 00 00";
+        String attrTypeFullCode = "01 0000 B 02 00 00";
+        String attrTypeCode = "02";
+        String structureTypeCode = "B";
+        Integer commonFlag = 1;
+        RestTemplate restTemplate = new RestTemplate();
+        Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
+        bodyMap.put("objectTypeFullCode", objectTypeFullCode);
+        bodyMap.put("attrTypeFullCode", attrTypeFullCode);
+        bodyMap.put("attrTypeCode", attrTypeCode);
+        bodyMap.put("structureTypeCode", structureTypeCode);
+        bodyMap.put("commonFlag", commonFlag);
         String body = JSONObject.toJSONString(bodyMap);
         System.out.println(body);
         result = postForObject(restTemplate, URI + "genCode", body);
@@ -259,8 +464,6 @@ public class AttrTypeMetaTest extends BaseTest {
         result = postForObject(restTemplate, URI + "findAttrTypeList", body);
         System.out.println(result);
     }
-
-
 
 
 }

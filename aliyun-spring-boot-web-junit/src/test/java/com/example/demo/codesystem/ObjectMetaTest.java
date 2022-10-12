@@ -158,7 +158,7 @@ public class ObjectMetaTest extends BaseTest {
         // 查
         Map<String, Object> queryBodyMap = new LinkedHashMap<>();
         body = JSONObject.toJSONString(queryBodyMap);
-        result = postForObject(restTemplate, URI +"list", body);
+        result = postForObject(restTemplate, URI + "list", body);
         System.out.println("list: " + result);
     }
 
@@ -241,7 +241,17 @@ public class ObjectMetaTest extends BaseTest {
         System.out.println(result);//运行方法，这里输出：
         printResult(result);
         System.out.println("修改成功：" + id);
+    }
 
+    @Test
+    public void testUpdate_02() throws Exception {
+        RestTemplate restTemplate = new RestTemplate();
+        String result = "";
+        String body = "{\"id\":167,\"objectName\":\"罗江以上\",\"objectLabel\":\"Luojiang_above\",\"objectCode\":\"0012\",\"objectFullCode\":\"1E 0012 0 00 00 00\",\"updateTime\":\"2022-10-10 14:32:39\",\"createTime\":\"2022-10-10 14:17:28\",\"remark\":\"106133\",\"objectTypeCode\":\"1E\",\"objectTypeFullCode\":\"1E 0000 0 00 00 00\",\"objectTypeName\":\"流域3级\",\"spaceLevel\":\"L1\",\"code1\":\"0\",\"code2\":\"0\",\"code3\":\"1\",\"code4\":\"1\"}";
+        result = postForObject(restTemplate, URI + "update", body);
+        System.out.println(result);//运行方法，这里输出：
+        printResult(result);
+        System.out.println("修改成功：");
     }
 
     @Test
@@ -253,6 +263,94 @@ public class ObjectMetaTest extends BaseTest {
         System.out.println("body: " + body);
         // 查询树
         String result = postForObject(restTemplate, URI + "listAll", body);
+        System.out.println(result);
+    }
+
+    @Test
+    public void testListAttrItemInfo_01() throws Exception {
+        RestTemplate restTemplate = new RestTemplate();
+        Map<String, Object> bodyMap = new LinkedHashMap<>();
+        String objectFullCode = "01 0002 0 00 00 00";
+        bodyMap.put("objectFullCode", objectFullCode);
+        String body = JSONObject.toJSONString(bodyMap);
+        System.out.println("body: " + body);
+        // 查询树
+        String result = postForObject(restTemplate, URI + "listAttrItemInfo", body);
+        System.out.println(result);
+    }
+
+    /**
+     * INSERT INTO `object_data`.`object_attr_item_index`
+     * (`id`, `object_full_code`, `attr_item_full_code`, `data_type`)
+     * VALUES (11, '01 0002 0 00 00 00', '01 0002 B 02 2Y 01', 'string');
+     */
+    @Test
+    public void testListAttrItemInfo_02() {
+        RestTemplate restTemplate = new RestTemplate();
+        Map<String, Object> bodyMap = new LinkedHashMap<>();
+        String objectFullCode = "01 0002 0 00 00 00";// 对象全码
+        String attrTypeFullCode = "01 0000 B 02 00 00";// 属性类型全码
+        String structureTypeCode = "B"; // 结构类型
+        bodyMap.put("objectFullCode", objectFullCode);
+        bodyMap.put("attrTypeFullCode", attrTypeFullCode);
+        bodyMap.put("structureTypeCode", structureTypeCode);
+        String body = JSONObject.toJSONString(bodyMap);
+//        System.out.println("body: " + body);
+        // 查询树
+        String result = postForObject(restTemplate, URI + "listAttrItemInfo", body);
+        System.out.println(result);
+    }
+
+    @Test
+    public void testListAttrItemInfo_03() {
+        RestTemplate restTemplate = new RestTemplate();
+        Map<String, Object> bodyMap = new LinkedHashMap<>();
+        String objectFullCode = "01 0002 0 00 00 00";// 对象全码
+        String attrTypeFullCode = "01 0000 B 04 00 00";// 属性类型全码
+        String structureTypeCode = "B"; // 结构类型
+        bodyMap.put("objectFullCode", objectFullCode);
+        bodyMap.put("attrTypeFullCode", attrTypeFullCode);
+        bodyMap.put("structureTypeCode", structureTypeCode);
+        String body = JSONObject.toJSONString(bodyMap);
+        System.out.println("body: " + body);
+        // 查询树
+        String result = postForObject(restTemplate, URI + "listAttrItemInfo", body);
+//        System.out.println(result);
+    }
+
+
+    @Test
+    public void testQueryAttrItemInfo_01() {
+        RestTemplate restTemplate = new RestTemplate();
+        Map<String, Object> bodyMap = new LinkedHashMap<>();
+        String objectFullCode = "01 0002 0 00 00 00";// 对象全码
+        String attrItemFullCode = "01 0002 B 04 01 01";// 属性条目全码
+        bodyMap.put("objectFullCode", objectFullCode);
+        bodyMap.put("attrItemFullCode", attrItemFullCode);
+        String body = JSONObject.toJSONString(bodyMap);
+        //System.out.println("body: " + body);
+        // 查询树
+        String result = postForObject(restTemplate, URI + "queryAttrItemInfo", body);
+        System.out.println(result);
+    }
+
+
+
+    //
+    @Test
+    public void testListAttrItemTree_01() {
+        RestTemplate restTemplate = new RestTemplate();
+        Map<String, Object> bodyMap = new LinkedHashMap<>();
+        String objectFullCode = "01 0002 0 00 00 00";// 对象全码
+        String attrTypeFullCode = "01 0000 B 02 00 00";// 属性类型全码
+        String structureTypeCode = "B"; // 结构类型
+        bodyMap.put("objectFullCode", objectFullCode);
+        bodyMap.put("attrTypeFullCode", attrTypeFullCode);
+        bodyMap.put("structureTypeCode", structureTypeCode);
+        String body = JSONObject.toJSONString(bodyMap);
+        System.out.println("body: " + body);
+        // 查询树
+        String result = postForObject(restTemplate, URI + "listAttrItemTree", body);
         System.out.println(result);
     }
 
@@ -318,70 +416,6 @@ public class ObjectMetaTest extends BaseTest {
             printResult(result);
             System.out.println("删除成功：" + id);
         }
-    }
-
-    @Test
-    public void testAddRelation_01() throws Exception {
-        RestTemplate restTemplate = new RestTemplate();
-        String uri = URI_PREFIX + BS_PORT + "/api/standardized/object/object-type-meta/addRelation";
-
-        String objectTypeCode = "01";
-        String[] attrCodeList = new String[4];
-        attrCodeList[0] = "01 [MMMM] B 1 01 00";
-        attrCodeList[1] = "01 [MMMM] B 1 02 00";
-        attrCodeList[2] = "01 [MMMM] B 1 03 00";
-        attrCodeList[3] = "01 [MMMM] B 1 04 00";
-
-        Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
-        bodyMap.put("objectTypeCode", objectTypeCode);
-        bodyMap.put("attrCodeList", attrCodeList);
-        String body = JSONObject.toJSONString(bodyMap);
-        System.out.println(body);
-        String result = postForObject(restTemplate, uri, body);
-        System.out.println(result);
-    }
-
-    @Test
-    public void testAddAndDeleteRelation_02() throws Exception {
-        String result = "";
-        RestTemplate restTemplate = new RestTemplate();
-
-        String objectTypeCode = "01";
-        String[] attrCodeList = new String[2];
-        attrCodeList[0] = "01 [MMMM] B 4 01 00";
-        attrCodeList[1] = "01 [MMMM] B 4 02 00";
-
-        Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
-        bodyMap.put("objectTypeCode", objectTypeCode);
-        bodyMap.put("attrCodeList", attrCodeList);
-        String body = JSONObject.toJSONString(bodyMap);
-        System.out.println(body);
-        result = postForObject(restTemplate, URI + "addRelation", body);
-        System.out.println(result);
-
-        result = postForObject(restTemplate, URI + "deleteRelation", body);
-        System.out.println(result);
-    }
-
-    @Test
-    public void testDeleteRelation_01() throws Exception {
-        RestTemplate restTemplate = new RestTemplate();
-        String uri = URI_PREFIX + BS_PORT + "/api/standardized/object/object-type-meta/deleteRelation";
-
-        String objectTypeCode = "01";
-        String[] attrCodeList = new String[4];
-        attrCodeList[0] = "01 [MMMM] B 1 01 00";
-        attrCodeList[1] = "01 [MMMM] B 1 02 00";
-        attrCodeList[2] = "01 [MMMM] B 1 03 00";
-        attrCodeList[3] = "01 [MMMM] B 1 04 00";
-
-        Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
-        bodyMap.put("objectTypeCode", objectTypeCode);
-        bodyMap.put("attrCodeList", attrCodeList);
-        String body = JSONObject.toJSONString(bodyMap);
-        System.out.println(body);
-        String result = postForObject(restTemplate, uri, body);
-        System.out.println(result);
     }
 
     /**
