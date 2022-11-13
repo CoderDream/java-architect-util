@@ -2,23 +2,17 @@ package com.example.demo.codesystem;
 
 import com.alibaba.fastjson.JSONObject;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.MediaType;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.web.client.RestTemplate;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @TestPropertySource("classpath:application.properties")  //你的配置文件
@@ -39,7 +33,7 @@ public class AttrTypeMetaTest extends BaseTest {
         Map<String, Object> bodyMap;
         String body;
         String code;
-        String objectTypeFullCode = "01 0000 0 00 00 00";
+        String objectTypeFullCode = "0100000000000";
         String structureTypeCode = "B";
         Integer commonFlag = 0;
 
@@ -56,7 +50,7 @@ public class AttrTypeMetaTest extends BaseTest {
         String attrTypeName = "属性类型" + code;
         String attrTypeLabel = "TTSSEEAA";
         String attrTypeCode = code;
-        String attrTypeFullCode = "01 0000 0 00 " + code + " 00";
+        String attrTypeFullCode = "010000000" + code + "00";
         String remark = "属性类型 " + code + "描述";
 
         bodyMap.put("attrTypeName", attrTypeName);
@@ -427,6 +421,9 @@ public class AttrTypeMetaTest extends BaseTest {
         System.out.println(getCode(result));
     }
 
+    /**
+     *
+     */
     @Test
     public void testGenCode_05() { // 应该返回01
         String result = "";
@@ -444,12 +441,31 @@ public class AttrTypeMetaTest extends BaseTest {
         bodyMap.put("commonFlag", commonFlag);
         String body = JSONObject.toJSONString(bodyMap);
         System.out.println(body);
-        result = postForObject(restTemplate, URI + "genCode", body);
+        URI += "genCode";
+        System.out.println(URI);
+        result = postForObject(restTemplate, URI, body);
         System.out.println(getCode(result));
     }
 
     @Test
     public void testFindAttrTypeList_01() { // 应该返回01
+        String result = "";
+        Integer commonFlag = 0;
+        String structureTypeCode = "D";
+        String objectTypeFullCode = "12 0000 0 00 00 00";
+        RestTemplate restTemplate = new RestTemplate();
+        Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
+        bodyMap.put("structureTypeCode", structureTypeCode);
+        bodyMap.put("objectTypeFullCode", objectTypeFullCode);
+        bodyMap.put("commonFlag", commonFlag);
+        String body = JSONObject.toJSONString(bodyMap);
+        System.out.println(body);
+        result = postForObject(restTemplate, URI + "findAttrTypeList", body);
+        System.out.println(result);
+    }
+
+    @Test
+    public void testFindAttrTypeList_02() { // 应该返回01
         String result = "";
         Integer commonFlag = 0;
         String structureTypeCode = "B";
@@ -464,6 +480,5 @@ public class AttrTypeMetaTest extends BaseTest {
         result = postForObject(restTemplate, URI + "findAttrTypeList", body);
         System.out.println(result);
     }
-
 
 }

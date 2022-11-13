@@ -11,7 +11,8 @@ public enum DataTypeEnum {
     JSON("json", "JSON", "json"),
     FILE("file", "文件", "blob"),
     GEO("geo", "地理信息", "geometry"),
-    CURVE("curve", "曲线", "json");
+    CURVE("curve", "曲线", "json"),
+    SEQUENCE("sequence", "时序数据", "json");
 
     private String label;
     private String name;

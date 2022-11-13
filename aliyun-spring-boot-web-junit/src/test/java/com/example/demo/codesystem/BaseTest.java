@@ -45,19 +45,11 @@ public class BaseTest {
      */
     public String URI;
 
-
     public void init() throws JsonProcessingException {
         switch (env) {
             case "local":
-                URI_PREFIX = "http://192.168.18.75:";
-                ADMIN_PORT = "9085";
-                BUS_PORT = "9086";
-                DS_PORT = "7080";
-                BS_PORT = "9085";
-                OBJECT_DATA_PORT = "9099";
-                break;
             case "local_home":
-                URI_PREFIX = "http://192.168.3.85:";
+                URI_PREFIX = "http://127.0.0.1:";
                 ADMIN_PORT = "9085";
                 BUS_PORT = "9086";
                 DS_PORT = "7080";

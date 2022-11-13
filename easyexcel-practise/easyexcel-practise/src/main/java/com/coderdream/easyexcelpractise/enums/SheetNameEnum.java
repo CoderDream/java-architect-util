@@ -6,12 +6,12 @@ package com.coderdream.easyexcelpractise.enums;
  */
 public enum SheetNameEnum {
 
-    STANDARDIZE("YE_WU_DUI_XIANG", "规范"),
-    BASIC("JI_CHU_SHU_XING", "基础属性"),
-    DATA("SHU_JU_SHU_XING", "数据属性"),
-    COMPOSE("ZU_CHENG_DUI_XIANG", "组成对象"),
-    RELATION("GUAN_LIAN_DUI_XIANG", "关联对象"),
-    BUSINESS("YE_WU_DUI_XIANG", "业务对象"),
+    STANDARDIZE("S", "规范"),
+    BASIC("B", "基础属性"),
+    DATA("D", "数据属性"),
+    COMPOSE("C", "组成对象"),
+    RELATION("R", "关联对象"),
+    BUSINESS("A", "业务对象"),
     OBJECT_INSTANCE("OBJECT_INSTANCE", "对象实例"),
     ATTR_ITEM("ATTR_ITEM", "属性条目");
 

@@ -75,8 +75,8 @@ public class AttrItemMetaTest extends BaseTest {
         String result = "";
         RestTemplate restTemplate = new RestTemplate();
         Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
-        String attrFullCode = "01 0000 B 1 05 00";
-        String objectFullCode = "01 0002 0 00 00 00";
+        String attrFullCode = "010000B010500";
+        String objectFullCode = "0100020000000";
         bodyMap.put("attrFullCode", attrFullCode);
         bodyMap.put("objectFullCode", objectFullCode);
         String body = JSONObject.toJSONString(bodyMap);
@@ -88,7 +88,8 @@ public class AttrItemMetaTest extends BaseTest {
         String attrItemName = "属性条目" + code;
         String attrItemLabel = "TEST_ITEMA";
         String attrItemCode = code;
-        String attrItemFullCode = "01 0002 0 0 " + code + " 00";
+        String attrItemFullCode = "010002B00" + code + "00";
+        String dataType = "string";
         String remark = "属性条目 " + code + "描述";
         String hashRateLevel = "collection";
         String dataSource = "model";
@@ -97,6 +98,7 @@ public class AttrItemMetaTest extends BaseTest {
         bodyMap.put("attrItemLabel", attrItemLabel);
         bodyMap.put("attrItemCode", attrItemCode);
         bodyMap.put("attrItemFullCode", attrItemFullCode);
+        bodyMap.put("dataType", dataType);
         bodyMap.put("objectFullCode", objectFullCode);
         bodyMap.put("attrFullCode", attrFullCode);
         bodyMap.put("remark", "测试属性类型描述" + remark);
@@ -120,11 +122,8 @@ public class AttrItemMetaTest extends BaseTest {
         System.out.println(result);
 
         Integer id = getId(result);
-        if (id != null && id != 0) {
+        if (id != null && id !=0) {
             // 改
-            String newObjectCode = "01 0002 0 0 00 00";
-            String newAttrCode = "01 [MMMM] B 1 01 00";
-            String newAttrFullCode = "01 [MMMM] B 1 01 00";
             Map<String, Object> updateBodyMap = new LinkedHashMap<>();
             updateBodyMap.put("id", id);
             updateBodyMap.put("attrItemName", attrItemName);
@@ -158,8 +157,8 @@ public class AttrItemMetaTest extends BaseTest {
         String result = "";
         RestTemplate restTemplate = new RestTemplate();
         Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
-        String attrFullCode = "01 0000 B 01 07 00";
-        String objectFullCode = "01 0002 0 00 00 00";
+        String attrFullCode = "01000B010700";
+        String objectFullCode = "0100020000000";
         bodyMap.put("attrFullCode", attrFullCode);
         bodyMap.put("objectFullCode", objectFullCode);
         String body = JSONObject.toJSONString(bodyMap);
@@ -171,7 +170,7 @@ public class AttrItemMetaTest extends BaseTest {
         String attrItemName = "属性条目" + code;
         String attrItemLabel = "TEST_ITEM00";
         String attrItemCode = code;
-        String attrItemFullCode = "01 0002 0 0 " + code + " 00";
+        String attrItemFullCode = "01000200 " + code + "00";
         String remark = "属性条目 " + code + "描述";
         String hashRateLevel = "collection";
         String dataSource = "model";
@@ -220,11 +219,11 @@ public class AttrItemMetaTest extends BaseTest {
 //        System.out.println(resultMap);
 //
 //        Integer id = getId(result);
-//        if (id != null && id != 0) {
+//        if (id != null && id !=0) {
 //            // 改
-//            String newObjectCode = "01 0002 0 0 00 00";
-//            String newAttrCode = "01 [MMMM] B 1 01 00";
-//            String newAttrFullCode = "01 [MMMM] B 1 01 00";
+//            String newObjectCode = "010002000000";
+//            String newAttrCode = "01 [MMMM] B 10100";
+//            String newAttrFullCode = "01 [MMMM] B 10100";
 //            Map<String, Object> updateBodyMap = new LinkedHashMap<>();
 //            updateBodyMap.put("id", id);
 //            updateBodyMap.put("attrItemName", attrItemName);
@@ -261,14 +260,14 @@ public class AttrItemMetaTest extends BaseTest {
 
         Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
 
-        String objectFullCode = "01 0002 0 00 00 00";
-        String attrFullCode = "01 0000 B 02 03 00";
+        String objectFullCode = "0100020000000";
+        String attrFullCode = "01000B020300";
         String attrItemName = "水库名称";
         String hashRateLevel = "calculation";
         String dataSource = "info_system";
         String attrItemLabel = "shuiku";
         String attrItemCode = "01";
-        String attrItemFullCode = "01 0002 B 02 03 01";
+        String attrItemFullCode = "010002 B020301";
 
         bodyMap.put("objectFullCode", objectFullCode);
         bodyMap.put("attrFullCode", attrFullCode);
@@ -279,9 +278,22 @@ public class AttrItemMetaTest extends BaseTest {
         bodyMap.put("attrItemCode", attrItemCode);
         bodyMap.put("attrItemFullCode", attrItemFullCode);
 
-        String  body = JSONObject.toJSONString(bodyMap);
+        String body = JSONObject.toJSONString(bodyMap);
 
-//        String body = "\"objectFullCode\":\"01 0002 0 00 00 00\",\"attrFullCode\":\"01 0000 B 02 03 00\",\"attrItemName\":\"水库名称\",\"hashRateLevel\":\"calculation\",\"dataSource\":\"info_system\",\"attrItemLabel\":\"shuiku\",\"attrItemCode\":\"01\",\"attrItemFullCode\":\"01 0002 B 02 03 01\"}";
+//        String body = "\"objectFullCode\":\"0100020000000\",\"attrFullCode\":\"01000B020300\",\"attrItemName\":\"水库名称\",\"hashRateLevel\":\"calculation\",\"dataSource\":\"info_system\",\"attrItemLabel\":\"shuiku\",\"attrItemCode\":\"01\",\"attrItemFullCode\":\"010002 B020301\"}";
+        System.out.println("body: " + body);
+        // 增
+        result = postForObject(restTemplate, URI + "add", body);
+        System.out.println(result);
+    }
+
+    @Test
+    public void testAdd_02() {
+        String result = "";
+        RestTemplate restTemplate = new RestTemplate();
+
+
+        String body = "{\"objectFullCode\":\"2200010000000\",\"code1\":\"0\",\"code2\":\"1\",\"attrFullCode\":\"220000BA1A100\",\"attrItemName\":\"dadfda\",\"dataType\":\"sequence\",\"attrItemLabel\":\"eeeeeeee\",\"hashRateLevel\":\"calculation\",\"dataSource\":\"info_system\",\"attrItemCode\":\"01\",\"attrItemFullCode\":\"22000100BA1A101\"}";
         System.out.println("body: " + body);
         // 增
         result = postForObject(restTemplate, URI + "add", body);
@@ -289,13 +301,15 @@ public class AttrItemMetaTest extends BaseTest {
     }
 
 
+
+
     @Test
     public void testList_01() throws Exception {
         String result = "";
         RestTemplate restTemplate = new RestTemplate();
         Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
-        String attrFullCode = "01 0000 B 01 07 00";
-        String objectFullCode = "01 0002 0 00 00 00";
+        String attrFullCode = "01000B010700";
+        String objectFullCode = "0100050000000";
         bodyMap.put("attrFullCode", attrFullCode);
         bodyMap.put("objectFullCode", objectFullCode);
         String body = JSONObject.toJSONString(bodyMap);
@@ -307,7 +321,7 @@ public class AttrItemMetaTest extends BaseTest {
         String attrItemName = "属性条目" + code;
         String attrItemLabel = "TEST_ITEM00";
         String attrItemCode = code;
-        String attrItemFullCode = "01 0002 0 0 " + code + " 00";
+        String attrItemFullCode = "01000200 " + code + "00";
         String remark = "属性条目 " + code + "描述";
         String hashRateLevel = "collection";
         String dataSource = "model";
@@ -329,7 +343,7 @@ public class AttrItemMetaTest extends BaseTest {
 //        printResult(result);
 
         // 查
-        String objectTypeFullCode = "14 0000 0 00 00 00";
+        String objectTypeFullCode = "1400000000000";
         Map<String, Object> queryBodyMap = new LinkedHashMap<>();
         queryBodyMap.put("current", 1);
         queryBodyMap.put("size", 20);
@@ -357,11 +371,11 @@ public class AttrItemMetaTest extends BaseTest {
 //        System.out.println(resultMap);
 //
 //        Integer id = getId(result);
-//        if (id != null && id != 0) {
+//        if (id != null && id !=0) {
 //            // 改
-//            String newObjectCode = "01 0002 0 0 00 00";
-//            String newAttrCode = "01 [MMMM] B 1 01 00";
-//            String newAttrFullCode = "01 [MMMM] B 1 01 00";
+//            String newObjectCode = "010002000000";
+//            String newAttrCode = "01 [MMMM] B 10100";
+//            String newAttrFullCode = "01 [MMMM] B 10100";
 //            Map<String, Object> updateBodyMap = new LinkedHashMap<>();
 //            updateBodyMap.put("id", id);
 //            updateBodyMap.put("attrItemName", attrItemName);
@@ -394,13 +408,21 @@ public class AttrItemMetaTest extends BaseTest {
     public void testList_02() throws Exception {
         RestTemplate restTemplate = new RestTemplate();
         String result = "";
-        Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
+       // Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
         String body;
 
         // 查
         Map<String, Object> queryBodyMap = new LinkedHashMap<>();
+        String objectFullCode = "0100050000000";
+        String objectTypeFullCode = "0100000000000";
+        String attrTypeFullCode = "010000B010000";
+        String structureTypeCode = "B";
+        queryBodyMap.put("objectFullCode", objectFullCode);
+        queryBodyMap.put("objectTypeFullCode", objectTypeFullCode);
+        queryBodyMap.put("attrTypeFullCode", attrTypeFullCode);
+        queryBodyMap.put("structureTypeCode", structureTypeCode);
         body = JSONObject.toJSONString(queryBodyMap);
-        result = postForObject(restTemplate, URI +"list", body);
+        result = postForObject(restTemplate, URI + "list", body);
         System.out.println(result);
     }
 
@@ -409,10 +431,48 @@ public class AttrItemMetaTest extends BaseTest {
         String result = "";
         RestTemplate restTemplate = new RestTemplate();
         Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
-        String attrFullCode = "01 0000 B 01 07 00";
-        String objectFullCode = "01 0002 0 0 00 00";
+        String attrFullCode = "01000B010700";
+        String objectFullCode = "010002000000";
         bodyMap.put("attrFullCode", attrFullCode);
         bodyMap.put("objectFullCode", objectFullCode);
+        String body = JSONObject.toJSONString(bodyMap);
+        System.out.println(body);
+        result = postForObject(restTemplate, URI + "genCode", body);
+        System.out.println(getCode(result));
+    }
+
+    /**
+     * {"objectFullCode":"","attrFullCode":"01000B010800"}
+     */
+    @Test
+    public void testGenCode_04() {
+        String result = "";
+        RestTemplate restTemplate = new RestTemplate();
+        Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
+        String objectFullCode = "0100020000000";
+        String attrFullCode = "01000B010800";
+        bodyMap.put("objectFullCode", objectFullCode);
+        bodyMap.put("attrFullCode", attrFullCode);
+        String body = JSONObject.toJSONString(bodyMap);
+        System.out.println(body);
+        result = postForObject(restTemplate, URI + "genCode", body);
+        System.out.println(getCode(result));
+    }
+
+    /**
+     * 电站-流量-发电流量-三峡左岸发电流量
+     * <p>
+     * {"objectFullCode":"0200000000000","attrFullCode":"020000 D020F00"} 20221017
+     */
+    @Test
+    public void testGenCode_05() {
+        String result = "";
+        RestTemplate restTemplate = new RestTemplate();
+        Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
+        String objectFullCode = "0200000000000";
+        String attrFullCode = "020000 D020F00";
+        bodyMap.put("objectFullCode", objectFullCode);
+        bodyMap.put("attrFullCode", attrFullCode);
         String body = JSONObject.toJSONString(bodyMap);
         System.out.println(body);
         result = postForObject(restTemplate, URI + "genCode", body);

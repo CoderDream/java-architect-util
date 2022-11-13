@@ -5,7 +5,12 @@ spring:
     url: jdbc:mysql://172.16.104.190:3306/object_data?useSSL=false&useUnicode=true&characterEncoding=UTF-8
     username: root
     password: 123456
-
+  application:
+    name: easyexcel-practise
+  # jackson
+  jackson:
+    time-zone: Asia/Shanghai
+    date-format: yyyy-MM-dd HH:mm:ss
 # MybatisPlus配置
 mybatis-plus:
   mapper-locations: classpath:com.coderdream.easyexcelpractise.mapper/*.xml

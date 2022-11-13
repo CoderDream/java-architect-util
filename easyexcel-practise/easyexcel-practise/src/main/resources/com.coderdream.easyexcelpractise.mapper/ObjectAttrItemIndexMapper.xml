@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coderdream.easyexcelpractise.mapper.ObjectAttrItemIndexMapper">
+
+    <!-- id自动生成  -->
+    <insert id="insertOrUpdateBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into object_attr_item_index(object_full_code, attr_item_full_code, data_type)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.objectFullCode}, #{entity.attrItemFullCode}, #{entity.dataType})
+        </foreach>
+        on duplicate key update
+        data_type = values(data_type)
+    </insert>
+
+</mapper>
+

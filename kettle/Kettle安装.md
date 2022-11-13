@@ -1,4 +1,6 @@
-## Kettle 安装
+## Docker 安装 Kettle
+
+
 
 
 
@@ -24,8 +26,6 @@ cd /var/lib/docker/overlay2/2549b60b9c7b0303b01844b3fe4ca0a9632383b425441708f906
 #### 找到 MergeDir
 
  ![image-20221002151120360](D:\04_GitHub\java-architect-util\kettle\assets\image-20221002151120360.png)
-
-
 
 
 
@@ -116,12 +116,6 @@ cp /home/mysql-connector-java-5.1.49-bin.jar /var/lib/docker/overlay2/2549b60b9c
 
 
  ![image-20221002161811082](assets\image-20221002161811082.png)
-
-
-
-
-
-
 
 
 

@@ -9,5 +9,5 @@ import java.util.List;
 @Mapper
 public interface AttrInfoMapper extends BaseMapper<AttrInfoEntity> {
 
-    public void insertBatch(List<AttrInfoEntity> attrInfoEntities);
+//    public void insertBatch(List<AttrInfoEntity> attrInfoEntities);
 }

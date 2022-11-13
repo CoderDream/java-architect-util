@@ -11,10 +11,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 public class EasyExcelPractiseApplication {
 
     public static void main(String[] args) {
-
-//        org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata c;
-
-
         SpringApplication.run(EasyExcelPractiseApplication.class, args);
     }
 

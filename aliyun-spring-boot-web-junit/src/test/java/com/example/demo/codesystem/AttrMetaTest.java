@@ -33,8 +33,8 @@ public class AttrMetaTest extends BaseTest {
         RestTemplate restTemplate = new RestTemplate();
         String result;
         Map<String, Object> bodyMap = new LinkedHashMap<>();
-        String attrTypeFullCode = "01 0000 B 01 00 00";
-        Integer commonFlag = 0;
+        String attrTypeFullCode = "010000B010000";
+        Integer commonFlag =0;
         bodyMap.put("attrTypeFullCode", attrTypeFullCode);
         bodyMap.put("commonFlag", commonFlag);
 
@@ -51,8 +51,8 @@ public class AttrMetaTest extends BaseTest {
         String attrName = "属性66" + code;
         String attrLabel = "TTEESSTTbbaddddd";
         String attrCode = code;
-        String attrFullCode = "01 0000 B 01 " + code + " 00";
-        //String attrTypeFullCode = objectTypeCode + "0000 0 " + structureTypeCode + " " + temp + " 00";
+        String attrFullCode = "010000B01" + code + "00";
+        //String attrTypeFullCode = objectTypeCode + "00000" + structureTypeCode + "" + temp + "00";
         String remark = "属性类型 " + code + "描述";
         String dataType = "text";
         bodyMap.put("attrName", attrName);
@@ -97,11 +97,11 @@ public class AttrMetaTest extends BaseTest {
         System.out.println(resultMap);
 
         Integer id = getId(result);
-        if (id != null && id != 0) {
+        if (id != null && id !=0) {
             // 改
             //String newAttrTypeCode = "B4";
             String newAttrName = "B4";
-//            String newAttrTypeFullCode = "01 0000 B 03 00 00";
+//            String newAttrTypeFullCode = "010000B030000";
             Map<String, Object> updateBodyMap = new LinkedHashMap<>();
             updateBodyMap.put("id", id);
             updateBodyMap.put("attrName", newAttrName);
@@ -137,7 +137,7 @@ public class AttrMetaTest extends BaseTest {
         RestTemplate restTemplate = new RestTemplate();
         String result;
         Map<String, Object> bodyMap = new LinkedHashMap<>();
-        String attrTypeFullCode = "01 0000 B 02 00 00";
+        String attrTypeFullCode = "010000B020000";
         Integer commonFlag = 1;
         bodyMap.put("attrTypeFullCode", attrTypeFullCode);
         bodyMap.put("commonFlag", commonFlag);
@@ -155,8 +155,8 @@ public class AttrMetaTest extends BaseTest {
         String attrName = "属性66" + code;
         String attrLabel = "TTEESSTTbbaddddd";
         String attrCode = code;
-        String attrFullCode = "01 0000 B 02 " + code + " 00";
-        //String attrTypeFullCode = objectTypeCode + "0000 0 " + structureTypeCode + " " + temp + " 00";
+        String attrFullCode = "010000B02 " + code + "00";
+        //String attrTypeFullCode = objectTypeCode + "00000" + structureTypeCode + "" + temp + "00";
         String remark = "属性类型 " + code + "描述";
         bodyMap.put("attrName", attrName);
         bodyMap.put("attrLabel", attrLabel);
@@ -199,11 +199,11 @@ public class AttrMetaTest extends BaseTest {
         System.out.println(resultMap);
 
         Integer id = getId(result);
-        if (id != null && id != 0) {
+        if (id != null && id !=0) {
             // 改
             //String newAttrTypeCode = "B4";
             String newAttrName = "B4";
-//            String newAttrTypeFullCode = "01 0000 B 03 00 00";
+//            String newAttrTypeFullCode = "010000B030000";
             Map<String, Object> updateBodyMap = new LinkedHashMap<>();
             updateBodyMap.put("id", id);
             updateBodyMap.put("attrName", newAttrName);
@@ -241,13 +241,13 @@ public class AttrMetaTest extends BaseTest {
         Map<String, Object> bodyMap = new LinkedHashMap<>();
         Integer commonFlag = 1;
         String attrLabel = "kjkjk";
-        String attrTypeFullCode = "01 0000 B 01 00 00"; // 属性类型全码
+        String attrTypeFullCode = "010000B010000"; // 属性类型全码
         String attrName = "代码";
         String dataType = "text";
         String attrTypeCode = "01";
-        String objectTypeFullCode = "02 0000 0 00 00 00";
+        String objectTypeFullCode = "0200000000000";
         String structureTypeCode = "B";
-        String attrFullCode = "02 0000 B 01 08 00";
+        String attrFullCode = "020000B010800";
         String attrCode = "08"; // 属性编码
 
         bodyMap.put("commonFlag", commonFlag);
@@ -265,6 +265,58 @@ public class AttrMetaTest extends BaseTest {
         System.out.println("body: " + body);
         // 增
         result = postForObject(restTemplate, URI + "add", body);
+        System.out.println(result);
+
+        // msg
+        //:
+        //"公共属性在同一属性类型下属性码不可重复！"
+    }
+
+    @Test
+    public void testCreate_02() throws Exception {
+        RestTemplate restTemplate = new RestTemplate();
+        String result;
+        Map<String, Object> bodyMap = new LinkedHashMap<>();
+        Integer commonFlag = 1;
+        String attrLabel = "kjkjk";
+        String attrTypeFullCode = "010000B010000"; // 属性类型全码
+        String attrName = "代码";
+        String dataType = "text";
+        String attrTypeCode = "01";
+        String objectTypeFullCode = "0200000000000";
+        String structureTypeCode = "B";
+        String attrFullCode = "020000B010800";
+        String attrCode = "08"; // 属性编码
+
+        bodyMap.put("commonFlag", commonFlag);
+        bodyMap.put("attrLabel", attrLabel);
+        bodyMap.put("attrTypeFullCode", attrTypeFullCode);
+        bodyMap.put("attrName", attrName);
+        bodyMap.put("dataType", dataType);
+        bodyMap.put("attrTypeCode", attrTypeCode);
+        bodyMap.put("objectTypeFullCode", objectTypeFullCode);
+        bodyMap.put("structureTypeCode", structureTypeCode);
+        bodyMap.put("attrFullCode", attrFullCode);
+        bodyMap.put("attrCode", attrCode);
+
+        String body = JSONObject.toJSONString(bodyMap);
+        System.out.println("body: " + body);
+        // 增
+        result = postForObject(restTemplate, URI + "add", "{\"commonFlag\":1,\"displayFlag\":1,\"attrLabel\":\"cczzzde\",\"attrTypeFullCode\":\"060000B010000\",\"attrName\":\"测试属性ABC\",\"code1\":\"0\",\"code2\":\"6\",\"attrTypeCode\":\"01\",\"objectTypeFullCode\":\"0600000000000\",\"structureTypeCode\":\"B\",\"attrFullCode\":\"060000B010600\",\"attrCode\":\"06\"}");
+        System.out.println(result);
+
+        // msg
+        //:
+        //"公共属性在同一属性类型下属性码不可重复！"
+    }
+
+
+    @Test
+    public void testCreate_03() throws Exception {
+        RestTemplate restTemplate = new RestTemplate();
+        String result;
+        // 增
+        result = postForObject(restTemplate, URI + "add", "{\"commonFlag\":1,\"displayFlag\":1,\"attrLabel\":\"cczzzde\",\"attrTypeFullCode\":\"060000B010000\",\"attrName\":\"测试属性ABC\",\"code1\":\"0\",\"code2\":\"6\",\"attrTypeCode\":\"01\",\"objectTypeFullCode\":\"0600000000000\",\"structureTypeCode\":\"B\",\"attrFullCode\":\"060000B010600\",\"attrCode\":\"06\"}");
         System.out.println(result);
 
         // msg
@@ -348,6 +400,8 @@ public class AttrMetaTest extends BaseTest {
         System.out.println(result);
     }
 
+
+
     /**
      * 获取属性元数据三层树，用于创建属性条目
      *
@@ -373,7 +427,7 @@ public class AttrMetaTest extends BaseTest {
         String result = "";
         String body = "";
         String code = "FF";
-        String objectCode = "01 0002 0 0 00";
+        String objectCode = "0100020000";
         String hashRateLevel = "collection";
         String dataSource = "model";
         String attrTypeCode = "D1";
@@ -421,7 +475,7 @@ public class AttrMetaTest extends BaseTest {
         System.out.println(resultMap);
 
 //        Integer id = getId(result);
-//        if (id != null && id != 0) {
+//        if (id != null && id !=0) {
 //            // 删
 //            Map<String, Object> deleteBodyMap = new LinkedHashMap<>();
 //            deleteBodyMap.put("id", id);
@@ -440,7 +494,7 @@ public class AttrMetaTest extends BaseTest {
         String code = "34";
         String label = "xz1";
         String name = "测试新增属性1";
-        String objectCode = "01 0002 0 0 00 00";
+        String objectCode = "010002000000";
         String attrTypeCode = "99";
         String hashRateLevel = "collection";
         String dataSource = "model";
@@ -488,7 +542,7 @@ public class AttrMetaTest extends BaseTest {
         System.out.println(resultMap);
 
 //        Integer id = getId(result);
-//        if (id != null && id != 0) {
+//        if (id != null && id !=0) {
 //            // 删
 //            Map<String, Object> deleteBodyMap = new LinkedHashMap<>();
 //            deleteBodyMap.put("id", id);
@@ -506,7 +560,7 @@ public class AttrMetaTest extends BaseTest {
         RestTemplate restTemplate = new RestTemplate();
         Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
         String structureTypeCode = "B";
-        String attrTypeFullCode = "01 0000 B 04 00 00";
+        String attrTypeFullCode = "010000B040000";
         bodyMap.put("structureTypeCode", structureTypeCode);
         bodyMap.put("attrTypeFullCode", attrTypeFullCode);
         String body = JSONObject.toJSONString(bodyMap);
@@ -515,15 +569,15 @@ public class AttrMetaTest extends BaseTest {
         System.out.println(getCode(result));
     }
 
-    //{"objectTypeFullCode":"01 0000 0 00 00 00","attrTypeFullCode":"01 0000 B 01 00 00","structureTypeCode":"B"}
+    //{"objectTypeFullCode":"0100000000000","attrTypeFullCode":"010000B010000","structureTypeCode":"B"}
 
     @Test
     public void testGenCode_02() {
         String result = "";
         RestTemplate restTemplate = new RestTemplate();
         Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
-        String attrTypeFullCode = "01 0000 B 04 00 00";
-        Integer commonFlag = 0;
+        String attrTypeFullCode = "010000B040000";
+        Integer commonFlag =0;
         bodyMap.put("attrTypeFullCode", attrTypeFullCode);
         bodyMap.put("commonFlag", commonFlag);
         String body = JSONObject.toJSONString(bodyMap);
@@ -537,8 +591,8 @@ public class AttrMetaTest extends BaseTest {
         String result = "";
         RestTemplate restTemplate = new RestTemplate();
         Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
-        String attrTypeFullCode = "01 0000 B 02 00 00";
-        Integer commonFlag = 0;
+        String attrTypeFullCode = "010000B020000";
+        Integer commonFlag =0;
         bodyMap.put("attrTypeFullCode", attrTypeFullCode);
         bodyMap.put("commonFlag", commonFlag);
         String body = JSONObject.toJSONString(bodyMap);
@@ -552,8 +606,8 @@ public class AttrMetaTest extends BaseTest {
         String result = ""; // 2Z -> 30
         RestTemplate restTemplate = new RestTemplate();
         Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
-        String attrTypeFullCode = "01 0000 B 02 00 00";
-        String attrTypeCode = "02";
+        String attrTypeFullCode = "060000B010000";
+        String attrTypeCode = "01";
         Integer commonFlag = 1;
         String structureTypeCode = "B";
         bodyMap.put("structureTypeCode", structureTypeCode);
@@ -564,6 +618,41 @@ public class AttrMetaTest extends BaseTest {
         System.out.println(body);
         result = postForObject(restTemplate, URI + "genCode", body);
         System.out.println(getCode(result));
+    }
+
+    @Test
+    public void testListAllStructureAttrs_03() { // 应该返回01
+        String result = "";
+        String objectTypeFullCode = "1800000000000";
+        RestTemplate restTemplate = new RestTemplate();
+        Map<String, Object> bodyMap = new LinkedHashMap<>();
+        bodyMap.put("objectTypeFullCode", objectTypeFullCode);
+        String body = JSONObject.toJSONString(bodyMap);
+        System.out.println(body);
+        URI += "listAllStructureAttrs";
+        System.out.println(URI);
+        result = postForObject(restTemplate, URI, body);
+        System.out.println(result);
+    }
+
+    /**
+     * 查找子水电站所有基础属性
+     */
+    @Test
+    public void testListAllStructureAttrs_04() { // 应该返回01
+        String result = "";
+        String objectTypeFullCode = "1800000000000";
+        String structureTypeCode = "B"; // 结构类型
+        RestTemplate restTemplate = new RestTemplate();
+        Map<String, Object> bodyMap = new LinkedHashMap<>();
+        bodyMap.put("objectTypeFullCode", objectTypeFullCode);
+        bodyMap.put("structureTypeCode", structureTypeCode);
+        String body = JSONObject.toJSONString(bodyMap);
+        System.out.println(body);
+        URI += "listAllStructureAttrs";
+        System.out.println(URI);
+        result = postForObject(restTemplate, URI, body);
+        System.out.println(result);
     }
 
 }

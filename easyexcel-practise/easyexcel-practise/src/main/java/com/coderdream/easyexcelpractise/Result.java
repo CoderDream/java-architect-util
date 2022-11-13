@@ -1,12 +1,15 @@
 package com.coderdream.easyexcelpractise;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import java.io.Serializable;
 
 @Data
+@ToString
 public class Result<T> implements Serializable {
-    private static final long serialVersionUID = 7611072148148193425L;
+    private static final long serialVersionUID = 7611072143148193425L;
     private Integer code;
 
     private String msg;

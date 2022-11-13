@@ -16,7 +16,7 @@ import java.util.List;
  * path: 定义当前FeignClient的统一前缀 http://172.16.104.131:30417/
  */
 //@FeignClient(name = "keepsoft-object-data", path = "api/object/data/object/attr", url = "http://172.16.104.131:30417")
-@FeignClient(name = "keepsoft-object-data", path = "api/object/data/object/attr", url = "http://127.0.0.1:9099")
+@FeignClient(name = "keepsoft-object-data-object-data", path = "api/object/data/object/attr", url = "http://127.0.0.1:9099")
 public interface ObjectDataServiceClient {
 
     /**

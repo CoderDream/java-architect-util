@@ -48,14 +48,17 @@ public class SpringBootReadCurveTest {
 
 //        "01 0002 B 04 01 01" "三峡净库容曲线";
 //        "01 0002 B 04 A2 01" "三峡1#机组alstom";
-        Map<String, String> attrItemFullCodeMap = new LinkedHashMap<>();
-        attrItemFullCodeMap.put("三峡净库容曲线", "01 0002 B 04 01 01");
-        attrItemFullCodeMap.put("三峡1#机组alstom", "01 0002 B 04 A2 01");
+//        Map<String, String> attrItemFullCodeMap = new LinkedHashMap<>();
+//        attrItemFullCodeMap.put("三峡净库容曲线", "01 0002 B 04 01 01");
+//        attrItemFullCodeMap.put("三峡1#机组alstom", "01 0002 B 04 A2 01");
 
 //        String fileName = TestFileUtil.getPath() + "demo" + File.separator + "三峡净库容曲线.csv";
 //        String fileName = TestFileUtil.getPath() + "demo" + File.separator + "三峡净库容曲线.xlsx";
+//        String fileName = TestFileUtil.getPath() + "demo" + File.separator + "受电区-综合-上海 - 三合一.xlsx";
 
-        String fileName = TestFileUtil.getPath() + "demo" + File.separator + "三峡1#机组alstom.csv";
+        String fileName = TestFileUtil.getPath() + "demo" + File.separator  + "xingzhengqu" + File.separator+ "受电区-综合-上海 - 三合一.xlsx";
+
+//        String fileName = TestFileUtil.getPath() + "demo" + File.separator + "三峡1#机组alstom.csv";
         //       String fileName = TestFileUtil.getPath() + "demo" + File.separator + "白鹤滩发电流量.xlsx";
         processFile(fileName);
     }
@@ -69,7 +72,7 @@ public class SpringBootReadCurveTest {
         CurveEntity curveEntity = transferToEntity(result);
 
         // 最后一页 Stream.of("1", "2", "3").collect(Collectors.toList()); curveEntity
-        curveEntity.setAttrItemFullCode("01 0002 B 04 A2 01");
+//        curveEntity.setAttrItemFullCode("01 0002 B 04 A2 01");
 //        curveMapper.insertBatch(Stream.of(curveEntity).collect(Collectors.toList()));
 
         curveMapper.insert(curveEntity);

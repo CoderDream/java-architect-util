@@ -39,7 +39,7 @@ public class ObjectTypeMetaTest extends BaseTest {
         String objectTypeName = "测试对象类型" + code;
         String objectTypeLabel = "NEW_OBJECT_TYPEAAEE";
         String objectTypeCode = code;
-        String objectTypeFullCode = code + " 0000 0 00 00 00";
+        String objectTypeFullCode = code + "00000000000";
         bodyMap.put("objectTypeName", objectTypeName);
         bodyMap.put("objectTypeLabel", objectTypeLabel);
         bodyMap.put("objectTypeCode", objectTypeCode);
@@ -157,6 +157,73 @@ public class ObjectTypeMetaTest extends BaseTest {
         body = JSONObject.toJSONString(queryBodyMap);
         result = postForObject(restTemplate, URI + "list", body);
         System.out.println("list: " + result);
+    }
+
+    @Test
+    public void testReadAll_03() throws Exception {
+        RestTemplate restTemplate = new RestTemplate();
+        String objectTypeFullCode = "18 0000 0 00 00 00";
+        String structureTypeCode = "B"; // 结构类型
+        Map<String, Object> bodyMap = new LinkedHashMap<>();
+        bodyMap.put("objectTypeFullCode", objectTypeFullCode);
+        bodyMap.put("structureTypeCode", structureTypeCode);
+//
+        String body = JSONObject.toJSONString(bodyMap);
+        System.out.println("body: " + body);
+        // 查询树
+        String result = postForObject(restTemplate, URI + "listAllAttrs", body);
+        System.out.println(result);
+    }
+
+    // object-type-meta/listWithoutArea
+
+    /**
+     * 查水库
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testListWithoutArea_03() throws Exception {
+        RestTemplate restTemplate = new RestTemplate();
+        String objectTypeFullCode = "01 0000 0 00 00 00";
+        String structureTypeCode = "B"; // 结构类型
+        Map<String, Object> bodyMap = new LinkedHashMap<>();
+        bodyMap.put("objectTypeFullCode", objectTypeFullCode);
+//        bodyMap.put("structureTypeCode", structureTypeCode);
+//
+        String body = JSONObject.toJSONString(bodyMap);
+        System.out.println("body: " + body);
+        // 查询树
+        String result = postForObject(restTemplate, URI + "listWithoutArea", body);
+        System.out.println(result);
+    }
+
+    @Test
+    public void testReadAll_04() throws Exception {
+        // 是否处理【经度】、【维度】和【空间维度】三个值
+        // 查找属性条目 【对象全码】+【名称】+【属性全码】
+        // 基础属性、对象类型、标识信息、属性名称（）
+        RestTemplate restTemplate = new RestTemplate();
+        String objectTypeFullCode = "01 0000 0 00 00 00";
+        String attrTypeName = "标识信息";
+
+        List<String> names = new ArrayList<>();
+        names.add("经度");
+        names.add("纬度");
+        names.add("空间维度");
+        String structureTypeCode = "B"; // 结构类型
+        Map<String, Object> bodyMap = new LinkedHashMap<>();
+        bodyMap.put("objectTypeFullCode", objectTypeFullCode);
+        bodyMap.put("attrTypeName", attrTypeName);
+        bodyMap.put("attrNames", names);
+        bodyMap.put("structureTypeCode", structureTypeCode);
+        String body = JSONObject.toJSONString(bodyMap);
+        System.out.println("body: " + body);
+        URI += "listAllAttrs";
+        System.out.println(URI);
+        // 查询树
+        String result = postForObject(restTemplate, URI, body);
+        System.out.println(result);
     }
 
     @Test
