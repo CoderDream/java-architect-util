@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/activiti?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
+    username : root
+    password : root
+    driver-class-name: com.mysql.jdbc.Driver

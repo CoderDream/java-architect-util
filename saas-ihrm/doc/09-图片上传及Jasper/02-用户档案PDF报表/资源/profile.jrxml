@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.0.final using JasperReports Library version 6.5.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cbf96e19-3878-4fa3-b13f-9b95cf9b9166">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="staffPhoto" class="java.lang.String"/>
+	<parameter name="mobile" class="java.lang.String"/>
+	<parameter name="username" class="java.lang.String"/>
+	<parameter name="workNumber" class="java.lang.String"/>
+	<parameter name="departmentName" class="java.lang.String"/>
+	<parameter name="post" class="java.lang.String"/>
+	<parameter name="rank" class="java.lang.String"/>
+	<parameter name="correctionEvaluation" class="java.lang.String"/>
+	<parameter name="recruitmentChannels" class="java.lang.String"/>
+	<parameter name="homeCompany" class="java.lang.String"/>
+	<parameter name="title" class="java.lang.String"/>
+	<parameter name="remarks" class="java.lang.String"/>
+	<parameter name="graduationTime" class="java.lang.String"/>
+	<parameter name="major" class="java.lang.String"/>
+	<parameter name="theHighestDegreeOfEducation" class="java.lang.String"/>
+	<parameter name="graduateSchool" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="97" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="100" height="97" uuid="ae416b41-a622-43bc-b31a-bdd5a506524c"/>
+				<imageExpression><![CDATA[$P{staffPhoto}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="120" y="3" width="60" height="30" uuid="757e031e-9610-4d83-a831-45a6e6ebc7a1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<text><![CDATA[姓名：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="60" width="70" height="30" uuid="f10c4368-4d3a-4fef-b20a-af8c3ceb93a1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<text><![CDATA[所属部门：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="0" width="50" height="30" uuid="ca7b8a94-8f37-4e45-8ae1-b0142a729642"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<text><![CDATA[电话：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="60" width="60" height="30" uuid="a60a3c3e-53a0-485c-8fbf-d56eb9d78b84"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<text><![CDATA[工号：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="3" width="70" height="30" uuid="152608ba-a140-4a57-933a-e5dd4b7a5552"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{username}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="395" y="0" width="100" height="30" uuid="21db5c25-3436-46ea-b5e2-c161c463f0e7"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mobile}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="60" width="100" height="30" uuid="d91da616-77ac-4d44-9bd6-3178d2d817ff"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{workNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="60" width="100" height="30" uuid="75465b5e-0b7a-4a5c-b36f-42d924788f5e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{departmentName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="554" splitType="Stretch">
+			<line>
+				<reportElement x="2" y="31" width="548" height="1" forecolor="#26488C" uuid="c4c080cc-98dd-4602-b611-604dfb44fe89">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="167" width="548" height="1" forecolor="#26488C" uuid="ef6b2c1e-3321-4ffc-a7a5-5b4e9f96abe3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="1" y="-1" width="100" height="30" uuid="7be279f4-95d2-48b3-92c2-1369a1093a20"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="华文宋体" size="16"/>
+				</textElement>
+				<text><![CDATA[教育信息]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="132" width="100" height="30" uuid="143a4a01-e1ea-4e17-9052-6cfe13559d00"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="华文宋体" size="16"/>
+				</textElement>
+				<text><![CDATA[工作信息]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="291" width="100" height="30" uuid="4241f35e-c99b-442b-9685-bf75fea1f695"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="华文宋体" size="16"/>
+				</textElement>
+				<text><![CDATA[岗位信息]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="322" width="548" height="1" forecolor="#26488C" uuid="e340cb0c-6827-43e0-b421-4954c12a92d5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="30" y="43" width="74" height="30" uuid="d4107dea-06b3-436a-8c06-a994d32bd453"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<text><![CDATA[学历：：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="44" width="60" height="30" uuid="5fbf3c38-01cc-4411-ad6a-7c1f733f056f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<text><![CDATA[专业：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="90" width="74" height="30" uuid="be7a91d3-82bd-4196-a4b1-e5ab6e5c7548"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<text><![CDATA[毕业学校：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="90" width="80" height="30" uuid="3356c9fa-0916-48cc-b2a2-04ac71202926"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<text><![CDATA[毕业时间：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="182" width="80" height="30" uuid="9b5b53be-f2c1-430c-a824-a16478d94659"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<text><![CDATA[上家公司：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="323" y="183" width="60" height="30" uuid="41bb1fc2-8ee9-4065-b6ac-93af0111ba94"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<text><![CDATA[职称：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="230" width="60" height="30" uuid="62f878f6-9ec5-48da-92ba-29527941dbf8"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<text><![CDATA[备注：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="341" width="60" height="30" uuid="f2c5b426-ed5a-48f4-a3b9-849f518968f2"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<text><![CDATA[岗位：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="401" width="72" height="30" uuid="94ed76e8-ecc5-49fd-bac6-4331a1f3c327"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<text><![CDATA[招聘渠道：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="461" width="72" height="30" uuid="0251b376-fe9a-4a08-8815-329d3b10b988"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<text><![CDATA[转正评价：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="318" y="341" width="60" height="30" uuid="f2667c3b-8ec0-4975-b2e9-31ee6d2d6200"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<text><![CDATA[职级：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="103" y="43" width="70" height="30" uuid="d897e458-afc3-4c92-82aa-c42e17401429"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{theHighestDegreeOfEducation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="104" y="90" width="70" height="30" uuid="038886b6-d9f9-4970-bc81-33d78706595b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{graduateSchool}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="44" width="70" height="30" uuid="4def02ca-1490-422e-a212-57570f265b3b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{major}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="401" y="90" width="80" height="30" uuid="4dec4194-b379-4d9f-aab3-6d9c9de427d9"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{graduationTime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="182" width="70" height="30" uuid="df310d33-0757-47ce-8449-ad65af9ac0f5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{homeCompany}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="112" y="341" width="70" height="30" uuid="20b5f530-dc1c-48a3-9a0c-d3c6b410e5ff"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{post}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="112" y="401" width="138" height="30" uuid="91ca1e9e-6764-4747-8442-52b6cb984219"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{recruitmentChannels}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="101" y="230" width="70" height="30" uuid="44ffa709-47c7-4983-9500-a5b5a0ea9685"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{remarks}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="383" y="183" width="70" height="30" uuid="00218b82-7fc0-47b6-9e1f-5ddbb7530b08"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="379" y="341" width="70" height="30" uuid="daa61db8-0911-4f9f-8cdf-ce9d03c504c1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{rank}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="112" y="461" width="368" height="30" uuid="ee4aca5e-c46d-4bfb-8f6d-96d254dfa822"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="华文宋体" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{correctionEvaluation}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,5 @@
+Assignee  :直接设置任务执行人
+Candidate-user:设置候选用户，格式：wangwu,zhangsan,zhaoliu
+           依然要指定具体的用户信息
+Candiate-Groups:特点不需要知道具体的用户信息
+                只需要知道组名就可以

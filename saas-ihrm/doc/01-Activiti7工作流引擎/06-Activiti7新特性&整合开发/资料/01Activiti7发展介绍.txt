@@ -1,0 +1,17 @@
+发展过程
+    Activiti产生
+    2010-5-17  Alfresco软件组织
+            Tom Baeyens
+	       JBoss公司,也是从事工作流相关架构开发工作
+               项目：JBPM
+               JBPM4-----JBPM5
+
+
+    Activiti5.x
+            6.x
+------------------公司中最常用的两个版本
+            7
+             不是Tom Baeyens团队开发的
+            flowable
+ 
+    
