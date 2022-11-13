@@ -59,11 +59,11 @@ public class ActivitiTest {
 
 * 生成的表
 
- ![image-20221113213904024](assets\image-20221113213904024.png)
+ ![image-20221113213904024](https://raw.githubusercontent.com/CoderDream/java-architect-util/main/saas-ihrm/assets/image-20221113213904024.png)
 
 
 
- ![image-20221113214146721](assets\image-20221113214146721.png)
+ ![image-20221113214146721](https://raw.githubusercontent.com/CoderDream/java-architect-util/main/saas-ihrm/assets/image-20221113214146721.png)
 
 
 
