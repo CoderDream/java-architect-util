@@ -12,10 +12,13 @@ import com.zhy.easyexceldemo.easyexcel.ExcelCheckErrDto;
 import com.zhy.easyexceldemo.pojo.User;
 import com.zhy.easyexceldemo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
@@ -34,7 +37,17 @@ import java.util.stream.Collectors;
 public class UserRest extends BaseRest {
 
 
-    @Autowired
+    @Value("${upload.linuxPath}")
+    private String uploadPath;
+
+    @Value("${upload.windowsPath}")
+    private String uploadWindowsPath;
+
+
+    @Value("${file.location}")
+    private String fileLocation;
+
+    @Resource
     private UserService userService;
 
     /**
@@ -69,6 +82,14 @@ public class UserRest extends BaseRest {
      */
     @PostMapping("/importExcel")
     public Result importExcel(HttpServletResponse response, @RequestParam MultipartFile file) throws IOException {
+        if (isWindows()) {
+            uploadPath = uploadWindowsPath;
+        }
+
+        //上传目录地址
+        String uploadDir = uploadPath + File.separatorChar;
+
+
         EasyExcelListener easyExcelListener = new EasyExcelListener(userService, UserExcelDto.class);
         EasyExcelFactory.read(file.getInputStream(), UserExcelDto.class, easyExcelListener).sheet().doRead();
         List<ExcelCheckErrDto<UserExcelDto>> errList = easyExcelListener.getErrList();
@@ -78,8 +99,17 @@ public class UserRest extends BaseRest {
                 userExcelErrDto.setErrMsg(excelCheckErrDto.getErrMsg());
                 return userExcelErrDto;
             }).collect(Collectors.toList());
-            EasyExcelUtils.webWriteExcel(response, excelErrDtos, UserExcelErrDto.class, "用户导入错误信息");
+            if(fileLocation.equals("web")) {
+                EasyExcelUtils.webWriteExcel(response, excelErrDtos, UserExcelErrDto.class, "用户导入错误信息");
+            } else {
+                EasyExcelUtils.localWriteExcel(uploadDir, excelErrDtos, UserExcelErrDto.class, "用户导入错误信息","用户导入错误信息");
+            }
         }
         return addSucResult();
     }
+
+    public static boolean isWindows() {
+        return System.getProperties().getProperty("os.name").toUpperCase().contains("WINDOWS");
+    }
+
 }

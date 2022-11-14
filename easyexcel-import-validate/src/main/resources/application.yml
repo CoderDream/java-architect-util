@@ -1,2 +1,9 @@
 server:
   port: 8888
+
+upload:
+  windowsPath: D:\\data\\upload\\temp
+  linuxPath: /file
+
+file:
+  location: local
