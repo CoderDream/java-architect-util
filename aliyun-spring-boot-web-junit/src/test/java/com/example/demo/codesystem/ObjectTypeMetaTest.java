@@ -79,7 +79,7 @@ public class ObjectTypeMetaTest extends BaseTest {
         System.out.println(resultMap);
 
         Integer id = getId(result);
-        if (id != null && id != 0) {
+        if (id != null && id !=0) {
             // 改
             String newObjectTypeName = "新测试对象类型_U";
             String newObjectTypeLabel = "NEW_OBJECT_TYPE_U";
@@ -121,7 +121,7 @@ public class ObjectTypeMetaTest extends BaseTest {
         String objectTypeName = "新测试对象类型";
         String objectTypeLabel = "NEW_OBJECT_TYPE";
         String objectTypeCode = code;
-        String objectTypeFullCode = code + " 0000 0 00 00 00";
+        String objectTypeFullCode = code + "00000000000";
         bodyMap.put("objectTypeName", objectTypeName);
         bodyMap.put("objectTypeLabel", objectTypeLabel);
         bodyMap.put("objectTypeCode", objectTypeCode);
@@ -162,7 +162,7 @@ public class ObjectTypeMetaTest extends BaseTest {
     @Test
     public void testReadAll_03() throws Exception {
         RestTemplate restTemplate = new RestTemplate();
-        String objectTypeFullCode = "18 0000 0 00 00 00";
+        String objectTypeFullCode = "1800000000000";
         String structureTypeCode = "B"; // 结构类型
         Map<String, Object> bodyMap = new LinkedHashMap<>();
         bodyMap.put("objectTypeFullCode", objectTypeFullCode);
@@ -185,7 +185,7 @@ public class ObjectTypeMetaTest extends BaseTest {
     @Test
     public void testListWithoutArea_03() throws Exception {
         RestTemplate restTemplate = new RestTemplate();
-        String objectTypeFullCode = "01 0000 0 00 00 00";
+        String objectTypeFullCode = "0100000000000";
         String structureTypeCode = "B"; // 结构类型
         Map<String, Object> bodyMap = new LinkedHashMap<>();
         bodyMap.put("objectTypeFullCode", objectTypeFullCode);
@@ -204,7 +204,7 @@ public class ObjectTypeMetaTest extends BaseTest {
         // 查找属性条目 【对象全码】+【名称】+【属性全码】
         // 基础属性、对象类型、标识信息、属性名称（）
         RestTemplate restTemplate = new RestTemplate();
-        String objectTypeFullCode = "01 0000 0 00 00 00";
+        String objectTypeFullCode = "0100000000000";
         String attrTypeName = "标识信息";
 
         List<String> names = new ArrayList<>();
@@ -239,7 +239,7 @@ public class ObjectTypeMetaTest extends BaseTest {
         String objectTypeName = "新测试对象类型";
         String objectTypeLabel = "NEW_OBJECT_TYPE";
         String objectTypeCode = code;
-        String objectTypeFullCode = code + " 0000 0 0 00 00";
+        String objectTypeFullCode = code + "0000000000";
         bodyMap.put("objectTypeName", objectTypeName);
         bodyMap.put("objectTypeLabel", objectTypeLabel);
         bodyMap.put("objectTypeCode", objectTypeCode);
@@ -279,7 +279,7 @@ public class ObjectTypeMetaTest extends BaseTest {
 //        System.out.println(resultMap);
 
         Integer id = 65;//getId(result);
-        if (id != null && id != 0) {
+        if (id != null && id !=0) {
             // 改
             String newObjectTypeName = "新测试对象类型_U";
             String newObjectTypeLabel = "NEW_OBJECT_TYPE_U";
@@ -315,14 +315,14 @@ public class ObjectTypeMetaTest extends BaseTest {
         String code = "XX";
 
         String objectTypeCode = "01";
-        String objectTypeFullCode = "01 0000 0 00 00 00";
+        String objectTypeFullCode = "0100000000000";
         String structureTypeCode = "B";
         String attrTypeCode = "01";
-        String attrTypeFullCode = "01 0000 0 0 00 00";
+        String attrTypeFullCode = "010000000000";
 
         String attrName = "属性66";
         String attrCode = "TTEESS";
-        String attrFullCode = "01 0000 B 1 04 00";
+        String attrFullCode = "010000 B 10400";
 
         Map<String, Object> bodyMap = new LinkedHashMap<>();
         // 对象类型
@@ -396,7 +396,7 @@ public class ObjectTypeMetaTest extends BaseTest {
         String objectTypeName = "新测试对象类型" + code;
         String objectTypeLabel = "CCC_OBJECT_TYPE_A";
         String objectTypeCode = code;
-        String objectTypeFullCode1 = code + " 0000 0 0 00 00";
+        String objectTypeFullCode1 = code + "0000000000";
         objectTypeFullCodes[0] = objectTypeFullCode1;
         bodyMap.put("objectTypeName", objectTypeName);
         bodyMap.put("objectTypeLabel", objectTypeLabel);
@@ -415,7 +415,7 @@ public class ObjectTypeMetaTest extends BaseTest {
         objectTypeName = "新测试对象类型" + code;
         String objectTypeLabel2 = "CCC_OBJECT_TYPE_B";
         objectTypeCode = code;
-        String objectTypeFullCode2 = code + " 0000 0 0 00 00";
+        String objectTypeFullCode2 = code + "0000000000";
         objectTypeFullCodes[1] = objectTypeFullCode2;
         bodyMap.put("objectTypeName", objectTypeName);
         bodyMap.put("objectTypeLabel", objectTypeLabel2);
@@ -450,7 +450,7 @@ public class ObjectTypeMetaTest extends BaseTest {
         Map<String, Object> tempMap1 = new LinkedHashMap<>();
         Map<String, Object> tempMap2 = new LinkedHashMap<>();
         List<Map<String, Object>> deleteList = new ArrayList<>();
-        if (ids[0] != null && ids[1] != null && ids[0] != 0 && ids[1] != 0) {
+        if (ids[0] != null && ids[1] != null && ids[0] !=0 && ids[1] !=0) {
             tempMap1.put("id", ids[0]);
             tempMap1.put("objectTypeFullCode", objectTypeFullCodes[0]);
             deleteList.add(tempMap1);
