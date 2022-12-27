@@ -66,7 +66,7 @@ public class EasyExcelUtils {
                 new HorizontalCellStyleStrategy(headWriteCellStyle, contentWriteCellStyle);
         //建立文件对象
         File file = new File(uploadDir + fileName + ".xlsx");
-        OutputStream outputStream = new FileOutputStream(file);//response.getOutputStream();
+        OutputStream outputStream = new FileOutputStream(file);
         try {
             EasyExcelFactory.write(outputStream, clazz).registerWriteHandler(horizontalCellStyleStrategy).sheet(sheetName).doWrite(objects);
         } catch (Exception e) {

@@ -402,6 +402,23 @@ public class ObjectMetaTest extends BaseTest {
         System.out.println(result);
     }
 
+    /**
+     * 水库-乌东德-基础属性-标识信息
+     * {
+     *   "objectFullCode": "0100010000000",
+     *   "attrTypeFullCode": "010000B010000",
+     *   "structureTypeCode": "B"
+     * }
+     */
+    @Test
+    public void testListAttrItemInfo_08() {
+        RestTemplate restTemplate = new RestTemplate();
+        String body = "{\"objectFullCode\":\"0100010000000\",\"attrTypeFullCode\":\"010000B010000\",\"structureTypeCode\":\"B\"}";
+//        System.out.println("body: " + body);
+        // 查询树
+        String result = postForObject(restTemplate, URI + "listAttrItemInfo", body);
+        System.out.println(result);
+    }
 
     @Test
     public void testQueryAttrItemInfo_01() {

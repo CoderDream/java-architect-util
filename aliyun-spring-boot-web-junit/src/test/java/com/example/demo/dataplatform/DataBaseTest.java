@@ -62,14 +62,14 @@ public class DataBaseTest {
     public void init() throws JsonProcessingException {
         switch (env) {
             case "local":
-                URI_PREFIX = "http://192.168.18.75:";
+                URI_PREFIX = "http://localhost:";
                 ADMIN_PORT = "9085";
                 BUS_PORT = "9086";
                 DS_PORT = "7080";
                 BS_PORT = "9085";
                 break;
             case "local_home":
-                URI_PREFIX = "http://192.168.3.85:";
+                URI_PREFIX = "http://localhost:";
                 ADMIN_PORT = "9085";
                 BUS_PORT = "9086";
                 DS_PORT = "7080";
@@ -102,8 +102,9 @@ public class DataBaseTest {
                 DS_PORT = "7080";
                 break;
         }
-
-        final String uri = URI_PREFIX + ADMIN_PORT + "/api/data/sys/login";
+//        URI_PREFIX = "";
+//        final String uri = URI_PREFIX + ADMIN_PORT + "/api/data/sys/login";
+        final String uri = "http://172.16.104.61:30572/api/data/sys/login";
 
         RestTemplate restTemplate = new RestTemplate();
         // {"username":"xulin12345","password":"7191fb545e1f2de334fe8d38d5af905e","code":"0","uuid":"9dfb4a766f26425aa94118c92820ee0d"}

@@ -14,7 +14,7 @@
     <sql id="BaseColumns">id,user_name,age,email</sql>
 
     <!--Page<User> selectPageVo(@Param("page")Page<User> page,@Param("age") Integer age);-->
-    <select id="selectPageVo" resultType="User">
+    <select id="selectPageVo" resultType="com.coderdream.mybatisplusdemo.entity.User">
         SELECT <include refid="BaseColumns"></include> FROM user WHERE age > #{age}
     </select>
 

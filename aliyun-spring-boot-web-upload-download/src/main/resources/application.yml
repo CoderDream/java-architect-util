@@ -8,4 +8,6 @@ spring:
 server:
   port: 8088
 
-
+upload:
+  windowsPath: D:\\data\\upload\\temp
+  linuxPath: /file

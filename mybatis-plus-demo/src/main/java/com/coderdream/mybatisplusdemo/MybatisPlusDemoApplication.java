@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 //由于扫描指定包下的mapper接口
-@MapperScan("com.coderdream.mybatisplusdemo.mapper")
+@MapperScan(basePackages = {"com.coderdream.mybatisplusdemo.mapper"})
 public class MybatisPlusDemoApplication {
 
 	public static void main(String[] args) {

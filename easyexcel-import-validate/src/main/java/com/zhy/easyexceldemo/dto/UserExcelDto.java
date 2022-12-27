@@ -1,6 +1,7 @@
 package com.zhy.easyexceldemo.dto;
 
 import com.alibaba.excel.annotation.ExcelProperty;
+import com.alibaba.excel.annotation.format.DateTimeFormat;
 import com.alibaba.excel.annotation.write.style.ColumnWidth;
 import com.zhy.easyexceldemo.easyexcel.ExcelPatternMsg;
 import lombok.Data;
@@ -10,6 +11,7 @@ import org.hibernate.validator.constraints.Length;
 import javax.validation.constraints.Null;
 import javax.validation.constraints.Pattern;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * @title: UserExcelDto
@@ -31,19 +33,20 @@ public class UserExcelDto implements Serializable {
 
     //性别
     @ExcelProperty(index = 1,value = "性别")
-    @ColumnWidth(30)
+    @ColumnWidth(20)
     @Length(max = 2)
     private String sex;
 
     //年龄
     @ExcelProperty(index = 2,value = "年龄")
-    @ColumnWidth(30)
+    @ColumnWidth(10)
     @Pattern(regexp = ExcelPatternMsg.NUMBER,message = ExcelPatternMsg.NUMBER_MSG)
     private String age;
 
-
     //生日
     @ExcelProperty(index = 3,value = "生日")
+    @ColumnWidth(30)
     @Pattern(regexp = ExcelPatternMsg.DATE_TIME1,message = ExcelPatternMsg.DATE_TIME1_MSG)
+    @DateTimeFormat(value = "yyyy-MM-dd HH:mm:ss")
     private String birthday;
 }

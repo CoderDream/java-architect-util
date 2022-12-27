@@ -1,37 +1,29 @@
 package com.example.demo.dataplatform;
 
-import com.alibaba.fastjson.JSONObject;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.ArrayList;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @TestPropertySource("classpath:application.properties")  //你的配置文件
-@SpringBootTest(classes = {AttDtDbTest.class}) //测试的class
-@ContextConfiguration(classes = AttDtDbTest.class)
-public class AttDtDbTest extends DataBaseTest {
+@SpringBootTest(classes = {DataTest.class}) //测试的class
+@ContextConfiguration(classes = DataTest.class)
+public class DataTest extends DataBaseTest {
 
     @Before
     public void init() throws JsonProcessingException {
         super.init();
-        URI = URI_PREFIX + BUS_PORT + "/api/data/bus/attdtdb/";
+        URI = URI_PREFIX + BUS_PORT + "/api/data/bus/data/";
     }
 
     //
@@ -203,8 +195,8 @@ public class AttDtDbTest extends DataBaseTest {
         System.out.println("login_tokens:" + secret + ":" + token);
         // 保存
         Map<String, Object> saveBodyMap = new LinkedHashMap<>();
-        body = "{\"name\":\"ANJ4\",\"description\":\"aj-bus4\",\"drive\":\"com.mysql.jdbc.Driver\",\"url\":\"jdbc:mysql://172.16.107.164:3309/aj-bus?useUnicode=true&characterEncoding=utf8\",\"username\":\"aj-bus\",\"password\":\"aj-bus@123456\",\"mainUser\":\"aj-bus\",\"department\":\"aj-bus\",\"high\":true,\"id\":168,\"gpId\":\"\",\"dir\":\"45\",\"maxActive\":20,\"waitTime\":10000,\"logLevel\":\"ERROR\",\"ext\":\"\",\"createTime\":\"2022-09-27 16:15:54\",\"createBy\":\"xulin12345\",\"updateTime\":null,\"updateBy\":null,\"delFlag\":1,\"dbType\":\"MySQL\",\"clickType\":\"edit\"}"; //JSONObject.toJSONString(saveBodyMap);
-        result = postForObject(restTemplate, URI + "update", body);
+        body = "{\"dataId\":384,\"type\":4,\"current\":1,\"size\":100}"; //JSONObject.toJSONString(saveBodyMap);
+        result = postForObject(restTemplate, URI + "getData", body);
         System.out.println(result);
     }
 

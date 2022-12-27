@@ -293,7 +293,7 @@ public class AttrItemMetaTest extends BaseTest {
         RestTemplate restTemplate = new RestTemplate();
 
 
-        String body = "{\"objectFullCode\":\"2200010000000\",\"code1\":\"0\",\"code2\":\"1\",\"attrFullCode\":\"220000BA1A100\",\"attrItemName\":\"dadfda\",\"dataType\":\"sequence\",\"attrItemLabel\":\"eeeeeeee\",\"hashRateLevel\":\"calculation\",\"dataSource\":\"info_system\",\"attrItemCode\":\"01\",\"attrItemFullCode\":\"22000100BA1A101\"}";
+        String body = "{\"objectFullCode\":\"0100010000000\",\"code1\":\"0\",\"code2\":\"6\",\"attrFullCode\":\"010000B040100\",\"attrItemName\":\"测试曲线06\",\"dataType\":\"curve\",\"attrItemLabel\":\"dasfdsafadfa\",\"hashRateLevel\":\"collection\",\"dataSource\":\"info_system\",\"remark\":\"ererer\",\"attrItemCode\":\"06\",\"attrItemFullCode\":\"010001B040106\"}";
         System.out.println("body: " + body);
         // 增
         result = postForObject(restTemplate, URI + "add", body);
