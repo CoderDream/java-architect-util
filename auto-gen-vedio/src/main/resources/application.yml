@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: demo
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+server:
+  port: 8088
+
+upload:
+  windowsPath: D:\\data\\upload\\temp
+  linuxPath: /file
