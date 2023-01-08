@@ -1,0 +1,53 @@
+<script th:src="@{/scripts/merchant/new.js}"></script>
+<form id="saveForm" action="./save" method="post">
+    <table class="addNewInfList">
+        <tr>
+            <th>名称</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" id="name" name="name" maxlength="32" />
+                <span class="tipStar f-left">*</span>
+            </td>
+            <th>邮箱</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" id="email" name="email" maxlength="128" />
+            </td>
+        </tr>
+        <tr>
+            <th>电话</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" id="phone" name="phone" maxlength="32" />
+                <span class="tipStar f-left">*</span>
+            </td>
+            <th>地址</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" id="address" name="address" maxlength="255" />
+            </td>
+        </tr>
+        <tr>
+            <th>联系人</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" id="linkman" name="linkman" maxlength="128" />
+            </td>
+            <th>日期</th>
+            <td>
+                <input  onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" type="text" class="inp-list w-200 clear-mr f-left" id="created" name="created"/>
+            </td>
+        </tr>
+        <tr>
+            <th>用户名</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" id="userName" name="userName" maxlength="128" />
+                <span class="tipStar f-left">*</span>
+            </td>
+            <th>密码</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="password" id="passWord" name="passWord" maxlength="32" />
+                <span class="tipStar f-left">*</span>
+            </td>
+        </tr>
+    </table>
+    <div class="bottomBtnBox">
+        <a class="btn-93X38 saveBtn" href="javascript:void(0)">确定</a>
+        <a class="btn-93X38 backBtn" href="javascript: closeDialog()">返回</a>
+    </div>
+</form>

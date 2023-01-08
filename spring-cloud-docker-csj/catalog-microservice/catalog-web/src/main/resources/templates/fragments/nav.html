@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div th:fragment="nav">
+    <div class="columnLeftMenu">
+        <h6 ><span class="f-right"></span>类目管理</h6>
+        <ul >
+            <li><a th:classappend="${page == 'sorts/index' ? 'currentPageNav' : ''}" th:href="@{/sorts/index}">主类管理</a></li>
+            <li><a th:classappend="${page == 'subsorts/index' ? 'currentPageNav' : ''}" th:href="@{/subsorts/index}">子类管理</a></li>
+
+        </ul>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.searchBox{width:730px;height:75px;background: #f2f2f2;border-radius: 10px;-webkit-transform:translateY(10px);margin:0 auto;}
+.searchBox .select {float: left;width: 117px;height: 103px;position: relative;z-index: 2;}
+.searchBox p{font-size:28px;color:#ccc;line-height:48px;width:140px;height:48px; text-indent: 16px;
+    position:absolute;top:16px;left:0;border-right:1px solid #e3e3e3;z-index:3;}
+.searchBox .top_input{float:left;  margin-top: -5px;margin-left:10px;width:580px;}
+.searchBox .select .switch {display: none;position: absolute;top: 75px;left: 0;width: 228px;
+    border: solid #e3e3e3;border-width: 1px 1px 0;background: #fff;}
+.searchBox .select a {display: block;height: 87px;line-height: 87px;color: #666;border-bottom: 1px solid #e3e3e3;
+    padding: 0 0 0 86px; position: relative;background-image:url('../img/icon2.png');background-repeat: no-repeat;}
+.searchBox .select:before{content: ''; display: block; width: 12px;height: 12px;position: absolute;top: 29px;left:117px;
+    border-left:1px solid #535354;border-bottom:1px solid #535354;-webkit-transform:rotate(-45deg);}
+.top_input {position: relative;background:none;}
+.searchBox .type1{background-position:28px -36px;}
+.searchBox .type2{background-position:28px -120px;}
+.searchBox .type3{background-position:28px -208px;}
+.searchBox{position:relative;z-index:2;}
+.search_fix .searchBox{  width: 617px; margin-left: 10px;}
+.search_fix .searchBox .top_input{width:490px}
+.search_fix .top_input input{width:475px;}
+.search_fix .top_input .cancel{position:absolute;top: 12px;right: -250px;z-index:2;}
+.search_scroll{clear:both;}

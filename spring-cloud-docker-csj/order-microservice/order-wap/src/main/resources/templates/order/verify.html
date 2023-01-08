@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="yes" name="apple-mobile-web-app-capable"/>
+		<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<script th:src="@{/scripts/viewscale.js}"></script>
+		<script th:src="@{/scripts/jquery-1.10.2.min.js}"></script>
+		<title>用户登录</title>
+		<link th:href="@{/styles/microApply.css}"  rel="stylesheet" type="text/css"/>
+		<style type="text/css">
+			article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
+		</style>
+	</head>
+	<body>
+    	<div class="content">
+            <div class="iphone">
+                <p class="tips">手机号码</p>
+            	<input type="text" placeholder="" value="13500001111"/>
+            </div>
+            <div class="verifyBox">
+                <p class="tips">验证码</p>
+                <input type="text" placeholder="" value="123456"/>
+            </div>
+			<div class="verifyErro" style="display:none;">
+				<span></span>
+				<p class="tips">验证码错误</p>
+				<p class="countdown"></p>
+			</div>
+            <div class="sure"><input class="verifyBtn" type="submit" value="确 定"/></div>
+        </div>
+        <div class="copy">关于我们</div>
+	</body>
+	<script>
+		/*<![CDATA[*/
+        $(function(){
+            $('.verifyBtn').click(function(){
+				//验证失败
+                //$(".verifyErro").show();
+                var storage = window.localStorage;
+
+                var customer = new Object();
+                customer.phone="13500001111";
+                customer.userid="11111235";
+
+                var str = JSON.stringify(customer);
+                storage.setItem("user", str);
+                window.location.href = "./index";
+            });
+
+            $('.verifyBox').find('input').click(function(){
+                $(".verifyErro").hide();
+            });
+        });
+		/*]]>*/
+	</script>
+</html>

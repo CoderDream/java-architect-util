@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div th:fragment="nav">
+    <div class="columnLeftMenu">
+        <h6 ><span class="f-right"></span>订单中心</h6>
+        <ul >
+            <li><a th:classappend="${page == 'order/index' ? 'currentPageNav' : ''}" th:href="@{/order/index}">订单管理</a></li>
+
+        </ul>
+    </div>
+</div>
+</body>
+</html>

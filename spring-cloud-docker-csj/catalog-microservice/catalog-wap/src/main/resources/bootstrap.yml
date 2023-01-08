@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: catalogwap
+  profiles:
+    active: development
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+  rabbitmq:
+        addresses: amqp://192.168.1.24:5672
+        username: alan
+        password: alan
+
+encrypt:
+  failOnError: false
+

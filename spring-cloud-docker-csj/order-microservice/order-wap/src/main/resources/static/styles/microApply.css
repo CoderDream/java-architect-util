@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{margin:0px;padding:0;min-height:100%;background-color:#fff;}
+*html{background-image:url(about:blank);background-attachment:fixed;}
+img {border:0;outline:none;}
+a{ text-decoration: none;color:#333; outline:none;}
+a:hover{text-decoration:none;color:#333; outline:none;}
+a:active,a:visited{color:#FFF;}
+body{font-family:"microsoft yahei" Arial, Helvetica, sans-serif;font-size:13px;color:#333;}
+select,input{font-size: 13px;font-family:"microsoft yahei" Arial, Helvetica, sans-serif; padding:0; margin:0;}
+input,button,select,textarea,
+div,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,form,em,span,a,img{ margin:0; padding:0; list-style:none;outline:none;/*-webkit-user-select: none;-moz-user-select: none;-khtml-user-select: none;user-select: none;*/}
+input,button{-webkit-appearance:none;}
+table{ border:0; padding:0; margin:0;}
+em,i { font-style:normal}
+table {border-collapse: collapse;border-spacing: 0;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+ul,ol,li {list-style: none;}
+*{-webkit-tap-highlight-color:rgba(255,255,255,0);tap-highlight-color:rgba(255,255,255,0);}
+img {border: none;}
+input,img {vertical-align: middle;}
+.clear{clear: both;}
+.red{color:#c35555;}
+.red-f00{color:#F00;}
+.purple{color:#f03f75;}
+.arail{font-family:Arial, Helvetica, sans-serif;}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#666;}
+input:-moz-placeholder,textarea:-moz-placeholder{color:#ccc;}
+
+body{padding-bottom:80px;}
+.content{ overflow:hidden; width:640px;margin:0 auto;background-color:#FFF;position:relative;z-index:9;padding-bottom:42px;}
+.header { overflow:hidden;}
+.header img { float:left; width:100%;}
+.myMoneyButBox {overflow:hidden; margin:62px 203px 0 203px; width:114px; height:114px; border-radius:214px; background:#f16362; padding:60px; display:inline-block; text-align:center; position:relative; color:#fff;}
+.myMoneyButBox:hover{ color:#fff;}
+.myMoneyButBox  p{ display:inline-block; font-size:30px; line-height:32px; padding-top:8px;}
+.myMoneyButBox  span {display:inline-block; font-size:68px;}
+.copyright { overflow:hidden; position:fixed; left:0; bottom:0; line-height:30px; width:100%; text-align:center; color:#bbb; font-size:24px;}
+.iphone,.verifyBox{ overflow:hidden; margin:100px 70px 0 70px; position:relative;}
+.iphone input,.verifyBox input { overflow:hidden; border:1px solid #e2e2e2; width:458px; height:30px; padding:20px 20px 15px 20px; font-size:30px; line-height:30px; border-radius:8px;}
+.iphone span,.verifyBox span { position:absolute; overflow:hidden; width:34px; height:34px; background:url(../images/icon_close.png) left top no-repeat; background-size:100% 100%; top:15px; right:15px; cursor:pointer; display:none;}
+.phoneButBox,.sure{ overflow:hidden; position:fixed; left:0; bottom:180px; height:100px; width:100%; z-index:8;}
+.phoneButBox input,.sure input{ cursor:pointer; border:0; background:#f16362; width:100%; height:100px; text-align:center; line-height:100px; font-size:36px;}
+.tips{ overflow:hidden; line-height:36px; font-size:28px;  text-indent:10px; padding:10px 0;}/*color:#f16362;*/
+.countdown {overflow:hidden; line-height:36px; font-size:28px; color:#ccc; text-indent:10px;}
+
+.showdiv { position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9; display:none;}
+.successBox{ overflow:hidden; position:fixed; z-index:10px; top:50%; left:50%; width:560px; height:430px; margin-left:-280px; margin-top:-215px; background:#f5f5f5; border-radius:12px; z-index:10; display:none;}
+.successBox dt { text-align:center; overflow:hidden; color:#444; font-size:36px; height:215px; line-height:215px;}
+.successBox dd { background:url(../images/aBg.png) right bottom no-repeat; overflow:hidden; height:215px; padding-left:74px;}
+.successBox dd a { float:left; width:414px; height:160px; background:#f16362; border-radius:12px; margin-top:2px; text-align:center; line-height:160px; color:#fff1aa; font-size:60px;}
+
+/*copy*/
+.copy{position:fixed;line-height:80px;height:80px;width:100%;left:0;bottom:50px;text-align:center;color:#999;}
+
+
+/*错误*/
+.errorpic { overflow:hidden; padding:111px 72px 40px 115px;}
+.errorpic img { float:left; width:100%;}
+.errortxt { overflow:hidden; color:#444; line-height:36px; font-size:28px; text-align:center; padding:0 30px;}
+
+.swit{ overflow:hidden; line-height:36px; font-size:28px;  text-indent:150px; padding:300px 0;}
+
+
+
+

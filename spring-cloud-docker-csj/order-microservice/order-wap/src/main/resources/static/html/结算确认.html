@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta name="format-detection" content="telephone=no">
+		<title>购买确认</title>
+		<link href="../styles/microApply.css" rel="stylesheet" type="text/css">
+		<link href="../styles/globalWap.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
+		</style>
+		<script src="../scripts/viewport.min.js"></script>
+		<script src="../scripts/jquery-1.10.2.min.js"></script>
+		<script src="../scripts/Event_alert.js"></script>
+		<script>
+			/*<![CDATA[*/
+            $(function(){
+                var option = new Object();
+                option.yes = "确定";
+                alertEC("ok", option);
+                $(".prompt2").hide();
+                $(".prompt1").show();
+            });
+			/*]]>*/
+		</script>
+	</head>
+	<body>
+    	<div class="content">
+			<div class="verifyBox" style="display:none;">
+				<span></span>
+				<p class="swit">验证码错误</p>
+				<p class="countdown"></p>
+			</div>
+            <div class="sure"><input type="submit" value="确 定"></div>
+        </div>
+        <div class="copy">关于我们</div>
+		<div class="content prompt1" >
+			<div class="verifyErro">
+				<span></span>
+				<p class="swit">请登录您的帐号！</p>
+				<p class="countdown"></p>
+			</div>
+			<div class="sure"><input class="longinBtn" type="submit" value="确 定"/></div>
+		</div>
+
+		<div class="content prompt2" >
+			<div class="verifyErro">
+				<span></span>
+				<p class="swit">确认购买吗？</p>
+				<p class="countdown"></p>
+			</div>
+			<div class="sure"><input class="accountsBtn" type="submit" value="确 定"/></div>
+		</div>
+		<div class="copy">关于我们</div>
+	</body>
+</html>

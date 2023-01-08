@@ -1,0 +1,30 @@
+<div class="addInfBtn">
+    <h3 class="itemTit"><span>订单信息</span></h3>
+    <table class="addNewInfList">
+        <tr>
+            <th>ID</th>
+            <td width="240"><input class="inp-list w-200 clear-mr f-left" type="text" th:value="${order.id}" readonly="true"/></td>
+            <th>用户ID</th>
+            <td><input class="inp-list w-200 clear-mr f-left" type="text" th:value="${order.userid}" readonly="true" /></td>
+        </tr>
+
+        <tr>
+            <th>明细</th>
+            <td>
+                <select multiple="multiple" readonly="true">
+                    <option th:each="details:${order.orderDetails}"
+                            th:text="${#strings.length(details.goodsname)>20?#strings.substring(details.goodsname,0,20)+'...':details.goodsname}"
+                            th:selected="true"
+                            ></option>
+                </select>
+            </td>
+            <th>日期</th>
+            <td>
+                <input  onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" type="text" class="inp-list w-200 clear-mr f-left" th:value="${order.created} ? ${#dates.format(order.created,'yyyy-MM-dd HH:mm:ss')} :''" readonly="true"/>
+            </td>
+        </tr>
+    </table>
+    <div class="bottomBtnBox">
+        <a class="btn-93X38 backBtn" href="javascript:closeDialog(0)">返回</a>
+    </div>
+</div>

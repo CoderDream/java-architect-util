@@ -3,8 +3,8 @@
     <!--    功能趋于-->
     <div style="margin: 10px 0">
       <el-button type="warning" plain @click="add" v-if="user.role===1">新增</el-button>
-      <el-button type="primary" plain  v-if="user.role===1">导入</el-button>
-      <el-button type="primary" plain  v-if="user.role===1">导出</el-button>
+      <el-button type="primary" plain v-if="user.role===1">导入</el-button>
+      <el-button type="primary" plain v-if="user.role===1">导出</el-button>
     </div>
     <!--    搜索区域-->
     <div style="margin: 10px 0">
@@ -52,7 +52,7 @@
 
       <el-table-column
           fixed="right"
-          label="操作"  v-if="user.role===1">
+          label="操作" v-if="user.role===1">
 
         <template #default="scope">
           <div style="display: flex; align-content: space-between">
@@ -68,7 +68,6 @@
       </el-table-column>
 
     </el-table>
-
 
 
     <div style="margin: 10px 0">
@@ -98,7 +97,8 @@
             <el-input v-model="form.author"></el-input>
           </el-form-item>
           <el-form-item label="发布时间">
-            <el-date-picker style="width: 100%;" value-format="YYYY-MM-DD" v-model="form.createTime" type="date" clearable></el-date-picker>
+            <el-date-picker style="width: 100%;" value-format="YYYY-MM-DD" v-model="form.createTime" type="date"
+                            clearable></el-date-picker>
           </el-form-item>
           <el-form-item label="封面">
             <el-upload ref="upload" action="http://localhost:9090/files/upload" :on-success="filesUploadSuccess">
@@ -126,66 +126,64 @@ import request from "@/utils/request";
 
 export default {
   name: 'Book',
-  components: {
-
-  },
+  components: {},
   data() {
     return {
       form: {},
-      search:'',
+      search: '',
       currentPage4: 1,
       pageSize: 10,
-      total:0,
-      dialogVisible:false,
+      total: 0,
+      dialogVisible: false,
       tableData: [],
-      user:{}
+      user: {}
     }
   },
   created() {
     this.load();
 
-    let userStr =sessionStorage.getItem("user") || '{}';
+    let userStr = sessionStorage.getItem("user") || '{}';
     this.user = JSON.parse(userStr);
 //请求后端服务器，确认当前登录用户的合法性
-    request.get("/api/user/"+this.user.id).then(res=>{
-      if (res.code==='0'){
+    request.get("/api/user/" + this.user.id).then(res => {
+      if (res.code === '0') {
         this.user = res.data;
       }
     });
   },
-  methods:{
-    load(){
-      request.get("/api/book",{
+  methods: {
+    load() {
+      request.get("/api/book", {
         params: {
           pageNum: this.currentPage4,
           pageSize: this.pageSize,
           search: this.search
         }
-      }).then(res =>{
+      }).then(res => {
         console.log(res);
         this.tableData = res.data.records;
         this.total = res.data.total;
       })
     },
-    add(){
+    add() {
       this.dialogVisible = true;
       this.form = {};
-      this.$nextTick(()=>{
-        if (this.$refs['upload']){
+      this.$nextTick(() => {
+        if (this.$refs['upload']) {
           this.$refs['upload'].clearFiles();//清楚历史图片
         }
       });
     },
-    save(){
-      if (this.form.id){//更新
-        request.put("/api/book",this.form).then(res =>{
+    save() {
+      if (this.form.id) {//更新
+        request.put("/api/book", this.form).then(res => {
           console.log(res);
-          if (res.code==='0'){
+          if (res.code === '0') {
             this.$message({
               type: "success",
               message: "更新成功"
             })
-          }else {
+          } else {
             this.$message({
               type: "error",
               message: res.msg
@@ -194,15 +192,15 @@ export default {
           this.load();//刷新表格数据
           this.dialogVisible = false;//关闭弹窗
         });
-      }else {//新增
-        request.post("/api/book",this.form).then(res =>{
+      } else {//新增
+        request.post("/api/book", this.form).then(res => {
           console.log(res);
-          if (res.code==='0'){
+          if (res.code === '0') {
             this.$message({
               type: "success",
               message: "新增成功"
             })
-          }else {
+          } else {
             this.$message({
               type: "error",
               message: res.msg
@@ -214,35 +212,35 @@ export default {
       }
 
     },
-    handleEdit(row){
+    handleEdit(row) {
       this.form = JSON.parse((JSON.stringify(row)));
       this.dialogVisible = true;
-      this.$nextTick(()=>{
-        if (this.$refs['upload']){
+      this.$nextTick(() => {
+        if (this.$refs['upload']) {
           this.$refs['upload'].clearFiles();//清楚历史图片
         }
       });
     },
-    handleSizeChange(pageSize){//改变当前页面个数
+    handleSizeChange(pageSize) {//改变当前页面个数
       this.pageSize = pageSize;
       this.load();
     },
-    handleCurrentChange(pageNum){//改变当前页码
+    handleCurrentChange(pageNum) {//改变当前页码
       this.currentPage4 = pageNum;
       this.load();
     },
     // currentPage4(){
     //
     // },
-    handleDelete(id){
+    handleDelete(id) {
       console.log(id);
-      request.delete("/api/book/"+id).then(res => {
-        if (res.code==='0'){
+      request.delete("/api/book/" + id).then(res => {
+        if (res.code === '0') {
           this.$message({
             type: "success",
             message: "删除成功"
           })
-        }else {
+        } else {
           this.$message({
             type: "error",
             message: res.msg
@@ -252,7 +250,7 @@ export default {
       });
     },
 
-    filesUploadSuccess(res){
+    filesUploadSuccess(res) {
       console.log(res);
       this.form.cover = res.data;
       this.load();

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: turbine
+
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+  rabbitmq:
+    addresses: amqp://59.172.75.156:5672
+    username: admin
+    password: admin
+

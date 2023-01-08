@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="yes" name="apple-mobile-web-app-capable"/>
+		<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<title>结算</title>
+		<link th:href="@{/styles/microApply.css}"  rel="stylesheet" type="text/css"/>
+		<link th:href="@{/styles/globalWap.css}"  rel="stylesheet" type="text/css"/>
+		<style type="text/css">
+			article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
+		</style>
+		<script th:src="@{/scripts/viewscale.js}"></script>
+		<script th:src="@{/scripts/jquery-1.10.2.min.js}"></script>
+		<script th:src="@{/scripts/Event_alert.js}"></script>
+	</head>
+	<body>
+    	<div class="content prompt1" >
+			<div class="verifyErro">
+				<span></span>
+				<p class="swit">请登录您的账号！</p>
+				<p class="countdown"></p>
+			</div>
+            <div class="sure"><input class="longinBtn" type="submit" value="确 定"/></div>
+        </div>
+		<input id="goodsid" name="goodsid" type="hidden" th:value="${goods.id}"/>
+		<div class="content prompt2" >
+			<div class="verifyErro">
+				<span></span>
+				<p class="swit" th:text="'订单金额：￥' + ${goods.price}">确认购买吗？</p>
+				<p class="countdown"></p>
+			</div>
+			<div class="sure"><input class="accountsBtn" type="submit" value="确 定"/></div>
+		</div>
+        <div class="copy">关于我们</div>
+	</body>
+	<script>
+		/*<![CDATA[*/
+        $(function(){
+            var storage = window.localStorage;
+            var user = storage.getItem("user");
+            var userid;
+            var goodsid = $('#goodsid').val();
+
+            if(user){
+                var a = JSON.parse(user);
+                userid = a.userid;
+                //console.log(a.userid);
+                $('.prompt1').hide();
+                $('.prompt2').show();
+            }else {
+                $('.prompt2').hide();
+                $('.prompt1').show();
+            }
+
+            $('.longinBtn').click(function(){
+                window.location.href = "./verify";
+            });
+
+            $('.accountsBtn').click(function(){
+                $.ajax({
+                    url:"../buyone",
+                    data:{
+                        id:goodsid,
+                        userid:userid
+                    },
+                    type: "POST",
+                    dataType: "json",
+                    success:function(data){
+                        if(data && (parseInt(data) > 0)){
+                            alertEC("购买成功！");
+                        }else{
+                            alertEC("下单失败！");
+                        }
+                    }
+                });
+                setTimeout(function(){
+                    window.location.href="../index";
+				}, 600);
+            });
+        });
+		/*]]>*/
+	</script>
+</html>

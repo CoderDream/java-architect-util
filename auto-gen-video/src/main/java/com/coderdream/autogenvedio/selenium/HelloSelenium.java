@@ -25,8 +25,9 @@ public class HelloSelenium {
 
 //        String url = "https://apps.apple.com/us/app/translator-plus/id1435494722?l=zh";
         String url = "https://apps.apple.com/us/app/id1061289155";
-        useRemoteWebDriver(url);
-//        useLocalWebDriver(url);
+        url = "https://mergeek.com/free/apps";
+//        useRemoteWebDriver(url);
+        useLocalWebDriver(url);
     }
 
     private static void useRemoteWebDriver() throws MalformedURLException {
@@ -84,6 +85,7 @@ public class HelloSelenium {
 //        "body > div.ember-view > main > div.animation-wrapper.is-visible > section.l-content-width.section.section--hero.product-hero > div > div.l-column.small-7.medium-8.large-9.small-valign-top > header > ul:nth-child(3) > li > ul > li > figure"
 
         xPath = "/html/body/div[5]/main/div[2]/section[1]/div/div[2]/header/ul[1]/li/ul/li/figure";
+        xPath = "//*[@id=\"primary\"]/div/div/div/div[1]/div[23]/article/div[3]/span[1]";
         webElement = driver.findElement(By.xpath(xPath));
         System.out.println("评分：" + webElement.getText());
         System.out.println(driver.getTitle());
@@ -92,9 +94,6 @@ public class HelloSelenium {
         long endTime = System.currentTimeMillis();
         log.info("useRemoteWebDriver 方法运行时间：" + (endTime - startTime) + "ms");
     }
-
-
-
 
     private static void useLocalWebDriver() throws MalformedURLException {
         long startTime = System.currentTimeMillis();
@@ -132,6 +131,7 @@ public class HelloSelenium {
 //        driver.findElement(By.xpath("xPath"));
 
         String xPath = "/html/body/div[5]/main/div[2]/section[1]/div/div[2]/header/h1";
+        xPath = "//*[@id=\"primary\"]/div/div/div/div[1]/div[23]/article/div[3]/span[1]";
         WebElement webElement = driver.findElement(By.xpath(xPath));
         System.out.println("应用名称" + webElement.getText());
 

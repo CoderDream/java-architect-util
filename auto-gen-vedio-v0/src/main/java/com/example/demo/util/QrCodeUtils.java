@@ -5,9 +5,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 import javax.imageio.ImageIO;
 import javax.swing.filechooser.FileSystemView;
@@ -29,10 +27,55 @@ import com.google.zxing.common.BitMatrix;
 public class QrCodeUtils {
 
     public static void main(String[] args) {
-        String url = "https://apps.apple.com/us/app/id1273210532";
-        String path = FileSystemView.getFileSystemView().getHomeDirectory() + File.separator + "testQrcode";
-        String fileName = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date()) + ".jpg";
-        createQrCode(url, path, fileName);
+//        String url = "https://apps.apple.com/us/app/id1273210532";
+//        String path = FileSystemView.getFileSystemView().getHomeDirectory() + File.separator + "testQrcode";
+//        String fileName = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date()) + ".jpg";
+//        createQrCode(url, path, fileName);
+
+
+        List<String> urlList = new ArrayList<>();
+//        urlList.add("https://apps.apple.com/us/app/fonts-install-new-fonts/id1509011708");
+//        urlList.add("https://apps.apple.com/us/app/bgh-bears-good-habits/id1472298590");
+//        urlList.add("https://apps.apple.com/cn/app/goodak-edit-photo-editor-cam/id540662922?uo=4&at=1001lsTF&ct=iOS_detail_share_540662922");
+//        urlList.add("https://apps.apple.com/us/app/marple/id288689440?l=zh");
+//        urlList.add("https://apps.apple.com/us/app/kegel-trainer-for-mens-health/id1660375539?l=zh");
+//        urlList.add("https://apps.apple.com/us/app/%E8%B6%85%E7%BA%A7%E6%8A%A0%E5%9B%BE-super-photocut/id966457795?l=zh&mt=12");
+
+        String monthStr = new SimpleDateFormat("yyyyMM").format(new Date());
+        String dateStr = new SimpleDateFormat("yyyyMMdd").format(new Date());
+        String path = "D:" + File.separator + "12_iOS_Android" + File.separator + monthStr + File.separator + dateStr;
+        String txtFileName = File.separator + path + File.separator + dateStr + ".txt";
+
+        List<String> rawStrList = TxtUtils.readTxtFileToList(txtFileName);
+        for (String rawStr : rawStrList) {
+            int flag = rawStr.lastIndexOf("https://apps.apple.com");
+            if (flag != -1) {
+                urlList.add(rawStr);
+            }
+        }
+        for (String url : urlList) {
+            System.out.println(url);
+        }
+
+        genQR(urlList, path);
+    }
+
+    public static void genQR(List<String> urlList, String path) {
+        int i = 0;
+        for (String url : urlList) {
+            Integer indexId = url.lastIndexOf("/id");
+            Integer indexQ = url.lastIndexOf("?");
+            String id = "";
+            if (indexQ != -1) {
+                id = url.substring(indexId + 1, indexQ);
+            } else {
+                id = url.substring(indexId + 1);
+            }
+            i++;
+            String fileName = i + "_qr_" + id + ".jpg";
+            System.out.println("fileName: " + fileName);
+            createQrCode(url, path + File.separator + "qr", fileName);
+        }
     }
 
     /* ********************************************

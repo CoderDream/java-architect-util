@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div th:fragment="nav">
+    <div class="columnLeftMenu">
+        <h6><span class="f-right"></span>平台权限管理</h6>
+        <ul >
+            <li><a th:classappend="${page == 'operators/index' ? 'currentPageNav' : ''}" th:href="@{/operators/index}">操作员管理</a></li>
+            <li><a th:classappend="${page == 'department/index' ? 'currentPageNav' : ''}" th:href="@{/department/index}">部门管理</a></li>
+            <li><a th:classappend="${page == 'part/index' ? 'currentPageNav' : ''}" th:href="@{/part/index}">操作员组管理</a></li>
+        </ul>
+        <h6><span class="f-right"></span>商家权限管理</h6>
+        <ul >
+            <li><a th:classappend="${page == 'merchant/index' ? 'currentPageNav' : ''}" th:href="@{/merchant/index}">商家管理</a></li>
+            <li><a th:classappend="${page == 'merchantkind/index' ? 'currentPageNav' : ''}" th:href="@{/merchantkind/index}">分类管理</a></li>
+            <li><a th:classappend="${page == 'merchantmodel/index' ? 'currentPageNav' : ''}" th:href="@{/merchantmodel/index}">模块管理</a></li>
+            <li><a th:classappend="${page == 'merchantresource/index' ? 'currentPageNav' : ''}" th:href="@{/merchantresource/index}">资源管理</a></li>
+            <li><a th:classappend="${page == 'merchantrole/index' ? 'currentPageNav' : ''}" th:href="@{/merchantrole/index}">角色管理</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

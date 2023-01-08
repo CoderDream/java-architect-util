@@ -1,0 +1,21 @@
+server:
+  port: 8989
+
+management:
+  port: 8990
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    non-secure-port: ${PORT:8989}
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+turbine:
+  appConfig: catologapi,catologweb,catologwap
+  aggregator:
+    clusterConfig: default
+  clusterNameExpression: new String("default")
+
+

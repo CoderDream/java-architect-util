@@ -1,0 +1,24 @@
+eureka:
+  build: ./eureka
+  ports:
+   - "8761:8761"
+config:
+  build: ./config
+  ports:
+   - "8888:8888"
+  links:
+   - eureka
+hystrix:
+  build: ./hystrix
+  ports:
+   - "7979:7979"
+turbine:
+  build: ./turbine
+  ports:
+   - "8989:8989"
+   - "8990:8990"
+zipkin:
+  build: ./zipkin
+  ports:
+   - "9987:9987"
+

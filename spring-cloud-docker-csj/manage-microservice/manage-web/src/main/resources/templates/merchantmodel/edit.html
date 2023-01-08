@@ -1,0 +1,43 @@
+<script th:src="@{/scripts/merchantmodel/edit.js}"></script>
+<form id="saveForm" method="post">
+    <input type="hidden" name="id" id="id" th:value="${model.id}"/>
+<div class="addInfBtn" >
+    <h3 class="itemTit"><span>模块信息</span></h3>
+    <table class="addNewInfList">
+        <tr>
+            <th>名称</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" th:value="${model.name}" id="name" name="name" maxlength="32" />
+                <span class="tipStar f-left">*</span>
+            </td>
+            <th>URL</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" th:value="${model.host}" id="host" name="host" maxlength="64" />
+            </td>
+        </tr>
+        <tr>
+            <th>日期</th>
+            <td>
+                <input  onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" type="text" class="inp-list w-200 clear-mr f-left" th:value="${model.created} ? ${#dates.format(model.created,'yyyy-MM-dd HH:mm:ss')} :''" id="created" name="created"/>
+            </td>
+            <th>分类</th>
+            <td width="240">
+                <div >
+                    <select name="kid" id="kid">
+                        <option th:each="kind:${kinds}" th:value="${kind.id}"
+                                th:text="${#strings.length(kind.name)>20?#strings.substring(kind.name,0,20)+'...':kind.name}"
+                                th:selected="${model.kind != null and model.kind.id == kind.id}"
+                                ></option>
+                    </select>
+                    <span class="tipStar f-right">*</span>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div class="bottomBtnBox">
+        <a class="btn-93X38 saveBtn" href="javascript:void(0)">确定</a>
+        <a class="btn-93X38 backBtn" href="javascript:closeDialog(0)">返回</a>
+    </div>
+</div>
+
+</form>

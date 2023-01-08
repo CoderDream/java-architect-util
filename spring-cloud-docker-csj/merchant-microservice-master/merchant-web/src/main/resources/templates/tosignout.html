@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<script th:inline="javascript" type="text/javascript">
+    function to_sso(){
+        var url = [[${ssohome}]];
+        //alert("url="+url);
+        location.href = url + "signout";
+    }
+</script>
+<body onload="to_sso()">
+</body>
+</html>

@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: merchantsso
+#  profiles:
+#    active: development
+  cloud:
+    config:
+      uri: http://localhost:8888
+

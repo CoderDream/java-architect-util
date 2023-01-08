@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="yes" name="apple-mobile-web-app-capable"/>
+		<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<script th:src="@{/scripts/viewscale.js}"></script>
+		<script th:src="@{/scripts/jquery-1.10.2.min.js}"></script>
+		<title>切换账号</title>
+		<link th:href="@{/styles/microApply.css}"  rel="stylesheet" type="text/css"/>
+		<style type="text/css">
+			article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
+		</style>
+	</head>
+	<body>
+    	<div class="content">
+            <div class="iphone">
+                <p class="swit">切换登录账号</p>
+            </div>
+            <div class="sure"><input class="switchBtn" type="submit" value="确 定"/></div>
+        </div>
+        <div class="copy">关于我们</div>
+	</body>
+	<script>
+		/*<![CDATA[*/
+        $(function(){
+            $('.switchBtn').click(function(){
+                var storage = window.localStorage;
+                storage.removeItem("user");
+                window.location.href = "./index";
+            });
+        });
+		/*]]>*/
+	</script>
+</html>

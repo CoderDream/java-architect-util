@@ -1,0 +1,43 @@
+<script th:src="@{/scripts/merchantresource/edit.js}"></script>
+<form id="saveForm" method="post">
+    <input type="hidden" name="id" id="id" th:value="${resource.id}"/>
+<div class="addInfBtn" >
+    <h3 class="itemTit"><span>资源信息</span></h3>
+    <table class="addNewInfList">
+        <tr>
+            <th>名称</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" th:value="${resource.name}" id="name" name="name" maxlength="32" />
+                <span class="tipStar f-left">*</span>
+            </td>
+            <th>模块</th>
+            <td width="240">
+                <div >
+                    <select name="mid" id="mid">
+                        <option th:each="model:${models}" th:value="${model.id}"
+                                th:text="${#strings.length(model.name)>20?#strings.substring(model.name,0,20)+'...':model.name}"
+                                th:selected="${resource.model !=null and resource.model.id == model.id}"
+                                ></option>
+                    </select>
+                    <span class="tipStar f-right">*</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th>URL</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" th:value="${resource.url}" id="url" name="url" maxlength="64" />
+            </td>
+            <th>日期</th>
+            <td>
+                <input  onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" type="text" class="inp-list w-200 clear-mr f-left" th:value="${resource.created} ? ${#dates.format(resource.created,'yyyy-MM-dd HH:mm:ss')} :''" id="created" name="created"/>
+            </td>
+        </tr>
+    </table>
+    <div class="bottomBtnBox">
+        <a class="btn-93X38 saveBtn" href="javascript:void(0)">确定</a>
+        <a class="btn-93X38 backBtn" href="javascript:closeDialog(0)">返回</a>
+    </div>
+</div>
+
+</form>
