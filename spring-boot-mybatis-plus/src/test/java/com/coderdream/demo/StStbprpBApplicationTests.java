@@ -2,7 +2,7 @@ package com.coderdream.demo;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.coderdream.cxdz.dao.StStbprpBMapper;
+import com.coderdream.cxdz.pojo.StStbprpB;
 import com.coderdream.demo.dao.UserDao;
 import com.coderdream.demo.entity.User;
 import org.junit.jupiter.api.Test;
@@ -14,11 +14,14 @@ import java.util.HashMap;
 import java.util.List;
 
 @SpringBootTest
-class DemoApplicationTests {
+class StStbprpBApplicationTests {
 
     // 注入Dao接口,继承BaseMapper
     @Resource
     private UserDao userDao;
+
+    @Resource
+    private com.coderdream.cxdz.dao.StStbprpBMapper stStbprpBMapper;
 
     @Test
     void contextLoads() {
@@ -181,6 +184,25 @@ class DemoApplicationTests {
         // 获取记录总数
         System.out.println("page = " + page.getTotal());
     }
+
+
+
+    @Test
+    public void testPage2() {
+        /**
+         * 参数一: 当前页
+         * 参数一: 页大小
+         * 使用了分页插件以后,所有的分页操作也变得非常简单
+         */
+        Page<StStbprpB> page = new Page<>(1, 3);
+        // 调用selectPage进行分页
+        IPage<StStbprpB> result = stStbprpBMapper.selectPage(page, null);
+        System.out.println("######## size: \t" + result.getRecords().size());
+        page.getRecords().forEach(System.out::println);
+        // 获取记录总数
+        System.out.println("page = " + page.getTotal());
+    }
+
 
     /**
      * 测试删除

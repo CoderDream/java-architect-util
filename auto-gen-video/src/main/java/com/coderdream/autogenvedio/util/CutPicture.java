@@ -114,7 +114,7 @@ public class CutPicture {
 
         if(StringUtils.existQuestionMark(url)) {
             url += "&platform=iphone";
-        } else {
+        } else {Stus
             url += "?platform=iphone";
         }
 
