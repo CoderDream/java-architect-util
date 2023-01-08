@@ -13,9 +13,6 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123456
-    # 设置性能分析插件
-    profiles:
-      active: dev
 
 # 配置日志输出 使用默认控制台打印
 mybatis-plus:
