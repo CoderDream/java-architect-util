@@ -31,7 +31,7 @@ public class SnapshotUtils {
 //        System.out.println(s.charAt("/?"));
 
         List<AppBrief> appBriefList = BaseUtils.genBrief();
-//        snapshot(appBriefList);
+        snapshot(appBriefList);
 
 //        List<AppBrief> snapshotFileNameList = snapshotOpenBrowser(appBriefList);
 //        for (AppBrief appBrief : snapshotFileNameList) {

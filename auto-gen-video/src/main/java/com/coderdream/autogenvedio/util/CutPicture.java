@@ -45,10 +45,10 @@ public class CutPicture {
 //            System.out.println(appBrief.getSnapshotPath());
 //        }
 
-        urlList = GenerateAppInfo.genUrlCnList();
-        List<String>   urlCnList = appBriefList.stream().map(AppBrief::getUrlCn).collect(Collectors.toList());
-        urlList = appBriefList.stream().map(AppBrief::getUrl).collect(Collectors.toList());
-        urlList.addAll(urlCnList);
+//        urlList = GenerateAppInfo.genUrlCnList();
+//        List<String>   urlCnList = appBriefList.stream().map(AppBrief::getUrlCn).collect(Collectors.toList());
+//        urlList = appBriefList.stream().map(AppBrief::getUrl).collect(Collectors.toList());
+//        urlList.addAll(urlCnList);
         String monthStr = new SimpleDateFormat("yyyyMM").format(new Date());
         String dateStr = new SimpleDateFormat("yyyyMMdd").format(new Date());
         String path = "D:" + File.separator + "12_iOS_Android" + File.separator + monthStr + File.separator + dateStr + File.separator + "snapshot_temp";
@@ -66,25 +66,49 @@ public class CutPicture {
             String appId = StringUtils.parseAppId(url);
             fileNameMap.put(appId, index + "_" + appId + ".png");
         }
+        AppBrief appBrief;
         File file;
+
         int i = 0;
+        String url;
+        String urlCn;
+        Boolean onlyUs;
         // 循环遍历10次
         for (int j = 0; j < 10; j++) {
-            if (!CollectionUtils.isEmpty(urlList)) {
-                Iterator<String> it_b = urlList.iterator();
+            if (!CollectionUtils.isEmpty(appBriefList)) {
+                Iterator<AppBrief> it_b = appBriefList.iterator();
                 while (it_b.hasNext()) {
-                    String url = it_b.next();
+                    appBrief = it_b.next();
+                    url = appBrief.getUrl();
+                    urlCn = appBrief.getUrlCn();
+                    onlyUs = appBrief.getOnlyUs();
                     i++;
-                    String appId = StringUtils.parseAppId(url);
-                    String fileName = fileNameMap.get(appId);
+//                    String appId = StringUtils.parseAppId(url);
+                    String fileName = appBrief.getFilename();// fileNameMap.get(appId);
                     imgName = path + File.separator + fileName;
-                    imgNameNew = path + File.separator + "new_" + fileName;
                     file = new File(imgName);
-                    cutImage(url, file);
+
                     // 如果截图存在，而且大于150K，则表示截图成功
                     if (file.exists()) {
                         if (getFileSize(file) > 150 * 1024) {
-//                            BufferedImageUtils.cut4K(imgName, imgNameNew);
+                            BufferedImageUtils.cut4K(imgName, imgNameNew);
+                            it_b.remove();
+                            continue; // 跳出循环
+                        }
+                    }
+
+                    if (onlyUs) {
+                        System.out.println("####url:\t" + url);
+//                        driver.get(url);
+                        cutImage(url, file);
+                    } else {
+//                        driver.get(urlCn);
+                        cutImage(urlCn, file);
+                        System.out.println("####urlCn:\t" + urlCn);
+                    }
+                    if (file.exists()) {
+                        if (getFileSize(file) > 150 * 1024) {
+                            BufferedImageUtils.cut4K(imgName, imgNameNew);
                             it_b.remove();
                         }
                     }
@@ -114,7 +138,7 @@ public class CutPicture {
 
         if(StringUtils.existQuestionMark(url)) {
             url += "&platform=iphone";
-        } else {Stus
+        } else {
             url += "?platform=iphone";
         }
 

@@ -186,7 +186,7 @@ public class BaseUtils {
 //                } else {
 //                    content.add(raw);
 //                }
-                if(-1 != raw.lastIndexOf("外区限免。")) {
+                if(-1 != raw.lastIndexOf("外区限免。") || -1 != raw.lastIndexOf("美区限免。")) {
                     appBrief.setOnlyUs(true);
                 }
                 content.add(raw);
