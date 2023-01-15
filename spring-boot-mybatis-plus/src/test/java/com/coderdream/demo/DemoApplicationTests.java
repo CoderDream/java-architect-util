@@ -2,7 +2,6 @@ package com.coderdream.demo;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.coderdream.cxdz.dao.StStbprpBMapper;
 import com.coderdream.demo.dao.UserDao;
 import com.coderdream.demo.entity.User;
 import org.junit.jupiter.api.Test;

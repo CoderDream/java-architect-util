@@ -86,7 +86,7 @@ public class CreateAppTotalPosterUtils {
                 PosterUtil.drawImage(bufferedImage, detailPathImage, 730, 20); // 532, 1108);
 
                 // 海报 保存到本地  + "page_" + fileName + ".png"
-                String filename = appBrief.getPagePosterPath() + "page_" + String.format("%02d", i) + ".png";
+                String filename = appBrief.getPagePosterPath() + "page_" + appBrief.getFilename() + ".png";
                 System.out.println("保存到本地: " + filename);
                 PosterUtil.save(bufferedImage, "png", filename);
             } catch (Exception e) {

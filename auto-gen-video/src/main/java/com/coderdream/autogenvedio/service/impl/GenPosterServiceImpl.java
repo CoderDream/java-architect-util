@@ -18,6 +18,7 @@ public class GenPosterServiceImpl {
         List<AppBrief> appBriefList = BaseUtils.genBrief();
         // 1. 截屏
 //        boolean res = SnapshotUtils.snapshot(appBriefList);
+
 //        if(!res) {
 //            return;
 //        }

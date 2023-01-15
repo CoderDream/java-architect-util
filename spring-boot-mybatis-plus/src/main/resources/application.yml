@@ -7,9 +7,9 @@ spring:
   port: 8080
 
 # MySQL5
-# MySQL8配置
+# MySQL8配置 59.172.75.212 192.168.3.4
   datasource:
-    url: jdbc:mysql://192.168.3.4:33016/mybatis_plus?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://59.172.75.212:33016/mybatis_plus?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123456

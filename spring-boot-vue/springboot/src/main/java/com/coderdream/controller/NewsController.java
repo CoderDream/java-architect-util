@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.coderdream.common.Result;
 import com.coderdream.entity.News;
-import com.coderdream.entity.mapper.NewsMapper;
+import com.coderdream.mapper.NewsMapper;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

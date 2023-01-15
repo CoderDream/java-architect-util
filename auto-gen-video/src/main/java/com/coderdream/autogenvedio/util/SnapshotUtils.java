@@ -107,7 +107,7 @@ public class SnapshotUtils {
                         Long picSize = CutPicture.getFileSize(file);
                         System.out.println("picSize: " + picSize);
                         if (picSize > 100 * 1024) {
-                            System.out.println("remove");
+                            System.out.println("#### 已存在，跳过，remove");
 //                            System.out.println("urlList size: " + urlList.size());
                             snapshotFileNameList.add(file.getAbsolutePath());
                             System.out.println("snapshotPath: " + file.getAbsolutePath());

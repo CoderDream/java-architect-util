@@ -32,15 +32,15 @@ public class SwaggerConfig {
 //        parameters.add(parameterBuilder.name(Constant.SECRET).description("secret").modelRef(new ModelRef("string"))
 //                .parameterType("header").required(false).build());
         ApiInfo apiInfo=new ApiInfoBuilder()
-                .title("编码系统API平台")//api标题
+                .title("XXX系统API平台")//api标题
                 .description("数据中心相关接口描述")//api描述
                 .version("1.0.0")//版本号
-                .contact(new Contact("贵仁科技",null,null))
+                .contact(new Contact("XX科技",null,null))
                 .build();
         return new Docket(DocumentationType.SWAGGER_2)//文档类型（swagger2）
                 .apiInfo(apiInfo)//设置包含在json ResourceListing响应中的api元信息
                 .select()//启动用于api选择的构建器
-                .apis(RequestHandlerSelectors.basePackage("com.keepsoft.microservice.controller"))//扫描接口的包
+                .apis(RequestHandlerSelectors.basePackage("com.coderdream.demo.controller"))//扫描接口的包
                 .paths(PathSelectors.any())//路径过滤器（扫描所有路径）
                 .build().globalOperationParameters(parameters);
     }

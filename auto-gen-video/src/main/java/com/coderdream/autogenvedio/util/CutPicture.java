@@ -59,13 +59,13 @@ public class CutPicture {
 
         // java.util.ConcurrentModificationException异常原因及解决方法 https://www.cnblogs.com/loong-hon/p/10256686.html
 
-        Map<String, String> fileNameMap = new LinkedHashMap<>();
-        int index = 0;
-        for (String url : urlList) {
-            index++;
-            String appId = StringUtils.parseAppId(url);
-            fileNameMap.put(appId, index + "_" + appId + ".png");
-        }
+//        Map<String, String> fileNameMap = new LinkedHashMap<>();
+//        int index = 0;
+//        for (String url : urlList) {
+//            index++;
+//            String appId = StringUtils.parseAppId(url);
+//            fileNameMap.put(appId, index + "_" + appId + ".png");
+//        }
         AppBrief appBrief;
         File file;
 
@@ -85,13 +85,13 @@ public class CutPicture {
                     i++;
 //                    String appId = StringUtils.parseAppId(url);
                     String fileName = appBrief.getFilename();// fileNameMap.get(appId);
-                    imgName = path + File.separator + fileName;
+                    imgName = path + File.separator + fileName + ".png";
                     file = new File(imgName);
 
                     // 如果截图存在，而且大于150K，则表示截图成功
                     if (file.exists()) {
                         if (getFileSize(file) > 150 * 1024) {
-                            BufferedImageUtils.cut4K(imgName, imgNameNew);
+//                            BufferedImageUtils.cut4K(imgName, imgNameNew);
                             it_b.remove();
                             continue; // 跳出循环
                         }
@@ -108,7 +108,7 @@ public class CutPicture {
                     }
                     if (file.exists()) {
                         if (getFileSize(file) > 150 * 1024) {
-                            BufferedImageUtils.cut4K(imgName, imgNameNew);
+//                            BufferedImageUtils.cut4K(imgName, imgNameNew);
                             it_b.remove();
                         }
                     }

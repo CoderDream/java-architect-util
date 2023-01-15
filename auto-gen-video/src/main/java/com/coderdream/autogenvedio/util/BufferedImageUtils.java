@@ -147,6 +147,7 @@ public class BufferedImageUtils {
             String fileName = srcImageFile.getName();
             String formatName = fileName.substring(fileName.lastIndexOf(".") + 1);
             //使用ImageIO的write方法进行输出
+            System.out.println(formatName + ":" + destImageFile);
             ImageIO.write(image, formatName, destImageFile);
         } catch (IOException e) {
             e.printStackTrace();

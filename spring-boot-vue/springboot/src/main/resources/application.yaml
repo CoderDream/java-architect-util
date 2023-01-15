@@ -3,7 +3,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://59.172.75.156:33016/vue?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://192.168.3.4:33016/vue?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
     username: root
     password: 123456
 

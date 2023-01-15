@@ -83,16 +83,16 @@ public class CreateSinglePosterUtils {
             System.out.println("Create Post, qrUrl: " + qrUrl);
             InputStream erWeiMa = new FileInputStream(new File(qrUrl));
             // 2. 初始化并的改变大小
-            BufferedImage qrImage = PosterUtil.drawInitAndChangeSize(null, erWeiMa, 330, 330);
+            BufferedImage qrImage = PosterUtil.drawInitAndChangeSize(null, erWeiMa, 350, 350);
             // 3. 画二维码
-            PosterUtil.drawImage(bufferedImage, qrImage, 80, 700); // 532, 1108);
+            PosterUtil.drawImage(bufferedImage, qrImage, 80, 750); // 532, 1108);
 
             // 画字：name
             PosterUtil.drawWords(bufferedImage, name, false, nameFont, 36, 30, 90, 402, 119);
             // 画字：priceInfo
             PosterUtil.drawWords(bufferedImage, priceInfo, false, wordsFont, 32, 30, 170, 800, 19);
             // 画字：brief
-            PosterUtil.drawWords(bufferedImage, brief, true, wordsFont, 32, 30, 355, 402, 119);
+            PosterUtil.drawWords(bufferedImage, brief, true, wordsFont, 32, 30, 355, 410, 149);
 
             // 海报 保存到本地
             String filename = appBrief.getSinglePosterPath();
