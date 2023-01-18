@@ -98,9 +98,22 @@ vue-router@4.0.13 requires a peer of vue@^3.2.0 but none is installed.
 
 
 
+### 安装vue-router@4
+
+
+
+```vue
+npm install vue-router@4 -s
+```
+
+
+
+![image-20230115174836524](assets\image-20230115174836524.png)
+
 ## 参考文档：
 
 1. [Vue——组件命名报错 “Component name “XXX“ should always be multi-word”的解决方法](https://blog.csdn.net/helloyangkl/article/details/126885133)
+1. [Vue Router入门（官网）](https://router.vuejs.org/zh/guide/#html)
 
 
 
