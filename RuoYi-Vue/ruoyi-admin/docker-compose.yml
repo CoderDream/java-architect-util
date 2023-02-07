@@ -1,0 +1,54 @@
+version: "3.8"
+services:
+  # mysql服务
+  mysql:
+    image: mysql
+    volumes:
+      - ./mysql:/var/lib/mysql
+    restart: always
+    container_name: ruoyi-mysql
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=songweiwei
+      - MYSQL_DATABASE=ry-vue
+      - MYSQL_USER=ruoyi
+      - MYSQL_PASSWORD=ruoyi
+  # redis服务
+  redis:
+    image: library/redis:alpine
+    container_name: ruoyi-redis
+    ports:
+      - 6379:6379
+    # 给redis设置密码
+    command: redis-server --requirepass songweiwei --appendonly yes
+    volumes:
+      - ./redis/data:/data
+  # 构建若依后端
+  ruoyiapp:
+    # 镜像来源 自己构建的
+    image: ruoyiapp
+    # build值为 . 表示从当前目录找Dockerfile进行构建
+    build: .
+    restart: always
+    container_name: ruoyi-app
+    # 对外暴露端口 8080
+    ports:
+      - 8080:8080
+    # 后端项目需要的配置，可修改
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - REDIS_DATABASE=0
+      - REDIS_PASSWORD=songweiwei
+      - MYSQL_HOST=mysql
+      - MYSQL_PORT=3306
+      - MYSQL_DATABASE=ry-vue
+      - MYSQL_USERNAME=ruoyi
+      - MYSQL_PASSWORD=ruoyi
+    depends_on:
+      - redis
+      - mysql
+    links:
+      - redis
+      - mysql

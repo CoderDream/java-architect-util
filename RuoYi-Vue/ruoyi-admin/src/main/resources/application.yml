@@ -70,7 +70,7 @@ spring:
   # redis 配置
   redis:
     # 地址
-    host: 59.172.75.212
+    host: coderme.myds.me
     # 端口，默认为6379
     port: 27000
     # 数据库索引

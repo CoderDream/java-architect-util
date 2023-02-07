@@ -1,0 +1,54 @@
+# 应用名称
+spring:
+  application:
+    name: demo
+
+# 应用服务 WEB 访问端口
+  port: 8080
+
+# MySQL5
+# MySQL8配置 59.172.75.212 192.168.3.4
+  datasource:
+#    url: jdbc:mysql://59.172.75.212:33016/mybatis_plus?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: root
+#    password: 123456
+#    # 设置性能分析插件
+#    profiles:
+#      active: dev
+#    hikari:
+#      idle-timeout: 60000
+#      maximum-pool-size: 30
+#      minimum-idle: 10
+#      max-lifetime: 12
+#      connection-test-query: SELECT 1
+    dynamic:
+      primary: mysql #设置默认的数据源或者数据源组,默认值即为mysql
+      strict: false #严格匹配数据源,默认false. true未匹配到指定数据源时抛异常,false使用默认数据源
+      datasource:
+        mysql:
+          url: jdbc:mysql://192.168.3.4:33016/mybatis_plus?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+          username: root
+          password: 123456
+          driver-class-name: com.mysql.jdbc.Driver # 3.2.0开始支持SPI可省略此配置
+        oracle:
+          url: jdbc:oracle:thin:@192.168.3.4:31521/helowin
+          username: hospital
+          password: hospital
+          driver-class-name: oracle.jdbc.driver.OracleDriver
+# 配置日志输出 使用默认控制台打印
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.coderdream.demo.entity.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    auto-mapping-behavior: partial
+    map-underscore-to-camel-case: true
+    call-setters-on-nulls: true
+    default-fetch-size: 1000
+  # 配置逻辑删除
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-value: 1
+      logic-not-delete-value: 0

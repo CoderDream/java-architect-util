@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coderdream.demo.dao.StStbprpBMapper">
+    <select id="getObjectSheetValue" resultType="java.util.Map">
+        SELECT
+            stb.STCD,
+            (
+                CASE
+                    stb.STTP
+                    WHEN 'PP' THEN
+                        '雨量站'
+                    WHEN 'RR' THEN
+                        '水库'
+                    WHEN 'ZQ' THEN
+                        '水文站'
+                    WHEN 'ZZ' THEN
+                        '水位站'
+                    WHEN 'ZB' THEN
+                        '分洪道' ELSE '其他'
+                    END
+                ) AS '类型',
+            stb.STNM AS '对象名称',
+            stb.STCD AS '备注'
+        FROM
+            st_stbprp_b stb
+        WHERE
+            stb.ADDVCD LIKE '42%'
+          AND stb.STTP IN ( 'PP', 'RR', 'ZQ', 'ZZ', 'ZB' )
+         -- AND stb.STNM IN ('杨家湾','永兴')
+        ORDER BY
+            stb.STTP,
+            stb.STCD ;
+    </select>
+</mapper>

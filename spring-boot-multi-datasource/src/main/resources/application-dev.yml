@@ -1,0 +1,25 @@
+# 应用名称
+spring:
+  application:
+    name: demo
+
+# 应用服务 WEB 访问端口
+  port: 8080
+
+# MySQL5
+# MySQL8配置
+  datasource:
+    url: jdbc:mysql://192.168.3.4:33016/mybatis_plus?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+
+# 配置日志输出 使用默认控制台打印
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+# 配置逻辑删除
+global-config:
+  db-config:
+    logic-delete-value: 1
+    logic-not-delete-value: 0

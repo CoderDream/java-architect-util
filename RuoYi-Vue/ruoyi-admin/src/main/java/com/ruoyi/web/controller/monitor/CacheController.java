@@ -21,15 +21,16 @@ import com.ruoyi.common.core.domain.AjaxResult;
 import com.ruoyi.common.utils.StringUtils;
 import com.ruoyi.system.domain.SysCache;
 
+import javax.annotation.Resource;
+
 /**
  * 缓存监控
- * 
+ *
  * @author ruoyi
  */
 @RestController
 @RequestMapping("/monitor/cache")
-public class CacheController
-{
+public class CacheController {
     @Resource
     private RedisTemplate<String, String> redisTemplate;
 

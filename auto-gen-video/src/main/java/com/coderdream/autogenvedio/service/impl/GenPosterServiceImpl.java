@@ -43,7 +43,7 @@ public class GenPosterServiceImpl {
         }
 
         // 2. 剪图
-        CutImageUtils.cutImages(appBriefList);
+        CutImageUtils.cutImages(appBriefList); // 小梦
 
         // 4. 生成单张简介
         for (AppBrief appBrief : appBriefList) {
@@ -64,13 +64,22 @@ public class GenPosterServiceImpl {
         }
 
         // 8. 生成文章
-        for (AppBrief appBrief : appBriefList) {
-            System.out.println("应用名称：" + appBrief.getName());
-            System.out.println("原价：" + appBrief.getPrice() + "元");
-            System.out.println("应用简介：" + appBrief.getContent().toString());
-            System.out.println("下载地址：" + appBrief.getUrlCn());
-            System.out.println();
+//        System.out.println("立省78 元立省66元，苹果限免日报1月23日更新");
+
+        System.out.println("#############################################");
+        // 9. 文章简介
+        List<String> articleContentList = GenerateAppInfo.genArticleContent();
+        for (String articleContent : articleContentList) {
+            System.out.println(articleContent);
         }
 
+        System.out.println("#############################################");
+
+        // 8. 生成简介
+        List<String> briefContentList = GenerateAppInfo.genBriefContent();
+        for (String briefContent : briefContentList) {
+            System.out.println(briefContent);
+        }
     }
+
 }

@@ -59,7 +59,7 @@ public class GenerateAppInfo {
             todayContentList.add("应用简介");
             List<String> content = entity.getContent();
             for (String str : content) {
-                if(str.length() < 10) {
+                if (str.length() < 10) {
 
                     todayContentList.add(str);
                 } else {
@@ -69,10 +69,42 @@ public class GenerateAppInfo {
             }
 //            todayContentList.addAll(entity.getContent());
         }
-        todayContentList.add("感谢大家的一键三连，唯有观众老爷的支持，才能让 up 主走得更远。");
+        todayContentList.add("感谢大家的一键三连，唯有观众老爷的支持，");
+        todayContentList.add("才能让 up 主走得更远。");
         todayContentList.add("好了，今天的视频到此结束，祝大家身体健康！");
 
         return todayContentList;
+    }
+
+    public static List<String> genArticleContent() {
+        List<String> articleContentList = new ArrayList<>();
+        List<AppBrief> appBriefList = BaseUtils.genBrief();
+
+        String todayStr = new SimpleDateFormat("MM月dd日").format(new Date());
+        Integer sum = 0;
+        for (AppBrief entity : appBriefList) {
+            sum += entity.getPrice();
+        }
+
+        articleContentList.add("立省" + sum + "元，苹果限免日报" + todayStr + "更新");
+        for (AppBrief appBrief : appBriefList) {
+            articleContentList.add("应用名称：" + appBrief.getName());
+            articleContentList.add("原价：" + appBrief.getPrice() + "元");
+            articleContentList.add("应用简介：" + appBrief.getContent().toString());
+            articleContentList.add("下载地址：" + appBrief.getUrlCn());
+        }
+        return articleContentList;
+    }
+
+    public static List<String> genBriefContent() {
+        List<String> briefContentList = new ArrayList<>();
+        List<AppBrief> appBriefList = BaseUtils.genBrief();
+
+        for (AppBrief appBrief : appBriefList) {
+            briefContentList.add("应用名称：" + appBrief.getName());
+            briefContentList.add("下载地址：" + appBrief.getUrlCn());
+        }
+        return briefContentList;
     }
 
     public static void genMerGeek() {
