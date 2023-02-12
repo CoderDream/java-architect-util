@@ -40,15 +40,11 @@ public class CutPicture {
         List<AppBrief> appBriefList = BaseUtils.genBrief();
 
 
+        getSnapshotTemp(appBriefList);
+    }
 
-//        for (AppBrief appBrief : appBriefList) {
-//            System.out.println(appBrief.getSnapshotPath());
-//        }
-
-//        urlList = GenerateAppInfo.genUrlCnList();
-//        List<String>   urlCnList = appBriefList.stream().map(AppBrief::getUrlCn).collect(Collectors.toList());
-//        urlList = appBriefList.stream().map(AppBrief::getUrl).collect(Collectors.toList());
-//        urlList.addAll(urlCnList);
+    public static void getSnapshotTemp(List<AppBrief> appBriefList) {
+        String imgName;
         String monthStr = new SimpleDateFormat("yyyyMM").format(new Date());
         String dateStr = new SimpleDateFormat("yyyyMMdd").format(new Date());
         String path = "D:" + File.separator + "12_iOS_Android" + File.separator + monthStr + File.separator + dateStr + File.separator + "snapshot_temp";
@@ -57,15 +53,6 @@ public class CutPicture {
             pathDir.mkdirs();
         }
 
-        // java.util.ConcurrentModificationException异常原因及解决方法 https://www.cnblogs.com/loong-hon/p/10256686.html
-
-//        Map<String, String> fileNameMap = new LinkedHashMap<>();
-//        int index = 0;
-//        for (String url : urlList) {
-//            index++;
-//            String appId = StringUtils.parseAppId(url);
-//            fileNameMap.put(appId, index + "_" + appId + ".png");
-//        }
         AppBrief appBrief;
         File file;
 
@@ -97,14 +84,18 @@ public class CutPicture {
                         }
                     }
 
-                    if (onlyUs) {
-                        System.out.println("####url:\t" + url);
+                    try {
+                        if (onlyUs) {
+                            System.out.println("####url:\t" + url);
 //                        driver.get(url);
-                        cutImage(url, file);
-                    } else {
+                            cutImage(url, file);
+                        } else {
 //                        driver.get(urlCn);
-                        cutImage(urlCn, file);
-                        System.out.println("####urlCn:\t" + urlCn);
+                            cutImage(urlCn, file);
+                            System.out.println("####urlCn:\t" + urlCn);
+                        }
+                    } catch (Exception e) {
+                        throw new RuntimeException(e);
                     }
                     if (file.exists()) {
                         if (getFileSize(file) > 150 * 1024) {
@@ -136,7 +127,7 @@ public class CutPicture {
         System.out.println("url===>" + url);
         System.out.println("pathname==>" + String.valueOf(file));
 
-        if(StringUtils.existQuestionMark(url)) {
+        if (StringUtils.existQuestionMark(url)) {
             url += "&platform=iphone";
         } else {
             url += "?platform=iphone";

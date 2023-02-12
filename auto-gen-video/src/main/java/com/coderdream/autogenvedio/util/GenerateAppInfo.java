@@ -56,7 +56,7 @@ public class GenerateAppInfo {
             i++;
             todayContentList.add("第 " + i + " 款是 " + entity.getName() + "，");
             todayContentList.add("本应用原价 " + entity.getPrice() + " 元，");
-            todayContentList.add("应用简介");
+//            todayContentList.add("应用简介");
             List<String> content = entity.getContent();
             for (String str : content) {
                 if (str.length() < 10) {
@@ -101,8 +101,10 @@ public class GenerateAppInfo {
         List<AppBrief> appBriefList = BaseUtils.genBrief();
 
         for (AppBrief appBrief : appBriefList) {
-            briefContentList.add("应用名称：" + appBrief.getName());
-            briefContentList.add("下载地址：" + appBrief.getUrlCn());
+//            briefContentList.add("应用名称：" + appBrief.getName());
+//            briefContentList.add("下载地址：" + appBrief.getUrlCn());
+            briefContentList.add(appBrief.getName());
+            briefContentList.add(appBrief.getUrlCn());
         }
         return briefContentList;
     }

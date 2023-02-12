@@ -165,8 +165,21 @@ public class BaseUtils {
             priceStr = priceStr.replaceAll("¥", "");
             priceStr = priceStr.replaceAll("￥", "");
             priceStr = priceStr.replaceAll("元", "");
+            String cashType = "RMB";
+            if(priceStr.lastIndexOf("$") != -1) {
+                priceStr = priceStr.replaceAll("\\$", "");
+                cashType = "USD";
+            }
+
             try {
-                price = Integer.parseInt(priceStr);
+                if(cashType.equals("USD")) {
+                    Double doublePrice = Double.parseDouble(priceStr);
+                    doublePrice *= 6;
+                    price = (int) Math.round(doublePrice);
+                } else {
+                    price = Integer.parseInt(priceStr);
+                }
+                System.out.println("final price: " + price);
                 appBrief.setPrice(price);
             } catch (Exception e) {
                 System.out.println(rawStrList.get(lastIndex));

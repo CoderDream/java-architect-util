@@ -21,10 +21,10 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class SnapshotWechatUtils {
-    public static void main(String[] args) {
 
-        String url = "https://mp.weixin.qq.com/s/tSMK-ZYig6r3kpnZQju5vw";
-        Integer appAmount = 6;
+    public static Integer appAmount = 6;
+    public static void main(String[] args) {
+        String url = "https://mp.weixin.qq.com/s/vITkj8yoEQVoZjuZyZIzMQ";
         snapshot(url, appAmount);
     }
 

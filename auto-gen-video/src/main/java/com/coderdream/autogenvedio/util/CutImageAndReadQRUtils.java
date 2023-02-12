@@ -1,5 +1,6 @@
 package com.coderdream.autogenvedio.util;
 
+import com.beust.ah.A;
 import com.coderdream.autogenvedio.entity.AppBrief;
 import com.coderdream.autogenvedio.util.qr.QRCodeEvents;
 
@@ -19,24 +20,57 @@ public class CutImageAndReadQRUtils {
         String dateStr = new SimpleDateFormat("yyyyMMdd").format(new Date());
         String path = BaseUtils.getPath();
 
-        int amount = 6;
         String snapshotPath = path + File.separator + "wechat_snapshot" + File.separator + dateStr + ".png";
 
         String filename = dateStr;
-        genImages(amount, snapshotPath, path, filename);
+
+
+        List<AppBrief> appBriefList = genImages(SnapshotWechatUtils.appAmount, snapshotPath, path, filename);
+
+
+        CutPicture.getSnapshotTemp(appBriefList);
     }
 
-    public static List<String> genImages(int amount, String snapshotPath, String path, String fileName) {
-        List<String> appUrlList = new ArrayList<>();
+    public static List<AppBrief> genImages(int amount, String snapshotPath, String path, String fileName) {
+        List<AppBrief> appBriefList = new ArrayList<>();
+        AppBrief appBrief;
+//        List<String> appUrlList = new ArrayList<>();
         int width;
         int height;
         int x;
         int y;
         int z = 0;
-        int qr_baseX = 2080;
-        int qr_baseY = 1013;
+        int qr_baseX = 2090;// 2099;
+        int qr_baseY = 1014;
         int baseX = 1000;
         int oneSize = 721;
+        Integer[] lineNumber = new Integer[amount];
+        lineNumber[0] = 0;
+        lineNumber[1] = 2;
+        lineNumber[2] = 2;
+        lineNumber[3] = 2;
+        lineNumber[4] = 1;
+        lineNumber[5] = 2;
+//        lineNumber[6] = 2;
+//        lineNumber[7] = 2;
+
+        Integer[] lineNumberCount = new Integer[amount];
+        lineNumberCount[0] = 0;
+        lineNumberCount[1] = 0;
+        lineNumberCount[2] = 0;
+        lineNumberCount[3] = 0;
+        lineNumberCount[4] = 0;
+        lineNumberCount[5] = 0;
+//        lineNumberCount[6] = 0;
+//        lineNumberCount[7] = 0;
+        for (int j= 0; j < amount; j++) {
+            if(j == 0) {
+                lineNumberCount[j] += lineNumber[0];
+            } else {
+                lineNumberCount[j] = lineNumber[j] + lineNumberCount[j - 1];
+            }
+        }
+
         for (int i = 0; i < amount; i++) {
             z = i + 1;
             File file = new File(snapshotPath);
@@ -47,19 +81,19 @@ public class CutImageAndReadQRUtils {
                 width = 250;
                 height = 250;
                 // 保存应用图标
-                cut(new File(snapshotPath), x, y, width, height, new File(path + File.separator + String.format("%02d", z) + "_" + "_icon.png"));
+            //    cut(new File(snapshotPath), x, y, width, height, new File(path + File.separator + String.format("%02d", z) + "_" + "_icon.png"));
 
                 x = 1405;// 大：右移
                 y = 160; // 大：下移
                 width = 1000;
                 height = 1000;
                 // 保存应用详情
-                cut(new File(snapshotPath), x, y, width, height, new File(path + File.separator + String.format("%02d", z) + "_" + "_brief.png"));
+           //     cut(new File(snapshotPath), x, y, width, height, new File(path + File.separator + String.format("%02d", z) + "_" + "_brief.png"));
 
                 x = qr_baseX;// 大：右移
-                y = qr_baseY + oneSize * i; // 大：下移
-                width = 140;
-                height = 160;
+                y = qr_baseY + oneSize * i + lineNumberCount[i] * 3; // 大：下移
+                width = 180;
+                height = 180;
                 // 保存应用详情
                 String filePath = path + File.separator + String.format("%02d", z) + "_" + "_qr.png";
                 cut(new File(snapshotPath), x, y, width, height, new File(filePath));
@@ -67,20 +101,26 @@ public class CutImageAndReadQRUtils {
                 String qrUrl = QRCodeEvents.parseQRCode(filePath);
                 System.out.println(qrUrl);
                 // 识别二维码，写入App地址列表
-                appUrlList.add(qrUrl);
+//                appUrlList.add(qrUrl);
+                appBrief = new AppBrief();
+                appBrief.setUrl(qrUrl);
+                appBrief.setUrlCn(qrUrl);
+
+                String dateStr = new SimpleDateFormat("yyyyMMddHHmmssSSS").format(new Date());
+                appBrief.setFilename(dateStr);
+                appBriefList.add(appBrief);
 
                 x = 1405;// 大：右移
                 y = 160; // 大：下移
                 width = 1000;
                 height = 1000;
                 // 保存应用详情
-                cut(new File(snapshotPath), x, y, width, height, new File(path + File.separator + String.format("%02d", z) + "_" + "_snapshot.png"));
-
+           //     cut(new File(snapshotPath), x, y, width, height, new File(path + File.separator + String.format("%02d", z) + "_" + "_snapshot.png"));
             } else {
                 System.out.println("File not exist " + snapshotPath);
             }
         }
-        return appUrlList;
+        return appBriefList;
     }
 
     /**
