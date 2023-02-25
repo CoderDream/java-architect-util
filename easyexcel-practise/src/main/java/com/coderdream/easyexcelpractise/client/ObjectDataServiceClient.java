@@ -2,7 +2,7 @@ package com.coderdream.easyexcelpractise.client;
 
 
 import com.coderdream.easyexcelpractise.Result;
-import com.coderdream.easyexcelpractise.dto.ObjectAttrReqDto;
+import com.keepsoft.microservice.dto.ObjectAttrReqDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

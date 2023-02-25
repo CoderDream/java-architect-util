@@ -55,6 +55,9 @@ public class AttrMetaTest extends BaseTest {
         //String attrTypeFullCode = objectTypeCode + "00000" + structureTypeCode + "" + temp + "00";
         String remark = "属性类型 " + code + "描述";
         String dataType = "text";
+        String displayFlag = "1";
+
+        bodyMap.put("displayFlag", displayFlag);
         bodyMap.put("attrName", attrName);
         bodyMap.put("attrLabel", attrLabel);
         bodyMap.put("attrCode", attrCode);
@@ -239,29 +242,41 @@ public class AttrMetaTest extends BaseTest {
         RestTemplate restTemplate = new RestTemplate();
         String result;
         Map<String, Object> bodyMap = new LinkedHashMap<>();
-        Integer commonFlag = 1;
-        String attrLabel = "kjkjk";
-        String attrTypeFullCode = "010000B010000"; // 属性类型全码
-        String attrName = "代码";
-        String dataType = "text";
-        String attrTypeCode = "01";
-        String objectTypeFullCode = "0200000000000";
-        String structureTypeCode = "B";
-        String attrFullCode = "020000B010800";
-        String attrCode = "08"; // 属性编码
-
-        bodyMap.put("commonFlag", commonFlag);
-        bodyMap.put("attrLabel", attrLabel);
+        String attrTypeFullCode = "010000B010000";
+        Integer commonFlag =0;
         bodyMap.put("attrTypeFullCode", attrTypeFullCode);
-        bodyMap.put("attrName", attrName);
-        bodyMap.put("dataType", dataType);
-        bodyMap.put("attrTypeCode", attrTypeCode);
-        bodyMap.put("objectTypeFullCode", objectTypeFullCode);
-        bodyMap.put("structureTypeCode", structureTypeCode);
-        bodyMap.put("attrFullCode", attrFullCode);
-        bodyMap.put("attrCode", attrCode);
+        bodyMap.put("commonFlag", commonFlag);
 
         String body = JSONObject.toJSONString(bodyMap);
+        System.out.println(body);
+        result = postForObject(restTemplate, URI + "genCode", body);
+
+        String code = getCode(result);
+        System.out.println(code);
+        if (code == null || "".equals(code.trim())) {
+            System.out.println("######" + getMessage(result));
+        }
+
+        String attrName = "属性66" + code;
+        String attrLabel = "TTEESSTTbbadd+_02121ddd";
+        String attrCode = code;
+        String attrFullCode = "010000B01" + code + "00";
+        //String attrTypeFullCode = objectTypeCode + "00000" + structureTypeCode + "" + temp + "00";
+        String remark = "属性类型 " + code + "描述";
+        String dataType = "text";
+        String displayFlag = "1";
+
+        bodyMap.put("displayFlag", displayFlag);
+        bodyMap.put("attrName", attrName);
+        bodyMap.put("attrLabel", attrLabel);
+        bodyMap.put("attrCode", attrCode);
+        bodyMap.put("attrFullCode", attrFullCode);
+        bodyMap.put("commonFlag", commonFlag);
+        bodyMap.put("dataType", dataType);
+        bodyMap.put("attrTypeFullCode", attrTypeFullCode);
+        bodyMap.put("remark", "测试属性类型描述" + remark);
+
+        body = JSONObject.toJSONString(bodyMap);
         System.out.println("body: " + body);
         // 增
         result = postForObject(restTemplate, URI + "add", body);

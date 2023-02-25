@@ -48,8 +48,8 @@ public class ObjectMetaTest extends BaseTest {
 
         String spaceLevel = "L1";
         String objectCode = code;
-        String objectName = "对象" + code;
-        String objectLabel = "DDddddRRTT";
+        String objectName = "对象对象对象对象对象对象123456789022345678903234567890423456789052345678906234567890" + code;
+        String objectLabel = "DDddddR0+DddddRDDddddRDDddddRDDddddRRTDddddRDDdRDDddddRRTDddRDDddddRDDddddRDDddddRDDddddRRTDddddRRTT";
         String objectFullCode = "03" + code + "0000000";
         objectTypeFullCode = "0300000000000";
 
@@ -114,6 +114,8 @@ public class ObjectMetaTest extends BaseTest {
         RestTemplate restTemplate = new RestTemplate();
         String result;
         Map<String, Object> bodyMap = new LinkedHashMap<String, Object>();
+        String objectTypeFullCode = "1700000000000";
+        bodyMap.put("objectTypeFullCode", objectTypeFullCode);
         String body = JSONObject.toJSONString(bodyMap);
         System.out.println(body);
         result = postForObject(restTemplate, URI + "genCode", body);
@@ -122,10 +124,10 @@ public class ObjectMetaTest extends BaseTest {
 
         String spaceLevel = "L1";
         String objectCode = code;
-        String objectName = "测试对象" + code;
-        String objectLabel = "DDRR";
-        String objectFullCode = "15 " + code + "0000000";
-        String objectTypeFullCode = "1500000000000";
+        String objectName = "测试对象abd" + code;
+        String objectLabel = "DDWRaa00_+11333abc";
+        String objectFullCode = "17" + code + "0000000";
+//        String objectTypeFullCode = "1700000000000";
         bodyMap.put("objectName", objectName);
         bodyMap.put("objectLabel", objectLabel);
         bodyMap.put("objectCode", objectCode);

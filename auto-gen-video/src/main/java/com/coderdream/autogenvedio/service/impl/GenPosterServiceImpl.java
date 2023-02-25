@@ -10,6 +10,9 @@ public class GenPosterServiceImpl {
 
     public static void main(String[] args) {
         // 1.
+        com.fasterxml.jackson.datatype.jsr310.ser.ZoneIdSerializer z;
+        // jackson-datatype-jsr310-2.13.4.jar
+        // jackson-datatype-jdk8:2.13.4.jar
         gen();
     }
 
@@ -79,6 +82,12 @@ public class GenPosterServiceImpl {
         List<String> briefContentList = GenerateAppInfo.genBriefContent();
         for (String briefContent : briefContentList) {
             System.out.println(briefContent);
+        }
+
+        // 9. 生成名称价格列表
+        System.out.println("应用名称" + "\t" + "原价");
+        for (AppBrief appBrief : appBriefList) {
+            System.out.println(appBrief.getName() + "\t" + appBrief.getPrice() + "元");
         }
     }
 

@@ -3,9 +3,9 @@ package com.coderdream.easyexcelpractise.client;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.coderdream.easyexcelpractise.Result;
-import com.coderdream.easyexcelpractise.dto.AttrMetaReqDto;
-import com.coderdream.easyexcelpractise.dto.AttrItemMetaReqDto;
-import com.coderdream.easyexcelpractise.dto.AttrItemMetaRespDto;
+import com.keepsoft.microservice.dto.AttrMetaReqDto;
+import com.keepsoft.microservice.dto.AttrItemMetaReqDto;
+import com.keepsoft.microservice.dto.AttrItemMetaRespDto;
 import com.coderdream.easyexcelpractise.entity.AttrItemMetaEntity;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.cloud.openfeign.FeignClient;

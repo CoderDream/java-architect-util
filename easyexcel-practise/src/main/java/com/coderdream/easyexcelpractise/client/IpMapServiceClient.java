@@ -2,9 +2,6 @@ package com.coderdream.easyexcelpractise.client;
 
 
 import com.coderdream.easyexcelpractise.Result;
-import com.coderdream.easyexcelpractise.dto.ItemInfoRespDto;
-import com.coderdream.easyexcelpractise.dto.ObjectAttrReqDto;
-import com.coderdream.easyexcelpractise.entity.ObjectBStringEntity;
 import com.coderdream.easyexcelpractise.entity.TIdMapEntity;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.cloud.openfeign.FeignClient;

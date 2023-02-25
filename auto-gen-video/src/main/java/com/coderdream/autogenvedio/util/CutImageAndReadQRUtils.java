@@ -41,13 +41,13 @@ public class CutImageAndReadQRUtils {
         int y;
         int z = 0;
         int qr_baseX = 2090;// 2099;
-        int qr_baseY = 1014;
+        int qr_baseY = 826+125; // 826
         int baseX = 1000;
-        int oneSize = 721;
+        int oneSize = 663;
         Integer[] lineNumber = new Integer[amount];
-        lineNumber[0] = 0;
-        lineNumber[1] = 2;
-        lineNumber[2] = 2;
+        lineNumber[0] = 2;
+        lineNumber[1] = 1;
+        lineNumber[2] = 3;
         lineNumber[3] = 2;
         lineNumber[4] = 1;
         lineNumber[5] = 2;
@@ -91,9 +91,10 @@ public class CutImageAndReadQRUtils {
            //     cut(new File(snapshotPath), x, y, width, height, new File(path + File.separator + String.format("%02d", z) + "_" + "_brief.png"));
 
                 x = qr_baseX;// 大：右移
-                y = qr_baseY + oneSize * i + lineNumberCount[i] * 3; // 大：下移
-                width = 180;
+                y = qr_baseY + oneSize * i + lineNumberCount[i] * 29; // 大：下移
+                width = 150;
                 height = 180;
+                System.out.println(i + " y: " + y);
                 // 保存应用详情
                 String filePath = path + File.separator + String.format("%02d", z) + "_" + "_qr.png";
                 cut(new File(snapshotPath), x, y, width, height, new File(filePath));

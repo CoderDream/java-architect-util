@@ -2,7 +2,7 @@ package com.coderdream.easyexcelpractise.client;
 
 
 import com.coderdream.easyexcelpractise.Result;
-import com.coderdream.easyexcelpractise.dto.ObjectAttrReqDto;
+import com.keepsoft.microservice.dto.ObjectAttrReqDto;
 import com.coderdream.easyexcelpractise.entity.ForecastDataEntity;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.cloud.openfeign.FeignClient;
