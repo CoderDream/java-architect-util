@@ -45,11 +45,11 @@ public class CutImageAndReadQRUtils {
         int baseX = 1000;
         int oneSize = 663;
         Integer[] lineNumber = new Integer[amount];
-        lineNumber[0] = 2;
-        lineNumber[1] = 1;
+        lineNumber[0] = 1;
+        lineNumber[1] = 2;
         lineNumber[2] = 3;
         lineNumber[3] = 2;
-        lineNumber[4] = 1;
+        lineNumber[4] = 2;
         lineNumber[5] = 2;
 //        lineNumber[6] = 2;
 //        lineNumber[7] = 2;
