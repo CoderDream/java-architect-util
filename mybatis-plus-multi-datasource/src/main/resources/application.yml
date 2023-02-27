@@ -1,0 +1,34 @@
+spring:
+  # 配置数据源信息
+  datasource:
+    dynamic:
+      # 设置默认的数据源或者数据源组,默认值即为master 要与下面的datasource下的master对应，名称要一样
+      primary: master
+      # 严格匹配数据源,默认false.true未匹配到指定数据源时抛异常，会报错,false使用默认master数据源
+      strict: false
+      datasource:
+        master: # 与上面primary名字相同
+          url: jdbc:mysql://localhost:3306/mybatis_plus?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          username: root
+          password: 123456
+        slave_1: # 从数据源
+          url: jdbc:mysql://localhost:3306/mybatis_plus_1?serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          username: root
+          password: 123456
+# 配置MyBatis日志
+mybatis-plus:
+#  configuration: # 注释后不打印sql
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  # 配置类型所对应的包
+  type-aliases-package: com.coderdream.mybatisplusdemo.pojo
+  # 扫描通用枚举包
+  type-enums-package: com.coderdream.mybatisplusdemo.enums
+  # 配置MyBatis-Plus的全局配置
+  global-config:
+    db-config:
+      # 配置MyBatis-Plus操作表的统一前缀
+      table-prefix: t_
+      # 配置MyBatis-Plus的主键策略 这里设置了uuid
+      id-type: assign_uuid

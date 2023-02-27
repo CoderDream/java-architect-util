@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coderdream.mybatisplusdemo.mapper.ObjectBStringMapper">
+
+    <resultMap id="BaseResultMap" type="com.coderdream.mybatisplusdemo.entity.ObjectBString">
+            <id property="attrItemFullCode" column="attr_item_full_code" jdbcType="VARCHAR"/>
+            <result property="value" column="value" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        attr_item_full_code,value
+    </sql>
+</mapper>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.coderdream.mybatisplusdemo.mapper.RiverGeoMapper">
+
+    <resultMap type="com.coderdream.mybatisplusdemo.entity.RiverGeoEntity" id="riverGeoMap">
+        <result property="id" column="id"/>
+        <result property="feature_type" column="feature_type"/>
+        <result property="NAME" column="NAME"/>
+        <result property="OBJECTID" column="OBJECTID"/>
+        <result property="FNODE" column="FNODE"/>
+        <result property="TNODE" column="TNODE"/>
+        <result property="LPOLY" column="LPOLY"/>
+        <result property="RPOLY" column="RPOLY"/>
+        <result property="LENGTH" column="LENGTH"/>
+        <result property="HYDR" column="HYDR"/>
+        <result property="hydrId" column="HYDR_ID"/>
+        <result property="CODE" column="CODE"/>
+        <result property="GB" column="GB"/>
+        <result property="HYDC" column="HYDC"/>
+        <result property="TN" column="TN"/>
+        <result property="MAPTN" column="MAPTN"/>
+        <result property="SHAPE_LENG" column="SHAPE_LENG"/>
+        <result property="LEVEL" column="LEVEL"/>
+        <result property="geometryInfo" column="geometry_info"
+                typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler"/>
+        <result property="extraObject" column="extra_object"
+                typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler"/>
+        <result property="extraJson" column="extra_json"
+                typeHandler="com.baomidou.mybatisplus.extension.handlers.FastjsonTypeHandler"/>
+        <result property="extraList" column="extra_list"
+                typeHandler="com.coderdream.mybatisplusdemo.handler.ObjectAndJsonHandler"/>
+        <result property="extraArray" column="extra_array"
+                typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler"/>
+    </resultMap>
+
+
+    <insert id="insertOrUpdateBatch" keyProperty="id" useGeneratedKeys="false">
+        insert into t_river_geo(`feature_type`, `NAME`, `OBJECTID`, `FNODE`, `TNODE`, `LPOLY`, `RPOLY`, `LENGTH`,
+        `HYDR`, `HYDR_ID`, `CODE`, `GB`, `HYDC`, `TN`, `MAPTN`, `SHAPE_LENG`, `LEVEL`, `geometry_info`)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.feature_type},
+            #{entity.NAME},
+            #{entity.OBJECTID},
+            #{entity.FNODE},
+            #{entity.TNODE},
+            #{entity.LPOLY},
+            #{entity.RPOLY},
+            #{entity.LENGTH},
+            #{entity.HYDR},
+            #{entity.hydrId},
+            #{entity.CODE},
+            #{entity.GB},
+            #{entity.HYDC},
+            #{entity.TN},
+            #{entity.MAPTN},
+            #{entity.shapeLeng},
+            #{entity.LEVEL},
+            #{entity.geometryInfo, typeHandler=com.coderdream.mybatisplusdemo.handler.JsonObjectTypeHandler})
+        </foreach>
+        on duplicate key update
+        feature_type = values(feature_type),
+        NAME = values(NAME),
+        OBJECTID = values(OBJECTID),
+        FNODE = values(FNODE),
+        TNODE = values(TNODE),
+        LPOLY = values(LPOLY),
+        RPOLY = values(RPOLY),
+        LENGTH = values(LENGTH),
+        HYDR = values(HYDR),
+        hydrId = values(hydrId),
+        CODE = values(CODE),
+        GB = values(GB),
+        HYDC = values(HYDC),
+        TN = values(TN),
+        MAPTN = values(MAPTN),
+        shapeLeng = values(shapeLeng),
+        LEVEL = values(LEVEL),
+        geometryInfo = values(geometryInfo)
+    </insert>
+</mapper>
+

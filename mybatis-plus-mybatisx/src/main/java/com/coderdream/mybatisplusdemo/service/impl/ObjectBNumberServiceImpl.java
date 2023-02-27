@@ -1,0 +1,22 @@
+package com.coderdream.mybatisplusdemo.service.impl;
+
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.coderdream.mybatisplusdemo.entity.ObjectBNumber;
+import com.coderdream.mybatisplusdemo.service.ObjectBNumberService;
+import com.coderdream.mybatisplusdemo.mapper.ObjectBNumberMapper;
+import org.springframework.stereotype.Service;
+
+/**
+* @author CoderDream
+* @description 针对表【object_b_number(数字)】的数据库操作Service实现
+* @createDate 2023-02-27 15:54:35
+*/
+@Service
+public class ObjectBNumberServiceImpl extends ServiceImpl<ObjectBNumberMapper, ObjectBNumber>
+    implements ObjectBNumberService{
+
+}
+
+
+
+

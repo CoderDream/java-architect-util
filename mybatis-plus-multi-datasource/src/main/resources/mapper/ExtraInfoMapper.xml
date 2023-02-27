@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.coderdream.mybatisplusdemo.mapper.ExtraInfoMapper">
+    <!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.coderdream.mybatisplusdemo.entity.ExtraInfo" id="extraInfoMap">
+        <result property="id" column="id"/>
+        <result property="extraObject" column="extra_object" typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler"/>
+        <result property="extraJson" column="extra_json" typeHandler="com.baomidou.mybatisplus.extension.handlers.FastjsonTypeHandler"/>
+        <result property="extraList" column="extra_list" typeHandler="com.coderdream.mybatisplusdemo.handler.ObjectAndJsonHandler"/>
+        <result property="extraArray" column="extra_array" typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler"/>
+    </resultMap>
+</mapper>
