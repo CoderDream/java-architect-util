@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coderdream.freeapps.mapper.AppMapper">
+
+    <resultMap id="BaseResultMap" type="com.coderdream.freeapps.entity.App">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="appId" column="app_id" jdbcType="VARCHAR"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="priceCn" column="price_cn" jdbcType="INTEGER"/>
+            <result property="priceUs" column="price_us" jdbcType="DECIMAL"/>
+            <result property="priceStr" column="price_str" jdbcType="VARCHAR"/>
+            <result property="priceStrCn" column="price_str_cn" jdbcType="VARCHAR"/>
+            <result property="priceStrUs" column="price_str_us" jdbcType="VARCHAR"/>
+            <result property="usFlag" column="us_flag" jdbcType="TINYINT"/>
+            <result property="urlCn" column="url_cn" jdbcType="VARCHAR"/>
+            <result property="urlUs" column="url_us" jdbcType="VARCHAR"/>
+            <result property="delFlag" column="del_flag" jdbcType="INTEGER"/>
+            <result property="createUserCode" column="create_user_code" jdbcType="VARCHAR"/>
+            <result property="createUserName" column="create_user_name" jdbcType="VARCHAR"/>
+            <result property="createdDate" column="created_date" jdbcType="TIMESTAMP"/>
+            <result property="lastModifiedCode" column="last_modified_code" jdbcType="VARCHAR"/>
+            <result property="lastModifiedName" column="last_modified_name" jdbcType="VARCHAR"/>
+            <result property="lastModifiedDate" column="last_modified_date" jdbcType="TIMESTAMP"/>
+            <result property="version" column="version" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,app_id,name,
+        price_cn,price_us,price_str,
+        price_str_cn,price_str_us,us_flag,
+        url_cn,url_us,del_flag,
+        create_user_code,create_user_name,created_date,
+        last_modified_code,last_modified_name,last_modified_date,
+        version
+    </sql>
+</mapper>

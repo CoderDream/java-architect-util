@@ -1,7 +1,7 @@
 package com.coderdream.freeapps.mapper;
 
+import com.coderdream.freeapps.entity.FreeHistory;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.coderdream.freeapps.model.FreeHistory;
 
 /**
 * @author CoderDream

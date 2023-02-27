@@ -1,9 +1,14 @@
 package com.coderdream.freeapps.service;
 
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.core.toolkit.Constants;
 import com.coderdream.freeapps.dto.AppDTO;
 import com.coderdream.freeapps.dto.AppQueryPageDTO;
+import com.coderdream.freeapps.model.App;
 import com.coderdream.freeapps.vo.AppVO;
+import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 public interface AppService {
@@ -25,4 +30,11 @@ public interface AppService {
 
   // 删除
   Boolean delete(String id);
+
+
+  int insertSelective(App app);
+
+  int insertOrUpdateBatch(List<App> appList);
+
+  List<App> selectList(App app);
 }

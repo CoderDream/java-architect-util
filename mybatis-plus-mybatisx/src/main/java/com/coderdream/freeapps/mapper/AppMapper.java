@@ -1,10 +1,7 @@
 package com.coderdream.freeapps.mapper;
-import org.apache.ibatis.annotations.Param;
 
+import com.coderdream.freeapps.entity.App;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.coderdream.freeapps.model.App;
-
-import java.util.List;
 
 /**
 * @author CoderDream
@@ -14,9 +11,6 @@ import java.util.List;
 */
 public interface AppMapper extends BaseMapper<App> {
 
-    int insertSelective(App app);
-
-    int insertOrUpdateBatch(List<App> entities);
 }
 
 

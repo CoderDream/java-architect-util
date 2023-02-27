@@ -1,27 +1,26 @@
-package com.coderdream.freeapps.model;
+package com.coderdream.freeapps.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import lombok.Data;
-
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
+import lombok.Data;
 
 /**
- *
- * @TableName t_app
+ * 
+ * @TableName t_free_history
  */
-@TableName(value ="t_app")
+@TableName(value ="t_free_history")
 @Data
-public class App implements Serializable {
+public class FreeHistory implements Serializable {
     /**
-     * ID
+     * 
      */
-    @TableId(type = IdType.AUTO)
-    private Long id;
+    @TableId
+    private Integer id;
 
     /**
      * 应用ID
@@ -72,6 +71,11 @@ public class App implements Serializable {
      * 美区URL
      */
     private String urlUs;
+
+    /**
+     * 限免日期
+     */
+    private Date freeDate;
 
     /**
      * 是否删除 0未删除（默认），1已删除
@@ -127,7 +131,7 @@ public class App implements Serializable {
         if (getClass() != that.getClass()) {
             return false;
         }
-        App other = (App) that;
+        FreeHistory other = (FreeHistory) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
             && (this.getAppId() == null ? other.getAppId() == null : this.getAppId().equals(other.getAppId()))
             && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
@@ -139,6 +143,7 @@ public class App implements Serializable {
             && (this.getUsFlag() == null ? other.getUsFlag() == null : this.getUsFlag().equals(other.getUsFlag()))
             && (this.getUrlCn() == null ? other.getUrlCn() == null : this.getUrlCn().equals(other.getUrlCn()))
             && (this.getUrlUs() == null ? other.getUrlUs() == null : this.getUrlUs().equals(other.getUrlUs()))
+            && (this.getFreeDate() == null ? other.getFreeDate() == null : this.getFreeDate().equals(other.getFreeDate()))
             && (this.getDelFlag() == null ? other.getDelFlag() == null : this.getDelFlag().equals(other.getDelFlag()))
             && (this.getCreateUserCode() == null ? other.getCreateUserCode() == null : this.getCreateUserCode().equals(other.getCreateUserCode()))
             && (this.getCreateUserName() == null ? other.getCreateUserName() == null : this.getCreateUserName().equals(other.getCreateUserName()))
@@ -164,6 +169,7 @@ public class App implements Serializable {
         result = prime * result + ((getUsFlag() == null) ? 0 : getUsFlag().hashCode());
         result = prime * result + ((getUrlCn() == null) ? 0 : getUrlCn().hashCode());
         result = prime * result + ((getUrlUs() == null) ? 0 : getUrlUs().hashCode());
+        result = prime * result + ((getFreeDate() == null) ? 0 : getFreeDate().hashCode());
         result = prime * result + ((getDelFlag() == null) ? 0 : getDelFlag().hashCode());
         result = prime * result + ((getCreateUserCode() == null) ? 0 : getCreateUserCode().hashCode());
         result = prime * result + ((getCreateUserName() == null) ? 0 : getCreateUserName().hashCode());
@@ -192,6 +198,7 @@ public class App implements Serializable {
         sb.append(", usFlag=").append(usFlag);
         sb.append(", urlCn=").append(urlCn);
         sb.append(", urlUs=").append(urlUs);
+        sb.append(", freeDate=").append(freeDate);
         sb.append(", delFlag=").append(delFlag);
         sb.append(", createUserCode=").append(createUserCode);
         sb.append(", createUserName=").append(createUserName);

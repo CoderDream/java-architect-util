@@ -1,5 +1,8 @@
 package com.coderdream.freeapps.service.impl;
 
+import cn.hutool.core.util.StrUtil;
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.coderdream.freeapps.dto.AppDTO;
@@ -13,11 +16,16 @@ import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 
 @Service
 @RequiredArgsConstructor
 public class AppServiceImpl extends
     ServiceImpl<AppMapper, App> implements AppService {
+
+  @Resource
+  private AppMapper appMapper;
 
   private final AppStruct appStruct;
 
@@ -52,5 +60,26 @@ public class AppServiceImpl extends
   @Override
   public Boolean delete(String id) {
     return this.removeById(id);
+  }
+
+  @Override
+  public int insertSelective(App app) {
+    return appMapper.insertSelective(app);
+  }
+
+  @Override
+  public int insertOrUpdateBatch(List<App> appList) {
+    return appMapper.insertOrUpdateBatch(appList);
+  }
+
+  @Override
+  public List<App> selectList(App app) {
+
+    QueryWrapper<App> queryWrapper = new QueryWrapper<>();
+    if(StrUtil.isNotEmpty(app.getAppId())) {
+      queryWrapper.eq("app_id", app.getAppId());
+    }
+    List<App> result = appMapper.selectList(queryWrapper);
+    return result;
   }
 }

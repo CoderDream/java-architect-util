@@ -2,4 +2,214 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.coderdream.freeapps.mapper.AppMapper">
 
+
+    <resultMap id="BaseResultMap" type="com.coderdream.freeapps.model.App">
+        <id property="id" column="id" jdbcType="BIGINT"/>
+        <result property="appId" column="app_id" jdbcType="VARCHAR"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="priceCn" column="price_cn" jdbcType="INTEGER"/>
+        <result property="priceUs" column="price_us" jdbcType="DECIMAL"/>
+        <result property="priceStr" column="price_str" jdbcType="VARCHAR"/>
+        <result property="priceStrCn" column="price_str_cn" jdbcType="VARCHAR"/>
+        <result property="priceStrUs" column="price_str_us" jdbcType="VARCHAR"/>
+        <result property="usFlag" column="us_flag" jdbcType="TINYINT"/>
+        <result property="urlCn" column="url_cn" jdbcType="VARCHAR"/>
+        <result property="urlUs" column="url_us" jdbcType="VARCHAR"/>
+        <result property="delFlag" column="del_flag" jdbcType="INTEGER"/>
+        <result property="createUserCode" column="create_user_code" jdbcType="VARCHAR"/>
+        <result property="createUserName" column="create_user_name" jdbcType="VARCHAR"/>
+        <result property="createdDate" column="created_date" jdbcType="TIMESTAMP"/>
+        <result property="lastModifiedCode" column="last_modified_code" jdbcType="VARCHAR"/>
+        <result property="lastModifiedName" column="last_modified_name" jdbcType="VARCHAR"/>
+        <result property="lastModifiedDate" column="last_modified_date" jdbcType="TIMESTAMP"/>
+        <result property="version" column="version" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id
+        ,app_id,name,
+        price_cn,price_us,price_str,
+        price_str_cn,price_str_us,us_flag,
+        url_cn,url_us,del_flag,
+        create_user_code,create_user_name,created_date,
+        last_modified_code,last_modified_name,last_modified_date,
+        version
+    </sql>
+
+    <sql id="Insert_Column_List">
+        app_id
+        ,name,
+        price_cn,price_us,price_str,
+        price_str_cn,price_str_us,us_flag,
+        url_cn,url_us,del_flag,
+        create_user_code,create_user_name,created_date,
+        last_modified_code,last_modified_name,last_modified_date,
+        version
+    </sql>
+
+    <insert id="insertOrUpdateBatchV2">
+        insert into t_app
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="appId != null">app_id,</if>
+            <if test="name != null">`name`,</if>
+            <if test="priceCn != null">price_cn,</if>
+            <if test="priceUs != null">price_us,</if>
+            <if test="priceStr != null">price_str,</if>
+            <if test="priceStrCn != null">price_str_cn,</if>
+            <if test="priceStrUs != null">price_str_us,</if>
+            <if test="usFlag != null">us_flag,</if>
+            <if test="urlCn != null">url_cn,</if>
+            <if test="urlUs != null">url_us,</if>
+            <if test="delFlag != null">del_flag,</if>
+            <if test="createUserCode != null">create_user_code,</if>
+            <if test="createUserName != null">create_user_name,</if>
+            <if test="createdDate != null">created_date,</if>
+            <if test="lastModifiedCode != null">last_modified_code,</if>
+            <if test="lastModifiedName != null">last_modified_name,</if>
+            <if test="lastModifiedDate != null">last_modified_date,</if>
+            <if test="version != null">version,</if>
+        </trim>
+        values
+
+        <foreach collection="entities" item="entity" separator=",">
+            <trim prefix="(" suffix=")" suffixOverrides=",">
+                <if test="appId != null">#{entity.appId,jdbcType=VARCHAR},</if>
+                <if test="name != null">#{entity.name,jdbcType=VARCHAR},</if>
+                <if test="priceCn != null">#{entity.priceCn,jdbcType=INTEGER},</if>
+                <if test="priceUs != null">#{entity.priceUs,jdbcType=DECIMAL},</if>
+                <if test="priceStr != null">#{entity.priceStr,jdbcType=VARCHAR},</if>
+                <if test="priceStrCn != null">#{entity.priceStrCn,jdbcType=VARCHAR},</if>
+                <if test="priceStrUs != null">#{entity.priceStrUs,jdbcType=VARCHAR},</if>
+                <if test="usFlag != null">#{entity.usFlag,jdbcType=TINYINT},</if>
+                <if test="urlCn != null">#{entity.urlCn,jdbcType=VARCHAR},</if>
+                <if test="urlUs != null">#{entity.urlUs,jdbcType=VARCHAR},</if>
+                <if test="delFlag != null">#{entity.delFlag,jdbcType=INTEGER},</if>
+                <if test="createUserCode != null">#{entity.createUserCode,jdbcType=VARCHAR},</if>
+                <if test="createUserName != null">#{entity.createUserName,jdbcType=VARCHAR},</if>
+                <if test="createdDate != null">#{entity.createdDate,jdbcType=TIMESTAMP},</if>
+                <if test="lastModifiedCode != null">#{entity.lastModifiedCode,jdbcType=VARCHAR},</if>
+                <if test="lastModifiedName != null">#{entity.lastModifiedName,jdbcType=VARCHAR},</if>
+                <if test="lastModifiedDate != null">#{entity.lastModifiedDate,jdbcType=TIMESTAMP},</if>
+                <if test="version != null">#{entity.version,jdbcType=VARCHAR},</if>
+            </trim>
+        </foreach>
+
+        on duplicate key update
+        app_id = values(app_id),
+        `name` = values(`name`),
+        price_cn = values(price_cn),
+        price_us = values(price_us),
+        version = values(version)
+
+
+    </insert>
+
+    <insert id="insertOrUpdateBatch">
+        insert into t_app
+        (`app_id`,
+        `name`,
+        `price_cn`,
+        `price_us`,
+        `price_str`,
+        `price_str_cn`,
+        `price_str_us`,
+        `us_flag`,
+        `url_cn`,
+        `url_us`,
+        `del_flag`,
+        `create_user_code`,
+        `create_user_name`,
+        `created_date`,
+        `last_modified_code`,
+        `last_modified_name`,
+        `last_modified_date`,
+        `version`)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            ( #{entity.appId,jdbcType=VARCHAR},
+            #{entity.name,jdbcType=VARCHAR},
+            #{entity.priceCn,jdbcType=INTEGER},
+            #{entity.priceUs,jdbcType=DECIMAL},
+            #{entity.priceStr,jdbcType=VARCHAR},
+            #{entity.priceStrCn,jdbcType=VARCHAR},
+            #{entity.priceStrUs,jdbcType=VARCHAR},
+            #{entity.usFlag,jdbcType=TINYINT},
+            #{entity.urlCn,jdbcType=VARCHAR},
+            #{entity.urlUs,jdbcType=VARCHAR},
+            #{entity.delFlag,jdbcType=INTEGER},
+            #{entity.createUserCode,jdbcType=VARCHAR},
+            #{entity.createUserName,jdbcType=VARCHAR},
+            #{entity.createdDate,jdbcType=TIMESTAMP},
+            #{entity.lastModifiedCode,jdbcType=VARCHAR},
+            #{entity.lastModifiedName,jdbcType=VARCHAR},
+            #{entity.lastModifiedDate,jdbcType=TIMESTAMP},
+            #{entity.version,jdbcType=VARCHAR} )
+        </foreach>
+        on duplicate key update
+        app_id = values(app_id),
+        `name` = values(`name`),
+        price_cn = values(price_cn),
+        price_us = values(price_us),
+        price_str = values(price_str),
+        price_str_cn = values(price_str_cn),
+        price_str_us = values(price_str_us),
+        us_flag = values(us_flag),
+        url_cn = values(url_cn),
+        url_us = values(url_us),
+        del_flag = values(del_flag),
+        create_user_code = values(create_user_code),
+        create_user_name = values(create_user_name),
+        created_date = values(created_date),
+        last_modified_code = values(last_modified_code),
+        last_modified_name = values(last_modified_name),
+        last_modified_date = values(last_modified_date),
+        version = values(version)
+    </insert>
+
+    <insert id="insertSelective">
+        insert into t_app
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">id,</if>
+            <if test="appId != null">app_id,</if>
+            <if test="name != null">name,</if>
+            <if test="priceCn != null">price_cn,</if>
+            <if test="priceUs != null">price_us,</if>
+            <if test="priceStr != null">price_str,</if>
+            <if test="priceStrCn != null">price_str_cn,</if>
+            <if test="priceStrUs != null">price_str_us,</if>
+            <if test="usFlag != null">us_flag,</if>
+            <if test="urlCn != null">url_cn,</if>
+            <if test="urlUs != null">url_us,</if>
+            <if test="delFlag != null">del_flag,</if>
+            <if test="createUserCode != null">create_user_code,</if>
+            <if test="createUserName != null">create_user_name,</if>
+            <if test="createdDate != null">created_date,</if>
+            <if test="lastModifiedCode != null">last_modified_code,</if>
+            <if test="lastModifiedName != null">last_modified_name,</if>
+            <if test="lastModifiedDate != null">last_modified_date,</if>
+            <if test="version != null">version,</if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">#{id,jdbcType=BIGINT},</if>
+            <if test="appId != null">#{appId,jdbcType=VARCHAR},</if>
+            <if test="name != null">#{name,jdbcType=VARCHAR},</if>
+            <if test="priceCn != null">#{priceCn,jdbcType=INTEGER},</if>
+            <if test="priceUs != null">#{priceUs,jdbcType=DECIMAL},</if>
+            <if test="priceStr != null">#{priceStr,jdbcType=VARCHAR},</if>
+            <if test="priceStrCn != null">#{priceStrCn,jdbcType=VARCHAR},</if>
+            <if test="priceStrUs != null">#{priceStrUs,jdbcType=VARCHAR},</if>
+            <if test="usFlag != null">#{usFlag,jdbcType=TINYINT},</if>
+            <if test="urlCn != null">#{urlCn,jdbcType=VARCHAR},</if>
+            <if test="urlUs != null">#{urlUs,jdbcType=VARCHAR},</if>
+            <if test="delFlag != null">#{delFlag,jdbcType=INTEGER},</if>
+            <if test="createUserCode != null">#{createUserCode,jdbcType=VARCHAR},</if>
+            <if test="createUserName != null">#{createUserName,jdbcType=VARCHAR},</if>
+            <if test="createdDate != null">#{createdDate,jdbcType=TIMESTAMP},</if>
+            <if test="lastModifiedCode != null">#{lastModifiedCode,jdbcType=VARCHAR},</if>
+            <if test="lastModifiedName != null">#{lastModifiedName,jdbcType=VARCHAR},</if>
+            <if test="lastModifiedDate != null">#{lastModifiedDate,jdbcType=TIMESTAMP},</if>
+            <if test="version != null">#{version,jdbcType=VARCHAR},</if>
+        </trim>
+    </insert>
 </mapper>
