@@ -37,7 +37,7 @@ public class FreeHistoryDTO {
   private String priceStrUs;
 
   @Schema(name = "")
-  private Integer usFlag;
+  private Boolean usFlag;
 
   @Schema(name = "")
   private String urlCn;

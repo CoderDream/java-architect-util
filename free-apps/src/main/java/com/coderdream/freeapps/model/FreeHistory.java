@@ -60,7 +60,7 @@ public class FreeHistory implements Serializable {
     /**
      * 是否美区限免
      */
-    private Integer usFlag;
+    private Boolean usFlag;
 
     /**
      * 国区URL
@@ -76,6 +76,21 @@ public class FreeHistory implements Serializable {
      * 限免日期
      */
     private Date freeDate;
+
+    /**
+     * 应用简介
+     */
+    private String description;
+
+    /**
+     * 数据来源（cl、wechat、goapps、geek）
+     */
+    private String dataSource;
+
+    /**
+     * 备注
+     */
+    private String remark;
 
     /**
      * 是否删除 0未删除（默认），1已删除
@@ -144,6 +159,8 @@ public class FreeHistory implements Serializable {
             && (this.getUrlCn() == null ? other.getUrlCn() == null : this.getUrlCn().equals(other.getUrlCn()))
             && (this.getUrlUs() == null ? other.getUrlUs() == null : this.getUrlUs().equals(other.getUrlUs()))
             && (this.getFreeDate() == null ? other.getFreeDate() == null : this.getFreeDate().equals(other.getFreeDate()))
+            && (this.getDescription() == null ? other.getDescription() == null : this.getDescription().equals(other.getDescription()))
+            && (this.getDataSource() == null ? other.getDataSource() == null : this.getDataSource().equals(other.getDataSource()))
             && (this.getDelFlag() == null ? other.getDelFlag() == null : this.getDelFlag().equals(other.getDelFlag()))
             && (this.getCreateUserCode() == null ? other.getCreateUserCode() == null : this.getCreateUserCode().equals(other.getCreateUserCode()))
             && (this.getCreateUserName() == null ? other.getCreateUserName() == null : this.getCreateUserName().equals(other.getCreateUserName()))
@@ -170,6 +187,8 @@ public class FreeHistory implements Serializable {
         result = prime * result + ((getUrlCn() == null) ? 0 : getUrlCn().hashCode());
         result = prime * result + ((getUrlUs() == null) ? 0 : getUrlUs().hashCode());
         result = prime * result + ((getFreeDate() == null) ? 0 : getFreeDate().hashCode());
+        result = prime * result + ((getDescription() == null) ? 0 : getDescription().hashCode());
+        result = prime * result + ((getDataSource() == null) ? 0 : getDataSource().hashCode());
         result = prime * result + ((getDelFlag() == null) ? 0 : getDelFlag().hashCode());
         result = prime * result + ((getCreateUserCode() == null) ? 0 : getCreateUserCode().hashCode());
         result = prime * result + ((getCreateUserName() == null) ? 0 : getCreateUserName().hashCode());
@@ -199,6 +218,8 @@ public class FreeHistory implements Serializable {
         sb.append(", urlCn=").append(urlCn);
         sb.append(", urlUs=").append(urlUs);
         sb.append(", freeDate=").append(freeDate);
+        sb.append(", description=").append(description);
+        sb.append(", dataSource=").append(dataSource);
         sb.append(", delFlag=").append(delFlag);
         sb.append(", createUserCode=").append(createUserCode);
         sb.append(", createUserName=").append(createUserName);

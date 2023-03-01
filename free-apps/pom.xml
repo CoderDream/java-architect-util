@@ -192,6 +192,16 @@
             <artifactId>swagger-bootstrap-ui</artifactId>
             <version>1.9.6</version>
         </dependency>
+
+        <!-- Java中文繁体简体转换 -->
+        <!-- https://blog.csdn.net/kaige8312/article/details/114198930 -->
+        <dependency>
+            <groupId>com.spreada</groupId>
+            <artifactId>ZHConverter</artifactId>
+            <version>1.1.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/jar/ZHConverter.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <build>

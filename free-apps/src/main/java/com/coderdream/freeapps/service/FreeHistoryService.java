@@ -1,6 +1,7 @@
 package com.coderdream.freeapps.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.coderdream.freeapps.model.App;
 import com.coderdream.freeapps.model.FreeHistory;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -34,4 +35,10 @@ public interface FreeHistoryService extends IService<FreeHistory> {
 
     // 删除
     Boolean delete(String id);
+
+    int insertSelective(FreeHistory freeHistory);
+
+    int insertOrUpdateBatch(List<FreeHistory> freeHistoryList);
+
+    List<FreeHistory> selectList(FreeHistory freeHistory);
 }

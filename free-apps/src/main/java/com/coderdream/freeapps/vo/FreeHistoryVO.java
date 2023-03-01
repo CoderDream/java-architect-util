@@ -19,7 +19,7 @@ public class FreeHistoryVO {
   private String priceStr;
   private String priceStrCn;
   private String priceStrUs;
-  private Integer usFlag;
+  private Boolean usFlag;
   private String urlCn;
   private String urlUs;
   private Date freeDate;

@@ -1,0 +1,171 @@
+package com.coderdream.freeapps;
+
+import com.coderdream.freeapps.model.FreeHistory;
+import com.coderdream.freeapps.service.FreeHistoryService;
+import com.coderdream.freeapps.util.FileUtils;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+@SpringBootTest
+public class FreeHistoryServiceTest {
+
+    @Autowired
+    private FreeHistoryService freeHistoryService; //这里可能爆红，但是运行没问题
+
+    //    @Test
+//    public void testGetCount() {
+//        //查询总记录数
+//        //SELECT COUNT( * ) FROM user
+//        long count = userService.count();
+//        System.out.println("总记录数：" + count);
+//    }
+//
+    @Test
+    public void testInsert() {
+        //批量添加
+        //INSERT INTO user ( id, name, age, email ) VALUES ( ?, ?, ?, ? )
+        List<FreeHistory> list = new ArrayList<>();
+        for (int i = 1; i <= 10; i++) {
+            FreeHistory freeHistory = new FreeHistory();
+            freeHistory.setAppId("user" + i);
+
+            int b = freeHistoryService.insertSelective(freeHistory);  //boolean 操作是否成功
+            System.out.println("结果：" + b);
+        }
+    }
+
+    @Test
+    public void testInsertOrUpdateBatch() {
+        //批量添加
+        //INSERT INTO user ( id, name, age, email ) VALUES ( ?, ?, ?, ? )
+        List<FreeHistory> list = new ArrayList<>();
+        for (int i = 1; i <= 200; i++) {
+            FreeHistory freeHistory = new FreeHistory();
+//            freeHistory.setAppId("id" +  String.format("%09d",  new Random().nextInt(999999999)));
+            freeHistory.setAppId("id" + String.format("%09d", new Random().nextInt(99)));
+            freeHistory.setName("name" + new Random().nextInt(100));
+            list.add(freeHistory);
+        }
+        int b = freeHistoryService.insertOrUpdateBatch(list);  //boolean 操作是否成功
+        System.out.println("结果：" + b);
+    }
+
+
+    @Test
+    public void testInsertOrUpdateBatch_2022() {
+        //批量添加
+        //INSERT INTO user ( id, name, age, email ) VALUES ( ?, ?, ?, ? )
+//        List<FreeHistory> list = new ArrayList<>();
+        String fileName = "D:\\12_iOS_Android\\1024_data\\2022-06-29.txt";
+        fileName = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024\\2022";
+        fileName += File.separatorChar + "202302" + File.separatorChar + "2023-02-18.txt";
+        List<FreeHistory> freeHistoryList = FileUtils.getFreeHistoryFromCL(fileName);
+        for (FreeHistory freeHistory : freeHistoryList) {
+            System.out.println(freeHistory);
+        }
+//        for (int i = 1; i <= 200; i++) {
+//            FreeHistory freeHistory = new FreeHistory();
+////            freeHistory.setAppId("id" +  String.format("%09d",  new Random().nextInt(999999999)));
+//            freeHistory.setAppId("id" +  String.format("%09d",  new Random().nextInt(99)));
+//            freeHistory.setName("name" + new Random().nextInt(100));
+//            freeHistoryList.add(freeHistory);
+//        }
+        int b = freeHistoryService.insertOrUpdateBatch(freeHistoryList);  //boolean 操作是否成功
+        System.out.println("结果：" + b);
+    }
+
+    @Test
+    public void testInsertOrUpdateBatch_02() {
+        //批量添加
+        //INSERT INTO user ( id, name, age, email ) VALUES ( ?, ?, ?, ? )
+//        List<FreeHistory> list = new ArrayList<>();
+        String fileName = "D:\\12_iOS_Android\\1024_data\\2022-06-29.txt";
+        fileName = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024\\2023";
+        fileName += File.separatorChar + "202302" + File.separatorChar + "2023-02-18.txt";
+        List<FreeHistory> freeHistoryList = FileUtils.getFreeHistoryFromCL(fileName);
+        for (FreeHistory freeHistory : freeHistoryList) {
+            System.out.println(freeHistory);
+        }
+//        for (int i = 1; i <= 200; i++) {
+//            FreeHistory freeHistory = new FreeHistory();
+////            freeHistory.setAppId("id" +  String.format("%09d",  new Random().nextInt(999999999)));
+//            freeHistory.setAppId("id" +  String.format("%09d",  new Random().nextInt(99)));
+//            freeHistory.setName("name" + new Random().nextInt(100));
+//            freeHistoryList.add(freeHistory);
+//        }
+        int b = freeHistoryService.insertOrUpdateBatch(freeHistoryList);  //boolean 操作是否成功
+        System.out.println("结果：" + b);
+    }
+
+    @Test
+    public void testInsertOrUpdateBatch_20220630() {
+        //批量添加
+        //INSERT INTO user ( id, name, age, email ) VALUES ( ?, ?, ?, ? )
+//        List<FreeHistory> list = new ArrayList<>();
+        String fileName = "D:\\12_iOS_Android\\1024_data\\2022-06-29.txt";
+        fileName = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024\\2022";
+        fileName += File.separatorChar + "202206" + File.separatorChar + "2022-06-30.txt";
+        List<FreeHistory> freeHistoryList = FileUtils.getFreeHistoryFromCL(fileName);
+        for (FreeHistory freeHistory : freeHistoryList) {
+            System.out.println(freeHistory);
+        }
+        int b = freeHistoryService.insertOrUpdateBatch(freeHistoryList);  //boolean 操作是否成功
+        System.out.println("结果：" + b);
+    }
+
+    @Test
+    public void testInsertOrUpdateBatch_20221109() {
+        //批量添加
+        //INSERT INTO user ( id, name, age, email ) VALUES ( ?, ?, ?, ? )
+//        List<FreeHistory> list = new ArrayList<>();
+        String fileName = "D:\\12_iOS_Android\\1024_data\\2022-06-29.txt";
+        fileName = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024\\2022";
+        fileName += File.separatorChar + "202211" + File.separatorChar + "2022-11-09.txt";
+        List<FreeHistory> freeHistoryList = FileUtils.getFreeHistoryFromCL(fileName);
+        for (FreeHistory freeHistory : freeHistoryList) {
+            System.out.println(freeHistory);
+        }
+        int b = freeHistoryService.insertOrUpdateBatch(freeHistoryList);  //boolean 操作是否成功
+        System.out.println("结果：" + b);
+    }
+
+    @Test
+    public void testInsertOrUpdateBatch_total() {
+        String folderPath = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024";
+//         folderPath = folderPath + File.separatorChar + "2023";
+//         folderPath = folderPath + File.separatorChar + "202302";
+        List<String> stringList = new ArrayList<>();
+        FileUtils.getFiles(folderPath, stringList);
+        for (String fileName : stringList) {
+            System.out.println(fileName);
+
+            List<FreeHistory> freeHistoryList = FileUtils.getFreeHistoryFromCL(fileName);
+
+            int b = freeHistoryService.insertOrUpdateBatch(freeHistoryList);  //boolean 操作是否成功
+            System.out.println("结果：" + b);
+        }
+
+    }
+
+    @Test
+    public void testInsertOrUpdateBatch_202206() {
+        String folderPath = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024";
+        folderPath = folderPath + File.separatorChar + "2022";
+        folderPath = folderPath + File.separatorChar + "202206";
+        List<String> stringList = new ArrayList<>();
+        FileUtils.getFiles(folderPath, stringList);
+        for (String fileName : stringList) {
+            System.out.println(fileName);
+            List<FreeHistory> freeHistoryList = FileUtils.getFreeHistoryFromCL(fileName);
+            int b = freeHistoryService.insertOrUpdateBatch(freeHistoryList);  //boolean 操作是否成功
+            System.out.println("结果：" + b);
+        }
+
+    }
+}

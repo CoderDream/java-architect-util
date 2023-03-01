@@ -1,81 +1,60 @@
-package com.coderdream.freeapps.entity;
+package com.coderdream.freeapps.model;
 
-import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import java.io.Serializable;
-import java.math.BigDecimal;
-import java.util.Date;
 import lombok.Data;
 
+import java.io.Serializable;
+import java.util.Date;
+
 /**
- * 
- * @TableName t_free_history
+ *
+ * @TableName t_crawler_task
  */
-@TableName(value ="t_free_history")
+@TableName(value ="t_crawler_task")
 @Data
-public class FreeHistory implements Serializable {
+public class CrawlerTask implements Serializable {
     /**
-     * 
+     *
      */
     @TableId
     private Integer id;
 
     /**
-     * 应用ID
+     * 应用ID列表
      */
-    private String appId;
+    private String appIdList;
 
     /**
-     * 名称
+     * 任务状态
      */
-    private String name;
+    private String taskStatus;
 
     /**
-     * 国区价格
+     * 任务开始时间
      */
-    private Integer priceCn;
+    private Date startTime;
 
     /**
-     * 美区价格
+     * 任务结束时间
      */
-    private BigDecimal priceUs;
+    private Date endTime;
 
     /**
-     * 价格信息
+     * 成功列表
      */
-    private String priceStr;
+    private String succesList;
 
     /**
-     * 国区价格信息
+     * 失败列表
      */
-    private String priceStrCn;
+    private String failList;
 
     /**
-     * 美区价格信息
+     * 任务信息
      */
-    private String priceStrUs;
-
-    /**
-     * 是否美区限免
-     */
-    private Integer usFlag;
-
-    /**
-     * 国区URL
-     */
-    private String urlCn;
-
-    /**
-     * 美区URL
-     */
-    private String urlUs;
-
-    /**
-     * 限免日期
-     */
-    private Date freeDate;
+    private String taskMessage;
 
     /**
      * 是否删除 0未删除（默认），1已删除
@@ -131,19 +110,15 @@ public class FreeHistory implements Serializable {
         if (getClass() != that.getClass()) {
             return false;
         }
-        FreeHistory other = (FreeHistory) that;
+        CrawlerTask other = (CrawlerTask) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
-            && (this.getAppId() == null ? other.getAppId() == null : this.getAppId().equals(other.getAppId()))
-            && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
-            && (this.getPriceCn() == null ? other.getPriceCn() == null : this.getPriceCn().equals(other.getPriceCn()))
-            && (this.getPriceUs() == null ? other.getPriceUs() == null : this.getPriceUs().equals(other.getPriceUs()))
-            && (this.getPriceStr() == null ? other.getPriceStr() == null : this.getPriceStr().equals(other.getPriceStr()))
-            && (this.getPriceStrCn() == null ? other.getPriceStrCn() == null : this.getPriceStrCn().equals(other.getPriceStrCn()))
-            && (this.getPriceStrUs() == null ? other.getPriceStrUs() == null : this.getPriceStrUs().equals(other.getPriceStrUs()))
-            && (this.getUsFlag() == null ? other.getUsFlag() == null : this.getUsFlag().equals(other.getUsFlag()))
-            && (this.getUrlCn() == null ? other.getUrlCn() == null : this.getUrlCn().equals(other.getUrlCn()))
-            && (this.getUrlUs() == null ? other.getUrlUs() == null : this.getUrlUs().equals(other.getUrlUs()))
-            && (this.getFreeDate() == null ? other.getFreeDate() == null : this.getFreeDate().equals(other.getFreeDate()))
+            && (this.getAppIdList() == null ? other.getAppIdList() == null : this.getAppIdList().equals(other.getAppIdList()))
+            && (this.getTaskStatus() == null ? other.getTaskStatus() == null : this.getTaskStatus().equals(other.getTaskStatus()))
+            && (this.getStartTime() == null ? other.getStartTime() == null : this.getStartTime().equals(other.getStartTime()))
+            && (this.getEndTime() == null ? other.getEndTime() == null : this.getEndTime().equals(other.getEndTime()))
+            && (this.getSuccesList() == null ? other.getSuccesList() == null : this.getSuccesList().equals(other.getSuccesList()))
+            && (this.getFailList() == null ? other.getFailList() == null : this.getFailList().equals(other.getFailList()))
+            && (this.getTaskMessage() == null ? other.getTaskMessage() == null : this.getTaskMessage().equals(other.getTaskMessage()))
             && (this.getDelFlag() == null ? other.getDelFlag() == null : this.getDelFlag().equals(other.getDelFlag()))
             && (this.getCreateUserCode() == null ? other.getCreateUserCode() == null : this.getCreateUserCode().equals(other.getCreateUserCode()))
             && (this.getCreateUserName() == null ? other.getCreateUserName() == null : this.getCreateUserName().equals(other.getCreateUserName()))
@@ -159,17 +134,13 @@ public class FreeHistory implements Serializable {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
-        result = prime * result + ((getAppId() == null) ? 0 : getAppId().hashCode());
-        result = prime * result + ((getName() == null) ? 0 : getName().hashCode());
-        result = prime * result + ((getPriceCn() == null) ? 0 : getPriceCn().hashCode());
-        result = prime * result + ((getPriceUs() == null) ? 0 : getPriceUs().hashCode());
-        result = prime * result + ((getPriceStr() == null) ? 0 : getPriceStr().hashCode());
-        result = prime * result + ((getPriceStrCn() == null) ? 0 : getPriceStrCn().hashCode());
-        result = prime * result + ((getPriceStrUs() == null) ? 0 : getPriceStrUs().hashCode());
-        result = prime * result + ((getUsFlag() == null) ? 0 : getUsFlag().hashCode());
-        result = prime * result + ((getUrlCn() == null) ? 0 : getUrlCn().hashCode());
-        result = prime * result + ((getUrlUs() == null) ? 0 : getUrlUs().hashCode());
-        result = prime * result + ((getFreeDate() == null) ? 0 : getFreeDate().hashCode());
+        result = prime * result + ((getAppIdList() == null) ? 0 : getAppIdList().hashCode());
+        result = prime * result + ((getTaskStatus() == null) ? 0 : getTaskStatus().hashCode());
+        result = prime * result + ((getStartTime() == null) ? 0 : getStartTime().hashCode());
+        result = prime * result + ((getEndTime() == null) ? 0 : getEndTime().hashCode());
+        result = prime * result + ((getSuccesList() == null) ? 0 : getSuccesList().hashCode());
+        result = prime * result + ((getFailList() == null) ? 0 : getFailList().hashCode());
+        result = prime * result + ((getTaskMessage() == null) ? 0 : getTaskMessage().hashCode());
         result = prime * result + ((getDelFlag() == null) ? 0 : getDelFlag().hashCode());
         result = prime * result + ((getCreateUserCode() == null) ? 0 : getCreateUserCode().hashCode());
         result = prime * result + ((getCreateUserName() == null) ? 0 : getCreateUserName().hashCode());
@@ -188,17 +159,13 @@ public class FreeHistory implements Serializable {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
-        sb.append(", appId=").append(appId);
-        sb.append(", name=").append(name);
-        sb.append(", priceCn=").append(priceCn);
-        sb.append(", priceUs=").append(priceUs);
-        sb.append(", priceStr=").append(priceStr);
-        sb.append(", priceStrCn=").append(priceStrCn);
-        sb.append(", priceStrUs=").append(priceStrUs);
-        sb.append(", usFlag=").append(usFlag);
-        sb.append(", urlCn=").append(urlCn);
-        sb.append(", urlUs=").append(urlUs);
-        sb.append(", freeDate=").append(freeDate);
+        sb.append(", appIdList=").append(appIdList);
+        sb.append(", taskStatus=").append(taskStatus);
+        sb.append(", startTime=").append(startTime);
+        sb.append(", endTime=").append(endTime);
+        sb.append(", succesList=").append(succesList);
+        sb.append(", failList=").append(failList);
+        sb.append(", taskMessage=").append(taskMessage);
         sb.append(", delFlag=").append(delFlag);
         sb.append(", createUserCode=").append(createUserCode);
         sb.append(", createUserName=").append(createUserName);
