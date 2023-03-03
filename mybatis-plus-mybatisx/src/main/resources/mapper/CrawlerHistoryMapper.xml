@@ -5,7 +5,7 @@
 <mapper namespace="com.coderdream.freeapps.mapper.CrawlerHistoryMapper">
 
     <resultMap id="BaseResultMap" type="com.coderdream.freeapps.model.CrawlerHistory">
-            <id property="id" column="id" jdbcType="INTEGER"/>
+            <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="appId" column="app_id" jdbcType="VARCHAR"/>
             <result property="name" column="name" jdbcType="VARCHAR"/>
             <result property="priceCn" column="price_cn" jdbcType="INTEGER"/>
@@ -18,6 +18,7 @@
             <result property="urlUs" column="url_us" jdbcType="VARCHAR"/>
             <result property="freeDate" column="free_date" jdbcType="TIMESTAMP"/>
             <result property="dataSource" column="data_source" jdbcType="VARCHAR"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
             <result property="delFlag" column="del_flag" jdbcType="INTEGER"/>
             <result property="createUserCode" column="create_user_code" jdbcType="VARCHAR"/>
             <result property="createUserName" column="create_user_name" jdbcType="VARCHAR"/>
@@ -33,8 +34,9 @@
         price_cn,price_us,price_str,
         price_str_cn,price_str_us,us_flag,
         url_cn,url_us,free_date,
-        data_source,del_flag,create_user_code,
-        create_user_name,created_date,last_modified_code,
-        last_modified_name,last_modified_date,version
+        data_source,remark,del_flag,
+        create_user_code,create_user_name,created_date,
+        last_modified_code,last_modified_name,last_modified_date,
+        version
     </sql>
 </mapper>

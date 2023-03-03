@@ -19,8 +19,8 @@ public class FreeHistory implements Serializable {
     /**
      * 
      */
-    @TableId
-    private Integer id;
+    @TableId(type = IdType.AUTO)
+    private Long id;
 
     /**
      * 应用ID
@@ -30,7 +30,12 @@ public class FreeHistory implements Serializable {
     /**
      * 名称
      */
-    private String name;
+    private String title;
+
+    /**
+     * 副标题
+     */
+    private String subTitle;
 
     /**
      * 国区价格
@@ -58,7 +63,7 @@ public class FreeHistory implements Serializable {
     private String priceStrUs;
 
     /**
-     * 是否美区限免
+     * 是否美区限免（默认为0）
      */
     private Integer usFlag;
 
@@ -86,6 +91,11 @@ public class FreeHistory implements Serializable {
      * 数据来源（cl、wechat、goapps、geek）
      */
     private String dataSource;
+
+    /**
+     * 备注
+     */
+    private String remark;
 
     /**
      * 是否删除 0未删除（默认），1已删除
@@ -144,7 +154,8 @@ public class FreeHistory implements Serializable {
         FreeHistory other = (FreeHistory) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
             && (this.getAppId() == null ? other.getAppId() == null : this.getAppId().equals(other.getAppId()))
-            && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
+            && (this.getTitle() == null ? other.getTitle() == null : this.getTitle().equals(other.getTitle()))
+            && (this.getSubTitle() == null ? other.getSubTitle() == null : this.getSubTitle().equals(other.getSubTitle()))
             && (this.getPriceCn() == null ? other.getPriceCn() == null : this.getPriceCn().equals(other.getPriceCn()))
             && (this.getPriceUs() == null ? other.getPriceUs() == null : this.getPriceUs().equals(other.getPriceUs()))
             && (this.getPriceStr() == null ? other.getPriceStr() == null : this.getPriceStr().equals(other.getPriceStr()))
@@ -156,6 +167,7 @@ public class FreeHistory implements Serializable {
             && (this.getFreeDate() == null ? other.getFreeDate() == null : this.getFreeDate().equals(other.getFreeDate()))
             && (this.getDescription() == null ? other.getDescription() == null : this.getDescription().equals(other.getDescription()))
             && (this.getDataSource() == null ? other.getDataSource() == null : this.getDataSource().equals(other.getDataSource()))
+            && (this.getRemark() == null ? other.getRemark() == null : this.getRemark().equals(other.getRemark()))
             && (this.getDelFlag() == null ? other.getDelFlag() == null : this.getDelFlag().equals(other.getDelFlag()))
             && (this.getCreateUserCode() == null ? other.getCreateUserCode() == null : this.getCreateUserCode().equals(other.getCreateUserCode()))
             && (this.getCreateUserName() == null ? other.getCreateUserName() == null : this.getCreateUserName().equals(other.getCreateUserName()))
@@ -172,7 +184,8 @@ public class FreeHistory implements Serializable {
         int result = 1;
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
         result = prime * result + ((getAppId() == null) ? 0 : getAppId().hashCode());
-        result = prime * result + ((getName() == null) ? 0 : getName().hashCode());
+        result = prime * result + ((getTitle() == null) ? 0 : getTitle().hashCode());
+        result = prime * result + ((getSubTitle() == null) ? 0 : getSubTitle().hashCode());
         result = prime * result + ((getPriceCn() == null) ? 0 : getPriceCn().hashCode());
         result = prime * result + ((getPriceUs() == null) ? 0 : getPriceUs().hashCode());
         result = prime * result + ((getPriceStr() == null) ? 0 : getPriceStr().hashCode());
@@ -184,6 +197,7 @@ public class FreeHistory implements Serializable {
         result = prime * result + ((getFreeDate() == null) ? 0 : getFreeDate().hashCode());
         result = prime * result + ((getDescription() == null) ? 0 : getDescription().hashCode());
         result = prime * result + ((getDataSource() == null) ? 0 : getDataSource().hashCode());
+        result = prime * result + ((getRemark() == null) ? 0 : getRemark().hashCode());
         result = prime * result + ((getDelFlag() == null) ? 0 : getDelFlag().hashCode());
         result = prime * result + ((getCreateUserCode() == null) ? 0 : getCreateUserCode().hashCode());
         result = prime * result + ((getCreateUserName() == null) ? 0 : getCreateUserName().hashCode());
@@ -203,7 +217,8 @@ public class FreeHistory implements Serializable {
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
         sb.append(", appId=").append(appId);
-        sb.append(", name=").append(name);
+        sb.append(", title=").append(title);
+        sb.append(", subTitle=").append(subTitle);
         sb.append(", priceCn=").append(priceCn);
         sb.append(", priceUs=").append(priceUs);
         sb.append(", priceStr=").append(priceStr);
@@ -215,6 +230,7 @@ public class FreeHistory implements Serializable {
         sb.append(", freeDate=").append(freeDate);
         sb.append(", description=").append(description);
         sb.append(", dataSource=").append(dataSource);
+        sb.append(", remark=").append(remark);
         sb.append(", delFlag=").append(delFlag);
         sb.append(", createUserCode=").append(createUserCode);
         sb.append(", createUserName=").append(createUserName);

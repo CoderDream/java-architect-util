@@ -1,4 +1,5 @@
 package com.coderdream.freeapps.mapper;
+import java.util.Collection;
 import org.apache.ibatis.annotations.Param;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
@@ -14,7 +15,11 @@ import java.util.List;
 */
 public interface AppMapper extends BaseMapper<App> {
 
+//    int insertSelective(App app);
+
     int insertSelective(App app);
+
+    int insertBatch(@Param("appCollection") Collection<App> appCollection);
 
     int insertOrUpdateBatch(List<App> entities);
 }

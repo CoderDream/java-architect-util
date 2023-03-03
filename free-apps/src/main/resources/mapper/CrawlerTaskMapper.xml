@@ -5,7 +5,7 @@
 <mapper namespace="com.coderdream.freeapps.mapper.CrawlerTaskMapper">
 
     <resultMap id="BaseResultMap" type="com.coderdream.freeapps.model.CrawlerTask">
-            <id property="id" column="id" jdbcType="INTEGER"/>
+            <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="appIdList" column="app_id_list" jdbcType="VARCHAR"/>
             <result property="taskStatus" column="task_status" jdbcType="VARCHAR"/>
             <result property="startTime" column="start_time" jdbcType="TIMESTAMP"/>

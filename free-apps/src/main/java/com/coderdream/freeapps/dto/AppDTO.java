@@ -19,7 +19,7 @@ public class AppDTO {
   private String appId;
 
   @Schema(name = "")
-  private String name;
+  private String title;
 
   @Schema(name = "")
   private Integer priceCn;

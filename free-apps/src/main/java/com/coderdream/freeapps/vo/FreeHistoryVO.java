@@ -13,7 +13,7 @@ import java.util.Date;
 public class FreeHistoryVO {
 
   private String appId;
-  private String name;
+  private String title;
   private Integer priceCn;
   private BigDecimal priceUs;
   private String priceStr;

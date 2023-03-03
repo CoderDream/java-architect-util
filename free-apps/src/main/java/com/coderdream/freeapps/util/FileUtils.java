@@ -18,10 +18,6 @@ import java.util.List;
  */
 public class FileUtils {
 
-    public static String URL_US_BASE = "https://apps.apple.com/us/app/";
-
-    public static String URL_CN_BASE = "https://apps.apple.com/cn/app/";
-
     public static void main(String[] args) {
 //        String fileName = "D:\\12_iOS_Android\\1024_data\\2022-06-29.txt";
 //        List<FreeHistory> freeHistoryList = FileUtils.readFile(fileName);
@@ -78,18 +74,18 @@ public class FileUtils {
             int index4; // 日期
             String text = "";
             String priceStr;
-            String name;
+            String title;
             String description;
 
             int titleIndex; //【限免软件】位置
 
-            List<String> nameList = new ArrayList<>();
+            List<String>titleList = new ArrayList<>();
             List<String> priceList = new ArrayList<>();
             List<String> descriptionList = new ArrayList<>();
             List<String> contentList = new ArrayList<>();
             String content;
             int size = 0;
-            Boolean nameFlag = true;
+            Boolean titleFlag = true;
             Boolean descriptionFlag = false;
             Boolean priceFlag = false; // 默认中文
             String url;
@@ -117,24 +113,24 @@ public class FileUtils {
                         url = contentList.get(contentList.size() - 1);
                         appId = StringUtils.parseAppId(url);
 
-                        freeHistory.setUrlCn(URL_CN_BASE + appId);
-                        freeHistory.setUrlUs(URL_US_BASE + appId);
+                        freeHistory.setUrlCn(Constants.URL_CN_BASE + appId);
+                        freeHistory.setUrlUs(Constants.URL_US_BASE + appId);
                         freeHistory.setAppId(appId);
                         int idx = 0;
                         size = contentList.size();
                         for (int i = 0; i < size; i++) {
                             content = contentList.get(i);
-                            if (nameFlag && !content.startsWith("¥")
+                            if (titleFlag && !content.startsWith("¥")
                                     && !content.startsWith("￥")
                                     && !content.startsWith("$")) {
-                                nameList.add(content);
+                               titleList.add(content);
                             }
                             if (descriptionFlag && !content.startsWith("https://apps.apple.com")) {
                                 descriptionList.add(content);
                             }
                             idx++;
                             if (content.startsWith("限免软件")) {
-                                nameList.clear();
+                               titleList.clear();
                             }
                             // 来到价格页
                             if (content.startsWith("¥") || content.startsWith("￥")) {
@@ -142,7 +138,7 @@ public class FileUtils {
 //                                freeHistory.setName(org.apache.commons.lang3.StringUtils.join(nameList,""));
 //                                freeHistory.setPriceStr(line);
 //                                descriptionList.clear();
-                                nameFlag = false;
+                               titleFlag = false;
                                 descriptionFlag = true;
                                 priceFlag = true;
                             }
@@ -153,14 +149,14 @@ public class FileUtils {
 //                                freeHistory.setName(org.apache.commons.lang3.StringUtils.join(nameList,""));
 //                                freeHistory.setPriceStr(line);
 //                                descriptionList.clear();
-                                nameFlag = false;
+                               titleFlag = false;
                                 descriptionFlag = true;
                                 priceFlag = false;
                             }
 //                            freeHistory.setDescription(org.apache.commons.lang3.StringUtils.join(nameList,","));
                         }
-                        name = StrUtil.trim(org.apache.commons.lang3.StringUtils.join(nameList, " "));
-                        freeHistory.setName(name);
+                       title = StrUtil.trim(org.apache.commons.lang3.StringUtils.join(titleList, " "));
+                        freeHistory.setTitle(title);
                         priceStr = org.apache.commons.lang3.StringUtils.join(priceList, "");
                         freeHistory.setPriceStr(priceStr);
                         String realPriceStr = AppStringUtils.filterPriceStr(priceStr);
@@ -189,15 +185,15 @@ public class FileUtils {
                         }
 
                         freeHistory.setDataSource("cl"); // 设置数据来源
-                        if (name.lastIndexOf("https") != -1 && description.lastIndexOf("https") != 1) {
-                            freeHistory.setRemark("ERROR: " + name + ":" + description);
+                        if (title.lastIndexOf("https") != -1 && description.lastIndexOf("https") != 1) {
+                            freeHistory.setRemark("ERROR: " +title + ":" + description);
                         }
 
                         freeHistoryList.add(freeHistory);
                     }
-                    nameFlag = true;
+                   titleFlag = true;
                     descriptionFlag = false;
-                    nameList = new ArrayList<>();
+                   titleList = new ArrayList<>();
                     priceList = new ArrayList<>();
                     descriptionList = new ArrayList<>();
                     contentList = new ArrayList<>();
@@ -306,7 +302,7 @@ public class FileUtils {
         File[] files = file.listFiles();
         //foreach遍历数组
         for (File file2 : files) {
-            //打印文件列表：只读取名称使用getName();
+            //打印文件列表：只读取名称使用getTitle();
             System.out.println("路径：" + file2.getPath());
             System.out.println("文件夹/文件名：" + file2.getName());
             stringList.add(file2.getAbsolutePath());

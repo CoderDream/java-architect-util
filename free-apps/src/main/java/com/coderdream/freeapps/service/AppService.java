@@ -3,6 +3,7 @@ package com.coderdream.freeapps.service;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Constants;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.coderdream.freeapps.dto.AppDTO;
 import com.coderdream.freeapps.dto.AppQueryPageDTO;
 import com.coderdream.freeapps.model.App;
@@ -37,4 +38,5 @@ public interface AppService {
   int insertOrUpdateBatch(List<App> appList);
 
   List<App> selectList(App app);
+  IPage<App> selectPage(Page<App> page);
 }

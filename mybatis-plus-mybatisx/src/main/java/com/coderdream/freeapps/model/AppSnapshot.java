@@ -18,8 +18,8 @@ public class AppSnapshot implements Serializable {
     /**
      * 
      */
-    @TableId
-    private Integer id;
+    @TableId(type = IdType.AUTO)
+    private Long id;
 
     /**
      * 应用ID

@@ -26,7 +26,7 @@ public class MyBatisPlusServiceTest {
 //    @Test
 //    public void testInsertMore() {
 //        //批量添加
-//        //INSERT INTO user ( id, name, age, email ) VALUES ( ?, ?, ?, ? )
+//        //INSERT INTO user ( id,title, age, email ) VALUES ( ?, ?, ?, ? )
 //        List<User> list = new ArrayList<>();
 //        for (int i = 1; i <= 10; i++) {
 //            User user = new User();

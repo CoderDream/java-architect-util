@@ -5,9 +5,10 @@
 <mapper namespace="com.coderdream.freeapps.mapper.FreeHistoryMapper">
 
     <resultMap id="BaseResultMap" type="com.coderdream.freeapps.model.FreeHistory">
-            <id property="id" column="id" jdbcType="INTEGER"/>
+            <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="appId" column="app_id" jdbcType="VARCHAR"/>
-            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="subTitle" column="sub_title" jdbcType="VARCHAR"/>
             <result property="priceCn" column="price_cn" jdbcType="INTEGER"/>
             <result property="priceUs" column="price_us" jdbcType="DECIMAL"/>
             <result property="priceStr" column="price_str" jdbcType="VARCHAR"/>
@@ -19,6 +20,7 @@
             <result property="freeDate" column="free_date" jdbcType="TIMESTAMP"/>
             <result property="description" column="description" jdbcType="VARCHAR"/>
             <result property="dataSource" column="data_source" jdbcType="VARCHAR"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
             <result property="delFlag" column="del_flag" jdbcType="INTEGER"/>
             <result property="createUserCode" column="create_user_code" jdbcType="VARCHAR"/>
             <result property="createUserName" column="create_user_name" jdbcType="VARCHAR"/>
@@ -30,13 +32,13 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,app_id,name,
-        price_cn,price_us,price_str,
-        price_str_cn,price_str_us,us_flag,
-        url_cn,url_us,free_date,
-        description,data_source,del_flag,
-        create_user_code,create_user_name,created_date,
-        last_modified_code,last_modified_name,last_modified_date,
-        version
+        id,app_id,title,
+        sub_title,price_cn,price_us,
+        price_str,price_str_cn,price_str_us,
+        us_flag,url_cn,url_us,
+        free_date,description,data_source,
+        remark,del_flag,create_user_code,
+        create_user_name,created_date,last_modified_code,
+        last_modified_name,last_modified_date,version
     </sql>
 </mapper>

@@ -19,8 +19,8 @@ public class CrawlerHistory implements Serializable {
     /**
      * 
      */
-    @TableId
-    private Integer id;
+    @TableId(type = IdType.AUTO)
+    private Long id;
 
     /**
      * 应用ID
@@ -81,6 +81,11 @@ public class CrawlerHistory implements Serializable {
      * 数据来源（cl、wechat、goapps、geek）
      */
     private String dataSource;
+
+    /**
+     * 备注
+     */
+    private String remark;
 
     /**
      * 是否删除 0未删除（默认），1已删除
@@ -150,6 +155,7 @@ public class CrawlerHistory implements Serializable {
             && (this.getUrlUs() == null ? other.getUrlUs() == null : this.getUrlUs().equals(other.getUrlUs()))
             && (this.getFreeDate() == null ? other.getFreeDate() == null : this.getFreeDate().equals(other.getFreeDate()))
             && (this.getDataSource() == null ? other.getDataSource() == null : this.getDataSource().equals(other.getDataSource()))
+            && (this.getRemark() == null ? other.getRemark() == null : this.getRemark().equals(other.getRemark()))
             && (this.getDelFlag() == null ? other.getDelFlag() == null : this.getDelFlag().equals(other.getDelFlag()))
             && (this.getCreateUserCode() == null ? other.getCreateUserCode() == null : this.getCreateUserCode().equals(other.getCreateUserCode()))
             && (this.getCreateUserName() == null ? other.getCreateUserName() == null : this.getCreateUserName().equals(other.getCreateUserName()))
@@ -177,6 +183,7 @@ public class CrawlerHistory implements Serializable {
         result = prime * result + ((getUrlUs() == null) ? 0 : getUrlUs().hashCode());
         result = prime * result + ((getFreeDate() == null) ? 0 : getFreeDate().hashCode());
         result = prime * result + ((getDataSource() == null) ? 0 : getDataSource().hashCode());
+        result = prime * result + ((getRemark() == null) ? 0 : getRemark().hashCode());
         result = prime * result + ((getDelFlag() == null) ? 0 : getDelFlag().hashCode());
         result = prime * result + ((getCreateUserCode() == null) ? 0 : getCreateUserCode().hashCode());
         result = prime * result + ((getCreateUserName() == null) ? 0 : getCreateUserName().hashCode());
@@ -207,6 +214,7 @@ public class CrawlerHistory implements Serializable {
         sb.append(", urlUs=").append(urlUs);
         sb.append(", freeDate=").append(freeDate);
         sb.append(", dataSource=").append(dataSource);
+        sb.append(", remark=").append(remark);
         sb.append(", delFlag=").append(delFlag);
         sb.append(", createUserCode=").append(createUserCode);
         sb.append(", createUserName=").append(createUserName);

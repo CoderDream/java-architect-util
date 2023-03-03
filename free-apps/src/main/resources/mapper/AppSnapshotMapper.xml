@@ -5,7 +5,7 @@
 <mapper namespace="com.coderdream.freeapps.mapper.AppSnapshotMapper">
 
     <resultMap id="BaseResultMap" type="com.coderdream.freeapps.model.AppSnapshot">
-            <id property="id" column="id" jdbcType="INTEGER"/>
+            <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="appId" column="app_id" jdbcType="VARCHAR"/>
             <result property="name" column="name" jdbcType="VARCHAR"/>
             <result property="usFlag" column="us_flag" jdbcType="TINYINT"/>

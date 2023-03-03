@@ -27,7 +27,7 @@ public class MyBatisPlusTest {
 //    @Test
 //    public void testInsert() {
 //        //实现新增用户信息
-//        //INSERT INTO user ( id, name, age, email ) VALUES ( ?, ?, ?, ? )
+//        //INSERT INTO user ( id,title, age, email ) VALUES ( ?, ?, ?, ? )
 //        User user = new User();
 //        user.setName("张三");
 //        user.setAge(23);
@@ -46,9 +46,9 @@ public class MyBatisPlusTest {
 //    @Test
 //    public void testDeleteByMap() {
 //        //根据map集合中所设置的条件，删除用户信息
-//        //DELETE FROM user WHERE name = ? AND age = ?
+//        //DELETE FROM user WHEREtitle = ? AND age = ?
 //        Map<String, Object> map = new HashMap<>();
-//        map.put("name", "张三"); // 条件
+//        map.put("title", "张三"); // 条件
 //        map.put("age", 23); // 条件
 //        int result = userMapper.deleteByMap(map);
 //        System.out.println("result:" + result);
@@ -66,7 +66,7 @@ public class MyBatisPlusTest {
 //    @Test
 //    public void testUpdateById() {
 //        //修改用户信息
-//        //UPDATE user SET name=?, email=? WHERE id=?
+//        //UPDATE user SETtitle=?, email=? WHERE id=?
 //        User user = new User();
 //        user.setId(4L);
 //        user.setName("李四");
@@ -95,9 +95,9 @@ public class MyBatisPlusTest {
 //    @Test
 //    public void testSelectByMap() {
 //        //根据map集合中的条件查询用户信息
-//        //SELECT id,name,age,email FROM user WHERE name = ? AND age = ?
+//        //SELECT id,name,age,email FROM user WHEREtitle = ? AND age = ?
 //        Map<String, Object> map = new HashMap<>();
-//        map.put("name", "Jack");
+//        map.put("title", "Jack");
 //        map.put("age", 20);
 //        List<User> users = userMapper.selectByMap(map);
 //        users.forEach(System.out::println);

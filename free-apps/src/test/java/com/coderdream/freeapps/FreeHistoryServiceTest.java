@@ -29,7 +29,7 @@ public class FreeHistoryServiceTest {
     @Test
     public void testInsert() {
         //批量添加
-        //INSERT INTO user ( id, name, age, email ) VALUES ( ?, ?, ?, ? )
+        //INSERT INTO user ( id,title, age, email ) VALUES ( ?, ?, ?, ? )
         List<FreeHistory> list = new ArrayList<>();
         for (int i = 1; i <= 10; i++) {
             FreeHistory freeHistory = new FreeHistory();
@@ -43,13 +43,13 @@ public class FreeHistoryServiceTest {
     @Test
     public void testInsertOrUpdateBatch() {
         //批量添加
-        //INSERT INTO user ( id, name, age, email ) VALUES ( ?, ?, ?, ? )
+        //INSERT INTO user ( id,title, age, email ) VALUES ( ?, ?, ?, ? )
         List<FreeHistory> list = new ArrayList<>();
         for (int i = 1; i <= 200; i++) {
             FreeHistory freeHistory = new FreeHistory();
 //            freeHistory.setAppId("id" +  String.format("%09d",  new Random().nextInt(999999999)));
             freeHistory.setAppId("id" + String.format("%09d", new Random().nextInt(99)));
-            freeHistory.setName("name" + new Random().nextInt(100));
+            freeHistory.setTitle("title" + new Random().nextInt(100));
             list.add(freeHistory);
         }
         int b = freeHistoryService.insertOrUpdateBatch(list);  //boolean 操作是否成功
@@ -60,7 +60,7 @@ public class FreeHistoryServiceTest {
     @Test
     public void testInsertOrUpdateBatch_2022() {
         //批量添加
-        //INSERT INTO user ( id, name, age, email ) VALUES ( ?, ?, ?, ? )
+        //INSERT INTO user ( id,title, age, email ) VALUES ( ?, ?, ?, ? )
 //        List<FreeHistory> list = new ArrayList<>();
         String fileName = "D:\\12_iOS_Android\\1024_data\\2022-06-29.txt";
         fileName = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024\\2022";
@@ -73,7 +73,7 @@ public class FreeHistoryServiceTest {
 //            FreeHistory freeHistory = new FreeHistory();
 ////            freeHistory.setAppId("id" +  String.format("%09d",  new Random().nextInt(999999999)));
 //            freeHistory.setAppId("id" +  String.format("%09d",  new Random().nextInt(99)));
-//            freeHistory.setName("name" + new Random().nextInt(100));
+//            freeHistory.setName("title" + new Random().nextInt(100));
 //            freeHistoryList.add(freeHistory);
 //        }
         int b = freeHistoryService.insertOrUpdateBatch(freeHistoryList);  //boolean 操作是否成功
@@ -83,7 +83,7 @@ public class FreeHistoryServiceTest {
     @Test
     public void testInsertOrUpdateBatch_02() {
         //批量添加
-        //INSERT INTO user ( id, name, age, email ) VALUES ( ?, ?, ?, ? )
+        //INSERT INTO user ( id,title, age, email ) VALUES ( ?, ?, ?, ? )
 //        List<FreeHistory> list = new ArrayList<>();
         String fileName = "D:\\12_iOS_Android\\1024_data\\2022-06-29.txt";
         fileName = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024\\2023";
@@ -96,7 +96,7 @@ public class FreeHistoryServiceTest {
 //            FreeHistory freeHistory = new FreeHistory();
 ////            freeHistory.setAppId("id" +  String.format("%09d",  new Random().nextInt(999999999)));
 //            freeHistory.setAppId("id" +  String.format("%09d",  new Random().nextInt(99)));
-//            freeHistory.setName("name" + new Random().nextInt(100));
+//            freeHistory.setName("title" + new Random().nextInt(100));
 //            freeHistoryList.add(freeHistory);
 //        }
         int b = freeHistoryService.insertOrUpdateBatch(freeHistoryList);  //boolean 操作是否成功
@@ -106,7 +106,7 @@ public class FreeHistoryServiceTest {
     @Test
     public void testInsertOrUpdateBatch_20220630() {
         //批量添加
-        //INSERT INTO user ( id, name, age, email ) VALUES ( ?, ?, ?, ? )
+        //INSERT INTO user ( id,title, age, email ) VALUES ( ?, ?, ?, ? )
 //        List<FreeHistory> list = new ArrayList<>();
         String fileName = "D:\\12_iOS_Android\\1024_data\\2022-06-29.txt";
         fileName = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024\\2022";
@@ -122,7 +122,7 @@ public class FreeHistoryServiceTest {
     @Test
     public void testInsertOrUpdateBatch_20221109() {
         //批量添加
-        //INSERT INTO user ( id, name, age, email ) VALUES ( ?, ?, ?, ? )
+        //INSERT INTO user ( id,title, age, email ) VALUES ( ?, ?, ?, ? )
 //        List<FreeHistory> list = new ArrayList<>();
         String fileName = "D:\\12_iOS_Android\\1024_data\\2022-06-29.txt";
         fileName = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024\\2022";

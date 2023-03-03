@@ -4,6 +4,7 @@ import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.coderdream.freeapps.dto.AppDTO;
 import com.coderdream.freeapps.dto.AppQueryPageDTO;
@@ -83,5 +84,12 @@ public class AppServiceImpl extends
         }
         List<App> result = appMapper.selectList(queryWrapper);
         return result;
+    }
+
+    @Override
+    public IPage<App> selectPage(Page<App> page) {
+        QueryWrapper<App> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("del_flag", 0);
+        return appMapper.selectPage(page, queryWrapper);
     }
 }

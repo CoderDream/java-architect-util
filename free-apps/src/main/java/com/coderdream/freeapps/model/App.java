@@ -31,12 +31,22 @@ public class App implements Serializable {
     /**
      * 名称
      */
-    private String name;
+    private String title;
 
     /**
      * 副标题
      */
-    private String nameSub;
+    private String subTitle;
+
+    /**
+     * 专为设计
+     */
+    private String designedFor;
+
+    /**
+     * 排名
+     */
+    private String ranking;
 
     /**
      * 评分字符串
@@ -82,6 +92,16 @@ public class App implements Serializable {
      * 是否美区限免
      */
     private Integer usFlag;
+
+    /**
+     * 是否有内购，默认为0，无内购
+     */
+    private Integer inPurchaseFlag;
+
+    /**
+     * 内购是否限免
+     */
+    private Integer inPurchaseFreeFlag;
 
     /**
      * 国区URL
@@ -136,7 +156,7 @@ public class App implements Serializable {
     /**
      * 供应商
      */
-    private String author;
+    private String supplier;
 
     /**
      * 应用大小信息
@@ -157,6 +177,46 @@ public class App implements Serializable {
      * 应用分类
      */
     private String category;
+
+    /**
+     * 兼容性
+     */
+    private Object compatibility;
+
+    /**
+     * 语言
+     */
+    private String language;
+
+    /**
+     * 年龄分级
+     */
+    private String age;
+
+    /**
+     * 版权
+     */
+    private String copyright;
+
+    /**
+     * 应用内购买项目
+     */
+    private Object appInPurchase;
+
+    /**
+     * 截图地址
+     */
+    private Object snapshotUrl;
+
+    /**
+     * 版本历史
+     */
+    private Object versionHistory;
+
+    /**
+     * 备注
+     */
+    private String remark;
 
     /**
      * 是否删除 0未删除（默认），1已删除
@@ -215,8 +275,10 @@ public class App implements Serializable {
         App other = (App) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
             && (this.getAppId() == null ? other.getAppId() == null : this.getAppId().equals(other.getAppId()))
-            && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
-            && (this.getNameSub() == null ? other.getNameSub() == null : this.getNameSub().equals(other.getNameSub()))
+            && (this.getTitle() == null ? other.getTitle() == null : this.getTitle().equals(other.getTitle()))
+            && (this.getSubTitle() == null ? other.getSubTitle() == null : this.getSubTitle().equals(other.getSubTitle()))
+            && (this.getDesignedFor() == null ? other.getDesignedFor() == null : this.getDesignedFor().equals(other.getDesignedFor()))
+            && (this.getRanking() == null ? other.getRanking() == null : this.getRanking().equals(other.getRanking()))
             && (this.getRatingStr() == null ? other.getRatingStr() == null : this.getRatingStr().equals(other.getRatingStr()))
             && (this.getRating() == null ? other.getRating() == null : this.getRating().equals(other.getRating()))
             && (this.getRateAmount() == null ? other.getRateAmount() == null : this.getRateAmount().equals(other.getRateAmount()))
@@ -226,6 +288,8 @@ public class App implements Serializable {
             && (this.getPriceStrCn() == null ? other.getPriceStrCn() == null : this.getPriceStrCn().equals(other.getPriceStrCn()))
             && (this.getPriceStrUs() == null ? other.getPriceStrUs() == null : this.getPriceStrUs().equals(other.getPriceStrUs()))
             && (this.getUsFlag() == null ? other.getUsFlag() == null : this.getUsFlag().equals(other.getUsFlag()))
+            && (this.getInPurchaseFlag() == null ? other.getInPurchaseFlag() == null : this.getInPurchaseFlag().equals(other.getInPurchaseFlag()))
+            && (this.getInPurchaseFreeFlag() == null ? other.getInPurchaseFreeFlag() == null : this.getInPurchaseFreeFlag().equals(other.getInPurchaseFreeFlag()))
             && (this.getUrlCn() == null ? other.getUrlCn() == null : this.getUrlCn().equals(other.getUrlCn()))
             && (this.getUrlUs() == null ? other.getUrlUs() == null : this.getUrlUs().equals(other.getUrlUs()))
             && (this.getDescriptionUs() == null ? other.getDescriptionUs() == null : this.getDescriptionUs().equals(other.getDescriptionUs()))
@@ -236,11 +300,19 @@ public class App implements Serializable {
             && (this.getDescriptionGeek() == null ? other.getDescriptionGeek() == null : this.getDescriptionGeek().equals(other.getDescriptionGeek()))
             && (this.getDescriptionMy() == null ? other.getDescriptionMy() == null : this.getDescriptionMy().equals(other.getDescriptionMy()))
             && (this.getDescriptionZm() == null ? other.getDescriptionZm() == null : this.getDescriptionZm().equals(other.getDescriptionZm()))
-            && (this.getAuthor() == null ? other.getAuthor() == null : this.getAuthor().equals(other.getAuthor()))
+            && (this.getSupplier() == null ? other.getSupplier() == null : this.getSupplier().equals(other.getSupplier()))
             && (this.getAppSizeStr() == null ? other.getAppSizeStr() == null : this.getAppSizeStr().equals(other.getAppSizeStr()))
             && (this.getAppSize() == null ? other.getAppSize() == null : this.getAppSize().equals(other.getAppSize()))
             && (this.getCategoryId() == null ? other.getCategoryId() == null : this.getCategoryId().equals(other.getCategoryId()))
             && (this.getCategory() == null ? other.getCategory() == null : this.getCategory().equals(other.getCategory()))
+            && (this.getCompatibility() == null ? other.getCompatibility() == null : this.getCompatibility().equals(other.getCompatibility()))
+            && (this.getLanguage() == null ? other.getLanguage() == null : this.getLanguage().equals(other.getLanguage()))
+            && (this.getAge() == null ? other.getAge() == null : this.getAge().equals(other.getAge()))
+            && (this.getCopyright() == null ? other.getCopyright() == null : this.getCopyright().equals(other.getCopyright()))
+            && (this.getAppInPurchase() == null ? other.getAppInPurchase() == null : this.getAppInPurchase().equals(other.getAppInPurchase()))
+            && (this.getSnapshotUrl() == null ? other.getSnapshotUrl() == null : this.getSnapshotUrl().equals(other.getSnapshotUrl()))
+            && (this.getVersionHistory() == null ? other.getVersionHistory() == null : this.getVersionHistory().equals(other.getVersionHistory()))
+            && (this.getRemark() == null ? other.getRemark() == null : this.getRemark().equals(other.getRemark()))
             && (this.getDelFlag() == null ? other.getDelFlag() == null : this.getDelFlag().equals(other.getDelFlag()))
             && (this.getCreateUserCode() == null ? other.getCreateUserCode() == null : this.getCreateUserCode().equals(other.getCreateUserCode()))
             && (this.getCreateUserName() == null ? other.getCreateUserName() == null : this.getCreateUserName().equals(other.getCreateUserName()))
@@ -257,8 +329,10 @@ public class App implements Serializable {
         int result = 1;
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
         result = prime * result + ((getAppId() == null) ? 0 : getAppId().hashCode());
-        result = prime * result + ((getName() == null) ? 0 : getName().hashCode());
-        result = prime * result + ((getNameSub() == null) ? 0 : getNameSub().hashCode());
+        result = prime * result + ((getTitle() == null) ? 0 : getTitle().hashCode());
+        result = prime * result + ((getSubTitle() == null) ? 0 : getSubTitle().hashCode());
+        result = prime * result + ((getDesignedFor() == null) ? 0 : getDesignedFor().hashCode());
+        result = prime * result + ((getRanking() == null) ? 0 : getRanking().hashCode());
         result = prime * result + ((getRatingStr() == null) ? 0 : getRatingStr().hashCode());
         result = prime * result + ((getRating() == null) ? 0 : getRating().hashCode());
         result = prime * result + ((getRateAmount() == null) ? 0 : getRateAmount().hashCode());
@@ -268,6 +342,8 @@ public class App implements Serializable {
         result = prime * result + ((getPriceStrCn() == null) ? 0 : getPriceStrCn().hashCode());
         result = prime * result + ((getPriceStrUs() == null) ? 0 : getPriceStrUs().hashCode());
         result = prime * result + ((getUsFlag() == null) ? 0 : getUsFlag().hashCode());
+        result = prime * result + ((getInPurchaseFlag() == null) ? 0 : getInPurchaseFlag().hashCode());
+        result = prime * result + ((getInPurchaseFreeFlag() == null) ? 0 : getInPurchaseFreeFlag().hashCode());
         result = prime * result + ((getUrlCn() == null) ? 0 : getUrlCn().hashCode());
         result = prime * result + ((getUrlUs() == null) ? 0 : getUrlUs().hashCode());
         result = prime * result + ((getDescriptionUs() == null) ? 0 : getDescriptionUs().hashCode());
@@ -278,11 +354,19 @@ public class App implements Serializable {
         result = prime * result + ((getDescriptionGeek() == null) ? 0 : getDescriptionGeek().hashCode());
         result = prime * result + ((getDescriptionMy() == null) ? 0 : getDescriptionMy().hashCode());
         result = prime * result + ((getDescriptionZm() == null) ? 0 : getDescriptionZm().hashCode());
-        result = prime * result + ((getAuthor() == null) ? 0 : getAuthor().hashCode());
+        result = prime * result + ((getSupplier() == null) ? 0 : getSupplier().hashCode());
         result = prime * result + ((getAppSizeStr() == null) ? 0 : getAppSizeStr().hashCode());
         result = prime * result + ((getAppSize() == null) ? 0 : getAppSize().hashCode());
         result = prime * result + ((getCategoryId() == null) ? 0 : getCategoryId().hashCode());
         result = prime * result + ((getCategory() == null) ? 0 : getCategory().hashCode());
+        result = prime * result + ((getCompatibility() == null) ? 0 : getCompatibility().hashCode());
+        result = prime * result + ((getLanguage() == null) ? 0 : getLanguage().hashCode());
+        result = prime * result + ((getAge() == null) ? 0 : getAge().hashCode());
+        result = prime * result + ((getCopyright() == null) ? 0 : getCopyright().hashCode());
+        result = prime * result + ((getAppInPurchase() == null) ? 0 : getAppInPurchase().hashCode());
+        result = prime * result + ((getSnapshotUrl() == null) ? 0 : getSnapshotUrl().hashCode());
+        result = prime * result + ((getVersionHistory() == null) ? 0 : getVersionHistory().hashCode());
+        result = prime * result + ((getRemark() == null) ? 0 : getRemark().hashCode());
         result = prime * result + ((getDelFlag() == null) ? 0 : getDelFlag().hashCode());
         result = prime * result + ((getCreateUserCode() == null) ? 0 : getCreateUserCode().hashCode());
         result = prime * result + ((getCreateUserName() == null) ? 0 : getCreateUserName().hashCode());
@@ -302,8 +386,10 @@ public class App implements Serializable {
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
         sb.append(", appId=").append(appId);
-        sb.append(", name=").append(name);
-        sb.append(", nameSub=").append(nameSub);
+        sb.append(", title=").append(title);
+        sb.append(", subTitle=").append(subTitle);
+        sb.append(", designedFor=").append(designedFor);
+        sb.append(", ranking=").append(ranking);
         sb.append(", ratingStr=").append(ratingStr);
         sb.append(", rating=").append(rating);
         sb.append(", rateAmount=").append(rateAmount);
@@ -313,6 +399,8 @@ public class App implements Serializable {
         sb.append(", priceStrCn=").append(priceStrCn);
         sb.append(", priceStrUs=").append(priceStrUs);
         sb.append(", usFlag=").append(usFlag);
+        sb.append(", inPurchaseFlag=").append(inPurchaseFlag);
+        sb.append(", inPurchaseFreeFlag=").append(inPurchaseFreeFlag);
         sb.append(", urlCn=").append(urlCn);
         sb.append(", urlUs=").append(urlUs);
         sb.append(", descriptionUs=").append(descriptionUs);
@@ -323,11 +411,19 @@ public class App implements Serializable {
         sb.append(", descriptionGeek=").append(descriptionGeek);
         sb.append(", descriptionMy=").append(descriptionMy);
         sb.append(", descriptionZm=").append(descriptionZm);
-        sb.append(", author=").append(author);
+        sb.append(", supplier=").append(supplier);
         sb.append(", appSizeStr=").append(appSizeStr);
         sb.append(", appSize=").append(appSize);
         sb.append(", categoryId=").append(categoryId);
         sb.append(", category=").append(category);
+        sb.append(", compatibility=").append(compatibility);
+        sb.append(", language=").append(language);
+        sb.append(", age=").append(age);
+        sb.append(", copyright=").append(copyright);
+        sb.append(", appInPurchase=").append(appInPurchase);
+        sb.append(", snapshotUrl=").append(snapshotUrl);
+        sb.append(", versionHistory=").append(versionHistory);
+        sb.append(", remark=").append(remark);
         sb.append(", delFlag=").append(delFlag);
         sb.append(", createUserCode=").append(createUserCode);
         sb.append(", createUserName=").append(createUserName);

@@ -5,9 +5,9 @@
 <mapper namespace="com.coderdream.freeapps.mapper.CrawlerHistoryMapper">
 
     <resultMap id="BaseResultMap" type="com.coderdream.freeapps.model.CrawlerHistory">
-            <id property="id" column="id" jdbcType="INTEGER"/>
+            <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="appId" column="app_id" jdbcType="VARCHAR"/>
-            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
             <result property="priceCn" column="price_cn" jdbcType="INTEGER"/>
             <result property="priceUs" column="price_us" jdbcType="DECIMAL"/>
             <result property="priceStr" column="price_str" jdbcType="VARCHAR"/>
@@ -18,6 +18,7 @@
             <result property="urlUs" column="url_us" jdbcType="VARCHAR"/>
             <result property="freeDate" column="free_date" jdbcType="TIMESTAMP"/>
             <result property="dataSource" column="data_source" jdbcType="VARCHAR"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
             <result property="delFlag" column="del_flag" jdbcType="INTEGER"/>
             <result property="createUserCode" column="create_user_code" jdbcType="VARCHAR"/>
             <result property="createUserName" column="create_user_name" jdbcType="VARCHAR"/>
@@ -29,12 +30,78 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,app_id,name,
+        id,app_id,title,
         price_cn,price_us,price_str,
         price_str_cn,price_str_us,us_flag,
         url_cn,url_us,free_date,
-        data_source,del_flag,create_user_code,
-        create_user_name,created_date,last_modified_code,
-        last_modified_name,last_modified_date,version
+        data_source,remark,del_flag,
+        create_user_code,create_user_name,created_date,
+        last_modified_code,last_modified_name,last_modified_date,
+        version
     </sql>
+
+    <insert id="insertOrUpdateBatch">
+        insert into t_crawler_history
+        (`app_id`,
+        `title`,
+        `price_cn`,
+        `price_us`,
+        `price_str`,
+        `price_str_cn`,
+        `price_str_us`,
+        `us_flag`,
+        `url_cn`,
+        `url_us`,
+        `remark`,
+        `del_flag`,
+        `create_user_code`,
+        `create_user_name`,
+        `created_date`,
+        `last_modified_code`,
+        `last_modified_name`,
+        `last_modified_date`,
+        `version`)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            ( #{entity.appId,jdbcType=VARCHAR},
+            #{entity.title,jdbcType=VARCHAR},
+            #{entity.priceCn,jdbcType=INTEGER},
+            #{entity.priceUs,jdbcType=DECIMAL},
+            #{entity.priceStr,jdbcType=VARCHAR},
+            #{entity.priceStrCn,jdbcType=VARCHAR},
+            #{entity.priceStrUs,jdbcType=VARCHAR},
+            #{entity.usFlag,jdbcType=TINYINT},
+            #{entity.urlCn,jdbcType=VARCHAR},
+            #{entity.urlUs,jdbcType=VARCHAR},
+            #{entity.remark,jdbcType=VARCHAR},
+            #{entity.delFlag,jdbcType=INTEGER},
+            #{entity.createUserCode,jdbcType=VARCHAR},
+            #{entity.createUserName,jdbcType=VARCHAR},
+            #{entity.createdDate,jdbcType=TIMESTAMP},
+            #{entity.lastModifiedCode,jdbcType=VARCHAR},
+            #{entity.lastModifiedName,jdbcType=VARCHAR},
+            #{entity.lastModifiedDate,jdbcType=TIMESTAMP},
+            #{entity.version,jdbcType=VARCHAR} )
+        </foreach>
+        on duplicate key update
+        app_id = values(app_id),
+        `title` = values(`title`),
+        price_cn = values(price_cn),
+        price_us = values(price_us),
+        price_str = values(price_str),
+        price_str_cn = values(price_str_cn),
+        price_str_us = values(price_str_us),
+        us_flag = values(us_flag),
+        url_cn = values(url_cn),
+        url_us = values(url_us),
+        remark = values(remark),
+        del_flag = values(del_flag),
+        create_user_code = values(create_user_code),
+        create_user_name = values(create_user_name),
+        created_date = values(created_date),
+        last_modified_code = values(last_modified_code),
+        last_modified_name = values(last_modified_name),
+        last_modified_date = values(last_modified_date),
+        version = values(version)
+    </insert>
 </mapper>

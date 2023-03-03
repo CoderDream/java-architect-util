@@ -17,7 +17,7 @@ xxl:
 
 spring:
   application:
-    name: xxl-job-practice
+   title: xxl-job-practice
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
