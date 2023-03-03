@@ -5,59 +5,60 @@
 <mapper namespace="com.coderdream.freeapps.mapper.PriceHistoryMapper">
 
     <resultMap id="BaseResultMap" type="com.coderdream.freeapps.model.PriceHistory">
-            <id property="id" column="id" jdbcType="BIGINT"/>
-            <result property="appId" column="app_id" jdbcType="VARCHAR"/>
-            <result property="crawlerDate" column="crawler_date" jdbcType="DATE"/>
-            <result property="title" column="title" jdbcType="VARCHAR"/>
-            <result property="subTitle" column="sub_title" jdbcType="VARCHAR"/>
-            <result property="designedFor" column="designed_for" jdbcType="VARCHAR"/>
-            <result property="ranking" column="ranking" jdbcType="VARCHAR"/>
-            <result property="ratingStr" column="rating_str" jdbcType="VARCHAR"/>
-            <result property="rating" column="rating" jdbcType="DECIMAL"/>
-            <result property="rateAmount" column="rate_amount" jdbcType="INTEGER"/>
-            <result property="priceCn" column="price_cn" jdbcType="INTEGER"/>
-            <result property="priceUs" column="price_us" jdbcType="DECIMAL"/>
-            <result property="priceStr" column="price_str" jdbcType="VARCHAR"/>
-            <result property="priceStrCn" column="price_str_cn" jdbcType="VARCHAR"/>
-            <result property="priceStrUs" column="price_str_us" jdbcType="VARCHAR"/>
-            <result property="usFlag" column="us_flag" jdbcType="TINYINT"/>
-            <result property="inPurchaseFlag" column="in_purchase_flag" jdbcType="TINYINT"/>
-            <result property="inPurchaseFreeFlag" column="in_purchase_free_flag" jdbcType="TINYINT"/>
-            <result property="urlCn" column="url_cn" jdbcType="VARCHAR"/>
-            <result property="urlUs" column="url_us" jdbcType="VARCHAR"/>
-            <result property="descriptionUs" column="description_us" jdbcType="VARCHAR"/>
-            <result property="descriptionCn" column="description_cn" jdbcType="VARCHAR"/>
-            <result property="descriptionCl" column="description_cl" jdbcType="VARCHAR"/>
-            <result property="descriptionWc" column="description_wc" jdbcType="VARCHAR"/>
-            <result property="descriptionGo" column="description_go" jdbcType="VARCHAR"/>
-            <result property="descriptionGeek" column="description_geek" jdbcType="VARCHAR"/>
-            <result property="descriptionMy" column="description_my" jdbcType="VARCHAR"/>
-            <result property="descriptionZm" column="description_zm" jdbcType="VARCHAR"/>
-            <result property="supplier" column="supplier" jdbcType="VARCHAR"/>
-            <result property="appSizeStr" column="app_size_str" jdbcType="VARCHAR"/>
-            <result property="appSize" column="app_size" jdbcType="DECIMAL"/>
-            <result property="categoryId" column="category_id" jdbcType="INTEGER"/>
-            <result property="category" column="category" jdbcType="VARCHAR"/>
-            <result property="compatibility" column="compatibility" jdbcType="OTHER"/>
-            <result property="language" column="language" jdbcType="VARCHAR"/>
-            <result property="age" column="age" jdbcType="VARCHAR"/>
-            <result property="copyright" column="copyright" jdbcType="VARCHAR"/>
-            <result property="appInPurchase" column="app_in_purchase" jdbcType="OTHER"/>
-            <result property="snapshotUrl" column="snapshot_url" jdbcType="OTHER"/>
-            <result property="versionHistory" column="version_history" jdbcType="OTHER"/>
-            <result property="remark" column="remark" jdbcType="VARCHAR"/>
-            <result property="delFlag" column="del_flag" jdbcType="INTEGER"/>
-            <result property="createUserCode" column="create_user_code" jdbcType="VARCHAR"/>
-            <result property="createUserName" column="create_user_name" jdbcType="VARCHAR"/>
-            <result property="createdDate" column="created_date" jdbcType="TIMESTAMP"/>
-            <result property="lastModifiedCode" column="last_modified_code" jdbcType="VARCHAR"/>
-            <result property="lastModifiedName" column="last_modified_name" jdbcType="VARCHAR"/>
-            <result property="lastModifiedDate" column="last_modified_date" jdbcType="TIMESTAMP"/>
-            <result property="version" column="version" jdbcType="VARCHAR"/>
+        <id property="id" column="id" jdbcType="BIGINT"/>
+        <result property="appId" column="app_id" jdbcType="VARCHAR"/>
+        <result property="crawlerDate" column="crawler_date" jdbcType="TIMESTAMP"/>
+        <result property="title" column="title" jdbcType="VARCHAR"/>
+        <result property="subTitle" column="sub_title" jdbcType="VARCHAR"/>
+        <result property="designedFor" column="designed_for" jdbcType="VARCHAR"/>
+        <result property="ranking" column="ranking" jdbcType="VARCHAR"/>
+        <result property="ratingStr" column="rating_str" jdbcType="VARCHAR"/>
+        <result property="rating" column="rating" jdbcType="DECIMAL"/>
+        <result property="rateAmount" column="rate_amount" jdbcType="INTEGER"/>
+        <result property="priceCn" column="price_cn" jdbcType="INTEGER"/>
+        <result property="priceUs" column="price_us" jdbcType="DECIMAL"/>
+        <result property="priceStr" column="price_str" jdbcType="VARCHAR"/>
+        <result property="priceStrCn" column="price_str_cn" jdbcType="VARCHAR"/>
+        <result property="priceStrUs" column="price_str_us" jdbcType="VARCHAR"/>
+        <result property="usFlag" column="us_flag" jdbcType="TINYINT"/>
+        <result property="inPurchaseFlag" column="in_purchase_flag" jdbcType="TINYINT"/>
+        <result property="inPurchaseFreeFlag" column="in_purchase_free_flag" jdbcType="TINYINT"/>
+        <result property="urlCn" column="url_cn" jdbcType="VARCHAR"/>
+        <result property="urlUs" column="url_us" jdbcType="VARCHAR"/>
+        <result property="descriptionUs" column="description_us" jdbcType="VARCHAR"/>
+        <result property="descriptionCn" column="description_cn" jdbcType="VARCHAR"/>
+        <result property="descriptionCl" column="description_cl" jdbcType="VARCHAR"/>
+        <result property="descriptionWc" column="description_wc" jdbcType="VARCHAR"/>
+        <result property="descriptionGo" column="description_go" jdbcType="VARCHAR"/>
+        <result property="descriptionGeek" column="description_geek" jdbcType="VARCHAR"/>
+        <result property="descriptionMy" column="description_my" jdbcType="VARCHAR"/>
+        <result property="descriptionZm" column="description_zm" jdbcType="VARCHAR"/>
+        <result property="supplier" column="supplier" jdbcType="VARCHAR"/>
+        <result property="appSizeStr" column="app_size_str" jdbcType="VARCHAR"/>
+        <result property="appSize" column="app_size" jdbcType="DECIMAL"/>
+        <result property="categoryId" column="category_id" jdbcType="INTEGER"/>
+        <result property="category" column="category" jdbcType="VARCHAR"/>
+        <result property="compatibility" column="compatibility" jdbcType="OTHER"/>
+        <result property="language" column="language" jdbcType="VARCHAR"/>
+        <result property="age" column="age" jdbcType="VARCHAR"/>
+        <result property="copyright" column="copyright" jdbcType="VARCHAR"/>
+        <result property="appInPurchase" column="app_in_purchase" jdbcType="OTHER"/>
+        <result property="snapshotUrl" column="snapshot_url" jdbcType="OTHER"/>
+        <result property="versionHistory" column="version_history" jdbcType="OTHER"/>
+        <result property="remark" column="remark" jdbcType="VARCHAR"/>
+        <result property="delFlag" column="del_flag" jdbcType="INTEGER"/>
+        <result property="createUserCode" column="create_user_code" jdbcType="VARCHAR"/>
+        <result property="createUserName" column="create_user_name" jdbcType="VARCHAR"/>
+        <result property="createdDate" column="created_date" jdbcType="TIMESTAMP"/>
+        <result property="lastModifiedCode" column="last_modified_code" jdbcType="VARCHAR"/>
+        <result property="lastModifiedName" column="last_modified_name" jdbcType="VARCHAR"/>
+        <result property="lastModifiedDate" column="last_modified_date" jdbcType="TIMESTAMP"/>
+        <result property="version" column="version" jdbcType="VARCHAR"/>
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,app_id,crawler_date,
+        id
+        ,app_id,crawler_date,
         title,sub_title,designed_for,
         ranking,rating_str,rating,
         rate_amount,price_cn,price_us,
@@ -75,4 +76,306 @@
         last_modified_code,last_modified_name,last_modified_date,
         version
     </sql>
+    <insert id="insertBatch">
+        insert into t_price_history(id,app_id,crawler_date,
+        title,sub_title,designed_for,
+        ranking,rating_str,rating,
+        rate_amount,price_cn,price_us,
+        price_str,price_str_cn,price_str_us,
+        us_flag,in_purchase_flag,in_purchase_free_flag,
+        url_cn,url_us,description_us,
+        description_cn,description_cl,description_wc,
+        description_go,description_geek,description_my,
+        description_zm,supplier,app_size_str,
+        app_size,category_id,category,
+        compatibility,language,age,
+        copyright,app_in_purchase,snapshot_url,
+        version_history,remark,del_flag,
+        create_user_code,create_user_name,created_date,
+        last_modified_code,last_modified_name,last_modified_date,
+        version)
+        values
+        <foreach collection="priceHistoryCollection" item="item" separator=",">
+            (#{item.id,jdbcType=NUMERIC},#{item.appId,jdbcType=VARCHAR},#{item.crawlerDate,jdbcType=TIMESTAMP},
+            #{item.title,jdbcType=VARCHAR},#{item.subTitle,jdbcType=VARCHAR},#{item.designedFor,jdbcType=VARCHAR},
+            #{item.ranking,jdbcType=VARCHAR},#{item.ratingStr,jdbcType=VARCHAR},#{item.rating,jdbcType=DECIMAL},
+            #{item.rateAmount,jdbcType=NUMERIC},#{item.priceCn,jdbcType=NUMERIC},#{item.priceUs,jdbcType=DECIMAL},
+            #{item.priceStr,jdbcType=VARCHAR},#{item.priceStrCn,jdbcType=VARCHAR},#{item.priceStrUs,jdbcType=VARCHAR},
+            #{item.usFlag,jdbcType=NUMERIC},#{item.inPurchaseFlag,jdbcType=NUMERIC},#{item.inPurchaseFreeFlag,jdbcType=NUMERIC},
+            #{item.urlCn,jdbcType=VARCHAR},#{item.urlUs,jdbcType=VARCHAR},#{item.descriptionUs,jdbcType=VARCHAR},
+            #{item.descriptionCn,jdbcType=VARCHAR},#{item.descriptionCl,jdbcType=VARCHAR},#{item.descriptionWc,jdbcType=VARCHAR},
+            #{item.descriptionGo,jdbcType=VARCHAR},#{item.descriptionGeek,jdbcType=VARCHAR},#{item.descriptionMy,jdbcType=VARCHAR},
+            #{item.descriptionZm,jdbcType=VARCHAR},#{item.supplier,jdbcType=VARCHAR},#{item.appSizeStr,jdbcType=VARCHAR},
+            #{item.appSize,jdbcType=DECIMAL},#{item.categoryId,jdbcType=NUMERIC},#{item.category,jdbcType=VARCHAR},
+            #{item.compatibility},#{item.language,jdbcType=VARCHAR},#{item.age,jdbcType=VARCHAR},
+            #{item.copyright,jdbcType=VARCHAR},#{item.appInPurchase},#{item.snapshotUrl},
+            #{item.versionHistory},#{item.remark,jdbcType=VARCHAR},#{item.delFlag,jdbcType=NUMERIC},
+            #{item.createUserCode,jdbcType=VARCHAR},#{item.createUserName,jdbcType=VARCHAR},#{item.createdDate,jdbcType=TIMESTAMP},
+            #{item.lastModifiedCode,jdbcType=VARCHAR},#{item.lastModifiedName,jdbcType=VARCHAR},#{item.lastModifiedDate,jdbcType=TIMESTAMP},
+            #{item.version,jdbcType=VARCHAR})
+        </foreach>
+    </insert>
+    <insert id="insertSelective">
+        insert into t_price_history
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">id,</if>
+            <if test="appId != null">app_id,</if>
+            <if test="crawlerDate != null">crawler_date,</if>
+            <if test="title != null">title,</if>
+            <if test="subTitle != null">sub_title,</if>
+            <if test="designedFor != null">designed_for,</if>
+            <if test="ranking != null">ranking,</if>
+            <if test="ratingStr != null">rating_str,</if>
+            <if test="rating != null">rating,</if>
+            <if test="rateAmount != null">rate_amount,</if>
+            <if test="priceCn != null">price_cn,</if>
+            <if test="priceUs != null">price_us,</if>
+            <if test="priceStr != null">price_str,</if>
+            <if test="priceStrCn != null">price_str_cn,</if>
+            <if test="priceStrUs != null">price_str_us,</if>
+            <if test="usFlag != null">us_flag,</if>
+            <if test="inPurchaseFlag != null">in_purchase_flag,</if>
+            <if test="inPurchaseFreeFlag != null">in_purchase_free_flag,</if>
+            <if test="urlCn != null">url_cn,</if>
+            <if test="urlUs != null">url_us,</if>
+            <if test="descriptionUs != null">description_us,</if>
+            <if test="descriptionCn != null">description_cn,</if>
+            <if test="descriptionCl != null">description_cl,</if>
+            <if test="descriptionWc != null">description_wc,</if>
+            <if test="descriptionGo != null">description_go,</if>
+            <if test="descriptionGeek != null">description_geek,</if>
+            <if test="descriptionMy != null">description_my,</if>
+            <if test="descriptionZm != null">description_zm,</if>
+            <if test="supplier != null">supplier,</if>
+            <if test="appSizeStr != null">app_size_str,</if>
+            <if test="appSize != null">app_size,</if>
+            <if test="categoryId != null">category_id,</if>
+            <if test="category != null">category,</if>
+            <if test="compatibility != null">compatibility,</if>
+            <if test="language != null">language,</if>
+            <if test="age != null">age,</if>
+            <if test="copyright != null">copyright,</if>
+            <if test="appInPurchase != null">app_in_purchase,</if>
+            <if test="snapshotUrl != null">snapshot_url,</if>
+            <if test="versionHistory != null">version_history,</if>
+            <if test="remark != null">remark,</if>
+            <if test="delFlag != null">del_flag,</if>
+            <if test="createUserCode != null">create_user_code,</if>
+            <if test="createUserName != null">create_user_name,</if>
+            <if test="createdDate != null">created_date,</if>
+            <if test="lastModifiedCode != null">last_modified_code,</if>
+            <if test="lastModifiedName != null">last_modified_name,</if>
+            <if test="lastModifiedDate != null">last_modified_date,</if>
+            <if test="version != null">version,</if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">#{id,jdbcType=BIGINT},</if>
+            <if test="appId != null">#{appId,jdbcType=VARCHAR},</if>
+            <if test="crawlerDate != null">#{crawlerDate,jdbcType=DATE},</if>
+            <if test="title != null">#{title,jdbcType=VARCHAR},</if>
+            <if test="subTitle != null">#{subTitle,jdbcType=VARCHAR},</if>
+            <if test="designedFor != null">#{designedFor,jdbcType=VARCHAR},</if>
+            <if test="ranking != null">#{ranking,jdbcType=VARCHAR},</if>
+            <if test="ratingStr != null">#{ratingStr,jdbcType=VARCHAR},</if>
+            <if test="rating != null">#{rating,jdbcType=DECIMAL},</if>
+            <if test="rateAmount != null">#{rateAmount,jdbcType=INTEGER},</if>
+            <if test="priceCn != null">#{priceCn,jdbcType=INTEGER},</if>
+            <if test="priceUs != null">#{priceUs,jdbcType=DECIMAL},</if>
+            <if test="priceStr != null">#{priceStr,jdbcType=VARCHAR},</if>
+            <if test="priceStrCn != null">#{priceStrCn,jdbcType=VARCHAR},</if>
+            <if test="priceStrUs != null">#{priceStrUs,jdbcType=VARCHAR},</if>
+            <if test="usFlag != null">#{usFlag,jdbcType=TINYINT},</if>
+            <if test="inPurchaseFlag != null">#{inPurchaseFlag,jdbcType=TINYINT},</if>
+            <if test="inPurchaseFreeFlag != null">#{inPurchaseFreeFlag,jdbcType=TINYINT},</if>
+            <if test="urlCn != null">#{urlCn,jdbcType=VARCHAR},</if>
+            <if test="urlUs != null">#{urlUs,jdbcType=VARCHAR},</if>
+            <if test="descriptionUs != null">#{descriptionUs,jdbcType=VARCHAR},</if>
+            <if test="descriptionCn != null">#{descriptionCn,jdbcType=VARCHAR},</if>
+            <if test="descriptionCl != null">#{descriptionCl,jdbcType=VARCHAR},</if>
+            <if test="descriptionWc != null">#{descriptionWc,jdbcType=VARCHAR},</if>
+            <if test="descriptionGo != null">#{descriptionGo,jdbcType=VARCHAR},</if>
+            <if test="descriptionGeek != null">#{descriptionGeek,jdbcType=VARCHAR},</if>
+            <if test="descriptionMy != null">#{descriptionMy,jdbcType=VARCHAR},</if>
+            <if test="descriptionZm != null">#{descriptionZm,jdbcType=VARCHAR},</if>
+            <if test="supplier != null">#{supplier,jdbcType=VARCHAR},</if>
+            <if test="appSizeStr != null">#{appSizeStr,jdbcType=VARCHAR},</if>
+            <if test="appSize != null">#{appSize,jdbcType=DECIMAL},</if>
+            <if test="categoryId != null">#{categoryId,jdbcType=INTEGER},</if>
+            <if test="category != null">#{category,jdbcType=VARCHAR},</if>
+            <if test="compatibility != null">#{compatibility,jdbcType=OTHER},</if>
+            <if test="language != null">#{language,jdbcType=VARCHAR},</if>
+            <if test="age != null">#{age,jdbcType=VARCHAR},</if>
+            <if test="copyright != null">#{copyright,jdbcType=VARCHAR},</if>
+            <if test="appInPurchase != null">#{appInPurchase,jdbcType=OTHER},</if>
+            <if test="snapshotUrl != null">#{snapshotUrl,jdbcType=OTHER},</if>
+            <if test="versionHistory != null">#{versionHistory,jdbcType=OTHER},</if>
+            <if test="remark != null">#{remark,jdbcType=VARCHAR},</if>
+            <if test="delFlag != null">#{delFlag,jdbcType=INTEGER},</if>
+            <if test="createUserCode != null">#{createUserCode,jdbcType=VARCHAR},</if>
+            <if test="createUserName != null">#{createUserName,jdbcType=VARCHAR},</if>
+            <if test="createdDate != null">#{createdDate,jdbcType=TIMESTAMP},</if>
+            <if test="lastModifiedCode != null">#{lastModifiedCode,jdbcType=VARCHAR},</if>
+            <if test="lastModifiedName != null">#{lastModifiedName,jdbcType=VARCHAR},</if>
+            <if test="lastModifiedDate != null">#{lastModifiedDate,jdbcType=TIMESTAMP},</if>
+            <if test="version != null">#{version,jdbcType=VARCHAR},</if>
+        </trim>
+    </insert>
+
+
+    <insert id="insertOrUpdateBatch">
+        insert into t_price_history
+        (`app_id`,
+        `crawler_date`,
+        `title`,
+        `sub_title`,
+        `designed_for`,
+        `ranking`,
+        `rating_str`,
+        `rating`,
+        `rate_amount`,
+        `price_cn`,
+        `price_us`,
+        `price_str`,
+        `price_str_cn`,
+        `price_str_us`,
+        `us_flag`,
+        `in_purchase_flag`,
+        `in_purchase_free_flag`,
+        `url_cn`,
+        `url_us`,
+        `description_us`,
+        `description_cn`,
+        `description_cl`,
+        `description_wc`,
+        `description_go`,
+        `description_geek`,
+        `description_my`,
+        `description_zm`,
+        `supplier`,
+        `app_size_str`,
+        `app_size`,
+        `category_id`,
+        `category`,
+        `compatibility`,
+        `language`,
+        `age`,
+        `copyright`,
+        `app_in_purchase`,
+        `snapshot_url`,
+        `version_history`,
+        `remark`,
+        `del_flag`,
+        `create_user_code`,
+        `create_user_name`,
+        `created_date`,
+        `last_modified_code`,
+        `last_modified_name`,
+        `last_modified_date`,
+        `version`)
+        values
+        <foreach collection="entities" item="item" separator=",">
+            (
+            #{item.appId,jdbcType=VARCHAR},
+            #{item.crawlerDate,jdbcType=DATE},
+            #{item.title,jdbcType=VARCHAR},
+            #{item.subTitle,jdbcType=VARCHAR},
+            #{item.designedFor,jdbcType=VARCHAR},
+            #{item.ranking,jdbcType=VARCHAR},
+            #{item.ratingStr,jdbcType=VARCHAR},
+            #{item.rating,jdbcType=DECIMAL},
+            #{item.rateAmount,jdbcType=NUMERIC},
+            #{item.priceCn,jdbcType=NUMERIC},
+            #{item.priceUs,jdbcType=DECIMAL},
+            #{item.priceStr,jdbcType=VARCHAR},
+            #{item.priceStrCn,jdbcType=VARCHAR},
+            #{item.priceStrUs,jdbcType=VARCHAR},
+            #{item.usFlag,jdbcType=NUMERIC},
+            #{item.inPurchaseFlag,jdbcType=NUMERIC},
+            #{item.inPurchaseFreeFlag,jdbcType=NUMERIC},
+            #{item.urlCn,jdbcType=VARCHAR},
+            #{item.urlUs,jdbcType=VARCHAR},
+            #{item.descriptionUs,jdbcType=VARCHAR},
+            #{item.descriptionCn,jdbcType=VARCHAR},
+            #{item.descriptionCl,jdbcType=VARCHAR},
+            #{item.descriptionWc,jdbcType=VARCHAR},
+            #{item.descriptionGo,jdbcType=VARCHAR},
+            #{item.descriptionGeek,jdbcType=VARCHAR},
+            #{item.descriptionMy,jdbcType=VARCHAR},
+            #{item.descriptionZm,jdbcType=VARCHAR},
+            #{item.supplier,jdbcType=VARCHAR},
+            #{item.appSizeStr,jdbcType=VARCHAR},
+            #{item.appSize,jdbcType=DECIMAL},
+            #{item.categoryId,jdbcType=NUMERIC},
+            #{item.category,jdbcType=VARCHAR},
+            #{item.compatibility, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},
+            #{item.language,jdbcType=VARCHAR},
+            #{item.age,jdbcType=VARCHAR},
+            #{item.copyright,jdbcType=VARCHAR},
+            #{item.appInPurchase, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},
+            #{item.snapshotUrl, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},
+            #{item.versionHistory, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},
+            #{item.remark,jdbcType=VARCHAR},
+            #{item.delFlag,jdbcType=NUMERIC},
+            #{item.createUserCode,jdbcType=VARCHAR},
+            #{item.createUserName,jdbcType=VARCHAR},
+            #{item.createdDate,jdbcType=TIMESTAMP},
+            #{item.lastModifiedCode,jdbcType=VARCHAR},
+            #{item.lastModifiedName,jdbcType=VARCHAR},
+            #{item.lastModifiedDate,jdbcType=TIMESTAMP},
+            #{item.version,jdbcType=VARCHAR}
+            )
+        </foreach>
+        on duplicate key update
+        <trim prefix="" suffixOverrides=",">
+            <foreach collection="entities" item="entity" separator=",">
+                <if test="entity.title != null">`title` = #{entity.title,jdbcType=VARCHAR},</if>
+                <if test="entity.subTitle != null">`sub_title` = #{entity.subTitle,jdbcType=VARCHAR},</if>
+                <if test="entity.designedFor != null">`designed_for` = #{entity.designedFor,jdbcType=VARCHAR},</if>
+                <if test="entity.ranking != null">`ranking` = #{entity.ranking,jdbcType=VARCHAR},</if>
+                <if test="entity.ratingStr != null">`rating_str` = #{entity.ratingStr,jdbcType=VARCHAR},</if>
+                <if test="entity.rating != null">`rating` = #{entity.rating,jdbcType=DECIMAL},</if>
+                <if test="entity.rateAmount != null">`rate_amount` = #{entity.rateAmount,jdbcType=INTEGER},</if>
+                <if test="entity.priceCn != null">`price_cn` = #{entity.priceCn,jdbcType=INTEGER},</if>
+                <if test="entity.priceUs != null">`price_us` = #{entity.priceUs,jdbcType=DECIMAL},</if>
+                <if test="entity.priceStr != null">`price_str` = #{entity.priceStr,jdbcType=VARCHAR},</if>
+                <if test="entity.priceStrCn != null">`price_str_cn` = #{entity.priceStrCn,jdbcType=VARCHAR},</if>
+                <if test="entity.priceStrUs != null">`price_str_us` = #{entity.priceStrUs,jdbcType=VARCHAR},</if>
+                <if test="entity.usFlag != null">`us_flag` = #{entity.usFlag,jdbcType=TINYINT},</if>
+                <if test="entity.inPurchaseFlag != null">`in_purchase_flag` = #{entity.inPurchaseFlag,jdbcType=TINYINT},</if>
+                <if test="entity.inPurchaseFreeFlag != null">`in_purchase_free_flag` =  #{entity.inPurchaseFreeFlag,jdbcType=TINYINT},</if>
+                <if test="entity.urlCn != null">`url_cn` = #{entity.urlCn,jdbcType=VARCHAR},</if>
+                <if test="entity.urlUs != null">`url_us` = #{entity.urlUs,jdbcType=VARCHAR},</if>
+                <if test="entity.descriptionUs != null">`description_us` = #{entity.descriptionUs,jdbcType=VARCHAR},</if>
+                <if test="entity.descriptionCn != null">`description_cn` = #{entity.descriptionCn,jdbcType=VARCHAR},</if>
+                <if test="entity.descriptionCl != null">`description_cl` = #{entity.descriptionCl,jdbcType=VARCHAR},</if>
+                <if test="entity.descriptionWc != null">`description_wc` = #{entity.descriptionWc,jdbcType=VARCHAR},</if>
+                <if test="entity.descriptionGo != null">`description_go` = #{entity.descriptionGo,jdbcType=VARCHAR},</if>
+                <if test="entity.descriptionGeek != null">`description_geek` = #{entity.descriptionGeek,jdbcType=VARCHAR},</if>
+                <if test="entity.descriptionMy != null">`description_my` = #{entity.descriptionMy,jdbcType=VARCHAR},</if>
+                <if test="entity.descriptionZm != null">`description_zm` = #{entity.descriptionZm,jdbcType=VARCHAR},</if>
+                <if test="entity.supplier != null">`supplier` = #{entity.supplier,jdbcType=VARCHAR},</if>
+                <if test="entity.appSizeStr != null">`app_size_str` = #{entity.appSizeStr,jdbcType=VARCHAR},</if>
+                <if test="entity.appSize != null">`app_size` = #{entity.appSize,jdbcType=DECIMAL},</if>
+                <if test="entity.categoryId != null">`category_id` = #{entity.categoryId,jdbcType=INTEGER},</if>
+                <if test="entity.category != null">`category` = #{entity.category,jdbcType=VARCHAR},</if>
+                <if test="entity.compatibility != null">`compatibility` = #{entity.compatibility, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},</if>
+                <if test="entity.language != null">`language` = #{entity.language,jdbcType=VARCHAR},</if>
+                <if test="entity.age != null">`age` = #{entity.age,jdbcType=VARCHAR},</if>
+                <if test="entity.copyright != null">`copyright` = #{entity.copyright,jdbcType=VARCHAR},</if>
+                <if test="entity.appInPurchase != null">`app_in_purchase` = #{entity.appInPurchase, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},</if>
+                <if test="entity.snapshotUrl != null">`snapshot_url` = #{entity.snapshotUrl, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},</if>
+                <if test="entity.versionHistory != null">`version_history` = #{entity.versionHistory, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},</if>
+                <if test="entity.remark != null">`remark` = #{entity.remark,jdbcType=VARCHAR},</if>
+                <if test="entity.delFlag != null">`del_flag` = #{entity.delFlag,jdbcType=INTEGER},</if>
+                <if test="entity.createUserCode != null">`create_user_code` = #{entity.createUserCode,jdbcType=VARCHAR},</if>
+                <if test="entity.createUserName != null">`create_user_name` = #{entity.createUserName,jdbcType=VARCHAR},</if>
+                <if test="entity.createdDate != null">`created_date` = #{entity.createdDate,jdbcType=TIMESTAMP},</if>
+                <if test="entity.lastModifiedCode != null">`last_modified_code` = #{entity.lastModifiedCode,jdbcType=VARCHAR},</if>
+                <if test="entity.lastModifiedName != null">`last_modified_name` = #{entity.lastModifiedName,jdbcType=VARCHAR},</if>
+                <if test="entity.version != null">`version` = #{entity.version,jdbcType=VARCHAR},</if>
+                `last_modified_date` = NOW()
+            </foreach>
+        </trim>
+    </insert>
 </mapper>

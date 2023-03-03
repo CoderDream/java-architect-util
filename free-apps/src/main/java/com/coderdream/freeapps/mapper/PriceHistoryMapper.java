@@ -1,7 +1,12 @@
 package com.coderdream.freeapps.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.coderdream.freeapps.model.App;
 import com.coderdream.freeapps.model.PriceHistory;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.Collection;
+import java.util.List;
 
 /**
 * @author CoderDream
@@ -10,7 +15,11 @@ import com.coderdream.freeapps.model.PriceHistory;
 * @Entity com.coderdream.freeapps.model.PriceHistory
 */
 public interface PriceHistoryMapper extends BaseMapper<PriceHistory> {
+    int insertSelective(PriceHistory priceHistory);
 
+    int insertBatch(@Param("priceHistoryCollection") Collection<PriceHistory> priceHistoryCollection);
+
+    int insertOrUpdateBatch(List<PriceHistory> entities);
 }
 
 

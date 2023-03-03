@@ -12,6 +12,7 @@ public class AppStringUtils {
 
     public static String filterPriceStr(String priceStr){
         String result = priceStr.replaceAll("➱0", "");
+        result = result.replaceAll(",", "");
         result = result.replaceAll("➠0", "");
         result = result.replaceAll("➞", "");
         result = result.replaceAll("\t➞", "");

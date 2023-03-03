@@ -16,6 +16,8 @@
         <result property="priceStrCn" column="price_str_cn" jdbcType="VARCHAR"/>
         <result property="priceStrUs" column="price_str_us" jdbcType="VARCHAR"/>
         <result property="usFlag" column="us_flag" jdbcType="TINYINT"/>
+        <result property="inPurchaseFlag" column="in_purchase_flag" jdbcType="TINYINT"/>
+        <result property="inPurchaseFreeFlag" column="in_purchase_free_flag" jdbcType="TINYINT"/>
         <result property="urlCn" column="url_cn" jdbcType="VARCHAR"/>
         <result property="urlUs" column="url_us" jdbcType="VARCHAR"/>
         <result property="descriptionUs" column="description_us" jdbcType="VARCHAR"/>
@@ -31,10 +33,14 @@
         <result property="appSize" column="app_size" jdbcType="DECIMAL"/>
         <result property="categoryId" column="category_id" jdbcType="INTEGER"/>
         <result property="category" column="category" jdbcType="VARCHAR"/>
-        <result property="compatibility" column="compatibility" typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler"/>
-        <result property="appInPurchase" column="app_in_purchase" typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler"/>
-        <result property="snapshotUrl" column="snapshot_url" typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler"/>
-        <result property="versionHistory" column="version_history" typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler"/>
+        <result property="compatibility" column="compatibility"
+                typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler"/>
+        <result property="appInPurchase" column="app_in_purchase"
+                typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler"/>
+        <result property="snapshotUrl" column="snapshot_url"
+                typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler"/>
+        <result property="versionHistory" column="version_history"
+                typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler"/>
         <result property="delFlag" column="del_flag" jdbcType="INTEGER"/>
         <result property="createUserCode" column="create_user_code" jdbcType="VARCHAR"/>
         <result property="createUserName" column="create_user_name" jdbcType="VARCHAR"/>
@@ -46,7 +52,8 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,app_id,name,
+        id
+        ,app_id,name,
         sub_title,rating_str,rating,
         rate_amount,price_cn,price_us,
         price_str,price_str_cn,price_str_us,
@@ -146,6 +153,8 @@
         `price_str_cn`,
         `price_str_us`,
         `us_flag`,
+        `in_purchase_flag`,
+        `in_purchase_free_flag`,
         `url_cn`,
         `url_us`,
         `description_us`,
@@ -194,6 +203,8 @@
             #{item.priceStrCn,jdbcType=VARCHAR},
             #{item.priceStrUs,jdbcType=VARCHAR},
             #{item.usFlag,jdbcType=NUMERIC},
+            #{item.inPurchaseFlag,jdbcType=NUMERIC},
+            #{item.inPurchaseFreeFlag,jdbcType=NUMERIC},
             #{item.urlCn,jdbcType=VARCHAR},
             #{item.urlUs,jdbcType=VARCHAR},
             #{item.descriptionUs,jdbcType=VARCHAR},
@@ -228,50 +239,56 @@
             )
         </foreach>
         on duplicate key update
-        `title` 		 = values(title),
-        `sub_title` 		 = values(sub_title),
-        `designed_for` 		 = values(designed_for),
-        `ranking` 		 = values(ranking),
-        `rating_str` 		 = values(rating_str),
-        `rating` 		 = values(rating),
-        `rate_amount` 		 = values(rate_amount),
-        `price_cn` 		 = values(price_cn),
-        `price_us` 		 = values(price_us),
-        `price_str` 		 = values(price_str),
-        `price_str_cn` 		 = values(price_str_cn),
-        `price_str_us` 		 = values(price_str_us),
-        `us_flag` 		 = values(us_flag),
-        `url_cn` 		 = values(url_cn),
-        `url_us` 		 = values(url_us),
-        `description_us` 		 = values(description_us),
-        `description_cn` 		 = values(description_cn),
-        `description_cl` 		 = values(description_cl),
-        `description_wc` 		 = values(description_wc),
-        `description_go` 		 = values(description_go),
-        `description_geek` 		 = values(description_geek),
-        `description_my` 		 = values(description_my),
-        `description_zm` 		 = values(description_zm),
-        `supplier` 		 = values(supplier),
-        `app_size_str` 		 = values(app_size_str),
-        `app_size` 		 = values(app_size),
-        `category_id` 		 = values(category_id),
-        `category` 		 = values(category),
-        `compatibility` 		 = values(compatibility),
-        `language` 		 = values(language),
-        `age` 		 = values(age),
-        `copyright` 		 = values(copyright),
-        `app_in_purchase` 		 = values(app_in_purchase),
-        `snapshot_url` 		 = values(snapshot_url),
-        `version_history` 		 = values(version_history),
-        `remark` 		 = values(remark),
-        `del_flag` 		 = values(del_flag),
-        `create_user_code` 		 = values(create_user_code),
-        `create_user_name` 		 = values(create_user_name),
-        `created_date` 		 = values(created_date),
-        `last_modified_code` 		 = values(last_modified_code),
-        `last_modified_name` 		 = values(last_modified_name),
-        `last_modified_date` 		 = values(last_modified_date),
-        `version`		 = values(version)
+        <trim prefix="" suffixOverrides=",">
+             <foreach collection="entities" item="entity" separator=",">
+                <if test="entity.title != null">`title` = #{entity.title,jdbcType=VARCHAR},</if>
+                <if test="entity.subTitle != null">`sub_title` = #{entity.subTitle,jdbcType=VARCHAR},</if>
+                 <if test="entity.designedFor != null">`designed_for` = #{entity.designedFor,jdbcType=VARCHAR},</if>
+                 <if test="entity.ranking != null">`ranking` = #{entity.ranking,jdbcType=VARCHAR},</if>
+                 <if test="entity.ratingStr != null">`rating_str` = #{entity.ratingStr,jdbcType=VARCHAR},</if>
+                 <if test="entity.rating != null">`rating` = #{entity.rating,jdbcType=DECIMAL},</if>
+                 <if test="entity.rateAmount != null">`rate_amount` = #{entity.rateAmount,jdbcType=INTEGER},</if>
+                 <if test="entity.priceCn != null">`price_cn` = #{entity.priceCn,jdbcType=INTEGER},</if>
+                 <if test="entity.priceUs != null">`price_us` = #{entity.priceUs,jdbcType=DECIMAL},</if>
+                 <if test="entity.priceStr != null">`price_str` = #{entity.priceStr,jdbcType=VARCHAR},</if>
+                 <if test="entity.priceStrCn != null">`price_str_cn` = #{entity.priceStrCn,jdbcType=VARCHAR},</if>
+                 <if test="entity.priceStrUs != null">`price_str_us` = #{entity.priceStrUs,jdbcType=VARCHAR},</if>
+                 <if test="entity.usFlag != null">`us_flag` = #{entity.usFlag,jdbcType=TINYINT},</if>
+                 <if test="entity.inPurchaseFlag != null">`in_purchase_flag` = #{entity.inPurchaseFlag,jdbcType=TINYINT},</if>
+                 <if test="entity.inPurchaseFreeFlag != null">`in_purchase_free_flag` =  #{entity.inPurchaseFreeFlag,jdbcType=TINYINT},</if>
+                 <if test="entity.urlCn != null">`url_cn` = #{entity.urlCn,jdbcType=VARCHAR},</if>
+                 <if test="entity.urlUs != null">`url_us` = #{entity.urlUs,jdbcType=VARCHAR},</if>
+                 <if test="entity.descriptionUs != null">`description_us` = #{entity.descriptionUs,jdbcType=VARCHAR},</if>
+                 <if test="entity.descriptionCn != null">`description_cn` = #{entity.descriptionCn,jdbcType=VARCHAR},</if>
+                 <if test="entity.descriptionCl != null">`description_cl` = #{entity.descriptionCl,jdbcType=VARCHAR},</if>
+                 <if test="entity.descriptionWc != null">`description_wc` = #{entity.descriptionWc,jdbcType=VARCHAR},</if>
+                 <if test="entity.descriptionGo != null">`description_go` = #{entity.descriptionGo,jdbcType=VARCHAR},</if>
+                 <if test="entity.descriptionGeek != null">`description_geek` = #{entity.descriptionGeek,jdbcType=VARCHAR},</if>
+                 <if test="entity.descriptionMy != null">`description_my` = #{entity.descriptionMy,jdbcType=VARCHAR},</if>
+                 <if test="entity.descriptionZm != null">`description_zm` = #{entity.descriptionZm,jdbcType=VARCHAR},</if>
+                 <if test="entity.supplier != null">`supplier` = #{entity.supplier,jdbcType=VARCHAR},</if>
+                 <if test="entity.appSizeStr != null">`app_size_str` = #{entity.appSizeStr,jdbcType=VARCHAR},</if>
+                 <if test="entity.appSize != null">`app_size` = #{entity.appSize,jdbcType=DECIMAL},</if>
+                 <if test="entity.categoryId != null">`category_id` = #{entity.categoryId,jdbcType=INTEGER},</if>
+                 <if test="entity.category != null">`category` = #{entity.category,jdbcType=VARCHAR},</if>
+                 <if test="entity.compatibility != null">`compatibility` = #{entity.compatibility, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},</if>
+                 <if test="entity.language != null">`language` = #{entity.language,jdbcType=VARCHAR},</if>
+                 <if test="entity.age != null">`age` = #{entity.age,jdbcType=VARCHAR},</if>
+                 <if test="entity.copyright != null">`copyright` = #{entity.copyright,jdbcType=VARCHAR},</if>
+                 <if test="entity.appInPurchase != null">`app_in_purchase` = #{entity.appInPurchase, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},</if>
+                 <if test="entity.snapshotUrl != null">`snapshot_url` = #{entity.snapshotUrl, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},</if>
+                 <if test="entity.versionHistory != null">`version_history` = #{entity.versionHistory, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},</if>
+                 <if test="entity.remark != null">`remark` = #{entity.remark,jdbcType=VARCHAR},</if>
+                 <if test="entity.delFlag != null">`del_flag` = #{entity.delFlag,jdbcType=INTEGER},</if>
+                 <if test="entity.createUserCode != null">`create_user_code` = #{entity.createUserCode,jdbcType=VARCHAR},</if>
+                 <if test="entity.createUserName != null">`create_user_name` = #{entity.createUserName,jdbcType=VARCHAR},</if>
+                 <if test="entity.createdDate != null">`created_date` = #{entity.createdDate,jdbcType=TIMESTAMP},</if>
+                 <if test="entity.lastModifiedCode != null">`last_modified_code` = #{entity.lastModifiedCode,jdbcType=VARCHAR},</if>
+                 <if test="entity.lastModifiedName != null">`last_modified_name` = #{entity.lastModifiedName,jdbcType=VARCHAR},</if>
+                 <if test="entity.version != null">`version` = #{entity.version,jdbcType=VARCHAR},</if>
+                 `last_modified_date` = NOW()
+             </foreach>
+        </trim>
     </insert>
 
     <insert id="insertSelective">
@@ -409,49 +426,49 @@
     </insert>
 
     <!--    <insert id="insertSelective">-->
-<!--        insert into t_app-->
-<!--        <trim prefix="(" suffix=")" suffixOverrides=",">-->
-<!--            <if test="id != null">id,</if>-->
-<!--            <if test="appId != null">app_id,</if>-->
-<!--            <if test="name != null">name,</if>-->
-<!--            <if test="priceCn != null">price_cn,</if>-->
-<!--            <if test="priceUs != null">price_us,</if>-->
-<!--            <if test="priceStr != null">price_str,</if>-->
-<!--            <if test="priceStrCn != null">price_str_cn,</if>-->
-<!--            <if test="priceStrUs != null">price_str_us,</if>-->
-<!--            <if test="usFlag != null">us_flag,</if>-->
-<!--            <if test="urlCn != null">url_cn,</if>-->
-<!--            <if test="urlUs != null">url_us,</if>-->
-<!--            <if test="delFlag != null">del_flag,</if>-->
-<!--            <if test="createUserCode != null">create_user_code,</if>-->
-<!--            <if test="createUserName != null">create_user_name,</if>-->
-<!--            <if test="createdDate != null">created_date,</if>-->
-<!--            <if test="lastModifiedCode != null">last_modified_code,</if>-->
-<!--            <if test="lastModifiedName != null">last_modified_name,</if>-->
-<!--            <if test="lastModifiedDate != null">last_modified_date,</if>-->
-<!--            <if test="version != null">version,</if>-->
-<!--        </trim>-->
-<!--        values-->
-<!--        <trim prefix="(" suffix=")" suffixOverrides=",">-->
-<!--            <if test="id != null">#{id,jdbcType=BIGINT},</if>-->
-<!--            <if test="appId != null">#{appId,jdbcType=VARCHAR},</if>-->
-<!--            <if test="name != null">#{name,jdbcType=VARCHAR},</if>-->
-<!--            <if test="priceCn != null">#{priceCn,jdbcType=INTEGER},</if>-->
-<!--            <if test="priceUs != null">#{priceUs,jdbcType=DECIMAL},</if>-->
-<!--            <if test="priceStr != null">#{priceStr,jdbcType=VARCHAR},</if>-->
-<!--            <if test="priceStrCn != null">#{priceStrCn,jdbcType=VARCHAR},</if>-->
-<!--            <if test="priceStrUs != null">#{priceStrUs,jdbcType=VARCHAR},</if>-->
-<!--            <if test="usFlag != null">#{usFlag,jdbcType=TINYINT},</if>-->
-<!--            <if test="urlCn != null">#{urlCn,jdbcType=VARCHAR},</if>-->
-<!--            <if test="urlUs != null">#{urlUs,jdbcType=VARCHAR},</if>-->
-<!--            <if test="delFlag != null">#{delFlag,jdbcType=INTEGER},</if>-->
-<!--            <if test="createUserCode != null">#{createUserCode,jdbcType=VARCHAR},</if>-->
-<!--            <if test="createUserName != null">#{createUserName,jdbcType=VARCHAR},</if>-->
-<!--            <if test="createdDate != null">#{createdDate,jdbcType=TIMESTAMP},</if>-->
-<!--            <if test="lastModifiedCode != null">#{lastModifiedCode,jdbcType=VARCHAR},</if>-->
-<!--            <if test="lastModifiedName != null">#{lastModifiedName,jdbcType=VARCHAR},</if>-->
-<!--            <if test="lastModifiedDate != null">#{lastModifiedDate,jdbcType=TIMESTAMP},</if>-->
-<!--            <if test="version != null">#{version,jdbcType=VARCHAR},</if>-->
-<!--        </trim>-->
-<!--    </insert>-->
+    <!--        insert into t_app-->
+    <!--        <trim prefix="(" suffix=")" suffixOverrides=",">-->
+    <!--            <if test="id != null">id,</if>-->
+    <!--            <if test="appId != null">app_id,</if>-->
+    <!--            <if test="name != null">name,</if>-->
+    <!--            <if test="priceCn != null">price_cn,</if>-->
+    <!--            <if test="priceUs != null">price_us,</if>-->
+    <!--            <if test="priceStr != null">price_str,</if>-->
+    <!--            <if test="priceStrCn != null">price_str_cn,</if>-->
+    <!--            <if test="priceStrUs != null">price_str_us,</if>-->
+    <!--            <if test="usFlag != null">us_flag,</if>-->
+    <!--            <if test="urlCn != null">url_cn,</if>-->
+    <!--            <if test="urlUs != null">url_us,</if>-->
+    <!--            <if test="delFlag != null">del_flag,</if>-->
+    <!--            <if test="createUserCode != null">create_user_code,</if>-->
+    <!--            <if test="createUserName != null">create_user_name,</if>-->
+    <!--            <if test="createdDate != null">created_date,</if>-->
+    <!--            <if test="lastModifiedCode != null">last_modified_code,</if>-->
+    <!--            <if test="lastModifiedName != null">last_modified_name,</if>-->
+    <!--            <if test="lastModifiedDate != null">last_modified_date,</if>-->
+    <!--            <if test="version != null">version,</if>-->
+    <!--        </trim>-->
+    <!--        values-->
+    <!--        <trim prefix="(" suffix=")" suffixOverrides=",">-->
+    <!--            <if test="id != null">#{id,jdbcType=BIGINT},</if>-->
+    <!--            <if test="appId != null">#{appId,jdbcType=VARCHAR},</if>-->
+    <!--            <if test="name != null">#{name,jdbcType=VARCHAR},</if>-->
+    <!--            <if test="priceCn != null">#{priceCn,jdbcType=INTEGER},</if>-->
+    <!--            <if test="priceUs != null">#{priceUs,jdbcType=DECIMAL},</if>-->
+    <!--            <if test="priceStr != null">#{priceStr,jdbcType=VARCHAR},</if>-->
+    <!--            <if test="priceStrCn != null">#{priceStrCn,jdbcType=VARCHAR},</if>-->
+    <!--            <if test="priceStrUs != null">#{priceStrUs,jdbcType=VARCHAR},</if>-->
+    <!--            <if test="usFlag != null">#{usFlag,jdbcType=TINYINT},</if>-->
+    <!--            <if test="urlCn != null">#{urlCn,jdbcType=VARCHAR},</if>-->
+    <!--            <if test="urlUs != null">#{urlUs,jdbcType=VARCHAR},</if>-->
+    <!--            <if test="delFlag != null">#{delFlag,jdbcType=INTEGER},</if>-->
+    <!--            <if test="createUserCode != null">#{createUserCode,jdbcType=VARCHAR},</if>-->
+    <!--            <if test="createUserName != null">#{createUserName,jdbcType=VARCHAR},</if>-->
+    <!--            <if test="createdDate != null">#{createdDate,jdbcType=TIMESTAMP},</if>-->
+    <!--            <if test="lastModifiedCode != null">#{lastModifiedCode,jdbcType=VARCHAR},</if>-->
+    <!--            <if test="lastModifiedName != null">#{lastModifiedName,jdbcType=VARCHAR},</if>-->
+    <!--            <if test="lastModifiedDate != null">#{lastModifiedDate,jdbcType=TIMESTAMP},</if>-->
+    <!--            <if test="version != null">#{version,jdbcType=VARCHAR},</if>-->
+    <!--        </trim>-->
+    <!--    </insert>-->
 </mapper>

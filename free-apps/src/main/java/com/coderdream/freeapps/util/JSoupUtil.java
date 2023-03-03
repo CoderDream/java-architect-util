@@ -3,6 +3,7 @@ package com.coderdream.freeapps.util;
 import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.TypeReference;
 import com.coderdream.freeapps.model.App;
 import com.coderdream.freeapps.model.AppInfo;
 import org.jsoup.Connection;
@@ -120,29 +121,46 @@ public class JSoupUtil {
         appId = "id1514091454";
         appId = "id1315296783";
         appId = "id1589860768";
-        App app = JSoupUtil.crawlerApp(appId);
+        App app = JSoupUtil.crawlerApp(appId, null);
         System.out.println(app);
     }
 
-    public static App crawlerApp(String appId) {
+    public static App crawlerApp(App app) {
+        return crawlerApp(app.getAppId(), app.getUsFlag());
+    }
+
+    public static App crawlerApp(String appId, Integer usFlag) {
         App app = new App();
         String urlCn = Constants.URL_CN_BASE + appId + Constants.URL_PLATFORM_IPHONE;
         app.setUrlCn(urlCn);
         String urlUs = Constants.URL_US_BASE + appId + Constants.URL_PLATFORM_IPHONE;
         app.setUrlUs(urlUs);
         app.setAppId(appId);
+        Document document;
 
-        Document document = JSoupUtil.getDocument(urlCn);
-        if (document == null) {
-            System.out.println("urlCn" + appId + " is empty");
-            document = JSoupUtil.getDocument(urlUs);
+        if(usFlag == null || usFlag == 0) {
+            document = JSoupUtil.getDocument(urlCn);
             if (document == null) {
                 System.out.println("urlCn" + appId + " is empty");
+                document = JSoupUtil.getDocument(urlUs);
+
+                if (document == null) {
+                    System.out.println("urlCn：" + appId + " is empty");
+                    app.setRemark(appId + " 已下架！");
+                    app.setDelFlag(1); // 设为删除
+                    return app;
+                }
+            }
+        } else {
+            document = JSoupUtil.getDocument(urlUs);
+            if (document == null) {
+                System.out.println("urlUs：" + appId + " is empty");
                 app.setRemark(appId + " 已下架！");
                 app.setDelFlag(1); // 设为删除
                 return app;
             }
         }
+
 //        Element firstHeading = document.getElementsByClass("").first();
 //        System.out.println(firstHeading.text());
         // inline-list__item inline-list__item--bulleted app-header__list__item--price
@@ -174,21 +192,13 @@ public class JSoupUtil {
 
 //        String category = getContentByClass(document, APP_CATEGORY_CLASS);
 //        app.setCategory(category);
-//        String priceStr = getContentByClass(document, PRICE_CLASS);
-//        String priceInAppPurchaseStr = getContentByClass(document, PRICE_IN_APP_PURCHASE_CLASS);
-//        if (StrUtil.isNotEmpty(priceInAppPurchaseStr)) {
-//            priceStr += Constants.MIDDLE_POINT + priceInAppPurchaseStr; // ••
-//            String listWithNumbersItem = getContentByClass(document, PRICE_LIST_WITH_NUMBERS_ITEM_CLASS);
-////            System.out.println(listWithNumbersItem);
-//
-//
-//            List<String> listWithNumbersItems = getAppInPurchaseContentListByClass(document, PRICE_LIST_WITH_NUMBERS_ITEM_CLASS);
-//            System.out.println(listWithNumbersItems);
-//        }
-//        app.setPriceStr(priceStr);
-        //
-//        String appSizeStr = getContentByClass(document, INFORMATION_LIST_ITEM_DEFINITION_CLASS);
-//        app.setAppSizeStr(appSizeStr);
+        String priceStr = getContentByClass(document, PRICE_CLASS);
+        String priceInAppPurchaseStr = getContentByClass(document, PRICE_IN_APP_PURCHASE_CLASS);
+        if (StrUtil.isNotEmpty(priceInAppPurchaseStr)) {
+            priceStr += Constants.MIDDLE_POINT + priceInAppPurchaseStr; // •
+            app.setInPurchaseFlag(1); // 有应用内购买
+        }
+        app.setPriceStr(priceStr);
 
         AppInfo appInfo = getAppInfoByClass(document, INFORMATION_LIST_ITEM_DEFINITION_CLASS);
         System.out.println(appInfo);
@@ -196,7 +206,7 @@ public class JSoupUtil {
         app.setAppSizeStr(appInfo.getSize());
         app.setCategory(appInfo.getCategory());
         app.setAge(appInfo.getAge());
-        app.setPriceStr(appInfo.getPrice());
+//        app.setPriceStr(appInfo.getPrice()); 不能用这里的价格信息，因为不包含是否应用内购
         app.setLanguage(appInfo.getLanguage());
         app.setCopyright(appInfo.getCopyright());
         Map<String, String> compatibility = appInfo.getCompatibility();
@@ -231,8 +241,25 @@ public class JSoupUtil {
             String jsonAppInPurchase = JSON.toJSONString(appInPurchase);//map转String
             JSONObject jsonObjectAppInPurchase = JSON.parseObject(jsonAppInPurchase);//String转json
             app.setAppInPurchase(jsonObjectAppInPurchase);
-        }
+            Map<String, String> params = JSONObject.parseObject(jsonObjectAppInPurchase.toJSONString(), new TypeReference<Map<String, String>>() {
+            });
+            Double appInPurchaseTotal = new Double(0);
+            for (String value : params.values()) {
+                System.out.println(value);
+                String realPriceStr = AppStringUtils.filterPriceStr(value);
+                if (StrUtil.isNotEmpty(realPriceStr)) {
+                    appInPurchaseTotal += Double.valueOf(realPriceStr);
+                }
+            }
+            // 应用内购限免
+            if (appInPurchaseTotal == 0.0) {
+                app.setInPurchaseFreeFlag(1);
+            } else {
+                app.setInPurchaseFreeFlag(0);
+            }
 
+            System.out.println(params);
+        }
 
         String ratingStr = getContentByClass(document, WE_STAR_RATING_CLASS);
         app.setRatingStr(ratingStr);
@@ -396,10 +423,70 @@ public class JSoupUtil {
         if (elements != null) {
             if (elements.size() == 8) {
                 parseElementEight(appInfo, elements);
+
+                Element element6 = elements.get(5);
+                if (element6 != null) {
+                    TextNode titleNode06 = (TextNode) element6.childNode(0);
+                    String age = titleNode06.text();
+                    appInfo.setAge(age.trim());
+                }
+
+                Element element7 = elements.get(6);
+                if (element7 != null) {
+                    if (element7.childNodeSize() > 0) {
+                        if (element7.childNode(0) instanceof TextNode) {
+                            TextNode titleNode07 = (TextNode) element7.childNode(0);
+                            String copyright = titleNode07.text();
+                            appInfo.setCopyright(copyright);
+                        }
+                    }
+                }
+
+                Element element8 = elements.get(7);
+                if (element8 != null) {
+                    if (element8.childNodeSize() > 0) {
+                        if (element8.childNode(0) instanceof TextNode) {
+                            TextNode titleNode08 = (TextNode) element8.childNode(0);
+                            String price = titleNode08.text();
+                            appInfo.setPrice(price);
+                        }
+                    }
+                }
             }
 
             if (elements.size() == 9) {
                 parseElementEight(appInfo, elements);
+
+                Element element6 = elements.get(5);
+                if (element6 != null) {
+                    TextNode titleNode06 = (TextNode) element6.childNode(0);
+                    String age = titleNode06.text();
+                    appInfo.setAge(age.trim());
+                }
+
+                Element element7 = elements.get(6);
+                if (element7 != null) {
+                    if (element7.childNodeSize() > 0) {
+                        if (element7.childNode(0) instanceof TextNode) {
+                            TextNode titleNode07 = (TextNode) element7.childNode(0);
+                            String copyright = titleNode07.text();
+                            appInfo.setCopyright(copyright);
+                        }
+                    }
+                }
+
+                Element element8 = elements.get(7);
+                if (element8 != null) {
+                    if (element8.childNodeSize() > 0) {
+                        if (element8.childNode(0) instanceof TextNode) {
+                            TextNode titleNode08 = (TextNode) element8.childNode(0);
+                            String price = titleNode08.text();
+                            appInfo.setPrice(price);
+                        }
+                    }
+                }
+
+
                 Element elementValue;
                 Element elementKey;
                 Element element9 = elements.get(8);
@@ -416,6 +503,74 @@ public class JSoupUtil {
                             if (element9Temp.childNodeSize() == 5) {
                                 elementKey = (Element) element9Temp.childNode(1);
                                 elementValue = (Element) element9Temp.childNode(3);
+                                appInPurchase.put(elementKey.text(), elementValue.text());
+                            }
+                        }
+                        appInfo.setAppInPurchase(appInPurchase);
+                    }
+                }
+            }
+
+            if (elements.size() == 10) {
+                parseElementEight(appInfo, elements);
+
+                Element element6 = elements.get(5);
+                if (element6 != null) {
+                    TextNode titleNode06 = (TextNode) element6.childNode(0);
+                    String age = titleNode06.text();
+                    appInfo.setAge(age.trim());
+                }
+
+                Element element7 = elements.get(6);
+                if (element7 != null) {
+                    if (element7.childNodeSize() > 0) {
+                        if (element7.childNode(0) instanceof TextNode) {
+                            TextNode titleNode07 = (TextNode) element7.childNode(0);
+                            String ageExtraInfo = titleNode07.text();
+                            appInfo.setAge(appInfo.getAge() + Constants.MIDDLE_POINT + ageExtraInfo);
+                        }
+                    }
+                }
+
+                Element element8 = elements.get(7);
+                if (element8 != null) {
+                    if (element8.childNodeSize() > 0) {
+                        if (element8.childNode(0) instanceof TextNode) {
+                            TextNode titleNode08 = (TextNode) element8.childNode(0);
+                            String copyright = titleNode08.text();
+                            appInfo.setCopyright(copyright);
+                        }
+                    }
+                }
+
+
+                Element element9 = elements.get(8);
+                if (element9 != null) {
+                    if (element9.childNodeSize() > 0) {
+                        if (element9.childNode(0) instanceof TextNode) {
+                            TextNode titleNode09 = (TextNode) element9.childNode(0);
+                            String price = titleNode09.text();
+                            appInfo.setPrice(price);
+                        }
+                    }
+                }
+
+                Element elementValue;
+                Element elementKey;
+                Element element10 = elements.get(9);
+                if (element10.childNodeSize() > 1) {
+                    Node temp = element10.childNode(1);
+                    if (temp.childNodeSize() > 1) {
+                        Element element10Data = (Element) temp.childNode(1);
+                        int element10Size = element10Data.childNodeSize();
+                        Element element10Temp;
+                        Map<String, String> appInPurchase = new LinkedHashMap<>();
+                        for (int i10 = 0; i10 < element10Size - 2; i10++) {
+                            i10++;
+                            element10Temp = (Element) element10Data.childNode(i10);
+                            if (element10Temp.childNodeSize() == 5) {
+                                elementKey = (Element) element10Temp.childNode(1);
+                                elementValue = (Element) element10Temp.childNode(3);
                                 appInPurchase.put(elementKey.text(), elementValue.text());
                             }
                         }
@@ -462,7 +617,7 @@ public class JSoupUtil {
         Element element5 = elements.get(4);
         if (element5 != null) {
             if (element5.childNodeSize() > 1) {
-                if(element5.childNode(1) instanceof Element) {
+                if (element5.childNode(1) instanceof Element) {
                     Node titleNode05 = element5.childNode(1).childNode(0);
                     String language = titleNode05.toString();
                     appInfo.setLanguage(language);
@@ -470,34 +625,7 @@ public class JSoupUtil {
             }
         }
 
-        Element element6 = elements.get(5);
-        if (element6 != null) {
-            TextNode titleNode06 = (TextNode) element6.childNode(0);
-            String age = titleNode06.text();
-            appInfo.setAge(age.trim());
-        }
 
-        Element element7 = elements.get(6);
-        if (element7 != null) {
-            if (element7.childNodeSize() > 0) {
-                if( element7.childNode(0) instanceof TextNode) {
-                    TextNode titleNode07 = (TextNode) element7.childNode(0);
-                    String copyright = titleNode07.text();
-                    appInfo.setCopyright(copyright);
-                }
-            }
-        }
-
-        Element element8 = elements.get(7);
-        if (element8 != null) {
-            if(element8.childNodeSize() > 0) {
-                if( element8.childNode(0) instanceof TextNode) {
-                    TextNode titleNode08 = (TextNode) element8.childNode(0);
-                    String price = titleNode08.text();
-                    appInfo.setPrice(price);
-                }
-            }
-        }
     }
 
 

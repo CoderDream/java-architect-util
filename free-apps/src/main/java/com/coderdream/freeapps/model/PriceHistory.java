@@ -31,6 +31,7 @@ public class PriceHistory implements Serializable {
     /**
      * 价格抓取日期
      */
+    @TableField("crawler_date")
     private Date crawlerDate;
 
     /**

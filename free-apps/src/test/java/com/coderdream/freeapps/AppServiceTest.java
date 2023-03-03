@@ -6,16 +6,17 @@ import com.coderdream.freeapps.dto.AppQueryPageDTO;
 import com.coderdream.freeapps.model.App;
 import com.coderdream.freeapps.model.CrawlerHistory;
 import com.coderdream.freeapps.model.FreeHistory;
-import com.coderdream.freeapps.service.AppService;
-import com.coderdream.freeapps.service.CrawlerHistoryService;
-import com.coderdream.freeapps.service.FreeHistoryService;
-import com.coderdream.freeapps.service.UserService;
+import com.coderdream.freeapps.model.PriceHistory;
+import com.coderdream.freeapps.service.*;
 import com.coderdream.freeapps.util.JSoupUtil;
 import com.coderdream.freeapps.vo.AppVO;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 import org.junit.jupiter.api.Test;
@@ -34,6 +35,9 @@ public class AppServiceTest {
 
     @Resource
     private CrawlerHistoryService crawlerHistoryService; //这里可能爆红，但是运行没问题
+
+    @Resource
+    private PriceHistoryService priceHistoryService; //这里可能爆红，但是运行没问题
 
     //    @Test
 //    public void testGetCount() {
@@ -127,14 +131,15 @@ public class AppServiceTest {
 //        appId = "id1514091454";
 //        appId = "id1315296783";
         appId = "id1065802380";//有排名 ranking
-        App app = JSoupUtil.crawlerApp(appId);
+        App app = JSoupUtil.crawlerApp(appId, null);
         appService.insertOrUpdateBatch(Arrays.asList(app));
     }
 
 
     @Test
     public void testCrawlerAppList() {
-        List<String> list = Arrays.asList("id1526996611",
+        List<String> list = Arrays.asList(
+                "id1526996611",
                 "id1478275612",
                 "id1568656727",
                 "id1598731910",
@@ -143,25 +148,45 @@ public class AppServiceTest {
                 "id543747638",
                 "id1539930489",
                 "id1637413102",
-                "id1550800427");
+                "id1550800427"
+        );
         List<App> newList;
-
+        List<PriceHistory> priceHistoryList;
+        PriceHistory priceHistory;
         if (!CollectionUtils.isEmpty(list)) {
             newList = new ArrayList<>();
+            priceHistoryList = new ArrayList<>();
             for (String appId : list) {
+                App appNew = JSoupUtil.crawlerApp(appId, null);
+                newList.add(appNew);
+
+                priceHistory = new PriceHistory();
+                BeanUtils.copyProperties(appNew, priceHistory);
+                DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+                String dateStr = dateFormat.format(new Date());
+                try {
+                    priceHistory.setCrawlerDate(dateFormat.parse(dateStr));
+                    priceHistoryList.add(priceHistory);
+                } catch (ParseException e) {
+                    throw new RuntimeException(e);
+                }
+
                 Integer period = new Random().nextInt(3000) + 2000;
                 try {
                     Thread.sleep(period);   // 休眠3秒
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
-                App appNew = JSoupUtil.crawlerApp(appId);
-                newList.add(appNew);
             }
 
             if (!CollectionUtils.isEmpty(newList)) {
                 System.out.println("###");
-//                appService.insertOrUpdateBatch(newList);
+                appService.insertOrUpdateBatch(newList);
+            }
+
+            if (!CollectionUtils.isEmpty(priceHistoryList)) {
+                System.out.println("###");
+                priceHistoryService.insertOrUpdateBatch(priceHistoryList);
             }
         }
     }
@@ -170,29 +195,46 @@ public class AppServiceTest {
     public void testCrawlerAppTotal() {
         List<App> list;
         List<App> newList;
-        int size = 181;
+        List<PriceHistory> priceHistoryList;
+        PriceHistory priceHistory;
+        int size = 200;
         Page<App> page;
-        for (int i = 160; i< size; i++ ) {
+        for (int i = 12; i < size; i++) {
             page = new Page<>(i, 10);//这里有 limit 后面两个参数 当前也起始索引index pageSize每页显示的条数
             appService.selectPage(page);//selectPage方法有两个参数，第一个分页对象，第二个参数Wrapper条件构造器
             if (page != null) {
                 list = page.getRecords();
                 if (!CollectionUtils.isEmpty(list)) {
                     newList = new ArrayList<>();
+                    priceHistoryList = new ArrayList<>();
                     for (App app : list) {
+
+                        App appNew = JSoupUtil.crawlerApp(app);
+                        newList.add(appNew);
+                        priceHistory = new PriceHistory();
+                        BeanUtils.copyProperties(appNew, priceHistory);
+                        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+                        String dateStr = dateFormat.format(new Date());
+                        try {
+                            priceHistory.setCrawlerDate(dateFormat.parse(dateStr));
+                            priceHistoryList.add(priceHistory);
+                        } catch (ParseException e) {
+                            throw new RuntimeException(e);
+                        }
                         System.out.println(app.getAppId());
-                        Integer period = new Random().nextInt(5000) + 3000;
+                        Integer period = new Random().nextInt(3000) + 1000;
                         try {
                             Thread.sleep(period);   // 休眠3秒
                         } catch (InterruptedException e) {
                             throw new RuntimeException(e);
                         }
-                        App appNew = JSoupUtil.crawlerApp(app.getAppId());
-                        newList.add(appNew);
                     }
 
                     if (!CollectionUtils.isEmpty(newList)) {
                         appService.insertOrUpdateBatch(newList);
+                    }
+                    if (!CollectionUtils.isEmpty(priceHistoryList)) {
+                        priceHistoryService.insertOrUpdateBatch(priceHistoryList);
                     }
                 }
             }
@@ -219,7 +261,7 @@ public class AppServiceTest {
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
-                    App appNew = JSoupUtil.crawlerApp(app.getAppId());
+                    App appNew = JSoupUtil.crawlerApp(app);
                     crawlerHistory = new CrawlerHistory();
                     BeanUtils.copyProperties(appNew, crawlerHistory);
                     System.out.println(appNew);

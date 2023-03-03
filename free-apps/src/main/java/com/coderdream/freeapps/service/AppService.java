@@ -38,5 +38,6 @@ public interface AppService {
   int insertOrUpdateBatch(List<App> appList);
 
   List<App> selectList(App app);
+
   IPage<App> selectPage(Page<App> page);
 }
