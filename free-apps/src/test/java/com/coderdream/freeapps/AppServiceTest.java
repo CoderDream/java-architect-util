@@ -131,6 +131,7 @@ public class AppServiceTest {
 //        appId = "id1514091454";
 //        appId = "id1315296783";
         appId = "id1065802380";//有排名 ranking
+        appId = "id1443533088";
         App app = JSoupUtil.crawlerApp(appId, null);
         appService.insertOrUpdateBatch(Arrays.asList(app));
     }
@@ -139,16 +140,25 @@ public class AppServiceTest {
     @Test
     public void testCrawlerAppList() {
         List<String> list = Arrays.asList(
-                "id1526996611",
-                "id1478275612",
-                "id1568656727",
-                "id1598731910",
-                "id1448666661",
-                "id1483377531",
-                "id543747638",
-                "id1539930489",
-                "id1637413102",
-                "id1550800427"
+//                "id1526996611",
+//                "id1478275612",
+//                "id1568656727",
+//                "id1598731910",
+//                "id1448666661",
+//                "id1483377531",
+//                "id543747638",
+//                "id1539930489",
+//                "id1637413102",
+//                "id1550800427",
+//                "id950326851",
+//                "id931188326",
+//                "id1536924612",
+//                "id1454412797", // del_flag 为空
+//                "id1443533088" ,// 搜韵
+//                "id1097323003","id1546838683"
+"id1400641344" // 无中英文
+//                ,
+//               "id1095539172" // Rating 1.2K id1095539172
         );
         List<App> newList;
         List<PriceHistory> priceHistoryList;

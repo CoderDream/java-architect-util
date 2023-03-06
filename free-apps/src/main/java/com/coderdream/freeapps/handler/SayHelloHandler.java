@@ -17,15 +17,15 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class SayHelloHandler {
 
-  private final UserService userService;
-  private final XxlUtil xxlUtil;
+    private final UserService userService;
+    private final XxlUtil xxlUtil;
 
-  @XxlJob(value = "sayHelloHandler")
-  public void execute() {
-    String param = XxlJobHelper.getJobParam();
-    userService.sayHelloToUser(param);
+    @XxlJob(value = "sayHelloHandler")
+    public void execute() {
+        String param = XxlJobHelper.getJobParam();
+        userService.sayHelloToUser(param);
 
-    long jobId = XxlJobHelper.getJobId();
-    xxlUtil.removeJob(jobId);
-  }
+        long jobId = XxlJobHelper.getJobId();
+        xxlUtil.removeJob(jobId);
+    }
 }

@@ -40,8 +40,8 @@ public class JavaMailSenderTest {
 
         MimeMessage mimeMessage = javaMailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true);
-        helper.setFrom("acoder@126.com");
-        helper.setTo("xulin.wh@qq.com");
+        helper.setFrom("xulin.wh@qq.com");
+        helper.setTo("acoder@126.com");
         helper.setSubject("主题：嵌入静态资源");
         helper.setText("<html><body><a href=\"http://www.baidu.com\" >百度</a></body></html>", true);
 

@@ -4,19 +4,23 @@ import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.TypeReference;
+import com.coderdream.freeapps.handler.DailyPriceHandler;
 import com.coderdream.freeapps.model.App;
 import com.coderdream.freeapps.model.AppInfo;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.*;
 import org.jsoup.select.Elements;
+import org.slf4j.Logger;
 import org.springframework.util.CollectionUtils;
 
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.*;
 
 public class JSoupUtil {
 
+    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(JSoupUtil.class);
     /**
      * 应用名称 product-header__title app-header__title
      */
@@ -121,6 +125,13 @@ public class JSoupUtil {
         appId = "id1514091454";
         appId = "id1315296783";
         appId = "id1589860768";
+        appId = "id1443533088";
+        appId = "id1536924612"; // 美区限免
+        appId = "id529433904"; // 找不到描述
+        appId = "id1071186450";
+        appId = "id1454412797"; // del_flag 为空
+        appId = "id1443533088"; // title相同
+        appId = "id1445387613"; // 1.3K
         App app = JSoupUtil.crawlerApp(appId, null);
         System.out.println(app);
     }
@@ -137,148 +148,198 @@ public class JSoupUtil {
         app.setUrlUs(urlUs);
         app.setAppId(appId);
         Document document;
-
-        if(usFlag == null || usFlag == 0) {
-            document = JSoupUtil.getDocument(urlCn);
-            if (document == null) {
-                System.out.println("urlCn" + appId + " is empty");
-                document = JSoupUtil.getDocument(urlUs);
-
+        try {
+            // 国区
+            if (usFlag == null || usFlag == 0) {
+                document = JSoupUtil.getDocument(urlCn);
                 if (document == null) {
-                    System.out.println("urlCn：" + appId + " is empty");
+                    document = JSoupUtil.getDocument(urlUs);
+
+                    if (document == null) {
+                        logger.error("urlCn：" + appId + " 已下架！");
+                        app.setRemark(appId + " 已下架！");
+                        app.setDelFlag(1); // 设为删除
+                        return app;
+                    }
+                    usFlag = 1;
+                    app.setUsFlag(1); // 美区
+                } else {
+                    usFlag = 0;
+                    app.setUsFlag(0); // 国区
+                }
+            }
+            // 美区
+            else {
+                document = JSoupUtil.getDocument(urlUs);
+                if (document == null) {
+                    logger.error("urlUs：" + appId + " 已下架！");
                     app.setRemark(appId + " 已下架！");
                     app.setDelFlag(1); // 设为删除
                     return app;
+                } else {
+                    usFlag = 1;
+                    app.setUsFlag(1); // 美区
                 }
             }
-        } else {
-            document = JSoupUtil.getDocument(urlUs);
-            if (document == null) {
-                System.out.println("urlUs：" + appId + " is empty");
-                app.setRemark(appId + " 已下架！");
-                app.setDelFlag(1); // 设为删除
-                return app;
-            }
-        }
-
-//        Element firstHeading = document.getElementsByClass("").first();
-//        System.out.println(firstHeading.text());
-        // inline-list__item inline-list__item--bulleted app-header__list__item--price
-        String title = getTitleByClass(document, APP_TITLE_CLASS);
-        app.setTitle(title.trim());
-        // 副标签
-        String subTitle = getContentByClass(document, APP_SUBTITLE_CLASS);
-        app.setSubTitle(subTitle.trim());
-        //
-        String designedFor = getContentByClass(document, DESIGNED_FOR_CLASS);
-        app.setDesignedFor(designedFor.trim());
-        //
-        List<String> mobileCompactList = getMobileCompactListByClass(document, MOBILE_COMPACT_CLASS);
-        if (!CollectionUtils.isEmpty(mobileCompactList)) {
-            int mobileCompactListSize = mobileCompactList.size();
-            // 评分+价格
-            if (mobileCompactListSize == 2) {
-                app.setRatingStr(mobileCompactList.get(0));
-                app.setPriceStr(mobileCompactList.get(1));
-            }
-            // 排名+评分+价格
-            if (mobileCompactListSize == 3) {
-                app.setRanking(mobileCompactList.get(0));
-                app.setRatingStr(mobileCompactList.get(1));
-                app.setPriceStr(mobileCompactList.get(2));
-            }
-        }
-
-
-//        String category = getContentByClass(document, APP_CATEGORY_CLASS);
-//        app.setCategory(category);
-        String priceStr = getContentByClass(document, PRICE_CLASS);
-        String priceInAppPurchaseStr = getContentByClass(document, PRICE_IN_APP_PURCHASE_CLASS);
-        if (StrUtil.isNotEmpty(priceInAppPurchaseStr)) {
-            priceStr += Constants.MIDDLE_POINT + priceInAppPurchaseStr; // •
-            app.setInPurchaseFlag(1); // 有应用内购买
-        }
-        app.setPriceStr(priceStr);
-
-        AppInfo appInfo = getAppInfoByClass(document, INFORMATION_LIST_ITEM_DEFINITION_CLASS);
-        System.out.println(appInfo);
-        app.setSupplier(appInfo.getSupplier());
-        app.setAppSizeStr(appInfo.getSize());
-        app.setCategory(appInfo.getCategory());
-        app.setAge(appInfo.getAge());
-//        app.setPriceStr(appInfo.getPrice()); 不能用这里的价格信息，因为不包含是否应用内购
-        app.setLanguage(appInfo.getLanguage());
-        app.setCopyright(appInfo.getCopyright());
-        Map<String, String> compatibility = appInfo.getCompatibility();
-        if (compatibility != null) {
-//            JSONObject jsonObjectCamp =JSONObject.parseObject(compatibility);
-//            app.setCompatibility(jsonObjectCamp);
-
-            String json = JSON.toJSONString(compatibility);//map转String
-            JSONObject jsonObject = JSON.parseObject(json);//String转json
-            app.setCompatibility(jsonObject);
-
-//            JSONObject obj = new JSONObject();
-//            {
-//                obj.put("key1", "value1");
-//                obj.put("key2", "value2");
-//                obj.put("key3", "value3");
-//            }
-//            Map<String, String> params = JSONObject.parseObject(obj.toJSONString(), new TypeReference<Map<String, String>>(){});
-//            System.out.println(params);
-//
-//            输出：{key3=value3, key2=value2, key1=value1}
-//————————————————
-//            版权声明：本文为CSDN博主「CatEatApple」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-//            原文链接：https://blog.csdn.net/CatEatApple/article/details/83926237
-        }
-
-        Map<String, String> appInPurchase = appInfo.getAppInPurchase();
-        if (appInPurchase != null) {
-//            JSONObject jsonObjectCamp =JSONObject.parseObject(compatibility);
-//            app.setCompatibility(jsonObjectCamp);
-
-            String jsonAppInPurchase = JSON.toJSONString(appInPurchase);//map转String
-            JSONObject jsonObjectAppInPurchase = JSON.parseObject(jsonAppInPurchase);//String转json
-            app.setAppInPurchase(jsonObjectAppInPurchase);
-            Map<String, String> params = JSONObject.parseObject(jsonObjectAppInPurchase.toJSONString(), new TypeReference<Map<String, String>>() {
-            });
-            Double appInPurchaseTotal = new Double(0);
-            for (String value : params.values()) {
-                System.out.println(value);
-                String realPriceStr = AppStringUtils.filterPriceStr(value);
-                if (StrUtil.isNotEmpty(realPriceStr)) {
-                    appInPurchaseTotal += Double.valueOf(realPriceStr);
+            // 标签（应用名称）
+            String title = getTitleByClass(document, APP_TITLE_CLASS);
+            app.setTitle(title.trim());
+            // 副标签
+            String subTitle = getContentByClass(document, APP_SUBTITLE_CLASS);
+            app.setSubTitle(subTitle.trim());
+            // 专为设计
+            String designedFor = getContentByClass(document, DESIGNED_FOR_CLASS);
+            app.setDesignedFor(designedFor.trim());
+            // 评分区
+            List<String> mobileCompactList = getMobileCompactListByClass(document, MOBILE_COMPACT_CLASS);
+            if (!CollectionUtils.isEmpty(mobileCompactList)) {
+                int mobileCompactListSize = mobileCompactList.size();
+                // 评分+价格
+                if (mobileCompactListSize == 2) {
+                    app.setRatingStr(mobileCompactList.get(0));
+                    app.setPriceStr(mobileCompactList.get(1));
+                }
+                // 排名+评分+价格
+                if (mobileCompactListSize == 3) {
+                    app.setRanking(mobileCompactList.get(0));
+                    app.setRatingStr(mobileCompactList.get(1));
+                    app.setPriceStr(mobileCompactList.get(2));
                 }
             }
-            // 应用内购限免
-            if (appInPurchaseTotal == 0.0) {
-                app.setInPurchaseFreeFlag(1);
+
+            // 价格标签（含是否内购）
+            String priceStr = getContentByClass(document, PRICE_CLASS);
+            String priceInAppPurchaseStr = getContentByClass(document, PRICE_IN_APP_PURCHASE_CLASS);
+            if (StrUtil.isNotEmpty(priceInAppPurchaseStr)) {
+                priceStr += Constants.MIDDLE_POINT + priceInAppPurchaseStr; // •
+                app.setInPurchaseFlag(1); // 有应用内购买
+            }
+            app.setPriceStr(priceStr);
+            // 详情
+            AppInfo appInfo = getAppInfoByClass(document, INFORMATION_LIST_ITEM_DEFINITION_CLASS);
+            System.out.println(appInfo);
+            if (StrUtil.isNotEmpty(appInfo.getSupplier())) {
+                app.setSupplier(appInfo.getSupplier());
             } else {
-                app.setInPurchaseFreeFlag(0);
+                logger.error("应用详情获取失败");
+            }
+            app.setAppSizeStr(appInfo.getSize());
+            app.setCategory(appInfo.getCategory());
+            app.setAge(appInfo.getAge());
+//        app.setPriceStr(appInfo.getPrice()); 不能用这里的价格信息，因为不包含是否应用内购
+            String priceStrAppInfo = appInfo.getPrice();
+            if (StrUtil.isNotEmpty(priceStrAppInfo)) {
+                String realPrice = AppStringUtils.filterPriceStr(priceStrAppInfo);
+
+                try {
+                    // 设置国区、美区价格
+                    if (StrUtil.isNotEmpty(realPrice)) {
+                        if (usFlag != null && usFlag == 1) {
+                            app.setPriceUs(BigDecimal.valueOf(Double.valueOf(realPrice)));
+                        } else {
+                            app.setPriceCn(Integer.valueOf(realPrice));
+                        }
+                    }
+                } catch (Exception e) {
+                    logger.error(e.getMessage());
+                }
+            } else {
+                logger.error("价格信息为空");
+            }
+            // 语言
+            app.setLanguage(appInfo.getLanguage());
+            // 版权
+            app.setCopyright(appInfo.getCopyright());
+            // 兼容性
+            Map<String, String> compatibility = appInfo.getCompatibility();
+            if (compatibility != null) {
+                String json = JSON.toJSONString(compatibility);//map转String
+                JSONObject jsonObject = JSON.parseObject(json);//String转json
+                app.setCompatibility(jsonObject);
             }
 
-            System.out.println(params);
+            Map<String, String> appInPurchase = appInfo.getAppInPurchase();
+            if (appInPurchase != null) {
+                // 参考：https://blog.csdn.net/CatEatApple/article/details/83926237
+                String jsonAppInPurchase = JSON.toJSONString(appInPurchase);//map转String
+                JSONObject jsonObjectAppInPurchase = JSON.parseObject(jsonAppInPurchase);//String转json
+                app.setAppInPurchase(jsonObjectAppInPurchase);
+                Map<String, String> params = JSONObject.parseObject(jsonObjectAppInPurchase.toJSONString(),
+                        new TypeReference<Map<String, String>>() {
+                        });
+                Double appInPurchaseTotal = new Double(0);
+                for (String value : params.values()) {
+                    String realPriceStr = AppStringUtils.filterPriceStr(value);
+                    if (StrUtil.isNotEmpty(realPriceStr)) {
+                        appInPurchaseTotal += Double.valueOf(realPriceStr);
+                    }
+                }
+                // 应用内购限免
+                if (appInPurchaseTotal == 0.0) {
+                    app.setInPurchaseFreeFlag(1);
+                } else {
+                    app.setInPurchaseFreeFlag(0);
+                }
+            }
+
+            String ratingStr = getContentByClass(document, WE_STAR_RATING_CLASS);
+            app.setRatingStr(ratingStr);
+            // 处理评分及投票人数
+            if (StrUtil.isNotEmpty(ratingStr) && ratingStr.split(Constants.MIDDLE_POINT).length == 2) {
+                String ratingTemp = ratingStr.split(Constants.MIDDLE_POINT)[0];
+                String rateAmountTemp = ratingStr.split(Constants.MIDDLE_POINT)[1];
+                rateAmountTemp = rateAmountTemp.replaceAll("个评分", "");
+                rateAmountTemp = rateAmountTemp.replaceAll("Ratings", "");
+                rateAmountTemp = rateAmountTemp.replaceAll("Rating", "");
+                if (StrUtil.isNotEmpty(ratingTemp)) {
+                    if (ratingTemp.lastIndexOf("K") != -1) {
+                        ratingTemp = ratingTemp.replaceAll("K", "");
+                        app.setRating(BigDecimal.valueOf(Double.valueOf(ratingTemp) * 1000));
+                    } else if (ratingTemp.lastIndexOf("万") != -1) {
+                        ratingTemp = ratingTemp.replaceAll("万", "");
+                        app.setRating(BigDecimal.valueOf(Double.valueOf(ratingTemp) * 10000));
+                    } else {
+                        app.setRating(BigDecimal.valueOf(Double.valueOf(ratingTemp)));
+                    }
+                }
+                if (StrUtil.isNotEmpty(rateAmountTemp)) {
+                    if (rateAmountTemp.lastIndexOf("万") != -1) {
+                        rateAmountTemp = rateAmountTemp.replaceAll("万", "");
+                        Double d = Double.valueOf(rateAmountTemp);
+                        d *= 10000;
+                        app.setRateAmount(d.intValue());
+                    } else if (rateAmountTemp.lastIndexOf("K") != -1) {
+                        rateAmountTemp = rateAmountTemp.replaceAll("K", "");
+                        Double d = Double.valueOf(rateAmountTemp);
+                        d *= 1000;
+                        app.setRateAmount(d.intValue());
+                    } else {
+                        app.setRateAmount(Integer.valueOf(AppStringUtils.filterPriceStr(rateAmountTemp.trim())));
+                    }
+                }
+            }
+            // 应用描述
+            String description = getContentByClass(document, SECTION_DESCRIPTION_CLASS);
+            // 设置国区、美区描述
+            if (usFlag != null && usFlag == 1) {
+                app.setDescriptionUs(description);
+            } else {
+                app.setDescriptionCn(description);
+            }
+            // 截图
+            List<String> screenshotsList = getSnapshotListByClass(document, SCREENSHOTS_LIST_CLASS);
+            Map<String, List<String>> stringListMap = new LinkedHashMap<>();
+            stringListMap.put(appId, screenshotsList);
+            if (stringListMap != null) {
+                String jsonSnapshotUrl = JSON.toJSONString(stringListMap);//map转String
+                JSONObject jsonObjectSnapshotUrl = JSON.parseObject(jsonSnapshotUrl);//String转json
+                app.setSnapshotUrl(jsonObjectSnapshotUrl);
+            }
+            app.setDelFlag(0);
+        } catch (Exception e) {
+            logger.error(e.getMessage());
+            e.printStackTrace();
         }
-
-        String ratingStr = getContentByClass(document, WE_STAR_RATING_CLASS);
-        app.setRatingStr(ratingStr);
-        System.out.println(getContentByClass(document, WE_RATING_COUNT_STAR_RATING_COUNT_CLASS));
-//        System.out.println(getContentByClass(document, WE_SCREENSHOT_VIEWER_SCREENSHOTS_CLASS));
-//        System.out.println(getContentListByClass(document, WE_SCREENSHOT_VIEWER_SCREENSHOTS_CLASS));
-        String description = getContentByClass(document, SECTION_DESCRIPTION_CLASS);
-        app.setDescriptionCn(description);
-
-
-        List<String> screenshotsList = getSnapshotListByClass(document, SCREENSHOTS_LIST_CLASS);
-        Map<String, List<String>> stringListMap = new LinkedHashMap<>();
-        stringListMap.put(appId, screenshotsList);
-        if (stringListMap != null) {
-            String jsonSnapshotUrl = JSON.toJSONString(stringListMap);//map转String
-            JSONObject jsonObjectSnapshotUrl = JSON.parseObject(jsonSnapshotUrl);//String转json
-            app.setSnapshotUrl(jsonObjectSnapshotUrl);
-        }
-
         return app;
     }
 
@@ -345,7 +406,6 @@ public class JSoupUtil {
                 Element elementRakingLevel2 = (Element) elementRaking.childNode(1);
                 if (elementRakingLevel2.childNodeSize() > 0) {
                     TextNode elementRakingLevel3 = (TextNode) elementRakingLevel2.childNode(0);
-//                    System.out.println(elementRakingLevel3.text());
                     stringList.add(elementRakingLevel3.text().trim());
                 }
             }
@@ -356,7 +416,6 @@ public class JSoupUtil {
                     Element elementRatingLevel3 = (Element) elementRatingLevel2.childNode(1);
                     if (elementRatingLevel3.childNodeSize() == 5) {
                         Element elementRatingLevel4 = (Element) elementRatingLevel3.childNode(3);
-//                        System.out.println(elementRatingLevel4.text());
                         stringList.add(elementRatingLevel4.text().trim());
                     }
                 }
@@ -368,11 +427,10 @@ public class JSoupUtil {
                     Element elementPriceLevel2 = (Element) o;
                     if (elementPriceLevel2.childNodeSize() > 0) {
                         TextNode elementPriceLevel3 = (TextNode) elementPriceLevel2.childNode(0);
-//                    System.out.println(elementPriceLevel3.text());
                         stringList.add(elementPriceLevel3.text().trim());
                     }
                 } else {
-                    System.out.println("##### elementPrice " + o.toString());
+                    logger.error("##### elementPrice " + o.toString());
                 }
             }
         }
@@ -420,165 +478,262 @@ public class JSoupUtil {
         AppInfo appInfo = new AppInfo();
         Elements elements = document.getElementsByClass(className);
 
-        if (elements != null) {
-            if (elements.size() == 8) {
-                parseElementEight(appInfo, elements);
+        Elements elementsNext = elements.next();
+        int index = 0;
 
-                Element element6 = elements.get(5);
-                if (element6 != null) {
-                    TextNode titleNode06 = (TextNode) element6.childNode(0);
-                    String age = titleNode06.text();
-                    appInfo.setAge(age.trim());
-                }
-
-                Element element7 = elements.get(6);
-                if (element7 != null) {
-                    if (element7.childNodeSize() > 0) {
-                        if (element7.childNode(0) instanceof TextNode) {
-                            TextNode titleNode07 = (TextNode) element7.childNode(0);
-                            String copyright = titleNode07.text();
-                            appInfo.setCopyright(copyright);
-                        }
+        //获取迭代器
+        Iterator it = elements.iterator();
+        while (it.hasNext()) {
+            Element element = (Element) it.next();
+            String text = element.text();
+            String tagName = element.tagName();
+            switch (index) {
+                case 0:
+                    if ("dd".equals(tagName)) {
+                        appInfo.setSupplier(text);
                     }
-                }
-
-                Element element8 = elements.get(7);
-                if (element8 != null) {
-                    if (element8.childNodeSize() > 0) {
-                        if (element8.childNode(0) instanceof TextNode) {
-                            TextNode titleNode08 = (TextNode) element8.childNode(0);
-                            String price = titleNode08.text();
-                            appInfo.setPrice(price);
-                        }
+                    break;
+                case 1:
+                    if ("dd".equals(tagName)) {
+                        appInfo.setSize(text);
                     }
-                }
-            }
-
-            if (elements.size() == 9) {
-                parseElementEight(appInfo, elements);
-
-                Element element6 = elements.get(5);
-                if (element6 != null) {
-                    TextNode titleNode06 = (TextNode) element6.childNode(0);
-                    String age = titleNode06.text();
-                    appInfo.setAge(age.trim());
-                }
-
-                Element element7 = elements.get(6);
-                if (element7 != null) {
-                    if (element7.childNodeSize() > 0) {
-                        if (element7.childNode(0) instanceof TextNode) {
-                            TextNode titleNode07 = (TextNode) element7.childNode(0);
-                            String copyright = titleNode07.text();
-                            appInfo.setCopyright(copyright);
-                        }
+                    break;
+                case 2:
+                    if ("dd".equals(tagName)) {
+                        appInfo.setCategory(text);
                     }
-                }
-
-                Element element8 = elements.get(7);
-                if (element8 != null) {
-                    if (element8.childNodeSize() > 0) {
-                        if (element8.childNode(0) instanceof TextNode) {
-                            TextNode titleNode08 = (TextNode) element8.childNode(0);
-                            String price = titleNode08.text();
-                            appInfo.setPrice(price);
-                        }
-                    }
-                }
-
-
-                Element elementValue;
-                Element elementKey;
-                Element element9 = elements.get(8);
-                if (element9.childNodeSize() > 1) {
-                    Node temp = element9.childNode(1);
-                    if (temp.childNodeSize() > 1) {
-                        Element element9Data = (Element) temp.childNode(1);
-                        int element9Size = element9Data.childNodeSize();
-                        Element element9Temp;
-                        Map<String, String> appInPurchase = new LinkedHashMap<>();
-                        for (int i9 = 0; i9 < element9Size - 2; i9++) {
-                            i9++;
-                            element9Temp = (Element) element9Data.childNode(i9);
-                            if (element9Temp.childNodeSize() == 5) {
-                                elementKey = (Element) element9Temp.childNode(1);
-                                elementValue = (Element) element9Temp.childNode(3);
-                                appInPurchase.put(elementKey.text(), elementValue.text());
+                    break;
+                case 3:
+                    if ("dd".equals(tagName)) {
+                        int element4Size = element.childNodeSize();
+                        Element element4Temp;
+                        Element elementKey;
+                        Element elementValue;
+                        Map<String, String> compatibility = new LinkedHashMap<>();
+                        for (int i4 = 0; i4 < element4Size - 1; i4++) {
+                            i4++;
+                            element4Temp = (Element) element.childNode(i4);
+                            if (element4Temp.childNodeSize() == 5) {
+                                elementKey = (Element) element4Temp.childNode(1);
+                                elementValue = (Element) element4Temp.childNode(3);
+                                compatibility.put(elementKey.text(), elementValue.text());
                             }
                         }
-                        appInfo.setAppInPurchase(appInPurchase);
+                        appInfo.setCompatibility(compatibility);
                     }
-                }
-            }
-
-            if (elements.size() == 10) {
-                parseElementEight(appInfo, elements);
-
-                Element element6 = elements.get(5);
-                if (element6 != null) {
-                    TextNode titleNode06 = (TextNode) element6.childNode(0);
-                    String age = titleNode06.text();
-                    appInfo.setAge(age.trim());
-                }
-
-                Element element7 = elements.get(6);
-                if (element7 != null) {
-                    if (element7.childNodeSize() > 0) {
-                        if (element7.childNode(0) instanceof TextNode) {
-                            TextNode titleNode07 = (TextNode) element7.childNode(0);
-                            String ageExtraInfo = titleNode07.text();
-                            appInfo.setAge(appInfo.getAge() + Constants.MIDDLE_POINT + ageExtraInfo);
-                        }
+                    break;
+                case 4:
+                    if ("dd".equals(tagName)) {
+                        appInfo.setLanguage(text);
                     }
-                }
-
-                Element element8 = elements.get(7);
-                if (element8 != null) {
-                    if (element8.childNodeSize() > 0) {
-                        if (element8.childNode(0) instanceof TextNode) {
-                            TextNode titleNode08 = (TextNode) element8.childNode(0);
-                            String copyright = titleNode08.text();
-                            appInfo.setCopyright(copyright);
-                        }
+                    break;
+                case 5:
+                    if ("dd".equals(tagName)) {
+                        appInfo.setAge(text);
                     }
-                }
-
-
-                Element element9 = elements.get(8);
-                if (element9 != null) {
-                    if (element9.childNodeSize() > 0) {
-                        if (element9.childNode(0) instanceof TextNode) {
-                            TextNode titleNode09 = (TextNode) element9.childNode(0);
-                            String price = titleNode09.text();
-                            appInfo.setPrice(price);
-                        }
+                    break;
+                case 6:
+                    if ("dd".equals(tagName)) {
+                        appInfo.setCopyright(text);
                     }
-                }
-
-                Element elementValue;
-                Element elementKey;
-                Element element10 = elements.get(9);
-                if (element10.childNodeSize() > 1) {
-                    Node temp = element10.childNode(1);
-                    if (temp.childNodeSize() > 1) {
-                        Element element10Data = (Element) temp.childNode(1);
-                        int element10Size = element10Data.childNodeSize();
-                        Element element10Temp;
-                        Map<String, String> appInPurchase = new LinkedHashMap<>();
-                        for (int i10 = 0; i10 < element10Size - 2; i10++) {
-                            i10++;
-                            element10Temp = (Element) element10Data.childNode(i10);
-                            if (element10Temp.childNodeSize() == 5) {
-                                elementKey = (Element) element10Temp.childNode(1);
-                                elementValue = (Element) element10Temp.childNode(3);
-                                appInPurchase.put(elementKey.text(), elementValue.text());
+                    break;
+                case 7:
+                    if ("dd".equals(tagName)) {
+                        appInfo.setPrice(text);
+                    }
+                    break;
+                case 8:
+                    if ("dd".equals(tagName)) {
+                        Element elementValue;
+                        Element elementKey;
+                        if (element.childNodeSize() > 1) {
+                            Node temp = element.childNode(1);
+                            if (temp.childNodeSize() > 1) {
+                                Element element9Data = (Element) temp.childNode(1);
+                                int element9Size = element9Data.childNodeSize();
+                                Element element9Temp;
+                                Map<String, String> appInPurchase = new LinkedHashMap<>();
+                                for (int i9 = 0; i9 < element9Size - 2; i9++) {
+                                    i9++;
+                                    element9Temp = (Element) element9Data.childNode(i9);
+                                    if (element9Temp.childNodeSize() == 5) {
+                                        elementKey = (Element) element9Temp.childNode(1);
+                                        elementValue = (Element) element9Temp.childNode(3);
+                                        appInPurchase.put(elementKey.text(), elementValue.text());
+                                    }
+                                }
+                                appInfo.setAppInPurchase(appInPurchase);
                             }
                         }
-                        appInfo.setAppInPurchase(appInPurchase);
                     }
-                }
+                    break;
+                default:
+                    break;
+            }
+            if ("dd".equals(tagName)) {
+                index++;
             }
         }
+
+//        if (elements != null) {
+//            if (elements.size() == 8) {
+//                parseElementEight(appInfo, elements);
+//
+//                Element element6 = elements.get(5);
+//                if (element6 != null) {
+//                    TextNode titleNode06 = (TextNode) element6.childNode(0);
+//                    String age = titleNode06.text();
+//                    appInfo.setAge(age.trim());
+//                }
+//
+//                Element element7 = elements.get(6);
+//                if (element7 != null) {
+//                    if (element7.childNodeSize() > 0) {
+//                        if (element7.childNode(0) instanceof TextNode) {
+//                            TextNode titleNode07 = (TextNode) element7.childNode(0);
+//                            String copyright = titleNode07.text();
+//                            appInfo.setCopyright(copyright);
+//                        }
+//                    }
+//                }
+//
+//                Element element8 = elements.get(7);
+//                if (element8 != null) {
+//                    if (element8.childNodeSize() > 0) {
+//                        if (element8.childNode(0) instanceof TextNode) {
+//                            TextNode titleNode08 = (TextNode) element8.childNode(0);
+//                            String price = titleNode08.text();
+//                            appInfo.setPrice(price);
+//                        }
+//                    }
+//                }
+//            }
+//
+//            if (elements.size() == 9) {
+//                parseElementEight(appInfo, elements);
+//
+//                Element element6 = elements.get(5);
+//                if (element6 != null) {
+//                    TextNode titleNode06 = (TextNode) element6.childNode(0);
+//                    String age = titleNode06.text();
+//                    appInfo.setAge(age.trim());
+//                }
+//
+//                Element element7 = elements.get(6);
+//                if (element7 != null) {
+//                    if (element7.childNodeSize() > 0) {
+//                        if (element7.childNode(0) instanceof TextNode) {
+//                            TextNode titleNode07 = (TextNode) element7.childNode(0);
+//                            String copyright = titleNode07.text();
+//                            appInfo.setCopyright(copyright);
+//                        }
+//                    }
+//                }
+//
+//                Element element8 = elements.get(7);
+//                if (element8 != null) {
+//                    if (element8.childNodeSize() > 0) {
+//                        if (element8.childNode(0) instanceof TextNode) {
+//                            TextNode titleNode08 = (TextNode) element8.childNode(0);
+//                            String price = titleNode08.text();
+//                            appInfo.setPrice(price);
+//                        }
+//                    }
+//                }
+//
+//
+//                Element elementValue;
+//                Element elementKey;
+//                Element element9 = elements.get(8);
+//                if (element9.childNodeSize() > 1) {
+//                    Node temp = element9.childNode(1);
+//                    if (temp.childNodeSize() > 1) {
+//                        Element element9Data = (Element) temp.childNode(1);
+//                        int element9Size = element9Data.childNodeSize();
+//                        Element element9Temp;
+//                        Map<String, String> appInPurchase = new LinkedHashMap<>();
+//                        for (int i9 = 0; i9 < element9Size - 2; i9++) {
+//                            i9++;
+//                            element9Temp = (Element) element9Data.childNode(i9);
+//                            if (element9Temp.childNodeSize() == 5) {
+//                                elementKey = (Element) element9Temp.childNode(1);
+//                                elementValue = (Element) element9Temp.childNode(3);
+//                                appInPurchase.put(elementKey.text(), elementValue.text());
+//                            }
+//                        }
+//                        appInfo.setAppInPurchase(appInPurchase);
+//                    }
+//                }
+//            }
+//
+//            if (elements.size() == 10) {
+//                parseElementEight(appInfo, elements);
+//
+//                Element element6 = elements.get(5);
+//                if (element6 != null) {
+//                    TextNode titleNode06 = (TextNode) element6.childNode(0);
+//                    String age = titleNode06.text();
+//                    appInfo.setAge(age.trim());
+//                }
+//
+//                Element element7 = elements.get(6);
+//                if (element7 != null) {
+//                    if (element7.childNodeSize() > 0) {
+//                        if (element7.childNode(0) instanceof TextNode) {
+//                            TextNode titleNode07 = (TextNode) element7.childNode(0);
+//                            String ageExtraInfo = titleNode07.text();
+//                            appInfo.setAge(appInfo.getAge() + Constants.MIDDLE_POINT + ageExtraInfo);
+//                        }
+//                    }
+//                }
+//
+//                Element element8 = elements.get(7);
+//                if (element8 != null) {
+//                    if (element8.childNodeSize() > 0) {
+//                        if (element8.childNode(0) instanceof TextNode) {
+//                            TextNode titleNode08 = (TextNode) element8.childNode(0);
+//                            String copyright = titleNode08.text();
+//                            appInfo.setCopyright(copyright);
+//                        }
+//                    }
+//                }
+//
+//
+//                Element element9 = elements.get(8);
+//                if (element9 != null) {
+//                    if (element9.childNodeSize() > 0) {
+//                        if (element9.childNode(0) instanceof TextNode) {
+//                            TextNode titleNode09 = (TextNode) element9.childNode(0);
+//                            String price = titleNode09.text();
+//                            appInfo.setPrice(price);
+//                        }
+//                    }
+//                }
+//
+//                Element elementValue;
+//                Element elementKey;
+//                Element element10 = elements.get(9);
+//                if (element10.childNodeSize() > 1) {
+//                    Node temp = element10.childNode(1);
+//                    if (temp.childNodeSize() > 1) {
+//                        Element element10Data = (Element) temp.childNode(1);
+//                        int element10Size = element10Data.childNodeSize();
+//                        Element element10Temp;
+//                        Map<String, String> appInPurchase = new LinkedHashMap<>();
+//                        for (int i10 = 0; i10 < element10Size - 2; i10++) {
+//                            i10++;
+//                            element10Temp = (Element) element10Data.childNode(i10);
+//                            if (element10Temp.childNodeSize() == 5) {
+//                                elementKey = (Element) element10Temp.childNode(1);
+//                                elementValue = (Element) element10Temp.childNode(3);
+//                                appInPurchase.put(elementKey.text(), elementValue.text());
+//                            }
+//                        }
+//                        appInfo.setAppInPurchase(appInPurchase);
+//                    }
+//                }
+//            }
+//        }
         return appInfo;
     }
 
@@ -644,11 +799,7 @@ public class JSoupUtil {
 
         if (elements != null) {
             Element elementSnapshotLevel1 = elements.get(0);
-            // 价格
-
             if (elementSnapshotLevel1 != null && elementSnapshotLevel1.childNodeSize() > 1) {
-//                Element elementRatingLevel2 = (Element) elementSnapshotLevel1.childNode(1);
-
                 if (elementSnapshotLevel1.childNodeSize() > 5) {
                     int size = elementSnapshotLevel1.childNodeSize();
                     for (int i = 2; i < size - 1; i++) {
@@ -660,29 +811,20 @@ public class JSoupUtil {
 
                                 Element elementLevel3 = (Element) elementLevel2.childNode(1);
                                 if (elementLevel3.childNodeSize() > 4) {
-
                                     Element elementLevel41 = (Element) elementLevel3.childNode(1);
-
                                     Attributes attributes41 = elementLevel41.attributes();
-//                                attributes41.iterator();
                                     //获取迭代器
                                     Iterator it = attributes41.iterator();
                                     while (it.hasNext()) {
                                         Attribute element = (Attribute) it.next();
-//                                    Element element = (Element) it.next();
-////            Node titleNode = element.child(0).childNode(0);
-//                                    Node titleNode = element.childNode(0);
-//                                    stringList.add(titleNode.toString());
-                                        //遍历中。。。。。。
-//                                        System.out.println(element.getKey());
-//                                        System.out.println(element.getValue());
+
                                         String value = element.getValue();
                                         int index = value.indexOf(Constants.SNAPSHOT_JPG_SUFFIX);
                                         if (index != -1) {
+                                            // 找到从index开始往回的第一个http位置
                                             String beginPart = value.substring(0, index);
                                             int indexHttp = beginPart.lastIndexOf("http");
                                             String url = value.substring(indexHttp, index + 3);
-//                                            System.out.println(url);
                                             stringList.add(url);
                                         }
                                         index = value.indexOf(Constants.SNAPSHOT_PNG_SUFFIX);
@@ -690,44 +832,23 @@ public class JSoupUtil {
                                             String beginPart = value.substring(0, index);
                                             int indexHttp = beginPart.lastIndexOf("http");
                                             String url = value.substring(indexHttp, index + 3);
-//                                            System.out.println(url);
                                             stringList.add(url);
                                         }
                                     }
-//                                System.out.println(attributes.toString());
-                                    //String[]
-                                    Object element42 = elementLevel3.childNode(2);
                                     Object element43 = elementLevel3.childNode(3);
-//                                Object element44 = elementLevel3.childNode(4);
-//                                Object element45 = elementLevel3.childNode(5);
-
-
-//                                Element elementLevel42 = (Element) elementLevel3.childNode(2);
                                     if (element43 instanceof Element) {
                                         Element elementLevel43 = (Element) element43;
-//                                Element elementLevel44 = (Element) elementLevel3.childNode(4);
-//                                    Element elementLevel45 = (Element) elementLevel3.childNode(5);
-
                                         Attributes attributes43 = elementLevel43.attributes();
-//                                attributes42.iterator();
                                         //获取迭代器
                                         it = attributes43.iterator();
                                         while (it.hasNext()) {
                                             Attribute element = (Attribute) it.next();
-//                                    Element element = (Element) it.next();
-////            Node titleNode = element.child(0).childNode(0);
-//                                    Node titleNode = element.childNode(0);
-//                                    stringList.add(titleNode.toString());
-                                            //遍历中。。。。。。
-//                                            System.out.println(element.getKey());
-//                                            System.out.println(element.getValue());
                                             String value = element.getValue();
                                             int index = value.indexOf(Constants.SNAPSHOT_JPG_SUFFIX);
                                             if (index != -1) {
                                                 String beginPart = value.substring(0, index);
                                                 int indexHttp = beginPart.lastIndexOf("http");
                                                 String url = value.substring(indexHttp, index + 3);
-//                                                System.out.println(url);
                                                 stringList.add(url);
                                             }
                                             index = value.indexOf(Constants.SNAPSHOT_PNG_SUFFIX);
@@ -735,7 +856,6 @@ public class JSoupUtil {
                                                 String beginPart = value.substring(0, index);
                                                 int indexHttp = beginPart.lastIndexOf("http");
                                                 String url = value.substring(indexHttp, index + 3);
-//                                                System.out.println(url);
                                                 stringList.add(url);
                                             }
                                         }
@@ -747,11 +867,6 @@ public class JSoupUtil {
                 }
             }
         }
-
-//        for (String str: stringList) {
-//            System.out.println("url:  ###" + str);
-//        }
-
         return stringList;
     }
 

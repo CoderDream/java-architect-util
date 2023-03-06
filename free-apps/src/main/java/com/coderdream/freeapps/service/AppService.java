@@ -14,30 +14,38 @@ import java.util.List;
 
 public interface AppService {
 
-  // 获取分页列表
-  IPage<AppVO> queryPage(AppQueryPageDTO dto);
+    // 获取分页列表
+    IPage<AppVO> queryPage(AppQueryPageDTO dto);
 
-  // 获取列表
-  List<AppVO> queryList(AppDTO dto);
+    // 获取列表
+    List<AppVO> queryList(AppDTO dto);
 
-  // 获取详情
-  AppVO get(Long id);
+    // 获取详情
+    AppVO get(Long id);
 
-  // 新增
-  Boolean add(AppDTO dto);
+    // 新增
+    Boolean add(AppDTO dto);
 
-  // 编辑
-  Boolean edit(AppDTO dto);
+    // 编辑
+    Boolean edit(AppDTO dto);
 
-  // 删除
-  Boolean delete(String id);
+    // 删除
+    Boolean delete(String id);
 
 
-  int insertSelective(App app);
+    int insertSelective(App app);
 
-  int insertOrUpdateBatch(List<App> appList);
+    int insertOrUpdateBatch(List<App> appList);
 
-  List<App> selectList(App app);
+    List<App> selectList(App app);
 
-  IPage<App> selectPage(Page<App> page);
+    /**
+     * 有效的App列表
+     *
+     * @param app
+     * @return
+     */
+    List<App> selectTodoList(App app);
+
+    IPage<App> selectPage(Page<App> page);
 }

@@ -1,5 +1,6 @@
 package com.coderdream.autogenvedio.util;
 
+import com.beust.ah.A;
 import com.coderdream.autogenvedio.entity.AppBrief;
 import org.springframework.util.CollectionUtils;
 
@@ -39,7 +40,12 @@ public class CutPicture {
 
         List<AppBrief> appBriefList = BaseUtils.genBrief();
 
+        System.out.println("[");
+        for (AppBrief appBrief:appBriefList) {
+            System.out.println("\"" + appBrief.getAppId()+"\"");
+        }
 
+        System.out.println("]");
         getSnapshotTemp(appBriefList);
     }
 

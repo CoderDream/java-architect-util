@@ -27,7 +27,7 @@ import java.util.List;
  * @version：3.0
  */
 @Component
-public class MinioUtil {
+public class MinioUtil2 {
 
     @Value("${minio.bucketName}")
     private String bucketName;

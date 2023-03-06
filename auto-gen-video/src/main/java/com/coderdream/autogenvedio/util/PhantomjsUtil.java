@@ -49,9 +49,6 @@ public class PhantomjsUtil {
                 e.printStackTrace();
             }
         }
-
-
-
     }
 
     public static void saveImage(String url, String path) {

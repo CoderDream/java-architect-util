@@ -1,11 +1,20 @@
 #minio:
 #  url: http://172.16.104.110:9000
 #  accessKey: admin
-#  secretKey: 12345678
-#  bucketName: dly
+##  secretKey: 12345678
+##  bucketName: dly
+## åºç¨åç§°
+#  spring.application.name=demo
+#
+#  # åºç¨æå¡ WEB è®¿é®ç«¯å£
+#  server.port=8080
 
 
 spring:
+  application:
+    name: minio-demo
+
+
   # 配置文件上传大小限制
   servlet:
     multipart:
@@ -16,4 +25,5 @@ minio:
   accessKey: admin
   secretKey: admin123
   bucketName: test
-
+server:
+  port: 8888

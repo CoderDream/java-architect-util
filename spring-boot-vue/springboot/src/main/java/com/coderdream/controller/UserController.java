@@ -2,6 +2,7 @@ package com.coderdream.controller;
 
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.coderdream.common.Result;
@@ -53,10 +54,16 @@ public class UserController {
     public Result<?> findPage(@RequestParam(defaultValue = "1") Integer pageNum,
                               @RequestParam(defaultValue = "10") Integer pageSize,
                               @RequestParam(defaultValue = "") String search) {
-        LambdaQueryWrapper<User> wrapper = Wrappers.<User>lambdaQuery();
+//        LambdaQueryWrapper<User> wrapper = Wrappers.<User>lambdaQuery();
+//        if (StrUtil.isNotBlank(search)) {
+//            wrapper.like(User::getNickName, search);
+//        }
+
+        QueryWrapper<User> wrapper = new QueryWrapper<>();
         if (StrUtil.isNotBlank(search)) {
-            wrapper.like(User::getNickName, search);
+            wrapper.like("nick_name", search);
         }
+
         Page<User> userPage = userMapper.selectPage(new Page<>(pageNum, pageSize), wrapper);
         return Result.success(userPage);
     }

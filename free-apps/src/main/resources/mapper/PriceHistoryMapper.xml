@@ -7,7 +7,7 @@
     <resultMap id="BaseResultMap" type="com.coderdream.freeapps.model.PriceHistory">
         <id property="id" column="id" jdbcType="BIGINT"/>
         <result property="appId" column="app_id" jdbcType="VARCHAR"/>
-        <result property="crawlerDate" column="crawler_date" jdbcType="TIMESTAMP"/>
+        <result property="crawlerDate" column="crawler_date" jdbcType="DATE"/>
         <result property="title" column="title" jdbcType="VARCHAR"/>
         <result property="subTitle" column="sub_title" jdbcType="VARCHAR"/>
         <result property="designedFor" column="designed_for" jdbcType="VARCHAR"/>
@@ -96,7 +96,7 @@
         version)
         values
         <foreach collection="priceHistoryCollection" item="item" separator=",">
-            (#{item.id,jdbcType=NUMERIC},#{item.appId,jdbcType=VARCHAR},#{item.crawlerDate,jdbcType=TIMESTAMP},
+            (#{item.id,jdbcType=NUMERIC},#{item.appId,jdbcType=VARCHAR},#{item.crawlerDate,jdbcType=DATE},
             #{item.title,jdbcType=VARCHAR},#{item.subTitle,jdbcType=VARCHAR},#{item.designedFor,jdbcType=VARCHAR},
             #{item.ranking,jdbcType=VARCHAR},#{item.ratingStr,jdbcType=VARCHAR},#{item.rating,jdbcType=DECIMAL},
             #{item.rateAmount,jdbcType=NUMERIC},#{item.priceCn,jdbcType=NUMERIC},#{item.priceUs,jdbcType=DECIMAL},

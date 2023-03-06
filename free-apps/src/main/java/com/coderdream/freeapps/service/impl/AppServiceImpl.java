@@ -87,6 +87,14 @@ public class AppServiceImpl extends
     }
 
     @Override
+    public List<App> selectTodoList(App app) {
+        QueryWrapper<App> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("del_flag", 0);
+        List<App> result = appMapper.selectList(queryWrapper);
+        return result;
+    }
+
+    @Override
     public IPage<App> selectPage(Page<App> page) {
         QueryWrapper<App> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("del_flag", 0);

@@ -16,11 +16,11 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class WeatherNotificationHandler extends IJobHandler {
 
-  private final UserService userService;
+    private final UserService userService;
 
-  @XxlJob(value = "weatherNotificationHandler")
-  @Override
-  public void execute() throws Exception {
-    userService.pushWeatherNotification();
-  }
+    @XxlJob(value = "weatherNotificationHandler")
+    @Override
+    public void execute() throws Exception {
+        userService.pushWeatherNotification();
+    }
 }

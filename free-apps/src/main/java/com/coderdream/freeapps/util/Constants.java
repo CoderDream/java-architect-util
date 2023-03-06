@@ -14,4 +14,6 @@ public class Constants {
 
     public static String SNAPSHOT_PNG_SUFFIX = "png 600w";
 
+    public static int BATCH_INSERT_UPDATE_ROWS = 10;
+
 }

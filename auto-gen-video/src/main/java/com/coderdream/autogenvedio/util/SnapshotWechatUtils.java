@@ -22,7 +22,7 @@ import java.util.concurrent.TimeUnit;
 
 public class SnapshotWechatUtils {
 
-    public static Integer appAmount = 5;
+    public static Integer appAmount = 7;
     public static void main(String[] args) {
         String url = "https://mp.weixin.qq.com/s/Upow3mVhjrRzRgomxxSA7Q";
         url = "https://mp.weixin.qq.com/s/7cs_D1dZx_c1cJqYptuikQ";
@@ -36,6 +36,7 @@ public class SnapshotWechatUtils {
         url = "https://mp.weixin.qq.com/s/HGPRgSqUonL_QNXCLdGkHA";
         url =  "https://mp.weixin.qq.com/s/5i1WMwcTnWyh897BllxCmA";
         url = "https://mp.weixin.qq.com/s/xpUjpW46Hat8zJWEY5UU_g";
+        url = "https://mp.weixin.qq.com/s/Lx5leXLu0sYYlq2Z6nLHug";
         snapshot(url, appAmount);
     }
 

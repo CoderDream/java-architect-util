@@ -11,9 +11,13 @@ import com.coderdream.freeapps.vo.AppVO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -97,6 +101,23 @@ public class AppController {
 
     @PostMapping("/insertOrUpdateBatch")
     Result<Integer> insertOrUpdateBatch(@RequestBody List<App> appList) {
+        int result = appService.insertOrUpdateBatch(appList);
+        return Result.ok(result);
+    }
+
+    @PostMapping("/batchCreate")
+    Result<Integer> batchCreate(@RequestBody List<String> appIdList) {
+        List<App> appList = new ArrayList<>();
+        App app;
+        if(!CollectionUtils.isEmpty(appIdList)) {
+            for (String appId: appIdList) {
+                app = new App();
+                app.setAppId(appId);
+                app.setCreatedDate(new Date());
+                app.setDelFlag(0);
+                appList.add(app);
+            }
+        }
         int result = appService.insertOrUpdateBatch(appList);
         return Result.ok(result);
     }

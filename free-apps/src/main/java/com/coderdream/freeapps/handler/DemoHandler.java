@@ -17,9 +17,9 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class DemoHandler extends IJobHandler {
 
-  @XxlJob(value = "demoHandler")
-  @Override
-  public void execute() throws Exception {
-    log.info("自动任务" + this.getClass().getSimpleName() + "执行");
-  }
+    @XxlJob(value = "demoHandler")
+    @Override
+    public void execute() throws Exception {
+        log.info("自动任务" + this.getClass().getSimpleName() + "执行");
+    }
 }

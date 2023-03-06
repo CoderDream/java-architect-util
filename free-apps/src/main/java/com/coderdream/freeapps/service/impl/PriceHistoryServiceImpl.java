@@ -13,6 +13,10 @@ import com.coderdream.freeapps.service.PriceHistoryService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -28,7 +32,6 @@ public class PriceHistoryServiceImpl extends ServiceImpl<PriceHistoryMapper, Pri
     private PriceHistoryMapper priceHistoryMapper;
     @Override
     public int insertSelective(PriceHistory priceHistory) {
-
             return priceHistoryMapper.insertSelective(priceHistory);
     }
 
@@ -43,9 +46,31 @@ public class PriceHistoryServiceImpl extends ServiceImpl<PriceHistoryMapper, Pri
         if (StrUtil.isNotEmpty(priceHistory.getAppId())) {
             queryWrapper.eq("app_id", priceHistory.getAppId());
         }
+        if (priceHistory.getCrawlerDate()!=null) {
+            queryWrapper.eq("crawler_date", priceHistory.getCrawlerDate());
+        }
         List<PriceHistory> result = priceHistoryMapper.selectList(queryWrapper);
         return result;
     }
+
+    @Override
+    public List<PriceHistory> selectDoneList(PriceHistory priceHistory) {
+        QueryWrapper<PriceHistory> queryWrapper = new QueryWrapper<>();
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        String dateStr = dateFormat.format(new Date());
+        try {
+            queryWrapper.eq("crawler_date", dateFormat.parse(dateStr));
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
+        }
+        queryWrapper.isNotNull("price_str");
+//        queryWrapper.isNull("del_flag");
+//        queryWrapper.ne("del_flag", 1);
+        List<PriceHistory> priceHistoryList = priceHistoryMapper.selectList(queryWrapper);
+        return priceHistoryList;
+    }
+
+
 
     @Override
     public IPage<PriceHistory> selectPage(Page<PriceHistory> page) {
