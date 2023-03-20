@@ -1,4 +1,4 @@
-package demo;
+package com.coderdream.freeapps.mstts;
 
 import java.io.Closeable;
 import java.net.URI;

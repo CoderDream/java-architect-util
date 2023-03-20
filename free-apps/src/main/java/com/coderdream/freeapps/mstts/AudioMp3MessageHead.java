@@ -1,30 +1,24 @@
-package demo;
+package com.coderdream.freeapps.mstts;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
 import lombok.Getter;
 
-/**
- * X-RequestId:B89AD8BA80084865AB6D3F1BF10C0DCC Content-Type:application/json; charset=utf-8
- * Path:turn.end
- * <p>
- * {}
- */
 @Getter
-public class AudioMessage {
+public class AudioMp3MessageHead {
     private String sourceMsg;
     private String xRequestId;
     private String contentType;
+    private String xStreamId;
     private String path;
 
-    public AudioMessage(String msg) {
-        this.sourceMsg = msg;
-        initByByte(msg.getBytes(StandardCharsets.UTF_8));
+    public AudioMp3MessageHead(byte[] bytes) {
+        this.sourceMsg = new String(bytes);
+        analyzeByte(bytes);
     }
 
-    private void initByByte(byte[] bytes) {
+    private void analyzeByte(byte[] bytes) {
         try {
             BufferedReader br =
                     new BufferedReader(new InputStreamReader(new ByteArrayInputStream(bytes)));
@@ -36,6 +30,10 @@ public class AudioMessage {
                         this.xRequestId = split[1];
                     } else if ("Content-Type".equals(split[0])) {
                         this.contentType = split[1];
+
+                    } else if ("X-StreamId".equals(split[0])) {
+                        this.xStreamId = split[1];
+
                     } else if ("Path".equals(split[0])) {
                         this.path = split[1];
                     } else {

@@ -1,4 +1,4 @@
-package demo;
+package com.coderdream.freeapps.mstts;
 
 public interface Lisent {
     void mp3Part(AudioMp3Part part);

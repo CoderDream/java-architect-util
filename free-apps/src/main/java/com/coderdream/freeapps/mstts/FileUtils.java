@@ -1,4 +1,4 @@
-package demo;
+package com.coderdream.freeapps.mstts;
 //导入spring工具包，如果使用spring框架（我想大概率会使用）直接使用FileCopyUtils.java
 
 import java.io.BufferedInputStream;
