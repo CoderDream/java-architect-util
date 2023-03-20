@@ -60,6 +60,7 @@ public class SnapshotUtils {
         chromeOptions.addArguments("--headless");
         chromeOptions.addArguments("--start-maximized");
         chromeOptions.addArguments("--no-sandbox");
+        chromeOptions.setBinary("D:\\00_Green\\Chrome100_AllNew_2022.4.4\\App\\chrome.exe");
 //        chromeOptions.addArguments("--window-size=3840,1916"); // 3840 1916 1920,
         chromeOptions.addArguments("--window-size=3840,1916"); // 3840 1916 1920,1050
         WebDriver driver = new ChromeDriver(chromeOptions);   //初始化一个chrome驱动实例，保存到driver中

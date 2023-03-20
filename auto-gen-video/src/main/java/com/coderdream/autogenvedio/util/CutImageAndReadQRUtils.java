@@ -41,7 +41,7 @@ public class CutImageAndReadQRUtils {
         int y;
         int z = 0;
         int qr_baseX = 2090;// 2099;
-        int qr_baseY = 826+125 +64; // 826 1502 1038 +464   1081
+        int qr_baseY = 826+125; // 826 1502 1038 +464   1081  +64
         int baseX = 1000;
         int oneSize = 663;
         Integer[] lineNumber = new Integer[amount];
@@ -49,9 +49,9 @@ public class CutImageAndReadQRUtils {
         lineNumber[1] = 2;
         lineNumber[2] = 2;
         lineNumber[3] = 2;
-        lineNumber[4] = 2;
-        lineNumber[5] = 2;
-        lineNumber[6] = 2;
+        lineNumber[4] = 3;
+//        lineNumber[5] = 2;
+//        lineNumber[6] = 2;
 //        lineNumber[7] = 2;
 
         Integer[] lineNumberCount = new Integer[amount];

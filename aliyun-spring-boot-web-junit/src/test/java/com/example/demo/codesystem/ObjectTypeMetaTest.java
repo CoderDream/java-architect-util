@@ -37,7 +37,7 @@ public class ObjectTypeMetaTest extends BaseTest {
 
         String code = getCode(result);
         String objectTypeName = "测试对象类型a" + code;
-        String objectTypeLabel = "NEW_OBJECT_TYPEQQQE";
+        String objectTypeLabel = "NEW_OBJECT_TdYPEQQQE";
         String objectTypeCode = code;
         String objectTypeFullCode = code + "00000000000";
         bodyMap.put("objectTypeName", objectTypeName);
