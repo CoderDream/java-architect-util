@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>01_insert_update_table</name>
+    <name>02_接口获取气象站点基础信息</name>
     <description/>
     <extended_description/>
     <trans_version/>
     <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
     <directory>/</directory>
     <parameters>
     </parameters>
@@ -427,9 +428,9 @@
     <clusterschemas>
     </clusterschemas>
     <created_user>-</created_user>
-    <created_date>2022/09/30 11:38:19.673</created_date>
+    <created_date>2023/03/15 09:50:17.983</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2022/09/30 11:38:19.673</modified_date>
+    <modified_date>2023/03/15 09:50:17.983</modified_date>
     <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
@@ -1096,61 +1097,6 @@
     </attributes>
   </connection>
   <connection>
-    <name>testA-171.113.161.31</name>
-    <server>${TO_HOST}</server>
-    <type>MYSQL</type>
-    <access>Native</access>
-    <database>testa</database>
-    <port>33016</port>
-    <username>root</username>
-    <password>Encrypted 2be98afc86aa7f2e4cb79ff228dc6fa8c</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>IS_CLUSTERED</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>PORT_NUMBER</code>
-        <attribute>33016</attribute>
-      </attribute>
-      <attribute>
-        <code>PRESERVE_RESERVED_WORD_CASE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>QUOTE_ALL_FIELDS</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>STREAM_RESULTS</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>USE_POOLING</code>
-        <attribute>N</attribute>
-      </attribute>
-    </attributes>
-  </connection>
-  <connection>
     <name>testB</name>
     <server>171.113.161.31</server>
     <type>MYSQL</type>
@@ -1207,19 +1153,49 @@
   </connection>
   <order>
     <hop>
-      <from>MAX_DATE</from>
-      <to>select_a</to>
+      <from>REST client</from>
+      <to>JSON input</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>select_a</from>
-      <to>insert_b</to>
+      <from>JSON input</from>
+      <to>写日志</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>写日志</from>
+      <to>更新气象站</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>表输入</from>
+      <to>设置变量</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>设置变量</from>
+      <to>JavaScript代码</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>JavaScript代码</from>
+      <to>写日志 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>写日志 2</from>
+      <to>REST client</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>更新气象站</from>
+      <to>更新任务表</to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <step>
-    <name>MAX_DATE</name>
-    <type>TableInput</type>
+    <name>JSON input</name>
+    <type>JsonInput</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -1228,88 +1204,129 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>docker_local_kettle_study</connection>
-    <sql>SELECT
-  max(last_update_don)
-FROM kettle_study.test_b
-</sql>
-    <limit>0</limit>
-    <lookup/>
-    <execute_each_row>N</execute_each_row>
-    <variables_active>N</variables_active>
-    <lazy_conversion_active>N</lazy_conversion_active>
-    <cached_row_meta_active>N</cached_row_meta_active>
-    <row-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>id</name>
-        <length>9</length>
-        <precision>0</precision>
-        <origin>MAX_DATE</origin>
-        <comments>id</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>.</decimal_symbol>
-        <grouping_symbol>,</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
+    <include>N</include>
+    <include_field/>
+    <rownum>N</rownum>
+    <addresultfile>N</addresultfile>
+    <readurl>N</readurl>
+    <removeSourceField>N</removeSourceField>
+    <IsIgnoreEmptyFile>N</IsIgnoreEmptyFile>
+    <doNotFailIfNoFile>Y</doNotFailIfNoFile>
+    <ignoreMissingPath>Y</ignoreMissingPath>
+    <defaultPathLeafToNull>Y</defaultPathLeafToNull>
+    <rownum_field/>
+    <file>
+      <name/>
+      <filemask/>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+    </file>
+    <fields>
+      <field>
+        <name>stcd</name>
+        <path>$..data.list[*].STCD</path>
         <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>name</name>
-        <length>255</length>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
         <precision>-1</precision>
-        <origin>MAX_DATE</origin>
-        <comments>name</comments>
-        <conversion_Mask/>
-        <decimal_symbol>.</decimal_symbol>
-        <grouping_symbol>,</grouping_symbol>
-        <currency_symbol/>
         <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Timestamp</type>
-        <storagetype>normal</storagetype>
-        <name>last_update_don</name>
-        <length>0</length>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>stnm</name>
+        <path>$..data.list[*].STNM</path>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
         <precision>-1</precision>
-        <origin>MAX_DATE</origin>
-        <comments>last_update_don</comments>
-        <conversion_Mask/>
-        <decimal_symbol>.</decimal_symbol>
-        <grouping_symbol>,</grouping_symbol>
-        <currency_symbol/>
         <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-    </row-meta>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>lgtd</name>
+        <path>$..data.list[*].LGTD</path>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>alt</name>
+        <path>$..data.list[*].ALT</path>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>lttd</name>
+        <path>$..data.list[*].LTTD</path>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>stlc</name>
+        <path>$..data.list[*].STLC</path>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>addvcd</name>
+        <path>$..data.list[*].ADDVCD</path>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+    </fields>
+    <limit>0</limit>
+    <IsInFields>Y</IsInFields>
+    <IsAFile>N</IsAFile>
+    <valueField>result</valueField>
+    <shortFileFieldName/>
+    <pathFieldName/>
+    <hiddenFieldName/>
+    <lastModificationTimeFieldName/>
+    <uriNameFieldName/>
+    <rootUriNameFieldName/>
+    <extensionFieldName/>
+    <sizeFieldName/>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -1319,13 +1336,258 @@ FROM kettle_study.test_b
       </output>
     </remotesteps>
     <GUI>
-      <xloc>48</xloc>
-      <yloc>160</yloc>
+      <xloc>816</xloc>
+      <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>insert_b</name>
+    <name>JavaScript代码</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>
+      <jsScript>
+        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>//Script here
+
+var url = 'http://223.75.53.124:8002/shareddata/api/v1/baseinfo/stbprp/qx?pageNumber=' 
++ page_number + '&amp;pageSize=' + page_size;
+var Token = '3834484BFFD683FFF7C825C89068575E64761DE1BA5109A72A45BE8FCB8A6E80E725A06EE71FBDCD258B4C74C0F90DDD725942379DDB172EC32D5A83AB9465D0';
+var new_page_number = page_number + 1;</jsScript_script>
+      </jsScript>
+    </jsScripts>
+    <fields>
+      <field>
+        <name>url</name>
+        <rename>url</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>
+      <field>
+        <name>Token</name>
+        <rename>Token</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>
+      <field>
+        <name>new_page_number</name>
+        <rename>new_page_number</rename>
+        <type>Integer</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>471</xloc>
+      <yloc>77</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>REST client</name>
+    <type>Rest</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <applicationType>TEXT PLAIN</applicationType>
+    <method>GET</method>
+    <url>http://223.75.53.124:8002/shareddata/api/v1/baseinfo/stbprp/qx</url>
+    <urlInField>Y</urlInField>
+    <dynamicMethod>N</dynamicMethod>
+    <methodFieldName>method</methodFieldName>
+    <urlField>url</urlField>
+    <bodyField/>
+    <httpLogin/>
+    <httpPassword>Encrypted </httpPassword>
+    <proxyHost/>
+    <proxyPort/>
+    <preemptive>N</preemptive>
+    <trustStoreFile/>
+    <trustStorePassword>Encrypted </trustStorePassword>
+    <headers>
+      <header>
+        <field>Token</field>
+        <name>Token</name>
+      </header>
+    </headers>
+    <parameters>
+      </parameters>
+    <matrixParameters>
+      </matrixParameters>
+    <result>
+      <name>result</name>
+      <code/>
+      <response_time/>
+      <response_header/>
+    </result>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>720</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>写日志</name>
+    <type>WriteToLog</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <loglevel>log_level_basic</loglevel>
+    <displayHeader>Y</displayHeader>
+    <limitRows>N</limitRows>
+    <limitRowsNumber>0</limitRowsNumber>
+    <logmessage/>
+    <fields>
+      <field>
+        <name>page_number</name>
+      </field>
+      <field>
+        <name>page_size</name>
+      </field>
+      <field>
+        <name>task_id</name>
+      </field>
+      <field>
+        <name>url</name>
+      </field>
+      <field>
+        <name>Token</name>
+      </field>
+      <field>
+        <name>new_page_number</name>
+      </field>
+      <field>
+        <name>result</name>
+      </field>
+      <field>
+        <name>stcd</name>
+      </field>
+      <field>
+        <name>stnm</name>
+      </field>
+      <field>
+        <name>lgtd</name>
+      </field>
+      <field>
+        <name>alt</name>
+      </field>
+      <field>
+        <name>lttd</name>
+      </field>
+      <field>
+        <name>stlc</name>
+      </field>
+      <field>
+        <name>addvcd</name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>928</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>写日志 2</name>
+    <type>WriteToLog</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <loglevel>log_level_basic</loglevel>
+    <displayHeader>Y</displayHeader>
+    <limitRows>N</limitRows>
+    <limitRowsNumber>0</limitRowsNumber>
+    <logmessage/>
+    <fields>
+      <field>
+        <name>page_number</name>
+      </field>
+      <field>
+        <name>page_size</name>
+      </field>
+      <field>
+        <name>task_id</name>
+      </field>
+      <field>
+        <name>url</name>
+      </field>
+      <field>
+        <name>Token</name>
+      </field>
+      <field>
+        <name>new_page_number</name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>599</xloc>
+      <yloc>77</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>更新气象站</name>
     <type>InsertUpdate</type>
     <description/>
     <distribute>Y</distribute>
@@ -1335,31 +1597,51 @@ FROM kettle_study.test_b
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>docker_local_kettle_study</connection>
+    <connection>docker_local_object_data</connection>
     <commit>100</commit>
     <update_bypassed>N</update_bypassed>
     <lookup>
-      <schema>kettle_study</schema>
-      <table>test_b</table>
+      <schema>object_data</schema>
+      <table>t_st_info</table>
       <key>
-        <name>id</name>
-        <field>id</field>
+        <name>stcd</name>
+        <field>stcd</field>
         <condition>=</condition>
         <name2/>
       </key>
       <value>
-        <name>id</name>
-        <rename>id</rename>
+        <name>stcd</name>
+        <rename>stcd</rename>
         <update>N</update>
       </value>
       <value>
-        <name>name</name>
-        <rename>name</rename>
+        <name>stnm</name>
+        <rename>stnm</rename>
         <update>Y</update>
       </value>
       <value>
-        <name>last_update_don</name>
-        <rename>last_update_don</rename>
+        <name>lgtd</name>
+        <rename>lgtd</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>alt</name>
+        <rename>alt</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>lttd</name>
+        <rename>lttd</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>stlc</name>
+        <rename>stlc</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>addvcd</name>
+        <rename>addvcd</rename>
         <update>Y</update>
       </value>
     </lookup>
@@ -1372,13 +1654,13 @@ FROM kettle_study.test_b
       </output>
     </remotesteps>
     <GUI>
-      <xloc>288</xloc>
-      <yloc>160</yloc>
+      <xloc>1024</xloc>
+      <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>select_a</name>
+    <name>表输入</name>
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -1388,12 +1670,11 @@ FROM kettle_study.test_b
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>docker_local_kettle_study</connection>
-    <sql>SELECT * FROM TEST_A WHERE last_update_don > ?
-</sql>
+    <connection>docker_local_object_data</connection>
+    <sql>SELECT  `page_number`, `page_size`, `task_id` FROM t_sync_task WHERE task_id = 2</sql>
     <limit>0</limit>
-    <lookup>MAX_DATE</lookup>
-    <execute_each_row>Y</execute_each_row>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
     <variables_active>N</variables_active>
     <lazy_conversion_active>N</lazy_conversion_active>
     <cached_row_meta_active>N</cached_row_meta_active>
@@ -1401,11 +1682,11 @@ FROM kettle_study.test_b
       <value-meta>
         <type>Integer</type>
         <storagetype>normal</storagetype>
-        <name>id</name>
+        <name>page_number</name>
         <length>9</length>
         <precision>0</precision>
-        <origin>select_a</origin>
-        <comments>id</comments>
+        <origin>表输入</origin>
+        <comments>page_number</comments>
         <conversion_Mask>####0;-####0</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
@@ -1422,14 +1703,14 @@ FROM kettle_study.test_b
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
-        <type>String</type>
+        <type>Integer</type>
         <storagetype>normal</storagetype>
-        <name>name</name>
-        <length>255</length>
-        <precision>-1</precision>
-        <origin>select_a</origin>
-        <comments>name</comments>
-        <conversion_Mask/>
+        <name>page_size</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>表输入</origin>
+        <comments>page_size</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
         <currency_symbol/>
@@ -1445,14 +1726,14 @@ FROM kettle_study.test_b
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
-        <type>Timestamp</type>
+        <type>Integer</type>
         <storagetype>normal</storagetype>
-        <name>last_update_don</name>
-        <length>0</length>
-        <precision>-1</precision>
-        <origin>select_a</origin>
-        <comments>last_update_don</comments>
-        <conversion_Mask/>
+        <name>task_id</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>表输入</origin>
+        <comments>task_id</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
         <currency_symbol/>
@@ -1477,8 +1758,107 @@ FROM kettle_study.test_b
       </output>
     </remotesteps>
     <GUI>
-      <xloc>176</xloc>
-      <yloc>160</yloc>
+      <xloc>183</xloc>
+      <yloc>77</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>设置变量</name>
+    <type>SetVariable</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <field_name>page_number</field_name>
+        <variable_name>PAGE_NUMBER</variable_name>
+        <variable_type>ROOT_JOB</variable_type>
+        <default_value/>
+      </field>
+      <field>
+        <field_name>page_size</field_name>
+        <variable_name>PAGE_SIZE</variable_name>
+        <variable_type>ROOT_JOB</variable_type>
+        <default_value/>
+      </field>
+      <field>
+        <field_name>task_id</field_name>
+        <variable_name>TASK_ID</variable_name>
+        <variable_type>ROOT_JOB</variable_type>
+        <default_value/>
+      </field>
+    </fields>
+    <use_formatting>Y</use_formatting>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>327</xloc>
+      <yloc>77</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>更新任务表</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>docker_local_object_data</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>object_data</schema>
+      <table>t_sync_task</table>
+      <key>
+        <name>task_id</name>
+        <field>task_id</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>page_number</name>
+        <rename>new_page_number</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>task_id</name>
+        <rename>task_id</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>new_page_number</name>
+        <rename>new_page_number</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1136</xloc>
+      <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

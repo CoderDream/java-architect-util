@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>01_insert_update_table</name>
+    <name>0102_backup</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -427,10 +427,10 @@
     <clusterschemas>
     </clusterschemas>
     <created_user>-</created_user>
-    <created_date>2022/09/30 11:38:19.673</created_date>
+    <created_date>2023/03/13 14:17:32.831</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2022/09/30 11:38:19.673</modified_date>
-    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <modified_date>2023/03/13 14:17:32.831</modified_date>
+    <key_for_session_key/>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -1096,61 +1096,6 @@
     </attributes>
   </connection>
   <connection>
-    <name>testA-171.113.161.31</name>
-    <server>${TO_HOST}</server>
-    <type>MYSQL</type>
-    <access>Native</access>
-    <database>testa</database>
-    <port>33016</port>
-    <username>root</username>
-    <password>Encrypted 2be98afc86aa7f2e4cb79ff228dc6fa8c</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>IS_CLUSTERED</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>PORT_NUMBER</code>
-        <attribute>33016</attribute>
-      </attribute>
-      <attribute>
-        <code>PRESERVE_RESERVED_WORD_CASE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>QUOTE_ALL_FIELDS</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>STREAM_RESULTS</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>USE_POOLING</code>
-        <attribute>N</attribute>
-      </attribute>
-    </attributes>
-  </connection>
-  <connection>
     <name>testB</name>
     <server>171.113.161.31</server>
     <type>MYSQL</type>
@@ -1207,18 +1152,23 @@
   </connection>
   <order>
     <hop>
-      <from>MAX_DATE</from>
-      <to>select_a</to>
+      <from>表输入</from>
+      <to>写日志</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>select_a</from>
-      <to>insert_b</to>
+      <from>写日志</from>
+      <to>JSON output</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>JSON output</from>
+      <to>插入 / 更新</to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <step>
-    <name>MAX_DATE</name>
+    <name>表输入</name>
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -1228,49 +1178,29 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>docker_local_kettle_study</connection>
+    <connection>RWDB</connection>
     <sql>SELECT
-  max(last_update_don)
-FROM kettle_study.test_b
-</sql>
+	STCD,TM, OTQ
+FROM
+	"RWDB"."ST_RSVR_R"
+WHERE
+	"TM" &lt; TO_DATE('${ENDTIME}', 'YYYY-MM-DD HH24:MI:SS' )
+	AND "TM" >= TO_DATE('${BEGINTIME}', 'YYYY-MM-DD HH24:MI:SS' )</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
-    <variables_active>N</variables_active>
+    <variables_active>Y</variables_active>
     <lazy_conversion_active>N</lazy_conversion_active>
     <cached_row_meta_active>N</cached_row_meta_active>
     <row-meta>
       <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>id</name>
-        <length>9</length>
-        <precision>0</precision>
-        <origin>MAX_DATE</origin>
-        <comments>id</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>.</decimal_symbol>
-        <grouping_symbol>,</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>name</name>
-        <length>255</length>
+        <name>STCD</name>
+        <length>8</length>
         <precision>-1</precision>
-        <origin>MAX_DATE</origin>
-        <comments>name</comments>
+        <origin>表输入</origin>
+        <comments>STCD</comments>
         <conversion_Mask/>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
@@ -1287,14 +1217,37 @@ FROM kettle_study.test_b
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
-        <type>Timestamp</type>
+        <type>Date</type>
         <storagetype>normal</storagetype>
-        <name>last_update_don</name>
-        <length>0</length>
+        <name>TM</name>
+        <length>-1</length>
         <precision>-1</precision>
-        <origin>MAX_DATE</origin>
-        <comments>last_update_don</comments>
+        <origin>表输入</origin>
+        <comments>TM</comments>
         <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Number</type>
+        <storagetype>normal</storagetype>
+        <name>OTQ</name>
+        <length>9</length>
+        <precision>3</precision>
+        <origin>表输入</origin>
+        <comments>OTQ</comments>
+        <conversion_Mask>####0.0#########;-####0.0#########</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
         <currency_symbol/>
@@ -1319,13 +1272,112 @@ FROM kettle_study.test_b
       </output>
     </remotesteps>
     <GUI>
-      <xloc>48</xloc>
-      <yloc>160</yloc>
+      <xloc>776</xloc>
+      <yloc>145</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>insert_b</name>
+    <name>写日志</name>
+    <type>WriteToLog</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <loglevel>log_level_basic</loglevel>
+    <displayHeader>Y</displayHeader>
+    <limitRows>N</limitRows>
+    <limitRowsNumber>0</limitRowsNumber>
+    <logmessage/>
+    <fields>
+      <field>
+        <name>STCD</name>
+      </field>
+      <field>
+        <name>TM</name>
+      </field>
+      <field>
+        <name>OTQ</name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>856</xloc>
+      <yloc>145</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>JSON output</name>
+    <type>JsonOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <outputValue>outputValue</outputValue>
+    <jsonBloc>data</jsonBloc>
+    <nrRowsInBloc>1</nrRowsInBloc>
+    <operation_type>writetofile</operation_type>
+    <compatibility_mode>N</compatibility_mode>
+    <encoding>UTF-8</encoding>
+    <addtoresult>N</addtoresult>
+    <file>
+      <name>E:\\aaaa</name>
+      <extention>json</extention>
+      <append>Y</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <create_parent_folder>N</create_parent_folder>
+      <DoNotOpenNewFileInit>N</DoNotOpenNewFileInit>
+      <servlet_output>N</servlet_output>
+    </file>
+    <fields>
+      <field>
+        <name>STCD</name>
+        <element/>
+      </field>
+      <field>
+        <name>TM</name>
+        <element/>
+      </field>
+      <field>
+        <name>OTQ</name>
+        <element/>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>952</xloc>
+      <yloc>145</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>插入 / 更新</name>
     <type>InsertUpdate</type>
     <description/>
     <distribute>Y</distribute>
@@ -1340,26 +1392,32 @@ FROM kettle_study.test_b
     <update_bypassed>N</update_bypassed>
     <lookup>
       <schema>kettle_study</schema>
-      <table>test_b</table>
+      <table>t_seq</table>
       <key>
-        <name>id</name>
-        <field>id</field>
+        <name>stcd</name>
+        <field>stcd</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>tm</name>
+        <field>tm</field>
         <condition>=</condition>
         <name2/>
       </key>
       <value>
-        <name>id</name>
-        <rename>id</rename>
+        <name>stcd</name>
+        <rename>stcd</rename>
         <update>N</update>
       </value>
       <value>
-        <name>name</name>
-        <rename>name</rename>
-        <update>Y</update>
+        <name>tm</name>
+        <rename>tm</rename>
+        <update>N</update>
       </value>
       <value>
-        <name>last_update_don</name>
-        <rename>last_update_don</rename>
+        <name>v</name>
+        <rename>otq</rename>
         <update>Y</update>
       </value>
     </lookup>
@@ -1372,113 +1430,8 @@ FROM kettle_study.test_b
       </output>
     </remotesteps>
     <GUI>
-      <xloc>288</xloc>
-      <yloc>160</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>select_a</name>
-    <type>TableInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>docker_local_kettle_study</connection>
-    <sql>SELECT * FROM TEST_A WHERE last_update_don > ?
-</sql>
-    <limit>0</limit>
-    <lookup>MAX_DATE</lookup>
-    <execute_each_row>Y</execute_each_row>
-    <variables_active>N</variables_active>
-    <lazy_conversion_active>N</lazy_conversion_active>
-    <cached_row_meta_active>N</cached_row_meta_active>
-    <row-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>id</name>
-        <length>9</length>
-        <precision>0</precision>
-        <origin>select_a</origin>
-        <comments>id</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>.</decimal_symbol>
-        <grouping_symbol>,</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>name</name>
-        <length>255</length>
-        <precision>-1</precision>
-        <origin>select_a</origin>
-        <comments>name</comments>
-        <conversion_Mask/>
-        <decimal_symbol>.</decimal_symbol>
-        <grouping_symbol>,</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>Timestamp</type>
-        <storagetype>normal</storagetype>
-        <name>last_update_don</name>
-        <length>0</length>
-        <precision>-1</precision>
-        <origin>select_a</origin>
-        <comments>last_update_don</comments>
-        <conversion_Mask/>
-        <decimal_symbol>.</decimal_symbol>
-        <grouping_symbol>,</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-    </row-meta>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>176</xloc>
-      <yloc>160</yloc>
+      <xloc>1048</xloc>
+      <yloc>145</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
