@@ -30,7 +30,7 @@
 
     <sql id="Base_Column_List">
         id
-        ,app_id,name,
+        ,app_id,title,
         price_cn,price_us,price_str,
         price_str_cn,price_str_us,us_flag,
         url_cn,url_us,free_date,
@@ -44,7 +44,7 @@
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="id != null">id,</if>
             <if test="appId != null">app_id,</if>
-            <if test="name != null">name,</if>
+            <if test="title != null">title,</if>
             <if test="priceCn != null">price_cn,</if>
             <if test="priceUs != null">price_us,</if>
             <if test="priceStr != null">price_str,</if>
@@ -69,7 +69,7 @@
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="id != null">#{id,jdbcType=INTEGER},</if>
             <if test="appId != null">#{appId,jdbcType=VARCHAR},</if>
-            <if test="name != null">#{name,jdbcType=VARCHAR},</if>
+            <if test="title != null">#{title,jdbcType=VARCHAR},</if>
             <if test="priceCn != null">#{priceCn,jdbcType=INTEGER},</if>
             <if test="priceUs != null">#{priceUs,jdbcType=DECIMAL},</if>
             <if test="priceStr != null">#{priceStr,jdbcType=VARCHAR},</if>
@@ -95,7 +95,7 @@
     <insert id="insertOrUpdateBatch">
         insert into t_free_history
         (`app_id`,
-        `name`,
+        `title`,
         `price_cn`,
         `price_us`,
         `price_str`,
@@ -119,7 +119,7 @@
         values
         <foreach collection="entities" item="entity" separator=",">
             ( #{entity.appId,jdbcType=VARCHAR},
-            #{entity.name,jdbcType=VARCHAR},
+            #{entity.title,jdbcType=VARCHAR},
             #{entity.priceCn,jdbcType=INTEGER},
             #{entity.priceUs,jdbcType=DECIMAL},
             #{entity.priceStr,jdbcType=VARCHAR},
@@ -143,7 +143,7 @@
         </foreach>
         on duplicate key update
         <!--     app_id = values(app_id), -->
-        `name` = values(`name`),
+        `title` = values(`title`),
         price_cn = values(price_cn),
         price_us = values(price_us),
         price_str = values(price_str),
@@ -171,7 +171,7 @@
     <insert id="insertOrUpdateBatchV4">
         insert into t_free_history
         (`app_id`,
-        `name`,
+        `title`,
         `price_cn`,
         `price_us`,
         `price_str`,
@@ -194,7 +194,7 @@
         values
         <foreach collection="entities" item="entity" separator=",">
             ( #{entity.appId,jdbcType=VARCHAR},
-            #{entity.name,jdbcType=VARCHAR},
+            #{entity.title,jdbcType=VARCHAR},
             #{entity.priceCn,jdbcType=INTEGER},
             #{entity.priceUs,jdbcType=DECIMAL},
             #{entity.priceStr,jdbcType=VARCHAR},
@@ -222,8 +222,8 @@
                 <!--                <if test="entity.appId != null">-->
                 <!--                    `app_id` = #{entity.appId,jdbcType=VARCHAR},-->
                 <!--                </if>-->
-                <if test="entity.name != null">
-                    `name` = #{entity.name,jdbcType=VARCHAR},
+                <if test="entity.title != null">
+                    `name` = #{entity.title,jdbcType=VARCHAR},
                 </if>
                 <if test="entity.priceCn != null">
                     `price_cn` = #{entity.priceCn,jdbcType=INTEGER},

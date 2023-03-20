@@ -10,14 +10,14 @@ xxl:
       appname: hresh-job-executor # 执行器 AppName [选填]：执行器心跳注册分组依据；为空则关闭自动注册
       ip: # 执行器IP [选填]：默认为空表示自动获取IP，多网卡时可手动设置指定IP，该IP不会绑定Host仅作为通讯实用；地址信息用于 "执行器注册" 和 "调度中心请求并触发任务"；
       port: 6666 # ### 执行器端口号 [选填]：小于等于0则自动获取；默认端口为9999，单机部署多个执行器时，注意要配置不同执行器端口；
-#      logpath: /Users/ankanghao/IdeaProjects/orm-practice/xxl-job-2.3.1/logs/xxl-job # 执行器运行日志文件存储磁盘路径 [选填] ：需要对该路径拥有读写权限；为空则使用默认路径；
+      #      logpath: /Users/ankanghao/IdeaProjects/orm-practice/xxl-job-2.3.1/logs/xxl-job # 执行器运行日志文件存储磁盘路径 [选填] ：需要对该路径拥有读写权限；为空则使用默认路径；
       logpath: /logs/xxl-job # 执行器运行日志文件存储磁盘路径 [选填] ：需要对该路径拥有读写权限；为空则使用默认路径；
       logretentiondays: 30 # 执行器日志文件保存天数 [选填] ： 过期日志自动清理, 限制值大于等于3时生效; 否则, 如-1, 关闭自动清理功能；
     accessToken: default_token  # 执行器通讯TOKEN [选填]：非空时启用；
 
 spring:
   application:
-   title: xxl-job-practice
+    title: xxl-job-practice
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -27,6 +27,42 @@ spring:
 
 mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml
+
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-    lazy-loading-enabled: true
+#    log-impl: com.coderdream.freeapps.config.MybatisPlusOutImpl
+#    lazy-loading-enabled: true
+logging:
+  level:
+    root: INFO
+    com:
+      coderdream:
+        freeapps:
+          mapper: DEBUG
+
+#
+#minio:
+#  endpoint: http://172.16.104.61:9900 #Minio服务所在地址
+#  bucketName: public #存储桶名称
+#  accessKey: RK0YThYyA4JFeXKF #访问的key
+#  secretKey: xjCcIITHgn7GUqgGcjiWyyH93YXxWaRu #访问的秘钥
+
+# NAS
+#minio:
+#  endpoint: https://coderme.myds.me:39000/ #Minio服务所在地址
+#  bucketName: public #存储桶名称
+#  accessKey: EPD87GTDXQZYAK88F8QO #访问的key
+#  secretKey: 9BRDNUPRzjzh+jIblG9+XDaeV+FnoULj76AxIWXO #访问的秘钥
+
+# MinIO配置
+minio:
+  # 服务地址
+  endpoint: https://coderme.myds.me:39000
+  # 文件地址
+  fileHost: https://coderme.myds.me:39000
+  # 存储桶名称
+  bucket: public
+  # 用户名
+  access-key: EPD87GTDXQZYAK88F8QO
+  # 密码
+  secret-key: 9BRDNUPRzjzh+jIblG9+XDaeV+FnoULj76AxIWXO

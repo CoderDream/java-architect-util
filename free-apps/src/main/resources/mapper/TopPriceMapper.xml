@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coderdream.freeapps.mapper.TopPriceMapper">
+
+    <resultMap id="BaseResultMap" type="com.coderdream.freeapps.model.TopPrice">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="appId" column="app_id" jdbcType="VARCHAR"/>
+            <result property="topPrice" column="top_price" jdbcType="DECIMAL"/>
+            <result property="priceCn" column="price_cn" jdbcType="INTEGER"/>
+            <result property="priceUs" column="price_us" jdbcType="DECIMAL"/>
+            <result property="priceStr" column="price_str" jdbcType="VARCHAR"/>
+            <result property="priceStrCn" column="price_str_cn" jdbcType="VARCHAR"/>
+            <result property="priceStrUs" column="price_str_us" jdbcType="VARCHAR"/>
+            <result property="usFlag" column="us_flag" jdbcType="TINYINT"/>
+            <result property="inPurchaseFlag" column="in_purchase_flag" jdbcType="TINYINT"/>
+            <result property="inPurchaseFreeFlag" column="in_purchase_free_flag" jdbcType="TINYINT"/>
+            <result property="urlCn" column="url_cn" jdbcType="VARCHAR"/>
+            <result property="urlUs" column="url_us" jdbcType="VARCHAR"/>
+            <result property="appInPurchase" column="app_in_purchase" jdbcType="OTHER"/>
+            <result property="versionHistory" column="version_history" jdbcType="OTHER"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="delFlag" column="del_flag" jdbcType="INTEGER"/>
+            <result property="createUserCode" column="create_user_code" jdbcType="VARCHAR"/>
+            <result property="createUserName" column="create_user_name" jdbcType="VARCHAR"/>
+            <result property="createdDate" column="created_date" jdbcType="TIMESTAMP"/>
+            <result property="lastModifiedCode" column="last_modified_code" jdbcType="VARCHAR"/>
+            <result property="lastModifiedName" column="last_modified_name" jdbcType="VARCHAR"/>
+            <result property="lastModifiedDate" column="last_modified_date" jdbcType="TIMESTAMP"/>
+            <result property="version" column="version" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,app_id,top_price,
+        price_cn,price_us,price_str,
+        price_str_cn,price_str_us,us_flag,
+        in_purchase_flag,in_purchase_free_flag,url_cn,
+        url_us,app_in_purchase,version_history,
+        remark,del_flag,create_user_code,
+        create_user_name,created_date,last_modified_code,
+        last_modified_name,last_modified_date,version
+    </sql>
+
+    <insert id="insertOrUpdateBatch">
+        insert into t_top_price
+        (`app_id`,
+        `top_price`,
+        `price_cn`,
+        `price_us`,
+        `price_str`,
+        `price_str_cn`,
+        `price_str_us`,
+        `us_flag`,
+        `in_purchase_flag`,
+        `in_purchase_free_flag`,
+        `url_cn`,
+        `url_us`,
+        `app_in_purchase`,
+        `version_history`,
+        `remark`,
+        `del_flag`,
+        `create_user_code`,
+        `create_user_name`,
+        `created_date`,
+        `last_modified_code`,
+        `last_modified_name`,
+        `last_modified_date`,
+        `version`)
+        values
+        <foreach collection="entities" item="item" separator=",">
+            (
+            #{item.appId,jdbcType=VARCHAR},
+            #{item.topPrice,jdbcType=DECIMAL},
+            #{item.priceCn,jdbcType=NUMERIC},
+            #{item.priceUs,jdbcType=DECIMAL},
+            #{item.priceStr,jdbcType=VARCHAR},
+            #{item.priceStrCn,jdbcType=VARCHAR},
+            #{item.priceStrUs,jdbcType=VARCHAR},
+            #{item.usFlag,jdbcType=NUMERIC},
+            #{item.inPurchaseFlag,jdbcType=NUMERIC},
+            #{item.inPurchaseFreeFlag,jdbcType=NUMERIC},
+            #{item.urlCn,jdbcType=VARCHAR},
+            #{item.urlUs,jdbcType=VARCHAR},
+            #{item.appInPurchase, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},
+            #{item.versionHistory, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},
+            #{item.remark,jdbcType=VARCHAR},
+            #{item.delFlag,jdbcType=NUMERIC},
+            #{item.createUserCode,jdbcType=VARCHAR},
+            #{item.createUserName,jdbcType=VARCHAR},
+            #{item.createdDate,jdbcType=TIMESTAMP},
+            #{item.lastModifiedCode,jdbcType=VARCHAR},
+            #{item.lastModifiedName,jdbcType=VARCHAR},
+            #{item.lastModifiedDate,jdbcType=TIMESTAMP},
+            #{item.version,jdbcType=VARCHAR}
+            )
+        </foreach>
+        on duplicate key update
+        `top_price`=values(`top_price`),
+        `price_cn`=values(`price_cn`),
+        `price_us`=values(`price_us`),
+        `price_str`=values(`price_str`),
+        `price_str_cn`=values(`price_str_cn`),
+        `price_str_us`=values(`price_str_us`),
+        `us_flag`=values(`us_flag`),
+        `in_purchase_flag`=values(`in_purchase_flag`),
+        `in_purchase_free_flag`=values(`in_purchase_free_flag`),
+        `url_cn`=values(`url_cn`),
+        `url_us`=values(`url_us`),
+        `app_in_purchase`=values(`app_in_purchase`),
+        `version_history`=values(`version_history`),
+        `remark`=values(`remark`),
+        `del_flag`=values(`del_flag`),
+        `create_user_code`=values(`create_user_code`),
+        `create_user_name`=values(`create_user_name`),
+        `created_date`=values(`created_date`),
+        `last_modified_code`=values(`last_modified_code`),
+        `last_modified_name`=values(`last_modified_name`),
+        `last_modified_date`=values(`last_modified_date`),
+        `version`=values(`version`)
+    </insert>
+</mapper>

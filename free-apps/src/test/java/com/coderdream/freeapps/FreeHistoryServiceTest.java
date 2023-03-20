@@ -1,22 +1,31 @@
 package com.coderdream.freeapps;
 
+import com.coderdream.freeapps.model.App;
 import com.coderdream.freeapps.model.FreeHistory;
+import com.coderdream.freeapps.service.AppService;
 import com.coderdream.freeapps.service.FreeHistoryService;
 import com.coderdream.freeapps.util.FileUtils;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.util.CollectionUtils;
 
+import javax.annotation.Resource;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
 @SpringBootTest
 public class FreeHistoryServiceTest {
 
-    @Autowired
+    @Resource
     private FreeHistoryService freeHistoryService; //这里可能爆红，但是运行没问题
+
+    @Resource
+    private AppService appService; //这里可能爆红，但是运行没问题
 
     //    @Test
 //    public void testGetCount() {
@@ -120,13 +129,13 @@ public class FreeHistoryServiceTest {
     }
 
     @Test
-    public void testInsertOrUpdateBatch_20221109() {
+    public void testInsertOrUpdateBatch_20230309() {
         //批量添加
         //INSERT INTO user ( id,title, age, email ) VALUES ( ?, ?, ?, ? )
 //        List<FreeHistory> list = new ArrayList<>();
         String fileName = "D:\\12_iOS_Android\\1024_data\\2022-06-29.txt";
-        fileName = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024\\2022";
-        fileName += File.separatorChar + "202211" + File.separatorChar + "2022-11-09.txt";
+        fileName = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024\\2023";
+        fileName += File.separatorChar + "202303" + File.separatorChar + "2023-03-09.txt";
         List<FreeHistory> freeHistoryList = FileUtils.getFreeHistoryFromCL(fileName);
         for (FreeHistory freeHistory : freeHistoryList) {
             System.out.println(freeHistory);
@@ -138,8 +147,9 @@ public class FreeHistoryServiceTest {
     @Test
     public void testInsertOrUpdateBatch_total() {
         String folderPath = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024";
-//         folderPath = folderPath + File.separatorChar + "2023";
-//         folderPath = folderPath + File.separatorChar + "202302";
+        folderPath = folderPath + File.separatorChar + "2023";
+        folderPath = folderPath + File.separatorChar + "202303";
+        folderPath = folderPath + File.separatorChar + "2023-03-13.txt";
         List<String> stringList = new ArrayList<>();
         FileUtils.getFiles(folderPath, stringList);
         for (String fileName : stringList) {
@@ -148,9 +158,23 @@ public class FreeHistoryServiceTest {
             List<FreeHistory> freeHistoryList = FileUtils.getFreeHistoryFromCL(fileName);
 
             int b = freeHistoryService.insertOrUpdateBatch(freeHistoryList);  //boolean 操作是否成功
-            System.out.println("结果：" + b);
-        }
 
+            System.out.println("结果：" + b);
+
+            List<App> appList;
+            App app;
+            if (!CollectionUtils.isEmpty(freeHistoryList)) {
+                appList = new ArrayList<>();
+                for (FreeHistory freeHistory : freeHistoryList) {
+                    app = new App();
+                    BeanUtils.copyProperties(freeHistory, app);
+                    app.setDelFlag(0);
+                    app.setCreatedDate(new Date());
+                    appList.add(app);
+                }
+                appService.insertOrUpdateBatch(appList);
+            }
+        }
     }
 
     @Test

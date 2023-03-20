@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.coderdream.freeapps.mapper.AppMapper">
+<mapper namespace="com.coderdream.freeapps.mapper.DescriptionMapper">
 
-    <resultMap id="BaseResultMap" type="com.coderdream.freeapps.model.App">
+    <resultMap id="BaseResultMap" type="com.coderdream.freeapps.model.Description">
             <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="appId" column="app_id" jdbcType="VARCHAR"/>
             <result property="title" column="title" jdbcType="VARCHAR"/>

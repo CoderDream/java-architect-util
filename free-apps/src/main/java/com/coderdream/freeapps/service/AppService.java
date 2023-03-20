@@ -39,6 +39,9 @@ public interface AppService {
 
     List<App> selectList(App app);
 
+    List<App> selectNoSnapshot();
+    List<App> selectDeletedAppList();
+
     /**
      * 有效的App列表
      *

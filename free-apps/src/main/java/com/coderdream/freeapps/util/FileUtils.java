@@ -3,10 +3,14 @@ package com.coderdream.freeapps.util;
 import cn.hutool.core.util.StrUtil;
 import com.coderdream.freeapps.model.FreeHistory;
 import com.spreada.utils.chinese.ZHConverter;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.util.CollectionUtils;
 
 import java.io.*;
 import java.math.BigDecimal;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -79,7 +83,7 @@ public class FileUtils {
 
             int titleIndex; //【限免软件】位置
 
-            List<String>titleList = new ArrayList<>();
+            List<String> titleList = new ArrayList<>();
             List<String> priceList = new ArrayList<>();
             List<String> descriptionList = new ArrayList<>();
             List<String> contentList = new ArrayList<>();
@@ -111,7 +115,7 @@ public class FileUtils {
                     if (!CollectionUtils.isEmpty(contentList)) {
                         freeHistory = new FreeHistory();
                         url = contentList.get(contentList.size() - 1);
-                        appId = StringUtils.parseAppId(url);
+                        appId = CdStringUtils.parseAppId(url);
 
                         freeHistory.setUrlCn(Constants.URL_CN_BASE + appId);
                         freeHistory.setUrlUs(Constants.URL_US_BASE + appId);
@@ -123,14 +127,14 @@ public class FileUtils {
                             if (titleFlag && !content.startsWith("¥")
                                     && !content.startsWith("￥")
                                     && !content.startsWith("$")) {
-                               titleList.add(content);
+                                titleList.add(content);
                             }
                             if (descriptionFlag && !content.startsWith("https://apps.apple.com")) {
                                 descriptionList.add(content);
                             }
                             idx++;
                             if (content.startsWith("限免软件")) {
-                               titleList.clear();
+                                titleList.clear();
                             }
                             // 来到价格页
                             if (content.startsWith("¥") || content.startsWith("￥")) {
@@ -138,7 +142,7 @@ public class FileUtils {
 //                                freeHistory.setName(org.apache.commons.lang3.StringUtils.join(nameList,""));
 //                                freeHistory.setPriceStr(line);
 //                                descriptionList.clear();
-                               titleFlag = false;
+                                titleFlag = false;
                                 descriptionFlag = true;
                                 priceFlag = true;
                             }
@@ -149,13 +153,13 @@ public class FileUtils {
 //                                freeHistory.setName(org.apache.commons.lang3.StringUtils.join(nameList,""));
 //                                freeHistory.setPriceStr(line);
 //                                descriptionList.clear();
-                               titleFlag = false;
+                                titleFlag = false;
                                 descriptionFlag = true;
                                 priceFlag = false;
                             }
 //                            freeHistory.setDescription(org.apache.commons.lang3.StringUtils.join(nameList,","));
                         }
-                       title = StrUtil.trim(org.apache.commons.lang3.StringUtils.join(titleList, " "));
+                        title = StrUtil.trim(org.apache.commons.lang3.StringUtils.join(titleList, " "));
                         freeHistory.setTitle(title);
                         priceStr = org.apache.commons.lang3.StringUtils.join(priceList, "");
                         freeHistory.setPriceStr(priceStr);
@@ -186,14 +190,14 @@ public class FileUtils {
 
                         freeHistory.setDataSource("cl"); // 设置数据来源
                         if (title.lastIndexOf("https") != -1 && description.lastIndexOf("https") != 1) {
-                            freeHistory.setRemark("ERROR: " +title + ":" + description);
+                            freeHistory.setRemark("ERROR: " + title + ":" + description);
                         }
 
                         freeHistoryList.add(freeHistory);
                     }
-                   titleFlag = true;
+                    titleFlag = true;
                     descriptionFlag = false;
-                   titleList = new ArrayList<>();
+                    titleList = new ArrayList<>();
                     priceList = new ArrayList<>();
                     descriptionList = new ArrayList<>();
                     contentList = new ArrayList<>();
@@ -338,5 +342,52 @@ public class FileUtils {
         }
 
 //        return stringList;
+    }
+
+    /**
+     * 通过网络地址获取文件InputStream
+     *
+     * @param path 地址
+     * @return
+     */
+    public static InputStream returnBitMap(String path) {
+        if (StringUtils.isBlank(path)) {
+            return null;
+        }
+        URL url = null;
+        InputStream is = null;
+        try {
+            url = new URL(path);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        try {
+            // 利用HttpURLConnection对象,我们可以从网络中获取网页数据.
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setDoInput(true);
+            conn.connect();
+            // 得到网络返回的输入流
+            is = conn.getInputStream();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return is;
+    }
+
+    public void inputStreamToFile(InputStream ins, File file) {
+        OutputStream os = null;
+        try {
+            os = new FileOutputStream(file);
+
+            int bytesRead = 0;
+            byte[] buffer = new byte[8192];
+            while ((bytesRead = ins.read(buffer, 0, 8192)) != -1) {
+                os.write(buffer, 0, bytesRead);
+            }
+            os.close();
+            ins.close();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }

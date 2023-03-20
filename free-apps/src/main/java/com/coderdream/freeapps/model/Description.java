@@ -4,18 +4,19 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
-import lombok.Data;
 
 /**
- * 
- * @TableName t_price_history
+ *
+ * @TableName t_description
  */
-@TableName(value ="t_price_history")
+@TableName(value ="t_description")
 @Data
-public class PriceHistory implements Serializable {
+public class Description implements Serializable {
     /**
      * ID
      */
@@ -26,11 +27,6 @@ public class PriceHistory implements Serializable {
      * 应用ID
      */
     private String appId;
-
-    /**
-     * 价格抓取日期
-     */
-    private Date crawlerDate;
 
     /**
      * 名称
@@ -276,10 +272,9 @@ public class PriceHistory implements Serializable {
         if (getClass() != that.getClass()) {
             return false;
         }
-        PriceHistory other = (PriceHistory) that;
+        Description other = (Description) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
             && (this.getAppId() == null ? other.getAppId() == null : this.getAppId().equals(other.getAppId()))
-            && (this.getCrawlerDate() == null ? other.getCrawlerDate() == null : this.getCrawlerDate().equals(other.getCrawlerDate()))
             && (this.getTitle() == null ? other.getTitle() == null : this.getTitle().equals(other.getTitle()))
             && (this.getSubTitle() == null ? other.getSubTitle() == null : this.getSubTitle().equals(other.getSubTitle()))
             && (this.getDesignedFor() == null ? other.getDesignedFor() == null : this.getDesignedFor().equals(other.getDesignedFor()))
@@ -334,7 +329,6 @@ public class PriceHistory implements Serializable {
         int result = 1;
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
         result = prime * result + ((getAppId() == null) ? 0 : getAppId().hashCode());
-        result = prime * result + ((getCrawlerDate() == null) ? 0 : getCrawlerDate().hashCode());
         result = prime * result + ((getTitle() == null) ? 0 : getTitle().hashCode());
         result = prime * result + ((getSubTitle() == null) ? 0 : getSubTitle().hashCode());
         result = prime * result + ((getDesignedFor() == null) ? 0 : getDesignedFor().hashCode());
@@ -392,7 +386,6 @@ public class PriceHistory implements Serializable {
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
         sb.append(", appId=").append(appId);
-        sb.append(", crawlerDate=").append(crawlerDate);
         sb.append(", title=").append(title);
         sb.append(", subTitle=").append(subTitle);
         sb.append(", designedFor=").append(designedFor);

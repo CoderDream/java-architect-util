@@ -4,20 +4,21 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
-import lombok.Data;
 
 /**
- * 
- * @TableName t_free_history
+ *
+ * @TableName t_expired_app
  */
-@TableName(value ="t_free_history")
+@TableName(value ="t_expired_app")
 @Data
-public class FreeHistory implements Serializable {
+public class ExpiredApp implements Serializable {
     /**
-     * 
+     * ID
      */
     @TableId(type = IdType.AUTO)
     private Long id;
@@ -28,14 +29,9 @@ public class FreeHistory implements Serializable {
     private String appId;
 
     /**
-     * 名称
+     * 最高价格
      */
-    private String title;
-
-    /**
-     * 副标题
-     */
-    private String subTitle;
+    private BigDecimal topPrice;
 
     /**
      * 国区价格
@@ -63,9 +59,19 @@ public class FreeHistory implements Serializable {
     private String priceStrUs;
 
     /**
-     * 是否美区限免（默认为0）
+     * 是否美区限免
      */
     private Integer usFlag;
+
+    /**
+     * 是否有内购，默认为0，无内购
+     */
+    private Integer inPurchaseFlag;
+
+    /**
+     * 内购是否限免
+     */
+    private Integer inPurchaseFreeFlag;
 
     /**
      * 国区URL
@@ -78,19 +84,14 @@ public class FreeHistory implements Serializable {
     private String urlUs;
 
     /**
-     * 限免日期
+     * 应用内购买项目
      */
-    private Date freeDate;
+    private Object appInPurchase;
 
     /**
-     * 应用简介
+     * 版本历史
      */
-    private String description;
-
-    /**
-     * 数据来源（cl、wechat、goapps、geek）
-     */
-    private String dataSource;
+    private Object versionHistory;
 
     /**
      * 备注
@@ -151,22 +152,22 @@ public class FreeHistory implements Serializable {
         if (getClass() != that.getClass()) {
             return false;
         }
-        FreeHistory other = (FreeHistory) that;
+        ExpiredApp other = (ExpiredApp) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
             && (this.getAppId() == null ? other.getAppId() == null : this.getAppId().equals(other.getAppId()))
-            && (this.getTitle() == null ? other.getTitle() == null : this.getTitle().equals(other.getTitle()))
-            && (this.getSubTitle() == null ? other.getSubTitle() == null : this.getSubTitle().equals(other.getSubTitle()))
+            && (this.getTopPrice() == null ? other.getTopPrice() == null : this.getTopPrice().equals(other.getTopPrice()))
             && (this.getPriceCn() == null ? other.getPriceCn() == null : this.getPriceCn().equals(other.getPriceCn()))
             && (this.getPriceUs() == null ? other.getPriceUs() == null : this.getPriceUs().equals(other.getPriceUs()))
             && (this.getPriceStr() == null ? other.getPriceStr() == null : this.getPriceStr().equals(other.getPriceStr()))
             && (this.getPriceStrCn() == null ? other.getPriceStrCn() == null : this.getPriceStrCn().equals(other.getPriceStrCn()))
             && (this.getPriceStrUs() == null ? other.getPriceStrUs() == null : this.getPriceStrUs().equals(other.getPriceStrUs()))
             && (this.getUsFlag() == null ? other.getUsFlag() == null : this.getUsFlag().equals(other.getUsFlag()))
+            && (this.getInPurchaseFlag() == null ? other.getInPurchaseFlag() == null : this.getInPurchaseFlag().equals(other.getInPurchaseFlag()))
+            && (this.getInPurchaseFreeFlag() == null ? other.getInPurchaseFreeFlag() == null : this.getInPurchaseFreeFlag().equals(other.getInPurchaseFreeFlag()))
             && (this.getUrlCn() == null ? other.getUrlCn() == null : this.getUrlCn().equals(other.getUrlCn()))
             && (this.getUrlUs() == null ? other.getUrlUs() == null : this.getUrlUs().equals(other.getUrlUs()))
-            && (this.getFreeDate() == null ? other.getFreeDate() == null : this.getFreeDate().equals(other.getFreeDate()))
-            && (this.getDescription() == null ? other.getDescription() == null : this.getDescription().equals(other.getDescription()))
-            && (this.getDataSource() == null ? other.getDataSource() == null : this.getDataSource().equals(other.getDataSource()))
+            && (this.getAppInPurchase() == null ? other.getAppInPurchase() == null : this.getAppInPurchase().equals(other.getAppInPurchase()))
+            && (this.getVersionHistory() == null ? other.getVersionHistory() == null : this.getVersionHistory().equals(other.getVersionHistory()))
             && (this.getRemark() == null ? other.getRemark() == null : this.getRemark().equals(other.getRemark()))
             && (this.getDelFlag() == null ? other.getDelFlag() == null : this.getDelFlag().equals(other.getDelFlag()))
             && (this.getCreateUserCode() == null ? other.getCreateUserCode() == null : this.getCreateUserCode().equals(other.getCreateUserCode()))
@@ -184,19 +185,19 @@ public class FreeHistory implements Serializable {
         int result = 1;
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
         result = prime * result + ((getAppId() == null) ? 0 : getAppId().hashCode());
-        result = prime * result + ((getTitle() == null) ? 0 : getTitle().hashCode());
-        result = prime * result + ((getSubTitle() == null) ? 0 : getSubTitle().hashCode());
+        result = prime * result + ((getTopPrice() == null) ? 0 : getTopPrice().hashCode());
         result = prime * result + ((getPriceCn() == null) ? 0 : getPriceCn().hashCode());
         result = prime * result + ((getPriceUs() == null) ? 0 : getPriceUs().hashCode());
         result = prime * result + ((getPriceStr() == null) ? 0 : getPriceStr().hashCode());
         result = prime * result + ((getPriceStrCn() == null) ? 0 : getPriceStrCn().hashCode());
         result = prime * result + ((getPriceStrUs() == null) ? 0 : getPriceStrUs().hashCode());
         result = prime * result + ((getUsFlag() == null) ? 0 : getUsFlag().hashCode());
+        result = prime * result + ((getInPurchaseFlag() == null) ? 0 : getInPurchaseFlag().hashCode());
+        result = prime * result + ((getInPurchaseFreeFlag() == null) ? 0 : getInPurchaseFreeFlag().hashCode());
         result = prime * result + ((getUrlCn() == null) ? 0 : getUrlCn().hashCode());
         result = prime * result + ((getUrlUs() == null) ? 0 : getUrlUs().hashCode());
-        result = prime * result + ((getFreeDate() == null) ? 0 : getFreeDate().hashCode());
-        result = prime * result + ((getDescription() == null) ? 0 : getDescription().hashCode());
-        result = prime * result + ((getDataSource() == null) ? 0 : getDataSource().hashCode());
+        result = prime * result + ((getAppInPurchase() == null) ? 0 : getAppInPurchase().hashCode());
+        result = prime * result + ((getVersionHistory() == null) ? 0 : getVersionHistory().hashCode());
         result = prime * result + ((getRemark() == null) ? 0 : getRemark().hashCode());
         result = prime * result + ((getDelFlag() == null) ? 0 : getDelFlag().hashCode());
         result = prime * result + ((getCreateUserCode() == null) ? 0 : getCreateUserCode().hashCode());
@@ -217,19 +218,19 @@ public class FreeHistory implements Serializable {
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
         sb.append(", appId=").append(appId);
-        sb.append(", title=").append(title);
-        sb.append(", subTitle=").append(subTitle);
+        sb.append(", topPrice=").append(topPrice);
         sb.append(", priceCn=").append(priceCn);
         sb.append(", priceUs=").append(priceUs);
         sb.append(", priceStr=").append(priceStr);
         sb.append(", priceStrCn=").append(priceStrCn);
         sb.append(", priceStrUs=").append(priceStrUs);
         sb.append(", usFlag=").append(usFlag);
+        sb.append(", inPurchaseFlag=").append(inPurchaseFlag);
+        sb.append(", inPurchaseFreeFlag=").append(inPurchaseFreeFlag);
         sb.append(", urlCn=").append(urlCn);
         sb.append(", urlUs=").append(urlUs);
-        sb.append(", freeDate=").append(freeDate);
-        sb.append(", description=").append(description);
-        sb.append(", dataSource=").append(dataSource);
+        sb.append(", appInPurchase=").append(appInPurchase);
+        sb.append(", versionHistory=").append(versionHistory);
         sb.append(", remark=").append(remark);
         sb.append(", delFlag=").append(delFlag);
         sb.append(", createUserCode=").append(createUserCode);

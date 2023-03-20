@@ -23,4 +23,6 @@ public interface PriceHistoryService extends IService<PriceHistory> {
     List<PriceHistory> selectDoneList(PriceHistory priceHistory);
 
     IPage<PriceHistory> selectPage(Page<PriceHistory> page);
+
+    public void dailyProcess();
 }

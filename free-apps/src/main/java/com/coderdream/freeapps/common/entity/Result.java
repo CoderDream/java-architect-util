@@ -1,9 +1,10 @@
 package com.coderdream.freeapps.common.entity;
 
-import java.io.Serializable;
-import java.util.List;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
+import java.util.List;
 
 /**
  * @author hresh
@@ -66,6 +67,16 @@ public class Result<T> implements Serializable {
    * @param message 提示信息
    */
   public static <T> Result<T> ok(T data, String message) {
+    return new Result<>(ExceptionEnum.SUCCESS.getResultCode(), message, data);
+  }
+
+  /**
+   * 成功返回结果
+   *
+   * @param data    获取的数据
+   * @param message 提示信息
+   */
+  public static <T> Result<T> put(T data, String message) {
     return new Result<>(ExceptionEnum.SUCCESS.getResultCode(), message, data);
   }
 

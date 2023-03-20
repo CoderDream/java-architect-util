@@ -132,6 +132,7 @@ public class JSoupUtil {
         appId = "id1454412797"; // del_flag 为空
         appId = "id1443533088"; // title相同
         appId = "id1445387613"; // 1.3K
+        appId = "id1560807339"; // 无截图
         App app = JSoupUtil.crawlerApp(appId, null);
         System.out.println(app);
     }
@@ -233,7 +234,7 @@ public class JSoupUtil {
 
                 try {
                     // 设置国区、美区价格
-                    if (StrUtil.isNotEmpty(realPrice)) {
+                    if (StrUtil.isNotEmpty(realPrice) && !realPrice.equals("Free") && !realPrice.equals("免费")) {
                         if (usFlag != null && usFlag == 1) {
                             app.setPriceUs(BigDecimal.valueOf(Double.valueOf(realPrice)));
                         } else {
@@ -241,6 +242,7 @@ public class JSoupUtil {
                         }
                     }
                 } catch (Exception e) {
+                    e.printStackTrace();
                     logger.error(e.getMessage());
                 }
             } else {
@@ -328,6 +330,17 @@ public class JSoupUtil {
             }
             // 截图
             List<String> screenshotsList = getSnapshotListByClass(document, SCREENSHOTS_LIST_CLASS);
+            if(CollectionUtils.isEmpty(screenshotsList)) {
+                String urlRaw;
+                if(app.getUsFlag() == 1) {
+                    urlRaw = Constants.URL_US_BASE + appId;
+                } else {
+                    urlRaw = Constants.URL_CN_BASE + appId;
+                }
+                document = JSoupUtil.getDocument(urlRaw);
+                screenshotsList = getSnapshotListByClass(document, SCREENSHOTS_LIST_CLASS);
+            }
+
             Map<String, List<String>> stringListMap = new LinkedHashMap<>();
             stringListMap.put(appId, screenshotsList);
             if (stringListMap != null) {
@@ -575,165 +588,6 @@ public class JSoupUtil {
             }
         }
 
-//        if (elements != null) {
-//            if (elements.size() == 8) {
-//                parseElementEight(appInfo, elements);
-//
-//                Element element6 = elements.get(5);
-//                if (element6 != null) {
-//                    TextNode titleNode06 = (TextNode) element6.childNode(0);
-//                    String age = titleNode06.text();
-//                    appInfo.setAge(age.trim());
-//                }
-//
-//                Element element7 = elements.get(6);
-//                if (element7 != null) {
-//                    if (element7.childNodeSize() > 0) {
-//                        if (element7.childNode(0) instanceof TextNode) {
-//                            TextNode titleNode07 = (TextNode) element7.childNode(0);
-//                            String copyright = titleNode07.text();
-//                            appInfo.setCopyright(copyright);
-//                        }
-//                    }
-//                }
-//
-//                Element element8 = elements.get(7);
-//                if (element8 != null) {
-//                    if (element8.childNodeSize() > 0) {
-//                        if (element8.childNode(0) instanceof TextNode) {
-//                            TextNode titleNode08 = (TextNode) element8.childNode(0);
-//                            String price = titleNode08.text();
-//                            appInfo.setPrice(price);
-//                        }
-//                    }
-//                }
-//            }
-//
-//            if (elements.size() == 9) {
-//                parseElementEight(appInfo, elements);
-//
-//                Element element6 = elements.get(5);
-//                if (element6 != null) {
-//                    TextNode titleNode06 = (TextNode) element6.childNode(0);
-//                    String age = titleNode06.text();
-//                    appInfo.setAge(age.trim());
-//                }
-//
-//                Element element7 = elements.get(6);
-//                if (element7 != null) {
-//                    if (element7.childNodeSize() > 0) {
-//                        if (element7.childNode(0) instanceof TextNode) {
-//                            TextNode titleNode07 = (TextNode) element7.childNode(0);
-//                            String copyright = titleNode07.text();
-//                            appInfo.setCopyright(copyright);
-//                        }
-//                    }
-//                }
-//
-//                Element element8 = elements.get(7);
-//                if (element8 != null) {
-//                    if (element8.childNodeSize() > 0) {
-//                        if (element8.childNode(0) instanceof TextNode) {
-//                            TextNode titleNode08 = (TextNode) element8.childNode(0);
-//                            String price = titleNode08.text();
-//                            appInfo.setPrice(price);
-//                        }
-//                    }
-//                }
-//
-//
-//                Element elementValue;
-//                Element elementKey;
-//                Element element9 = elements.get(8);
-//                if (element9.childNodeSize() > 1) {
-//                    Node temp = element9.childNode(1);
-//                    if (temp.childNodeSize() > 1) {
-//                        Element element9Data = (Element) temp.childNode(1);
-//                        int element9Size = element9Data.childNodeSize();
-//                        Element element9Temp;
-//                        Map<String, String> appInPurchase = new LinkedHashMap<>();
-//                        for (int i9 = 0; i9 < element9Size - 2; i9++) {
-//                            i9++;
-//                            element9Temp = (Element) element9Data.childNode(i9);
-//                            if (element9Temp.childNodeSize() == 5) {
-//                                elementKey = (Element) element9Temp.childNode(1);
-//                                elementValue = (Element) element9Temp.childNode(3);
-//                                appInPurchase.put(elementKey.text(), elementValue.text());
-//                            }
-//                        }
-//                        appInfo.setAppInPurchase(appInPurchase);
-//                    }
-//                }
-//            }
-//
-//            if (elements.size() == 10) {
-//                parseElementEight(appInfo, elements);
-//
-//                Element element6 = elements.get(5);
-//                if (element6 != null) {
-//                    TextNode titleNode06 = (TextNode) element6.childNode(0);
-//                    String age = titleNode06.text();
-//                    appInfo.setAge(age.trim());
-//                }
-//
-//                Element element7 = elements.get(6);
-//                if (element7 != null) {
-//                    if (element7.childNodeSize() > 0) {
-//                        if (element7.childNode(0) instanceof TextNode) {
-//                            TextNode titleNode07 = (TextNode) element7.childNode(0);
-//                            String ageExtraInfo = titleNode07.text();
-//                            appInfo.setAge(appInfo.getAge() + Constants.MIDDLE_POINT + ageExtraInfo);
-//                        }
-//                    }
-//                }
-//
-//                Element element8 = elements.get(7);
-//                if (element8 != null) {
-//                    if (element8.childNodeSize() > 0) {
-//                        if (element8.childNode(0) instanceof TextNode) {
-//                            TextNode titleNode08 = (TextNode) element8.childNode(0);
-//                            String copyright = titleNode08.text();
-//                            appInfo.setCopyright(copyright);
-//                        }
-//                    }
-//                }
-//
-//
-//                Element element9 = elements.get(8);
-//                if (element9 != null) {
-//                    if (element9.childNodeSize() > 0) {
-//                        if (element9.childNode(0) instanceof TextNode) {
-//                            TextNode titleNode09 = (TextNode) element9.childNode(0);
-//                            String price = titleNode09.text();
-//                            appInfo.setPrice(price);
-//                        }
-//                    }
-//                }
-//
-//                Element elementValue;
-//                Element elementKey;
-//                Element element10 = elements.get(9);
-//                if (element10.childNodeSize() > 1) {
-//                    Node temp = element10.childNode(1);
-//                    if (temp.childNodeSize() > 1) {
-//                        Element element10Data = (Element) temp.childNode(1);
-//                        int element10Size = element10Data.childNodeSize();
-//                        Element element10Temp;
-//                        Map<String, String> appInPurchase = new LinkedHashMap<>();
-//                        for (int i10 = 0; i10 < element10Size - 2; i10++) {
-//                            i10++;
-//                            element10Temp = (Element) element10Data.childNode(i10);
-//                            if (element10Temp.childNodeSize() == 5) {
-//                                elementKey = (Element) element10Temp.childNode(1);
-//                                elementValue = (Element) element10Temp.childNode(3);
-//                                appInPurchase.put(elementKey.text(), elementValue.text());
-//                            }
-//                        }
-//                        appInfo.setAppInPurchase(appInPurchase);
-//                    }
-//                }
-//            }
-//        }
         return appInfo;
     }
 
@@ -820,6 +674,9 @@ public class JSoupUtil {
 
                                         String value = element.getValue();
                                         int index = value.indexOf(Constants.SNAPSHOT_JPG_SUFFIX);
+                                        if(index == -1) {
+                                            index = value.indexOf(Constants.SNAPSHOT_JPG_2_SUFFIX);
+                                        }
                                         if (index != -1) {
                                             // 找到从index开始往回的第一个http位置
                                             String beginPart = value.substring(0, index);
@@ -828,6 +685,9 @@ public class JSoupUtil {
                                             stringList.add(url);
                                         }
                                         index = value.indexOf(Constants.SNAPSHOT_PNG_SUFFIX);
+                                        if(index == -1) {
+                                            index = value.indexOf(Constants.SNAPSHOT_PNG_2_SUFFIX);
+                                        }
                                         if (index != -1) {
                                             String beginPart = value.substring(0, index);
                                             int indexHttp = beginPart.lastIndexOf("http");
@@ -845,6 +705,9 @@ public class JSoupUtil {
                                             Attribute element = (Attribute) it.next();
                                             String value = element.getValue();
                                             int index = value.indexOf(Constants.SNAPSHOT_JPG_SUFFIX);
+                                            if(index == -1) {
+                                                index = value.indexOf(Constants.SNAPSHOT_JPG_2_SUFFIX);
+                                            }
                                             if (index != -1) {
                                                 String beginPart = value.substring(0, index);
                                                 int indexHttp = beginPart.lastIndexOf("http");
@@ -852,6 +715,9 @@ public class JSoupUtil {
                                                 stringList.add(url);
                                             }
                                             index = value.indexOf(Constants.SNAPSHOT_PNG_SUFFIX);
+                                            if(index == -1) {
+                                                index = value.indexOf(Constants.SNAPSHOT_PNG_2_SUFFIX);
+                                            }
                                             if (index != -1) {
                                                 String beginPart = value.substring(0, index);
                                                 int indexHttp = beginPart.lastIndexOf("http");

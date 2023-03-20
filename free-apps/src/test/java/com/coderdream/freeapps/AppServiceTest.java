@@ -3,13 +3,17 @@ package com.coderdream.freeapps;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.coderdream.freeapps.dto.AppQueryPageDTO;
+import com.coderdream.freeapps.handler.DailyPriceHandler;
 import com.coderdream.freeapps.model.App;
 import com.coderdream.freeapps.model.CrawlerHistory;
 import com.coderdream.freeapps.model.FreeHistory;
 import com.coderdream.freeapps.model.PriceHistory;
 import com.coderdream.freeapps.service.*;
+import com.coderdream.freeapps.util.Constants;
 import com.coderdream.freeapps.util.JSoupUtil;
+import com.coderdream.freeapps.util.ListUtils;
 import com.coderdream.freeapps.vo.AppVO;
+import org.slf4j.Logger;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -27,6 +31,7 @@ import javax.annotation.Resource;
 @SpringBootTest
 public class AppServiceTest {
 
+    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(AppServiceTest.class);
     @Autowired
     private AppService appService; //这里可能爆红，但是运行没问题
 
@@ -136,6 +141,177 @@ public class AppServiceTest {
         appService.insertOrUpdateBatch(Arrays.asList(app));
     }
 
+    @Test
+    public void testUpdateAppList() {
+        List<String> list = Arrays.asList(
+//
+                "id1493379610",
+                "id1495547377",
+                "id6444689318",
+                "id6443585604",
+                "id1330314351",
+                "id1050297004",
+                "id6443426852",
+                "id1583550659",
+                "id1493452735"
+        );
+        List<App> newList;
+        App appNew;
+        if (!CollectionUtils.isEmpty(list)) {
+            newList = new ArrayList<>();
+            for (String appId : list) {
+                appNew = JSoupUtil.crawlerApp(appId, null);
+                newList.add(appNew);
+
+                Integer period = new Random().nextInt(2000) + 1000;
+                try {
+                    Thread.sleep(period);   // 休眠3秒
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (!CollectionUtils.isEmpty(newList)) {
+                System.out.println("###");
+                appService.insertOrUpdateBatch(newList);
+            }
+
+//            if (!CollectionUtils.isEmpty(newList)) {
+//                List<App> newAppList = new ArrayList<>();
+//                App tempApp;
+//                for (App tApp: newList) {
+//                    tempApp = new App();
+//                    tempApp.setAppId(tApp.getAppId());
+//                    tempApp.setTitle(tApp.getTitle());
+//                    newAppList.add(tempApp);
+//                }
+//                System.out.println("###");
+//                appService.insertOrUpdateBatch(newAppList);
+//            }
+        }
+    }
+
+
+    @Test
+    public void testCrawlerAppList_01() {
+        List<App> noSnapshotListApp = appService.selectNoSnapshot();
+        List<App> newList;
+
+        if (!CollectionUtils.isEmpty(noSnapshotListApp)) {
+            logger.info("本次任务开始前有效的应用数: " + noSnapshotListApp.size());
+            // 分批处理
+            List<List<App>> lists = ListUtils.splitTo(noSnapshotListApp, Constants.BATCH_INSERT_UPDATE_ROWS);
+            for (List<App> list : lists) {
+                if (!CollectionUtils.isEmpty(list)) {
+                    newList = new ArrayList<>();
+                    if (!CollectionUtils.isEmpty(list)) {
+                        newList = new ArrayList<>();
+                        for (App tempApp : list) {
+                            App appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), tempApp.getUsFlag());
+                            newList.add(appNew);
+
+                            Integer period = new Random().nextInt(2000) + 500;
+                            try {
+                                Thread.sleep(period);   // 休眠3秒
+                            } catch (InterruptedException e) {
+                                throw new RuntimeException(e);
+                            }
+                        }
+
+                        Integer period = new Random().nextInt(4000) + 500;
+                        try {
+                            Thread.sleep(period);   // 休眠3秒
+                        } catch (InterruptedException e) {
+                            throw new RuntimeException(e);
+                        }
+                        if (!CollectionUtils.isEmpty(newList)) {
+                            System.out.println("###");
+                            appService.insertOrUpdateBatch(newList);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @Test
+    public void testCrawlerNoSnapshotAppList() {
+        List<App> noSnapshotListApp = appService.selectNoSnapshot();
+        List<App> newList;
+
+        if (!CollectionUtils.isEmpty(noSnapshotListApp)) {
+            logger.info("本次任务开始前无截图的应用数: " + noSnapshotListApp.size());
+            // 分批处理
+            List<List<App>> lists = ListUtils.splitTo(noSnapshotListApp, Constants.BATCH_INSERT_UPDATE_ROWS);
+            for (List<App> list : lists) {
+                if (!CollectionUtils.isEmpty(list)) {
+                    newList = new ArrayList<>();
+                    for (App tempApp : list) {
+                        App appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), tempApp.getUsFlag());
+                        newList.add(appNew);
+
+                        Integer period = new Random().nextInt(400) + 100;
+                        try {
+                            Thread.sleep(period);   // 休眠3秒
+                        } catch (InterruptedException e) {
+                            throw new RuntimeException(e);
+                        }
+                    }
+
+                    Integer period = new Random().nextInt(4000) + 500;
+                    try {
+                        Thread.sleep(period);   // 休眠3秒
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                    if (!CollectionUtils.isEmpty(newList)) {
+                        System.out.println("###");
+                        appService.insertOrUpdateBatch(newList);
+                    }
+                }
+            }
+        }
+    }
+
+    @Test
+    public void testDeletedList_01() {
+        List<App> noSnapshotListApp = appService.selectDeletedAppList();
+        List<App> newList;
+
+        if (!CollectionUtils.isEmpty(noSnapshotListApp)) {
+            logger.info("本次任务开始前已标识为下架的应用数: " + noSnapshotListApp.size());
+            // 分批处理
+            List<List<App>> lists = ListUtils.splitTo(noSnapshotListApp, Constants.BATCH_INSERT_UPDATE_ROWS);
+            for (List<App> list : lists) {
+                if (!CollectionUtils.isEmpty(list)) {
+                    newList = new ArrayList<>();
+                    for (App tempApp : list) {
+                        App appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), tempApp.getUsFlag());
+                        newList.add(appNew);
+
+                        Integer period = new Random().nextInt(400) + 100;
+                        try {
+                            Thread.sleep(period);   // 休眠3秒
+                        } catch (InterruptedException e) {
+                            throw new RuntimeException(e);
+                        }
+                    }
+
+                    Integer period = new Random().nextInt(4000) + 500;
+                    try {
+                        Thread.sleep(period);   // 休眠3秒
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                    if (!CollectionUtils.isEmpty(newList)) {
+                        System.out.println("###");
+                        appService.insertOrUpdateBatch(newList);
+                    }
+                }
+            }
+        }
+    }
+
 
     @Test
     public void testCrawlerAppList() {
@@ -156,9 +332,10 @@ public class AppServiceTest {
 //                "id1454412797", // del_flag 为空
 //                "id1443533088" ,// 搜韵
 //                "id1097323003","id1546838683"
-"id1400641344" // 无中英文
+//                "id1400641344" // 无中英文
 //                ,
 //               "id1095539172" // Rating 1.2K id1095539172
+                "id688983474"
         );
         List<App> newList;
         List<PriceHistory> priceHistoryList;
@@ -207,10 +384,10 @@ public class AppServiceTest {
         List<App> newList;
         List<PriceHistory> priceHistoryList;
         PriceHistory priceHistory;
-        int size = 200;
+        int size = 300;
         Page<App> page;
-        for (int i = 12; i < size; i++) {
-            page = new Page<>(i, 10);//这里有 limit 后面两个参数 当前也起始索引index pageSize每页显示的条数
+        for (int i = 1; i < size; i++) {
+            page = new Page<>(i, 20);//这里有 limit 后面两个参数 当前也起始索引index pageSize每页显示的条数
             appService.selectPage(page);//selectPage方法有两个参数，第一个分页对象，第二个参数Wrapper条件构造器
             if (page != null) {
                 list = page.getRecords();
@@ -232,7 +409,7 @@ public class AppServiceTest {
                             throw new RuntimeException(e);
                         }
                         System.out.println(app.getAppId());
-                        Integer period = new Random().nextInt(3000) + 1000;
+                        Integer period = new Random().nextInt(2000) + 500;
                         try {
                             Thread.sleep(period);   // 休眠3秒
                         } catch (InterruptedException e) {
@@ -245,6 +422,12 @@ public class AppServiceTest {
                     }
                     if (!CollectionUtils.isEmpty(priceHistoryList)) {
                         priceHistoryService.insertOrUpdateBatch(priceHistoryList);
+                    }
+                    Integer period = new Random().nextInt(3000) + 1000;
+                    try {
+                        Thread.sleep(period);   // 休眠3秒
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
                     }
                 }
             }

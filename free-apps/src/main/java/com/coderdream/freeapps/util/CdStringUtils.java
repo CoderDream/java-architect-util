@@ -1,6 +1,6 @@
 package com.coderdream.freeapps.util;
 
-public class StringUtils {
+public class CdStringUtils {
 
 
     /**

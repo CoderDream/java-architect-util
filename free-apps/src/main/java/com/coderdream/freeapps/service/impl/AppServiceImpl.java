@@ -1,7 +1,6 @@
 package com.coderdream.freeapps.service.impl;
 
 import cn.hutool.core.util.StrUtil;
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -13,13 +12,12 @@ import com.coderdream.freeapps.model.App;
 import com.coderdream.freeapps.service.AppService;
 import com.coderdream.freeapps.struct.AppStruct;
 import com.coderdream.freeapps.vo.AppVO;
-
-import java.util.List;
-
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 
 @Service
@@ -27,6 +25,7 @@ import javax.annotation.Resource;
 public class AppServiceImpl extends
         ServiceImpl<AppMapper, App> implements AppService {
 
+    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(AppServiceImpl.class);
     @Resource
     private AppMapper appMapper;
 
@@ -87,9 +86,34 @@ public class AppServiceImpl extends
     }
 
     @Override
+    public List<App> selectNoSnapshot() {
+
+        QueryWrapper<App> queryWrapper = new QueryWrapper<>();
+
+//        queryWrapper.eq("status", DeviceConstant.DeviceStatus.WORK)
+//                .or().eq("status", DeviceConstant.DeviceStatus.FAULT);
+
+        queryWrapper.eq("del_flag", 0);
+        queryWrapper.isNull("snapshot_url").or().likeLeft("snapshot_url", ": []}");
+        List<App> result = appMapper.selectList(queryWrapper);
+        return result;
+    }
+
+
+
+    @Override
+    public List<App> selectDeletedAppList() {
+        QueryWrapper<App> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("del_flag", 1);
+        List<App> result = appMapper.selectList(queryWrapper);
+        return result;
+    }
+
+    @Override
     public List<App> selectTodoList(App app) {
         QueryWrapper<App> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("del_flag", 0);
+//        queryWrapper.last("limit 2");
         List<App> result = appMapper.selectList(queryWrapper);
         return result;
     }
@@ -97,7 +121,8 @@ public class AppServiceImpl extends
     @Override
     public IPage<App> selectPage(Page<App> page) {
         QueryWrapper<App> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("del_flag", 0);
+        queryWrapper.eq("del_flag", 1);
         return appMapper.selectPage(page, queryWrapper);
     }
+
 }
