@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>v-bind指令</title>
+</head>
+<body>
+<div id="app">
+    <!--使用v-model指令双向绑定input的值和test属性的值-->
+    <p><input v-model="content" type="text"></p>
+    <!--显示content的值-->
+    <p>{{content}}</p>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        data() {
+            return {
+                content: "空调"
+            }
+        }
+    }).mount('#app');
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript钩子函数</title>
+</head>
+<body>
+<!--Velocity和jQuery.animate 的工作方式类似，也是用来实现JavaScript动画的一个很棒的选择-->
+<script src="velocity.js"></script>
+<div id="app">
+    <button @click="show = !show">
+        雪晴晚望
+    </button>
+    <transition
+            v-on:before-enter="beforeEnter"
+            v-on:enter="enter"
+            v-on:leave="leave"
+            v-bind:css="false"
+    >
+        <p v-if="show">
+            野火烧冈草，断烟生石松。
+        </p>
+    </transition>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+             show:false
+           }
+        },
+        methods: {
+            // 进入动画之前的样式
+            beforeEnter: function (el) {
+             // 注意：动画钩子函数的第一个参数：el，表示
+             // 要执行动画的那个DOM元素，是个原生的 JS DOM 对象
+             // 可以认为，el 是通过 document.getElementById('') 方式获取到的原生JS DOM对象
+                el.style.opacity = 0;
+                el.style.transformOrigin = 'left';
+            },
+            // 进入时的动画
+            enter: function (el, done) {
+                Velocity(el, { opacity: 1, fontSize: '2em' }, { duration: 300 });
+                Velocity(el, { fontSize: '1em' }, { complete: done });
+            },
+            //离开时的动画
+            leave: function (el, done) {
+                Velocity(el, { translateX: '15px', rotateZ: '50deg' }, { duration: 600 });
+                Velocity(el, { rotateZ: '100deg' }, { loop: 5 });
+                Velocity(el, {
+                    rotateZ: '45deg',
+                    translateY: '30px',
+                    translateX: '30px',
+                    opacity: 0
+                }, { complete: done })
+            }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+</body>
+</html>

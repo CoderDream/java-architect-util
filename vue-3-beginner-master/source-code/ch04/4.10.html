@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>动态参数</title>
+</head>
+<body>
+<div id="app">
+    <p><a v-bind:[attr]="url">百度链接</a></p>
+    <p>
+        <button v-on:[things]="doSomething">单击事件</button>
+    </p>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        //该函数返回数据对象
+        data() {
+            return {
+                attr: 'href',
+                things: 'click',
+                url: 'baidu.com'
+            }
+        },
+        //在选项对象的methods属性中定义方法
+        methods: {
+            doSomething: function () {
+                alert('触发了单击事件！')
+            }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+    }).mount('#app');
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>多个过渡效果</title>
+</head>
+<body>
+<style>
+        .v-enter-active, .v-leave-active {
+            transition: all 0.5s ease;
+        }
+        .v-enter, .v-leave-to{
+            opacity: 0.2;
+            transform:translateX(150px);
+        }
+        .my-transition-enter-active, .my-transition-leave-active {
+            transition: all 0.8s ease;
+        }
+        .my-transition-enter, .my-transition-leave-to{
+            opacity: 0.2;
+            transform:translateY(200px);
+        }
+    </style>
+<div id="app">
+    <button v-on:click="show = !show">
+        出郊
+    </button>
+    <transition>
+        <p v-if="!show">高田如楼梯，平田如棋局。</p>
+    </transition>
+    <transition name="my-transition">
+        <p v-if="!show">白鹭忽飞来，点破秧针绿。</p>
+    </transition>
+</div>
+
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+             show:true
+           }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+</body>
+</html>

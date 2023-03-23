@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>appear属性</title>
+</head>
+<body>
+<style>
+    .custom-appear{
+        font-size: 50px;
+        color: #c65ee2;
+        background: #3d9de2;
+    }
+    .custom-appear-to{
+        color: #e26346;
+        background: #488913;
+    }
+    .custom-appear-active{
+        color: red;
+        background: #CEFFCE;
+        transition: all 3s ease;
+    }
+</style>
+<div id="app">
+    <transition
+            appear
+            appear-class="custom-appear"
+            appear-to-class="custom-appear-to"
+            appear-active-class="custom-appear-active"
+    >
+        <p>野火烧冈草，断烟生石松。</p>
+    </transition>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({  }).mount('#app');
+</script>
+</body>
+</html>

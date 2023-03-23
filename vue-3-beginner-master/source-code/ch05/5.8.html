@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>在<template>上使用v-for</title>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <template v-for="(item,key,index) in nameObj">
+            <li>{{index}}--{{key}}--{{item}}</li>
+        </template>
+    </ul>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        data() {
+            return {
+                nameObj: {
+                    name: "洗衣机",
+                    city: "上海",
+                    price: "6800元"
+                }
+            }
+        }
+    }).mount('#app');
+</script>
+</body>
+</html>

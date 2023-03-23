@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>监听方法</title>
+</head>
+<body>
+<div id="app">
+    <p>元和角的转换</p>
+    <p>元：<input type="text" v-model="yuan"></p>
+    <p>角：<input type="text" v-model="jiao"></p>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+             yuan:0,
+             jiao:0
+           }
+        },
+        methods:{
+            method1:function (val,oldVal) {
+                this.jiao=val*10;
+            },
+            method2:function (val,oldVal) {
+                this.yuan=val/10;
+            }
+        },
+        watch:{
+            //监听yuan属性，yuan变化时，使jiao属性等于yuan*10
+            yuan:"method1",
+            //监听jiao属性，jiao变化时，使val属性等于jiao/10
+            jiao:"method2"
+        }
+     //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+</body>
+</html>

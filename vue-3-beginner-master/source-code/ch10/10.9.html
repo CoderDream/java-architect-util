@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>动态绑定复选框</title>
+</head>
+<body>
+<div id="app">
+    <input type="checkbox" v-model="toggle" true-value="yes" false-value="no">
+    <span>{{toggle}}</span>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+           toggle:'false'
+         }
+        }
+     }).mount('#app');
+</script>
+</body>
+</html>

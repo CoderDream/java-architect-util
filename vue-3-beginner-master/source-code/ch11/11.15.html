@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>reactive()方法和watchEffect()方法</title>
+</head>
+<body>
+<div id="app">
+    <post-item :post-content="content"></post-item>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    const {reactive, watchEffect} = Vue;
+    const state = reactive({
+         count: 0
+    });
+    watchEffect(() => {
+          document.body.innerHTML = `商品库存为： ${state.count}台。`
+     })
+</script>
+</body>
+</html>

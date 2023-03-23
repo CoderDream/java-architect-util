@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>方法调用方式</title>
+</head>
+<body>
+<div id="app">
+    <button v-on:click="a++">a+1</button>
+    <button v-on:click="b++">b+1</button>
+    <p>number+a={{add1()}}</p>
+    <p>number+b={{add2()}}</p>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        //该函数返回数据对象
+        data() {
+            return {
+                a: 0,
+                b: 0,
+                number: 30
+            }
+        },
+        methods: {
+            add1: function () {
+                console.log("add1");
+                return this.a + this.number;
+            },
+            add2: function () {
+                console.log("add2");
+                return this.b + this.number;
+            }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+    }).mount('#app');
+</script>
+</body>
+</html>

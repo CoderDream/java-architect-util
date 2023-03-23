@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>插槽基本用法</title>
+</head>
+<body>
+<div id="app">
+    <page>如今直上银河去，同到牵牛织女家。</page>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({});
+    vm.component('page', {
+        template: `<div><slot></slot></div>`
+    });
+    //在指定的DOM元素上装载应用程序实例的根组件
+    vm.mount('#app');
+</script>
+</body>
+</html>

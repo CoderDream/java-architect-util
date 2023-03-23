@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>系统修饰键</title>
+</head>
+<body>
+<div id="app">
+    <label for="name">姓名：</label>
+    <!--添加shift按键码-->
+    <input v-on:keyup.shift.enter="name" type="text" id="name">
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        methods: {
+            name:function(){
+                console.log("正在输入姓名...")
+            }
+        }
+     //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+</body>
+</html>

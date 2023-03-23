@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>传递title属性到子组件</title>
+</head>
+<body>
+<div id="app">
+    <blog-content v-bind:date-title="content"></blog-content>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        //该函数返回数据对象
+        data() {
+            return {
+                content: "玉瘦檀轻无限恨，南楼羌管休吹。"
+            }
+        }
+    });
+    vm.component('blog-content', {
+        props: ['dateTitle'],
+        template: '<h3>{{ dateTitle }}</h3>',
+    });
+    //在指定的DOM元素上装载应用程序实例的根组件
+    vm.mount('#app');
+</script>
+</body>
+</html>

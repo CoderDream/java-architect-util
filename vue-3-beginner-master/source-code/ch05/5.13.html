@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>v-bind指令</title>
+</head>
+<body>
+<div id="app">
+    <input type="button" value="按钮" v-bind:title="Title" v-bind:style="{color:Color,width:Width+'px'}">
+    <p><a :href="Address">超链接</a></p>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        data() {
+            return {
+                Title: '这是我自定义的title属性',
+                Color: 'blue',
+                Width: '100',
+                Address: "https://www.baidu.com/"
+            }
+        }
+    }).mount('#app');
+</script>
+</body>
+</html>

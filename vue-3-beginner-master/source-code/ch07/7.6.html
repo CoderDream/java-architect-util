@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>购物车效果</title>
+</head>
+<body>
+<div id="app">
+      <div>商品名称：<input v-model="name"/></div>
+      <button v-on:click="cut">减一个</button>
+           购买数量{{count}}
+      <button v-on:click="add">加一个</button>
+      <button v-on:click="addCart">加入购物车</button>
+      <div v-for="(item, index) in list" :key="index">
+           {{item.name}}  x{{item.count}}
+      </div>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+             name: '',
+             count:0,
+             isMax: false,
+            list: []
+           }
+        },
+      methods: {
+        cut() {
+          this.count = this.count - 1
+          this.isMax = false
+        },
+        add() {
+          this.count = this.count + 1
+        },
+        addCart() {
+          this.list.push({
+            name: this.name,
+            count: this.count
+          })
+        }
+      },
+      watch: {
+        count: function(newVal, oldVal) {
+          if(newVal > 10) {
+            this.isMax = true
+          }
+          if(newVal < 0) {
+            this.count = 0
+          }
+        },
+        name: function() {
+          this.count = 0,
+          this.isMax = false
+        }
+     }
+     //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+
+</body>
+</html>

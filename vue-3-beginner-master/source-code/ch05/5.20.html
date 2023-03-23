@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>v-cloak</title>
+    <!-- 添加 v-cloak 样式 -->
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <p v-cloak>{{message}}</p>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        //该函数返回数据对象
+        data() {
+            return {
+                message: "竹根流水带溪云。醉中浑不记，归路月黄昏。"
+            }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+    }).mount('#app');
+</script>
+</body>
+</html>

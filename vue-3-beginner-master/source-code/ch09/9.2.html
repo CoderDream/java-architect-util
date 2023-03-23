@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Class对象语法</title>
+
+</head>
+<body>
+<style>
+    .static{
+        color: white;
+    }
+    .class1{
+        background: #97CBFF;
+        font-size: 20px;
+        text-align: center;
+        line-height: 100px;
+    }
+    .class2{
+        width: 200px;
+        height: 100px;
+    }
+</style>
+<div id="app">
+    <div class="static" v-bind:class="{ class1: boole1, 'class2': boole2}">{{date}}</div>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+                boole1: true,
+                boole2: false,
+                date:"红藕香残玉簟秋"
+           }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+</body>
+</html>

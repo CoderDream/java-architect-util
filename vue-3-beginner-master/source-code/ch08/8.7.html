@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>阻止冒泡事件</title>
+<style>
+    .outside{
+        width: 300px;
+        height: 180px;
+        color:white;
+        font-size: 30px;
+        background: red;
+        margin-top: 120px;
+    }
+    .center{
+        width: 200px;
+        height: 120px;
+        background: #17a2b8;
+    }
+    .inside{
+        width: 100px;
+        height: 60px;
+        background: #a9b4ba;
+    }
+</style>
+</head>
+<body>
+<div id="app">
+    <div class="outside" @click.capture="outside">
+        <div class="center" @click.capture="center">
+            <div class="inside" @click="inside">内部</div>
+            中间
+        </div>
+        外层
+    </div>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        methods: {
+            outside:function(){
+                alert("外面的div")
+            },
+            center:function(){
+                alert("中间的div")
+            },
+            inside: function () {
+                alert("内部的div")
+            }
+        }
+     //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+
+</body>
+</html>

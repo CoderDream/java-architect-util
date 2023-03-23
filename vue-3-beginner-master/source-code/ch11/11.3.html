@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>使用prop属性向子组件传递数据</title>
+</head>
+<body>
+<div id="app">
+    <blog-content date-title="庭院深深深几许，云窗雾阁春迟。"></blog-content>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({});
+    vm.component('blog-content', {
+        props: ['dateTitle'],
+        //date-title就像data定义的数据属性一样
+        template: '<h3>{{ dateTitle }}</h3>',
+        //在该组件中可以使用“this.dateTitle”这种形式调用prop属性
+        created() {
+            console.log(this.dateTitle);
+        }
+    });
+    //在指定的DOM元素上装载应用程序实例的根组件
+    vm.mount('#app');
+</script>
+</body>
+</html>

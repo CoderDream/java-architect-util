@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <div id="app">
+        <div><img v-bind:src="url" width="450"></div>
+        <h2>{{ explain }}</h2>
+    </div>
+    <!--引入vue文件-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        const vm = Vue.createApp({
+            data() {
+                return {
+                    url: '1.jpg',
+                    explain: '苹果是蔷薇科苹果亚科苹果属植物，其营养价值很高。',
+                }
+            }
+        }).mount('#app');
+
+        function calculateTotalAmountES5(vip) {
+            //使用 var 方式定义变量
+            var amount = 0;
+            if (vip) {
+                //在此定义会覆盖初始化值 0
+                var amount = 1;
+                //在此定义会覆盖上一句的定义
+                var amount = 100;
+                //在此定义会覆盖上一句的定义
+                var amount = 1000;
+            }
+            return amount;
+        }
+        console.log(calculateTotalAmountES5(true));//打印输出内容
+
+        function calculateTotalAmountES6(vip) {
+            //使用 var 方式定义变量
+            var amount = 0;
+            if (vip) {
+                //使用 let 定义的局部变量
+                let amount1 = 1;//第 1 个 let
+                let amount2 = 100;//第 2 个 let
+                let amount3 = 1000;//第 3 个 let
+            }
+            return amount;
+        }
+        console.log(calculateTotalAmountES6(true));
+
+    </script>
+</body>
+
+</html>

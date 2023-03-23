@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>computed()方法</title>
+</head>
+<body>
+<div id="app">
+    <p>原始字符串: {{ message }}</p>
+    <p>反转字符串: {{ reversedMessage }}</p>
+</div>
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    const {ref, computed} = Vue;
+        const vm = Vue.createApp({
+             setup(){
+        	  const message = ref('人世几回伤往事，山形依旧枕寒流');
+        	  const reversedMessage = computed(() =>
+        	       message.value.split('').reverse().join('')
+        	   );
+        	   return {
+        	        message,
+        	        reversedMessage
+        	   }
+        	}
+       }).mount('#app');
+</script>
+</body>
+</html>

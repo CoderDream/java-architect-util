@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>设计购物的数量</title>
+</head>
+<body>
+<div id="app">
+    父组件：购买{{counter}}件
+    <child v-bind:value="counter" v-on:update:value="counter=$event"></child>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        data() {
+            return {
+                counter: 0
+            }
+        }
+    });
+    vm.component('child', {
+        data: function () {
+            return {
+                count: this.value
+            }
+        },
+        props: {
+            value: {
+                type: Number,
+                default: 0
+            }
+        },
+        methods: {
+            handleClick() {
+                this.$emit("update:value", ++this.count)
+            },
+        },
+        template: `
+          <div>
+          <sapn>子组件：购买{{ value }}件</sapn>
+          <button v-on:click="handleClick">增加</button>
+          </div>
+        `
+    });
+    //在指定的DOM元素上装载应用程序实例的根组件
+    vm.mount('#app');
+</script>
+</body>
+</html>

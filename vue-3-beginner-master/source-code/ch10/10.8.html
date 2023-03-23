@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>用v-for渲染的动态选项</title>
+</head>
+<body>
+<div id="app">
+    <h3>请选择您喜欢的课程</h3>
+    <select v-model="selected">
+        <option v-for="option in options" v-bind:value="option.value">{{option.text}}</option>
+    </select>
+    <span>选择的课程: {{ selected }}</span>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+           selected: [],
+            options:[
+                { text: '课程1', value: 'Java开发班' },
+                { text: '课程2', value: 'Python开发班' },
+                { text: '课程3', value: '前端开发班' }
+            ]
+           }
+        }
+     }).mount('#app');
+</script>
+</body>
+</html>

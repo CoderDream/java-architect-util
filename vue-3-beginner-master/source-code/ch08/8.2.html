@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>事件处理方法</title>
+</head>
+<body>
+<div id="app">
+    <button v-on:click="reduce">减少10分</button>
+    <button v-on:click="add">增加10分</button>
+    <p>期末考试总成绩是:{{ num }}分</p>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+             num:"360"
+           }
+        },
+        methods:{
+            add:function(){
+                this.num+=10
+            },
+            reduce:function(){
+                this.num-=10
+            }
+        }
+     //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+</body>
+</html>

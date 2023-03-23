@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>过滤与排序</title>
+</head>
+<body>
+<div id="app">
+    <p>所有库存的商品：</p>
+    <ul>
+        <li v-for="item in nameList">
+            {{item}}
+        </li>
+    </ul>
+    <p>产地为上海的商品：</p>
+    <ul>
+        <li v-for="item in namelists">
+            {{item}}
+        </li>
+    </ul>
+    <p>价格大于或等于5000元的商品：</p>
+    <ul>
+        <li v-for="item in prices()">
+            {{item}}
+        </li>
+    </ul>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        data() {
+            return {
+                nameList: [
+                    {name: "洗衣机", price: "5000", city: "上海"},
+                    {name: "冰箱", price: "6800", city: "北京"},
+                    {name: "空调", price: "4600", city: "深圳"},
+                    {name: "电视机", price: "4900", city: "上海"}
+                ]
+            }
+        },
+        computed: {  //计算属性
+            namelists: function () {
+                return this.nameList.filter(function (nameList) {
+                    return nameList.city === "上海";
+                })
+            }
+        },
+        methods: {  //方法
+            prices: function () {
+                return this.nameList.filter(function (nameList) {
+                    return nameList.price >= 5000;
+                })
+            }
+        }
+    }).mount('#app');
+</script>
+</body>
+</html>

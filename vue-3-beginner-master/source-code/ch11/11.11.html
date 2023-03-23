@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>命名插槽</title>
+</head>
+<body>
+<div id="app">
+    <page-layout>
+        <template #header>
+            <h2 align='center'>书河上亭壁</h2>
+        </template>
+        <template v-slot:main>
+            <h3>岸阔樯稀波渺茫，独凭危槛思何长。</h3>
+            <h3>萧萧远树疏林外，一半秋山带夕阳。</h3>
+        </template>
+        <template v-slot:footer>
+            <p align='right'>经典古诗</p>
+        </template>
+    </page-layout>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+     const vm= Vue.createApp({ });
+    vm.component('page-layout', {
+        template:`
+            <div class="container">
+                <header>
+                    <slot name="header"></slot>
+                </header>
+                <main>
+                    <slot name="main"></slot>
+                </main>
+                <footer>
+                    <slot name="footer"></slot>
+                </footer>
+            </div>
+        `
+    });
+    //在指定的DOM元素上装载应用程序实例的根组件
+     vm.mount('#app');
+</script>
+</body>
+</html>

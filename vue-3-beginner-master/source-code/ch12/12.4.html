@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS动画</title>
+</head>
+<body>
+<style>
+        /*进入动画阶段*/
+        .my-enter-active {
+            animation: my-in .5s;
+        }
+        /*离开动画阶段*/
+        .my-leave-active {
+            animation: my-in .5s reverse;
+        }
+        /*定义动画my-in*/
+        @keyframes my-in {
+            0% {
+                transform: scale(0);
+            }
+            50% {
+                transform: scale(1.5);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+<div id="app">
+    <button @click="show = !show">对雪</button>
+    <transition name="my">
+        <p v-if="show">六出飞花入户时，坐看青竹变琼枝。如今好上高楼望，盖尽人间恶路岐。</p>
+    </transition>
+</div>
+
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+             show:true
+           }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+</body>
+</html>

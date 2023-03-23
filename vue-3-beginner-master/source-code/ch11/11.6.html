@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>传递多个值</title>
+</head>
+<body>
+<div id="app">
+    <!--使用blog-content组件-->
+    <blog-content></blog-content>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({});
+    vm.component('blog-content', {
+        // 使用blog-title组件，并传递content
+        template: '<div><blog-title :name="name" :price="price" :num="num"></blog-title></div>',
+        data: function () {
+            return {
+                name: "苹果",
+                price: "6.88元",
+                num: "2800公斤"
+            }
+        }
+    });
+    vm.component('blog-title', {
+        props: ['name', 'price', 'num'],
+        template: '<ul><li>{{name}}</li><li>{{price}}</li><li>{{num}}</li></ul> ',
+    });
+    //在指定的DOM元素上装载应用程序实例的根组件
+    vm.mount('#app');
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册页面</title>
+</head>
+<body>
+<div id="app">
+    <form @submit.prevent="handleSubmit">
+        <span>用户名称:</span>
+        <input type="text" v-model="user.userName"><br>
+        <span>用户密码:</span>
+        <input type="password" v-model="user.pwd"><br>
+        <span>性别:</span>
+        <input type="radio" id="female" value="female" v-model="user.gender">
+        <label for="female">女</label>
+        <input type="radio" id="male" value="male" v-model="user.gender">
+        <label for="male">男</label><br>
+        <span>喜欢的技术：</span>
+        <input type="checkbox" id="basketball" value="basketball" v-model="user.hobbys">
+        <label for="basketball">Java开发</label>
+        <input type="checkbox" id="football" value="football" v-model="user.hobbys">
+        <label for="football">Python开发</label>
+        <input type="checkbox" id="pingpang" value="pingpang" v-model="user.hobbys">
+        <label for="pingpang">PHP开发</label><br>
+        <span>就业城市：</span>
+        <select v-model="user.selCityId">
+            <option value="">未选择</option>
+            <option v-for="city in citys" :value="city.id">{{city.name}}</option>
+        </select><br>
+        <span>介绍:</span><br>
+        <textarea rows="5" cols="30" v-model="user.desc"></textarea><br>
+        <input type="submit" value="注册">
+    </form>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        //该函数返回数据对象
+        data() {
+            return {
+                user: {
+                    userName: '',
+                    pwd: '',
+                    gender: 'female',
+                    hobbys: [],
+                    selCityId: '',
+                    desc: ''
+                },
+                citys: [{id: 01, name: "北京"}, {id: 02, name: "上海"}, {id: 03, name: "广州"}],
+            }
+        },
+        methods: {
+            handleSubmit(event) {
+                console.log(JSON.stringify(this.user));
+            }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+    }).mount('#app');
+</script>
+</body>
+</html>

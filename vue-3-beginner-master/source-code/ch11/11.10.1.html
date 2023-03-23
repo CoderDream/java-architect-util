@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>设置插槽的默认内容</title>
+</head>
+<body>
+<div id="app">
+    <page>流年莫虚掷，华发不相容。</page>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({});
+    vm.component('page', {
+        template: `<div id="app">
+    <page>流年莫虚掷，华发不相容。</page>
+</div>
+              `
+    });
+    //在指定的DOM元素上装载应用程序实例的根组件
+    vm.mount('#app');
+</script>
+</body>
+</html>

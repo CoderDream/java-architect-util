@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Class数组语法</title>
+<style>
+      .static{
+            color: white;
+       }
+       .class1{
+            background: #79FF79;
+            font-size: 20px;
+            text-align: center;
+            line-height: 100px;
+        }
+       .class2{
+            width: 400px;
+            height: 100px;
+        }
+</style>
+</head>
+<body>
+<div id="app">
+    <div class="static" v-bind:class="['class1','class2']">{{date}}</div>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+             date:"从军玉门道，逐虏金微山。"
+           }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+</body>
+</html>

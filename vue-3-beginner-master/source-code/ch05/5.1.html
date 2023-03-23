@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>v-show指令</title>
+</head>
+<body>
+<div id="app">
+    <h3 v-show="ok">西瓜</h3>
+    <h3 v-show="no">苹果</h3>
+    <h3 v-show="num>=1000">库存很充足！</h3>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        //该函数返回数据对象
+        data() {
+            return {
+                ok: true,
+                no: false,
+                num: 1000
+            }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+    }).mount('#app');
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>子组件要向父组件传递数据</title>
+</head>
+<body>
+<div id="app">
+    <parent></parent>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({});
+    vm.component('child', {
+        data: function () {
+            return {
+                info: {
+                    name: "哈密瓜",
+                    price: "8.66",
+                    num: "2600公斤"
+                }
+            }
+        },
+        methods: {
+            handleClick() {
+                //调用实例的$emit()方法触发自定义事件greet，并传递info
+                this.$emit("date", this.info)
+            },
+        },
+        template: '<button v-on:click="handleClick">显示子组件的数据</button>'
+    });
+    vm.component('parent', {
+        data: function () {
+            return {
+                name: '',
+                price: '',
+                num: '',
+            }
+        },
+        methods: {
+            // 接收子组件传递的数据
+            childDate(info) {
+                this.name = info.name;
+                this.price = info.price;
+                this.num = info.num;
+            }
+        },
+        template: `
+          <div>
+          <child v-on:date="childDate"></child>
+          <ul>
+            <li>{{ name }}</li>
+            <li>{{ price }}</li>
+            <li>{{ num }}</li>
+          </ul>
+          </div>
+        `
+    });
+    //在指定的DOM元素上装载应用程序实例的根组件
+    vm.mount('#app');
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>传递多个值</title>
+</head>
+<body>
+<style>
+    .bg1 {
+        background: #C1FFE4;
+    }
+    .bg2 {
+        width: 120px;
+    }
+</style>
+<div id="app">
+    <!--使用blog-content组件-->
+    <input-con class="bg2" type="text"></input-con>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({});
+    vm.component('input-con', {
+        template: '<input class="bg1">',
+    });
+    //在指定的DOM元素上装载应用程序实例的根组件
+    vm.mount('#app');
+</script>
+</body>
+</html>

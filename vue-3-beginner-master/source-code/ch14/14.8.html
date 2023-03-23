@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>布尔模式</title>
+</head>
+<body>
+<style>
+    .style1 {
+        background: #0BB20C;
+        color: white;
+    }
+</style>
+<body>
+<div id="app">
+    <div class="main">
+        <div>
+            <button @click="next">前进</button>
+            <button @click="goFirst">第1页</button>
+            <button @click="goSecond">第2页</button>
+            <button @click="goThird">第3页</button>
+            <button @click="goFourth">第4页</button>
+            <button @click="pre">后退</button>
+            <button @click="replace">替换当前页为特殊页</button>
+        </div>
+        <div class="style1">
+            <router-view></router-view>
+        </div>
+    </div>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<!--引入Vue Router-->
+<script src="https://unpkg.com/vue-router@next"></script>
+<script>
+    const first = {
+        template: '<h3>花时同醉破春愁，醉折花枝作酒筹。</h3>'
+    };
+    const second = {
+        template: '<h3>忽忆故人天际去，计程今日到梁州。</h3>'
+    };
+    const third = {
+        props: ['id'],
+        template: '<h3>圭峰霁色新，送此草堂人。---{{id}}</h3>'
+    };
+    const fourth = {
+        template: '<h3>终有烟霞约，天台作近邻。</h3>'
+    };
+    const special = {
+        template: '<h3>特殊页面的内容</h3>'
+    };
+    // 2.定义路由信息
+    const routes = [
+        {
+            path: '/first',
+            component: first
+        },
+        {
+            path: '/second',
+            component: second
+        },
+        {
+            path: '/third/:id',
+            component: third,
+            props: true
+        },
+        {
+            path: '/fourth',
+            component: fourth
+        },
+        {
+            path: '/special',
+            component: special
+        }
+    ];
+    const router = VueRouter.createRouter({
+        //提供要实现的history实现。为了方便起见，这里使用hash history
+        history: VueRouter.createWebHashHistory(),
+        routes   //简写，相当于routes：routes
+    });
+    const vm = Vue.createApp({
+        data() {
+            return {}
+        },
+        methods: {
+            goFirst: function () {
+                this.$router.push({
+                    path: '/first'
+                })
+            },
+            goSecond: function () {
+                this.$router.push({
+                    path: '/second'
+                })
+            },
+            goThird: function () {
+                this.$router.push({
+                    path: '/third'
+                })
+            },
+            goFourth: function () {
+                this.$router.push({
+                    path: '/fourth'
+                })
+            },
+            next: function () {
+                this.$router.go(1)
+            },
+            pre: function () {
+                this.$router.go(-1)
+            },
+            replace: function () {
+                this.$router.replace({
+                    path: '/special'
+                })
+            }
+        },
+        router: router
+    });
+    //使用路由器实例，从而让整个应用都有路由功能
+    vm.use(router);
+    vm.mount('#app');
+</script>
+</body>
+</html>

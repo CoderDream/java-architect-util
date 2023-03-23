@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="app">
+    <myon-input v-model="price"></myon-input>
+    <span>{{price}}</span>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    // 定义组件myon-input
+    vm.component('myon-input', {
+        template: `
+                <span>
+                  <input
+                    :value="value"
+                    @input="$emit('input', $event.target.value)">
+                </span>
+            `,
+         props: ['value'],   //向组件传递price的值
+    })
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+                price:1
+           }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>数组更新检测</title>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="(item,index) in nameList">
+            {{index}}--{{item}}
+        </li>
+    </ul>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        data() {
+            return {
+                nameList: ["洗衣机", "上海", "5800元"]
+            }
+        }
+    }).mount('#app');
+    //使用数组原型的splice()方法
+    vm.nameList.splice(0,0,"畅销版");
+</script>
+</body>
+</html>

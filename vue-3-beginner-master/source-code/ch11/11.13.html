@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>解构插槽prop</title>
+</head>
+<body>
+<div id="app">
+    <current-verse>
+        <template v-slot="{verse:poetry}">
+            {{poetry.firstContent }}
+        </template>
+    </current-verse>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+     const vm= Vue.createApp({ });
+    vm.component('currentVerse', {
+        template: ' <span><slot :verse="verse">{{ verse.lastContent }}</slot></span>',
+        data:function(){
+            return {
+                verse: {
+                    firstContent: '此心随去马，迢递过千峰。',
+                   secondContent: '野渡波摇月，空城雨翳钟。'
+                }
+            }
+        }
+    });
+    //在指定的DOM元素上装载应用程序实例的根组件
+     vm.mount('#app');
+</script>
+</body>
+</html>

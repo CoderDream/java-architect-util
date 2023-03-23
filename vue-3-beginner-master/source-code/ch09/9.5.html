@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Class对象语法</title>
+</head>
+<body>
+<div id="app">
+    <div v-bind:style="{color:'blue',fontSize:'30',border:'1px solid red'}">辞君向天姥，拂石卧秋霜。</div>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({ }).mount('#app');
+</script>
+</body>
+</html>

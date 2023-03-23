@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>添加CSS过渡效果</title>
+</head>
+<body>
+<style>
+       /*v-enter-active入场动画的时间段*/
+       /*v-leave-active离场动画的时间段*/
+       .v-enter-active, .v-leave-active{
+            transition: all .5s ease;
+        }
+       /*v-enter：是一个时间点，进入之前，元素的起始状态，此时还没有进入*/
+       /*v-leave-to：是一个时间点，是动画离开之后，离开的终止状态，此时元素动画已经结束。*/
+       .v-enter, .v-leave-to{
+            opacity: 0.2;
+            transform:translateY(200px);
+       }
+</style>
+<div id="app">
+    <button v-on:click="show = !show">
+        古诗欣赏
+    </button>
+    <transition>
+        <p v-if="!show">鸿雁长飞光不度，鱼龙潜跃水成文。</p>
+    </transition>
+</div>
+
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+             show:true
+           }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+</body>
+</html>

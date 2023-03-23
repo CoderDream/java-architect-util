@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>v-on</title>
+</head>
+<body>
+<div id="app">
+    <p>
+        <!--监听click事件，使用JavaScript语句-->
+        <button v-on:click="number-=1">-1</button>
+        <span>{{number}}</span>
+        <button v-on:click="number+=1">+1</button>
+    </p>
+    <p>
+        <!--监听click事件，绑定方法-->
+        <button v-on:click="say()">古诗</button>
+    </p>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        //该函数返回数据对象
+        data() {
+            return {
+                number: 100
+            }
+        },
+        methods: {
+            say: function () {
+                alert("曲水浪低蕉叶稳，舞雩风软纻罗轻。")
+            }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+    }).mount('#app');
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>树状项目分类</title>
+</head>
+<body>
+<div id="app">
+    <category-component :list="categories"></category-component>
+</div>
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    const CategoryComponent = {
+        name: 'catComp',
+        props: {
+            list: {
+                type: Array
+            }
+        },
+        template: `
+          <ul>
+          <!-- 如果list为空，表示没有子分类了，结束递归 -->
+          <template v-if="list">
+            <li v-for="cat in list">
+              {{ cat.name }}
+              <catComp :list="cat.children"/>
+            </li>
+          </template>
+          </ul>
+        `
+    }
+    const app = Vue.createApp({
+        data() {
+            return {
+                categories: [
+                    {
+                        name: '网站开发技术',
+                        children: [
+                            {
+                                name: '前端开发技术',
+                                children: [
+                                    {name: 'HTML5开发技术'},
+                                    {name: 'Javascript开发技术'},
+                                    {name: 'Vue.js开发技术'}
+                                ]
+                            },
+                            {
+                                name: 'PHP后端开发技术'
+                            }
+                        ]
+                    },
+                    {
+                        name: '网络安全技术',
+                        children: [
+                            {name: 'Linux系统安全'},
+                            {name: '代码审计安全'},
+                            {name: '渗透测试安全'}
+                        ]
+                    }]
+            }
+        },
+        components: {
+            CategoryComponent
+        }
+    }).mount('#app');
+</script>
+
+</body>
+</html>

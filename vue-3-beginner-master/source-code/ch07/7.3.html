@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>监听对象</title>
+</head>
+<body>
+<div id="app">
+    商品价格：<input type="text" v-model="goods.price">
+    <p>{{pess}}</p>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+             pess:'',
+            goods: {
+                name: '洗衣机',
+                price:0
+             }
+           }
+        },
+        watch: {
+            goods:{
+                //该回调函数在goods对象的属性改变时被调用
+                handler: function(newValue,oldValue){
+                    if(newValue.price>=8000){
+                        this.pess="价格太贵了，不可以采购！";
+                    }
+                    else{
+                        this.pess="价格合适，可以采购！";
+                    }
+                },
+                //设置为true，无论属性被嵌套多深，改变时都会调用handler函数
+                deep:true
+            }
+        }
+     //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+
+</body>
+</html>

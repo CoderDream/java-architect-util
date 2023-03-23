@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="axios.min.js"></script>
+</head>
+<body>
+<template>
+    <div class="hello">
+        <h2>{{ city }}</h2>
+        <h4>今天：{{ date }} {{ week }}</h4>
+        <h4>{{ message }}</h4>
+        <ul>
+            <li v-for="item in obj">
+                <div>
+                    <h3>{{ item.date }}</h3>
+                    <h3>{{ item.week }}</h3>
+                    <img :src="get(item.wea_img)" alt="">
+                    <h3>{{ item.wea }}</h3>
+                </div>
+            </li>
+        </ul>
+    </div>
+</template>
+<script>
+    export default {
+        name: 'HelloWorld',
+        data() {
+            return {
+                city: "",
+                obj: [],
+                date: "",
+                week: "",
+                message: ""
+            }
+        },
+        methods: {
+            //定义get方法，拼接图片的路径
+            get(sky) {
+                return "durian/" + sky + ".png"
+            }
+        },
+        created() {
+            this.get();  //页面开始加载时调用get方法
+            var that = this;
+            this.$axios.get("/api")
+                .then(function (response) {
+                    //处理数据
+                    that.city = response.data.city;
+                    that.obj = response.data.data;
+                    that.date = response.data.data[0].date;
+                    that.week = response.data.data[0].week;
+                    that.message = response.data.data[0].air_tips;
+                })
+                .catch(function (error) {
+                    console.log(error)
+                })
+        }
+    }
+</script>
+<style scoped>
+    h2, h4 {
+        text-align: center;
+    }
+
+    li {
+        float: left;
+        list-style: none;
+        width: 200px;
+        text-align: center;
+        border: 1px solid red;
+    }
+</style>
+</body>
+</html>

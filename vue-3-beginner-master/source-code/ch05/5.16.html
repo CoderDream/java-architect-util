@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>v-text</title>
+</head>
+<body>
+<div id="app">
+    <!--更新部分内容-->
+    <p>古诗欣赏:{{message}}</p>
+    <!--更新全部内容-->
+    <p v-text="message">古诗欣赏:</p>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        //该函数返回数据对象
+        data() {
+            return {
+                message: '百舌无言桃李尽，柘林深处鹁鸪鸣。'
+            }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+    }).mount('#app');
+</script>
+</body>
+</html>

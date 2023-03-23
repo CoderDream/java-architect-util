@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>style数组语法</title>
+</head>
+<body>
+<div id="app">
+    <div v-bind:style="[styleObject1,styleObject2]">片片飞花弄晚，蒙蒙残雨笼晴。</div>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+            styleObject1: {
+                color: 'red',
+                fontSize: '40px'
+            }
+           }
+        },
+        //计算属性
+        computed:{
+            styleObject2:function(){
+                return {
+                    border: '1px solid blue',
+                    padding: '30px',
+                    textAlign:'center'
+                }
+            }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+
+</body>
+</html>

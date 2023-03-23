@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ref()方法</title>
+</head>
+<body>
+<div id="app">
+    <post-item :post-content="content"></post-item>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    const {ref, watchEffect} = Vue;
+    const state = ref(0)
+    watchEffect(() => {
+          document.body.innerHTML = `商品库存为： ${state.value}台。`
+     })
+</script>
+</body>
+</html>

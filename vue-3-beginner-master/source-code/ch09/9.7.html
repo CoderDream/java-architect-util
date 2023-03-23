@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>隔行变色的商品表</title>
+    <style>
+        body {
+            width: 600px;
+        }
+
+        table {
+            border: 2px solid black;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th {
+            height: 50px;
+        }
+
+        th, td {
+            border-bottom: 1px solid black;
+            text-align: center;
+        }
+
+        [v-cloak] {
+            display: none;
+        }
+
+        .even {
+            background-color: #7AFEC6;
+        }
+    </style>
+</head>
+<body>
+<div id="app" v-cloak>
+    <table>
+        <tr>
+            <th>编号</th>
+            <th>名称</th>
+            <th>库存</th>
+            <th>价格</th>
+            <th>产地</th>
+        </tr>
+        <tr v-for="(goods, index) in goodss"
+            :key="goods.id" :class="{even : (index+1) % 2 === 0}">
+            <td>{{ goods.id }}</td>
+            <td>{{ goods.title }}</td>
+            <td>{{ goods.num }}</td>
+            <td>{{ goods.price }}</td>
+            <td>{{ goods.city }}</td>
+        </tr>
+    </table>
+</div>
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    const vm = Vue.createApp({
+        data() {
+            return {
+                goodss: [
+                    {
+                        id: 1,
+                        title: '洗衣机',
+                        num: '2800台',
+                        price: 188,
+                        city: '北京'
+                    },
+                    {
+                        id: 2,
+                        title: '电视机',
+                        num: '2600台',
+                        price: 188,
+                        city: '广州'
+                    },
+                    {
+                        id: 3,
+                        title: '冰箱',
+                        num: '5400台',
+                        price: 188,
+                        city: '上海'
+                    },
+                    {
+                        id: 4,
+                        title: '空调',
+                        num: '1800台',
+                        price: 188,
+                        city: '北京'
+                    }
+                ]
+            }
+        },
+        methods: {
+            deleteItem(index) {
+                this.goodss.splice(index, 1);
+            }
+        }
+    }).mount('#app');
+</script>
+</body>
+</html>

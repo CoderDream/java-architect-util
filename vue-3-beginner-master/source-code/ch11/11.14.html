@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>setup()函数</title>
+</head>
+<body>
+<div id="app">
+    <post-item :post-content="content"></post-item>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+     const vm= Vue.createApp({ 
+                data(){
+                    return {
+                        content: '月浅灯深，梦里云归何处寻。'
+                    }
+                }
+    });
+    vm.component('PostItem', {
+                //声明props
+                props: ['postContent'],
+                setup(props){
+                    Vue.watchEffect(() => {
+                        console.log(props.postContent);
+                    })
+                },
+                template: '<h3>{{ postContent }}</h3>'
+            });
+    //在指定的DOM元素上装载应用程序实例的根组件
+     vm.mount('#app');
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>命名路由</title>
+</head>
+<body>
+<style>
+    .style1 {
+        height: 20vh;
+        background: #0BB20C;
+        color: white;
+    }
+
+    .style2 {
+        background: #9e8158;
+        float: left;
+        width: 30%;
+        height: 70vh;
+        color: white;
+    }
+
+    .style3 {
+        background: #2d309e;
+        float: left;
+        width: 70%;
+        height: 70vh;
+        color: white;
+    }
+</style>
+<div id="app">
+    <div class="style1">
+        <router-view></router-view>
+    </div>
+    <div class="container">
+        <div class="style2">
+            <router-view name="sidebar"></router-view>
+        </div>
+        <div class="style3">
+            <router-view name="main"></router-view>
+        </div>
+    </div>
+</div>
+<template id="sidebar">
+    <div class="sidebar">
+        侧边栏导航内容
+    </div>
+</template>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<!--引入Vue Router-->
+<script src="https://unpkg.com/vue-router@next"></script>
+<script>
+    // 1.定义路由跳转的组件模板
+    const header = {
+        template: '<div class="header"> 头部内容 </div>'
+    }
+    const sidebar = {
+        template: '#sidebar'
+    }
+    const main = {
+        template: '<div class="main">正文部分</div>'
+    }
+    // 2.定义路由信息
+    const routes = [{
+        path: '/',
+        components: {
+            default: header,
+            sidebar: sidebar,
+            main: main
+        }
+    }];
+    const router = VueRouter.createRouter({
+        //提供要实现的history实现。为了方便起见，这里使用hash history
+        history: VueRouter.createWebHashHistory(),
+        routes   //简写，相当于routes：routes
+    });
+    const vm = Vue.createApp({});
+    //使用路由器实例，从而让整个应用都有路由功能
+    vm.use(router);
+    vm.mount('#app');
+</script>
+</body>
+</html>

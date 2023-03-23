@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div id="app">
+    {{ info }}
+</div>
+
+<script>
+    const app = {
+        data() {
+            return {
+                info: 'Ajax 测试!!'
+            }
+        },
+        mounted() {
+            axios
+                .get('https://www.runoob.com/try/ajax/json_demo.json')
+                .then(response => (this.info = response))
+                .catch(function (error) { // 请求失败处理
+                    console.log(error);
+                });
+        }
+    }
+
+    Vue.createApp(app).mount('#app')
+</script>
+</body>
+</html>

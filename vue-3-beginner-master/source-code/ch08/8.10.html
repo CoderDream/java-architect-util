@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>prevent修饰符</title>
+</head>
+<body>
+<div id="app">
+    <div style="margin-top: 100px">
+        <a @click.prevent="alert()" href="https://cn.vuejs.org" >阻止跳转</a>
+    </div>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        methods:{
+            alert:function(){
+                alert("阻止<a>标签的链接")
+            }
+        }
+     //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+</body>
+</html>

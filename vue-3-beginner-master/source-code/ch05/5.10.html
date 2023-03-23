@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>不使用key属性</title>
+</head>
+<body>
+<div id="app">
+    <div>名称:<input type="text" v-model="names"></div>
+    <div>产地:<input type="text" v-model="citys"></div>
+    <div>价格:<input type="text" v-model="prices">
+        <button v-on:click="add()">添加</button>
+    </div>
+    <hr>
+    <p v-for="item in nameList">
+        <input type="checkbox">
+        <span>名称:{{item.name}}—产地:{{item.city}}—价格:{{item.price}}</span>
+    </p>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        data() {
+            return {
+                names: "",
+                citys: "",
+                prices: "",
+                nameList: [
+                    {name: '洗衣机', city: '北京', price: '6800元'},
+                    {name: '冰箱', city: '上海', price: '8900元'},
+                    {name: '空调', city: '广州', price: '6800元'}
+                ]
+            }
+        },
+        methods: {
+            add: function () {
+                this.nameList.unshift({
+                    name: this.names,
+                    city: this.citys,
+                    price: this.prices
+                })
+            }
+        }
+    }).mount('#app');
+</script>
+</body>
+</html>

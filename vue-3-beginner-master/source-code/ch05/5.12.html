@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>v-for与v-if一同使用</title>
+</head>
+<body>
+<div id="app">
+    <h3>已经出库的商品</h3>
+    <ul>
+        <template v-for="goods in goodss">
+            <li v-if="goods.isOut">
+                {{goods.name}}
+            </li>
+        </template>
+    </ul>
+    <h3>没有出库的商品</h3>
+    <ul>
+        <template v-for="goods in goodss">
+            <li v-if="!goods.isOut">
+                {{goods.name}}
+            </li>
+        </template>
+    </ul>
+</div>
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    const vm = Vue.createApp({
+        data() {
+            return {
+                goodss: [
+                    {name: '洗衣机', isOut: false},
+                    {name: '冰箱', isOut: true},
+                    {name: '空调', isOut: false},
+                    {name: '电视机', isOut: true},
+                    {name: '电脑', isOut: false}
+                ]
+            }
+        }
+    }).mount('#app');
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>访问插槽的内容</title>
+</head>
+<body>
+<div id="app">
+    <page-layout>
+        <template v-slot:default="slotProps">
+            {{slotProps.values.city}}
+        </template>
+    </page-layout>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+     const vm= Vue.createApp({ });
+    vm.component('page-layout', {
+        data:function(){
+          return{
+              info:{
+                  name:'苹果',
+                  price:8.86,
+                  city:"深圳"
+              }
+          }
+        },
+        template:`
+            <button>
+                <slot v-bind:values="info">
+                    {{info.city}}
+                </slot>
+            </button>
+        `
+    });
+    //在指定的DOM元素上装载应用程序实例的根组件
+     vm.mount('#app');
+</script>
+</body>
+</html>

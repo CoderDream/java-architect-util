@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>v-for指令遍历整数</title>
+</head>
+<body>
+<div id="app">
+    <span v-for="item in 20">
+        {{item}}
+    </span>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({}).mount('#app');
+</script>
+</body>
+</html>

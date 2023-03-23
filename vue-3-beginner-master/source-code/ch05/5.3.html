@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>v-else-if指令与v-if指令</title>
+</head>
+<body>
+<div id="app">
+    <span v-if="score>=90">优秀</span>
+    <span v-else-if="score>=80">合格</span>
+    <span v-else-if="score>=60">及格</span>
+    <span v-else>不及格</span>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        //该函数返回数据对象
+        data() {
+            return {
+                ok: true,
+                no: false,
+                score: 85
+            }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+    }).mount('#app');
+</script>
+</body>
+</html>

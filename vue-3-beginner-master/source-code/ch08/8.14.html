@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>处理用户注册信息</title>
+</head>
+<body>
+ <div id="app">
+        <p>{{msg}}</p>
+        <button v-on:click="handleClick">单击按钮</button>
+        <button @click="handleClick">单击按钮</button>
+        <h5>选择感兴趣技术</h5>
+        <select v-on:change="handleChange">
+            <option value="red">网站前端技术</option>
+            <option value="green">Python编程技术</option>
+            <option value="pink">Java编程技术</option>
+        </select>
+        <h5>表单提交</h5>
+        <form v-on:submit.prevent="handleSubmit">
+            <input type="checkbox"  v-on:click="handleDisabled"/>
+            同意本站协议
+            <br><br>
+            <button :disabled="isDisabled">注册</button>
+        </form>
+ </div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+                msg:"注册账户",
+                isDisabled:true
+           }
+        },
+            //methods对象
+            methods:{
+                //通过methods来定义需要的方法
+                handleClick:function(){
+                    console.log("btn is clicked");
+                },
+                handleChange:function(event){
+                    console.log("选择了某选项"+event.target.value);
+                },
+                handleSubmit:function(){
+                    console.log("触发事件");
+                },
+                handleDisabled:function(event){
+				    console.log(event.target.checked);
+                    if(event.target.checked==true){
+                        this.isDisabled =  false;
+                    }
+                    else {
+                        this.isDisabled =  true;
+                    }
+                }
+            }
+     //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+</body>
+</html>

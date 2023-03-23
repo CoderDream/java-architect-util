@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>商品购物车</title>
+
+</head>
+<body>
+<div id="app">
+    <div>
+        <div>
+            <h3 align="center">商品购物车</h3>
+        </div>
+        <div>
+            <div>
+                <label>
+                    <input type="checkbox" v-model="checkAll">
+                    全选
+                </label>
+                <label>
+                    <input type="checkbox" v-model="checkNo">
+                    反选
+                </label>
+            </div>
+            <ul>
+                <li v-for="(item,index) in list" :key="item.id">
+                    <div>
+                        <label>
+                            <input type="checkbox" v-model="item.checked">
+                            {{item.name}}
+                        </label>
+                        ￥ {{item.price}}
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="button" @click="item.nums>1?item.nums-=1:1">-</button>
+                        数量：{{item.nums}}
+                        <button type="button" @click="item.nums+=1">+</button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        小计：{{item.nums * item.price}}
+                    </div>
+                </li>
+            </ul>
+            <p align="right">总价：{{sumPrice}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+                    type="button" @click="save">提交订单
+            </button>
+            </p>
+        </div>
+    </div>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        //该函数返回数据对象
+        data() {
+            return {
+                list: [{
+                    id: 1,
+                    name: '洗衣机',
+                    checked: true,
+                    price: 6800,
+                    nums: 1,
+                },
+                    {
+                        id: 2,
+                        name: '电视机',
+                        checked: true,
+                        price: 4900,
+                        nums: 1,
+                    },
+                    {
+                        id: 3,
+                        name: '饮水机',
+                        checked: true,
+                        price: 1000,
+                        nums: 3,
+                    },
+                ],
+            }
+        },
+        computed: {
+            //全选
+            checkAll: {
+                // 设置值,当点击全选按钮的时候触发
+                set(v) {
+                    this.list.forEach(item => {
+                        item.checked = v
+                    });
+                },
+                // 取值,当列表中的选择改变之后触发
+                get() {
+                    return this.list.length === this.list.filter(item => item.checked == true).length;
+                },
+            },
+            //反选
+            checkNo: {
+                set() {
+                    this.list.forEach(item => {
+                        item.checked = !item.checked;
+                    });
+                },
+                get() {
+                    // return this.list.length === this.list.filter(item => item.checked == true).length;
+                },
+            },
+            // 总价计算
+            sumPrice() {
+                return this.list
+                    .filter(item => item.checked)
+                    /* reduce*******************************
+                    arr.reduce(function (prev, cur, index, arr) {
+                        ...
+                    }, init);
+                    arr 表示原数组；
+                    prev 表示上一次调用回调时的返回值， 或者初始值 init;
+                    cur 表示当前正在处理的数组元素；
+                    index 表示当前正在处理的数组元素的索引， 若提供 init 值， 则索引为0， 否则索引为1；
+                    init 表示初始值。
+                    常用的参数只有两个： prev 和 cur
+                    求数组项之和
+                    var sum = arr.reduce(function (prev, cur) {
+                        return prev + cur;
+                    }, 0); */
+                    .reduce((pre, cur) => {
+                        return pre + cur.nums * cur.price;
+                    }, 0);
+            },
+        },
+        methods: {
+            save() {
+                console.log(this.list.filter(item =>
+                    item.checked
+                ));
+            }
+        },
+        //在指定的DOM元素上装载应用程序实例的根组件
+    }).mount('#app');
+</script>
+</body>
+</html>

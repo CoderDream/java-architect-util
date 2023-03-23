@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>getter和setter方法</title>
+</head>
+<body>
+<div id="app">
+    <p>商品名称：{{name}}</p>
+    <p>商品价格：{{price}}</p>
+    <p>商品名称和价格：{{namePrice}}</p>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        //该函数返回数据对象
+        data() {
+            return {
+                name: "洗衣机",
+                price: "6800元"
+            }
+        },
+        computed: {
+            namePrice: {
+                //getter方法，显示时调用
+                get: function () {
+                    //拼接name和price
+                    return this.name + "**" + this.price;
+                },
+                //setter方法，设置namePrice时调用，其中参数用来接收新设置的值
+                set: function (newName) {
+                    var names = newName.split(' ');  //以空格拆分字符串
+                    this.name = names[0];
+                    this.price = names[1];
+                }
+            }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+    }).mount('#app');
+</script>
+</body>
+</html>

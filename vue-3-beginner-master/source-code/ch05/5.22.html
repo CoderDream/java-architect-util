@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>bind钩子函数的参数</title>
+</head>
+<body>
+<div id="app">
+    <div v-demo:foo.a.b="message"></div>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        //该函数返回数据对象
+        data() {
+            return {
+                message: '海上生明月'
+            }
+        }
+    })
+    // 注册一个全局自定义指令 `demo`
+    vm.directive('demo', {
+        mounted(el, binding, vnode) {
+            let s = JSON.stringify
+            el.innerHTML =
+                'instance: ' + s(binding.instance) + '<br>' +
+                'value: ' + s(binding.value) + '<br>' +
+                'argument: ' + s(binding.arg) + '<br>' +
+                'modifiers: ' + s(binding.modifiers) + '<br>' +
+                'vnode keys: ' + Object.keys(vnode).join(', ')
+        }
+    })
+    vm.mount('#app');
+</script>
+</body>
+</html>

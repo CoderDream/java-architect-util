@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>created与mounted函数的应用</title>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li id="b1"></li>
+        <li id="b2"></li>
+        <li id="b3"></li>
+    </ul>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        //该函数返回数据对象
+        data() {
+            return {
+                name: '',
+                city: '',
+                price: 0
+            }
+        },
+        //在选项对象的methods属性中定义方法
+        methods: {
+            way: function () {
+                alert("使用created初始化方法")
+            }
+        },
+        created: function () {
+            // 初始化方法
+            this.way();
+            //初始化数据
+            this.name = "苹果";
+            this.city = "烟台市";
+            this.price = "8.88元/公斤";
+        },
+        //对DOM的一些初始化操作
+        mounted: function () {
+            document.getElementById("b1").innerHTML = this.name;
+            document.getElementById("b2").innerHTML = this.city;
+            document.getElementById("b3").innerHTML = this.price;
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+    }).mount('#app');
+</script>
+</body>
+</html>

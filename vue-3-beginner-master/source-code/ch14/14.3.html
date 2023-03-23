@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>命名路由</title>
+</head>
+<body>
+<style>
+    #app {
+        text-align: center;
+    }
+
+    .container {
+        background-color: #73ffd6;
+        margin-top: 20px;
+        height: 100px;
+    }
+</style>
+<div id="app">
+    <router-link :to="{name:'router1'}">首页</router-link>
+    <router-link to="/list" custom v-slot="{navigate}">
+        <button @click="navigate" @keypress.enter="navigate"> 古诗欣赏</button>
+    </router-link>
+
+    <router-link :to="{name:'router3'}">联系我们</router-link>
+    <!—路由匹配到的组件将在这里渲染 -->
+    <div class="container">
+        <router-view></router-view>
+    </div>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<!--引入Vue Router-->
+<script src="https://unpkg.com/vue-router@next"></script>
+<script>
+    //定义路由组件
+    const home = {template: '<div>home组件的内容</div>'};
+    const list = {template: '<div>红颜弃轩冕，白首卧松云。</div>'};
+    const details = {template: '<div>需要技术支持请联系作者微信codehome6</div>'};
+    const routes = [
+        {path: '/home', component: home, name: 'router1',},
+        {path: '/list', component: list, name: 'router2',},
+        {path: '/details', component: details, name: 'router3',},
+    ];
+    const router = VueRouter.createRouter({
+        //提供要实现的history实现。为了方便起见，这里使用hash history
+        history: VueRouter.createWebHashHistory(),
+        routes//简写，相当于routes：routes
+    });
+    const vm = Vue.createApp({});
+    //使用路由器实例，从而让整个应用都有路由功能
+    vm.use(router);
+    vm.mount('#app');
+</script>
+</body>
+</html>

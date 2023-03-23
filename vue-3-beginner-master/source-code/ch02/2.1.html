@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <div><img v-bind:src="url" width="450"></div>
+    <h2>{{ explain }}</h2>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    const vm = Vue.createApp({
+        data() {
+            return {
+                url: '1.jpg',
+                explain: '苹果是蔷薇科苹果亚科苹果属植物，其营养价值很高。',
+            }
+        }
+    }).mount('#app');
+</script>
+</body>
+</html>

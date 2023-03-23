@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>嵌套路由</title>
+<style>
+        #app{
+            text-align: center;
+        }
+        .container {
+            background-color: #73ffd6;
+            margin-top: 20px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <!-- 通过 router-link 标签来生成导航链接 -->
+    <router-link to="/home">首页</router-link>
+    <router-link to="/list"  custom v-slot="{navigate}">
+               <button @click="navigate" @keypress.enter="navigate"> 古诗欣赏</button></router-link>
+    <router-link to="/about">关于我们</router-link>
+    <div class="container">
+        <!-- 将选中的路由渲染到 router-view 下-->
+        <router-view></router-view>
+    </div>
+</div>
+<template id="tmpl">
+    <div>
+        <h3>列表内容</h3>
+        <!-- 生成嵌套子路由地址 -->
+        <router-link to="/list/poetry1">古诗1</router-link>
+        <router-link to="/list/poetry2">古诗2</router-link>
+        <div class="sty">
+            <!-- 生成嵌套子路由渲染节点 -->
+            <router-view></router-view>
+        </div>
+    </div>
+</template>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<!--引入Vue Router-->
+<script src="https://unpkg.com/vue-router@next"></script>
+<script>
+    const home={template:'<div>主页内容</div>'};
+    const list={template:'#tmpl'};
+    const about={template:'<div>需要技术支持请联系作者微信codehome6</div>'};
+    const poetry1 = {
+        template: '<div> 红颜弃轩冕，白首卧松云。</div>'
+    };
+    const poetry2 = {
+        template: '<div>为问门前客，今朝几个来。</div>'
+    };
+    // 2.定义路由信息
+    const routes = [
+        // 路由重定向：当路径为/时，重定向到/list路径
+        {
+            path: '/',
+            redirect: '/list'
+        },
+        {
+            path: '/home',
+            component: home,
+        },
+        {
+            path: '/list',
+            component: list,
+            //嵌套路由
+            children: [
+                {
+                    path: 'poetry1',
+                    component: poetry1
+                },
+                {
+                    path: 'poetry2',
+                    component: poetry2
+                },
+            ]
+        },
+        {
+            path: '/about',
+            component:about,
+        }
+    ];
+    const router= VueRouter.createRouter({
+        //提供要实现的history实现。为了方便起见，这里使用hash history
+        history:VueRouter.createWebHashHistory(),
+        routes  //简写，相当于routes：routes
+    });
+    const vm= Vue.createApp({});
+    //使用路由器实例，从而让整个应用都有路由功能
+    vm.use(router);
+    vm.mount('#app');
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>全局注册组件</title>
+</head>
+<body>
+<div id="app">
+    <!--使用my-component组件-->
+    <my-component></my-component>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({});
+    vm.component('my-component', {
+        data() {
+            return {
+                message: "红罗袖里分明见"
+            }
+        },
+        template: `
+          <div><h2>{{ message }}</h2></div>`
+    });
+    //在指定的DOM元素上装载应用程序实例的根组件
+    vm.mount('#app');
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>监听对象的单个属性</title>
+</head>
+<body>
+<div id="app">
+    商品产地：<input type="text" v-model="goods.city">
+    <p>{{pess}}</p>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+             pess:'',
+            goods: {
+                name: '洗衣机',
+                city:''
+             }
+           }
+        },
+        watch: {
+           //监听goods对象的city属性
+            'goods.city':{
+                handler: function(newValue,oldValue){
+                    if(newValue == "上海"){
+                        this.pess="商品的产地是上海！";
+                    }
+                    else{
+                        this.pess="商品的产地不是上海！";
+                    }
+                },
+                //设置为true，无论属性被嵌套多深，改变时都会调用handler函数
+                deep:true
+            }
+        }
+     //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>组件之间传递数据</title>
+</head>
+<body>
+<div id="app">
+    <!--使用blog-content组件-->
+    <blog-content></blog-content>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({});
+    vm.component('blog-content', {
+        // 使用blog-title组件，并传递content
+        template: '<div><blog-title v-bind:date-title="title"></blog-title></div>',
+        data: function () {
+            return {
+                title: "明朝准拟南轩望，洗出庐山万丈青。"
+            }
+        }
+    });
+    vm.component('blog-title', {
+        props: ['dateTitle'],
+        template: '<h3>{{ dateTitle }}</h3>',
+    });
+    //在指定的DOM元素上装载应用程序实例的根组件
+    vm.mount('#app');
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>绑定多个复选框</title>
+</head>
+<body>
+<div id="app">
+    <p>选择需要采购的商品：</p>
+    <input type="checkbox" id="name1" value="洗衣机" v-model="checkedNames">
+    <label for="name1">洗衣机</label>
+    <input type="checkbox" id="name2" value="冰箱" v-model="checkedNames">
+    <label for="name2">冰箱</label>
+    <input type="checkbox" id="name3" value="电视机" v-model="checkedNames">
+    <label for="name3">电视机</label>
+    <input type="checkbox" id="name4" value="空调" v-model="checkedNames">
+    <label for="name4">空调</label>
+    <p><span>选中的商品:{{ checkedNames }}</span></p>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+           checkedNames: []   //定义空数组
+           }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+</body>
+</html>

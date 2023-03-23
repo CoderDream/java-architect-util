@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>动态指令参数</title>
+</head>
+<body>
+<div id="app">
+    <!--直接给出指令的参数-->
+    <p v-pin:top="100">林风纤月落</p>
+    <!--使用动态参数-->
+    <p v-pin:[direction]="100">林风纤月落</p>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        //该函数返回数据对象
+        data() {
+            return {
+                direction: 'left'
+            }
+        }
+    })
+    // 注册一个全局自定义指令 `demo`
+    vm.directive('pin', {
+        beforeMount(el, binding, vnode) {
+            el.style.position = 'fixed';
+            let s = binding.arg || 'left';
+            el.style[s] = binding.value + 'px'
+        }
+    })
+    vm.mount('#app');
+</script>
+</body>
+</html>

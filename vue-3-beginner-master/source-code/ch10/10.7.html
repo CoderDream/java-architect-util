@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>绑定多选框</title>
+</head>
+<body>
+<div id="app">
+    <h3>请选择您喜欢的课程</h3>
+    <select v-model="selected" multiple style="height: 100px">
+        <option disabled value="">可以选择的课程如下</option>
+        <option>Java开发班</option>
+        <option>Python开发班</option>
+        <option>前端开发班</option>
+        <option>PHP开发班</option>
+    </select><br/>
+    <span>选择的课程: {{ selected }}</span>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+           selected: []
+           }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+</body>
+</html>

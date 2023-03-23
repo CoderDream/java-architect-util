@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>过渡下拉菜单</title>
+    <style type="text/css">
+        #main {
+            background-color: #CEFFCE;
+            width: 300px;
+        }
+
+        #main ul {
+            height: 9rem;
+            overflow-x: hidden;
+        }
+
+        .fade-enter-active, .fade-leave-active {
+            transition: height 0.5s
+        }
+
+        .fade-enter, .fade-leave-to {
+            height: 0
+        }
+    </style>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+<div id="main">
+    <button @click="test">主页</button>
+    <transition name="fade">
+        <ul v-if="show">
+            <li>经典课程</li>
+            <ul>
+                <li><a href="#">Python开发课程</a></li>
+                <li><a href="#">Java开发课程</a></li>
+                <li><a href="#">网站前端开发课程</a></li>
+            </ul>
+            <li>热门技术</li>
+            <ul>
+                <li><a href="#">前端开发技术</a></li>
+                <li><a href="#">网络安全技术</a></li>
+                <li><a href="#">PHP开发技术</a></li>
+            </ul>
+            <li>畅销教材</li>
+            <ul>
+                <li><a href="#">网站前端开发教材</a></li>
+                <li><a href="#">C语言入门教材</a></li>
+                <li><a href="#">Python开发教材</a></li>
+            </ul>
+            <li>联系我们</li>
+        </ul>
+    </transition>
+</div>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        //该函数返回数据对象
+        data() {
+            return {
+                show: false
+            }
+        },
+        methods: {
+            test() {
+                this.show = !this.show;
+            }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+    }).mount('#main');
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>商品编号增加器</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <style>
+        .v-enter, .v-leave-to {
+            opacity: 0;
+        }
+        .v-enter-active, .v-leave-active {
+            transition: opacity 2s;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <transition-group>
+             <!-- 这里尽量不使用index作为key -->
+            <div v-for="(item, index) of list" :key="item.id">
+                {{item.title}}
+            </div>
+        </transition-group>
+         <button @click="handleBtnClick">增加</button>
+    </div>
+    <script>
+        var count = 0;
+   //创建一个应用程序实例
+    const vm= Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+             list: []
+            }
+        } ,
+         methods: {
+            handleBtnClick () {
+                this.list.push({
+                    id:count++,
+                    title: '商品编号：'+" "+ count
+                })
+            }
+           }
+     //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>生命周期钩子函数</title>
+</head>
+<body>
+<div id="app">
+    <p>{{ msg }}</p>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        //该函数返回数据对象
+        data() {
+            return {
+                msg: "白日照绿草， 落花散且飞。"
+            }
+        },
+        //在实例初始化之后，数据观测(data observer)和event/watcher 事件配置之前被调用。
+        beforeCreate: function () {
+            console.log('beforeCreate');
+        },
+        /* 在实例创建完成后被立即调用。在这一步，实例已完成数据观测 (data observer)，属性和方法的运算，watch/event 事件回调。然而，挂载阶段还没开始，$el 属性目前不可见。 */
+        created: function () {
+            console.log('created');
+        },
+        //在挂载开始之前被调用：相关的渲染函数首次被调用
+        beforeMount: function () {
+            console.log('beforeMount');
+        },
+        //el 被新创建的 vm.$el 替换, 挂在成功
+        mounted: function () {
+            console.log('mounted');
+        },
+        //数据更新时调用
+        beforeUpdate: function () {
+            console.log('beforeUpdate');
+        },
+        //组件 DOM 已经更新, 组件更新完毕
+        updated: function () {
+            console.log('updated');
+        }
+    }).mount('#app');
+    setTimeout(function () {
+        vm.msg = "孤云还空山， 众鸟各已归。";
+    }, 4000);
+</script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单</title>
+    <style>
+        body {
+            width: 600px;
+        }
+
+        a {
+            text-decoration: none;
+            display: block;
+            color: #fff;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid #fff;
+            border-width: 1px 1px 0 0;
+            background: #5D478B;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        #app > li {
+            list-style-type: none;
+            float: left;
+            text-align: center;
+            position: relative;
+        }
+
+        #app li a:hover {
+            color: #fff;
+            background: #FF8C69;
+        }
+
+        #app li ul {
+            position: absolute;
+            left: -40px;
+            top: 40px;
+            margin-top: 1px;
+            font-size: 12px;
+        }
+
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="app" v-cloak>
+    <li v-for="menu in menus" @mouseover="menu.show = !menu.show" @mouseout="menu.show = !menu.show">
+        <a :href="menu.url">
+            {{menu.name}}
+        </a>
+        <ul v-show="menu.show">
+            <li v-for="subMenu in menu.subMenus">
+                <a :href="subMenu.url">{{subMenu.name}}</a>
+            </li>
+        </ul>
+    </li>
+</div>
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    const data = {
+        menus: [
+            {
+                name: '在线课程', url: '#', show: false, subMenus: [
+                    {name: 'Python课程', url: '#'},
+                    {name: 'Java课程', url: '#'},
+                    {name: '前端课程', url: '#'}
+                ]
+            },
+            {
+                name: '经典图书', url: '#', show: false, subMenus: [
+                    {name: 'Python图书', url: '#'},
+                    {name: 'Java图书', url: '#'},
+                    {name: '前端图书', url: '#'}
+                ]
+            },
+            {
+                name: '技术支持', url: '#', show: false, subMenus: [
+                    {name: 'Python技术支持', url: '#'},
+                    {name: 'Java技术支持', url: '#'},
+                    {name: '前端技术支持', url: '#'}
+                ]
+            },
+            {
+                name: '关于我们', url: '#', show: false, subMenus: [
+                    {name: '团队介绍', url: '#'},
+                    {name: '联系我们', url: '#'}
+                ]
+            }
+        ]
+    };
+    const vm = Vue.createApp({
+        data() {
+            return data;
+        }
+    }).mount('#app');
+</script>
+</body>
+</html>

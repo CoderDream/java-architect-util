@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>param传参</title>
+</head>
+<body>
+<style>
+    .style1 {
+        background: #0BB20C;
+        color: white;
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .main {
+        padding: 10px;
+    }
+</style>
+<body>
+<div id="app">
+    <div>
+        <div class="style1">
+            <router-view></router-view>
+        </div>
+    </div>
+    <div class="main">
+        <router-view name="main"></router-view>
+    </div>
+</div>
+<template id="sidebar">
+    <div>
+        <ul>
+            <router-link v-for="(item,index) in menu" :key="index" :to="item.url" tag="li">{{ item.name }}
+            </router-link>
+        </ul>
+    </div>
+</template>
+
+<template id="main">
+    <div>
+        <router-view></router-view>
+    </div>
+</template>
+<template id="form">
+    <div>
+        <form>
+            <div>
+                <label for="exampleInputEmail1">邮箱</label>
+                <input type="email" id="exampleInputEmail1" placeholder="输入电子邮件" v-model="email">
+            </div>
+            <div>
+                <label for="exampleInputPassword1">密码</label>
+                <input type="password" id="exampleInputPassword1" placeholder="输入密码" v-model="password">
+            </div>
+            <button type="submit" @click="submit">提交</button>
+        </form>
+    </div>
+</template>
+<template id="info">
+    <div>
+        <div>
+            输入的信息
+        </div>
+        <div>
+            <blockquote>
+                <p>邮箱：{{ $route.params.email }} </p>
+                <p>密码：{{ $route.params.password }}</p>
+            </blockquote>
+        </div>
+    </div>
+</template>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<!--引入Vue Router-->
+<script src="https://unpkg.com/vue-router@next"></script>
+<script>
+    // 1.定义路由跳转的组件模板
+    const header = {
+        template: '<div class="header">头部</div>'
+    }
+    const sidebar = {
+        template: '#sidebar',
+        data: function () {
+            return {
+                menu: [{
+                    displayName: 'Form',
+                    routeName: 'form'
+                }, {
+                    displayName: 'Info',
+                    routeName: 'info'
+                }]
+            }
+        },
+    }
+    const main = {
+        template: '#main'
+    }
+    const form = {
+        template: '#form',
+        data: function () {
+            return {
+                email: '',
+                password: ''
+            }
+        },
+        methods: {
+            submit: function () {
+                // 方式1
+                this.$router.push({
+                    name: 'info',
+                    params: {
+                        email: this.email,
+                        password: this.password
+                    }
+                })
+            }
+        },
+    }
+    const info = {
+        template: '#info'
+    }
+    // 2.定义路由信息
+    const routes = [{
+        path: '/',
+        components: {
+            default: header,
+            sidebar: sidebar,
+            main: main
+        },
+        children: [{
+            path: '',
+            redirect: 'form'
+        }, {
+            path: 'form',
+            name: 'form',
+            component: form
+        }, {
+            path: 'info/:email/:password',
+            name: 'info',
+            component: info
+        }]
+    }];
+    const router = VueRouter.createRouter({
+        //提供要实现的history实现。为了方便起见，这里使用hash history
+        history: VueRouter.createWebHashHistory(),
+        routes   //简写，相当于routes：routes
+    });
+    const vm = Vue.createApp({
+        data() {
+            return {}
+        },
+        methods: {},
+    });
+    //使用路由器实例，从而让整个应用都有路由功能
+    vm.use(router);
+    vm.mount('#app');
+</script>
+</body>
+</html>

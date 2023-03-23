@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>局部注册组件</title>
+</head>
+<body>
+<div id="app">
+    库房还剩
+    <button-counter></button-counter>
+    台。
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    const MyComponent = {
+        data() {
+            return {
+                num: 1000
+            }
+        },
+        template:
+                `
+                  <button v-on:click="num--">
+                  {{ num }}
+                  </button>`
+    }
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        components: {
+            ButtonCounter: MyComponent
+        }
+    });
+    //在指定的DOM元素上装载应用程序实例的根组件
+    vm.mount('#app');
+</script>
+</body>
+</html>

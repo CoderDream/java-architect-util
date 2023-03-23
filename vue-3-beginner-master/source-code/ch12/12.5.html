@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>自定义过渡的类名</title>
+</head>
+<body>
+<link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
+<div id="app">
+    <button @click="show = !show">
+        早春
+    </button>
+<!--    enter-active-class:控制动画的进入-->
+<!--    leave-active-class:控制动画的离开-->
+<!--animated 类似于全局变量，它定义了动画的持续时间；-->
+<!--bounceInUp和slideInRight是动画具体的动画效果的名称，可以选择任意的效果。-->
+    <transition
+            enter-active-class="animated bounceInUp"
+            leave-active-class="animated slideInRight"
+    >
+        <p v-if="show">春销不得处，唯有鬓边霜。</p>
+    </transition>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+             show:true
+           }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+</body>
+</html>

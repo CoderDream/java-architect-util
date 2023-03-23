@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Class对象语法</title>
+</head>
+<body>
+<div id="app">
+    <div v-bind:style="styleObject">夜月一帘幽梦，春风十里柔情。</div>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        //该函数返回数据对象
+        //计算属性
+        computed:{
+            styleObject:function(){
+                return {
+                    color: 'blue',
+                    fontSize: '30px'
+                }
+            }
+        }
+        //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+</body>
+</html>

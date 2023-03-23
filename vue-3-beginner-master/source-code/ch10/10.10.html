@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>动态绑定单选框的值</title>
+</head>
+<body>
+<div id="app">
+    <input type="radio"  v-model="pick" v-bind:value="date">
+    <span>{{ pick}}</span>
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm = Vue.createApp({
+        //该函数返回数据对象
+        data(){
+          return{
+            date:'洗衣机 ',
+            pick:'未选择'
+         }
+
+        }
+     }).mount('#app');
+</script>
+</body>
+</html>

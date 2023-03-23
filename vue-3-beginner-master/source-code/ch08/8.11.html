@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>触发键盘事件</title>
+</head>
+<body>
+<div id="app">
+    <label for="name">姓名：</label>
+    <input v-on:keyup="name" type="text" id="name">
+    <label for="pass">密码：</label>
+    <input v-on:keyup="password" type="password" id="pass">
+</div>
+<!--引入vue文件-->
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    //创建一个应用程序实例
+    const vm= Vue.createApp({
+        methods: {
+            name:function(){
+                console.log("正在输入姓名...")
+            },
+            password:function(){
+                console.log("正在输入密码...")
+            }
+        }
+     //在指定的DOM元素上装载应用程序实例的根组件
+     }).mount('#app');
+</script>
+</body>
+</html>
