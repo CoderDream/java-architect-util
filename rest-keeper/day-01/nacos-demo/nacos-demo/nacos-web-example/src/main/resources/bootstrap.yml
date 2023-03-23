@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: nacos-web-example
+server:
+  port: 9200
+#健康检查
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: nacos-web
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.3.4:8848
+      config:
+        server-addr: 192.168.3.4:8848
+        file-extension: yml #指定文件扩展名，默认为properties
+server:
+  port: 9101
+#健康检查
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#日志
+logging:
+  level:
+    org.springframework.web: debug
