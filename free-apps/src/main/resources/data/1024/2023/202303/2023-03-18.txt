@@ -1,108 +1,80 @@
-今日苹果iOS 限免软件
-
-Read To Me
+Card.Note 多彩卡片笔记
 ¥12➱0
-“ReadToMe”是一款高效的网页朗读app，可以将用户想要阅读的网页转化成语音，使用户可以随时随地以听代读。它可以将所有的文本内容转化成流畅的语音，并且具有多种功能，方便用户使用。
-    当然也可以用来播放英语网站锻炼听力。
-    要注意的是，这是一款safari浏览器插件，直接点进软件是用不了的。需要在safari的扩展中选中即可使用。
-https://apps.apple.com/cn/app/id6445976161
+软件简介：以卡片为主要设计理念的极简记事 App 。你可以用它来写诗、短文、随想；也可以用它来写日记、清单、规划、要事提醒；还可以直接用语音输入来记录每个瞬间的念头。
+https://apps.apple.com/cn/app/id1400032769
 
-小美人鱼
+小时刻-时间线日记
 ¥12➱0
-革命性多媒体形式的经典儿童读物:精细设计的故事书和绝佳的声音图像体验。最适合您的孩子在玩耍中阅读。所有内容均为互动操作, 用手指轻轻划动窗户, 里面的景象会随手指移动;用手触摸海底的螃蟹,美人鱼以及可怕会变脸的女巫。
-https://apps.apple.com/cn/app/id474662531
+软件简介：用时间线来记录管理你的事件，简单易使用,没有满屏的日历格子，所有的事情都展示在一条时间轴上。
+https://apps.apple.com/cn/app/id1114389016
 
-Greatflix
+Color Accent
 ¥12➱0
-找到你和你的朋友都想看的电影，并更轻松地决定一起观看什么。
-https://apps.apple.com/cn/app/id1503917639
+快速制作图片飞溅效果的工具
+https://apps.apple.com/cn/app/color-accent/id453170202
 
-Epica Pro - 史诗魔法相机
+WorkOther - 自定义Watch健身项目
 ¥12➱0
-相片美化工具，并自带多彩滤镜，45度角的自拍已经不再流行，自黑才是王道
-https://apps.apple.com/cn/app/epica-pro-%E5%8F%B2%E8%AF%97%E9%AD%94%E6%B3%95%E7%9B%B8%E6%9C%BA/id857717118
+将任何活动创建为Watch上的运动选项，如刷碗、扫地、100个深蹲、50个俯卧撑等。。。
+https://apps.apple.com/cn/app/workother-%E8%87%AA%E5%AE%9A%E4%B9%89watch%E5%81%A5%E8%BA%AB%E9%A1%B9%E7%9B%AE/id1560528781
 
-度量衡单位换算器
+研色-专业取色与色卡制作工具
 ¥12➱0
-30 种分类，超过 700 种单位的换算工具
-https://apps.apple.com/cn/app/%E5%BA%A6%E9%87%8F%E8%A1%A1%E5%8D%95%E4%BD%8D%E6%8D%A2%E7%AE%97%E5%99%A8/id458584668
+一款专业的图片取色与制作色卡的工具应用，专为各位设计师、色彩/手帐/美学等达人博主而设计。
+https://apps.apple.com/cn/app/id1624360340
 
-爱丽丝梦游仙境 iBigToy
+正念木鱼-空气投篮白噪音情绪减解压软件
 ¥12➱0
-每页均带有交互动画的插画有声书籍，适合宝宝在玩耍中阅读。所有内容均为互动操作
-https://apps.apple.com/cn/app/%E7%88%B1%E4%B8%BD%E4%B8%9D%E6%A2%A6%E6%B8%B8%E4%BB%99%E5%A2%83-ibigtoy/id452209801
+电子木鱼解压模拟器，可自定义敲击飘出的文字，诵经内容，支持多种音色，支持自定义背景，可自动敲击。有广告。
+https://apps.apple.com/cn/app/id6444689318
 
-小美人鱼 - 互动故事书 iBigToy
+RUN - running widget
 ¥12➱0
-革命性多媒体形式的经典儿童读物:精细设计的故事书和绝佳的声音图像体验。最适合您的孩子在玩耍中阅读。所有内容均为互动操作, 用手指轻轻划动窗户, 里面的景象会随手指移动;用手触摸海底的螃蟹,美人鱼以及可怕会变脸的女巫...
-https://apps.apple.com/cn/app/%E5%B0%8F%E7%BE%8E%E4%BA%BA%E9%B1%BC-%E4%BA%92%E5%8A%A8%E6%95%85%E4%BA%8B%E4%B9%A6-ibigtoy/id412619168
+跟踪你的跑步统计数据，支持以图片或视频的形式分享你的跑步
+https://apps.apple.com/cn/app/id1535400615
 
 ZAP短信-本地智能过滤垃圾短信轰炸
 ¥12➱0
-智能识别拦截垃圾短信、短信轰炸
-https://apps.apple.com/cn/app/zap%E7%9F%AD%E4%BF%A1-%E6%9C%AC%E5%9C%B0%E6%99%BA%E8%83%BD%E8%BF%87%E6%BB%A4%E5%9E%83%E5%9C%BE%E7%9F%AD%E4%BF%A1%E8%BD%B0%E7%82%B8/id1547579838
+智能识别拦截垃圾短信、短信轰炸。不会主动去请求或上传任何信息，不开启 iCloud 多设备同步，完全可以不开放网络权限使用。
+https://apps.apple.com/cn/app/id1547579838
 
-快乐的狐狸
+翻牌！
 ¥12➱0
-包含24个色彩鲜艳，富有表现力的狐狸贴纸，为你的对话带来乐趣和快乐！仅适用于 iMessage 信息
-https://apps.apple.com/cn/app/%E5%BF%AB%E4%B9%90%E7%9A%84%E7%8B%90%E7%8B%B8/id1164785428
+在此屏幕上测试您的手指反应能力，点击，丢球的好时机！
+https://apps.apple.com/us/app/id1086399201
 
-图擦--图片橡皮擦
+cRate Pro - 货币转换器
 ¥12➱0
-手指涂抹哪里即可擦除哪里，一键修复图片。
-https://apps.apple.com/jp/app/%E5%9B%BE%E6%93%A6-%E5%9B%BE%E7%89%87%E6%A9%A1%E7%9A%AE%E6%93%A6/id1587489843?l=en
+转换 160 多种货币的汇率。
+https://apps.apple.com/us/app/id909956791
 
-街头卡丁车 #1 卡丁车游戏
+Great flix
 ¥12➱0
-美区限免。原创且极具竞争力的真实赛车游戏！
-https://apps.apple.com/us/app/id727544019
+查找您和您的朋友都想看的电影，并更轻松地决定一起看什么。
+https://apps.apple.com/us/app/id1503917639
 
-MyPasswords 密码管理器
+世界网络观察
 ¥12➱0
-您是否正在寻找一种安全简便的方法来保存密码和敏感数据？
-https://apps.apple.com/us/app/id573237152
+离线同义词词典，可帮助您查找与特定单词或短语相关的单词。
+https://apps.apple.com/us/app/id1459935272
 
-点击星球 - 宇宙飞船
+日历小部件 - 日期小部件
 ¥12➱0
-收集足够的资源，然后建造设施。
-https://apps.apple.com/us/app/id1619885469
+Calendar Widget 是您使用漂亮的日历自定义主屏幕所需的应用程序。
+https://apps.apple.com/us/app/id1550340128
 
-安全照片+视频
+8 位控制台坦克
 ¥12➱0
-Safety Photo+Video 可让您将最私密的图像和视频保密。
-https://apps.apple.com/us/app/id456637671
+这是80年代以来非常经典的游戏，几乎没有人没玩过。
+https://apps.apple.com/us/app/id1201182563
 
-AUSH
+空袭2
 ¥12➱0
-使用 AUSH 在任何地方创建专业品质的节拍 - 带有 AUv3 音频单元插件的音乐音序器！
-https://apps.apple.com/us/app/id1551486605
+屡获殊荣的下一代自上而下空战射击游戏的续集，具有令人惊叹的 3D 图形和令人惊叹的管弦乐配乐
+https://apps.apple.com/us/app/id842617644
 
-Share-it - 博主应用
-¥12➱0
-Share-it 使博客和帖子共享变得更加容易，无需订阅第三方服务或订阅。
-https://apps.apple.com/us/app/id1460343379
 
-分屏：多任务 Web
+Epica Pro
 ¥12➱0
-一种创新的网络浏览器，支持真正的多任务处理和并发多个网页。
-https://apps.apple.com/us/app/id1410078765
-
-电击钟街机
-¥12➱0
-美区限免。点击屏幕从一个时钟跳到另一个时钟。
-https://apps.apple.com/us/app/id1384243420
-
-果酱大师精简版
-¥12➱0
-Jam Maestro 是一款功能强大的音乐创作工具，适用于对...感兴趣的音乐家。
-https://apps.apple.com/us/app/id620354621
-
-picFind - 找到一些不同的
-¥12➱0
-picFind 是一款经典的找不同游戏。
-https://apps.apple.com/us/app/id1363852124
-
-动物类
-¥12➱0
-美区限免。动物课包括引人入胜的动物知识、琐事和来自世界各地的精美摄影作品
-https://apps.apple.com/us/app/id1489554558
+史诗般的相机和摄影亭，用于拍摄传奇和照片编辑器
+https://apps.apple.com/us/app/id857717118

@@ -132,7 +132,8 @@ public class JSoupUtil {
         appId = "id1454412797"; // del_flag 为空
         appId = "id1443533088"; // title相同
         appId = "id1445387613"; // 1.3K
-        appId = "id1560807339"; // 无截图
+        appId = "id1423546743"; // 无截图
+
         App app = JSoupUtil.crawlerApp(appId, null);
         System.out.println(app);
     }

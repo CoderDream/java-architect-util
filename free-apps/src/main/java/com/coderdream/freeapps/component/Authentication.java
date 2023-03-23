@@ -13,8 +13,8 @@ import org.apache.commons.lang3.StringUtils;
 //import org.springframework.data.redis.cache.RedisCache;
 import org.springframework.stereotype.Component;
 
-@Component
-@Slf4j
+//@Component
+//@Slf4j
 public class Authentication {
     @Resource
     private RedisCache redisCache;

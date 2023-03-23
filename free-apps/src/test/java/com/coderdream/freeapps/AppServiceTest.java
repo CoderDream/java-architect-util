@@ -145,15 +145,15 @@ public class AppServiceTest {
     public void testUpdateAppList() {
         List<String> list = Arrays.asList(
 //
-                "id1493379610",
-                "id1495547377",
-                "id6444689318",
-                "id6443585604",
-                "id1330314351",
-                "id1050297004",
-                "id6443426852",
-                "id1583550659",
-                "id1493452735"
+//                "id1493379610",
+//                "id1495547377",
+//                "id6444689318",
+//                "id6443585604",
+//                "id1330314351",
+//                "id1050297004",
+//                "id6443426852",
+//                "id1583550659",
+                "id1423546743"
         );
         List<App> newList;
         App appNew;
@@ -175,19 +175,6 @@ public class AppServiceTest {
                 System.out.println("###");
                 appService.insertOrUpdateBatch(newList);
             }
-
-//            if (!CollectionUtils.isEmpty(newList)) {
-//                List<App> newAppList = new ArrayList<>();
-//                App tempApp;
-//                for (App tApp: newList) {
-//                    tempApp = new App();
-//                    tempApp.setAppId(tApp.getAppId());
-//                    tempApp.setTitle(tApp.getTitle());
-//                    newAppList.add(tempApp);
-//                }
-//                System.out.println("###");
-//                appService.insertOrUpdateBatch(newAppList);
-//            }
         }
     }
 

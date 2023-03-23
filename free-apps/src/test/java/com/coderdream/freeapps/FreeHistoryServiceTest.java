@@ -129,13 +129,13 @@ public class FreeHistoryServiceTest {
     }
 
     @Test
-    public void testInsertOrUpdateBatch_20230309() {
+    public void testInsertOrUpdateBatch_20230321() {
         //批量添加
         //INSERT INTO user ( id,title, age, email ) VALUES ( ?, ?, ?, ? )
 //        List<FreeHistory> list = new ArrayList<>();
         String fileName = "D:\\12_iOS_Android\\1024_data\\2022-06-29.txt";
         fileName = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024\\2023";
-        fileName += File.separatorChar + "202303" + File.separatorChar + "2023-03-09.txt";
+        fileName += File.separatorChar + "202303" + File.separatorChar + "2023-03-21.txt";
         List<FreeHistory> freeHistoryList = FileUtils.getFreeHistoryFromCL(fileName);
         for (FreeHistory freeHistory : freeHistoryList) {
             System.out.println(freeHistory);
@@ -149,7 +149,7 @@ public class FreeHistoryServiceTest {
         String folderPath = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024";
         folderPath = folderPath + File.separatorChar + "2023";
         folderPath = folderPath + File.separatorChar + "202303";
-        folderPath = folderPath + File.separatorChar + "2023-03-13.txt";
+//        folderPath = folderPath + File.separatorChar + "2023-03-22.txt";
         List<String> stringList = new ArrayList<>();
         FileUtils.getFiles(folderPath, stringList);
         for (String fileName : stringList) {
