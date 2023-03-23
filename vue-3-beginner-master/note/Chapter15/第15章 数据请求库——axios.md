@@ -157,7 +157,6 @@ npm install axios --save --registry=https://registry.npm.taobao.org
 npm install --save axios vue-axios --registry=https://registry.npm.taobao.org
 
 
-
 ```
 
 ### 原始
@@ -169,10 +168,6 @@ import App from './App.vue'
 createApp(App).mount('#app')
 
 ```
-
-
-
-
 
 安装完成之后，在main.js文件中配置axios，具体请参考15.2节“安装axios”。完成以上步骤，在目录中的public文件夹下创建一个data文件夹，在改文件夹中创建一个JSON文件user.json。user.json内容如下：
 
@@ -207,37 +202,79 @@ createApp(App).mount('#app')
 
 在上一节的示例中，使用axios请求同域下面的JSON数据，而实际情况往往都是跨域请求数据。在Vue CLI中要想实现跨域请求，需要配置一些内容。首先在axiosdemo项目目录中创建一个vue.config.js文件，该文件是Vue脚手架项目的配置文件，在这个文件中设置反向代理：
 
-[插图]
+![](assets/CB_3300020858_Figure-P273_165236.jpg)
 
 其中target属性中的路径，是一个免费的天气预报API接口，接下来我们就使用这个接口来实现跨域访问。首先访问http://www.tianqiapi.com/index，打开“API文档”，注册自己的开发账号，然后进入个人中心，选择“专业七日天气”，如图15-2所示。
 
-[插图]
+![](assets/Figure-P274_130071.jpg)
 
 图15-2　专业七日天气
 
 进入专业七日天气的接口界面，下面会给出一个请求的路径，这个路径就是我们跨域请求的地址。完成上面的配置后在axiosdemo项目的HelloWorld.vue组件中实现跨域请求：
 
-[插图]
+![](assets/Figure-P274_165238.jpg)
 
 在浏览器中运行axiosdemo项目，在控制台中可以看到跨域请求的数据，页面中也同时会显示请求的城市，如图15-3所示。
 
-[插图]
+![](assets/Figure-P275_130534.jpg)
 
 图15-3　跨域请求数据
+
+### 本机测试
+
+
+
+ ![image-20230323144028616](assets\image-20230323144028616.png)
+
+用一次少一次
+
+![image-20230323144142871](assets\image-20230323144142871.png)
 
 ### 15.3.4　并发请求
 
 很多时候，可能需要同时调用多个后台接口，可以利用axios库提供的并发请求助手函数来实现这个功能：
 
-[插图]
+```
+axios.all(iterable)
+axios.spread(callback)
+```
 
 下面结合前面两小节的示例，修改HelloWorld组件的内容，实现同时请求JSON数据和跨域请求数据。
 
-[插图]
+```html
+<script>
+import axios from "axios";
+// 定义请求方法
+function get1() {
+  return axios.get('http://localhost:3004/stu');
+}
+function get2() {
+  return axios.get('/api/data/user.json');
+}
+
+export default {
+  name: 'HelloWorld',
+  props: {
+    msg: String
+  },
+  mounted() {
+    this.add();
+  },
+  methods: {
+    async add() {
+      await axios.all([get1(), get2()]).then(axios.spread(function (get1, get2){
+        console.log(get1);
+        console.log(get2);
+      }));
+    }
+  }
+}
+</script>
+```
 
 在浏览器中运行项目，可以看到打印了两条数据，如图15-4所示。
 
-[插图]
+ ![image-20230323151649667](assets\image-20230323151649667.png)
 
 图15-4　并发请求
 
@@ -247,85 +284,157 @@ createApp(App).mount('#app')
 
 get请求和post请求的调用形式如下：
 
-[插图]
+ ![image-20230323151649667](assets\CB_3300020858_Figure-P276_165243.jpg)
 
 例如使用get请求天气预报接口，修改HelloWorld组件，代码如下：
 
-[插图]
+![image-20230323151649667](assets\CB_3300020858_Figure-P277_165244.jpg)
 
 在浏览器中运行axiosdemo项目，结果如图15-5所示。
 
-[插图]
+![image-20230323151649667](assets\CB_3300020858_Figure-P277_131407.jpg)
 
 图15-5　axios API为方便起见，axios库为所有支持的请求方法提供了别名。代码如下：
 
-[插图]
+![image-20230323151649667](assets\CB_3300020858_Figure-P277_165245.jpg)
 
-在使用别名方法时，url、method、data这些属性都不必在配置中指定。
+在使用别名方法时，url、method、data这些属性都不必在配置中指定。  
 
 ## 15.5　请求配置
 
 axios库为请求提供了配置对象，在该对象中可以设置很多选项，常用的是url、method、headers和params。其中只有url是必需的，如果没有指定method，则请求将默认使用get方法。配置对象完整内容如下：
 
-[插图]
+![](assets\CB_3300020858_Figure-P277_165246.jpg)
+![](assets\CB_3300020858_Figure-P278_165247.jpg)
+![](assets\CB_3300020858_Figure-P279_165248.jpg)
+![](assets\CB_3300020858_Figure-P280_165249.jpg)
 
 ## 15.6　创建实例
 
 可以使用自定义配置新建一个axios实例，之后使用该实例向服务端发起请求，就不用每次请求时重复设置选项了。使用axios.create方法创建axios实例，代码如下：
 
-[插图]
+![](assets\CB_3300020858_Figure-P280_165250.jpg)
 
 ## 15.7　配置默认选项
 
 使用axios请求时，对于相同的配置选项，可以设置为全局的axios默认值。配置选项在Vue的main.js文件中设置，代码如下：
 
-[插图]
+![](assets\CB_3300020858_Figure-P280_165251.jpg)
 
 也可以在自定义实例中配置默认值，这些配置选项只有在使用该实例发起请求时才生效。代码如下：
 
-[插图]
+![](assets\CB_3300020858_Figure-P280_165252.jpg)
 
 配置会以一个优先顺序进行合并。先在lib/defaults.js中找到库的默认值，然后是实例的defaults属性，最后是请求的config参数。例如：
 
-[插图]
+![](assets\CB_3300020858_Figure-P280_165253.jpg)
 
 ## 15.8　拦截器
 
 拦截器在请求或响应被then方法或catch方法处理前拦截它们，从而可以对请求或响应做一些操作。示例代码如下：
 
-[插图]
+![](assets\CB_3300020858_Figure-P281_165255.jpg)
 
 如果想在稍后移除拦截器，可以执行下面代码：
 
-[插图]
+![](assets\CB_3300020858_Figure-P281_165256.jpg)
 
 可以为自定义axios实例添加拦截器：
 
-[插图]
+![](assets\CB_3300020858_Figure-P281_165257.jpg)
 
 ## 15.9　Vue.js 3.0的新变化——替代Vue.prototype
 
 在Vue.js 2.x版本中，使用axios的代码如下：
 
-[插图]
+![](assets\CB_3300020858_Figure-P281_165258.jpg)
 
 在Vue.js 3.0版本中，使用app.config.globalProperties来代替prototype，具体用法如下：
 
-[插图]
+![](assets\CB_3300020858_Figure-P282_165259.jpg)
 
 这里需要注意的是，config.globalProperties这个属性是应用自己才有的，而mount会返回实例，无法实现全局挂载。因此在实施链式写法的时候，需要先设置congfig.globalProperties，然后后再进行mount()，所以下面的写法是错误的。
 
-[插图]
+![](assets\CB_3300020858_Figure-P282_165260.jpg)
 
 ## 15.10　综合案例——显示近7日的天气情况
 
 本节将使用axios库请求天气预报的接口，在页面中显示近7日的天气情况。具体代码如下：
 
-[插图]
+```html
+<template>
+  <div class="hello">
+    <h2>{{ city }}</h2>
+    <h4>今天：{{ date }} {{ week }}</h4>
+    <h4>{{ message }}</h4>
+    <ul>
+      <li v-for="item in obj">
+        <div>
+          <h3>{{ item.date }}</h3>
+          <h3>{{ item.week }}</h3>
+          <img :src="get(item.wea_img)" alt="">
+          <h3>{{ item.wea }}</h3>
+        </div>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script>
+import axios from "axios";
+
+export default {
+  name: 'HelloWorld',
+  data() {
+    return {
+      city: "",
+      obj: [],
+      date: "",
+      week: "",
+      message: ""
+    }
+  },
+  props: {
+    msg: String
+  },
+  mounted() {
+    // this.add();
+  },
+  methods: {
+    //定义get方法，拼接图片的路径
+    get(sky) {
+      return "durian/" + sky + ".png"
+    },
+    async add(that) {
+      await axios.get('/api').then((response) => {
+        if (response) {
+          console.log(response);
+          //处理数据
+          that.city = response.data.city;
+          that.obj = response.data.data;
+          that.date = response.data.data[0].date;
+          that.week = response.data.data[0].week;
+          that.message = response.data.data[0].air_tips;
+        } else {
+          // alert('数据获取失败);'
+        }
+      })
+    }
+  },
+  created() {
+    this.get();  //页面开始加载时调用get方法
+    var that = this;
+    this.add(that);
+  }
+}
+</script>
+```
+
+
 
 在浏览器中运行axiosdemo项目，页面效果如图15-6所示。
 
-[插图]
+![image-20230323204623471](assets\image-20230323204623471.png)
 
 图15-67　日天气预报
 
@@ -335,11 +444,18 @@ axios库为请求提供了配置对象，在该对象中可以设置很多选项
 
 如果想将axios结合vue-axios插件一起使用，该插件只是将axios集成到Vue.js的轻度封装，本身不能独立使用。可以使用如下命令一起安装axios和vue-axios。
 
-[插图]
+```
+npm install axios vue-axios
+```
 
 安装了vue-axios插件后，就不需要将axios绑定到Vue的原型链上了。使用形式如下：
 
-[插图]
+```
+import Vue from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+Vue.use(VueAxios, axios) // 安装插件
+```
 
 之后在组件内就可以通过this.axios来调用axios的方法发送请求了。
 
@@ -352,15 +468,7 @@ axios的常用方法如下：
 * axios.post(url[,data[,config]])：post请求用于信息的添加。
 * axios.put(url[,data[,config]])：更新操作。
 
-
-
-
-
-
-
 ------
-
-
 
 ## 学习笔记
 
@@ -464,7 +572,7 @@ export default {
 #### 服务命令
 
 ```
-npm install -g json-server
+npm install -g json-server --registry=https://registry.npm.taobao.org
 
 json-server --watch stu.json --port 3004
 ```
