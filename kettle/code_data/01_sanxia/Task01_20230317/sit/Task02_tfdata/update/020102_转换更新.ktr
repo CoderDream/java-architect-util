@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>020201_插入</name>
+    <name>020102_转换更新</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -428,9 +428,9 @@
     <clusterschemas>
     </clusterschemas>
     <created_user>-</created_user>
-    <created_date>2023/03/16 17:15:11.961</created_date>
+    <created_date>2023/03/16 17:15:36.895</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2023/03/16 17:15:11.961</modified_date>
+    <modified_date>2023/03/16 17:15:36.895</modified_date>
     <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
@@ -898,8 +898,20 @@
         <attribute>500</attribute>
       </attribute>
       <attribute>
+        <code>EXTRA_OPTION_MYSQL.rewriteBatchedStatements</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>EXTRA_OPTION_MYSQL.useCompression</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
         <code>EXTRA_OPTION_MYSQL.useCursorFetch</code>
         <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>EXTRA_OPTION_MYSQL.useServerPrepStmts</code>
+        <attribute>false</attribute>
       </attribute>
       <attribute>
         <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
@@ -1224,29 +1236,99 @@
   </connection>
   <order>
     <hop>
-      <from>JavaScript代码</from>
-      <to>字段选择 2</to>
+      <from>数值范围</from>
+      <to>Switch / case</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>映射转码</from>
+      <to>记录集连接</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>排序记录</from>
+      <to>记录集连接</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>查记录总数</from>
+      <to>获取total</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>获取total</from>
+      <to>数值范围</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Switch / case</from>
+      <to>合并前</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Switch / case</from>
+      <to>空记录</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>合并前</from>
+      <to>来源数据</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>合并前</from>
+      <to>映射转码</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>记录集连接</from>
+      <to>更新前3</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>字段选择</from>
-      <to>JavaScript代码</to>
+      <to>更新前2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>更新前2</from>
+      <to>排序记录</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>来源数据</from>
+      <to>字段选择 2</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>字段选择 2</from>
-      <to>设置变量</to>
+      <to>更新前1</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>表输入</from>
+      <from>更新前1</from>
       <to>字段选择</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>执行SQL脚本前写日志</from>
+      <to>执行SQL脚本</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>插入 / 更新</from>
+      <to>执行SQL脚本前写日志</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>更新前3</from>
+      <to>插入 / 更新</to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <step>
-    <name>JavaScript代码</name>
-    <type>ScriptValueMod</type>
+    <name>Switch / case</name>
+    <type>SwitchCase</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -1255,57 +1337,59 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <compatible>N</compatible>
-    <optimizationLevel>9</optimizationLevel>
-    <jsScripts>
-      <jsScript>
-        <jsScript_type>0</jsScript_type>
-        <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>//Script here
-
-//var beginTimeDate = str2date(last_time， "yyyy-MM-dd HH:mm:ss");  //new Date(last_time);
-//var endTimeDate = str2date(last_time， "yyyy-MM-dd HH:mm:ss"); 
-//endTimeDate.setDate(endTimeDate.getDate()+  process_period);
-//alert(beginTime);
-//alert(endTime);
-
-//var beginTime = date2str(lastbeginTimeDate，"yyyy-MM-dd HH:mm:ss");
-//var endTime = date2str(endTimeDate，"yyyy-MM-dd HH:mm:ss");
-
-
- 
-//var DATE_OUT = dateFormat(last_time,"yyyy-MM-dd HH:mm:ss");
-
-//函数调用,输出字段资格,IN_DATE为文本文件传过来的数据流
-var beginTime = last_time;
-var endTime = new Date(beginTime.getTime() + process_period * 24 * 60 * 60 * 1000);
-var step_length = 1;</jsScript_script>
-      </jsScript>
-    </jsScripts>
+    <fieldname>range</fieldname>
+    <use_contains>N</use_contains>
+    <case_value_type>String</case_value_type>
+    <case_value_format/>
+    <case_value_decimal/>
+    <case_value_group/>
+    <default_target_step>空记录</default_target_step>
+    <cases>
+      <case>
+        <value>Y</value>
+        <target_step>合并前</target_step>
+      </case>
+      <case>
+        <value>N</value>
+        <target_step>空记录</target_step>
+      </case>
+    </cases>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>合并前</name>
+    <type>WriteToLog</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <loglevel>log_level_basic</loglevel>
+    <displayHeader>Y</displayHeader>
+    <limitRows>N</limitRows>
+    <limitRowsNumber>0</limitRowsNumber>
+    <logmessage/>
     <fields>
       <field>
-        <name>beginTime</name>
-        <rename>beginTime</rename>
-        <type>Date</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <replace>N</replace>
+        <name>total</name>
       </field>
       <field>
-        <name>endTime</name>
-        <rename>endTime</rename>
-        <type>Date</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <replace>N</replace>
-      </field>
-      <field>
-        <name>step_length</name>
-        <rename>step_length</rename>
-        <type>Integer</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <replace>N</replace>
+        <name>range</name>
       </field>
     </fields>
     <attributes/>
@@ -1317,8 +1401,8 @@ var step_length = 1;</jsScript_script>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>448</xloc>
-      <yloc>224</yloc>
+      <xloc>512</xloc>
+      <yloc>240</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1336,12 +1420,12 @@ var step_length = 1;</jsScript_script>
     <fields>
       <select_unspecified>N</select_unspecified>
       <meta>
-        <name>last_time</name>
-        <rename>last_time</rename>
-        <type>Date</type>
-        <length>-2</length>
-        <precision>-2</precision>
-        <conversion_mask>yyyy-MM-dd HH:mm:ss</conversion_mask>
+        <name>send_id_int</name>
+        <rename>send_id_str</rename>
+        <type>String</type>
+        <length>20</length>
+        <precision>0</precision>
+        <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
         <date_format_locale/>
         <date_format_timezone/>
@@ -1362,8 +1446,8 @@ var step_length = 1;</jsScript_script>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>336</xloc>
-      <yloc>224</yloc>
+      <xloc>800</xloc>
+      <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1371,7 +1455,7 @@ var step_length = 1;</jsScript_script>
     <name>字段选择 2</name>
     <type>SelectValues</type>
     <description/>
-    <distribute>Y</distribute>
+    <distribute>N</distribute>
     <custom_distribution/>
     <copies>1</copies>
     <partitioning>
@@ -1381,29 +1465,12 @@ var step_length = 1;</jsScript_script>
     <fields>
       <select_unspecified>N</select_unspecified>
       <meta>
-        <name>beginTime</name>
-        <rename>beginTime</rename>
-        <type>Timestamp</type>
-        <length>-2</length>
-        <precision>-2</precision>
-        <conversion_mask>yyyy-MM-dd HH:mm:ss</conversion_mask>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-      <meta>
-        <name>endTime</name>
-        <rename>endTime</rename>
-        <type>Timestamp</type>
-        <length>-2</length>
-        <precision>-2</precision>
-        <conversion_mask>yyyy-MM-dd HH:mm:ss</conversion_mask>
+        <name>send_id</name>
+        <rename>send_id_int</rename>
+        <type>Integer</type>
+        <length>20</length>
+        <precision>0</precision>
+        <conversion_mask>#</conversion_mask>
         <date_format_lenient>false</date_format_lenient>
         <date_format_locale/>
         <date_format_timezone/>
@@ -1424,13 +1491,95 @@ var step_length = 1;</jsScript_script>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>560</xloc>
-      <yloc>224</yloc>
+      <xloc>608</xloc>
+      <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>表输入</name>
+    <name>排序记录</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>send_id_str</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>896</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>数值范围</name>
+    <type>NumberRange</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <inputField>TOTAL</inputField>
+    <outputField>range</outputField>
+    <fallBackValue>unknown</fallBackValue>
+    <rules>
+      <rule>
+        <lower_bound>-1.7976931348623157E308</lower_bound>
+        <upper_bound>1.0</upper_bound>
+        <value>N</value>
+      </rule>
+      <rule>
+        <lower_bound>1.0</lower_bound>
+        <upper_bound>1.7976931348623157E308</upper_bound>
+        <value>Y</value>
+      </rule>
+    </rules>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>320</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>映射转码</name>
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -1441,22 +1590,25 @@ var step_length = 1;</jsScript_script>
       <schema_name/>
     </partitioning>
     <connection>docker_local_object_data</connection>
-    <sql>SELECT  `process_period`, `last_time`, `task_id`, `update_flag` FROM t_sync_task WHERE task_id = 4</sql>
+    <sql>SELECT
+attr_item_full_code,send_id 
+FROM t_id_map
+ORDER by send_id </sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
-    <variables_active>N</variables_active>
+    <variables_active>Y</variables_active>
     <lazy_conversion_active>N</lazy_conversion_active>
     <cached_row_meta_active>N</cached_row_meta_active>
     <row-meta>
       <value-meta>
         <type>Integer</type>
         <storagetype>normal</storagetype>
-        <name>process_period</name>
-        <length>9</length>
+        <name>total</name>
+        <length>15</length>
         <precision>0</precision>
-        <origin>表输入</origin>
-        <comments>process_period</comments>
+        <origin>查记录总数</origin>
+        <comments>total</comments>
         <conversion_Mask>####0;-####0</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
@@ -1473,13 +1625,13 @@ var step_length = 1;</jsScript_script>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
-        <type>Timestamp</type>
+        <type>String</type>
         <storagetype>normal</storagetype>
-        <name>last_time</name>
-        <length>0</length>
+        <name>range</name>
+        <length>255</length>
         <precision>-1</precision>
-        <origin>表输入</origin>
-        <comments>last_time</comments>
+        <origin>数值范围</origin>
+        <comments/>
         <conversion_Mask/>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
@@ -1496,13 +1648,225 @@ var step_length = 1;</jsScript_script>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>attr_item_full_code</name>
+        <length>255</length>
+        <precision>-1</precision>
+        <origin>映射转码</origin>
+        <comments>attr_item_full_code</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>send_id</name>
+        <length>255</length>
+        <precision>-1</precision>
+        <origin>映射转码</origin>
+        <comments>send_id</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+    </row-meta>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>608</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>更新前1</name>
+    <type>WriteToLog</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <loglevel>log_level_basic</loglevel>
+    <displayHeader>Y</displayHeader>
+    <limitRows>N</limitRows>
+    <limitRowsNumber>0</limitRowsNumber>
+    <logmessage/>
+    <fields>
+      <field>
+        <name>send_id_int</name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>688</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>更新前2</name>
+    <type>WriteToLog</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <loglevel>log_level_basic</loglevel>
+    <displayHeader>Y</displayHeader>
+    <limitRows>N</limitRows>
+    <limitRowsNumber>0</limitRowsNumber>
+    <logmessage/>
+    <fields>
+      <field>
+        <name>send_id_str</name>
+      </field>
+      <field>
+        <name>d</name>
+      </field>
+      <field>
+        <name>dt</name>
+      </field>
+      <field>
+        <name>t</name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>896</xloc>
+      <yloc>32</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>更新前3</name>
+    <type>WriteToLog</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <loglevel>log_level_basic</loglevel>
+    <displayHeader>Y</displayHeader>
+    <limitRows>N</limitRows>
+    <limitRowsNumber>0</limitRowsNumber>
+    <logmessage/>
+    <fields>
+      <field>
+        <name>dt</name>
+      </field>
+      <field>
+        <name>t</name>
+      </field>
+      <field>
+        <name>d</name>
+      </field>
+      <field>
+        <name>attr_item_full_code</name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1008</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>来源数据</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>docker_local_object_data</connection>
+    <sql>SELECT
+	`adid` as send_id, `dt`, `t`,`d`
+FROM
+	`hfdata`
+WHERE
+    `t` &lt; DATE_FORMAT( '${ENDTIME}', '%Y-%m-%d %H:%i:%s' )
+ AND `t` >= DATE_FORMAT('${BEGINTIME}', '%Y-%m-%d %H:%i:%s')
+ORDER BY `adid`
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cached_row_meta_active>N</cached_row_meta_active>
+    <row-meta>
+      <value-meta>
         <type>Integer</type>
         <storagetype>normal</storagetype>
-        <name>task_id</name>
-        <length>9</length>
+        <name>total</name>
+        <length>15</length>
         <precision>0</precision>
-        <origin>表输入</origin>
-        <comments>task_id</comments>
+        <origin>查记录总数</origin>
+        <comments>total</comments>
         <conversion_Mask>####0;-####0</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
@@ -1519,13 +1883,169 @@ var step_length = 1;</jsScript_script>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>range</name>
+        <length>255</length>
+        <precision>-1</precision>
+        <origin>数值范围</origin>
+        <comments/>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>send_id</name>
+        <length>20</length>
+        <precision>0</precision>
+        <origin>来源数据</origin>
+        <comments>send_id</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Timestamp</type>
+        <storagetype>normal</storagetype>
+        <name>dt</name>
+        <length>0</length>
+        <precision>-1</precision>
+        <origin>来源数据</origin>
+        <comments>dt</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Timestamp</type>
+        <storagetype>normal</storagetype>
+        <name>t</name>
+        <length>0</length>
+        <precision>-1</precision>
+        <origin>来源数据</origin>
+        <comments>t</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>BigNumber</type>
+        <storagetype>normal</storagetype>
+        <name>d</name>
+        <length>20</length>
+        <precision>0</precision>
+        <origin>来源数据</origin>
+        <comments>d</comments>
+        <conversion_Mask>######0.0###################;-######0.0###################</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+    </row-meta>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>496</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>查记录总数</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>docker_local_object_data</connection>
+    <sql>SELECT
+	count(1) AS total
+FROM
+	`hfdata`
+WHERE
+    `t` &lt; DATE_FORMAT( '${ENDTIME}', '%Y-%m-%d %H:%i:%s' )
+	AND `t` >= DATE_FORMAT( '${BEGINTIME}', '%Y-%m-%d %H:%i:%s' )</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cached_row_meta_active>N</cached_row_meta_active>
+    <row-meta>
+      <value-meta>
         <type>Integer</type>
         <storagetype>normal</storagetype>
-        <name>update_flag</name>
-        <length>2</length>
+        <name>total</name>
+        <length>15</length>
         <precision>0</precision>
-        <origin>表输入</origin>
-        <comments>update_flag</comments>
+        <origin>查记录总数</origin>
+        <comments>total</comments>
         <conversion_Mask>####0;-####0</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
@@ -1551,14 +2071,14 @@ var step_length = 1;</jsScript_script>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>192</xloc>
-      <yloc>224</yloc>
+      <xloc>96</xloc>
+      <yloc>240</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>设置变量</name>
-    <type>SetVariable</type>
+    <name>空记录</name>
+    <type>WriteToLog</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -1567,51 +2087,19 @@ var step_length = 1;</jsScript_script>
       <method>none</method>
       <schema_name/>
     </partitioning>
+    <loglevel>log_level_basic</loglevel>
+    <displayHeader>Y</displayHeader>
+    <limitRows>N</limitRows>
+    <limitRowsNumber>0</limitRowsNumber>
+    <logmessage>本次获取数据为空</logmessage>
     <fields>
       <field>
-        <field_name>process_period</field_name>
-        <variable_name>PROCESS_PERIOD</variable_name>
-        <variable_type>ROOT_JOB</variable_type>
-        <default_value/>
+        <name>TOTAL</name>
       </field>
       <field>
-        <field_name>last_time</field_name>
-        <variable_name>LAST_TIME</variable_name>
-        <variable_type>ROOT_JOB</variable_type>
-        <default_value/>
-      </field>
-      <field>
-        <field_name>task_id</field_name>
-        <variable_name>TASK_ID</variable_name>
-        <variable_type>ROOT_JOB</variable_type>
-        <default_value/>
-      </field>
-      <field>
-        <field_name>update_flag</field_name>
-        <variable_name>UPDATE_FLAG</variable_name>
-        <variable_type>ROOT_JOB</variable_type>
-        <default_value/>
-      </field>
-      <field>
-        <field_name>beginTime</field_name>
-        <variable_name>BEGINTIME</variable_name>
-        <variable_type>ROOT_JOB</variable_type>
-        <default_value/>
-      </field>
-      <field>
-        <field_name>endTime</field_name>
-        <variable_name>ENDTIME</variable_name>
-        <variable_type>ROOT_JOB</variable_type>
-        <default_value/>
-      </field>
-      <field>
-        <field_name>step_length</field_name>
-        <variable_name>STEP_LENGTH</variable_name>
-        <variable_type>ROOT_JOB</variable_type>
-        <default_value/>
+        <name>range</name>
       </field>
     </fields>
-    <use_formatting>Y</use_formatting>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -1621,8 +2109,217 @@ var step_length = 1;</jsScript_script>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>656</xloc>
-      <yloc>224</yloc>
+      <xloc>416</xloc>
+      <yloc>352</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>获取total</name>
+    <type>WriteToLog</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <loglevel>log_level_basic</loglevel>
+    <displayHeader>Y</displayHeader>
+    <limitRows>N</limitRows>
+    <limitRowsNumber>0</limitRowsNumber>
+    <logmessage/>
+    <fields>
+      <field>
+        <name>total</name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>208</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>记录集连接</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <join_type>INNER</join_type>
+    <step1>排序记录</step1>
+    <step2>映射转码</step2>
+    <keys_1>
+      <key>send_id_str</key>
+    </keys_1>
+    <keys_2>
+      <key>send_id</key>
+    </keys_2>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>912</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>执行SQL脚本</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>docker_local_object_data</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>Y</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>UPDATE `t_sync_task` SET `last_time` = '${ENDTIME}' WHERE `task_id` = '${TASK_ID}';</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1104</xloc>
+      <yloc>384</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>执行SQL脚本前写日志</name>
+    <type>WriteToLog</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <loglevel>log_level_basic</loglevel>
+    <displayHeader>Y</displayHeader>
+    <limitRows>N</limitRows>
+    <limitRowsNumber>0</limitRowsNumber>
+    <logmessage/>
+    <fields>
+      </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>992</xloc>
+      <yloc>384</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>插入 / 更新</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>docker_local_object_data</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>object_data</schema>
+      <table>t_forecast_hour_data_etl</table>
+      <key>
+        <name>dt</name>
+        <field>future_time</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>t</name>
+        <field>forecast_time</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>attr_item_full_code</name>
+        <field>attr_item_full_code</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>forecast_time</name>
+        <rename>t</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>future_time</name>
+        <rename>dt</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>forecast_value</name>
+        <rename>d</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>attr_item_full_code</name>
+        <rename>attr_item_full_code</rename>
+        <update>N</update>
+      </value>
+    </lookup>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>864</xloc>
+      <yloc>384</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

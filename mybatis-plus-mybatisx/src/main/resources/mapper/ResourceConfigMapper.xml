@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coderdream.freeapps.mapper.ResourceConfigMapper">
+
+    <resultMap id="BaseResultMap" type="com.coderdream.freeapps.model.ResourceConfigEntity">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="resourceId" column="resource_id" jdbcType="VARCHAR"/>
+            <result property="resourceType" column="resource_type" jdbcType="VARCHAR"/>
+            <result property="resourceName" column="resource_name" jdbcType="VARCHAR"/>
+            <result property="resourceMethod" column="resource_method" jdbcType="VARCHAR"/>
+            <result property="resourceUrl" column="resource_url" jdbcType="VARCHAR"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,resource_id,resource_type,
+        resource_name,resource_method,resource_url,
+        remark
+    </sql>
+</mapper>
