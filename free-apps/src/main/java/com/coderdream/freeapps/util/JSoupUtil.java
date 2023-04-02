@@ -4,9 +4,8 @@ import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.TypeReference;
-import com.coderdream.freeapps.handler.DailyPriceHandler;
 import com.coderdream.freeapps.model.App;
-import com.coderdream.freeapps.model.AppInfo;
+import com.coderdream.freeapps.model.AppExtraInfo;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.*;
@@ -218,7 +217,7 @@ public class JSoupUtil {
             }
             app.setPriceStr(priceStr);
             // 详情
-            AppInfo appInfo = getAppInfoByClass(document, INFORMATION_LIST_ITEM_DEFINITION_CLASS);
+            AppExtraInfo appInfo = getAppInfoByClass(document, INFORMATION_LIST_ITEM_DEFINITION_CLASS);
             System.out.println(appInfo);
             if (StrUtil.isNotEmpty(appInfo.getSupplier())) {
                 app.setSupplier(appInfo.getSupplier());
@@ -488,8 +487,8 @@ public class JSoupUtil {
      * @param className
      * @return
      */
-    public static AppInfo getAppInfoByClass(Document document, String className) {
-        AppInfo appInfo = new AppInfo();
+    public static AppExtraInfo getAppInfoByClass(Document document, String className) {
+        AppExtraInfo appInfo = new AppExtraInfo();
         Elements elements = document.getElementsByClass(className);
 
         Elements elementsNext = elements.next();
@@ -592,7 +591,7 @@ public class JSoupUtil {
         return appInfo;
     }
 
-    private static void parseElementEight(AppInfo appInfo, Elements elements) {
+    private static void parseElementEight(AppExtraInfo appInfo, Elements elements) {
         Element element1 = elements.get(0);
         TextNode titleNode01 = (TextNode) element1.childNode(0);
         appInfo.setSupplier(titleNode01.text());

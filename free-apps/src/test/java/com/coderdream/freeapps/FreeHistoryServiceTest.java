@@ -1,13 +1,14 @@
 package com.coderdream.freeapps;
 
 import com.coderdream.freeapps.model.App;
+import com.coderdream.freeapps.model.Description;
 import com.coderdream.freeapps.model.FreeHistory;
 import com.coderdream.freeapps.service.AppService;
+import com.coderdream.freeapps.service.DescriptionService;
 import com.coderdream.freeapps.service.FreeHistoryService;
-import com.coderdream.freeapps.util.FileUtils;
+import com.coderdream.freeapps.util.CdFileUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.CollectionUtils;
 
@@ -22,10 +23,12 @@ import java.util.Random;
 public class FreeHistoryServiceTest {
 
     @Resource
-    private FreeHistoryService freeHistoryService; //这里可能爆红，但是运行没问题
+    private FreeHistoryService freeHistoryService;
 
     @Resource
-    private AppService appService; //这里可能爆红，但是运行没问题
+    private AppService appService;
+    @Resource
+    private DescriptionService descriptionService;
 
     //    @Test
 //    public void testGetCount() {
@@ -74,7 +77,7 @@ public class FreeHistoryServiceTest {
         String fileName = "D:\\12_iOS_Android\\1024_data\\2022-06-29.txt";
         fileName = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024\\2022";
         fileName += File.separatorChar + "202302" + File.separatorChar + "2023-02-18.txt";
-        List<FreeHistory> freeHistoryList = FileUtils.getFreeHistoryFromCL(fileName);
+        List<FreeHistory> freeHistoryList = CdFileUtils.getFreeHistoryFromCL(fileName);
         for (FreeHistory freeHistory : freeHistoryList) {
             System.out.println(freeHistory);
         }
@@ -97,7 +100,7 @@ public class FreeHistoryServiceTest {
         String fileName = "D:\\12_iOS_Android\\1024_data\\2022-06-29.txt";
         fileName = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024\\2023";
         fileName += File.separatorChar + "202302" + File.separatorChar + "2023-02-18.txt";
-        List<FreeHistory> freeHistoryList = FileUtils.getFreeHistoryFromCL(fileName);
+        List<FreeHistory> freeHistoryList = CdFileUtils.getFreeHistoryFromCL(fileName);
         for (FreeHistory freeHistory : freeHistoryList) {
             System.out.println(freeHistory);
         }
@@ -120,7 +123,7 @@ public class FreeHistoryServiceTest {
         String fileName = "D:\\12_iOS_Android\\1024_data\\2022-06-29.txt";
         fileName = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024\\2022";
         fileName += File.separatorChar + "202206" + File.separatorChar + "2022-06-30.txt";
-        List<FreeHistory> freeHistoryList = FileUtils.getFreeHistoryFromCL(fileName);
+        List<FreeHistory> freeHistoryList = CdFileUtils.getFreeHistoryFromCL(fileName);
         for (FreeHistory freeHistory : freeHistoryList) {
             System.out.println(freeHistory);
         }
@@ -136,7 +139,7 @@ public class FreeHistoryServiceTest {
         String fileName = "D:\\12_iOS_Android\\1024_data\\2022-06-29.txt";
         fileName = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024\\2023";
         fileName += File.separatorChar + "202303" + File.separatorChar + "2023-03-21.txt";
-        List<FreeHistory> freeHistoryList = FileUtils.getFreeHistoryFromCL(fileName);
+        List<FreeHistory> freeHistoryList = CdFileUtils.getFreeHistoryFromCL(fileName);
         for (FreeHistory freeHistory : freeHistoryList) {
             System.out.println(freeHistory);
         }
@@ -149,30 +152,37 @@ public class FreeHistoryServiceTest {
         String folderPath = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024";
         folderPath = folderPath + File.separatorChar + "2023";
         folderPath = folderPath + File.separatorChar + "202303";
-//        folderPath = folderPath + File.separatorChar + "2023-03-22.txt";
+        folderPath = folderPath + File.separatorChar + "2023-03-30.txt";
         List<String> stringList = new ArrayList<>();
-        FileUtils.getFiles(folderPath, stringList);
+        CdFileUtils.getFiles(folderPath, stringList);
         for (String fileName : stringList) {
             System.out.println(fileName);
-
-            List<FreeHistory> freeHistoryList = FileUtils.getFreeHistoryFromCL(fileName);
-
+            List<FreeHistory> freeHistoryList = CdFileUtils.getFreeHistoryFromCL(fileName);
             int b = freeHistoryService.insertOrUpdateBatch(freeHistoryList);  //boolean 操作是否成功
-
             System.out.println("结果：" + b);
-
             List<App> appList;
+            List<Description> descriptionList;
             App app;
+            Description description;
             if (!CollectionUtils.isEmpty(freeHistoryList)) {
                 appList = new ArrayList<>();
+                descriptionList = new ArrayList<>();
                 for (FreeHistory freeHistory : freeHistoryList) {
                     app = new App();
                     BeanUtils.copyProperties(freeHistory, app);
                     app.setDelFlag(0);
                     app.setCreatedDate(new Date());
                     appList.add(app);
+
+                    description = new Description();
+                    BeanUtils.copyProperties(freeHistory, description);
+                    description.setDescriptionCl(freeHistory.getDescription());
+                    description.setDelFlag(0);
+                    description.setCreatedDate(new Date());
+                    descriptionList.add(description);
                 }
                 appService.insertOrUpdateBatch(appList);
+                descriptionService.insertOrUpdateBatch(descriptionList);
             }
         }
     }
@@ -183,10 +193,10 @@ public class FreeHistoryServiceTest {
         folderPath = folderPath + File.separatorChar + "2022";
         folderPath = folderPath + File.separatorChar + "202206";
         List<String> stringList = new ArrayList<>();
-        FileUtils.getFiles(folderPath, stringList);
+        CdFileUtils.getFiles(folderPath, stringList);
         for (String fileName : stringList) {
             System.out.println(fileName);
-            List<FreeHistory> freeHistoryList = FileUtils.getFreeHistoryFromCL(fileName);
+            List<FreeHistory> freeHistoryList = CdFileUtils.getFreeHistoryFromCL(fileName);
             int b = freeHistoryService.insertOrUpdateBatch(freeHistoryList);  //boolean 操作是否成功
             System.out.println("结果：" + b);
         }

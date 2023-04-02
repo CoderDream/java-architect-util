@@ -10,7 +10,7 @@ import com.coderdream.freeapps.model.Snapshot;
 import com.coderdream.freeapps.service.AppService;
 import com.coderdream.freeapps.service.SnapshotService;
 import com.coderdream.freeapps.util.Constants;
-import com.coderdream.freeapps.util.ListUtils;
+import com.coderdream.freeapps.util.CdListUtils;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.springframework.stereotype.Service;
@@ -43,7 +43,7 @@ public class SnapshotServiceImpl extends ServiceImpl<SnapshotMapper, Snapshot>
         if (!CollectionUtils.isEmpty(snapshotList)) {
             logger.info("本批次处理的记录数: " + snapshotList.size());
             // 分批处理
-            List<List<Snapshot>> lists = ListUtils.splitTo(snapshotList, Constants.BATCH_UPDATE_ROWS);
+            List<List<Snapshot>> lists = CdListUtils.splitTo(snapshotList, Constants.BATCH_UPDATE_ROWS);
             for (List<Snapshot> list : lists) {
                 if (!CollectionUtils.isEmpty(list)) {
                     result += snapshotMapper.insertOrUpdateBatch(snapshotList);

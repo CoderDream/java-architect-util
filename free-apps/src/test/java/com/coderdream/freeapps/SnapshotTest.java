@@ -12,18 +12,18 @@ import javax.annotation.Resource;
 public class SnapshotTest {
     private static final Logger logger = org.slf4j.LoggerFactory.getLogger(SnapshotTest.class);
     @Autowired
-    private AppService appService; //这里可能爆红，但是运行没问题
+    private AppService appService;
 
     @Autowired
-    private FreeHistoryService freeHistoryService; //这里可能爆红，但是运行没问题
+    private FreeHistoryService freeHistoryService;
 
     @Resource
-    private CrawlerHistoryService crawlerHistoryService; //这里可能爆红，但是运行没问题
+    private CrawlerHistoryService crawlerHistoryService;
 
     @Resource
-    private PriceHistoryService priceHistoryService; //这里可能爆红，但是运行没问题
+    private PriceHistoryService priceHistoryService;
     @Resource
-    private SnapshotService snapshotService; //这里可能爆红，但是运行没问题
+    private SnapshotService snapshotService;
 
     @Test
     public void testDailyProcess() {

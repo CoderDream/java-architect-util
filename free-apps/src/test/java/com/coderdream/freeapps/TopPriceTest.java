@@ -16,16 +16,16 @@ import java.util.List;
 public class TopPriceTest {
     private static final Logger logger = org.slf4j.LoggerFactory.getLogger(TopPriceTest.class);
     @Autowired
-    private TopPriceService topPriceService; //这里可能爆红，但是运行没问题
+    private TopPriceService topPriceService;
 
     @Autowired
-    private FreeHistoryService freeHistoryService; //这里可能爆红，但是运行没问题
+    private FreeHistoryService freeHistoryService;
 
     @Resource
-    private CrawlerHistoryService crawlerHistoryService; //这里可能爆红，但是运行没问题
+    private CrawlerHistoryService crawlerHistoryService;
 
     @Resource
-    private PriceHistoryService priceHistoryService; //这里可能爆红，但是运行没问题
+    private PriceHistoryService priceHistoryService;
 
     @Test
     public void testDailyPriceHandler() {

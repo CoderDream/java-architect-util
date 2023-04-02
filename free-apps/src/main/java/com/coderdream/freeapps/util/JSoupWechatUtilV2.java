@@ -1,24 +1,10 @@
 package com.coderdream.freeapps.util;
 
-import cn.hutool.core.util.StrUtil;
-import com.coderdream.freeapps.model.AppInfo;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import lombok.Data;
-import org.jsoup.Connection;
 import org.jsoup.Jsoup;
-import org.jsoup.nodes.Attribute;
-import org.jsoup.nodes.Attributes;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import org.jsoup.nodes.Node;
-import org.jsoup.nodes.TextNode;
 import org.jsoup.select.Elements;
-import org.slf4j.Logger;
 
 public class JSoupWechatUtilV2 {
 

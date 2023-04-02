@@ -5,8 +5,6 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.coderdream.freeapps.handler.DailyPriceHandler;
-import com.coderdream.freeapps.mapper.AppMapper;
 import com.coderdream.freeapps.mapper.PriceHistoryMapper;
 import com.coderdream.freeapps.model.App;
 import com.coderdream.freeapps.model.PriceHistory;
@@ -14,7 +12,7 @@ import com.coderdream.freeapps.service.AppService;
 import com.coderdream.freeapps.service.PriceHistoryService;
 import com.coderdream.freeapps.util.Constants;
 import com.coderdream.freeapps.util.JSoupUtil;
-import com.coderdream.freeapps.util.ListUtils;
+import com.coderdream.freeapps.util.CdListUtils;
 import org.slf4j.Logger;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
@@ -112,7 +110,7 @@ public class PriceHistoryServiceImpl extends ServiceImpl<PriceHistoryMapper, Pri
         if (!CollectionUtils.isEmpty(selectTodoList)) {
             logger.info("本次任务开始前有效的应用数: " + selectTodoList.size());
             // 分批处理
-            List<List<App>> lists = ListUtils.splitTo(selectTodoList, Constants.BATCH_INSERT_UPDATE_ROWS);
+            List<List<App>> lists = CdListUtils.splitTo(selectTodoList, Constants.BATCH_INSERT_UPDATE_ROWS);
             for (List<App> list : lists) {
                 if (!CollectionUtils.isEmpty(list)) {
                     newList = new ArrayList<>();

@@ -15,16 +15,16 @@ import javax.annotation.Resource;
 public class PriceHistoryTest {
     private static final Logger logger = org.slf4j.LoggerFactory.getLogger(PriceHistoryTest.class);
     @Autowired
-    private AppService appService; //这里可能爆红，但是运行没问题
+    private AppService appService;
 
     @Autowired
-    private FreeHistoryService freeHistoryService; //这里可能爆红，但是运行没问题
+    private FreeHistoryService freeHistoryService;
 
     @Resource
-    private CrawlerHistoryService crawlerHistoryService; //这里可能爆红，但是运行没问题
+    private CrawlerHistoryService crawlerHistoryService;
 
     @Resource
-    private PriceHistoryService priceHistoryService; //这里可能爆红，但是运行没问题
+    private PriceHistoryService priceHistoryService;
 
     @Test
     public void testDailyPriceHandler() {

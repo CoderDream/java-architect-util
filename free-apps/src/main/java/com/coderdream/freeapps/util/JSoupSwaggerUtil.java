@@ -1,14 +1,9 @@
 package com.coderdream.freeapps.util;
 
 import cn.hutool.core.util.StrUtil;
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
-import com.alibaba.fastjson.TypeReference;
-import com.coderdream.freeapps.model.App;
-import com.coderdream.freeapps.model.AppInfo;
+import com.coderdream.freeapps.model.AppExtraInfo;
 import java.io.File;
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -448,8 +443,8 @@ public class JSoupSwaggerUtil {
      * @param className
      * @return
      */
-    public static AppInfo getAppInfoByClass(Document document, String className) {
-        AppInfo appInfo = new AppInfo();
+    public static AppExtraInfo getAppInfoByClass(Document document, String className) {
+        AppExtraInfo appInfo = new AppExtraInfo();
         Elements elements = document.getElementsByClass(className);
 
         Elements elementsNext = elements.next();
@@ -552,7 +547,7 @@ public class JSoupSwaggerUtil {
         return appInfo;
     }
 
-    private static void parseElementEight(AppInfo appInfo, Elements elements) {
+    private static void parseElementEight(AppExtraInfo appInfo, Elements elements) {
         Element element1 = elements.get(0);
         TextNode titleNode01 = (TextNode) element1.childNode(0);
         appInfo.setSupplier(titleNode01.text());

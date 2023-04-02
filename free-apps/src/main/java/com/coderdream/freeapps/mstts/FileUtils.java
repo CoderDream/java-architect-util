@@ -11,28 +11,33 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Base64;
 import org.springframework.util.FileCopyUtils;
+
 public class FileUtils {
+
     /**
      * 文件转二进制
+     *
      * @param filePath
      * @return
      */
-    public static byte[] file2Bytes(String filePath){
+    public static byte[] file2Bytes(String filePath) {
         File file = new File(filePath);
-        if (!file.exists())return new byte[0];
-        try(InputStream inputStream = new FileInputStream(file);
+        if (!file.exists()) {
+            return new byte[0];
+        }
+        try (InputStream inputStream = new FileInputStream(file);
             BufferedInputStream bufferedInputStream = new BufferedInputStream(inputStream);
             ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         ) {
             byte[] buf = new byte[1024];
             int len;
-            if ((len=bufferedInputStream.read(buf))>=0){
-                outputStream.write(buf,0,len);
+            if ((len = bufferedInputStream.read(buf)) >= 0) {
+                outputStream.write(buf, 0, len);
             }
             return outputStream.toByteArray();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
         return null;
@@ -40,10 +45,11 @@ public class FileUtils {
 
     /**
      * 将二进制流转换为文件
+     *
      * @param bytes
      * @return
      */
-    public static String bytes2File(byte[] bytes,String fileName){
+    public static String bytes2File(byte[] bytes, String fileName) {
         File file = new File(fileName);
         if (!file.exists()) {
             try {
@@ -52,12 +58,12 @@ public class FileUtils {
                 e.printStackTrace();
             }
         }
-        try (FileOutputStream outputStream = new FileOutputStream(fileName);){
+        try (FileOutputStream outputStream = new FileOutputStream(fileName);) {
             outputStream.write(bytes);
             return fileName;
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
         return null;
@@ -65,12 +71,13 @@ public class FileUtils {
 
     /**
      * 将二进制流转换为文件
+     *
      * @param bytes
      * @param fileName
      */
-    public static void bytes2FileSpring(byte[] bytes,String fileName){
+    public static void bytes2FileSpring(byte[] bytes, String fileName) {
         try {
-            FileCopyUtils.copy(bytes,new File(fileName));
+            FileCopyUtils.copy(bytes, new File(fileName));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -78,37 +85,40 @@ public class FileUtils {
 
     /**
      * 将文件转base64
+     *
      * @param filePath 文件路径
      */
-    public static String fileToBase64(String filePath){
-        try( InputStream fileInputStream = new FileInputStream(new File(filePath));
+    public static String fileToBase64(String filePath) {
+        try (InputStream fileInputStream = new FileInputStream(new File(filePath));
             BufferedInputStream buf = new BufferedInputStream(fileInputStream);
-            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();){
+            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();) {
             int len;
-            byte [] bytes = new byte[1024];
-            while ((len=buf.read(bytes))!=-1){
-                byteArrayOutputStream.write(bytes,0,len);
+            byte[] bytes = new byte[1024];
+            while ((len = buf.read(bytes)) != -1) {
+                byteArrayOutputStream.write(bytes, 0, len);
             }
             return Base64.getEncoder().encodeToString(byteArrayOutputStream.toByteArray());
-        }catch (FileNotFoundException e){
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
         return null;
     }
+
     /**
      * 将base64字符串转文件
+     *
      * @param base64Str base64字符串
      */
-    public static void base64ToFile(String base64Str,String fileName){
+    public static void base64ToFile(String base64Str, String fileName) {
         //解码
-        byte [] bytes = Base64.getDecoder().decode(base64Str);
-        try (FileOutputStream outputStream = new FileOutputStream(fileName);){
+        byte[] bytes = Base64.getDecoder().decode(base64Str);
+        try (FileOutputStream outputStream = new FileOutputStream(fileName);) {
             outputStream.write(bytes);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

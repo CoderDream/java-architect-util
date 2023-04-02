@@ -13,7 +13,7 @@ import java.util.List;
 public class MyBatisPlusServiceTest {
 
     @Autowired
-    private UserService userService; //这里可能爆红，但是运行没问题
+    private UserService userService;
 
 //    @Test
 //    public void testGetCount() {

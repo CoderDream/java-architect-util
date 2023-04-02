@@ -15,7 +15,7 @@ import java.util.Map;
 public class MyBatisPlusTest {
 
     @Autowired
-    private UserMapper userMapper; //这里可能爆红，但是运行没问题
+    private UserMapper userMapper;
 
     @Test
     public void testSelectList() {

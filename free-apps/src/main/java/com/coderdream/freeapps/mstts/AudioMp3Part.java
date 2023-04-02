@@ -6,6 +6,7 @@ import lombok.Getter;
 
 @Getter
 public class AudioMp3Part {
+
     private byte[] bodyByte;
     private byte[] mp3Part;
     private short headSize;
@@ -31,6 +32,5 @@ public class AudioMp3Part {
     public String getXRequestId() {
         return head.getXRequestId();
     }
-
 
 }

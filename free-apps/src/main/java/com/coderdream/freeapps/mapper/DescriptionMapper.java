@@ -1,7 +1,9 @@
 package com.coderdream.freeapps.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.coderdream.freeapps.model.App;
 import com.coderdream.freeapps.model.Description;
+import java.util.List;
 
 /**
 * @author CoderDream
@@ -11,6 +13,7 @@ import com.coderdream.freeapps.model.Description;
 */
 public interface DescriptionMapper extends BaseMapper<Description> {
 
+    int insertOrUpdateBatch(List<Description> entities);
 }
 
 

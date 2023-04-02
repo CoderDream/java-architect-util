@@ -2,18 +2,10 @@ package com.coderdream.freeapps;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.coderdream.freeapps.mapper.UserMapper;
-import com.coderdream.freeapps.model.FreeHistory;
 import com.coderdream.freeapps.model.User;
-import com.coderdream.freeapps.service.FreeHistoryService;
-import com.coderdream.freeapps.util.FileUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 
 @SpringBootTest
 public class UserServiceTest {

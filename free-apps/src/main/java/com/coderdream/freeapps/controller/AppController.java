@@ -8,6 +8,8 @@ import com.coderdream.freeapps.dto.AppQueryPageDTO;
 import com.coderdream.freeapps.model.App;
 import com.coderdream.freeapps.service.AppService;
 import com.coderdream.freeapps.vo.AppVO;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
@@ -17,6 +19,7 @@ import java.util.Date;
 import java.util.List;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -29,15 +32,18 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@RestController
-@Tag(name = "")
+@Slf4j
+@Tag(name = "应用管理")
+@Api(tags = "应用管理")
 @RequestMapping("/apps")
+@RestController
 @RequiredArgsConstructor
 public class AppController {
 
     private final AppService appService;
 
-    @GetMapping("/queryPage")
+    @PostMapping("/queryPage")
+    @ApiOperation(value = "获取分页列表", notes = "获取分页列表")
     @Operation(description = "获取分页列表")
     public Result<PageResult<AppVO>> queryPage(@RequestBody AppQueryPageDTO dto) {
         IPage<AppVO> appVOPage = appService.queryPage(dto);

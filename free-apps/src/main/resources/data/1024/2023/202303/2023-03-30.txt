@@ -1,0 +1,61 @@
+hPlayer
+¥12➱0
+一个界面简洁，功能强大，支持丰富视频、音频文件格式的本地播放器，并可以将电脑下载的视频、动漫、电影等任何格式的媒体文件通过WiFi传到hPlayer中进行播放。
+
+软件特点：
+◉ 支持众多视频格式，无须转码
+◉ 支持滑动快进
+◉ 播放模式锁屏功能
+◉ 文件夹功能
+◉ WiFi批量导入功能
+◉  iTunes导入功能
+◉ 部分格式支持硬件解码
+◉ 通过DLNA投屏手机里的视频到电视上播放
+◉ 支持音频文件的播放
+◉ 支持图片浏览
+https://apps.apple.com/cn/app/id1462751886
+
+System Activity Monitors
+¥12➱0
+监控设备硬件信息，如内存使用情况，电池寿命，已用空间和设备信息
+https://apps.apple.com/cn/app/system-activity-monitors/id386118145
+
+LÒMÒGRAPH 复古胶片相机
+¥12➱0
+包含1000多种出色的随机胶片、漏光和滤镜效果，并能加入许多不同的日期水印。
+https://apps.apple.com/cn/app/l%C3%B2m%C3%B2graph-%E5%A4%8D%E5%8F%A4%E8%83%B6%E7%89%87%E7%9B%B8%E6%9C%BA/id930743975
+
+雨雷达-实时天气图。 亚洲和中国。°
+¥12➱0
+亚洲风暴追踪器，用可缩放的雨水雷达功能跟踪倾盆大雨，天气前沿和暴风雨的运动。可预测全球任何位置，并显示实时天气状况
+https://apps.apple.com/cn/app/%E9%9B%A8%E9%9B%B7%E9%81%94-%E5%AF%A6%E6%99%82%E5%A4%A9%E6%B0%A3%E5%9C%96-%E4%BA%9E%E6%B4%B2%E5%92%8C%E4%B8%AD%E5%9C%8B/id488674899
+
+安全监控照片+视频Pro
+¥12➱0
+安全私人保险库，将最私密的图像和视频保密
+https://apps.apple.com/cn/app/%E5%AE%89%E5%85%A8%E7%9B%91%E6%8E%A7%E7%85%A7%E7%89%87-%E8%A7%86%E9%A2%91pro/id456637671
+
+沙盒星球
+¥12➱0
+一款模拟真实的太阳系的沙盒游戏，在游戏中你可以模拟宇宙起源，建立许多不同行星，太阳、中子星、黑洞等，高度自由任意建立你的专属星系
+https://apps.apple.com/cn/app/%E6%B2%99%E7%9B%92%E6%98%9F%E7%90%83/id1527841661
+
+Textify - 在文本中查找
+¥12➱0
+从图像和照片中检测文本并随时随地突出显示。
+https://apps.apple.com/us/app/id6443910980
+
+随机音符生成器
+¥12➱0
+您是否厌倦了在练习期间想出新的音符？
+https://apps.apple.com/us/app/id1620782562
+
+AirDisk Pro
+¥12➱0
+AirDisk Pro 允许您在 iPhone、iPad 或 iPod touch 上存储、查看和管理文件。
+https://apps.apple.com/us/app/id505904421
+
+点击并跳跃 - 无限循环
+¥12➱0
+把握时机！
+https://apps.apple.com/us/app/id939989434

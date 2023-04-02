@@ -7,7 +7,7 @@ import com.coderdream.freeapps.service.MinioService;
 import com.coderdream.freeapps.service.SnapshotService;
 import com.coderdream.freeapps.util.Constants;
 import com.coderdream.freeapps.util.DownloadPictureUtil;
-import com.coderdream.freeapps.util.ListUtils;
+import com.coderdream.freeapps.util.CdListUtils;
 import lombok.RequiredArgsConstructor;
 import org.apache.http.entity.ContentType;
 import org.slf4j.Logger;
@@ -75,7 +75,7 @@ public class MinioServiceImpl implements MinioService {
         if (!CollectionUtils.isEmpty(snapshotTodoList)) {
             logger.info("本批次处理的记录数: " + snapshotTodoList.size());
             // 分批处理
-            List<List<Snapshot>> lists = ListUtils.splitTo(snapshotTodoList, Constants.BATCH_SNAPSHOT_ROWS);
+            List<List<Snapshot>> lists = CdListUtils.splitTo(snapshotTodoList, Constants.BATCH_SNAPSHOT_ROWS);
             for (List<Snapshot> list : lists) {
                 if (!CollectionUtils.isEmpty(list)) {
                     snapshotDoneList = new ArrayList<>();

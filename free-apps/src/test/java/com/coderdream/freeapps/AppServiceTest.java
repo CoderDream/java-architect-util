@@ -3,7 +3,6 @@ package com.coderdream.freeapps;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.coderdream.freeapps.dto.AppQueryPageDTO;
-import com.coderdream.freeapps.handler.DailyPriceHandler;
 import com.coderdream.freeapps.model.App;
 import com.coderdream.freeapps.model.CrawlerHistory;
 import com.coderdream.freeapps.model.FreeHistory;
@@ -11,7 +10,7 @@ import com.coderdream.freeapps.model.PriceHistory;
 import com.coderdream.freeapps.service.*;
 import com.coderdream.freeapps.util.Constants;
 import com.coderdream.freeapps.util.JSoupUtil;
-import com.coderdream.freeapps.util.ListUtils;
+import com.coderdream.freeapps.util.CdListUtils;
 import com.coderdream.freeapps.vo.AppVO;
 import org.slf4j.Logger;
 import org.springframework.beans.BeanUtils;
@@ -33,16 +32,16 @@ public class AppServiceTest {
 
     private static final Logger logger = org.slf4j.LoggerFactory.getLogger(AppServiceTest.class);
     @Autowired
-    private AppService appService; //这里可能爆红，但是运行没问题
+    private AppService appService;
 
     @Autowired
-    private FreeHistoryService freeHistoryService; //这里可能爆红，但是运行没问题
+    private FreeHistoryService freeHistoryService;
 
     @Resource
-    private CrawlerHistoryService crawlerHistoryService; //这里可能爆红，但是运行没问题
+    private CrawlerHistoryService crawlerHistoryService;
 
     @Resource
-    private PriceHistoryService priceHistoryService; //这里可能爆红，但是运行没问题
+    private PriceHistoryService priceHistoryService;
 
     //    @Test
 //    public void testGetCount() {
@@ -117,9 +116,9 @@ public class AppServiceTest {
             if (!CollectionUtils.isEmpty(appVOList)) {
                 for (AppVO appVO : appVOList) {
                     System.out.println(appVO);
-                    app = new App();
-                    BeanUtils.copyProperties(appVO, app);
-                    list.add(app);
+//                    app = new App();
+//                    BeanUtils.copyProperties(appVO, app);
+//                    list.add(app);
                 }
 
 //                int b = appService.insertOrUpdateBatch(list);  //boolean 操作是否成功
@@ -187,7 +186,7 @@ public class AppServiceTest {
         if (!CollectionUtils.isEmpty(noSnapshotListApp)) {
             logger.info("本次任务开始前有效的应用数: " + noSnapshotListApp.size());
             // 分批处理
-            List<List<App>> lists = ListUtils.splitTo(noSnapshotListApp, Constants.BATCH_INSERT_UPDATE_ROWS);
+            List<List<App>> lists = CdListUtils.splitTo(noSnapshotListApp, Constants.BATCH_INSERT_UPDATE_ROWS);
             for (List<App> list : lists) {
                 if (!CollectionUtils.isEmpty(list)) {
                     newList = new ArrayList<>();
@@ -229,7 +228,7 @@ public class AppServiceTest {
         if (!CollectionUtils.isEmpty(noSnapshotListApp)) {
             logger.info("本次任务开始前无截图的应用数: " + noSnapshotListApp.size());
             // 分批处理
-            List<List<App>> lists = ListUtils.splitTo(noSnapshotListApp, Constants.BATCH_INSERT_UPDATE_ROWS);
+            List<List<App>> lists = CdListUtils.splitTo(noSnapshotListApp, Constants.BATCH_INSERT_UPDATE_ROWS);
             for (List<App> list : lists) {
                 if (!CollectionUtils.isEmpty(list)) {
                     newList = new ArrayList<>();
@@ -268,7 +267,7 @@ public class AppServiceTest {
         if (!CollectionUtils.isEmpty(noSnapshotListApp)) {
             logger.info("本次任务开始前已标识为下架的应用数: " + noSnapshotListApp.size());
             // 分批处理
-            List<List<App>> lists = ListUtils.splitTo(noSnapshotListApp, Constants.BATCH_INSERT_UPDATE_ROWS);
+            List<List<App>> lists = CdListUtils.splitTo(noSnapshotListApp, Constants.BATCH_INSERT_UPDATE_ROWS);
             for (List<App> list : lists) {
                 if (!CollectionUtils.isEmpty(list)) {
                     newList = new ArrayList<>();

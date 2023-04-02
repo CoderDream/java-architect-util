@@ -1,19 +1,25 @@
 package com.coderdream.autogenvedio.util;
 
-import com.beust.ah.A;
 import com.coderdream.autogenvedio.entity.AppBrief;
-import org.springframework.util.CollectionUtils;
-
-import javax.imageio.ImageIO;
-import java.awt.*;
+import java.awt.Desktop;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Rectangle;
+import java.awt.Robot;
+import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.net.URL;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.Iterator;
 import java.util.List;
-import java.util.stream.Collectors;
+import javax.imageio.ImageIO;
+import org.springframework.util.CollectionUtils;
 
 /**
  * 打开所有网页

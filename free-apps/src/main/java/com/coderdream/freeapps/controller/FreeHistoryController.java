@@ -8,6 +8,7 @@ import com.coderdream.freeapps.dto.FreeHistoryQueryPageDTO;
 import com.coderdream.freeapps.model.FreeHistory;
 import com.coderdream.freeapps.service.FreeHistoryService;
 import com.coderdream.freeapps.vo.FreeHistoryVO;
+import io.swagger.annotations.Api;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
@@ -17,8 +18,9 @@ import java.util.List;
 
 
 @RestController
-@Tag(name = "")
-@RequestMapping("/freeHistories")
+@Api(tags = "限免历史管理")
+@Tag(name = "限免历史管理")
+@RequestMapping("/free/history")
 @RequiredArgsConstructor
 public class FreeHistoryController {
 
