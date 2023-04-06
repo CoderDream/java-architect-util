@@ -4,7 +4,7 @@ import com.alibaba.fastjson2.JSONArray;
 import com.alibaba.fastjson2.JSONObject;
 import com.coderdream.freeapps.dto.WeatherInfo;
 import com.coderdream.freeapps.dto.constant.WeatherConstant;
-import com.coderdream.freeapps.util.DateUtils;
+import com.coderdream.freeapps.util.CdDateUtils;
 
 import java.time.LocalDateTime;
 
@@ -33,7 +33,7 @@ public class WeatherService {
         JSONObject jsonObject = JSONObject.parseObject(json);
         Integer status = jsonObject.getInteger("status");
 
-        String currentDay = DateUtils.getDay(LocalDateTime.now());
+        String currentDay = CdDateUtils.getDay(LocalDateTime.now());
 
         if (status == 200) {
             JSONObject data = jsonObject.getJSONObject("data");

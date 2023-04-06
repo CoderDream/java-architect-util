@@ -9,7 +9,7 @@ import com.coderdream.freeapps.dto.WeatherInfo;
 import com.coderdream.freeapps.dto.constant.WeatherConstant;
 import com.coderdream.freeapps.model.User;
 import com.coderdream.freeapps.model.XxlJobInfo;
-import com.coderdream.freeapps.util.DateUtils;
+import com.coderdream.freeapps.util.CdDateUtils;
 import com.coderdream.freeapps.mapper.UserMapper;
 import com.coderdream.freeapps.struct.UserStruct;
 
@@ -56,13 +56,13 @@ public class UserService {
         LocalDateTime scheduleTime = LocalDateTime.now().plusMinutes(1L);
 
         XxlJobInfo xxlJobInfo = XxlJobInfo.builder().jobDesc("定时给用户发送通知").author("hresh")
-                .scheduleType("CRON").scheduleConf(DateUtils.getCron(scheduleTime)).glueType("BEAN")
+                .scheduleType("CRON").scheduleConf(CdDateUtils.getCron(scheduleTime)).glueType("BEAN")
                 .glueType("BEAN")
                 .executorHandler("sayHelloHandler")
                 .executorParam(user.getUsername())
                 .misfireStrategy("DO_NOTHING")
                 .executorRouteStrategy("FIRST")
-                .triggerNextTime(DateUtils.toEpochMilli(scheduleTime))
+                .triggerNextTime(CdDateUtils.toEpochMilli(scheduleTime))
                 .executorBlockStrategy("SERIAL_EXECUTION").triggerStatus(1).build();
 
         xxlService.addJob(xxlJobInfo);

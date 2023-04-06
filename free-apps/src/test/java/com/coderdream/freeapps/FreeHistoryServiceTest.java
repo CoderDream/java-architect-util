@@ -151,8 +151,8 @@ public class FreeHistoryServiceTest {
     public void testInsertOrUpdateBatch_total() {
         String folderPath = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024";
         folderPath = folderPath + File.separatorChar + "2023";
-        folderPath = folderPath + File.separatorChar + "202303";
-        folderPath = folderPath + File.separatorChar + "2023-03-30.txt";
+        folderPath = folderPath + File.separatorChar + "202304";
+//        folderPath = folderPath + File.separatorChar + "2023-03-31.txt";
         List<String> stringList = new ArrayList<>();
         CdFileUtils.getFiles(folderPath, stringList);
         for (String fileName : stringList) {

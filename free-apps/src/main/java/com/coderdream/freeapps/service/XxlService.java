@@ -1,7 +1,7 @@
 package com.coderdream.freeapps.service;
 
 import com.coderdream.freeapps.model.XxlJobInfo;
-import com.coderdream.freeapps.util.DateUtils;
+import com.coderdream.freeapps.util.CdDateUtils;
 import com.coderdream.freeapps.util.XxlUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -27,7 +27,7 @@ public class XxlService {
   public void addJob(XxlJobInfo xxlJobInfo) {
     xxlUtil.addJob(xxlJobInfo, appName);
     long triggerNextTime = xxlJobInfo.getTriggerNextTime();
-    log.info("任务已添加，将在{}开始执行任务", DateUtils.formatDate(triggerNextTime));
+    log.info("任务已添加，将在{}开始执行任务", CdDateUtils.formatDate(triggerNextTime));
   }
 
 }

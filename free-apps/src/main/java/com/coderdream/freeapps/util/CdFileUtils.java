@@ -1,9 +1,11 @@
 package com.coderdream.freeapps.util;
 
 import cn.hutool.core.util.StrUtil;
+import com.coderdream.freeapps.handler.DailyPriceHandler;
 import com.coderdream.freeapps.model.FreeHistory;
 import com.spreada.utils.chinese.ZHConverter;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
 import org.springframework.util.CollectionUtils;
 
 import java.io.*;
@@ -17,10 +19,11 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Java按一行一行进行文件的读取或写入
- * https://blog.csdn.net/yuanhaiwn/article/details/83090540
+ * Java按一行一行进行文件的读取或写入 https://blog.csdn.net/yuanhaiwn/article/details/83090540
  */
 public class CdFileUtils {
+
+    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(CdFileUtils.class);
 
     public static void main(String[] args) {
 //        String fileName = "D:\\12_iOS_Android\\1024_data\\2022-06-29.txt";
@@ -48,6 +51,28 @@ public class CdFileUtils {
 
     }
 
+    /**
+     * 返回
+     * D:\04_GitHub\java-architect-util\free-apps\src\main\resources
+     *                 // https://blog.csdn.net/qq_38319289/article/details/115236819
+     *                 // SpringBoot获取resources文件路径
+     *                 // File directory = new File("src/main/resources");
+     *                 // String reportPath = directory.getCanonicalPath();
+     *                 // String resource =reportPath + "/static/template/resultTemplate.docx";
+     * @return 资源文件夹路径
+     */
+    public static String getResourceRealPath() {
+        File directory = new File("src/main/resources");
+        String reportPath = "";
+        try {
+            reportPath = directory.getCanonicalPath();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return reportPath;
+    }
+
 
     public static List<FreeHistory> getFreeHistoryFromCL(String fileName) {
         List<FreeHistory> freeHistoryList = new ArrayList<>();
@@ -56,6 +81,10 @@ public class CdFileUtils {
         String realFileName;
         try {
             File file = new File(fileName);
+            if (!file.exists()) {
+                logger.error("文件不存在：" + fileName);
+                return null;
+            }
             realFileName = file.getName();
             if (StrUtil.isNotEmpty(realFileName)) {
                 int indexDot = realFileName.indexOf(".");
@@ -104,8 +133,8 @@ public class CdFileUtils {
                 index1 = j + 11;
 
                 if (line.startsWith("安卓手机限免软件")
-                        || line.startsWith("Android")
-                        || line.startsWith("https://play.google.com/")) {
+                    || line.startsWith("Android")
+                    || line.startsWith("https://play.google.com/")) {
                     break;
                 }
 
@@ -125,8 +154,8 @@ public class CdFileUtils {
                         for (int i = 0; i < size; i++) {
                             content = contentList.get(i);
                             if (titleFlag && !content.startsWith("¥")
-                                    && !content.startsWith("￥")
-                                    && !content.startsWith("$")) {
+                                && !content.startsWith("￥")
+                                && !content.startsWith("$")) {
                                 titleList.add(content);
                             }
                             if (descriptionFlag && !content.startsWith("https://apps.apple.com")) {

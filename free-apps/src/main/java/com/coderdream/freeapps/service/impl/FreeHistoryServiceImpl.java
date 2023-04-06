@@ -77,7 +77,6 @@ public class FreeHistoryServiceImpl extends
 
     @Override
     public List<FreeHistory> selectList(FreeHistory freeHistory) {
-
         QueryWrapper<FreeHistory> queryWrapper = new QueryWrapper<>();
         if (StrUtil.isNotEmpty(freeHistory.getAppId())) {
             queryWrapper.eq("app_id", freeHistory.getAppId());
