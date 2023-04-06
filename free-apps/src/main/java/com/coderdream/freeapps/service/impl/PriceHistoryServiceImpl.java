@@ -13,6 +13,7 @@ import com.coderdream.freeapps.service.PriceHistoryService;
 import com.coderdream.freeapps.util.Constants;
 import com.coderdream.freeapps.util.JSoupUtil;
 import com.coderdream.freeapps.util.CdListUtils;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
@@ -31,10 +32,9 @@ import java.util.concurrent.TimeUnit;
 * @createDate 2023-03-03 08:38:02
 */
 @Service
+@Slf4j
 public class PriceHistoryServiceImpl extends ServiceImpl<PriceHistoryMapper, PriceHistory>
     implements PriceHistoryService{
-
-    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(PriceHistoryServiceImpl.class);
 
     @Resource
     private PriceHistoryMapper priceHistoryMapper;
@@ -104,11 +104,11 @@ public class PriceHistoryServiceImpl extends ServiceImpl<PriceHistoryMapper, Pri
                 doneAppIdSet.add(priceHistoryTemp.getAppId());
             }
         }
-        logger.info("本次任务开始前已完成数: " + doneAppIdSet.size());
+        log.info("本次任务开始前已完成数: " + doneAppIdSet.size());
         List<App> selectTodoList = appService.selectTodoList(null);
 
         if (!CollectionUtils.isEmpty(selectTodoList)) {
-            logger.info("本次任务开始前有效的应用数: " + selectTodoList.size());
+            log.info("本次任务开始前有效的应用数: " + selectTodoList.size());
             // 分批处理
             List<List<App>> lists = CdListUtils.splitTo(selectTodoList, Constants.BATCH_INSERT_UPDATE_ROWS);
             for (List<App> list : lists) {
@@ -122,7 +122,7 @@ public class PriceHistoryServiceImpl extends ServiceImpl<PriceHistoryMapper, Pri
 
                         App appNew = JSoupUtil.crawlerApp(app);
                         newList.add(appNew);
-                        logger.info("appNew: " + appNew);
+                        log.info("appNew: " + appNew);
                         // 如果已下架，就不再插入价格历史表
                         if (appNew.getDelFlag() == null || appNew.getDelFlag() == 0) {
                             priceHistory = new PriceHistory();
@@ -133,7 +133,7 @@ public class PriceHistoryServiceImpl extends ServiceImpl<PriceHistoryMapper, Pri
                                 priceHistory.setCrawlerDate(dateFormat.parse(dateStr));
                                 priceHistoryList.add(priceHistory);
                             } catch (ParseException e) {
-                                logger.error(e.getMessage());
+                                log.error(e.getMessage());
                                 throw new RuntimeException(e);
                             }
                             System.out.println(app.getAppId());
@@ -142,24 +142,24 @@ public class PriceHistoryServiceImpl extends ServiceImpl<PriceHistoryMapper, Pri
                         try {
                             Thread.sleep(period);   // 休眠3秒
                         } catch (InterruptedException e) {
-                            logger.error(e.getMessage());
+                            log.error(e.getMessage());
                             throw new RuntimeException(e);
                         }
                     }
 
                     if (!CollectionUtils.isEmpty(newList)) {
                         int insertOrUpdateBatchResult = appService.insertOrUpdateBatch(newList);
-                        logger.info("appService.insertOrUpdateBatch: " + insertOrUpdateBatchResult);
+                        log.info("appService.insertOrUpdateBatch: " + insertOrUpdateBatchResult);
                     }
                     if (!CollectionUtils.isEmpty(priceHistoryList)) {
                         int insertOrUpdateBatchResult = insertOrUpdateBatch(priceHistoryList);
-                        logger.info("priceHistoryService.insertOrUpdateBatch: " + insertOrUpdateBatchResult);
+                        log.info("priceHistoryService.insertOrUpdateBatch: " + insertOrUpdateBatchResult);
                     }
                     Integer period = new Random().nextInt(4000) + 500;
                     try {
                         Thread.sleep(period);   // 休眠3秒
                     } catch (InterruptedException e) {
-                        logger.error(e.getMessage());
+                        log.error(e.getMessage());
                         throw new RuntimeException(e);
                     }
                 }
@@ -186,8 +186,8 @@ public class PriceHistoryServiceImpl extends ServiceImpl<PriceHistoryMapper, Pri
 //        System.out.println("milliseconds :-" + milliseconds);
         String message = String.format("%d Days %d Hours %d Minutes %d Seconds %d Milliseconds",
                 day, hours, minutes, seconds, ms);
-        logger.info("本次任务耗时: " + period + " 毫秒");
-        logger.info("本次任务耗时: " + message);
+        log.info("本次任务耗时: " + period + " 毫秒");
+        log.info("本次任务耗时: " + message);
     }
 }
 

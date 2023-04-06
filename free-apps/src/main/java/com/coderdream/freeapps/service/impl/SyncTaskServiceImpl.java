@@ -23,6 +23,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import javax.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
@@ -50,6 +51,7 @@ public class SyncTaskServiceImpl extends ServiceImpl<SyncTaskMapper, SyncTaskEnt
 
     @Override
     public void dailyProcess(SyncTaskReqDto syncTaskReqDto) {
+        long startTime = System.currentTimeMillis();
         QueryWrapper<SyncTaskEntity> queryWrapper = new QueryWrapper<>();
         List<SyncTaskEntity> syncTaskEntityList = list(queryWrapper);
         for (SyncTaskEntity syncTaskEntity : syncTaskEntityList) {
@@ -124,6 +126,30 @@ public class SyncTaskServiceImpl extends ServiceImpl<SyncTaskMapper, SyncTaskEnt
             }
 
         }
+
+        long endTime = System.currentTimeMillis();
+        long period = endTime - startTime;
+
+        final long milliseconds = period;
+        final long day = TimeUnit.MILLISECONDS.toDays(milliseconds);
+
+        final long hours = TimeUnit.MILLISECONDS.toHours(milliseconds)
+            - TimeUnit.DAYS.toHours(TimeUnit.MILLISECONDS.toDays(milliseconds));
+
+        final long minutes = TimeUnit.MILLISECONDS.toMinutes(milliseconds)
+            - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(milliseconds));
+
+        final long seconds = TimeUnit.MILLISECONDS.toSeconds(milliseconds)
+            - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(milliseconds));
+
+        final long ms = TimeUnit.MILLISECONDS.toMillis(milliseconds)
+            - TimeUnit.SECONDS.toMillis(TimeUnit.MILLISECONDS.toSeconds(milliseconds));
+
+//        System.out.println("milliseconds :-" + milliseconds);
+        String message = String.format("%d Days %d Hours %d Minutes %d Seconds %d Milliseconds",
+            day, hours, minutes, seconds, ms);
+        log.info("本次任务耗时: " + period + " 毫秒");
+        log.info("本次任务耗时: " + message);
     }
 }
 

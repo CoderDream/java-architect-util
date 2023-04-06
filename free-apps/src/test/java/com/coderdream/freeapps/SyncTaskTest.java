@@ -34,6 +34,6 @@ public class SyncTaskTest {
 
     @Test
     public void testDailyProcess() {
-        snapshotService.dailyProcess();
+        snapshotService.dailyProcess(null);
     }
 }
