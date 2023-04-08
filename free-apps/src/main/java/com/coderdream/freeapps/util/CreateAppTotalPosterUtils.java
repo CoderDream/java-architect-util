@@ -55,7 +55,7 @@ public class CreateAppTotalPosterUtils {
         String detailPath;
         String pagePosterPath;
         // 背景模板图
-        String background = "D:\\12_iOS_Android\\base\\base_page_v5.png";
+        String background = "D:\\12_iOS_Android\\base\\page.PNG";
 
         int i = 0;
         for (AppBrief appBrief : appBriefList) {
@@ -77,11 +77,11 @@ public class CreateAppTotalPosterUtils {
                 InputStream singlePosterInputStream = new FileInputStream(new File(singlePosterPath));
                 InputStream detailPathInputStream = new FileInputStream(new File(detailPath));
                 // 2. 初始化并的改变大小
-                BufferedImage singlePosterImage = PosterUtil.drawInitAndChangeSize(null, singlePosterInputStream, 417, 1000);
-                BufferedImage detailPathImage = PosterUtil.drawInitAndChangeSize(null, detailPathInputStream, 1000, 1000);
+                BufferedImage singlePosterImage = PosterUtil.drawInitAndChangeSize(null, singlePosterInputStream, 417, 850);
+                BufferedImage detailPathImage = PosterUtil.drawInitAndChangeSize(null, detailPathInputStream, 850, 850);
                 // 3. 画二维码
-                PosterUtil.drawImage(bufferedImage, singlePosterImage, 100, 20); // 532, 1108);
-                PosterUtil.drawImage(bufferedImage, detailPathImage, 730, 20); // 532, 1108);
+                PosterUtil.drawImage(bufferedImage, singlePosterImage, 150, 100); // 532, 1108);
+                PosterUtil.drawImage(bufferedImage, detailPathImage, 750, 100); // 532, 1108);
 
                 // 海报 保存到本地  + "page_" + fileName + ".png"
                 String filename = appBrief.getPagePosterPath() + "page_" + appBrief.getFilename() + ".png";

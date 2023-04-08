@@ -59,7 +59,7 @@ public class CreateAppListPosterUtils {
         String singlePosterPath2;
         String singlePosterPath3;
         // 背景模板图
-        String background = "D:\\12_iOS_Android\\base\\base_page_v1.png";
+        String background = "D:\\12_iOS_Android\\base\\list.PNG";
 
         int i = 0;
         for (List<AppBrief> list : lists) {
@@ -86,9 +86,9 @@ public class CreateAppListPosterUtils {
                         // 画 二维码 并改变大小
                         InputStream singlePosterInputStream1 = new FileInputStream(new File(singlePosterPath1));
                         // 2. 初始化并的改变大小
-                        BufferedImage singlePosterImage1 = PosterUtil.drawInitAndChangeSize(null, singlePosterInputStream1, 417, 1000);
+                        BufferedImage singlePosterImage1 = PosterUtil.drawInitAndChangeSize(null, singlePosterInputStream1, 517, 650);
                         // 3. 画二维码
-                        PosterUtil.drawImage(bufferedImage, singlePosterImage1, 100, 20); // 532, 1108);
+                        PosterUtil.drawImage(bufferedImage, singlePosterImage1, 130, 80); // 532, 1108);
 
                         // 海报 保存到本地
                         String filename = appBrief1.getListAppsPath() + "list_" + String.format("%02d", i) + ".png";
@@ -160,13 +160,13 @@ public class CreateAppListPosterUtils {
                         InputStream singlePosterInputStream2 = new FileInputStream(new File(singlePosterPath2));
                         InputStream singlePosterInputStream3 = new FileInputStream(new File(singlePosterPath3));
                         // 2. 初始化并的改变大小
-                        BufferedImage singlePosterImage1 = PosterUtil.drawInitAndChangeSize(null, singlePosterInputStream1, 417, 1000);
-                        BufferedImage singlePosterImage2 = PosterUtil.drawInitAndChangeSize(null, singlePosterInputStream2, 417, 1000);
-                        BufferedImage singlePosterImage3 = PosterUtil.drawInitAndChangeSize(null, singlePosterInputStream3, 417, 1000);
+                        BufferedImage singlePosterImage1 = PosterUtil.drawInitAndChangeSize(null, singlePosterInputStream1, 417, 850);
+                        BufferedImage singlePosterImage2 = PosterUtil.drawInitAndChangeSize(null, singlePosterInputStream2, 417, 850);
+                        BufferedImage singlePosterImage3 = PosterUtil.drawInitAndChangeSize(null, singlePosterInputStream3, 417, 850);
                         // 3. 画二维码
-                        PosterUtil.drawImage(bufferedImage, singlePosterImage1, 100, 20); // 532, 1108);
-                        PosterUtil.drawImage(bufferedImage, singlePosterImage2, 730, 20); // 532, 1108);
-                        PosterUtil.drawImage(bufferedImage, singlePosterImage3, 1360, 20); // 532, 1108);
+                        PosterUtil.drawImage(bufferedImage, singlePosterImage1, 150, 105); // 532, 1108);
+                        PosterUtil.drawImage(bufferedImage, singlePosterImage2, 780, 105); // 532, 1108);
+                        PosterUtil.drawImage(bufferedImage, singlePosterImage3, 1410, 105); // 532, 1108);
 
                         // 海报 保存到本地
                         String filename = appBrief1.getListAppsPath() + "list_" + String.format("%02d", i) + ".png";

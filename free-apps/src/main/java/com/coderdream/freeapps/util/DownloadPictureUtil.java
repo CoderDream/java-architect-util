@@ -122,7 +122,7 @@ public class DownloadPictureUtil {
                 }
                 inputStream.close();
                 outputStream.close();
-                logger.info(" =========== 操作成功");
+                logger.info(" =========== 操作成功" + pictureUrl);
             } catch (Exception e) {
                 if (tryTime < tryTimes) {
                     tryFlag = true;

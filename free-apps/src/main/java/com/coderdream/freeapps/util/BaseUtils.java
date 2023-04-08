@@ -87,6 +87,10 @@ public class BaseUtils {
         System.out.println("####");
     }
 
+    /**
+     * 返回
+     * @return
+     */
     public static String getPath() {
         String monthStr = new SimpleDateFormat("yyyyMM").format(new Date());
         String dateStr = new SimpleDateFormat("yyyyMMdd").format(new Date());
@@ -99,7 +103,7 @@ public class BaseUtils {
         AppBrief appBrief;
         String monthStr = new SimpleDateFormat("yyyyMM").format(new Date());
         String dateStr = new SimpleDateFormat("yyyyMMdd").format(new Date());
-        String path = getPath();
+        String path = BaseUtils.getPath();
         String txtFileName = File.separator + path + File.separator + dateStr + ".txt";
 
         List<String> rawStrList = TxtUtils.readTxtFileToList(txtFileName);
