@@ -14,6 +14,7 @@ import java.util.List;
 public interface DescriptionMapper extends BaseMapper<Description> {
 
     int insertOrUpdateBatch(List<Description> entities);
+    int insertOrUpdateBatchBaseDescription(List<Description> entities);
 }
 
 

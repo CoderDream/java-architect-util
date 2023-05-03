@@ -17,9 +17,18 @@ public class Constants {
 
     public static String SNAPSHOT_PNG_2_SUFFIX = "png 643w";
 
+    public static String APP_ICON_JPG_SUFFIX = "jpg 492w";
+    public static String APP_ICON_JPG_2_SUFFIX = "jpg 460w";
+
+    public static String APP_ICON_PNG_SUFFIX = "png 492w";
+    public static String APP_ICON_2_PNG_SUFFIX = "png 460w";
+
     public static int BATCH_INSERT_UPDATE_ROWS = 25;
     public static int BATCH_UPDATE_ROWS = 1000;
 
     public static int BATCH_SNAPSHOT_ROWS = 100;
+
+
+    public static String PPT_TEMPLATE_FILE_NAME = "20230430.pptx";
 
 }

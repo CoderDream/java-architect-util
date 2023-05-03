@@ -7,9 +7,13 @@
         <result property="appId" column="app_id" jdbcType="VARCHAR"/>
         <result property="title" column="title" jdbcType="VARCHAR"/>
         <result property="subTitle" column="sub_title" jdbcType="VARCHAR"/>
+        <result property="designedFor" column="designed_for" jdbcType="VARCHAR"/>
+        <result property="appIconUrl" column="app_icon_url" jdbcType="VARCHAR"/>
+        <result property="ranking" column="ranking" jdbcType="VARCHAR"/>
         <result property="ratingStr" column="rating_str" jdbcType="VARCHAR"/>
         <result property="rating" column="rating" jdbcType="DECIMAL"/>
         <result property="rateAmount" column="rate_amount" jdbcType="INTEGER"/>
+        <result property="price" column="price" jdbcType="INTEGER"/>
         <result property="priceCn" column="price_cn" jdbcType="INTEGER"/>
         <result property="priceUs" column="price_us" jdbcType="DECIMAL"/>
         <result property="priceStr" column="price_str" jdbcType="VARCHAR"/>
@@ -78,64 +82,64 @@
         version
     </sql>
 
-    <insert id="insertOrUpdateBatchV2">
-        insert into t_app
-        <trim prefix="(" suffix=")" suffixOverrides=",">
-            <if test="appId != null">app_id,</if>
-            <if test="name != null">`name`,</if>
-            <if test="priceCn != null">price_cn,</if>
-            <if test="priceUs != null">price_us,</if>
-            <if test="priceStr != null">price_str,</if>
-            <if test="priceStrCn != null">price_str_cn,</if>
-            <if test="priceStrUs != null">price_str_us,</if>
-            <if test="usFlag != null">us_flag,</if>
-            <if test="urlCn != null">url_cn,</if>
-            <if test="urlUs != null">url_us,</if>
-            <if test="urlUs != null">url_us,</if>
-            <if test="urlUs != null">url_us,</if>
-            <if test="delFlag != null">del_flag,</if>
-            <if test="createUserCode != null">create_user_code,</if>
-            <if test="createUserName != null">create_user_name,</if>
-            <if test="createdDate != null">created_date,</if>
-            <if test="lastModifiedCode != null">last_modified_code,</if>
-            <if test="lastModifiedName != null">last_modified_name,</if>
-            <if test="lastModifiedDate != null">last_modified_date,</if>
-            <if test="version != null">version,</if>
-        </trim>
-        values
+<!--    <insert id="insertOrUpdateBatchV2">-->
+<!--        insert into t_app-->
+<!--        <trim prefix="(" suffix=")" suffixOverrides=",">-->
+<!--            <if test="appId != null">app_id,</if>-->
+<!--            <if test="name != null">`name`,</if>-->
+<!--            <if test="priceCn != null">price_cn,</if>-->
+<!--            <if test="priceUs != null">price_us,</if>-->
+<!--            <if test="priceStr != null">price_str,</if>-->
+<!--            <if test="priceStrCn != null">price_str_cn,</if>-->
+<!--            <if test="priceStrUs != null">price_str_us,</if>-->
+<!--            <if test="usFlag != null">us_flag,</if>-->
+<!--            <if test="urlCn != null">url_cn,</if>-->
+<!--            <if test="urlUs != null">url_us,</if>-->
+<!--            <if test="urlUs != null">url_us,</if>-->
+<!--            <if test="urlUs != null">url_us,</if>-->
+<!--            <if test="delFlag != null">del_flag,</if>-->
+<!--            <if test="createUserCode != null">create_user_code,</if>-->
+<!--            <if test="createUserName != null">create_user_name,</if>-->
+<!--            <if test="createdDate != null">created_date,</if>-->
+<!--            <if test="lastModifiedCode != null">last_modified_code,</if>-->
+<!--            <if test="lastModifiedName != null">last_modified_name,</if>-->
+<!--            <if test="lastModifiedDate != null">last_modified_date,</if>-->
+<!--            <if test="version != null">version,</if>-->
+<!--        </trim>-->
+<!--        values-->
 
-        <foreach collection="entities" item="item" separator=",">
-            <trim prefix="(" suffix=")" suffixOverrides=",">
-                <if test="appId != null">#{item.appId,jdbcType=VARCHAR},</if>
-                <if test="name != null">#{item.name,jdbcType=VARCHAR},</if>
-                <if test="priceCn != null">#{item.priceCn,jdbcType=INTEGER},</if>
-                <if test="priceUs != null">#{item.priceUs,jdbcType=DECIMAL},</if>
-                <if test="priceStr != null">#{item.priceStr,jdbcType=VARCHAR},</if>
-                <if test="priceStrCn != null">#{item.priceStrCn,jdbcType=VARCHAR},</if>
-                <if test="priceStrUs != null">#{item.priceStrUs,jdbcType=VARCHAR},</if>
-                <if test="usFlag != null">#{item.usFlag,jdbcType=TINYINT},</if>
-                <if test="urlCn != null">#{item.urlCn,jdbcType=VARCHAR},</if>
-                <if test="urlUs != null">#{item.urlUs,jdbcType=VARCHAR},</if>
-                <if test="delFlag != null">#{item.delFlag,jdbcType=INTEGER},</if>
-                <if test="createUserCode != null">#{item.createUserCode,jdbcType=VARCHAR},</if>
-                <if test="createUserName != null">#{item.createUserName,jdbcType=VARCHAR},</if>
-                <if test="createdDate != null">#{item.createdDate,jdbcType=TIMESTAMP},</if>
-                <if test="lastModifiedCode != null">#{item.lastModifiedCode,jdbcType=VARCHAR},</if>
-                <if test="lastModifiedName != null">#{item.lastModifiedName,jdbcType=VARCHAR},</if>
-                <if test="lastModifiedDate != null">#{item.lastModifiedDate,jdbcType=TIMESTAMP},</if>
-                <if test="version != null">#{item.version,jdbcType=VARCHAR},</if>
-            </trim>
-        </foreach>
+<!--        <foreach collection="entities" item="item" separator=",">-->
+<!--            <trim prefix="(" suffix=")" suffixOverrides=",">-->
+<!--                <if test="appId != null">#{item.appId,jdbcType=VARCHAR},</if>-->
+<!--                <if test="name != null">#{item.name,jdbcType=VARCHAR},</if>-->
+<!--                <if test="priceCn != null">#{item.priceCn,jdbcType=INTEGER},</if>-->
+<!--                <if test="priceUs != null">#{item.priceUs,jdbcType=DECIMAL},</if>-->
+<!--                <if test="priceStr != null">#{item.priceStr,jdbcType=VARCHAR},</if>-->
+<!--                <if test="priceStrCn != null">#{item.priceStrCn,jdbcType=VARCHAR},</if>-->
+<!--                <if test="priceStrUs != null">#{item.priceStrUs,jdbcType=VARCHAR},</if>-->
+<!--                <if test="usFlag != null">#{item.usFlag,jdbcType=TINYINT},</if>-->
+<!--                <if test="urlCn != null">#{item.urlCn,jdbcType=VARCHAR},</if>-->
+<!--                <if test="urlUs != null">#{item.urlUs,jdbcType=VARCHAR},</if>-->
+<!--                <if test="delFlag != null">#{item.delFlag,jdbcType=INTEGER},</if>-->
+<!--                <if test="createUserCode != null">#{item.createUserCode,jdbcType=VARCHAR},</if>-->
+<!--                <if test="createUserName != null">#{item.createUserName,jdbcType=VARCHAR},</if>-->
+<!--                <if test="createdDate != null">#{item.createdDate,jdbcType=TIMESTAMP},</if>-->
+<!--                <if test="lastModifiedCode != null">#{item.lastModifiedCode,jdbcType=VARCHAR},</if>-->
+<!--                <if test="lastModifiedName != null">#{item.lastModifiedName,jdbcType=VARCHAR},</if>-->
+<!--                <if test="lastModifiedDate != null">#{item.lastModifiedDate,jdbcType=TIMESTAMP},</if>-->
+<!--                <if test="version != null">#{item.version,jdbcType=VARCHAR},</if>-->
+<!--            </trim>-->
+<!--        </foreach>-->
 
-        on duplicate key update
-        app_id = values(app_id),
-        `name` = values(`name`),
-        price_cn = values(price_cn),
-        price_us = values(price_us),
-        version = values(version)
+<!--        on duplicate key update-->
+<!--        app_id = values(app_id),-->
+<!--        `name` = values(`name`),-->
+<!--        price_cn = values(price_cn),-->
+<!--        price_us = values(price_us),-->
+<!--        version = values(version)-->
 
 
-    </insert>
+<!--    </insert>-->
 
     <insert id="insertOrUpdateBatch">
         insert into t_app
@@ -143,10 +147,12 @@
         `title`,
         `sub_title`,
         `designed_for`,
+        `app_icon_url`,
         `ranking`,
         `rating_str`,
         `rating`,
         `rate_amount`,
+        `price`,
         `price_cn`,
         `price_us`,
         `price_str`,
@@ -193,10 +199,12 @@
             #{item.title,jdbcType=VARCHAR},
             #{item.subTitle,jdbcType=VARCHAR},
             #{item.designedFor,jdbcType=VARCHAR},
+            #{item.appIconUrl,jdbcType=VARCHAR},
             #{item.ranking,jdbcType=VARCHAR},
             #{item.ratingStr,jdbcType=VARCHAR},
             #{item.rating,jdbcType=DECIMAL},
             #{item.rateAmount,jdbcType=NUMERIC},
+            #{item.price,jdbcType=NUMERIC},
             #{item.priceCn,jdbcType=NUMERIC},
             #{item.priceUs,jdbcType=DECIMAL},
             #{item.priceStr,jdbcType=VARCHAR},
@@ -242,10 +250,12 @@
         `title`=values(`title`),
         `sub_title`=values(`sub_title`),
         `designed_for`=values(`designed_for`),
+        `app_icon_url`=values(`app_icon_url`),
         `ranking`=values(`ranking`),
         `rating_str`=values(`rating_str`),
         `rating`=values(`rating`),
         `rate_amount`=values(`rate_amount`),
+        `price`=values(`price`),
         `price_cn`=values(`price_cn`),
         `price_us`=values(`price_us`),
         `price_str`=values(`price_str`),
@@ -287,311 +297,311 @@
         `version`=values(`version`)
     </insert>
 
-    <insert id="insertOrUpdateBatchV5">
-        insert into t_app
-        (`app_id`,
-        `title`,
-        `sub_title`,
-        `designed_for`,
-        `ranking`,
-        `rating_str`,
-        `rating`,
-        `rate_amount`,
-        `price_cn`,
-        `price_us`,
-        `price_str`,
-        `price_str_cn`,
-        `price_str_us`,
-        `us_flag`,
-        `in_purchase_flag`,
-        `in_purchase_free_flag`,
-        `url_cn`,
-        `url_us`,
-        `description_us`,
-        `description_cn`,
-        `description_cl`,
-        `description_wc`,
-        `description_go`,
-        `description_geek`,
-        `description_my`,
-        `description_zm`,
-        `supplier`,
-        `app_size_str`,
-        `app_size`,
-        `category_id`,
-        `category`,
-        `compatibility`,
-        `language`,
-        `age`,
-        `copyright`,
-        `app_in_purchase`,
-        `snapshot_url`,
-        `version_history`,
-        `remark`,
-        `del_flag`,
-        `create_user_code`,
-        `create_user_name`,
-        `created_date`,
-        `last_modified_code`,
-        `last_modified_name`,
-        `last_modified_date`,
-        `version`)
-        values
-        <foreach collection="entities" item="item" separator=",">
-            (
-            #{item.appId,jdbcType=VARCHAR},
-            #{item.title,jdbcType=VARCHAR},
-            #{item.subTitle,jdbcType=VARCHAR},
-            #{item.designedFor,jdbcType=VARCHAR},
-            #{item.ranking,jdbcType=VARCHAR},
-            #{item.ratingStr,jdbcType=VARCHAR},
-            #{item.rating,jdbcType=DECIMAL},
-            #{item.rateAmount,jdbcType=NUMERIC},
-            #{item.priceCn,jdbcType=NUMERIC},
-            #{item.priceUs,jdbcType=DECIMAL},
-            #{item.priceStr,jdbcType=VARCHAR},
-            #{item.priceStrCn,jdbcType=VARCHAR},
-            #{item.priceStrUs,jdbcType=VARCHAR},
-            #{item.usFlag,jdbcType=NUMERIC},
-            #{item.inPurchaseFlag,jdbcType=NUMERIC},
-            #{item.inPurchaseFreeFlag,jdbcType=NUMERIC},
-            #{item.urlCn,jdbcType=VARCHAR},
-            #{item.urlUs,jdbcType=VARCHAR},
-            #{item.descriptionUs,jdbcType=VARCHAR},
-            #{item.descriptionCn,jdbcType=VARCHAR},
-            #{item.descriptionCl,jdbcType=VARCHAR},
-            #{item.descriptionWc,jdbcType=VARCHAR},
-            #{item.descriptionGo,jdbcType=VARCHAR},
-            #{item.descriptionGeek,jdbcType=VARCHAR},
-            #{item.descriptionMy,jdbcType=VARCHAR},
-            #{item.descriptionZm,jdbcType=VARCHAR},
-            #{item.supplier,jdbcType=VARCHAR},
-            #{item.appSizeStr,jdbcType=VARCHAR},
-            #{item.appSize,jdbcType=DECIMAL},
-            #{item.categoryId,jdbcType=NUMERIC},
-            #{item.category,jdbcType=VARCHAR},
-            #{item.compatibility, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},
-            #{item.language,jdbcType=VARCHAR},
-            #{item.age,jdbcType=VARCHAR},
-            #{item.copyright,jdbcType=VARCHAR},
-            #{item.appInPurchase, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},
-            #{item.snapshotUrl, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},
-            #{item.versionHistory, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},
-            #{item.remark,jdbcType=VARCHAR},
-            #{item.delFlag,jdbcType=NUMERIC},
-            #{item.createUserCode,jdbcType=VARCHAR},
-            #{item.createUserName,jdbcType=VARCHAR},
-            #{item.createdDate,jdbcType=TIMESTAMP},
-            #{item.lastModifiedCode,jdbcType=VARCHAR},
-            #{item.lastModifiedName,jdbcType=VARCHAR},
-            #{item.lastModifiedDate,jdbcType=TIMESTAMP},
-            #{item.version,jdbcType=VARCHAR}
-            )
-        </foreach>
-        on duplicate key update
-        <trim prefix="" suffixOverrides=",">
-            <foreach collection="entities" item="item" separator=",">
-                <if test="item.title != null">`title` = #{item.title,jdbcType=VARCHAR},</if>
-                <if test="item.subTitle != null">`sub_title` = #{item.subTitle,jdbcType=VARCHAR},</if>
-                <if test="item.designedFor != null">`designed_for` = #{item.designedFor,jdbcType=VARCHAR},</if>
-                <if test="item.ranking != null">`ranking` = #{item.ranking,jdbcType=VARCHAR},</if>
-                <if test="item.ratingStr != null">`rating_str` = #{item.ratingStr,jdbcType=VARCHAR},</if>
-                <if test="item.rating != null">`rating` = #{item.rating,jdbcType=DECIMAL},</if>
-                <if test="item.rateAmount != null">`rate_amount` = #{item.rateAmount,jdbcType=INTEGER},</if>
-                <if test="item.priceCn != null">`price_cn` = #{item.priceCn,jdbcType=INTEGER},</if>
-                <if test="item.priceUs != null">`price_us` = #{item.priceUs,jdbcType=DECIMAL},</if>
-                <if test="item.priceStr != null">`price_str` = #{item.priceStr,jdbcType=VARCHAR},</if>
-                <if test="item.priceStrCn != null">`price_str_cn` = #{item.priceStrCn,jdbcType=VARCHAR},</if>
-                <if test="item.priceStrUs != null">`price_str_us` = #{item.priceStrUs,jdbcType=VARCHAR},</if>
-                <if test="item.usFlag != null">`us_flag` = #{item.usFlag,jdbcType=TINYINT},</if>
-                <if test="item.inPurchaseFlag != null">`in_purchase_flag` = #{item.inPurchaseFlag,jdbcType=TINYINT},
-                </if>
-                <if test="item.inPurchaseFreeFlag != null">`in_purchase_free_flag` =
-                    #{item.inPurchaseFreeFlag,jdbcType=TINYINT},
-                </if>
-                <if test="item.urlCn != null">`url_cn` = #{item.urlCn,jdbcType=VARCHAR},</if>
-                <if test="item.urlUs != null">`url_us` = #{item.urlUs,jdbcType=VARCHAR},</if>
-                <if test="item.descriptionUs != null">`description_us` = #{item.descriptionUs,jdbcType=VARCHAR},</if>
-                <if test="item.descriptionCn != null">`description_cn` = #{item.descriptionCn,jdbcType=VARCHAR},</if>
-                <if test="item.descriptionCl != null">`description_cl` = #{item.descriptionCl,jdbcType=VARCHAR},</if>
-                <if test="item.descriptionWc != null">`description_wc` = #{item.descriptionWc,jdbcType=VARCHAR},</if>
-                <if test="item.descriptionGo != null">`description_go` = #{item.descriptionGo,jdbcType=VARCHAR},</if>
-                <if test="item.descriptionGeek != null">`description_geek` = #{item.descriptionGeek,jdbcType=VARCHAR},
-                </if>
-                <if test="item.descriptionMy != null">`description_my` = #{item.descriptionMy,jdbcType=VARCHAR},</if>
-                <if test="item.descriptionZm != null">`description_zm` = #{item.descriptionZm,jdbcType=VARCHAR},</if>
-                <if test="item.supplier != null">`supplier` = #{item.supplier,jdbcType=VARCHAR},</if>
-                <if test="item.appSizeStr != null">`app_size_str` = #{item.appSizeStr,jdbcType=VARCHAR},</if>
-                <if test="item.appSize != null">`app_size` = #{item.appSize,jdbcType=DECIMAL},</if>
-                <if test="item.categoryId != null">`category_id` = #{item.categoryId,jdbcType=INTEGER},</if>
-                <if test="item.category != null">`category` = #{item.category,jdbcType=VARCHAR},</if>
-                <if test="item.compatibility != null">`compatibility` =
-                    #{item.compatibility, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},
-                </if>
-                <if test="item.language != null">`language` = #{item.language,jdbcType=VARCHAR},</if>
-                <if test="item.age != null">`age` = #{item.age,jdbcType=VARCHAR},</if>
-                <if test="item.copyright != null">`copyright` = #{item.copyright,jdbcType=VARCHAR},</if>
-                <if test="item.appInPurchase != null">`app_in_purchase` =
-                    #{item.appInPurchase, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},
-                </if>
-                <if test="item.snapshotUrl != null">`snapshot_url` =
-                    #{item.snapshotUrl, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},
-                </if>
-                <if test="item.versionHistory != null">`version_history` =
-                    #{item.versionHistory, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},
-                </if>
-                <if test="item.remark != null">`remark` = #{item.remark,jdbcType=VARCHAR},</if>
-                <if test="item.delFlag != null">`del_flag` = #{item.delFlag,jdbcType=INTEGER},</if>
-                <if test="item.createUserCode != null">`create_user_code` = #{item.createUserCode,jdbcType=VARCHAR},
-                </if>
-                <if test="item.createUserName != null">`create_user_name` = #{item.createUserName,jdbcType=VARCHAR},
-                </if>
-                <if test="item.createdDate != null">`created_date` = #{item.createdDate,jdbcType=TIMESTAMP},</if>
-                <if test="item.lastModifiedCode != null">`last_modified_code` =
-                    #{item.lastModifiedCode,jdbcType=VARCHAR},
-                </if>
-                <if test="item.lastModifiedName != null">`last_modified_name` =
-                    #{item.lastModifiedName,jdbcType=VARCHAR},
-                </if>
-                <if test="item.version != null">`version` = #{item.version,jdbcType=VARCHAR},</if>
-                `last_modified_date` = NOW()
-            </foreach>
-        </trim>
-    </insert>
+<!--    <insert id="insertOrUpdateBatchV5">-->
+<!--        insert into t_app-->
+<!--        (`app_id`,-->
+<!--        `title`,-->
+<!--        `sub_title`,-->
+<!--        `designed_for`,-->
+<!--        `ranking`,-->
+<!--        `rating_str`,-->
+<!--        `rating`,-->
+<!--        `rate_amount`,-->
+<!--        `price_cn`,-->
+<!--        `price_us`,-->
+<!--        `price_str`,-->
+<!--        `price_str_cn`,-->
+<!--        `price_str_us`,-->
+<!--        `us_flag`,-->
+<!--        `in_purchase_flag`,-->
+<!--        `in_purchase_free_flag`,-->
+<!--        `url_cn`,-->
+<!--        `url_us`,-->
+<!--        `description_us`,-->
+<!--        `description_cn`,-->
+<!--        `description_cl`,-->
+<!--        `description_wc`,-->
+<!--        `description_go`,-->
+<!--        `description_geek`,-->
+<!--        `description_my`,-->
+<!--        `description_zm`,-->
+<!--        `supplier`,-->
+<!--        `app_size_str`,-->
+<!--        `app_size`,-->
+<!--        `category_id`,-->
+<!--        `category`,-->
+<!--        `compatibility`,-->
+<!--        `language`,-->
+<!--        `age`,-->
+<!--        `copyright`,-->
+<!--        `app_in_purchase`,-->
+<!--        `snapshot_url`,-->
+<!--        `version_history`,-->
+<!--        `remark`,-->
+<!--        `del_flag`,-->
+<!--        `create_user_code`,-->
+<!--        `create_user_name`,-->
+<!--        `created_date`,-->
+<!--        `last_modified_code`,-->
+<!--        `last_modified_name`,-->
+<!--        `last_modified_date`,-->
+<!--        `version`)-->
+<!--        values-->
+<!--        <foreach collection="entities" item="item" separator=",">-->
+<!--            (-->
+<!--            #{item.appId,jdbcType=VARCHAR},-->
+<!--            #{item.title,jdbcType=VARCHAR},-->
+<!--            #{item.subTitle,jdbcType=VARCHAR},-->
+<!--            #{item.designedFor,jdbcType=VARCHAR},-->
+<!--            #{item.ranking,jdbcType=VARCHAR},-->
+<!--            #{item.ratingStr,jdbcType=VARCHAR},-->
+<!--            #{item.rating,jdbcType=DECIMAL},-->
+<!--            #{item.rateAmount,jdbcType=NUMERIC},-->
+<!--            #{item.priceCn,jdbcType=NUMERIC},-->
+<!--            #{item.priceUs,jdbcType=DECIMAL},-->
+<!--            #{item.priceStr,jdbcType=VARCHAR},-->
+<!--            #{item.priceStrCn,jdbcType=VARCHAR},-->
+<!--            #{item.priceStrUs,jdbcType=VARCHAR},-->
+<!--            #{item.usFlag,jdbcType=NUMERIC},-->
+<!--            #{item.inPurchaseFlag,jdbcType=NUMERIC},-->
+<!--            #{item.inPurchaseFreeFlag,jdbcType=NUMERIC},-->
+<!--            #{item.urlCn,jdbcType=VARCHAR},-->
+<!--            #{item.urlUs,jdbcType=VARCHAR},-->
+<!--            #{item.descriptionUs,jdbcType=VARCHAR},-->
+<!--            #{item.descriptionCn,jdbcType=VARCHAR},-->
+<!--            #{item.descriptionCl,jdbcType=VARCHAR},-->
+<!--            #{item.descriptionWc,jdbcType=VARCHAR},-->
+<!--            #{item.descriptionGo,jdbcType=VARCHAR},-->
+<!--            #{item.descriptionGeek,jdbcType=VARCHAR},-->
+<!--            #{item.descriptionMy,jdbcType=VARCHAR},-->
+<!--            #{item.descriptionZm,jdbcType=VARCHAR},-->
+<!--            #{item.supplier,jdbcType=VARCHAR},-->
+<!--            #{item.appSizeStr,jdbcType=VARCHAR},-->
+<!--            #{item.appSize,jdbcType=DECIMAL},-->
+<!--            #{item.categoryId,jdbcType=NUMERIC},-->
+<!--            #{item.category,jdbcType=VARCHAR},-->
+<!--            #{item.compatibility, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},-->
+<!--            #{item.language,jdbcType=VARCHAR},-->
+<!--            #{item.age,jdbcType=VARCHAR},-->
+<!--            #{item.copyright,jdbcType=VARCHAR},-->
+<!--            #{item.appInPurchase, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},-->
+<!--            #{item.snapshotUrl, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},-->
+<!--            #{item.versionHistory, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},-->
+<!--            #{item.remark,jdbcType=VARCHAR},-->
+<!--            #{item.delFlag,jdbcType=NUMERIC},-->
+<!--            #{item.createUserCode,jdbcType=VARCHAR},-->
+<!--            #{item.createUserName,jdbcType=VARCHAR},-->
+<!--            #{item.createdDate,jdbcType=TIMESTAMP},-->
+<!--            #{item.lastModifiedCode,jdbcType=VARCHAR},-->
+<!--            #{item.lastModifiedName,jdbcType=VARCHAR},-->
+<!--            #{item.lastModifiedDate,jdbcType=TIMESTAMP},-->
+<!--            #{item.version,jdbcType=VARCHAR}-->
+<!--            )-->
+<!--        </foreach>-->
+<!--        on duplicate key update-->
+<!--        <trim prefix="" suffixOverrides=",">-->
+<!--            <foreach collection="entities" item="item" separator=",">-->
+<!--                <if test="item.title != null">`title` = #{item.title,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.subTitle != null">`sub_title` = #{item.subTitle,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.designedFor != null">`designed_for` = #{item.designedFor,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.ranking != null">`ranking` = #{item.ranking,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.ratingStr != null">`rating_str` = #{item.ratingStr,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.rating != null">`rating` = #{item.rating,jdbcType=DECIMAL},</if>-->
+<!--                <if test="item.rateAmount != null">`rate_amount` = #{item.rateAmount,jdbcType=INTEGER},</if>-->
+<!--                <if test="item.priceCn != null">`price_cn` = #{item.priceCn,jdbcType=INTEGER},</if>-->
+<!--                <if test="item.priceUs != null">`price_us` = #{item.priceUs,jdbcType=DECIMAL},</if>-->
+<!--                <if test="item.priceStr != null">`price_str` = #{item.priceStr,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.priceStrCn != null">`price_str_cn` = #{item.priceStrCn,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.priceStrUs != null">`price_str_us` = #{item.priceStrUs,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.usFlag != null">`us_flag` = #{item.usFlag,jdbcType=TINYINT},</if>-->
+<!--                <if test="item.inPurchaseFlag != null">`in_purchase_flag` = #{item.inPurchaseFlag,jdbcType=TINYINT},-->
+<!--                </if>-->
+<!--                <if test="item.inPurchaseFreeFlag != null">`in_purchase_free_flag` =-->
+<!--                    #{item.inPurchaseFreeFlag,jdbcType=TINYINT},-->
+<!--                </if>-->
+<!--                <if test="item.urlCn != null">`url_cn` = #{item.urlCn,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.urlUs != null">`url_us` = #{item.urlUs,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.descriptionUs != null">`description_us` = #{item.descriptionUs,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.descriptionCn != null">`description_cn` = #{item.descriptionCn,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.descriptionCl != null">`description_cl` = #{item.descriptionCl,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.descriptionWc != null">`description_wc` = #{item.descriptionWc,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.descriptionGo != null">`description_go` = #{item.descriptionGo,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.descriptionGeek != null">`description_geek` = #{item.descriptionGeek,jdbcType=VARCHAR},-->
+<!--                </if>-->
+<!--                <if test="item.descriptionMy != null">`description_my` = #{item.descriptionMy,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.descriptionZm != null">`description_zm` = #{item.descriptionZm,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.supplier != null">`supplier` = #{item.supplier,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.appSizeStr != null">`app_size_str` = #{item.appSizeStr,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.appSize != null">`app_size` = #{item.appSize,jdbcType=DECIMAL},</if>-->
+<!--                <if test="item.categoryId != null">`category_id` = #{item.categoryId,jdbcType=INTEGER},</if>-->
+<!--                <if test="item.category != null">`category` = #{item.category,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.compatibility != null">`compatibility` =-->
+<!--                    #{item.compatibility, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},-->
+<!--                </if>-->
+<!--                <if test="item.language != null">`language` = #{item.language,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.age != null">`age` = #{item.age,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.copyright != null">`copyright` = #{item.copyright,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.appInPurchase != null">`app_in_purchase` =-->
+<!--                    #{item.appInPurchase, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},-->
+<!--                </if>-->
+<!--                <if test="item.snapshotUrl != null">`snapshot_url` =-->
+<!--                    #{item.snapshotUrl, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},-->
+<!--                </if>-->
+<!--                <if test="item.versionHistory != null">`version_history` =-->
+<!--                    #{item.versionHistory, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},-->
+<!--                </if>-->
+<!--                <if test="item.remark != null">`remark` = #{item.remark,jdbcType=VARCHAR},</if>-->
+<!--                <if test="item.delFlag != null">`del_flag` = #{item.delFlag,jdbcType=INTEGER},</if>-->
+<!--                <if test="item.createUserCode != null">`create_user_code` = #{item.createUserCode,jdbcType=VARCHAR},-->
+<!--                </if>-->
+<!--                <if test="item.createUserName != null">`create_user_name` = #{item.createUserName,jdbcType=VARCHAR},-->
+<!--                </if>-->
+<!--                <if test="item.createdDate != null">`created_date` = #{item.createdDate,jdbcType=TIMESTAMP},</if>-->
+<!--                <if test="item.lastModifiedCode != null">`last_modified_code` =-->
+<!--                    #{item.lastModifiedCode,jdbcType=VARCHAR},-->
+<!--                </if>-->
+<!--                <if test="item.lastModifiedName != null">`last_modified_name` =-->
+<!--                    #{item.lastModifiedName,jdbcType=VARCHAR},-->
+<!--                </if>-->
+<!--                <if test="item.version != null">`version` = #{item.version,jdbcType=VARCHAR},</if>-->
+<!--                `last_modified_date` = NOW()-->
+<!--            </foreach>-->
+<!--        </trim>-->
+<!--    </insert>-->
 
-    <insert id="insertSelective">
-        insert into t_app
-        <trim prefix="(" suffix=")" suffixOverrides=",">
-            <if test="id != null">id,</if>
-            <if test="appId != null">app_id,</if>
-            <if test="title != null">title,</if>
-            <if test="subTitle != null">sub_title,</if>
-            <if test="designedFor != null">designed_for,</if>
-            <if test="ranking != null">ranking,</if>
-            <if test="ratingStr != null">rating_str,</if>
-            <if test="rating != null">rating,</if>
-            <if test="rateAmount != null">rate_amount,</if>
-            <if test="priceCn != null">price_cn,</if>
-            <if test="priceUs != null">price_us,</if>
-            <if test="priceStr != null">price_str,</if>
-            <if test="priceStrCn != null">price_str_cn,</if>
-            <if test="priceStrUs != null">price_str_us,</if>
-            <if test="usFlag != null">us_flag,</if>
-            <if test="urlCn != null">url_cn,</if>
-            <if test="urlUs != null">url_us,</if>
-            <if test="descriptionUs != null">description_us,</if>
-            <if test="descriptionCn != null">description_cn,</if>
-            <if test="descriptionCl != null">description_cl,</if>
-            <if test="descriptionWc != null">description_wc,</if>
-            <if test="descriptionGo != null">description_go,</if>
-            <if test="descriptionGeek != null">description_geek,</if>
-            <if test="descriptionMy != null">description_my,</if>
-            <if test="descriptionZm != null">description_zm,</if>
-            <if test="supplier != null">supplier,</if>
-            <if test="appSizeStr != null">app_size_str,</if>
-            <if test="appSize != null">app_size,</if>
-            <if test="categoryId != null">category_id,</if>
-            <if test="category != null">category,</if>
-            <if test="compatibility != null">compatibility,</if>
-            <if test="language != null">language,</if>
-            <if test="age != null">age,</if>
-            <if test="copyright != null">copyright,</if>
-            <if test="price != null">price,</if>
-            <if test="appInPurchase != null">app_in_purchase,</if>
-            <if test="remark != null">remark,</if>
-            <if test="delFlag != null">del_flag,</if>
-            <if test="createUserCode != null">create_user_code,</if>
-            <if test="createUserName != null">create_user_name,</if>
-            <if test="createdDate != null">created_date,</if>
-            <if test="lastModifiedCode != null">last_modified_code,</if>
-            <if test="lastModifiedName != null">last_modified_name,</if>
-            <if test="lastModifiedDate != null">last_modified_date,</if>
-            <if test="version != null">version,</if>
-        </trim>
-        values
-        <trim prefix="(" suffix=")" suffixOverrides=",">
-            <if test="id != null">#{id,jdbcType=BIGINT},</if>
-            <if test="appId != null">#{appId,jdbcType=VARCHAR},</if>
-            <if test="title != null">#{title,jdbcType=VARCHAR},</if>
-            <if test="subTitle != null">#{subTitle,jdbcType=VARCHAR},</if>
-            <if test="designedFor != null">#{designedFor,jdbcType=VARCHAR},</if>
-            <if test="ranking != null">#{ranking,jdbcType=VARCHAR},</if>
-            <if test="ratingStr != null">#{ratingStr,jdbcType=VARCHAR},</if>
-            <if test="rating != null">#{rating,jdbcType=DECIMAL},</if>
-            <if test="rateAmount != null">#{rateAmount,jdbcType=INTEGER},</if>
-            <if test="priceCn != null">#{priceCn,jdbcType=INTEGER},</if>
-            <if test="priceUs != null">#{priceUs,jdbcType=DECIMAL},</if>
-            <if test="priceStr != null">#{priceStr,jdbcType=VARCHAR},</if>
-            <if test="priceStrCn != null">#{priceStrCn,jdbcType=VARCHAR},</if>
-            <if test="priceStrUs != null">#{priceStrUs,jdbcType=VARCHAR},</if>
-            <if test="usFlag != null">#{usFlag,jdbcType=TINYINT},</if>
-            <if test="urlCn != null">#{urlCn,jdbcType=VARCHAR},</if>
-            <if test="urlUs != null">#{urlUs,jdbcType=VARCHAR},</if>
-            <if test="descriptionUs != null">#{descriptionUs,jdbcType=VARCHAR},</if>
-            <if test="descriptionCn != null">#{descriptionCn,jdbcType=VARCHAR},</if>
-            <if test="descriptionCl != null">#{descriptionCl,jdbcType=VARCHAR},</if>
-            <if test="descriptionWc != null">#{descriptionWc,jdbcType=VARCHAR},</if>
-            <if test="descriptionGo != null">#{descriptionGo,jdbcType=VARCHAR},</if>
-            <if test="descriptionGeek != null">#{descriptionGeek,jdbcType=VARCHAR},</if>
-            <if test="descriptionMy != null">#{descriptionMy,jdbcType=VARCHAR},</if>
-            <if test="descriptionZm != null">#{descriptionZm,jdbcType=VARCHAR},</if>
-            <if test="supplier != null">#{supplier,jdbcType=VARCHAR},</if>
-            <if test="appSizeStr != null">#{appSizeStr,jdbcType=VARCHAR},</if>
-            <if test="appSize != null">#{appSize,jdbcType=DECIMAL},</if>
-            <if test="categoryId != null">#{categoryId,jdbcType=INTEGER},</if>
-            <if test="category != null">#{category,jdbcType=VARCHAR},</if>
-            <if test="compatibility != null">#{compatibility},</if>
-            <if test="language != null">#{language,jdbcType=VARCHAR},</if>
-            <if test="age != null">#{age,jdbcType=VARCHAR},</if>
-            <if test="copyright != null">#{copyright,jdbcType=VARCHAR},</if>
-            <if test="price != null">#{price,jdbcType=VARCHAR},</if>
-            <if test="appInPurchase != null">#{appInPurchase},</if>
-            <if test="remark != null">#{remark,jdbcType=VARCHAR},</if>
-            <if test="delFlag != null">#{delFlag,jdbcType=INTEGER},</if>
-            <if test="createUserCode != null">#{createUserCode,jdbcType=VARCHAR},</if>
-            <if test="createUserName != null">#{createUserName,jdbcType=VARCHAR},</if>
-            <if test="createdDate != null">#{createdDate,jdbcType=TIMESTAMP},</if>
-            <if test="lastModifiedCode != null">#{lastModifiedCode,jdbcType=VARCHAR},</if>
-            <if test="lastModifiedName != null">#{lastModifiedName,jdbcType=VARCHAR},</if>
-            <if test="lastModifiedDate != null">#{lastModifiedDate,jdbcType=TIMESTAMP},</if>
-            <if test="version != null">#{version,jdbcType=VARCHAR},</if>
-        </trim>
-    </insert>
-    <insert id="insertBatch">
-        insert into t_app(id,app_id,title,
-        sub_title,designed_for,ranking,
-        rating_str,rating,rate_amount,
-        price_cn,price_us,price_str,
-        price_str_cn,price_str_us,us_flag,
-        url_cn,url_us,description_us,
-        description_cn,description_cl,description_wc,
-        description_go,description_geek,description_my,
-        description_zm,supplier,app_size_str,
-        app_size,category_id,category,
-        compatibility,language,age,
-        copyright,price,app_in_purchase,
-        remark,del_flag,create_user_code,
-        create_user_name,created_date,last_modified_code,
-        last_modified_name,last_modified_date,version)
-        values
-        <foreach collection="appCollection" item="item" separator=",">
-            (#{item.id,jdbcType=NUMERIC},#{item.appId,jdbcType=VARCHAR},#{item.title,jdbcType=VARCHAR},
-            #{item.subTitle,jdbcType=VARCHAR},#{item.designedFor,jdbcType=VARCHAR},#{item.ranking,jdbcType=VARCHAR},
-            #{item.ratingStr,jdbcType=VARCHAR},#{item.rating,jdbcType=DECIMAL},#{item.rateAmount,jdbcType=NUMERIC},
-            #{item.priceCn,jdbcType=NUMERIC},#{item.priceUs,jdbcType=DECIMAL},#{item.priceStr,jdbcType=VARCHAR},
-            #{item.priceStrCn,jdbcType=VARCHAR},#{item.priceStrUs,jdbcType=VARCHAR},#{item.usFlag,jdbcType=NUMERIC},
-            #{item.urlCn,jdbcType=VARCHAR},#{item.urlUs,jdbcType=VARCHAR},#{item.descriptionUs,jdbcType=VARCHAR},
-            #{item.descriptionCn,jdbcType=VARCHAR},#{item.descriptionCl,jdbcType=VARCHAR},#{item.descriptionWc,jdbcType=VARCHAR},
-            #{item.descriptionGo,jdbcType=VARCHAR},#{item.descriptionGeek,jdbcType=VARCHAR},#{item.descriptionMy,jdbcType=VARCHAR},
-            #{item.descriptionZm,jdbcType=VARCHAR},#{item.supplier,jdbcType=VARCHAR},#{item.appSizeStr,jdbcType=VARCHAR},
-            #{item.appSize,jdbcType=DECIMAL},#{item.categoryId,jdbcType=NUMERIC},#{item.category,jdbcType=VARCHAR},
-            #{item.compatibility},#{item.language,jdbcType=VARCHAR},#{item.age,jdbcType=VARCHAR},
-            #{item.copyright,jdbcType=VARCHAR},#{item.price,jdbcType=VARCHAR},#{item.appInPurchase},
-            #{item.remark,jdbcType=VARCHAR},#{item.delFlag,jdbcType=NUMERIC},#{item.createUserCode,jdbcType=VARCHAR},
-            #{item.createUserName,jdbcType=VARCHAR},#{item.createdDate,jdbcType=TIMESTAMP},#{item.lastModifiedCode,jdbcType=VARCHAR},
-            #{item.lastModifiedName,jdbcType=VARCHAR},#{item.lastModifiedDate,jdbcType=TIMESTAMP},#{item.version,jdbcType=VARCHAR})
-        </foreach>
-    </insert>
+<!--    <insert id="insertSelective">-->
+<!--        insert into t_app-->
+<!--        <trim prefix="(" suffix=")" suffixOverrides=",">-->
+<!--            <if test="id != null">id,</if>-->
+<!--            <if test="appId != null">app_id,</if>-->
+<!--            <if test="title != null">title,</if>-->
+<!--            <if test="subTitle != null">sub_title,</if>-->
+<!--            <if test="designedFor != null">designed_for,</if>-->
+<!--            <if test="ranking != null">ranking,</if>-->
+<!--            <if test="ratingStr != null">rating_str,</if>-->
+<!--            <if test="rating != null">rating,</if>-->
+<!--            <if test="rateAmount != null">rate_amount,</if>-->
+<!--            <if test="priceCn != null">price_cn,</if>-->
+<!--            <if test="priceUs != null">price_us,</if>-->
+<!--            <if test="priceStr != null">price_str,</if>-->
+<!--            <if test="priceStrCn != null">price_str_cn,</if>-->
+<!--            <if test="priceStrUs != null">price_str_us,</if>-->
+<!--            <if test="usFlag != null">us_flag,</if>-->
+<!--            <if test="urlCn != null">url_cn,</if>-->
+<!--            <if test="urlUs != null">url_us,</if>-->
+<!--            <if test="descriptionUs != null">description_us,</if>-->
+<!--            <if test="descriptionCn != null">description_cn,</if>-->
+<!--            <if test="descriptionCl != null">description_cl,</if>-->
+<!--            <if test="descriptionWc != null">description_wc,</if>-->
+<!--            <if test="descriptionGo != null">description_go,</if>-->
+<!--            <if test="descriptionGeek != null">description_geek,</if>-->
+<!--            <if test="descriptionMy != null">description_my,</if>-->
+<!--            <if test="descriptionZm != null">description_zm,</if>-->
+<!--            <if test="supplier != null">supplier,</if>-->
+<!--            <if test="appSizeStr != null">app_size_str,</if>-->
+<!--            <if test="appSize != null">app_size,</if>-->
+<!--            <if test="categoryId != null">category_id,</if>-->
+<!--            <if test="category != null">category,</if>-->
+<!--            <if test="compatibility != null">compatibility,</if>-->
+<!--            <if test="language != null">language,</if>-->
+<!--            <if test="age != null">age,</if>-->
+<!--            <if test="copyright != null">copyright,</if>-->
+<!--            <if test="price != null">price,</if>-->
+<!--            <if test="appInPurchase != null">app_in_purchase,</if>-->
+<!--            <if test="remark != null">remark,</if>-->
+<!--            <if test="delFlag != null">del_flag,</if>-->
+<!--            <if test="createUserCode != null">create_user_code,</if>-->
+<!--            <if test="createUserName != null">create_user_name,</if>-->
+<!--            <if test="createdDate != null">created_date,</if>-->
+<!--            <if test="lastModifiedCode != null">last_modified_code,</if>-->
+<!--            <if test="lastModifiedName != null">last_modified_name,</if>-->
+<!--            <if test="lastModifiedDate != null">last_modified_date,</if>-->
+<!--            <if test="version != null">version,</if>-->
+<!--        </trim>-->
+<!--        values-->
+<!--        <trim prefix="(" suffix=")" suffixOverrides=",">-->
+<!--            <if test="id != null">#{id,jdbcType=BIGINT},</if>-->
+<!--            <if test="appId != null">#{appId,jdbcType=VARCHAR},</if>-->
+<!--            <if test="title != null">#{title,jdbcType=VARCHAR},</if>-->
+<!--            <if test="subTitle != null">#{subTitle,jdbcType=VARCHAR},</if>-->
+<!--            <if test="designedFor != null">#{designedFor,jdbcType=VARCHAR},</if>-->
+<!--            <if test="ranking != null">#{ranking,jdbcType=VARCHAR},</if>-->
+<!--            <if test="ratingStr != null">#{ratingStr,jdbcType=VARCHAR},</if>-->
+<!--            <if test="rating != null">#{rating,jdbcType=DECIMAL},</if>-->
+<!--            <if test="rateAmount != null">#{rateAmount,jdbcType=INTEGER},</if>-->
+<!--            <if test="priceCn != null">#{priceCn,jdbcType=INTEGER},</if>-->
+<!--            <if test="priceUs != null">#{priceUs,jdbcType=DECIMAL},</if>-->
+<!--            <if test="priceStr != null">#{priceStr,jdbcType=VARCHAR},</if>-->
+<!--            <if test="priceStrCn != null">#{priceStrCn,jdbcType=VARCHAR},</if>-->
+<!--            <if test="priceStrUs != null">#{priceStrUs,jdbcType=VARCHAR},</if>-->
+<!--            <if test="usFlag != null">#{usFlag,jdbcType=TINYINT},</if>-->
+<!--            <if test="urlCn != null">#{urlCn,jdbcType=VARCHAR},</if>-->
+<!--            <if test="urlUs != null">#{urlUs,jdbcType=VARCHAR},</if>-->
+<!--            <if test="descriptionUs != null">#{descriptionUs,jdbcType=VARCHAR},</if>-->
+<!--            <if test="descriptionCn != null">#{descriptionCn,jdbcType=VARCHAR},</if>-->
+<!--            <if test="descriptionCl != null">#{descriptionCl,jdbcType=VARCHAR},</if>-->
+<!--            <if test="descriptionWc != null">#{descriptionWc,jdbcType=VARCHAR},</if>-->
+<!--            <if test="descriptionGo != null">#{descriptionGo,jdbcType=VARCHAR},</if>-->
+<!--            <if test="descriptionGeek != null">#{descriptionGeek,jdbcType=VARCHAR},</if>-->
+<!--            <if test="descriptionMy != null">#{descriptionMy,jdbcType=VARCHAR},</if>-->
+<!--            <if test="descriptionZm != null">#{descriptionZm,jdbcType=VARCHAR},</if>-->
+<!--            <if test="supplier != null">#{supplier,jdbcType=VARCHAR},</if>-->
+<!--            <if test="appSizeStr != null">#{appSizeStr,jdbcType=VARCHAR},</if>-->
+<!--            <if test="appSize != null">#{appSize,jdbcType=DECIMAL},</if>-->
+<!--            <if test="categoryId != null">#{categoryId,jdbcType=INTEGER},</if>-->
+<!--            <if test="category != null">#{category,jdbcType=VARCHAR},</if>-->
+<!--            <if test="compatibility != null">#{compatibility},</if>-->
+<!--            <if test="language != null">#{language,jdbcType=VARCHAR},</if>-->
+<!--            <if test="age != null">#{age,jdbcType=VARCHAR},</if>-->
+<!--            <if test="copyright != null">#{copyright,jdbcType=VARCHAR},</if>-->
+<!--            <if test="price != null">#{price,jdbcType=VARCHAR},</if>-->
+<!--            <if test="appInPurchase != null">#{appInPurchase},</if>-->
+<!--            <if test="remark != null">#{remark,jdbcType=VARCHAR},</if>-->
+<!--            <if test="delFlag != null">#{delFlag,jdbcType=INTEGER},</if>-->
+<!--            <if test="createUserCode != null">#{createUserCode,jdbcType=VARCHAR},</if>-->
+<!--            <if test="createUserName != null">#{createUserName,jdbcType=VARCHAR},</if>-->
+<!--            <if test="createdDate != null">#{createdDate,jdbcType=TIMESTAMP},</if>-->
+<!--            <if test="lastModifiedCode != null">#{lastModifiedCode,jdbcType=VARCHAR},</if>-->
+<!--            <if test="lastModifiedName != null">#{lastModifiedName,jdbcType=VARCHAR},</if>-->
+<!--            <if test="lastModifiedDate != null">#{lastModifiedDate,jdbcType=TIMESTAMP},</if>-->
+<!--            <if test="version != null">#{version,jdbcType=VARCHAR},</if>-->
+<!--        </trim>-->
+<!--    </insert>-->
+<!--    <insert id="insertBatch">-->
+<!--        insert into t_app(id,app_id,title,-->
+<!--        sub_title,designed_for,ranking,-->
+<!--        rating_str,rating,rate_amount,-->
+<!--        price_cn,price_us,price_str,-->
+<!--        price_str_cn,price_str_us,us_flag,-->
+<!--        url_cn,url_us,description_us,-->
+<!--        description_cn,description_cl,description_wc,-->
+<!--        description_go,description_geek,description_my,-->
+<!--        description_zm,supplier,app_size_str,-->
+<!--        app_size,category_id,category,-->
+<!--        compatibility,language,age,-->
+<!--        copyright,price,app_in_purchase,-->
+<!--        remark,del_flag,create_user_code,-->
+<!--        create_user_name,created_date,last_modified_code,-->
+<!--        last_modified_name,last_modified_date,version)-->
+<!--        values-->
+<!--        <foreach collection="appCollection" item="item" separator=",">-->
+<!--            (#{item.id,jdbcType=NUMERIC},#{item.appId,jdbcType=VARCHAR},#{item.title,jdbcType=VARCHAR},-->
+<!--            #{item.subTitle,jdbcType=VARCHAR},#{item.designedFor,jdbcType=VARCHAR},#{item.ranking,jdbcType=VARCHAR},-->
+<!--            #{item.ratingStr,jdbcType=VARCHAR},#{item.rating,jdbcType=DECIMAL},#{item.rateAmount,jdbcType=NUMERIC},-->
+<!--            #{item.priceCn,jdbcType=NUMERIC},#{item.priceUs,jdbcType=DECIMAL},#{item.priceStr,jdbcType=VARCHAR},-->
+<!--            #{item.priceStrCn,jdbcType=VARCHAR},#{item.priceStrUs,jdbcType=VARCHAR},#{item.usFlag,jdbcType=NUMERIC},-->
+<!--            #{item.urlCn,jdbcType=VARCHAR},#{item.urlUs,jdbcType=VARCHAR},#{item.descriptionUs,jdbcType=VARCHAR},-->
+<!--            #{item.descriptionCn,jdbcType=VARCHAR},#{item.descriptionCl,jdbcType=VARCHAR},#{item.descriptionWc,jdbcType=VARCHAR},-->
+<!--            #{item.descriptionGo,jdbcType=VARCHAR},#{item.descriptionGeek,jdbcType=VARCHAR},#{item.descriptionMy,jdbcType=VARCHAR},-->
+<!--            #{item.descriptionZm,jdbcType=VARCHAR},#{item.supplier,jdbcType=VARCHAR},#{item.appSizeStr,jdbcType=VARCHAR},-->
+<!--            #{item.appSize,jdbcType=DECIMAL},#{item.categoryId,jdbcType=NUMERIC},#{item.category,jdbcType=VARCHAR},-->
+<!--            #{item.compatibility},#{item.language,jdbcType=VARCHAR},#{item.age,jdbcType=VARCHAR},-->
+<!--            #{item.copyright,jdbcType=VARCHAR},#{item.price,jdbcType=VARCHAR},#{item.appInPurchase},-->
+<!--            #{item.remark,jdbcType=VARCHAR},#{item.delFlag,jdbcType=NUMERIC},#{item.createUserCode,jdbcType=VARCHAR},-->
+<!--            #{item.createUserName,jdbcType=VARCHAR},#{item.createdDate,jdbcType=TIMESTAMP},#{item.lastModifiedCode,jdbcType=VARCHAR},-->
+<!--            #{item.lastModifiedName,jdbcType=VARCHAR},#{item.lastModifiedDate,jdbcType=TIMESTAMP},#{item.version,jdbcType=VARCHAR})-->
+<!--        </foreach>-->
+<!--    </insert>-->
 
     <!--    <insert id="insertSelective">-->
     <!--        insert into t_app-->

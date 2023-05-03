@@ -29,6 +29,7 @@ public class SnapshotWechatUtils {
         url = "https://mp.weixin.qq.com/s/xpUjpW46Hat8zJWEY5UU_g";
         url = "https://mp.weixin.qq.com/s/Lx5leXLu0sYYlq2Z6nLHug";
         url = "https://mp.weixin.qq.com/s/g9r4aZGQbe_TH7Rn4txTmg";
+        url = "https://mp.weixin.qq.com/s/SZ_hMOjtQ6gYKjySNwAOZQ";
         snapshot(url, appAmount);
     }
 

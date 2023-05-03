@@ -20,6 +20,7 @@ public interface PriceHistoryService extends IService<PriceHistory> {
     int insertOrUpdateBatch(List<PriceHistory> priceHistoryList);
 
     List<PriceHistory> selectList(PriceHistory priceHistory);
+
     List<PriceHistory> selectDoneList(PriceHistory priceHistory);
 
     IPage<PriceHistory> selectPage(Page<PriceHistory> page);

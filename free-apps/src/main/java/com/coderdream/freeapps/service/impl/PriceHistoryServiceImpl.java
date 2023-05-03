@@ -61,6 +61,8 @@ public class PriceHistoryServiceImpl extends ServiceImpl<PriceHistoryMapper, Pri
         if (priceHistory.getCrawlerDate()!=null) {
             queryWrapper.eq("crawler_date", priceHistory.getCrawlerDate());
         }
+        queryWrapper.orderByAsc("app_id");
+        queryWrapper.orderByDesc( "crawler_date");
         List<PriceHistory> result = priceHistoryMapper.selectList(queryWrapper);
         return result;
     }
@@ -138,7 +140,7 @@ public class PriceHistoryServiceImpl extends ServiceImpl<PriceHistoryMapper, Pri
                             }
                             System.out.println(app.getAppId());
                         }
-                        Integer period = new Random().nextInt(200) + 100;
+                        Integer period = new Random().nextInt(10) + 10;
                         try {
                             Thread.sleep(period);   // 休眠3秒
                         } catch (InterruptedException e) {
@@ -155,13 +157,13 @@ public class PriceHistoryServiceImpl extends ServiceImpl<PriceHistoryMapper, Pri
                         int insertOrUpdateBatchResult = insertOrUpdateBatch(priceHistoryList);
                         log.info("priceHistoryService.insertOrUpdateBatch: " + insertOrUpdateBatchResult);
                     }
-                    Integer period = new Random().nextInt(4000) + 500;
-                    try {
-                        Thread.sleep(period);   // 休眠3秒
-                    } catch (InterruptedException e) {
-                        log.error(e.getMessage());
-                        throw new RuntimeException(e);
-                    }
+//                    Integer period = new Random().nextInt(500) + 100;
+//                    try {
+//                        Thread.sleep(period);   // 休眠3秒
+//                    } catch (InterruptedException e) {
+//                        log.error(e.getMessage());
+//                        throw new RuntimeException(e);
+//                    }
                 }
             }
         }

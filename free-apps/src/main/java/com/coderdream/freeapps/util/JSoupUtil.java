@@ -36,6 +36,11 @@ public class JSoupUtil {
     public final static String DESIGNED_FOR_CLASS = "app-header__designed-for";
 
     /**
+     * 应用图标
+     */
+    public final static String APP_ICON_CLASS = "we-artwork we-artwork--downloaded product-hero__artwork we-artwork--fullwidth we-artwork--ios-app-icon";
+
+    /**
      * 评分及排名
      */
     public final static String MOBILE_COMPACT_CLASS = "inline-list inline-list--mobile-compact";
@@ -132,6 +137,8 @@ public class JSoupUtil {
         appId = "id1443533088"; // title相同
         appId = "id1445387613"; // 1.3K
         appId = "id1423546743"; // 无截图
+        appId = "id1443533088"; // 搜韵
+        appId = "id353192097";// 未找到应用图标
 
         App app = JSoupUtil.crawlerApp(appId, null);
         System.out.println(app);
@@ -191,6 +198,12 @@ public class JSoupUtil {
             // 专为设计
             String designedFor = getContentByClass(document, DESIGNED_FOR_CLASS);
             app.setDesignedFor(designedFor.trim());
+            // 应用图标
+            List<String> appIconUrlList = getIconUrlListByClass(document, APP_ICON_CLASS);
+            if(!CollectionUtils.isEmpty(appIconUrlList)) {
+                app.setAppIconUrl(appIconUrlList.get(0));
+            }
+
             // 评分区
             List<String> mobileCompactList = getMobileCompactListByClass(document, MOBILE_COMPACT_CLASS);
             if (!CollectionUtils.isEmpty(mobileCompactList)) {
@@ -244,10 +257,13 @@ public class JSoupUtil {
                 } catch (Exception e) {
                     e.printStackTrace();
                     logger.error(e.getMessage());
+                    logger.error("app: " + app);
                 }
             } else {
                 logger.error("价格信息为空");
             }
+            // TODO
+            app.setPrice(CdStringUtils.genPrice(app));
             // 语言
             app.setLanguage(appInfo.getLanguage());
             // 版权
@@ -267,8 +283,8 @@ public class JSoupUtil {
                 JSONObject jsonObjectAppInPurchase = JSON.parseObject(jsonAppInPurchase);//String转json
                 app.setAppInPurchase(jsonObjectAppInPurchase);
                 Map<String, String> params = JSONObject.parseObject(jsonObjectAppInPurchase.toJSONString(),
-                        new TypeReference<Map<String, String>>() {
-                        });
+                    new TypeReference<Map<String, String>>() {
+                    });
                 Double appInPurchaseTotal = new Double(0);
                 for (String value : params.values()) {
                     String realPriceStr = AppStringUtils.filterPriceStr(value);
@@ -330,9 +346,9 @@ public class JSoupUtil {
             }
             // 截图
             List<String> screenshotsList = getSnapshotListByClass(document, SCREENSHOTS_LIST_CLASS);
-            if(CollectionUtils.isEmpty(screenshotsList)) {
+            if (CollectionUtils.isEmpty(screenshotsList)) {
                 String urlRaw;
-                if(app.getUsFlag() == 1) {
+                if (app.getUsFlag() == 1) {
                     urlRaw = Constants.URL_US_BASE + appId;
                 } else {
                     urlRaw = Constants.URL_CN_BASE + appId;
@@ -382,9 +398,7 @@ public class JSoupUtil {
     }
 
     /**
-     * 获取应用内购买信息
-     * jsoup-Elements的遍历（使用Iterator迭代器）
-     * https://blog.csdn.net/shengfn/article/details/53584339
+     * 获取应用内购买信息 jsoup-Elements的遍历（使用Iterator迭代器） https://blog.csdn.net/shengfn/article/details/53584339
      *
      * @param document
      * @param className
@@ -452,9 +466,7 @@ public class JSoupUtil {
     }
 
     /**
-     * 获取应用内购买信息
-     * jsoup-Elements的遍历（使用Iterator迭代器）
-     * https://blog.csdn.net/shengfn/article/details/53584339
+     * 获取应用内购买信息 jsoup-Elements的遍历（使用Iterator迭代器） https://blog.csdn.net/shengfn/article/details/53584339
      *
      * @param document
      * @param className
@@ -479,9 +491,7 @@ public class JSoupUtil {
 
 
     /**
-     * jsoup-Elements的遍历（使用Iterator迭代器）
-     * https://blog.csdn.net/shengfn/article/details/53584339
-     * AppInfo
+     * jsoup-Elements的遍历（使用Iterator迭代器） https://blog.csdn.net/shengfn/article/details/53584339 AppInfo
      *
      * @param document
      * @param className
@@ -639,9 +649,7 @@ public class JSoupUtil {
 
 
     /**
-     * jsoup-Elements的遍历（使用Iterator迭代器）
-     * https://blog.csdn.net/shengfn/article/details/53584339
-     * AppInfo
+     * jsoup-Elements的遍历（使用Iterator迭代器） https://blog.csdn.net/shengfn/article/details/53584339 AppInfo
      *
      * @param document
      * @param className
@@ -674,7 +682,7 @@ public class JSoupUtil {
 
                                         String value = element.getValue();
                                         int index = value.indexOf(Constants.SNAPSHOT_JPG_SUFFIX);
-                                        if(index == -1) {
+                                        if (index == -1) {
                                             index = value.indexOf(Constants.SNAPSHOT_JPG_2_SUFFIX);
                                         }
                                         if (index != -1) {
@@ -685,7 +693,7 @@ public class JSoupUtil {
                                             stringList.add(url);
                                         }
                                         index = value.indexOf(Constants.SNAPSHOT_PNG_SUFFIX);
-                                        if(index == -1) {
+                                        if (index == -1) {
                                             index = value.indexOf(Constants.SNAPSHOT_PNG_2_SUFFIX);
                                         }
                                         if (index != -1) {
@@ -705,7 +713,7 @@ public class JSoupUtil {
                                             Attribute element = (Attribute) it.next();
                                             String value = element.getValue();
                                             int index = value.indexOf(Constants.SNAPSHOT_JPG_SUFFIX);
-                                            if(index == -1) {
+                                            if (index == -1) {
                                                 index = value.indexOf(Constants.SNAPSHOT_JPG_2_SUFFIX);
                                             }
                                             if (index != -1) {
@@ -715,7 +723,7 @@ public class JSoupUtil {
                                                 stringList.add(url);
                                             }
                                             index = value.indexOf(Constants.SNAPSHOT_PNG_SUFFIX);
-                                            if(index == -1) {
+                                            if (index == -1) {
                                                 index = value.indexOf(Constants.SNAPSHOT_PNG_2_SUFFIX);
                                             }
                                             if (index != -1) {
@@ -737,9 +745,69 @@ public class JSoupUtil {
     }
 
     /**
-     * jsoup-Elements的遍历（使用Iterator迭代器）
-     * https://blog.csdn.net/shengfn/article/details/53584339
-     * AppInfo
+     * jsoup-Elements的遍历（使用Iterator迭代器） https://blog.csdn.net/shengfn/article/details/53584339 AppInfo
+     *
+     * @param document
+     * @param className
+     * @return
+     */
+    public static List<String> getIconUrlListByClass(Document document, String className) {
+        List<String> stringList = new ArrayList<>();
+        Elements elements = document.getElementsByClass(className);
+
+        if (elements != null && elements.size() > 0) {
+            Element elementSnapshotLevel1 = elements.get(0);
+            if (elementSnapshotLevel1 != null && elementSnapshotLevel1.childNodeSize() > 1) {
+                if (elementSnapshotLevel1.childNodeSize() > 5) {
+                    int size = elementSnapshotLevel1.childNodeSize();
+                    Object objectLevel14 = elementSnapshotLevel1.childNode(3);
+
+                    if (objectLevel14 instanceof Element) {
+                        Element elementLevel14 = (Element) objectLevel14;
+                        Attributes attributes41 = elementLevel14.attributes();
+                        //获取迭代器 srcset
+                        Iterator it = attributes41.iterator();
+                        while (it.hasNext()) {
+                            Attribute element = (Attribute) it.next();
+                            if(!element.getKey().equals("srcset")) {
+                                continue;
+                            }
+                            String value = element.getValue();
+                            logger.info(value);
+                            int index = value.indexOf(Constants.APP_ICON_JPG_SUFFIX);
+                            if (index == -1) {
+                                index = value.indexOf(Constants.APP_ICON_JPG_2_SUFFIX);
+                            }
+                            if (index != -1) {
+                                // 找到从index开始往回的第一个http位置
+                                String beginPart = value.substring(0, index);
+                                int indexHttp = beginPart.lastIndexOf("http");
+                                String url = value.substring(indexHttp, index + 3);
+                                stringList.add(url);
+                            }
+                            index = value.indexOf(Constants.APP_ICON_PNG_SUFFIX);
+                            if (index == -1) {
+                                index = value.indexOf(Constants.APP_ICON_2_PNG_SUFFIX);
+                            }
+                            if (index != -1) {
+                                String beginPart = value.substring(0, index);
+                                int indexHttp = beginPart.lastIndexOf("http");
+                                String url = value.substring(indexHttp, index + 3);
+                                stringList.add(url);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        else {
+            logger.error("未找到应用图标：");
+        }
+        return stringList;
+    }
+
+    /**
+     * jsoup-Elements的遍历（使用Iterator迭代器） https://blog.csdn.net/shengfn/article/details/53584339 AppInfo
      *
      * @param document
      * @param className

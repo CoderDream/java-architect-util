@@ -52,8 +52,9 @@ public class GenerateAppInfo {
         String txtFileName1 = dateStr + "_bi.txt";
         String txtFileName2 = dateStr + "_wx.txt";
 
-        FileWriter fileWriterBili = new FileWriter(path + File.separator + txtFileName1);
-        FileWriter fileWriterWx = new FileWriter(path + File.separator + txtFileName2);
+        FileWriter fileWriterBili = FileWriter.create (new File(path + File.separator + txtFileName1));
+        FileWriter fileWriterWx = FileWriter.create (new File(path + File.separator + txtFileName2));
+//        FileWriter fileWriterWx = new FileWriter(path + File.separator + txtFileName2);
         String todayStr = new SimpleDateFormat("yyyy年MM月dd日").format(new Date());
         todayContentList.add("大家好，今天是" + todayStr + "，");
         Integer sum = 0;
@@ -91,7 +92,7 @@ public class GenerateAppInfo {
 
         fileWriterBili.writeLines(Arrays.asList("感谢大家的关注与点赞，"), true);
         fileWriterBili.writeLines(Arrays.asList("公众号有历史限免图文，"), true);
-        fileWriterBili.writeLines(Arrays.asList("可能有你想要的应用仍在限免哦。"), true);
+        fileWriterBili.writeLines(Arrays.asList("可能有您想要的应用仍在限免哦。"), true);
         fileWriterWx.writeLines(Arrays.asList("感谢大家的关注与点赞，如果方便请点亮【在看】，转给需要的朋友，谢谢！"), true);
 
         todayContentList.add("感谢大家的一键三连，唯有观众老爷的支持，");

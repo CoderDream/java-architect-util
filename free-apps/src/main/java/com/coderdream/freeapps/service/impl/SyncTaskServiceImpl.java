@@ -1,5 +1,6 @@
 package com.coderdream.freeapps.service.impl;
 
+import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.coderdream.freeapps.controller.SyncTaskReqDto;
@@ -52,6 +53,7 @@ public class SyncTaskServiceImpl extends ServiceImpl<SyncTaskMapper, SyncTaskEnt
     @Override
     public void dailyProcess(SyncTaskReqDto syncTaskReqDto) {
         long startTime = System.currentTimeMillis();
+
         QueryWrapper<SyncTaskEntity> queryWrapper = new QueryWrapper<>();
         List<SyncTaskEntity> syncTaskEntityList = list(queryWrapper);
         for (SyncTaskEntity syncTaskEntity : syncTaskEntityList) {
@@ -61,15 +63,17 @@ public class SyncTaskServiceImpl extends ServiceImpl<SyncTaskMapper, SyncTaskEnt
             DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
             DateFormat dateFormatYear = new SimpleDateFormat("yyyy");
             DateFormat dateFormatMonth = new SimpleDateFormat("yyyyMM");
+            DateFormat dateFormatDay = new SimpleDateFormat("yyyyMMdd");
             try {
                 String folderPath =
                     CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "1024";
                 folderPath = folderPath + File.separatorChar + dateFormatYear.format(new Date());
                 folderPath = folderPath + File.separatorChar + dateFormatMonth.format(new Date());
+//                folderPath = folderPath + File.separatorChar + dateFormatDay.format(new Date());
                 List<String> stringList = new ArrayList<>();
                 List<Date> dateList = CdDateUtils.getDatesBetweenUsingJava7(lastProcessDate, new Date());
                 for (Date processDate : dateList) {
-                    //                    构造日期，生成文件名列表
+                    // 构造日期，生成文件名列表
                     stringList.add(folderPath + File.separatorChar + dateFormat.format(processDate) + ".txt");
                 }
 
@@ -117,6 +121,10 @@ public class SyncTaskServiceImpl extends ServiceImpl<SyncTaskMapper, SyncTaskEnt
                     }
                 }
 
+                if(StrUtil.isEmpty(lastProcessDateStr)) {
+                    log.error("lastProcessDateStr为空，本次不用同步。");
+                    continue;
+                }
                 syncTaskEntity.setLastProcessDate(dateFormat.parse(lastProcessDateStr));
                 boolean updateById = this.updateById(syncTaskEntity);
                 log.info("##### updateById result: " + updateById);
@@ -127,6 +135,8 @@ public class SyncTaskServiceImpl extends ServiceImpl<SyncTaskMapper, SyncTaskEnt
 
         }
 
+        // 处理没有是否美区限免的应用
+        appService.processNoUsFlag();
         long endTime = System.currentTimeMillis();
         long period = endTime - startTime;
 

@@ -95,6 +95,10 @@ public class BaseUtils {
         String monthStr = new SimpleDateFormat("yyyyMM").format(new Date());
         String dateStr = new SimpleDateFormat("yyyyMMdd").format(new Date());
         String path = "D:" + File.separator + "12_iOS_Android" + File.separator + monthStr + File.separator + dateStr;
+        File file = new File(path);
+        if(!file.exists()) {
+            file.mkdirs();
+        }
         return path;
     }
 
@@ -157,14 +161,11 @@ public class BaseUtils {
 
             name = rawStrList.get(lastIndex);
             appBrief.setName(name.trim());
-            if (name.trim().equals("玛")) {
-                System.out.println("####");
-            }
             System.out.println(lastIndex + "_" + freeIndex);
             lastIndex++;
             String priceStr = rawStrList.get(lastIndex);
 
-            priceStr = AppStringUtils.filterPriceStr(priceStr);
+            priceStr = AppStringUtils.filterPriceStr(priceStr.trim());
             String cashType = "RMB";
             if (priceStr.lastIndexOf("$") != -1) {
                 priceStr = priceStr.replaceAll("\\$", "");
@@ -210,9 +211,9 @@ public class BaseUtils {
             appBrief.setUrl(url);
             appId = StringUtils.parseAppId(url);
             appBrief.setAppId(appId);
-            fileName = String.format("%02d", z) + "_" + appId;
+//            fileName = String.format("%02d", z) + "_" + appId;
+            fileName = appId;
             appBrief.setFilename(fileName);
-            z++;
             if (appBrief.getOnlyUs()) {
                 urlCn = url;
             } else {
@@ -223,14 +224,16 @@ public class BaseUtils {
             // String.format("%02d", i)
             if (-1 != urlCn.lastIndexOf("https://apps.apple.com/")) {
                 appBrief.setSnapshotPath(path + File.separator + "snapshot" + File.separator + fileName + ".png");
-                appBrief.setQrUrl(path + File.separator + "qr" + File.separator + "qr_" + fileName + ".png");
-                appBrief.setIconUrl(path + File.separator + "icon" + File.separator + "icon_" + fileName + ".png");
-                appBrief.setDetailPath(path + File.separator + "detail" + File.separator + "detail_" + fileName + ".png");
-                appBrief.setSinglePosterPath(path + File.separator + "single" + File.separator + "single_" + fileName + ".png");
+                appBrief.setQrUrl(path + File.separator + "qr" + File.separator + fileName + ".png");
+                appBrief.setIconUrl(path + File.separator + "icon" + File.separator + fileName + ".png");
+                appBrief.setDetailPath(path + File.separator + "detail" + File.separator + fileName + ".png");
+                appBrief.setSinglePosterPath(path + File.separator + "single" + File.separator + fileName + ".png");
                 appBrief.setListAppsPath(path + File.separator + "list" + File.separator); // 只是路径
                 appBrief.setPagePosterPath(path + File.separator + "page" + File.separator);  // 只是路径
+                appBrief.setAppIndex(String.format("%02d", z));
                 appBriefList.add(appBrief);
             }
+            z++;
 
             lastIndex = freeIndex + 1;
         }

@@ -325,7 +325,7 @@ public class CdFileUtils {
         }
     }
 
-    public static List<String> getAllFilenames(String folderPath) {
+    public static List<String> getAllFileNames(String folderPath) {
         List<String> stringList = new ArrayList<>();
         //获取文件路径文件夹下的全部文件列表
         System.out.println("文件有如下：");
@@ -420,5 +420,13 @@ public class CdFileUtils {
         }
     }
 
-
+    public static String parseFilename(int indexPrefixJpg, String jsonStr) {
+        int endIndex = indexPrefixJpg + 4;
+        String tempStr = jsonStr.substring(0, indexPrefixJpg + 4);
+        String tempStr2 = tempStr.substring(0, tempStr.lastIndexOf("/"));
+        int beginIndex = tempStr2.lastIndexOf("/");
+        String tempStr3 = tempStr.substring(beginIndex + 1, endIndex);
+        tempStr3 = tempStr3.replaceAll("/", "_");
+        return tempStr3;
+    }
 }

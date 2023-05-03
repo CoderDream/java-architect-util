@@ -17,6 +17,7 @@
         <result property="freeDate" column="free_date" jdbcType="TIMESTAMP"/>
         <result property="description" column="description" jdbcType="VARCHAR"/>
         <result property="dataSource" column="data_source" jdbcType="VARCHAR"/>
+        <result property="yesterdayUrl" column="yesterday_url" jdbcType="VARCHAR"/>
         <result property="remark" column="remark" jdbcType="VARCHAR"/>
         <result property="delFlag" column="del_flag" jdbcType="INTEGER"/>
         <result property="createUserCode" column="create_user_code" jdbcType="VARCHAR"/>
@@ -107,6 +108,7 @@
         `free_date`,
         `description`,
         `data_source`,
+        `yesterday_url`,
         `remark`,
         `del_flag`,
         `create_user_code`,
@@ -131,6 +133,7 @@
             #{entity.freeDate,jdbcType=TIMESTAMP},
             #{entity.description,jdbcType=VARCHAR},
             #{entity.dataSource,jdbcType=VARCHAR},
+            #{entity.yesterdayUrl,jdbcType=VARCHAR},
             #{entity.remark,jdbcType=VARCHAR},
             #{entity.delFlag,jdbcType=INTEGER},
             #{entity.createUserCode,jdbcType=VARCHAR},
@@ -155,6 +158,7 @@
         <!--   free_date = values(free_date),-->
         description = values(description),
         <!--   data_source = values(data_source),-->
+        yesterday_url = values(yesterday_url),
         remark = values(remark),
         del_flag = values(del_flag),
         create_user_code = values(create_user_code),
@@ -164,6 +168,23 @@
         last_modified_name = values(last_modified_name),
         last_modified_date = values(last_modified_date),
         version = values(version)
+    </insert>
+
+    <insert id="updateRecommendFlagBatch">
+        insert into t_free_history
+        (`app_id`,
+        `free_date`,
+        `data_source`,
+        `recommend_flag`)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            ( #{entity.appId,jdbcType=VARCHAR},
+            #{entity.freeDate,jdbcType=TIMESTAMP},
+            #{entity.dataSource,jdbcType=VARCHAR},
+            #{entity.recommendFlag,jdbcType=TINYINT} )
+        </foreach>
+        on duplicate key update
+        recommend_flag = values(recommend_flag)
     </insert>
 
     <!-- Mybatis：通过on duplicate key update实现批量插入或更新 -->

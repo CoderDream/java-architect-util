@@ -6,6 +6,11 @@ import lombok.Data;
 @Data
 public class AppBrief {
 
+    /**
+     * app在今日限免列表中的位置，从01开始
+     */
+    private String appIndex;
+
     //  `ID` char(9) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
     private String appId;
 
@@ -26,6 +31,11 @@ public class AppBrief {
 //  `seller` text CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL,
 
     //  `price` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL COMMENT '价格',
+
+
+    /**
+     * 换算后的价格
+     */
     private Integer price;
 
     private String osType;

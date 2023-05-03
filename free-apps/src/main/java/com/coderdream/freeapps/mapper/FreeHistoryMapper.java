@@ -20,6 +20,7 @@ public interface FreeHistoryMapper extends BaseMapper<FreeHistory> {
     int insertSelective(FreeHistory freeHistory);
 
     int insertOrUpdateBatch(List<FreeHistory> entities);
+    int updateRecommendFlagBatch(List<FreeHistory> entities);
 
 }
 

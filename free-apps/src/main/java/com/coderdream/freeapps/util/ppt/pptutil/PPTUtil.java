@@ -119,6 +119,7 @@ public class PPTUtil {
 
     /**
      * 从幻灯片中获取图表
+     *
      * @param slide
      * @return
      */
@@ -133,6 +134,7 @@ public class PPTUtil {
 
     /**
      * 从幻灯片中获取图表列表
+     *
      * @param slide
      * @return
      */
@@ -148,6 +150,7 @@ public class PPTUtil {
 
     /**
      * 从幻灯片中获取表格
+     *
      * @param slide
      * @return
      */
@@ -162,6 +165,7 @@ public class PPTUtil {
 
     /**
      * 从幻灯片中获取表格列表
+     *
      * @param slide
      * @return
      */
@@ -177,6 +181,7 @@ public class PPTUtil {
 
     /**
      * 从幻灯片中获取文本框
+     *
      * @param slide
      * @return
      */
@@ -191,6 +196,7 @@ public class PPTUtil {
 
     /**
      * 从幻灯片中获取文本框列表
+     *
      * @param slide
      * @return
      */
@@ -236,6 +242,7 @@ public class PPTUtil {
 
     /**
      * 设置幻灯片段落垂直对齐方式
+     *
      * @param paragraph
      * @param vertical
      */
@@ -249,16 +256,26 @@ public class PPTUtil {
     private void setCTTextParagraphVerticalAlign(XSLFTextParagraph ctTextParagraph, String verticalStr) {
         CTTextParagraphProperties pPr = this.getPPR(ctTextParagraph);
         switch (verticalStr) {
-            case "top" : pPr.setFontAlgn(STTextFontAlignType.T);   break;   // 顶部
-            case "baseline" : pPr.setFontAlgn(STTextFontAlignType.BASE);   break;  // 基线对齐
-            case "bottom" : pPr.setFontAlgn(STTextFontAlignType.B);   break;    // 底部
-            case "center" : pPr.setFontAlgn(STTextFontAlignType.CTR);   break;    // 居中
-            default: pPr.setFontAlgn(STTextFontAlignType.AUTO);  // 自动
+            case "top":
+                pPr.setFontAlgn(STTextFontAlignType.T);
+                break;   // 顶部
+            case "baseline":
+                pPr.setFontAlgn(STTextFontAlignType.BASE);
+                break;  // 基线对齐
+            case "bottom":
+                pPr.setFontAlgn(STTextFontAlignType.B);
+                break;    // 底部
+            case "center":
+                pPr.setFontAlgn(STTextFontAlignType.CTR);
+                break;    // 居中
+            default:
+                pPr.setFontAlgn(STTextFontAlignType.AUTO);  // 自动
         }
     }
 
     /**
      * 设置幻灯片段落水平对齐方式
+     *
      * @param paragraph
      * @param horizontal
      */
@@ -273,21 +290,32 @@ public class PPTUtil {
         CTTextParagraphProperties pPr = this.getPPR(ctTextParagraph);
 
         switch (horizontalStr) {
-            case "left" : pPr.setAlgn(STTextAlignType.L);   break;  // 左对齐
-            case "right": pPr.setAlgn(STTextAlignType.R);   break;  // 右对齐
-            case "center": pPr.setAlgn(STTextAlignType.CTR);    break;  // 居中
-            case "disperse" : pPr.setAlgn(STTextAlignType.DIST);    break;  // 分散对齐
-            default: pPr.setAlgn(STTextAlignType.JUST); // 两端对齐
+            case "left":
+                pPr.setAlgn(STTextAlignType.L);
+                break;  // 左对齐
+            case "right":
+                pPr.setAlgn(STTextAlignType.R);
+                break;  // 右对齐
+            case "center":
+                pPr.setAlgn(STTextAlignType.CTR);
+                break;  // 居中
+            case "disperse":
+                pPr.setAlgn(STTextAlignType.DIST);
+                break;  // 分散对齐
+            default:
+                pPr.setAlgn(STTextAlignType.JUST); // 两端对齐
         }
     }
 
     // 获取 pPr
     private CTTextParagraphProperties getPPR(XSLFTextParagraph ctTextParagraph) {
-        return ctTextParagraph.getXmlObject().getPPr() == null ? ctTextParagraph.getXmlObject().addNewPPr() : ctTextParagraph.getXmlObject().getPPr();
+        return ctTextParagraph.getXmlObject().getPPr() == null ? ctTextParagraph.getXmlObject().addNewPPr()
+            : ctTextParagraph.getXmlObject().getPPr();
     }
 
     /**
      * 设置项目符号的编号
+     *
      * @param ctTextParagraph
      * @param lvl
      */
@@ -298,6 +326,7 @@ public class PPTUtil {
 
     /**
      * 设置段落自动编号
+     *
      * @param ctTextParagraph
      * @param startAt
      */
@@ -309,6 +338,7 @@ public class PPTUtil {
 
     /**
      * 设置缩进等级，即悬挂缩进
+     *
      * @param ctTextParagraph
      * @param indentLevel
      */
@@ -318,6 +348,7 @@ public class PPTUtil {
 
     /**
      * 设置项目符号的颜色
+     *
      * @param ctTextParagraph
      * @param colorHex
      */
@@ -337,8 +368,9 @@ public class PPTUtil {
 
     /**
      * 设置段落的行距，单位 磅
+     *
      * @param ctTextParagraph
-     * @param pounts    磅
+     * @param pounts          磅
      */
     public void setLineSpacingPounts(XSLFTextParagraph ctTextParagraph, String pounts) {
         pounts = this.nullToDefault(pounts, "1");
@@ -355,8 +387,9 @@ public class PPTUtil {
 
     /**
      * 设置段落的行距，单位倍数
+     *
      * @param ctTextParagraph
-     * @param multiple 倍数，几倍行距
+     * @param multiple        倍数，几倍行距
      */
     public void setLineSpacing(XSLFTextParagraph ctTextParagraph, Double multiple) {
 
@@ -373,6 +406,7 @@ public class PPTUtil {
 
     /**
      * 设置段前间距，单位磅
+     *
      * @param ctTextParagraph
      * @param pounts
      */
@@ -385,13 +419,15 @@ public class PPTUtil {
             ctTextSpacing.unsetSpcPct();
         }
 
-        CTTextSpacingPoint spacing = ctTextSpacing.isSetSpcPts() ? ctTextSpacing.getSpcPts() : ctTextSpacing.addNewSpcPts();
+        CTTextSpacingPoint spacing =
+            ctTextSpacing.isSetSpcPts() ? ctTextSpacing.getSpcPts() : ctTextSpacing.addNewSpcPts();
         int pts = (int) (Double.valueOf(pounts) * 100);
         spacing.setVal(pts);
     }
 
     /**
      * 设置段后间距，单位磅
+     *
      * @param ctTextParagraph
      * @param pounts
      */
@@ -404,13 +440,15 @@ public class PPTUtil {
             ctTextSpacing.unsetSpcPct();
         }
 
-        CTTextSpacingPoint spacing = ctTextSpacing.isSetSpcPts() ? ctTextSpacing.getSpcPts() : ctTextSpacing.addNewSpcPts();
+        CTTextSpacingPoint spacing =
+            ctTextSpacing.isSetSpcPts() ? ctTextSpacing.getSpcPts() : ctTextSpacing.addNewSpcPts();
         int pts = (int) (Double.valueOf(pounts) * 100);
         spacing.setVal(pts);
     }
 
     /**
      * 设置缩进字符
+     *
      * @param ctTextParagraph
      * @param charsNum
      */
@@ -428,9 +466,10 @@ public class PPTUtil {
 
     /**
      * 为一个段落添加文本，appendText 参数为 true 的话，就追加文本，false 的话就重开头设置文本
+     *
      * @param paragraph  要操作的段落
-     * @param text  文本
-     * @param appendText    是否追加文本
+     * @param text       文本
+     * @param appendText 是否追加文本
      */
     public XSLFTextRun addParagraphText(XSLFTextParagraph paragraph, Boolean appendText, String text, Boolean bold) {
         XSLFTextRun textRun = getNewRun(paragraph, appendText);
@@ -440,30 +479,31 @@ public class PPTUtil {
     }
 
     public XSLFTextRun addParagraphText(XSLFTextParagraph paragraph,
-                                        Boolean appendText,
-                                        String text,
-                                        Boolean bold,
-                                        String chinesefontFamily,
-                                        String westernFontFamily,
-                                        String fontSize) {
+        Boolean appendText,
+        String text,
+        Boolean bold,
+        String chineseFontFamily,
+        String westernFontFamily,
+        String fontSize) {
         XSLFTextRun textRun = addParagraphText(paragraph, appendText, text, bold);    // 添加文本
         textRun.setFontSize(Double.valueOf(fontSize));  // 设置字体大小
 
         CTTextCharacterProperties rPr = getRPr(textRun.getXmlObject());
-        setRPRFontFamily(rPr, chinesefontFamily, westernFontFamily);    // 设置字体
+        setRPRFontFamily(rPr, chineseFontFamily, westernFontFamily);    // 设置字体
 
         return textRun;
     }
 
     public XSLFTextRun addParagraphText(XSLFTextParagraph paragraph,
-                                        Boolean appendText,
-                                        String text,
-                                        Boolean bold,
-                                        String chinesefontFamily,
-                                        String westernFontFamily,
-                                        String fontSize,
-                                        String color) {
-        XSLFTextRun textRun = addParagraphText(paragraph, appendText, text, bold, chinesefontFamily, westernFontFamily, fontSize);    // 添加文本
+        Boolean appendText,
+        String text,
+        Boolean bold,
+        String chineseFontFamily,
+        String westernFontFamily,
+        String fontSize,
+        String color) {
+        XSLFTextRun textRun = addParagraphText(paragraph, appendText, text, bold, chineseFontFamily, westernFontFamily,
+            fontSize);    // 添加文本
         textRun.setFontSize(Double.valueOf(fontSize));  // 设置字体大小
         CTTextCharacterProperties rPr = getRPr(textRun.getXmlObject());
 
@@ -475,76 +515,82 @@ public class PPTUtil {
     }
 
     public XSLFTextRun addParagraphText(XSLFTextParagraph paragraph,
-                                        Boolean appendText,
-                                        String text,
-                                        Boolean bold,
-                                        String chinesefontFamily,
-                                        String westernFontFamily,
-                                        String fontSize,
-                                        String color,
-                                        Boolean italic) {
-        XSLFTextRun textRun = addParagraphText(paragraph, appendText, text, bold, chinesefontFamily, westernFontFamily, fontSize, color);    // 添加文本
+        Boolean appendText,
+        String text,
+        Boolean bold,
+        String chineseFontFamily,
+        String westernFontFamily,
+        String fontSize,
+        String color,
+        Boolean italic) {
+        XSLFTextRun textRun = addParagraphText(paragraph, appendText, text, bold, chineseFontFamily, westernFontFamily,
+            fontSize, color);    // 添加文本
         textRun.setItalic(italic);
         return textRun;
     }
 
     public XSLFTextRun addParagraphText(XSLFTextParagraph paragraph,
-                                        Boolean appendText,
-                                        String text,
-                                        Boolean bold,
-                                        String chinesefontFamily,
-                                        String westernFontFamily,
-                                        String fontSize,
-                                        String color,
-                                        Boolean italic,
-                                        Boolean strike) {
-        XSLFTextRun textRun = addParagraphText(paragraph, appendText, text, bold, chinesefontFamily, westernFontFamily, fontSize, color, italic);    // 添加文本
+        Boolean appendText,
+        String text,
+        Boolean bold,
+        String chineseFontFamily,
+        String westernFontFamily,
+        String fontSize,
+        String color,
+        Boolean italic,
+        Boolean strike) {
+        XSLFTextRun textRun = addParagraphText(paragraph, appendText, text, bold, chineseFontFamily, westernFontFamily,
+            fontSize, color, italic);    // 添加文本
         textRun.setStrikethrough(strike);
         return textRun;
     }
 
     public XSLFTextRun addParagraphText(XSLFTextParagraph paragraph,
-                                        Boolean appendText,
-                                        String text,
-                                        Boolean bold,
-                                        String chinesefontFamily,
-                                        String westernFontFamily,
-                                        String fontSize,
-                                        String color,
-                                        Boolean italic,
-                                        Boolean strike,
-                                        Boolean underline) {
-        XSLFTextRun textRun = addParagraphText(paragraph, appendText, text, bold, chinesefontFamily, westernFontFamily, fontSize, color, italic, strike);    // 添加文本
+        Boolean appendText,
+        String text,
+        Boolean bold,
+        String chineseFontFamily,
+        String westernFontFamily,
+        String fontSize,
+        String color,
+        Boolean italic,
+        Boolean strike,
+        Boolean underline) {
+        XSLFTextRun textRun = addParagraphText(paragraph, appendText, text, bold, chineseFontFamily, westernFontFamily,
+            fontSize, color, italic, strike);    // 添加文本
         textRun.setUnderlined(underline);
         return textRun;
     }
 
     public XSLFTextRun addParagraphText(XSLFTextParagraph paragraph,
-                                        Boolean appendText,
-                                        String text,
-                                        Boolean bold,
-                                        String chinesefontFamily,
-                                        String westernFontFamily,
-                                        String fontSize,
-                                        String color,
-                                        Boolean italic,
-                                        Boolean strike,
-                                        Boolean underline,
-                                        String characterSpacing) {
-        XSLFTextRun textRun = addParagraphText(paragraph, appendText, text, bold, chinesefontFamily, westernFontFamily, fontSize, color, italic, strike, underline);    // 添加文本
+        Boolean appendText,
+        String text,
+        Boolean bold,
+        String chineseFontFamily,
+        String westernFontFamily,
+        String fontSize,
+        String color,
+        Boolean italic,
+        Boolean strike,
+        Boolean underline,
+        String characterSpacing) {
+        XSLFTextRun textRun = addParagraphText(paragraph, appendText, text, bold, chineseFontFamily, westernFontFamily,
+            fontSize, color, italic, strike, underline);    // 添加文本
         textRun.setCharacterSpacing(Double.valueOf(characterSpacing));
         return textRun;
     }
 
     /**
      * 根据已设定好的对象来设置文本的样式
+     *
      * @param paragraph
      * @param appendText
      * @param text
      * @param pts
      * @return
      */
-    public XSLFTextRun addParagraphText(XSLFTextParagraph paragraph, Boolean appendText, String text, ParagraphTextStyle pts) {
+    public XSLFTextRun addParagraphText(XSLFTextParagraph paragraph, Boolean appendText, String text,
+        ParagraphTextStyle pts) {
         XSLFTextRun textRun = getNewRun(paragraph, appendText); // 添加一个新的 run
         textRun.setText(text);  // 设置文本
 
@@ -556,10 +602,14 @@ public class PPTUtil {
     // 取消某个方向上的边框
     private void unsetCellBorder(CTTableCellProperties cellProperties, String posStr) {
         switch (posStr) {
-            case "left" : cellProperties.unsetLnL();
-            case "right" : cellProperties.unsetLnR();
-            case "top" : cellProperties.unsetLnT();
-            case "bottom" : cellProperties.unsetLnB();
+            case "left":
+                cellProperties.unsetLnL();
+            case "right":
+                cellProperties.unsetLnR();
+            case "top":
+                cellProperties.unsetLnT();
+            case "bottom":
+                cellProperties.unsetLnB();
             default: {
                 logger.warn(posStr + " position not exists! position include ['left', 'right', 'top', 'bottom'");
             }
@@ -573,21 +623,28 @@ public class PPTUtil {
         posList.addAll(Arrays.asList("top", "left", "bottom", "right"));
 
         switch (posStr) {
-            case "left" : return cellProperties.isSetLnL() ? cellProperties.getLnL() : cellProperties.addNewLnL();
-            case "right" : return cellProperties.isSetLnR() ? cellProperties.getLnR() : cellProperties.addNewLnR();
-            case "top" : return cellProperties.isSetLnT() ? cellProperties.getLnT() : cellProperties.addNewLnT();
-            case "bottom" : return cellProperties.isSetLnB() ? cellProperties.getLnB() : cellProperties.addNewLnB();
+            case "left":
+                return cellProperties.isSetLnL() ? cellProperties.getLnL() : cellProperties.addNewLnL();
+            case "right":
+                return cellProperties.isSetLnR() ? cellProperties.getLnR() : cellProperties.addNewLnR();
+            case "top":
+                return cellProperties.isSetLnT() ? cellProperties.getLnT() : cellProperties.addNewLnT();
+            case "bottom":
+                return cellProperties.isSetLnB() ? cellProperties.getLnB() : cellProperties.addNewLnB();
             default: {
                 logger.warn(posStr + " position not exists! position include ['left', 'right', 'top', 'bottom'");
                 return cellProperties.isSetLnL() ? cellProperties.getLnT() : cellProperties.addNewLnT();
             }
         }
     }
+
     // 设置边框的颜色和线条类型
     private void setCellBorder(CTLineProperties ctLineProperties, String lineType, String lineColorHex) {
         // 构造边框线的类型
         List<String> lineTypes = new ArrayList<String>();
-        lineTypes.addAll(Arrays.asList("solid", "dot", "dash", "lgDash", "dashDot", "lgDashDot", "lgDashDotDot", "sysDash", "sysDot", "sysDashDot", "sysDashDotDot"));
+        lineTypes.addAll(
+            Arrays.asList("solid", "dot", "dash", "lgDash", "dashDot", "lgDashDot", "lgDashDotDot", "sysDash", "sysDot",
+                "sysDashDot", "sysDashDotDot"));
 
         // 设置边框线的颜色
         CTSolidColorFillProperties ctSolidColorFillProperties = ctLineProperties.addNewSolidFill();
@@ -623,6 +680,7 @@ public class PPTUtil {
 
     /**
      * 设置字体加粗
+     *
      * @param run
      * @param bold
      * @return
@@ -638,6 +696,7 @@ public class PPTUtil {
 
     /**
      * 设置中文字体
+     *
      * @param run
      * @param fontFamily
      * @return
@@ -654,6 +713,7 @@ public class PPTUtil {
 
     /**
      * 设置西文字体
+     *
      * @param run
      * @param westernFontFamily
      * @return
@@ -670,6 +730,7 @@ public class PPTUtil {
 
     /**
      * 设置字体大小
+     *
      * @param run
      * @param fontSize
      * @return
@@ -685,8 +746,9 @@ public class PPTUtil {
 
     /**
      * 设置字体颜色
+     *
      * @param run
-     * @param colorHex  16进制颜色单位
+     * @param colorHex 16进制颜色单位
      * @return
      */
     public XSLFTextRun setTextColor(XSLFTextRun run, String colorHex) {
@@ -703,6 +765,7 @@ public class PPTUtil {
 
     /**
      * 设置字体是否斜体
+     *
      * @param run
      * @param italic
      * @return
@@ -718,6 +781,7 @@ public class PPTUtil {
 
     /**
      * 设置字体删除线
+     *
      * @param run
      * @param strike
      * @return
@@ -733,6 +797,7 @@ public class PPTUtil {
 
     /**
      * 设置字体下划线
+     *
      * @param run
      * @param underline
      * @return
@@ -748,9 +813,9 @@ public class PPTUtil {
     }
 
 
-
     /**
      * 替换段内的标签文本
+     *
      * @param paragraph
      * @param paramMap
      */
@@ -770,7 +835,8 @@ public class PPTUtil {
                 String rs = matcher.group(0);   // 存放标签
                 keyWord.append(rs.replace("{", "").replace("}", ""));   // 存放 key
                 String text = getRunsT(paragraph, start, end + 1);  // 获取标签所在 run 的全部文字
-                String v = nullToDefault(paramMap.get(keyWord.toString()), keyWord.toString()); // 如果没在 paramMap 中没有找到这个标签所对应的值，那么就直接替换成标签的值
+                String v = nullToDefault(paramMap.get(keyWord.toString()),
+                    keyWord.toString()); // 如果没在 paramMap 中没有找到这个标签所对应的值，那么就直接替换成标签的值
                 setText(paragraph.getTextRuns().get(start), text.replace(rs, v));   // 重新设置文本
             }
             replaceTagInParagraph(paragraph, paramMap); // 继续找
@@ -779,6 +845,7 @@ public class PPTUtil {
 
     /**
      * 获取幻灯片内的所有段落
+     *
      * @param slide
      * @return
      */
@@ -832,6 +899,7 @@ public class PPTUtil {
 
     /**
      * 在标题内添加段落， append 参数指定是追加还是覆盖
+     *
      * @param titleShape
      * @param append
      * @return
@@ -847,6 +915,7 @@ public class PPTUtil {
 
     /**
      * 从当前图表中获取柱状图列表
+     *
      * @param chart
      * @return
      */
@@ -857,6 +926,7 @@ public class PPTUtil {
 
     /**
      * 从当前图表中获取折线图列表
+     *
      * @param chart
      * @return
      */
@@ -867,6 +937,7 @@ public class PPTUtil {
 
     /**
      * 从当前图表中获取饼状图
+     *
      * @param chart
      * @return
      */
@@ -877,6 +948,7 @@ public class PPTUtil {
 
     /**
      * 从当前图表中获取雷达图
+     *
      * @param chart
      * @return
      */
@@ -887,6 +959,7 @@ public class PPTUtil {
 
     /**
      * 更新柱状图的 cat 缓存
+     *
      * @param barChart
      * @param serIndex
      * @param data
@@ -904,6 +977,7 @@ public class PPTUtil {
 
     /**
      * 更新柱状图的缓存数据
+     *
      * @param barChart
      * @param serIndex
      * @param data
@@ -917,6 +991,7 @@ public class PPTUtil {
 
     /**
      * 更新折线图的 cat 缓存
+     *
      * @param lineChart
      * @param serIndex
      * @param data
@@ -934,6 +1009,7 @@ public class PPTUtil {
 
     /**
      * 更新折线图的缓存数据
+     *
      * @param lineChart
      * @param serIndex
      * @param data
@@ -947,6 +1023,7 @@ public class PPTUtil {
 
     /**
      * 更新饼图的 cat 缓存
+     *
      * @param pieChart
      * @param serIndex
      * @param data
@@ -965,6 +1042,7 @@ public class PPTUtil {
 
     /**
      * 更新饼图的缓存数据
+     *
      * @param pieChart
      * @param serIndex
      * @param data
@@ -978,6 +1056,7 @@ public class PPTUtil {
 
     /**
      * 更新雷达图的 cat 缓存
+     *
      * @param radarChart
      * @param serIndex
      * @param data
@@ -995,6 +1074,7 @@ public class PPTUtil {
 
     /**
      * 更新雷达图的缓存数据
+     *
      * @param radarChart
      * @param serIndex
      * @param data
@@ -1008,6 +1088,7 @@ public class PPTUtil {
 
     /**
      * 获取表格的行数
+     *
      * @param table
      * @return
      */
@@ -1017,6 +1098,7 @@ public class PPTUtil {
 
     /**
      * 获取表格的列数
+     *
      * @param table
      * @return
      */
@@ -1026,6 +1108,7 @@ public class PPTUtil {
 
     /**
      * 设置单元格文本
+     *
      * @param cell
      * @param text
      */
@@ -1064,6 +1147,7 @@ public class PPTUtil {
 
     /**
      * 设置该单元格所有的边框颜色和线条
+     *
      * @param cell
      * @param lineType
      * @param lineColorHex
@@ -1086,6 +1170,7 @@ public class PPTUtil {
 
     /**
      * 设置 cell 的颜色
+     *
      * @param cell
      * @param colorHex
      */
@@ -1100,6 +1185,7 @@ public class PPTUtil {
 
     /**
      * 设置 cell 文本是否加粗
+     *
      * @param cell
      * @param bold
      */
@@ -1114,6 +1200,7 @@ public class PPTUtil {
 
     /**
      * 设置单元格是否加下划线
+     *
      * @param cell
      * @param underline
      */
@@ -1128,6 +1215,7 @@ public class PPTUtil {
 
     /**
      * 设置单元格是否加删除线
+     *
      * @param cell
      * @param strike
      */
@@ -1142,6 +1230,7 @@ public class PPTUtil {
 
     /**
      * 设置单元格中文字体
+     *
      * @param cell
      * @param fontFamily
      */
@@ -1156,6 +1245,7 @@ public class PPTUtil {
 
     /**
      * 设置单元格文本字体大小
+     *
      * @param cell
      * @param fontSize
      */
@@ -1170,6 +1260,7 @@ public class PPTUtil {
 
     /**
      * 设置单元格文本斜体
+     *
      * @param cell
      * @param italic
      */
@@ -1184,6 +1275,7 @@ public class PPTUtil {
 
     /**
      * 设置单元格文本样式
+     *
      * @param cell
      * @param pts
      */
@@ -1198,6 +1290,7 @@ public class PPTUtil {
 
     /**
      * 设置单元格西文字体
+     *
      * @param cell
      * @param westernFontFamily
      */
@@ -1212,6 +1305,7 @@ public class PPTUtil {
 
     /**
      * 设置单元格水平对齐方式
+     *
      * @param cell
      * @param horizontalAlign
      */
@@ -1224,6 +1318,7 @@ public class PPTUtil {
 
     /**
      * 设置单元格垂直对齐方式
+     *
      * @param cell
      * @param verticalAlign
      */
@@ -1236,6 +1331,7 @@ public class PPTUtil {
 
     /**
      * 设置单元格某一个方向上的线条和颜色
+     *
      * @param cell
      * @param posStr
      * @param lineType
@@ -1257,6 +1353,7 @@ public class PPTUtil {
 
     /**
      * 设置单元格的填充颜色
+     *
      * @param cell
      * @param fillColorHex
      */
@@ -1273,14 +1370,17 @@ public class PPTUtil {
             }
         } else {
             tcPr.unsetNoFill();
-            CTSolidColorFillProperties fillProperties = tcPr.isSetSolidFill() ? tcPr.getSolidFill() : tcPr.addNewSolidFill();
-            CTSRgbColor ctsRgbColor = fillProperties.isSetSrgbClr() ? fillProperties.getSrgbClr() : fillProperties.addNewSrgbClr();
+            CTSolidColorFillProperties fillProperties =
+                tcPr.isSetSolidFill() ? tcPr.getSolidFill() : tcPr.addNewSolidFill();
+            CTSRgbColor ctsRgbColor =
+                fillProperties.isSetSrgbClr() ? fillProperties.getSrgbClr() : fillProperties.addNewSrgbClr();
             ctsRgbColor.setVal(hexToByteArray(fillColorHex.substring(1)));
         }
     }
 
     /**
      * 在单元格内添加文本
+     *
      * @param cell
      * @return
      */
@@ -1291,6 +1391,7 @@ public class PPTUtil {
 
     /**
      * 获取表格某行
+     *
      * @param table
      * @param rowNum
      * @return
@@ -1301,6 +1402,7 @@ public class PPTUtil {
 
     /**
      * 获取行列表
+     *
      * @param table
      * @return
      */
@@ -1310,27 +1412,32 @@ public class PPTUtil {
 
     /**
      * 根据某行或取单元格列表
+     *
      * @param row
      * @return
      */
-    public List<XSLFTableCell> getTableCols(XSLFTableRow row){
+    public List<XSLFTableCell> getTableCols(XSLFTableRow row) {
         return row.getCells();
     }
 
 
     /**
      * 获取某行中 fromIndex 到 toIndex 的单元格列表
+     *
      * @param row
      * @param fromIndex
      * @param toIndex
      * @return
      */
     public List<XSLFTableCell> getTableCols(XSLFTableRow row, int fromIndex, int toIndex) {
-        return new ArrayList<XSLFTableCell>(){{ addAll(row.getCells().subList(fromIndex, toIndex)); }};
+        return new ArrayList<XSLFTableCell>() {{
+            addAll(row.getCells().subList(fromIndex, toIndex));
+        }};
     }
 
     /**
      * 获取某行中某列到某列的单元格列表
+     *
      * @param table
      * @param rowNum
      * @param fromColIndex
@@ -1348,6 +1455,7 @@ public class PPTUtil {
 
     /**
      * 获取某行从 startIndex 索引开始到最后列的单元格列表
+     *
      * @param table
      * @param rowNum
      * @param startIndex
@@ -1365,6 +1473,7 @@ public class PPTUtil {
 
     /**
      * 根据表格中某列的 fromRowIndex 到 toRowIndex 的列表
+     *
      * @param table
      * @param colNum
      * @param fromRowIndex
@@ -1456,7 +1565,6 @@ public class PPTUtil {
             ctNumVal.setIdx(i);
         }
 
-
 //        // 引用原来的 pt
 //        CTNumData numCache = numRef.getNumCache();
 //        List<CTNumVal> ptList = numCache.getPtList();
@@ -1500,8 +1608,8 @@ public class PPTUtil {
     }
 
     // 设置 rPr 的字体
-    private void setRPRFontFamily(CTTextCharacterProperties rPr, String chinesefontFamily, String westernFontFamily) {
-        this.setRPRChineseFontFamily(rPr, chinesefontFamily);
+    private void setRPRFontFamily(CTTextCharacterProperties rPr, String chineseFontFamily, String westernFontFamily) {
+        this.setRPRChineseFontFamily(rPr, chineseFontFamily);
         this.setRPRWesternFontFamily(rPr, westernFontFamily);
     }
 
@@ -1541,7 +1649,7 @@ public class PPTUtil {
     }
 
     // 获取新添加的 run
-    private XSLFTextRun getNewRun(XSLFTextParagraph paragraph, Boolean appendText)  {
+    private XSLFTextRun getNewRun(XSLFTextParagraph paragraph, Boolean appendText) {
         if (!appendText) {  // 是否追加文本
             this.clearParagraphText(paragraph);
         }
@@ -1570,7 +1678,7 @@ public class PPTUtil {
         }
     }
 
-   // 空字符串转默认值
+    // 空字符串转默认值
     private String nullToDefault(String goalStr, String defaultStr) {
         if (goalStr == null || "".equals(goalStr)) {
             return defaultStr;
@@ -1592,21 +1700,22 @@ public class PPTUtil {
 
     /**
      * 将16进制转换为 byte 数组
+     *
      * @param inHex 需要转换的字符串
      * @return
      */
     public byte[] hexToByteArray(String inHex) {
         int hexlen = inHex.length();
         byte[] result;
-        if (hexlen % 2 == 1){   // 奇数的话，就在前面添加 0
+        if (hexlen % 2 == 1) {   // 奇数的话，就在前面添加 0
             hexlen++;
             result = new byte[(hexlen / 2)];
-            inHex="0"+inHex;
-        }else { // 偶数
+            inHex = "0" + inHex;
+        } else { // 偶数
             result = new byte[(hexlen / 2)];
         }
-        int j=0;
-        for (int i = 0; i < hexlen; i += 2){
+        int j = 0;
+        for (int i = 0; i < hexlen; i += 2) {
             result[j] = this.hexToByte(inHex.substring(i, i + 2));
             j++;
         }

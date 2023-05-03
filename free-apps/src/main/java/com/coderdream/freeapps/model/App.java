@@ -44,6 +44,11 @@ public class App implements Serializable {
     private String designedFor;
 
     /**
+     * 图标地址
+     */
+    private String appIconUrl;
+
+    /**
      * 排名
      */
     private String ranking;
@@ -62,6 +67,11 @@ public class App implements Serializable {
      * 评分人数
      */
     private Integer rateAmount;
+
+    /**
+     * 换算后的价格
+     */
+    private Integer price;
 
     /**
      * 国区价格
@@ -277,6 +287,7 @@ public class App implements Serializable {
             && (this.getAppId() == null ? other.getAppId() == null : this.getAppId().equals(other.getAppId()))
             && (this.getTitle() == null ? other.getTitle() == null : this.getTitle().equals(other.getTitle()))
             && (this.getSubTitle() == null ? other.getSubTitle() == null : this.getSubTitle().equals(other.getSubTitle()))
+            && (this.getAppIconUrl() == null ? other.getAppIconUrl() == null : this.getAppIconUrl().equals(other.getAppIconUrl()))
             && (this.getDesignedFor() == null ? other.getDesignedFor() == null : this.getDesignedFor().equals(other.getDesignedFor()))
             && (this.getRanking() == null ? other.getRanking() == null : this.getRanking().equals(other.getRanking()))
             && (this.getRatingStr() == null ? other.getRatingStr() == null : this.getRatingStr().equals(other.getRatingStr()))
@@ -331,6 +342,7 @@ public class App implements Serializable {
         result = prime * result + ((getAppId() == null) ? 0 : getAppId().hashCode());
         result = prime * result + ((getTitle() == null) ? 0 : getTitle().hashCode());
         result = prime * result + ((getSubTitle() == null) ? 0 : getSubTitle().hashCode());
+        result = prime * result + ((getAppIconUrl() == null) ? 0 : getAppIconUrl().hashCode());
         result = prime * result + ((getDesignedFor() == null) ? 0 : getDesignedFor().hashCode());
         result = prime * result + ((getRanking() == null) ? 0 : getRanking().hashCode());
         result = prime * result + ((getRatingStr() == null) ? 0 : getRatingStr().hashCode());
@@ -388,6 +400,7 @@ public class App implements Serializable {
         sb.append(", appId=").append(appId);
         sb.append(", title=").append(title);
         sb.append(", subTitle=").append(subTitle);
+        sb.append(", appIconUrl=").append(appIconUrl);
         sb.append(", designedFor=").append(designedFor);
         sb.append(", ranking=").append(ranking);
         sb.append(", ratingStr=").append(ratingStr);

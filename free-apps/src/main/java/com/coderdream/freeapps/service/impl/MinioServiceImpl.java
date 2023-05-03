@@ -2,7 +2,9 @@ package com.coderdream.freeapps.service.impl;
 
 import com.coderdream.freeapps.component.MinioUtil;
 import com.coderdream.freeapps.config.MinioProperties;
+import com.coderdream.freeapps.model.AppIcon;
 import com.coderdream.freeapps.model.Snapshot;
+import com.coderdream.freeapps.service.AppIconService;
 import com.coderdream.freeapps.service.MinioService;
 import com.coderdream.freeapps.service.SnapshotService;
 import com.coderdream.freeapps.util.Constants;
@@ -35,10 +37,13 @@ public class MinioServiceImpl implements MinioService {
 
     @Resource
     private SnapshotService snapshotService;
+    @Resource
+    private AppIconService appIconService;
 
     @Override
     public void upload() {
-        String[] pictureUrls = new String[]{"https://is5-ssl.mzstatic.com/image/thumb/Purple125/v4/9d/7d/7d/9d7d7d1f-001f-ff93-46aa-7adfef8fdaaa/pr_source.jpg/600x0w.jpg"};
+        String[] pictureUrls = new String[]{
+            "https://is5-ssl.mzstatic.com/image/thumb/Purple125/v4/9d/7d/7d/9d7d7d1f-001f-ff93-46aa-7adfef8fdaaa/pr_source.jpg/600x0w.jpg"};
         String path = "id1443533088";
         String[] fileNames = new String[]{"9d7d7d1f-001f-ff93-46aa-7adfef8fdaaa_pr_source.jpg"};
         DownloadPictureUtil.downloadPicture(pictureUrls, path, fileNames);
@@ -57,7 +62,7 @@ public class MinioServiceImpl implements MinioService {
     @Override
     public void uploadSnapshot(List<Snapshot> snapshotList) {
         // 应用ID
-        processList(snapshotList);
+        processSnapshotList(snapshotList);
     }
 
     @Override
@@ -65,12 +70,19 @@ public class MinioServiceImpl implements MinioService {
         Snapshot snapshotQuery = new Snapshot();
         snapshotQuery.setDownloadFlag(0);
         List<Snapshot> snapshotTodoList = snapshotService.selectList(snapshotQuery);
-
-        processList(snapshotTodoList);
+        processSnapshotList(snapshotTodoList);
+        AppIcon appIconQuery = new AppIcon();
+        appIconQuery.setDownloadFlag(0);
+        List<AppIcon> appIconTodoList = appIconService.selectList(appIconQuery);
+        processAppIconList(appIconTodoList);
     }
 
-    private void processList(List<Snapshot> snapshotTodoList) {
+    private void processSnapshotList(List<Snapshot> snapshotTodoList) {
         long startTime = System.currentTimeMillis();
+        // 应用ID
+        String dataPath = "D:\\data\\";
+//        String path = "D:\\data\\app_snapshot\\";
+//        String path = "D:\\data\\app_snapshot\\";
         List<Snapshot> snapshotDoneList;
         if (!CollectionUtils.isEmpty(snapshotTodoList)) {
             logger.info("本批次处理的记录数: " + snapshotTodoList.size());
@@ -80,8 +92,6 @@ public class MinioServiceImpl implements MinioService {
                 if (!CollectionUtils.isEmpty(list)) {
                     snapshotDoneList = new ArrayList<>();
                     Snapshot doneSnapshot;
-                    // 应用ID
-                    String path;
                     //文件名称
                     String filename;
                     //截图地址
@@ -90,17 +100,18 @@ public class MinioServiceImpl implements MinioService {
                     String uploadFilename;
                     if (!CollectionUtils.isEmpty(list)) {
                         for (Snapshot snapshot : list) {
-                            path = snapshot.getAppId();
+                            String path = dataPath + "app_snapshot\\" +  snapshot.getAppId();
                             filename = snapshot.getFilename();
                             snapshotUrl = snapshot.getSnapshotUrl();
                             DownloadPictureUtil.downloadPicture(snapshotUrl, path, filename);
 
-                            logger.info("图片下载成功: " + filename);
+                            logger.info("截图下载成功: " + filename);
                             //
-                            uploadFilename = path + "/" + filename;
-                            File file = new File(uploadFilename);
+                            uploadFilename = snapshot.getAppId() + "/" + filename;
+                            File file = new File(dataPath + "app_snapshot\\" +  uploadFilename);
                             try {
-                                MinioUtil.uploadFile(minioProperties.getBucket(), getMultipartFile(file), uploadFilename);
+                                MinioUtil.uploadFile(minioProperties.getBucket(), getMultipartFile(file),
+                                    uploadFilename);
                             } catch (Exception e) {
                                 throw new RuntimeException(e);
                             }
@@ -109,7 +120,7 @@ public class MinioServiceImpl implements MinioService {
                             doneSnapshot.setDownloadFlag(1);
                             doneSnapshot.setLastModifiedDate(new Date());
                             snapshotDoneList.add(doneSnapshot);
-                            logger.info("图片上传成功: " + uploadFilename);
+                            logger.info("截图上传成功: " + uploadFilename);
                         }
                     }
                     // 更新状态
@@ -128,19 +139,97 @@ public class MinioServiceImpl implements MinioService {
         final long day = TimeUnit.MILLISECONDS.toDays(milliseconds);
 
         final long hours = TimeUnit.MILLISECONDS.toHours(milliseconds)
-                - TimeUnit.DAYS.toHours(TimeUnit.MILLISECONDS.toDays(milliseconds));
+            - TimeUnit.DAYS.toHours(TimeUnit.MILLISECONDS.toDays(milliseconds));
 
         final long minutes = TimeUnit.MILLISECONDS.toMinutes(milliseconds)
-                - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(milliseconds));
+            - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(milliseconds));
 
         final long seconds = TimeUnit.MILLISECONDS.toSeconds(milliseconds)
-                - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(milliseconds));
+            - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(milliseconds));
 
         final long ms = TimeUnit.MILLISECONDS.toMillis(milliseconds)
-                - TimeUnit.SECONDS.toMillis(TimeUnit.MILLISECONDS.toSeconds(milliseconds));
+            - TimeUnit.SECONDS.toMillis(TimeUnit.MILLISECONDS.toSeconds(milliseconds));
 
         String message = String.format("%d Days %d Hours %d Minutes %d Seconds %d Milliseconds",
-                day, hours, minutes, seconds, ms);
+            day, hours, minutes, seconds, ms);
+        logger.info("本次任务耗时: " + period + " 毫秒");
+        logger.info("本次任务耗时: " + message);
+    }
+
+    private void processAppIconList(List<AppIcon> appIconTodoList) {
+        long startTime = System.currentTimeMillis();
+        // 应用ID
+//        String path = "D:\\data\\app_icon\\";
+        String dataPath = "D:\\data\\";
+        List<AppIcon> appIconDoneList;
+        if (!CollectionUtils.isEmpty(appIconTodoList)) {
+            logger.info("本批次处理的记录数: " + appIconTodoList.size());
+            // 分批处理
+            List<List<AppIcon>> lists = CdListUtils.splitTo(appIconTodoList, Constants.BATCH_SNAPSHOT_ROWS);
+            for (List<AppIcon> list : lists) {
+                if (!CollectionUtils.isEmpty(list)) {
+                    appIconDoneList = new ArrayList<>();
+                    AppIcon doneAppIcon;
+                    //文件名称
+                    String filename;
+                    //截图地址
+                    String appIconUrl;
+                    //上传文件名称（包含appId作为文件夹）
+                    String uploadFilename;
+                    if (!CollectionUtils.isEmpty(list)) {
+                        for (AppIcon appIcon : list) {
+                            String path = dataPath + "app_icon\\" + appIcon.getAppId();
+                            filename = appIcon.getFilename();
+                            appIconUrl = appIcon.getAppIconUrl();
+                            DownloadPictureUtil.downloadPicture(appIconUrl, path, filename);
+
+                            logger.info("图标下载成功: " + filename);
+                            //
+                            uploadFilename = "app_icon/" + appIcon.getAppId() + "/" + filename;
+                            File file = new File(dataPath + uploadFilename);
+                            try {
+                                MinioUtil.uploadFile(minioProperties.getBucket(), getMultipartFile(file),
+                                    uploadFilename);
+                            } catch (Exception e) {
+                                throw new RuntimeException(e);
+                            }
+                            doneAppIcon = new AppIcon();
+                            BeanUtils.copyProperties(appIcon, doneAppIcon);
+                            doneAppIcon.setDownloadFlag(1);
+                            doneAppIcon.setLastModifiedDate(new Date());
+                            appIconDoneList.add(doneAppIcon);
+                            logger.info("图标上传成功: " + uploadFilename);
+                        }
+                    }
+                    // 更新状态
+                    if (!CollectionUtils.isEmpty(appIconDoneList)) {
+                        appIconService.insertOrUpdateBatch(appIconDoneList);
+                    }
+                }
+            }
+        }
+
+        // 耗时
+        long endTime = System.currentTimeMillis();
+        long period = endTime - startTime;
+
+        final long milliseconds = period;
+        final long day = TimeUnit.MILLISECONDS.toDays(milliseconds);
+
+        final long hours = TimeUnit.MILLISECONDS.toHours(milliseconds)
+            - TimeUnit.DAYS.toHours(TimeUnit.MILLISECONDS.toDays(milliseconds));
+
+        final long minutes = TimeUnit.MILLISECONDS.toMinutes(milliseconds)
+            - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(milliseconds));
+
+        final long seconds = TimeUnit.MILLISECONDS.toSeconds(milliseconds)
+            - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(milliseconds));
+
+        final long ms = TimeUnit.MILLISECONDS.toMillis(milliseconds)
+            - TimeUnit.SECONDS.toMillis(TimeUnit.MILLISECONDS.toSeconds(milliseconds));
+
+        String message = String.format("%d Days %d Hours %d Minutes %d Seconds %d Milliseconds",
+            day, hours, minutes, seconds, ms);
         logger.info("本次任务耗时: " + period + " 毫秒");
         logger.info("本次任务耗时: " + message);
     }
@@ -151,7 +240,7 @@ public class MinioServiceImpl implements MinioService {
         try {
             fileInputStream = new FileInputStream(file);
             multipartFile = new MockMultipartFile(file.getName(), file.getName(),
-                    ContentType.APPLICATION_OCTET_STREAM.toString(), fileInputStream);
+                ContentType.APPLICATION_OCTET_STREAM.toString(), fileInputStream);
         } catch (Exception e) {
             e.printStackTrace();
         }

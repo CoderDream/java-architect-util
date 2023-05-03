@@ -1,11 +1,13 @@
 package com.coderdream.freeapps;
 
 import com.coderdream.freeapps.model.App;
+import com.coderdream.freeapps.model.AppBrief;
 import com.coderdream.freeapps.model.Description;
 import com.coderdream.freeapps.model.FreeHistory;
 import com.coderdream.freeapps.service.AppService;
 import com.coderdream.freeapps.service.DescriptionService;
 import com.coderdream.freeapps.service.FreeHistoryService;
+import com.coderdream.freeapps.util.BaseUtils;
 import com.coderdream.freeapps.util.CdFileUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.BeanUtils;
@@ -68,6 +70,25 @@ public class FreeHistoryServiceTest {
         System.out.println("结果：" + b);
     }
 
+    @Test
+    public void testUpdateRecommendFlagBatch() {
+        List<FreeHistory> list = new ArrayList<>();
+        List<AppBrief> appBriefList = BaseUtils.genBrief();
+
+        FreeHistory freeHistory;
+        for (AppBrief appBrief : appBriefList) {
+            freeHistory = new FreeHistory();
+            freeHistory.setAppId(appBrief.getAppId());
+            freeHistory.setDataSource("cl");
+            freeHistory.setFreeDate(new Date());
+            freeHistory.setRecommendFlag(1);
+            list.add(freeHistory);
+        }
+
+        int b = freeHistoryService.updateRecommendFlagBatch(list);  //boolean 操作是否成功
+        System.out.println("结果：" + b);
+    }
+
 
     @Test
     public void testInsertOrUpdateBatch_2022() {
@@ -75,8 +96,8 @@ public class FreeHistoryServiceTest {
         //INSERT INTO user ( id,title, age, email ) VALUES ( ?, ?, ?, ? )
 //        List<FreeHistory> list = new ArrayList<>();
         String fileName = "D:\\12_iOS_Android\\1024_data\\2022-06-29.txt";
-        fileName = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024\\2022";
-        fileName += File.separatorChar + "202302" + File.separatorChar + "2023-02-18.txt";
+        fileName = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024\\2023";
+        fileName += File.separatorChar + "202304" + File.separatorChar + "2023-04-13.txt";
         List<FreeHistory> freeHistoryList = CdFileUtils.getFreeHistoryFromCL(fileName);
         for (FreeHistory freeHistory : freeHistoryList) {
             System.out.println(freeHistory);
@@ -121,8 +142,8 @@ public class FreeHistoryServiceTest {
         //INSERT INTO user ( id,title, age, email ) VALUES ( ?, ?, ?, ? )
 //        List<FreeHistory> list = new ArrayList<>();
         String fileName = "D:\\12_iOS_Android\\1024_data\\2022-06-29.txt";
-        fileName = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024\\2022";
-        fileName += File.separatorChar + "202206" + File.separatorChar + "2022-06-30.txt";
+        fileName = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024\\2023";
+        fileName += File.separatorChar + "202305" + File.separatorChar + "2023-05-02.txt";
         List<FreeHistory> freeHistoryList = CdFileUtils.getFreeHistoryFromCL(fileName);
         for (FreeHistory freeHistory : freeHistoryList) {
             System.out.println(freeHistory);
@@ -200,6 +221,11 @@ public class FreeHistoryServiceTest {
             int b = freeHistoryService.insertOrUpdateBatch(freeHistoryList);  //boolean 操作是否成功
             System.out.println("结果：" + b);
         }
+    }
 
+    @Test
+    public void testProcessWechat() {
+        int b = freeHistoryService.processWechat();  //boolean 操作是否成功
+        System.out.println("结果：" + b);
     }
 }

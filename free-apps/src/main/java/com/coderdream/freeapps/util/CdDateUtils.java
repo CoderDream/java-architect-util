@@ -40,7 +40,7 @@ public class CdDateUtils {
             Date endDate = dateFormat.parse("2023-04-05");
 
             List<Date> dateList = CdDateUtils.getDatesBetweenUsingJava7(startDate, endDate);
-            for (Date d : dateList            ) {
+            for (Date d : dateList) {
                 System.out.println(dateFormat.format(d));
             }
 
@@ -61,6 +61,35 @@ public class CdDateUtils {
             calendar.add(Calendar.DATE, 1);
             Date result = calendar.getTime();
             datesInRange.add(result);
+        }
+        return datesInRange;
+    }
+
+    /**
+     * 含尾不含头
+     * @param startDateStr
+     * @param endDateStr
+     * @return
+     */
+    public static List<String> getDatesBetween(String startDateStr, String endDateStr) {
+        List<String> datesInRange = new ArrayList<>();
+        try {
+            Date startDate = new SimpleDateFormat("yyyy-MM-dd").parse(startDateStr);
+            Date endDate = new SimpleDateFormat("yyyy-MM-dd").parse(endDateStr);
+
+            Calendar calendar = new GregorianCalendar();
+            calendar.setTime(startDate);
+
+            Calendar endCalendar = new GregorianCalendar();
+            endCalendar.setTime(endDate);
+
+            while (calendar.before(endCalendar)) {
+                calendar.add(Calendar.DATE, 1);
+                Date result = calendar.getTime();
+                datesInRange.add(new SimpleDateFormat("yyyy-MM-dd").format(result));
+            }
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
         }
         return datesInRange;
     }

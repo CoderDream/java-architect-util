@@ -12,7 +12,6 @@ import java.util.Random;
 
 public class DownloadPictureUtil {
 
-
     private static final Logger logger = org.slf4j.LoggerFactory.getLogger(
         DownloadPictureUtil.class);
 
@@ -107,11 +106,16 @@ public class DownloadPictureUtil {
                 File pathFile = new File(path);
                 File file = new File(path + File.separator + filename);
                 if (!pathFile.exists()) {
+
+                    logger.info(" =========== 创建文件夹 " + path);
                     pathFile.mkdirs();
                     file.createNewFile();
                 }
                 if (!file.exists()) {
+                    logger.info(" =========== 创建文件 " + filename);
                     file.createNewFile();
+                } else {
+                    continue;
                 }
                 //通过流复制图片
                 FileOutputStream outputStream = new FileOutputStream(file);
@@ -125,6 +129,7 @@ public class DownloadPictureUtil {
                 logger.info(" =========== 操作成功" + pictureUrl);
             } catch (Exception e) {
                 if (tryTime < tryTimes) {
+                    logger.info(" =========== 图片下载失败，重试：" + tryTime);
                     tryFlag = true;
                 }
                 e.printStackTrace();

@@ -70,6 +70,11 @@ public class PriceHistory implements Serializable {
     private Integer rateAmount;
 
     /**
+     * 换算后的价格
+     */
+    private Integer price;
+
+    /**
      * 国区价格
      */
     private Integer priceCn;

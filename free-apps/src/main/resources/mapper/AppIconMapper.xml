@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coderdream.freeapps.mapper.AppIconMapper">
+
+    <resultMap id="BaseResultMap" type="com.coderdream.freeapps.model.AppIcon">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="appId" column="app_id" jdbcType="VARCHAR"/>
+            <result property="filename" column="filename" jdbcType="VARCHAR"/>
+            <result property="appIconUrl" column="app_icon_url" jdbcType="OTHER"/>
+            <result property="downloadFlag" column="download_flag" jdbcType="TINYINT"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="delFlag" column="del_flag" jdbcType="INTEGER"/>
+            <result property="createUserCode" column="create_user_code" jdbcType="VARCHAR"/>
+            <result property="createUserName" column="create_user_name" jdbcType="VARCHAR"/>
+            <result property="createdDate" column="created_date" jdbcType="TIMESTAMP"/>
+            <result property="lastModifiedCode" column="last_modified_code" jdbcType="VARCHAR"/>
+            <result property="lastModifiedName" column="last_modified_name" jdbcType="VARCHAR"/>
+            <result property="lastModifiedDate" column="last_modified_date" jdbcType="TIMESTAMP"/>
+            <result property="version" column="version" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,app_id,filename,
+        app_icon_url,download_flag,remark,
+        del_flag,create_user_code,create_user_name,
+        created_date,last_modified_code,last_modified_name,
+        last_modified_date,version
+    </sql>
+
+    <insert id="insertOrUpdateBatch">
+        insert into t_app_icon
+        (`app_id`,
+        `filename`,
+        `app_icon_url`,
+        `download_flag`,
+        `remark`,
+        `del_flag`,
+        `create_user_code`,
+        `create_user_name`,
+        `created_date`,
+        `last_modified_code`,
+        `last_modified_name`,
+        `last_modified_date`,
+        `version`)
+        values
+        <foreach collection="entities" item="item" separator=",">
+            (
+            #{item.appId,jdbcType=VARCHAR},
+            #{item.filename,jdbcType=VARCHAR},
+            #{item.appIconUrl,jdbcType=VARCHAR},
+            #{item.downloadFlag,jdbcType=VARCHAR},
+            #{item.remark,jdbcType=VARCHAR},
+            #{item.delFlag,jdbcType=NUMERIC},
+            #{item.createUserCode,jdbcType=VARCHAR},
+            #{item.createUserName,jdbcType=VARCHAR},
+            #{item.createdDate,jdbcType=TIMESTAMP},
+            #{item.lastModifiedCode,jdbcType=VARCHAR},
+            #{item.lastModifiedName,jdbcType=VARCHAR},
+            #{item.lastModifiedDate,jdbcType=TIMESTAMP},
+            #{item.version,jdbcType=VARCHAR}
+            )
+        </foreach>
+        on duplicate key update
+        `app_icon_url`=values(`app_icon_url`),
+        `download_flag`=values(`download_flag`),
+        `remark`=values(`remark`),
+        `del_flag`=values(`del_flag`),
+        `create_user_code`=values(`create_user_code`),
+        `create_user_name`=values(`create_user_name`),
+        `created_date`=values(`created_date`),
+        `last_modified_code`=values(`last_modified_code`),
+        `last_modified_name`=values(`last_modified_name`),
+        `last_modified_date`=values(`last_modified_date`),
+        `version`=values(`version`)
+    </insert>
+</mapper>

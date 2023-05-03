@@ -15,6 +15,7 @@
         <result property="ratingStr" column="rating_str" jdbcType="VARCHAR"/>
         <result property="rating" column="rating" jdbcType="DECIMAL"/>
         <result property="rateAmount" column="rate_amount" jdbcType="INTEGER"/>
+        <result property="price" column="price" jdbcType="INTEGER"/>
         <result property="priceCn" column="price_cn" jdbcType="INTEGER"/>
         <result property="priceUs" column="price_us" jdbcType="DECIMAL"/>
         <result property="priceStr" column="price_str" jdbcType="VARCHAR"/>
@@ -391,6 +392,7 @@
         `rating_str`,
         `rating`,
         `rate_amount`,
+        `price`,
         `price_cn`,
         `price_us`,
         `price_str`,
@@ -442,6 +444,7 @@
             #{item.ratingStr,jdbcType=VARCHAR},
             #{item.rating,jdbcType=DECIMAL},
             #{item.rateAmount,jdbcType=NUMERIC},
+            #{item.price,jdbcType=NUMERIC},
             #{item.priceCn,jdbcType=NUMERIC},
             #{item.priceUs,jdbcType=DECIMAL},
             #{item.priceStr,jdbcType=VARCHAR},
@@ -491,6 +494,7 @@
         `rating_str`=values(`rating_str`),
         `rating`=values(`rating`),
         `rate_amount`=values(`rate_amount`),
+        `price`=values(`price`),
         `price_cn`=values(`price_cn`),
         `price_us`=values(`price_us`),
         `price_str`=values(`price_str`),

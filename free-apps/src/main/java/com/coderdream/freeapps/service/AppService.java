@@ -32,14 +32,18 @@ public interface AppService {
     // 删除
     Boolean delete(String id);
 
-
     int insertSelective(App app);
 
     int insertOrUpdateBatch(List<App> appList);
 
     List<App> selectList(App app);
 
+    List<App> selectNoAppIconUrl();
+
+    List<App> selectNoUsFlag();
+
     List<App> selectNoSnapshot();
+
     List<App> selectDeletedAppList();
 
     /**
@@ -51,4 +55,9 @@ public interface AppService {
     List<App> selectTodoList(App app);
 
     IPage<App> selectPage(Page<App> page);
+
+    int processNoUsFlag();
+    int processWechat();
+
+    int genDailyPpt();
 }

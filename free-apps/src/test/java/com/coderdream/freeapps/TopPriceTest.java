@@ -2,6 +2,7 @@ package com.coderdream.freeapps;
 
 import com.coderdream.freeapps.model.App;
 import com.coderdream.freeapps.service.*;
+import com.coderdream.freeapps.util.CdDateUtils;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,7 @@ import java.util.List;
 
 @SpringBootTest
 public class TopPriceTest {
+
     private static final Logger logger = org.slf4j.LoggerFactory.getLogger(TopPriceTest.class);
     @Autowired
     private TopPriceService topPriceService;
@@ -37,25 +39,28 @@ public class TopPriceTest {
     public void testDailyPriceHandlerTotal() {
 
         List<String> list = Arrays.asList(
-                "2023-03-04",
-                "2023-03-05",
-                "2023-03-06",
-                "2023-03-07",
-                "2023-03-08",
-                "2023-03-09",
-                "2023-03-10",
-                "2023-03-11",
-                "2023-03-12",
-                "2023-03-13"
+                "2023-04-09"
+//            ,
+//                "2023-03-06"
+//                ,
+//            "2023-03-07",
+//            "2023-03-08",
+//            "2023-03-09",
+//            "2023-03-10",
+//            "2023-03-11",
+//            "2023-03-12",
+//            "2023-03-13"
         );
-        List<App> newList;
-        App appNew;
+
+        list = CdDateUtils.getDatesBetween("2023-04-11", "2023-04-23");
         if (!CollectionUtils.isEmpty(list)) {
             for (String dateStr : list) {
-
                 topPriceService.process(dateStr);
             }
         }
+
+//        String dateStr = "";
+//        topPriceService.process(dateStr);
 
     }
 }

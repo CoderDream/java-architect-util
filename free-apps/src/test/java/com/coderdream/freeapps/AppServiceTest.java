@@ -3,6 +3,7 @@ package com.coderdream.freeapps;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.coderdream.freeapps.dto.AppQueryPageDTO;
+import com.coderdream.freeapps.dto.TopList;
 import com.coderdream.freeapps.model.App;
 import com.coderdream.freeapps.model.CrawlerHistory;
 import com.coderdream.freeapps.model.FreeHistory;
@@ -11,6 +12,7 @@ import com.coderdream.freeapps.service.*;
 import com.coderdream.freeapps.util.Constants;
 import com.coderdream.freeapps.util.JSoupUtil;
 import com.coderdream.freeapps.util.CdListUtils;
+import com.coderdream.freeapps.util.ppt.excelutil.CdExcelUtils;
 import com.coderdream.freeapps.vo.AppVO;
 import org.slf4j.Logger;
 import org.springframework.beans.BeanUtils;
@@ -90,7 +92,7 @@ public class AppServiceTest {
         List<FreeHistory> freeHistoryList = freeHistoryService.selectList(freeHistoryReqDto);
         if (!CollectionUtils.isEmpty(freeHistoryList)) {
             for (FreeHistory freeHistory :
-                    freeHistoryList) {
+                freeHistoryList) {
                 app = new App();
                 BeanUtils.copyProperties(freeHistory, app);
                 list.add(app);
@@ -152,7 +154,7 @@ public class AppServiceTest {
 //                "id1050297004",
 //                "id6443426852",
 //                "id1583550659",
-                "id1423546743"
+            "id1423546743"
         );
         List<App> newList;
         App appNew;
@@ -177,6 +179,47 @@ public class AppServiceTest {
         }
     }
 
+    @Test
+    public void testSelectNoUsFlag_01() {
+        List<App> noSnapshotListApp = appService.selectNoUsFlag();
+        List<App> newList;
+
+        if (!CollectionUtils.isEmpty(noSnapshotListApp)) {
+            logger.info("本次任务开始前有效的应用数: " + noSnapshotListApp.size());
+            // 分批处理
+            List<List<App>> lists = CdListUtils.splitTo(noSnapshotListApp, Constants.BATCH_INSERT_UPDATE_ROWS);
+            for (List<App> list : lists) {
+                if (!CollectionUtils.isEmpty(list)) {
+                    newList = new ArrayList<>();
+                    if (!CollectionUtils.isEmpty(list)) {
+                        newList = new ArrayList<>();
+                        for (App tempApp : list) {
+                            App appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), tempApp.getUsFlag());
+                            newList.add(appNew);
+
+                            Integer period = new Random().nextInt(2000) + 500;
+                            try {
+                                Thread.sleep(period);   // 休眠3秒
+                            } catch (InterruptedException e) {
+                                throw new RuntimeException(e);
+                            }
+                        }
+
+                        Integer period = new Random().nextInt(4000) + 500;
+                        try {
+                            Thread.sleep(period);   // 休眠3秒
+                        } catch (InterruptedException e) {
+                            throw new RuntimeException(e);
+                        }
+                        if (!CollectionUtils.isEmpty(newList)) {
+                            System.out.println("###");
+                            appService.insertOrUpdateBatch(newList);
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     @Test
     public void testCrawlerAppList_01() {
@@ -214,6 +257,90 @@ public class AppServiceTest {
                             System.out.println("###");
                             appService.insertOrUpdateBatch(newList);
                         }
+                    }
+                }
+            }
+        }
+    }
+    //
+
+    @Test
+    public void testCrawlerAppList_02() {
+
+         List<TopList> totalTopList = CdExcelUtils.genTotalTopList();
+        List<App> newList;
+
+        if (!CollectionUtils.isEmpty(totalTopList)) {
+            logger.info("本次任务开始前有效的应用数: " + totalTopList.size());
+            // 分批处理
+            List<List<TopList>> lists = CdListUtils.splitTo(totalTopList, Constants.BATCH_INSERT_UPDATE_ROWS);
+            for (List<TopList> list : lists) {
+                if (!CollectionUtils.isEmpty(list)) {
+                    newList = new ArrayList<>();
+                    if (!CollectionUtils.isEmpty(list)) {
+                        newList = new ArrayList<>();
+                        for (TopList tempApp : list) {
+                            App appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), null);
+                            newList.add(appNew);
+
+//                            Integer period = new Random().nextInt(2000) + 500;
+//                            try {
+//                                Thread.sleep(period);   // 休眠3秒
+//                            } catch (InterruptedException e) {
+//                                throw new RuntimeException(e);
+//                            }
+                        }
+
+//                        Integer period = new Random().nextInt(4000) + 500;
+//                        try {
+//                            Thread.sleep(period);   // 休眠3秒
+//                        } catch (InterruptedException e) {
+//                            throw new RuntimeException(e);
+//                        }
+                        if (!CollectionUtils.isEmpty(newList)) {
+                            System.out.println("###");
+                            appService.insertOrUpdateBatch(newList);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    @Test
+    public void testCrawlerNoAppIconUrlAppList() {
+        List<App> noSnapshotListApp = appService.selectNoAppIconUrl();
+        List<App> newList;
+
+        if (!CollectionUtils.isEmpty(noSnapshotListApp)) {
+            logger.info("本次任务开始前无截图的应用数: " + noSnapshotListApp.size());
+            // 分批处理
+            List<List<App>> lists = CdListUtils.splitTo(noSnapshotListApp, Constants.BATCH_INSERT_UPDATE_ROWS);
+            for (List<App> list : lists) {
+                if (!CollectionUtils.isEmpty(list)) {
+                    newList = new ArrayList<>();
+                    for (App tempApp : list) {
+                        App appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), tempApp.getUsFlag());
+                        newList.add(appNew);
+
+                        Integer period = new Random().nextInt(400) + 100;
+                        try {
+                            Thread.sleep(period);   // 休眠3秒
+                        } catch (InterruptedException e) {
+                            throw new RuntimeException(e);
+                        }
+                    }
+
+                    Integer period = new Random().nextInt(4000) + 500;
+                    try {
+                        Thread.sleep(period);   // 休眠3秒
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                    if (!CollectionUtils.isEmpty(newList)) {
+                        System.out.println("###");
+                        appService.insertOrUpdateBatch(newList);
                     }
                 }
             }
@@ -321,7 +448,7 @@ public class AppServiceTest {
 //                "id1400641344" // 无中英文
 //                ,
 //               "id1095539172" // Rating 1.2K id1095539172
-                "id688983474"
+            "id688983474"
         );
         List<App> newList;
         List<PriceHistory> priceHistoryList;
@@ -453,5 +580,17 @@ public class AppServiceTest {
 //                }
             }
         }
+    }
+
+    @Test
+    public void testProcessWechat() {
+        int result = appService.processWechat();
+        logger.info(result + "");
+    }
+
+    @Test
+    public void testGenDailyPpt() {
+        int result = appService.genDailyPpt();
+        logger.info(result + "");
     }
 }

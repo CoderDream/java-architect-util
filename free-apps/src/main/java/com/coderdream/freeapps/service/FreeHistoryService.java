@@ -40,5 +40,9 @@ public interface FreeHistoryService extends IService<FreeHistory> {
 
     int insertOrUpdateBatch(List<FreeHistory> freeHistoryList);
 
+    int updateRecommendFlagBatch(List<FreeHistory> freeHistoryList);
+
     List<FreeHistory> selectList(FreeHistory freeHistory);
+
+    int processWechat();
 }

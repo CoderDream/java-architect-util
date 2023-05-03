@@ -67,7 +67,6 @@ public class SnapshotWechatUtils {
 
         File file;
         try {
-
             System.out.println("####url:\t" + url);
             driver.get(url);
             Thread.sleep(5000);  //等待页面加载完成，后续写代码注意，如果页面加载未完成，可能导致页面元素找不到

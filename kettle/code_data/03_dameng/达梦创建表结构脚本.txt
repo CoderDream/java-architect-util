@@ -1,0 +1,1064 @@
+-- 右键，执行 SQL 脚本【不是执行SQL语句】
+--  object_code_data.alarm_log definition
+
+-- drop table
+
+-- drop table object_code_data.alarm_log;
+
+create table object_code_data.alarm_log (
+	id bigint not null IDENTITY(1, 1),
+	alarm_type varchar(50),
+	rule_id bigint,
+	rule_name varchar(50),
+	condition_id bigint,
+	condition_name varchar(50),
+	object_type_full_code varchar(20),
+	object_type_name varchar(100),
+	object_full_code varchar(20),
+	object_name varchar(100),
+	object_source_code varchar(20),
+	attr_item_name varchar(100),
+	attr_item_full_code varchar(50),
+	item_value dec,
+	threshold_value dec,
+	diff_value dec,
+	duration dec,
+	happen_time timestamp,
+	create_time timestamp,
+	color varchar(20),
+	constraint cons134220435 primary key (id)
+);
+create unique index index033559382 on object_code_data.alarm_log (id);
+create unique index index03355383 on object_code_data.alarm_log (condition_id,attr_item_full_code,happen_time);
+create unique index index043742319678300 on object_code_data.alarm_log (id);
+
+
+-- object_code_data.alarm_rule definition
+
+-- drop table
+
+-- drop table object_code_data.alarm_rule;
+
+create table object_code_data.alarm_rule (
+	id bigint not null IDENTITY(1, 1),
+	name varchar(50),
+	object_type_full_code varchar(20),
+	attr_full_code varchar(20),
+	icon_path varchar(50),
+	"type" tinyint default 1 not null,
+	status tinyint default 1 not null,
+	create_time timestamp,
+	update_time timestamp,
+	constraint cons134220433 primary key (id)
+);
+create unique index index033559380 on object_code_data.alarm_rule (id);
+create unique index index033559381 on object_code_data.alarm_rule (name);
+create unique index index043740956115700 on object_code_data.alarm_rule (id);
+
+
+-- object_code_data.alarm_rule_condition definition
+
+-- drop table
+
+-- drop table object_code_data.alarm_rule_condition;
+COMMIT;
+create table object_code_data.alarm_rule_condition (
+	id bigint not null IDENTITY(1, 1),
+	rule_id bigint,
+	name varchar(50),
+	lower_limit tinyint default 1 not null,
+	lower_threshold tinyint default 1 not null,
+	lower_value varchar(20),
+	upper_limit tinyint default 1 not null,
+	upper_threshold tinyint default 1 not null,
+	upper_value varchar(20),
+	color varchar(20),
+	constraint cons134220431 primary key (id)
+);
+COMMIT;
+create unique index index033559378 on object_code_data.alarm_rule_condition (id);
+COMMIT;
+create unique index index03359379 on object_code_data.alarm_rule_condition (rule_id,name);
+COMMIT;
+create unique index index043739824036500 on object_code_data.alarm_rule_condition (id);
+COMMIT;
+
+
+-- object_code_data.attr_item_meta_info definition
+
+-- drop table
+
+-- drop table object_code_data.attr_item_meta_info;
+
+create table object_code_data.attr_item_meta_info (
+	id bigint not null IDENTITY(1, 1),
+	attr_item_name varchar(100) not null,
+	attr_item_label varchar(500),
+	attr_item_full_code varchar(50) not null,
+	attr_item_code varchar(50) not null,
+	data_type varchar(255),
+	update_time timestamp,
+	create_time timestamp,
+	remark varchar(50),
+	object_full_code varchar(20) not null,
+	attr_full_code varchar(20) not null,
+	hash_rate_level varchar(20) not null,
+	data_source varchar(20) not null,
+	dimension varchar(255),
+	constraint cons134220429 primary key (id)
+);
+create index aimi_pk_afc on object_code_data.attr_item_meta_info (attr_full_code);
+create index aimi_pk_ofc on object_code_data.attr_item_meta_info (object_full_code);
+create unique index index033559376 on object_code_data.attr_item_meta_info (id);
+create unique index index03355377 on object_code_data.attr_item_meta_info (attr_item_full_code);
+create index index033559390 on object_code_data.attr_item_meta_info (attr_full_code);
+create unique index index043734347408100 on object_code_data.attr_item_meta_info (id);
+
+
+-- object_code_data.attr_meta_info definition
+
+-- drop table
+
+-- drop table object_code_data.attr_meta_info;
+
+create table object_code_data.attr_meta_info (
+	id bigint not null IDENTITY(1, 1),
+	attr_name varchar(100) not null,
+	attr_label varchar(500) not null,
+	attr_code varchar(20) not null,
+	attr_full_code varchar(20) not null,
+	attr_type_full_code varchar(20) not null,
+	data_type varchar(255),
+	hash_rate_level varchar(20),
+	data_source varchar(20),
+	dimension varchar(255),
+	common_flag int default 1 not null,
+	display_flag int default 1 not null,
+	update_time timestamp,
+	create_time timestamp,
+	remark varchar(50),
+	constraint cons134220427 primary key (id)
+);
+create index ami_pk_atfc on object_code_data.attr_meta_info (attr_type_full_code);
+create unique index index033559374 on object_code_data.attr_meta_info (id);
+create unique index indx33559375 on object_code_data.attr_meta_info (attr_full_code);
+create index index033559387 on object_code_data.attr_meta_info (attr_type_full_code);
+create unique index index043682354632100 on object_code_data.attr_meta_info (id);
+
+
+-- object_code_data.attr_type_meta_info definition
+
+-- drop table
+
+-- drop table object_code_data.attr_type_meta_info;
+
+create table object_code_data.attr_type_meta_info (
+	id bigint not null IDENTITY(1, 1),
+	attr_type_name varchar(100) not null,
+	attr_type_label varchar(500) not null,
+	attr_type_code varchar(20) not null,
+	attr_type_full_code varchar(20) not null,
+	common_flag tinyint default 1 not null,
+	update_time timestamp,
+	create_time timestamp,
+	remark varchar(50),
+	object_type_full_code varchar(20) not null,
+	structure_type_code varchar(20) not null,
+	constraint cons134220425 primary key (id)
+);
+create index atmi_pk_otfc on object_code_data.attr_type_meta_info (object_type_full_code);
+create index fk_attype on object_code_data.attr_type_meta_info (structure_type_code);
+create unique index index033559372 on object_code_data.attr_type_meta_info (id);
+create unique index index03559373 on object_code_data.attr_type_meta_info (attr_type_full_code);
+create index index043680501936500 on object_code_data.attr_type_meta_info (attr_type_code);
+create unique index index043680778656400 on object_code_data.attr_type_meta_info (id);
+
+
+-- object_code_data.error_data_history definition
+
+-- drop table
+
+-- drop table object_code_data.error_data_history;
+
+create table object_code_data.error_data_history (
+	erro_id varchar(255) not null,
+	attr_item_full_code varchar(255),
+	attr_item_name varchar(255),
+	send_id varchar(255),
+	data_type varchar(255),
+	remark text
+);
+
+
+-- object_code_data.hfdata definition
+
+-- drop table
+
+-- drop table object_code_data.hfdata;
+
+create table object_code_data.hfdata (
+	adid dec not null,
+	dt timestamp not null,
+	t timestamp not null,
+	d dec not null,
+	fp dec,
+	ftrand dec,
+	s double,
+	constraint cons134220424 primary key (adid,dt,t)
+);
+create unique index index033559371 on object_code_data.hfdata (adid,dt,t);
+create unique index index043678256285000 on object_code_data.hfdata (adid,dt,t);
+
+
+-- object_code_data.hourdb definition
+
+-- drop table
+
+-- drop table object_code_data.hourdb;
+
+create table object_code_data.hourdb (
+	senid dec not null,
+	"time" timestamp not null,
+	v dec,
+	avgv dec,
+	maxv dec,
+	maxt timestamp,
+	minv dec,
+	mint timestamp,
+	s dec,
+	avgs dec,
+	maxs dec,
+	mins dec,
+	span dec default 1,
+	dq dec,
+	constraint cons134220423 primary key (senid,"time")
+);
+create unique index index033559370 on object_code_data.hourdb (senid,"time");
+create unique index index043677382390700 on object_code_data.hourdb (senid,"time");
+
+
+-- object_code_data.import_data_error_detail definition
+
+-- drop table
+
+-- drop table object_code_data.import_data_error_detail;
+
+create table object_code_data.import_data_error_detail (
+	id bigint not null IDENTITY(1, 1),
+	task_id varchar(255),
+	file_type varchar(255),
+	data_type varchar(255),
+	error_info clob,
+	constraint cons134220422 primary key (id)
+);
+create unique index index033559369 on object_code_data.import_data_error_detail (id);
+create unique index index043675727310500 on object_code_data.import_data_error_detail (id);
+
+
+-- object_code_data.import_data_history definition
+
+-- drop table
+
+-- drop table object_code_data.import_data_history;
+
+create table object_code_data.import_data_history (
+	id bigint not null IDENTITY(1, 1),
+	"type" varchar(50),
+	name varchar(255),
+	status varchar(50),
+	create_time timestamp,
+	create_user varchar(255),
+	complete_time timestamp,
+	error_flag tinyint default 0,
+	erro_id varchar(255),
+	remark varchar(3900),
+	constraint cons134220421 primary key (id)
+);
+create unique index index033559368 on object_code_data.import_data_history (id);
+create unique index index043673384292800 on object_code_data.import_data_history (id);
+
+
+-- object_code_data.monitdata_pptn_sw definition
+
+-- drop table
+
+-- drop table object_code_data.monitdata_pptn_sw;
+
+create table object_code_data.monitdata_pptn_sw (
+	id bigint not null IDENTITY(1, 1),
+	stcd varchar(255) not null,
+	tm timestamp not null,
+	drp dec,
+	intv dec,
+	pdr dec,
+	dyp dec,
+	wth varchar(255),
+	constraint cons134220419 primary key (id)
+);
+create unique index index033559366 on object_code_data.monitdata_pptn_sw (id);
+create unique index index03359367 on object_code_data.monitdata_pptn_sw (stcd,tm);
+create unique index index043143898558400 on object_code_data.monitdata_pptn_sw (id);
+
+
+-- object_code_data.monitdata_river_sw definition
+
+-- drop table
+
+-- drop table object_code_data.monitdata_river_sw;
+
+create table object_code_data.monitdata_river_sw (
+	id bigint not null IDENTITY(1, 1),
+	stcd varchar(255) not null,
+	tm timestamp not null,
+	q dec,
+	xsa dec,
+	xsavv dec,
+	xsmxv dec,
+	flwchrcd varchar(255),
+	wptn varchar(255),
+	msqmt varchar(255),
+	msamt varchar(255),
+	msvmt varchar(255),
+	constraint cons134220446 primary key (id)
+);
+create unique index index033559453 on object_code_data.monitdata_river_sw (id);
+create unique index index03359454 on object_code_data.monitdata_river_sw (stcd,tm);
+create unique index index087414964653300 on object_code_data.monitdata_river_sw (id);
+
+
+-- object_code_data.monitdata_shylres_rsvr definition
+
+-- drop table
+
+-- drop table object_code_data.monitdata_shylres_rsvr;
+
+create table object_code_data.monitdata_shylres_rsvr (
+	id bigint not null IDENTITY(1, 1),
+	stcd varchar(255) not null,
+	tm timestamp not null,
+	rz dec,
+	inq dec,
+	w dec,
+	otq dec,
+	rwchrcd varchar(255),
+	rwptn varchar(255),
+	inqdr varchar(255),
+	msqmt varchar(255),
+	blrz dec,
+	flag varchar(255)
+);
+create unique index index0339312 on object_code_data.monitdata_shylres_rsvr (stcd,tm);
+
+
+-- object_code_data.object_attr_item_index definition
+
+-- drop table
+
+-- drop table object_code_data.object_attr_item_index;
+
+create table object_code_data.object_attr_item_index (
+	id bigint not null IDENTITY(1, 1),
+	object_full_code varchar(255),
+	attr_item_full_code varchar(255),
+	attr_item_name varchar(255),
+	data_type varchar(255),
+	constraint cons134220448 primary key (id)
+);
+create unique index index033559457 on object_code_data.object_attr_item_index (id);
+create unique index index03359458 on object_code_data.object_attr_item_index (object_full_code,attr_item_full_code);
+create unique index index088009525741700 on object_code_data.object_attr_item_index (id);
+
+
+-- object_code_data.object_b_curve definition
+
+-- drop table
+
+-- drop table object_code_data.object_b_curve;
+
+create table object_code_data.object_b_curve (
+	attr_item_full_code varchar(255) not null,
+	value clob,
+	constraint cons134220416 primary key (attr_item_full_code)
+);
+create unique index index033559363 on object_code_data.object_b_curve (attr_item_full_code);
+create unique index index043143264801200 on object_code_data.object_b_curve (attr_item_full_code);
+
+
+-- object_code_data.object_b_file definition
+
+-- drop table
+
+-- drop table object_code_data.object_b_file;
+
+create table object_code_data.object_b_file (
+	attr_item_full_code varchar(255) not null,
+	value blob,
+	constraint cons134220415 primary key (attr_item_full_code)
+);
+create unique index index033559362 on object_code_data.object_b_file (attr_item_full_code);
+create unique index index043143066465200 on object_code_data.object_b_file (attr_item_full_code);
+
+
+-- object_code_data.object_b_geo definition
+
+-- drop table
+
+-- drop table object_code_data.object_b_geo;
+
+create table object_code_data.object_b_geo (
+	attr_item_full_code varchar(255) not null,
+	value clob,
+	constraint cons134220454 primary key (attr_item_full_code)
+);
+create unique index index033559469 on object_code_data.object_b_geo (attr_item_full_code);
+create unique index index091454086101700 on object_code_data.object_b_geo (attr_item_full_code);
+
+
+-- object_code_data.object_b_json definition
+
+-- drop table
+
+-- drop table object_code_data.object_b_json;
+
+create table object_code_data.object_b_json (
+	attr_item_full_code varchar(255) not null,
+	name varchar(255),
+	value clob,
+	constraint cons134220413 primary key (attr_item_full_code)
+);
+create unique index index033559360 on object_code_data.object_b_json (attr_item_full_code);
+create unique index index043142549743500 on object_code_data.object_b_json (attr_item_full_code);
+
+
+-- object_code_data.object_b_linestring definition
+
+-- drop table
+
+-- drop table object_code_data.object_b_linestring;
+
+create table object_code_data.object_b_linestring (
+	id bigint not null IDENTITY(1, 1),
+	attr_item_full_code varchar(255) not null,
+	geometry clob,
+	coordinates ST_Geometry,
+	properties clob,
+	constraint cons134220452 primary key (id)
+);
+
+create unique index index033559467 on object_code_data.object_b_linestring (id);
+create unique index index033559468 on object_code_data.object_b_linestring (attr_item_full_code);
+create unique index index091453968301200 on object_code_data.object_b_linestring (id);
+
+
+-- object_code_data.object_b_number definition
+
+-- drop table
+
+-- drop table object_code_data.object_b_number;
+
+create table object_code_data.object_b_number (
+	attr_item_full_code varchar(255) not null,
+	value dec,
+	constraint cons134220410 primary key (attr_item_full_code)
+);
+create unique index index033559357 on object_code_data.object_b_number (attr_item_full_code);
+create unique index index043141977544100 on object_code_data.object_b_number (attr_item_full_code);
+
+
+-- object_code_data.object_b_point definition
+
+-- drop table
+
+-- drop table object_code_data.object_b_point;
+
+create table object_code_data.object_b_point (
+	id bigint not null IDENTITY(1, 1),
+	attr_item_full_code varchar(255) not null,
+	geometry clob,
+	coordinates st_geometry,
+	properties clob,
+	constraint cons134220451 primary key (id)
+);
+create unique index index033559466 on object_code_data.object_b_point (id);
+create unique index index091453841534800 on object_code_data.object_b_point (id);
+
+
+-- object_code_data.object_b_polygon definition
+
+-- drop table
+
+-- drop table object_code_data.object_b_polygon;
+
+create table object_code_data.object_b_polygon (
+	id bigint not null IDENTITY(1, 1),
+	attr_item_full_code varchar(255) not null,
+	geometry clob,
+	coordinates ST_Geometry,
+	properties clob,
+	constraint cons134220450 primary key (id)
+);
+create unique index index033559465 on object_code_data.object_b_polygon (id);
+create unique index index091453743284700 on object_code_data.object_b_polygon (id);
+
+
+-- object_code_data.object_b_string definition
+
+-- drop table
+
+-- drop table object_code_data.object_b_string;
+
+create table object_code_data.object_b_string (
+	attr_item_full_code varchar(255) not null,
+	value varchar(3900) not null,
+	constraint cons134220407 primary key (attr_item_full_code)
+);
+create unique index index033559354 on object_code_data.object_b_string (attr_item_full_code);
+create unique index index043141342346500 on object_code_data.object_b_string (attr_item_full_code);
+
+
+-- object_code_data.object_b_text definition
+
+-- drop table
+
+-- drop table object_code_data.object_b_text;
+
+create table object_code_data.object_b_text (
+	attr_item_full_code varchar(255) not null,
+	value varchar(2096),
+	constraint cons134220406 primary key (attr_item_full_code)
+);
+create unique index index033559353 on object_code_data.object_b_text (attr_item_full_code);
+create unique index index043141139745200 on object_code_data.object_b_text (attr_item_full_code);
+
+
+-- object_code_data.object_compose_info definition
+
+-- drop table
+
+-- drop table object_code_data.object_compose_info;
+
+create table object_code_data.object_compose_info (
+	id bigint not null IDENTITY(1, 1),
+	main_object_type_full_code varchar(20),
+	main_object_type_name varchar(20),
+	main_object_full_code varchar(20),
+	main_object_name varchar(20),
+	comp_object_type_full_code varchar(20),
+	comp_object_type_name varchar(20),
+	comp_object_full_code varchar(20),
+	comp_object_name varchar(20),
+	remark varchar(50),
+	constraint cons134220405 primary key (id)
+);
+create unique index index033559352 on object_code_data.object_compose_info (id);
+create unique index index043140731902300 on object_code_data.object_compose_info (id);
+
+
+-- object_code_data.object_curve_data definition
+
+-- drop table
+
+-- drop table object_code_data.object_curve_data;
+
+create table object_code_data.object_curve_data (
+	attr_item_full_code varchar(255),
+	v0 varchar(255),
+	v1 varchar(255),
+	v2 varchar(255),
+	v3 varchar(255)
+);
+create index id_index on object_code_data.object_curve_data (attr_item_full_code);
+
+
+-- object_code_data.object_curve_index definition
+
+-- drop table
+
+-- drop table object_code_data.object_curve_index;
+
+create table object_code_data.object_curve_index (
+	id bigint not null IDENTITY(1, 1),
+	objclass varchar(255),
+	objname varchar(255),
+	objattrclassid varchar(255),
+	objattrclasssubd varchar(255),
+	curvename varchar(255),
+	nid varchar(255),
+	pid varchar(255),
+	dim varchar(255),
+	dimname varchar(255),
+	constraint cons134220404 primary key (id)
+);
+create unique index index033559351 on object_code_data.object_curve_index (id);
+create unique index index043140599340500 on object_code_data.object_curve_index (id);
+create index nid_dim_index on object_code_data.object_curve_index (nid,dim);
+
+
+-- object_code_data.object_meta_info definition
+
+-- drop table
+
+-- drop table object_code_data.object_meta_info;
+
+create table object_code_data.object_meta_info (
+	id bigint not null IDENTITY(1, 1),
+	object_name varchar(100) not null,
+	object_label varchar(500) not null,
+	object_code varchar(20) not null,
+	object_full_code varchar(20) not null,
+	object_type_full_code varchar(20) not null,
+	object_source_code varchar(100) not null,
+	longitude dec,
+	latitude dec,
+	space_level varchar(20),
+	create_time timestamp,
+	update_time timestamp,
+	remark varchar(50)
+);
+create unique index index0339349 on object_code_data.object_meta_info (object_source_code,object_type_full_code);
+
+
+-- object_code_data.object_type_meta_info definition
+
+-- drop table
+
+-- drop table object_code_data.object_type_meta_info;
+
+create table object_code_data.object_type_meta_info (
+	id bigint not null IDENTITY(1, 1),
+	object_type_name varchar(100) not null,
+	object_type_label varchar(500) not null,
+	object_type_code varchar(20) not null,
+	object_type_full_code varchar(20) not null,
+	update_time timestamp,
+	create_time timestamp,
+	remark varchar(50),
+	constraint cons134220399 primary key (id)
+);
+create unique index index033559346 on object_code_data.object_type_meta_info (id);
+create unique index index033559347 on object_code_data.object_type_meta_info (object_type_full_code);
+create index index043139334423400 on object_code_data.object_type_meta_info (object_type_code);
+create unique index index043139628957900 on object_code_data.object_type_meta_info (id);
+
+
+-- object_code_data.st_stbprp_b definition
+
+-- drop table
+
+-- drop table object_code_data.st_stbprp_b;
+
+create table object_code_data.st_stbprp_b (
+	stcd varchar(8) not null,
+	stnm varchar(30),
+	rvnm varchar(30),
+	hnnm varchar(30),
+	bsnm varchar(30),
+	lgtd dec,
+	lttd dec,
+	stlc varchar(50),
+	addvcd varchar(6),
+	dtmnm varchar(16),
+	dtmel dec,
+	dtpr dec,
+	sttp varchar(2),
+	frgrd varchar(1),
+	esstym varchar(6),
+	bgfrym varchar(6),
+	atcunit varchar(20),
+	admauth varchar(20),
+	locality varchar(10) not null,
+	stbk varchar(1),
+	stazt dec,
+	dstrvm dec,
+	drna dec,
+	phcd varchar(6),
+	usfl varchar(1),
+	comments varchar(200),
+	moditime timestamp,
+	constraint cons134220398 primary key (stcd)
+);
+create unique index index033559345 on object_code_data.st_stbprp_b (stcd);
+create unique index index043139126929500 on object_code_data.st_stbprp_b (stcd);
+
+
+-- object_code_data.structure_type_meta_info definition
+
+-- drop table
+
+-- drop table object_code_data.structure_type_meta_info;
+
+create table object_code_data.structure_type_meta_info (
+	id bigint not null IDENTITY(1, 1),
+	structure_type_name varchar(20) not null,
+	structure_type_label varchar(20) not null,
+	structure_type_code varchar(20) not null,
+	update_time timestamp,
+	create_time timestamp,
+	remark varchar(50),
+	sorted int,
+	constraint cons134220397 primary key (id)
+);
+create unique index index033559344 on object_code_data.structure_type_meta_info (id);
+create index index043138449084600 on object_code_data.structure_type_meta_info (structure_type_code);
+create unique index index043138549103600 on object_code_data.structure_type_meta_info (id);
+
+
+-- object_code_data.t_area_geo definition
+
+-- drop table
+
+-- drop table object_code_data.t_area_geo;
+
+create table object_code_data.t_area_geo (
+	id bigint not null IDENTITY(1, 1),
+	feature_type varchar(255),
+	property_id dec,
+	name varchar(255),
+	geometry_info clob,
+	constraint cons134220396 primary key (id)
+);
+create unique index index033559343 on object_code_data.t_area_geo (id);
+create unique index index043138112279900 on object_code_data.t_area_geo (id);
+
+
+-- object_code_data.t_data_map definition
+
+-- drop table
+
+-- drop table object_code_data.t_data_map;
+
+create table object_code_data.t_data_map (
+	id bigint not null IDENTITY(1, 1),
+	attr_item_full_code varchar(255) not null,
+	data_attr_item_full_code varchar(255) not null,
+	create_user varchar(255),
+	create_time timestamp,
+	constraint cons134220394 primary key (id)
+);
+create unique index index033559341 on object_code_data.t_data_map (id);
+create unique index index033559342 on object_code_data.t_data_map (attr_item_full_code);
+create unique index index043137776899600 on object_code_data.t_data_map (id);
+
+
+-- object_code_data.t_data_source definition
+
+-- drop table
+
+-- drop table object_code_data.t_data_source;
+
+create table object_code_data.t_data_source (
+	id bigint not null IDENTITY(1, 1),
+	attr_full_code varchar(255),
+	attr_name varchar(255),
+	data_type varchar(255),
+	data_source varchar(255),
+	resource_name varchar(255),
+	resource_id varchar(255),
+	create_user varchar(255),
+	create_time timestamp,
+	constraint cons134220392 primary key (id)
+);
+create unique index index033559339 on object_code_data.t_data_source (id);
+create unique index index033559340 on object_code_data.t_data_source (attr_full_code,data_type);
+create unique index index043136981482000 on object_code_data.t_data_source (id);
+
+
+-- object_code_data.t_forecast_hour_data definition
+
+-- drop table
+
+-- drop table object_code_data.t_forecast_hour_data;
+
+create table object_code_data.t_forecast_hour_data (
+	id bigint not null IDENTITY(1, 1),
+	attr_item_full_code varchar(255) not null,
+	step_length int,
+	forecast_time timestamp not null,
+	future_time timestamp not null,
+	forecast_value dec not null,
+	constraint cons134220390 primary key (id)
+);
+create unique index index033559337 on object_code_data.t_forecast_hour_data (id);
+create unique index index03359338 on object_code_data.t_forecast_hour_data (attr_item_full_code,forecast_time,future_time);
+create unique index index043136799298500 on object_code_data.t_forecast_hour_data (id);
+
+
+-- object_code_data.t_forecast_hour_data_etl definition
+
+-- drop table
+
+-- drop table object_code_data.t_forecast_hour_data_etl;
+
+create table object_code_data.t_forecast_hour_data_etl (
+	id bigint not null IDENTITY(1, 1),
+	attr_item_full_code varchar(255) not null,
+	step_length int,
+	forecast_time timestamp not null,
+	future_time timestamp not null,
+	forecast_value dec not null,
+	constraint cons134220388 primary key (id)
+);
+create unique index index033559335 on object_code_data.t_forecast_hour_data_etl (id);
+create unique index index03359336 on object_code_data.t_forecast_hour_data_etl (attr_item_full_code,forecast_time,future_time);
+create unique index index043136626105100 on object_code_data.t_forecast_hour_data_etl (id);
+
+
+-- object_code_data.t_history_hour_data definition
+
+-- drop table
+
+-- drop table object_code_data.t_history_hour_data;
+
+create table object_code_data.t_history_hour_data (
+	id bigint not null IDENTITY(1, 1),
+	attr_item_full_code varchar(255) not null,
+	data_time timestamp not null,
+	v dec,
+	avgv dec,
+	maxv dec,
+	maxt timestamp,
+	minv varchar(18),
+	mint timestamp,
+	s dec,
+	avgs dec,
+	maxs dec,
+	mins dec,
+	span dec,
+	dq dec,
+	constraint cons134220386 primary key (id)
+);
+create unique index index033559333 on object_code_data.t_history_hour_data (id);
+create unique index index03559334 on object_code_data.t_history_hour_data (attr_item_full_code,data_time);
+create unique index index043136524028500 on object_code_data.t_history_hour_data (id);
+
+
+-- object_code_data.t_history_hour_data_etl definition
+
+-- drop table
+
+-- drop table object_code_data.t_history_hour_data_etl;
+
+create table object_code_data.t_history_hour_data_etl (
+	id bigint not null IDENTITY(1, 1),
+	attr_item_full_code varchar(255) not null,
+	data_time timestamp not null,
+	v dec,
+	avgv dec,
+	maxv dec,
+	maxt timestamp,
+	minv varchar(18),
+	mint timestamp,
+	s dec,
+	avgs dec,
+	maxs dec,
+	mins dec,
+	span dec,
+	dq dec,
+	constraint cons134220384 primary key (id)
+);
+create unique index index033559331 on object_code_data.t_history_hour_data_etl (id);
+create unique index index03359332 on object_code_data.t_history_hour_data_etl (attr_item_full_code,data_time);
+create unique index index043136164811900 on object_code_data.t_history_hour_data_etl (id);
+
+
+-- object_code_data.t_id_map definition
+
+-- drop table
+
+-- drop table object_code_data.t_id_map;
+
+create table object_code_data.t_id_map (
+	id bigint not null IDENTITY(1, 1),
+	attr_item_full_code varchar(255) not null,
+	attr_item_name varchar(255) not null,
+	send_id varchar(255) not null,
+	data_type varchar(255) not null,
+	import_data_source varchar(255),
+	resource_name varchar(255),
+	resource_id varchar(255),
+	create_user varchar(255),
+	create_time timestamp,
+	constraint cons134220382 primary key (id)
+);
+create unique index index033559329 on object_code_data.t_id_map (id);
+create unique index index03355330 on object_code_data.t_id_map (attr_item_full_code,send_id,data_type);
+create unique index index043134917061300 on object_code_data.t_id_map (id);
+
+
+-- object_code_data.t_import_data_map definition
+
+-- drop table
+
+-- drop table object_code_data.t_import_data_map;
+
+create table object_code_data.t_import_data_map (
+	id bigint not null IDENTITY(1, 1),
+	attr_item_name varchar(255) not null,
+	attr_item_full_code varchar(255) not null,
+	data_source_system varchar(255) not null,
+	source_data_code varchar(255) not null,
+	create_user varchar(255),
+	create_time timestamp,
+	constraint cons134220380 primary key (id)
+);
+create unique index index033559327 on object_code_data.t_import_data_map (id);
+create unique index index03559328 on object_code_data.t_import_data_map (attr_item_full_code,data_source_system);
+create unique index index043134449267400 on object_code_data.t_import_data_map (id);
+
+
+-- object_code_data.t_platform_config definition
+
+-- drop table
+
+-- drop table object_code_data.t_platform_config;
+
+create table object_code_data.t_platform_config (
+	id bigint not null IDENTITY(1, 1),
+	platform_id varchar(255),
+	platform_name varchar(255),
+	platform_url_base varchar(255),
+	token varchar(255),
+	remark varchar(255),
+	auth_url varchar(255),
+	refresh_url varchar(255),
+	constraint cons134220379 primary key (id)
+);
+create unique index index033559326 on object_code_data.t_platform_config (id);
+create unique index index04847 on object_code_data.t_platform_config (id);
+
+
+-- object_code_data.t_resource_config definition
+
+-- drop table
+
+-- drop table object_code_data.t_resource_config;
+
+create table object_code_data.t_resource_config (
+	id bigint not null IDENTITY(1, 1),
+	resource_id varchar(255),
+	platform_id varchar(255),
+	resource_type varchar(255),
+	resource_name varchar(255),
+	resource_method varchar(255),
+	resource_url varchar(255),
+	remark varchar(255),
+	resource_req_mapping varchar(255),
+	resource_resp_mapping varchar(255),
+	constraint cons134220378 primary key (id)
+);
+create unique index index033559325 on object_code_data.t_resource_config (id);
+create unique index "primary" on object_code_data.t_resource_config (id);
+
+
+
+-- object_code_data.t_seq_day_data definition
+
+-- drop table
+
+-- drop table object_code_data.t_seq_day_data;
+
+create table object_code_data.t_seq_day_data (
+	id bigint not null IDENTITY(1, 1),
+	attr_item_full_code varchar(255) not null,
+	data_time timestamp not null,
+	v dec,
+	avgv dec,
+	maxv dec,
+	maxt timestamp,
+	minv varchar(18),
+	mint timestamp,
+	s dec,
+	avgs dec,
+	maxs dec,
+	mins dec,
+	span dec,
+	dq dec,
+	constraint cons134220375 primary key (id)
+);
+create unique index index033559322 on object_code_data.t_seq_day_data (id);
+create unique index index03359323 on object_code_data.t_seq_day_data (attr_item_full_code,data_time);
+create unique index index043131678605400 on object_code_data.t_seq_day_data (id);
+
+
+-- object_code_data.t_sync_task definition
+
+-- drop table
+
+-- drop table object_code_data.t_sync_task;
+
+create table object_code_data.t_sync_task (
+	id bigint not null IDENTITY(1, 1),
+	task_id bigint not null IDENTITY(1, 1),
+	task_name varchar(255),
+	process_period int,
+	repeat_times int,
+	last_process_time timestamp,
+	resource_id varchar(255),
+	resource_name varchar(255),
+	update_record bigint,
+	page_number int,
+	page_size int,
+	create_time timestamp,
+	update_time timestamp,
+	remark varchar(255)
+);
+
+
+-- object_code_data.t_sync_task_log definition
+
+-- drop table
+
+-- drop table object_code_data.t_sync_task_log;
+
+create table object_code_data.t_sync_task_log (
+	id bigint not null IDENTITY(1, 1),
+	task_id bigint not null IDENTITY(1, 1),
+	task_name varchar(255),
+	start_time timestamp,
+	end_time timestamp,
+	process_period bigint,
+	update_record bigint,
+	remark varchar(255),
+	create_time timestamp,
+	update_time timestamp,
+	constraint cons13320169 primary key (id)
+);
+create unique index index0334847 on object_code_data.t_sync_task_log (id);
+create unique index index033559296 on object_code_data.t_sync_task_log (id);
+
+
+-- object_code_data.wds_hydro_elements definition
+
+-- drop table
+
+-- drop table object_code_data.wds_hydro_elements;
+
+create table object_code_data.wds_hydro_elements (
+	id varchar(255),
+	name varchar(255),
+	iecname varchar(255),
+	inid varchar(255),
+	dtype varchar(255),
+	dchar varchar(255),
+	dsrc varchar(255),
+	rtdb varchar(255),
+	"type" varchar(255),
+	ifcycle varchar(255),
+	plane varchar(255),
+	slope varchar(255),
+	"cycle" varchar(255),
+	"sequence" varchar(255),
+	corid varchar(255),
+	curve varchar(255),
+	meas_max varchar(255),
+	meas_min varchar(255),
+	pid varchar(255),
+	dcalct varchar(255),
+	iecname1 varchar(255),
+	tsdb varchar(255),
+	hourdb varchar(255),
+	daydb varchar(255),
+	day10db varchar(255),
+	mondb varchar(255),
+	yeardb varchar(255)
+);

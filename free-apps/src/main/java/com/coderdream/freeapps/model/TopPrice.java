@@ -29,9 +29,44 @@ public class TopPrice implements Serializable {
     private String appId;
 
     /**
+     * 最近收费价格
+     */
+    private BigDecimal latestPrice;
+
+    /**
+     * 最近收费价格日期
+     */
+    private Date latestPriceDate;
+
+    /**
      * 最高价格
      */
     private BigDecimal topPrice;
+
+    /**
+     * 最高价格日期
+     */
+    private Date topPriceDate;
+
+    /**
+     * 最近收费价格
+     */
+    private BigDecimal wxLatestPrice;
+
+    /**
+     * 最近收费价格日期
+     */
+    private Date wxLatestPriceDate;
+
+    /**
+     * 最高价格
+     */
+    private BigDecimal wxTopPrice;
+
+    /**
+     * 最高价格日期
+     */
+    private Date wxTopPriceDate;
 
     /**
      * 国区价格

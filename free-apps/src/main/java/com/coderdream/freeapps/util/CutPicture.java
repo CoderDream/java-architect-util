@@ -84,12 +84,12 @@ public class CutPicture {
                     i++;
 //                    String appId = StringUtils.parseAppId(url);
                     String fileName = appBrief.getFilename();// fileNameMap.get(appId);
-                    imgName = path + File.separator + fileName + ".png";
+                    imgName = path + File.separator + appBrief.getAppIndex()  + "_"  + fileName + ".png";
                     file = new File(imgName);
 
                     // 如果截图存在，而且大于150K，则表示截图成功
                     if (file.exists()) {
-                        if (getFileSize(file) > 120 * 1024) {
+                        if (getFileSize(file) > 100 * 1024) {
 //                            BufferedImageUtils.cut4K(imgName, imgNameNew);
                             it_b.remove();
                             continue; // 跳出循环

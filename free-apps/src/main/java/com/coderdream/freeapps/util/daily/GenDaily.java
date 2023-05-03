@@ -47,7 +47,8 @@ public class GenDaily {
         for (AppBrief appBrief : appBriefList) {
             String fileName = appBrief.getFilename() + ".png";
             System.out.println("fileName: " + fileName);
-            QrCodeUtils.createQrCode(appBrief.getUrlCn(), path + File.separator + "qr", "qr_" + fileName);
+//            QrCodeUtils.createQrCode(appBrief.getUrlCn(), path + File.separator + "qr", "qr_" + fileName);
+            QrCodeUtils.createQrCode(appBrief.getUrlCn(), path + File.separator + "qr", fileName);
         }
 
         // 2. 剪图

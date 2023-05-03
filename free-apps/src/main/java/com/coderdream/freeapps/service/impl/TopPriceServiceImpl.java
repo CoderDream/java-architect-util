@@ -26,7 +26,7 @@ import java.util.*;
  */
 @Service
 public class TopPriceServiceImpl extends ServiceImpl<TopPriceMapper, TopPrice>
-        implements TopPriceService {
+    implements TopPriceService {
 
     @Resource
     private TopPriceMapper topPriceMapper;
@@ -53,45 +53,64 @@ public class TopPriceServiceImpl extends ServiceImpl<TopPriceMapper, TopPrice>
     public void process(String dateStr) {
         List<TopPrice> oldTopPriceList = selectList(null);
         Map<String, BigDecimal> map = new LinkedHashMap<>();
+        Map<String, TopPrice> mapTopPrice = new LinkedHashMap<>();
         if (!CollectionUtils.isEmpty(oldTopPriceList)) {
             for (TopPrice topPrice : oldTopPriceList) {
                 map.put(topPrice.getAppId(), topPrice.getTopPrice());
+                mapTopPrice.put(topPrice.getAppId(), topPrice);
             }
         }
         PriceHistory priceHistoryQuery = new PriceHistory();
-        Date crawlerDate;
-        try {
-            crawlerDate = new SimpleDateFormat("yyyy-MM-dd").parse(dateStr);
-        } catch (ParseException e) {
-            throw new RuntimeException(e);
+
+        if (StrUtil.isNotEmpty(dateStr)) {
+            try {
+                Date crawlerDate = new SimpleDateFormat("yyyy-MM-dd").parse(dateStr);
+                priceHistoryQuery.setCrawlerDate(crawlerDate);
+            } catch (ParseException e) {
+                throw new RuntimeException(e);
+            }
         }
         List<TopPrice> topPriceList = null;
         TopPrice topPrice;
-        priceHistoryQuery.setCrawlerDate(crawlerDate);
         BigDecimal tempPrice;
         BigDecimal newPrice;
         List<PriceHistory> priceHistoryList = priceHistoryService.selectList(priceHistoryQuery);
         if (!CollectionUtils.isEmpty(priceHistoryList)) {
             topPriceList = new ArrayList<>();
             for (PriceHistory priceHistory : priceHistoryList) {
+                // 解析价格
                 newPrice = parsePrice(priceHistory);
+                if(priceHistory.getAppId().equals("id1563436064")) {
+                    log.error("#############");
+                }
                 tempPrice = map.get(priceHistory.getAppId());
                 if (tempPrice != null) {
-                    if (newPrice.compareTo(tempPrice) == 1) {
-                        topPrice = new TopPrice();
-                        topPrice.setTopPrice(tempPrice);
-                        topPrice.setAppId(priceHistory.getAppId());
+                    topPrice = mapTopPrice.get(priceHistory.getAppId());// new TopPrice();
+                    // 如果价格大于0，则刷新价格
+                    if (newPrice.compareTo(new BigDecimal(0)) > 0) {
+                        topPrice.setLatestPrice(newPrice);
+                        topPrice.setLatestPriceDate(priceHistoryQuery.getCrawlerDate());
+                        topPrice.setLastModifiedDate(new Date());
+                        topPriceList.add(topPrice);
+                    }
+
+                    // 如果价格大于最高价，则刷新最高价
+                    if (newPrice.compareTo(tempPrice) > 0) {
+                        topPrice.setTopPrice(newPrice);
+                        topPrice.setTopPriceDate(priceHistoryQuery.getCrawlerDate());
                         topPrice.setLastModifiedDate(new Date());
                         topPriceList.add(topPrice);
                     }
                 } else {
                     topPrice = new TopPrice();
+                    topPrice.setLatestPrice(newPrice);
+                    topPrice.setLatestPriceDate(priceHistoryQuery.getCrawlerDate());
                     topPrice.setTopPrice(newPrice);
+                    topPrice.setTopPriceDate(priceHistoryQuery.getCrawlerDate());
                     topPrice.setAppId(priceHistory.getAppId());
                     topPrice.setCreatedDate(new Date());
                     topPriceList.add(topPrice);
                 }
-
             }
         }
         if (!CollectionUtils.isEmpty(topPriceList)) {
@@ -105,8 +124,11 @@ public class TopPriceServiceImpl extends ServiceImpl<TopPriceMapper, TopPrice>
             topPrice = BigDecimal.valueOf(priceHistory.getPriceCn());
         }
 
+        // 四舍五入取整
         if (priceHistory.getPriceUs() != null) {
             topPrice = priceHistory.getPriceUs();
+            topPrice = topPrice.multiply(new BigDecimal(6));
+            topPrice = topPrice.setScale(0, BigDecimal.ROUND_HALF_UP);
         }
 
         return topPrice;

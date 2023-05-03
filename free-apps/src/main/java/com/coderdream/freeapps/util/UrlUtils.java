@@ -36,7 +36,7 @@ public class UrlUtils {
                 Header[] headers = response.getHeaders("Location");
                 if (headers != null && headers.length > 0) {
                     redirectUrl = headers[0].getValue();
-                    System.out.println(redirectUrl);
+//                    System.out.println(redirectUrl);
                 }
             }
         } catch (ClientProtocolException e) {

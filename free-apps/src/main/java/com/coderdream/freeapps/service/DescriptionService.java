@@ -13,4 +13,9 @@ import java.util.List;
 public interface DescriptionService extends IService<Description> {
 
     int insertOrUpdateBatch(List<Description> descriptionList);
+
+
+    int insertOrUpdateBatchMy(List<Description> descriptionList);
+
+    int dailyProcess();
 }

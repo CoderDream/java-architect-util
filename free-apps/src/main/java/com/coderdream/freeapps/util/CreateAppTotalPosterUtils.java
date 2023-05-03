@@ -24,15 +24,18 @@ public class CreateAppTotalPosterUtils {
         // 20220102 TODO
         String dateStr = new SimpleDateFormat("yyyyMMdd").format(new Date());
         String monthStr = new SimpleDateFormat("yyyyMM").format(new Date());
-        String basePath = "D:" + File.separator + "12_iOS_Android" + File.separator + monthStr + File.separator + dateStr;
+        String basePath =
+            "D:" + File.separator + "12_iOS_Android" + File.separator + monthStr + File.separator + dateStr;
 
         AppBrief appBrief = new AppBrief();
         appBrief.setName("File Explorer & Player [Pro]");
         appBrief.setAppId("id1095142462");
         appBrief.setPrice(30);
         appBrief.setUrlCn("https://apps.apple.com/cn/app/id1095142462");
-        appBrief.setBrief("把你的iPhone或iPad变成你的Mac的无线闪存盘。完全访问你的Mac文件-使用你的iOS设备流媒体视频，查看照片和文件，在家里的任何地方。");
-        appBrief.setContent(new ArrayList<>(Arrays.asList("把你的iPhone或iPad变成你的Mac的无线闪存盘。", "完全访问你的Mac文件-使用你的iOS设备流媒体视频，查看照片和文件，在家里的任何地方。")));
+        appBrief.setBrief(
+            "把你的iPhone或iPad变成你的Mac的无线闪存盘。完全访问你的Mac文件-使用你的iOS设备流媒体视频，查看照片和文件，在家里的任何地方。");
+        appBrief.setContent(new ArrayList<>(Arrays.asList("把你的iPhone或iPad变成你的Mac的无线闪存盘。",
+            "完全访问你的Mac文件-使用你的iOS设备流媒体视频，查看照片和文件，在家里的任何地方。")));
         appBrief.setQrUrl("D:\\12_iOS_Android\\202301\\20230102\\qr\\1_qr_id1512838461.jpg");
         appBrief.setSinglePosterPath("D:\\12_iOS_Android\\202301\\20230102\\single_1_id1512838461.jpg");
 
@@ -55,7 +58,7 @@ public class CreateAppTotalPosterUtils {
         String detailPath;
         String pagePosterPath;
         // 背景模板图
-        String background = "D:\\12_iOS_Android\\base\\page.PNG";
+        String background = "D:\\12_iOS_Android\\base\\page2.PNG";
 
         int i = 0;
         for (AppBrief appBrief : appBriefList) {
@@ -77,14 +80,16 @@ public class CreateAppTotalPosterUtils {
                 InputStream singlePosterInputStream = new FileInputStream(new File(singlePosterPath));
                 InputStream detailPathInputStream = new FileInputStream(new File(detailPath));
                 // 2. 初始化并的改变大小
-                BufferedImage singlePosterImage = PosterUtil.drawInitAndChangeSize(null, singlePosterInputStream, 417, 850);
-                BufferedImage detailPathImage = PosterUtil.drawInitAndChangeSize(null, detailPathInputStream, 850, 850);
+                BufferedImage singlePosterImage = PosterUtil.drawInitAndChangeSize(null, singlePosterInputStream, 380,
+                    880);
+                BufferedImage detailPathImage = PosterUtil.drawInitAndChangeSize(null, detailPathInputStream, 930, 880);
                 // 3. 画二维码
-                PosterUtil.drawImage(bufferedImage, singlePosterImage, 150, 100); // 532, 1108);
-                PosterUtil.drawImage(bufferedImage, detailPathImage, 750, 100); // 532, 1108);
+                PosterUtil.drawImage(bufferedImage, singlePosterImage, 130, 110); // 532, 1108);
+                PosterUtil.drawImage(bufferedImage, detailPathImage, 650, 105); // 532, 1108);
 
                 // 海报 保存到本地  + "page_" + fileName + ".png"
-                String filename = appBrief.getPagePosterPath() + "page_" + appBrief.getFilename() + ".png";
+                String filename =
+                    appBrief.getPagePosterPath() + appBrief.getAppIndex() + "_" + appBrief.getFilename() + ".png";
                 System.out.println("保存到本地: " + filename);
                 PosterUtil.save(bufferedImage, "png", filename);
             } catch (Exception e) {

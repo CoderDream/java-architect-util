@@ -1,12 +1,12 @@
 package com.coderdream.freeapps.util;
 
+import com.coderdream.freeapps.model.App;
+
 public class CdStringUtils {
 
 
     /**
-     * 获取 AppId
-     * url：https://apps.apple.com/us/app/marple/id288689440?l=zh
-     * 获取最后一个/id和？之间的数字，返回id+数字
+     * 获取 AppId url：https://apps.apple.com/us/app/marple/id288689440?l=zh 获取最后一个/id和？之间的数字，返回id+数字
      *
      * @param url 链接
      * @return 应用ID
@@ -30,12 +30,13 @@ public class CdStringUtils {
 
     /**
      * 是否存在问号
+     *
      * @param str
      * @return
      */
     public static boolean existQuestionMark(String str) {
 
-        if(str == null || str.trim().equals("")){
+        if (str == null || str.trim().equals("")) {
             return false;
         }
 // ?号匹配
@@ -52,6 +53,26 @@ public class CdStringUtils {
 
         return false;
     }
+
+    public static Integer genPrice(App app) {
+        Double doublePrice = new Double(0);
+        Integer usFlag = app.getUsFlag();
+        if (usFlag !=null ) {
+            if(usFlag == 0) {
+                if(app.getPriceCn() != null) {
+                    return app.getPriceCn();
+                }
+            } else {
+                if(app.getPriceUs() != null) {
+                    doublePrice = app.getPriceUs().doubleValue() * 6;
+                }
+            }
+        }
+
+        return (int) Math.round(doublePrice);
+    }
+
+    //
 
     public static void main(String[] args) {
 

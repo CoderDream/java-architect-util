@@ -38,6 +38,27 @@ public class CutImageUtils {
         return true;
     }
 
+    public static boolean cutForQrV2(File srcImageFile, File destImageFile) {
+        try {
+            int x = 26;
+            int y = 26;
+            int width = 265;
+            int height = 265;
+            //使用ImageIO的read方法读取图片
+            BufferedImage read = ImageIO.read(srcImageFile);
+            //调用裁剪方法
+            BufferedImage image = read.getSubimage(x, y, width, height);
+            //获取到文件的后缀名
+            String fileName = srcImageFile.getName();
+            String formatName = fileName.substring(fileName.lastIndexOf(".") + 1);
+            //使用ImageIO的write方法进行输出
+            ImageIO.write(image, formatName, destImageFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+        return true;
+    }
 
     /**
      * JAVA裁剪图片
@@ -131,8 +152,8 @@ public class CutImageUtils {
                 cut(new File(snapshotPath), x, y, width, height, new File(appBrief.getIconUrl()));
                 x = 1405;// 大：右移
                 y = 160; // 大：下移
-                width = 1000;
-                height = 1000;
+                width = 930;
+                height = 880;
 
                 // 保存应用详情
                 cut(new File(snapshotPath), x, y, width, height, new File(appBrief.getDetailPath()));

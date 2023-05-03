@@ -9,6 +9,7 @@ import com.coderdream.freeapps.model.App;
 import com.coderdream.freeapps.model.Snapshot;
 import com.coderdream.freeapps.service.AppService;
 import com.coderdream.freeapps.service.SnapshotService;
+import com.coderdream.freeapps.util.CdFileUtils;
 import com.coderdream.freeapps.util.Constants;
 import com.coderdream.freeapps.util.CdListUtils;
 import org.jetbrains.annotations.NotNull;
@@ -139,10 +140,10 @@ public class SnapshotServiceImpl extends ServiceImpl<SnapshotMapper, Snapshot>
                                     indexPrefixJpg = jsonStr.indexOf(".jpg");
 //                                filename = jsonStr.substring(jsonStr.lastIndexOf("/") + 1);
                                     if (indexPrefixPng != -1) {
-                                        filename = parseFilename(indexPrefixPng, jsonStr);
+                                        filename = CdFileUtils.parseFilename(indexPrefixPng, jsonStr);
                                     }
                                     if (indexPrefixJpg != -1) {
-                                        filename = parseFilename(indexPrefixJpg, jsonStr);
+                                        filename = CdFileUtils.parseFilename(indexPrefixJpg, jsonStr);
                                         System.out.println(filename);
                                     }
                                     snapshot.setFilename(filename);
@@ -189,16 +190,7 @@ public class SnapshotServiceImpl extends ServiceImpl<SnapshotMapper, Snapshot>
         logger.info("本次任务耗时: " + message);
     }
 
-    @NotNull
-    private static String parseFilename(int indexPrefixJpg, String jsonStr) {
-        int endIndex = indexPrefixJpg + 4;
-        String tempStr = jsonStr.substring(0, indexPrefixJpg + 4);
-        String tempStr2 = tempStr.substring(0, tempStr.lastIndexOf("/"));
-        int beginIndex = tempStr2.lastIndexOf("/");
-        String tempStr3 = tempStr.substring(beginIndex + 1, endIndex);
-        tempStr3 = tempStr3.replaceAll("/", "_");
-        return tempStr3;
-    }
+
 }
 
 

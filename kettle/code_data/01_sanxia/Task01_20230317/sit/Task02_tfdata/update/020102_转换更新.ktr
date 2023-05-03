@@ -547,11 +547,11 @@
     </attributes>
   </connection>
   <connection>
-    <name>190_object_data</name>
+    <name>190_object_code_data_jcjh</name>
     <server>172.16.104.190</server>
     <type>MYSQL</type>
     <access>Native</access>
-    <database>object_data</database>
+    <database>object_code_data_jcjh</database>
     <port>3306</port>
     <username>root</username>
     <password>Encrypted 2be98afc86aa7f2e4cb79ff228dc6fa8c</password>
@@ -641,6 +641,69 @@
       <attribute>
         <code>STREAM_RESULTS</code>
         <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>dameng</name>
+    <server/>
+    <type>GENERIC</type>
+    <access>Native</access>
+    <database/>
+    <port>1521</port>
+    <username>OBJECT_CODE_DATA</username>
+    <password>Encrypted 2be98afc825e5b8a1882dff228dc6fa8c</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>CUSTOM_DRIVER_CLASS</code>
+        <attribute>dm.jdbc.driver.DmDriver</attribute>
+      </attribute>
+      <attribute>
+        <code>CUSTOM_URL</code>
+        <attribute>jdbc:dm://172.16.104.228:5236/OBJECT_CODE_DATA</attribute>
+      </attribute>
+      <attribute>
+        <code>DATABASE_DIALECT_ID</code>
+        <attribute>Generic database</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
       </attribute>
       <attribute>
         <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
@@ -1497,6 +1560,76 @@
     </GUI>
   </step>
   <step>
+    <name>执行SQL脚本</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>docker_local_object_data</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>Y</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>UPDATE `t_sync_task` SET `last_time` = '${ENDTIME}' WHERE `task_id` = '${TASK_ID}';</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1104</xloc>
+      <yloc>384</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>执行SQL脚本前写日志</name>
+    <type>WriteToLog</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <loglevel>log_level_basic</loglevel>
+    <displayHeader>Y</displayHeader>
+    <limitRows>N</limitRows>
+    <limitRowsNumber>0</limitRowsNumber>
+    <logmessage/>
+    <fields>
+      </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>992</xloc>
+      <yloc>384</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>排序记录</name>
     <type>SortRows</type>
     <description/>
@@ -1535,6 +1668,76 @@
     <GUI>
       <xloc>896</xloc>
       <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>插入 / 更新</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>docker_local_object_data</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>object_data</schema>
+      <table>t_forecast_hour_data_etl</table>
+      <key>
+        <name>dt</name>
+        <field>future_time</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>t</name>
+        <field>forecast_time</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>attr_item_full_code</name>
+        <field>attr_item_full_code</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>forecast_time</name>
+        <rename>t</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>future_time</name>
+        <rename>dt</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>forecast_value</name>
+        <rename>d</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>attr_item_full_code</name>
+        <rename>attr_item_full_code</rename>
+        <update>N</update>
+      </value>
+    </lookup>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>864</xloc>
+      <yloc>384</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2180,146 +2383,6 @@ WHERE
     <GUI>
       <xloc>912</xloc>
       <yloc>240</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>执行SQL脚本</name>
-    <type>ExecSQL</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>docker_local_object_data</connection>
-    <execute_each_row>N</execute_each_row>
-    <single_statement>N</single_statement>
-    <replace_variables>Y</replace_variables>
-    <quoteString>N</quoteString>
-    <sql>UPDATE `t_sync_task` SET `last_time` = '${ENDTIME}' WHERE `task_id` = '${TASK_ID}';</sql>
-    <set_params>N</set_params>
-    <insert_field/>
-    <update_field/>
-    <delete_field/>
-    <read_field/>
-    <arguments>
-    </arguments>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1104</xloc>
-      <yloc>384</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>执行SQL脚本前写日志</name>
-    <type>WriteToLog</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <loglevel>log_level_basic</loglevel>
-    <displayHeader>Y</displayHeader>
-    <limitRows>N</limitRows>
-    <limitRowsNumber>0</limitRowsNumber>
-    <logmessage/>
-    <fields>
-      </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>992</xloc>
-      <yloc>384</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>插入 / 更新</name>
-    <type>InsertUpdate</type>
-    <description/>
-    <distribute>N</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>docker_local_object_data</connection>
-    <commit>100</commit>
-    <update_bypassed>N</update_bypassed>
-    <lookup>
-      <schema>object_data</schema>
-      <table>t_forecast_hour_data_etl</table>
-      <key>
-        <name>dt</name>
-        <field>future_time</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>t</name>
-        <field>forecast_time</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <key>
-        <name>attr_item_full_code</name>
-        <field>attr_item_full_code</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <value>
-        <name>forecast_time</name>
-        <rename>t</rename>
-        <update>N</update>
-      </value>
-      <value>
-        <name>future_time</name>
-        <rename>dt</rename>
-        <update>N</update>
-      </value>
-      <value>
-        <name>forecast_value</name>
-        <rename>d</rename>
-        <update>Y</update>
-      </value>
-      <value>
-        <name>attr_item_full_code</name>
-        <rename>attr_item_full_code</rename>
-        <update>N</update>
-      </value>
-    </lookup>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>864</xloc>
-      <yloc>384</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
