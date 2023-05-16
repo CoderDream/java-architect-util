@@ -5,7 +5,7 @@ import com.coderdream.freeapps.common.entity.PageResult;
 import com.coderdream.freeapps.common.entity.Result;
 import com.coderdream.freeapps.dto.AppDTO;
 import com.coderdream.freeapps.dto.AppQueryPageDTO;
-import com.coderdream.freeapps.model.App;
+import com.coderdream.freeapps.model.AppEntity;
 import com.coderdream.freeapps.service.AppService;
 import com.coderdream.freeapps.vo.AppVO;
 import io.swagger.annotations.Api;
@@ -14,7 +14,6 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
@@ -95,29 +94,29 @@ public class AppController {
     }
 
     @PostMapping("/selectList")
-    Result<List<App>> selectList(@RequestBody App app) {
-        List<App> result = appService.selectList(app);
+    Result<List<AppEntity>> selectList(@RequestBody AppEntity app) {
+        List<AppEntity> result = appService.selectList(app);
         return Result.ok(result);
     }
     @PostMapping("/insertSelective")
-    Result<Integer> insertSelective(@RequestBody App app) {
+    Result<Integer> insertSelective(@RequestBody AppEntity app) {
         int result = appService.insertSelective(app);
         return Result.ok(result);
     }
 
     @PostMapping("/insertOrUpdateBatch")
-    Result<Integer> insertOrUpdateBatch(@RequestBody List<App> appList) {
+    Result<Integer> insertOrUpdateBatch(@RequestBody List<AppEntity> appList) {
         int result = appService.insertOrUpdateBatch(appList);
         return Result.ok(result);
     }
 
     @PostMapping("/batchCreate")
     Result<Integer> batchCreate(@RequestBody List<String> appIdList) {
-        List<App> appList = new ArrayList<>();
-        App app;
+        List<AppEntity> appList = new ArrayList<>();
+        AppEntity app;
         if(!CollectionUtils.isEmpty(appIdList)) {
             for (String appId: appIdList) {
-                app = new App();
+                app = new AppEntity();
                 app.setAppId(appId);
                 app.setCreatedDate(new Date());
                 app.setDelFlag(0);

@@ -1,6 +1,5 @@
 package com.coderdream.freeapps;
 
-import com.coderdream.freeapps.model.App;
 import com.coderdream.freeapps.service.*;
 import com.coderdream.freeapps.util.CdDateUtils;
 import org.junit.jupiter.api.Test;

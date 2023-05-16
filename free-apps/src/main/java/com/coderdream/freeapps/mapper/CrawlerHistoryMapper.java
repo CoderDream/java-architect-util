@@ -1,7 +1,6 @@
 package com.coderdream.freeapps.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.coderdream.freeapps.model.App;
 import com.coderdream.freeapps.model.CrawlerHistory;
 
 import java.util.List;

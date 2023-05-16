@@ -12,4 +12,6 @@ import com.coderdream.freeapps.model.SyncTaskEntity;
 public interface SyncTaskService extends IService<SyncTaskEntity> {
 
     void dailyProcess(SyncTaskReqDto syncTaskReqDto);
+
+    void dailyRecommend();
 }

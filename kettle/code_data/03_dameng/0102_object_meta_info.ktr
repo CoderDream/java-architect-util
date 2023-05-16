@@ -430,7 +430,7 @@
     <created_date>2023/04/28 08:41:16.547</created_date>
     <modified_user>-</modified_user>
     <modified_date>2023/04/28 08:41:16.547</modified_date>
-    <key_for_session_key/>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -573,6 +573,61 @@
       <attribute>
         <code>PORT_NUMBER</code>
         <attribute>3306</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STREAM_RESULTS</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>coderme.myds.me</name>
+    <server>coderme.myds.me</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>free_apps</database>
+    <port>33016</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ff228dc6fa8c</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>33016</attribute>
       </attribute>
       <attribute>
         <code>PRESERVE_RESERVED_WORD_CASE</code>
@@ -993,7 +1048,7 @@
       <schema_name/>
     </partitioning>
     <connection>190_object_code_data_jcjh</connection>
-    <sql>SELECT * FROM object_meta_info</sql>
+    <sql>SELECT object_name, object_label, object_code, object_full_code, object_type_full_code, object_source_code, longitude, latitude, space_level, stcd, remark, create_time, update_time, delete_flag FROM object_meta_info</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -1001,29 +1056,6 @@
     <lazy_conversion_active>N</lazy_conversion_active>
     <cached_row_meta_active>N</cached_row_meta_active>
     <row-meta>
-      <value-meta>
-        <type>Integer</type>
-        <storagetype>normal</storagetype>
-        <name>ID</name>
-        <length>9</length>
-        <precision>0</precision>
-        <origin>表输入</origin>
-        <comments>ID</comments>
-        <conversion_Mask>####0;-####0</conversion_Mask>
-        <decimal_symbol>.</decimal_symbol>
-        <grouping_symbol>,</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>zh_CN</date_format_locale>
-        <date_format_timezone>Asia/Shanghai</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
@@ -1232,6 +1264,52 @@
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>stcd</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>表输入</origin>
+        <comments>stcd</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>remark</name>
+        <length>50</length>
+        <precision>-1</precision>
+        <origin>表输入</origin>
+        <comments>remark</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
         <type>Timestamp</type>
         <storagetype>normal</storagetype>
         <name>create_time</name>
@@ -1278,14 +1356,14 @@
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
-        <type>String</type>
+        <type>Integer</type>
         <storagetype>normal</storagetype>
-        <name>remark</name>
-        <length>50</length>
-        <precision>-1</precision>
+        <name>delete_flag</name>
+        <length>2</length>
+        <precision>0</precision>
         <origin>表输入</origin>
-        <comments>remark</comments>
-        <conversion_Mask/>
+        <comments>delete_flag</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
         <currency_symbol/>
@@ -1326,7 +1404,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>dameng8</connection>
+    <connection>dameng</connection>
     <schema>OBJECT_CODE_DATA</schema>
     <table>OBJECT_META_INFO</table>
     <commit>5000</commit>
@@ -1381,6 +1459,14 @@
         <stream_name>space_level</stream_name>
       </field>
       <field>
+        <column_name>stcd</column_name>
+        <stream_name>stcd</stream_name>
+      </field>
+      <field>
+        <column_name>remark</column_name>
+        <stream_name>remark</stream_name>
+      </field>
+      <field>
         <column_name>create_time</column_name>
         <stream_name>create_time</stream_name>
       </field>
@@ -1389,8 +1475,8 @@
         <stream_name>update_time</stream_name>
       </field>
       <field>
-        <column_name>remark</column_name>
-        <stream_name>remark</stream_name>
+        <column_name>delete_flag</column_name>
+        <stream_name>delete_flag</stream_name>
       </field>
     </fields>
     <attributes/>
@@ -1402,7 +1488,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>352</xloc>
+      <xloc>368</xloc>
       <yloc>160</yloc>
       <draw>Y</draw>
     </GUI>

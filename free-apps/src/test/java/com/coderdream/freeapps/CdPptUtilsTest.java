@@ -1,11 +1,6 @@
 package com.coderdream.freeapps;
 
 import cn.hutool.core.date.DateUtil;
-import com.coderdream.freeapps.model.App;
-import com.coderdream.freeapps.service.CrawlerHistoryService;
-import com.coderdream.freeapps.service.FreeHistoryService;
-import com.coderdream.freeapps.service.PriceHistoryService;
-import com.coderdream.freeapps.service.TopPriceService;
 import com.coderdream.freeapps.util.BaseUtils;
 import com.coderdream.freeapps.util.ppt.CdPptxUtils;
 import com.coderdream.freeapps.util.ppt.pptutil.PPTUtil;
@@ -13,21 +8,17 @@ import com.coderdream.freeapps.util.ppt.pptutil.entity.ParagraphTextStyle;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import javax.annotation.Resource;
 import org.apache.poi.xslf.usermodel.XSLFTextParagraph;
 import org.apache.poi.xslf.usermodel.XSLFTextRun;
 import org.jetbrains.annotations.NotNull;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.util.CollectionUtils;
 
 @SpringBootTest
 public class CdPptUtilsTest {

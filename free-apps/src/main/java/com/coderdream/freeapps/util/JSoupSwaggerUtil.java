@@ -625,9 +625,9 @@ public class JSoupSwaggerUtil {
                                         Attribute element = (Attribute) it.next();
 
                                         String value = element.getValue();
-                                        int index = value.indexOf(Constants.SNAPSHOT_JPG_SUFFIX);
+                                        int index = value.indexOf(CdConstants.SNAPSHOT_JPG_SUFFIX);
                                         if (index == -1) {
-                                            index = value.indexOf(Constants.SNAPSHOT_JPG_2_SUFFIX);
+                                            index = value.indexOf(CdConstants.SNAPSHOT_JPG_2_SUFFIX);
                                         }
                                         if (index != -1) {
                                             // 找到从index开始往回的第一个http位置
@@ -636,9 +636,9 @@ public class JSoupSwaggerUtil {
                                             String url = value.substring(indexHttp, index + 3);
                                             stringList.add(url);
                                         }
-                                        index = value.indexOf(Constants.SNAPSHOT_PNG_SUFFIX);
+                                        index = value.indexOf(CdConstants.SNAPSHOT_PNG_SUFFIX);
                                         if (index == -1) {
-                                            index = value.indexOf(Constants.SNAPSHOT_PNG_2_SUFFIX);
+                                            index = value.indexOf(CdConstants.SNAPSHOT_PNG_2_SUFFIX);
                                         }
                                         if (index != -1) {
                                             String beginPart = value.substring(0, index);
@@ -657,10 +657,10 @@ public class JSoupSwaggerUtil {
                                             Attribute element = (Attribute) it.next();
                                             String value = element.getValue();
                                             int index = value.indexOf(
-                                                Constants.SNAPSHOT_JPG_SUFFIX);
+                                                CdConstants.SNAPSHOT_JPG_SUFFIX);
                                             if (index == -1) {
                                                 index = value.indexOf(
-                                                    Constants.SNAPSHOT_JPG_2_SUFFIX);
+                                                    CdConstants.SNAPSHOT_JPG_2_SUFFIX);
                                             }
                                             if (index != -1) {
                                                 String beginPart = value.substring(0, index);
@@ -668,10 +668,10 @@ public class JSoupSwaggerUtil {
                                                 String url = value.substring(indexHttp, index + 3);
                                                 stringList.add(url);
                                             }
-                                            index = value.indexOf(Constants.SNAPSHOT_PNG_SUFFIX);
+                                            index = value.indexOf(CdConstants.SNAPSHOT_PNG_SUFFIX);
                                             if (index == -1) {
                                                 index = value.indexOf(
-                                                    Constants.SNAPSHOT_PNG_2_SUFFIX);
+                                                    CdConstants.SNAPSHOT_PNG_2_SUFFIX);
                                             }
                                             if (index != -1) {
                                                 String beginPart = value.substring(0, index);

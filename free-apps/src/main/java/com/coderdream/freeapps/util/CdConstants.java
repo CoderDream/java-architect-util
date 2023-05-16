@@ -1,6 +1,6 @@
 package com.coderdream.freeapps.util;
 
-public class Constants {
+public class CdConstants {
 
     public static String MIDDLE_POINT = "•";
 

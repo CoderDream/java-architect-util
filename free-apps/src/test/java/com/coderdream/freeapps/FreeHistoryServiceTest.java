@@ -1,6 +1,6 @@
 package com.coderdream.freeapps;
 
-import com.coderdream.freeapps.model.App;
+import com.coderdream.freeapps.model.AppEntity;
 import com.coderdream.freeapps.model.AppBrief;
 import com.coderdream.freeapps.model.Description;
 import com.coderdream.freeapps.model.FreeHistory;
@@ -181,15 +181,15 @@ public class FreeHistoryServiceTest {
             List<FreeHistory> freeHistoryList = CdFileUtils.getFreeHistoryFromCL(fileName);
             int b = freeHistoryService.insertOrUpdateBatch(freeHistoryList);  //boolean 操作是否成功
             System.out.println("结果：" + b);
-            List<App> appList;
+            List<AppEntity> appList;
             List<Description> descriptionList;
-            App app;
+            AppEntity app;
             Description description;
             if (!CollectionUtils.isEmpty(freeHistoryList)) {
                 appList = new ArrayList<>();
                 descriptionList = new ArrayList<>();
                 for (FreeHistory freeHistory : freeHistoryList) {
-                    app = new App();
+                    app = new AppEntity();
                     BeanUtils.copyProperties(freeHistory, app);
                     app.setDelFlag(0);
                     app.setCreatedDate(new Date());

@@ -1,7 +1,6 @@
 package com.coderdream.freeapps.util;
 
 import cn.hutool.core.util.StrUtil;
-import com.coderdream.freeapps.handler.DailyPriceHandler;
 import com.coderdream.freeapps.model.FreeHistory;
 import com.spreada.utils.chinese.ZHConverter;
 import org.apache.commons.lang3.StringUtils;
@@ -72,7 +71,6 @@ public class CdFileUtils {
 
         return reportPath;
     }
-
 
     public static List<FreeHistory> getFreeHistoryFromCL(String fileName) {
         List<FreeHistory> freeHistoryList = new ArrayList<>();
@@ -146,8 +144,8 @@ public class CdFileUtils {
                         url = contentList.get(contentList.size() - 1);
                         appId = CdStringUtils.parseAppId(url);
 
-                        freeHistory.setUrlCn(Constants.URL_CN_BASE + appId);
-                        freeHistory.setUrlUs(Constants.URL_US_BASE + appId);
+                        freeHistory.setUrlCn(CdConstants.URL_CN_BASE + appId);
+                        freeHistory.setUrlUs(CdConstants.URL_US_BASE + appId);
                         freeHistory.setAppId(appId);
                         int idx = 0;
                         size = contentList.size();
@@ -336,8 +334,8 @@ public class CdFileUtils {
         //foreach遍历数组
         for (File file2 : files) {
             //打印文件列表：只读取名称使用getTitle();
-            System.out.println("路径：" + file2.getPath());
-            System.out.println("文件夹/文件名：" + file2.getName());
+//            System.out.println("路径：" + file2.getPath());
+//            System.out.println("文件夹/文件名：" + file2.getName());
             stringList.add(file2.getAbsolutePath());
         }
 

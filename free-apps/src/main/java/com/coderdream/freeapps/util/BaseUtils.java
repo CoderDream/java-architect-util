@@ -165,13 +165,12 @@ public class BaseUtils {
             lastIndex++;
             String priceStr = rawStrList.get(lastIndex);
 
-            priceStr = AppStringUtils.filterPriceStr(priceStr.trim());
             String cashType = "RMB";
             if (priceStr.lastIndexOf("$") != -1) {
                 priceStr = priceStr.replaceAll("\\$", "");
                 cashType = "USD";
             }
-
+            priceStr = AppStringUtils.filterPriceStr(priceStr.trim());
             try {
                 if (cashType.equals("USD")) {
                     Double doublePrice = Double.parseDouble(priceStr);

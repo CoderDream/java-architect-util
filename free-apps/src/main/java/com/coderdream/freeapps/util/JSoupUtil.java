@@ -4,8 +4,10 @@ import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.TypeReference;
-import com.coderdream.freeapps.model.App;
+import com.coderdream.freeapps.model.AppEntity;
 import com.coderdream.freeapps.model.AppExtraInfo;
+import com.coderdream.freeapps.model.PriceHistory;
+import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.*;
@@ -17,6 +19,7 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.*;
 
+@Slf4j
 public class JSoupUtil {
 
     private static final Logger logger = org.slf4j.LoggerFactory.getLogger(JSoupUtil.class);
@@ -140,19 +143,19 @@ public class JSoupUtil {
         appId = "id1443533088"; // 搜韵
         appId = "id353192097";// 未找到应用图标
 
-        App app = JSoupUtil.crawlerApp(appId, null);
+        AppEntity app = JSoupUtil.crawlerApp(appId, null);
         System.out.println(app);
     }
 
-    public static App crawlerApp(App app) {
+    public static AppEntity crawlerApp(AppEntity app) {
         return crawlerApp(app.getAppId(), app.getUsFlag());
     }
 
-    public static App crawlerApp(String appId, Integer usFlag) {
-        App app = new App();
-        String urlCn = Constants.URL_CN_BASE + appId + Constants.URL_PLATFORM_IPHONE;
+    public static AppEntity crawlerApp(String appId, Integer usFlag) {
+        AppEntity app = new AppEntity();
+        String urlCn = CdConstants.URL_CN_BASE + appId + CdConstants.URL_PLATFORM_IPHONE;
         app.setUrlCn(urlCn);
-        String urlUs = Constants.URL_US_BASE + appId + Constants.URL_PLATFORM_IPHONE;
+        String urlUs = CdConstants.URL_US_BASE + appId + CdConstants.URL_PLATFORM_IPHONE;
         app.setUrlUs(urlUs);
         app.setAppId(appId);
         Document document;
@@ -200,7 +203,7 @@ public class JSoupUtil {
             app.setDesignedFor(designedFor.trim());
             // 应用图标
             List<String> appIconUrlList = getIconUrlListByClass(document, APP_ICON_CLASS);
-            if(!CollectionUtils.isEmpty(appIconUrlList)) {
+            if (!CollectionUtils.isEmpty(appIconUrlList)) {
                 app.setAppIconUrl(appIconUrlList.get(0));
             }
 
@@ -225,7 +228,7 @@ public class JSoupUtil {
             String priceStr = getContentByClass(document, PRICE_CLASS);
             String priceInAppPurchaseStr = getContentByClass(document, PRICE_IN_APP_PURCHASE_CLASS);
             if (StrUtil.isNotEmpty(priceInAppPurchaseStr)) {
-                priceStr += Constants.MIDDLE_POINT + priceInAppPurchaseStr; // •
+                priceStr += CdConstants.MIDDLE_POINT + priceInAppPurchaseStr; // •
                 app.setInPurchaseFlag(1); // 有应用内购买
             }
             app.setPriceStr(priceStr);
@@ -303,9 +306,9 @@ public class JSoupUtil {
             String ratingStr = getContentByClass(document, WE_STAR_RATING_CLASS);
             app.setRatingStr(ratingStr);
             // 处理评分及投票人数
-            if (StrUtil.isNotEmpty(ratingStr) && ratingStr.split(Constants.MIDDLE_POINT).length == 2) {
-                String ratingTemp = ratingStr.split(Constants.MIDDLE_POINT)[0];
-                String rateAmountTemp = ratingStr.split(Constants.MIDDLE_POINT)[1];
+            if (StrUtil.isNotEmpty(ratingStr) && ratingStr.split(CdConstants.MIDDLE_POINT).length == 2) {
+                String ratingTemp = ratingStr.split(CdConstants.MIDDLE_POINT)[0];
+                String rateAmountTemp = ratingStr.split(CdConstants.MIDDLE_POINT)[1];
                 rateAmountTemp = rateAmountTemp.replaceAll("个评分", "");
                 rateAmountTemp = rateAmountTemp.replaceAll("Ratings", "");
                 rateAmountTemp = rateAmountTemp.replaceAll("Rating", "");
@@ -349,9 +352,9 @@ public class JSoupUtil {
             if (CollectionUtils.isEmpty(screenshotsList)) {
                 String urlRaw;
                 if (app.getUsFlag() == 1) {
-                    urlRaw = Constants.URL_US_BASE + appId;
+                    urlRaw = CdConstants.URL_US_BASE + appId;
                 } else {
-                    urlRaw = Constants.URL_CN_BASE + appId;
+                    urlRaw = CdConstants.URL_CN_BASE + appId;
                 }
                 document = JSoupUtil.getDocument(urlRaw);
                 screenshotsList = getSnapshotListByClass(document, SCREENSHOTS_LIST_CLASS);
@@ -370,6 +373,117 @@ public class JSoupUtil {
             e.printStackTrace();
         }
         return app;
+    }
+
+    public static PriceHistory crawlerAppPrice(String appId, Integer usFlag) {
+        PriceHistory priceHistory = new PriceHistory();
+        String urlCn = CdConstants.URL_CN_BASE + appId + CdConstants.URL_PLATFORM_IPHONE;
+        priceHistory.setUrlCn(urlCn);
+        String urlUs = CdConstants.URL_US_BASE + appId + CdConstants.URL_PLATFORM_IPHONE;
+        priceHistory.setUrlUs(urlUs);
+        priceHistory.setAppId(appId);
+        Document document;
+        try {
+            // 国区
+            if (usFlag == null) {
+                // 无限免
+                log.error("限免标识为空" + appId);
+                return null;
+
+            }// 美区
+            else {
+                if (usFlag == 0) {
+                    document = JSoupUtil.getDocument(urlCn);
+                    if (document == null) {
+                        document = JSoupUtil.getDocument(urlUs);
+                        if (document == null) {
+                            logger.error("appId：" + appId + " 已下架！");
+                            return priceHistory;
+                        }
+                    }
+                } else {
+                    document = JSoupUtil.getDocument(urlUs);
+                    if (document == null) {
+                        logger.error("appId：" + appId + " 已下架！");
+                        return priceHistory;
+                    }
+                }
+            }
+
+            // 价格标签（含是否内购）
+            String priceStr = getContentByClass(document, PRICE_CLASS);
+            String priceInAppPurchaseStr = getContentByClass(document, PRICE_IN_APP_PURCHASE_CLASS);
+            if (StrUtil.isNotEmpty(priceInAppPurchaseStr)) {
+                priceStr += CdConstants.MIDDLE_POINT + priceInAppPurchaseStr; // •
+                priceHistory.setInPurchaseFlag(1); // 有应用内购买
+            }
+            priceHistory.setPriceStr(priceStr);
+            // 详情
+            AppExtraInfo appInfo = getPriceInfoByClass(document, INFORMATION_LIST_ITEM_DEFINITION_CLASS);
+            System.out.println(appInfo);
+
+//        app.setPriceStr(appInfo.getPrice()); 不能用这里的价格信息，因为不包含是否应用内购
+            String priceStrAppInfo = appInfo.getPrice();
+            if (StrUtil.isNotEmpty(priceStrAppInfo)) {
+                String realPrice = AppStringUtils.filterPriceStr(priceStrAppInfo);
+                try {
+                    // 设置国区、美区价格
+                    if (StrUtil.isNotEmpty(realPrice) && !realPrice.equals("Free") && !realPrice.equals("免费")) {
+                        if (usFlag != null && usFlag == 1) {
+                            priceHistory.setPriceUs(BigDecimal.valueOf(Double.valueOf(realPrice)));
+                        } else {
+                            if (-1 != realPrice.lastIndexOf("$")) {
+                                priceHistory.setPriceUs(BigDecimal.valueOf(Double.valueOf(realPrice)));
+                                priceHistory.setUsFlag(1);
+                            } else {
+                                priceHistory.setPriceCn((int) Math.round(Double.valueOf(realPrice)));
+
+//                                priceHistory.setPriceCn(Integer.valueOf(realPrice));
+                                ;
+                                priceHistory.setUsFlag(0);
+                            }
+                        }
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    logger.error(e.getMessage());
+                    logger.error("app: " + priceHistory);
+                }
+            } else {
+                logger.error("价格信息为空");
+            }
+            // TODO
+            priceHistory.setPrice(CdStringUtils.genHistoryPrice(priceHistory));
+
+            Map<String, String> appInPurchase = appInfo.getAppInPurchase();
+            if (appInPurchase != null) {
+                // 参考：https://blog.csdn.net/CatEatApple/article/details/83926237
+                String jsonAppInPurchase = JSON.toJSONString(appInPurchase);//map转String
+                JSONObject jsonObjectAppInPurchase = JSON.parseObject(jsonAppInPurchase);//String转json
+                priceHistory.setAppInPurchase(jsonObjectAppInPurchase);
+                Map<String, String> params = JSONObject.parseObject(jsonObjectAppInPurchase.toJSONString(),
+                    new TypeReference<Map<String, String>>() {
+                    });
+                Double appInPurchaseTotal = new Double(0);
+                for (String value : params.values()) {
+                    String realPriceStr = AppStringUtils.filterPriceStr(value);
+                    if (StrUtil.isNotEmpty(realPriceStr)) {
+                        appInPurchaseTotal += Double.valueOf(realPriceStr);
+                    }
+                }
+                // 应用内购限免
+                if (appInPurchaseTotal == 0.0) {
+                    priceHistory.setInPurchaseFreeFlag(1);
+                } else {
+                    priceHistory.setInPurchaseFreeFlag(0);
+                }
+            }
+            priceHistory.setDelFlag(0);
+        } catch (Exception e) {
+            logger.error(e.getMessage());
+            e.printStackTrace();
+        }
+        return priceHistory;
     }
 
     public static String getTitleByClass(Document document, String className) {
@@ -489,7 +603,6 @@ public class JSoupUtil {
         return stringList;
     }
 
-
     /**
      * jsoup-Elements的遍历（使用Iterator迭代器） https://blog.csdn.net/shengfn/article/details/53584339 AppInfo
      *
@@ -601,6 +714,87 @@ public class JSoupUtil {
         return appInfo;
     }
 
+    /**
+     * jsoup-Elements的遍历（使用Iterator迭代器） https://blog.csdn.net/shengfn/article/details/53584339 AppInfo
+     *
+     * @param document
+     * @param className
+     * @return
+     */
+    public static AppExtraInfo getPriceInfoByClass(Document document, String className) {
+        AppExtraInfo appInfo = new AppExtraInfo();
+        Elements elements = document.getElementsByClass(className);
+
+        Elements elementsNext = elements.next();
+        int index = 0;
+
+        //获取迭代器
+        Iterator it = elements.iterator();
+        while (it.hasNext()) {
+            Element element = (Element) it.next();
+            String text = element.text();
+            String tagName = element.tagName();
+            switch (index) {
+//                case 0:
+//                case 1:
+//                case 2:
+//                case 3:
+//                case 4:
+//                case 5:
+//                case 6:
+//                    break;
+                case 7:
+                    if ("dd".equals(tagName)) {
+                        if (-1 != text.lastIndexOf("¥") || -1 != text.lastIndexOf("$")) {
+                            appInfo.setPrice(text);
+                        }
+                    }
+                    break;
+                case 8:
+                    if ("dd".equals(tagName)) {
+                        Element elementValue;
+                        Element elementKey;
+                        if (element.childNodeSize() > 1) {
+                            Node temp = element.childNode(1);
+                            if (temp.childNodeSize() > 1) {
+                                Element element9Data = (Element) temp.childNode(1);
+                                int element9Size = element9Data.childNodeSize();
+                                Element element9Temp;
+                                Map<String, String> appInPurchase = new LinkedHashMap<>();
+                                for (int i9 = 0; i9 < element9Size - 2; i9++) {
+                                    i9++;
+                                    element9Temp = (Element) element9Data.childNode(i9);
+                                    if (element9Temp.childNodeSize() == 5) {
+                                        elementKey = (Element) element9Temp.childNode(1);
+                                        elementValue = (Element) element9Temp.childNode(3);
+                                        appInPurchase.put(elementKey.text(), elementValue.text());
+                                    }
+                                }
+                                appInfo.setAppInPurchase(appInPurchase);
+                            } else {
+                                log.error("无子节点：" + temp.toString());
+                            }
+                        } else {
+                            log.error("无子节点：" + element.text());
+                            if (-1 != text.lastIndexOf("¥") || -1 != text.lastIndexOf("$")) {
+                                appInfo.setPrice(text);
+                            }
+                        }
+                    } else {
+                        log.error("tagName 不为dd：" + tagName);
+                    }
+                    break;
+                default:
+                    break;
+            }
+            if ("dd".equals(tagName)) {
+                index++;
+            }
+        }
+
+        return appInfo;
+    }
+
     private static void parseElementEight(AppExtraInfo appInfo, Elements elements) {
         Element element1 = elements.get(0);
         TextNode titleNode01 = (TextNode) element1.childNode(0);
@@ -681,9 +875,9 @@ public class JSoupUtil {
                                         Attribute element = (Attribute) it.next();
 
                                         String value = element.getValue();
-                                        int index = value.indexOf(Constants.SNAPSHOT_JPG_SUFFIX);
+                                        int index = value.indexOf(CdConstants.SNAPSHOT_JPG_SUFFIX);
                                         if (index == -1) {
-                                            index = value.indexOf(Constants.SNAPSHOT_JPG_2_SUFFIX);
+                                            index = value.indexOf(CdConstants.SNAPSHOT_JPG_2_SUFFIX);
                                         }
                                         if (index != -1) {
                                             // 找到从index开始往回的第一个http位置
@@ -692,9 +886,9 @@ public class JSoupUtil {
                                             String url = value.substring(indexHttp, index + 3);
                                             stringList.add(url);
                                         }
-                                        index = value.indexOf(Constants.SNAPSHOT_PNG_SUFFIX);
+                                        index = value.indexOf(CdConstants.SNAPSHOT_PNG_SUFFIX);
                                         if (index == -1) {
-                                            index = value.indexOf(Constants.SNAPSHOT_PNG_2_SUFFIX);
+                                            index = value.indexOf(CdConstants.SNAPSHOT_PNG_2_SUFFIX);
                                         }
                                         if (index != -1) {
                                             String beginPart = value.substring(0, index);
@@ -712,9 +906,9 @@ public class JSoupUtil {
                                         while (it.hasNext()) {
                                             Attribute element = (Attribute) it.next();
                                             String value = element.getValue();
-                                            int index = value.indexOf(Constants.SNAPSHOT_JPG_SUFFIX);
+                                            int index = value.indexOf(CdConstants.SNAPSHOT_JPG_SUFFIX);
                                             if (index == -1) {
-                                                index = value.indexOf(Constants.SNAPSHOT_JPG_2_SUFFIX);
+                                                index = value.indexOf(CdConstants.SNAPSHOT_JPG_2_SUFFIX);
                                             }
                                             if (index != -1) {
                                                 String beginPart = value.substring(0, index);
@@ -722,9 +916,9 @@ public class JSoupUtil {
                                                 String url = value.substring(indexHttp, index + 3);
                                                 stringList.add(url);
                                             }
-                                            index = value.indexOf(Constants.SNAPSHOT_PNG_SUFFIX);
+                                            index = value.indexOf(CdConstants.SNAPSHOT_PNG_SUFFIX);
                                             if (index == -1) {
-                                                index = value.indexOf(Constants.SNAPSHOT_PNG_2_SUFFIX);
+                                                index = value.indexOf(CdConstants.SNAPSHOT_PNG_2_SUFFIX);
                                             }
                                             if (index != -1) {
                                                 String beginPart = value.substring(0, index);
@@ -769,14 +963,14 @@ public class JSoupUtil {
                         Iterator it = attributes41.iterator();
                         while (it.hasNext()) {
                             Attribute element = (Attribute) it.next();
-                            if(!element.getKey().equals("srcset")) {
+                            if (!element.getKey().equals("srcset")) {
                                 continue;
                             }
                             String value = element.getValue();
                             logger.info(value);
-                            int index = value.indexOf(Constants.APP_ICON_JPG_SUFFIX);
+                            int index = value.indexOf(CdConstants.APP_ICON_JPG_SUFFIX);
                             if (index == -1) {
-                                index = value.indexOf(Constants.APP_ICON_JPG_2_SUFFIX);
+                                index = value.indexOf(CdConstants.APP_ICON_JPG_2_SUFFIX);
                             }
                             if (index != -1) {
                                 // 找到从index开始往回的第一个http位置
@@ -785,9 +979,9 @@ public class JSoupUtil {
                                 String url = value.substring(indexHttp, index + 3);
                                 stringList.add(url);
                             }
-                            index = value.indexOf(Constants.APP_ICON_PNG_SUFFIX);
+                            index = value.indexOf(CdConstants.APP_ICON_PNG_SUFFIX);
                             if (index == -1) {
-                                index = value.indexOf(Constants.APP_ICON_2_PNG_SUFFIX);
+                                index = value.indexOf(CdConstants.APP_ICON_2_PNG_SUFFIX);
                             }
                             if (index != -1) {
                                 String beginPart = value.substring(0, index);
@@ -799,8 +993,7 @@ public class JSoupUtil {
                     }
                 }
             }
-        }
-        else {
+        } else {
             logger.error("未找到应用图标：");
         }
         return stringList;

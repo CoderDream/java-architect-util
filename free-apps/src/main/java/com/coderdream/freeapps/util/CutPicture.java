@@ -26,7 +26,6 @@ import org.springframework.util.CollectionUtils;
  */
 public class CutPicture {
 
-
     public static void main(String[] args) throws Exception {
 //        String url = "https://www.baidu.com";
         String imgName = "baidu";

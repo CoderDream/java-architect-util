@@ -7,7 +7,7 @@ import com.coderdream.freeapps.model.Snapshot;
 import com.coderdream.freeapps.service.AppIconService;
 import com.coderdream.freeapps.service.MinioService;
 import com.coderdream.freeapps.service.SnapshotService;
-import com.coderdream.freeapps.util.Constants;
+import com.coderdream.freeapps.util.CdConstants;
 import com.coderdream.freeapps.util.DownloadPictureUtil;
 import com.coderdream.freeapps.util.CdListUtils;
 import lombok.RequiredArgsConstructor;
@@ -87,7 +87,7 @@ public class MinioServiceImpl implements MinioService {
         if (!CollectionUtils.isEmpty(snapshotTodoList)) {
             logger.info("本批次处理的记录数: " + snapshotTodoList.size());
             // 分批处理
-            List<List<Snapshot>> lists = CdListUtils.splitTo(snapshotTodoList, Constants.BATCH_SNAPSHOT_ROWS);
+            List<List<Snapshot>> lists = CdListUtils.splitTo(snapshotTodoList, CdConstants.BATCH_SNAPSHOT_ROWS);
             for (List<Snapshot> list : lists) {
                 if (!CollectionUtils.isEmpty(list)) {
                     snapshotDoneList = new ArrayList<>();
@@ -165,7 +165,7 @@ public class MinioServiceImpl implements MinioService {
         if (!CollectionUtils.isEmpty(appIconTodoList)) {
             logger.info("本批次处理的记录数: " + appIconTodoList.size());
             // 分批处理
-            List<List<AppIcon>> lists = CdListUtils.splitTo(appIconTodoList, Constants.BATCH_SNAPSHOT_ROWS);
+            List<List<AppIcon>> lists = CdListUtils.splitTo(appIconTodoList, CdConstants.BATCH_SNAPSHOT_ROWS);
             for (List<AppIcon> list : lists) {
                 if (!CollectionUtils.isEmpty(list)) {
                     appIconDoneList = new ArrayList<>();

@@ -5,12 +5,12 @@ import com.alibaba.fastjson.JSONArray;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.coderdream.freeapps.mapper.AppIconMapper;
-import com.coderdream.freeapps.model.App;
+import com.coderdream.freeapps.model.AppEntity;
 import com.coderdream.freeapps.model.AppIcon;
 import com.coderdream.freeapps.service.AppService;
 import com.coderdream.freeapps.service.AppIconService;
 import com.coderdream.freeapps.util.CdListUtils;
-import com.coderdream.freeapps.util.Constants;
+import com.coderdream.freeapps.util.CdConstants;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.LinkedHashSet;
@@ -47,7 +47,7 @@ public class AppIconServiceImpl extends ServiceImpl<AppIconMapper, AppIcon>
         if (!CollectionUtils.isEmpty(appIconList)) {
             logger.info("本批次处理的记录数: " + appIconList.size());
             // 分批处理
-            List<List<AppIcon>> lists = CdListUtils.splitTo(appIconList, Constants.BATCH_UPDATE_ROWS);
+            List<List<AppIcon>> lists = CdListUtils.splitTo(appIconList, CdConstants.BATCH_UPDATE_ROWS);
             for (List<AppIcon> list : lists) {
                 if (!CollectionUtils.isEmpty(list)) {
                     result += appIconMapper.insertOrUpdateBatch(appIconList);
@@ -87,7 +87,7 @@ public class AppIconServiceImpl extends ServiceImpl<AppIconMapper, AppIcon>
     @Override
     public void dailyProcess() {
         long startTime = System.currentTimeMillis();
-        List<App> newList;
+        List<AppEntity> newList;
         List<AppIcon> appIconList;
         AppIcon appIcon;
         Set<String> doneAppIdSet = new LinkedHashSet<>();
@@ -99,12 +99,12 @@ public class AppIconServiceImpl extends ServiceImpl<AppIconMapper, AppIcon>
         }
         logger.info("本次任务开始前已完成数: " + doneAppIdSet.size());
 
-        List<App> selectTodoList = appService.selectTodoList(null);
+        List<AppEntity> selectTodoList = appService.selectTodoList(null);
         if (!CollectionUtils.isEmpty(selectTodoList)) {
             logger.info("本次任务开始前有效的应用数: " + selectTodoList.size());
 
             appIconList = new ArrayList<>();
-            for (App appNew : selectTodoList) {
+            for (AppEntity appNew : selectTodoList) {
                 if (doneAppIdSet.contains(appNew.getAppId())) {
                     continue; // 如果已有记录，则跳过
                 }

@@ -1,9 +1,9 @@
 package com.coderdream.freeapps.util;
 
-import com.coderdream.freeapps.model.App;
+import com.coderdream.freeapps.model.AppEntity;
+import com.coderdream.freeapps.model.PriceHistory;
 
 public class CdStringUtils {
-
 
     /**
      * 获取 AppId url：https://apps.apple.com/us/app/marple/id288689440?l=zh 获取最后一个/id和？之间的数字，返回id+数字
@@ -26,7 +26,6 @@ public class CdStringUtils {
         }
         return id;
     }
-
 
     /**
      * 是否存在问号
@@ -54,7 +53,7 @@ public class CdStringUtils {
         return false;
     }
 
-    public static Integer genPrice(App app) {
+    public static Integer genPrice(AppEntity app) {
         Double doublePrice = new Double(0);
         Integer usFlag = app.getUsFlag();
         if (usFlag !=null ) {
@@ -65,6 +64,24 @@ public class CdStringUtils {
             } else {
                 if(app.getPriceUs() != null) {
                     doublePrice = app.getPriceUs().doubleValue() * 6;
+                }
+            }
+        }
+
+        return (int) Math.round(doublePrice);
+    }
+
+    public static Integer genHistoryPrice(PriceHistory priceHistory) {
+        Double doublePrice = (double) 0;
+        Integer usFlag = priceHistory.getUsFlag();
+        if (usFlag !=null ) {
+            if(usFlag == 0) {
+                if(priceHistory.getPriceCn() != null) {
+                    return priceHistory.getPriceCn();
+                }
+            } else {
+                if(priceHistory.getPriceUs() != null) {
+                    doublePrice = priceHistory.getPriceUs().doubleValue() * 6;
                 }
             }
         }

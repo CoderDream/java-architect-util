@@ -1,11 +1,9 @@
 package com.coderdream.freeapps.mapper;
 
 import com.coderdream.freeapps.dto.DailyPptInfo;
-import java.util.Collection;
-import org.apache.ibatis.annotations.Param;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.coderdream.freeapps.model.App;
+import com.coderdream.freeapps.model.AppEntity;
 
 import java.util.List;
 import org.apache.ibatis.annotations.Select;
@@ -16,7 +14,7 @@ import org.apache.ibatis.annotations.Select;
  * @createDate 2023-02-27 19:08:25
  * @Entity com.coderdream.freeapps.entity.App
  */
-public interface AppMapper extends BaseMapper<App> {
+public interface AppMapper extends BaseMapper<AppEntity> {
 
 //    int insertSelective(App app);
 
@@ -24,7 +22,8 @@ public interface AppMapper extends BaseMapper<App> {
 
 //    int insertBatch(@Param("appCollection") Collection<App> appCollection);
 
-    int insertOrUpdateBatch(List<App> entities);
+    int insertOrUpdateBatch(List<AppEntity> entities);
+    int insertOrUpdateTopFlagBatch(List<AppEntity> entities);
 
     @Select(
         " SELECT " +

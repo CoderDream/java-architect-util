@@ -9,7 +9,6 @@ public class AppStringUtils {
         System.out.println(realPriceStr);
     }
 
-
     public static String filterPriceStr(String priceStr){
         String result = priceStr.replaceAll("➱0", "");
         result = result.replaceAll(",", "");

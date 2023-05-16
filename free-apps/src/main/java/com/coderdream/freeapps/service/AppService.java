@@ -1,14 +1,11 @@
 package com.coderdream.freeapps.service;
 
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.core.toolkit.Constants;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.coderdream.freeapps.dto.AppDTO;
 import com.coderdream.freeapps.dto.AppQueryPageDTO;
-import com.coderdream.freeapps.model.App;
+import com.coderdream.freeapps.model.AppEntity;
 import com.coderdream.freeapps.vo.AppVO;
-import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -32,19 +29,19 @@ public interface AppService {
     // 删除
     Boolean delete(String id);
 
-    int insertSelective(App app);
+    int insertSelective(AppEntity app);
 
-    int insertOrUpdateBatch(List<App> appList);
+    int insertOrUpdateBatch(List<AppEntity> appList);
 
-    List<App> selectList(App app);
+    List<AppEntity> selectList(AppEntity app);
 
-    List<App> selectNoAppIconUrl();
+    List<AppEntity> selectNoAppIconUrl();
 
-    List<App> selectNoUsFlag();
+    List<AppEntity> selectNoUsFlag();
 
-    List<App> selectNoSnapshot();
+    List<AppEntity> selectNoSnapshot();
 
-    List<App> selectDeletedAppList();
+    List<AppEntity> selectDeletedAppList();
 
     /**
      * 有效的App列表
@@ -52,12 +49,16 @@ public interface AppService {
      * @param app
      * @return
      */
-    List<App> selectTodoList(App app);
+    List<AppEntity> selectTodoList(AppEntity app);
 
-    IPage<App> selectPage(Page<App> page);
+    IPage<AppEntity> selectPage(Page<AppEntity> page);
 
     int processNoUsFlag();
     int processWechat();
 
     int genDailyPpt();
+
+    int initTopFlag();
+
+    int updateDescriptionCn();
 }

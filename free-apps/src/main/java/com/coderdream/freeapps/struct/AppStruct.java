@@ -1,7 +1,7 @@
 package com.coderdream.freeapps.struct;
 
 import com.coderdream.freeapps.dto.AppDTO;
-import com.coderdream.freeapps.model.App;
+import com.coderdream.freeapps.model.AppEntity;
 import com.coderdream.freeapps.vo.AppVO;
 import java.util.List;
 import org.mapstruct.Mapper;
@@ -12,19 +12,19 @@ import org.mapstruct.Mapper;
 @Mapper(componentModel = "spring")
 public interface AppStruct {
 
-  AppVO modelToVO(App record);
+  AppVO modelToVO(AppEntity record);
 
-  List<AppVO> modelToVO(List<App> records);
+  List<AppVO> modelToVO(List<AppEntity> records);
 
-  App voToModel(AppVO record);
+  AppEntity voToModel(AppVO record);
 
-  List<App> voToModel(List<AppVO> records);
+  List<AppEntity> voToModel(List<AppVO> records);
 
-  AppDTO modelToDTO(App record);
+  AppDTO modelToDTO(AppEntity record);
 
-  List<AppDTO> modelToDTO(List<App> records);
+  List<AppDTO> modelToDTO(List<AppEntity> records);
 
-  App dtoToModel(AppDTO record);
+  AppEntity dtoToModel(AppDTO record);
 
-  List<App> dtoToModel(List<AppDTO> records);
+  List<AppEntity> dtoToModel(List<AppDTO> records);
 }

@@ -1,30 +1,17 @@
 package com.coderdream.freeapps;
 
 import cn.hutool.core.util.StrUtil;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.coderdream.freeapps.dto.AppQueryPageDTO;
-import com.coderdream.freeapps.model.App;
-import com.coderdream.freeapps.model.CrawlerHistory;
-import com.coderdream.freeapps.model.FreeHistory;
-import com.coderdream.freeapps.model.PriceHistory;
 import com.coderdream.freeapps.service.AppService;
 import com.coderdream.freeapps.service.CrawlerHistoryService;
 import com.coderdream.freeapps.service.FreeHistoryService;
 import com.coderdream.freeapps.service.PriceHistoryService;
-import com.coderdream.freeapps.util.JSoupUtil;
-import com.coderdream.freeapps.vo.AppVO;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.*;
 
 @SpringBootTest

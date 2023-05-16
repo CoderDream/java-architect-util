@@ -13,10 +13,10 @@ import org.springframework.context.annotation.Bean;
  * @date 2021/4/18 17:38
  * @description Mybatis plus 配置类
  */
-@ConditionalOnBean({com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.class})
+//@ConditionalOnBean({com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.class})
 public class MybatisPlusAutoConfiguration {
 
-  @Bean
+//  @Bean
   public MetaObjectHandler metaObjectHandler() {
     return new FillFieldConfiguration();
   }

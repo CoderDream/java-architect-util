@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.coderdream.freeapps.mapper.AppMapper">
 
-    <resultMap id="BaseResultMap" type="com.coderdream.freeapps.model.App">
+    <resultMap id="BaseResultMap" type="com.coderdream.freeapps.model.AppEntity">
         <id property="id" column="id" jdbcType="BIGINT"/>
         <result property="appId" column="app_id" jdbcType="VARCHAR"/>
         <result property="title" column="title" jdbcType="VARCHAR"/>
@@ -295,6 +295,21 @@
         `last_modified_name`=values(`last_modified_name`),
         `last_modified_date`=values(`last_modified_date`),
         `version`=values(`version`)
+    </insert>
+
+    <insert id="insertOrUpdateTopFlagBatch">
+        insert into t_app
+        (`app_id`,
+        `top_flag`)
+        values
+        <foreach collection="entities" item="item" separator=",">
+            (
+            #{item.appId,jdbcType=VARCHAR},
+            #{item.topFlag,jdbcType=NUMERIC}
+            )
+        </foreach>
+        on duplicate key update
+        `top_flag`=values(`top_flag`)
     </insert>
 
 <!--    <insert id="insertOrUpdateBatchV5">-->

@@ -18,4 +18,5 @@ public interface DescriptionService extends IService<Description> {
     int insertOrUpdateBatchMy(List<Description> descriptionList);
 
     int dailyProcess();
+    int processHistoryData();
 }

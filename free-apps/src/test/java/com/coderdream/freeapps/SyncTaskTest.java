@@ -12,6 +12,7 @@ import com.coderdream.freeapps.service.SnapshotService;
 import com.coderdream.freeapps.service.SyncTaskService;
 import com.coderdream.freeapps.service.TopPriceService;
 import com.coderdream.freeapps.util.CdDateUtils;
+import com.coderdream.freeapps.util.ppt.excelutil.CdExcelUtils;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
@@ -60,11 +61,17 @@ public class SyncTaskTest {
     public void testDailyProcess() {
         syncTaskService.dailyProcess(null);
         priceHistoryService.dailyProcess();
-        snapshotService.dailyProcess();
-        minioService.processDaily();
+//        snapshotService.dailyProcess();
+//        minioService.processDaily();
         descriptionService.dailyProcess();
         topPriceService.process(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
         // 处理没有是否美区限免的应用
         appService.processNoUsFlag();
     }
+
+    @Test
+    public void testRecommend() {
+        CdExcelUtils.m1();
+    }
+
 }

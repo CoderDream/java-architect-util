@@ -56,7 +56,7 @@ public class PriceHistoryTest {
                 if (!appId.equals(tempAppId)) {
                     dateStr = new SimpleDateFormat("yyyy-MM-dd").format(priceHistory.getCrawlerDate());
 //                    logger.error("\t" + priceHistory.getId() + "\t" + priceHistory.getAppId() + "\t" + dateStr);
-                    if(dateStr.equals("2023-03-05")) {
+                    if (dateStr.equals("2023-03-05")) {
                         logger.error("\t" + priceHistory.getId());
                     }
                     dateSet.add(dateStr);
@@ -84,4 +84,24 @@ public class PriceHistoryTest {
     public void testDailyPriceHandler() {
         priceHistoryService.dailyProcess();
     }
+
+    @Test
+    public void testDailyProcessSimple() {
+        priceHistoryService.dailyProcessSimple();
+    }
+
+    @Test
+    public void testProcessPriceNone() {
+        priceHistoryService.processPriceNone();
+    }
+    @Test
+    public void testProcessPriceFault() {
+        priceHistoryService.processPriceFault();
+    }
+
+    @Test
+    public void testProcessPriceTopList() {
+        priceHistoryService.processPriceTopList();
+    }
+
 }

@@ -1,6 +1,6 @@
 package com.coderdream.freeapps;
 
-import com.coderdream.freeapps.model.App;
+import com.coderdream.freeapps.model.AppEntity;
 import com.coderdream.freeapps.model.AppIcon;
 import com.coderdream.freeapps.service.AppService;
 import com.coderdream.freeapps.service.CrawlerHistoryService;
@@ -43,14 +43,14 @@ public class AppIconTest {
     public void testInsertOrUpdateBatch() {
         List<AppIcon> appIconList = new ArrayList<>();
         AppIcon appIcon;
-        List<App> appList = appService.selectTodoList(new App());
+        List<AppEntity> appList = appService.selectTodoList(new AppEntity());
 
         String filename = "";
         String appIconUrl;
         int indexPrefixPng;
         int indexPrefixJpg;
         if (!CollectionUtils.isEmpty(appList)) {
-            for (App app : appList) {
+            for (AppEntity app : appList) {
                 log.error(app.getAppId());
                 appIcon = new AppIcon();
                 BeanUtils.copyProperties(app, appIcon);
@@ -81,9 +81,9 @@ public class AppIconTest {
     @Test
     public void testDailyProcess() {
 
-        List<App> appList = appService.selectNoAppIconUrl();
+        List<AppEntity> appList = appService.selectNoAppIconUrl();
         if (!CollectionUtils.isEmpty(appList)) {
-            for (App app : appList) {
+            for (AppEntity app : appList) {
                 log.error(app.getAppId());
             }
         }

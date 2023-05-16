@@ -1,7 +1,6 @@
 package com.coderdream.freeapps.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.coderdream.freeapps.model.App;
 import com.coderdream.freeapps.model.TopPrice;
 
 import java.util.List;

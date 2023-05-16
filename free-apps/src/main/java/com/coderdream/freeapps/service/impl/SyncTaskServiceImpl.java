@@ -4,8 +4,9 @@ import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.coderdream.freeapps.controller.SyncTaskReqDto;
+import com.coderdream.freeapps.dto.RecommendApp;
 import com.coderdream.freeapps.mapper.SyncTaskMapper;
-import com.coderdream.freeapps.model.App;
+import com.coderdream.freeapps.model.AppEntity;
 import com.coderdream.freeapps.model.Description;
 import com.coderdream.freeapps.model.FreeHistory;
 import com.coderdream.freeapps.model.SyncTaskEntity;
@@ -15,9 +16,8 @@ import com.coderdream.freeapps.service.FreeHistoryService;
 import com.coderdream.freeapps.service.SyncTaskService;
 import com.coderdream.freeapps.util.CdDateUtils;
 import com.coderdream.freeapps.util.CdFileUtils;
+import com.coderdream.freeapps.util.ppt.excelutil.CdExcelUtils;
 import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -28,7 +28,6 @@ import java.util.concurrent.TimeUnit;
 import javax.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
@@ -91,16 +90,17 @@ public class SyncTaskServiceImpl extends ServiceImpl<SyncTaskMapper, SyncTaskEnt
                     }
                     int b = freeHistoryService.insertOrUpdateBatch(freeHistoryList);  //boolean 操作是否成功
                     log.info("结果：" + b);
-                    List<App> appList;
+                    List<AppEntity> appList;
                     List<Description> descriptionList;
-                    App app;
+                    AppEntity app;
                     Description description;
                     if (!CollectionUtils.isEmpty(freeHistoryList)) {
                         appList = new ArrayList<>();
                         descriptionList = new ArrayList<>();
                         for (FreeHistory freeHistory : freeHistoryList) {
-                            app = new App();
+                            app = new AppEntity();
                             BeanUtils.copyProperties(freeHistory, app);
+                            app.setDescriptionCl(freeHistory.getDescription());
                             app.setDelFlag(0);
                             app.setCreatedDate(new Date());
                             appList.add(app);
@@ -160,6 +160,26 @@ public class SyncTaskServiceImpl extends ServiceImpl<SyncTaskMapper, SyncTaskEnt
             day, hours, minutes, seconds, ms);
         log.info("本次任务耗时: " + period + " 毫秒");
         log.info("本次任务耗时: " + message);
+    }
+
+    @Override
+    public void dailyRecommend() {
+        List<RecommendApp> recommendAppList = CdExcelUtils.genRecommendAppList();
+        if (com.baomidou.mybatisplus.core.toolkit.CollectionUtils.isNotEmpty(recommendAppList)) {
+            for (RecommendApp recommendApp : recommendAppList) {
+                System.out.println(recommendApp.getTitle());
+                System.out.println(recommendApp.getYesterdayPrice()+"➱0");
+                if(recommendApp.getUsFlag().equals("1")) {
+                    System.out.println("美区限免。"+recommendApp.getDescriptionUs());
+                    System.out.println("https://apps.apple.com/us/app/"+recommendApp.getAppId());
+                } else {
+                    System.out.println(recommendApp.getDescriptionCn());
+                    System.out.println("https://apps.apple.com/cn/app/"+recommendApp.getAppId());
+                }
+                System.out.println();
+            }
+        }
+
     }
 }
 

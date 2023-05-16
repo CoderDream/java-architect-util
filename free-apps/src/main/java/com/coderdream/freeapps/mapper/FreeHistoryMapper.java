@@ -1,8 +1,6 @@
 package com.coderdream.freeapps.mapper;
-import org.apache.ibatis.annotations.Param;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.coderdream.freeapps.model.App;
 import com.coderdream.freeapps.model.FreeHistory;
 
 import java.util.List;

@@ -1,20 +1,21 @@
 package com.coderdream.freeapps;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.coderdream.freeapps.dto.AppQueryPageDTO;
 import com.coderdream.freeapps.dto.TopList;
-import com.coderdream.freeapps.model.App;
+import com.coderdream.freeapps.model.AppEntity;
 import com.coderdream.freeapps.model.CrawlerHistory;
 import com.coderdream.freeapps.model.FreeHistory;
 import com.coderdream.freeapps.model.PriceHistory;
 import com.coderdream.freeapps.service.*;
-import com.coderdream.freeapps.util.Constants;
+import com.coderdream.freeapps.util.CdConstants;
 import com.coderdream.freeapps.util.JSoupUtil;
 import com.coderdream.freeapps.util.CdListUtils;
 import com.coderdream.freeapps.util.ppt.excelutil.CdExcelUtils;
 import com.coderdream.freeapps.vo.AppVO;
-import org.slf4j.Logger;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -25,14 +26,13 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.util.CollectionUtils;
 
 import javax.annotation.Resource;
 
 @SpringBootTest
+@Slf4j
 public class AppServiceTest {
 
-    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(AppServiceTest.class);
     @Autowired
     private AppService appService;
 
@@ -57,9 +57,9 @@ public class AppServiceTest {
     public void testInsert() {
         //批量添加
         //INSERT INTO user ( id,title, age, email ) VALUES ( ?, ?, ?, ? )
-        List<App> list = new ArrayList<>();
+        List<AppEntity> list = new ArrayList<>();
         for (int i = 1; i <= 10; i++) {
-            App app = new App();
+            AppEntity app = new AppEntity();
             app.setAppId("user" + i);
 
             int b = appService.insertSelective(app);  //boolean 操作是否成功
@@ -71,9 +71,9 @@ public class AppServiceTest {
     public void testInsertOrUpdateBatch() {
         //批量添加
         //INSERT INTO user ( id,title, age, email ) VALUES ( ?, ?, ?, ? )
-        List<App> list = new ArrayList<>();
+        List<AppEntity> list = new ArrayList<>();
         for (int i = 1; i <= 200; i++) {
-            App app = new App();
+            AppEntity app = new AppEntity();
 //            app.setAppId("id" +  String.format("%09d",  new Random().nextInt(999999999)));
             app.setAppId("id" + String.format("%09d", new Random().nextInt(99)));
             app.setTitle("title" + new Random().nextInt(100));
@@ -85,15 +85,15 @@ public class AppServiceTest {
 
     @Test
     public void testInsertOrUpdateBatch_total() {
-        List<App> list = new ArrayList<>();
-        App app;
+        List<AppEntity> list = new ArrayList<>();
+        AppEntity app;
 
         FreeHistory freeHistoryReqDto = new FreeHistory();
         List<FreeHistory> freeHistoryList = freeHistoryService.selectList(freeHistoryReqDto);
         if (!CollectionUtils.isEmpty(freeHistoryList)) {
             for (FreeHistory freeHistory :
                 freeHistoryList) {
-                app = new App();
+                app = new AppEntity();
                 BeanUtils.copyProperties(freeHistory, app);
                 list.add(app);
             }
@@ -105,8 +105,8 @@ public class AppServiceTest {
 
     @Test
     public void queryPage() {
-        List<App> list = new ArrayList<>();
-        App app;
+        List<AppEntity> list = new ArrayList<>();
+        AppEntity app;
         AppQueryPageDTO dto = new AppQueryPageDTO();
         dto.setSize(5);
         dto.setCurrent(1);
@@ -138,7 +138,7 @@ public class AppServiceTest {
 //        appId = "id1315296783";
         appId = "id1065802380";//有排名 ranking
         appId = "id1443533088";
-        App app = JSoupUtil.crawlerApp(appId, null);
+        AppEntity app = JSoupUtil.crawlerApp(appId, null);
         appService.insertOrUpdateBatch(Arrays.asList(app));
     }
 
@@ -156,8 +156,8 @@ public class AppServiceTest {
 //                "id1583550659",
             "id1423546743"
         );
-        List<App> newList;
-        App appNew;
+        List<AppEntity> newList;
+        AppEntity appNew;
         if (!CollectionUtils.isEmpty(list)) {
             newList = new ArrayList<>();
             for (String appId : list) {
@@ -181,36 +181,36 @@ public class AppServiceTest {
 
     @Test
     public void testSelectNoUsFlag_01() {
-        List<App> noSnapshotListApp = appService.selectNoUsFlag();
-        List<App> newList;
+        List<AppEntity> noSnapshotListApp = appService.selectNoUsFlag();
+        List<AppEntity> newList;
 
         if (!CollectionUtils.isEmpty(noSnapshotListApp)) {
-            logger.info("本次任务开始前有效的应用数: " + noSnapshotListApp.size());
+            log.info("本次任务开始前有效的应用数: " + noSnapshotListApp.size());
             // 分批处理
-            List<List<App>> lists = CdListUtils.splitTo(noSnapshotListApp, Constants.BATCH_INSERT_UPDATE_ROWS);
-            for (List<App> list : lists) {
+            List<List<AppEntity>> lists = CdListUtils.splitTo(noSnapshotListApp, CdConstants.BATCH_INSERT_UPDATE_ROWS);
+            for (List<AppEntity> list : lists) {
                 if (!CollectionUtils.isEmpty(list)) {
                     newList = new ArrayList<>();
                     if (!CollectionUtils.isEmpty(list)) {
                         newList = new ArrayList<>();
-                        for (App tempApp : list) {
-                            App appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), tempApp.getUsFlag());
+                        for (AppEntity tempApp : list) {
+                            AppEntity appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), tempApp.getUsFlag());
                             newList.add(appNew);
 
-                            Integer period = new Random().nextInt(2000) + 500;
-                            try {
-                                Thread.sleep(period);   // 休眠3秒
-                            } catch (InterruptedException e) {
-                                throw new RuntimeException(e);
-                            }
+//                            Integer period = new Random().nextInt(2000) + 500;
+//                            try {
+//                                Thread.sleep(period);   // 休眠3秒
+//                            } catch (InterruptedException e) {
+//                                throw new RuntimeException(e);
+//                            }
                         }
 
-                        Integer period = new Random().nextInt(4000) + 500;
-                        try {
-                            Thread.sleep(period);   // 休眠3秒
-                        } catch (InterruptedException e) {
-                            throw new RuntimeException(e);
-                        }
+//                        Integer period = new Random().nextInt(4000) + 500;
+//                        try {
+//                            Thread.sleep(period);   // 休眠3秒
+//                        } catch (InterruptedException e) {
+//                            throw new RuntimeException(e);
+//                        }
                         if (!CollectionUtils.isEmpty(newList)) {
                             System.out.println("###");
                             appService.insertOrUpdateBatch(newList);
@@ -223,20 +223,20 @@ public class AppServiceTest {
 
     @Test
     public void testCrawlerAppList_01() {
-        List<App> noSnapshotListApp = appService.selectNoSnapshot();
-        List<App> newList;
+        List<AppEntity> noSnapshotListApp = appService.selectNoSnapshot();
+        List<AppEntity> newList;
 
         if (!CollectionUtils.isEmpty(noSnapshotListApp)) {
-            logger.info("本次任务开始前有效的应用数: " + noSnapshotListApp.size());
+            log.info("本次任务开始前有效的应用数: " + noSnapshotListApp.size());
             // 分批处理
-            List<List<App>> lists = CdListUtils.splitTo(noSnapshotListApp, Constants.BATCH_INSERT_UPDATE_ROWS);
-            for (List<App> list : lists) {
+            List<List<AppEntity>> lists = CdListUtils.splitTo(noSnapshotListApp, CdConstants.BATCH_INSERT_UPDATE_ROWS);
+            for (List<AppEntity> list : lists) {
                 if (!CollectionUtils.isEmpty(list)) {
                     newList = new ArrayList<>();
                     if (!CollectionUtils.isEmpty(list)) {
                         newList = new ArrayList<>();
-                        for (App tempApp : list) {
-                            App appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), tempApp.getUsFlag());
+                        for (AppEntity tempApp : list) {
+                            AppEntity appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), tempApp.getUsFlag());
                             newList.add(appNew);
 
                             Integer period = new Random().nextInt(2000) + 500;
@@ -267,21 +267,32 @@ public class AppServiceTest {
     @Test
     public void testCrawlerAppList_02() {
 
-         List<TopList> totalTopList = CdExcelUtils.genTotalTopList();
-        List<App> newList;
+        List<TopList> totalTopList = CdExcelUtils.genTotalTopList();
+        List<AppEntity> newList;
+
+        //a
+        List<AppEntity> appList = appService.selectList(new AppEntity());
+        Set<String> appIdSet = new LinkedHashSet<>();
+        if (CollectionUtils.isNotEmpty(appList)) {
+            for (AppEntity app : appList) {
+                appIdSet.add(app.getAppId());
+            }
+        }
 
         if (!CollectionUtils.isEmpty(totalTopList)) {
-            logger.info("本次任务开始前有效的应用数: " + totalTopList.size());
+            log.info("本次任务开始前有效的应用数: " + totalTopList.size());
             // 分批处理
-            List<List<TopList>> lists = CdListUtils.splitTo(totalTopList, Constants.BATCH_INSERT_UPDATE_ROWS);
+            List<List<TopList>> lists = CdListUtils.splitTo(totalTopList, CdConstants.BATCH_SNAPSHOT_ROWS);
             for (List<TopList> list : lists) {
                 if (!CollectionUtils.isEmpty(list)) {
                     newList = new ArrayList<>();
-                    if (!CollectionUtils.isEmpty(list)) {
-                        newList = new ArrayList<>();
-                        for (TopList tempApp : list) {
-                            App appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), null);
-                            newList.add(appNew);
+                    for (TopList tempApp : list) {
+                        if(appIdSet.contains(tempApp.getAppId())) {
+                            log.error("应用已存在");
+                            continue;
+                        }
+                        AppEntity appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), null);
+                        newList.add(appNew);
 
 //                            Integer period = new Random().nextInt(2000) + 500;
 //                            try {
@@ -289,7 +300,7 @@ public class AppServiceTest {
 //                            } catch (InterruptedException e) {
 //                                throw new RuntimeException(e);
 //                            }
-                        }
+                    }
 
 //                        Integer period = new Random().nextInt(4000) + 500;
 //                        try {
@@ -297,10 +308,9 @@ public class AppServiceTest {
 //                        } catch (InterruptedException e) {
 //                            throw new RuntimeException(e);
 //                        }
-                        if (!CollectionUtils.isEmpty(newList)) {
-                            System.out.println("###");
-                            appService.insertOrUpdateBatch(newList);
-                        }
+                    if (!CollectionUtils.isEmpty(newList)) {
+                        System.out.println("###");
+                        appService.insertOrUpdateBatch(newList);
                     }
                 }
             }
@@ -310,18 +320,18 @@ public class AppServiceTest {
 
     @Test
     public void testCrawlerNoAppIconUrlAppList() {
-        List<App> noSnapshotListApp = appService.selectNoAppIconUrl();
-        List<App> newList;
+        List<AppEntity> noSnapshotListApp = appService.selectNoAppIconUrl();
+        List<AppEntity> newList;
 
         if (!CollectionUtils.isEmpty(noSnapshotListApp)) {
-            logger.info("本次任务开始前无截图的应用数: " + noSnapshotListApp.size());
+            log.info("本次任务开始前无截图的应用数: " + noSnapshotListApp.size());
             // 分批处理
-            List<List<App>> lists = CdListUtils.splitTo(noSnapshotListApp, Constants.BATCH_INSERT_UPDATE_ROWS);
-            for (List<App> list : lists) {
+            List<List<AppEntity>> lists = CdListUtils.splitTo(noSnapshotListApp, CdConstants.BATCH_INSERT_UPDATE_ROWS);
+            for (List<AppEntity> list : lists) {
                 if (!CollectionUtils.isEmpty(list)) {
                     newList = new ArrayList<>();
-                    for (App tempApp : list) {
-                        App appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), tempApp.getUsFlag());
+                    for (AppEntity tempApp : list) {
+                        AppEntity appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), tempApp.getUsFlag());
                         newList.add(appNew);
 
                         Integer period = new Random().nextInt(400) + 100;
@@ -349,18 +359,18 @@ public class AppServiceTest {
 
     @Test
     public void testCrawlerNoSnapshotAppList() {
-        List<App> noSnapshotListApp = appService.selectNoSnapshot();
-        List<App> newList;
+        List<AppEntity> noSnapshotListApp = appService.selectNoSnapshot();
+        List<AppEntity> newList;
 
         if (!CollectionUtils.isEmpty(noSnapshotListApp)) {
-            logger.info("本次任务开始前无截图的应用数: " + noSnapshotListApp.size());
+            log.info("本次任务开始前无截图的应用数: " + noSnapshotListApp.size());
             // 分批处理
-            List<List<App>> lists = CdListUtils.splitTo(noSnapshotListApp, Constants.BATCH_INSERT_UPDATE_ROWS);
-            for (List<App> list : lists) {
+            List<List<AppEntity>> lists = CdListUtils.splitTo(noSnapshotListApp, CdConstants.BATCH_INSERT_UPDATE_ROWS);
+            for (List<AppEntity> list : lists) {
                 if (!CollectionUtils.isEmpty(list)) {
                     newList = new ArrayList<>();
-                    for (App tempApp : list) {
-                        App appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), tempApp.getUsFlag());
+                    for (AppEntity tempApp : list) {
+                        AppEntity appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), tempApp.getUsFlag());
                         newList.add(appNew);
 
                         Integer period = new Random().nextInt(400) + 100;
@@ -388,18 +398,18 @@ public class AppServiceTest {
 
     @Test
     public void testDeletedList_01() {
-        List<App> noSnapshotListApp = appService.selectDeletedAppList();
-        List<App> newList;
+        List<AppEntity> noSnapshotListApp = appService.selectDeletedAppList();
+        List<AppEntity> newList;
 
         if (!CollectionUtils.isEmpty(noSnapshotListApp)) {
-            logger.info("本次任务开始前已标识为下架的应用数: " + noSnapshotListApp.size());
+            log.info("本次任务开始前已标识为下架的应用数: " + noSnapshotListApp.size());
             // 分批处理
-            List<List<App>> lists = CdListUtils.splitTo(noSnapshotListApp, Constants.BATCH_INSERT_UPDATE_ROWS);
-            for (List<App> list : lists) {
+            List<List<AppEntity>> lists = CdListUtils.splitTo(noSnapshotListApp, CdConstants.BATCH_INSERT_UPDATE_ROWS);
+            for (List<AppEntity> list : lists) {
                 if (!CollectionUtils.isEmpty(list)) {
                     newList = new ArrayList<>();
-                    for (App tempApp : list) {
-                        App appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), tempApp.getUsFlag());
+                    for (AppEntity tempApp : list) {
+                        AppEntity appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), tempApp.getUsFlag());
                         newList.add(appNew);
 
                         Integer period = new Random().nextInt(400) + 100;
@@ -450,14 +460,14 @@ public class AppServiceTest {
 //               "id1095539172" // Rating 1.2K id1095539172
             "id688983474"
         );
-        List<App> newList;
+        List<AppEntity> newList;
         List<PriceHistory> priceHistoryList;
         PriceHistory priceHistory;
         if (!CollectionUtils.isEmpty(list)) {
             newList = new ArrayList<>();
             priceHistoryList = new ArrayList<>();
             for (String appId : list) {
-                App appNew = JSoupUtil.crawlerApp(appId, null);
+                AppEntity appNew = JSoupUtil.crawlerApp(appId, null);
                 newList.add(appNew);
 
                 priceHistory = new PriceHistory();
@@ -493,12 +503,12 @@ public class AppServiceTest {
 
     @Test
     public void testCrawlerAppTotal() {
-        List<App> list;
-        List<App> newList;
+        List<AppEntity> list;
+        List<AppEntity> newList;
         List<PriceHistory> priceHistoryList;
         PriceHistory priceHistory;
         int size = 300;
-        Page<App> page;
+        Page<AppEntity> page;
         for (int i = 1; i < size; i++) {
             page = new Page<>(i, 20);//这里有 limit 后面两个参数 当前也起始索引index pageSize每页显示的条数
             appService.selectPage(page);//selectPage方法有两个参数，第一个分页对象，第二个参数Wrapper条件构造器
@@ -507,9 +517,9 @@ public class AppServiceTest {
                 if (!CollectionUtils.isEmpty(list)) {
                     newList = new ArrayList<>();
                     priceHistoryList = new ArrayList<>();
-                    for (App app : list) {
+                    for (AppEntity app : list) {
 
-                        App appNew = JSoupUtil.crawlerApp(app);
+                        AppEntity appNew = JSoupUtil.crawlerApp(app);
                         newList.add(appNew);
                         priceHistory = new PriceHistory();
                         BeanUtils.copyProperties(appNew, priceHistory);
@@ -549,8 +559,8 @@ public class AppServiceTest {
 
     @Test
     public void testCrawlerAppPrice() {
-        List<App> list;
-        Page<App> page = new Page<>(2, 200);//这里有 limit 后面两个参数 当前也起始索引index pageSize每页显示的条数
+        List<AppEntity> list;
+        Page<AppEntity> page = new Page<>(2, 200);//这里有 limit 后面两个参数 当前也起始索引index pageSize每页显示的条数
         appService.selectPage(page);//selectPage方法有两个参数，第一个分页对象，第二个参数Wrapper条件构造器
 
         if (page != null) {
@@ -559,7 +569,7 @@ public class AppServiceTest {
             if (!CollectionUtils.isEmpty(list)) {
                 crawlerHistoryList = new ArrayList<>();
                 CrawlerHistory crawlerHistory;
-                for (App app : list) {
+                for (AppEntity app : list) {
                     System.out.println(app.getAppId());
                     Integer period = new Random().nextInt(5) + 3;
                     try {
@@ -567,7 +577,7 @@ public class AppServiceTest {
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
-                    App appNew = JSoupUtil.crawlerApp(app);
+                    AppEntity appNew = JSoupUtil.crawlerApp(app);
                     crawlerHistory = new CrawlerHistory();
                     BeanUtils.copyProperties(appNew, crawlerHistory);
                     System.out.println(appNew);
@@ -583,14 +593,20 @@ public class AppServiceTest {
     }
 
     @Test
+    public void testInitTopFlag() {
+        int result = appService.initTopFlag();
+        log.info(result + "");
+    }
+
+    @Test
     public void testProcessWechat() {
         int result = appService.processWechat();
-        logger.info(result + "");
+        log.info(result + "");
     }
 
     @Test
     public void testGenDailyPpt() {
         int result = appService.genDailyPpt();
-        logger.info(result + "");
+        log.info(result + "");
     }
 }

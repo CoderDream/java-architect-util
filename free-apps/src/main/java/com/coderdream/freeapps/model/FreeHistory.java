@@ -1,5 +1,6 @@
 package com.coderdream.freeapps.model;
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -119,11 +120,6 @@ public class FreeHistory implements Serializable {
     private String createUserName;
 
     /**
-     * 创建时间
-     */
-    private Date createdDate;
-
-    /**
      * 修改人代码
      */
     private String lastModifiedCode;
@@ -134,9 +130,17 @@ public class FreeHistory implements Serializable {
     private String lastModifiedName;
 
     /**
+     * 创建时间
+     */
+    @TableField(fill = FieldFill.INSERT)
+    private Date createdDate;
+
+    /**
      * 修改时间
      */
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date lastModifiedDate;
+
 
     /**
      * 版本号

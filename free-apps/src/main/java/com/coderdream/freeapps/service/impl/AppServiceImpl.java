@@ -2,7 +2,9 @@ package com.coderdream.freeapps.service.impl;
 
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.enums.SqlMethod;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.core.toolkit.Constants;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.coderdream.freeapps.dto.AppDTO;
@@ -10,17 +12,17 @@ import com.coderdream.freeapps.dto.AppQueryPageDTO;
 import com.coderdream.freeapps.dto.DailyPptInfo;
 import com.coderdream.freeapps.mapper.AppMapper;
 import com.coderdream.freeapps.mapper.FreeHistoryMapper;
-import com.coderdream.freeapps.model.App;
+import com.coderdream.freeapps.model.AppEntity;
 import com.coderdream.freeapps.model.FreeHistory;
 import com.coderdream.freeapps.service.AppService;
 import com.coderdream.freeapps.service.FreeHistoryService;
 import com.coderdream.freeapps.struct.AppStruct;
 import com.coderdream.freeapps.util.BaseUtils;
 import com.coderdream.freeapps.util.CdListUtils;
-import com.coderdream.freeapps.util.CdStringUtils;
-import com.coderdream.freeapps.util.Constants;
+import com.coderdream.freeapps.util.CdConstants;
 import com.coderdream.freeapps.util.JSoupUtil;
 import com.coderdream.freeapps.util.ppt.CdPptxUtils;
+import com.coderdream.freeapps.util.ppt.excelutil.CdExcelUtils;
 import com.coderdream.freeapps.util.ppt.pptutil.PPTUtil;
 import com.coderdream.freeapps.vo.AppVO;
 import java.io.File;
@@ -29,19 +31,21 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Random;
 import java.util.Set;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.ibatis.binding.MapperMethod.ParamMap;
 import org.apache.poi.xslf.usermodel.XMLSlideShow;
 import org.apache.poi.xslf.usermodel.XSLFSlide;
 import org.apache.poi.xslf.usermodel.XSLFTextParagraph;
-import org.slf4j.Logger;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -53,7 +57,7 @@ import org.springframework.util.CollectionUtils;
 @RequiredArgsConstructor
 @Slf4j
 public class AppServiceImpl extends
-    ServiceImpl<AppMapper, App> implements AppService {
+    ServiceImpl<AppMapper, AppEntity> implements AppService {
 
     @Resource
     private AppMapper appMapper;
@@ -75,7 +79,7 @@ public class AppServiceImpl extends
 
     @Override
     public List<AppVO> queryList(AppDTO dto) {
-        List<App> appList = this.lambdaQuery().list();
+        List<AppEntity> appList = this.lambdaQuery().list();
         return appStruct.modelToVO(appList);
     }
 
@@ -100,18 +104,18 @@ public class AppServiceImpl extends
     }
 
     @Override
-    public int insertSelective(App app) {
+    public int insertSelective(AppEntity app) {
         return 0;// appMapper.insertSelective(app);
     }
 
     @Override
-    public int insertOrUpdateBatch(List<App> appList) {
+    public int insertOrUpdateBatch(List<AppEntity> appList) {
         int count = 0;
         if (!CollectionUtils.isEmpty(appList)) {
             log.info("本次批量执行的记录条数: " + appList.size());
             // 分批处理
-            List<List<App>> lists = CdListUtils.splitTo(appList, Constants.BATCH_INSERT_UPDATE_ROWS);
-            for (List<App> list : lists) {
+            List<List<AppEntity>> lists = CdListUtils.splitTo(appList, CdConstants.BATCH_INSERT_UPDATE_ROWS);
+            for (List<AppEntity> list : lists) {
                 count += appMapper.insertOrUpdateBatch(list);
             }
         }
@@ -120,69 +124,146 @@ public class AppServiceImpl extends
     }
 
     @Override
-    public List<App> selectList(App app) {
-
-        QueryWrapper<App> queryWrapper = new QueryWrapper<>();
+    public List<AppEntity> selectList(AppEntity app) {
+        QueryWrapper<AppEntity> queryWrapper = new QueryWrapper<>();
         if (StrUtil.isNotEmpty(app.getAppId())) {
             queryWrapper.eq("app_id", app.getAppId());
         }
-        List<App> result = appMapper.selectList(queryWrapper);
+        List<AppEntity> result = appMapper.selectList(queryWrapper);
         return result;
     }
 
     @Override
-    public List<App> selectNoAppIconUrl() {
-        QueryWrapper<App> queryWrapper = new QueryWrapper<>();
+    public List<AppEntity> selectNoAppIconUrl() {
+        QueryWrapper<AppEntity> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("del_flag", 0);
         queryWrapper.isNull("app_icon_url");
-        List<App> result = appMapper.selectList(queryWrapper);
+        List<AppEntity> result = appMapper.selectList(queryWrapper);
         return result;
     }
 
     @Override
-    public List<App> selectNoUsFlag() {
-        QueryWrapper<App> queryWrapper = new QueryWrapper<>();
+    public List<AppEntity> selectNoUsFlag() {
+        QueryWrapper<AppEntity> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("del_flag", 0);
         queryWrapper.isNull("us_flag");
-        List<App> result = appMapper.selectList(queryWrapper);
+        List<AppEntity> result = appMapper.selectList(queryWrapper);
         return result;
     }
 
     @Override
-    public List<App> selectNoSnapshot() {
+    public List<AppEntity> selectNoSnapshot() {
 
-        QueryWrapper<App> queryWrapper = new QueryWrapper<>();
+        QueryWrapper<AppEntity> queryWrapper = new QueryWrapper<>();
 
 //        queryWrapper.eq("status", DeviceConstant.DeviceStatus.WORK)
 //                .or().eq("status", DeviceConstant.DeviceStatus.FAULT);
 
         queryWrapper.eq("del_flag", 0);
         queryWrapper.isNull("snapshot_url").or().likeLeft("snapshot_url", ": []}");
-        List<App> result = appMapper.selectList(queryWrapper);
+        List<AppEntity> result = appMapper.selectList(queryWrapper);
         return result;
     }
 
     @Override
-    public List<App> selectDeletedAppList() {
-        QueryWrapper<App> queryWrapper = new QueryWrapper<>();
+    public List<AppEntity> selectDeletedAppList() {
+        QueryWrapper<AppEntity> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("del_flag", 1);
-        List<App> result = appMapper.selectList(queryWrapper);
+        List<AppEntity> result = appMapper.selectList(queryWrapper);
         return result;
     }
 
     @Override
-    public List<App> selectTodoList(App app) {
-        QueryWrapper<App> queryWrapper = new QueryWrapper<>();
+    public List<AppEntity> selectTodoList(AppEntity app) {
+        QueryWrapper<AppEntity> queryWrapper = new QueryWrapper<>();
 //        queryWrapper.eq("del_flag", 0);
         queryWrapper.ne("del_flag", 1);
 //        queryWrapper.last("limit 2");
-        List<App> result = appMapper.selectList(queryWrapper);
+        List<AppEntity> result = appMapper.selectList(queryWrapper);
+        return result;
+    }
+
+    public boolean updateBatchByQueryWrapper(Collection<AppEntity> entityList, Function<AppEntity, QueryWrapper> queryWrapperFunction) {
+        String sqlStatement = this.getSqlStatement(SqlMethod.UPDATE);
+        return this.executeBatch(entityList, DEFAULT_BATCH_SIZE, (sqlSession, entity) -> {
+            ParamMap param = new ParamMap();
+            param.put(Constants.ENTITY, entity);
+            param.put(Constants.WRAPPER, queryWrapperFunction.apply(entity));
+            sqlSession.update(sqlStatement, param);
+        });
+    }
+
+    @Override
+    public int initTopFlag() {
+        int result = 0;
+        QueryWrapper<AppEntity> queryWrapper = new QueryWrapper<>();
+        Set<String> appIdSet = CdExcelUtils.genTotalTopAppIdSet();
+        queryWrapper.eq("del_flag", 0);
+        queryWrapper.in("app_id", appIdSet);
+        queryWrapper.select("app_id", "top_flag");
+        List<AppEntity> appList = appMapper.selectList(queryWrapper);
+
+        for (AppEntity app : appList) {
+            app.setTopFlag(1);
+        }
+
+//        this.updateBatchByQueryWrapper(appList, appEntity->new QueryWrapper<>().eq("top_flag",appEntity.getTopFlag()));
+
+
+//        this.updateBatchByQueryWrapper(appList, appEntity->new QueryWrapper<>().eq("app_id",appEntity.getAppId()));
+
+        int count = 0;
+        if (!CollectionUtils.isEmpty(appList)) {
+            log.info("本次批量执行的记录条数: " + appList.size());
+            // 分批处理
+            List<List<AppEntity>> lists = CdListUtils.splitTo(appList, CdConstants.BATCH_UPDATE_ROWS);
+            for (List<AppEntity> list : lists) {
+                count += appMapper.insertOrUpdateTopFlagBatch(list);
+            }
+        }
+
+        result = appList.size();
+
         return result;
     }
 
     @Override
-    public IPage<App> selectPage(Page<App> page) {
-        QueryWrapper<App> queryWrapper = new QueryWrapper<>();
+    public int updateDescriptionCn() {
+        int result = 0;
+        QueryWrapper<AppEntity> queryWrapper = new QueryWrapper<>();
+//        Set<String> appIdSet = CdExcelUtils.genTotalTopAppIdSet();
+        queryWrapper.eq("del_flag", 0);
+//        queryWrapper.in("app_id", appIdSet);
+//        queryWrapper.select("app_id", "top_flag");
+        List<AppEntity> appList = appMapper.selectList(queryWrapper);
+
+        for (AppEntity app : appList) {
+            app.setTopFlag(1);
+        }
+
+//        this.updateBatchByQueryWrapper(appList, appEntity->new QueryWrapper<>().eq("top_flag",appEntity.getTopFlag()));
+
+
+//        this.updateBatchByQueryWrapper(appList, appEntity->new QueryWrapper<>().eq("app_id",appEntity.getAppId()));
+
+        int count = 0;
+        if (!CollectionUtils.isEmpty(appList)) {
+            log.info("本次批量执行的记录条数: " + appList.size());
+            // 分批处理
+            List<List<AppEntity>> lists = CdListUtils.splitTo(appList, CdConstants.BATCH_UPDATE_ROWS);
+            for (List<AppEntity> list : lists) {
+                count += appMapper.insertOrUpdateTopFlagBatch(list);
+            }
+        }
+
+        result = appList.size();
+
+        return result;
+    }
+
+    @Override
+    public IPage<AppEntity> selectPage(Page<AppEntity> page) {
+        QueryWrapper<AppEntity> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("del_flag", 1);
         return appMapper.selectPage(page, queryWrapper);
     }
@@ -190,20 +271,20 @@ public class AppServiceImpl extends
     @Override
     public int processNoUsFlag() {
         int result = 0;
-        List<App> noSnapshotListApp = selectNoUsFlag();
-        List<App> newList;
+        List<AppEntity> noSnapshotListApp = selectNoUsFlag();
+        List<AppEntity> newList;
 
         if (!CollectionUtils.isEmpty(noSnapshotListApp)) {
             log.info("本次任务开始前有效的应用数: " + noSnapshotListApp.size());
             // 分批处理
-            List<List<App>> lists = CdListUtils.splitTo(noSnapshotListApp, Constants.BATCH_INSERT_UPDATE_ROWS);
-            for (List<App> list : lists) {
+            List<List<AppEntity>> lists = CdListUtils.splitTo(noSnapshotListApp, CdConstants.BATCH_INSERT_UPDATE_ROWS);
+            for (List<AppEntity> list : lists) {
                 if (!CollectionUtils.isEmpty(list)) {
                     newList = new ArrayList<>();
                     if (!CollectionUtils.isEmpty(list)) {
                         newList = new ArrayList<>();
-                        for (App tempApp : list) {
-                            App appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), tempApp.getUsFlag());
+                        for (AppEntity tempApp : list) {
+                            AppEntity appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), tempApp.getUsFlag());
                             newList.add(appNew);
 
                             Integer period = new Random().nextInt(2000) + 500;
@@ -235,13 +316,13 @@ public class AppServiceImpl extends
     public int processWechat() {
         int result = 0;
 
-        QueryWrapper<App> queryWrapperApp = new QueryWrapper<>();
+        QueryWrapper<AppEntity> queryWrapperApp = new QueryWrapper<>();
         queryWrapperApp.eq("del_flag", 0);
-        List<App> appList = appMapper.selectList(queryWrapperApp);
+        List<AppEntity> appList = appMapper.selectList(queryWrapperApp);
 
         Set<String> dbAppIdSet = new LinkedHashSet<>();
         if (!CollectionUtils.isEmpty(appList)) {
-            List<String> appIdList = appList.stream().map(App::getAppId).collect(Collectors.toList());
+            List<String> appIdList = appList.stream().map(AppEntity::getAppId).collect(Collectors.toList());
             dbAppIdSet.addAll(appIdList);
         }
 
@@ -261,11 +342,11 @@ public class AppServiceImpl extends
             }
         }
 
-        List<App> newList;
+        List<AppEntity> newList;
         if (!CollectionUtils.isEmpty(wechatAppIdList)) {
             log.info("本次任务开始前有效的应用数: " + wechatAppIdList.size());
             if (!CollectionUtils.isEmpty(wechatAppIdList)) {
-                List<List<String>> lists = CdListUtils.splitTo(wechatAppIdList, Constants.BATCH_INSERT_UPDATE_ROWS);
+                List<List<String>> lists = CdListUtils.splitTo(wechatAppIdList, CdConstants.BATCH_INSERT_UPDATE_ROWS);
                 for (List<String> list : lists) {
                     // 分批处理
                     if (!CollectionUtils.isEmpty(list)) {
@@ -275,7 +356,7 @@ public class AppServiceImpl extends
                                 continue;
                             }
 
-                            App appNew = JSoupUtil.crawlerApp(appId, null);
+                            AppEntity appNew = JSoupUtil.crawlerApp(appId, null);
                             newList.add(appNew);
 
                             Integer period = new Random().nextInt(300) + 500;
@@ -333,7 +414,7 @@ public class AppServiceImpl extends
         // 1.
         try {
             // PPT模板
-            String templateFullPath = CdPptxUtils.getTemplateFullPath(Constants.PPT_TEMPLATE_FILE_NAME);
+            String templateFullPath = CdPptxUtils.getTemplateFullPath(CdConstants.PPT_TEMPLATE_FILE_NAME);
             FileInputStream fileInputStreamTemplate = new FileInputStream(templateFullPath);
             XMLSlideShow pptTemplate = new XMLSlideShow(fileInputStreamTemplate);
             // 新PPT
