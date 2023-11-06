@@ -17,12 +17,12 @@ import com.coderdream.freeapps.model.FreeHistory;
 import com.coderdream.freeapps.service.AppService;
 import com.coderdream.freeapps.service.FreeHistoryService;
 import com.coderdream.freeapps.struct.AppStruct;
-import com.coderdream.freeapps.util.BaseUtils;
-import com.coderdream.freeapps.util.CdListUtils;
-import com.coderdream.freeapps.util.CdConstants;
-import com.coderdream.freeapps.util.JSoupUtil;
+import com.coderdream.freeapps.util.other.BaseUtils;
+import com.coderdream.freeapps.util.other.CdListUtils;
+import com.coderdream.freeapps.util.other.CdConstants;
+import com.coderdream.freeapps.util.other.JSoupUtil;
 import com.coderdream.freeapps.util.ppt.CdPptxUtils;
-import com.coderdream.freeapps.util.ppt.excelutil.CdExcelUtils;
+import com.coderdream.freeapps.util.other.CdExcelUtil;
 import com.coderdream.freeapps.util.ppt.pptutil.PPTUtil;
 import com.coderdream.freeapps.vo.AppVO;
 import java.io.File;
@@ -40,6 +40,7 @@ import java.util.Random;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import javax.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.binding.MapperMethod.ParamMap;
@@ -109,6 +110,7 @@ public class AppServiceImpl extends
     }
 
     @Override
+    @Transactional
     public int insertOrUpdateBatch(List<AppEntity> appList) {
         int count = 0;
         if (!CollectionUtils.isEmpty(appList)) {
@@ -129,6 +131,17 @@ public class AppServiceImpl extends
         if (StrUtil.isNotEmpty(app.getAppId())) {
             queryWrapper.eq("app_id", app.getAppId());
         }
+        queryWrapper.eq("delete_flag", 0);
+        queryWrapper.last("limit 10");
+        List<AppEntity> result = appMapper.selectList(queryWrapper);
+        return result;
+    }
+
+    @Override
+    public List<AppEntity> selectListBySize(String size) {
+        QueryWrapper<AppEntity> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("delete_flag", 0);
+        queryWrapper.last("limit " + size);
         List<AppEntity> result = appMapper.selectList(queryWrapper);
         return result;
     }
@@ -136,7 +149,7 @@ public class AppServiceImpl extends
     @Override
     public List<AppEntity> selectNoAppIconUrl() {
         QueryWrapper<AppEntity> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("del_flag", 0);
+        queryWrapper.eq("delete_flag", 0);
         queryWrapper.isNull("app_icon_url");
         List<AppEntity> result = appMapper.selectList(queryWrapper);
         return result;
@@ -145,7 +158,7 @@ public class AppServiceImpl extends
     @Override
     public List<AppEntity> selectNoUsFlag() {
         QueryWrapper<AppEntity> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("del_flag", 0);
+        queryWrapper.eq("delete_flag", 0);
         queryWrapper.isNull("us_flag");
         List<AppEntity> result = appMapper.selectList(queryWrapper);
         return result;
@@ -159,8 +172,27 @@ public class AppServiceImpl extends
 //        queryWrapper.eq("status", DeviceConstant.DeviceStatus.WORK)
 //                .or().eq("status", DeviceConstant.DeviceStatus.FAULT);
 
-        queryWrapper.eq("del_flag", 0);
+        queryWrapper.eq("delete_flag", 0);
         queryWrapper.isNull("snapshot_url").or().likeLeft("snapshot_url", ": []}");
+        List<AppEntity> result = appMapper.selectList(queryWrapper);
+        return result;
+    }
+
+    @Override
+    public List<AppEntity> selectNoDescription() {
+        QueryWrapper<AppEntity> queryWrapper = new QueryWrapper<>();
+        queryWrapper.isNull("description_cn");
+        queryWrapper.isNull("description_us");
+        queryWrapper.eq("delete_flag", 0);
+        List<AppEntity> result = appMapper.selectList(queryWrapper);
+        return result;
+    }
+
+    @Override
+    public List<AppEntity> selectNoCnFlag() {
+        QueryWrapper<AppEntity> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("delete_flag", 0);
+        queryWrapper.isNull("cn_flag");
         List<AppEntity> result = appMapper.selectList(queryWrapper);
         return result;
     }
@@ -168,7 +200,7 @@ public class AppServiceImpl extends
     @Override
     public List<AppEntity> selectDeletedAppList() {
         QueryWrapper<AppEntity> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("del_flag", 1);
+        queryWrapper.eq("delete_flag", 1);
         List<AppEntity> result = appMapper.selectList(queryWrapper);
         return result;
     }
@@ -176,14 +208,15 @@ public class AppServiceImpl extends
     @Override
     public List<AppEntity> selectTodoList(AppEntity app) {
         QueryWrapper<AppEntity> queryWrapper = new QueryWrapper<>();
-//        queryWrapper.eq("del_flag", 0);
-        queryWrapper.ne("del_flag", 1);
+//        queryWrapper.eq("delete_flag", 0);
+        queryWrapper.ne("delete_flag", 1);
 //        queryWrapper.last("limit 2");
         List<AppEntity> result = appMapper.selectList(queryWrapper);
         return result;
     }
 
-    public boolean updateBatchByQueryWrapper(Collection<AppEntity> entityList, Function<AppEntity, QueryWrapper> queryWrapperFunction) {
+    public boolean updateBatchByQueryWrapper(Collection<AppEntity> entityList,
+        Function<AppEntity, QueryWrapper> queryWrapperFunction) {
         String sqlStatement = this.getSqlStatement(SqlMethod.UPDATE);
         return this.executeBatch(entityList, DEFAULT_BATCH_SIZE, (sqlSession, entity) -> {
             ParamMap param = new ParamMap();
@@ -197,8 +230,8 @@ public class AppServiceImpl extends
     public int initTopFlag() {
         int result = 0;
         QueryWrapper<AppEntity> queryWrapper = new QueryWrapper<>();
-        Set<String> appIdSet = CdExcelUtils.genTotalTopAppIdSet();
-        queryWrapper.eq("del_flag", 0);
+        Set<String> appIdSet = CdExcelUtil.genTotalTopAppIdSet();
+        queryWrapper.eq("delete_flag", 0);
         queryWrapper.in("app_id", appIdSet);
         queryWrapper.select("app_id", "top_flag");
         List<AppEntity> appList = appMapper.selectList(queryWrapper);
@@ -208,7 +241,6 @@ public class AppServiceImpl extends
         }
 
 //        this.updateBatchByQueryWrapper(appList, appEntity->new QueryWrapper<>().eq("top_flag",appEntity.getTopFlag()));
-
 
 //        this.updateBatchByQueryWrapper(appList, appEntity->new QueryWrapper<>().eq("app_id",appEntity.getAppId()));
 
@@ -232,19 +264,23 @@ public class AppServiceImpl extends
         int result = 0;
         QueryWrapper<AppEntity> queryWrapper = new QueryWrapper<>();
 //        Set<String> appIdSet = CdExcelUtils.genTotalTopAppIdSet();
-        queryWrapper.eq("del_flag", 0);
+        queryWrapper.eq("delete_flag", 0);
 //        queryWrapper.in("app_id", appIdSet);
-//        queryWrapper.select("app_id", "top_flag");
+        queryWrapper.select("app_id", "description_us", "description_cn");
         List<AppEntity> appList = appMapper.selectList(queryWrapper);
 
-        for (AppEntity app : appList) {
-            app.setTopFlag(1);
-        }
+        appList.stream().peek(appEntity -> {
+            String descriptionCn = appEntity.getDescriptionCn();
+            if (StrUtil.isNotEmpty(descriptionCn) && descriptionCn.contains("简介 ")) {
+                appEntity.setDescriptionCn(descriptionCn.replace("简介 ", ""));
+            }
 
-//        this.updateBatchByQueryWrapper(appList, appEntity->new QueryWrapper<>().eq("top_flag",appEntity.getTopFlag()));
 
-
-//        this.updateBatchByQueryWrapper(appList, appEntity->new QueryWrapper<>().eq("app_id",appEntity.getAppId()));
+            String descriptionUs = appEntity.getDescriptionUs();
+            if (StrUtil.isNotEmpty(descriptionUs) && descriptionUs.contains("Description ")) {
+                appEntity.setDescriptionUs(descriptionUs.replace("Description ", ""));
+            }
+        }).collect(Collectors.toList());
 
         int count = 0;
         if (!CollectionUtils.isEmpty(appList)) {
@@ -252,23 +288,21 @@ public class AppServiceImpl extends
             // 分批处理
             List<List<AppEntity>> lists = CdListUtils.splitTo(appList, CdConstants.BATCH_UPDATE_ROWS);
             for (List<AppEntity> list : lists) {
-                count += appMapper.insertOrUpdateTopFlagBatch(list);
+                count += appMapper.insertOrUpdateDescriptionBatch(list);
             }
         }
-
-        result = appList.size();
-
-        return result;
+        return count;
     }
 
     @Override
     public IPage<AppEntity> selectPage(Page<AppEntity> page) {
         QueryWrapper<AppEntity> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("del_flag", 1);
+        queryWrapper.eq("delete_flag", 0);
         return appMapper.selectPage(page, queryWrapper);
     }
 
     @Override
+    @Transactional
     public int processNoUsFlag() {
         int result = 0;
         List<AppEntity> noSnapshotListApp = selectNoUsFlag();
@@ -313,11 +347,37 @@ public class AppServiceImpl extends
     }
 
     @Override
+    public int processNoCnFlag() {
+        List<AppEntity> appList = selectNoCnFlag();
+        appList.stream().peek(appEntity -> {
+            String language = appEntity.getLanguage();
+            if (language.indexOf("简体中文") != -1 || language.indexOf("Simplified Chinese") != -1) {
+                appEntity.setCnFlag(1);
+            } else {
+                appEntity.setCnFlag(0);
+            }
+        }).collect(Collectors.toList());
+
+
+        int count = 0;
+        if (!CollectionUtils.isEmpty(appList)) {
+            log.info("本次批量执行的记录条数: " + appList.size());
+            // 分批处理
+            List<List<AppEntity>> lists = CdListUtils.splitTo(appList, CdConstants.BATCH_UPDATE_ROWS);
+            for (List<AppEntity> list : lists) {
+                count += appMapper.insertOrUpdateCnFlagBatch(list);
+            }
+        }
+
+        return count;
+    }
+
+    @Override
     public int processWechat() {
         int result = 0;
 
         QueryWrapper<AppEntity> queryWrapperApp = new QueryWrapper<>();
-        queryWrapperApp.eq("del_flag", 0);
+        queryWrapperApp.eq("delete_flag", 0);
         List<AppEntity> appList = appMapper.selectList(queryWrapperApp);
 
         Set<String> dbAppIdSet = new LinkedHashSet<>();
@@ -472,6 +532,9 @@ public class AppServiceImpl extends
             for (XSLFTextParagraph paragraph : paragraphs) {
                 System.out.println(paragraph.getText());
             }
+
+            log.error("FileName: " + newFileName);
+
             pptUtil.writePPT(newFileName);
 
             fileInputStreamTemplate.close(); // 关闭文件流

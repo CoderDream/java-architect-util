@@ -1,18 +1,10 @@
 package com.coderdream.freeapps.controller;
 
 
-import com.coderdream.freeapps.backup.MinioConfig;
-import com.coderdream.freeapps.util.R;
-import io.minio.messages.Bucket;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
-
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletResponse;
-import java.util.List;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @Api(tags = "文件相关接口")
 @Slf4j

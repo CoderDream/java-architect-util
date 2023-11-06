@@ -12,7 +12,7 @@ import com.coderdream.freeapps.mapper.FreeHistoryMapper;
 import com.coderdream.freeapps.model.FreeHistory;
 import com.coderdream.freeapps.service.FreeHistoryService;
 import com.coderdream.freeapps.struct.FreeHistoryStruct;
-import com.coderdream.freeapps.util.CdFileUtils;
+import com.coderdream.freeapps.util.other.CdFileUtils;
 import com.coderdream.freeapps.util.spiderwx.WechatUtil;
 import com.coderdream.freeapps.vo.FreeHistoryVO;
 
@@ -20,6 +20,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -75,6 +76,7 @@ public class FreeHistoryServiceImpl extends
     }
 
     @Override
+    @Transactional
     public int insertOrUpdateBatch(List<FreeHistory> freeHistoryList) {
         return freeHistoryMapper.insertOrUpdateBatch(freeHistoryList);
     }

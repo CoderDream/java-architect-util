@@ -1,16 +1,19 @@
 package com.coderdream.freeapps.util.daily;
 
 import com.coderdream.freeapps.model.AppBrief;
-import com.coderdream.freeapps.util.BaseUtils;
-import com.coderdream.freeapps.util.CreateAppListPosterUtils;
-import com.coderdream.freeapps.util.CreateAppTotalPosterUtils;
-import com.coderdream.freeapps.util.CreateSinglePosterUtils;
-import com.coderdream.freeapps.util.CutImageUtils;
-import com.coderdream.freeapps.util.GenerateAppInfo;
-import com.coderdream.freeapps.util.QrCodeUtils;
+import com.coderdream.freeapps.util.other.BaseUtils;
+import com.coderdream.freeapps.util.other.CreateAppListPosterUtils;
+import com.coderdream.freeapps.util.other.CreateAppTotalPosterUtils;
+import com.coderdream.freeapps.util.other.CreateSinglePosterUtils;
+import com.coderdream.freeapps.util.other.CutImageUtils;
+import com.coderdream.freeapps.util.other.GenerateAppInfo;
+import com.coderdream.freeapps.util.other.QrCodeUtils;
 import java.io.File;
 import java.util.List;
 
+/**
+ * @author CoderDream
+ */
 public class GenDaily {
 
     public static void main(String[] args) {

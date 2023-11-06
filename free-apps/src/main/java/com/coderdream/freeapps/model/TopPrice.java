@@ -136,7 +136,7 @@ public class TopPrice implements Serializable {
     /**
      * 是否删除 0未删除（默认），1已删除
      */
-    private Integer delFlag;
+    private Integer deleteFlag;
 
     /**
      * 创建人代码
@@ -204,7 +204,7 @@ public class TopPrice implements Serializable {
             && (this.getAppInPurchase() == null ? other.getAppInPurchase() == null : this.getAppInPurchase().equals(other.getAppInPurchase()))
             && (this.getVersionHistory() == null ? other.getVersionHistory() == null : this.getVersionHistory().equals(other.getVersionHistory()))
             && (this.getRemark() == null ? other.getRemark() == null : this.getRemark().equals(other.getRemark()))
-            && (this.getDelFlag() == null ? other.getDelFlag() == null : this.getDelFlag().equals(other.getDelFlag()))
+            && (this.getDeleteFlag() == null ? other.getDeleteFlag() == null : this.getDeleteFlag().equals(other.getDeleteFlag()))
             && (this.getCreateUserCode() == null ? other.getCreateUserCode() == null : this.getCreateUserCode().equals(other.getCreateUserCode()))
             && (this.getCreateUserName() == null ? other.getCreateUserName() == null : this.getCreateUserName().equals(other.getCreateUserName()))
             && (this.getCreatedDate() == null ? other.getCreatedDate() == null : this.getCreatedDate().equals(other.getCreatedDate()))
@@ -234,7 +234,7 @@ public class TopPrice implements Serializable {
         result = prime * result + ((getAppInPurchase() == null) ? 0 : getAppInPurchase().hashCode());
         result = prime * result + ((getVersionHistory() == null) ? 0 : getVersionHistory().hashCode());
         result = prime * result + ((getRemark() == null) ? 0 : getRemark().hashCode());
-        result = prime * result + ((getDelFlag() == null) ? 0 : getDelFlag().hashCode());
+        result = prime * result + ((getDeleteFlag() == null) ? 0 : getDeleteFlag().hashCode());
         result = prime * result + ((getCreateUserCode() == null) ? 0 : getCreateUserCode().hashCode());
         result = prime * result + ((getCreateUserName() == null) ? 0 : getCreateUserName().hashCode());
         result = prime * result + ((getCreatedDate() == null) ? 0 : getCreatedDate().hashCode());
@@ -267,7 +267,7 @@ public class TopPrice implements Serializable {
         sb.append(", appInPurchase=").append(appInPurchase);
         sb.append(", versionHistory=").append(versionHistory);
         sb.append(", remark=").append(remark);
-        sb.append(", delFlag=").append(delFlag);
+        sb.append(", deleteFlag=").append(deleteFlag);
         sb.append(", createUserCode=").append(createUserCode);
         sb.append(", createUserName=").append(createUserName);
         sb.append(", createdDate=").append(createdDate);

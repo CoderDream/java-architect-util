@@ -3,7 +3,7 @@ package com.coderdream.freeapps.util.ppt.a;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
-import com.coderdream.freeapps.util.BaseUtils;
+import com.coderdream.freeapps.util.other.BaseUtils;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

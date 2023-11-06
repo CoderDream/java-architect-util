@@ -28,17 +28,18 @@ spring:
 mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml
 
-#  configuration:
-#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 #    log-impl: com.coderdream.freeapps.config.MybatisPlusOutImpl
-#    lazy-loading-enabled: true
+    lazy-loading-enabled: true
 logging:
   level:
-    root: INFO
+    root: INFO # INFO ERROR
     com:
       coderdream:
         freeapps:
-          mapper: DEBUG
+          mapper: ERROR # DEBUG
+  config: classpath:logback.xml
 
 #
 #minio:

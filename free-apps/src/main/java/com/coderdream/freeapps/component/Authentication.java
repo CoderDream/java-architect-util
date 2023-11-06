@@ -1,17 +1,11 @@
 package com.coderdream.freeapps.component;
 
-import com.coderdream.freeapps.util.TtsConst;
 import io.lettuce.core.support.caching.RedisCache;
-import java.io.BufferedReader;
-import java.io.DataOutputStream;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import javax.annotation.Resource;
 import javax.net.ssl.HttpsURLConnection;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
 //import org.springframework.data.redis.cache.RedisCache;
-import org.springframework.stereotype.Component;
+
 
 //@Component
 //@Slf4j

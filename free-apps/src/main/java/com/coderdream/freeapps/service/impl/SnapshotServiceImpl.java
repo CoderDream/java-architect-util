@@ -9,9 +9,9 @@ import com.coderdream.freeapps.model.AppEntity;
 import com.coderdream.freeapps.model.Snapshot;
 import com.coderdream.freeapps.service.AppService;
 import com.coderdream.freeapps.service.SnapshotService;
-import com.coderdream.freeapps.util.CdFileUtils;
-import com.coderdream.freeapps.util.CdConstants;
-import com.coderdream.freeapps.util.CdListUtils;
+import com.coderdream.freeapps.util.other.CdFileUtils;
+import com.coderdream.freeapps.util.other.CdConstants;
+import com.coderdream.freeapps.util.other.CdListUtils;
 import org.slf4j.Logger;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
@@ -189,9 +189,4 @@ public class SnapshotServiceImpl extends ServiceImpl<SnapshotMapper, Snapshot>
         logger.info("本次任务耗时: " + message);
     }
 
-
 }
-
-
-
-

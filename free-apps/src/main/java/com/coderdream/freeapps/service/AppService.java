@@ -34,12 +34,17 @@ public interface AppService {
     int insertOrUpdateBatch(List<AppEntity> appList);
 
     List<AppEntity> selectList(AppEntity app);
+    List<AppEntity> selectListBySize(String size);
 
     List<AppEntity> selectNoAppIconUrl();
 
     List<AppEntity> selectNoUsFlag();
 
     List<AppEntity> selectNoSnapshot();
+
+    List<AppEntity> selectNoDescription();
+
+    List<AppEntity> selectNoCnFlag();
 
     List<AppEntity> selectDeletedAppList();
 
@@ -54,6 +59,8 @@ public interface AppService {
     IPage<AppEntity> selectPage(Page<AppEntity> page);
 
     int processNoUsFlag();
+    
+    int processNoCnFlag();
     int processWechat();
 
     int genDailyPpt();

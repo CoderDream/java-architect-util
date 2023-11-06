@@ -1,8 +1,8 @@
 package com.coderdream.freeapps.service;
 
 import com.coderdream.freeapps.model.XxlJobInfo;
-import com.coderdream.freeapps.util.CdDateUtils;
-import com.coderdream.freeapps.util.XxlUtil;
+import com.coderdream.freeapps.util.other.CdDateUtils;
+import com.coderdream.freeapps.util.other.XxlUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;

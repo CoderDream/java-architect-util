@@ -3,11 +3,11 @@ package com.coderdream.freeapps.util.spiderwx;
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.coderdream.freeapps.model.WechatInfo;
-import com.coderdream.freeapps.util.CutImageUtils;
-import com.coderdream.freeapps.util.DownloadPictureUtil;
-import com.coderdream.freeapps.util.JSoupSwaggerUtil;
-import com.coderdream.freeapps.util.StringUtils;
-import com.coderdream.freeapps.util.UrlUtils;
+import com.coderdream.freeapps.util.other.CutImageUtils;
+import com.coderdream.freeapps.util.other.DownloadUtil;
+import com.coderdream.freeapps.util.other.JSoupSwaggerUtil;
+import com.coderdream.freeapps.util.other.StringUtils;
+import com.coderdream.freeapps.util.other.UrlUtils;
 import com.coderdream.freeapps.util.qr.QRCodeEvents;
 import java.io.File;
 import java.io.IOException;
@@ -19,7 +19,6 @@ import java.util.List;
 import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import lombok.Data;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Attributes;
@@ -338,7 +337,7 @@ public class JSoupWechatUtil {
         File picFile = new File(freeDate + "/" + picName);
         if (!picFile.exists()) {
             // 下载应用图片
-            DownloadPictureUtil.downloadPicture(snapshot, path, picName);
+            DownloadUtil.downloadPicture(snapshot, path, picName);
         }
         // 截取QR图片
         File srcImageFile = new File(path + "/" + picName);

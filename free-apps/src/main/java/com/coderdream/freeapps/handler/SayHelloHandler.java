@@ -1,7 +1,7 @@
 package com.coderdream.freeapps.handler;
 
 import com.coderdream.freeapps.service.UserService;
-import com.coderdream.freeapps.util.XxlUtil;
+import com.coderdream.freeapps.util.other.XxlUtil;
 import com.xxl.job.core.context.XxlJobHelper;
 import com.xxl.job.core.handler.annotation.XxlJob;
 import lombok.RequiredArgsConstructor;

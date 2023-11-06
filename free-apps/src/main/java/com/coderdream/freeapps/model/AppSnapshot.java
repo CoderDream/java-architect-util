@@ -65,7 +65,7 @@ public class AppSnapshot implements Serializable {
     /**
      * 是否删除 0未删除（默认），1已删除
      */
-    private Integer delFlag;
+    private Integer deleteFlag;
 
     /**
      * 创建人代码
@@ -126,7 +126,7 @@ public class AppSnapshot implements Serializable {
             && (this.getUrlCn3() == null ? other.getUrlCn3() == null : this.getUrlCn3().equals(other.getUrlCn3()))
             && (this.getUrlCn4() == null ? other.getUrlCn4() == null : this.getUrlCn4().equals(other.getUrlCn4()))
             && (this.getUrlUs() == null ? other.getUrlUs() == null : this.getUrlUs().equals(other.getUrlUs()))
-            && (this.getDelFlag() == null ? other.getDelFlag() == null : this.getDelFlag().equals(other.getDelFlag()))
+            && (this.getDeleteFlag() == null ? other.getDeleteFlag() == null : this.getDeleteFlag().equals(other.getDeleteFlag()))
             && (this.getCreateUserCode() == null ? other.getCreateUserCode() == null : this.getCreateUserCode().equals(other.getCreateUserCode()))
             && (this.getCreateUserName() == null ? other.getCreateUserName() == null : this.getCreateUserName().equals(other.getCreateUserName()))
             && (this.getCreatedDate() == null ? other.getCreatedDate() == null : this.getCreatedDate().equals(other.getCreatedDate()))
@@ -149,7 +149,7 @@ public class AppSnapshot implements Serializable {
         result = prime * result + ((getUrlCn3() == null) ? 0 : getUrlCn3().hashCode());
         result = prime * result + ((getUrlCn4() == null) ? 0 : getUrlCn4().hashCode());
         result = prime * result + ((getUrlUs() == null) ? 0 : getUrlUs().hashCode());
-        result = prime * result + ((getDelFlag() == null) ? 0 : getDelFlag().hashCode());
+        result = prime * result + ((getDeleteFlag() == null) ? 0 : getDeleteFlag().hashCode());
         result = prime * result + ((getCreateUserCode() == null) ? 0 : getCreateUserCode().hashCode());
         result = prime * result + ((getCreateUserName() == null) ? 0 : getCreateUserName().hashCode());
         result = prime * result + ((getCreatedDate() == null) ? 0 : getCreatedDate().hashCode());
@@ -175,7 +175,7 @@ public class AppSnapshot implements Serializable {
         sb.append(", urlCn3=").append(urlCn3);
         sb.append(", urlCn4=").append(urlCn4);
         sb.append(", urlUs=").append(urlUs);
-        sb.append(", delFlag=").append(delFlag);
+        sb.append(", deleteFlag=").append(deleteFlag);
         sb.append(", createUserCode=").append(createUserCode);
         sb.append(", createUserName=").append(createUserName);
         sb.append(", createdDate=").append(createdDate);

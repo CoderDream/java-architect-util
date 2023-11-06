@@ -14,9 +14,9 @@ import com.coderdream.freeapps.service.AppService;
 import com.coderdream.freeapps.service.DescriptionService;
 import com.coderdream.freeapps.service.FreeHistoryService;
 import com.coderdream.freeapps.service.SyncTaskService;
-import com.coderdream.freeapps.util.CdDateUtils;
-import com.coderdream.freeapps.util.CdFileUtils;
-import com.coderdream.freeapps.util.ppt.excelutil.CdExcelUtils;
+import com.coderdream.freeapps.util.other.CdDateUtils;
+import com.coderdream.freeapps.util.other.CdFileUtils;
+import com.coderdream.freeapps.util.other.CdExcelUtil;
 import java.io.File;
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -26,6 +26,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import javax.annotation.Resource;
+import javax.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
@@ -50,6 +51,7 @@ public class SyncTaskServiceImpl extends ServiceImpl<SyncTaskMapper, SyncTaskEnt
     private DescriptionService descriptionService;
 
     @Override
+    @Transactional
     public void dailyProcess(SyncTaskReqDto syncTaskReqDto) {
         long startTime = System.currentTimeMillis();
 
@@ -101,14 +103,14 @@ public class SyncTaskServiceImpl extends ServiceImpl<SyncTaskMapper, SyncTaskEnt
                             app = new AppEntity();
                             BeanUtils.copyProperties(freeHistory, app);
                             app.setDescriptionCl(freeHistory.getDescription());
-                            app.setDelFlag(0);
+                            app.setDeleteFlag(0);
                             app.setCreatedDate(new Date());
                             appList.add(app);
 
                             description = new Description();
                             BeanUtils.copyProperties(freeHistory, description);
                             description.setDescriptionCl(freeHistory.getDescription());
-                            description.setDelFlag(0);
+                            description.setDeleteFlag(0);
                             description.setCreatedDate(new Date());
                             descriptionList.add(description);
                         }
@@ -164,7 +166,7 @@ public class SyncTaskServiceImpl extends ServiceImpl<SyncTaskMapper, SyncTaskEnt
 
     @Override
     public void dailyRecommend() {
-        List<RecommendApp> recommendAppList = CdExcelUtils.genRecommendAppList();
+        List<RecommendApp> recommendAppList = CdExcelUtil.genRecommendAppList();
         if (com.baomidou.mybatisplus.core.toolkit.CollectionUtils.isNotEmpty(recommendAppList)) {
             for (RecommendApp recommendApp : recommendAppList) {
                 System.out.println(recommendApp.getTitle());

@@ -27,9 +27,9 @@ import org.springframework.format.annotation.DateTimeFormat;
 public class CoreBase implements Serializable {
 
   @Schema(description = "是否删除 0未删除（默认），1已删除")
-  @TableField(value = "del_flag")
+  @TableField(value = "delete_flag")
   @TableLogic(delval = "1", value = "0")
-  private Integer delFlag;
+  private Integer deleteFlag;
 
   @Schema(description = "创建人")
   @TableField(value = "create_user_code", fill = FieldFill.INSERT)

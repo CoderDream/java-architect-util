@@ -1,6 +1,8 @@
 package com.coderdream.freeapps.controller;
 
+import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.coderdream.freeapps.common.entity.PageResult;
 import com.coderdream.freeapps.common.entity.Result;
 import com.coderdream.freeapps.dto.AppDTO;
@@ -17,6 +19,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.CollectionUtils;
@@ -98,6 +101,67 @@ public class AppController {
         List<AppEntity> result = appService.selectList(app);
         return Result.ok(result);
     }
+
+    @PostMapping("/selectPage")
+    Result<IPage<AppEntity>> selectPage(@RequestBody Page<AppEntity> page) {
+        // IPage<AppEntity> selectPage(Page<AppEntity> page);
+//        Page<AppEntity> page = new Page<>();
+
+        IPage<AppEntity> result = appService.selectPage(page);
+        return Result.ok(result);
+    }
+
+    @GetMapping("/selectPageAppId")
+    Result<List<String>> selectPageAppId(String current, String size) {
+        if (current == null || StrUtil.isEmpty(current)) {
+            current = "1";
+        }
+        if (size == null || StrUtil.isEmpty(size)) {
+            size = "10";
+        }
+        Page<AppEntity> page = new Page<>();
+        page.setCurrent(Long.parseLong(current));
+        page.setSize(Long.parseLong(size));
+        IPage<AppEntity> appEntityIPage = appService.selectPage(page);
+        List<String> result = appEntityIPage.getRecords().stream().map(AppEntity::getAppId)
+            .collect(Collectors.toList());
+
+        return Result.ok(result);
+    }
+
+    @PostMapping("/listAppId")
+    Result<List<String>> listAppId(@RequestBody AppEntity app) {
+        // IPage<AppEntity> selectPage(Page<AppEntity> page);
+//        Page<AppEntity> page = new Page<>();
+
+        List<AppEntity> appEntityList = appService.selectList(app);
+        List<String> appIdList = appEntityList.stream().map(AppEntity::getAppId).collect(Collectors.toList());
+
+        return Result.ok(appIdList);
+    }
+
+    @GetMapping("/listAppId10")
+    Result<List<String>> listAppId10() {
+        // IPage<AppEntity> selectPage(Page<AppEntity> page);
+//        Page<AppEntity> page = new Page<>();
+        //@PathVariable AppEntity app
+        List<AppEntity> appEntityList = appService.selectList(new AppEntity());
+        List<String> appIdList = appEntityList.stream().map(AppEntity::getAppId).collect(Collectors.toList());
+
+        return Result.ok(appIdList);
+    }
+
+    @GetMapping("/listAppIds")
+    Result<List<String>> listAppIds(String size) {
+        if (size == null || StrUtil.isEmpty(size)) {
+            size = "10";
+        }
+        List<AppEntity> appEntityList = appService.selectListBySize(size);
+        List<String> appIdList = appEntityList.stream().map(AppEntity::getAppId).collect(Collectors.toList());
+
+        return Result.ok(appIdList);
+    }
+
     @PostMapping("/insertSelective")
     Result<Integer> insertSelective(@RequestBody AppEntity app) {
         int result = appService.insertSelective(app);
@@ -114,12 +178,12 @@ public class AppController {
     Result<Integer> batchCreate(@RequestBody List<String> appIdList) {
         List<AppEntity> appList = new ArrayList<>();
         AppEntity app;
-        if(!CollectionUtils.isEmpty(appIdList)) {
-            for (String appId: appIdList) {
+        if (!CollectionUtils.isEmpty(appIdList)) {
+            for (String appId : appIdList) {
                 app = new AppEntity();
                 app.setAppId(appId);
                 app.setCreatedDate(new Date());
-                app.setDelFlag(0);
+                app.setDeleteFlag(0);
                 appList.add(app);
             }
         }

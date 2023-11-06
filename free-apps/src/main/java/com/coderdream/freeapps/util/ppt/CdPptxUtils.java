@@ -17,6 +17,9 @@ import org.apache.poi.xslf.usermodel.XSLFShape;
 import org.apache.poi.xslf.usermodel.XSLFSlide;
 import org.springframework.core.io.ClassPathResource;
 
+/**
+ * @author CoderDream
+ */
 public class CdPptxUtils {
 
     public static void main(String[] args) {
@@ -176,7 +179,7 @@ public class CdPptxUtils {
         }
     }
 
-    /*
+    /**
      * 获取PPT的所有图片，并进行更改
      */
     public static void fillPicture(XSLFSlide slide) {
@@ -232,6 +235,43 @@ public class CdPptxUtils {
         String filePath = reportPath + "/ppt/apps-12.pptx";
         return filePath;
     }
+
+    public static String getTemplateSixMinute() {
+        File directory = new File("src/main/resources");
+        String reportPath;
+        try {
+            reportPath = directory.getCanonicalPath();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        String filePath = reportPath + "/ppt/6min.pptx";
+        return filePath;
+    }
+
+    public static String getTemplatePath() {
+        File directory = new File("src/main/resources");
+        String reportPath;
+        try {
+            reportPath = directory.getCanonicalPath();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        String filePath = reportPath + "/ppt/";
+        return filePath;
+    }
+
+    public static String getResourcePath() {
+        File directory = new File("src/main/resources");
+        String reportPath;
+        try {
+            reportPath = directory.getCanonicalPath();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        String filePath = reportPath + "/";
+        return filePath;
+    }
+
 
     public static String getTemplateFullPath(String fileName) {
         File directory = new File("src/main/resources");

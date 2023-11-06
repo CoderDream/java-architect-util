@@ -1,9 +1,8 @@
 package com.coderdream.freeapps.util.daily;
 
 import com.coderdream.freeapps.model.AppBrief;
-import com.coderdream.freeapps.util.BaseUtils;
-import com.coderdream.freeapps.util.CutPicture;
-import com.coderdream.freeapps.util.StringUtils;
+import com.coderdream.freeapps.util.other.BaseUtils;
+import com.coderdream.freeapps.util.other.StringUtils;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -139,14 +138,14 @@ public class SnapshotUtils {
 //                        action.keyDown(Keys.F5).keyUp(Keys.CONTROL).perform();  //ctr+t 快捷方式新打开一个标签页
 //                        driver.sendKeys(Keys.F5);
                         if(StringUtils.existQuestionMark(url)) {
-                            url += "&platform=iphone";
+                            url += "&platform=iphone&l=zh";
                         } else {
-                            url +=  "?platform=iphone";
+                            url +=  "?platform=iphone&l=zh";
                         }
                         if(StringUtils.existQuestionMark(urlCn)) {
-                            urlCn += "&platform=iphone";
+                            urlCn += "&platform=iphone&l=zh";
                         } else {
-                            urlCn +=  "?platform=iphone";
+                            urlCn +=  "?platform=iphone&l=zh";
                         }
                         if (onlyUs) {
                             System.out.println("####url:\t" + url);

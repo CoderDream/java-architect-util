@@ -7,9 +7,9 @@ import com.coderdream.freeapps.model.Snapshot;
 import com.coderdream.freeapps.service.AppIconService;
 import com.coderdream.freeapps.service.MinioService;
 import com.coderdream.freeapps.service.SnapshotService;
-import com.coderdream.freeapps.util.CdConstants;
-import com.coderdream.freeapps.util.DownloadPictureUtil;
-import com.coderdream.freeapps.util.CdListUtils;
+import com.coderdream.freeapps.util.other.CdConstants;
+import com.coderdream.freeapps.util.other.DownloadUtil;
+import com.coderdream.freeapps.util.other.CdListUtils;
 import lombok.RequiredArgsConstructor;
 import org.apache.http.entity.ContentType;
 import org.slf4j.Logger;
@@ -46,7 +46,7 @@ public class MinioServiceImpl implements MinioService {
             "https://is5-ssl.mzstatic.com/image/thumb/Purple125/v4/9d/7d/7d/9d7d7d1f-001f-ff93-46aa-7adfef8fdaaa/pr_source.jpg/600x0w.jpg"};
         String path = "id1443533088";
         String[] fileNames = new String[]{"9d7d7d1f-001f-ff93-46aa-7adfef8fdaaa_pr_source.jpg"};
-        DownloadPictureUtil.downloadPicture(pictureUrls, path, fileNames);
+        DownloadUtil.downloadPicture(pictureUrls, path, fileNames);
 //        String filename = path + File.separator + fileNames[0];
         String filename = path + "/" + fileNames[0];
         File file = new File(filename);
@@ -103,7 +103,7 @@ public class MinioServiceImpl implements MinioService {
                             String path = dataPath + "app_snapshot\\" +  snapshot.getAppId();
                             filename = snapshot.getFilename();
                             snapshotUrl = snapshot.getSnapshotUrl();
-                            DownloadPictureUtil.downloadPicture(snapshotUrl, path, filename);
+                            DownloadUtil.downloadPicture(snapshotUrl, path, filename);
 
                             logger.info("截图下载成功: " + filename);
                             //
@@ -181,7 +181,7 @@ public class MinioServiceImpl implements MinioService {
                             String path = dataPath + "app_icon\\" + appIcon.getAppId();
                             filename = appIcon.getFilename();
                             appIconUrl = appIcon.getAppIconUrl();
-                            DownloadPictureUtil.downloadPicture(appIconUrl, path, filename);
+                            DownloadUtil.downloadPicture(appIconUrl, path, filename);
 
                             logger.info("图标下载成功: " + filename);
                             //

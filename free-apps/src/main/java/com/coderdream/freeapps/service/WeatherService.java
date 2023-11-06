@@ -4,7 +4,7 @@ import com.alibaba.fastjson2.JSONArray;
 import com.alibaba.fastjson2.JSONObject;
 import com.coderdream.freeapps.dto.WeatherInfo;
 import com.coderdream.freeapps.dto.constant.WeatherConstant;
-import com.coderdream.freeapps.util.CdDateUtils;
+import com.coderdream.freeapps.util.other.CdDateUtils;
 
 import java.time.LocalDateTime;
 

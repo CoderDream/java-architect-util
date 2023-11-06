@@ -11,11 +11,11 @@ import com.coderdream.freeapps.model.FreeHistory;
 import com.coderdream.freeapps.service.AppService;
 import com.coderdream.freeapps.service.DescriptionService;
 import com.coderdream.freeapps.service.FreeHistoryService;
-import com.coderdream.freeapps.util.CdDateTimeUtils;
-import com.coderdream.freeapps.util.CdDateUtils;
-import com.coderdream.freeapps.util.CdFileUtils;
-import com.coderdream.freeapps.util.CdListUtils;
-import com.coderdream.freeapps.util.CdConstants;
+import com.coderdream.freeapps.util.other.CdDateTimeUtils;
+import com.coderdream.freeapps.util.other.CdDateUtils;
+import com.coderdream.freeapps.util.other.CdFileUtils;
+import com.coderdream.freeapps.util.other.CdListUtils;
+import com.coderdream.freeapps.util.other.CdConstants;
 import java.io.File;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import javax.annotation.Resource;
+import javax.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
@@ -49,6 +50,7 @@ public class DescriptionServiceImpl extends ServiceImpl<DescriptionMapper, Descr
     private FreeHistoryService freeHistoryService;
 
     @Override
+    @Transactional
     public int insertOrUpdateBatch(List<Description> descriptionList) {
         int count = 0;
         if (!CollectionUtils.isEmpty(descriptionList)) {
@@ -66,7 +68,7 @@ public class DescriptionServiceImpl extends ServiceImpl<DescriptionMapper, Descr
     @Override
     public int insertOrUpdateBatchMy(List<Description> descriptionList) {
         //    QueryWrapper<App> queryWrapper = new QueryWrapper<>();
-//        queryWrapper.eq("del_flag", 0);
+//        queryWrapper.eq("delete_flag", 0);
 //    List<App> appList = appMapper.selectList(queryWrapper);
 //    List<Description> descriptionList = new ArrayList<>();
 //        if (!CollectionUtils.isEmpty(appList)) {
@@ -82,9 +84,10 @@ public class DescriptionServiceImpl extends ServiceImpl<DescriptionMapper, Descr
     }
 
     @Override
+    @Transactional
     public int dailyProcess() {
         QueryWrapper<AppEntity> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("del_flag", 0);
+        queryWrapper.eq("delete_flag", 0);
         List<AppEntity> appList = appMapper.selectList(queryWrapper);
         List<Description> descriptionList = new ArrayList<>();
         if (!CollectionUtils.isEmpty(appList)) {
@@ -163,14 +166,14 @@ public class DescriptionServiceImpl extends ServiceImpl<DescriptionMapper, Descr
                         app = new AppEntity();
                         BeanUtils.copyProperties(freeHistory, app);
                         app.setDescriptionCl(freeHistory.getDescription());
-                        app.setDelFlag(0);
+                        app.setDeleteFlag(0);
                         app.setCreatedDate(new Date());
                         appList.add(app);
 
                         description = new Description();
                         BeanUtils.copyProperties(freeHistory, description);
                         description.setDescriptionCl(freeHistory.getDescription());
-                        description.setDelFlag(0);
+                        description.setDeleteFlag(0);
                         description.setCreatedDate(new Date());
                         descriptionList.add(description);
                     }

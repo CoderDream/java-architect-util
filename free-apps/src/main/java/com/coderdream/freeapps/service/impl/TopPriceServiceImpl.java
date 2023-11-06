@@ -8,6 +8,7 @@ import com.coderdream.freeapps.model.PriceHistory;
 import com.coderdream.freeapps.model.TopPrice;
 import com.coderdream.freeapps.service.PriceHistoryService;
 import com.coderdream.freeapps.service.TopPriceService;
+import javax.transaction.Transactional;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
@@ -48,6 +49,7 @@ public class TopPriceServiceImpl extends ServiceImpl<TopPriceMapper, TopPrice>
     }
 
     @Override
+    @Transactional
     public void process(String dateStr) {
         List<TopPrice> oldTopPriceList = selectList(null);
         Map<String, BigDecimal> map = new LinkedHashMap<>();

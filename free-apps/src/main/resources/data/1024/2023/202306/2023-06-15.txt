@@ -1,0 +1,76 @@
+今日苹果iOS 限免软件
+
+Lightning for Xcode
+¥12➱0
+一个 Xcode 开发者插件，可提高 iOS 和 Mac 开发者的开发效率。支持复制函数的实现以提取方法声明、将属性声明复制到生成惰性变量代码
+https://apps.apple.com/cn/app/lightning-for-xcode/id1610575021
+
+CalcFast
+¥12➱0
+一个计算器应用，支持并排打开同时计算，可显示计算历史记录。
+https://apps.apple.com/cn/app/calcfast/id876781417
+
+Phone Drive - 云储存管理和文件共享
+¥12➱0
+文件管理工具，可以通过WiFi网络从任何Mac或PC连接到手机驱动器，并通过直接从Finder或Windows资源管理器拖放文件来传输文件
+https://apps.apple.com/cn/app/phone-drive-%E4%BA%91%E5%82%A8%E5%AD%98%E7%AE%A1%E7%90%86%E5%92%8C%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB/id431033044
+
+QuickLinks: 的快捷方式 Shortcuts
+¥12➱0
+类似Windows上的快捷方式功能，帮助你提供一种更轻松、更快捷的方法来访问文件、文件夹、应用程序等。为任何东西创建自定义快捷方式。
+https://apps.apple.com/cn/app/quicklinks-%E7%9A%84%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F-shortcuts/id1200685619
+
+Jiff - 相机的再发现（手动调焦，直观曝光调整）
+¥12➱0
+好照片的决定因素之‘光线’和‘构图’，该应用在去除那些复杂功能后，通过简单易上手的标准让你短期内获得完美修图预期。
+https://apps.apple.com/cn/app/jiff-%E7%9B%B8%E6%9C%BA%E7%9A%84%E5%86%8D%E5%8F%91%E7%8E%B0-%E6%89%8B%E5%8A%A8%E8%B0%83%E7%84%A6-%E7%9B%B4%E8%A7%82%E6%9B%9D%E5%85%89%E8%B0%83%E6%95%B4/id1451169521
+
+封神之战: 亚瑟王的黑暗崛起单机RPG
+¥12➱0
+暗黑风手绘，超耐玩的暗黑回合制冒险单机游戏。英雄，神装，金币，宝石，神器，宝箱……一切可刷！
+https://apps.apple.com/cn/app/id1606150764
+
+Ads Blocker - GPU Accelerator
+¥12➱0
+一款 Safari 的广告拦截器。同时强制打开 GPU 硬件加速，然后将提高性能 5%-10%。
+https://apps.apple.com/cn/app/id1615284831
+
+Wifiry: Wi-Fi Signal Strength
+¥12➱0
+监视实时WiFi信号强度，并在菜单栏中显示与所连接网络名称相同的百分比。通过信号强度和连接状态，还可以获得IP地址，mac地址，开放或安全，通道，BSSID，RSSI，噪声，传输速率，PHY，接口模式，供应商详细信息，安全性类型等信息。
+https://apps.apple.com/cn/app/id1177934624
+
+Mpjex - MP3转换器 Pro
+¥12➱0
+一款mp3转换器，可以从视频中提取各种主流格式的音乐，或者直接进行音频格式的转换。
+https://apps.apple.com/cn/app/id1660568866
+
+Flex Scanner - PDF Scanner
+¥12➱0
+使用相机随时随地扫描文档，无水印
+https://apps.apple.com/cn/app/id1521904431
+
+Depello - 为您的照片涂色
+¥12➱0
+立即为飞溅图像上色！
+https://apps.apple.com/us/app/id1065823748
+
+MIDI 检查 - 诊断工具
+¥12➱0
+诊断问题并找到解决方案。
+https://apps.apple.com/us/app/id1235759917
+
+一键式照片增强器
+¥12➱0
+只需单击一下，让 AI 改善您的照片！
+https://apps.apple.com/us/app/id1526995966
+
+及时 - 提醒的时间
+¥12➱0
+时间规划局 - 小工具收集。
+https://apps.apple.com/us/app/id1445103466
+
+二进制时钟 | 手表和小工具
+¥12➱0
+时尚的二进制时钟和小部件。
+https://apps.apple.com/us/app/id1541544185

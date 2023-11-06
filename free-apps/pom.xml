@@ -17,19 +17,23 @@
     <properties>
         <java.version>1.8</java.version>
         <fastjson.version>1.2.73</fastjson.version>
-        <hutool.version>5.5.1</hutool.version>
+        <hutool.version>5.8.18</hutool.version>
+        <hutool-core.version>5.4.3</hutool-core.version>
         <mysql.version>8.0.19</mysql.version>
         <org.mapstruct.version>1.5.2.Final</org.mapstruct.version>
         <org.projectlombok.version>1.18.20</org.projectlombok.version>
         <druid.version>1.1.18</druid.version>
         <springdoc.version>1.6.9</springdoc.version>
         <mybatis.version>2.1.4</mybatis.version>
+        <mybatis.plus.version>3.5.3.1</mybatis.plus.version>
         <mapper.version>4.1.5</mapper.version>
         <pinyin4j.version>2.5.1</pinyin4j.version>
-        <hutool-core.version>5.4.3</hutool-core.version>
         <pinyin4j.version>2.5.1</pinyin4j.version>
         <selenium.version>4.7.2</selenium.version>
         <commons.io.version>2.11.0</commons.io.version>
+        <javacpp.version>1.5.7</javacpp.version>
+        <!--        <javacpp.version>1.5.9</javacpp.version>-->
+        <corenlp.version>4.5.5</corenlp.version>
     </properties>
 
     <repositories>
@@ -155,7 +159,7 @@
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
-            <version>5.8.15</version>
+            <version>5.8.18</version>
             <!--            <version>${hutool.version}</version>-->
             <exclusions>
                 <exclusion>
@@ -211,11 +215,11 @@
             <artifactId>spring-data-commons</artifactId>
             <version>2.4.6</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.springdoc</groupId>-->
-<!--            <artifactId>springdoc-openapi-ui</artifactId>-->
-<!--            <version>1.6.9</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springdoc</groupId>-->
+        <!--            <artifactId>springdoc-openapi-ui</artifactId>-->
+        <!--            <version>1.6.9</version>-->
+        <!--        </dependency>-->
 
 
         <dependency>
@@ -396,6 +400,12 @@
             <groupId>com.gitlab.haynes</groupId>
             <artifactId>orika-spring-boot-starter</artifactId>
             <version>1.26.0</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>javassist</artifactId>
+                    <groupId>org.javassist</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!--汉字转拼音-->
@@ -412,6 +422,12 @@
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>guava</artifactId>
+                    <groupId>com.google.guava</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!--        <dependency>-->
@@ -430,6 +446,12 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>ooxml-schemas</artifactId>
             <version>1.4</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>xmlbeans</artifactId>
+                    <groupId>org.apache.xmlbeans</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!--pdf start-->
@@ -458,6 +480,12 @@
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpmime</artifactId>
             <version>4.5.14</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>httpclient</artifactId>
+                    <groupId>org.apache.httpcomponents</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
@@ -470,6 +498,16 @@
             <groupId>net.sourceforge.htmlunit</groupId>
             <artifactId>htmlunit</artifactId>
             <version>2.51.0</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>commons-io</artifactId>
+                    <groupId>commons-io</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>httpmime</artifactId>
+                    <groupId>org.apache.httpcomponents</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
@@ -483,6 +521,360 @@
             <artifactId>xml-apis</artifactId>
             <version>1.4.01</version>
         </dependency>
+
+        <!-- excel相关 -->
+        <dependency>
+            <groupId>com.xuxueli</groupId>
+            <artifactId>xxl-excel</artifactId>
+            <version>1.1.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>poi</artifactId>
+                    <groupId>org.apache.poi</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>poi-ooxml</artifactId>
+                    <groupId>org.apache.poi</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.14</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/ws.schild/jave-all-deps -->
+        <dependency>
+            <groupId>ws.schild</groupId>
+            <artifactId>jave-all-deps</artifactId>
+            <version>3.3.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>easyexcel</artifactId>
+            <version>3.3.2</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.poi</groupId>
+                    <artifactId>poi</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.poi</groupId>
+                    <artifactId>poi-ooxml</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.poi</groupId>
+                    <artifactId>poi-ooxml-schemas</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>us.codecraft</groupId>
+            <artifactId>webmagic-extension</artifactId>
+            <version>0.8.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>us.codecraft</groupId>
+            <artifactId>webmagic-core</artifactId>
+            <version>0.8.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>httpclient</artifactId>
+                    <groupId>org.apache.httpcomponents</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>jsoup</artifactId>
+                    <groupId>org.jsoup</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--工具包（StringUtils）-->
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>31.1-jre</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.yitter</groupId>
+            <artifactId>yitter-idgenerator</artifactId>
+            <version>1.0.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>${mybatis.plus.version}</version>
+        </dependency>
+
+
+        <!-- 引入jave多媒体处理包 -->
+        <dependency>
+            <groupId>ws.schild</groupId>
+            <artifactId>jave-core</artifactId>
+            <version>3.3.1</version>
+        </dependency>
+
+        <!-- linux64位 ffmpeg，视频切割合并Linux环境依赖，根据运行环境Linux64位环境包和window64位环境包只需要依赖一个即可，这个jar包比较大，有21M -->
+        <!--        <dependency>-->
+        <!--            <groupId>ws.schild</groupId>-->
+        <!--            <artifactId>jave-native-linux64</artifactId>-->
+        <!--        </dependency>-->
+        <!-- window64位 ffmpeg，视频切割合并Windows环境依赖，根据运行环境Linux64位环境包和window64位环境包只需要依赖一个即可，这个jar包比较大，有20M -->
+        <dependency>
+            <groupId>ws.schild</groupId>
+            <artifactId>jave-native-win64</artifactId>
+            <version>2.4.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-dbutils</groupId>
+            <artifactId>commons-dbutils</artifactId>
+            <version>1.7</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacv</artifactId>
+            <version>${javacpp.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacv-platform</artifactId>
+            <version>${javacpp.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacpp</artifactId>
+            <version>${javacpp.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>opencv</artifactId>
+
+            <version>4.5.5-${javacpp.version}</version>
+            <!--            <version>4.7.0-${javacpp.version}</version>-->
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.apache.beam/beam-sdks-java-extensions-protobuf -->
+        <dependency>
+            <groupId>org.apache.beam</groupId>
+            <artifactId>beam-sdks-java-extensions-protobuf</artifactId>
+            <version>2.36.0</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.10.0</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+
+
+        <!--
+           implementation("::")
+  implementation("::)
+         -->
+
+        <!--        <dependency>-->
+        <!--            <groupId>edu.stanford.nlp</groupId>-->
+        <!--            <artifactId>stanford-corenlp</artifactId>-->
+        <!--            <version>3.5.0</version>-->
+        <!--&lt;!&ndash;            <version>4.5.5</version>&ndash;&gt;-->
+        <!--            <exclusions>-->
+        <!--                <exclusion>-->
+        <!--                    <groupId>xalan</groupId>-->
+        <!--                    <artifactId>serializer</artifactId>-->
+        <!--                </exclusion>-->
+        <!--            </exclusions>-->
+        <!--        </dependency>-->
+
+
+        <!--        <dependency>-->
+        <!--            <groupId>edu.stanford.nlp</groupId>-->
+        <!--            <artifactId>stanford-corenlp</artifactId>-->
+        <!--            <version>4.4.0</version>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>edu.stanford.nlp</groupId>-->
+        <!--            <artifactId>stanford-corenlp</artifactId>-->
+        <!--            <version>4.4.0</version>-->
+        <!--            <classifier>models</classifier>-->
+        <!--        </dependency>-->
+
+
+        <!--        <dependency>-->
+        <!--            <groupId>edu.stanford.nlp</groupId>-->
+        <!--            <artifactId>stanford-corenlp</artifactId>-->
+        <!--            <version>${corenlp.version}</version>-->
+        <!--        </dependency>-->
+
+        <!--        <dependency>-->
+        <!--            <groupId>edu.stanford.nlp</groupId>-->
+        <!--            <artifactId>stanford-corenlp</artifactId>-->
+        <!--            <version>${corenlp.version}</version>-->
+        <!--            <classifier>models</classifier>-->
+        <!--        </dependency>-->
+
+        <!--        <dependency>-->
+        <!--            <groupId>edu.stanford.nlp</groupId>-->
+        <!--            <artifactId>stanford-corenlp</artifactId>-->
+        <!--            <version>${corenlp.version}</version>-->
+        <!--            <classifier>models-chinese</classifier>-->
+        <!--        </dependency>-->
+
+        <dependency>
+            <groupId>edu.stanford.nlp</groupId>
+            <artifactId>stanford-corenlp</artifactId>
+            <version>${corenlp.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>xalan</groupId>
+                    <artifactId>serializer</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>edu.stanford.nlp</groupId>
+            <artifactId>stanford-corenlp</artifactId>
+            <version>${corenlp.version}</version>
+            <classifier>javadoc</classifier>
+        </dependency>
+        <dependency>
+            <groupId>edu.stanford.nlp</groupId>
+            <artifactId>stanford-corenlp</artifactId>
+            <version>${corenlp.version}</version>
+            <classifier>sources</classifier>
+        </dependency>
+        <dependency>
+            <groupId>edu.stanford.nlp</groupId>
+            <artifactId>stanford-corenlp</artifactId>
+            <version>${corenlp.version}</version>
+            <classifier>models</classifier>
+        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>edu.stanford.nlp</groupId>-->
+        <!--            <artifactId>stanford-corenlp</artifactId>-->
+        <!--            <version>4.5.5</version>-->
+        <!--            <classifier>models-arabic</classifier>-->
+        <!--        </dependency>-->
+        <dependency>
+            <groupId>edu.stanford.nlp</groupId>
+            <artifactId>stanford-corenlp</artifactId>
+            <version>${corenlp.version}</version>
+            <classifier>models-chinese</classifier>
+        </dependency>
+        <dependency>
+            <groupId>edu.stanford.nlp</groupId>
+            <artifactId>stanford-corenlp</artifactId>
+            <version>${corenlp.version}</version>
+            <classifier>models-english</classifier>
+        </dependency>
+        <dependency>
+            <groupId>edu.stanford.nlp</groupId>
+            <artifactId>stanford-corenlp</artifactId>
+            <version>${corenlp.version}</version>
+            <classifier>models-english-kbp</classifier>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
+        <dependency>
+            <groupId>org.xerial</groupId>
+            <artifactId>sqlite-jdbc</artifactId>
+            <version>3.40.1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.gitee.jinceon</groupId>
+            <artifactId>simple-ppt-engine</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -501,6 +893,24 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <!--            <plugin>-->
+            <!--                <groupId>org.apache.maven.plugins</groupId>-->
+            <!--                <artifactId>maven-checkstyle-plugin</artifactId>-->
+            <!--                <version>3.2.0</version>-->
+            <!--                <configuration>-->
+            <!--                    <configLocation>/script/checkstyle-v2.xml</configLocation>-->
+            <!--                    <includeTestSourceDirectory>true</includeTestSourceDirectory>-->
+            <!--                </configuration>-->
+            <!--                <executions>-->
+            <!--                    <execution>-->
+            <!--                        <id>validate</id>-->
+            <!--                        <phase>validate</phase>-->
+            <!--                        <goals>-->
+            <!--                            <goal>check</goal>-->
+            <!--                        </goals>-->
+            <!--                    </execution>-->
+            <!--                </executions>-->
+            <!--            </plugin>-->
         </plugins>
     </build>
 

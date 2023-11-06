@@ -10,6 +10,7 @@ public class RecommendApp {
   private String title;//应用名称
   private String rateAmount; //投票数
   private String usFlag;// 美区标志
+  private String cnFlag;// 美区标志
   /**
    * 美区应用简介
    */

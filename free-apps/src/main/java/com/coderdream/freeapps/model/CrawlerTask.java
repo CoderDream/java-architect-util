@@ -46,7 +46,7 @@ public class CrawlerTask implements Serializable {
     /**
      * 成功列表
      */
-    private String succesList;
+    private String successList;
 
     /**
      * 失败列表
@@ -61,7 +61,7 @@ public class CrawlerTask implements Serializable {
     /**
      * 是否删除 0未删除（默认），1已删除
      */
-    private Integer delFlag;
+    private Integer deleteFlag;
 
     /**
      * 创建人代码
@@ -120,10 +120,10 @@ public class CrawlerTask implements Serializable {
             && (this.getTaskStatus() == null ? other.getTaskStatus() == null : this.getTaskStatus().equals(other.getTaskStatus()))
             && (this.getStartTime() == null ? other.getStartTime() == null : this.getStartTime().equals(other.getStartTime()))
             && (this.getEndTime() == null ? other.getEndTime() == null : this.getEndTime().equals(other.getEndTime()))
-            && (this.getSuccesList() == null ? other.getSuccesList() == null : this.getSuccesList().equals(other.getSuccesList()))
+            && (this.getSuccessList() == null ? other.getSuccessList() == null : this.getSuccessList().equals(other.getSuccessList()))
             && (this.getFailList() == null ? other.getFailList() == null : this.getFailList().equals(other.getFailList()))
             && (this.getTaskMessage() == null ? other.getTaskMessage() == null : this.getTaskMessage().equals(other.getTaskMessage()))
-            && (this.getDelFlag() == null ? other.getDelFlag() == null : this.getDelFlag().equals(other.getDelFlag()))
+            && (this.getDeleteFlag() == null ? other.getDeleteFlag() == null : this.getDeleteFlag().equals(other.getDeleteFlag()))
             && (this.getCreateUserCode() == null ? other.getCreateUserCode() == null : this.getCreateUserCode().equals(other.getCreateUserCode()))
             && (this.getCreateUserName() == null ? other.getCreateUserName() == null : this.getCreateUserName().equals(other.getCreateUserName()))
             && (this.getCreatedDate() == null ? other.getCreatedDate() == null : this.getCreatedDate().equals(other.getCreatedDate()))
@@ -142,10 +142,10 @@ public class CrawlerTask implements Serializable {
         result = prime * result + ((getTaskStatus() == null) ? 0 : getTaskStatus().hashCode());
         result = prime * result + ((getStartTime() == null) ? 0 : getStartTime().hashCode());
         result = prime * result + ((getEndTime() == null) ? 0 : getEndTime().hashCode());
-        result = prime * result + ((getSuccesList() == null) ? 0 : getSuccesList().hashCode());
+        result = prime * result + ((getSuccessList() == null) ? 0 : getSuccessList().hashCode());
         result = prime * result + ((getFailList() == null) ? 0 : getFailList().hashCode());
         result = prime * result + ((getTaskMessage() == null) ? 0 : getTaskMessage().hashCode());
-        result = prime * result + ((getDelFlag() == null) ? 0 : getDelFlag().hashCode());
+        result = prime * result + ((getDeleteFlag() == null) ? 0 : getDeleteFlag().hashCode());
         result = prime * result + ((getCreateUserCode() == null) ? 0 : getCreateUserCode().hashCode());
         result = prime * result + ((getCreateUserName() == null) ? 0 : getCreateUserName().hashCode());
         result = prime * result + ((getCreatedDate() == null) ? 0 : getCreatedDate().hashCode());
@@ -167,10 +167,10 @@ public class CrawlerTask implements Serializable {
         sb.append(", taskStatus=").append(taskStatus);
         sb.append(", startTime=").append(startTime);
         sb.append(", endTime=").append(endTime);
-        sb.append(", succesList=").append(succesList);
+        sb.append(", succesList=").append(successList);
         sb.append(", failList=").append(failList);
         sb.append(", taskMessage=").append(taskMessage);
-        sb.append(", delFlag=").append(delFlag);
+        sb.append(", deleteFlag=").append(deleteFlag);
         sb.append(", createUserCode=").append(createUserCode);
         sb.append(", createUserName=").append(createUserName);
         sb.append(", createdDate=").append(createdDate);

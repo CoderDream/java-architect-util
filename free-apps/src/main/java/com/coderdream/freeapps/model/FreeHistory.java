@@ -107,7 +107,7 @@ public class FreeHistory implements Serializable {
     /**
      * 是否删除 0未删除（默认），1已删除
      */
-    private Integer delFlag;
+    private Integer deleteFlag;
 
     /**
      * 创建人代码

@@ -25,6 +25,11 @@ public interface AppMapper extends BaseMapper<AppEntity> {
     int insertOrUpdateBatch(List<AppEntity> entities);
     int insertOrUpdateTopFlagBatch(List<AppEntity> entities);
 
+
+    int insertOrUpdateDescriptionBatch(List<AppEntity> entities);
+
+    int insertOrUpdateCnFlagBatch(List<AppEntity> entities);
+
     @Select(
         " SELECT " +
         " 	t1.app_id as appId, " +

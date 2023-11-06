@@ -9,7 +9,7 @@ import com.coderdream.freeapps.dto.WeatherInfo;
 import com.coderdream.freeapps.dto.constant.WeatherConstant;
 import com.coderdream.freeapps.model.User;
 import com.coderdream.freeapps.model.XxlJobInfo;
-import com.coderdream.freeapps.util.CdDateUtils;
+import com.coderdream.freeapps.util.other.CdDateUtils;
 import com.coderdream.freeapps.mapper.UserMapper;
 import com.coderdream.freeapps.struct.UserStruct;
 

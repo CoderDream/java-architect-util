@@ -26,12 +26,14 @@ public interface PriceHistoryService extends IService<PriceHistory> {
     IPage<PriceHistory> selectPage(Page<PriceHistory> page);
 
     void dailyProcess();
+    void dailyProcessV2();
 
     void dailyProcessSimple();
 
-
     void processPriceNone();
     void processPriceFault();
+
+    void updateTodayFreeAppPrice();
 
     void processPriceTopList();
 }

@@ -160,7 +160,7 @@ public class DescriptionController {
 //                app = new App();
 //                app.setAppId(appId);
 //                app.setCreatedDate(new Date());
-//                app.setDelFlag(0);
+//                app.setDeleteFlag(0);
 //                appList.add(app);
 //            }
 //        }
