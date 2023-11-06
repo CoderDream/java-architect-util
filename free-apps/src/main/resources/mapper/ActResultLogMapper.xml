@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coderdream.freeapps.mapper.ActResultLogMapper">
+
+    <resultMap id="BaseResultMap" type="com.coderdream.freeapps.model.ActResultLogEntity">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="onlineSeqid" column="online_seqid" jdbcType="VARCHAR"/>
+            <result property="businessId" column="business_id" jdbcType="VARCHAR"/>
+            <result property="becifno" column="becifno" jdbcType="VARCHAR"/>
+            <result property="ivisResult" column="ivis_result" jdbcType="VARCHAR"/>
+            <result property="createdBy" column="created_by" jdbcType="VARCHAR"/>
+            <result property="createdDate" column="created_date" jdbcType="TIMESTAMP"/>
+            <result property="updateBy" column="update_by" jdbcType="VARCHAR"/>
+            <result property="updatedDate" column="updated_date" jdbcType="TIMESTAMP"/>
+            <result property="riskLevel" column="risk_level" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,online_seqid,business_id,
+        becifno,ivis_result,created_by,
+        created_date,update_by,updated_date,
+        risk_level
+    </sql>
+</mapper>

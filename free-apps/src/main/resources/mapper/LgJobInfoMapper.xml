@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coderdream.freeapps.mapper.LgJobInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.coderdream.freeapps.model.LgJobInfoEntity">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="positionName" column="position_name" jdbcType="VARCHAR"/>
+            <result property="workYear" column="work_year" jdbcType="VARCHAR"/>
+            <result property="salary" column="salary" jdbcType="VARCHAR"/>
+            <result property="address" column="address" jdbcType="VARCHAR"/>
+            <result property="district" column="district" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="VARCHAR"/>
+            <result property="companyName" column="company_name" jdbcType="VARCHAR"/>
+            <result property="description" column="description" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,position_name,work_year,
+        salary,address,district,
+        create_time,company_name,description
+    </sql>
+</mapper>

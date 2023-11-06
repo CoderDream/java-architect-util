@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coderdream.freeapps.mapper.MsTtsMapper">
+
+    <resultMap id="BaseResultMap" type="com.coderdream.freeapps.model.MsTtsEntity">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="biContentLength" column="bi_content_length" jdbcType="INTEGER"/>
+            <result property="biTimeLength" column="bi_time_length" jdbcType="VARCHAR"/>
+            <result property="wxContentLength" column="wx_content_length" jdbcType="INTEGER"/>
+            <result property="wxTimeLength" column="wx_time_length" jdbcType="VARCHAR"/>
+            <result property="operateTimeLength" column="operate_time_length" jdbcType="BIGINT"/>
+            <result property="operateTimeLengthStr" column="operate_time_length_str" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,bi_content_length,bi_time_length,
+        wx_content_length,wx_time_length,operate_time_length,
+        operate_time_length_str,create_time
+    </sql>
+</mapper>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coderdream.freeapps.mapper.BossJobLogMapper">
+
+    <resultMap id="BaseResultMap" type="com.coderdream.freeapps.model.BossJobLogEntity">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="jobName" column="job_name" jdbcType="VARCHAR"/>
+            <result property="spiderDate" column="spider_date" jdbcType="VARCHAR"/>
+            <result property="districtFlag" column="district_flag" jdbcType="VARCHAR"/>
+            <result property="salaryMin" column="salary_min" jdbcType="DECIMAL"/>
+            <result property="salaryMax" column="salary_max" jdbcType="DECIMAL"/>
+            <result property="salaryAvg" column="salary_avg" jdbcType="DECIMAL"/>
+            <result property="salaryDesc" column="salary_desc" jdbcType="VARCHAR"/>
+            <result property="jobExperienceMax" column="job_experience_max" jdbcType="INTEGER"/>
+            <result property="jobExperience" column="job_experience" jdbcType="VARCHAR"/>
+            <result property="jobDegree" column="job_degree" jdbcType="VARCHAR"/>
+            <result property="businessDistrict" column="business_district" jdbcType="VARCHAR"/>
+            <result property="areaDistrict" column="area_district" jdbcType="VARCHAR"/>
+            <result property="cityName" column="city_name" jdbcType="VARCHAR"/>
+            <result property="brandName" column="brand_name" jdbcType="VARCHAR"/>
+            <result property="brandStageName" column="brand_stage_name" jdbcType="VARCHAR"/>
+            <result property="brandIndustry" column="brand_industry" jdbcType="VARCHAR"/>
+            <result property="brandScale" column="brand_scale" jdbcType="INTEGER"/>
+            <result property="brandScaleName" column="brand_scale_name" jdbcType="VARCHAR"/>
+            <result property="jobValidStatus" column="job_valid_status" jdbcType="BIGINT"/>
+            <result property="jobLabels" column="job_labels" jdbcType="VARCHAR"/>
+            <result property="bossAvatar" column="boss_avatar" jdbcType="VARCHAR"/>
+            <result property="bossCert" column="boss_cert" jdbcType="BIGINT"/>
+            <result property="encryptBossId" column="encrypt_boss_id" jdbcType="VARCHAR"/>
+            <result property="bossName" column="boss_name" jdbcType="VARCHAR"/>
+            <result property="bossTitle" column="boss_title" jdbcType="VARCHAR"/>
+            <result property="goldHunter" column="gold_hunter" jdbcType="BIGINT"/>
+            <result property="bossOnline" column="boss_online" jdbcType="VARCHAR"/>
+            <result property="encryptJobId" column="encrypt_job_id" jdbcType="VARCHAR"/>
+            <result property="expectId" column="expect_id" jdbcType="BIGINT"/>
+            <result property="lid" column="lid" jdbcType="VARCHAR"/>
+            <result property="iconWord" column="icon_word" jdbcType="VARCHAR"/>
+            <result property="skills" column="skills" jdbcType="VARCHAR"/>
+            <result property="daysPerWeekDesc" column="days_per_week_desc" jdbcType="VARCHAR"/>
+            <result property="leastMonthDesc" column="least_month_desc" jdbcType="VARCHAR"/>
+            <result property="jobType" column="job_type" jdbcType="BIGINT"/>
+            <result property="proxyJob" column="proxy_job" jdbcType="BIGINT"/>
+            <result property="proxyType" column="proxy_type" jdbcType="BIGINT"/>
+            <result property="anonymous" column="anonymous" jdbcType="BIGINT"/>
+            <result property="outland" column="outland" jdbcType="BIGINT"/>
+            <result property="optimal" column="optimal" jdbcType="BIGINT"/>
+            <result property="itemId" column="item_id" jdbcType="BIGINT"/>
+            <result property="city" column="city" jdbcType="BIGINT"/>
+            <result property="isShield" column="is_shield" jdbcType="BIGINT"/>
+            <result property="atsDirectPost" column="ats_direct_post" jdbcType="VARCHAR"/>
+            <result property="gps" column="gps" jdbcType="VARCHAR"/>
+            <result property="lastModifyTime" column="last_modify_time" jdbcType="BIGINT"/>
+            <result property="encryptBrandId" column="encrypt_brand_id" jdbcType="VARCHAR"/>
+            <result property="securityId" column="security_id" jdbcType="VARCHAR"/>
+            <result property="brandLogo" column="brand_logo" jdbcType="VARCHAR"/>
+            <result property="welfareList" column="welfare_list" jdbcType="VARCHAR"/>
+            <result property="industry" column="industry" jdbcType="BIGINT"/>
+            <result property="contact" column="contact" jdbcType="VARCHAR"/>
+            <result property="createDate" column="create_date" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,job_name,spider_date,
+        district_flag,salary_desc,job_experience,
+        job_degree,business_district,area_district,
+        city_name,brand_name,brand_stage_name,
+        brand_industry,brand_scale_name,job_valid_status,
+        job_labels,boss_avatar,boss_cert,
+        encrypt_boss_id,boss_name,boss_title,
+        gold_hunter,boss_online,encrypt_job_id,
+        expect_id,lid,icon_word,
+        skills,days_per_week_desc,least_month_desc,
+        job_type,proxy_job,proxy_type,
+        anonymous,outland,optimal,
+        item_id,city,is_shield,
+        ats_direct_post,gps,last_modify_time,
+        encrypt_brand_id,security_id,brand_logo,
+        welfare_list,industry,contact,
+        create_date
+    </sql>
+
+    <insert id="insertOrUpdateBatch">
+        insert into t_boss_job_log
+        (salary_min,salary_max,salary_avg,job_experience_max,brand_scale,spider_date,district_flag,security_id,boss_avatar,
+        boss_cert,encrypt_boss_id,boss_name,
+        boss_title,gold_hunter,boss_online,
+        encrypt_job_id,expect_id,job_name,
+        lid,salary_desc,job_labels,
+        job_valid_status,icon_word,skills,
+        job_experience,days_per_week_desc,least_month_desc,
+        job_degree,city_name,area_district,
+        business_district,job_type,proxy_job,
+        proxy_type,anonymous,outland,
+        optimal,item_id,city,
+        is_shield,ats_direct_post,gps,
+        last_modify_time,encrypt_brand_id,brand_name,
+        brand_logo,brand_stage_name,brand_industry,
+        brand_scale_name,welfare_list,industry,
+        contact,create_date)
+        values
+        <foreach collection="entities" item="item" separator=",">
+            (
+            #{item.salaryMin, jdbcType=DECIMAL},
+            #{item.salaryMax, jdbcType=DECIMAL},
+            #{item.salaryAvg, jdbcType=DECIMAL},
+            #{item.jobExperienceMax, jdbcType=DECIMAL},
+            #{item.brandScale, jdbcType=DECIMAL},
+            #{item.spiderDate, jdbcType=VARCHAR},
+            #{item.districtFlag, jdbcType=VARCHAR},
+            #{item.securityId, jdbcType=VARCHAR},
+            #{item.bossAvatar, jdbcType=VARCHAR},
+            #{item.bossCert, jdbcType=BIGINT},
+            #{item.encryptBossId, jdbcType=VARCHAR},
+            #{item.bossName, jdbcType=VARCHAR},
+            #{item.bossTitle, jdbcType=VARCHAR},
+            #{item.goldHunter, jdbcType=BIGINT},
+            #{item.bossOnline, jdbcType=VARCHAR},
+            #{item.encryptJobId, jdbcType=VARCHAR},
+            #{item.expectId, jdbcType=BIGINT},
+            #{item.jobName, jdbcType=VARCHAR},
+            #{item.lid, jdbcType=VARCHAR},
+            #{item.salaryDesc, jdbcType=VARCHAR},
+            #{item.jobLabels, jdbcType=VARCHAR},
+            #{item.jobValidStatus, jdbcType=BIGINT},
+            #{item.iconWord, jdbcType=VARCHAR},
+            #{item.skills, jdbcType=VARCHAR},
+            #{item.jobExperience, jdbcType=VARCHAR},
+            #{item.daysPerWeekDesc, jdbcType=VARCHAR},
+            #{item.leastMonthDesc, jdbcType=VARCHAR},
+            #{item.jobDegree, jdbcType=VARCHAR},
+            #{item.cityName, jdbcType=VARCHAR},
+            #{item.areaDistrict, jdbcType=VARCHAR},
+            #{item.businessDistrict, jdbcType=VARCHAR},
+            #{item.jobType, jdbcType=BIGINT},
+            #{item.proxyJob, jdbcType=BIGINT},
+            #{item.proxyType, jdbcType=BIGINT},
+            #{item.anonymous, jdbcType=BIGINT},
+            #{item.outland, jdbcType=BIGINT},
+            #{item.optimal, jdbcType=BIGINT},
+            #{item.itemId, jdbcType=BIGINT},
+            #{item.city, jdbcType=BIGINT},
+            #{item.isShield, jdbcType=BIGINT},
+            #{item.atsDirectPost, jdbcType=VARCHAR},
+            #{item.gps, jdbcType=VARCHAR},
+            #{item.lastModifyTime, jdbcType=BIGINT},
+            #{item.encryptBrandId, jdbcType=VARCHAR},
+            #{item.brandName, jdbcType=VARCHAR},
+            #{item.brandLogo, jdbcType=VARCHAR},
+            #{item.brandStageName, jdbcType=VARCHAR},
+            #{item.brandIndustry, jdbcType=VARCHAR},
+            #{item.brandScaleName, jdbcType=VARCHAR},
+            #{item.welfareList, jdbcType=VARCHAR},
+            #{item.industry, jdbcType=BIGINT},
+            #{item.contact, jdbcType=VARCHAR},
+            #{item.createDate,jdbcType=TIMESTAMP}
+            )
+        </foreach>
+        on duplicate key update
+        `salary_min`=values(`salary_min`),
+        `salary_max`=values(`salary_max`),
+        `salary_avg`=values(`salary_avg`),
+        `job_experience_max`=values(`job_experience_max`),
+        `brand_scale`=values(`brand_scale`),
+        `security_id`=values(`security_id`),
+        `boss_avatar`=values(`boss_avatar`),
+        `boss_cert`=values(`boss_cert`),
+        `encrypt_boss_id`=values(`encrypt_boss_id`),
+        `boss_name`=values(`boss_name`),
+        `boss_title`=values(`boss_title`),
+        `gold_hunter`=values(`gold_hunter`),
+        `boss_online`=values(`boss_online`),
+        `expect_id`=values(`expect_id`),
+        `job_name`=values(`job_name`),
+        `lid`=values(`lid`),
+        `salary_desc`=values(`salary_desc`),
+        `job_labels`=values(`job_labels`),
+        `job_valid_status`=values(`job_valid_status`),
+        `icon_word`=values(`icon_word`),
+        `skills`=values(`skills`),
+        `job_experience`=values(`job_experience`),
+        `days_per_week_desc`=values(`days_per_week_desc`),
+        `least_month_desc`=values(`least_month_desc`),
+        `job_degree`=values(`job_degree`),
+        `city_name`=values(`city_name`),
+        `area_district`=values(`area_district`),
+        `business_district`=values(`business_district`),
+        `job_type`=values(`job_type`),
+        `proxy_job`=values(`proxy_job`),
+        `proxy_type`=values(`proxy_type`),
+        `anonymous`=values(`anonymous`),
+        `outland`=values(`outland`),
+        `optimal`=values(`optimal`),
+        `item_id`=values(`item_id`),
+        `city`=values(`city`),
+        `is_shield`=values(`is_shield`),
+        `ats_direct_post`=values(`ats_direct_post`),
+        `gps`=values(`gps`),
+        `last_modify_time`=values(`last_modify_time`),
+        `encrypt_brand_id`=values(`encrypt_brand_id`),
+        `brand_name`=values(`brand_name`),
+        `brand_logo`=values(`brand_logo`),
+        `brand_stage_name`=values(`brand_stage_name`),
+        `brand_industry`=values(`brand_industry`),
+        `brand_scale_name`=values(`brand_scale_name`),
+        `welfare_list`=values(`welfare_list`),
+        `industry`=values(`industry`),
+        `contact`=values(`contact`),
+        `create_date`=values(`create_date`)
+    </insert>
+</mapper>
