@@ -1,21 +1,12 @@
 package com.coderdream;
 
-import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.logging.Logger;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 //@Slf4j
 class SubtitleUtilTest {
@@ -98,6 +89,27 @@ class SubtitleUtilTest {
         }
     }
 
+    @Test
+    void mergeToOneLine_02() {
+        Path resourceDirectory = Paths.get("src", "test", "resources");
+        String absolutePath = resourceDirectory.toFile().getAbsolutePath();
+
+        System.out.println(absolutePath);
+        assertTrue(absolutePath.endsWith("src" + File.separatorChar + "test" + File.separatorChar + "resources"));
+        // Java8用流的方式读文件，更加高效
+        //   Files.lines(Paths.get(absolutePath + "\\testdata\\input\\Subtitle_5.srt"), StandardCharsets.UTF_8).forEach(System.out::println);
+
+        absolutePath += "\\testdata\\input\\kidding\\";
+        String fileName = "S04";
+        String fileName1 = absolutePath + fileName+ ".srt";
+        String fileName2 = absolutePath + fileName+"_new.srt";
+
+        try {
+            SubtitleUtil.mergeToOneLineForItemSingle(fileName1, fileName2);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     @Test
     void merge_02() {

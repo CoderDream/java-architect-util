@@ -7,7 +7,7 @@ import com.coderdream.freeapps.service.CrawlerHistoryService;
 import com.coderdream.freeapps.service.FreeHistoryService;
 import com.coderdream.freeapps.service.PriceHistoryService;
 import com.coderdream.freeapps.service.AppIconService;
-import com.coderdream.freeapps.util.CdFileUtils;
+import com.coderdream.freeapps.util.other.CdFileUtils;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;

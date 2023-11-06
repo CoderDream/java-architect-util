@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coderdream.freeapps.mapper.SubtitleMapper">
+
+    <resultMap id="BaseResultMap" type="com.coderdream.freeapps.model.SubtitleEntity">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="subtitleIndex" column="subtitle_index" jdbcType="VARCHAR"/>
+            <result property="videoId" column="video_id" jdbcType="VARCHAR"/>
+            <result property="videoName" column="video_name" jdbcType="VARCHAR"/>
+            <result property="subtitleCn" column="subtitle_cn" jdbcType="VARCHAR"/>
+            <result property="subtitleEn" column="subtitle_en" jdbcType="VARCHAR"/>
+            <result property="startTimeStr" column="start_time_str" jdbcType="VARCHAR"/>
+            <result property="endTimeStr" column="end_time_str" jdbcType="VARCHAR"/>
+            <result property="startTime" column="start_time" jdbcType="TIME"/>
+            <result property="endTime" column="end_time" jdbcType="TIME"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,subtitle_index,video_id,
+        video_name,subtitle_cn,subtitle_en,
+        start_time_str,end_time_str,start_time,
+        end_time,create_time,update_time
+    </sql>
+</mapper>

@@ -21,7 +21,7 @@
             <result property="appInPurchase" column="app_in_purchase" jdbcType="OTHER"/>
             <result property="versionHistory" column="version_history" jdbcType="OTHER"/>
             <result property="remark" column="remark" jdbcType="VARCHAR"/>
-            <result property="delFlag" column="del_flag" jdbcType="INTEGER"/>
+            <result property="deleteFlag" column="delete_flag" jdbcType="INTEGER"/>
             <result property="createUserCode" column="create_user_code" jdbcType="VARCHAR"/>
             <result property="createUserName" column="create_user_name" jdbcType="VARCHAR"/>
             <result property="createdDate" column="created_date" jdbcType="TIMESTAMP"/>
@@ -37,7 +37,7 @@
         price_str_cn,price_str_us,us_flag,
         in_purchase_flag,in_purchase_free_flag,url_cn,
         url_us,app_in_purchase,version_history,
-        remark,del_flag,create_user_code,
+        remark,delete_flag,create_user_code,
         create_user_name,created_date,last_modified_code,
         last_modified_name,last_modified_date,version
     </sql>

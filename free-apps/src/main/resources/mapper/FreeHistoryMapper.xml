@@ -19,7 +19,7 @@
         <result property="dataSource" column="data_source" jdbcType="VARCHAR"/>
         <result property="yesterdayUrl" column="yesterday_url" jdbcType="VARCHAR"/>
         <result property="remark" column="remark" jdbcType="VARCHAR"/>
-        <result property="delFlag" column="del_flag" jdbcType="INTEGER"/>
+        <result property="deleteFlag" column="delete_flag" jdbcType="INTEGER"/>
         <result property="createUserCode" column="create_user_code" jdbcType="VARCHAR"/>
         <result property="createUserName" column="create_user_name" jdbcType="VARCHAR"/>
         <result property="createdDate" column="created_date" jdbcType="TIMESTAMP"/>
@@ -35,7 +35,7 @@
         price_cn,price_us,price_str,
         price_str_cn,price_str_us,us_flag,
         url_cn,url_us,free_date,
-        description,data_source,del_flag,
+        description,data_source,delete_flag,
         create_user_code,create_user_name,created_date,
         last_modified_code,last_modified_name,last_modified_date,
         version
@@ -57,7 +57,7 @@
             <if test="freeDate != null">free_date,</if>
             <if test="description != null">description,</if>
             <if test="dataSource != null">data_source,</if>
-            <if test="delFlag != null">del_flag,</if>
+            <if test="deleteFlag != null">delete_flag,</if>
             <if test="createUserCode != null">create_user_code,</if>
             <if test="createUserName != null">create_user_name,</if>
             <if test="createdDate != null">created_date,</if>
@@ -82,7 +82,7 @@
             <if test="freeDate != null">#{freeDate,jdbcType=TIMESTAMP},</if>
             <if test="description != null">#{description,jdbcType=VARCHAR},</if>
             <if test="dataSource != null">#{dataSource,jdbcType=VARCHAR},</if>
-            <if test="delFlag != null">#{delFlag,jdbcType=INTEGER},</if>
+            <if test="deleteFlag != null">#{deleteFlag,jdbcType=INTEGER},</if>
             <if test="createUserCode != null">#{createUserCode,jdbcType=VARCHAR},</if>
             <if test="createUserName != null">#{createUserName,jdbcType=VARCHAR},</if>
             <if test="createdDate != null">#{createdDate,jdbcType=TIMESTAMP},</if>
@@ -110,7 +110,7 @@
         `data_source`,
         `yesterday_url`,
         `remark`,
-        `del_flag`,
+        `delete_flag`,
         `create_user_code`,
         `create_user_name`,
         `created_date`,
@@ -135,7 +135,7 @@
             #{entity.dataSource,jdbcType=VARCHAR},
             #{entity.yesterdayUrl,jdbcType=VARCHAR},
             #{entity.remark,jdbcType=VARCHAR},
-            #{entity.delFlag,jdbcType=INTEGER},
+            #{entity.deleteFlag,jdbcType=INTEGER},
             #{entity.createUserCode,jdbcType=VARCHAR},
             #{entity.createUserName,jdbcType=VARCHAR},
             #{entity.createdDate,jdbcType=TIMESTAMP},
@@ -160,7 +160,7 @@
         <!--   data_source = values(data_source),-->
         yesterday_url = values(yesterday_url),
         remark = values(remark),
-        del_flag = values(del_flag),
+        delete_flag = values(delete_flag),
         create_user_code = values(create_user_code),
         create_user_name = values(create_user_name),
         created_date = values(created_date),
@@ -204,7 +204,7 @@
         `free_date`,
         `description`,
         `data_source`,
-        `del_flag`,
+        `delete_flag`,
         `create_user_code`,
         `create_user_name`,
         `created_date`,
@@ -227,7 +227,7 @@
             #{entity.freeDate,jdbcType=TIMESTAMP},
             #{entity.description,jdbcType=VARCHAR},
             #{entity.dataSource,jdbcType=VARCHAR},
-            #{entity.delFlag,jdbcType=INTEGER},
+            #{entity.deleteFlag,jdbcType=INTEGER},
             #{entity.createUserCode,jdbcType=VARCHAR},
             #{entity.createUserName,jdbcType=VARCHAR},
             NOW(),
@@ -279,8 +279,8 @@
                 <!--                <if test="entity.dataSource != null">-->
                 <!--                    `data_source` = #{entity.dataSource,jdbcType=VARCHAR},-->
                 <!--                </if>-->
-                <if test="entity.delFlag != null">
-                    `del_flag` = #{entity.delFlag,jdbcType=INTEGER},
+                <if test="entity.deleteFlag != null">
+                    `delete_flag` = #{entity.deleteFlag,jdbcType=INTEGER},
                 </if>
                 <if test="entity.createUserCode != null">
                     `create_user_code` = #{entity.createUserCode,jdbcType=VARCHAR},

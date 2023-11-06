@@ -1,7 +1,7 @@
 package com.coderdream.freeapps;
 
 import com.coderdream.freeapps.service.*;
-import com.coderdream.freeapps.util.CdDateUtils;
+import com.coderdream.freeapps.util.other.CdDateUtils;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

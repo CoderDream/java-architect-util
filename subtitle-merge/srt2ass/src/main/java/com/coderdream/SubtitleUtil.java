@@ -1,7 +1,9 @@
 package com.coderdream;
 
 
+import cn.hutool.core.util.StrUtil;
 import com.coderdream.ass.Event;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.beanutils.BeanComparator;
 import org.apache.commons.collections.ComparatorUtils;
 import org.apache.commons.collections.comparators.ComparableComparator;
@@ -25,11 +27,11 @@ import java.util.Comparator;
  * @version 1.0
  * @since 2020-07-04
  */
+@Slf4j
 public class SubtitleUtil {
 
     /**
-     * 00:02:10,280 --> 00:02:15,280
-     * 取前8位 00:02:10
+     * 00:02:10,280 --> 00:02:15,280 取前8位 00:02:10
      */
     private static final Integer FIRST_END = 12;
 
@@ -92,8 +94,8 @@ public class SubtitleUtil {
      * @throws IOException
      */
     public static void merge(String fileName1, String fileName2, String fileName) throws IOException {
-        List<Item> firstItems = SubtitleUtil.readFile(fileName1);
-        List<Item> secondItems = SubtitleUtil.readFile(fileName2);
+        List<Item> firstItems = SubtitleUtil.readFileBackup(fileName1);
+        List<Item> secondItems = SubtitleUtil.readFileBackup(fileName2);
         List<Item> subtitleMergeItems = subtitleMerge(firstItems, secondItems);
         writeBuffer(fileName, subtitleMergeItems);
     }
@@ -184,8 +186,8 @@ public class SubtitleUtil {
      * @throws IOException
      */
     public static void mergeToAss(String fileName1, String fileName2, String fileName) throws IOException {
-        List<Item> firstItems = SubtitleUtil.readFile(fileName1);
-        List<Item> secondItems = SubtitleUtil.readFile(fileName2);
+        List<Item> firstItems = SubtitleUtil.readFileBackup(fileName1);
+        List<Item> secondItems = SubtitleUtil.readFileBackup(fileName2);
         List<Item> subtitleMergeItems = subtitleMerge(firstItems, secondItems);
 
         List<Event> eventList = new ArrayList<>();
@@ -309,9 +311,22 @@ public class SubtitleUtil {
      * @throws IOException
      */
     public static void mergeToOneLine(String fileName1, String fileName) throws IOException {
-        List<Item> firstItems = SubtitleUtil.readFile(fileName1);
+        List<Item> firstItems = SubtitleUtil.readFileBackup(fileName1);//SubtitleUtil.removeLastPunctuation(fileName1);
         List<Item> subtitleMergeItems = mergeToOneLine(firstItems);
         writeBuffer(fileName, subtitleMergeItems);
+    }
+
+    /**
+     * 把两行字幕整合成一行
+     *
+     * @param fileName1
+     * @param fileName
+     * @throws IOException
+     */
+    public static void mergeToOneLineForItemSingle(String fileName1, String fileName) throws IOException {
+        List<ItemSingle> firstItems = SubtitleUtil.readFile(fileName1);
+//        List<Item> subtitleMergeItems = mergeToOneLine(firstItems);
+        writeBufferForItemSingle(fileName, firstItems);
     }
 
     /**
@@ -385,6 +400,35 @@ public class SubtitleUtil {
     }
 
     /**
+     * 写入文件
+     *
+     * @return
+     * @throws IOException
+     */
+    private static File writeBufferForItemSingle(String fileName, List<ItemSingle> subtitleMergeItems) throws IOException {
+        File file = new File(fileName);
+        // 如果文件存在，则删除文件
+        if (file.exists()) {
+            file.delete();
+        }
+        // 创建文件
+        file.createNewFile();
+
+        if (!Files.exists(Paths.get(fileName))) {
+            Files.write(Paths.get(fileName), new byte[0]);
+        }
+        FileOutputStream fos = new FileOutputStream(file);
+        BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(fos));
+        for (ItemSingle item : subtitleMergeItems) {
+            writer.write(item.toMultiLine() + "\r\n");
+        }
+
+        writer.close();
+        fos.close();
+        return file;
+    }
+
+    /**
      * 读取双语字幕文件
      *
      * @param fileName
@@ -413,11 +457,12 @@ public class SubtitleUtil {
             // 放入字符串数组
             String[] lines = new String[list.size()];
             for (int i = 0; i < list.size(); i++) {
-                lines[i] = list.get(i);
+                lines[i] = dealWithStr(list.get(i));
             }
 
             for (int i = 0; i < lines.length; i++) {
                 String str = lines[i];
+                str = dealWithStr(str);
                 // 读到空行，说明上面是一个双语整体，类似于下面5行，然后从空行开始，一行一行往上找
                 // 1
                 // 00:00:00,334 --> 00:00:07,341
@@ -434,9 +479,11 @@ public class SubtitleUtil {
                     }
                     // 找到第一行
                     String prevLine3 = lines[i - 3];
+                    prevLine3 = dealWithStr(prevLine3);
                     // 不是数字，再往上找
                     if (!isNumeric(prevLine3)) {
                         String prevLine4 = lines[i - 4];
+                        prevLine4 = dealWithStr(prevLine4);
                         // 00:21:41,55 --> 00:21:45,30
                         // 00:00:06,960 --> 00:00:09,050
                         if (!isNumeric(prevLine4)) {
@@ -449,7 +496,7 @@ public class SubtitleUtil {
                             content = lines[i - 2];
                             secondContent = lines[i - 1];
                             // 合并内容
-                           // content = content + " " + contentNext;
+                            // content = content + " " + contentNext;
                         }
                     }
                     // 只有一行，不需合并
@@ -485,11 +532,108 @@ public class SubtitleUtil {
 
     /**
      * 读取字幕文件
+     * <pre>
+     * 1
+     * 00:00:02,867 --> 00:00:05,633
+     * ANNOUNCER: Previously, on the
+     * "Kids Baking Championship"...
+     *
+     * 2
+     * 00:00:05,633 --> 00:00:08,800
+     * DUFF:
+     * Your job is to impress us with
+     * one chocolate-intensive dessert.
+     *
+     * </pre>
+     * <p>
+     * 【2+n】变成【2+1】，n行字幕变成1行字幕，第一行保留为序号，第二行保留为时间，其他行合成一行
      *
      * @param fileName
      * @return
      */
-    private static List<Item> readFile(String fileName) {
+    private static List<ItemSingle> readFile(String fileName) {
+        //read file into stream, try-with-resources
+        List<ItemSingle> results = new ArrayList<>();
+        ItemSingle itemSingle = null;
+        Integer id = 0;
+        String timeRange = "";
+        String content = "";
+        String contentNext = "";
+        Set<String> timeRangeSet = new HashSet<>();
+
+        Item prevItem = null;
+        try (Stream<String> stream = Files.lines(Paths.get(fileName), StandardCharsets.UTF_8)) {
+            // 读取每一行
+            List<String> list = new ArrayList<String>();
+            stream.forEach(str -> {
+                list.add(str);
+            });
+            // 末尾补空格
+            list.add("");
+
+            // 放入字符串数组
+            String[] lines = new String[list.size()];
+            for (int i = 0; i < list.size(); i++) {
+                lines[i] = dealWithStr(list.get(i));
+            }
+
+            // 当前行字符串
+            String currentStr = "";
+            // 下一行字符串
+            String nextStr = "";
+            // 开始索引的行
+            int idIndex = 0;
+            // 内容
+//            List<String> contentList = null;
+            for (int i = 0; i < lines.length; i++) {
+                currentStr = lines[i];
+                if (i + 1 < lines.length) {
+                    nextStr = lines[i + 1];
+                }
+
+                if (StrUtil.isEmpty(currentStr) && StrUtil.isNotEmpty(nextStr)) {
+                    itemSingle = new ItemSingle();
+                    List<String> contentList = new ArrayList<>();
+                    String idStr = lines[idIndex];
+                    if (StrUtil.isNumeric(idStr)) {
+                        itemSingle.setId(Integer.parseInt(idStr));
+                    }
+                    timeRange = lines[idIndex+1];
+                    itemSingle.setTimeRange(timeRange);
+                    idIndex+=2;
+                    do {
+                        if (idIndex == lines.length) {
+                            break;
+                        }
+                        contentList.add(lines[idIndex]);
+                        idIndex++;
+                    } while (idIndex != i);
+
+                    content = String.join(" ", contentList); // 以空格分隔
+                    content = content.replaceAll("  ", " ");// 两个空格变成一个空格
+                    itemSingle.setContent(content);
+                    idIndex = i+1;
+                    if(StrUtil.isNotEmpty(content)) {
+                        results.add(itemSingle);
+                    } else {
+                        log.error("content is empty: " + itemSingle);
+                    }
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return results;
+    }
+
+    /**
+     * 读取字幕文件
+     *
+     * @param fileName
+     * @return
+     */
+    private static List<Item> readFileBackup(String fileName) {
         //read file into stream, try-with-resources
         List<Item> results = new ArrayList<>();
         Item item = null;
@@ -512,7 +656,7 @@ public class SubtitleUtil {
             // 放入字符串数组
             String[] lines = new String[list.size()];
             for (int i = 0; i < list.size(); i++) {
-                lines[i] = list.get(i);
+                lines[i] = dealWithStr(list.get(i));
             }
 
             for (int i = 0; i < lines.length; i++) {
@@ -736,11 +880,11 @@ public class SubtitleUtil {
         }
 
         Collections.sort(subtitleMergeItems, new Comparator<Item>() {
-                    @Override
-                    public int compare(Item sweet1, Item sweet2) {
-                        return sweet1.timeRange.compareTo(sweet2.timeRange);
-                    }
+                @Override
+                public int compare(Item sweet1, Item sweet2) {
+                    return sweet1.timeRange.compareTo(sweet2.timeRange);
                 }
+            }
         );
 
         return subtitleMergeItems;
@@ -760,7 +904,6 @@ public class SubtitleUtil {
         List<Item> sameStartTimeItems = new ArrayList<>();
         List<Item> sameEndTimeItems = new ArrayList<>();
         List<Item> soloFirstItems = new ArrayList<>();
-
 
         // 不匹配的数据项
         Map<String, Item> diffMap = new LinkedHashMap<>();
@@ -796,7 +939,8 @@ public class SubtitleUtil {
             startTimeItem = secondMap.get(item.getStartTime());
             endTimeItem = secondMap.get(item.getEndTime());
             // 开始时间和完成时间完全匹配
-            if (null != startTimeItem && null != endTimeItem && startTimeItem.getTimeRange().equals(endTimeItem.getTimeRange())) {
+            if (null != startTimeItem && null != endTimeItem && startTimeItem.getTimeRange()
+                .equals(endTimeItem.getTimeRange())) {
                 // 存在第二语言，合并
                 firstContent = item.getContent();
                 secondContent = startTimeItem.getContent();
@@ -846,7 +990,6 @@ public class SubtitleUtil {
 
                     soloFirstItems.add(item);
                 }
-
 
                 //      if(item.)
 //                diffMap.put(item.getTimeRange(), item);
@@ -907,22 +1050,23 @@ public class SubtitleUtil {
         for (Map.Entry<String, Item> entry : diffMap.entrySet()) {
             String mapKey = entry.getKey();
             Item mapValue = entry.getValue();
-            System.out.println(mapValue.getId() + "\t" + mapValue.getStartTime() + "\t" + mapValue.getEndTime() + "\t" + mapValue.getContent() + "\t" + mapValue.getSecondContent() + "\t");
+            System.out.println(mapValue.getId() + "\t" + mapValue.getStartTime() + "\t" + mapValue.getEndTime() + "\t"
+                + mapValue.getContent() + "\t" + mapValue.getSecondContent() + "\t");
         }
 
         Collections.sort(subtitleMergeItems, new Comparator<Item>() {
-                    @Override
-                    public int compare(Item item1, Item item2) {
-                        return item1.timeRange.compareTo(item2.timeRange);
-                    }
+                @Override
+                public int compare(Item item1, Item item2) {
+                    return item1.timeRange.compareTo(item2.timeRange);
                 }
+            }
         );
-
 
         System.out.println("#####剩余的中文：");
         System.out.println("id\tBeginTime\tEndTime\tcontent\tsecondContent\t");
         for (Item mapValue : soloFirstItems) {
-            System.out.println(mapValue.getId() + "\t" + mapValue.getStartTime() + "\t" + mapValue.getEndTime() + "\t" + mapValue.getContent() + "\t" + mapValue.getSecondContent() + "\t");
+            System.out.println(mapValue.getId() + "\t" + mapValue.getStartTime() + "\t" + mapValue.getEndTime() + "\t"
+                + mapValue.getContent() + "\t" + mapValue.getSecondContent() + "\t");
         }
 
         System.out.println("#####剩余的英文：");
@@ -930,7 +1074,8 @@ public class SubtitleUtil {
         for (Map.Entry<String, Item> entry : soloSecondItemMap.entrySet()) {
             String mapKey = entry.getKey();
             Item mapValue = entry.getValue();
-            System.out.println(mapValue.getId() + "\t" + mapValue.getStartTime() + "\t" + mapValue.getEndTime() + "\t" + mapValue.getContent() + "\t" + mapValue.getSecondContent() + "\t");
+            System.out.println(mapValue.getId() + "\t" + mapValue.getStartTime() + "\t" + mapValue.getEndTime() + "\t"
+                + mapValue.getContent() + "\t" + mapValue.getSecondContent() + "\t");
         }
 
         System.out.println("#####剩余的打印完成：");
@@ -946,6 +1091,22 @@ public class SubtitleUtil {
      */
     public static boolean isNumeric(String string) {
         Pattern pattern = Pattern.compile("[0-9]*");
-        return pattern.matcher(string).matches();
+        Boolean result = pattern.matcher(string).matches();
+
+        result = StrUtil.isNumeric(string);
+
+//        com.hutools.StrUtils.is
+        log.info("result: " + result);
+        return result;
+    }
+
+    public static final String UTF8_BOM = "\uFEFF";
+
+    public static String dealWithStr(String str) {
+        String rowMessage = str;
+        if (rowMessage.startsWith(UTF8_BOM)) {
+            rowMessage = rowMessage.substring(1);
+        }
+        return rowMessage;
     }
 }

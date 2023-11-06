@@ -1,7 +1,7 @@
 package com.coderdream.freeapps;
 
 import cn.hutool.core.date.DateUtil;
-import com.coderdream.freeapps.util.BaseUtils;
+import com.coderdream.freeapps.util.other.BaseUtils;
 import com.coderdream.freeapps.util.ppt.CdPptxUtils;
 import com.coderdream.freeapps.util.ppt.pptutil.PPTUtil;
 import com.coderdream.freeapps.util.ppt.pptutil.entity.ParagraphTextStyle;
@@ -53,7 +53,6 @@ public class CdPptUtilsTest {
         return pptUtil;
     }
 
-
     @Test
     public void testDemo6() {
 //        String monthStr = new SimpleDateFormat("yyyyMM").format(new Date());
@@ -82,7 +81,6 @@ public class CdPptUtilsTest {
         }
         pptUtil.writePPT(pptFileName);
     }
-
 
     /**
      * 追加新的文本

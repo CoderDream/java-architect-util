@@ -86,6 +86,11 @@ public class PriceHistoryTest {
     }
 
     @Test
+    public void testDailyPriceHandlerV2() {
+        priceHistoryService.dailyProcessV2();
+    }
+
+    @Test
     public void testDailyProcessSimple() {
         priceHistoryService.dailyProcessSimple();
     }
@@ -94,6 +99,13 @@ public class PriceHistoryTest {
     public void testProcessPriceNone() {
         priceHistoryService.processPriceNone();
     }
+
+
+    @Test
+    public void testUpdateTodayFreeAppPrice() {
+        priceHistoryService.updateTodayFreeAppPrice();
+    }
+
     @Test
     public void testProcessPriceFault() {
         priceHistoryService.processPriceFault();

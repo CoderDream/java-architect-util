@@ -161,11 +161,13 @@ public class HttpURLConnectionUtil {
 
     public static void main(String[] args) {
        // String message = doPost("https://tcc.taobao.com/cc/json/mobile_tel_segment.htm?tel=13026194071", "");
+        String prefix = "https://events-delivery.apple.com/0105cftwpxxsfrpdwklppzjhjocakrsk/vod_main_dcxgfpCbhQsgAaxKGMVqZMCdBHZnMpJM/cc";
         for (int i = 1; i < 9999; i++) {
                           //"https://events-delivery.apple.com/0205eyyhwbbqexozkwmgccegwnjyrktg/vod_main_KYVtRmtKMbxMmJHvKTwKJVQuxEmzBjPm/cc/zh/zh_260.webvtt"
           //  String url = "https://events-delivery.apple.com/0205eyyhwbbqexozkwmgccegwnjyrktg/vod_main_KYVtRmtKMbxMmJHvKTwKJVQuxEmzBjPm/cc/en/en_" + i + ".webvtt";
-            String url = "https://events-delivery.apple.com/0205eyyhwbbqexozkwmgccegwnjyrktg/vod_main_KYVtRmtKMbxMmJHvKTwKJVQuxEmzBjPm/cc/zh/zh_" + i + ".webvtt";
+            String url = prefix + "/zh/zh_" + i + ".webvtt";
             String message = doGet(url);
+            System.out.println(message);
         }
         //System.out.println(message);
     }

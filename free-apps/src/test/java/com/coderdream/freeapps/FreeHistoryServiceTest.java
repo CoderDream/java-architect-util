@@ -7,8 +7,8 @@ import com.coderdream.freeapps.model.FreeHistory;
 import com.coderdream.freeapps.service.AppService;
 import com.coderdream.freeapps.service.DescriptionService;
 import com.coderdream.freeapps.service.FreeHistoryService;
-import com.coderdream.freeapps.util.BaseUtils;
-import com.coderdream.freeapps.util.CdFileUtils;
+import com.coderdream.freeapps.util.other.BaseUtils;
+import com.coderdream.freeapps.util.other.CdFileUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.BeanUtils;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -159,7 +159,7 @@ public class FreeHistoryServiceTest {
 //        List<FreeHistory> list = new ArrayList<>();
         String fileName = "D:\\12_iOS_Android\\1024_data\\2022-06-29.txt";
         fileName = "D:\\04_GitHub\\java-architect-util\\free-apps\\src\\main\\resources\\data\\1024\\2023";
-        fileName += File.separatorChar + "202303" + File.separatorChar + "2023-03-21.txt";
+        fileName += File.separatorChar + "202308" + File.separatorChar + "2023-08-09.txt";
         List<FreeHistory> freeHistoryList = CdFileUtils.getFreeHistoryFromCL(fileName);
         for (FreeHistory freeHistory : freeHistoryList) {
             System.out.println(freeHistory);
@@ -191,14 +191,14 @@ public class FreeHistoryServiceTest {
                 for (FreeHistory freeHistory : freeHistoryList) {
                     app = new AppEntity();
                     BeanUtils.copyProperties(freeHistory, app);
-                    app.setDelFlag(0);
+                    app.setDeleteFlag(0);
                     app.setCreatedDate(new Date());
                     appList.add(app);
 
                     description = new Description();
                     BeanUtils.copyProperties(freeHistory, description);
                     description.setDescriptionCl(freeHistory.getDescription());
-                    description.setDelFlag(0);
+                    description.setDeleteFlag(0);
                     description.setCreatedDate(new Date());
                     descriptionList.add(description);
                 }

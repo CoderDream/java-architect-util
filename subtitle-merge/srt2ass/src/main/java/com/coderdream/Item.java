@@ -4,6 +4,7 @@ import lombok.Data;
 
 /**
  * 字幕项
+ * @author CoderDream
  */
 @Data
 public class Item {

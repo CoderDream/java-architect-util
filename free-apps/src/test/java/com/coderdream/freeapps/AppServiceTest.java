@@ -10,11 +10,13 @@ import com.coderdream.freeapps.model.CrawlerHistory;
 import com.coderdream.freeapps.model.FreeHistory;
 import com.coderdream.freeapps.model.PriceHistory;
 import com.coderdream.freeapps.service.*;
-import com.coderdream.freeapps.util.CdConstants;
-import com.coderdream.freeapps.util.JSoupUtil;
-import com.coderdream.freeapps.util.CdListUtils;
-import com.coderdream.freeapps.util.ppt.excelutil.CdExcelUtils;
+import com.coderdream.freeapps.util.other.CdConstants;
+import com.coderdream.freeapps.util.other.JSoupUtil;
+import com.coderdream.freeapps.util.other.CdListUtils;
+import com.coderdream.freeapps.util.multithread.Demo02;
+import com.coderdream.freeapps.util.other.CdExcelUtil;
 import com.coderdream.freeapps.vo.AppVO;
+import java.util.concurrent.ExecutionException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -267,7 +269,7 @@ public class AppServiceTest {
     @Test
     public void testCrawlerAppList_02() {
 
-        List<TopList> totalTopList = CdExcelUtils.genTotalTopList();
+        List<TopList> totalTopList = CdExcelUtil.genTotalTopList();
         List<AppEntity> newList;
 
         //a
@@ -287,7 +289,7 @@ public class AppServiceTest {
                 if (!CollectionUtils.isEmpty(list)) {
                     newList = new ArrayList<>();
                     for (TopList tempApp : list) {
-                        if(appIdSet.contains(tempApp.getAppId())) {
+                        if (appIdSet.contains(tempApp.getAppId())) {
                             log.error("应用已存在");
                             continue;
                         }
@@ -397,6 +399,31 @@ public class AppServiceTest {
     }
 
     @Test
+    public void testCrawlerNoDescriptionAppList() {
+        List<AppEntity> noSnapshotListApp = appService.selectNoDescription();
+        List<AppEntity> newList;
+
+        if (!CollectionUtils.isEmpty(noSnapshotListApp)) {
+            log.info("本次任务开始前无截图的应用数: " + noSnapshotListApp.size());
+            // 分批处理
+            List<List<AppEntity>> lists = CdListUtils.splitTo(noSnapshotListApp, CdConstants.BATCH_SNAPSHOT_ROWS);
+            for (List<AppEntity> list : lists) {
+                if (!CollectionUtils.isEmpty(list)) {
+                    newList = new ArrayList<>();
+                    for (AppEntity tempApp : list) {
+                        AppEntity appNew = JSoupUtil.crawlerApp(tempApp.getAppId(), tempApp.getUsFlag());
+                        newList.add(appNew);
+                    }
+                    if (!CollectionUtils.isEmpty(newList)) {
+//                        System.out.println("###");
+                        appService.insertOrUpdateBatch(newList);
+                    }
+                }
+            }
+        }
+    }
+
+    @Test
     public void testDeletedList_01() {
         List<AppEntity> noSnapshotListApp = appService.selectDeletedAppList();
         List<AppEntity> newList;
@@ -435,6 +462,28 @@ public class AppServiceTest {
         }
     }
 
+    @Test
+    public void testDeletedList_02() {
+        List<AppEntity> noSnapshotListApp = appService.selectDeletedAppList();
+        List<AppEntity> newList;
+
+        if (!CollectionUtils.isEmpty(noSnapshotListApp)) {
+            log.info("本次任务开始前已标识为下架的应用数: " + noSnapshotListApp.size());
+            // 分批处理
+
+            try {
+                List<AppEntity> appEntityList = Demo02.batchCrawlerAppInfo(noSnapshotListApp);
+                for (AppEntity appEntity : appEntityList) {
+                    System.out.println(appEntity);
+                }
+            } catch (ExecutionException e) {
+                throw new RuntimeException(e);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+
 
     @Test
     public void testCrawlerAppList() {
@@ -452,7 +501,7 @@ public class AppServiceTest {
 //                "id950326851",
 //                "id931188326",
 //                "id1536924612",
-//                "id1454412797", // del_flag 为空
+//                "id1454412797", // delete_flag 为空
 //                "id1443533088" ,// 搜韵
 //                "id1097323003","id1546838683"
 //                "id1400641344" // 无中英文
@@ -601,6 +650,18 @@ public class AppServiceTest {
     @Test
     public void testProcessWechat() {
         int result = appService.processWechat();
+        log.info(result + "");
+    }
+
+    @Test
+    public void testProcessNoCnFlag() {
+        int result = appService.processNoCnFlag();
+        log.info(result + "");
+    }
+
+    @Test
+    public void testUpdateDescriptionCn() {
+        int result = appService.updateDescriptionCn();
         log.info(result + "");
     }
 

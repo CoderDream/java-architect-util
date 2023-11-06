@@ -45,7 +45,7 @@
             <result property="snapshotUrl" column="snapshot_url" jdbcType="OTHER"/>
             <result property="versionHistory" column="version_history" jdbcType="OTHER"/>
             <result property="remark" column="remark" jdbcType="VARCHAR"/>
-            <result property="delFlag" column="del_flag" jdbcType="INTEGER"/>
+            <result property="deleteFlag" column="delete_flag" jdbcType="INTEGER"/>
             <result property="createUserCode" column="create_user_code" jdbcType="VARCHAR"/>
             <result property="createUserName" column="create_user_name" jdbcType="VARCHAR"/>
             <result property="createdDate" column="created_date" jdbcType="TIMESTAMP"/>
@@ -69,7 +69,7 @@
         category_id,category,compatibility,
         language,age,copyright,
         app_in_purchase,snapshot_url,version_history,
-        remark,del_flag,create_user_code,
+        remark,delete_flag,create_user_code,
         create_user_name,created_date,last_modified_code,
         last_modified_name,last_modified_date,version
     </sql>
@@ -115,7 +115,7 @@
         `snapshot_url`,
         `version_history`,
         `remark`,
-        `del_flag`,
+        `delete_flag`,
         `create_user_code`,
         `create_user_name`,
         `created_date`,
@@ -165,7 +165,7 @@
             #{item.snapshotUrl, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},
             #{item.versionHistory, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},
             #{item.remark,jdbcType=VARCHAR},
-            #{item.delFlag,jdbcType=NUMERIC},
+            #{item.deleteFlag,jdbcType=NUMERIC},
             #{item.createUserCode,jdbcType=VARCHAR},
             #{item.createUserName,jdbcType=VARCHAR},
             #{item.createdDate,jdbcType=TIMESTAMP},
@@ -214,7 +214,7 @@
         `snapshot_url`=values(`snapshot_url`),
         `version_history`=values(`version_history`),
         `remark`=values(`remark`),
-        `del_flag`=values(`del_flag`),
+        `delete_flag`=values(`delete_flag`),
         `create_user_code`=values(`create_user_code`),
         `create_user_name`=values(`create_user_name`),
         `created_date`=values(`created_date`),
@@ -259,7 +259,7 @@
         `snapshot_url`,
         `version_history`,
         `remark`,
-        `del_flag`,
+        `delete_flag`,
         `create_user_code`,
         `create_user_name`,
         `created_date`,
@@ -303,7 +303,7 @@
             #{item.snapshotUrl, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},
             #{item.versionHistory, typeHandler=com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler},
             #{item.remark,jdbcType=VARCHAR},
-            #{item.delFlag,jdbcType=NUMERIC},
+            #{item.deleteFlag,jdbcType=NUMERIC},
             #{item.createUserCode,jdbcType=VARCHAR},
             #{item.createUserName,jdbcType=VARCHAR},
             #{item.createdDate,jdbcType=TIMESTAMP},
@@ -346,7 +346,7 @@
         `snapshot_url`=values(`snapshot_url`),
         `version_history`=values(`version_history`),
         `remark`=values(`remark`),
-        `del_flag`=values(`del_flag`),
+        `delete_flag`=values(`delete_flag`),
         `create_user_code`=values(`create_user_code`),
         `create_user_name`=values(`create_user_name`),
         `created_date`=values(`created_date`),
