@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @ClassName Main
+ * @ClassName RssParserUtil
  * @Description TODO
  * @Author admin
  * @Date 2021/3/30 15:21

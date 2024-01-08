@@ -37,8 +37,8 @@ public class SubtitleBaseEntity implements Serializable {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(subIndex + "\n");
+        sb.append(timeStr + "\n");
         sb.append(subtitle + "\n");
-        sb.append(timeStr + "\n\n");
         return sb.toString();
     }
 }

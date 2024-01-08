@@ -1,7 +1,8 @@
 package com.coderdream.freeapps.util.proxy;
 
 import com.coderdream.freeapps.model.DownloadInfoEntity;
-import com.coderdream.freeapps.util.other.DownloadUtil;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.LinkedBlockingDeque;
@@ -42,7 +43,21 @@ public class MultiThreadGenRawTextExecutor {
         handler);
 
     public void initTestArr() {
-        List<DownloadInfoEntity> downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo();
+        boolean test = true;
+
+        List<DownloadInfoEntity> downloadInfoEntityListTemp = new ArrayList<>();
+        if (test) {
+            DownloadInfoEntity infoEntity = new DownloadInfoEntity();
+            String ep = "231207";
+            infoEntity.setFileUrl(
+                "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2023/ep-" + ep + "");
+            infoEntity.setPath("D:/14_LearnEnglish/6MinuteEnglish/2023/" + ep + "/");
+            infoEntity.setFileName(ep + ".html");
+            downloadInfoEntityListTemp = Arrays.asList(infoEntity);
+        } else {
+            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("html","2023", "01");
+        }
+
         for (DownloadInfoEntity downloadInfoEntity : downloadInfoEntityListTemp) {
             downloadInfoEntityList.add(downloadInfoEntity);
         }
@@ -57,9 +72,10 @@ public class MultiThreadGenRawTextExecutor {
                 System.out.println(getName() + "start");
                 long startTime = System.currentTimeMillis();
                 DownloadInfoEntity downloadInfoEntity = downloadInfoEntityList.pop();
-                DownloadUtil.getBbcPageInfoDetailByHtml(downloadInfoEntity.getFileUrl(), downloadInfoEntity.getPath(),
-                    downloadInfoEntity.getFileName(), true);
+//                DownloadUtil.getBbcPageInfoDetailByHtml(downloadInfoEntity.getFileUrl(), downloadInfoEntity.getPath(),
+//                    downloadInfoEntity.getFileName(), true);
 
+                HtmlUtil.genScriptRawByHtml(downloadInfoEntity.getPath(), downloadInfoEntity.getFileName());
 
 //                System.out.println("Thread" + getName() + "  " + downloadInfoEntityList.pop());
                 long period = System.currentTimeMillis() - startTime;

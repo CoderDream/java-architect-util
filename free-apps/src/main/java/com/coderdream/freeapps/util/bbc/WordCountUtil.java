@@ -30,22 +30,35 @@ import org.springframework.beans.BeanUtils;
 public class WordCountUtil {
 
     public static void main(String[] args) {
-        String folderName = "230601";
-        folderName = "230316";
-//        folderName = "230525";
+        String folderName = "240104";
         WordCountUtil.genVocTable(folderName);
+
+//        System.out.println(WordCountUtil.removeChar("-abc"));
+//        System.out.println(WordCountUtil.removeChar("--abc"));
+//        System.out.println(WordCountUtil.removeChar("abc-"));
+//        System.out.println(WordCountUtil.removeChar("abc--"));
+//        System.out.println(WordCountUtil.removeChar("-abc--"));
+//        System.out.println(WordCountUtil.removeChar("--abc--"));
+
+//        String folderName = "E:\\02_\\电影\\Oppenheimer.2023.IMAX.2160p.BluRay.x265.10bit.DTS-HD.MA.5.1-WiKi\\";
+//        String fileName = "en_test.txt";
+//        WordCountUtil.genVocTableForScript(folderName, fileName);
+
+        // TODO
+
     }
 
     public static void genVocTable(String folderName) {
         String fileName = "script_dialog";
-        List<WordInfo> wordInfoList = process(folderName, fileName);
+        String filePath = CommonUtil.getFullPathFileName(folderName, fileName, ".txt");
+        List<WordInfo> wordInfoList = process(filePath);
         String folderPath =
             CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "dict";
         String templateFileName = folderPath + File.separator + "词汇.xlsx";
 
         // 方案1 一下子全部放到内存里面 并填充
-        String excelFileName =  CommonUtil.getFullPathFileName(folderName, folderName, "_完整词汇表.xlsx");
-        String sheetName = "词汇表";
+        String excelFileName = CommonUtil.getFullPathFileName(folderName, folderName, "_完整词汇表.xlsx");
+//        String sheetName = "词汇表";
 
 //        MakeExcel.listFill(templateFileName, excelFileName, sheetName, wordInfoList);
 
@@ -88,16 +101,64 @@ public class WordCountUtil {
             sheetName3, wordInfoList3, sheetName4, wordInfoList4);
     }
 
-    public static List<WordInfo> process(String folderName, String fileName) {
+    /**
+     * @param folderName
+     * @param fileName
+     */
+    public static void genVocTableForScript(String folderName, String fileName) {
+        // 方案1 一下子全部放到内存里面 并填充
+        String excelFileName = folderName + fileName.substring(0, fileName.lastIndexOf(".")) + "_完整词汇表.xlsx";
+        String filePath = folderName + fileName;
+
+        List<WordInfo> wordInfoList = process(filePath);
+        String folderPath =
+            CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "dict";
+        String templateFileName = folderPath + File.separator + "词汇.xlsx";
+
+        String sheetName1 = "四六级及以上";
+        String sheetName2 = "高中";
+        String sheetName3 = "初中";
+        String sheetName4 = "其他";
+
+        List<WordInfo> wordInfoList1 = new ArrayList<>();
+        List<WordInfo> wordInfoList2 = new ArrayList<>();
+        List<WordInfo> wordInfoList3 = new ArrayList<>();
+        List<WordInfo> wordInfoList4 = new ArrayList<>();
+        for (WordInfo wordInfo : wordInfoList) {
+            String level = wordInfo.getLevel();
+            if (level != null) {
+                switch (level) {
+                    case "C01":
+                        wordInfoList3.add(wordInfo);
+                        break;
+                    case "C02":
+                        wordInfoList2.add(wordInfo);
+                        break;
+                    case "C03":
+                    case "C04":
+                    case "C05":
+                        wordInfoList1.add(wordInfo);
+                        break;
+                    default:
+                        String word = wordInfo.getWord();
+                        // 过滤单个字符
+                        if (StrUtil.isNotEmpty(word) && word.length() > 1) {
+                            wordInfoList4.add(wordInfo);
+                        }
+                        break;
+                }
+            }
+        }
+
+        MakeExcel.listFill(templateFileName, excelFileName, sheetName1, wordInfoList1, sheetName2, wordInfoList2,
+            sheetName3, wordInfoList3, sheetName4, wordInfoList4);
+    }
+
+    public static List<WordInfo> process(String filePath) {
         List<WordInfo> wordInfoList = new ArrayList<>();
 
         Set<String> hostSet = new TreeSet<>();
         hostSet.addAll(GenSrtUtil.getHost());
-
-        if (StrUtil.isEmpty(fileName)) {
-            fileName = "script_dialog";
-        }
-        String filePath = CommonUtil.getFullPathFileName(folderName, fileName, ".txt");
 
         // 单词集合
         Set<String> stringSet = new LinkedHashSet();
@@ -107,13 +168,10 @@ public class WordCountUtil {
 
         Set<String> pointSet = new HashSet<>();
         pointSet.add(".");
-//        String filePath = "D:\\14_LearnEnglish\\6MinuteEnglish\\230907\\script.txt";
         // 1.按行读取文本，每行是一个字符串
         List<String> stringList = TxtUtil.readTxtFileToList(filePath);
 
         // 2.遍历每一行，以空格作为分隔符
-//        Integer countTemp = 0;
-
         Map<String, String> abbrevCompleteMap = genAbbrevCompleteMap();
 
         // 主持人及嘉宾名字集合
@@ -121,12 +179,11 @@ public class WordCountUtil {
 
         // 第1步：分割单词
         String wordTemp;
-
         for (String str : stringList) {
             String[] arr = str.split(" ");
             if (arr.length > 1) {
-                for (int i = 0; i < arr.length; i++) {
-                    wordTemp = arr[i];
+                for (String s : arr) {
+                    wordTemp = s;
                     processSingleWord(host, abbrevCompleteMap, stringSet, rawWordList, wordTemp);
                 }
             } else {
@@ -135,12 +192,11 @@ public class WordCountUtil {
             }
 //            System.out.println();
         }
+
         // 3.遍历字符串，去掉标点符号
 
-        //  addToMap(stringSet, stringIntegerMap, wordTemp);
-
-        List<String> rawWordSet = new ArrayList<>();
-        rawWordSet.addAll(stringSet);
+        // TODO
+        List<String> rawWordSet = new ArrayList<>(stringSet);
 
         // 获取单词原型映射键值对
         Map<String, String> lemmaMap = CoreNlpUtils.getLemmaList(rawWordSet);
@@ -281,14 +337,13 @@ public class WordCountUtil {
      * @param wordTemp
      */
     private static List<String> processSingleWord(Set<String> host, Map<String, String> abbrevCompleteMap,
-        Set<String> stringSet,
-        List<String> wordList,
-        String wordTemp) {
+        Set<String> stringSet, List<String> wordList, String wordTemp) {
 //        List<String> wordList = new ArrayList<>();
 //        wordTemp = removeChar(wordTemp).toLowerCase();
         wordTemp = removeChar(wordTemp);
         if (!NumberUtil.isNumber(wordTemp)) {  //判断是否为数字
 //                    addToMap(stringSet, stringIntegerMap, wordTemp);
+            String word = "";
             if (abbrevCompleteMap.keySet().contains(wordTemp.toLowerCase())) {
                 String completeStr = abbrevCompleteMap.get(wordTemp.toLowerCase());
                 String[] arr = completeStr.split(" ");
@@ -296,8 +351,9 @@ public class WordCountUtil {
                     if ("day-to-day".equals(str)) {
                         System.out.println("ERROR: day-to-day ####");
                     }
+                    word = str.toLowerCase();
+                    if (!host.contains(word)) {
 
-                    if (!host.contains(str.toLowerCase())) {
                         stringSet.add(str.toLowerCase());
                         wordList.add(str.toLowerCase());
                     }
@@ -389,12 +445,33 @@ public class WordCountUtil {
         first = first.replaceAll("%", "");//去掉%
         first = first.replaceAll("‘", "'");//【‘】替换成【'】
         first = first.replaceAll("’", "'");//【’】替换成【'】
-        if (first.startsWith("'") && first.endsWith("'")) {
-            first = first.substring(1, first.length() - 1);
-        }
+//        // 移除单引号
+//        if (first.startsWith("'") && first.endsWith("'")) {
+//            first = first.substring(1, first.length() - 1); // TODO
+//        }
         // “heathens”
         if (first.startsWith("”") && first.endsWith("”")) {
             first = first.substring(1, first.length() - 1);
+        }
+
+        // 移除开始的--
+        if (first.startsWith("--")) {
+            first = first.substring(2);
+        }
+
+        // 移除开始的-
+        if (first.startsWith("-")) {
+            first = first.substring(1);
+        }
+
+        // 移除最后的--
+        if (first.endsWith("--")) {
+            first = first.substring(0, first.length() - 2);
+        }
+
+        // 移除最后的-
+        if (first.endsWith("-")) {
+            first = first.substring(0, first.length() - 1);
         }
 
 //        first= first.replaceAll("…", "");//去掉…
@@ -414,7 +491,7 @@ public class WordCountUtil {
         String folderPath =
             CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "dict";
         String filePath = folderPath + File.separator + "C01_初中词汇正序版.xlsx";
-        List<WordEntity> wordEntityList = CdExcelUtil.genWordEntityList(filePath);
+        List<WordEntity> wordEntityList = CdExcelUtil.genWordEntityList(filePath, "Sheet1");
 
         for (WordEntity wordEntity : wordEntityList) {
             System.out.println(wordEntity);
@@ -437,7 +514,7 @@ public class WordCountUtil {
         String folderPath =
             CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "dict";
         String filePath = folderPath + File.separator + "C02_高中英语词汇正序版.xlsx";
-        List<WordEntity> wordEntityList = CdExcelUtil.genWordEntityList(filePath);
+        List<WordEntity> wordEntityList = CdExcelUtil.genWordEntityList(filePath, "Sheet1");
 
         for (WordEntity wordEntity : wordEntityList) {
             System.out.println(wordEntity);
@@ -463,7 +540,7 @@ public class WordCountUtil {
         String folderPath =
             CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "dict";
         String filePath = folderPath + File.separator + "C03_四级词汇正序版.xlsx";
-        List<WordEntity> wordEntityList = CdExcelUtil.genWordEntityList(filePath);
+        List<WordEntity> wordEntityList = CdExcelUtil.genWordEntityList(filePath, "Sheet1");
 
         for (WordEntity wordEntity : wordEntityList) {
             System.out.println(wordEntity);
@@ -491,7 +568,7 @@ public class WordCountUtil {
         String folderPath =
             CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "dict";
         String filePath = folderPath + File.separator + "C04_六级词汇正序版.xlsx";
-        List<WordEntity> wordEntityList = CdExcelUtil.genWordEntityList(filePath);
+        List<WordEntity> wordEntityList = CdExcelUtil.genWordEntityList(filePath, "Sheet1");
 
         for (WordEntity wordEntity : wordEntityList) {
             System.out.println(wordEntity);
@@ -521,7 +598,7 @@ public class WordCountUtil {
         String folderPath =
             CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "dict";
         String filePath = folderPath + File.separator + "C05_2013考研词汇正序版.xlsx";
-        List<WordEntity> wordEntityList = CdExcelUtil.genWordEntityList(filePath);
+        List<WordEntity> wordEntityList = CdExcelUtil.genWordEntityList(filePath, "Sheet1");
 
         for (WordEntity wordEntity : wordEntityList) {
             System.out.println(wordEntity);
@@ -536,6 +613,9 @@ public class WordCountUtil {
         return result;
     }
 
+    /**
+     * @return
+     */
     public static Map<String, String> genAbbrevCompleteMap() {
         String folderPath =
             CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "dict";
@@ -554,5 +634,6 @@ public class WordCountUtil {
 
         return result;
     }
+
 
 }

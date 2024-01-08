@@ -53,7 +53,7 @@ public class ThreadPoolExecuter {
                 System.out.println(getName() + "start");
                 long startTime = System.currentTimeMillis();
                 DownloadInfoEntity downloadInfoEntity = downloadInfoEntityList.pop();
-                DownloadUtil.downloadPicture(downloadInfoEntity.getFileUrl(), downloadInfoEntity.getPath(),
+                DownloadUtil.downloadFile(downloadInfoEntity.getFileUrl(), downloadInfoEntity.getPath(),
                     downloadInfoEntity.getFileName(), true);
 //                System.out.println("Thread" + getName() + "  " + downloadInfoEntityList.pop());
                 long period = System.currentTimeMillis() - startTime;

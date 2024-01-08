@@ -3,7 +3,6 @@ package com.coderdream.freeapps.util.other;
 
 import com.coderdream.freeapps.util.bbc.BbcConstants;
 import com.coderdream.freeapps.util.proxy.HtmlUtil;
-import com.coderdream.freeapps.util.qr.QRCodeEvents;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
 import java.util.ArrayList;
@@ -58,7 +57,7 @@ public class DownloadUtil {
      * @Title: downloadPicture
      * @Description: 下载图片
      */
-    public static void downloadPicture(String[] pictureUrls, String path, String[] fileNames) {
+    public static void downloadFile(String[] pictureUrls, String path, String[] fileNames) {
         try {
             //多个图片下载地址
             for (int i = 0; i < pictureUrls.length; i++) {
@@ -103,7 +102,7 @@ public class DownloadUtil {
      * @Title: downloadPicture
      * @Description: 下载图片
      */
-    public static void downloadPicture(String[] pictureUrls, String path, String[] fileNames, Boolean proxyFlag) {
+    public static void downloadFile(String[] pictureUrls, String path, String[] fileNames, Boolean proxyFlag) {
         try {
             //多个图片下载地址
             for (int i = 0; i < pictureUrls.length; i++) {
@@ -150,7 +149,7 @@ public class DownloadUtil {
         }
     }
 
-    public static void downloadPicture(String[] pictureUrls, String[] paths, String[] fileNames, Boolean proxyFlag) {
+    public static void downloadFile(String[] pictureUrls, String[] paths, String[] fileNames, Boolean proxyFlag) {
         try {
             //多个图片下载地址
             for (int i = 0; i < pictureUrls.length; i++) {
@@ -205,7 +204,7 @@ public class DownloadUtil {
      * @Title: downloadPicture
      * @Description: 下载图片
      */
-    public static void downloadPicture(String pictureUrl, String path, String filename) {
+    public static void downloadFile(String pictureUrl, String path, String filename) {
         int tryTimes = 5;
         int tryTime = 0;
         boolean tryFlag = false;
@@ -261,7 +260,7 @@ public class DownloadUtil {
         } while (tryFlag);
     }
 
-    public static void downloadPicture(String pictureUrl, String path, String filename, Boolean proxyFlag) {
+    public static void downloadFile(String fileUrl, String path, String filename, Boolean proxyFlag) {
         int tryTimes = 5;
         int tryTime = 0;
         boolean tryFlag = false;
@@ -269,7 +268,7 @@ public class DownloadUtil {
             tryTime++;
             try {
                 //根据图片地址构建URL
-                URL url = new URL(pictureUrl);
+                URL url = new URL(fileUrl);
                 URLConnection conn = null;
                 if (proxyFlag) {
                     //设置代理 , 端口是你自己使用软件代理的本地出口,socks和http代理的端口
@@ -281,6 +280,8 @@ public class DownloadUtil {
                 }
                 conn.setReadTimeout(10000);
                 conn.setConnectTimeout(10000);
+                System.setProperty("http.keepAlive", String.valueOf(false));
+                conn.setRequestProperty("Connection", "close");
                 conn.connect();
                 DataInputStream dataInputStream = new DataInputStream(conn.getInputStream());
                 //创建目录和图片
@@ -304,12 +305,12 @@ public class DownloadUtil {
                 fileOutputStream.write(output.toByteArray());
                 dataInputStream.close();
                 fileOutputStream.close();
-//                Integer period = new Random().nextInt(1000) + 300;
-//                try {
-//                    Thread.sleep(period);   // 休眠3秒
-//                } catch (InterruptedException e) {
-//                    throw new RuntimeException(e);
-//                }
+                Integer period = new Random().nextInt(2000) + 300;
+                try {
+                    Thread.sleep(period);   // 休眠3秒
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
             } catch (Exception e) {
                 if (tryTime < tryTimes) {
                     tryFlag = true;
@@ -404,6 +405,6 @@ public class DownloadUtil {
     public static void getBbcPageInfoDetailByHtml(String pageUrl, String path, String filename,
         Boolean proxyFlag) {
         DownloadUtil.downloadPageToFile(pageUrl, path, filename, proxyFlag);
-        HtmlUtil.getBbcPageInfoDetailByHtml(path, filename);
+        HtmlUtil.genScriptRawByHtml(path, filename);
     }
 }

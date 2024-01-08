@@ -4,6 +4,8 @@ import com.coderdream.freeapps.model.SubtitleBaseEntity;
 import com.coderdream.freeapps.util.other.CdFileUtils;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -15,11 +17,14 @@ public class ProcessCnSrtUtil {
     public final static String FOLDER_NAME = "230921";
 
     public static void main(String[] args) {
-        String folderName = "230518";
-        String fileName = "chn_raw";
-        processCnSrt(folderName, fileName);//
+//        String folderName = "230518";
+//        String fileName = "chn_raw";
+//        processCnSrt(folderName, fileName);//
 
 //        replace();
+        String folderName = "E:\\BaiduPan\\迈向高级的Java面试突围课\\";
+        String fileName = "02-01 先简单的自我介绍一下吧！";
+        genCnSrtContent(folderName, fileName);
     }
 
     /**
@@ -57,6 +62,32 @@ public class ProcessCnSrtUtil {
         }
 
         String newFileName = CommonUtil.getFullPathFileName(folderName, "chn", ".srt");
+        CdFileUtils.writeToFile(newFileName, newScriptList);
+    }
+
+    /**
+     * <pre>
+     *     整理中文字幕：
+     *     1、替换中文冒号为英文冒号；
+     *     2、去掉中文字幕中多余的空格，先【 -> 】替换为【#->#】，然后去掉空格，最后再换回来，（【#->#】替换为【 -> 】）
+     *
+     * </pre>
+     *
+     * @param folderName
+     * @param fileName
+     */
+    public static void genCnSrtContent(String folderName, String fileName) {
+        String srcFileName = folderName + fileName + ".srt";
+        List<SubtitleBaseEntity> subtitleBaseEntityList = CdFileUtils.readSrcFileContent(srcFileName);
+
+        String subtitle;
+        StringBuilder content = new StringBuilder();
+        for (SubtitleBaseEntity subtitleBaseEntity : subtitleBaseEntityList) {
+            subtitle = subtitleBaseEntity.getSubtitle();
+            content.append(subtitle).append("，");
+        }
+        List<String> newScriptList = Collections.singletonList(content.toString());
+        String newFileName = folderName + fileName + ".txt";
         CdFileUtils.writeToFile(newFileName, newScriptList);
     }
 

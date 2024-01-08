@@ -8,6 +8,8 @@ import com.alibaba.excel.write.metadata.fill.FillConfig;
 import com.alibaba.excel.write.metadata.style.WriteCellStyle;
 import com.alibaba.excel.write.metadata.style.WriteFont;
 import com.alibaba.excel.write.style.HorizontalCellStyleStrategy;
+import com.coderdream.freeapps.model.CoreWordInfo;
+import com.coderdream.freeapps.model.WordEntity;
 import com.coderdream.freeapps.model.WordInfo;
 import com.coderdream.freeapps.util.easyexcel.TestFileUtil;
 import java.io.File;
@@ -26,17 +28,17 @@ import org.apache.poi.ss.usermodel.IndexedColors;
 public class MakeExcel {
 
     public static void main(String[] args) {
-        String templateFileName =
-            TestFileUtil.getPath() + "demo" + File.separator + "fill" + File.separator + "词汇.xlsx";
-
-        // 方案1 一下子全部放到内存里面 并填充
-        String excelFileName = TestFileUtil.getPath() + "listFill" + System.currentTimeMillis() + ".xlsx";
-
-        List<WordInfo> wordInfoList = data1();// process(folderName, fileName);
-        List<WordInfo> wordInfoList2 = data2();// process(folderName, fileName);
-        String sheetName = "词汇表";
-        String sheetName2 = "其他";
-        MakeExcel.listFill(templateFileName, excelFileName, sheetName, wordInfoList);
+//        String templateFileName =
+//            TestFileUtil.getPath() + "demo" + File.separator + "fill" + File.separator + "词汇.xlsx";
+//
+//        // 方案1 一下子全部放到内存里面 并填充
+//        String excelFileName = TestFileUtil.getPath() + "listFill" + System.currentTimeMillis() + ".xlsx";
+//
+//        List<WordInfo> wordInfoList = data1();// process(folderName, fileName);
+//        List<WordInfo> wordInfoList2 = data2();// process(folderName, fileName);
+//        String sheetName = "词汇表";
+//        String sheetName2 = "其他";
+//        MakeExcel.listFill(templateFileName, excelFileName, sheetName, wordInfoList);
     }
 
     /**
@@ -48,7 +50,7 @@ public class MakeExcel {
      * @param wordInfoList
      */
     public static void listFill(String templateFileName, String fileName, String sheetName,
-        List<WordInfo> wordInfoList) {
+        List<CoreWordInfo> wordInfoList) {
         // 模板注意 用{} 来表示你要用的变量 如果本来就有"{","}" 特殊字符 用"\{","\}"代替
         // 填充list 的时候还要注意 模板中{.} 多了个点 表示list
         // 如果填充list的对象是map,必须包涵所有list的key,哪怕数据为null，必须使用map.put(key,null)
@@ -66,11 +68,11 @@ public class MakeExcel {
 //        contentWriteCellStyle.setFillPatternType(FillPatternType.SOLID_FOREGROUND);
         // 背景绿色
 //        contentWriteCellStyle.setFillForegroundColor(IndexedColors.GREEN.getIndex());
-        WriteFont contentWriteFont = new WriteFont();
+//        WriteFont contentWriteFont = new WriteFont();
         // 字体大小
-        contentWriteFont.setFontName("微软雅黑");
-        contentWriteFont.setFontHeightInPoints((short) 11);
-        contentWriteCellStyle.setWriteFont(contentWriteFont);
+//        contentWriteFont.setFontName("微软雅黑");
+//        contentWriteFont.setFontHeightInPoints((short) 11);
+//        contentWriteCellStyle.setWriteFont(contentWriteFont);
 
         //设置 自动换行
         contentWriteCellStyle.setWrapped(true);
@@ -91,6 +93,55 @@ public class MakeExcel {
 //            .sheet(sheetName1).doFill(wordInfoList1);
 //        EasyExcel.write(fileName).withTemplate(templateFileName).registerWriteHandler(horizontalCellStyleStrategy)
 //            .sheet(sheetName2).doFill(wordInfoList2);
+    }
+
+    /**
+     * https://blog.csdn.net/hunagzheng123456/article/details/103272656
+     *
+     * @param templateFileName
+     * @param fileName
+     * @param sheetName
+     * @param wordInfoList
+     */
+    public static void fillWordEntityList(String templateFileName, String fileName, String sheetName,
+        List<WordInfo> wordInfoList) {
+        // 模板注意 用{} 来表示你要用的变量 如果本来就有"{","}" 特殊字符 用"\{","\}"代替
+        // 填充list 的时候还要注意 模板中{.} 多了个点 表示list
+        // 如果填充list的对象是map,必须包涵所有list的key,哪怕数据为null，必须使用map.put(key,null)
+
+        // 这里 会填充到第一个sheet， 然后文件流会自动关闭
+        WriteCellStyle headWriteCellStyle = new WriteCellStyle();
+        // 背景设置为红色
+        headWriteCellStyle.setFillForegroundColor(IndexedColors.RED.getIndex());
+        WriteFont headWriteFont = new WriteFont();
+        headWriteFont.setFontHeightInPoints((short) 20);
+        headWriteCellStyle.setWriteFont(headWriteFont);
+        // 内容的策略
+        WriteCellStyle contentWriteCellStyle = new WriteCellStyle();
+        // 这里需要指定 FillPatternType 为FillPatternType.SOLID_FOREGROUND 不然无法显示背景颜色.头默认了 FillPatternType所以可以不指定
+//        contentWriteCellStyle.setFillPatternType(FillPatternType.SOLID_FOREGROUND);
+        // 背景绿色
+//        contentWriteCellStyle.setFillForegroundColor(IndexedColors.GREEN.getIndex());
+//        WriteFont contentWriteFont = new WriteFont();
+        // 字体大小
+//        contentWriteFont.setFontName("微软雅黑");
+//        contentWriteFont.setFontHeightInPoints((short) 11);
+//        contentWriteCellStyle.setWriteFont(contentWriteFont);
+
+        //设置 自动换行
+        contentWriteCellStyle.setWrapped(true);
+
+        //设置边框样式
+        contentWriteCellStyle.setBorderLeft(BorderStyle.THIN);//细实线
+        contentWriteCellStyle.setBorderTop(BorderStyle.THIN);
+        contentWriteCellStyle.setBorderRight(BorderStyle.THIN);
+        contentWriteCellStyle.setBorderBottom(BorderStyle.THIN);
+        // 这个策略是 头是头的样式 内容是内容的样式 其他的策略可以自己实现
+        HorizontalCellStyleStrategy horizontalCellStyleStrategy =
+            new HorizontalCellStyleStrategy(headWriteCellStyle, contentWriteCellStyle);
+
+        EasyExcel.write(fileName).withTemplate(templateFileName).registerWriteHandler(horizontalCellStyleStrategy)
+            .sheet(sheetName).doFill(wordInfoList);
     }
 
 

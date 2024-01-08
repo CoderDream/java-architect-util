@@ -119,7 +119,10 @@ public class TranslatorTextUtil {
             TranslatorTextUtil translatorTextUtil = new TranslatorTextUtil();
 
             String response = translatorTextUtil.process(text);
-//            System.out.println(prettify(response));
+            if(response.contains("error")) {
+                System.out.println(prettify(response));
+            }
+
             List<String> contextList = parserTrans(response);
             result.addAll(contextList);
         } catch (Exception e) {
@@ -130,11 +133,11 @@ public class TranslatorTextUtil {
     }
 
     public static void main(String[] args) {
-//        String content = "Hello, friend! What did you do today?";
-//        List<String> stringList = new ArrayList<>(); // translatorText(content);
-//        for (String str : stringList) {
-//            System.out.println(str);
-//        }
+        String content = "Hello, friend! What did you do today?";
+        List<String> stringList = translatorText(content);
+        for (String str : stringList) {
+            System.out.println(str);
+        }
 //
 //        String text = "How are you? I am fine. What did you do today?";
 ////        breakSentence(text);

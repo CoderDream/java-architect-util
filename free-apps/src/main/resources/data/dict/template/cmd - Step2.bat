@@ -1,0 +1,1 @@
+python -m aeneas.tools.execute_task audio5.mp3 script_dialog_new.txt "task_language=eng|os_task_file_format=srt|is_text_type=plain" eng.srt

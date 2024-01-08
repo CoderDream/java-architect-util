@@ -164,7 +164,7 @@ public class NeuQuant {
 	}
 
 	/*
-	 * Main Learning Loop ------------------
+	 * RssParserUtil Learning Loop ------------------
 	 */
 	public void learn() {
 		int i, j, b, g, r;

@@ -8,6 +8,7 @@ import com.coderdream.freeapps.util.other.CdFileUtils;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -22,37 +23,42 @@ public class DictUtils {
 //        String word = "sustainable";
 //        List<String> wordList = Arrays.asList("genre", "upbeat", "jaunty", "gasp", "gobsmacked", "high five");
 //        List<String> wordList = Arrays.asList("upbeat", "jaunty", "gasp", "gobsmacked", "high five");
-//        List<VocInfo> vocInfoList = DictUtils.queryWords(wordList);
-//        for (VocInfo vocInfo : vocInfoList) {
-//            System.out.println(vocInfo);
-//        }
+        List<String> wordList = Arrays.asList("spoil");
+        List<VocInfo> vocInfoList = DictUtils.queryWords(wordList);
+        for (VocInfo vocInfo : vocInfoList) {
+            System.out.println(vocInfo);
+        }
 
-        String folderName = "230309";
-        DictUtils.processVoc(folderName);
+//        String folderName = "230428";
+//        DictUtils.processVoc(folderName);
 
 //        List<VocInfo> vocInfoList = DictUtils.getVocInfoList(folderName);
 //        for (VocInfo vocInfo : vocInfoList) {
 //            System.out.println(vocInfo);
 //        }
 
-        String wordCn = "气候变化否定者：一种观点，认为全球气候变化是不存在的或者人类活动对气候变化的影响被夸大了。";
-        String wordExplainCn = "气候变化否定者：一种观点，认为全球气候变化是不存在的或者人类活动对气候变化的影响被夸大了。； · Climate deniers often argue that the scientific consensus on climate change is based on flawed data.； 气候变化否定者经常辩称，关于气候变化的科学共识是基于错误的数据的。";
-        //
-        int colonIndex = wordCn.indexOf("：");
-
-        int firstIndexOfIndex = wordExplainCn.indexOf("； · ");
-        int lastIndexOfIndex = wordExplainCn.lastIndexOf("； ");
-        wordCn = wordExplainCn.substring(0, colonIndex);
+//        String wordCn = "气候变化否定者：一种观点，认为全球气候变化是不存在的或者人类活动对气候变化的影响被夸大了。";
+//        String wordExplainCn = "气候变化否定者：一种观点，认为全球气候变化是不存在的或者人类活动对气候变化的影响被夸大了。； · Climate deniers often argue that the scientific consensus on climate change is based on flawed data.； 气候变化否定者经常辩称，关于气候变化的科学共识是基于错误的数据的。";
+//        //
+//        int colonIndex = wordCn.indexOf("：");
+//
+//        int firstIndexOfIndex = wordExplainCn.indexOf("； · ");
+//        int lastIndexOfIndex = wordExplainCn.lastIndexOf("； ");
+//        wordCn = wordExplainCn.substring(0, colonIndex);
+////        System.out.println(wordCn);
+//
+//        String sampleSentenceEn = wordExplainCn.substring(firstIndexOfIndex + 3, lastIndexOfIndex);
+//        String sampleSentenceCn = wordExplainCn.substring(lastIndexOfIndex + 3);
+//        wordExplainCn = wordExplainCn.substring(colonIndex + 1, firstIndexOfIndex);
+//
 //        System.out.println(wordCn);
+//        System.out.println(wordExplainCn);
+//        System.out.println(sampleSentenceEn.trim());
+//        System.out.println(sampleSentenceCn);
 
-        String sampleSentenceEn = wordExplainCn.substring(firstIndexOfIndex + 3, lastIndexOfIndex);
-        String sampleSentenceCn = wordExplainCn.substring(lastIndexOfIndex + 3);
-        wordExplainCn = wordExplainCn.substring(colonIndex + 1, firstIndexOfIndex);
-
-        System.out.println(wordCn);
-        System.out.println(wordExplainCn);
-        System.out.println(sampleSentenceEn.trim());
-        System.out.println(sampleSentenceCn);
+//        String b = "网络自夸（在网络环境中对自己的情况有所隐瞒，通常精心编造一个优质的网络身份，目的是为了给他人留下深刻印象，尤其是为了吸引某人与其发展恋爱关系）";
+//        b = "绒毛般的，覆有绒毛的；（食物等）松软的，透气的；轻软状的；<非正式>空洞的，不严肃的";
+//        System.out.println(shortStr(b));
     }
 
     public static List<VocInfo> getVocInfoList(String folderName) {
@@ -183,16 +189,22 @@ public class DictUtils {
         String word;
         int startIndex;
         int endIndex;
+        String temp;
         for (int i = 0; i < size; i++) {
             if ((i + 1) % 2 == 0) {
                 vocInfo = new VocInfo();
                 word = scriptList.get(i - 1);
                 startIndex = word.lastIndexOf("(");
                 endIndex = word.lastIndexOf(")");
-                if(startIndex != -1 && endIndex != -1) {
-                    word = word.substring(0, startIndex - 1);
+                if (startIndex != -1 && endIndex != -1) {
+                    // 存在括号，则删除括号
+                    temp = word.substring(startIndex, endIndex + 1);
+                    System.out.println(word + "\t|\t" + temp);
+                    word = word.replaceAll(temp, "");
+                    word = word.replaceAll("\\(", "");
+                    word = word.replaceAll("\\)", "");
                 }
-                vocInfo.setWord(word);
+                vocInfo.setWord(word.trim());
                 vocInfo.setWordExplainEn(scriptList.get(i));
                 vocInfoList.add(vocInfo);
             }
@@ -204,10 +216,15 @@ public class DictUtils {
         String newFileName = CommonUtil.getFullPathFileName(folderName, fileName, "_cn.txt");
 
         List<String> scriptListNew = new ArrayList<>();
+        String wordCnBrief = "";
         for (VocInfo vocInfo1 : vocInfoList) {
             scriptListNew.add(vocInfo1.getWord());
             scriptListNew.add(vocInfo1.getWordExplainEn());
-            scriptListNew.add(vocInfo1.getWordCn() != null ? vocInfo1.getWordCn() : "");
+            wordCnBrief = vocInfo1.getWordCn() != null ? vocInfo1.getWordCn() : "";
+
+            wordCnBrief = shortStr(wordCnBrief);
+
+            scriptListNew.add(wordCnBrief);
             scriptListNew.add(vocInfo1.getWordExplainCn() != null ? vocInfo1.getWordExplainCn() : "");
             scriptListNew.add(vocInfo1.getSampleSentenceEn() != null ? vocInfo1.getSampleSentenceEn() : "");
             scriptListNew.add(vocInfo1.getSampleSentenceCn() != null ? vocInfo1.getSampleSentenceCn() : "");
@@ -219,6 +236,46 @@ public class DictUtils {
         } else {
             System.out.println("###### 空");
         }
+    }
+
+    public static String shortStr(String wordCnBrief) {
+        /// 【正则】如何去掉花括号{}大括号，大阔号和里面的值；去掉尖括号里的值
+        // https://blog.csdn.net/river_continent/article/details/78214766
+
+        int beginIndex = 0;
+        int endIndex = 0;
+
+//        StrUtil.isEmpty();
+
+//        wordCnBrief.
+
+//        String str="{A}123{aaa}456{bbb}";
+//        大阔号和里面的值=str.replaceAll("\\{[^}]*\\}","");
+        String reg = "（[^}]*）";
+        wordCnBrief = wordCnBrief.replaceAll(reg, "");
+        System.out.println(wordCnBrief);
+
+        reg = "<[^}]*>";
+        wordCnBrief = wordCnBrief.replaceAll(reg, "");
+        System.out.println(wordCnBrief);
+
+//        beginIndex = wordCnBrief.indexOf("（");
+//        endIndex = wordCnBrief.indexOf("）");
+//
+//        String temp = "";
+//
+//        if (beginIndex != -1 && endIndex != -1) {
+//            temp = wordCnBrief.substring(beginIndex, endIndex);
+//            wordCnBrief = wordCnBrief.replaceAll(temp, "");
+//        }
+//
+//        wordCnBrief = wordCnBrief.substring(beginIndex, endIndex);
+
+        if (wordCnBrief.length() > 13 && wordCnBrief.indexOf("；") != -1 && wordCnBrief.indexOf("；") < 12) {
+            wordCnBrief = wordCnBrief.substring(0, wordCnBrief.indexOf("；"));
+        }
+
+        return wordCnBrief;
     }
 
     /**
@@ -246,6 +303,11 @@ public class DictUtils {
         VocInfo vocInfo = new VocInfo();
         Map<String, Object> param = new LinkedHashMap<>();
         param.put("q", word);
+        param.put("le", "en");
+        param.put("t", "2");
+        param.put("client", "web");
+        param.put("sign", "cb7b9683228573db5f84d8fb13e748ae");
+        param.put("keyfrom", "webdict");
 //        param.put("client", "");
         Map<String, String> head = new LinkedHashMap<>();
         String url = "https://dict.youdao.com/jsonapi_s?doctype=json&jsonversion=4";
@@ -254,6 +316,8 @@ public class DictUtils {
         JSONObject jsonObject = HttpUtil.postWithForm(param, head, url, JSONObject.class, retryTimes);
 
         vocInfo.setWord(word);
+
+        System.out.println(jsonObject.toStringPretty());
 
         // 填充中文意思字段和句子字段
         fillExplain(vocInfo, jsonObject);
@@ -364,7 +428,7 @@ public class DictUtils {
             wordCn = wordExplainCn.substring(0, colonIndex);
 //        System.out.println(wordCn);
 
-             sampleSentenceEn = wordExplainCn.substring(firstIndexOfIndex + 3, lastIndexOfIndex);
+            sampleSentenceEn = wordExplainCn.substring(firstIndexOfIndex + 3, lastIndexOfIndex);
             String sampleSentenceCn = wordExplainCn.substring(lastIndexOfIndex + 3);
             wordExplainCn = wordExplainCn.substring(colonIndex + 1, firstIndexOfIndex);
 
@@ -377,6 +441,33 @@ public class DictUtils {
             vocInfo.setWordExplainCn(wordExplainCn);
             vocInfo.setSampleSentenceEn(sampleSentenceEn);
             vocInfo.setSampleSentenceCn(sampleSentenceCn);
+        }
+
+        // 没有找到例句，找柯林斯例句和牛津
+        if (StrUtil.isEmpty(sampleSentenceEn)) {
+            //
+//            String expression7 = "[blng_sents_part][sentence-pair]";
+//            Object byPath7 = jsonObject.getByPath(expression7);
+//            System.out.println(byPath7.getClass().toString());
+//
+//            //  cn.hutool.json.JSONArray
+//            if(byPath7 instanceof JSONArray) {
+//                JSONArray jsonArray = (JSONArray) byPath7;
+//
+//
+
+//            }
+
+            System.out.println("####");
+
+//            if (objectCollinsEn != null) {
+//                sampleSentenceEn = objectCollinsEn.toString();
+//                vocInfo.setSampleSentenceEn(sampleSentenceEn);
+//            }
+//            if (objectCollinsCn != null) {
+//                String sampleSentenceCn = objectCollinsCn.toString();
+//                vocInfo.setSampleSentenceCn(sampleSentenceCn);
+//            }
         }
 
 //        JSONObject.get 2 sentSpeech sentTrans

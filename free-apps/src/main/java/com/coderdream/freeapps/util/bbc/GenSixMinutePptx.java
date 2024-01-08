@@ -22,9 +22,12 @@ import org.springframework.util.ObjectUtils;
 public class GenSixMinutePptx {
 
     public static void main(String[] args) {
-//        String targetPath = "result.pptx";
-        String folderName = "230413";
-        String titleName = "文化如何影响悲伤";
+//        String targetPath = "result.pptx";-
+        String folderName = "230119";
+        String titleName = "拜访制作香精的人";
+
+        folderName = "221027";
+        titleName = "万圣节服装太吓人了吗？";
         System.out.println(folderName.substring(3));
         GenSixMinutePptx.genPpt(folderName, titleName);
     }
@@ -90,8 +93,11 @@ public class GenSixMinutePptx {
         // 2. add data to dataSource 填充数据
         DataSource dataSource = new DataSource();
         Title title = new Title(titleName, titleName, folderName);
-        Map props = new HashMap();
+        Map props = new HashMap(); // 末日滚动：我们为什么喜欢末日滚动？
         props.put("titleName", titleName);
+        if("230209".equals(folderName)) {
+            props.put("titleName", "我们为什么喜欢末日滚动？");
+        }
 
         List<VocInfo> vocInfoList = DictUtils.getVocInfoList(folderName);
         int i = 1;
@@ -117,6 +123,7 @@ public class GenSixMinutePptx {
         }
 
         dataSource.setVariable("title", title);
+        props.put("secretCode", folderName);
         dataSource.setVariable("props", props);
         engine.setDataSource(dataSource);
 

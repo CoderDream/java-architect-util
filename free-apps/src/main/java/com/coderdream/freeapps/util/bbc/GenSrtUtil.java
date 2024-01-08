@@ -1,6 +1,7 @@
 package com.coderdream.freeapps.util.bbc;
 
 import cn.hutool.core.collection.CollectionUtil;
+import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.StrUtil;
 import com.coderdream.freeapps.util.other.CdFileUtils;
 import com.coderdream.freeapps.util.other.CdExcelUtil;
@@ -27,21 +28,13 @@ public class GenSrtUtil {
     public static void main(String[] args) {
 
 //        ep230907();
-        String folderName = "230413";
+        String folderName = "220106";
 
-        List<String> stringList = GenSrtUtil.processScriptDialogV2(folderName);
+        List<String> stringList = GenSrtUtil.processScriptDialog(folderName);
         System.out.println("##########################");
         for (int i = 0; i < stringList.size(); i++) {
             System.out.println("#" + i + "\t:length: " + stringList.get(i).length() + "\t\t: " + stringList.get(i));
-//            System.out.println(s);
         }
-//
-//        checkSentenceLength(folderName, fileName);
-
-//        fileName = "230921_6_minute_english_how_fans_talk_about_their_passions.chn";
-//        processCnSrt(folderName, fileName);
-
-//        replace();
     }
 
     /**
@@ -52,12 +45,28 @@ public class GenSrtUtil {
     public static List<String> getHost() {
         String folderPath =
             CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "dict";
-        String filePath = folderPath + File.separator + "host.xlsx";
+//        String filePath = folderPath + File.separator + "host.xlsx";
+        String filePath = folderPath + File.separator + "host.txt";
 
-        List<String> hostList = CdExcelUtil.genHostList(filePath);
+//        List<String> hostList = CdExcelUtil.genHostList(filePath);
 //        System.out.println(hostList.stream().map(String::valueOf).collect(Collectors.joining(",")));
 
+        List<String> hostList = FileUtil.readLines(filePath, "UTF-8");
         return hostList;
+    }
+
+    public static void writeHost(String folderName, List<String> talkerList) {
+        String folderPath =
+            CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "dict";
+//        String filePath = folderPath + File.separator + "host.xlsx";
+        String filePath = folderPath + File.separator + "host.txt";
+        String filePathNew = folderPath + File.separator + folderName + "_host.txt";
+
+//        List<String> hostList = CdExcelUtil.genHostList(filePath);
+//        System.out.println(hostList.stream().map(String::valueOf).collect(Collectors.joining(",")));
+
+        FileUtil.writeLines(talkerList, filePath, "UTF-8");
+        FileUtil.writeLines(talkerList, filePathNew, "UTF-8");
     }
 
     /**
@@ -203,7 +212,7 @@ public class GenSrtUtil {
         return scriptList;
     }
 
-    private static void processCommaScript(String str,  List<String> scriptList) {
+    private static void processCommaScript(String str, List<String> scriptList) {
         String tempStr;
         // 根据逗号分割
         String[] commaArr = str.split(",");
@@ -227,6 +236,12 @@ public class GenSrtUtil {
         hostSet.addAll(getHost());
         String filePath = CommonUtil.getFullPathFileName(folderName, fileName, ".txt");
         List<String> scriptList = new ArrayList<>();
+
+        if(folderName.startsWith("22") || folderName.startsWith("21")) {
+            scriptList.add("This is a download from bbc learning English.");
+            scriptList.add("To find out more, visit our website.");
+        }
+
         scriptList.add("6 Minute English from bbc learningenglish.com");
         try {
 //            BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath));

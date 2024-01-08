@@ -10,6 +10,7 @@ import com.coderdream.freeapps.dto.ProxyInfo;
 import com.coderdream.freeapps.dto.RecommendApp;
 import com.coderdream.freeapps.dto.TopList;
 import com.coderdream.freeapps.model.WordEntity;
+import com.coderdream.freeapps.model.WordInfo;
 import com.coderdream.freeapps.util.bbc.AbbrevComplete;
 import com.coderdream.freeapps.util.bbc.Talker;
 import java.io.File;
@@ -370,12 +371,12 @@ public class CdExcelUtil {
     /**
      * @return 单词列表
      */
-    public static List<WordEntity> genWordEntityList(String filePath) {
+    public static List<WordEntity> genWordEntityList(String filePath, String sheetName) {
 //        String dateStr = new SimpleDateFormat("yyyyMMdd").format(new Date());
 //        String path = BaseUtils.getPath();
 //        String fileName = File.separator + path + File.separator + dateStr + ".xlsx";
 //        ExcelReader reader = ExcelUtil.getReader(FileUtil.file(fileName), "Sheet1");
-        ExcelReader reader = ExcelUtil.getReader(FileUtil.file(filePath), "Sheet1");
+        ExcelReader reader = ExcelUtil.getReader(FileUtil.file(filePath), sheetName);
         // 单词	英音	美音	释义	等级
         reader.addHeaderAlias("单词", "word");
         reader.addHeaderAlias("英音", "uk");
@@ -386,6 +387,30 @@ public class CdExcelUtil {
         for (WordEntity wordEntity : recommendAppList) {
             wordEntity.setWord(wordEntity.getWord().toLowerCase());
             wordEntity.setComment(wordEntity.getComment().replaceAll("\n", ";"));
+        }
+        reader.close();
+
+        return recommendAppList;
+    }
+
+    public static List<WordInfo> genWordInfoList(String filePath, String sheetName) {
+//        String dateStr = new SimpleDateFormat("yyyyMMdd").format(new Date());
+//        String path = BaseUtils.getPath();
+//        String fileName = File.separator + path + File.separator + dateStr + ".xlsx";
+//        ExcelReader reader = ExcelUtil.getReader(FileUtil.file(fileName), "Sheet1");
+        ExcelReader reader = ExcelUtil.getReader(FileUtil.file(filePath), sheetName);
+        // 单词	英音	美音	释义	等级
+        reader.addHeaderAlias("单词", "word");
+        reader.addHeaderAlias("英音", "uk");
+        reader.addHeaderAlias("美音", "us");
+        reader.addHeaderAlias("释义", "comment");
+        reader.addHeaderAlias("等级", "level");
+        reader.addHeaderAlias("次数", "times");
+        List<WordInfo> recommendAppList = reader.readAll(WordInfo.class);
+        for (WordInfo wordInfo : recommendAppList) {
+            wordInfo.setWord(wordInfo.getWord().toLowerCase());
+            wordInfo.setComment(wordInfo.getComment().replaceAll("\n", ";"));
+            wordInfo.setLevelStr(wordInfo.getLevel());
         }
         reader.close();
 

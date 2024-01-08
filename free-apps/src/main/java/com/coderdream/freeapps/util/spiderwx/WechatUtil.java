@@ -400,7 +400,7 @@ public class WechatUtil {
         File picFile = new File(freeDate + "/" + picName);
         if (!picFile.exists()) {
             // 下载应用图片
-            DownloadUtil.downloadPicture(snapshot, path, picName);
+            DownloadUtil.downloadFile(snapshot, path, picName);
         }
         // 截取QR图片
         File srcImageFile = new File(path + "/" + picName);

@@ -19,7 +19,7 @@ public class MsTtsServiceTest {
 
     @Test
     public void testGenDailyPpt() {
-        MsTtsEntity msTtsEntity = SpeechUtils.genTodayMp3(38);
+        MsTtsEntity msTtsEntity = SpeechUtils.genTodayMp3(28);
         Boolean result = msTtsService.saveOrUpdateBatch(Arrays.asList(msTtsEntity));
         log.info(result + "");
         JdbcTemplate a;

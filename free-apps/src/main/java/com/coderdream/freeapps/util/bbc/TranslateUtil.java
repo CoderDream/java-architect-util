@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * @author CoderDream
@@ -19,35 +20,62 @@ public class TranslateUtil {
 
     public static void main(String[] args) {
 
-        String folderName = "230302";
+        String folderName = "220609";
 //        TranslateUtil.process(folderName);
-//        TranslateUtil.mergeScriptContent(folderName);
+        TranslateUtil.mergeScriptContent(folderName);
 //        TranslateUtil.translateEngSrc(folderName);
 
+//        String str = "大括号外面的内容（Michael Collins）的内容（Michael Collins） ";
+//        str = removeEnContent(str);
+//        System.out.println(str);
 //
 //        List<String> NUMBER_LIST = Arrays.asList("230406", "230413", "230420", "230427");
 //        TranslateUtil.translateTitle(NUMBER_LIST);
 
 //        TranslateUtil.mergeScriptContentWx(folderName);
 
-        translateAllTitle();
+        //translateAllTitle();
+
+//        process(folderName);
+    }
+
+    @NotNull
+    private static String removeEnContent(String str) {
+        do {
+            int startIndex = str.indexOf("（");
+            int endIndex = str.indexOf("）");
+            if (startIndex != -1 && endIndex != -1) {
+                str = str.replaceAll(str.substring(startIndex, endIndex + 1), "");
+            }
+        } while (str.contains("（") && str.contains("）"));
+        return str;
     }
 
     public static List<String> translateTitle(List<String> folderNameList, String fileName) {
-        if (fileName == null) {
-            fileName = "script_raw";
-        }
+//        if (fileName == null) {
+//            fileName = "script_raw";
+//        }
+        // 220303_script.txt
+//        if (fileName.endsWith("_script.txt")) {
+//            // TODO
+//        }
+
+        // 6 Minute English
+        // word-for-word transcript
         List<String> titleList = new ArrayList<>();
         for (String folderName : folderNameList) {
+            fileName = folderName + "_script"; // TODO 指定
             String srcFileName = CommonUtil.getFullPathFileName(folderName, fileName, ".txt");
             List<String> stringList = CdFileUtils.readFileContent(srcFileName);
 
             String title;
             int size = stringList.size();
-
-            if(CollectionUtil.isNotEmpty(stringList)) {
-                titleList.add(stringList.get(0));
+            if (CollectionUtil.isNotEmpty(stringList)) {
+                //    titleList.add(stringList.get(0));
+                titleList.add(getTitleString(stringList));
             }
+
+
         }
 
         String textTitleList = titleList.stream().map(String::valueOf).collect(Collectors.joining("\r\n"));
@@ -67,14 +95,37 @@ public class TranslateUtil {
             newList.add(titleTranslate);
         }
 
-        String srcFileNameCn = BbcConstants.ROOT_FOLDER_NAME + File.separator + "title.txt";
+//        String srcFileNameCn = BbcConstants.ROOT_FOLDER_NAME + File.separator + "title.txt";
         // 写中文翻译文本
-        CdFileUtils.writeToFile(srcFileNameCn, newList);
+//        CdFileUtils.writeToFile(srcFileNameCn, newList);
         return titleCnList;
+    }
+
+    private static String getTitleString(List<String> stringList) {
+        int startIndex = 0;
+        int endIndex = 0;
+
+        for (int i = 0; i < stringList.size(); i++) {
+            if (stringList.get(i).contains("6 Minute English")) {
+                startIndex = i;
+            }
+            if (stringList.get(i).contains("word-for-word transcript")) {
+                endIndex = i;
+                break;
+            }
+        }
+        StringBuilder result = new StringBuilder();
+
+        for (int i = startIndex + 1; i < endIndex; i++) {
+            result.append(stringList.get(i));
+        }
+
+        return result.toString();
     }
 
     /**
      * 手工粘贴文本
+     *
      * @param folderNameList
      * @param fileName
      * @return
@@ -136,6 +187,7 @@ public class TranslateUtil {
         List<String> stringList = CdFileUtils.readFileContent(srcFileName);
 
         String text = stringList.stream().map(String::valueOf).collect(Collectors.joining("\r\n"));
+        System.out.println("text:  " + text);
         List<String> stringListCn = TranslatorTextUtil.translatorText(text);
 
         List<String> newList = new ArrayList<>();
@@ -143,7 +195,7 @@ public class TranslateUtil {
             String temp = stringListCn.get(i);
             String[] arr = temp.split("\r\n");
             for (int j = 0; j < arr.length; j++) {
-                upgradeTranslate(folderName, arr, j);
+                upgradeTranslate(folderName, arr, j, stringList);
 
                 System.out.println(arr[j]);
                 newList.add(arr[j]);
@@ -167,13 +219,31 @@ public class TranslateUtil {
      * @param arr
      * @param j
      */
-    private static void upgradeTranslate(String folderName, String[] arr, int j) {
+    private static void upgradeTranslate(String folderName, String[] arr, int j, List<String> subtitleList) {
         if ("抢".equals(arr[j])) {
             arr[j] = "罗伯";
         }
         if ("山 姆".equals(arr[j])) {
             arr[j] = "山姆";
         }
+        if ("井".equals(arr[j])) {
+            arr[j] = "嗯";
+        }
+        if ("右".equals(arr[j])) {
+            arr[j] = "是的";
+        }
+
+        if ("右！".equals(arr[j])) {
+            arr[j] = "好的！";
+        }
+
+        // 医 管 局！
+        // （Michael Collins） 去掉大括号及大括号内的内容
+        arr[j] = removeEnContent(arr[j]);
+        arr[j] = arr[j].replaceAll(" 6 Minute English ", "六分钟英语");
+        arr[j] = arr[j].replaceAll("医 管 局", "哈哈");
+        arr[j] = arr[j].replaceAll("乔吉", "乔治");
+        arr[j] = arr[j].replaceAll("成语", "谚语");
         arr[j] = arr[j].replaceAll("Rob", "罗伯");
         arr[j] = arr[j].replaceAll("伟大！", "太好了！");
         arr[j] = arr[j].replaceAll("右。", "好的。"); // Right应该翻译成好的，而不是右
@@ -181,11 +251,32 @@ public class TranslateUtil {
         arr[j] = arr[j].replaceAll("6分钟", "六分钟");
         arr[j] = arr[j].replaceAll(" 6 分钟", "六分钟");
         arr[j] = arr[j].replaceAll(";", "；");
+        arr[j] = arr[j].replaceAll("“拯救大象”（Save the Elephants）", "“拯救大象”");
+        arr[j] = arr[j].replaceAll("六分钟又到了", "六分钟时间又到了"); // 英国广播公司（BBC）
+        arr[j] = arr[j].replaceAll("英国广播公司（BBC）", "英国广播公司"); // 英国广播公司（BBC）
+
         arr[j] = arr[j].replaceAll("——", " —— ");// ——
+        if (-1 != arr[j].lastIndexOf("程序") && -1 != subtitleList.get(j).lastIndexOf("programme")) {
+            arr[j] = arr[j].replaceAll("程序", "节目");
+        }
+        if (-1 != arr[j].lastIndexOf("课程") && -1 != subtitleList.get(j).lastIndexOf("programme")) {
+            arr[j] = arr[j].replaceAll("课程", "节目");
+        }
+
+        // 维克托
+        arr[j] = arr[j].replaceAll("Victor;", "维克多");
+
         arr[j] = arr[j].trim();//去掉前后空格
         if ("231026".equals(folderName)) {
             arr[j] = arr[j].replaceAll("一百个", "一百岁");
         }
+
+        if ("231109".equals(folderName)) {
+            if (arr[j].equals("幸运")) {
+                arr[j] = arr[j].replaceAll("幸运", "幸运的是");
+            }
+        }
+
         // 针对230413的AI翻译优化
         if ("230413".equals(folderName)) {
             arr[j] = arr[j].replaceAll("垃圾场", "情绪低落");
@@ -243,8 +334,8 @@ public class TranslateUtil {
                 break;
             }
             for (int j = 0; j < arr.length; j++) {
-
-                upgradeTranslate(folderName, arr, j);
+                // 优化翻译
+                upgradeTranslate(folderName, arr, j, subtitleList);
 
                 System.out.println(arr[j]);
                 subtitleBaseEntity = subtitleBaseEntityList.get(j);
@@ -294,22 +385,35 @@ public class TranslateUtil {
         List<ScriptEntity> scriptEntityListCn = CdFileUtils.genScriptEntityList(srcFileNameCn);
         ScriptEntity scriptEntityEn;
         ScriptEntity scriptEntityCn;
+        String scriptEn;
+        String scriptCn;
         List<String> newList = new ArrayList<>();
-        if (scriptEntityListEn.size() == scriptEntityListCn.size()) {
+        if (CollectionUtil.isNotEmpty(scriptEntityListEn) && CollectionUtil.isNotEmpty(scriptEntityListCn)
+            && scriptEntityListEn.size() == scriptEntityListCn.size()) {
             for (int i = 0; i < scriptEntityListEn.size(); i++) {
                 scriptEntityEn = scriptEntityListEn.get(i);
+                scriptEn = scriptEntityEn.getContent();
+                scriptEn = scriptEn.replaceAll("Hello. This is 6 Minute English from BBC Learning English. ", "");
                 scriptEntityCn = scriptEntityListCn.get(i);
+                scriptCn = scriptEntityCn.getContent();
+                scriptCn = scriptCn.replaceAll("你好。这是来自BBC学习英语的六分钟英语。", "");
                 newList.add(scriptEntityEn.getTalker() + "(" + scriptEntityCn.getTalker() + ")");
-                newList.add(scriptEntityEn.getContent() + "\r\n" + scriptEntityCn.getContent());
+                newList.add(scriptEn + "\r\n" + scriptCn);
                 newList.add("");
             }
         } else {
-            System.out.println(
-                "两个脚本格式不对，实体大小分别为：" + scriptEntityListEn.size() + "\t:\t"
-                    + scriptEntityListCn.size()); //
+            if (CollectionUtil.isEmpty(scriptEntityListEn)) {
+                System.out.println("scriptEntityListEn 为空。");
+            } else if (CollectionUtil.isEmpty(scriptEntityListCn)) {
+                System.out.println("scriptEntityListCn 为空。");
+            } else {
+                System.out.println(
+                    "两个脚本格式不对，实体大小分别为：" + scriptEntityListEn.size() + "\t:\t"
+                        + scriptEntityListCn.size()); //
+            }
         }
 
-        String srcFileNameMerge = CommonUtil.getFullPathFileName(folderName, fileName, "_merge.txt");
+        String srcFileNameMerge = CommonUtil.getFullPathFileName(folderName, folderName, "_中英双语对话脚本.txt");
         // 写中文翻译文本
         CdFileUtils.writeToFile(srcFileNameMerge, newList);
     }
@@ -341,7 +445,7 @@ public class TranslateUtil {
 
             for (int j = 0; j < arr.length; j++) {
 
-                upgradeTranslate(folderName, arr, j);
+                upgradeTranslate(folderName, arr, j, stringList);
 
                 System.out.println(arr[j]);
 //                subtitleBaseEntity = subtitleBaseEntityList.get(j);

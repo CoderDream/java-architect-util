@@ -535,12 +535,12 @@ public class MediaUtil {
      * 解析视频的基本信息（从文件中）
      * <p>
      * 解析出的视频信息一般为以下格式： Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '6.mp4': Duration: 00:00:30.04, start: 0.000000,
-     * bitrate: 19031 kb/s Stream #0:0(eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709), 1920x1080,
+     * bitrate: 19031 kb/s Stream #0:0(eng): Video: h264 (RssParserUtil) (avc1 / 0x31637661), yuv420p(tv, bt709), 1920x1080,
      * 18684 kb/s, 25 fps, 25 tbr, 25k tbn, 50 tbc (default) Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D),
      * 48000 Hz, stereo, fltp, 317 kb/s (default)
      * <p>
      * 注解： Duration: 00:00:30.04【视频时长】, start: 0.000000【视频开始时间】, bitrate: 19031 kb/s【视频比特率/码率】 Stream #0:0(eng): Video:
-     * h264【视频编码格式】 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709), 1920x1080【视频分辨率，宽x高】, 18684【视频比特率】 kb/s, 25【视频帧率】
+     * h264【视频编码格式】 (RssParserUtil) (avc1 / 0x31637661), yuv420p(tv, bt709), 1920x1080【视频分辨率，宽x高】, 18684【视频比特率】 kb/s, 25【视频帧率】
      * fps, 25 tbr, 25k tbn, 50 tbc (default) Stream #0:1(eng): Audio: aac【音频格式】 (LC) (mp4a / 0x6134706D), 48000【音频采样率】
      * Hz, stereo, fltp, 317【音频码率】 kb/s (default)
      *

@@ -26,20 +26,13 @@ import java.util.stream.Collectors;
 public class ProcessRawTxtUtil {
 
     public static void main(String[] args) {
-        String folderName = "231102";
+        String folderName = "221124";
         ProcessRawTxtUtil.processRawTxtSrt(folderName);
 
 //        replace();
     }
 
     /**
-     * <pre>
-     *     整理中文字幕：
-     *     1、替换中文冒号为英文冒号；
-     *     2、去掉中文字幕中多余的空格，先【 -> 】替换为【#->#】，然后去掉空格，最后再换回来，（【#->#】替换为【 -> 】）
-     *
-     * </pre>
-     *
      * @param folderName
      */
     public static void processRawTxtSrt(String folderName) {
@@ -52,7 +45,8 @@ public class ProcessRawTxtUtil {
         List<String> vocList = new ArrayList<>();
         List<String> scriptList = new ArrayList<>();
         String str = "";
-        int vocIndex = 0;
+        int vocBeginIndex = 0;
+        int vocEndIndex = 0;
         int transcriptIndex = 0;
 
         int scriptBeginIndex = 0;
@@ -60,29 +54,54 @@ public class ProcessRawTxtUtil {
         int size = stringList.size();
         for (int i = 0; i < size; i++) {
             String tempStr = stringList.get(i);
-            System.out.println("tempStr: " + tempStr);
+//            System.out.println("tempStr: " + tempStr);
             if ("Vocabulary".equals(tempStr)) {
-                vocIndex = i;
+                if (StrUtil.isNotEmpty(stringList.get(i + 1))) {
+                    vocBeginIndex = i + 1;
+                }
+                if (StrUtil.isNotEmpty(stringList.get(i + 2))) {
+                    vocBeginIndex = i + 2;
+                }
             }
 
+//            if ("TRANSCRIPT".equals(tempStr)) {
+//                transcriptIndex = i;
+//            }
+
             if ("TRANSCRIPT".equals(tempStr)) {
-                transcriptIndex = i;
+                if (StrUtil.isNotEmpty(stringList.get(i + 1))) {
+                    scriptBeginIndex = i + 1;
+                    vocEndIndex = i - 1;
+                }
+                if (StrUtil.isNotEmpty(stringList.get(i + 2))) {
+                    scriptBeginIndex = i + 2;
+                    vocEndIndex = i;
+                }
+            }
+
+            if (-1 != tempStr.lastIndexOf("word-for-word transcript")) {
+                for(int x = 1; x < 6; x++) {
+                    if (StrUtil.isNotEmpty(stringList.get(i + x))) {
+                        scriptBeginIndex = i + x;
+                        break;
+                    }
+                }
             }
 
             // 找到脚本的第一非空字符串的位置就是脚本的开始位置
-            if (tempStr.endsWith("word-for-word transcript.") || tempStr.endsWith("word-for-word transcript")
-                || -1 != tempStr.lastIndexOf("word-for-word transcript")) {
-                System.out.println("#####" + tempStr);
-                if (StrUtil.isNotEmpty(stringList.get(i + 1))) {
-                    scriptBeginIndex = i + 1;
-                } else if (StrUtil.isNotEmpty(stringList.get(i + 2))) {
-                    scriptBeginIndex = i + 2;
-                }
-            }
+//            if (tempStr.endsWith("word-for-word transcript.") || tempStr.endsWith("word-for-word transcript")
+//                || -1 != tempStr.lastIndexOf("word-for-word transcript")) {
+//                System.out.println("#####" + tempStr);
+//                if (StrUtil.isNotEmpty(stringList.get(i + 1))) {
+//                    scriptBeginIndex = i + 1;
+//                } else if (StrUtil.isNotEmpty(stringList.get(i + 2))) {
+//                    scriptBeginIndex = i + 2;
+//                }
+//            }
             // 脚本结束位置
-            if ("Latest 6 Minute English".equals(tempStr)) {
-                scriptEndIndex = i;
-            }
+//            if ("Latest 6 Minute English".equals(tempStr)) {
+//                scriptEndIndex = i;
+//            }
         }
 
         if (scriptEndIndex == 0) {
@@ -90,10 +109,13 @@ public class ProcessRawTxtUtil {
         }
 
         // 设置词汇表的字符串列表
-        for (int i = vocIndex + 1; i < transcriptIndex; i++) {
+        for (int i = vocBeginIndex; i < vocEndIndex; i++) {
             String tempStr = stringList.get(i);
+            String prevStr = stringList.get(i - 1);
             System.out.println("VOC tempStr: " + tempStr);
-            vocList.add(tempStr);
+            if (StrUtil.isNotEmpty(tempStr) || StrUtil.isNotEmpty(prevStr)) {
+                vocList.add(tempStr);
+            }
         }
 
         // 设置对话脚本的字符串列表
@@ -102,6 +124,7 @@ public class ProcessRawTxtUtil {
             System.out.println("script: " + tempStr);
             scriptList.add(tempStr);
         }
+        scriptList.add("");// 补最后的空格
 
         // (scriptList.get(i).startsWith("a)") || scriptList.get(i).startsWith("b)") ||
         // TODO 处理问题，将问题及选项合并到同一段落
@@ -206,7 +229,8 @@ public class ProcessRawTxtUtil {
                     tempList.add(scriptList.get(j));
                 }
                 String text = tempList.stream().map(String::valueOf).collect(Collectors.joining(" "));
-                text = text.replaceAll("  ", " ");
+                text = text.replaceAll("  ", " ");// 将两个空格变成一个空格
+                text = text.replaceAll(" ,", ",");// 去掉逗号前面的空格
                 // 增加谈话内容
                 finalList.add(text);
                 // 增加空格
@@ -218,8 +242,28 @@ public class ProcessRawTxtUtil {
                 }
             }
         }
+        scriptList = new ArrayList<>();
+        // 移除多余的空行，只保留一个
+        boolean emptyFlag = false;
+        for (int j = 0; j < finalList.size(); j++) {
+            if(!emptyFlag || StrUtil.isNotEmpty(finalList.get(j))) {
+                scriptList.add(finalList.get(j));
+            }
 
-        scriptList = finalList;
+            emptyFlag = StrUtil.isEmpty(finalList.get(j));
+
+//            if(j > 0) {
+//                String str1 = finalList.get(j);
+//                String str2 = stringList.get(j - 1);
+//                System.out.println("VOC tempStr: " + str1 + "\t|\t");
+//                if (StrUtil.isNotEmpty(str1) || StrUtil.isNotEmpty(str2)) {
+//                    scriptList.add(str1);
+//                }
+//            } else {
+//                scriptList.add(finalList.get(j));
+//            }
+        }
+
         // 校验脚本并补上末尾的句号
         int scriptListSize = scriptList.size();
         String scriptStr = "";
@@ -227,18 +271,20 @@ public class ProcessRawTxtUtil {
         if (scriptListSize % 3 == 0) {
             for (int i = 0; i < scriptListSize; i += 3) {
                 scriptStr = scriptList.get(i + 1);
-                lastChar = scriptStr.substring(scriptStr.length() - 1);
-                System.out.println("LAST_CHAR:\t" + lastChar);
-                if (StrUtil.isNotEmpty(lastChar) && !".".equals(lastChar) && !"!".equals(lastChar) && !"?".equals(
-                    lastChar) && !"…".equals(lastChar) && !":".equals(lastChar)) {
-                    scriptList.set(i + 1, scriptList.get(i + 1) + ".");
+                if (StrUtil.isNotEmpty(scriptStr)) {
+                    lastChar = scriptStr.substring(scriptStr.length() - 1);
+//                    System.out.println("LAST_CHAR:\t" + lastChar);
+                    if (StrUtil.isNotEmpty(lastChar) && !".".equals(lastChar) && !"!".equals(lastChar) && !"?".equals(
+                        lastChar) && !"…".equals(lastChar) && !":".equals(lastChar)) {
+                        scriptList.set(i + 1, scriptList.get(i + 1) + ".");
+                    }
                 }
             }
 
             CdFileUtils.writeToFile(newFileName, scriptList);
 
             // 更新Talker
-            updateHostFile(scriptList);
+//            updateHostFile(scriptList);
 
         } else {
             System.out.println("ERRRRR");

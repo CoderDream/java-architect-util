@@ -2,6 +2,8 @@ package com.coderdream.freeapps.util.proxy;
 
 import com.coderdream.freeapps.model.DownloadInfoEntity;
 import com.coderdream.freeapps.util.other.DownloadUtil;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.LinkedBlockingDeque;
@@ -9,6 +11,9 @@ import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author CoderDream
+ */
 public class MultiThreadDownloadHtmlExecuter {
 
     public static Integer POOL_SIZE = 50;
@@ -42,7 +47,20 @@ public class MultiThreadDownloadHtmlExecuter {
         handler);
 
     public void initTestArr() {
-        List<DownloadInfoEntity> downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo();
+        boolean test = true;
+        List<DownloadInfoEntity> downloadInfoEntityListTemp = new ArrayList<>();
+        if (test) {
+            DownloadInfoEntity infoEntity = new DownloadInfoEntity();
+            String ep = "231207";
+            infoEntity.setFileUrl(
+                "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2023/ep-" + ep + "");
+            infoEntity.setPath("D:/14_LearnEnglish/6MinuteEnglish/2023/" + ep + "/");
+            infoEntity.setFileName(ep + ".html");
+            downloadInfoEntityListTemp = Arrays.asList(infoEntity);
+        } else {
+            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("2023", "01");
+        }
+
         for (DownloadInfoEntity downloadInfoEntity : downloadInfoEntityListTemp) {
             downloadInfoEntityList.add(downloadInfoEntity);
         }
@@ -82,7 +100,6 @@ public class MultiThreadDownloadHtmlExecuter {
 
     public static void main(String[] args) {
         startTime = System.currentTimeMillis();
-
         MultiThreadDownloadHtmlExecuter test = new MultiThreadDownloadHtmlExecuter();
         test.initTestArr();
         test.printByMulThread();

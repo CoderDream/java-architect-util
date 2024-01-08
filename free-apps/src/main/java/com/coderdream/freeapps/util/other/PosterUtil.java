@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import javax.imageio.ImageIO;
-import sun.font.FontDesignMetrics;
+//import sun.font.FontDesignMetrics;
 
 /**
  * @ClassName PictorialUtils
@@ -195,34 +195,34 @@ public class PosterUtil {
      * @Param []
      **/
     private static void drawWordAndLineFeed(Graphics2D g2d, Font font, String words, int wordsX, int wordsY, int wordsWidth) {
-        FontDesignMetrics metrics = FontDesignMetrics.getMetrics(font);
-        // 获取字符的最高的高度
-        int height = metrics.getHeight();
-
-        int width = 0;
-        int count = 0;
-        int total = words.length();
-        String subWords = words;
-        int b = 0;
-        for (int i = 0; i < total; i++) {
-            // 统计字符串宽度 并与 预设好的宽度 作比较
-            if (width <= wordsWidth) {
-                width += metrics.charWidth(words.charAt(i)); // 获取每个字符的宽度
-                count++;
-            } else {
-                // 画 除了最后一行的前几行
-                String substring = subWords.substring(0, count);
-                g2d.drawString(substring, wordsX, wordsY + (b * height));
-                subWords = subWords.substring(count);
-                b++;
-                width = 0;
-                count = 0;
-            }
-            // 画 最后一行字符串
-            if (i == total - 1) {
-                g2d.drawString(subWords, wordsX, wordsY + (b * height));
-            }
-        }
+//        FontDesignMetrics metrics = FontDesignMetrics.getMetrics(font);
+//        // 获取字符的最高的高度
+//        int height = metrics.getHeight();
+//
+//        int width = 0;
+//        int count = 0;
+//        int total = words.length();
+//        String subWords = words;
+//        int b = 0;
+//        for (int i = 0; i < total; i++) {
+//            // 统计字符串宽度 并与 预设好的宽度 作比较
+//            if (width <= wordsWidth) {
+//                width += metrics.charWidth(words.charAt(i)); // 获取每个字符的宽度
+//                count++;
+//            } else {
+//                // 画 除了最后一行的前几行
+//                String substring = subWords.substring(0, count);
+//                g2d.drawString(substring, wordsX, wordsY + (b * height));
+//                subWords = subWords.substring(count);
+//                b++;
+//                width = 0;
+//                count = 0;
+//            }
+//            // 画 最后一行字符串
+//            if (i == total - 1) {
+//                g2d.drawString(subWords, wordsX, wordsY + (b * height));
+//            }
+//        }
     }
 
 

@@ -64,6 +64,41 @@ public class TxtUtil {
      * @author gxx
      * @date: 2019年8月5日 下午5:47:11
      */
+    public static List<String> readTxtFileToListWithEmpty(String path) {
+        List<String> result = new ArrayList<>();
+        StringBuilder stringBuilder = new StringBuilder();
+        InputStreamReader inputStreamReader = null;
+        FileInputStream inputStream = null;
+        try {
+            inputStream = new FileInputStream(new File(path));
+            inputStreamReader = new InputStreamReader(inputStream);
+            BufferedReader br = new BufferedReader(inputStreamReader);
+            String s;
+            while ((s = br.readLine()) != null) {
+                stringBuilder.append(s);
+                result.add(s);
+            }
+        } catch (Exception e) {
+            logger.error(e.getMessage(), e);
+        } finally {
+            if (inputStream != null) {
+                try {
+                    inputStream.close();
+                } catch (IOException e) {
+                    logger.error(e.getMessage(), e);
+                }
+            }
+            if (inputStreamReader != null) {
+                try {
+                    inputStreamReader.close();
+                } catch (IOException e) {
+                    logger.error(e.getMessage(), e);
+                }
+            }
+        }
+        return result;
+    }
+
     public static List<String> readTxtFileToList(String path) {
         List<String> result = new ArrayList<>();
         StringBuilder stringBuilder = new StringBuilder();
