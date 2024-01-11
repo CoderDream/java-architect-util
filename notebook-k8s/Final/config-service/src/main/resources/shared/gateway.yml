@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: gateway-server
+info:
+  component: Edge Server
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+#zuul:
+#  routes:
+#    notebook:
+#      path: /**
+#      url: http://${NOTEBOOK_SERVICE}:${NOTEBOOK_SERVICE_PORT}
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  ${DISCOVERY_URL:http://eureka-server:8761}/eureka/
+
+server:
+  port: 8765
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.web: DEBUG
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: info, health, routes

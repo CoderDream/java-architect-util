@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: notebook-service
+
+server:
+  port: 1111
+

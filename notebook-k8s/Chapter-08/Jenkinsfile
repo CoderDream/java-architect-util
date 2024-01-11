@@ -1,0 +1,22 @@
+node {
+
+    stage('Pull source code') {
+       git 'https://git.imooc.com/coding-439/Notebook-k8s.git'
+
+    }
+    dir('Final/notebook-service') {
+        //构建 Maven
+        stage('Build and UI test'){
+            sh ' mvn package -Dmaven.test.skip=true'
+        }
+
+    }
+    dir('Chapter-8') {
+        //部署 notebook.jar to remote server
+
+        stage('Ansible Deploy to remote server'){
+            sh 'cp ../Final/notebook-service/target/notebook-service-1.0.jar ./'
+            sh 'ansible-playbook notebook-playbook.yml'
+        }
+    }
+ }

@@ -1,0 +1,15 @@
+- hosts: prod
+  vars:
+    http_port: 80
+    max_clients: 200
+  remote_user: root
+  tasks:
+    - name: Copy jar files to prod
+      copy: src=discovery-service-1.0.jar dest=/tmp
+          owner=root group=root mode=0644
+    - name: start jar
+      shell:  nohup java -jar /tmp/discovery-service-1.0.jar  &
+    - name: sleep 20 s
+      shell: sleep 20
+    - name: shut down
+      shell: kill -9 $(lsof -t -i:8761)

@@ -1,0 +1,6 @@
+- hosts: prod
+  remote_user: root
+  tasks:
+    - debug:
+        msg: "{{ item }}"
+      loop: "{{ groups['all'] }}"

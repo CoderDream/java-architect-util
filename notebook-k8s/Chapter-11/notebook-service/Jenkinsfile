@@ -1,0 +1,85 @@
+node {
+
+    stage('Pull source code') {
+       git 'https://git.imooc.com/coding-439/Notebook-k8s.git'
+
+    }
+    dir('Chapter-10/notebook-service') {
+
+
+        //构建 Maven
+        stage('Build and UI test'){
+            sh ' mvn test -Dmaven.test.skip=true'
+        }
+
+        //构建 Docker 镜像
+        stage('Build docker image and push'){
+            sh './buildAndPushImage.sh'
+
+            sh '''
+            docker build -t art.local:8081/docker/notebook-k8s/notebook-service:\$BUILD_NUMBER .
+            docker push art.local:8081/docker/notebook-k8s/notebook-service:\$BUILD_NUMBER
+            '''
+        }
+
+        //构建 Helm chart
+        dir('../k8s-deploy/charts'){
+            stage('build and upload helm chart'){
+                sh '''
+                helm package ./notebook --version 0.1.${BUILD_NUMBER}
+                curl -uadmin:passw0rd -T notebook-0.1.${BUILD_NUMBER}.tgz "http://localhost:8081/artifactory/helm/notebook-0.1.${BUILD_NUMBER}.tgz"
+                '''
+            }
+        }
+
+        //Deploy notebook service into Kubernetes by Helm chart.
+        stage('Deploy notebook chart into Kubernetes'){
+            sh '''
+            helm repo update
+            helm install notebook helm/notebook --namespace dev
+            sleep 20
+            '''
+        }
+
+        //启动 YAPI 接口测试
+        stage('API Testing'){
+          sh './execYAPI.sh'
+        }
+
+        stage('clean up dev namespace'){
+            sh '''
+            helm delete notebook --namespace dev
+            '''
+        }
+
+        stage('Promte docker image'){
+            sh '''
+                docker tag art.local:8081/docker/notebook-k8s/notebook-service:\$BUILD_NUMBER art.local:8081/docker-prod-local/notebook-k8s/notebook-service:\$BUILD_NUMBER
+                docker push art.local:8081/docker-prod-local/notebook-k8s/notebook-service:\$BUILD_NUMBER
+
+                docker tag art.local:8081/docker/notebook-k8s/notebook-service:\$BUILD_NUMBER art.local:8081/docker-prod-local/notebook-k8s/notebook-service:latest
+                docker push art.local:8081/docker-prod-local/notebook-k8s/notebook-service:latest
+            '''
+        }
+
+        dir('../k8s-deploy/charts/notebook'){
+            stage('deploy to kubernetes prod'){
+                sh '''
+
+                curl -uadmin:passw0rd -T ../notebook-0.1.${BUILD_NUMBER}.tgz "http://localhost:8081/artifactory/helm-prod/notebook-0.1.${BUILD_NUMBER}.tgz"
+                helm repo update
+                helm install notebook helm-prod/notebook --namespace prod --values values-prod.yaml
+                sleep 5
+                '''
+            }
+        }
+
+        stage('clean up prod namespace'){
+            sh '''
+            helm delete notebook --namespace prod
+            '''
+        }
+
+    }
+
+ }

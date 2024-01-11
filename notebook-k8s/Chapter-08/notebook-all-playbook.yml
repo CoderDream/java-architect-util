@@ -1,0 +1,4 @@
+- name: Import discovery service playbook
+  import_playbook: discovery-playbook.yml
+- name: Import notebook service playbook
+  import_playbook: notebook-playbook.yml

@@ -1,0 +1,10 @@
+
+- hosts: prod
+  remote_user: root
+  tasks:
+    - debug:
+        msg: "Main entrance of import"
+      loop: "{{ groups['all'] }}"
+
+- name: Include a play after another play
+  import_playbook: loop-playbook.yml
