@@ -39,11 +39,11 @@ public class BbcStepTest {
 //    private final List<String> NUMBER_LIST = Arrays.asList("230420", "230427");
 
     private final List<String> NUMBER_LIST = Arrays.asList(
-        "220804",
-        "220811"        ,
-        "220818",
-        "220825"
-//        "220728"
+        "220901",
+        "220908"        ,
+        "220915",
+        "220922",
+        "220929"
 //        "240104"
     );
 //
