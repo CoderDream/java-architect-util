@@ -11,6 +11,7 @@ import com.coderdream.freeapps.util.other.CdFileUtils;
 import com.coderdream.freeapps.util.other.TxtUtil;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -30,8 +31,82 @@ import org.springframework.beans.BeanUtils;
 public class WordCountUtil {
 
     public static void main(String[] args) {
-        String folderName = "240104";
-        WordCountUtil.genVocTable(folderName);
+//        String folderName = "240111";
+//        WordCountUtil.genVocTable(folderName);
+        List<String> NUMBER_LIST = Arrays.asList(
+//            "210107",
+//            "210114",
+//            "210121",
+//            "210128",
+//            "210211",
+//            "210218",
+//            "210225",
+//            "210304",
+//            "210311",
+//            "210318",
+//            "210325",
+//            "210401",
+//            "210408",
+//            "210415",
+//            "210422",
+//            "210429",
+//            "210506",
+//            "210513",
+//            "210520",
+//            "210527",
+//            "210603",
+//            "210610",
+//            "210617",
+//            "210624",
+//            "210701",
+//            "210708",
+//            "210715",
+//            "210719",
+//            "210722",
+//            "210726",
+//            "210729",
+//            "210802",
+//            "210805",
+//            "210809",
+//            "210812",
+//            "210816",
+//            "210819",
+//            "210823",
+//            "210826",
+//            "210902",
+//            "210906",
+//            "210909",
+//            "210913",
+//            "210916",
+//            "210920",
+//            "210923",
+//            "210927",
+//            "210930",
+//            "211007",
+//            "211014",
+//            "211021",
+//            "211028",
+//            "211104",
+//            "211111",
+//            "211118",
+//            "211125",
+//            "211202",
+//            "211209",
+//            "211216",
+//            "211223",
+//            "210304",
+//            "210311",
+//            "240125"
+            "210408"
+//            ,
+//            "210218",
+//            "210225"
+        );
+
+        for (String num : NUMBER_LIST) {
+            String folderName = "" + num;
+            WordCountUtil.genVocTable(folderName);
+        }
 
 //        System.out.println(WordCountUtil.removeChar("-abc"));
 //        System.out.println(WordCountUtil.removeChar("--abc"));

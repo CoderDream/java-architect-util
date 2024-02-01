@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: notebook
+  zipkin:
+    base-url: http://${ZIPKIN_SERVER}:${ZIPKIN_SERVER_PORT}
+server:
+#  context-path: /notebook
+  port: 1111
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  ${DISCOVERY_URL:http://eureka-server:8761}/eureka/
+#
+#ribbon:
+#  eureka:
+#    enabled: true

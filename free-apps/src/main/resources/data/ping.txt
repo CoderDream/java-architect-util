@@ -1,0 +1,135 @@
+
+全球领先的 IP 地址库_IPIP.NET首页 产品价格 IP查询 技术支持 客户 关于工具|Code...|English
+hdchina.org
+
+不填写，则使用监测点默认dns
+ 中国 亚洲 欧洲 非洲 大洋洲 北美洲 南美洲  使用API
+DNS地区	DNS-IP	解析IP	解析响应时间(ms)	赞助商
+北京电信通	211.167.242.34	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	43
+北京电信通	219.239.26.42	172.67.133.96(CLOUDFLARE.COM cloudflare.com)
+104.21.5.117(CLOUDFLARE.COM cloudflare.com)	47
+北京中国科技网	159.226.8.6	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	39
+重庆电信	61.128.128.68	172.67.133.96(CLOUDFLARE.COM cloudflare.com)
+104.21.5.117(CLOUDFLARE.COM cloudflare.com)	48
+内蒙古教育网	219.225.128.6	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	559
+新疆电信		*	*
+青海电信	202.100.138.68	172.67.133.96(CLOUDFLARE.COM cloudflare.com)
+104.21.5.117(CLOUDFLARE.COM cloudflare.com)	242
+广西教育网	210.36.80.26	*	*
+山东移动	120.192.181.166	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	127
+山西移动	211.142.44.108	172.67.133.96(CLOUDFLARE.COM cloudflare.com)
+104.21.5.117(CLOUDFLARE.COM cloudflare.com)	70
+河南联通		*	*
+浙江电信	202.96.104.25	172.67.133.96(CLOUDFLARE.COM cloudflare.com)
+104.21.5.117(CLOUDFLARE.COM cloudflare.com)	39
+浙江电信	60.191.244.5	172.67.133.96(CLOUDFLARE.COM cloudflare.com)
+104.21.5.117(CLOUDFLARE.COM cloudflare.com)	36
+安徽电信		*	*
+江西教育网		*	*
+香港Netvigator	203.198.7.66	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	7
+台湾中华电信	168.95.1.1	172.67.133.96(CLOUDFLARE.COM cloudflare.com)
+104.21.5.117(CLOUDFLARE.COM cloudflare.com)	18
+台湾和信超媒体	203.133.1.6	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	61
+台湾台湾固网	61.31.1.1	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	804
+日本InterNAP	61.211.161.1	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	40
+韩国DACOM	164.124.101.2	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	136	linode
+英国Global Crossing	64.215.98.148	172.67.133.96(CLOUDFLARE.COM cloudflare.com)
+104.21.5.117(CLOUDFLARE.COM cloudflare.com)	12
+英国Global Crossing	64.215.98.149	172.67.133.96(CLOUDFLARE.COM cloudflare.com)
+104.21.5.117(CLOUDFLARE.COM cloudflare.com)	24	Prometeus
+德国UUNET	192.76.144.66	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	68	VULTR
+瑞士UUNET	195.129.12.122	172.67.133.96(CLOUDFLARE.COM cloudflare.com)
+104.21.5.117(CLOUDFLARE.COM cloudflare.com)	67
+爱尔兰网络	62.40.32.33	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	87	DigitalOcean
+突尼斯网络	193.95.93.77	172.67.133.96(CLOUDFLARE.COM cloudflare.com)
+104.21.5.117(CLOUDFLARE.COM cloudflare.com)	78	Prometeus
+澳大利亚TPGi	203.12.160.35	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	8	VULTR
+澳大利亚Pacnet Australia	61.8.0.113	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	13	VULTR
+澳大利亚Pacnet Australia	210.23.129.34	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	302	VULTR
+美国Sprint	204.117.214.10	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	9	VULTR
+美国Sprint	199.2.252.10	172.67.133.96(CLOUDFLARE.COM cloudflare.com)
+104.21.5.117(CLOUDFLARE.COM cloudflare.com)	60	sshVM
+美国HE.NET	72.52.104.74	172.67.133.96(CLOUDFLARE.COM cloudflare.com)
+104.21.5.117(CLOUDFLARE.COM cloudflare.com)	19	VULTR
+美国LEVEL3	4.2.2.2	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	36	VULTR
+美国LEVEL3	4.2.2.1	172.67.133.96(CLOUDFLARE.COM cloudflare.com)
+104.21.5.117(CLOUDFLARE.COM cloudflare.com)	52	VULTR
+美国Global Crossing	206.165.6.11	172.67.133.96(CLOUDFLARE.COM cloudflare.com)
+104.21.5.117(CLOUDFLARE.COM cloudflare.com)	41	VULTR
+美国Global Crossing	206.165.6.12	172.67.133.96(CLOUDFLARE.COM cloudflare.com)
+104.21.5.117(CLOUDFLARE.COM cloudflare.com)	113	VULTR
+美国AT&T	165.87.13.129	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	49	linode
+美国UUNET	198.6.100.25	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	168	sshVM
+美国UltraDNS	156.154.70.1	172.67.133.96(CLOUDFLARE.COM cloudflare.com)
+104.21.5.117(CLOUDFLARE.COM cloudflare.com)	86	DigitalOcean
+美国UltraDNS	156.154.71.1	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	85	DigitalOcean
+墨西哥Bestel	200.57.2.108	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	213	sshVM
+巴西网络	189.38.95.95	104.21.5.117(CLOUDFLARE.COM cloudflare.com)
+172.67.133.96(CLOUDFLARE.COM cloudflare.com)	133	DigitalOcean
+IP数据相关服务采购需求发送邮件到：sales@ipip.net / 联系电话：010-85867767
+IPIP网站广告投放联系QQ：290525907
+监测点赞助请联系 QQ 群: 711651666
+行业报告
+云计算服务商2019-1H
+云计算服务商2018-2H
+云计算服务商2018-1H
+云计算服务商2017-2H
+云计算服务商2017-1H
+产品服务
+IP 地理位置定位
+IP 应用场景
+IPv4 高精度定位
+IPv6 地理位置库
+IPv4 风险画像
+网络安全基础数据
+BestTrace
+Windows
+Mac OS
+iOS
+Android
+Linux
+网络工具
+TraceRoute
+PING
+IP/ASN Whois 查询
+Country ASNs
+Internet eXchange
+Best NetTools
+关于IPIP
+公司简介
+工作机会
+隐私声明
+联系我们
+实验室
+联系我们
+电     话：010-85867767
+售后技术QQ：290525907
+邮     件：sales（at）ipip.net
+用户交流群：907401083
+数据反馈：correction（at）ipip.net
+© 2013 - 2024 北京天特信科技有限公司 所有权利保留
+
+本网站 SSL 证书由 TRUSTASIA 提供
+本网站安全防护服务由 上海云盾 提供
+京ICP备15064887号-6  京公网安备 11010502045129号
+

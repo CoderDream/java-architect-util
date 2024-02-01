@@ -1,0 +1,110 @@
+Neil
+Hello. This is 6 Minute English from BBC Learning English. I’m Neil.
+
+Sam
+And I’m Sam.
+
+Neil
+What do shopping with a credit card, finding love through internet dating and waiting for the traffic lights to change have in common?
+
+Sam
+Hmmm, they all involve computers?
+
+Neil
+Good guess, Sam! But how exactly do those computers work? The answer is that they all use algorithms – sets of mathematical instructions which find solutions to problems.
+
+Sam
+Although they are often hidden, algorithms are all around us. From mobile phone maps to home delivery pizza, they play a big part of modern life. And they’re the topic of this programme.
+
+Neil
+A simple way to think of algorithms is as recipes. To make pancakes you mix flour, eggs and milk, then melt butter in a frying pan and so on. Computers do this in more a complicated way by repeating mathematical equations over and over again.
+
+Sam
+Equations are mathematical sentences showing how two things are equal. They’re similar to algorithms and the most famous scientific equation of all, 2 Einstein’s E=MC, can be thought of as a three-part algorithm.
+
+Neil
+But before my brain gets squashed by all this maths, I have a quiz question for 2 you, Sam. As you know, Einstein’s famous equation is E=MC - but what does the ‘E’ stand for? Is it: a) electricity? b) energy? or c) everything?
+
+Sam
+I’m tempted to say ‘E’ is for ‘everything’ but I reckon I know the answer: b – ‘E’ stands for ‘energy’.
+
+Neil
+OK, Sam, we’ll find out if you’re right later in the programme.
+
+Sam
+With all this talk of computers, you might think algorithms are a new idea. In fact, they’ve been around since Babylonian times, around 4,000 years ago.
+
+Neil
+And their use today can be controversial. Some algorithms used in internet search engines have been accused of racial prejudice.
+
+Sam
+Ramesh Srinivasan is Professor of Information Studies at the University of California. Here’s what he said when asked what the word ‘algorithm’ actually means by BBC World Service’s programme, The Forum:
+
+Ramesh Srinivasan
+My understanding of the term ‘algorithm’ is that it’s not necessarily the bogyman, or its not necessarily something that is, you know, inscrutable or mysterious to all people – it’s the set of instructions that you write in some mathematical form or in some software code – so it’s the repeated set of instructions that are sequenced, that are used and applied to answer a question or resolve a problem – it’s a simple as that, actually.
+
+Sam
+Some think that algorithms have been controversial, but Professor Srinivasan says they are not necessarily the bogyman. The bogyman refers to something people call ‘bad’ or ‘evil’ to make other people afraid.
+
+Neil
+Professor Srinivasan thinks algorithms are neither evil nor inscrutable – not showing emotions or thoughts and therefore very difficult to understand.
+
+Sam
+Still, it can be difficult to understand exactly what algorithms are, especially when there are many different types of them. So, let’s take an example.
+
+Neil
+It’s autumn and we want to collect all the apples from our orchard and divide them into three groups – big, medium and small. One method is to collect all the apples together and compare their sizes.
+
+Sam
+But doing this would take hours! It’s much easier to first collect the apples from only one tree - divide those into big, medium or small – and then repeat the process for the other trees, one by one.
+
+Neil
+That’s basically what algorithms do – they find the most efficient way to get things done, or in other words, get the best results in the quickest time.
+
+Sam
+Mathematics professor Ian Stewart agrees. Listen as he explains how the algorithm called ‘bubble sort’ works to BBC World Service’s programme, The Forum:
+
+Ian Stewart
+Think of when your computer is sorting emails by date and maybe you’ve got 500 emails and it sorts them by date in a flash. Now it doesn’t use bubble sort, but it does use a sorting method and if you tried to do that by hand it would take you a very long time, whatever method you used.
+
+Neil
+Professor Stewart describes how algorithms sort emails. To sort is a verb meaning to group together things which share similarities.
+
+Sam
+Just like grouping the apples by size, sorting hundreds of emails by hand would take a long time. But using algorithms, computers do it in a flash – very quickly or suddenly.
+
+Neil
+That phrase – in a flash – reminds me of how Albert Einstein came up with his 2 famous equation, E=MC .
+
+Sam
+2 And that reminds me of your quiz question. You asked about the ‘E’ in E=MC . I said it stands for ‘energy’. So, was I right?
+
+Neil
+‘Energy’ is the correct answer. Energy equals ‘M’ for mass, multiplied by the Constant ‘C’ which is the speed of light, squared.
+
+Sam
+OK, let’s recap the vocabulary from this programme, starting with equation – a mathematical statement using symbols to show two equal things.
+
+Neil
+If something is called a bogyman, it’s something considered bad and to be feared.
+
+Sam
+Inscrutable people don’t show their emotions so are very difficult to get to know.
+
+Neil
+Efficient means working quickly and effectively in an organised way.
+
+Sam
+The verb to sort means to group together things which share similarities.
+
+Neil
+And finally, if something happens in a flash, it happens quickly or suddenly.
+
+Sam
+That’s all the time we have to discuss algorithms. And if you’re still not 100% sure about exactly what they are, we hope at least you’ve learned some useful vocabulary!
+
+Neil
+Join us again soon for more trending topics, sensational science and useful vocabulary here at 6 Minute English from BBC Learning English. Bye for now!
+
+Sam
+Goodbye!

@@ -54,14 +54,14 @@ public class MultiThreadGenScriptTextExecutor {
         List<DownloadInfoEntity> downloadInfoEntityListTemp = new ArrayList<>();
         if (test) {
             DownloadInfoEntity infoEntity = new DownloadInfoEntity();
-            String ep = "240104";
+            String ep = "240125";
             infoEntity.setFileUrl(
                 "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2024/ep-" + ep + "");
             infoEntity.setPath("D:/14_LearnEnglish/6MinuteEnglish/2024/" + ep + "/");
             infoEntity.setFileName(ep + ".html");
             downloadInfoEntityListTemp = Arrays.asList(infoEntity);
         } else {
-            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("pdf", "2022", "05");
+            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("pdf", "2021");
         }
 
         String folderPath =

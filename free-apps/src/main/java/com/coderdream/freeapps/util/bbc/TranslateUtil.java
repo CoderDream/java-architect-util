@@ -20,10 +20,10 @@ public class TranslateUtil {
 
     public static void main(String[] args) {
 
-        String folderName = "220609";
+        String folderName = "210318";
 //        TranslateUtil.process(folderName);
-        TranslateUtil.mergeScriptContent(folderName);
-//        TranslateUtil.translateEngSrc(folderName);
+//        TranslateUtil.mergeScriptContent(folderName);
+        TranslateUtil.translateEngSrc(folderName);
 
 //        String str = "大括号外面的内容（Michael Collins）的内容（Michael Collins） ";
 //        str = removeEnContent(str);
@@ -42,10 +42,21 @@ public class TranslateUtil {
     @NotNull
     private static String removeEnContent(String str) {
         do {
-            int startIndex = str.indexOf("（");
-            int endIndex = str.indexOf("）");
+            int startIndex = str.lastIndexOf("（");
+            int endIndex = str.lastIndexOf("）");
             if (startIndex != -1 && endIndex != -1) {
-                str = str.replaceAll(str.substring(startIndex, endIndex + 1), "");
+                try {
+                    if (startIndex > 0 && endIndex > 0) {
+                        str = str.replaceAll(str.substring(startIndex, endIndex + 1), "");
+                    } else {
+                        System.out.println(
+                            "########## ERROR: startIndex is " + startIndex + "; endIndex is " + endIndex + "; str "
+                                + str);
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    System.out.println("### str " + str);
+                }
             }
         } while (str.contains("（") && str.contains("）"));
         return str;
@@ -360,15 +371,15 @@ public class TranslateUtil {
         // 写中文翻译文本
         CdFileUtils.writeToFile(srcFileNameCn, newList);
 
-        // 双语字幕
-        String srcFileNameEnCn = CommonUtil.getFullPathFileName(folderName, "audio5", ".srt");
-        // 写双语歌词文本
-        CdFileUtils.writeToFile(srcFileNameEnCn, newListEnCn);
-
-        // 双语歌词
-        String lrcFileNameEnCn = CommonUtil.getFullPathFileName(folderName, "audio5", ".lrc");
-        // 写双语歌词文本
-        CdFileUtils.writeToFile(lrcFileNameEnCn, lrcListEnCn);
+//        // 双语字幕
+//        String srcFileNameEnCn = CommonUtil.getFullPathFileName(folderName, "audio5", ".srt");
+//        // 写双语歌词文本
+//        CdFileUtils.writeToFile(srcFileNameEnCn, newListEnCn);
+//
+//        // 双语歌词
+//        String lrcFileNameEnCn = CommonUtil.getFullPathFileName(folderName, "audio5", ".lrc");
+//        // 写双语歌词文本
+//        CdFileUtils.writeToFile(lrcFileNameEnCn, lrcListEnCn);
     }
 
     /**

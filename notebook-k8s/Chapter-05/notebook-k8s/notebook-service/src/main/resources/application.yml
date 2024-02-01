@@ -1,0 +1,52 @@
+#spring:
+#  application:
+#    name: gateway
+#  cloud:
+#    config:
+#      uri: http://${CONFIG_SERVER}:${CONFIG_SERVER_PORT}
+#      fail-fast: true
+#      password: ${CONFIG_SERVICE_PASSWORD}
+#      username: user
+
+spring:
+  application:
+    name: notebook-service
+  zipkin:
+    base-url: http://zipkin-server:9411
+  mvc:
+    static-path-pattern: /**
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  ${DISCOVERY_URL:http://eureka-server:8761}/eureka/
+  instance:
+    prefer-ip-address: true
+server:
+  port: 1111
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.web: DEBUG
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: info, health, routes
+ribbon:
+  eureka:
+    enabled: true
+

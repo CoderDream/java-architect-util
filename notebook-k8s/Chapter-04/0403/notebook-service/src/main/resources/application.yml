@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: notebook-service
+  zipkin:
+    base-url: http://192.168.3.4:9411
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.3.4:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    ip-address: 192.168.3.85
+
+server:
+  port: 1111
+
+

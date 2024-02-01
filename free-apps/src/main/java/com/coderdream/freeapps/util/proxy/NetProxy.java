@@ -19,24 +19,24 @@ import java.util.List;
 public class NetProxy {
 
     public static void main(String[] args) {
-//        String pageUrl = "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english";
-//        pageUrl = "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2023/ep-231102";
-//        NetProxy.getPageInfo(pageUrl);
+        String pageUrl = "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english";
+        pageUrl = "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2023/ep-231102";
+        NetProxy.getPageInfo(pageUrl);
 
 
-        File pathFile = new File("D://c//c//");
-        if (!pathFile.exists()) {
-            pathFile.mkdirs();
-        }
-
-        File file = new File("D://c//c//c.txt");
-        if (!file.exists()) {
-            try {
-                file.createNewFile();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        }
+//        File pathFile = new File("D://c//c//");
+//        if (!pathFile.exists()) {
+//            pathFile.mkdirs();
+//        }
+//
+//        File file = new File("D://c//c//c.txt");
+//        if (!file.exists()) {
+//            try {
+//                file.createNewFile();
+//            } catch (IOException e) {
+//                throw new RuntimeException(e);
+//            }
+//        }
     }
 
     public static String getPageInfo(String pageUrl) {
@@ -67,7 +67,7 @@ public class NetProxy {
             while ((len = inputStream.read(buffer)) != -1) {
 //                System.out.println("len: " + len);
                 tempStr = new String(buffer, 0, len, "UTF-8");
-//                System.out.println("tempStr: \t" + tempStr);
+                System.out.println("tempStr: \t" + tempStr);
                 sb1.append(tempStr);
                 contentList.add(tempStr);
                 index++;

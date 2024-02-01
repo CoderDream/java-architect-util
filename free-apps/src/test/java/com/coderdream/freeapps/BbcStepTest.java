@@ -1,26 +1,18 @@
 package com.coderdream.freeapps;
 
-import com.coderdream.freeapps.model.DownloadInfoEntity;
-import com.coderdream.freeapps.model.TopicEntity;
 import com.coderdream.freeapps.util.bbc.AdvancedWordUtil;
 import com.coderdream.freeapps.util.bbc.CoreWordUtil;
 import com.coderdream.freeapps.util.bbc.DictUtils;
 import com.coderdream.freeapps.util.bbc.GenSixMinutePptx;
 import com.coderdream.freeapps.util.bbc.GenSrtUtil;
 import com.coderdream.freeapps.util.bbc.HostUtil;
-import com.coderdream.freeapps.util.bbc.ProcessRawTxtUtil;
 import com.coderdream.freeapps.util.bbc.ProcessScriptUtil;
 import com.coderdream.freeapps.util.bbc.TranslateUtil;
 import com.coderdream.freeapps.util.bbc.WordCountUtil;
-import com.coderdream.freeapps.util.proxy.HtmlUtil;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
-import org.junit.Ignore;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -39,12 +31,17 @@ public class BbcStepTest {
 //    private final List<String> NUMBER_LIST = Arrays.asList("230420", "230427");
 
     private final List<String> NUMBER_LIST = Arrays.asList(
-        "220901",
-        "220908"        ,
-        "220915",
-        "220922",
-        "220929"
-//        "240104"
+//        "210107"
+//        ,
+//        "210401"
+//        ,
+        "210408"
+        ,
+        "210415",
+        "210422",
+        "210429"
+//        "240111"
+//        "240125"
     );
 //
 //    private final List<String> TITLE_LIST = Arrays.asList("冰和地球上生命的起源", "沉迷于战争", "食物短缺", "食物短缺");

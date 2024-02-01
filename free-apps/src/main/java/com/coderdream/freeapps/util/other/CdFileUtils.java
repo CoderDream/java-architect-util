@@ -710,7 +710,7 @@ public class CdFileUtils {
             String s = "";
             while ((s = bReader.readLine()) != null) {//逐行读取文件内容，不读取换行符和末尾的空格
 //                sb.append(s + "\n");//将读取的字符串添加换行符后累加存放在缓存中
-                stringList.add(s.trim());
+                stringList.add(s.trim().replaceAll("\"","'"));
 //                System.out.println(s);
             }
             // 补空行

@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: eureka-server
+  labels:
+    run: eureka-server
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: eureka-server
+    spec:
+      containers:
+        - name: discovery-service
+          image: art.local:8081/docker/notebook-k8s/discovery-service
+          ports:
+            - containerPort: 8761
+              protocol: TCP
+      imagePullSecrets:
+        - name: regcred-local

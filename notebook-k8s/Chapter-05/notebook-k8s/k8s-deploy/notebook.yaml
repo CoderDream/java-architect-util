@@ -1,0 +1,48 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: notebook-service
+  labels:
+    run: notebook-service
+spec:
+  ports:
+    - name: port3
+      protocol: TCP
+      port: 1111
+      nodePort: 30555
+  selector:
+    run: notebook-service
+  type: NodePort
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: notebook-service
+  labels:
+    run: notebook-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: notebook-service
+  template:
+    metadata:
+      labels:
+        run: notebook-service
+    spec:
+      containers:
+        - name: notebook-service
+          image: art.local:8081/docker/notebook-k8s/notebook-service:latest
+          env:
+            - name: DISCOVERY_URL
+              value: "http://eureka-server:8761"
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 1111
+            initialDelaySeconds: 15
+            periodSeconds: 15
+          ports:
+            - containerPort: 1111
+      imagePullSecrets:
+      - name: regcred-local
