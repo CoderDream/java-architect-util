@@ -26,9 +26,14 @@ public class SubtitleBaseEntity implements Serializable {
     private String timeStr;
 
     /**
-     * 字幕内容
+     * 第一字幕内容
      */
     private String subtitle;
+
+    /**
+     * 第二字幕内容
+     */
+    private String subtitleSecond;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
@@ -39,6 +44,7 @@ public class SubtitleBaseEntity implements Serializable {
         sb.append(subIndex + "\n");
         sb.append(timeStr + "\n");
         sb.append(subtitle + "\n");
+        sb.append(subtitleSecond + "\n");
         return sb.toString();
     }
 }

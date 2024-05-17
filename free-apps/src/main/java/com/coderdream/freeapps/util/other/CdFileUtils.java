@@ -724,9 +724,12 @@ public class CdFileUtils {
         return stringList;
     }
 
-    public static List<SubtitleBaseEntity> readSrcFileContent(String fileName) {
+    public static List<SubtitleBaseEntity> readSrcFileContent(String... fileName) {
         List<String> stringList = new ArrayList<>();
-        File file = new File(fileName);//定义一个file对象，用来初始化FileReader
+        if(fileName == null) {
+            return null;
+        }
+        File file = new File(fileName[0]);//定义一个file对象，用来初始化FileReader
         FileReader reader;//定义一个fileReader对象，用来初始化BufferedReader
         try {
             reader = new FileReader(file);
@@ -735,7 +738,13 @@ public class CdFileUtils {
             String s = "";
             while ((s = bReader.readLine()) != null) {//逐行读取文件内容，不读取换行符和末尾的空格
 //                sb.append(s + "\n");//将读取的字符串添加换行符后累加存放在缓存中
-                stringList.add(s.trim());
+                if(fileName.length == 0) {
+                    s = s.replaceAll("“", "\"");
+
+                    s = s.replaceAll("”", "\"");
+                }
+
+                stringList.add(processStr(s.trim()));
 //                System.out.println(s);
             }
             stringList.add("");// 补最后一行的空格
@@ -748,7 +757,8 @@ public class CdFileUtils {
 
         List<SubtitleBaseEntity> result = new ArrayList<>();
         int firstSpaceIndex = 0;
-        SubtitleBaseEntity subtitleBaseEntity;
+        String subIndexStr ="";
+            SubtitleBaseEntity subtitleBaseEntity;
         if (CollectionUtils.isNotEmpty(stringList)) {
 
             int size = stringList.size();
@@ -761,15 +771,16 @@ public class CdFileUtils {
                 if (StrUtil.isEmpty(stringList.get(i))) {
                     subtitleBaseEntity = new SubtitleBaseEntity();
                     if (firstSpaceIndex == 0) {
-                        subtitleBaseEntity.setSubIndex(Integer.parseInt(stringList.get(0)));
-                        subtitleBaseEntity.setTimeStr(stringList.get(1));
-                        subtitleBaseEntity.setSubtitle(stringList.get(2));
+                        subIndexStr = stringList.get(0);
+                        subtitleBaseEntity.setSubIndex(Integer.parseInt(processStr(subIndexStr)));
+                        subtitleBaseEntity.setTimeStr(processStr( stringList.get(1)));
+                        subtitleBaseEntity.setSubtitle(processStr(stringList.get(2)));
                     } else {
                         if (StrUtil.isNotEmpty(stringList.get(firstSpaceIndex))) {
-                            subtitleBaseEntity.setSubIndex(Integer.parseInt(stringList.get(firstSpaceIndex)));
+                            subtitleBaseEntity.setSubIndex(Integer.parseInt(processStr(stringList.get(firstSpaceIndex))));
                         }
-                        subtitleBaseEntity.setTimeStr(stringList.get(firstSpaceIndex + 1));
-                        subtitleBaseEntity.setSubtitle(stringList.get(firstSpaceIndex + 2));
+                        subtitleBaseEntity.setTimeStr(processStr(stringList.get(firstSpaceIndex + 1)));
+                        subtitleBaseEntity.setSubtitle(processStr(stringList.get(firstSpaceIndex + 2)));
                     }
                     firstSpaceIndex = i + 1;
 
@@ -779,6 +790,14 @@ public class CdFileUtils {
         }
 
         return result;
+    }
+
+    public static final String UTF8_BOM="\uFEFF";
+    public static String processStr(String string){
+        if(string.startsWith(UTF8_BOM)) {
+           return string=string.substring(1);
+        }
+        return string;
     }
 
     public static List<SubtitleBaseEntity> readSrcFileContent(String fileName, String charset) {

@@ -66,7 +66,7 @@ public class MultiThreadProcessScriptTextExecutor {
             downloadInfoEntityListTemp = Arrays.asList(infoEntity);
         } else {
 //            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("pdf", "2022", "03", "04", "05", "06", "07", "08", "09");
-            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("pdf", "2021");
+            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("pdf", "2020", "01");
         }
 
         for (DownloadInfoEntity downloadInfoEntity : downloadInfoEntityListTemp) {

@@ -1,11 +1,110 @@
 Neil
-Hello. This is 6 Minute English from BBC Learning English. I’m Neil. Sam And I’m Sam. Neil Do you think robots could ever become intelligent, Sam? Sam Well, if you believe Hollywood movies like ‘Robocop’, robots will grow more powerful than their human creators and take control. Neil You’ve been watching too many sci-fi movies, Sam! But seriously - do you think robots will ever be able to think or dream? Could they fall in love or create art? Sam It’s hard to say but because of the huge advances in artificial intelligence over the last ten years, questions like these are being asked more and more. Neil In this programme we’ll be meeting a very unusual ‘person’ (if that’s the right word) who could help answer some of these questions. She’s called Ai-Da, she’s an artist who can draw, paint and create sculptures – and she’s a robot. Sam Yes, the humanoid robot, Ai-Da, uses a robotic arm and a pencil to draw what it sees with a camera in its eye. It’s very life-like and can even talk to the people whose picture it’s drawing. Neil We’ll hear more about this extraordinary robot and the team of inventors behind her soon, but first I have a quiz question. The name, Ai-Da, uses the abbreviation.
+Hello. This is 6 Minute English from BBC Learning English. I’m Neil.
 
-for ‘artificial intelligence’ - AI - to make a woman’s first name, but which famous,
-real-life Ada was the robot named after? Was it: a) Ada Brown?; b) Ada Lovelace? or, c) Ada Maris? Sam I think it must be, b) Ada Lovelace. Neil OK, Sam, we’ll find out if that’s right later. Of course building a realistic robot that can see, hold a pencil and draw is not easy. Sam Behind the creation of Ai-Da was a team led by Cornish robotics company, Engineered Arts, and supported by engineers in Leeds who built her robotic arms using AI systems developed at Oxford University. Neil Here’s chief engineer, Marcus Hold, introducing presenter, Karl Bos, to the still unfinished Ai -Da for the first time for BBC World Service programme, In The Studio: Karl Bos It’s very strange because on first glance she looks incredibly scary, a bit like a dystopian robot from the future but when you see her move and express she becomes incredibly cute. Marcus Hold People tend to refer to them as ‘he’ or ‘she’, they’re drawn to the robots. So much of our communication is non-verbal – I’m gesturing with my arms, I’m smiling… and our robots – a big part of their appeal and their human nature is in the way they behave and move and it’s great that you’re picking up on that from something that has no skin. Sam When Karl first meets Ai-Da he sees a wired-up metal skull without skin. She looks like a robot from a dystopia - an imaginary future world where everything is bad – like the movie ‘Robocop’. Neil But as Karl spends more time with Ai-Da he begins to see her move and express.
-
-herself. She smiles, blinks and uses facial expressions and hand gestures known
-as non-verbal communication to appear more human. Sam This human-like behaviour is part of Ai-Da’s appeal - the quality in someone that makes them attractive and interesting – and soon Karl is calling the robot ‘she’ instead of ‘it’. Neil Former art gallery owner, Aidan Mellor, manages the Ai-Da project. Here he is speaking to BBC World Service’s, In The Studio, about the complex process involved in building a working robot: Aidan Meller We’ve got the programmers and researchers working at Oxford University and Goldsmiths and they’re doing their algorithmic programming, programming the AI that is going to be eventually used for the art pieces that we’re doing… But we’ve also got a couple of guys who are actually working on her arm – her ability to draw – and actually getting her to do a compelling drawing of what she sees. There’s some battles still to be won before the show, we will eventually hopefully iron out all the issues before that time. Sam One challenge the team faced was building a robotic arm that could allow Ai-Da to draw pictures that were compelling – exciting, interesting and able to keep your attention. Neil In combining an electronic AI brain with mechanical robot eyes and arms there were many battles to be won – difficulties and technical obstacles to be overcome. Sam And at the time of the interview, the team still had some issues to iron out – removing problems by finding solutions – before Ai-Da’s opening show: an exhibition of her artwork at The Design Museum in London. Neil Amazing! It’s nice to think that a robot could be the next Picasso instead of an out-of-control sci-fi policeman! Sam Yes, and the whole project was inspired by a real-life woman – whose name was? What was the answer to your quiz question, Neil?
+Sam
+And I’m Sam.
 
 Neil
-Ah yes, I asked Sam which famous Ada was the real-life inspiration behind the robot, Ai-Da. Sam I said, b) Ada Lovelace. Was I right? Neil You were… right, Sam! Ai-Da is named after Ada Lovelace, the 19th century English mathematician and first computer programmer in the world. Sam OK, Neil. Let’s recap the vocabulary from this programme, starting with dystopia - an imaginary future society where everything is bad. Neil Non-verbal communication is communication using physical gestures and facial expressions instead of speech. Sam The appeal of something is a quality it has which people find attractive. Neil If something is compelling, it holds your attention because you find it so interesting. Sam A battle to be won means a problem to be solved or an obstacle to overcome. Neil And finally, to iron something out means to remove or find solutions to a problem. Sam With artificial intelligence improving so fast it may not be too long before we see robot presenters of Six Minute English! Neil But until Sam and I are replaced by AI we hope you’ll join us again next time for more trending topics and useful vocabulary, here at BBC Learning English. Bye for now! Sam Goodbye!
+Do you think robots could ever become intelligent, Sam?
+
+Sam
+Well, if you believe Hollywood movies like ‘Robocop’, robots will grow more powerful than their human creators and take control.
+
+Neil
+You’ve been watching too many sci-fi movies, Sam! But seriously - do you think robots will ever be able to think or dream? Could they fall in love or create art?
+
+Sam
+It’s hard to say but because of the huge advances in artificial intelligence over the last ten years, questions like these are being asked more and more.
+
+Neil
+In this programme we’ll be meeting a very unusual ‘person’ (if that’s the right word) who could help answer some of these questions. She’s called Ai-Da, she’s an artist who can draw, paint and create sculptures – and she’s a robot.
+
+Sam
+Yes, the humanoid robot, Ai-Da, uses a robotic arm and a pencil to draw what it sees with a camera in its eye. It’s very life-like and can even talk to the people whose picture it’s drawing.
+
+Neil
+We’ll hear more about this extraordinary robot and the team of inventors behind her soon, but first I have a quiz question. The name, Ai-Da, uses the abbreviation for ‘artificial intelligence’ - AI - to make a woman’s first name, but which famous, real-life Ada was the robot named after? Was it: a) Ada Brown?; b) Ada Lovelace? or, c) Ada Maris?
+
+Sam
+I think it must be, b) Ada Lovelace.
+
+Neil
+OK, Sam, we’ll find out if that’s right later. Of course building a realistic robot that can see, hold a pencil and draw is not easy.
+
+Sam
+Behind the creation of Ai-Da was a team led by Cornish robotics company, Engineered Arts, and supported by engineers in Leeds who built her robotic arms using AI systems developed at Oxford University.
+
+Neil
+Here’s chief engineer, Marcus Hold, introducing presenter, Karl Bos, to the still unfinished Ai -Da for the first time for BBC World Service programme, In The Studio:
+
+Karl Bos
+It’s very strange because on first glance she looks incredibly scary, a bit like a dystopian robot from the future but when you see her move and express she becomes incredibly cute.
+
+Marcus Hold
+People tend to refer to them as ‘he’ or ‘she’, they’re drawn to the robots. So much of our communication is non-verbal – I’m gesturing with my arms, I’m smiling… and our robots – a big part of their appeal and their human nature is in the way they behave and move and it’s great that you’re picking up on that from something that has no skin.
+
+Sam
+When Karl first meets Ai-Da he sees a wired-up metal skull without skin. She looks like a robot from a dystopia - an imaginary future world where everything is bad – like the movie ‘Robocop’.
+
+Neil
+But as Karl spends more time with Ai-Da he begins to see her move and express herself. She smiles, blinks and uses facial expressions and hand gestures known as non-verbal communication to appear more human.
+
+Sam
+This human-like behaviour is part of Ai-Da’s appeal - the quality in someone that makes them attractive and interesting – and soon Karl is calling the robot ‘she’ instead of ‘it’.
+
+Neil
+Former art gallery owner, Aidan Mellor, manages the Ai-Da project. Here he is speaking to BBC World Service’s, In The Studio, about the complex process involved in building a working robot:
+
+Aidan Meller
+We’ve got the programmers and researchers working at Oxford University and Goldsmiths and they’re doing their algorithmic programming, programming the AI that is going to be eventually used for the art pieces that we’re doing… But we’ve also got a couple of guys who are actually working on her arm – her ability to draw – and actually getting her to do a compelling drawing of what she sees. There’s some battles still to be won before the show, we will eventually hopefully iron out all the issues before that time.
+
+Sam
+One challenge the team faced was building a robotic arm that could allow Ai-Da to draw pictures that were compelling – exciting, interesting and able to keep your attention.
+
+Neil
+In combining an electronic AI brain with mechanical robot eyes and arms there were many battles to be won – difficulties and technical obstacles to be overcome.
+
+Sam
+And at the time of the interview, the team still had some issues to iron out – removing problems by finding solutions – before Ai-Da’s opening show: an exhibition of her artwork at The Design Museum in London.
+
+Neil
+Amazing! It’s nice to think that a robot could be the next Picasso instead of an out-of-control sci-fi policeman!
+
+Sam
+Yes, and the whole project was inspired by a real-life woman – whose name was? What was the answer to your quiz question, Neil?
+
+Neil
+Ah yes, I asked Sam which famous Ada was the real-life inspiration behind the robot, Ai-Da.
+
+Sam
+I said, b) Ada Lovelace. Was I right?
+
+Neil
+You were… right, Sam! Ai-Da is named after Ada Lovelace, the 19th century English mathematician and first computer programmer in the world.
+
+Sam
+OK, Neil. Let’s recap the vocabulary from this programme, starting with dystopia - an imaginary future society where everything is bad.
+
+Neil
+Non-verbal communication is communication using physical gestures and facial expressions instead of speech.
+
+Sam
+The appeal of something is a quality it has which people find attractive.
+
+Neil
+If something is compelling, it holds your attention because you find it so interesting.
+
+Sam
+A battle to be won means a problem to be solved or an obstacle to overcome.
+
+Neil
+And finally, to iron something out means to remove or find solutions to a problem.
+
+Sam
+With artificial intelligence improving so fast it may not be too long before we see robot presenters of Six Minute English!
+
+Neil
+But until Sam and I are replaced by AI we hope you’ll join us again next time for more trending topics and useful vocabulary, here at BBC Learning English. Bye for now!
+
+Sam
+Goodbye!

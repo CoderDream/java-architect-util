@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @author william@StarImmortal
  * @date 2022/09/02
  */
-@Configuration
+//@Configuration
 public class MinioConfiguration {
 
     private MinioProperties minioProperties;

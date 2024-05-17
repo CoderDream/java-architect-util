@@ -1,6 +1,7 @@
 package com.coderdream.freeapps.util.callapi;
 
 //import ch.qos.logback.core.util.CloseUtil;
+
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.http.ContentType;
@@ -10,13 +11,67 @@ import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
 import com.alibaba.fastjson.JSON;
 import com.coderdream.freeapps.util.other.BeanMapper;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.time.DateFormatUtils;
 
 @Slf4j
 public class HttpUtil {
+
+
+    /**
+     * get请求
+     *
+     * @param param
+     * @param head
+     * @param url
+     * @param retryTimes
+     * @return
+     */
+    public static List<String> getText(Map<String, Object> param, Map<String, String> head, String url,
+        Integer retryTimes) {
+        List<String> result = new ArrayList<>();
+        HttpRequest request = HttpRequest.get(url);
+        //设置头参数
+        request = header(request, head);
+        //设置请求参数
+        request = form(request, param);
+        HttpResponse response = null;
+        try {
+            response = request.charset("utf-8").timeout(5000).execute();
+            if (response != null && response.isOk()) {
+                String body = response.body();
+                body = body.replaceAll("\r", " ");
+//                System.out.println("XXXXXXXXXXX" + body);
+                result.addAll(Arrays.asList(body.split("\n")));
+                return result;
+//                return JSON.parseObject(body, t);
+            } else {
+                throw new RuntimeException("返回状态:" + response.getStatus());
+            }
+        } catch (Exception e) {
+            log.error(e.getMessage());
+            if (retryTimes < 0) {
+                log.error("调用远程服务失败:" + url);
+                throw new RuntimeException("调用远程服务失败");
+            } else {
+                return null;
+//                return get(param, head, url, t, --retryTimes);
+            }
+        } finally {
+            if (response != null) {
+                //关闭对应的流
+                response.close();
+            }
+        }
+
+//        return null;
+    }
+
 
     /**
      * get请求
@@ -29,7 +84,7 @@ public class HttpUtil {
      * @return
      */
     public static <T> T get(Map<String, Object> param, Map<String, String> head, String url, Class<T> t,
-                            Integer retryTimes) {
+        Integer retryTimes) {
         HttpRequest request = HttpRequest.get(url);
         //设置头参数
         request = header(request, head);
@@ -40,7 +95,7 @@ public class HttpUtil {
             response = request.charset("utf-8").timeout(5000).execute();
             if (response != null && response.isOk()) {
                 String body = response.body();
-                System.out.println(body);
+                System.out.println("#####  " + body);
                 return JSON.parseObject(body, t);
             } else {
                 throw new RuntimeException("返回状态:" + response.getStatus());
@@ -124,7 +179,7 @@ public class HttpUtil {
      * @return
      */
     public static <T> T post(Map<String, Object> param, Map<String, String> head, String url,
-                             Class<T> t) {
+        Class<T> t) {
         HttpRequest request = HttpRequest.post(url);
         //设置头参数
         request = header(request, head);
@@ -158,7 +213,7 @@ public class HttpUtil {
      * @return
      */
     public static <T> T postWithJson(Map<String, Object> param, Map<String, String> head,
-                                     String url, Class<T> t) {
+        String url, Class<T> t) {
         head.put("Content-Type", ContentType.JSON.getValue());
         HttpRequest request = HttpRequest.post(url);
         //设置头参数
@@ -193,7 +248,7 @@ public class HttpUtil {
      * @return
      */
     public static <T> T postWithForm(Map<String, Object> param, Map<String, String> head,
-                                     String url, Class<T> t) {
+        String url, Class<T> t) {
         head.put("Content-Type", ContentType.FORM_URLENCODED.getValue());
         HttpRequest request = HttpRequest.post(url);
         //设置头参数
@@ -227,7 +282,7 @@ public class HttpUtil {
      * @return
      */
     public static <T> T postWithForm(Map<String, Object> param, Map<String, String> head, String url, Class<T> t,
-                                     Integer retryTimes) {
+        Integer retryTimes) {
         head.put("Content-Type", ContentType.FORM_URLENCODED.getValue());
         HttpRequest request = HttpRequest.post(url);
         //设置头参数
@@ -272,8 +327,6 @@ public class HttpUtil {
 //            .body();
 //        log.info("postResult:"+postResult);
 //    }
-
-
 
 
     /**

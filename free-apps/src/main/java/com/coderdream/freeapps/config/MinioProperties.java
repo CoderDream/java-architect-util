@@ -7,8 +7,8 @@ import org.springframework.context.annotation.Configuration;
  * @author william@StarImmortal
  * @date 2022/9/4
  */
-@Configuration
-@ConfigurationProperties("minio")
+//@Configuration
+//@ConfigurationProperties("minio")
 public class MinioProperties {
     /**
      * 服务地址

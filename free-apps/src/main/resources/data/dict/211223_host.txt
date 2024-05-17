@@ -20,10 +20,10 @@ Neil
 A simple way to think of algorithms is as recipes. To make pancakes you mix flour, eggs and milk, then melt butter in a frying pan and so on. Computers do this in more a complicated way by repeating mathematical equations over and over again.
 
 Sam
-Equations are mathematical sentences showing how two things are equal. They’re similar to algorithms and the most famous scientific equation of all, 2 Einstein’s E=MC, can be thought of as a three-part algorithm.
+Equations are mathematical sentences showing how two things are equal. They’re similar to algorithms and the most famous scientific equation of all, Einstein’s E=MC2, can be thought of as a three-part algorithm.
 
 Neil
-But before my brain gets squashed by all this maths, I have a quiz question for 2 you, Sam. As you know, Einstein’s famous equation is E=MC - but what does the ‘E’ stand for? Is it: a) electricity? b) energy? or c) everything?
+But before my brain gets squashed by all this maths, I have a quiz question for you, Sam. As you know, Einstein’s famous equation is E=MC2 - but what does the ‘E’ stand for? Is it: a) electricity? b) energy? or c) everything?
 
 Sam
 I’m tempted to say ‘E’ is for ‘everything’ but I reckon I know the answer: b – ‘E’ stands for ‘energy’.
@@ -74,10 +74,10 @@ Sam
 Just like grouping the apples by size, sorting hundreds of emails by hand would take a long time. But using algorithms, computers do it in a flash – very quickly or suddenly.
 
 Neil
-That phrase – in a flash – reminds me of how Albert Einstein came up with his 2 famous equation, E=MC .
+That phrase – in a flash – reminds me of how Albert Einstein came up with his famous equation, E=MC2 .
 
 Sam
-2 And that reminds me of your quiz question. You asked about the ‘E’ in E=MC . I said it stands for ‘energy’. So, was I right?
+And that reminds me of your quiz question. You asked about the ‘E’ in E=MC2 . I said it stands for ‘energy’. So, was I right?
 
 Neil
 ‘Energy’ is the correct answer. Energy equals ‘M’ for mass, multiplied by the Constant ‘C’ which is the speed of light, squared.

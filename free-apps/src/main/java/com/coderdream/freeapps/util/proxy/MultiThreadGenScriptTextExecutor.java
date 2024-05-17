@@ -1,5 +1,6 @@
 package com.coderdream.freeapps.util.proxy;
 
+import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.io.FileUtil;
 import com.coderdream.freeapps.model.DownloadInfoEntity;
 import com.coderdream.freeapps.util.other.CdFileUtils;
@@ -49,42 +50,61 @@ public class MultiThreadGenScriptTextExecutor {
         handler);
 
     public void initTestArr() {
-        boolean test = true;
+        boolean test = false;
 
         List<DownloadInfoEntity> downloadInfoEntityListTemp = new ArrayList<>();
         if (test) {
             DownloadInfoEntity infoEntity = new DownloadInfoEntity();
-            String ep = "240125";
+            String ep = "240404";
             infoEntity.setFileUrl(
                 "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2024/ep-" + ep + "");
             infoEntity.setPath("D:/14_LearnEnglish/6MinuteEnglish/2024/" + ep + "/");
             infoEntity.setFileName(ep + ".html");
             downloadInfoEntityListTemp = Arrays.asList(infoEntity);
         } else {
-            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("pdf", "2021");
+//            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("txt", "2020","02","06");
+            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("txt", "2020");
         }
 
         String folderPath =
             CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "bbc"
                 + File.separatorChar;
 
-        List<String> stringList = FileUtil.readLines(folderPath + "pdf_names.txt", "UTF-8");
-        Map<String, String> pdfNameMap = new LinkedHashMap<>();
-//        String key = "";
-        for (String pdfName : stringList) {
-            String key = pdfName.substring(0, 6);
-            pdfNameMap.put(key, pdfName);
-        }
+//        List<String> stringList = FileUtil.readLines(folderPath + "pdf_names.txt", "UTF-8");
+//        Map<String, String> pdfNameMap = new LinkedHashMap<>();
+////        String key = "";
+//        for (String pdfName : stringList) {
+//            String key = pdfName.substring(0, 6);
+//            pdfNameMap.put(key, pdfName);
+//        }
 
         for (DownloadInfoEntity downloadInfoEntity : downloadInfoEntityListTemp) {
-            String fileName = downloadInfoEntity.getFileName();
-            String realPdfName = pdfNameMap.get(fileName.substring(0, fileName.lastIndexOf(".")));
+//            String fileName = downloadInfoEntity.getFileName();
+            String realPdfName =  findPdf(downloadInfoEntity.getPath());// pdfNameMap.get(fileName.substring(0, fileName.lastIndexOf(".")));
             downloadInfoEntity.setFileName(realPdfName);
             if (realPdfName != null) {
                 downloadInfoEntityList.add(downloadInfoEntity);
             }
         }
         System.out.println("#");
+    }
+
+    private static String findPdf(String folderPath) {
+        List<String> allFileNames = CdFileUtils.getAllFileNames(folderPath);
+        if (CollectionUtil.isNotEmpty(allFileNames)) {
+            for (String str : allFileNames) {
+                int index = str.lastIndexOf("pdf");
+                if (-1 != index) {
+                    int index2 = str.lastIndexOf("\\");
+                    if(index2 != -1) {
+                        String s = str.substring(index2+1);
+                        return s;
+                    }
+                }
+            }
+        }
+
+        return "";
     }
 
     public class MyThread extends Thread {

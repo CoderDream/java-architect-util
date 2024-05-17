@@ -1,14 +1,122 @@
 Neil
-Hello. This is 6 Minute English from BBC Learning English. I’m Neil. Sam And I’m Sam. Neil People collect all kinds of things for a hobby, from stamps and coins to comics and football stickers. Do you collect anything, Sam? Sam I used to have a big collection of Pokémon cards but I have no idea where they are now. Neil Well maybe you should start looking for them because all kinds of collectables – that’s objects that people want to collect – are selling for big money on the internet. It’s all part of a new tech craze called non-fungible tokens, or NFTs for short. Sam Non-fungible tokens? Neil Basically NTFs are unique, one-of-kind items that can be bought and sold like any physical object but only exist in the digital world. ‘Tokens’ can be thought of as certificates of ownership for these virtual possessions. Sam Hmmm, OK. I understand the ‘token’ part but what does ‘non-fungible’ mean? Neil If something is ‘fungible’ it can be interchanged, like money for example. With money you can swap a £10 note for two £5 notes and it will have the same value.
+Hello. This is 6 Minute English from BBC Learning English. I’m Neil.
 
 Sam
-So, something non-fungible cannot be interchanged with something else. Is that because it has special features that make it unique? Neil Exactly. Imagine something totally unique like the Mona Lisa. You can take a photo of the painting or buy a copy of it, but there will only ever be the one original painting. Sam I can see that the Mona Lisa is one-of-a-kind and extremely valuable, but it’s not for sale on the internet! Neil True, but lots of other things are, from signed celebrity artwork to virtual football cards. NFTs are like autographed photos – collectors want something no-one else has, even though there’s nothing physical they actually own and keep. Sam And the value of NFTs is going up and up? Neil Massively. A digital sticker of French footballer, Kylian Mbappé, recently sold for £25,000! Which reminds me of my quiz question, Sam. In June 2021, Sir Tim Berners-Lee sold the original source code he used to invent the World Wide Web as an NFT at a charity auction. The sale started at $1000 but how much did the source code eventually sell for? Was it: a) 5.4 thousand dollars? b) 5.4 million dollars? or, c) 5.4 billion dollars? Sam If you’re asking me how much the internet sold for I’d say c) 5.4 billion dollars. Neil OK, Sam, we’ll find out later if that’s right. Sam Sir Tim Berners-Lee famously never made any money from the World Wide Web, insisting that his invention should be free for everyone. But the world of NFTs is controversial and not everyone thinks Sir Tim should be getting involved.
+And I’m Sam.
 
 Neil
-That’s certainly the view of Shona Ghosh, technology editor at the ‘The Insider’ website, as she told BBC World Service programme, Tech Tent: Shona Ghosh I think there’s a balance to be struck between exploring new technologies and Sir Tim Berners-Lee is an amazing figure but NFTs are a wild west. Not everything associated with NFTs are rogue, but these so-called digital collectables are going for lots of money. Sam Internet NFTs are very new and there are no rules controlling what can be sold and for how much, so Shona describes them as a wild west. Neil The Wild West means a situation where people can do whatever they want because there are no laws or controls, like the early history of the western part of the United States. Sam She also calls some things about NFTs rogue - behaving differently from what’s normal or expected, often in a way that causes damage. Neil Love them or hate them, there are strong opinions on both sides of the NFT debate, as Rory Cellan-Jones, presenter of BBC World Service’s Tech Tent, explains: Rory Cellan-Jones To some NFTs are a brilliant innovation which has promised to put a value on digital artefacts. To others they’re little more than a dubious pyramid scheme with a damaging impact on the environment because of the way the tokens are created. Sam Some people are suspicious of the large amounts of money collectors are willing to pay, comparing NFTs to pyramid schemes - business tricks or scams where money is obtained dishonestly. Neil But for others NFTs are a legitimate and useful way to put a price on rare digital artefacts – items, such as images, videos and music, that are produced and stored as electronic versions.
+People collect all kinds of things for a hobby, from stamps and coins to comics and football stickers. Do you collect anything, Sam?
 
 Sam
-Items like, for example, the original source code for the internet. So how much money did Sir Tim Berners-Lee raise for charity when he sold it off, Neil? Neil In my quiz question I asked Sam how much the NFT of the original internet source code sold for at auction. Sam I said c) 5.4 billion dollars. Neil You were… wrong! In fact it was less - 5.4 million dollars – but still far too expensive for me to collect. Sam Hmmm, now I’m wondering how much my Pokémon card collection would sell for. If only I could find it! Neil Well, while you look for your collection, Sam, let’s recap the vocabulary from this programme all about NFTs which are digital artefacts or items that are produced and stored as electronic versions. Sam NFTs are virtual collectables – desirable objects that people search for and collect. Neil And they are non-fungible meaning they have special and unique characteristics that cannot be interchanged with anything else. Sam If something is rogue it behaves in a different way from what’s normal or expected, often causing damage. Neil The wild west describes a chaotic situation without laws or controls. Sam And finally, a pyramid scheme is a business scam where money is gained dishonestly.
+I used to have a big collection of Pokémon cards but I have no idea where they are now.
 
 Neil
-If you’d like to know more about non-fungible tokens, bitcoin and other trending internet topics there’s plenty to find on the BBC website. Sam And for more interesting conversation and useful vocabulary, remember to join us again soon here at 6 Minute English. Bye for now! Neil Bye!
+Well maybe you should start looking for them because all kinds of collectables – that’s objects that people want to collect – are selling for big money on the internet. It’s all part of a new tech craze called non-fungible tokens, or NFTs for short.
+
+Sam
+Non-fungible tokens?
+
+Neil
+Basically NTFs are unique, one-of-kind items that can be bought and sold like any physical object but only exist in the digital world. ‘Tokens’ can be thought of as certificates of ownership for these virtual possessions.
+
+Sam
+Hmmm, OK. I understand the ‘token’ part but what does ‘non-fungible’ mean?
+
+Neil
+If something is ‘fungible’ it can be interchanged, like money for example. With money you can swap a £10 note for two £5 notes and it will have the same value.
+
+Sam
+So, something non-fungible cannot be interchanged with something else. Is that because it has special features that make it unique?
+
+Neil
+Exactly. Imagine something totally unique like the Mona Lisa. You can take a photo of the painting or buy a copy of it, but there will only ever be the one original painting.
+
+Sam
+I can see that the Mona Lisa is one-of-a-kind and extremely valuable, but it’s not for sale on the internet!
+
+Neil
+True, but lots of other things are, from signed celebrity artwork to virtual football cards. NFTs are like autographed photos – collectors want something no-one else has, even though there’s nothing physical they actually own and keep.
+
+Sam
+And the value of NFTs is going up and up?
+
+Neil
+Massively. A digital sticker of French footballer, Kylian Mbappé, recently sold for £25,000! Which reminds me of my quiz question, Sam. In June 2021, Sir Tim Berners-Lee sold the original source code he used to invent the World Wide Web as an NFT at a charity auction. The sale started at $1000 but how much did the source code eventually sell for? Was it: a) 5.4 thousand dollars? b) 5.4 million dollars? or, c) 5.4 billion dollars?
+
+Sam
+If you’re asking me how much the internet sold for I’d say c) 5.4 billion dollars.
+
+Neil
+OK, Sam, we’ll find out later if that’s right.
+
+Sam
+Sir Tim Berners-Lee famously never made any money from the World Wide Web, insisting that his invention should be free for everyone. But the world of NFTs is controversial and not everyone thinks Sir Tim should be getting involved.
+
+Neil
+That’s certainly the view of Shona Ghosh, technology editor at the ‘The Insider’ website, as she told BBC World Service programme, Tech Tent:
+
+Shona Ghosh
+I think there’s a balance to be struck between exploring new technologies and Sir Tim Berners-Lee is an amazing figure but NFTs are a wild west. Not everything associated with NFTs are rogue, but these so-called digital collectables are going for lots of money.
+
+Sam
+Internet NFTs are very new and there are no rules controlling what can be sold and for how much, so Shona describes them as a wild west.
+
+Neil
+The Wild West means a situation where people can do whatever they want because there are no laws or controls, like the early history of the western part of the United States.
+
+Sam
+She also calls some things about NFTs rogue - behaving differently from what’s normal or expected, often in a way that causes damage.
+
+Neil
+Love them or hate them, there are strong opinions on both sides of the NFT debate, as Rory Cellan-Jones, presenter of BBC World Service’s Tech Tent, explains:
+
+Rory Cellan-Jones
+To some NFTs are a brilliant innovation which has promised to put a value on digital artefacts. To others they’re little more than a dubious pyramid scheme with a damaging impact on the environment because of the way the tokens are created.
+
+Sam
+Some people are suspicious of the large amounts of money collectors are willing to pay, comparing NFTs to pyramid schemes - business tricks or scams where money is obtained dishonestly.
+
+Neil
+But for others NFTs are a legitimate and useful way to put a price on rare digital artefacts – items, such as images, videos and music, that are produced and stored as electronic versions.
+
+Sam
+Items like, for example, the original source code for the internet. So how much money did Sir Tim Berners-Lee raise for charity when he sold it off, Neil?
+
+Neil
+In my quiz question I asked Sam how much the NFT of the original internet source code sold for at auction.
+
+Sam
+I said c) 5.4 billion dollars.
+
+Neil
+You were… wrong! In fact it was less - 5.4 million dollars – but still far too expensive for me to collect.
+
+Sam
+Hmmm, now I’m wondering how much my Pokémon card collection would sell for. If only I could find it!
+
+Neil
+Well, while you look for your collection, Sam, let’s recap the vocabulary from this programme all about NFTs which are digital artefacts or items that are produced and stored as electronic versions.
+
+Sam
+NFTs are virtual collectables – desirable objects that people search for and collect.
+
+Neil
+And they are non-fungible meaning they have special and unique characteristics that cannot be interchanged with anything else.
+
+Sam
+If something is rogue it behaves in a different way from what’s normal or expected, often causing damage.
+
+Neil
+The wild west describes a chaotic situation without laws or controls.
+
+Sam
+And finally, a pyramid scheme is a business scam where money is gained dishonestly.
+
+Neil
+If you’d like to know more about non-fungible tokens, bitcoin and other trending internet topics there’s plenty to find on the BBC website.
+
+Sam
+And for more interesting conversation and useful vocabulary, remember to join us again soon here at 6 Minute English. Bye for now!
+
+Neil
+Bye!

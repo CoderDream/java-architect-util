@@ -237,7 +237,7 @@ public class GenSrtUtil {
         String filePath = CommonUtil.getFullPathFileName(folderName, fileName, ".txt");
         List<String> scriptList = new ArrayList<>();
 
-        if(folderName.startsWith("22") || folderName.startsWith("21")) {
+        if(folderName.startsWith("22") || folderName.startsWith("21") || folderName.startsWith("20")|| folderName.startsWith("19")|| folderName.startsWith("18")) {
             scriptList.add("This is a download from bbc learning English.");
             scriptList.add("To find out more, visit our website.");
         }

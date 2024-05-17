@@ -49,7 +49,7 @@ public class MultiThreadDownloadMp3Executer {
         handler);
 
     public void initTestArr() {
-        boolean test = true;
+        boolean test = false;
         List<DownloadInfoEntity> downloadInfoEntityListTemp = new ArrayList<>();
         if(test) {
             DownloadInfoEntity infoEntity = new DownloadInfoEntity();
@@ -60,7 +60,7 @@ public class MultiThreadDownloadMp3Executer {
             infoEntity.setFileName(folderName + ".html");
             downloadInfoEntityListTemp = Arrays.asList(infoEntity);
         } else {
-            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("2023", "01", "02");
+            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("mp3", "2020", "01");
         }
 
         for (DownloadInfoEntity downloadInfoEntity : downloadInfoEntityListTemp) {

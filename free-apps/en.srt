@@ -1,0 +1,3375 @@
+1
+00:00:49.116 --> 00:00:50.250
+Tim Cook: Good morning!
+
+1
+00:00:50.284 --> 00:00:52.653
+Welcome to Apple Park!
+
+1
+00:00:52.686 --> 00:00:55.455
+We have a huge day of announcements ahead of us,
+
+1
+00:00:52.686 --> 00:00:55.455
+We have a huge day of announcements ahead of us,
+
+1
+00:00:55.489 --> 00:00:58.258
+and it's all about iPad.
+
+1
+00:00:58.292 --> 00:01:02.563
+In fact, this is the biggest day for iPad since its introduction.
+
+1
+00:00:58.292 --> 00:01:02.563
+In fact, this is the biggest day for iPad since its introduction.
+
+1
+00:01:02.596 --> 00:01:06.733
+But first I'd like to give you a couple of quick updates.
+
+1
+00:01:02.596 --> 00:01:06.733
+But first I'd like to give you a couple of quick updates.
+
+1
+00:01:06.767 --> 00:01:10.370
+In February, we shipped Apple Vision Pro.
+
+1
+00:01:10.404 --> 00:01:15.509
+This revolutionary new product is unlike anything that came before it.
+
+1
+00:01:10.404 --> 00:01:15.509
+This revolutionary new product is unlike anything that came before it.
+
+1
+00:01:15.542 --> 00:01:17.377
+Now that it's out in the world
+
+1
+00:01:17.411 --> 00:01:20.814
+and people are experiencing its phenomenal capabilities,
+
+1
+00:01:17.411 --> 00:01:20.814
+and people are experiencing its phenomenal capabilities,
+
+1
+00:01:20.848 --> 00:01:25.152
+we're seeing some amazing things being done with Apple Vision Pro.
+
+1
+00:01:20.848 --> 00:01:25.152
+we're seeing some amazing things being done with Apple Vision Pro.
+
+1
+00:01:25.185 --> 00:01:30.324
+Porsche is building brand-new spatial experiences across the company,
+
+1
+00:01:25.185 --> 00:01:30.324
+Porsche is building brand-new spatial experiences across the company,
+
+1
+00:01:30.357 --> 00:01:34.962
+from reimagining track experiences to training service technicians
+
+1
+00:01:34.995 --> 00:01:37.965
+to creating their showroom of the future.
+
+1
+00:01:37.998 --> 00:01:42.836
+Dr. Tommy Korn at Sharp HealthCare is using Apple Vision Pro
+
+1
+00:01:37.998 --> 00:01:42.836
+Dr. Tommy Korn at Sharp HealthCare is using Apple Vision Pro
+
+1
+00:01:42.870 --> 00:01:45.205
+to improve surgical eye care
+
+1
+00:01:45.239 --> 00:01:49.309
+through simulation, analysis, and optimization.
+
+1
+00:01:45.239 --> 00:01:49.309
+through simulation, analysis, and optimization.
+
+1
+00:01:49.343 --> 00:01:54.414
+And award-winning film director Jon M. Chu is using Apple Vision Pro
+
+1
+00:01:49.343 --> 00:01:54.414
+And award-winning film director Jon M. Chu is using Apple Vision Pro
+
+1
+00:01:54.448 --> 00:01:59.453
+to oversee the editing and visual effects for his upcoming film "Wicked,"
+
+1
+00:01:59.486 --> 00:02:04.358
+from the comfort of his home, on a giant theater-size screen.
+
+1
+00:01:59.486 --> 00:02:04.358
+from the comfort of his home, on a giant theater-size screen.
+
+1
+00:02:04.391 --> 00:02:07.761
+These are just a few examples of the incredible ways
+
+1
+00:02:04.391 --> 00:02:07.761
+These are just a few examples of the incredible ways
+
+1
+00:02:07.794 --> 00:02:13.400
+Apple Vision Pro is already making an impact in our customers' lives.
+
+1
+00:02:07.794 --> 00:02:13.400
+Apple Vision Pro is already making an impact in our customers' lives.
+
+1
+00:02:13.433 --> 00:02:17.337
+In March, we shipped the amazing new MacBook Air.
+
+1
+00:02:17.371 --> 00:02:20.974
+With the power of M3, it puts even more performance
+
+1
+00:02:17.371 --> 00:02:20.974
+With the power of M3, it puts even more performance
+
+1
+00:02:21.008 --> 00:02:25.245
+and capability into the best thin and light laptop.
+
+1
+00:02:21.008 --> 00:02:25.245
+and capability into the best thin and light laptop.
+
+1
+00:02:25.279 --> 00:02:27.881
+Our users are loving it.
+
+1
+00:02:27.915 --> 00:02:33.587
+In fact, MacBook Air is now the world's best-selling 13-inch laptop
+
+1
+00:02:27.915 --> 00:02:33.587
+In fact, MacBook Air is now the world's best-selling 13-inch laptop
+
+1
+00:02:33.620 --> 00:02:37.691
+and the world's best-selling 15-inch laptop!
+
+1
+00:02:33.620 --> 00:02:37.691
+and the world's best-selling 15-inch laptop!
+
+1
+00:02:37.724 --> 00:02:41.728
+Now let's turn our attention to iPad.
+
+1
+00:02:41.762 --> 00:02:44.131
+There's no other device like it.
+
+1
+00:02:44.164 --> 00:02:48.769
+iPad is powerful, portable, and incredibly versatile.
+
+1
+00:02:44.164 --> 00:02:48.769
+iPad is powerful, portable, and incredibly versatile.
+
+1
+00:02:48.802 --> 00:02:51.004
+In classrooms around the world,
+
+1
+00:02:51.038 --> 00:02:56.810
+iPad is helping students and teachers bring their lessons and learning to life.
+
+1
+00:02:51.038 --> 00:02:56.810
+iPad is helping students and teachers bring their lessons and learning to life.
+
+1
+00:02:56.844 --> 00:02:59.513
+From architects to engineers,
+
+1
+00:02:59.546 --> 00:03:01.415
+iPad plays a critical role
+
+1
+00:03:01.448 --> 00:03:04.484
+in helping them get their most important work done
+
+1
+00:03:04.518 --> 00:03:08.555
+in entirely new ways, no matter where they are.
+
+1
+00:03:04.518 --> 00:03:08.555
+in entirely new ways, no matter where they are.
+
+1
+00:03:08.589 --> 00:03:11.758
+For artists, designers, and musicians,
+
+1
+00:03:11.792 --> 00:03:15.128
+it provides ways to take their ideas and creativity
+
+1
+00:03:11.792 --> 00:03:15.128
+it provides ways to take their ideas and creativity
+
+1
+00:03:15.162 --> 00:03:17.664
+further than ever before.
+
+1
+00:03:17.698 --> 00:03:20.100
+And with its incredible performance,
+
+1
+00:03:20.133 --> 00:03:23.604
+powered by Apple silicon and the world's best displays,
+
+1
+00:03:23.637 --> 00:03:26.874
+iPad is an amazing device for playing games
+
+1
+00:03:23.637 --> 00:03:26.874
+iPad is an amazing device for playing games
+
+1
+00:03:26.907 --> 00:03:29.009
+and enjoying entertainment.
+
+1
+00:03:29.042 --> 00:03:33.614
+It's this incredible versatility that defines iPad.
+
+1
+00:03:29.042 --> 00:03:33.614
+It's this incredible versatility that defines iPad.
+
+1
+00:03:33.647 --> 00:03:38.585
+And today, we have some huge updates across the iPad lineup.
+
+1
+00:03:33.647 --> 00:03:38.585
+And today, we have some huge updates across the iPad lineup.
+
+1
+00:03:38.619 --> 00:03:40.888
+So here's John to tell you more.
+
+1
+00:03:57.504 --> 00:03:59.940
+♪ ♪
+
+1
+00:03:59.973 --> 00:04:02.910
+John Ternus: Let's kick things off with iPad Air.
+
+1
+00:03:59.973 --> 00:04:02.910
+John Ternus: Let's kick things off with iPad Air.
+
+1
+00:04:02.943 --> 00:04:08.081
+iPad Air is designed to deliver advanced features pioneered on iPad Pro,
+
+1
+00:04:02.943 --> 00:04:08.081
+iPad Air is designed to deliver advanced features pioneered on iPad Pro,
+
+1
+00:04:08.115 --> 00:04:11.552
+and make them available at an even more affordable price.
+
+1
+00:04:11.585 --> 00:04:16.656
+That's why a wide range of users rely on it to do so many different things.
+
+1
+00:04:11.585 --> 00:04:16.656
+That's why a wide range of users rely on it to do so many different things.
+
+1
+00:04:16.690 --> 00:04:19.625
+Like college students, who use Goodnotes and Apple Pencil
+
+1
+00:04:16.690 --> 00:04:19.625
+Like college students, who use Goodnotes and Apple Pencil
+
+1
+00:04:19.660 --> 00:04:22.162
+from the classroom to the dorm room.
+
+1
+00:04:22.196 --> 00:04:25.632
+Entrepreneurs who use QuickBooks for their small business
+
+1
+00:04:22.196 --> 00:04:25.632
+Entrepreneurs who use QuickBooks for their small business
+
+1
+00:04:25.666 --> 00:04:28.202
+while on the go using 5G.
+
+1
+00:04:28.235 --> 00:04:31.905
+Creators that rely on the performance of iPad Air and iMovie
+
+1
+00:04:28.235 --> 00:04:31.905
+Creators that rely on the performance of iPad Air and iMovie
+
+1
+00:04:31.939 --> 00:04:34.041
+to produce engaging content.
+
+1
+00:04:34.074 --> 00:04:37.744
+And all types of consumers who use it to catch up on a hit show,
+
+1
+00:04:34.074 --> 00:04:37.744
+And all types of consumers who use it to catch up on a hit show,
+
+1
+00:04:37.778 --> 00:04:42.549
+like "Palm Royale," or have a blast with friends in a game like "PUBG."
+
+1
+00:04:37.778 --> 00:04:42.549
+like "Palm Royale," or have a blast with friends in a game like "PUBG."
+
+1
+00:04:42.583 --> 00:04:45.052
+The combination of a high-resolution display,
+
+1
+00:04:45.085 --> 00:04:47.654
+the phenomenal performance of Apple silicon,
+
+1
+00:04:47.688 --> 00:04:49.890
+and its colorful, portable design
+
+1
+00:04:49.923 --> 00:04:52.259
+with support for amazing accessories
+
+1
+00:04:52.292 --> 00:04:56.163
+makes iPad Air so versatile for so many.
+
+1
+00:04:56.196 --> 00:04:58.999
+Well today, we're excited to give all these users
+
+1
+00:04:59.032 --> 00:05:02.736
+even more of what they love with a new iPad Air.
+
+1
+00:04:59.032 --> 00:05:02.736
+even more of what they love with a new iPad Air.
+
+1
+00:05:02.769 --> 00:05:04.271
+And here it is.
+
+1
+00:05:19.553 --> 00:05:24.258
+♪ ♪
+
+1
+00:05:25.158 --> 00:05:28.929
+For the first time ever, iPad Air comes in two sizes:
+
+1
+00:05:28.962 --> 00:05:30.664
+a redesigned 11-inch Air,
+
+1
+00:05:30.697 --> 00:05:34.368
+and a spectacular, all-new 13-inch Air.
+
+1
+00:05:34.401 --> 00:05:36.737
+And here's Melody to tell you more.
+
+1
+00:05:38.038 --> 00:05:42.009
+Melody Kuna: I'm thrilled to tell you all about the new iPad Air.
+
+1
+00:05:38.038 --> 00:05:42.009
+Melody Kuna: I'm thrilled to tell you all about the new iPad Air.
+
+1
+00:05:42.042 --> 00:05:45.345
+Let's start with its brilliant Liquid Retina display.
+
+1
+00:05:45.379 --> 00:05:48.582
+Users love the portability of the 11-inch form factor,
+
+1
+00:05:45.379 --> 00:05:48.582
+Users love the portability of the 11-inch form factor,
+
+1
+00:05:48.615 --> 00:05:50.817
+which is perfect for tasks like jotting down notes
+
+1
+00:05:50.851 --> 00:05:52.586
+while working on a project.
+
+1
+00:05:52.619 --> 00:05:55.856
+Some Air users would prefer an even larger display
+
+1
+00:05:52.619 --> 00:05:55.856
+Some Air users would prefer an even larger display
+
+1
+00:05:55.889 --> 00:05:59.193
+for more room to work, learn, and play.
+
+1
+00:05:59.226 --> 00:06:04.231
+So inspired by iPad Pro, where about half the users choose a larger screen,
+
+1
+00:05:59.226 --> 00:06:04.231
+So inspired by iPad Pro, where about half the users choose a larger screen,
+
+1
+00:06:04.264 --> 00:06:08.602
+we created a 13-inch model of the new iPad Air as well.
+
+1
+00:06:04.264 --> 00:06:08.602
+we created a 13-inch model of the new iPad Air as well.
+
+1
+00:06:08.635 --> 00:06:12.272
+The 13-inch Air has 30% more screen real estate
+
+1
+00:06:08.635 --> 00:06:12.272
+The 13-inch Air has 30% more screen real estate
+
+1
+00:06:12.306 --> 00:06:14.041
+than the 11-inch Air.
+
+1
+00:06:14.074 --> 00:06:17.311
+The larger display gives users more space to express their ideas
+
+1
+00:06:17.344 --> 00:06:18.946
+in apps like Freeform,
+
+1
+00:06:18.979 --> 00:06:22.316
+or to see more participants in a video call on Zoom.
+
+1
+00:06:22.349 --> 00:06:27.287
+It also provides more space to view multiple apps using Split View in iPadOS.
+
+1
+00:06:22.349 --> 00:06:27.287
+It also provides more space to view multiple apps using Split View in iPadOS.
+
+1
+00:06:27.321 --> 00:06:30.457
+And both displays have the same advanced features.
+
+1
+00:06:27.321 --> 00:06:30.457
+And both displays have the same advanced features.
+
+1
+00:06:30.490 --> 00:06:34.361
+So all your content looks absolutely gorgeous.
+
+1
+00:06:34.394 --> 00:06:37.831
+We've also redesigned the iPad Air to put the front-facing camera
+
+1
+00:06:34.394 --> 00:06:37.831
+We've also redesigned the iPad Air to put the front-facing camera
+
+1
+00:06:37.865 --> 00:06:39.499
+on the landscape edge.
+
+1
+00:06:39.533 --> 00:06:42.669
+And it features Center Stage, which uses machine learning
+
+1
+00:06:39.533 --> 00:06:42.669
+And it features Center Stage, which uses machine learning
+
+1
+00:06:42.703 --> 00:06:45.906
+to automatically keep everyone in the field of view.
+
+1
+00:06:45.939 --> 00:06:49.643
+So it's perfect for connecting with friends and family over FaceTime
+
+1
+00:06:45.939 --> 00:06:49.643
+So it's perfect for connecting with friends and family over FaceTime
+
+1
+00:06:49.676 --> 00:06:52.412
+or joining a video conference while using a keyboard.
+
+1
+00:06:52.446 --> 00:06:56.783
+The new Air features landscape stereo speakers with Spatial Audio,
+
+1
+00:06:52.446 --> 00:06:56.783
+The new Air features landscape stereo speakers with Spatial Audio,
+
+1
+00:06:56.817 --> 00:06:58.552
+so it sounds great.
+
+1
+00:06:58.585 --> 00:07:00.287
+♪ ♪
+
+1
+00:07:00.320 --> 00:07:04.992
+And the 13-inch model has even better sound quality with double the bass.
+
+1
+00:07:07.027 --> 00:07:09.496
+The new Air comes in four finishes:
+
+1
+00:07:09.530 --> 00:07:11.398
+a new Blue and a new Purple,
+
+1
+00:07:11.431 --> 00:07:14.535
+as well as a beautiful Starlight and Space Gray.
+
+1
+00:07:11.431 --> 00:07:14.535
+as well as a beautiful Starlight and Space Gray.
+
+1
+00:07:14.568 --> 00:07:19.840
+And its durable design uses a 100% recycled aluminum enclosure.
+
+1
+00:07:14.568 --> 00:07:19.840
+And its durable design uses a 100% recycled aluminum enclosure.
+
+1
+00:07:19.873 --> 00:07:23.810
+Air users also love how quickly they can get things done.
+
+1
+00:07:23.844 --> 00:07:26.280
+So we're stepping up performance in a big way
+
+1
+00:07:23.844 --> 00:07:26.280
+So we're stepping up performance in a big way
+
+1
+00:07:26.313 --> 00:07:30.250
+with the incredibly fast M2!
+
+1
+00:07:30.284 --> 00:07:34.755
+M2 is a powerful chip that's improved in a number of ways over M1.
+
+1
+00:07:34.788 --> 00:07:37.791
+It has a faster CPU, faster GPU,
+
+1
+00:07:37.824 --> 00:07:39.826
+and much faster Neural Engine.
+
+1
+00:07:39.860 --> 00:07:42.462
+And when combined with faster memory bandwidth,
+
+1
+00:07:39.860 --> 00:07:42.462
+And when combined with faster memory bandwidth,
+
+1
+00:07:42.496 --> 00:07:46.800
+the new Air is nearly 50% faster than the previous Air with M1
+
+1
+00:07:46.834 --> 00:07:50.971
+for all types of productive and creative tasks.
+
+1
+00:07:46.834 --> 00:07:50.971
+for all types of productive and creative tasks.
+
+1
+00:07:51.004 --> 00:07:54.208
+And compared to iPad Air with A14 Bionic,
+
+1
+00:07:54.241 --> 00:07:56.276
+the new Air provides up to an enormous
+
+1
+00:07:56.310 --> 00:07:58.979
+three times faster performance.
+
+1
+00:07:59.012 --> 00:08:01.215
+So users can create faster than ever
+
+1
+00:08:01.248 --> 00:08:04.084
+in Affinity Designer 2 to promote their business,
+
+1
+00:08:04.117 --> 00:08:07.888
+and play graphically intensive games like the upcoming "Zenless Zone Zero,"
+
+1
+00:08:04.117 --> 00:08:07.888
+and play graphically intensive games like the upcoming "Zenless Zone Zero,"
+
+1
+00:08:07.921 --> 00:08:11.458
+or the visually stunning "Assassin's Creed Mirage."
+
+1
+00:08:11.491 --> 00:08:17.364
+With M2, the new Air is also an incredibly powerful device for AI.
+
+1
+00:08:11.491 --> 00:08:17.364
+With M2, the new Air is also an incredibly powerful device for AI.
+
+1
+00:08:17.397 --> 00:08:21.468
+It's blazing fast for powerful machine learning features in iPadOS,
+
+1
+00:08:17.397 --> 00:08:21.468
+It's blazing fast for powerful machine learning features in iPadOS,
+
+1
+00:08:21.502 --> 00:08:25.272
+like Visual Look Up, Subject Lift, and Live Text capture.
+
+1
+00:08:21.502 --> 00:08:25.272
+like Visual Look Up, Subject Lift, and Live Text capture.
+
+1
+00:08:25.305 --> 00:08:27.741
+Or for the ML Enhance tool in Photomator,
+
+1
+00:08:27.774 --> 00:08:31.578
+which uses AI models trained on over 20 million pro images
+
+1
+00:08:27.774 --> 00:08:31.578
+which uses AI models trained on over 20 million pro images
+
+1
+00:08:31.612 --> 00:08:35.015
+to improve your photo with a single click.
+
+1
+00:08:35.048 --> 00:08:38.552
+We're thrilled to amp up performance with M2.
+
+1
+00:08:35.048 --> 00:08:38.552
+We're thrilled to amp up performance with M2.
+
+1
+00:08:39.753 --> 00:08:43.023
+Amazing accessories expand what's possible on iPad Air.
+
+1
+00:08:39.753 --> 00:08:43.023
+Amazing accessories expand what's possible on iPad Air.
+
+1
+00:08:43.056 --> 00:08:45.893
+The new Air works with the Magic Keyboard,
+
+1
+00:08:45.926 --> 00:08:50.163
+with its built-in trackpad, backlit keys, and terrific floating design.
+
+1
+00:08:45.926 --> 00:08:50.163
+with its built-in trackpad, backlit keys, and terrific floating design.
+
+1
+00:08:50.197 --> 00:08:54.001
+And of course, it supports the amazing Apple Pencil,
+
+1
+00:08:50.197 --> 00:08:54.001
+And of course, it supports the amazing Apple Pencil,
+
+1
+00:08:54.034 --> 00:08:58.138
+so users can express their creative ideas in remarkable ways.
+
+1
+00:08:58.172 --> 00:09:00.007
+And with M2 under the hood,
+
+1
+00:09:00.040 --> 00:09:03.777
+the new Air supports Apple Pencil hover for greater precision,
+
+1
+00:09:03.810 --> 00:09:07.214
+letting you preview your mark before you make it.
+
+1
+00:09:03.810 --> 00:09:07.214
+letting you preview your mark before you make it.
+
+1
+00:09:07.247 --> 00:09:09.816
+So that's the new iPad Air,
+
+1
+00:09:09.850 --> 00:09:14.054
+now available in 11-inch and 13-inch models,
+
+1
+00:09:09.850 --> 00:09:14.054
+now available in 11-inch and 13-inch models,
+
+1
+00:09:14.087 --> 00:09:16.723
+powered by the incredible M2 chip,
+
+1
+00:09:16.757 --> 00:09:20.394
+and featuring a landscape front camera and faster Wi-Fi.
+
+1
+00:09:16.757 --> 00:09:20.394
+and featuring a landscape front camera and faster Wi-Fi.
+
+1
+00:09:20.427 --> 00:09:24.898
+The new iPad Air is more powerful and versatile than ever.
+
+1
+00:09:20.427 --> 00:09:24.898
+The new iPad Air is more powerful and versatile than ever.
+
+1
+00:09:24.932 --> 00:09:26.333
+Now back to John.
+
+1
+00:09:26.366 --> 00:09:30.170
+♪ ♪
+
+1
+00:09:30.204 --> 00:09:31.972
+John: The new Air is awesome.
+
+1
+00:09:32.005 --> 00:09:35.976
+It meets the needs of so many users in so many ways.
+
+1
+00:09:36.009 --> 00:09:38.879
+And both models feature double the starting storage,
+
+1
+00:09:38.912 --> 00:09:41.782
+which is now 128GB.
+
+1
+00:09:41.815 --> 00:09:44.051
+We've also expanded the number of storage options
+
+1
+00:09:41.815 --> 00:09:44.051
+We've also expanded the number of storage options
+
+1
+00:09:44.084 --> 00:09:47.020
+by adding 512GB and 1TB.
+
+1
+00:09:47.054 --> 00:09:48.555
+And even with all these upgrades,
+
+1
+00:09:48.589 --> 00:09:53.393
+we're thrilled that the new 11-inch Air still starts at just $599.
+
+1
+00:09:53.427 --> 00:09:56.663
+And the 13-inch Air is just $799.
+
+1
+00:09:56.697 --> 00:09:58.765
+That's a remarkable value for a device
+
+1
+00:09:58.799 --> 00:10:01.969
+with so many advanced features and capabilities.
+
+1
+00:09:58.799 --> 00:10:01.969
+with so many advanced features and capabilities.
+
+1
+00:10:02.002 --> 00:10:06.306
+You can order the new Air today, and it will be available next week.
+
+1
+00:10:02.002 --> 00:10:06.306
+You can order the new Air today, and it will be available next week.
+
+1
+00:10:06.340 --> 00:10:11.011
+Now let's turn our attention to the next chapter of iPad Pro.
+
+1
+00:10:29.429 --> 00:10:32.866
+iPad Pro pioneers our most advanced technologies
+
+1
+00:10:29.429 --> 00:10:32.866
+iPad Pro pioneers our most advanced technologies
+
+1
+00:10:32.900 --> 00:10:36.270
+and pushes the limits of what iPad can be.
+
+1
+00:10:36.303 --> 00:10:39.706
+And it empowers users to push the limits of their productivity
+
+1
+00:10:39.740 --> 00:10:41.441
+and creativity as well.
+
+1
+00:10:41.475 --> 00:10:46.313
+Users like illustrators, who use Procreate to produce their next masterpiece.
+
+1
+00:10:41.475 --> 00:10:46.313
+Users like illustrators, who use Procreate to produce their next masterpiece.
+
+1
+00:10:46.346 --> 00:10:51.251
+And 3D designers using SketchUp to conceive their most ambitious projects.
+
+1
+00:10:46.346 --> 00:10:51.251
+And 3D designers using SketchUp to conceive their most ambitious projects.
+
+1
+00:10:51.285 --> 00:10:53.487
+Of course, it's not just for pros.
+
+1
+00:10:53.520 --> 00:10:57.691
+iPad Pro is for anyone who wants the ultimate iPad experience.
+
+1
+00:10:53.520 --> 00:10:57.691
+iPad Pro is for anyone who wants the ultimate iPad experience.
+
+1
+00:10:57.724 --> 00:11:00.794
+It's the combination of the world's best displays,
+
+1
+00:10:57.724 --> 00:11:00.794
+It's the combination of the world's best displays,
+
+1
+00:11:00.827 --> 00:11:04.431
+the extraordinary performance of our latest M-series chips,
+
+1
+00:11:04.464 --> 00:11:07.100
+and advanced connectivity and accessories,
+
+1
+00:11:07.134 --> 00:11:12.339
+in an ultraportable design that puts iPad Pro in a class by itself.
+
+1
+00:11:07.134 --> 00:11:12.339
+in an ultraportable design that puts iPad Pro in a class by itself.
+
+1
+00:11:12.372 --> 00:11:16.343
+Well today, we're not only going to push the limits of what you can do on iPad.
+
+1
+00:11:16.376 --> 00:11:18.612
+We're going to crush them!
+
+1
+00:11:57.851 --> 00:12:07.327
+♪ ♪
+
+1
+00:12:09.696 --> 00:12:19.706
+♪ ♪
+
+1
+00:12:21.241 --> 00:12:24.311
+This is the all-new, impossibly thin,
+
+1
+00:12:24.344 --> 00:12:27.781
+incredibly powerful iPad Pro!
+
+1
+00:12:27.814 --> 00:12:30.350
+It has a stunning new design,
+
+1
+00:12:30.384 --> 00:12:31.885
+breakthrough new display,
+
+1
+00:12:31.919 --> 00:12:35.622
+outrageous performance, and amazing accessories.
+
+1
+00:12:35.656 --> 00:12:38.525
+Let's get started with its stunning design.
+
+1
+00:12:35.656 --> 00:12:38.525
+Let's get started with its stunning design.
+
+1
+00:12:38.559 --> 00:12:42.829
+We've always envisioned iPad as a magical sheet of glass,
+
+1
+00:12:38.559 --> 00:12:42.829
+We've always envisioned iPad as a magical sheet of glass,
+
+1
+00:12:42.863 --> 00:12:47.167
+and with this new design, that vision is brought to life more than ever.
+
+1
+00:12:47.201 --> 00:12:49.136
+The new Pro comes in two sizes:
+
+1
+00:12:49.169 --> 00:12:51.738
+a new, super portable 11-inch model
+
+1
+00:12:51.772 --> 00:12:54.508
+and a new, expansive 13-inch model.
+
+1
+00:12:54.541 --> 00:12:57.177
+And both are unbelievably thin.
+
+1
+00:12:57.211 --> 00:13:00.881
+The 11-inch Pro is 5.3 mm thin.
+
+1
+00:13:00.914 --> 00:13:05.252
+And the 13-inch Pro is an incredible 5.1 mm thin.
+
+1
+00:13:05.285 --> 00:13:09.356
+Compared to the previous iPad Pro, the difference is striking.
+
+1
+00:13:05.285 --> 00:13:09.356
+Compared to the previous iPad Pro, the difference is striking.
+
+1
+00:13:09.389 --> 00:13:13.327
+The new iPad Pro is even thinner than the iPod nano,
+
+1
+00:13:09.389 --> 00:13:13.327
+The new iPad Pro is even thinner than the iPod nano,
+
+1
+00:13:13.360 --> 00:13:16.730
+which makes it the thinnest Apple product ever!
+
+1
+00:13:16.763 --> 00:13:18.131
+And they're both lighter as well.
+
+1
+00:13:18.165 --> 00:13:21.502
+In fact, the 11-inch model is less than a pound
+
+1
+00:13:21.535 --> 00:13:26.139
+and the 13-inch model is nearly a quarter pound lighter than its predecessor.
+
+1
+00:13:21.535 --> 00:13:26.139
+and the 13-inch model is nearly a quarter pound lighter than its predecessor.
+
+1
+00:13:26.173 --> 00:13:30.544
+iPad Pro comes in two great finishes: Silver and Space Black,
+
+1
+00:13:26.173 --> 00:13:30.544
+iPad Pro comes in two great finishes: Silver and Space Black,
+
+1
+00:13:30.577 --> 00:13:34.781
+both with 100% recycled aluminum enclosures.
+
+1
+00:13:34.815 --> 00:13:37.150
+And it's just as strong as the previous design,
+
+1
+00:13:34.815 --> 00:13:37.150
+And it's just as strong as the previous design,
+
+1
+00:13:37.184 --> 00:13:39.319
+despite being so much thinner.
+
+1
+00:13:39.353 --> 00:13:43.891
+Just holding it in your hands is an unbelievable experience.
+
+1
+00:13:39.353 --> 00:13:43.891
+Just holding it in your hands is an unbelievable experience.
+
+1
+00:13:45.559 --> 00:13:49.897
+Now let's talk about its breakthrough new display.
+
+1
+00:13:45.559 --> 00:13:49.897
+Now let's talk about its breakthrough new display.
+
+1
+00:13:49.930 --> 00:13:52.966
+With the new iPad Pro, we wanted to give customers
+
+1
+00:13:53.000 --> 00:13:55.536
+an even more remarkable visual experience.
+
+1
+00:13:55.569 --> 00:14:00.774
+And we did just that by bringing OLED to iPad for the very first time.
+
+1
+00:13:55.569 --> 00:14:00.774
+And we did just that by bringing OLED to iPad for the very first time.
+
+1
+00:14:00.807 --> 00:14:03.710
+With OLED technology, the pixels generate both the light
+
+1
+00:14:03.744 --> 00:14:06.780
+and the color for unparalleled precision.
+
+1
+00:14:06.813 --> 00:14:09.449
+However, for the expansive displays in iPad Pro,
+
+1
+00:14:09.483 --> 00:14:12.553
+a single OLED panel doesn't generate enough brightness
+
+1
+00:14:09.483 --> 00:14:12.553
+a single OLED panel doesn't generate enough brightness
+
+1
+00:14:12.586 --> 00:14:16.323
+to deliver the XDR performance iPad Pro users expect.
+
+1
+00:14:16.356 --> 00:14:20.961
+So we developed a state-of-the-art display that uses two OLED panels
+
+1
+00:14:16.356 --> 00:14:20.961
+So we developed a state-of-the-art display that uses two OLED panels
+
+1
+00:14:20.994 --> 00:14:22.796
+and combines the light from both
+
+1
+00:14:22.829 --> 00:14:25.732
+to deliver phenomenal full-screen brightness.
+
+1
+00:14:22.829 --> 00:14:25.732
+to deliver phenomenal full-screen brightness.
+
+1
+00:14:27.034 --> 00:14:32.272
+This technology is called tandem OLED and it's a breakthrough for iPad Pro.
+
+1
+00:14:27.034 --> 00:14:32.272
+This technology is called tandem OLED and it's a breakthrough for iPad Pro.
+
+1
+00:14:32.306 --> 00:14:37.611
+The new Pro can support an incredible 1000 nits of full-screen brightness
+
+1
+00:14:32.306 --> 00:14:37.611
+The new Pro can support an incredible 1000 nits of full-screen brightness
+
+1
+00:14:37.644 --> 00:14:40.781
+for both SDR and HDR content
+
+1
+00:14:40.814 --> 00:14:44.218
+and 1600 nits of peak HDR brightness.
+
+1
+00:14:44.251 --> 00:14:48.355
+No other device of its kind delivers this level of display quality.
+
+1
+00:14:44.251 --> 00:14:48.355
+No other device of its kind delivers this level of display quality.
+
+1
+00:14:48.388 --> 00:14:52.226
+And because tandem OLED technology enables sub-millisecond control
+
+1
+00:14:52.259 --> 00:14:55.162
+over the color and luminance of each pixel,
+
+1
+00:14:52.259 --> 00:14:55.162
+over the color and luminance of each pixel,
+
+1
+00:14:55.195 --> 00:15:00.200
+the display in the new Pro takes XDR precision to a whole new level.
+
+1
+00:14:55.195 --> 00:15:00.200
+the display in the new Pro takes XDR precision to a whole new level.
+
+1
+00:15:00.234 --> 00:15:04.671
+Specular highlights in photos and video appear brighter.
+
+1
+00:15:04.705 --> 00:15:06.573
+Blacks are deeper and more true.
+
+1
+00:15:06.607 --> 00:15:11.278
+And there's more detail in shadows and low light than ever before on iPad.
+
+1
+00:15:11.311 --> 00:15:14.848
+And it's even more responsive to content in motion.
+
+1
+00:15:11.311 --> 00:15:14.848
+And it's even more responsive to content in motion.
+
+1
+00:15:14.882 --> 00:15:18.886
+Everything you view on this display will look amazing.
+
+1
+00:15:14.882 --> 00:15:18.886
+Everything you view on this display will look amazing.
+
+1
+00:15:18.919 --> 00:15:23.056
+And we're calling it the Ultra Retina XDR.
+
+1
+00:15:23.090 --> 00:15:25.659
+And it's coming to both models!
+
+1
+00:15:25.692 --> 00:15:30.898
+So now both sizes of iPad Pro feature our most advanced display technology.
+
+1
+00:15:25.692 --> 00:15:30.898
+So now both sizes of iPad Pro feature our most advanced display technology.
+
+1
+00:15:30.931 --> 00:15:34.935
+HDR images of the night sky with details in the shadows
+
+1
+00:15:34.968 --> 00:15:38.805
+and pinpoint bright stars are rendered with stunning precision.
+
+1
+00:15:34.968 --> 00:15:38.805
+and pinpoint bright stars are rendered with stunning precision.
+
+1
+00:15:38.839 --> 00:15:42.009
+Beautifully captured HDR photos of gorgeous landscapes
+
+1
+00:15:38.839 --> 00:15:42.009
+Beautifully captured HDR photos of gorgeous landscapes
+
+1
+00:15:42.042 --> 00:15:44.211
+look incredibly vibrant.
+
+1
+00:15:44.244 --> 00:15:48.749
+And getting drawn into a movie is a truly extraordinary experience.
+
+1
+00:15:44.244 --> 00:15:48.749
+And getting drawn into a movie is a truly extraordinary experience.
+
+1
+00:15:48.782 --> 00:15:51.952
+It's like holding a cinema right in your hands.
+
+1
+00:15:51.985 --> 00:15:55.222
+And this display not only delivers breakthrough visual quality,
+
+1
+00:15:51.985 --> 00:15:55.222
+And this display not only delivers breakthrough visual quality,
+
+1
+00:15:55.255 --> 00:15:57.624
+it's much thinner and lighter than the previous one,
+
+1
+00:15:57.658 --> 00:16:01.161
+enabling the striking design of the new iPad Pro.
+
+1
+00:15:57.658 --> 00:16:01.161
+enabling the striking design of the new iPad Pro.
+
+1
+00:16:01.195 --> 00:16:04.932
+And for Pro users working in high-end, color-managed workflows,
+
+1
+00:16:04.965 --> 00:16:07.835
+or in the most demanding ambient lighting conditions,
+
+1
+00:16:04.965 --> 00:16:07.835
+or in the most demanding ambient lighting conditions,
+
+1
+00:16:07.868 --> 00:16:11.672
+we're excited to bring a nano-texture glass option to iPad Pro
+
+1
+00:16:11.705 --> 00:16:13.574
+for the very first time.
+
+1
+00:16:13.607 --> 00:16:17.244
+Nano-texture glass is precisely etched at a nanometer scale,
+
+1
+00:16:17.277 --> 00:16:20.948
+maintaining image quality and contrast while scattering ambient light
+
+1
+00:16:17.277 --> 00:16:20.948
+maintaining image quality and contrast while scattering ambient light
+
+1
+00:16:20.981 --> 00:16:23.517
+for even less glare.
+
+1
+00:16:23.550 --> 00:16:25.619
+With all these amazing features,
+
+1
+00:16:25.652 --> 00:16:29.323
+the Ultra Retina XDR display is unquestionably
+
+1
+00:16:29.356 --> 00:16:32.793
+the world's most advanced display.
+
+1
+00:16:32.826 --> 00:16:35.429
+Now, let's talk about performance.
+
+1
+00:16:35.462 --> 00:16:40.067
+iPad Pro has always used incredibly advanced Apple silicon.
+
+1
+00:16:35.462 --> 00:16:40.067
+iPad Pro has always used incredibly advanced Apple silicon.
+
+1
+00:16:40.100 --> 00:16:42.069
+With M2 in the current iPad Pro,
+
+1
+00:16:42.102 --> 00:16:45.272
+it already delivers class-leading performance.
+
+1
+00:16:45.305 --> 00:16:47.341
+For the new iPad Pro, you might expect
+
+1
+00:16:47.374 --> 00:16:50.043
+that we would use the extremely powerful M3.
+
+1
+00:16:47.374 --> 00:16:50.043
+that we would use the extremely powerful M3.
+
+1
+00:16:50.077 --> 00:16:52.913
+But this stunning design and breakthrough display
+
+1
+00:16:52.946 --> 00:16:57.384
+required that we make the leap to the next generation of Apple silicon.
+
+1
+00:16:52.946 --> 00:16:57.384
+required that we make the leap to the next generation of Apple silicon.
+
+1
+00:16:57.417 --> 00:16:58.986
+And here it is.
+
+1
+00:16:59.019 --> 00:17:06.292
+♪ ♪
+
+1
+00:17:06.326 --> 00:17:08.462
+Introducing M4!
+
+1
+00:17:08.494 --> 00:17:09.496
+That's right.
+
+1
+00:17:09.530 --> 00:17:13.534
+The new Pro jumps from M2 all the way to M4
+
+1
+00:17:09.530 --> 00:17:13.534
+The new Pro jumps from M2 all the way to M4
+
+1
+00:17:13.567 --> 00:17:17.137
+to enable its amazingly thin design and game-changing display
+
+1
+00:17:17.171 --> 00:17:20.406
+while delivering a huge leap in performance.
+
+1
+00:17:17.171 --> 00:17:20.406
+while delivering a huge leap in performance.
+
+1
+00:17:20.440 --> 00:17:22.776
+And to tell you more, here's Tim Millet.
+
+1
+00:17:22.809 --> 00:17:30.184
+♪ ♪
+
+1
+00:17:31.451 --> 00:17:35.589
+Tim Millet: M4 represents another big step forward for Apple silicon.
+
+1
+00:17:35.622 --> 00:17:38.959
+To start, M4 is built on second-generation
+
+1
+00:17:35.622 --> 00:17:38.959
+To start, M4 is built on second-generation
+
+1
+00:17:38.992 --> 00:17:42.763
+3 nanometer technology that's even more power efficient.
+
+1
+00:17:38.992 --> 00:17:42.763
+3 nanometer technology that's even more power efficient.
+
+1
+00:17:42.796 --> 00:17:46.500
+This was essential to deliver incredible performance
+
+1
+00:17:46.533 --> 00:17:49.903
+in the exceptionally thin and light design of iPad Pro.
+
+1
+00:17:46.533 --> 00:17:49.903
+in the exceptionally thin and light design of iPad Pro.
+
+1
+00:17:49.937 --> 00:17:53.807
+And M4 also features an entirely new display engine
+
+1
+00:17:53.841 --> 00:17:58.779
+designed with pioneering technology that enables the stunning precision,
+
+1
+00:17:53.841 --> 00:17:58.779
+designed with pioneering technology that enables the stunning precision,
+
+1
+00:17:58.812 --> 00:18:02.816
+color, and brightness of the Ultra Retina XDR display.
+
+1
+00:17:58.812 --> 00:18:02.816
+color, and brightness of the Ultra Retina XDR display.
+
+1
+00:18:02.850 --> 00:18:08.222
+In addition, M4 brings phenomenal performance to the new Pro.
+
+1
+00:18:02.850 --> 00:18:08.222
+In addition, M4 brings phenomenal performance to the new Pro.
+
+1
+00:18:08.255 --> 00:18:10.958
+It has a powerful new CPU
+
+1
+00:18:10.991 --> 00:18:16.630
+and builds upon the next-generation GPU architecture debuted on M3.
+
+1
+00:18:10.991 --> 00:18:16.630
+and builds upon the next-generation GPU architecture debuted on M3.
+
+1
+00:18:16.663 --> 00:18:19.766
+The new CPU, with up to four performance cores
+
+1
+00:18:16.663 --> 00:18:19.766
+The new CPU, with up to four performance cores
+
+1
+00:18:19.800 --> 00:18:22.202
+and now with six efficiency cores,
+
+1
+00:18:22.236 --> 00:18:24.905
+all with next-generation ML accelerators,
+
+1
+00:18:24.938 --> 00:18:31.945
+delivers up to 50% faster CPU performance over M2 in the previous iPad Pro.
+
+1
+00:18:24.938 --> 00:18:31.945
+delivers up to 50% faster CPU performance over M2 in the previous iPad Pro.
+
+1
+00:18:31.979 --> 00:18:34.715
+The next-generation 10-core GPU architecture
+
+1
+00:18:34.748 --> 00:18:38.585
+includes powerful features like Dynamic Caching,
+
+1
+00:18:34.748 --> 00:18:38.585
+includes powerful features like Dynamic Caching,
+
+1
+00:18:38.619 --> 00:18:42.089
+and brings hardware-accelerated mesh shading and ray tracing
+
+1
+00:18:38.619 --> 00:18:42.089
+and brings hardware-accelerated mesh shading and ray tracing
+
+1
+00:18:42.122 --> 00:18:44.091
+to iPad for the first time!
+
+1
+00:18:44.124 --> 00:18:47.794
+So games like "Diablo Immortal" look fantastic.
+
+1
+00:18:47.828 --> 00:18:51.999
+And pro rendering apps like Octane will flat-out fly
+
+1
+00:18:47.828 --> 00:18:51.999
+And pro rendering apps like Octane will flat-out fly
+
+1
+00:18:52.032 --> 00:18:55.969
+with up to four times faster performance than M2!
+
+1
+00:18:52.032 --> 00:18:55.969
+with up to four times faster performance than M2!
+
+1
+00:18:56.003 --> 00:18:59.806
+And we've added these architecture and performance improvements
+
+1
+00:18:59.840 --> 00:19:04.678
+while maintaining our industry-leading performance per watt.
+
+1
+00:18:59.840 --> 00:19:04.678
+while maintaining our industry-leading performance per watt.
+
+1
+00:19:04.711 --> 00:19:08.282
+M4 can deliver the same performance as M2,
+
+1
+00:19:08.315 --> 00:19:10.484
+using just half the power!
+
+1
+00:19:10.517 --> 00:19:13.720
+That's a tremendous gain in performance per watt,
+
+1
+00:19:10.517 --> 00:19:13.720
+That's a tremendous gain in performance per watt,
+
+1
+00:19:13.754 --> 00:19:18.292
+and perfect for the thin and light design of the new Pro.
+
+1
+00:19:13.754 --> 00:19:18.292
+and perfect for the thin and light design of the new Pro.
+
+1
+00:19:18.325 --> 00:19:23.397
+Now, when we compare it to the latest PC chip in a thin and light laptop,
+
+1
+00:19:23.430 --> 00:19:29.203
+M4 can deliver the same performance using just a quarter of the power!
+
+1
+00:19:23.430 --> 00:19:29.203
+M4 can deliver the same performance using just a quarter of the power!
+
+1
+00:19:29.236 --> 00:19:32.306
+That's the amazing power-efficient performance lead
+
+1
+00:19:29.236 --> 00:19:32.306
+That's the amazing power-efficient performance lead
+
+1
+00:19:32.339 --> 00:19:35.008
+that Apple silicon provides.
+
+1
+00:19:35.042 --> 00:19:37.711
+Another way Apple silicon leads the industry
+
+1
+00:19:35.042 --> 00:19:37.711
+Another way Apple silicon leads the industry
+
+1
+00:19:37.744 --> 00:19:42.149
+is with the Neural Engine, which the industry calls an NPU.
+
+1
+00:19:37.744 --> 00:19:42.149
+is with the Neural Engine, which the industry calls an NPU.
+
+1
+00:19:42.182 --> 00:19:45.185
+The Neural Engine is an IP-block in the chip
+
+1
+00:19:45.219 --> 00:19:48.622
+dedicated to the acceleration of AI workloads.
+
+1
+00:19:45.219 --> 00:19:48.622
+dedicated to the acceleration of AI workloads.
+
+1
+00:19:48.655 --> 00:19:51.491
+Now, while the chip industry is just starting
+
+1
+00:19:51.525 --> 00:19:54.394
+to add NPUs to some of their processors,
+
+1
+00:19:54.428 --> 00:19:59.333
+we've been including our industry-leading Neural Engine in our chip for years.
+
+1
+00:19:59.366 --> 00:20:04.338
+And now with M4, we have our most powerful Neural Engine ever,
+
+1
+00:19:59.366 --> 00:20:04.338
+And now with M4, we have our most powerful Neural Engine ever,
+
+1
+00:20:04.371 --> 00:20:10.143
+capable of an astounding 38 trillion operations per second!
+
+1
+00:20:04.371 --> 00:20:10.143
+capable of an astounding 38 trillion operations per second!
+
+1
+00:20:10.177 --> 00:20:13.614
+That's a breathtaking 60 times faster
+
+1
+00:20:13.647 --> 00:20:17.284
+than our first Neural Engine in the A11 Bionic.
+
+1
+00:20:17.317 --> 00:20:21.588
+Together with next-generation ML accelerators in the CPU,
+
+1
+00:20:17.317 --> 00:20:21.588
+Together with next-generation ML accelerators in the CPU,
+
+1
+00:20:21.622 --> 00:20:25.058
+a high-performance GPU, and more memory bandwidth,
+
+1
+00:20:21.622 --> 00:20:25.058
+a high-performance GPU, and more memory bandwidth,
+
+1
+00:20:25.092 --> 00:20:31.064
+the Neural Engine makes M4 an outrageously powerful chip for AI.
+
+1
+00:20:25.092 --> 00:20:31.064
+the Neural Engine makes M4 an outrageously powerful chip for AI.
+
+1
+00:20:31.098 --> 00:20:34.001
+It can do amazing things even faster,
+
+1
+00:20:34.034 --> 00:20:37.971
+like easily isolate a subject from its background in 4K video
+
+1
+00:20:34.034 --> 00:20:37.971
+like easily isolate a subject from its background in 4K video
+
+1
+00:20:38.005 --> 00:20:41.842
+with just a tap in Final Cut Pro.
+
+1
+00:20:41.875 --> 00:20:47.814
+In fact, with this level of performance, the Neural Engine in M4 is more powerful
+
+1
+00:20:41.875 --> 00:20:47.814
+In fact, with this level of performance, the Neural Engine in M4 is more powerful
+
+1
+00:20:47.848 --> 00:20:53.453
+than any neural processing unit in any AI PC today!
+
+1
+00:20:47.848 --> 00:20:53.453
+than any neural processing unit in any AI PC today!
+
+1
+00:20:53.487 --> 00:20:55.022
+So that's M4.
+
+1
+00:20:55.055 --> 00:20:59.259
+It's built with cutting-edge technology that enables the breakthrough design
+
+1
+00:20:59.293 --> 00:21:01.728
+and stunning display of the new Pro,
+
+1
+00:21:01.762 --> 00:21:05.199
+and delivers a giant leap in performance.
+
+1
+00:21:05.232 --> 00:21:11.772
+With M4, iPad Pro widens its lead as the most powerful device of its kind.
+
+1
+00:21:05.232 --> 00:21:11.772
+With M4, iPad Pro widens its lead as the most powerful device of its kind.
+
+1
+00:21:11.805 --> 00:21:13.507
+Now, back to John.
+
+1
+00:21:15.108 --> 00:21:19.146
+John: The new iPad Pro wouldn't even be possible without M4.
+
+1
+00:21:15.108 --> 00:21:19.146
+John: The new iPad Pro wouldn't even be possible without M4.
+
+1
+00:21:19.179 --> 00:21:21.615
+And despite its much thinner and lighter design,
+
+1
+00:21:21.648 --> 00:21:24.985
+we've also substantially improved its thermal performance.
+
+1
+00:21:21.648 --> 00:21:24.985
+we've also substantially improved its thermal performance.
+
+1
+00:21:25.018 --> 00:21:27.888
+By incorporating graphite sheets into the main housing
+
+1
+00:21:27.921 --> 00:21:29.890
+and copper in the Apple logo,
+
+1
+00:21:29.923 --> 00:21:33.927
+we've been able to improve thermal performance by nearly 20%.
+
+1
+00:21:29.923 --> 00:21:33.927
+we've been able to improve thermal performance by nearly 20%.
+
+1
+00:21:33.961 --> 00:21:36.563
+And the combination of this improved design
+
+1
+00:21:33.961 --> 00:21:36.563
+And the combination of this improved design
+
+1
+00:21:36.597 --> 00:21:41.335
+along with M4 means the new iPad Pro is up to four times faster
+
+1
+00:21:41.368 --> 00:21:43.737
+than the previous iPad Pro with M2
+
+1
+00:21:43.770 --> 00:21:49.543
+and up to an astounding 10 times faster than the original iPad Pro.
+
+1
+00:21:43.770 --> 00:21:49.543
+and up to an astounding 10 times faster than the original iPad Pro.
+
+1
+00:21:49.576 --> 00:21:52.713
+Now, bringing iPad Pro to life is iPadOS,
+
+1
+00:21:52.746 --> 00:21:57.417
+with a number of advanced features that empower pros to do even more on iPad.
+
+1
+00:21:52.746 --> 00:21:57.417
+with a number of advanced features that empower pros to do even more on iPad.
+
+1
+00:21:57.451 --> 00:22:02.222
+With Reference Mode, iPadOS can precisely match color requirements
+
+1
+00:21:57.451 --> 00:22:02.222
+With Reference Mode, iPadOS can precisely match color requirements
+
+1
+00:22:02.256 --> 00:22:03.724
+for tasks like color grading,
+
+1
+00:22:03.757 --> 00:22:07.528
+where accurate and consistent image quality are extremely critical.
+
+1
+00:22:03.757 --> 00:22:07.528
+where accurate and consistent image quality are extremely critical.
+
+1
+00:22:07.561 --> 00:22:10.931
+And Stage Manager support for multiple overlapping windows
+
+1
+00:22:10.964 --> 00:22:15.736
+and external displays allows advanced users to work with more apps at once.
+
+1
+00:22:10.964 --> 00:22:15.736
+and external displays allows advanced users to work with more apps at once.
+
+1
+00:22:15.769 --> 00:22:19.072
+iPadOS also has advanced frameworks like Core ML
+
+1
+00:22:15.769 --> 00:22:19.072
+iPadOS also has advanced frameworks like Core ML
+
+1
+00:22:19.106 --> 00:22:22.309
+that make it easy for developers to tap into the Neural Engine
+
+1
+00:22:22.342 --> 00:22:25.779
+to deliver powerful AI features, right on device.
+
+1
+00:22:22.342 --> 00:22:25.779
+to deliver powerful AI features, right on device.
+
+1
+00:22:25.812 --> 00:22:31.218
+And users can find thousands of these powerful apps on the App Store.
+
+1
+00:22:25.812 --> 00:22:31.218
+And users can find thousands of these powerful apps on the App Store.
+
+1
+00:22:31.251 --> 00:22:35.455
+Pro apps unleash the incredible capabilities of iPad Pro.
+
+1
+00:22:35.489 --> 00:22:40.727
+Apps like Shapr3D enable users to design in CAD with Apple Pencil.
+
+1
+00:22:35.489 --> 00:22:40.727
+Apps like Shapr3D enable users to design in CAD with Apple Pencil.
+
+1
+00:22:40.761 --> 00:22:45.532
+Or ZBrush, which brings game-changing 3D modeling and sculpting.
+
+1
+00:22:40.761 --> 00:22:45.532
+Or ZBrush, which brings game-changing 3D modeling and sculpting.
+
+1
+00:22:45.566 --> 00:22:49.102
+Our own pro apps for iPad unleash the remarkable capabilities
+
+1
+00:22:45.566 --> 00:22:49.102
+Our own pro apps for iPad unleash the remarkable capabilities
+
+1
+00:22:49.136 --> 00:22:50.637
+of iPad Pro as well.
+
+1
+00:22:50.671 --> 00:22:54.308
+Final Cut Pro and Logic Pro launched on iPad last year
+
+1
+00:22:50.671 --> 00:22:54.308
+Final Cut Pro and Logic Pro launched on iPad last year
+
+1
+00:22:54.341 --> 00:22:58.312
+and have given artists the ability to create in completely new ways.
+
+1
+00:22:58.345 --> 00:23:03.650
+And now, only a year later, both apps are getting huge updates.
+
+1
+00:22:58.345 --> 00:23:03.650
+And now, only a year later, both apps are getting huge updates.
+
+1
+00:23:03.684 --> 00:23:07.521
+Introducing Final Cut Pro and Logic Pro 2!
+
+1
+00:23:07.554 --> 00:23:10.023
+To tell you more, here's Will.
+
+1
+00:23:10.057 --> 00:23:17.664
+♪ ♪
+
+1
+00:23:17.698 --> 00:23:20.534
+Will Hui: Final Cut Pro and Logic Pro for iPad
+
+1
+00:23:17.698 --> 00:23:20.534
+Will Hui: Final Cut Pro and Logic Pro for iPad
+
+1
+00:23:20.567 --> 00:23:23.470
+were redesigned from the ground up for touch,
+
+1
+00:23:23.504 --> 00:23:26.540
+so seasoned Mac users extending their workflows
+
+1
+00:23:23.504 --> 00:23:26.540
+so seasoned Mac users extending their workflows
+
+1
+00:23:26.573 --> 00:23:31.979
+and next-generation iPad creators can get even closer to their content.
+
+1
+00:23:26.573 --> 00:23:31.979
+and next-generation iPad creators can get even closer to their content.
+
+1
+00:23:32.012 --> 00:23:37.451
+And today we're unveiling amazing updates that take creativity to the next level.
+
+1
+00:23:32.012 --> 00:23:37.451
+And today we're unveiling amazing updates that take creativity to the next level.
+
+1
+00:23:37.484 --> 00:23:39.419
+Let's start with Final Cut Pro,
+
+1
+00:23:39.453 --> 00:23:41.622
+which lets you record, edit,
+
+1
+00:23:41.655 --> 00:23:45.959
+finish, and share professional videos, all on iPad.
+
+1
+00:23:41.655 --> 00:23:45.959
+finish, and share professional videos, all on iPad.
+
+1
+00:23:45.993 --> 00:23:50.631
+With the new iPad Pro and M4, it absolutely screams,
+
+1
+00:23:45.993 --> 00:23:50.631
+With the new iPad Pro and M4, it absolutely screams,
+
+1
+00:23:50.664 --> 00:23:54.601
+with final rendering up to two times faster than M1!
+
+1
+00:23:50.664 --> 00:23:54.601
+with final rendering up to two times faster than M1!
+
+1
+00:23:54.635 --> 00:23:58.338
+The latest version introduces an incredible new feature
+
+1
+00:23:58.372 --> 00:24:02.176
+to speed up your shoot called Live Multicam.
+
+1
+00:23:58.372 --> 00:24:02.176
+to speed up your shoot called Live Multicam.
+
+1
+00:24:02.209 --> 00:24:06.547
+It transforms your iPad into a multicam production studio
+
+1
+00:24:02.209 --> 00:24:06.547
+It transforms your iPad into a multicam production studio
+
+1
+00:24:06.580 --> 00:24:09.149
+and puts you in the director's chair.
+
+1
+00:24:09.183 --> 00:24:12.386
+Live Multicam enables filmmakers to connect and preview
+
+1
+00:24:09.183 --> 00:24:12.386
+Live Multicam enables filmmakers to connect and preview
+
+1
+00:24:12.419 --> 00:24:16.757
+up to four cameras all at once, all in one place.
+
+1
+00:24:16.790 --> 00:24:21.094
+Creators can remotely direct each video angle and dial in exposure,
+
+1
+00:24:16.790 --> 00:24:21.094
+Creators can remotely direct each video angle and dial in exposure,
+
+1
+00:24:21.128 --> 00:24:24.164
+white balance, focus, and more.
+
+1
+00:24:24.198 --> 00:24:30.270
+To support Live Multicam, we created an entirely new app for iPhone and iPad.
+
+1
+00:24:24.198 --> 00:24:30.270
+To support Live Multicam, we created an entirely new app for iPhone and iPad.
+
+1
+00:24:30.304 --> 00:24:33.273
+And we call it Final Cut Camera.
+
+1
+00:24:33.307 --> 00:24:38.946
+Final Cut Camera allows users to easily connect multiple iPhones or iPads
+
+1
+00:24:33.307 --> 00:24:38.946
+Final Cut Camera allows users to easily connect multiple iPhones or iPads
+
+1
+00:24:38.979 --> 00:24:42.649
+to capture additional angles during a Live Multicam shoot
+
+1
+00:24:38.979 --> 00:24:42.649
+to capture additional angles during a Live Multicam shoot
+
+1
+00:24:42.683 --> 00:24:47.221
+or record professional videos with precise manual controls
+
+1
+00:24:47.254 --> 00:24:49.523
+as a free standalone app.
+
+1
+00:24:49.556 --> 00:24:54.661
+Final Cut Pro automatically transfers and syncs each Live Multicam angle
+
+1
+00:24:49.556 --> 00:24:54.661
+Final Cut Pro automatically transfers and syncs each Live Multicam angle
+
+1
+00:24:54.695 --> 00:24:58.432
+so you can seamlessly move from production to editing!
+
+1
+00:24:58.465 --> 00:25:01.835
+New external project support now offers creators
+
+1
+00:24:58.465 --> 00:25:01.835
+New external project support now offers creators
+
+1
+00:25:01.869 --> 00:25:05.873
+the flexibility of editing projects directly off a drive,
+
+1
+00:25:05.906 --> 00:25:10.344
+leveraging the fast Thunderbolt connection of iPad Pro.
+
+1
+00:25:05.906 --> 00:25:10.344
+leveraging the fast Thunderbolt connection of iPad Pro.
+
+1
+00:25:10.377 --> 00:25:13.714
+Editing and finishing is incredible with M4,
+
+1
+00:25:10.377 --> 00:25:13.714
+Editing and finishing is incredible with M4,
+
+1
+00:25:13.747 --> 00:25:19.186
+with support for up to four times more streams of ProRes RAW than M1.
+
+1
+00:25:13.747 --> 00:25:19.186
+with support for up to four times more streams of ProRes RAW than M1.
+
+1
+00:25:19.219 --> 00:25:21.388
+Color grade, apply multiple effects,
+
+1
+00:25:21.421 --> 00:25:25.359
+and render graphically intense timelines even faster.
+
+1
+00:25:21.421 --> 00:25:25.359
+and render graphically intense timelines even faster.
+
+1
+00:25:25.392 --> 00:25:29.396
+Your HDR content has never looked better!
+
+1
+00:25:29.429 --> 00:25:35.002
+Final Cut Pro 2 transforms iPad Pro into a more powerful production studio
+
+1
+00:25:29.429 --> 00:25:35.002
+Final Cut Pro 2 transforms iPad Pro into a more powerful production studio
+
+1
+00:25:35.035 --> 00:25:38.505
+and opens up entirely new video workflows.
+
+1
+00:25:38.539 --> 00:25:44.378
+♪ ♪
+
+1
+00:25:44.411 --> 00:25:48.982
+Logic Pro for iPad turns things up for music producers.
+
+1
+00:25:44.411 --> 00:25:48.982
+Logic Pro for iPad turns things up for music producers.
+
+1
+00:25:49.016 --> 00:25:52.452
+Designed for everyone from emerging to established artists,
+
+1
+00:25:52.486 --> 00:25:56.623
+Logic Pro for iPad has delivered the entire studio experience
+
+1
+00:25:52.486 --> 00:25:56.623
+Logic Pro for iPad has delivered the entire studio experience
+
+1
+00:25:56.657 --> 00:25:59.126
+with the simplicity of touch.
+
+1
+00:25:59.159 --> 00:26:03.463
+Logic Pro 2 is so exciting and it's smarter than ever.
+
+1
+00:25:59.159 --> 00:26:03.463
+Logic Pro 2 is so exciting and it's smarter than ever.
+
+1
+00:26:03.497 --> 00:26:07.267
+Today, artists find the Drummer feature in Logic fantastic
+
+1
+00:26:03.497 --> 00:26:07.267
+Today, artists find the Drummer feature in Logic fantastic
+
+1
+00:26:07.301 --> 00:26:10.270
+for adding drum performances to any song.
+
+1
+00:26:10.304 --> 00:26:15.976
+Now Drummer is getting some new bandmates in a feature we call Session Players.
+
+1
+00:26:10.304 --> 00:26:15.976
+Now Drummer is getting some new bandmates in a feature we call Session Players.
+
+1
+00:26:16.009 --> 00:26:19.146
+We're introducing an all-new Bass and Keyboard Player,
+
+1
+00:26:16.009 --> 00:26:19.146
+We're introducing an all-new Bass and Keyboard Player,
+
+1
+00:26:19.179 --> 00:26:22.216
+and like Drummer, they're built using AI.
+
+1
+00:26:22.249 --> 00:26:26.253
+Simple controls let you dial in the perfect performance.
+
+1
+00:26:22.249 --> 00:26:26.253
+Simple controls let you dial in the perfect performance.
+
+1
+00:26:26.286 --> 00:26:29.089
+Next, let's talk about effects.
+
+1
+00:26:29.122 --> 00:26:32.392
+While ChromaVerb simulates beautiful acoustics,
+
+1
+00:26:29.122 --> 00:26:32.392
+While ChromaVerb simulates beautiful acoustics,
+
+1
+00:26:32.426 --> 00:26:38.265
+producers today rely on hardware to infuse digital recordings with analog warmth.
+
+1
+00:26:32.426 --> 00:26:38.265
+producers today rely on hardware to infuse digital recordings with analog warmth.
+
+1
+00:26:38.298 --> 00:26:41.201
+Now, we're packing all of that into Logic Pro
+
+1
+00:26:41.235 --> 00:26:43.837
+with a new plug-in we call ChromaGlow.
+
+1
+00:26:43.871 --> 00:26:48.475
+We used machine learning to model that sound in amazing detail.
+
+1
+00:26:43.871 --> 00:26:48.475
+We used machine learning to model that sound in amazing detail.
+
+1
+00:26:48.509 --> 00:26:52.279
+And with the power of M4, iPad Pro users can leverage it
+
+1
+00:26:52.312 --> 00:26:57.384
+across many tracks, just like a world-class recording studio.
+
+1
+00:26:52.312 --> 00:26:57.384
+across many tracks, just like a world-class recording studio.
+
+1
+00:26:57.417 --> 00:27:00.521
+Finally, let's talk remixing.
+
+1
+00:27:00.554 --> 00:27:04.224
+When a producer wants to sample just drums or only vocals,
+
+1
+00:27:04.258 --> 00:27:07.261
+but doesn't have the original tracks or stems,
+
+1
+00:27:04.258 --> 00:27:07.261
+but doesn't have the original tracks or stems,
+
+1
+00:27:07.294 --> 00:27:10.030
+Logic Pro provides a great solution.
+
+1
+00:27:10.063 --> 00:27:12.299
+We call it Stem Splitter.
+
+1
+00:27:12.332 --> 00:27:16.570
+It takes any recording and quickly extracts four distinct parts
+
+1
+00:27:16.603 --> 00:27:20.941
+for voice, bass, drums, and other instruments.
+
+1
+00:27:16.603 --> 00:27:20.941
+for voice, bass, drums, and other instruments.
+
+1
+00:27:20.974 --> 00:27:26.180
+And with the power of M4 it all happens on device, super fast,
+
+1
+00:27:20.974 --> 00:27:26.180
+And with the power of M4 it all happens on device, super fast,
+
+1
+00:27:26.213 --> 00:27:29.449
+so you can get on with remixing your song.
+
+1
+00:27:29.483 --> 00:27:31.518
+So that's Logic Pro 2,
+
+1
+00:27:31.552 --> 00:27:34.388
+faster and more intelligent than ever.
+
+1
+00:27:34.421 --> 00:27:36.089
+Back to you, John.
+
+1
+00:27:36.123 --> 00:27:43.564
+♪ ♪
+
+1
+00:27:43.597 --> 00:27:45.132
+John: Another feature of iPad Pro
+
+1
+00:27:45.165 --> 00:27:49.169
+that makes apps so powerful are great cameras and microphones,
+
+1
+00:27:45.165 --> 00:27:49.169
+that makes apps so powerful are great cameras and microphones,
+
+1
+00:27:49.203 --> 00:27:54.041
+which enable users to shoot, edit, and share all on one device.
+
+1
+00:27:49.203 --> 00:27:54.041
+which enable users to shoot, edit, and share all on one device.
+
+1
+00:27:54.074 --> 00:27:56.210
+When creating a project in Final Cut Pro,
+
+1
+00:27:56.243 --> 00:28:00.080
+users can capture detailed 4K ProRes video
+
+1
+00:28:00.113 --> 00:28:02.416
+using the 12MP back camera
+
+1
+00:28:02.449 --> 00:28:06.019
+and rich audio from four studio-quality mics.
+
+1
+00:28:02.449 --> 00:28:06.019
+and rich audio from four studio-quality mics.
+
+1
+00:28:06.053 --> 00:28:08.856
+iPad Pro also includes the LiDAR Scanner,
+
+1
+00:28:08.889 --> 00:28:13.227
+which makes AR experiences faster and more stable.
+
+1
+00:28:08.889 --> 00:28:13.227
+which makes AR experiences faster and more stable.
+
+1
+00:28:13.260 --> 00:28:16.563
+And a new adaptive True Tone flash that makes document scanning
+
+1
+00:28:16.597 --> 00:28:18.765
+on the new Pro better than ever.
+
+1
+00:28:18.799 --> 00:28:21.635
+We've all had the experience of trying to scan a document
+
+1
+00:28:21.668 --> 00:28:25.739
+in certain lighting conditions where it's hard to avoid casting a shadow.
+
+1
+00:28:21.668 --> 00:28:25.739
+in certain lighting conditions where it's hard to avoid casting a shadow.
+
+1
+00:28:25.772 --> 00:28:27.808
+The new Pro solves this problem.
+
+1
+00:28:27.841 --> 00:28:32.112
+It uses AI to automatically detect documents like forms and receipts.
+
+1
+00:28:27.841 --> 00:28:32.112
+It uses AI to automatically detect documents like forms and receipts.
+
+1
+00:28:32.145 --> 00:28:33.447
+If shadows are in the way,
+
+1
+00:28:33.480 --> 00:28:37.284
+it instantly takes multiple photos with the new, adaptive flash.
+
+1
+00:28:33.480 --> 00:28:37.284
+it instantly takes multiple photos with the new, adaptive flash.
+
+1
+00:28:37.317 --> 00:28:41.655
+The frames are stitched together and the result is a dramatically better scan.
+
+1
+00:28:41.688 --> 00:28:44.358
+And because this feature is built into iPadOS,
+
+1
+00:28:41.688 --> 00:28:44.358
+And because this feature is built into iPadOS,
+
+1
+00:28:44.391 --> 00:28:49.663
+it comes to the Camera app, Files, Notes, and third-party apps, too.
+
+1
+00:28:44.391 --> 00:28:49.663
+it comes to the Camera app, Files, Notes, and third-party apps, too.
+
+1
+00:28:49.696 --> 00:28:53.300
+Finally, we have big news for the front-facing camera.
+
+1
+00:28:53.333 --> 00:28:58.038
+The 12MP Ultra Wide camera moves from the portrait to the landscape edge,
+
+1
+00:28:53.333 --> 00:28:58.038
+The 12MP Ultra Wide camera moves from the portrait to the landscape edge,
+
+1
+00:28:58.071 --> 00:28:59.840
+just like iPad Air.
+
+1
+00:28:59.873 --> 00:29:02.509
+This is also the new home for Face ID,
+
+1
+00:29:02.543 --> 00:29:06.880
+and a completely new charging and pairing system for Apple Pencil.
+
+1
+00:29:02.543 --> 00:29:06.880
+and a completely new charging and pairing system for Apple Pencil.
+
+1
+00:29:06.914 --> 00:29:09.349
+The amazing accessories that work with iPad Pro
+
+1
+00:29:09.383 --> 00:29:11.385
+make it even more versatile,
+
+1
+00:29:11.418 --> 00:29:14.188
+and we have exciting news here, too.
+
+1
+00:29:14.221 --> 00:29:17.858
+To complement the incredible thin and light design of the new iPad Pro,
+
+1
+00:29:17.891 --> 00:29:21.695
+we're introducing an all-new Magic Keyboard.
+
+1
+00:29:17.891 --> 00:29:21.695
+we're introducing an all-new Magic Keyboard.
+
+1
+00:29:21.728 --> 00:29:25.165
+This is the new Magic Keyboard for iPad Pro.
+
+1
+00:29:21.728 --> 00:29:25.165
+This is the new Magic Keyboard for iPad Pro.
+
+1
+00:29:25.199 --> 00:29:29.736
+It's been completely redesigned to be much thinner, and even lighter.
+
+1
+00:29:29.770 --> 00:29:33.373
+Opening it reveals the magic floating design that users love.
+
+1
+00:29:29.770 --> 00:29:33.373
+Opening it reveals the magic floating design that users love.
+
+1
+00:29:33.407 --> 00:29:36.810
+It comes in two colors that perfectly match the new Pro.
+
+1
+00:29:33.407 --> 00:29:36.810
+It comes in two colors that perfectly match the new Pro.
+
+1
+00:29:36.844 --> 00:29:39.813
+And it's loaded with great new features.
+
+1
+00:29:39.847 --> 00:29:42.649
+First, it now includes a function row
+
+1
+00:29:42.683 --> 00:29:46.587
+for quick access to convenient controls like screen brightness.
+
+1
+00:29:46.620 --> 00:29:49.389
+It also has a gorgeous aluminum palm rest
+
+1
+00:29:46.620 --> 00:29:49.389
+It also has a gorgeous aluminum palm rest
+
+1
+00:29:49.423 --> 00:29:52.159
+and a larger trackpad that's even more responsive
+
+1
+00:29:52.192 --> 00:29:53.827
+with haptic feedback.
+
+1
+00:29:53.861 --> 00:29:57.297
+So the entire experience feels just like using a MacBook.
+
+1
+00:29:53.861 --> 00:29:57.297
+So the entire experience feels just like using a MacBook.
+
+1
+00:29:57.331 --> 00:30:00.968
+The incredible new Magic Keyboard makes the new Pro more portable
+
+1
+00:29:57.331 --> 00:30:00.968
+The incredible new Magic Keyboard makes the new Pro more portable
+
+1
+00:30:01.001 --> 00:30:03.637
+and versatile than ever.
+
+1
+00:30:03.670 --> 00:30:08.675
+Now let's talk about the most beloved accessory for iPad Pro.
+
+1
+00:30:03.670 --> 00:30:08.675
+Now let's talk about the most beloved accessory for iPad Pro.
+
+1
+00:30:08.709 --> 00:30:11.245
+And that's Apple Pencil.
+
+1
+00:30:11.278 --> 00:30:13.680
+Apple Pencil has been a game-changer
+
+1
+00:30:13.714 --> 00:30:17.117
+for users to express their ideas and creativity.
+
+1
+00:30:17.150 --> 00:30:22.122
+It's loaded with all these advanced features that are simply a joy to use.
+
+1
+00:30:17.150 --> 00:30:22.122
+It's loaded with all these advanced features that are simply a joy to use.
+
+1
+00:30:22.155 --> 00:30:26.193
+Today, we're introducing an entirely new Apple Pencil.
+
+1
+00:30:22.155 --> 00:30:26.193
+Today, we're introducing an entirely new Apple Pencil.
+
+1
+00:30:26.226 --> 00:30:27.594
+And here it is!
+
+1
+00:30:43.377 --> 00:30:49.917
+♪ ♪
+
+1
+00:30:49.950 --> 00:30:52.653
+Introducing, Apple Pencil Pro.
+
+1
+00:30:52.686 --> 00:30:55.956
+It takes the Pencil experience to a whole new level.
+
+1
+00:30:52.686 --> 00:30:55.956
+It takes the Pencil experience to a whole new level.
+
+1
+00:30:55.989 --> 00:30:58.625
+And to tell you more, here's Leslie.
+
+1
+00:30:58.659 --> 00:31:08.669
+♪ ♪
+
+1
+00:31:11.171 --> 00:31:14.975
+Leslie Ikemoto: Today, we're giving all those users who love Apple Pencil
+
+1
+00:31:11.171 --> 00:31:14.975
+Leslie Ikemoto: Today, we're giving all those users who love Apple Pencil
+
+1
+00:31:15.008 --> 00:31:17.778
+even more magical capabilities.
+
+1
+00:31:17.811 --> 00:31:21.515
+To start we added a new sensor in the barrel of the Pencil
+
+1
+00:31:17.811 --> 00:31:21.515
+To start we added a new sensor in the barrel of the Pencil
+
+1
+00:31:21.548 --> 00:31:23.750
+to enable new interactions.
+
+1
+00:31:23.784 --> 00:31:25.485
+So now, for example,
+
+1
+00:31:25.519 --> 00:31:29.089
+you can just squeeze it to bring up a new tool palette.
+
+1
+00:31:29.122 --> 00:31:30.891
+And when you squeeze the Pencil,
+
+1
+00:31:30.924 --> 00:31:35.429
+a haptic engine delivers precise feedback that you can feel.
+
+1
+00:31:35.462 --> 00:31:38.699
+A gyroscope allows you to roll the Pencil
+
+1
+00:31:38.732 --> 00:31:41.235
+for precise control of the tool you're using,
+
+1
+00:31:41.268 --> 00:31:45.606
+like changing the orientation of a shaped pen or brush.
+
+1
+00:31:41.268 --> 00:31:45.606
+like changing the orientation of a shaped pen or brush.
+
+1
+00:31:45.639 --> 00:31:47.941
+If you ever lose Apple Pencil Pro,
+
+1
+00:31:47.975 --> 00:31:53.280
+you can easily locate it since it now supports Find My.
+
+1
+00:31:47.975 --> 00:31:53.280
+you can easily locate it since it now supports Find My.
+
+1
+00:31:53.313 --> 00:31:57.518
+And of course, it pairs, charges, and stores magnetically
+
+1
+00:31:53.313 --> 00:31:57.518
+And of course, it pairs, charges, and stores magnetically
+
+1
+00:31:57.551 --> 00:31:59.620
+on the side of iPad Pro.
+
+1
+00:31:59.653 --> 00:32:01.755
+With all these new features,
+
+1
+00:32:01.788 --> 00:32:07.261
+Apple Pencil Pro allows you to bring your ideas to life like never before.
+
+1
+00:32:01.788 --> 00:32:07.261
+Apple Pencil Pro allows you to bring your ideas to life like never before.
+
+1
+00:32:07.294 --> 00:32:12.199
+And developers can also create their own custom interactions.
+
+1
+00:32:07.294 --> 00:32:12.199
+And developers can also create their own custom interactions.
+
+1
+00:32:12.232 --> 00:32:15.736
+Here's James Cuda, the CEO of Procreate,
+
+1
+00:32:15.769 --> 00:32:20.440
+to show you some of the amazing things they're doing with Apple Pencil Pro.
+
+1
+00:32:15.769 --> 00:32:20.440
+to show you some of the amazing things they're doing with Apple Pencil Pro.
+
+1
+00:32:20.474 --> 00:32:25.212
+♪ ♪
+
+1
+00:32:25.245 --> 00:32:28.615
+James Cuda: We believe art is for everyone.
+
+1
+00:32:28.649 --> 00:32:32.653
+The desire to create is part of what makes us human.
+
+1
+00:32:28.649 --> 00:32:32.653
+The desire to create is part of what makes us human.
+
+1
+00:32:32.686 --> 00:32:35.189
+The day the iPad was announced, we founded Procreate,
+
+1
+00:32:35.222 --> 00:32:39.059
+because we could see its incredible potential for creativity.
+
+1
+00:32:35.222 --> 00:32:39.059
+because we could see its incredible potential for creativity.
+
+1
+00:32:39.092 --> 00:32:41.662
+Apple Pencil was a breakthrough for artists.
+
+1
+00:32:41.695 --> 00:32:44.998
+And now Apple Pencil Pro completely transforms
+
+1
+00:32:41.695 --> 00:32:44.998
+And now Apple Pencil Pro completely transforms
+
+1
+00:32:45.032 --> 00:32:47.868
+the painting experience in Procreate.
+
+1
+00:32:47.901 --> 00:32:52.739
+With barrel roll, we can create brushes that respond in entirely new ways.
+
+1
+00:32:47.901 --> 00:32:52.739
+With barrel roll, we can create brushes that respond in entirely new ways.
+
+1
+00:32:52.773 --> 00:32:56.143
+Artists can roll to automatically change size,
+
+1
+00:32:52.773 --> 00:32:56.143
+Artists can roll to automatically change size,
+
+1
+00:32:56.176 --> 00:32:58.645
+introduce color, and much more.
+
+1
+00:32:58.679 --> 00:33:00.113
+With Apple Pencil squeeze,
+
+1
+00:33:00.147 --> 00:33:03.150
+you can target actions without even touching the screen.
+
+1
+00:33:03.183 --> 00:33:07.921
+You can activate shortcuts with all your favorite brushes and tools.
+
+1
+00:33:03.183 --> 00:33:07.921
+You can activate shortcuts with all your favorite brushes and tools.
+
+1
+00:33:07.955 --> 00:33:11.058
+Or you can hover over your canvas and simply squeeze
+
+1
+00:33:11.091 --> 00:33:13.594
+to select the layer that you wish to work on,
+
+1
+00:33:11.091 --> 00:33:13.594
+to select the layer that you wish to work on,
+
+1
+00:33:13.627 --> 00:33:18.332
+speeding up navigation on even the most complex projects.
+
+1
+00:33:13.627 --> 00:33:18.332
+speeding up navigation on even the most complex projects.
+
+1
+00:33:18.365 --> 00:33:21.201
+And when you're moving or transforming objects on your canvas,
+
+1
+00:33:21.235 --> 00:33:23.604
+haptic feedback gives you the confidence
+
+1
+00:33:23.637 --> 00:33:27.774
+that your objects are snapped perfectly into alignment.
+
+1
+00:33:23.637 --> 00:33:27.774
+that your objects are snapped perfectly into alignment.
+
+1
+00:33:27.808 --> 00:33:31.745
+These new devices are amazing for drawing and painting in Procreate,
+
+1
+00:33:27.808 --> 00:33:31.745
+These new devices are amazing for drawing and painting in Procreate,
+
+1
+00:33:31.778 --> 00:33:35.148
+and we can really take advantage of all that precision and performance
+
+1
+00:33:35.182 --> 00:33:38.619
+when we're ready to animate in Procreate Dreams.
+
+1
+00:33:35.182 --> 00:33:38.619
+when we're ready to animate in Procreate Dreams.
+
+1
+00:33:38.652 --> 00:33:42.422
+In Procreate Dreams, we've taken barrel roll even further.
+
+1
+00:33:38.652 --> 00:33:42.422
+In Procreate Dreams, we've taken barrel roll even further.
+
+1
+00:33:42.456 --> 00:33:44.057
+With Performing, you can create animations
+
+1
+00:33:44.091 --> 00:33:47.828
+by recording your actions while the movie plays.
+
+1
+00:33:47.861 --> 00:33:52.432
+Now, you can move and rotate your object at the same time
+
+1
+00:33:47.861 --> 00:33:52.432
+Now, you can move and rotate your object at the same time
+
+1
+00:33:52.466 --> 00:33:54.968
+and really stay in the moment.
+
+1
+00:33:55.002 --> 00:33:57.337
+And thanks to all the power of M4,
+
+1
+00:33:57.371 --> 00:34:01.141
+we're able to introduce new, computationally intense effects,
+
+1
+00:33:57.371 --> 00:34:01.141
+we're able to introduce new, computationally intense effects,
+
+1
+00:34:01.175 --> 00:34:02.776
+like Lens Blur,
+
+1
+00:34:02.809 --> 00:34:07.047
+for creating realistic bokeh, and camera focus animations.
+
+1
+00:34:02.809 --> 00:34:07.047
+for creating realistic bokeh, and camera focus animations.
+
+1
+00:34:07.080 --> 00:34:11.552
+On this new iPad Pro, we're seeing a 50% improvement in performance,
+
+1
+00:34:11.585 --> 00:34:14.987
+unlocking capability that was just not possible before.
+
+1
+00:34:11.585 --> 00:34:14.987
+unlocking capability that was just not possible before.
+
+1
+00:34:15.022 --> 00:34:20.494
+Hundreds of tracks and all of your changes happening in real time.
+
+1
+00:34:15.022 --> 00:34:20.494
+Hundreds of tracks and all of your changes happening in real time.
+
+1
+00:34:20.527 --> 00:34:24.331
+Incredible advancements like these inspire us
+
+1
+00:34:20.527 --> 00:34:24.331
+Incredible advancements like these inspire us
+
+1
+00:34:24.364 --> 00:34:29.870
+to continue to build tools that amplify the creativity within all of us.
+
+1
+00:34:29.902 --> 00:34:31.471
+Back to Leslie.
+
+1
+00:34:33.072 --> 00:34:36.376
+Leslie: The new version of Procreate looks amazing,
+
+1
+00:34:33.072 --> 00:34:36.376
+Leslie: The new version of Procreate looks amazing,
+
+1
+00:34:36.409 --> 00:34:38.411
+and we can't wait to see all the other apps
+
+1
+00:34:38.445 --> 00:34:42.315
+that will take advantage of these powerful new capabilities.
+
+1
+00:34:38.445 --> 00:34:42.315
+that will take advantage of these powerful new capabilities.
+
+1
+00:34:42.349 --> 00:34:45.719
+So that's the new Apple Pencil Pro.
+
+1
+00:34:45.752 --> 00:34:49.889
+With its incredible new features, it begins a whole new era
+
+1
+00:34:45.752 --> 00:34:49.889
+With its incredible new features, it begins a whole new era
+
+1
+00:34:49.922 --> 00:34:52.259
+of creativity on iPad.
+
+1
+00:34:52.292 --> 00:34:54.428
+Now, back to John.
+
+1
+00:34:56.029 --> 00:35:00.601
+John: The new features in Apple Pencil Pro are simply revolutionary.
+
+1
+00:34:56.029 --> 00:35:00.601
+John: The new features in Apple Pencil Pro are simply revolutionary.
+
+1
+00:35:00.634 --> 00:35:03.437
+And we're also excited that Apple Pencil Pro works
+
+1
+00:35:03.470 --> 00:35:05.105
+with the new iPad Air as well,
+
+1
+00:35:05.138 --> 00:35:09.843
+giving Air users yet another pro feature to push their creativity.
+
+1
+00:35:05.138 --> 00:35:09.843
+giving Air users yet another pro feature to push their creativity.
+
+1
+00:35:09.877 --> 00:35:13.647
+That means Air and Pro users have two Pencil models to choose from.
+
+1
+00:35:09.877 --> 00:35:13.647
+That means Air and Pro users have two Pencil models to choose from.
+
+1
+00:35:13.680 --> 00:35:16.116
+So that's the new iPad Pro.
+
+1
+00:35:16.149 --> 00:35:20.020
+It features the breakthrough Ultra Retina XDR display,
+
+1
+00:35:16.149 --> 00:35:20.020
+It features the breakthrough Ultra Retina XDR display,
+
+1
+00:35:20.053 --> 00:35:22.489
+the next-level performance of M4,
+
+1
+00:35:22.523 --> 00:35:26.527
+fast 5G cellular, and a landscape front-facing camera,
+
+1
+00:35:22.523 --> 00:35:26.527
+fast 5G cellular, and a landscape front-facing camera,
+
+1
+00:35:26.560 --> 00:35:30.230
+all in a jaw-dropping, incredibly thin and light design
+
+1
+00:35:26.560 --> 00:35:30.230
+all in a jaw-dropping, incredibly thin and light design
+
+1
+00:35:30.264 --> 00:35:33.166
+that's the thinnest Apple product ever.
+
+1
+00:35:33.200 --> 00:35:36.970
+This is the iPad we've always dreamed of making.
+
+1
+00:35:33.200 --> 00:35:36.970
+This is the iPad we've always dreamed of making.
+
+1
+00:35:37.004 --> 00:35:41.875
+The new iPad Pro comes with double the storage, which is now 256GB.
+
+1
+00:35:41.909 --> 00:35:44.178
+The 11-inch model starts at $999,
+
+1
+00:35:44.211 --> 00:35:47.548
+and the 13-inch model starts at $1299.
+
+1
+00:35:47.581 --> 00:35:52.052
+The new Magic Keyboard for iPad Pro is $299 and $349.
+
+1
+00:35:47.581 --> 00:35:52.052
+The new Magic Keyboard for iPad Pro is $299 and $349.
+
+1
+00:35:52.085 --> 00:35:55.756
+And the new Apple Pencil Pro is just $129,
+
+1
+00:35:55.789 --> 00:35:59.059
+an amazing value for such an incredible device.
+
+1
+00:35:59.092 --> 00:36:02.296
+Customers can order the new iPad Pro, Magic Keyboard,
+
+1
+00:35:59.092 --> 00:36:02.296
+Customers can order the new iPad Pro, Magic Keyboard,
+
+1
+00:36:02.329 --> 00:36:06.834
+and Apple Pencil Pro today and they'll be available next week.
+
+1
+00:36:02.329 --> 00:36:06.834
+and Apple Pencil Pro today and they'll be available next week.
+
+1
+00:36:06.867 --> 00:36:11.038
+Today we're also making iPad (10th generation) even more affordable.
+
+1
+00:36:11.071 --> 00:36:13.307
+It's now just $349.
+
+1
+00:36:13.340 --> 00:36:17.177
+Making it a great entry point into the iPad lineup.
+
+1
+00:36:17.211 --> 00:36:20.848
+We couldn't be more excited about today's announcements.
+
+1
+00:36:17.211 --> 00:36:20.848
+We couldn't be more excited about today's announcements.
+
+1
+00:36:20.881 --> 00:36:23.550
+They take iPad further than ever.
+
+1
+00:36:23.584 --> 00:36:25.452
+Now, back to Tim.
+
+1
+00:36:25.485 --> 00:36:31.124
+♪ ♪
+
+1
+00:36:31.158 --> 00:36:34.528
+Tim: We're so excited about this new iPad lineup.
+
+1
+00:36:34.561 --> 00:36:39.533
+A more affordable entry-level iPad with an all-screen design.
+
+1
+00:36:34.561 --> 00:36:39.533
+A more affordable entry-level iPad with an all-screen design.
+
+1
+00:36:39.566 --> 00:36:44.771
+The new iPad Air available for the first time in two sizes.
+
+1
+00:36:39.566 --> 00:36:44.771
+The new iPad Air available for the first time in two sizes.
+
+1
+00:36:44.805 --> 00:36:49.376
+The remarkably thin and powerful all-new iPad Pro.
+
+1
+00:36:44.805 --> 00:36:49.376
+The remarkably thin and powerful all-new iPad Pro.
+
+1
+00:36:49.409 --> 00:36:53.647
+And of course the small but mighty iPad mini.
+
+1
+00:36:53.680 --> 00:36:57.718
+This is the strongest iPad lineup we've ever had!
+
+1
+00:36:53.680 --> 00:36:57.718
+This is the strongest iPad lineup we've ever had!
+
+1
+00:36:57.751 --> 00:37:01.388
+It's the best in the industry, by far.
+
+1
+00:37:01.421 --> 00:37:06.627
+With these new iPads and the introduction of the powerful M4 chip,
+
+1
+00:37:01.421 --> 00:37:06.627
+With these new iPads and the introduction of the powerful M4 chip,
+
+1
+00:37:06.660 --> 00:37:10.864
+the big upgrades to Final Cut Pro and Logic Pro for iPad,
+
+1
+00:37:10.898 --> 00:37:15.202
+along with the new Apple Pencil Pro and new Magic Keyboard,
+
+1
+00:37:10.898 --> 00:37:15.202
+along with the new Apple Pencil Pro and new Magic Keyboard,
+
+1
+00:37:15.235 --> 00:37:19.640
+it truly is the biggest day for iPad since its introduction.
+
+1
+00:37:15.235 --> 00:37:19.640
+it truly is the biggest day for iPad since its introduction.
+
+1
+00:37:19.673 --> 00:37:21.942
+From consumers to pros,
+
+1
+00:37:21.975 --> 00:37:24.945
+iPad enables people to take their ideas,
+
+1
+00:37:24.978 --> 00:37:28.916
+their work, and their creativity to new heights.
+
+1
+00:37:28.949 --> 00:37:33.987
+We can't wait to see what users do with these incredible new iPads.
+
+1
+00:37:28.949 --> 00:37:33.987
+We can't wait to see what users do with these incredible new iPads.
+
+1
+00:37:34.021 --> 00:37:38.425
+And we look forward to seeing you next month at WWDC,
+
+1
+00:37:34.021 --> 00:37:38.425
+And we look forward to seeing you next month at WWDC,
+
+1
+00:37:38.458 --> 00:37:41.261
+where we'll talk about the future of our platforms,
+
+1
+00:37:41.295 --> 00:37:45.766
+and share some exciting details about what's to come.
+
+1
+00:37:41.295 --> 00:37:45.766
+and share some exciting details about what's to come.
+
+1
+00:37:45.799 --> 00:37:47.601
+Thank you for joining us.
+
+1
+00:37:47.634 --> 00:37:49.670
+Have a great day!

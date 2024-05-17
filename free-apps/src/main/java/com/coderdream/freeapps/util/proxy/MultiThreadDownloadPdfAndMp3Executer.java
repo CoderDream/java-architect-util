@@ -47,7 +47,7 @@ public class MultiThreadDownloadPdfAndMp3Executer {
         handler);
 
     public void initTestArr() {
-        boolean test = true;
+        boolean test = false;
         List<DownloadInfoEntity> downloadInfoEntityListTemp = new ArrayList<>();
         if (test) {
             DownloadInfoEntity infoEntity = new DownloadInfoEntity();
@@ -58,7 +58,8 @@ public class MultiThreadDownloadPdfAndMp3Executer {
             infoEntity.setFileName(ep + ".html");
             downloadInfoEntityListTemp = Arrays.asList(infoEntity);
         } else {
-            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("html","2023", "01", "02");
+//            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("html","2023", "01", "02");
+            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("html","2020");
         }
 
         for (DownloadInfoEntity downloadInfoEntity : downloadInfoEntityListTemp) {
@@ -89,11 +90,11 @@ public class MultiThreadDownloadPdfAndMp3Executer {
                     System.out.println("downloadInfoEntity not pdf"+ downloadInfoEntity);
                 }
 
-//                DownloadInfoEntity downloadInfoEntityMp3 = listBbcPageInfoListByHtml.get("mp3");
-//                if(downloadInfoEntityMp3 != null) {
-//                    DownloadUtil.downloadFile(downloadInfoEntityMp3.getFileUrl(), downloadInfoEntityMp3.getPath(),
-//                        downloadInfoEntityMp3.getFileName(), true);
-//                }
+                DownloadInfoEntity downloadInfoEntityMp3 = listBbcPageInfoListByHtml.get("mp3");
+                if(downloadInfoEntityMp3 != null) {
+                    DownloadUtil.downloadFile(downloadInfoEntityMp3.getFileUrl(), downloadInfoEntityMp3.getPath(),
+                        downloadInfoEntityMp3.getFileName(), true);
+                }
 
 //                System.out.println("Thread" + getName() + "  " + downloadInfoEntityList.pop());
                 long period = System.currentTimeMillis() - startTime;

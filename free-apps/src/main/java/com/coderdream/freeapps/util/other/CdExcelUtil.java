@@ -18,16 +18,20 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeSet;
 import java.util.stream.Collectors;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.beam.vendor.grpc.v1p43p2.com.google.gson.internal.LinkedHashTreeMap;
+import org.apache.poi.hssf.record.DVALRecord;
 
 /**
  * @author CoderDream
@@ -63,7 +67,147 @@ public class CdExcelUtil {
 //                log.info(appId);
 //            }
 //        }
-        m1();
+//        m1();
+
+        Map<String, Set<String>> map = new LinkedHashMap<>();
+        Set<String> items1 = null;
+        Set<String> items2 = null;
+        Set<String> items3 = null;
+        Set<String> items4 = null;
+        Set<String> items5 = null;
+        Set<String> items6 = null;
+        Set<String> items7 = null;
+        Set<String> items8 = null;
+        Set<String> items9 = null;
+        String key = "";
+        String str = "";
+        List<Medicine> medicines = genMedicineList();
+        String[] strings;
+        for (Medicine medicine : medicines) {
+//            System.out.println(medicine);
+
+            key = "别名";
+            items1 = map.get(key);
+            if (items1 == null) {
+                items1 = new LinkedHashSet<>();
+            }
+            str = medicine.get别名();
+            str = str.replace(" | ", "#");
+            strings = str.split("#");
+            items1.addAll(Arrays.asList(strings));
+            map.put(key, items1);
+
+            key = "作用机制";
+            items2 = map.get(key);
+            if (items2 == null) {
+                items2 = new LinkedHashSet<>();
+            }
+            str = medicine.get作用机制();
+            str = str.replace(" | ", "#");
+            strings = str.split("#");
+            items2.addAll(Arrays.asList(strings));
+            map.put(key, items2);
+
+            key = "药物类型";
+            items3 = map.get(key);
+            if (items3 == null) {
+                items3 = new LinkedHashSet<>();
+            }
+            str = medicine.get药物类型();
+            str = str.replace(" | ", "#");
+            strings = str.split("#");
+            items3.addAll(Arrays.asList(strings));
+            map.put(key, items3);
+
+            key = "在研适应症_疾病名";
+            items4 = map.get(key);
+            if (items4 == null) {
+                items4 = new LinkedHashSet<>();
+            }
+            str = medicine.get在研适应症_疾病名();
+            if (StrUtil.isNotEmpty(str)) {
+                str = str.replace(" | ", "#");
+                strings = str.split("#");
+                items4.addAll(Arrays.asList(strings));
+                map.put(key, items4);
+            }
+
+            key = "在研机构";
+            items5 = map.get(key);
+            if (items5 == null) {
+                items5 = new LinkedHashSet<>();
+            }
+            str = medicine.get在研机构();
+            str = str.replace(" | ", "#");
+            strings = str.split("#");
+            items5.addAll(Arrays.asList(strings));
+            map.put(key, items5);
+
+            key = "药物获批国家和地区";
+            items6 = map.get(key);
+            if (items6 == null) {
+                items6 = new LinkedHashSet<>();
+            }
+            str = medicine.get药物获批国家和地区();
+            if (StrUtil.isNotEmpty(str)) {
+                str = str.replace(" | ", "#");
+                strings = str.split("#");
+                items6.addAll(Arrays.asList(strings));
+                map.put(key, items6);
+            }
+
+            key = "治疗领域";
+            items7 = map.get(key);
+            if (items7 == null) {
+                items7 = new LinkedHashSet<>();
+            }
+            str = medicine.get治疗领域();
+            if (StrUtil.isNotEmpty(str)) {
+                str = str.replace(" | ", "#");
+                strings = str.split("#");
+                items7.addAll(Arrays.asList(strings));
+                map.put(key, items7);
+            }
+
+            key = "特殊审评";
+            items8 = map.get(key);
+            if (items8 == null) {
+                items8 = new LinkedHashSet<>();
+            }
+            str = medicine.get特殊审评();
+            if (StrUtil.isNotEmpty(str)) {
+                str = str.replace(" | ", "#");
+                strings = str.split("#");
+                items8.addAll(Arrays.asList(strings));
+                map.put(key, items8);
+            }
+
+            key = "靶点_基因名";
+            items9 = map.get(key);
+            if (items9 == null) {
+                items9 = new LinkedHashSet<>();
+            }
+            str = medicine.get靶点_基因名();
+            if (StrUtil.isNotEmpty(str)) {
+                str = str.replace(" x ", "#");
+                strings = str.split("#");
+                items9.addAll(Arrays.asList(strings));
+                map.put(key, items9);
+            }
+        }
+
+        System.out.println(map.size());
+
+        for (String keyStr : map.keySet()) {
+            Set<String> strings1 = map.get(keyStr);
+            Set<String> linkSet = new TreeSet<>(Comparator.naturalOrder());
+            linkSet.addAll(strings1);
+            System.out.println("### " + keyStr);
+            for (String s : linkSet) {
+                System.out.println("\t" + s);
+            }
+            System.out.println();
+        }
     }
 
     public static void m1() {
@@ -256,7 +400,6 @@ public class CdExcelUtil {
         return result;
     }
 
-
     //
 
     public static List<ProxyInfo> genProxyInfoList() {
@@ -275,6 +418,55 @@ public class CdExcelUtil {
 //        reader.addHeaderAlias("历史价格", "yesterdayPrice");
 //        reader.addHeaderAlias("今日价格", "todayPrice");
         List<ProxyInfo> proxyInfoList = reader.readAll(ProxyInfo.class);
+        reader.close();
+
+        return proxyInfoList;
+    }
+
+    public static List<Medicine> genMedicineList() {
+        String fileName =
+            CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "IP.xlsx";
+        fileName = "D:\\02_Work\\202301_兼职\\04_项目\\项目_004_智慧芽demo\\数据_V1.xlsx";
+        ExcelReader reader = ExcelUtil.getReader(FileUtil.file(fileName), "Sheet1");
+
+        reader.addHeaderAlias("序号", "序号");
+        reader.addHeaderAlias("药物", "药物");
+        reader.addHeaderAlias("别名", "别名");
+        reader.addHeaderAlias("靶点（基因名）", "靶点_基因名");
+        reader.addHeaderAlias("作用机制", "作用机制");
+        reader.addHeaderAlias("药物类型", "药物类型");
+        reader.addHeaderAlias("在研适应症（疾病名）", "在研适应症_疾病名");
+        reader.addHeaderAlias("在研机构", "在研机构");
+        reader.addHeaderAlias("最高研发阶段", "最高研发阶段");
+        reader.addHeaderAlias("最高研发阶段（中国）", "最高研发阶段_中国");
+        reader.addHeaderAlias("存在交易", "存在交易");
+        reader.addHeaderAlias("药物获批国家和地区", "药物获批国家和地区");
+        reader.addHeaderAlias("ATC", "ATC");
+        reader.addHeaderAlias("治疗领域", "治疗领域");
+        reader.addHeaderAlias("原研机构", "原研机构");
+        reader.addHeaderAlias("特殊审评", "特殊审评");
+        reader.addHeaderAlias("获批时间", "获批时间");
+        reader.addHeaderAlias("获批时间 （中国）", "获批时间_中国");
+        reader.addHeaderAlias("抗体（ADC）", "抗体_ADC");
+        reader.addHeaderAlias("连接子（ADC）", "连接子_ADC");
+        reader.addHeaderAlias("载荷（ADC）", "载荷_ADC");
+        reader.addHeaderAlias("DAR（ADC）", "DAR_ADC");
+        reader.addHeaderAlias("抗体类型（ADC）", "抗体类型_ADC");
+        reader.addHeaderAlias("偶联位点（ADC）", "偶联位点_ADC");
+        reader.addHeaderAlias("定点偶联（ADC）", "定点偶联_ADC");
+
+//        reader.addHeaderAlias("IP", "ip");
+//        reader.addHeaderAlias("PORT", "port");
+//        reader.addHeaderAlias("投票数", "rateAmount");
+//        reader.addHeaderAlias("美区标志", "usFlag");
+//        reader.addHeaderAlias("中文标志", "cnFlag");
+//        reader.addHeaderAlias("中文简介", "descriptionCn");
+//        reader.addHeaderAlias("英文简介", "descriptionUs");
+//        reader.addHeaderAlias("简介", "description");
+//        reader.addHeaderAlias("字幕", "descriptionZm");
+//        reader.addHeaderAlias("历史价格", "yesterdayPrice");
+//        reader.addHeaderAlias("今日价格", "todayPrice");
+        List<Medicine> proxyInfoList = reader.readAll(Medicine.class);
         reader.close();
 
         return proxyInfoList;
@@ -450,4 +642,34 @@ class Sheet1 { // ATTR_NAME	ATTR_FULL_CODE
     private String attrFullCode;
 }
 
+@Data
+class Medicine {
 
+    private String 序号;
+    private String 药物;
+    private String 别名;
+    private String 靶点_基因名;
+    private String 作用机制;
+    private String 药物类型;
+    private String 在研适应症_疾病名;
+    private String 在研机构;
+    private String 最高研发阶段;
+    private String 最高研发阶段_中国;
+    private String 存在交易;
+    private String 药物获批国家和地区;
+    private String ATC;
+    private String 治疗领域;
+    private String 原研机构;
+    private String 特殊审评;
+    private String 获批时间;
+    private String 获批时间_中国;
+    private String 抗体_ADC;
+    private String 连接子_ADC;
+    private String 载荷_ADC;
+    private String DAR_ADC;
+    private String 抗体类型_ADC;
+    private String 偶联位点_ADC;
+    private String 定点偶联_ADC;
+
+
+}

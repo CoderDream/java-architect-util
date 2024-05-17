@@ -1,0 +1,40 @@
+
+Janelle Shane
+so, just how intelligent is artificial intelligence? i mean, it definitely needs some cooking lessons!
+nice guess, sam. we’ll find out the answer later. but first let’s find out more about how ai misunderstandings like the oyster recipe can happen. janelle shane is the author of ‘you look like a thing and i love you’ in which she tells her amusing experiences and bizarre experiments with ai.
+right. ai is not as intelligent as we tend to think. ai programmes use artificial brain cells to roughly imitate real brain cell activity, but they’re still a long way behind human levels of intelligence. and that’s my quiz question – in terms of brain cell count, what level of intelligence is ai currently working at? is ai as smart as: a) a frog; b) an earthworm c) a bumblebee.
+if you’re looking at rough computing power, the algorithms we’re working with are probably somewhere around the level of an earthworm.
+you look like a thing and i love you – that’s a strange title for a book, neil.
+so, ais learn by minimising their errors – reducing them as much as possible. and sometimes, these algorithms only discover the right answer by a stroke of luck – when something unexpected happens by good luck or chance. it seems to me that they’re not so intelligent after all!
+yes. it’s another example of ai miscommunication. the book title is what a ai produced when asked to write chat-up lines – remarks men and women make to start up a conversation with someone they don’t know but find attractive. here she is talking to the bbc world service programme more or less:
+janelle shane
+or take a maths test without cheating! in this programme we’ve been looking at artificial intelligence, or ai, and seeing how programmers – that’s people who write instructions for computers to follow create algorithms – sets of rules used in problem-solving.
+Neil
+hello. this is 6 minute english from bbc learning english. i’m neil.
+sam
+well, according to janelle shane, we can learn a lot about something by seeing how it goes wrong. here she is, talking about an ai which had been told to solve maths problems:
+eh? i thought you said it was for ‘frosted oysters’, whatever they are.
+well, i don’t think any of those are good cooks either, to be honest. i’ll say c) a bumblebee, because at least they can make honey!
+right. these programmers write algorithms – a set of rules or procedures to be followed in problem-solving exercises. so, for example, the ai that wrote that oyster recipe read thousands of other recipes before coming up with its own version.
+it seemed to be that it was getting scored on how many wrong answers it got, and it was supposed to be minimising the number of wrong answers, and just by a stroke of luck as part of its trial and error flailing around, one of the flails it did accidentally deleted the solutions list, and then it and everybody else got a perfect score.
+well, let’s settle it once and for all by answering today’s quiz question. remember i asked you how intelligent ai was in terms of brain cell count and you said, as intelligent as…
+well, take a pound of chicken, then some cubed pork and half a crushed garlic.
+do you like cooking, sam? there’s a new recipe i’ve been trying out - it’s for ‘frosted oysters’.
+it’s not ‘who’ told me, sam, but ‘what’. in fact, that recipe was made by computers using artificial intelligence, or ai, which is the topic of today’s programme. in real life, ai is making huge progress - from car satnavs to detecting cancer cells. but as you can see from that revolting recipe, things don’t always go according to plan.
+ai learns through trial and error – repeating the same activity again and again until discovering the best way, and minimising – reducing as much as possible, the number of errors it makes.
+frosted oysters?! sounds… unusual. how do you make it?
+so, the correct answer was b) as clever as an earthworm! no wonder ais can’t cook!
+neil
+so even though we’re talking about machines learning for themselves, there still need to be humans involved at the start of the journey. this human teaching is done by computer programmers – people who write, or code, the computer programmes used by ai.
+and success can be the result of a stroke of luck, when something unexpected happens purely by chance, although so far that hasn’t helped ais to write good chat-up lines – the flattering remarks people make to get to know someone they find attractive.
+in other words, artificial intelligence uses a process of trial and error – repeating the same task over and over until finding the most successful way. only in the case of the oyster recipe, there was more ‘error’ than ‘trial’!
+bye.
+ugh, that sounds disgusting! who on earth told you that recipe?
+and i’m sam.
+yes, that’s right. now heat it up until boiling and serve with custard.
+well, here’s janelle again with the answer…
+i said c) a bumblebee.
+‘machine learning’ is what most programmers mean when they say ‘ai’. in the programme that we’re used to, if you want to have a computer programme solve a problem you have to have a human programmer write down exhaustive step- by-step instructions on how to do everything. but with ‘machine learning’ you just give it the goal, and then the programme figures out via trial and error how it’s going to solve that problem.
+Sam
+and ais don’t know much about cooking oysters either!
+that’s all from us from this programme. be sure to join us again for more topical discussion and vocabulary at 6 minute english for bbc learning english. bye for now!

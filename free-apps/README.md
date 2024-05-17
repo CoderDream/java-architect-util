@@ -26,3 +26,5 @@ https://www.bilibili.com/video/BV1Av4y127cK
     </executions>
 </plugin>
 ```
+
+SrtUtils 读取srt文件

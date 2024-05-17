@@ -1,5 +1,6 @@
 package com.coderdream.freeapps.util.bbc;
 
+import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.StrUtil;
 import com.coderdream.freeapps.enums.VocLevelEnum;
@@ -31,77 +32,26 @@ import org.springframework.beans.BeanUtils;
 public class WordCountUtil {
 
     public static void main(String[] args) {
-//        String folderName = "240111";
+         m1();
+//        m2();
+
+    }
+
+    public static void m2() {
+        String folderName = "D:\\04_GitHub\\hexo-project\\Hexo-BlueLake-Blog\\source\\_posts\\sarah-jenkins's-diary";
+        folderName = "D:\\Download\\60英文長句聽力練習\\";
+        String fileName = "Transcript";
+        fileName = "new_version_1-new";
+        genVocTable(folderName, fileName);
+    }
+
+    public static void m1() {
+        //        String folderName = "240111";
 //        WordCountUtil.genVocTable(folderName);
-        List<String> NUMBER_LIST = Arrays.asList(
-//            "210107",
-//            "210114",
-//            "210121",
-//            "210128",
-//            "210211",
-//            "210218",
-//            "210225",
-//            "210304",
-//            "210311",
-//            "210318",
-//            "210325",
-//            "210401",
-//            "210408",
-//            "210415",
-//            "210422",
-//            "210429",
-//            "210506",
-//            "210513",
-//            "210520",
-//            "210527",
-//            "210603",
-//            "210610",
-//            "210617",
-//            "210624",
-//            "210701",
-//            "210708",
-//            "210715",
-//            "210719",
-//            "210722",
-//            "210726",
-//            "210729",
-//            "210802",
-//            "210805",
-//            "210809",
-//            "210812",
-//            "210816",
-//            "210819",
-//            "210823",
-//            "210826",
-//            "210902",
-//            "210906",
-//            "210909",
-//            "210913",
-//            "210916",
-//            "210920",
-//            "210923",
-//            "210927",
-//            "210930",
-//            "211007",
-//            "211014",
-//            "211021",
-//            "211028",
-//            "211104",
-//            "211111",
-//            "211118",
-//            "211125",
-//            "211202",
-//            "211209",
-//            "211216",
-//            "211223",
-//            "210304",
-//            "210311",
-//            "240125"
-            "210408"
-//            ,
-//            "210218",
-//            "210225"
-        );
+        String folderPath =
+            CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "bbc"
+                + File.separatorChar;
+        List<String> NUMBER_LIST = FileUtil.readLines(folderPath + "todo.txt", "UTF-8");
 
         for (String num : NUMBER_LIST) {
             String folderName = "" + num;
@@ -120,7 +70,6 @@ public class WordCountUtil {
 //        WordCountUtil.genVocTableForScript(folderName, fileName);
 
         // TODO
-
     }
 
     public static void genVocTable(String folderName) {
@@ -137,6 +86,29 @@ public class WordCountUtil {
 
 //        MakeExcel.listFill(templateFileName, excelFileName, sheetName, wordInfoList);
 
+        writeToFile(wordInfoList, templateFileName, excelFileName);
+    }
+
+    public static void genVocTable(String folderName, String fileName) {
+//        String fileName = "script_dialog";
+        String filePath = folderName + File.separatorChar + fileName
+            + ".txt"; //   CommonUtil.getFullPathFileName(folderName, fileName, ".txt");
+        List<WordInfo> wordInfoList = process(filePath);
+        String folderPath =
+            CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "dict";
+        String templateFileName = folderPath + File.separator + "词汇.xlsx";
+
+        // 方案1 一下子全部放到内存里面 并填充
+        String excelFileName = folderName + File.separatorChar + fileName
+            + "_完整词汇表.xlsx";//CommonUtil.getFullPathFileName(folderName, folderName, "_完整词汇表.xlsx");
+//        String sheetName = "词汇表";
+
+//        MakeExcel.listFill(templateFileName, excelFileName, sheetName, wordInfoList);
+
+        writeToFile(wordInfoList, templateFileName, excelFileName);
+    }
+
+    private static void writeToFile(List<WordInfo> wordInfoList, String templateFileName, String excelFileName) {
         String sheetName1 = "四六级及以上";
         String sheetName2 = "高中";
         String sheetName3 = "初中";
@@ -159,6 +131,7 @@ public class WordCountUtil {
                     case "C03":
                     case "C04":
                     case "C05":
+                    case "C06":
                         wordInfoList1.add(wordInfo);
                         break;
                     default:
@@ -190,43 +163,7 @@ public class WordCountUtil {
             CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "dict";
         String templateFileName = folderPath + File.separator + "词汇.xlsx";
 
-        String sheetName1 = "四六级及以上";
-        String sheetName2 = "高中";
-        String sheetName3 = "初中";
-        String sheetName4 = "其他";
-
-        List<WordInfo> wordInfoList1 = new ArrayList<>();
-        List<WordInfo> wordInfoList2 = new ArrayList<>();
-        List<WordInfo> wordInfoList3 = new ArrayList<>();
-        List<WordInfo> wordInfoList4 = new ArrayList<>();
-        for (WordInfo wordInfo : wordInfoList) {
-            String level = wordInfo.getLevel();
-            if (level != null) {
-                switch (level) {
-                    case "C01":
-                        wordInfoList3.add(wordInfo);
-                        break;
-                    case "C02":
-                        wordInfoList2.add(wordInfo);
-                        break;
-                    case "C03":
-                    case "C04":
-                    case "C05":
-                        wordInfoList1.add(wordInfo);
-                        break;
-                    default:
-                        String word = wordInfo.getWord();
-                        // 过滤单个字符
-                        if (StrUtil.isNotEmpty(word) && word.length() > 1) {
-                            wordInfoList4.add(wordInfo);
-                        }
-                        break;
-                }
-            }
-        }
-
-        MakeExcel.listFill(templateFileName, excelFileName, sheetName1, wordInfoList1, sheetName2, wordInfoList2,
-            sheetName3, wordInfoList3, sheetName4, wordInfoList4);
+        writeToFile(wordInfoList, templateFileName, excelFileName);
     }
 
     public static List<WordInfo> process(String filePath) {
@@ -298,6 +235,7 @@ public class WordCountUtil {
         Map<WordEntity, Integer> c03WordMap = new LinkedHashTreeMap<>();
         Map<WordEntity, Integer> c04WordMap = new LinkedHashTreeMap<>();
         Map<WordEntity, Integer> c05WordMap = new LinkedHashTreeMap<>();
+        Map<WordEntity, Integer> c06WordMap = new LinkedHashTreeMap<>();
 
         Map<String, String> levelMap = new TreeMap<>();
         Map<String, WordEntity> c01WordList = WordCountUtil.getC01WordList();
@@ -305,7 +243,9 @@ public class WordCountUtil {
         Map<String, WordEntity> c03WordList = WordCountUtil.getC03WordList();
         Map<String, WordEntity> c04WordList = WordCountUtil.getC04WordList();
         Map<String, WordEntity> c05WordList = WordCountUtil.getC05WordList();
+        Map<String, WordEntity> c06WordList = WordCountUtil.getC06WordList();
 
+        addToLevelMap(levelMap, c06WordList);
         addToLevelMap(levelMap, c05WordList);
         addToLevelMap(levelMap, c04WordList);
         addToLevelMap(levelMap, c03WordList);
@@ -336,6 +276,9 @@ public class WordCountUtil {
                         break;
                     case "C05":
                         c05WordMap.put(c05WordList.get(word), count);
+                        break;
+                    case "C06":
+                        c06WordMap.put(c06WordList.get(word), count);
                         break;
 //                    default:
 //                        c00WordMap.put(c01WordList.get(word), count);
@@ -388,6 +331,14 @@ public class WordCountUtil {
 
         System.out.println("#### 考研词汇：");
         for (Map.Entry<WordEntity, Integer> entry : c05WordMap.entrySet()) {
+            WordEntity wordEntity = entry.getKey();
+            Integer count = entry.getValue();
+            System.out.println(wordEntity + "：" + count);
+            fillWordInfo(wordInfoList, wordEntity, count);
+        }
+
+        System.out.println("#### 雅思词汇：");
+        for (Map.Entry<WordEntity, Integer> entry : c06WordMap.entrySet()) {
             WordEntity wordEntity = entry.getKey();
             Integer count = entry.getValue();
             System.out.println(wordEntity + "：" + count);
@@ -680,6 +631,39 @@ public class WordCountUtil {
             if (!c01WordList.keySet().contains(wordEntity.getWord()) && !c02WordList.keySet()
                 .contains(wordEntity.getWord()) && !c03WordList.keySet()
                 .contains(wordEntity.getWord()) && !c04WordList.keySet()
+                .contains(wordEntity.getWord())) {
+                result.put(wordEntity.getWord(), wordEntity);
+            }
+        }
+
+        return result;
+    }
+
+    /**
+     * C01_初中词汇正序版.xlsx C02_高中英语词汇正序版.xlsx C03_四级词汇正序版.xlsx
+     *
+     * @return
+     */
+    public static Map<String, WordEntity> getC06WordList() {
+
+        Map<String, WordEntity> c01WordList = WordCountUtil.getC01WordList();
+        Map<String, WordEntity> c02WordList = WordCountUtil.getC02WordList();
+        Map<String, WordEntity> c03WordList = WordCountUtil.getC03WordList();
+        Map<String, WordEntity> c04WordList = WordCountUtil.getC04WordList();
+        Map<String, WordEntity> c05WordList = WordCountUtil.getC05WordList();
+
+        Map<String, WordEntity> result = new LinkedHashTreeMap<>();
+        String folderPath =
+            CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "dict";
+        String filePath = folderPath + File.separator + "C06_雅思词汇正序版.xlsx";
+        List<WordEntity> wordEntityList = CdExcelUtil.genWordEntityList(filePath, "Sheet1");
+
+        for (WordEntity wordEntity : wordEntityList) {
+            System.out.println(wordEntity);
+            if (!c01WordList.keySet().contains(wordEntity.getWord()) && !c02WordList.keySet()
+                .contains(wordEntity.getWord()) && !c03WordList.keySet()
+                .contains(wordEntity.getWord()) && !c04WordList.keySet()
+                .contains(wordEntity.getWord()) && !c05WordList.keySet()
                 .contains(wordEntity.getWord())) {
                 result.put(wordEntity.getWord(), wordEntity);
             }

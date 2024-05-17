@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @网站 https://www.hreshhao.com/
  * @date 2022/11/26 11:48 上午
  */
-@Configuration
+//@Configuration
 public class XxlJobConfig {
 
   @Value("${xxl.job.admin.addresses}")

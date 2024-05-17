@@ -39,6 +39,11 @@ public class TranslateUtil {
 //        process(folderName);
     }
 
+    /**
+     *
+     * @param str
+     * @return
+     */
     @NotNull
     private static String removeEnContent(String str) {
         do {
@@ -46,11 +51,11 @@ public class TranslateUtil {
             int endIndex = str.lastIndexOf("）");
             if (startIndex != -1 && endIndex != -1) {
                 try {
-                    if (startIndex > 0 && endIndex > 0) {
+                    if (startIndex >= 0 && endIndex > 0) {
                         str = str.replaceAll(str.substring(startIndex, endIndex + 1), "");
                     } else {
                         System.out.println(
-                            "########## ERROR: startIndex is " + startIndex + "; endIndex is " + endIndex + "; str "
+                            "#####x##### ERROR: startIndex is " + startIndex + "; endIndex is " + endIndex + "; str "
                                 + str);
                     }
                 } catch (Exception e) {

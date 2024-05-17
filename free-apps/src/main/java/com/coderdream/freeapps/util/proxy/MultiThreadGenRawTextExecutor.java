@@ -43,7 +43,7 @@ public class MultiThreadGenRawTextExecutor {
         handler);
 
     public void initTestArr() {
-        boolean test = true;
+        boolean test = false;
 
         List<DownloadInfoEntity> downloadInfoEntityListTemp = new ArrayList<>();
         if (test) {
@@ -55,7 +55,7 @@ public class MultiThreadGenRawTextExecutor {
             infoEntity.setFileName(ep + ".html");
             downloadInfoEntityListTemp = Arrays.asList(infoEntity);
         } else {
-            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("html","2023", "01");
+            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("html","2020", "01");
         }
 
         for (DownloadInfoEntity downloadInfoEntity : downloadInfoEntityListTemp) {
