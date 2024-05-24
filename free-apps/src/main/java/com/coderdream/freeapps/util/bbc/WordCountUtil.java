@@ -32,16 +32,16 @@ import org.springframework.beans.BeanUtils;
 public class WordCountUtil {
 
     public static void main(String[] args) {
-         m1();
-//        m2();
+//         m1();
+        m2();
 
     }
 
     public static void m2() {
         String folderName = "D:\\04_GitHub\\hexo-project\\Hexo-BlueLake-Blog\\source\\_posts\\sarah-jenkins's-diary";
-        folderName = "D:\\Download\\60英文長句聽力練習\\";
-        String fileName = "Transcript";
-        fileName = "new_version_1-new";
+        folderName = "D:\\Download\\History\\b1-listening\\";
+        String fileName = "b1-listening-06-introduction-lecture";
+//        fileName = "fileName";
         genVocTable(folderName, fileName);
     }
 
