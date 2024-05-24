@@ -56,8 +56,9 @@
 
 package com.shuzijun.leetcode.editor.cn;
 
-
 //import com.shuzijun.leetcode.editor.cn.LinkedListCycle141.Solution.ListNode;
+
+import com.shuzijun.leetcode.editor.cn.AddTwoNumbers2.Solution;
 
 /**
  * @author CoderDream
@@ -66,8 +67,17 @@ public class LinkedListCycle141 {
 
     public static void main(String[] args) {
         Solution solution = new LinkedListCycle141().new Solution();
+        ListNode l1 = new LinkedListCycle141().new ListNode(3);
+        ListNode l2 = new LinkedListCycle141().new ListNode(2);
+        ListNode l3 = new LinkedListCycle141().new ListNode(0);
+        ListNode l4 = new LinkedListCycle141().new ListNode(-4);
+        l1.next = l2;
+        l2.next = l3;
+        l3.next = l4;
+        l4.next = l2;
 
-//        ListNode listNode = new ListNode();
+        Boolean result = solution.hasCycle(l1);
+        System.out.println("result: " + result);
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
@@ -139,16 +149,21 @@ public class LinkedListCycle141 {
 //        }
     }
 
-//leetcode submit region end(Prohibit modification and deletion)
+    //leetcode submit region end(Prohibit modification and deletion)
+    class ListNode {
 
+        int val;
+        ListNode next;
 
-}
+        ListNode() {
+        }
 
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) {
-        val = x;
-        next = null;
+        ListNode(int x) {
+            val = x;
+            next = null;
+        }
     }
+
+
 }
+

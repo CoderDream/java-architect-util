@@ -54,7 +54,7 @@ public class MultiThreadGenOneScriptTextExecutor {
         List<DownloadInfoEntity> downloadInfoEntityListTemp = new ArrayList<>();
         if (test) {
             DownloadInfoEntity infoEntity = new DownloadInfoEntity();
-            String ep = "240516";
+            String ep = "240523";
             infoEntity.setFileUrl(
                 "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2024/ep-" + ep + "");
             infoEntity.setPath("D:/14_LearnEnglish/6MinuteEnglish/2024/" + ep + "/");
