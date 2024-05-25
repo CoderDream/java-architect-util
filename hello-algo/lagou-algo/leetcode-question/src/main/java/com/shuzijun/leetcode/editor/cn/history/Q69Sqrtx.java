@@ -1,4 +1,4 @@
-package com.shuzijun.leetcode.editor.cn;
+package com.shuzijun.leetcode.editor.cn.history;
 /**
 <p>实现&nbsp;<code>int sqrt(int x)</code>&nbsp;函数。</p>
 
@@ -16,12 +16,12 @@ package com.shuzijun.leetcode.editor.cn;
 
 <pre><strong>输入:</strong> 8
 <strong>输出:</strong> 2
-<strong>说明:</strong> 8 的平方根是 2.82842..., 
+<strong>说明:</strong> 8 的平方根是 2.82842...,
 &nbsp;    由于返回类型是整数，小数部分将被舍去。
 </pre>
 <div><div>Related Topics</div><div><li>数学</li><li>二分查找</li></div></div><br><div><li>👍 714</li><li>👎 0</li></div>
 */
-  
+
 public class Q69Sqrtx{
   public static void main(String[] args) {
        Solution solution = new Q69Sqrtx().new Solution();

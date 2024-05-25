@@ -1,4 +1,4 @@
-package com.shuzijun.leetcode.editor.cn;
+package com.shuzijun.leetcode.editor.cn.history;
 /**
 <p>给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。</p>
 
@@ -29,7 +29,7 @@ package com.shuzijun.leetcode.editor.cn;
 </pre>
 <div><div>Related Topics</div><div><li>数组</li><li>二分查找</li></div></div><br><div><li>👍 963</li><li>👎 0</li></div>
 */
-  
+
 public class Q35SearchInsertPosition{
   public static void main(String[] args) {
        Solution solution = new Q35SearchInsertPosition().new Solution();

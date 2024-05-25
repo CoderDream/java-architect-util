@@ -1,4 +1,4 @@
-package com.shuzijun.leetcode.editor.cn;
+package com.shuzijun.leetcode.editor.cn.history;
 
 import java.util.Arrays;
 

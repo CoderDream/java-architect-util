@@ -1,4 +1,4 @@
-package com.shuzijun.leetcode.editor.cn;
+package com.shuzijun.leetcode.editor.cn.history;
 /**
 <p>编写一个高效的算法来判断 <code>m x n</code> 矩阵中，是否存在一个目标值。该矩阵具有如下特性：</p>
 
@@ -35,7 +35,7 @@ package com.shuzijun.leetcode.editor.cn;
 </ul>
 <div><div>Related Topics</div><div><li>数组</li><li>二分查找</li><li>矩阵</li></div></div><br><div><li>👍 455</li><li>👎 0</li></div>
 */
-  
+
 public class Q74SearchA2dMatrix{
   public static void main(String[] args) {
        Solution solution = new Q74SearchA2dMatrix().new Solution();

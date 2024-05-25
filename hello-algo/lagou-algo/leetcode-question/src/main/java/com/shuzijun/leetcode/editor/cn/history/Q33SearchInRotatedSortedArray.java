@@ -1,4 +1,4 @@
-package com.shuzijun.leetcode.editor.cn;
+package com.shuzijun.leetcode.editor.cn.history;
 /**
 <p>整数数组 <code>nums</code> 按升序排列，数组中的值 <strong>互不相同</strong> 。</p>
 
@@ -45,7 +45,7 @@ package com.shuzijun.leetcode.editor.cn;
 <p><strong>进阶：</strong>你可以设计一个时间复杂度为 <code>O(log n)</code> 的解决方案吗？</p>
 <div><div>Related Topics</div><div><li>数组</li><li>二分查找</li></div></div><br><div><li>👍 1442</li><li>👎 0</li></div>
 */
-  
+
 public class Q33SearchInRotatedSortedArray{
   public static void main(String[] args) {
        Solution solution = new Q33SearchInRotatedSortedArray().new Solution();

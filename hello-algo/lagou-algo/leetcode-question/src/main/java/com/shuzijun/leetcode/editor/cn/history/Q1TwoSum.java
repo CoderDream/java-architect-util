@@ -1,4 +1,4 @@
-package com.shuzijun.leetcode.editor.cn;
+package com.shuzijun.leetcode.editor.cn.history;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -49,7 +49,7 @@ import java.util.Map;
 <p><strong>进阶：</strong>你可以想出一个时间复杂度小于 <code>O(n<sup>2</sup>)</code> 的算法吗？</p>
 <div><div>Related Topics</div><div><li>数组</li><li>哈希表</li></div></div><br><div><li>👍 11546</li><li>👎 0</li></div>
 */
-  
+
 public class Q1TwoSum{
     public static void main(String[] args) {
         Solution solution = new Q1TwoSum().new Solution();
