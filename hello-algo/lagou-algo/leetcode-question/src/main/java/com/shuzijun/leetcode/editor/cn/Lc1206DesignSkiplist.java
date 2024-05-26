@@ -71,214 +71,131 @@ public class Lc1206DesignSkiplist {
 
     public static void main(String[] args) {
         Skiplist skiplist = new Lc1206DesignSkiplist().new Skiplist();
+
+//            Skiplist skiplist = new Skiplist();
+        skiplist.add(30);
+        skiplist.add(40);
+        skiplist.add(50);
+        skiplist.add(60);
+        skiplist.add(70);
+        skiplist.add(90);
+
+        System.out.println(skiplist.search(30)); // true
+        System.out.println(skiplist.search(45)); // false
+        skiplist.add(45);
+        System.out.println(skiplist.search(45)); // true
+        skiplist.erase(45);
+        System.out.println(skiplist.search(45)); // false
+
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
+
     class Skiplist {
 
-        final int HEAD_VALUE = -1; // 链表头节点的值
-        final Node HEAD = new Node(HEAD_VALUE);
+        static final int MAX_LEVEL = 16; // 定义跳表的最大层数
+        private final Node head = new Node(-1, MAX_LEVEL); // 初始化头节点，值为-1，层数为最大层数
+        private int level = 0; // 当前跳表的层数
+        private final Random random = new Random(); // 随机数生成器
 
-        Node head;  // 最左上角的头节点，所有操作在开始位置
-        int levels; // 当前层级，即 head 节点所在的最高层数
-        int length; // 链表长度
-
-        public Skiplist() {
-            head = HEAD;
-            levels = 1;
-            length = 1;
-        }
-
-        public Node get(int target) {
-            return get(target, head);
-        }
-
-        public Node get(int target, Node from) {
-            Node n = from;
-            while (n != null) {
-                // 1.在同一层级上向右查找，直到链接结尾，或者找到
-                while (n.right != null && n.right.val < target) {
-                    n = n.right;
-                }
-                // 2.若找到，返回true
-                Node right = n.right; // 要查找的节点
-                if (right != null && right.val == target) {
-                    return n; // 返回要查找的节点的前一个
-                }
-                // 3.若右侧数据较大，向下一层
-                n = n.down;
-            }
-            return null;
-        }
-
-        /**
-         * <pre>
-         * 从 head 开始，从左到右、从上到下依次查找
-         *  1.小于，往右
-         *  2.相同，则返回
-         *  3.链表结尾，或大于，往下
-         *
-         * </pre>
-         *
-         * @param target
-         * @return
-         */
-        public boolean search(int target) {
-//            Node n = head;
-//            while (n != null) {
-//                // 1.在同一层级向右查找，直到链表的结尾
-//                while (n.right != null && n.right.val < target) {
-//                    n = n.right; // 向右
-//                }
-//                // 2.若找到，返回true
-//                Node right = n.right; // 要查找的节点
-//                if(right != null && right.val == target) {
-//                    return true;
-//                }
-//
-//                // 3.若右侧数据较大，向下一层
-//                n = n.down; // 往下
-//            }
-//
-//            return false;
-            Node node = get(target);
-            return node != null;
-        }
-
-        /**
-         * <pre>
-         * 插入节点，将节点插入原链表中正确的排序位置
-         *  1.定位插入位置：原链表中 >= num 的最小节点前
-         *  2.插入新节点
-         *  3.根据扔硬币决定（是否）生成索引
-         * </pre>
-         *
-         * @param num
-         */
-        public void add(int num) {
-            // 1.定位插入位置：原链表中 >= num 的最小节点前
-            Node node = head;
-            Node[] nodes = new Node[levels]; // 层级
-            int i = 0; // 操作上述数组
-            while (node != null) { // node == null, 到达原链表（第一层）
-                while (node.right != null && node.right.val < num) {
-                    node = node.right; // 向右走
-                }
-
-                nodes[i++] = node;
-
-                // 到达原链表（第一层）
-//                if(node.down == null) {
-//                    break;
-//                }
-
-                // 继续查找下一层的位置
-                node = node.down;
-            }
-
-            // 2.插入新节点
-            node = nodes[--i]; // nodes 中最后一个元素
-
-            Node newNode = new Node(num, node.right, null);
-            node.right = newNode;
-            length++;
-
-            // 3.根据扔硬币决定（是否）生成索引
-            addIndicesByCoinFlip(newNode, nodes, i);
-        }
-
-        /**
-         * 抛硬币
-         *
-         * @param target
-         * @param nodes
-         * @param indices 可以创建的层数
-         */
-        private void addIndicesByCoinFlip(Node target, Node[] nodes, int indices) {
-            Node downNode = target;
-            // 1.抛硬币，在现有层级范围内建立索引
-            Random random = new Random();
-            int coins = random.nextInt(2); // 0 or 1, 50%概率
-            while (coins == 1 && levels < length >> 6) { // 除以2的2次方
-                if (indices > 0) {
-                    Node prev = nodes[--indices]; // 数组的倒数第二个元素，level 2，（循环下一次为 level 3）
-                    Node newIndex = new Node(target.val, prev.right, downNode); // newIndex指向当前节点
-                    prev.right = newIndex; //
-                    //indices--;
-                    downNode = newIndex; // 保存新的向下节点
-                    coins = random.nextInt(2); // 0 or 1, 50%概率
-                } else {
-                    // 2.抛硬币，决定是否建立一层超出跳表层数的索引层
-                    // 新建索引节点和头节点
-                    Node newIndex = new Node(target.val, null, downNode); // 新层级，右边为null，下为上一次的down节点
-                    Node newHead = new Node(HEAD_VALUE, newIndex, head); // 头节点
-                    head = newHead; // head 指针上移
-                    levels++; // 跳表层数加 1
-                }
-            }
-        }
-
-        /**
-         * <pre>
-         * 遍历跳表，查找与给定值相同的节点，删除每一层
-         *  1.获取该指定数据节点的前一个节点
-         *  2.与当前层链表断开
-         *  3.下移，删除每一层
-         * </pre>
-         *
-         * @param num
-         * @return
-         */
-        public boolean erase(int num) {
-            boolean exist = false;
-//            Node n = head;
-//            while (n != null) {
-//                // 1.获取该指定数据节点的前一个节点
-//                while (n.right != null && n.right.val < num) {
-//                    n = n.right; // 向右
-//                }
-//                // 2.与当前层链表断开
-//                Node right = n.right; // 要删除的节点
-//                if(right != null && right.val == num) {
-//                    n.right = right.right; // 前一节点 指向待删除节点的后一节点
-//                    right.right = null; // help GC
-//                    exist = true;
-//                }
-//
-//                // 3.下移，删除每一层
-//                // 删除下一层
-//                n = n.down;
-//            }
-            Node node = get(num, head);
-            while (node != null) {
-                Node right = node.right; // 要删除的节点
-                node.right = right.right;
-                right.right = null; // help GC
-                exist = true;
-
-                node = get(num, node.down);
-            }
-            if (exist) {
-                length--; // 链表长度减 1
-            }
-
-            return exist;
-        }
-
+        // Node类表示跳表中的节点
         class Node {
+            int value; // 节点的值
+            Node[] forward; // 前进指针数组，不同层级的前进指针
 
-            int val;
-            Node right, down;
+            Node(int value, int level) {
+                this.value = value; // 初始化节点值
+                this.forward = new Node[level + 1]; // 初始化前进指针数组
+            }
+        }
 
-            Node(int val) {
-                this(val, null, null);
+        // 生成节点的随机层数
+        private int randomLevel() {
+            int lvl = 0;
+            // 当随机数小于0.5且层数小于最大层数时，增加层数
+            while (random.nextFloat() < 0.5f && lvl < MAX_LEVEL) {
+                lvl++;
+            }
+            return lvl; // 返回生成的层数
+        }
+
+        // 在跳表中查找目标值
+        public boolean search(int target) {
+            Node current = head; // 从头节点开始
+            // 从最高层逐层向下查找
+            for (int i = level; i >= 0; i--) {
+                // 向前移动直到找到大于或等于目标值的节点
+                while (current.forward[i] != null && current.forward[i].value < target) {
+                    current = current.forward[i];
+                }
+            }
+            current = current.forward[0]; // 移动到最底层
+            // 检查当前节点的值是否等于目标值
+            return current != null && current.value == target;
+        }
+
+        // 向跳表中插入一个值
+        public void add(int num) {
+            Node[] update = new Node[MAX_LEVEL + 1]; // 用于存储需要更新的节点
+            Node current = head; // 从头节点开始
+
+            // 从最高层逐层向下查找
+            for (int i = level; i >= 0; i--) {
+                // 向前移动直到找到大于或等于插入值的节点
+                while (current.forward[i] != null && current.forward[i].value < num) {
+                    current = current.forward[i];
+                }
+                update[i] = current; // 存储需要更新的节点
             }
 
-            Node(int val, Node right, Node down) {
-                this.val = val;
-                this.right = right;
-                this.down = down;
+            int lvl = randomLevel(); // 生成新节点的随机层数
+            if (lvl > level) {
+                // 如果新节点的层数大于当前层数，更新头节点的前进指针
+                for (int i = level + 1; i <= lvl; i++) {
+                    update[i] = head;
+                }
+                level = lvl; // 更新当前层数
             }
+
+            Node newNode = new Node(num, lvl); // 创建新节点
+            for (int i = 0; i <= lvl; i++) {
+                newNode.forward[i] = update[i].forward[i]; // 设置新节点的前进指针
+                update[i].forward[i] = newNode; // 更新前一个节点的前进指针
+            }
+        }
+
+        // 从跳表中删除一个值
+        public boolean erase(int num) {
+            Node[] update = new Node[MAX_LEVEL + 1]; // 用于存储需要更新的节点
+            Node current = head; // 从头节点开始
+
+            // 从最高层逐层向下查找
+            for (int i = level; i >= 0; i--) {
+                // 向前移动直到找到大于或等于删除值的节点
+                while (current.forward[i] != null && current.forward[i].value < num) {
+                    current = current.forward[i];
+                }
+                update[i] = current; // 存储需要更新的节点
+            }
+
+            current = current.forward[0]; // 移动到最底层
+            // 检查当前节点的值是否等于删除值
+            if (current != null && current.value == num) {
+                // 更新前进指针，跳过当前节点
+                for (int i = 0; i <= level; i++) {
+                    if (update[i].forward[i] != current) {
+                        break;
+                    }
+                    update[i].forward[i] = current.forward[i];
+                }
+
+                // 如果最高层的节点为空，降低当前层数
+                while (level > 0 && head.forward[level] == null) {
+                    level--;
+                }
+                return true; // 返回true表示删除成功
+            }
+            return false; // 返回false表示删除失败
         }
     }
 
