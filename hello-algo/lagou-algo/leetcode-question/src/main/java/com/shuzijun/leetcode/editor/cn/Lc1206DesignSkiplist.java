@@ -75,15 +75,40 @@ public class Lc1206DesignSkiplist {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Skiplist {
+
         final int HEAD_VALUE = -1; // 链表头节点的值
         final Node HEAD = new Node(HEAD_VALUE);
 
         Node head;  // 最左上角的头节点，所有操作在开始位置
         int levels; // 当前层级，即 head 节点所在的最高层数
+        int length; // 链表长度
 
         public Skiplist() {
             head = HEAD;
             levels = 1;
+            length = 1;
+        }
+
+        public Node get(int target) {
+            return get(target, head);
+        }
+
+        public Node get(int target, Node from) {
+            Node n = from;
+            while (n != null) {
+                // 1.在同一层级上向右查找，直到链接结尾，或者找到
+                while (n.right != null && n.right.val < target) {
+                    n = n.right;
+                }
+                // 2.若找到，返回true
+                Node right = n.right; // 要查找的节点
+                if (right != null && right.val == target) {
+                    return n; // 返回要查找的节点的前一个
+                }
+                // 3.若右侧数据较大，向下一层
+                n = n.down;
+            }
+            return null;
         }
 
         /**
@@ -94,27 +119,30 @@ public class Lc1206DesignSkiplist {
          *  3.链表结尾，或大于，往下
          *
          * </pre>
+         *
          * @param target
          * @return
          */
         public boolean search(int target) {
-            Node n = head;
-            while (n != null) {
-                // 1.在同一层级向右查找，直到链表的结尾
-                while (n.right != null && n.right.val < target) {
-                    n = n.right; // 向右
-                }
-                // 2.若找到，返回true
-                Node right = n.right; // 要查找的节点
-                if(right != null && right.val == target) {
-                    return true;
-                }
-
-                // 3.若右侧数据较大，向下一层
-                n = n.down; // 往下
-            }
-
-            return false;
+//            Node n = head;
+//            while (n != null) {
+//                // 1.在同一层级向右查找，直到链表的结尾
+//                while (n.right != null && n.right.val < target) {
+//                    n = n.right; // 向右
+//                }
+//                // 2.若找到，返回true
+//                Node right = n.right; // 要查找的节点
+//                if(right != null && right.val == target) {
+//                    return true;
+//                }
+//
+//                // 3.若右侧数据较大，向下一层
+//                n = n.down; // 往下
+//            }
+//
+//            return false;
+            Node node = get(target);
+            return node != null;
         }
 
         /**
@@ -124,6 +152,7 @@ public class Lc1206DesignSkiplist {
          *  2.插入新节点
          *  3.根据扔硬币决定（是否）生成索引
          * </pre>
+         *
          * @param num
          */
         public void add(int num) {
@@ -152,6 +181,7 @@ public class Lc1206DesignSkiplist {
 
             Node newNode = new Node(num, node.right, null);
             node.right = newNode;
+            length++;
 
             // 3.根据扔硬币决定（是否）生成索引
             addIndicesByCoinFlip(newNode, nodes, i);
@@ -159,6 +189,7 @@ public class Lc1206DesignSkiplist {
 
         /**
          * 抛硬币
+         *
          * @param target
          * @param nodes
          * @param indices 可以创建的层数
@@ -168,21 +199,22 @@ public class Lc1206DesignSkiplist {
             // 1.抛硬币，在现有层级范围内建立索引
             Random random = new Random();
             int coins = random.nextInt(2); // 0 or 1, 50%概率
-            while (coins == 1 && indices > 0) {
-                Node prev = nodes[--indices]; // 数组的倒数第二个元素，level 2，（循环下一次为 level 3）
-                Node newIndex = new Node(target.val, prev.right, downNode); // newIndex指向当前节点
-                prev.right = newIndex; //
-                //indices--;
-                downNode = newIndex; // 保存新的向下节点
-                coins = random.nextInt(2); // 0 or 1, 50%概率
-            }
-            // 2.抛硬币，决定是否建立一层超出跳表层数的索引层
-            if(coins == 1) { // 新建一个索引层级
-                // 新建索引节点和头节点
-                Node newIndex = new Node(target.val, null, downNode); // 新层级，右边为null，下为上一次的down节点
-                Node newHead = new Node(HEAD_VALUE, newIndex, head); // 头节点
-                head = newHead; // head 指针上移
-                levels++; // 跳表层数加 1
+            while (coins == 1 && levels < length >> 6) { // 除以2的2次方
+                if (indices > 0) {
+                    Node prev = nodes[--indices]; // 数组的倒数第二个元素，level 2，（循环下一次为 level 3）
+                    Node newIndex = new Node(target.val, prev.right, downNode); // newIndex指向当前节点
+                    prev.right = newIndex; //
+                    //indices--;
+                    downNode = newIndex; // 保存新的向下节点
+                    coins = random.nextInt(2); // 0 or 1, 50%概率
+                } else {
+                    // 2.抛硬币，决定是否建立一层超出跳表层数的索引层
+                    // 新建索引节点和头节点
+                    Node newIndex = new Node(target.val, null, downNode); // 新层级，右边为null，下为上一次的down节点
+                    Node newHead = new Node(HEAD_VALUE, newIndex, head); // 头节点
+                    head = newHead; // head 指针上移
+                    levels++; // 跳表层数加 1
+                }
             }
         }
 
@@ -193,34 +225,48 @@ public class Lc1206DesignSkiplist {
          *  2.与当前层链表断开
          *  3.下移，删除每一层
          * </pre>
+         *
          * @param num
          * @return
          */
         public boolean erase(int num) {
             boolean exist = false;
-            Node n = head;
-            while (n != null) {
-                // 1.获取该指定数据节点的前一个节点
-                while (n.right != null && n.right.val < num) {
-                    n = n.right; // 向右
-                }
-                // 2.与当前层链表断开
-                Node right = n.right; // 要删除的节点
-                if(right != null && right.val == num) {
-                    n.right = right.right; // 前一节点 指向待删除节点的后一节点
-                    right.right = null; // help GC
-                    exist = true;
-                }
+//            Node n = head;
+//            while (n != null) {
+//                // 1.获取该指定数据节点的前一个节点
+//                while (n.right != null && n.right.val < num) {
+//                    n = n.right; // 向右
+//                }
+//                // 2.与当前层链表断开
+//                Node right = n.right; // 要删除的节点
+//                if(right != null && right.val == num) {
+//                    n.right = right.right; // 前一节点 指向待删除节点的后一节点
+//                    right.right = null; // help GC
+//                    exist = true;
+//                }
+//
+//                // 3.下移，删除每一层
+//                // 删除下一层
+//                n = n.down;
+//            }
+            Node node = get(num, head);
+            while (node != null) {
+                Node right = node.right; // 要删除的节点
+                node.right = right.right;
+                right.right = null; // help GC
+                exist = true;
 
-                // 3.下移，删除每一层
-                // 删除下一层
-                n = n.down;
+                node = get(num, node.down);
+            }
+            if (exist) {
+                length--; // 链表长度减 1
             }
 
             return exist;
         }
 
         class Node {
+
             int val;
             Node right, down;
 
