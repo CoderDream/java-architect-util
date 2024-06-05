@@ -16,6 +16,9 @@ import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author CoderDream
+ */
 public class MultiThreadGenOneScriptTextExecutor {
 
     public static Integer POOL_SIZE = 50;
@@ -54,7 +57,7 @@ public class MultiThreadGenOneScriptTextExecutor {
         List<DownloadInfoEntity> downloadInfoEntityListTemp = new ArrayList<>();
         if (test) {
             DownloadInfoEntity infoEntity = new DownloadInfoEntity();
-            String ep = "240523";
+            String ep = "240606";
             infoEntity.setFileUrl(
                 "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2024/ep-" + ep + "");
             infoEntity.setPath("D:/14_LearnEnglish/6MinuteEnglish/2024/" + ep + "/");
