@@ -43,6 +43,13 @@ public class GenSixMinutePptx {
         String titleTemplateFileName = fillTitlePicture(folderName);
         // 第二步：设置标题，填充单词
         fillContent(folderName, titleTemplateFileName, titleName);
+
+        // 删除temp文件
+        File file = new File(titleTemplateFileName);
+        if (file.isFile() & file.exists()) {
+            file.delete();
+            System.out.println("删除temp文件");
+        }
     }
 
     /**
@@ -95,7 +102,7 @@ public class GenSixMinutePptx {
         Title title = new Title(titleName, titleName, folderName);
         Map props = new HashMap(); // 末日滚动：我们为什么喜欢末日滚动？
         props.put("titleName", titleName);
-        if("230209".equals(folderName)) {
+        if ("230209".equals(folderName)) {
             props.put("titleName", "我们为什么喜欢末日滚动？");
         }
 
