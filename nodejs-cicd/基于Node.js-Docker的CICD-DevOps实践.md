@@ -465,11 +465,16 @@ Successfully tagged cicd-web:latest
 
  ![image-20240607174315936](基于Node.js-Docker的CICD-DevOps实践/image-20240607174315936.png)
 
-### 原始视频及文档
+## 原始视频及文档
+
+### 视频
 
 https://www.bilibili.com/video/BV1jf4y127jT/?spm_id_from=333.337.search-card.all.click&vd_source=503207d99395b6ec89fb3e289a9be411
 
+### 文档
+
 实验步骤：
+
 1. 搭建一个 git 服务
 - 拉取 gogs 镜像：`docker pull gogs/gogs`
 - 创建 gogs 存储目录：`sudo mkdir /var/gogs`
