@@ -119,13 +119,15 @@ docker run -d --name=gogs \
 
 #### 2.1 克隆仓库
 
-更改IP，克隆项目
+把localhost改成实际的IP，克隆项目：
 
 > http://192.168.3.4:28033/CoderDream/cicd_web.git
 
 ![image-20240607103839359](基于Node.js-Docker的CICD-DevOps实践/image-20240607103839359.png)
 
 #### 2.2 编写 web 服务
+
+* index.js
 
 ```js
 const http=require('http')
@@ -165,9 +167,8 @@ http.createServer((req,res)=>{
 
 #### 3.1 为 web 服务编写 Dockerfile
 
-![image-20240607104543198](基于Node.js-Docker的CICD-DevOps实践/image-20240607104543198.png)
+* Dockerfile
 
-Dockerfile
 ```dockerfile
 FROM node:12.13-alpine
 
@@ -182,7 +183,7 @@ COPY . .
 CMD [ "node", "index.js" ]
 ```
 
-package.json
+* package.json
 
 ```
 PS D:\04_GitHub\java-architect-util\nodejs-cicd\cicd_web> npm init -y
@@ -220,8 +221,6 @@ PS D:\04_GitHub\java-architect-util\nodejs-cicd\cicd_web>
 #### 3.3 启动 web 容器
 
 > docker run --name=cicdweb -d -p 23300:3000 cicd-web
-
-![image-20240607110112993](基于Node.js-Docker的CICD-DevOps实践/image-20240607110112993.png)
 
 ![image-20240607110306079](基于Node.js-Docker的CICD-DevOps实践/image-20240607110306079.png)
 
@@ -323,11 +322,10 @@ CMD [ "node", "index.js" ]
 
 ```
 
-
+> dockerfile RUN apk add 卡住问题解决
+> https://blog.csdn.net/zhangzhen02/article/details/112217348
 
 #### 4.4 生成 deploy web 服务镜像
-
-#### 
 
 > docker build -t cicd-deploy .
 
@@ -389,23 +387,19 @@ root@DS920plus:/volume1/home/deploy#
 >
 > ll /var/run/docker.sock
 >
-> 
->
-> 
 
 ![image-20240607162229959](基于Node.js-Docker的CICD-DevOps实践/image-20240607162229959.png)
 
-
-
 ```shell
-docker run -d --name=deploy --network cicd_net -p 24444:4000 -v /usr/local/bin/docker:/usr/bin/docker -v /var/run/docker.sock:/var/run/docker.sock --user root cicd-deploy
+docker run -d --name=deploy --network cicd_net -p 24444:4000 -v \
+/usr/local/bin/docker:/usr/bin/docker 
+-v /var/run/docker.sock:/var/run/docker.sock \
+--user root cicd-deploy
 ```
 
 
 
 ![image-20240607162308177](基于Node.js-Docker的CICD-DevOps实践/image-20240607162308177.png)
-
-
 
 
 
@@ -420,36 +414,6 @@ http://192.168.3.4:23333/
 ```
 
 ![image-20240607165031664](基于Node.js-Docker的CICD-DevOps实践/image-20240607165031664.png)
-
-
-
-
-
-
-
-
-
-
-
-```dockerfile
-FROM node:12.13-alpine
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
-RUN apk add git
-
-WORKDIR /usr/src/app
-
-COPY package*.json ./
-
-RUN npm install --only=production
-
-COPY . .
-
-CMD [ "node", "index.js" ]
-
-```
-
-> dockerfile RUN apk add 卡住问题解决
-> https://blog.csdn.net/zhangzhen02/article/details/112217348
 
 #### 4.6 git hook 让 deploy 自动构建镜像生成 web 容器
 
@@ -501,7 +465,7 @@ Successfully tagged cicd-web:latest
 
  ![image-20240607174315936](基于Node.js-Docker的CICD-DevOps实践/image-20240607174315936.png)
 
-### 原始文档
+### 原始视频及文档
 
 https://www.bilibili.com/video/BV1jf4y127jT/?spm_id_from=333.337.search-card.all.click&vd_source=503207d99395b6ec89fb3e289a9be411
 
