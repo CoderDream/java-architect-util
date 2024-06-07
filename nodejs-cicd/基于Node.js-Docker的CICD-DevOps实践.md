@@ -235,13 +235,11 @@ PS D:\04_GitHub\java-architect-util\nodejs-cicd\cicd_web>
 
 ![image-20240607110759329](基于Node.js-Docker的CICD-DevOps实践/image-20240607110759329.png)
 
-
+#### 4.1 克隆代码
 
 > git clone http://192.168.3.4:28033/CoderDream/deploy.git
 
-
-
-deploy ->index.js 端口4000
+* 编写index.js 端口4000
 
 ```js
 const http=require('http')
@@ -256,7 +254,7 @@ http.createServer((req,res)=>{
 })
 ```
 
-deploy->deploy.sh
+* deploy.sh
 
 ```
 #! /bin/sh
@@ -265,42 +263,30 @@ docker build -t cicd-web .
 docker run --name=cicdweb -d -p 23333:3000 cicd-web
 ```
 
-构建Docker镜像前拉取仓库
-
-在NAS拉取代码
-
-> git clone http://192.168.3.4:28033/CoderDream/deploy.git
-
-
+修改sh文件权限
 
 > chmod +x deploy.sh
 
  ![image-20240607114530176](基于Node.js-Docker的CICD-DevOps实践/image-20240607114530176.png)
 
-#### 4.2 提交代码
+#### 4.2 deploy web 服务启动子进程，执行 shell 脚本
 
-> git config --global user.email "coderdream@gmail.com"
-> git config --global user.name "CoderDream"
+* shell 脚本完成以下工作：
 
-> root@DS920plus:/volume1/home/deploy# chmod +x deploy.sh
-> root@DS920plus:/volume1/home/deploy# git add .
-> root@DS920plus:/volume1/home/deploy# git commit -m 'xxx'
-> git push
+  - web 项目代码克隆或者拉取
 
-![image-20240607120526235](基于Node.js-Docker的CICD-DevOps实践/image-20240607120526235.png)
+  - 删除 web 旧容器和镜像
 
+  - 生成新的 web 镜像
 
-
-![image-20240607144520230](基于Node.js-Docker的CICD-DevOps实践/image-20240607144520230.png)
-
-
+* deploy.sh
 
 ```
 #! /bin/sh
-pjName='cicd-web'
+pjName='cicd_web'
 
 if [ ! -d "www/${pjName}" ]; then
-    echo git clone
+    echo 'git clone'
     cd www
     git clone http://192.168.3.4:28033/CoderDream/${pjName}
     cd ${pjName}
@@ -308,7 +294,6 @@ else
     echo 'git pull'
     cd www/${pjName}
     git pull
-
 fi
 
 docker stop cicdweb
@@ -319,12 +304,34 @@ docker build -t cicd-web .
 docker run --name=cicdweb -d -p 23333:3000 cicd-web
 ```
 
-#### 4.3 build deploy 容器
+#### 4.3 给 deply web 创建 Dockerfile
+
+```
+FROM node:12.13-alpine
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
+RUN apk add git
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN npm install --only=production
+
+COPY . .
+
+CMD [ "node", "index.js" ]
+
+```
+
+
+
+#### 4.4 生成 deploy web 服务镜像
+
+#### 
 
 > docker build -t cicd-deploy .
 
 ```
-
 root@DS920plus:/volume1/home/deploy# docker build -t cicd-deploy .
 Sending build context to Docker daemon  74.75kB
 Step 1/7 : FROM node:12.13-alpine
@@ -372,44 +379,9 @@ Successfully tagged cicd-deploy:latest
 root@DS920plus:/volume1/home/deploy#
 ```
 
-
-
 ![image-20240607162031702](基于Node.js-Docker的CICD-DevOps实践/image-20240607162031702.png)
 
-#### 4.4 deploy web 服务启动子进程，执行 shell 脚本
-
-```
-#! /bin/sh
-pjName='cicd_web'
-
-if [ ! -d "www/${pjName}" ]; then
-    echo 'git clone'
-    cd www
-    git clone http://192.168.3.4:28033/CoderDream/${pjName}
-    cd ${pjName}
-else
-    echo 'git pull'
-    cd www/${pjName}
-    git pull
-fi
-
-docker stop cicdweb
-docker rm -f cicdweb
-docker rmi -f cicd-web
-
-docker build -t cicd-web .
-docker run --name=cicdweb -d -p 23333:3000 cicd-web
-```
-
-
-
-- shell 脚本完成以下工作：
-  - web 项目代码克隆或者拉取
-  - 删除 web 旧容器和镜像
-  - 生成新的 web 镜像
-- 给 deply web 创建 Dockerfile
-- 生成 deploy web 服务镜像
-- 启动 deploy web 容器
+####  4.5 启动 deploy web 容器
 
 ![image-20240607145549877](基于Node.js-Docker的CICD-DevOps实践/image-20240607145549877.png)
 
@@ -419,9 +391,17 @@ docker run --name=cicdweb -d -p 23333:3000 cicd-web
 >
 > 
 >
-> docker run -d --name=deploy --network cicd_net -p 24444:4000 -v /usr/local/bin/docker:/usr/bin/docker -v /var/run/docker.sock:/var/run/docker.sock --user root cicd-deploy
+> 
 
 ![image-20240607162229959](基于Node.js-Docker的CICD-DevOps实践/image-20240607162229959.png)
+
+
+
+```shell
+docker run -d --name=deploy --network cicd_net -p 24444:4000 -v /usr/local/bin/docker:/usr/bin/docker -v /var/run/docker.sock:/var/run/docker.sock --user root cicd-deploy
+```
+
+
 
 ![image-20240607162308177](基于Node.js-Docker的CICD-DevOps实践/image-20240607162308177.png)
 
@@ -441,31 +421,13 @@ http://192.168.3.4:23333/
 
 ![image-20240607165031664](基于Node.js-Docker的CICD-DevOps实践/image-20240607165031664.png)
 
-![image-20240607165237012](基于Node.js-Docker的CICD-DevOps实践/image-20240607165237012.png)
-
-```
-
-Successfully tagged cicd-web:latest
-
-docker: Error response from daemon: Conflict. The container name "/cicdweb" is already in use by container "c6a42d20e6cdffa0d96cf2772ae34b5152a2f179dc3633c79044a41503348746". You have to remove (or rename) that container to be able to reuse that name.
-
-See 'docker run --help'.
-
-docker: Error response from daemon: pull access denied for cicd-web, repository does not exist or may require 'docker login': denied: requested access to the resource is denied.
-
-See 'docker run --help'.
-
-docker: Error response from daemon: pull access denied for cicd-web, repository does not exist or may require 'docker login': denied: requested access to the resource is denied.
-
-```
 
 
 
-![image-20240607165413319](基于Node.js-Docker的CICD-DevOps实践/image-20240607165413319.png)
 
-```
 
-```
+
+
 
 
 
@@ -489,13 +451,15 @@ CMD [ "node", "index.js" ]
 > dockerfile RUN apk add 卡住问题解决
 > https://blog.csdn.net/zhangzhen02/article/details/112217348
 
-#### 4.5 git hook 让 deploy 自动构建镜像生成 web 容器
+#### 4.6 git hook 让 deploy 自动构建镜像生成 web 容器
 
 - 配置 gogs 的 web hook，仓库提交代码时，推送 deploy web 服务
 
 ![image-20240607173833127](基于Node.js-Docker的CICD-DevOps实践/image-20240607173833127.png)
 
-#### 4.6 成功自动发布
+修改web应用提交到git后，deploy自动发布：
+
+* deploy容器日志
 
 ```
 git pull
@@ -533,7 +497,7 @@ Successfully tagged cicd-web:latest
 6e7ff44d92a65d3dc8506831ffb7a821047dfe61aa1d70a12d47239ea270bf14
 ```
 
-修改web应用提交到git后，deploy自动发布：
+* 访问最新的web服务
 
  ![image-20240607174315936](基于Node.js-Docker的CICD-DevOps实践/image-20240607174315936.png)
 
