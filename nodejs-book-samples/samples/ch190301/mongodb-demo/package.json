@@ -9,6 +9,6 @@
   "author": "waylau.com",
   "license": "ISC",
   "dependencies": {
-    "mongodb": "^3.2.7"
+    "mongodb": "^3.7.4"
   }
 }

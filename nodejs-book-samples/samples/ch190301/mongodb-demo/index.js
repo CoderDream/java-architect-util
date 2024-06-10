@@ -47,15 +47,15 @@ client.connect(function (err) {
         client.close();
     });
 
-    // 删除单个文档
-    removeDocument(db, function () {
-        client.close();
-    });
+    // // 删除单个文档
+    // removeDocument(db, function () {
+    //     client.close();
+    // });
 
-    // 删除多个文档
-    removeDocuments(db, function () {
-        client.close();
-    });
+    // // 删除多个文档
+    // removeDocuments(db, function () {
+    //     client.close();
+    // });
 
 });
 
