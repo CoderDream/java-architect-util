@@ -37,16 +37,13 @@ public class BbcStepAfterTest {
     }
 
     /**
-     * <pre>
-     *     你支持妇女参政么？
-     * </pre>
-     * 智能技术能影响气候变化吗？ 我们为什么会打哈欠？ 第五步：生成ppt和待填充《核心词汇表》的文件
+     * 第五步：生成ppt和待填充《核心词汇表》的文件
      */
     @Test
     public void testStep05() {
         int i = 0;
-        String fileName = "script_raw";
-        List<String> stringList = TranslateUtil.translateTitle(NUMBER_LIST, fileName);
+        String fileName = "script";
+        List<String> stringList = TranslateUtil.translateTitleWithScriptFile(NUMBER_LIST, fileName);
         for (String num : NUMBER_LIST) {
             String folderName = "" + num;
             GenSixMinutePptx.genPpt(folderName, stringList.get(i));

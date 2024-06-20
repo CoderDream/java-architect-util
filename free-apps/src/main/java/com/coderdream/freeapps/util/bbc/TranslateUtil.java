@@ -23,14 +23,16 @@ public class TranslateUtil {
         String folderName = "210318";
 //        TranslateUtil.process(folderName);
 //        TranslateUtil.mergeScriptContent(folderName);
-        TranslateUtil.translateEngSrc(folderName);
+//        TranslateUtil.translateEngSrc(folderName);
+
+
 
 //        String str = "大括号外面的内容（Michael Collins）的内容（Michael Collins） ";
 //        str = removeEnContent(str);
 //        System.out.println(str);
 //
-//        List<String> NUMBER_LIST = Arrays.asList("230406", "230413", "230420", "230427");
-//        TranslateUtil.translateTitle(NUMBER_LIST);
+        List<String> NUMBER_LIST = Arrays.asList("201015");
+        TranslateUtil.translateTitleWithScriptFile(NUMBER_LIST, "script");
 
 //        TranslateUtil.mergeScriptContentWx(folderName);
 
@@ -40,7 +42,6 @@ public class TranslateUtil {
     }
 
     /**
-     *
      * @param str
      * @return
      */
@@ -90,8 +91,54 @@ public class TranslateUtil {
                 //    titleList.add(stringList.get(0));
                 titleList.add(getTitleString(stringList));
             }
+        }
 
+        String textTitleList = titleList.stream().map(String::valueOf).collect(Collectors.joining("\r\n"));
+        List<String> stringListTitleCn = TranslatorTextUtil.translatorText(textTitleList);
+        String[] arr = new String[0];
+        for (int i = 0; i < stringListTitleCn.size(); i++) {
+            String temp = stringListTitleCn.get(i);
+            arr = temp.split("\r\n");
+        }
 
+        List<String> titleCnList = Arrays.asList(arr);
+        List<String> newList = new ArrayList<>();
+        String titleTranslate;
+        for (int i = 0; i < arr.length; i++) {
+            titleTranslate = folderNameList.get(i).substring(2) + "\t" + titleList.get(i) + "\t" + arr[i];
+            System.out.println(titleTranslate);
+            newList.add(titleTranslate);
+        }
+
+//        String srcFileNameCn = BbcConstants.ROOT_FOLDER_NAME + File.separator + "title.txt";
+        // 写中文翻译文本
+//        CdFileUtils.writeToFile(srcFileNameCn, newList);
+        return titleCnList;
+    }
+
+    public static List<String> translateTitleWithScriptFile(List<String> folderNameList, String fileName) {
+//        if (fileName == null) {
+//            fileName = "script_raw";
+//        }
+        // 220303_script.txt
+//        if (fileName.endsWith("_script.txt")) {
+//            // TODO
+//        }
+
+        // 6 Minute English
+        // word-for-word transcript
+        List<String> titleList = new ArrayList<>();
+        for (String folderName : folderNameList) {
+            fileName = folderName + "_script"; // TODO 指定
+            String srcFileName = CommonUtil.getFullPathFileName(folderName, fileName, ".txt");
+            List<String> stringList = CdFileUtils.readFileContent(srcFileName);
+
+            String title;
+            int size = stringList.size();
+            if (CollectionUtil.isNotEmpty(stringList)) {
+                //    titleList.add(stringList.get(0));
+                titleList.add(getTitleString(stringList));
+            }
         }
 
         String textTitleList = titleList.stream().map(String::valueOf).collect(Collectors.joining("\r\n"));

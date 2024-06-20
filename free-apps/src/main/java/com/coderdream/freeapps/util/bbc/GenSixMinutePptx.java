@@ -35,8 +35,8 @@ public class GenSixMinutePptx {
     /**
      * 分多步生成ppt
      *
-     * @param folderName
-     * @param titleName
+     * @param folderName 文件夹名称
+     * @param titleName 标题名称
      */
     public static void genPpt(String folderName, String titleName) {
         // 第一步：设置标题图片

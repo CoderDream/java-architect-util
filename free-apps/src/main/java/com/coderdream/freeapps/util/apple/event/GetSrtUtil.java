@@ -16,8 +16,9 @@ import java.util.Map;
 
 public class GetSrtUtil {
 
-    private final static String SRT_PRIO = "https://events-delivery.apple.com/2403kaqfcpzjjnpkkkkmbtyqacnyrknu/vod_main_BHKucdGHJBgbQdLdPafCRNCACvstwWNC/cc/";
+  //  private final static String SRT_PRIO = "https://events-delivery.apple.com/2403kaqfcpzjjnpkkkkmbtyqacnyrknu/vod_main_BHKucdGHJBgbQdLdPafCRNCACvstwWNC/cc/";
 
+    private final static String SRT_PRIO =  "https://events-delivery.apple.com/1505clvgxdwlbjrjhxtjdgcdxaiabvuf/vod_main_BveVQvhWftXzpUakjHjEUkbmUYLbRdcV/cc/";
     private final static String END = ".webvtt";
     private final static String CN_PRIO = "zh/zh_";
     private final static String EN_PRIO = "en/en_";
@@ -29,20 +30,21 @@ public class GetSrtUtil {
     // zh/zh_0.webvtt
     public static void main(String[] args) {
 
-        Integer SIZE = 379;
+//        Integer SIZE = 379;
+        Integer SIZE = 1025;
 
-
+        String urlBase = "https://events-delivery.apple.com/1505clvgxdwlbjrjhxtjdgcdxaiabvuf/vod_main_BveVQvhWftXzpUakjHjEUkbmUYLbRdcV/";
 
 
         List<String> urlCnList = new ArrayList<>();
         List<String> urlEnList = new ArrayList<>();
         for (int i = 0; i < SIZE; i++) {
-//            System.out.println(SRT_PRIO + CN_PRIO + i + END);
+            System.out.println(SRT_PRIO + CN_PRIO + i + END);
             urlCnList.add(SRT_PRIO + CN_PRIO + i + END);
         }
 
         for (int i = 0; i < SIZE; i++) {
-//            System.out.println(SRT_PRIO + EN_PRIO + i + END);
+            System.out.println(SRT_PRIO + EN_PRIO + i + END);
             urlEnList.add(SRT_PRIO + EN_PRIO + i + END);
         }
 //        m1();
