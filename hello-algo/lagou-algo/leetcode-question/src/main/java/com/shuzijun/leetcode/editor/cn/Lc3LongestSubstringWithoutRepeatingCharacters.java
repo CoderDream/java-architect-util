@@ -80,11 +80,8 @@ public class Lc3LongestSubstringWithoutRepeatingCharacters {
             if (s == null || (length = s.length()) == 0) {
                 return 0;
             }
-            // 1.生成所有不包含重复字符的子串
-            List<String> list = new ArrayList<String>();
-            // 1.1将字符串切割成单个字符组成的数组，直接添加到集合中
-            list.addAll(Arrays.asList(s.split("")));
-            // 1.2遍历字符串，生成所有的不含重复字符的子串，添加到集合中
+            int maxLength = 1;
+            // 1.遍历字符串，生成所有的不含重复字符的子串
             for (int start = 0; start < length; start++) { // 遍历子串的起始字符
                 for (int end = start + 1; end < length; end++) { // 遍历子串的终止字符
                     String subStr = s.substring(start, end); // 包含start，不包含end
@@ -93,18 +90,14 @@ public class Lc3LongestSubstringWithoutRepeatingCharacters {
 //                        System.out.println("subStr: " + subStr);
                         break;
                     }
-                    // 否则，添加到集合中
-                    list.add(s.substring(start, end + 1)); // 包含start，也包含end
+                    // 2.统计最长子串的长度
+                    int subLen = end + 1 - start; // 子串长度
+                    if (subLen > maxLength) {
+                        maxLength = subLen;
+                    }
                 }
             }
-            // 2.统计最长子串的长度
-            int maxLength = 1;
-            for (String sub : list) {
-                int subLen;
-                if ((subLen = sub.length()) > maxLength) {
-                    maxLength = subLen;
-                }
-            }
+
             return maxLength;
         }
     }
