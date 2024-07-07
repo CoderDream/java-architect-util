@@ -229,8 +229,10 @@ public class ProcessRawTxtUtil {
                     tempList.add(scriptList.get(j));
                 }
                 String text = tempList.stream().map(String::valueOf).collect(Collectors.joining(" "));
+                text = text.replaceAll("Hello. This is 6 Minute English from BBC Learning English. ", ",");
                 text = text.replaceAll("  ", " ");// 将两个空格变成一个空格
                 text = text.replaceAll(" ,", ",");// 去掉逗号前面的空格
+
                 // 增加谈话内容
                 finalList.add(text);
                 // 增加空格
@@ -247,6 +249,7 @@ public class ProcessRawTxtUtil {
         boolean emptyFlag = false;
         for (int j = 0; j < finalList.size(); j++) {
             if(!emptyFlag || StrUtil.isNotEmpty(finalList.get(j))) {
+//                finalList.set(j,  finalList.get(j).replaceAll("Hello. This is 6 Minute English from BBC Learning English. ", ""));
                 scriptList.add(finalList.get(j));
             }
 
