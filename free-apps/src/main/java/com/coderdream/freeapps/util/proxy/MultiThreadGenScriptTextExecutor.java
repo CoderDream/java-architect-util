@@ -17,6 +17,9 @@ import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author CoderDream
+ */
 public class MultiThreadGenScriptTextExecutor {
 
     public static Integer POOL_SIZE = 50;
@@ -63,7 +66,7 @@ public class MultiThreadGenScriptTextExecutor {
             downloadInfoEntityListTemp = Arrays.asList(infoEntity);
         } else {
 //            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("txt", "2020","02","06");
-            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("txt", "2020");
+            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("txt", "2019");
         }
 
         String folderPath =

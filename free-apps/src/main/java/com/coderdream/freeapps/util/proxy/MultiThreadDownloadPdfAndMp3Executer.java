@@ -14,6 +14,9 @@ import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author CoderDream
+ */
 public class MultiThreadDownloadPdfAndMp3Executer {
 
     public static Integer POOL_SIZE = 5;
@@ -59,7 +62,8 @@ public class MultiThreadDownloadPdfAndMp3Executer {
             downloadInfoEntityListTemp = Arrays.asList(infoEntity);
         } else {
 //            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("html","2023", "01", "02");
-            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("html","2020");
+//            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("html","2020");
+            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("html","2019","08","09","10","11","12");
         }
 
         for (DownloadInfoEntity downloadInfoEntity : downloadInfoEntityListTemp) {

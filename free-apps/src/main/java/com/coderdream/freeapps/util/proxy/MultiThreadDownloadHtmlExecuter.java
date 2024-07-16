@@ -58,7 +58,7 @@ public class MultiThreadDownloadHtmlExecuter {
             infoEntity.setFileName(ep + ".html");
             downloadInfoEntityListTemp = Arrays.asList(infoEntity);
         } else {
-            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("html", "2020");
+            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("html", "2019", "09", "10", "11", "12");
         }
 
         for (DownloadInfoEntity downloadInfoEntity : downloadInfoEntityListTemp) {
