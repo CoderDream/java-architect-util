@@ -91,7 +91,7 @@ public class JobInfoTest {
     public void testJavaWuhan() {
         String referer = "https://www.zhipin.com/web/geek/job?query=Java&city=101200100&page=";
         String url = "https://www.zhipin.com/wapi/zpgeek/search/joblist.json?scene=1&query=Java&city=101200100&experience=&payType=&partTime=&degree=&industry=&scale=&stage=&position=&jobType=&salary=&multiBusinessDistrict=&multiSubway="; // &page=" + currentPage;
-        Integer currentPage = 9;
+        Integer currentPage = 1;
         String cookie = readCookie(DistrictFlagEnum.WU_HAN);
         List<Object> result = CallApiUtil.getJobInfoList(referer, url, currentPage, cookie,
             DistrictFlagEnum.WU_HAN.getLabel());
@@ -102,10 +102,10 @@ public class JobInfoTest {
     }
 
     @Test
-    public void testJavaWucang() {
+    public void testJavaWuchang() {
         String referer = "https://www.zhipin.com/web/geek/job?query=Java&city=101200100&areaBusiness=420106&page=";
         String url = "https://www.zhipin.com/wapi/zpgeek/search/joblist.json?scene=1&query=Java&city=101200100&experience=&payType=&partTime=&degree=&industry=&scale=&stage=&position=&jobType=&salary=&multiBusinessDistrict=420106&multiSubway=";
-        Integer currentPage = 9;
+        Integer currentPage = 1;
         String cookie = readCookie();
         List<Object> result = CallApiUtil.getJobInfoList(referer, url, currentPage, cookie,
             DistrictFlagEnum.WU_CANG.getLabel());
@@ -168,6 +168,21 @@ public class JobInfoTest {
 
         List<Object> result = CallApiUtil.getJobInfoList(referer, url, currentPage, cookie,
             DistrictFlagEnum.GUANG_GU2.getLabel());
+        List<JobInfoEntity> jobInfoEntityList = (List<JobInfoEntity>) result.get(0);
+        List<BossJobLogEntity> bossJobLogEntityList = (List<BossJobLogEntity>) result.get(1);
+        log.info("jobInfoEntityList result: " + jobInfoService.insertOrUpdateBatch(jobInfoEntityList));
+        log.info("bossJobLogEntityList result: " + bossJobLogService.insertOrUpdateBatch(bossJobLogEntityList));
+    }
+
+    @Test
+    public void testJobDetail() {
+        String referer = "https://www.zhipin.com/web/geek/job?query=Java&city=101200100&page=";
+        String url = "https://www.zhipin.com/wapi/zpgeek/search/joblist.json?scene=1&query=Java&city=101200100&experience=&payType=&partTime=&degree=&industry=&scale=&stage=&position=&jobType=&salary=&multiBusinessDistrict=&multiSubway="; // &page=" + currentPage;
+        url = "https://www.zhipin.com/job_detail/1e62322779fbc3831HN70tW7EFBY.html";
+        Integer currentPage = 1;
+        String cookie = readCookie(DistrictFlagEnum.WU_HAN);
+        List<Object> result = CallApiUtil.getJobInfoDetail(referer, url, currentPage, cookie,
+            DistrictFlagEnum.WU_HAN.getLabel());
         List<JobInfoEntity> jobInfoEntityList = (List<JobInfoEntity>) result.get(0);
         List<BossJobLogEntity> bossJobLogEntityList = (List<BossJobLogEntity>) result.get(1);
         log.info("jobInfoEntityList result: " + jobInfoService.insertOrUpdateBatch(jobInfoEntityList));

@@ -283,7 +283,7 @@ public class HttpUtil {
      */
     public static <T> T postWithForm(Map<String, Object> param, Map<String, String> head, String url, Class<T> t,
         Integer retryTimes) {
-        head.put("Content-Type", ContentType.FORM_URLENCODED.getValue());
+//        head.put("Content-Type", ContentType.FORM_URLENCODED.getValue());
         HttpRequest request = HttpRequest.post(url);
         //设置头参数
         request = header(request, head);

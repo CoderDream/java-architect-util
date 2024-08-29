@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
  * @网站 https://www.hreshhao.com/
  * @date 2022/11/26 7:47 下午
  */
-@Service
+//@Service
 @Slf4j
 @RequiredArgsConstructor
 public class XxlService {

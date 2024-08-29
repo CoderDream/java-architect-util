@@ -178,6 +178,95 @@ public class CallApiUtil {
         return result;
     }
 
+    public static List<Object> getJobInfoDetail(String referer, String url, Integer currentPage, String cookie,
+        String districtFlag) {
+        List<Object> result = new ArrayList<>();
+        List<JobInfoEntity> jobInfoEntityList = new ArrayList<>();
+        List<BossJobLogEntity> bossJobLogEntityList = new ArrayList<>();
+        for (int i = currentPage; i < currentPage + 4; i++) {
+            Map<String, Object> requestParam = new LinkedHashMap<>();
+            requestParam.put("page", i);
+            requestParam.put("pageSize", 30);
+
+            Map<String, String> requestHead = new HashMap<>();
+            requestHead.put("Accept", "application/json, text/javascript, */*; q=0.01");
+            requestHead.put("Accept-Encoding", "gzip, deflate, br");
+            requestHead.put("Accept-Language", "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7");
+            requestHead.put("Referer", referer + currentPage);
+            requestHead.put("Sec-Ch-Ua",
+                "\"Google Chrome\";v=\"113\", \"Chromium\";v=\"113\", \"Not-A.Brand\";v=\"24\"");
+            requestHead.put("Cookie", cookie);
+
+            requestHead.put("Sec-Ch-Ua-Mobile", "?0");
+//        requestHead.put("Sec-Ch-Ua-Mobile", "?0");
+//        requestHead.put("Sec-Ch-Ua-Mobile", "?0");
+//        requestHead.put("Sec-Ch-Ua-Mobile", "?0");
+//        requestHead.put("", "");
+//        requestHead.put("", "");
+            requestHead.put("Sec-Ch-Ua-Platform", "\"Windows\"");
+            requestHead.put("Sec-Fetch-Dest", "empty");
+            requestHead.put("Sec-Fetch-Mode", "cors");
+            requestHead.put("Sec-Fetch-Site", "same-origin");
+            requestHead.put("Token", "OGVrEqCrhqv3ZxE");
+            requestHead.put("User-Agent",
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36");
+            requestHead.put("X-Requested-With", "XMLHttpRequest");
+
+            //访问地址
+//            BossJobInfo bossJobInfo = HttpUtil.get(requestParam, requestHead, url, BossJobInfo.class, 5);
+
+            Object bossJobInfo = HttpUtil.get(requestParam, requestHead, url, Object.class, 5);
+
+            System.out.println("####");
+//            // 请求无返回或无状态码返回
+//            if (bossJobInfo == null || bossJobInfo.getCode() == null) {
+//                log.error("未知异常，请求无返回");
+//                return null;
+//            }
+//
+//            ZpData zpData = bossJobInfo.getZpData();
+//            if (zpData != null) {
+//                log.error("zpData: " + zpData);
+//            }
+//
+//            //List<Map<String, Object>> mapList = (List<Map<String, Object>>) zpData;
+//
+//            List<JobInfo> jobInfoList = zpData.getJobList();
+//
+//            // 如果没有数据，设置出错信息
+//            if (CollectionUtils.isNotEmpty(jobInfoList)) {
+//                JobInfoEntity jobInfoEntity;
+//                BossJobLogEntity bossJobLogEntity;
+//                for (JobInfo jobInfo : jobInfoList) {
+//                    log.error("" + jobInfo);
+//                    jobInfoEntity = new JobInfoEntity();
+//                    BeanUtils.copyProperties(jobInfo, jobInfoEntity);
+//                    jobInfoEntity.setJobLabels(String.join(",", jobInfo.getJobLabels()));
+////                jobInfoEntity.setIconFlagList(String.join(",",jobInfo.getIconFlagList()));
+//                    jobInfoEntity.setSkills(String.join(",", jobInfo.getSkills()));
+//                    jobInfoEntity.setWelfareList(String.join(",", jobInfo.getWelfareList()));
+//                    jobInfoEntity.setCreateDate(new Date());
+//                    transJobInfoEntityValues(jobInfoEntity);
+//                    jobInfoEntityList.add(jobInfoEntity);
+//
+//                    bossJobLogEntity = new BossJobLogEntity();
+//                    BeanUtils.copyProperties(jobInfo, bossJobLogEntity);
+//                    DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+//                    bossJobLogEntity.setSpiderDate(dateFormat.format(new Date()));
+//                    bossJobLogEntity.setDistrictFlag(districtFlag);
+//                    bossJobLogEntity.setCreateDate(new Date());
+//                    transBossJobLogEntityValues(bossJobLogEntity);
+//                    bossJobLogEntityList.add(bossJobLogEntity);
+//                }
+//            }
+        }
+
+        result.add(jobInfoEntityList);
+        result.add(bossJobLogEntityList);
+        // 设置数据
+        return result;
+    }
+
 
     public static List<Map<String, Object>> callApi() {
         Map<String, Object> requestParam = new LinkedHashMap<>();

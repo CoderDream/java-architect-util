@@ -9,8 +9,8 @@ import org.springframework.scheduling.annotation.EnableAsync;
  * @author CoderDream
  */
 @SpringBootApplication
-//@EnableAsync
-//@MapperScan("com.coderdream.freeapps.mapper")
+@EnableAsync
+@MapperScan("com.coderdream.freeapps.mapper")
 public class FreeAppsApplication {
 
     public static void main(String[] args) {

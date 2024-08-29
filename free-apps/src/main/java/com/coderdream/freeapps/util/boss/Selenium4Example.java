@@ -25,7 +25,7 @@ public class Selenium4Example {
         chromeOptions.addArguments("--headless");
         chromeOptions.addArguments("--start-maximized");
         chromeOptions.addArguments("--no-sandbox");
-        chromeOptions.setBinary("D:\\00_Green\\Chrome100_AllNew_2022.4.4\\App\\chrome.exe");
+        chromeOptions.setBinary("D:\\00_Green\\Chrome122_AllNew_2024.2.23\\App\\chrome.exe");
 //        chromeOptions.addArguments("--window-size=3840,1916"); // 3840 1916 1920,
 //        chromeOptions.addArguments("--window-size=3840,1916"); // 3840 1916 1920,1050
 
@@ -37,7 +37,7 @@ public class Selenium4Example {
         chromeOptions.setCapability("proxy", proxy);
         WebDriver driver = new ChromeDriver(chromeOptions);   //初始化一个chrome驱动实例，保存到driver中
 
-        // 访问Google首页
+        // 访问 Google首页
         String url = "https://www.zhipin.com/job_detail/62a806a7a0bffe9c1nJ40t68FFM~.html";
         driver.get(url);
         // 等待3秒以查看搜索结果页面

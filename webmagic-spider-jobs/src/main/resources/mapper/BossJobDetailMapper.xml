@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coderdream.demos.web.mapper.BossJobDetailMapper">
+
+    <resultMap id="BaseResultMap" type="com.coderdream.demos.web.pojo.BossJobDetail">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="jobStatus" column="job_status" jdbcType="VARCHAR"/>
+            <result property="jobName" column="job_name" jdbcType="VARCHAR"/>
+            <result property="salary" column="salary" jdbcType="VARCHAR"/>
+            <result property="experience" column="experience" jdbcType="VARCHAR"/>
+            <result property="degree" column="degree" jdbcType="VARCHAR"/>
+            <result property="freeTags" column="free_tags" jdbcType="VARCHAR"/>
+            <result property="companyTitle" column="company_title" jdbcType="VARCHAR"/>
+            <result property="companyStage" column="company_stage" jdbcType="VARCHAR"/>
+            <result property="companyScale" column="company_scale" jdbcType="VARCHAR"/>
+            <result property="companyIndustry" column="company_industry" jdbcType="VARCHAR"/>
+            <result property="jobKeywordList" column="job_keyword_list" jdbcType="VARCHAR"/>
+            <result property="jobSecText" column="job_sec_text" jdbcType="VARCHAR"/>
+            <result property="bossName" column="boss_name" jdbcType="VARCHAR"/>
+            <result property="bossActiveTime" column="boss_active_time" jdbcType="VARCHAR"/>
+            <result property="bossRole" column="boss_role" jdbcType="VARCHAR"/>
+            <result property="companyInfo" column="company_info" jdbcType="VARCHAR"/>
+            <result property="companyName" column="company_name" jdbcType="VARCHAR"/>
+            <result property="companyUser" column="company_user" jdbcType="VARCHAR"/>
+            <result property="resTime" column="res_time" jdbcType="VARCHAR"/>
+            <result property="companyType" column="company_type" jdbcType="VARCHAR"/>
+            <result property="manageState" column="manage_state" jdbcType="VARCHAR"/>
+            <result property="companyFund" column="company_fund" jdbcType="VARCHAR"/>
+            <result property="locationAddress" column="location_address" jdbcType="VARCHAR"/>
+            <result property="dataLat" column="data_lat" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,job_status,job_name,
+        salary,experience,degree,
+        free_tags,company_title,company_stage,
+        company_scale,company_industry,job_keyword_list,
+        job_sec_text,boss_name,boss_active_time,
+        boss_role,company_info,company_name,
+        company_user,res_time,company_type,
+        manage_state,company_fund,location_address,
+        data_lat
+    </sql>
+
+    <insert id="insertOrUpdateBatch">
+        insert into t_boss_job_detail
+        (`job_status`,
+        `job_name`,
+        `salary`,
+        `experience`,
+        `degree`,
+        `free_tags`,
+        `company_title`,
+        `company_stage`,
+        `company_scale`,
+        `company_industry`,
+        `job_keyword_list`,
+        `job_sec_text`,
+        `boss_name`,
+        `boss_active_time`,
+        `boss_role`,
+        `company_info`,
+        `company_name`,
+        `company_user`,
+        `res_time`,
+        `company_type`,
+        `manage_state`,
+        `company_fund`,
+        `location_address`,
+        `data_lat`,
+        `encrypt_job_id`,
+        `job_url`,
+        `create_time`)
+        values
+        <foreach collection="entities" item="item" separator=",">
+            (
+            #{item.jobStatus,jdbcType=VARCHAR},
+            #{item.jobName,jdbcType=VARCHAR},
+            #{item.salary,jdbcType=VARCHAR},
+            #{item.experience,jdbcType=VARCHAR},
+            #{item.degree,jdbcType=VARCHAR},
+            #{item.freeTags,jdbcType=VARCHAR},
+            #{item.companyTitle,jdbcType=VARCHAR},
+            #{item.companyStage,jdbcType=VARCHAR},
+            #{item.companyScale,jdbcType=VARCHAR},
+            #{item.companyIndustry,jdbcType=VARCHAR},
+            #{item.jobKeywordList,jdbcType=VARCHAR},
+            #{item.jobSecText,jdbcType=VARCHAR},
+            #{item.bossName,jdbcType=VARCHAR},
+            #{item.bossActiveTime,jdbcType=VARCHAR},
+            #{item.bossRole,jdbcType=VARCHAR},
+            #{item.companyInfo,jdbcType=VARCHAR},
+            #{item.companyName,jdbcType=VARCHAR},
+            #{item.companyUser,jdbcType=VARCHAR},
+            #{item.resTime,jdbcType=VARCHAR},
+            #{item.companyType,jdbcType=VARCHAR},
+            #{item.manageState,jdbcType=VARCHAR},
+            #{item.companyFund,jdbcType=VARCHAR},
+            #{item.locationAddress,jdbcType=VARCHAR},
+            #{item.dataLat,jdbcType=VARCHAR},
+            #{item.encryptJobId,jdbcType=VARCHAR},
+            #{item.jobUrl,jdbcType=VARCHAR},
+            #{item.createTime,jdbcType=TIMESTAMP}
+            )
+        </foreach>
+        on duplicate key update
+        `job_status`=values(`job_status`),
+        `job_name`=values(`job_name`),
+        `salary`=values(`salary`),
+        `experience`=values(`experience`),
+        `degree`=values(`degree`),
+        `free_tags`=values(`free_tags`),
+        `company_title`=values(`company_title`),
+        `company_stage`=values(`company_stage`),
+        `company_scale`=values(`company_scale`),
+        `company_industry`=values(`company_industry`),
+        `job_keyword_list`=values(`job_keyword_list`),
+        `job_sec_text`=values(`job_sec_text`),
+        `boss_name`=values(`boss_name`),
+        `boss_active_time`=values(`boss_active_time`),
+        `boss_role`=values(`boss_role`),
+        `company_info`=values(`company_info`),
+        `company_name`=values(`company_name`),
+        `company_user`=values(`company_user`),
+        `res_time`=values(`res_time`),
+        `company_type`=values(`company_type`),
+        `manage_state`=values(`manage_state`),
+        `company_fund`=values(`company_fund`),
+        `location_address`=values(`location_address`),
+        `data_lat`=values(`data_lat`),
+        `job_url`=values(`job_url`),
+        `last_modified_time`=values(`last_modified_time`)
+    </insert>
+</mapper>

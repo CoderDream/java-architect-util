@@ -36,7 +36,7 @@ public class UserService {
     private final UserMapper userMapper;
     private final UserStruct userStruct;
     private final WeatherService weatherService;
-    private final XxlService xxlService;
+//    private final XxlService xxlService;
 
     /**
      * 假设有这样一个业务需求，每当有新用户注册，则1分钟后会给用户发送欢迎通知.
@@ -65,7 +65,7 @@ public class UserService {
                 .triggerNextTime(CdDateUtils.toEpochMilli(scheduleTime))
                 .executorBlockStrategy("SERIAL_EXECUTION").triggerStatus(1).build();
 
-        xxlService.addJob(xxlJobInfo);
+//        xxlService.addJob(xxlJobInfo);
     }
 
 

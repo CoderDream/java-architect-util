@@ -25,7 +25,7 @@ import org.springframework.web.client.RestTemplate;
  * @网站 https://www.hreshhao.com/
  * @date 2022/11/26 6:19 下午
  */
-@Component
+//@Component
 @RequiredArgsConstructor
 public class XxlUtil {
 

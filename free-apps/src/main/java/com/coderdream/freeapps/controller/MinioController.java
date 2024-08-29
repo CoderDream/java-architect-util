@@ -17,13 +17,13 @@ import javax.annotation.Resource;
 @Slf4j
 @Api(tags = "Minio管理")
 @Tag(name = "Minio管理")
-@RequestMapping("/minio")
-@RestController
+//@RequestMapping("/minio")
+//@RestController
 @RequiredArgsConstructor
 public class MinioController {
 
     @Resource
-    private MinioClient minioClient;
+//    private MinioClient minioClient;
 
     /**
      * 文件上传
@@ -39,7 +39,7 @@ public class MinioController {
                     .contentType(file.getContentType())
                     .stream(file.getInputStream(),file.getSize(),-1).build();
 
-            minioClient.putObject(objectArgs);
+//            minioClient.putObject(objectArgs);
             return "ok";
         } catch (Exception e) {
             e.printStackTrace();

@@ -26,7 +26,7 @@ import java.util.Optional;
  * @date 2022/04/19
  */
 @Slf4j
-@Component
+//@Component
 public class MinioUtil {
 
     private static MinioClient minioClient;

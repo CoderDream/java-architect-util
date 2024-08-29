@@ -30,17 +30,17 @@
     </sql>
 
     <insert id="insertOrUpdateBatch">
-        insert into t_app_icon
-        (`app_id`,
-        `filename`,
-        `app_icon_url`,
-        `download_flag`,
-        `remark`,
-        `delete_flag`,
-        `create_user_code`,
-        `create_user_name`,
-        `created_date`,
-        `last_modified_code`,
+        insert into t_app_icon``
+        (`app_id`,``
+        `filename`,``
+        `app_icon_url`,``
+        `download_flag`,``
+        `remark`,``
+        `delete_flag`,``
+        `create_user_code`,``
+        `create_user_name`,``
+        `created_date`,``
+        `last_modified_code`,``
         `last_modified_name`,
         `last_modified_date`,
         `version`)

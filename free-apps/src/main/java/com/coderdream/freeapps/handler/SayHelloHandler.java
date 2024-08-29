@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
  * @网站 https://www.hreshhao.com/
  * @date 2022/11/26 11:53 上午
  */
-@Component
+//@Component
 @RequiredArgsConstructor
 public class SayHelloHandler {
 

@@ -2,11 +2,11 @@ package com.coderdream.freeapps.config;
 
 import com.github.yitter.contract.IdGeneratorOptions;
 import com.github.yitter.idgen.YitIdHelper;
-import io.minio.MinioClient;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class SnowFakeConfig {
 
     @Bean
