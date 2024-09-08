@@ -399,9 +399,13 @@ public void seven() throws Exception {
 
 1. 源代码 
 
- ![image-20220417164524676](images\image-20220417164524676.png)
+>  
 
 
+
+![image-20220417164524676](images\image-20220417164524676.png)
+
+![image-20240908093133584](ch03_缓存中间件Redis/image-20240908093133584.png)
 
 #### 缓存穿透
 

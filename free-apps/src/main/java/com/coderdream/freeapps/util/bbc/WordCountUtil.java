@@ -1,5 +1,6 @@
 package com.coderdream.freeapps.util.bbc;
 
+import cn.hutool.core.collection.ListUtil;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.StrUtil;
@@ -10,14 +11,17 @@ import com.coderdream.freeapps.util.nlp.CoreNlpUtils;
 import com.coderdream.freeapps.util.other.CdExcelUtil;
 import com.coderdream.freeapps.util.other.CdFileUtils;
 import com.coderdream.freeapps.util.other.TxtUtil;
+import com.coderdream.freeapps.util.srt.SrtUtils;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Objects;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -41,8 +45,14 @@ public class WordCountUtil {
         String folderName = "D:\\04_GitHub\\hexo-project\\Hexo-BlueLake-Blog\\source\\_posts\\sarah-jenkins's-diary";
         folderName = "D:\\Download\\History\\b1-listening\\";
         String fileName = "b1-listening-06-introduction-lecture";
+        String fileType = "txt";
 //        fileName = "fileName";
-        genVocTable(folderName, fileName);
+
+        folderName = "D:\\Download\\[zmk.pw]怦然心动 Flipped.2010.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1\\";
+        fileName = "怦然心动 Flipped.2010.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1.eng";
+        fileType = "srt";
+
+        genVocTable(folderName, fileName, fileType);
     }
 
     public static void m1() {
@@ -75,7 +85,7 @@ public class WordCountUtil {
     public static void genVocTable(String folderName) {
         String fileName = "script_dialog";
         String filePath = CommonUtil.getFullPathFileName(folderName, fileName, ".txt");
-        List<WordInfo> wordInfoList = process(filePath);
+        List<WordInfo> wordInfoList = process(filePath, "txt");
         String folderPath =
             CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "dict";
         String templateFileName = folderPath + File.separator + "词汇.xlsx";
@@ -89,11 +99,11 @@ public class WordCountUtil {
         writeToFile(wordInfoList, templateFileName, excelFileName);
     }
 
-    public static void genVocTable(String folderName, String fileName) {
+    public static void genVocTable(String folderName, String fileName, String fileType) {
 //        String fileName = "script_dialog";
         String filePath = folderName + File.separatorChar + fileName
-            + ".txt"; //   CommonUtil.getFullPathFileName(folderName, fileName, ".txt");
-        List<WordInfo> wordInfoList = process(filePath);
+            + "." + fileType; //   CommonUtil.getFullPathFileName(folderName, fileName, ".txt");
+        List<WordInfo> wordInfoList = process(filePath, fileType);
         String folderPath =
             CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "dict";
         String templateFileName = folderPath + File.separator + "词汇.xlsx";
@@ -153,12 +163,12 @@ public class WordCountUtil {
      * @param folderName
      * @param fileName
      */
-    public static void genVocTableForScript(String folderName, String fileName) {
+    public static void genVocTableForScript(String folderName, String fileName, String fileType) {
         // 方案1 一下子全部放到内存里面 并填充
         String excelFileName = folderName + fileName.substring(0, fileName.lastIndexOf(".")) + "_完整词汇表.xlsx";
         String filePath = folderName + fileName;
 
-        List<WordInfo> wordInfoList = process(filePath);
+        List<WordInfo> wordInfoList = process(filePath, fileType);
         String folderPath =
             CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "dict";
         String templateFileName = folderPath + File.separator + "词汇.xlsx";
@@ -166,7 +176,7 @@ public class WordCountUtil {
         writeToFile(wordInfoList, templateFileName, excelFileName);
     }
 
-    public static List<WordInfo> process(String filePath) {
+    public static List<WordInfo> process(String filePath, String fileType) {
         List<WordInfo> wordInfoList = new ArrayList<>();
 
         Set<String> hostSet = new TreeSet<>();
@@ -180,9 +190,13 @@ public class WordCountUtil {
 
         Set<String> pointSet = new HashSet<>();
         pointSet.add(".");
-        // 1.按行读取文本，每行是一个字符串
-        List<String> stringList = TxtUtil.readTxtFileToList(filePath);
-
+        List<String> stringList = new ArrayList<>();
+        if ("txt".equals(fileType)) {
+            // 1.按行读取文本，每行是一个字符串
+            stringList = TxtUtil.readTxtFileToList(filePath);
+        } else {
+            stringList = SrtUtils.genContentList(filePath);
+        }
         // 2.遍历每一行，以空格作为分隔符
         Map<String, String> abbrevCompleteMap = genAbbrevCompleteMap();
 
@@ -192,15 +206,17 @@ public class WordCountUtil {
         // 第1步：分割单词
         String wordTemp;
         for (String str : stringList) {
-            String[] arr = str.split(" ");
-            if (arr.length > 1) {
-                for (String s : arr) {
-                    wordTemp = s;
+            if (StrUtil.isNotEmpty(str)) {
+                String[] arr = str.split(" ");
+                if (arr.length > 1) {
+                    for (String s : arr) {
+                        wordTemp = s;
+                        processSingleWord(host, abbrevCompleteMap, stringSet, rawWordList, wordTemp);
+                    }
+                } else {
+                    wordTemp = str;
                     processSingleWord(host, abbrevCompleteMap, stringSet, rawWordList, wordTemp);
                 }
-            } else {
-                wordTemp = str;
-                processSingleWord(host, abbrevCompleteMap, stringSet, rawWordList, wordTemp);
             }
 //            System.out.println();
         }
@@ -211,7 +227,12 @@ public class WordCountUtil {
         List<String> rawWordSet = new ArrayList<>(stringSet);
 
         // 获取单词原型映射键值对
-        Map<String, String> lemmaMap = CoreNlpUtils.getLemmaList(rawWordSet);
+        Map<String, String> lemmaMap = new HashMap<>();
+//按每100个一组分割
+        List<List<String>> parts = ListUtil.partition(rawWordSet, 100);
+        parts.forEach(list -> {
+            lemmaMap.putAll(Objects.requireNonNull(CoreNlpUtils.getLemmaList(list)));
+        });
 
         // 处理原型并计算数量
         for (String word : rawWordList) {

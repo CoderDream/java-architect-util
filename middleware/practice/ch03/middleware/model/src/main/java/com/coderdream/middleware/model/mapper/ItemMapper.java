@@ -3,6 +3,9 @@ package com.coderdream.middleware.model.mapper;
 import com.coderdream.middleware.model.entity.Item;
 import org.apache.ibatis.annotations.Param;
 
+/**
+ * @author CoderDream
+ */
 public interface ItemMapper {
     int deleteByPrimaryKey(Integer id);
 

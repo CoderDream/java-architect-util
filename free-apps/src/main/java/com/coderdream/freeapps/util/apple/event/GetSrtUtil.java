@@ -54,6 +54,11 @@ public class GetSrtUtil {
         m3(urlCnList, FILE_PRIFIX + "chn.srt");
     }
 
+    /**
+     *
+     * @param urlList
+     * @param fileName
+     */
     public static void m3(List<String> urlList, String fileName) {
         List<String> result = new ArrayList<>();
         int index = 1;
@@ -73,6 +78,11 @@ public class GetSrtUtil {
     }
 
 
+    /**
+     *
+     * @param urlList
+     * @return
+     */
     public static List<SubtitleBaseEntity> m2(List<String> urlList) {
         List<SubtitleBaseEntity> result = new ArrayList<>();
         for (String url : urlList) {
@@ -83,6 +93,29 @@ public class GetSrtUtil {
         return result;
     }
 
+
+    /**
+     *
+     * @param urlList
+     * @return
+     */
+    public static String srt2Txt(List<String> urlList) {
+        List<SubtitleBaseEntity> result = new ArrayList<>();
+        for (String url : urlList) {
+            List<SubtitleBaseEntity> strings = m1(url);
+            result.addAll(strings);
+        }
+
+        return null;
+
+//        return result;
+    }
+
+    /**
+     *
+     * @param url
+     * @return
+     */
 
     public static List<SubtitleBaseEntity> m1(String url) {
         Map<String, Object> requestParam = new LinkedHashMap<>();

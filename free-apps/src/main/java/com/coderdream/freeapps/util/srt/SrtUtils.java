@@ -1,6 +1,7 @@
 package com.coderdream.freeapps.util.srt;
 
 import cn.hutool.core.collection.CollectionUtil;
+import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.coderdream.freeapps.model.SubtitleBaseEntity;
@@ -118,7 +119,7 @@ public class SrtUtils {
 //        CdFileUtils.writeToFile(lrcFileNameEnCn, lrcListEnCn);
     }
 
-    public static String genContent(String subtitleFileName) {
+    public static String genSrtAsString(String subtitleFileName) {
         List<SubtitleBaseEntity> subtitleBaseEntityList = genSubtitleBaseEntityList(subtitleFileName);
 //        for (SubtitleBaseEntity subtitleBaseEntity : subtitleBaseEntityList) {
 //            System.out.println(subtitleBaseEntity);
@@ -327,19 +328,20 @@ public class SrtUtils {
                 count++;
                 if (StrUtil.isNotEmpty(str)) {
                     log.error(str);
+                    str = str.replaceAll("\uFEFF", "");
                     switch (count) {
                         case 1:
-                            subtitleBaseEntity.setSubIndex(Integer.parseInt(str));
+                            subtitleBaseEntity.setSubIndex(NumberUtil.parseInt(str));
                             break;
 
                         case 2:
-                            subtitleBaseEntity.setTimeStr(str);
+                            subtitleBaseEntity.setTimeStr(str.trim());
                             break;
                         case 3:
-                            subtitleBaseEntity.setSubtitle(str);
+                            subtitleBaseEntity.setSubtitle(str.trim());
                             break;
                         case 4:
-                            subtitleBaseEntity.setSubtitleSecond(str);
+                            subtitleBaseEntity.setSubtitleSecond(str.trim());
                             break;
 
                         default:

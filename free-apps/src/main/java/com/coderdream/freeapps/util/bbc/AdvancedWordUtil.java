@@ -19,14 +19,24 @@ public class AdvancedWordUtil {
 
     public static void main(String[] args) {
         String folderName = "230223";
-        AdvancedWordUtil.genCoreWordTable(folderName);
+        AdvancedWordUtil.genCoreWordTable(folderName, "A");
     }
 
-    public static void genCoreWordTable(String folderName) {
+    public static void genCoreWordTable(String folderName, String templateType) {
         List<WordInfo> wordInfoList = getAdvancedWordList(folderName);
         String folderPath =
             CdFileUtils.getResourceRealPath() + File.separatorChar + "data" + File.separatorChar + "dict";
         String templateFileName = folderPath + File.separator + "高级词汇表.xlsx";
+
+        if("A".equals(templateType)) {
+            templateFileName = folderPath + File.separator + "高级词汇表 - 联想.xlsx";
+        } else if("B".equals(templateType)) {
+            templateFileName = folderPath + File.separator + "高级词汇表 - 曲面屏.xlsx";
+        } else {
+            templateFileName = folderPath + File.separator + "高级词汇表 - 戴尔.xlsx";
+        }
+
+        //
 
         // WordInfo
 

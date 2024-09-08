@@ -2,6 +2,7 @@ package com.coderdream.freeapps;
 
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.StrUtil;
+import com.coderdream.freeapps.util.Constants;
 import com.coderdream.freeapps.util.bbc.AdvancedWordUtil;
 import com.coderdream.freeapps.util.bbc.CoreWordUtil;
 import com.coderdream.freeapps.util.bbc.DictUtils;
@@ -27,6 +28,7 @@ public class BbcStepAfterTest {
 
     private List<String> NUMBER_LIST;
 
+
     @BeforeEach
     void init() {
         String folderPath =
@@ -50,8 +52,6 @@ public class BbcStepAfterTest {
             GenSixMinutePptx.genPpt(folderName, stringList.get(i));
             i++;
         }
-
-
     }
 
     /**
@@ -72,10 +72,9 @@ public class BbcStepAfterTest {
     public void testStep10() {
         for (String num : NUMBER_LIST) {
             String folderName = "" + num;
-            AdvancedWordUtil.genCoreWordTable(folderName);
+            AdvancedWordUtil.genCoreWordTable(folderName, Constants.TEMPLATE_FLAG);
         }
     }
-
 
     /**
      * 生成中文字幕

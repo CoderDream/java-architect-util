@@ -1,6 +1,7 @@
 package com.coderdream.freeapps.util.proxy;
 
 import com.coderdream.freeapps.model.DownloadInfoEntity;
+import com.coderdream.freeapps.util.Constants;
 import com.coderdream.freeapps.util.bbc.AdvancedWordUtil;
 import com.coderdream.freeapps.util.bbc.CoreWordUtil;
 import com.coderdream.freeapps.util.bbc.WordCountUtil;
@@ -89,7 +90,7 @@ public class MultiThreadProcessStep08Executor {
                 CoreWordUtil.genCoreWordTable(folderName);
 
                 // 生成高级词汇表
-                AdvancedWordUtil.genCoreWordTable(folderName);
+                AdvancedWordUtil.genCoreWordTable(folderName, Constants.TEMPLATE_FLAG);
 
 
 //                System.out.println("Thread" + getName() + "  " + downloadInfoEntityList.pop());

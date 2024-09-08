@@ -125,6 +125,9 @@ public class CdFileUtils {
 
         folderName = "D:\\0000\\srt\\";
         fileName = "Day 1 话题1 name.srt";
+
+        folderName = "D:\\Download\\[zmk.pw]怦然心动 Flipped.2010.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1";
+        fileName = "怦然心动 Flipped.2010.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1.eng.srt";
         m2(folderName, fileName);
     }
 

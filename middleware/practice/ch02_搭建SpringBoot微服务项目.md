@@ -16,3 +16,4 @@ http://localhost:8087/middleware/book/info?bookNo=10010&bookName=分布式中间
 
 
 
+![image-20240907113208086](ch02_搭建SpringBoot微服务项目/image-20240907113208086.png)

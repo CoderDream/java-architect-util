@@ -1,7 +1,3 @@
-
-
-
-
 ### 第5章 消息中间件RabbitMQ
 * 5.1　RabbitMQ概述
 
@@ -20,7 +16,7 @@
 		</br>
 		<span>图5.2 RabbitMQ的特性</span>
     </div>
-        
+    
     <div align="center">
     	<img src=images\ch05\0503.jpg width=80% />
 		</br>
@@ -32,13 +28,13 @@
 		</br>
 		<span>图5.4 引入RabbitMQ消息中间件后用户注册的流程</span>
     </div>
-        
+  
      <div align="center">
     	<img src=images\ch05\0505.jpg width=80% />
 		</br>
 		<span>图5.5 商城商品抢购活动的传统处理流程</span>
     </div>
-    
+  
     <div align="center">
     	<img src=images\ch05\0506.jpg width=80% />
 		</br>
@@ -74,7 +70,7 @@
 		</br>
     </div>
   * 5.1.4　基于Spring的事件驱动模型实战
-      
+    
     <div align="center">
     	<img src=images\ch05\0511.jpg width=100% />
 		</br>
@@ -86,20 +82,20 @@
 		</br>
 		<span>图5.12 基于Spring的事件驱动模型代码文件位置</span>
     </div>
-        
+    
     <div align="center">
     	<img src=images\ch05\0513.jpg width=80% />
 		</br>
 		<span>图5.13 基于Spring的事件驱动模型代码运行结果</span>
     </div>
-    
+  
 * 5.2　Spring Boot项目整合RabbitMQ　169
   * 5.2.1　RabbitMQ相关词汇介绍　170
     <div align="center">
     	<img src=images\ch05\0514.jpg width=80% />
 		</br>
 		<span>图5.14 邮局的几大核心要素</span>
-    </div>
+    </div>·
 	
 	<div align="center">
     	<img src=images\ch05\0515.jpg width=80% />

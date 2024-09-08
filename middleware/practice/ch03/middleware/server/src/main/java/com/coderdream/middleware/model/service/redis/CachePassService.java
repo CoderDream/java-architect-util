@@ -15,7 +15,9 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 缓存穿透service
- * Created by Administrator on 2019/3/17.
+ *
+ * @author Administrator
+ * @date 2019/3/17
  */
 @Service
 public class CachePassService {
@@ -25,7 +27,7 @@ public class CachePassService {
     /**
      * 定义缓存中 Key 命名的前缀
      */
-    private static final String keyPrefix = "item:";
+    private static final String KEY_PREFIX = "item:";
 
     @Resource
     private ItemMapper itemMapper;
@@ -46,16 +48,15 @@ public class CachePassService {
     public Item getItemInfo(String itemCode) throws Exception {
         Item item = null;
 
-        final String key = keyPrefix + itemCode;
+        final String key = KEY_PREFIX + itemCode;
         ValueOperations valueOperations = redisTemplate.opsForValue();
         if (redisTemplate.hasKey(key)) {
-            log.info("---获取商品详情-缓存中存在该商品---商品编号为：{} ", itemCode);
-
             // 从缓存中查询该商品详情
             Object res = valueOperations.get(key);
             if (res != null && !Strings.isNullOrEmpty(res.toString())) {
                 item = objectMapper.readValue(res.toString(), Item.class);
             }
+            log.info("---获取商品详情-缓存中存在该商品---商品编号为：{} , 内容为：{}", itemCode, item);
         } else {
             log.info("---获取商品详情-缓存中不存在该商品-从数据库中查询---商品编号为：{} ", itemCode);
 
