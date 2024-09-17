@@ -123,6 +123,7 @@ public class BbcStepTest {
     @Test
     public void testStep08() {
         for (String num : NUMBER_LIST) {
+            WordCountUtil wordCountUtil;
             String folderName = "" + num;
 //            WordCountUtil.genVocTable(folderName);
         }

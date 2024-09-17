@@ -2,11 +2,7 @@ package com.coderdream.freeapps.util.proxy;
 
 import com.coderdream.freeapps.model.DownloadInfoEntity;
 import com.coderdream.freeapps.util.download.v4.DownloaderUtil;
-import com.coderdream.freeapps.util.hutool.xml.RssParserUtil;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.LinkedBlockingDeque;
@@ -98,7 +94,7 @@ public class MultiThreadDownloadMp3Util {
         }
     }
 
-    public void printByMulThread() {
+    public void printByMultiThread() {
         for (int i = 0; i < POOL_SIZE; i++) {
             MyThread newThread = new MyThread();
             coreThreadPool.execute(newThread);
@@ -109,6 +105,6 @@ public class MultiThreadDownloadMp3Util {
         startTime = System.currentTimeMillis();
         MultiThreadDownloadMp3Util test = new MultiThreadDownloadMp3Util();
         test.initTestArr();
-        test.printByMulThread();
+        test.printByMultiThread();
     }
 }

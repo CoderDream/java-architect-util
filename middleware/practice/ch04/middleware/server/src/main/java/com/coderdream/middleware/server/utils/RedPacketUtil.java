@@ -7,6 +7,7 @@ import java.util.Random;
 /**
  * 二倍均值法的代码实战
  *
+ * @author CoderDream
  */
 public class RedPacketUtil {
 

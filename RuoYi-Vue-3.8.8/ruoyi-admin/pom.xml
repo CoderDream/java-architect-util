@@ -104,6 +104,12 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.huawei.mrs/geosot -->
+<!--        <dependency>-->
+<!--            <groupId>com.huawei.mrs</groupId>-->
+<!--            <artifactId>geosot</artifactId>-->
+<!--            <version>8.3.1-331.r10</version>-->
+<!--        </dependency>-->
 
     </dependencies>
 

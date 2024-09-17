@@ -2,6 +2,8 @@ package com.coderdream.freeapps.util.apple.event;
 
 
 import cn.hutool.core.collection.CollectionUtil;
+import cn.hutool.core.date.DatePattern;
+import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.StrUtil;
 import com.coderdream.freeapps.model.SubtitleBaseEntity;
 import com.coderdream.freeapps.util.callapi.BossJobInfo;
@@ -9,85 +11,121 @@ import com.coderdream.freeapps.util.callapi.HttpUtil;
 import com.coderdream.freeapps.util.other.CdFileUtils;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class GetSrtUtil {
 
-  //  private final static String SRT_PRIO = "https://events-delivery.apple.com/2403kaqfcpzjjnpkkkkmbtyqacnyrknu/vod_main_BHKucdGHJBgbQdLdPafCRNCACvstwWNC/cc/";
+    //  private final static String SRT_PRIO = "https://events-delivery.apple.com/2403kaqfcpzjjnpkkkkmbtyqacnyrknu/vod_main_BHKucdGHJBgbQdLdPafCRNCACvstwWNC/cc/";
 
-    private final static String SRT_PRIO =  "https://events-delivery.apple.com/1505clvgxdwlbjrjhxtjdgcdxaiabvuf/vod_main_BveVQvhWftXzpUakjHjEUkbmUYLbRdcV/cc/";
+    //private final static String SRT_PRIO =  "https://events-delivery.apple.com/1505clvgxdwlbjrjhxtjdgcdxaiabvuf/vod_main_BveVQvhWftXzpUakjHjEUkbmUYLbRdcV/cc/";
+
+    // Apple Event — Sep 9.
+    private final static String SRT_PRIO = "https://events-delivery.apple.com/2907awdhsyhpvlytqgjqgskvlqzxnhph/vod_main_yXtaXjZtfNwrRpgiiMyCvEVpqBPhosqx/cc/";
     private final static String END = ".webvtt";
     private final static String CN_PRIO = "zh/zh_";
     private final static String EN_PRIO = "en/en_";
 
-    private final static String CN_END = "https://events-delivery.apple.com/1008yunfyueoofvvgxpjmmvcblgnjsel/vod_main_bTVAkbqTcJuRovcmMRYungakLuiQyTWT/cc/zh/zh_0.webvtt";
+    //  private final static String CN_END = "https://events-delivery.apple.com/1008yunfyueoofvvgxpjmmvcblgnjsel/vod_main_bTVAkbqTcJuRovcmMRYungakLuiQyTWT/cc/zh/zh_0.webvtt";
 
-    private final static String EN_END = "https://events-delivery.apple.com/1008yunfyueoofvvgxpjmmvcblgnjsel/vod_main_bTVAkbqTcJuRovcmMRYungakLuiQyTWT/cc/en/en_0";
+    // private final static String EN_END = "https://events-delivery.apple.com/1008yunfyueoofvvgxpjmmvcblgnjsel/vod_main_bTVAkbqTcJuRovcmMRYungakLuiQyTWT/cc/en/en_0";
 
     // zh/zh_0.webvtt
     public static void main(String[] args) {
 
+        // https://events-delivery.apple.com
+        // https://events-delivery.apple.com/2907awdhsyhpvlytqgjqgskvlqzxnhph/vod_main_yXtaXjZtfNwrRpgiiMyCvEVpqBPhosqx/cc/en/en_962.webvtt
+
 //        Integer SIZE = 379;
-        Integer SIZE = 1025;
+        Integer SIZE = 964;
 
-        String urlBase = "https://events-delivery.apple.com/1505clvgxdwlbjrjhxtjdgcdxaiabvuf/vod_main_BveVQvhWftXzpUakjHjEUkbmUYLbRdcV/";
+        // 先试前10个
+        SIZE = 20;
+
+        SIZE = 974;
+
+//        String urlBase = "https://events-delivery.apple.com/1505clvgxdwlbjrjhxtjdgcdxaiabvuf/vod_main_BveVQvhWftXzpUakjHjEUkbmUYLbRdcV/";
+
+        int startCn = 0;// 960;
+        int startEn = 0;
+        List<String> urlCnList = GetSrtUtil.genUrlCnList(startCn, SIZE);
+        List<String> urlEnList = GetSrtUtil.genUrlCnList(startEn, SIZE);
 
 
+
+//        m1();
+        String filePrefix = "Apple Event — Sep 9.";
+        String timeTag = DateUtil.format(new Date(), DatePattern.PURE_DATETIME_MS_PATTERN);
+
+        m3(urlEnList, filePrefix + "eng_" + startCn + "_" + SIZE + "_" + timeTag + ".srt");
+        m3(urlCnList, filePrefix + "chn_" + startEn + "_" + SIZE + "_" + timeTag + ".srt");
+    }
+
+    public static List<String> genUrlCnList(int startCn, Integer size) {
         List<String> urlCnList = new ArrayList<>();
-        List<String> urlEnList = new ArrayList<>();
-        for (int i = 0; i < SIZE; i++) {
+//        int startCn = 0;// 960;
+        for (int i = startCn; i < size; i++) {
             System.out.println(SRT_PRIO + CN_PRIO + i + END);
             urlCnList.add(SRT_PRIO + CN_PRIO + i + END);
         }
+        return urlCnList;
+    }
 
-        for (int i = 0; i < SIZE; i++) {
+    public static List<String> genUrlEnList(int startEn, Integer size) {
+        List<String> urlEnList = new ArrayList<>();
+//        int startEn = 0;// 960;
+        for (int i = startEn; i < size; i++) {
             System.out.println(SRT_PRIO + EN_PRIO + i + END);
             urlEnList.add(SRT_PRIO + EN_PRIO + i + END);
         }
-//        m1();
-        String FILE_PRIFIX = "Apple Event — May 7.";
-
-        m3(urlEnList, FILE_PRIFIX + "eng.srt");
-        m3(urlCnList, FILE_PRIFIX + "chn.srt");
+        return urlEnList;
     }
 
     /**
-     *
      * @param urlList
      * @param fileName
      */
     public static void m3(List<String> urlList, String fileName) {
         List<String> result = new ArrayList<>();
         int index = 1;
+        // 获取字幕
         List<SubtitleBaseEntity> subtitleBaseEntityList = m2(urlList);
         for (SubtitleBaseEntity subtitleBaseEntity : subtitleBaseEntityList) {
-            result.add(""+ index);
+            result.add("" + index);
             result.add(subtitleBaseEntity.getTimeStr());
             result.add(subtitleBaseEntity.getSubtitle());
             result.add("");
             index++;
         }
 
-
         // 写中文翻译文本
         CdFileUtils.writeToFile(fileName, result);
 //        return result;
     }
 
-
     /**
-     *
      * @param urlList
      * @return
      */
     public static List<SubtitleBaseEntity> m2(List<String> urlList) {
         List<SubtitleBaseEntity> result = new ArrayList<>();
+        Set<String> timeStrSet = new HashSet<>();
         for (String url : urlList) {
-            List<SubtitleBaseEntity> strings = m1(url);
-            result.addAll(strings);
+            List<SubtitleBaseEntity> subtitleBaseEntityList = m1(url);
+            for (SubtitleBaseEntity subtitleBaseEntity : subtitleBaseEntityList) {
+                String timeStr = subtitleBaseEntity.getTimeStr();
+                if (!timeStrSet.contains(timeStr)) {
+                    result.add(subtitleBaseEntity);
+                    timeStrSet.add(timeStr);
+                }
+            }
         }
 
         return result;
@@ -95,7 +133,6 @@ public class GetSrtUtil {
 
 
     /**
-     *
      * @param urlList
      * @return
      */
@@ -112,7 +149,6 @@ public class GetSrtUtil {
     }
 
     /**
-     *
      * @param url
      * @return
      */
@@ -162,7 +198,7 @@ public class GetSrtUtil {
                  * 第二字幕内容
                  */
                 String subtitleSecond = "";
-                for (int i = 3; i < size-2; i++) {
+                for (int i = 3; i < size - 2; i++) {
                     subtitleBaseEntity = new SubtitleBaseEntity();
 
                     timeStr = stringList.get(i);
@@ -171,7 +207,7 @@ public class GetSrtUtil {
                     subtitleBaseEntity.setTimeStr(timeStr.trim());
                     subtitle = stringList.get(i + 1);
 
-                    if(i+2 < size) {
+                    if (i + 2 < size) {
                         subtitleSecond = stringList.get(i + 2);
                     } else {
                         System.out.println("###### ERROR");
@@ -184,6 +220,7 @@ public class GetSrtUtil {
                     }
 
                     subtitleBaseEntity.setSubtitle(subtitle);
+                    log.info("subtitle: {}", subtitleBaseEntity);
                     subtitleBaseEntityList.add(subtitleBaseEntity);
                 }
             }

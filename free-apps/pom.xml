@@ -47,7 +47,9 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+
     </repositories>
+
     <pluginRepositories>
         <pluginRepository>
             <id>aliyun-plugin</id>
@@ -956,6 +958,31 @@
 <!--                    <artifactId>log4j</artifactId>-->
 <!--                </exclusion>-->
             </exclusions>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>nl.siegmann.epublib</groupId>-->
+<!--            <artifactId>epublib-core</artifactId>-->
+<!--            <version>3.1</version>-->
+<!--        </dependency>-->
+
+        <dependency>
+            <groupId>com.github.mertakdut</groupId>
+            <artifactId>EpubParser</artifactId>
+            <version>1.0.95</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.huawei.mrs/geosot -->
+        <dependency>
+            <groupId>com.huawei.mrs</groupId>
+            <artifactId>geosot</artifactId>
+            <version>8.3.1-331.r10</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mpatric</groupId>
+            <artifactId>mp3agic</artifactId>
+            <version>0.9.1</version>
         </dependency>
 
     </dependencies>

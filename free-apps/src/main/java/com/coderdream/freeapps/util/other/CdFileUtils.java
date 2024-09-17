@@ -519,6 +519,7 @@ public class CdFileUtils {
             int size = contentList.size();
             for (int i = 0; i < size; i++) {
                 String str = contentList.get(i);
+                str = "\uFEFF" + str;
                 // 如果不是最后一行，就加上回车换行
                 if (i != size - 1) {
                     if (str != null) {
@@ -530,8 +531,6 @@ public class CdFileUtils {
                     bw.write(str);
                 }
             }
-
-
         } catch (Exception e) {
             e.printStackTrace();
             throw new RuntimeException(e);
@@ -713,7 +712,7 @@ public class CdFileUtils {
             String s = "";
             while ((s = bReader.readLine()) != null) {//逐行读取文件内容，不读取换行符和末尾的空格
 //                sb.append(s + "\n");//将读取的字符串添加换行符后累加存放在缓存中
-                stringList.add(s.trim().replaceAll("\"","'"));
+                stringList.add(s.trim().replaceAll("\"", "'"));
 //                System.out.println(s);
             }
             // 补空行
@@ -729,7 +728,7 @@ public class CdFileUtils {
 
     public static List<SubtitleBaseEntity> readSrcFileContent(String... fileName) {
         List<String> stringList = new ArrayList<>();
-        if(fileName == null) {
+        if (fileName == null) {
             return null;
         }
         File file = new File(fileName[0]);//定义一个file对象，用来初始化FileReader
@@ -741,7 +740,7 @@ public class CdFileUtils {
             String s = "";
             while ((s = bReader.readLine()) != null) {//逐行读取文件内容，不读取换行符和末尾的空格
 //                sb.append(s + "\n");//将读取的字符串添加换行符后累加存放在缓存中
-                if(fileName.length == 0) {
+                if (fileName.length == 0) {
                     s = s.replaceAll("“", "\"");
 
                     s = s.replaceAll("”", "\"");
@@ -760,8 +759,8 @@ public class CdFileUtils {
 
         List<SubtitleBaseEntity> result = new ArrayList<>();
         int firstSpaceIndex = 0;
-        String subIndexStr ="";
-            SubtitleBaseEntity subtitleBaseEntity;
+        String subIndexStr = "";
+        SubtitleBaseEntity subtitleBaseEntity;
         if (CollectionUtils.isNotEmpty(stringList)) {
 
             int size = stringList.size();
@@ -776,11 +775,12 @@ public class CdFileUtils {
                     if (firstSpaceIndex == 0) {
                         subIndexStr = stringList.get(0);
                         subtitleBaseEntity.setSubIndex(Integer.parseInt(processStr(subIndexStr)));
-                        subtitleBaseEntity.setTimeStr(processStr( stringList.get(1)));
+                        subtitleBaseEntity.setTimeStr(processStr(stringList.get(1)));
                         subtitleBaseEntity.setSubtitle(processStr(stringList.get(2)));
                     } else {
                         if (StrUtil.isNotEmpty(stringList.get(firstSpaceIndex))) {
-                            subtitleBaseEntity.setSubIndex(Integer.parseInt(processStr(stringList.get(firstSpaceIndex))));
+                            subtitleBaseEntity.setSubIndex(
+                                Integer.parseInt(processStr(stringList.get(firstSpaceIndex))));
                         }
                         subtitleBaseEntity.setTimeStr(processStr(stringList.get(firstSpaceIndex + 1)));
                         subtitleBaseEntity.setSubtitle(processStr(stringList.get(firstSpaceIndex + 2)));
@@ -795,10 +795,11 @@ public class CdFileUtils {
         return result;
     }
 
-    public static final String UTF8_BOM="\uFEFF";
-    public static String processStr(String string){
-        if(string.startsWith(UTF8_BOM)) {
-           return string=string.substring(1);
+    public static final String UTF8_BOM = "\uFEFF";
+
+    public static String processStr(String string) {
+        if (string.startsWith(UTF8_BOM)) {
+            return string = string.substring(1);
         }
         return string;
     }
@@ -966,7 +967,7 @@ public class CdFileUtils {
                         if (StrUtil.isNotEmpty(stringList.get(firstSpaceIndex))) {
                             subtitleEntity.setSubtitleIndex("" + firstSpaceIndex);
                         }
-                        if(firstSpaceIndex + 1 >= stringList.size()) {
+                        if (firstSpaceIndex + 1 >= stringList.size()) {
                             break;
                         }
                         subtitleEntity.setTimeStr(stringList.get(firstSpaceIndex + 1));

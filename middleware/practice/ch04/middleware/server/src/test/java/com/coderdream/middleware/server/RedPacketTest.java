@@ -31,15 +31,15 @@ public class RedPacketTest {
     @Test
     public void one() throws Exception {
         // 总金额单位为分，在这里假设总金额为 1000 分，即 10 元
-        Integer amout = 1000;
+        Integer amount = 1000;
         // 总人数，即红包总个数，在这里假设为10个
         Integer total = 10;
         // 得到随机金额列表
-        List<Integer> list = RedPacketUtil.divideRedPackage(amout, total);
-        log.info("总金额={}分，总个数={}个", amout, total);
+        List<Integer> list = RedPacketUtil.divideRedPackage(amount, total);
+        log.info("总金额={}分，总个数={}个", amount, total);
 
         // 用于统计生成的随机金额之和是否等于总金额
-        Integer sum = 0;
+        int sum = 0;
         // 遍历输出每个随机金额
         for (Integer i : list) {
             log.info("随机金额为：{}分，即 {}元", i, new BigDecimal(i.toString()).divide(new BigDecimal(100)));

@@ -73,17 +73,13 @@ public void one() throws Exception {
 
 3. 运行结果
 
- ![image-20220417180524353](images\image-20220417180524353.png)
-
-
+![image-20220417180524353](images\image-20220417180524353.png)
 
 ## 4.4　“发红包”模块实战
 
 ### 4.4.1　业务模块分析
 
  ![image-20220417200447775](images\image-20220417200447775.png)
-
- 
 
 ### 4.4.2　整体流程实战
 
@@ -223,9 +219,9 @@ public void recordRedPacket(RedPacketDto dto, String redId, List<Integer> list) 
 
 6. amount
 
+> SELECT sum(amount) FROM `red_detail` WHERE record_id=17 and is_active=1
+
  ![image-20220417202302625](images\image-20220417202302625.png)
-
-
 
 ## 4.5　“抢红包”模块实战
 
@@ -366,21 +362,17 @@ public void recordRobRedPacket(Integer userId, String redId, BigDecimal amount) 
 }
 ```
 
-
-
 * 执行第1次
 
- ![image-20220417211748317](images\image-20220417211748317.png)
+![image-20220417211748317](images\image-20220417211748317.png)
 
 * 执行第11次
 
- ![image-20220417211805340](images\image-20220417211805340.png)
+![image-20220417211805340](images\image-20220417211805340.png)
 
 * 控制台信息
 
 ![image-20220417211727298](images\image-20220417211727298.png)
-
-
 
 * red_detail 红包生成记录
 
@@ -390,13 +382,13 @@ public void recordRobRedPacket(Integer userId, String redId, BigDecimal amount) 
 
  ![image-20220417212111657](images\image-20220417212111657.png)
 
-
-
-
-
 ## 4.6　JMeter压测高并发抢红包
 
 单击“文件”创建一个测试计划，然后在该测试计划下新建线程组，最后在线程组下新建“HTTP请求”，“CSV数据文件设置”以及查看结果树。
+
+> 抢红包系统高并发测试
+>
+> 
 
 * HTTP请求
 
@@ -412,7 +404,7 @@ public void recordRobRedPacket(Integer userId, String redId, BigDecimal amount) 
 
 * 数据库信息
 
- ![image-20220419224151058](images\image-20220419224151058.png)
+![image-20220419224151058](images\image-20220419224151058.png)
 
 
 

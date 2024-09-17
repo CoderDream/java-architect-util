@@ -409,20 +409,20 @@ public void seven() throws Exception {
 
 #### 缓存穿透
 
-
-
 ![image-20220417164547944](images\image-20220417164547944.png)
 
 
 
 3. 解决后的响应结果
 
- ![image-20220417164941749](images\image-20220417164941749.png)
+![image-20220417164941749](images\image-20220417164941749.png)
 
 4. 日志
 
 ![image-20220417165058443](images\image-20220417165058443.png)
 
+更新返回信息
 
+![image-20240908110317971](ch03_缓存中间件Redis/image-20240908110317971.png)
 
 # END

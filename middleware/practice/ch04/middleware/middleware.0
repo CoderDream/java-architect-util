@@ -1,4 +1,4 @@
-[2022-04-19 22:30:29.099] - 14024 信息 [main] --- org.apache.catalina.core.StandardService: Starting service [Tomcat]
-[2022-04-19 22:30:29.102] - 14024 信息 [main] --- org.apache.catalina.core.StandardEngine: Starting Servlet Engine: Apache Tomcat/8.5.16
-[2022-04-19 22:30:29.203] - 14024 信息 [localhost-startStop-1] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/middleware]: Initializing Spring embedded WebApplicationContext
-[2022-04-19 22:30:35.354] - 14024 信息 [http-nio-8087-exec-2] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/middleware]: Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2024-09-09 21:12:07.340] - 464 信息 [main] --- org.apache.catalina.core.StandardService: Starting service [Tomcat]
+[2024-09-09 21:12:07.343] - 464 信息 [main] --- org.apache.catalina.core.StandardEngine: Starting Servlet Engine: Apache Tomcat/8.5.16
+[2024-09-09 21:12:07.525] - 464 信息 [localhost-startStop-1] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/middleware]: Initializing Spring embedded WebApplicationContext
+[2024-09-09 21:12:42.834] - 464 信息 [http-nio-8087-exec-1] --- org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/middleware]: Initializing Spring FrameworkServlet 'dispatcherServlet'
