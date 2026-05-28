@@ -49,7 +49,7 @@ public class MultiThreadDownloadMp3Executer {
         handler);
 
     public void initTestArr() {
-        boolean test = false;
+        boolean test = true;
         List<DownloadInfoEntity> downloadInfoEntityListTemp = new ArrayList<>();
         if(test) {
             DownloadInfoEntity infoEntity = new DownloadInfoEntity();

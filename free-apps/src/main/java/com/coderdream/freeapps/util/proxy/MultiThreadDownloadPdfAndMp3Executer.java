@@ -61,9 +61,9 @@ public class MultiThreadDownloadPdfAndMp3Executer {
             infoEntity.setFileName(ep + ".html");
             downloadInfoEntityListTemp = Arrays.asList(infoEntity);
         } else {
-//            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("html","2023", "01", "02");
+            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("html","2014");
 //            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("html","2020");
-            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("html","2019","08","09","10","11","12");
+//            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("html","2019","10","09","10","11","12");
         }
 
         for (DownloadInfoEntity downloadInfoEntity : downloadInfoEntityListTemp) {

@@ -66,7 +66,7 @@ public class MultiThreadGenScriptTextExecutor {
             downloadInfoEntityListTemp = Arrays.asList(infoEntity);
         } else {
 //            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("txt", "2020","02","06");
-            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("txt", "2019");
+            downloadInfoEntityListTemp = HtmlUtil.getDownloadHtmlInfo("txt", "2015");
         }
 
         String folderPath =
